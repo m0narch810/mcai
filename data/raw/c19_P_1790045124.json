@@ -1,0 +1,147 @@
+{
+ "duration_api_ms": 21641,
+ "stop_reason": "tool_use",
+ "session_id": "e1b43c13-3c00-4670-86e4-c2bfa5d3ab45",
+ "total_cost_usd": 0.088524,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4126,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 1853,
+  "output_tokens_details": {
+   "thinking_tokens": 173
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4126,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1853,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4126,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4126
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 1853,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4126,
+   "webSearchRequests": 0,
+   "costUSD": 0.088524,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 173,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is not a memecoin. It is Wormhole-wrapped BNB (WBNB), a bridged version of BNB on Solana. Its price (~$791.83) follows BNB, and the Orca pool is over two years old (created July 2024). The trigger came from a volume burst: about $26.7k traded in 5 minutes, against $71k over 6 hours and $155k over 24 hours. Price barely moved (+0.46% over 5 minutes, +0.39% over 1 hour). About 114 unique buyers and 90 unique sellers in 5 minutes points to routed aggregator flow, arbitrage, or rebalancing around BNB price moves or pool liquidity shifts, not a speculative crowd arriving. The \\\"Mint Authority enabled\\\" warning is expected for a Wormhole bridge token: the bridge mints and burns tokens as BNB moves across. It is not a rug signal here.\",\"narrative\":{\"description\":\"No token-specific story. This is infrastructure: a bridged blue-chip asset whose price is set by BNB on other markets. Any attention would be about BNB or Wormhole in general, and would not turn into speculative upside for this particular representation.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"It isn't spreading. The volume spike most likely comes from aggregator routing, arbitrage against the BNB price, or one large swap split across many transactions. Price movement is under 1%, which fits a pegged asset, not rising attention.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The contract is the canonical Wormhole-wrapped BNB mint on Solana, which GeckoTerminal links to the wormholecrypto handle. It is the real bridged asset, not an imitation.\",\"competing_tokens\":\"None in the packet. Other BNB representations may exist on Solana, but they would trade at the same BNB peg rather than compete for a story.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"Pool is over two years old, there are ~59.8k holders, no insider flags, no DexScreener boosts or profile, and the price tracks BNB. The activity looks like ordinary mechanical trading flow, not promotion or coordination.\",\"uncertainty\":\"Nothing on-chain shows who drove the 5-minute burst. It may be a single arbitrage bot or router splitting orders, which is mechanical rather than 'organic attention'.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price is pegged to BNB, so there is no microcap-style upside; returns simply equal BNB's\",\"Wormhole holds mint authority, which adds bridge/custody risk (e.g. a bridge exploit)\",\"Liquidity is modest: $145k in this pool, $383k across markets\",\"LP is not locked, which is normal for a bridged asset's AMM pools\"]},\"counterargument\":\"A sharp BNB move (e.g. BNB-specific news) could keep volume high for hours through arbitrage and routing, so the rule-defined 'activity' might persist even with no narrative. Separately, a Wormhole or BNB-ecosystem catalyst could keep trading elevated.\",\"unknowns\":[\"What caused the 5-minute volume burst (single large swap, arbitrage, or rebalance)\",\"Whether BNB itself is moving on news\",\"Whether a new pool or liquidity migration is sending flow to Orca\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the analysis relies only on the evidence packet.\"},\"thesis\":\"A false positive of the unusual-activity rule. This is a bridged blue-chip asset pegged to BNB, and the volume spike is almost certainly mechanical (arbitrage or routing) with a negligible price effect. Expect 5-minute volume to fall back toward its ~$12k/hour baseline and price to keep following BNB. There is no narrative that could produce lasting speculative attention.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is not a memecoin. It is Wormhole-wrapped BNB (WBNB), a bridged version of BNB on Solana. Its price (~$791.83) follows BNB, and the Orca pool is over two years old (created July 2024). The trigger came from a volume burst: about $26.7k traded in 5 minutes, against $71k over 6 hours and $155k over 24 hours. Price barely moved (+0.46% over 5 minutes, +0.39% over 1 hour). About 114 unique buyers and 90 unique sellers in 5 minutes points to routed aggregator flow, arbitrage, or rebalancing around BNB price moves or pool liquidity shifts, not a speculative crowd arriving. The \"Mint Authority enabled\" warning is expected for a Wormhole bridge token: the bridge mints and burns tokens as BNB moves across. It is not a rug signal here.",
+  "narrative": {
+   "description": "No token-specific story. This is infrastructure: a bridged blue-chip asset whose price is set by BNB on other markets. Any attention would be about BNB or Wormhole in general, and would not turn into speculative upside for this particular representation.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "It isn't spreading. The volume spike most likely comes from aggregator routing, arbitrage against the BNB price, or one large swap split across many transactions. Price movement is under 1%, which fits a pegged asset, not rising attention."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The contract is the canonical Wormhole-wrapped BNB mint on Solana, which GeckoTerminal links to the wormholecrypto handle. It is the real bridged asset, not an imitation.",
+   "competing_tokens": "None in the packet. Other BNB representations may exist on Solana, but they would trade at the same BNB peg rather than compete for a story.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "Pool is over two years old, there are ~59.8k holders, no insider flags, no DexScreener boosts or profile, and the price tracks BNB. The activity looks like ordinary mechanical trading flow, not promotion or coordination.",
+   "uncertainty": "Nothing on-chain shows who drove the 5-minute burst. It may be a single arbitrage bot or router splitting orders, which is mechanical rather than 'organic attention'."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price is pegged to BNB, so there is no microcap-style upside; returns simply equal BNB's",
+    "Wormhole holds mint authority, which adds bridge/custody risk (e.g. a bridge exploit)",
+    "Liquidity is modest: $145k in this pool, $383k across markets",
+    "LP is not locked, which is normal for a bridged asset's AMM pools"
+   ]
+  },
+  "counterargument": "A sharp BNB move (e.g. BNB-specific news) could keep volume high for hours through arbitrage and routing, so the rule-defined 'activity' might persist even with no narrative. Separately, a Wormhole or BNB-ecosystem catalyst could keep trading elevated.",
+  "unknowns": [
+   "What caused the 5-minute volume burst (single large swap, arbitrage, or rebalance)",
+   "Whether BNB itself is moving on news",
+   "Whether a new pool or liquidity migration is sending flow to Orca"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the analysis relies only on the evidence packet."
+  },
+  "thesis": "A false positive of the unusual-activity rule. This is a bridged blue-chip asset pegged to BNB, and the volume spike is almost certainly mechanical (arbitrage or routing) with a negligible price effect. Expect 5-minute volume to fall back toward its ~$12k/hour baseline and price to keep following BNB. There is no narrative that could produce lasting speculative attention.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4173,
+ "type": "result",
+ "duration_ms": 21678,
+ "uuid": "e09951c4-95c9-4f37-8cb1-9783af1fc0df",
+ "ttft_stream_ms": 1439,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1439,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

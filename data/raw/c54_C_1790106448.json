@@ -1,0 +1,188 @@
+{
+ "duration_api_ms": 82647,
+ "stop_reason": "tool_use",
+ "session_id": "b706bf42-991b-4653-a970-7e2f40d84261",
+ "total_cost_usd": 0.3351446,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13385,
+  "cache_read_input_tokens": 36998,
+  "output_tokens": 3999,
+  "output_tokens_details": {
+   "thinking_tokens": 559
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13385,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3013,
+    "cache_read_input_tokens": 14366,
+    "cache_creation_input_tokens": 1519,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1519
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3999,
+   "cacheReadInputTokens": 36998,
+   "cacheCreationInputTokens": 13385,
+   "webSearchRequests": 0,
+   "costUSD": 0.19449160000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 559,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 68713,
+   "outputTokens": 2388,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.140653,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"TikTok Official Token\\\" (ticker TlKTOK, written with a lowercase L in place of the I) is a brand-impersonation token. Its pool opened on PumpSwap about an hour before detection. The Meteora-virtual-curve creation and the migration share the same timestamp (unix 1790102717), so it launched directly with about $232k of liquidity. The only 'project' link is x.com/tiktok_us, TikTok's real US account. GMGN says that account has had 6,734 tokens launched in its name, which is the usual pattern when launchers attach a famous handle to a token. I found no sign that TikTok posted about crypto. The pair has done about $5.2M of volume on $232k of liquidity (about 22x turnover in an hour). GeckoTerminal shows about 6,400 trades from only about 714 unique buyers and 212 sellers. GMGN tags 331 wallets as bundlers and 28 as snipers, and finds no smart-money or renowned (KOL) wallets. Three earlier contracts with the identical name and ticker, launched in the preceding ~3.6 hours, now have $0.02\u20130.03 of liquidity each. This looks like serial redeployment of the same impersonation token.\",\"narrative\":{\"description\":\"Impersonation of the TikTok brand ('official token'), using a lookalike ticker with a lowercase L instead of an I. I found no real TikTok crypto announcement or crypto-related news on 2026-09-22. Recent TikTok news I found (for example Miley Cyrus's album launch on the platform, and US-app content-moderation scrutiny) has nothing to do with a token.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The attention looks manufactured: very high trade count per wallet, 331 bundler wallets, and a brand name chosen to catch search and scanner traffic. Many other 'TikTok Official Token' copies exist on Solana, so the name recycles an existing pattern rather than responding to a new event.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"The only link to TikTok is the name and a pasted handle for @tiktok_us. There is no verification. GMGN reports 6,734 tokens launched under that X account, which means the handle is attached to tokens indiscriminately. This contract is simply the latest of several redeployments and the only one that currently has liquidity.\",\"competing_tokens\":\"Three identical TlKTOK / 'TikTok Official Token' contracts from the preceding hours are now dead: 6nKx\u2026, Hsjw\u2026, Hpz\u2026. Many other 'TikTok Official Token' / TIKTOK tokens also appear on Phantom, Coinbase price pages, OpenSea and Solana Compass.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Pool created and migrated in the same second, seeded with about $232k of liquidity. About 6,450 h1 transactions came from only about 714 unique buyers (about 9 trades per wallet). GMGN tags 331 bundler wallets and 28 sniper wallets, with 0 smart wallets and 0 renowned wallets. GMGN page visits are 0. The insider graph flags 44 wallets, including clusters of 11 and 33 trade-linked wallets. There were serial same-name redeploys within hours, all of which lost their liquidity. No X, Reddit or Telegram discussion was found.\",\"uncertainty\":\"I could not see X directly (it returned HTTP 402). Private Telegram call groups may be driving part of the flow. GMGN's 'bundler' label can include trading-bot routing.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"RugCheck flags a large amount of LP as unlocked, and there are few LP providers. This conflicts with GMGN's lp_burn_ratio of 1.0, so the LP's status is unresolved.\",\"Top 10 holders own 96.7% of supply (this may include the pool).\",\"The creator deployed the same token repeatedly, and each earlier contract ended with near-zero liquidity.\",\"Volume is about 22x liquidity per hour, consistent with wash trading.\",\"High market cap relative to holder count (flagged as a risk).\"]},\"counterargument\":\"Brand-name impersonation tokens with deep seeded liquidity sometimes pull in real retail traders for several hours, because the TikTok name gets caught by scanners and search. Buys outnumber sells about 3,500 to 2,970, and the price rose 250% in 6 hours. Mint and freeze authority are renounced, and GMGN reports the LP as burned. If that is accurate, liquidity cannot simply be pulled, and momentum traders could carry the price further in the short term.\",\"unknowns\":[\"Whether the LP is actually burned (GMGN) or unlocked (RugCheck).\",\"The actual content of the @tiktok_us X timeline (inaccessible).\",\"Private Telegram call-group activity.\",\"How much of the volume is organic retail versus the bundled or wash-trading wallets.\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"Searching the contract address returned nothing relevant. Fetching x.com/tiktok_us returned HTTP 402. The news search found TikTok items unrelated to crypto. The only 'website' is TikTok's X handle. DexScreener shows 3 pairs; only the PumpSwap pair has liquidity.\"},\"thesis\":\"This is a brand-impersonation token with a lookalike ticker, and it is a serial redeploy: three identical earlier contracts are dead. The volume appears bot- and bundle-driven, and I found no real TikTok event or organic discussion behind it. I expect the attention to fade.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/HwWbtcr53Pb3yhzrr6nroWvLsWMZmcVZ82F95J2SqPos\",\"what\":\"Pairs, liquidity, volume and transaction counts; only the PumpSwap pair has liquidity\"},{\"url\":\"https://phantom.com/tokens/solana/4nCGAiSJg7urSJ7ZgtipmHQan1fxK4P8PGKToUd1VE8u\",\"what\":\"Another 'TikTok Official Token' copy on Solana\"},{\"url\":\"https://solanacompass.com/tokens/GjieE7Nx7hxVWSi6ugbm2mCVXTJH4HF1q6PjJJiWv2xB\",\"what\":\"Another 'TikTok Official Token' copy\"},{\"url\":\"https://web3.bitget.com/en/academy/how-to-buy-tiktok-token-tiktok-in-2026-a-beginners-step-by-step-guide-to-tiktok-token\",\"what\":\"States that TikTok tokens are not affiliated with the TikTok platform\"},{\"url\":\"https://www.socialmediatoday.com/topic/tiktok/\",\"what\":\"Recent TikTok news, nothing about crypto\"},{\"url\":\"https://x.com/tiktok_us\",\"what\":\"Handle claimed as the project's social link; fetch blocked (HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"TikTok Official Token\" (ticker TlKTOK, written with a lowercase L in place of the I) is a brand-impersonation token. Its pool opened on PumpSwap about an hour before detection. The Meteora-virtual-curve creation and the migration share the same timestamp (unix 1790102717), so it launched directly with about $232k of liquidity. The only 'project' link is x.com/tiktok_us, TikTok's real US account. GMGN says that account has had 6,734 tokens launched in its name, which is the usual pattern when launchers attach a famous handle to a token. I found no sign that TikTok posted about crypto. The pair has done about $5.2M of volume on $232k of liquidity (about 22x turnover in an hour). GeckoTerminal shows about 6,400 trades from only about 714 unique buyers and 212 sellers. GMGN tags 331 wallets as bundlers and 28 as snipers, and finds no smart-money or renowned (KOL) wallets. Three earlier contracts with the identical name and ticker, launched in the preceding ~3.6 hours, now have $0.02\u20130.03 of liquidity each. This looks like serial redeployment of the same impersonation token.",
+  "narrative": {
+   "description": "Impersonation of the TikTok brand ('official token'), using a lookalike ticker with a lowercase L instead of an I. I found no real TikTok crypto announcement or crypto-related news on 2026-09-22. Recent TikTok news I found (for example Miley Cyrus's album launch on the platform, and US-app content-moderation scrutiny) has nothing to do with a token.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The attention looks manufactured: very high trade count per wallet, 331 bundler wallets, and a brand name chosen to catch search and scanner traffic. Many other 'TikTok Official Token' copies exist on Solana, so the name recycles an existing pattern rather than responding to a new event."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "The only link to TikTok is the name and a pasted handle for @tiktok_us. There is no verification. GMGN reports 6,734 tokens launched under that X account, which means the handle is attached to tokens indiscriminately. This contract is simply the latest of several redeployments and the only one that currently has liquidity.",
+   "competing_tokens": "Three identical TlKTOK / 'TikTok Official Token' contracts from the preceding hours are now dead: 6nKx\u2026, Hsjw\u2026, Hpz\u2026. Many other 'TikTok Official Token' / TIKTOK tokens also appear on Phantom, Coinbase price pages, OpenSea and Solana Compass.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Pool created and migrated in the same second, seeded with about $232k of liquidity. About 6,450 h1 transactions came from only about 714 unique buyers (about 9 trades per wallet). GMGN tags 331 bundler wallets and 28 sniper wallets, with 0 smart wallets and 0 renowned wallets. GMGN page visits are 0. The insider graph flags 44 wallets, including clusters of 11 and 33 trade-linked wallets. There were serial same-name redeploys within hours, all of which lost their liquidity. No X, Reddit or Telegram discussion was found.",
+   "uncertainty": "I could not see X directly (it returned HTTP 402). Private Telegram call groups may be driving part of the flow. GMGN's 'bundler' label can include trading-bot routing."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "RugCheck flags a large amount of LP as unlocked, and there are few LP providers. This conflicts with GMGN's lp_burn_ratio of 1.0, so the LP's status is unresolved.",
+    "Top 10 holders own 96.7% of supply (this may include the pool).",
+    "The creator deployed the same token repeatedly, and each earlier contract ended with near-zero liquidity.",
+    "Volume is about 22x liquidity per hour, consistent with wash trading.",
+    "High market cap relative to holder count (flagged as a risk)."
+   ]
+  },
+  "counterargument": "Brand-name impersonation tokens with deep seeded liquidity sometimes pull in real retail traders for several hours, because the TikTok name gets caught by scanners and search. Buys outnumber sells about 3,500 to 2,970, and the price rose 250% in 6 hours. Mint and freeze authority are renounced, and GMGN reports the LP as burned. If that is accurate, liquidity cannot simply be pulled, and momentum traders could carry the price further in the short term.",
+  "unknowns": [
+   "Whether the LP is actually burned (GMGN) or unlocked (RugCheck).",
+   "The actual content of the @tiktok_us X timeline (inaccessible).",
+   "Private Telegram call-group activity.",
+   "How much of the volume is organic retail versus the bundled or wash-trading wallets."
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "Searching the contract address returned nothing relevant. Fetching x.com/tiktok_us returned HTTP 402. The news search found TikTok items unrelated to crypto. The only 'website' is TikTok's X handle. DexScreener shows 3 pairs; only the PumpSwap pair has liquidity."
+  },
+  "thesis": "This is a brand-impersonation token with a lookalike ticker, and it is a serial redeploy: three identical earlier contracts are dead. The volume appears bot- and bundle-driven, and I found no real TikTok event or organic discussion behind it. I expect the attention to fade.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/HwWbtcr53Pb3yhzrr6nroWvLsWMZmcVZ82F95J2SqPos",
+    "what": "Pairs, liquidity, volume and transaction counts; only the PumpSwap pair has liquidity"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/4nCGAiSJg7urSJ7ZgtipmHQan1fxK4P8PGKToUd1VE8u",
+    "what": "Another 'TikTok Official Token' copy on Solana"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/GjieE7Nx7hxVWSi6ugbm2mCVXTJH4HF1q6PjJJiWv2xB",
+    "what": "Another 'TikTok Official Token' copy"
+   },
+   {
+    "url": "https://web3.bitget.com/en/academy/how-to-buy-tiktok-token-tiktok-in-2026-a-beginners-step-by-step-guide-to-tiktok-token",
+    "what": "States that TikTok tokens are not affiliated with the TikTok platform"
+   },
+   {
+    "url": "https://www.socialmediatoday.com/topic/tiktok/",
+    "what": "Recent TikTok news, nothing about crypto"
+   },
+   {
+    "url": "https://x.com/tiktok_us",
+    "what": "Handle claimed as the project's social link; fetch blocked (HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 4470,
+ "type": "result",
+ "duration_ms": 63420,
+ "uuid": "b5e46b2c-de6e-4968-99a9-49803b017df9",
+ "ttft_stream_ms": 1918,
+ "time_to_request_ms": 53,
+ "first_content_frame_ms": 1919,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

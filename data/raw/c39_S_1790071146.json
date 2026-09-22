@@ -1,0 +1,144 @@
+{
+ "duration_api_ms": 28481,
+ "stop_reason": "tool_use",
+ "session_id": "b184f8f3-cac2-4fb7-b3a0-803124a0c044",
+ "total_cost_usd": 0.1839245,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 10063,
+  "cache_read_input_tokens": 8105,
+  "output_tokens": 2224,
+  "output_tokens_details": {
+   "thinking_tokens": 281
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10063,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1742,
+    "cache_read_input_tokens": 8105,
+    "cache_creation_input_tokens": 1958,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1958
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 4,
+   "outputTokens": 2224,
+   "cacheReadInputTokens": 8105,
+   "cacheCreationInputTokens": 10063,
+   "webSearchRequests": 0,
+   "costUSD": 0.16030250000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 281,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 11542,
+   "outputTokens": 416,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.023622,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This trigger is almost certainly noise from micro-transaction bots, not a narrative waking up. The packet's own numbers show it. There were 866 buys and 480 sells in the last hour against only about $1,780 of volume, which is roughly $1.30 per trade. Over 24 hours there were about 9,000 trades on $32.7k of volume, around $3.60 per trade. That pattern fits volume or transaction-count farming (bots that inflate trade and holder counts), not real buyers. Almost all of the hour's volume ($1,603 of $1,780) arrived in one 5-to-15-minute window. On a $41k pool, that little money is enough to move price 13-15%. GeckoTerminal already shows the 5-minute change at -1.4% and 5-minute volume at $0.45, so the spike has stopped.\\n\\nThe wallet data points the same way. GMGN tags 1,000 wallets as bundlers and 1,000 as fresh, which looks like the counter's maximum. The bot/degen rate is 29%, and 14.7% of top traders are tagged as \\\"entrapment\\\" traders. RugCheck's graph finds 14 insider wallets in transfer networks of 8 and 6. Holder counts disagree widely: 4,993 on RugCheck versus about 910 on GMGN and GeckoTerminal, which suggests dust wallets are padding the count. GeckoTerminal puts the top-10 share at 44%.\\n\\nThe creator has launched 27 tokens (7 from the dev's X account), so this is a serial deployer. The attention is paid: GMGN shows a paid DexScreener boost. The token is 58 days old and trades about 82% below its all-time high ($0.000735 vs $0.000133), so this spike is a small bounce inside a long decline, with no fresh catalyst found. The concept (a cat-dog hybrid) is generic and the image is duplicated 3 times. Many other COG/cat-dog tickers exist, including clones launched today, so any attention is split.\",\"red_flags\":[\"Average trade about $1-4 (866 buys in 1 hour on $1.8k volume): signs of micro-transaction or volume bots\",\"Almost all of the hour's volume came in one 5-15 minute burst; GeckoTerminal already shows 5-minute volume at $0.45 and price at -1.4%\",\"GMGN bundler_wallets=1000 and fresh_wallets=1000 (looks capped); bot/degen rate 29%; 14.7% entrapment traders\",\"RugCheck graph finds 14 insider wallets in transfer networks of 8 and 6\",\"Holder count mismatch: 4,993 on RugCheck vs about 910 on GMGN and GeckoTerminal, suggesting dust-wallet inflation\",\"Serial creator: 27 tokens launched, 7 from the dev's X account\",\"Paid DexScreener boost is active: promotion, not organic attention\",\"Price about 82% below ATH; 58-day-old token in decline\",\"Image used 3 times; generic cat-dog concept; many copycat COG tickers, including new clones\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"Sustained volume in the tens of thousands of dollars per hour with normal trade sizes ($50+). Price holding above the spike level for hours. Organic posts on X or in the news from accounts that are not alert or call-channel accounts about a new Cog catalyst, such as the source video going viral again. GMGN smart-money buy signals appearing (currently 0). Holder counts converging upward across data sources.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"Time was short. The DexScreener pair page returned 403, so I couldn't see it. I couldn't access X or Telegram content, and I didn't review individual posts. One web search found only the project website and no news or catalyst, which doesn't prove none exists. The bear case rests mainly on the packet's own trade-size numbers and the GMGN and RugCheck flags, which are internally consistent.\",\"sources\":[{\"url\":\"https://thecogclub.com/\",\"what\":\"Project site: generic 'half cat, half dog' meme, no catalyst\"},{\"url\":\"https://dexscreener.com/solana/B9ytARDJvsMfuJZziMy92BFJ6LMm2wynzHzZ4anLMCzJ\",\"what\":\"Pair page; returned 403, not accessed\"},{\"url\":\"https://medium.com/@donnelove/catdog-the-memecoin-that-bridges-cat-and-dog-lovers-on-solana-e0493df5c2d4\",\"what\":\"An older CATDOG meme with the same concept, showing the theme is not new\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This trigger is almost certainly noise from micro-transaction bots, not a narrative waking up. The packet's own numbers show it. There were 866 buys and 480 sells in the last hour against only about $1,780 of volume, which is roughly $1.30 per trade. Over 24 hours there were about 9,000 trades on $32.7k of volume, around $3.60 per trade. That pattern fits volume or transaction-count farming (bots that inflate trade and holder counts), not real buyers. Almost all of the hour's volume ($1,603 of $1,780) arrived in one 5-to-15-minute window. On a $41k pool, that little money is enough to move price 13-15%. GeckoTerminal already shows the 5-minute change at -1.4% and 5-minute volume at $0.45, so the spike has stopped.\n\nThe wallet data points the same way. GMGN tags 1,000 wallets as bundlers and 1,000 as fresh, which looks like the counter's maximum. The bot/degen rate is 29%, and 14.7% of top traders are tagged as \"entrapment\" traders. RugCheck's graph finds 14 insider wallets in transfer networks of 8 and 6. Holder counts disagree widely: 4,993 on RugCheck versus about 910 on GMGN and GeckoTerminal, which suggests dust wallets are padding the count. GeckoTerminal puts the top-10 share at 44%.\n\nThe creator has launched 27 tokens (7 from the dev's X account), so this is a serial deployer. The attention is paid: GMGN shows a paid DexScreener boost. The token is 58 days old and trades about 82% below its all-time high ($0.000735 vs $0.000133), so this spike is a small bounce inside a long decline, with no fresh catalyst found. The concept (a cat-dog hybrid) is generic and the image is duplicated 3 times. Many other COG/cat-dog tickers exist, including clones launched today, so any attention is split.",
+  "red_flags": [
+   "Average trade about $1-4 (866 buys in 1 hour on $1.8k volume): signs of micro-transaction or volume bots",
+   "Almost all of the hour's volume came in one 5-15 minute burst; GeckoTerminal already shows 5-minute volume at $0.45 and price at -1.4%",
+   "GMGN bundler_wallets=1000 and fresh_wallets=1000 (looks capped); bot/degen rate 29%; 14.7% entrapment traders",
+   "RugCheck graph finds 14 insider wallets in transfer networks of 8 and 6",
+   "Holder count mismatch: 4,993 on RugCheck vs about 910 on GMGN and GeckoTerminal, suggesting dust-wallet inflation",
+   "Serial creator: 27 tokens launched, 7 from the dev's X account",
+   "Paid DexScreener boost is active: promotion, not organic attention",
+   "Price about 82% below ATH; 58-day-old token in decline",
+   "Image used 3 times; generic cat-dog concept; many copycat COG tickers, including new clones"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "Sustained volume in the tens of thousands of dollars per hour with normal trade sizes ($50+). Price holding above the spike level for hours. Organic posts on X or in the news from accounts that are not alert or call-channel accounts about a new Cog catalyst, such as the source video going viral again. GMGN smart-money buy signals appearing (currently 0). Holder counts converging upward across data sources.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "Time was short. The DexScreener pair page returned 403, so I couldn't see it. I couldn't access X or Telegram content, and I didn't review individual posts. One web search found only the project website and no news or catalyst, which doesn't prove none exists. The bear case rests mainly on the packet's own trade-size numbers and the GMGN and RugCheck flags, which are internally consistent.",
+  "sources": [
+   {
+    "url": "https://thecogclub.com/",
+    "what": "Project site: generic 'half cat, half dog' meme, no catalyst"
+   },
+   {
+    "url": "https://dexscreener.com/solana/B9ytARDJvsMfuJZziMy92BFJ6LMm2wynzHzZ4anLMCzJ",
+    "what": "Pair page; returned 403, not accessed"
+   },
+   {
+    "url": "https://medium.com/@donnelove/catdog-the-memecoin-that-bridges-cat-and-dog-lovers-on-solana-e0493df5c2d4",
+    "what": "An older CATDOG meme with the same concept, showing the theme is not new"
+   }
+  ]
+ },
+ "ttft_ms": 4088,
+ "type": "result",
+ "duration_ms": 27532,
+ "uuid": "ff198483-b50d-4cab-8619-76ba8fcdc279",
+ "ttft_stream_ms": 1268,
+ "time_to_request_ms": 32,
+ "first_content_frame_ms": 1268,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

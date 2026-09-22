@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24940,
+ "stop_reason": "tool_use",
+ "session_id": "cb6caa55-3607-42f8-856e-1f6db835706e",
+ "total_cost_usd": 0.0974316,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5919,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2485,
+  "output_tokens_details": {
+   "thinking_tokens": 309
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5919,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2485,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 5919,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5919
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2485,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 5919,
+   "webSearchRequests": 0,
+   "costUSD": 0.0974316,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 309,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Apple\u2014DEX\\\" (symbol Apple) launched on a Meteora virtual curve. It was created and migrated in the same second, then traded on PumpSwap. About 110 minutes after launch it met the activity rule: $5.1M of volume in 1h against $392k of liquidity (13x turnover), a $1.6M market cap, and +31% in 1h and +124% in 6h. Its metadata impersonates Apple Inc.: it links to apple.com and lists the @Apple X handle, and it has no real project socials or DexScreener profile. An identical earlier token, \\\"Apple\u2014DEX\\\" (J4nX\u2026), launched about 3 hours earlier. Its liquidity is now $0.03 and it had a $1.34M market cap on paper, which looks like a template that was run once, drained, and relaunched. The buyer/seller split is extreme: 2,366 unique buyers against only 139 unique sellers over 6h. Those 139 sellers made about 5,079 sells, which looks like a small set of bot or insider wallets steadily selling into retail buys. GMGN flags 202 bundler wallets, 90 rat-trader (insider) wallets and 147 graph-detected insiders in transfer networks of 14\u201315 wallets. It also reports zero smart-money or renowned wallets and no paid promotion.\",\"narrative\":{\"description\":\"Impersonation of Apple Inc. (fake links to apple.com and @Apple). There is no real narrative or catalyst, only a famous brand name used as bait.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The attention looks mechanical, not social. The volume comes from bundled or insider wallets and bots creating a busy chart to pull in scanner-driven buyers. No organic story is visible in the packet.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name 'Apple\u2014DEX' token with live liquidity and volume right now. But the name borrows Apple's brand and has no official tie to it. The 'Apple' ticker has many prior tokens.\",\"competing_tokens\":\"J4nX\u2026 'Apple\u2014DEX' (identical name, created about 3h earlier, liquidity now $0.03, which suggests it was drained); older APPLE/Apple tokens ('dog with apple in mouth', 'Spinning Apple', 'iPhone Duo') are all dead or illiquid.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"202 bundler wallets, 90 rat-trader wallets, and 147 graph insiders in 14\u201315-wallet transfer networks. Only 139 unique sellers made about 5,079 sells against 2,366 buyers, which points to a concentrated set of wallets distributing into buys. The token was created and migrated in the same second. An identical earlier token from the same template was drained. The metadata impersonates a brand. There are no smart or renowned wallets and no real socials. The dev X account link (@Apple) shows 5,059 launched tokens, which is a meaningless or spoofed handle linkage.\",\"uncertainty\":\"The holder data conflicts: GeckoTerminal puts the top 10 at 93% (possibly including the pool), while GMGN puts it at 1.4%. RugCheck says the LP is unlocked, but GMGN reports an LP burn ratio of 1.0. The exact extraction mechanism is unclear.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Metadata impersonating Apple Inc., with fake official links\",\"Identical earlier 'Apple\u2014DEX' token was drained to $0.03 liquidity, which suggests a repeat scam template\",\"RugCheck flags a large amount of unlocked LP and few LP providers (this conflicts with GMGN's burn ratio of 1.0)\",\"Top 10 holders reportedly hold 93% (GeckoTerminal)\",\"Heavy bundler and insider wallet presence; a small set of sellers is absorbing the buy flow\",\"Creator status is 'creator_close', and the dev's history is opaque\"]},\"counterargument\":\"Volume and unique buyers are still accelerating: m5 volume is running in line with the 1h rate, there are 222 unique buyers in 5 minutes, and price is making new highs near its all-time high. Liquidity of $394k is substantial for a 2-hour-old token. A famous brand ticker can pull in lots of retail flow, and GMGN shows low top-10 concentration, zero dev holdings and a burned LP. Momentum could carry it to several million in market cap before any exit.\",\"unknowns\":[\"Whether LP is actually burned or can be withdrawn (the sources conflict)\",\"Real top-holder breakdown excluding the pool\",\"Whether the earlier J4nX token was deployed by the same operator\",\"Any X or Telegram call activity driving the buyers\",\"Whether the 139 sellers are the insider or bundler cluster\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This analysis relies only on the evidence packet.\"},\"thesis\":\"This looks like a coordinated brand-impersonation pump. The token copies Apple's branding, and an identical token launched hours earlier was drained. Bundler and insider wallets dominate, and a handful of sellers are distributing into retail buys. There is no organic narrative. The likely path is a sharp drop or liquidity pull within hours, even though short-term momentum is currently strong.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Apple\u2014DEX\" (symbol Apple) launched on a Meteora virtual curve. It was created and migrated in the same second, then traded on PumpSwap. About 110 minutes after launch it met the activity rule: $5.1M of volume in 1h against $392k of liquidity (13x turnover), a $1.6M market cap, and +31% in 1h and +124% in 6h. Its metadata impersonates Apple Inc.: it links to apple.com and lists the @Apple X handle, and it has no real project socials or DexScreener profile. An identical earlier token, \"Apple\u2014DEX\" (J4nX\u2026), launched about 3 hours earlier. Its liquidity is now $0.03 and it had a $1.34M market cap on paper, which looks like a template that was run once, drained, and relaunched. The buyer/seller split is extreme: 2,366 unique buyers against only 139 unique sellers over 6h. Those 139 sellers made about 5,079 sells, which looks like a small set of bot or insider wallets steadily selling into retail buys. GMGN flags 202 bundler wallets, 90 rat-trader (insider) wallets and 147 graph-detected insiders in transfer networks of 14\u201315 wallets. It also reports zero smart-money or renowned wallets and no paid promotion.",
+  "narrative": {
+   "description": "Impersonation of Apple Inc. (fake links to apple.com and @Apple). There is no real narrative or catalyst, only a famous brand name used as bait.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The attention looks mechanical, not social. The volume comes from bundled or insider wallets and bots creating a busy chart to pull in scanner-driven buyers. No organic story is visible in the packet."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name 'Apple\u2014DEX' token with live liquidity and volume right now. But the name borrows Apple's brand and has no official tie to it. The 'Apple' ticker has many prior tokens.",
+   "competing_tokens": "J4nX\u2026 'Apple\u2014DEX' (identical name, created about 3h earlier, liquidity now $0.03, which suggests it was drained); older APPLE/Apple tokens ('dog with apple in mouth', 'Spinning Apple', 'iPhone Duo') are all dead or illiquid.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "202 bundler wallets, 90 rat-trader wallets, and 147 graph insiders in 14\u201315-wallet transfer networks. Only 139 unique sellers made about 5,079 sells against 2,366 buyers, which points to a concentrated set of wallets distributing into buys. The token was created and migrated in the same second. An identical earlier token from the same template was drained. The metadata impersonates a brand. There are no smart or renowned wallets and no real socials. The dev X account link (@Apple) shows 5,059 launched tokens, which is a meaningless or spoofed handle linkage.",
+   "uncertainty": "The holder data conflicts: GeckoTerminal puts the top 10 at 93% (possibly including the pool), while GMGN puts it at 1.4%. RugCheck says the LP is unlocked, but GMGN reports an LP burn ratio of 1.0. The exact extraction mechanism is unclear."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Metadata impersonating Apple Inc., with fake official links",
+    "Identical earlier 'Apple\u2014DEX' token was drained to $0.03 liquidity, which suggests a repeat scam template",
+    "RugCheck flags a large amount of unlocked LP and few LP providers (this conflicts with GMGN's burn ratio of 1.0)",
+    "Top 10 holders reportedly hold 93% (GeckoTerminal)",
+    "Heavy bundler and insider wallet presence; a small set of sellers is absorbing the buy flow",
+    "Creator status is 'creator_close', and the dev's history is opaque"
+   ]
+  },
+  "counterargument": "Volume and unique buyers are still accelerating: m5 volume is running in line with the 1h rate, there are 222 unique buyers in 5 minutes, and price is making new highs near its all-time high. Liquidity of $394k is substantial for a 2-hour-old token. A famous brand ticker can pull in lots of retail flow, and GMGN shows low top-10 concentration, zero dev holdings and a burned LP. Momentum could carry it to several million in market cap before any exit.",
+  "unknowns": [
+   "Whether LP is actually burned or can be withdrawn (the sources conflict)",
+   "Real top-holder breakdown excluding the pool",
+   "Whether the earlier J4nX token was deployed by the same operator",
+   "Any X or Telegram call activity driving the buyers",
+   "Whether the 139 sellers are the insider or bundler cluster"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This analysis relies only on the evidence packet."
+  },
+  "thesis": "This looks like a coordinated brand-impersonation pump. The token copies Apple's branding, and an identical token launched hours earlier was drained. Bundler and insider wallets dominate, and a handful of sellers are distributing into retail buys. There is no organic narrative. The likely path is a sharp drop or liquidity pull within hours, even though short-term momentum is currently strong.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4565,
+ "type": "result",
+ "duration_ms": 25017,
+ "uuid": "4f0de527-cebe-499d-a133-9f109eeba525",
+ "ttft_stream_ms": 779,
+ "time_to_request_ms": 74,
+ "first_content_frame_ms": 779,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

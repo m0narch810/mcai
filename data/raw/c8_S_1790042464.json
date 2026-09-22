@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 50195,
+ "stop_reason": "tool_use",
+ "session_id": "8f8c9b96-c525-4345-9361-c677e634bf12",
+ "total_cost_usd": 0.22617649999999995,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 7691,
+  "cache_read_input_tokens": 15809,
+  "output_tokens": 3695,
+  "output_tokens_details": {
+   "thinking_tokens": 541
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7691,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2964,
+    "cache_read_input_tokens": 8457,
+    "cache_creation_input_tokens": 696,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 696
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 6,
+   "outputTokens": 3695,
+   "cacheReadInputTokens": 15809,
+   "cacheCreationInputTokens": 7691,
+   "webSearchRequests": 0,
+   "costUSD": 0.17721949999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 541,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 23982,
+   "outputTokens": 995,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.048957,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"The activity looks manufactured by micro-trade bots, not real demand. In the first hour about 20.5k trades produced only about $147k in volume, roughly $7 per trade. A live DexScreener check shortly after detection showed about 2,514 trades for $5.9k over five minutes, about $2.30 per trade. Unique buyers (3,032) and unique sellers (3,007) are nearly equal and close to the holder count (3,085), which fits a pool of wallets buying and selling tiny amounts to inflate trade and holder counts. RugCheck's only warning, a very high market cap relative to holder count, fits this. The price has already peaked and reversed: GeckoTerminal shows -45.6% over 30 minutes and -22.6% over the hour, and the +1,192% figure is measured from the launch price. The token also borrows an identity it doesn't own. Its only social link is Sony's official @SpiderManMovie account, there is no website, Telegram or DexScreener profile, and the description is a throwaway line. It is one of about 10 same-name pump.fun launches in the past day, and the other nine are all dead at $2\u20135k market cap. I found no fresh Spider-Man news on 2026-09-21 to explain the spike: Brand New Day released in the summer, and the only upcoming items are a Disney+ Halloween special (Sept 25), a Spider-Noir TV rating and a New York Comic Con reveal. The structure itself is clean (mint and freeze authority renounced, liquidity pool locked, top 10 hold 15.5%), so the risk is fading attention and recycled volume, not a rug.\",\"red_flags\":[\"Average trade size about $2\u20137 across more than 20k trades, a typical sign of micro-trade bots inflating trade counts\",\"Unique buyers about equal to unique sellers about equal to holders (~3,000), suggesting the same wallets are recycling trades\",\"RugCheck flag: market cap is very high relative to holder count\",\"Price already -45.6% over 30 minutes and -22.6% over the hour on GeckoTerminal; the top has passed\",\"Only social link is Sony's official @SpiderManMovie account, which is unrelated; no website, Telegram or DexScreener profile\",\"About 9 other Spider-Man tokens launched in the past day, all dead; typical pump.fun churn on a famous name\",\"No specific Spider-Man news on or around 2026-09-21 to explain the spike\",\"Pair is only about 37 minutes old, and all the volume comes from its first hour\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"Things that would weaken the bear case: (1) a specific Spider-Man catalyst on Sept 21\u201322, such as a viral trailer or NYCC announcement, that crypto accounts are actually tying to this token; (2) average trade size climbing toward normal retail levels ($50+) while holders keep growing past 3k and sellers fall behind buyers; (3) on-chain evidence that the ~3k wallets are independent, e.g. varied funding sources rather than a few distributor wallets; (4) organic X/Telegram discussion from many different authors about this specific contract address.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"What I checked: a web search for Spider-Man news around Sept 21, 2026 (no date-specific catalyst found), a search on the contract address (no results), and a live DexScreener API pull (confirmed about $2 average trades, no socials or boosts). What I couldn't access: X/Twitter, Telegram, wallet-funding graphs, and GMGN/Bubblemaps cluster views. The bot/wash conclusion is inferred from the ratio of volume to trade count and from buyers roughly equaling sellers; I did not confirm it on-chain. The creator balance could be about 0.04% or about 40% of supply depending on decimals, and I couldn't confirm which.\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/AyMwV1JNhvVjYWUaZJhxmCuiM7ae55Zsazc9RwFeUX9\",\"what\":\"Live pair data: $5.9k volume on 2,514 trades over five minutes, no socials or boosts\"},{\"url\":\"https://www.imdb.com/title/tt22084616/news/\",\"what\":\"Brand New Day news; no fresh catalyst on this date\"},{\"url\":\"https://en.wikipedia.org/wiki/Spider-Man:_Brand_New_Day\",\"what\":\"Film already released this summer; box office already known\"},{\"url\":\"https://screenrant.com/spider-man-movies-disney-plus-release-september-2026/\",\"what\":\"Minor Disney+ Spider-Man release news for September 2026\"},{\"url\":\"https://www.cbr.com/spider-man-nycc-2026-reveal-announced/\",\"what\":\"Upcoming NYCC Spider-Man reveal; possible future catalyst, not current\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "The activity looks manufactured by micro-trade bots, not real demand. In the first hour about 20.5k trades produced only about $147k in volume, roughly $7 per trade. A live DexScreener check shortly after detection showed about 2,514 trades for $5.9k over five minutes, about $2.30 per trade. Unique buyers (3,032) and unique sellers (3,007) are nearly equal and close to the holder count (3,085), which fits a pool of wallets buying and selling tiny amounts to inflate trade and holder counts. RugCheck's only warning, a very high market cap relative to holder count, fits this. The price has already peaked and reversed: GeckoTerminal shows -45.6% over 30 minutes and -22.6% over the hour, and the +1,192% figure is measured from the launch price. The token also borrows an identity it doesn't own. Its only social link is Sony's official @SpiderManMovie account, there is no website, Telegram or DexScreener profile, and the description is a throwaway line. It is one of about 10 same-name pump.fun launches in the past day, and the other nine are all dead at $2\u20135k market cap. I found no fresh Spider-Man news on 2026-09-21 to explain the spike: Brand New Day released in the summer, and the only upcoming items are a Disney+ Halloween special (Sept 25), a Spider-Noir TV rating and a New York Comic Con reveal. The structure itself is clean (mint and freeze authority renounced, liquidity pool locked, top 10 hold 15.5%), so the risk is fading attention and recycled volume, not a rug.",
+  "red_flags": [
+   "Average trade size about $2\u20137 across more than 20k trades, a typical sign of micro-trade bots inflating trade counts",
+   "Unique buyers about equal to unique sellers about equal to holders (~3,000), suggesting the same wallets are recycling trades",
+   "RugCheck flag: market cap is very high relative to holder count",
+   "Price already -45.6% over 30 minutes and -22.6% over the hour on GeckoTerminal; the top has passed",
+   "Only social link is Sony's official @SpiderManMovie account, which is unrelated; no website, Telegram or DexScreener profile",
+   "About 9 other Spider-Man tokens launched in the past day, all dead; typical pump.fun churn on a famous name",
+   "No specific Spider-Man news on or around 2026-09-21 to explain the spike",
+   "Pair is only about 37 minutes old, and all the volume comes from its first hour"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "Things that would weaken the bear case: (1) a specific Spider-Man catalyst on Sept 21\u201322, such as a viral trailer or NYCC announcement, that crypto accounts are actually tying to this token; (2) average trade size climbing toward normal retail levels ($50+) while holders keep growing past 3k and sellers fall behind buyers; (3) on-chain evidence that the ~3k wallets are independent, e.g. varied funding sources rather than a few distributor wallets; (4) organic X/Telegram discussion from many different authors about this specific contract address.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "coverage_notes": "What I checked: a web search for Spider-Man news around Sept 21, 2026 (no date-specific catalyst found), a search on the contract address (no results), and a live DexScreener API pull (confirmed about $2 average trades, no socials or boosts). What I couldn't access: X/Twitter, Telegram, wallet-funding graphs, and GMGN/Bubblemaps cluster views. The bot/wash conclusion is inferred from the ratio of volume to trade count and from buyers roughly equaling sellers; I did not confirm it on-chain. The creator balance could be about 0.04% or about 40% of supply depending on decimals, and I couldn't confirm which.",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/AyMwV1JNhvVjYWUaZJhxmCuiM7ae55Zsazc9RwFeUX9",
+    "what": "Live pair data: $5.9k volume on 2,514 trades over five minutes, no socials or boosts"
+   },
+   {
+    "url": "https://www.imdb.com/title/tt22084616/news/",
+    "what": "Brand New Day news; no fresh catalyst on this date"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Spider-Man:_Brand_New_Day",
+    "what": "Film already released this summer; box office already known"
+   },
+   {
+    "url": "https://screenrant.com/spider-man-movies-disney-plus-release-september-2026/",
+    "what": "Minor Disney+ Spider-Man release news for September 2026"
+   },
+   {
+    "url": "https://www.cbr.com/spider-man-nycc-2026-reveal-announced/",
+    "what": "Upcoming NYCC Spider-Man reveal; possible future catalyst, not current"
+   }
+  ]
+ },
+ "ttft_ms": 4270,
+ "type": "result",
+ "duration_ms": 45581,
+ "uuid": "ea0a48d9-58fe-46af-b244-6933b8d8424d",
+ "ttft_stream_ms": 1026,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 1026,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

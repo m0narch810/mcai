@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 26757,
+ "stop_reason": "tool_use",
+ "session_id": "badfcc65-b729-4d86-bee9-6058bb2a83f4",
+ "total_cost_usd": 0.0972836,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5263,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2740,
+  "output_tokens_details": {
+   "thinking_tokens": 515
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5263,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2740,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 5263,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5263
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2740,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 5263,
+   "webSearchRequests": 0,
+   "costUSD": 0.0972836,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 515,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Raydium pool for a Solana token named \\\"ApeCoin\\\" (APE) was created about 145 minutes before detection. It has done about $10.3M of volume in 6h against about $291k liquidity and a reported $190k market cap. The price has barely moved (+0.7% h1, +3\u20135% h6), and buys and sells are roughly balanced (about 46.5k buys vs 44k sells, 10.9k unique buyers vs 9.4k sellers). The token's metadata links to the official ApeCoin X account, Discord and apechain.com, and the description says APE is available on Solana. Several things suggest this is a bridged or wrapped version of the real ApeCoin rather than a fresh memecoin: the mint was created in about Sept 2025, well before the pool; mint authority is still enabled, which is typical of bridge-minted tokens; the creator has 103 launches with a best ATH around $575M, which looks like a bridge or deployer address; and the price of about $0.159 is plausible for real APE. Liquidity above market cap also fits a partially counted bridged supply. The very high turnover with a flat price looks like arbitrage, market-maker, incentive or bot volume, not speculative discovery. GMGN also flags 1,000 bundler wallets, 30% bot/degen share, a paid DexScreener boost and a community-takeover flag.\",\"narrative\":{\"description\":\"Established blue-chip brand (ApeCoin / BAYC / ApeChain) apparently expanding to Solana liquidity. This is not a new meme story. Price is likely anchored to the real APE price on other chains through arbitrage, so there is little room for reflexive memecoin price discovery.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Activity probably comes from a new Solana pool of a bridged asset drawing arbitrage bots, routing aggregators and possibly LP or trading incentives, plus a paid boost. It does not look like organic viral attention. The flat price despite $10M of volume means the flow is two-sided.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"Its metadata points to the official @apecoin X account, the ApeCoinDAO Discord and apechain.com, and the description mentions Solana availability. Mint age, creator profile and a price consistent with real APE all fit an official or bridged deployment. I cannot verify that it is official offline, and impersonators can copy links.\",\"competing_tokens\":\"Evil Ape (APE, about $93k mcap, negligible volume) and a dead 'APE' with zero liquidity. Neither competes meaningfully.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Organic-looking signals: 10k+ unique buyers and sellers, 10k holders, 340 smart and 49 renowned wallets touching it, and official-brand links. Manufactured or non-organic signals: turnover of 35x liquidity in 6h at a flat price, 1,000 GMGN bundler-tagged wallets, 30% bot/degen rate, a 36% entrapment-trader share, a paid DexScreener boost, a community-takeover flag, and 246 graph-flagged insiders including a 180-wallet transfer network.\",\"uncertainty\":\"Wallet tags built for memecoins may misclassify arbitrage and aggregator flow on a bridged asset. Official status is unverified, and the reported market cap may undercount real circulating supply.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Mint authority still enabled: supply can be inflated. This is normal for bridges but fatal if the token is an impersonator.\",\"LP not locked or burned (0%). A different tool reports only about $50.7k total market liquidity, which conflicts with the $291k pair figure.\",\"Top 10 hold 51.5% (GeckoTerminal, which may include pool or bridge accounts).\",\"Mutable metadata; community-takeover flag and paid boost.\",\"Price probably tied to the cross-chain APE price, which caps any Solana-specific upside.\"]},\"counterargument\":\"If this is an official ApeChain/Solana launch backed by the ApeCoin team, possibly with incentives, listings or a Solana campaign, volume and holder count could keep growing for days as aggregators route to it and Solana users discover it. The large number of unique traders is real, and a blue-chip brand with official links is much stronger than a typical microcap.\",\"unknowns\":[\"Whether the token is the official bridged APE (e.g., via LayerZero or Wormhole) or an impersonator\",\"Why the pair was created only 145 minutes ago, and whether incentives or an announcement are driving the volume\",\"How much of the $10M volume is arbitrage or wash trading versus real demand\",\"The discrepancy between $291k pair liquidity and $50.7k total market liquidity\",\"Who controls the mint authority\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged only from the evidence packet.\"},\"thesis\":\"This looks like a new Solana pool for a bridged or wrapped version of the established ApeCoin, not a memecoin breakout. The price is flat despite very high two-sided turnover, which points to arbitrage, bot or incentive-driven volume anchored to the external APE price. Launch-hour volume on new pools like this usually decays sharply, and the price has little room to move on its own. I expect attention and volume to fade over the next hours. A large pump is unlikely, and a collapse is unlikely too if the token is genuinely bridged.\",\"continuation_view\":\"fade\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A Raydium pool for a Solana token named \"ApeCoin\" (APE) was created about 145 minutes before detection. It has done about $10.3M of volume in 6h against about $291k liquidity and a reported $190k market cap. The price has barely moved (+0.7% h1, +3\u20135% h6), and buys and sells are roughly balanced (about 46.5k buys vs 44k sells, 10.9k unique buyers vs 9.4k sellers). The token's metadata links to the official ApeCoin X account, Discord and apechain.com, and the description says APE is available on Solana. Several things suggest this is a bridged or wrapped version of the real ApeCoin rather than a fresh memecoin: the mint was created in about Sept 2025, well before the pool; mint authority is still enabled, which is typical of bridge-minted tokens; the creator has 103 launches with a best ATH around $575M, which looks like a bridge or deployer address; and the price of about $0.159 is plausible for real APE. Liquidity above market cap also fits a partially counted bridged supply. The very high turnover with a flat price looks like arbitrage, market-maker, incentive or bot volume, not speculative discovery. GMGN also flags 1,000 bundler wallets, 30% bot/degen share, a paid DexScreener boost and a community-takeover flag.",
+  "narrative": {
+   "description": "Established blue-chip brand (ApeCoin / BAYC / ApeChain) apparently expanding to Solana liquidity. This is not a new meme story. Price is likely anchored to the real APE price on other chains through arbitrage, so there is little room for reflexive memecoin price discovery.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Activity probably comes from a new Solana pool of a bridged asset drawing arbitrage bots, routing aggregators and possibly LP or trading incentives, plus a paid boost. It does not look like organic viral attention. The flat price despite $10M of volume means the flow is two-sided."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "Its metadata points to the official @apecoin X account, the ApeCoinDAO Discord and apechain.com, and the description mentions Solana availability. Mint age, creator profile and a price consistent with real APE all fit an official or bridged deployment. I cannot verify that it is official offline, and impersonators can copy links.",
+   "competing_tokens": "Evil Ape (APE, about $93k mcap, negligible volume) and a dead 'APE' with zero liquidity. Neither competes meaningfully.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Organic-looking signals: 10k+ unique buyers and sellers, 10k holders, 340 smart and 49 renowned wallets touching it, and official-brand links. Manufactured or non-organic signals: turnover of 35x liquidity in 6h at a flat price, 1,000 GMGN bundler-tagged wallets, 30% bot/degen rate, a 36% entrapment-trader share, a paid DexScreener boost, a community-takeover flag, and 246 graph-flagged insiders including a 180-wallet transfer network.",
+   "uncertainty": "Wallet tags built for memecoins may misclassify arbitrage and aggregator flow on a bridged asset. Official status is unverified, and the reported market cap may undercount real circulating supply."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Mint authority still enabled: supply can be inflated. This is normal for bridges but fatal if the token is an impersonator.",
+    "LP not locked or burned (0%). A different tool reports only about $50.7k total market liquidity, which conflicts with the $291k pair figure.",
+    "Top 10 hold 51.5% (GeckoTerminal, which may include pool or bridge accounts).",
+    "Mutable metadata; community-takeover flag and paid boost.",
+    "Price probably tied to the cross-chain APE price, which caps any Solana-specific upside."
+   ]
+  },
+  "counterargument": "If this is an official ApeChain/Solana launch backed by the ApeCoin team, possibly with incentives, listings or a Solana campaign, volume and holder count could keep growing for days as aggregators route to it and Solana users discover it. The large number of unique traders is real, and a blue-chip brand with official links is much stronger than a typical microcap.",
+  "unknowns": [
+   "Whether the token is the official bridged APE (e.g., via LayerZero or Wormhole) or an impersonator",
+   "Why the pair was created only 145 minutes ago, and whether incentives or an announcement are driving the volume",
+   "How much of the $10M volume is arbitrage or wash trading versus real demand",
+   "The discrepancy between $291k pair liquidity and $50.7k total market liquidity",
+   "Who controls the mint authority"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged only from the evidence packet."
+  },
+  "thesis": "This looks like a new Solana pool for a bridged or wrapped version of the established ApeCoin, not a memecoin breakout. The price is flat despite very high two-sided turnover, which points to arbitrage, bot or incentive-driven volume anchored to the external APE price. Launch-hour volume on new pools like this usually decays sharply, and the price has little room to move on its own. I expect attention and volume to fade over the next hours. A large pump is unlikely, and a collapse is unlikely too if the token is genuinely bridged.",
+  "continuation_view": "fade",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6746,
+ "type": "result",
+ "duration_ms": 26807,
+ "uuid": "0ee5b328-064a-4781-88b1-be9f95b08065",
+ "ttft_stream_ms": 724,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 725,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

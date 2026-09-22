@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 24193,
+ "stop_reason": "tool_use",
+ "session_id": "abcf15e7-0ccf-4add-9315-58b905601276",
+ "total_cost_usd": 0.09748899999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4210,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2178,
+  "output_tokens_details": {
+   "thinking_tokens": 219
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4210,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2178,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4210,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4210
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 2178,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4210,
+   "webSearchRequests": 0,
+   "costUSD": 0.09748899999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 219,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"About 34 minutes after its PumpSwap pair was created, a token called \\\"claypad\\\" rose about 640\u2013655% in its first hour on roughly $1.55M of volume. It is linked to a GeckoTerminal Twitter handle, \\\"launchonclay\\\", which suggests it is presented as the token of a launchpad called \\\"Clay\\\". The trading pattern looks unhealthy. About 2,100 unique wallets bought, but only about 102 unique wallets made about 4,400 sell transactions. The top 10 holders own 91.6% of the supply, and the creator still holds a large balance. Most alarming, liquidity was about $59.9k when the token was detected, but the packet now shows $0 on the pair and about $1.87 across all markets. That suggests the liquidity was removed or has collapsed, even though \\\"rugged_flag\\\" is false. At least 7 other tokens named \\\"claypad\\\" launched in the same roughly 20-minute window, including a vanity \\\"CLAYw...\\\" address, and one of them did about $481k of volume in the last hour.\",\"narrative\":{\"description\":\"The story is a new launchpad called \\\"Clay\\\" (the name \\\"claypad\\\" plus the handle @launchonclay). Launchpad tokens can draw some speculative interest when a new platform launches. However, the packet contains no website, no DexScreener profile and no description. The only evidence of a real project is a single Twitter handle.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks driven by bots and snipers: a surge of buys from many small wallets, sells concentrated in about 102 wallets, and a rush of copycat tokens with the same ticker. There is no evidence of organic social spread, and the copycats suggest people are farming a name rather than building a community.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link to the \\\"Clay\\\" project is the GeckoTerminal Twitter handle, and anyone can set that metadata. This token has the most market cap and volume of the same-name group, but neither of those proves it is the official one.\",\"competing_tokens\":\"At least 7 other tokens named \\\"claypad\\\" launched within about 20 minutes. They include CLAYwCrT... (vanity address, $92k volume in the last hour), Hge7sut... (name \\\"claypad\uff0c\\\" with a full-width comma, $481k volume in the last hour, almost no liquidity) and Ezr7wEL... (created earlier, $122k market cap).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Sell transactions are concentrated in about 102 wallets against about 2,100 buyers, which points to insiders or snipers selling repeatedly. The top 10 hold 91.6%, and the creator still holds a large balance. Liquidity went from $59.9k to $0 (about $1.87 across all markets) within minutes. Several same-name clones appeared at the same time, and the platform used to deploy the token is unknown.\",\"uncertainty\":\"The $0 liquidity reading could be an indexing error during the PumpSwap migration, and the top-10 figure may include pool accounts. No insider-graph data or social data was available.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Liquidity reported at about $0 now, down from $59.9k at detection; the pool may have been pulled\",\"Top 10 holders own 91.6%, and the creator holds a large balance\",\"Only about 102 unique sellers against about 2,100 buyers, suggesting sells are controlled\",\"Copycats with the same ticker split attention and invite hijacking\",\"No website, profile or verified project link\"]},\"counterargument\":\"If @launchonclay is a real launchpad and this is its official token, then the $0 liquidity could just be a data lag after migration. Real launchpad tokens with thousands of buyers in the first hour have sometimes gone on to run much higher once the project confirms the contract address publicly. The buy/sell transaction ratio (6,693 buys to 4,397 sells) and a +22% move in the last 5 minutes show demand was still active.\",\"unknowns\":[\"Whether @launchonclay is a real project and whether it has endorsed this contract address\",\"Whether the $0 liquidity is real (pulled or drained) or a data artifact\",\"Whether the top holders include the pool\",\"Which wallets make up the 102 sellers and how they were funded\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"There was no internet access, so this judgment uses only the evidence packet.\"},\"thesis\":\"This looks like a coordinated, bot-heavy pump that uses a launchpad name. The structure is extremely concentrated, sells come from only about 102 wallets, liquidity appears to have collapsed to about $0, and several same-name clones exist. Attention is likely to fade sharply over the next 24 hours, and a rug or death spiral is likely.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"24h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "About 34 minutes after its PumpSwap pair was created, a token called \"claypad\" rose about 640\u2013655% in its first hour on roughly $1.55M of volume. It is linked to a GeckoTerminal Twitter handle, \"launchonclay\", which suggests it is presented as the token of a launchpad called \"Clay\". The trading pattern looks unhealthy. About 2,100 unique wallets bought, but only about 102 unique wallets made about 4,400 sell transactions. The top 10 holders own 91.6% of the supply, and the creator still holds a large balance. Most alarming, liquidity was about $59.9k when the token was detected, but the packet now shows $0 on the pair and about $1.87 across all markets. That suggests the liquidity was removed or has collapsed, even though \"rugged_flag\" is false. At least 7 other tokens named \"claypad\" launched in the same roughly 20-minute window, including a vanity \"CLAYw...\" address, and one of them did about $481k of volume in the last hour.",
+  "narrative": {
+   "description": "The story is a new launchpad called \"Clay\" (the name \"claypad\" plus the handle @launchonclay). Launchpad tokens can draw some speculative interest when a new platform launches. However, the packet contains no website, no DexScreener profile and no description. The only evidence of a real project is a single Twitter handle.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The activity looks driven by bots and snipers: a surge of buys from many small wallets, sells concentrated in about 102 wallets, and a rush of copycat tokens with the same ticker. There is no evidence of organic social spread, and the copycats suggest people are farming a name rather than building a community."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link to the \"Clay\" project is the GeckoTerminal Twitter handle, and anyone can set that metadata. This token has the most market cap and volume of the same-name group, but neither of those proves it is the official one.",
+   "competing_tokens": "At least 7 other tokens named \"claypad\" launched within about 20 minutes. They include CLAYwCrT... (vanity address, $92k volume in the last hour), Hge7sut... (name \"claypad\uff0c\" with a full-width comma, $481k volume in the last hour, almost no liquidity) and Ezr7wEL... (created earlier, $122k market cap).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Sell transactions are concentrated in about 102 wallets against about 2,100 buyers, which points to insiders or snipers selling repeatedly. The top 10 hold 91.6%, and the creator still holds a large balance. Liquidity went from $59.9k to $0 (about $1.87 across all markets) within minutes. Several same-name clones appeared at the same time, and the platform used to deploy the token is unknown.",
+   "uncertainty": "The $0 liquidity reading could be an indexing error during the PumpSwap migration, and the top-10 figure may include pool accounts. No insider-graph data or social data was available."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Liquidity reported at about $0 now, down from $59.9k at detection; the pool may have been pulled",
+    "Top 10 holders own 91.6%, and the creator holds a large balance",
+    "Only about 102 unique sellers against about 2,100 buyers, suggesting sells are controlled",
+    "Copycats with the same ticker split attention and invite hijacking",
+    "No website, profile or verified project link"
+   ]
+  },
+  "counterargument": "If @launchonclay is a real launchpad and this is its official token, then the $0 liquidity could just be a data lag after migration. Real launchpad tokens with thousands of buyers in the first hour have sometimes gone on to run much higher once the project confirms the contract address publicly. The buy/sell transaction ratio (6,693 buys to 4,397 sells) and a +22% move in the last 5 minutes show demand was still active.",
+  "unknowns": [
+   "Whether @launchonclay is a real project and whether it has endorsed this contract address",
+   "Whether the $0 liquidity is real (pulled or drained) or a data artifact",
+   "Whether the top holders include the pool",
+   "Which wallets make up the 102 sellers and how they were funded"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "There was no internet access, so this judgment uses only the evidence packet."
+  },
+  "thesis": "This looks like a coordinated, bot-heavy pump that uses a launchpad name. The structure is extremely concentrated, sells come from only about 102 wallets, liquidity appears to have collapsed to about $0, and several same-name clones exist. Attention is likely to fade sharply over the next 24 hours, and a rug or death spiral is likely.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "24h",
+  "sources": []
+ },
+ "ttft_ms": 4412,
+ "type": "result",
+ "duration_ms": 24235,
+ "uuid": "8b8567cc-3117-4f2b-89ba-f082bb9a760f",
+ "ttft_stream_ms": 1354,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 1354,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

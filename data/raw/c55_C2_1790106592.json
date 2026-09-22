@@ -1,0 +1,198 @@
+{
+ "duration_api_ms": 145889,
+ "stop_reason": "tool_use",
+ "session_id": "d4dc0569-1e37-40a0-89b6-e8877a16f4ed",
+ "total_cost_usd": 0.6558718000000001,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 24637,
+  "cache_read_input_tokens": 122149,
+  "output_tokens": 6806,
+  "output_tokens_details": {
+   "thinking_tokens": 1765
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 24637,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3672,
+    "cache_read_input_tokens": 25638,
+    "cache_creation_input_tokens": 1499,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1499
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 16,
+   "outputTokens": 6806,
+   "cacheReadInputTokens": 122149,
+   "cacheCreationInputTokens": 24637,
+   "webSearchRequests": 0,
+   "costUSD": 0.35770979999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1765,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 141987,
+   "outputTokens": 5235,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 13,
+   "costUSD": 0.298162,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 22,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"About 4.5 hours ago, a token named \\\"City Protocol\\\" (ticker CT) was created through Meteora's bonding-curve launcher (Meteora DBC) and moved to PumpSwap in the same second. Since then it has traded about $23M in volume against only ~$265K of liquidity, and its price is up about 160% over 6 hours. The name and ticker match a real VC-backed project. City Protocol (formerly Cooking City, @cityprotocolHQ) is backed by Dragonfly, Jump and CMT Digital and raised $11M in seed and pre-A rounds. ICO Analytics lists its official token as CT with a launch date (TGE) of September 28, 2026, six days from now. I found no official announcement, contract address, website link or DexScreener profile tying this contract to the project. The token's metadata only points to the @cityprotocolHQ X handle, which anyone can enter. GMGN says 7 tokens have been launched citing that X account. Another \\\"City Protocol\\\" CT token launched about 45 minutes earlier (E84F\u2026) now has $0.02 of liquidity. A token called \\\"Concrete\\\" (CT), named after another real DeFi project, launched about 4 hours earlier and shows almost the same 1-hour volume (~$6.41M vs ~$6.42M). My best explanation is that traders and bots are front-running the expected City Protocol launch with a copycat, not responding to an official launch.\",\"narrative\":{\"description\":\"Pre-launch front-running of a real, VC-backed project's official token (City Protocol $CT, launch scheduled Sep 28, 2026). The story is 'buy the real City Protocol token early'.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The brand, backers and airdrop community are real (Base App 'Viral City' campaign, City ID sign-up with a Solana wallet), and the ticker matches the announced CT. That makes it easy to believe that a Solana CT token is the official one. I found no evidence of organic discussion about this specific contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the name/ticker plus the @cityprotocolHQ handle in the token's metadata. There is no website, DexScreener profile or official post with this address that I could find. The official launch is dated Sep 28, not today. A $1.6M market cap is implausibly low for a project that has raised ~$18M+ if this were an official launch. GMGN shows 7 tokens launched citing the project's X account, which points to repeated copycats.\",\"competing_tokens\":\"E84FVBhg\u2026 'City Protocol' CT, launched about 45 minutes earlier and now at $0.02 liquidity (dead). 5WtWLh\u2026 'Concrete' CT: $3.3M market cap, $6.41M 1-hour volume, a parallel copycat of another real project. Several dead ChatTag/Cult of Tilcayos/ct copies. The real official CT token does not exist yet (launch Sep 28).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The flow looks like a bot or coordinated operation rather than organic buying:\\n- Turnover is about 24x liquidity per hour ($6.4M 1-hour volume on $265K liquidity).\\n- Unique buyers far outnumber unique sellers in the last hour (2,174 vs 227), yet trades split roughly 2:1 buys to sells.\\n- A 66-wallet transfer-linked insider network was detected.\\n- GMGN flags 14 bundler wallets.\\n- The Concrete CT copycat launched shortly before and has an almost identical 1-hour volume, which suggests the same kind of operation.\\n- There are zero smart-money or KOL wallets and zero degen calls.\\n- No organic X, Reddit or Telegram discussion of this contract turned up in search.\\n- The earlier City Protocol copy was drained to near-zero liquidity.\",\"uncertainty\":\"X could not be read directly (HTTP 402/451), so an official @cityprotocolHQ post confirming an early Solana launch cannot be ruled out. The project does use Solana wallets. If this turns out to be official, the picture changes completely.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Holder concentration: GeckoTerminal puts the top 10 holders at ~89.9% of supply, while the pool holds only ~$265K of the $1.6M market cap, so a huge supply overhang likely sits outside the pool (GMGN's 1.88% top-10 figure contradicts this).\",\"RugCheck gives a 'Large Amount of LP Unlocked' danger flag and warns of few liquidity providers.\",\"A 66-wallet insider transfer network and 14 bundler wallets.\",\"Liquidity is thin next to volume; a single large holder exiting would crash the price.\",\"Once the official City Protocol CT launches on Sep 28, or the project publicly disowns this one, the copycat's reason to exist collapses.\",\"An earlier copy of the same name has already been drained to $0.02 liquidity.\"]},\"counterargument\":\"City Protocol is a real, well-funded project that uses Solana wallets. Its token is literally called CT and launches within days, and the Meteora bonding-curve launch plus a migrated PumpSwap pool could be an official or semi-official fair-launch format (the project describes itself as a bonding-curve fair-launch platform). If @cityprotocolHQ has posted or will post this contract address, a $1.6M market cap would be very cheap next to the project's funding, and attention could jump sharply before the Sep 28 launch date. The buying is also broad: nearly 5,000 holders and about 2,000 unique buyers in an hour.\",\"unknowns\":[\"Whether @cityprotocolHQ has posted this contract (X was not readable).\",\"The official chain and launch mechanism for City Protocol's CT.\",\"Who holds the ~80%+ of supply outside the pool (it could be project vesting if official, or insiders if not).\",\"Whether the Concrete CT and City Protocol CT tokens share an operator.\",\"Private Telegram/Discord activity.\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"x.com returned 402 and xcancel returned 451. Searching the contract address found nothing. The project site and gitbook confirm CT as the token name but give no contract. ICO Analytics gives the Sep 28, 2026 launch date. The DexScreener API shows no socials/website and three pairs, two of them dead. News coverage is about the project's funding only.\"},\"thesis\":\"The likely explanation is ticker front-running: an unverified Solana token copying City Protocol's name ahead of the real launch. It has no official link, heavy bot or insider structure, extreme turnover on thin liquidity, and an identically sized Concrete copycat running alongside it. The attention is manufactured and depends on a confirmation I could not find. Expect it to fade unless the project endorses this contract.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://icoanalytics.org/projects/city-protocol/\",\"what\":\"City Protocol token is CT; launch (TGE) Sep 28, 2026; funding rounds and backers\"},{\"url\":\"https://city-protocol.gitbook.io/docs/infrastructure/tokenomics.md\",\"what\":\"Docs call $CT City Neobank's native utility token; no contract address or chain given\"},{\"url\":\"https://www.cityprotocol.co/\",\"what\":\"Official site: no CT contract or launch details; roadmap mentions pre-TGE\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/3TrSG9UsVFB91kAZB1HWJx7TWxGTMW1Cq3jXYfUgcVtG\",\"what\":\"Pairs: PumpSwap $265K liquidity / $23M volume; Meteora pairs dead; no socials or website\"},{\"url\":\"https://beincrypto.com/city-protocol-raises-11m-onchain-structured-products/\",\"what\":\"City Protocol raised $11M, backed by Dragonfly, CMT Digital, Mirana\"},{\"url\":\"https://airdrops.io/city-protocol/\",\"what\":\"Airdrop campaign; City ID sign-up connects a Solana wallet\"},{\"url\":\"https://x.com/cityprotocolHQ\",\"what\":\"Official X account (inaccessible, 402)\"},{\"url\":\"https://cryptorank.io/ico/cooking-city\",\"what\":\"Project formerly Cooking City; earlier ticker referenced as CP\"}]}",
+ "structured_output": {
+  "what_is_happening": "About 4.5 hours ago, a token named \"City Protocol\" (ticker CT) was created through Meteora's bonding-curve launcher (Meteora DBC) and moved to PumpSwap in the same second. Since then it has traded about $23M in volume against only ~$265K of liquidity, and its price is up about 160% over 6 hours. The name and ticker match a real VC-backed project. City Protocol (formerly Cooking City, @cityprotocolHQ) is backed by Dragonfly, Jump and CMT Digital and raised $11M in seed and pre-A rounds. ICO Analytics lists its official token as CT with a launch date (TGE) of September 28, 2026, six days from now. I found no official announcement, contract address, website link or DexScreener profile tying this contract to the project. The token's metadata only points to the @cityprotocolHQ X handle, which anyone can enter. GMGN says 7 tokens have been launched citing that X account. Another \"City Protocol\" CT token launched about 45 minutes earlier (E84F\u2026) now has $0.02 of liquidity. A token called \"Concrete\" (CT), named after another real DeFi project, launched about 4 hours earlier and shows almost the same 1-hour volume (~$6.41M vs ~$6.42M). My best explanation is that traders and bots are front-running the expected City Protocol launch with a copycat, not responding to an official launch.",
+  "narrative": {
+   "description": "Pre-launch front-running of a real, VC-backed project's official token (City Protocol $CT, launch scheduled Sep 28, 2026). The story is 'buy the real City Protocol token early'.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The brand, backers and airdrop community are real (Base App 'Viral City' campaign, City ID sign-up with a Solana wallet), and the ticker matches the announced CT. That makes it easy to believe that a Solana CT token is the official one. I found no evidence of organic discussion about this specific contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the name/ticker plus the @cityprotocolHQ handle in the token's metadata. There is no website, DexScreener profile or official post with this address that I could find. The official launch is dated Sep 28, not today. A $1.6M market cap is implausibly low for a project that has raised ~$18M+ if this were an official launch. GMGN shows 7 tokens launched citing the project's X account, which points to repeated copycats.",
+   "competing_tokens": "E84FVBhg\u2026 'City Protocol' CT, launched about 45 minutes earlier and now at $0.02 liquidity (dead). 5WtWLh\u2026 'Concrete' CT: $3.3M market cap, $6.41M 1-hour volume, a parallel copycat of another real project. Several dead ChatTag/Cult of Tilcayos/ct copies. The real official CT token does not exist yet (launch Sep 28).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The flow looks like a bot or coordinated operation rather than organic buying:\n- Turnover is about 24x liquidity per hour ($6.4M 1-hour volume on $265K liquidity).\n- Unique buyers far outnumber unique sellers in the last hour (2,174 vs 227), yet trades split roughly 2:1 buys to sells.\n- A 66-wallet transfer-linked insider network was detected.\n- GMGN flags 14 bundler wallets.\n- The Concrete CT copycat launched shortly before and has an almost identical 1-hour volume, which suggests the same kind of operation.\n- There are zero smart-money or KOL wallets and zero degen calls.\n- No organic X, Reddit or Telegram discussion of this contract turned up in search.\n- The earlier City Protocol copy was drained to near-zero liquidity.",
+   "uncertainty": "X could not be read directly (HTTP 402/451), so an official @cityprotocolHQ post confirming an early Solana launch cannot be ruled out. The project does use Solana wallets. If this turns out to be official, the picture changes completely."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Holder concentration: GeckoTerminal puts the top 10 holders at ~89.9% of supply, while the pool holds only ~$265K of the $1.6M market cap, so a huge supply overhang likely sits outside the pool (GMGN's 1.88% top-10 figure contradicts this).",
+    "RugCheck gives a 'Large Amount of LP Unlocked' danger flag and warns of few liquidity providers.",
+    "A 66-wallet insider transfer network and 14 bundler wallets.",
+    "Liquidity is thin next to volume; a single large holder exiting would crash the price.",
+    "Once the official City Protocol CT launches on Sep 28, or the project publicly disowns this one, the copycat's reason to exist collapses.",
+    "An earlier copy of the same name has already been drained to $0.02 liquidity."
+   ]
+  },
+  "counterargument": "City Protocol is a real, well-funded project that uses Solana wallets. Its token is literally called CT and launches within days, and the Meteora bonding-curve launch plus a migrated PumpSwap pool could be an official or semi-official fair-launch format (the project describes itself as a bonding-curve fair-launch platform). If @cityprotocolHQ has posted or will post this contract address, a $1.6M market cap would be very cheap next to the project's funding, and attention could jump sharply before the Sep 28 launch date. The buying is also broad: nearly 5,000 holders and about 2,000 unique buyers in an hour.",
+  "unknowns": [
+   "Whether @cityprotocolHQ has posted this contract (X was not readable).",
+   "The official chain and launch mechanism for City Protocol's CT.",
+   "Who holds the ~80%+ of supply outside the pool (it could be project vesting if official, or insiders if not).",
+   "Whether the Concrete CT and City Protocol CT tokens share an operator.",
+   "Private Telegram/Discord activity."
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "x.com returned 402 and xcancel returned 451. Searching the contract address found nothing. The project site and gitbook confirm CT as the token name but give no contract. ICO Analytics gives the Sep 28, 2026 launch date. The DexScreener API shows no socials/website and three pairs, two of them dead. News coverage is about the project's funding only."
+  },
+  "thesis": "The likely explanation is ticker front-running: an unverified Solana token copying City Protocol's name ahead of the real launch. It has no official link, heavy bot or insider structure, extreme turnover on thin liquidity, and an identically sized Concrete copycat running alongside it. The attention is manufactured and depends on a confirmation I could not find. Expect it to fade unless the project endorses this contract.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://icoanalytics.org/projects/city-protocol/",
+    "what": "City Protocol token is CT; launch (TGE) Sep 28, 2026; funding rounds and backers"
+   },
+   {
+    "url": "https://city-protocol.gitbook.io/docs/infrastructure/tokenomics.md",
+    "what": "Docs call $CT City Neobank's native utility token; no contract address or chain given"
+   },
+   {
+    "url": "https://www.cityprotocol.co/",
+    "what": "Official site: no CT contract or launch details; roadmap mentions pre-TGE"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/3TrSG9UsVFB91kAZB1HWJx7TWxGTMW1Cq3jXYfUgcVtG",
+    "what": "Pairs: PumpSwap $265K liquidity / $23M volume; Meteora pairs dead; no socials or website"
+   },
+   {
+    "url": "https://beincrypto.com/city-protocol-raises-11m-onchain-structured-products/",
+    "what": "City Protocol raised $11M, backed by Dragonfly, CMT Digital, Mirana"
+   },
+   {
+    "url": "https://airdrops.io/city-protocol/",
+    "what": "Airdrop campaign; City ID sign-up connects a Solana wallet"
+   },
+   {
+    "url": "https://x.com/cityprotocolHQ",
+    "what": "Official X account (inaccessible, 402)"
+   },
+   {
+    "url": "https://cryptorank.io/ico/cooking-city",
+    "what": "Project formerly Cooking City; earlier ticker referenced as CP"
+   }
+  ]
+ },
+ "ttft_ms": 1374,
+ "type": "result",
+ "duration_ms": 100378,
+ "uuid": "02392e24-ca31-4637-9ccc-e889e488f0bc",
+ "ttft_stream_ms": 630,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 630,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

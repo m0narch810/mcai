@@ -1,0 +1,202 @@
+{
+ "duration_api_ms": 142137,
+ "stop_reason": "tool_use",
+ "session_id": "83873bee-b22d-4346-a48c-04eb8826af26",
+ "total_cost_usd": 0.5776881999999999,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 20954,
+  "cache_read_input_tokens": 89631,
+  "output_tokens": 6405,
+  "output_tokens_details": {
+   "thinking_tokens": 1046
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 20954,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4475,
+    "cache_read_input_tokens": 20773,
+    "cache_creation_input_tokens": 2681,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2681
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 6405,
+   "cacheReadInputTokens": 89631,
+   "cacheCreationInputTokens": 20954,
+   "webSearchRequests": 0,
+   "costUSD": 0.3137142,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1046,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 148549,
+   "outputTokens": 5085,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 9,
+   "costUSD": 0.263974,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 15,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"The token is the legitimate Wormhole-wrapped FTX Token (FTT) on Solana, created in Sept 2021 (created_unix 1631699792). It is listed in Wormhole's official Solana token list and GeckoTerminal links it to the @wormholecrypto X handle. A Raydium pool created 2026-09-20 had a burst of about $57.8k volume in a roughly 15-minute window, when m15 volume was nearly all of the h1 volume. Buys and sells were near parity: 413 buys vs 428 sells in m15, from 197 unique buyers and 147 unique sellers. Price rose about 28-30% in the hour. At the same time the wrapped token trades at about $0.32, a roughly 22-25% premium to native FTT at about $0.255-0.263 (CMC/CoinGecko, down 3-6% over 24h). Native FTT had its own 33% rally on Sept 20-21, which press attributed to altcoin rotation with no fundamental catalyst. So this looks like a localized burst in a thin, low-liquidity Solana wrapper pool that has disconnected from, and sits above, the underlying asset. It does not look like new attention to FTT itself. No token-specific social chatter was found.\",\"narrative\":{\"description\":\"The FTX/FTT legacy token trades as a speculative proxy for FTX bankruptcy news and SBF headlines. Native FTT rallied about 33% on Sept 20-21 2026 on altcoin rotation with no fundamental catalyst, and is now cooling (-3% to -6% over 24h). SBF filed a Supreme Court petition on Sept 10-11. No fresh catalyst was found for Sept 22.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Spillover from native FTT's Sept 20-21 speculative rally, possibly with Solana traders or bots finding the wrapped pool, which was created Sept 20. No social or news driver specific to the Solana wrapper was found. The m15 burst with buy/sell parity suggests bot or arbitrage churn more than a retail crowd.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the canonical Wormhole-bridged FTT on Solana, a real wrapped asset rather than a meme copycat. It is only a secondary venue, though. Real FTT attention and liquidity sit on CEXs such as Binance, with about $4-17M daily volume, versus about $160k here.\",\"competing_tokens\":\"No same-name tokens are listed in the packet. The competing venue is native FTT on Ethereum and CEXs, which is priced about 20-25% lower. There are several other thin wrapper pools on Raydium and Meteora priced $0.27-0.33.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"There are no DexScreener boosts, profile, paid ads, degen calls or smart-money signals (GMGN). No X, Reddit or Telegram posts about the Solana wrapper were found. Volume came in a single roughly 15-minute burst with near-equal buys and sells (413/428), which fits bot churn or arbitrage. GMGN's wallet tags (1000 bundler, 1000 fresh) look unreliable for a 2021 wrapped token and conflict with a bundler share of only 6.5%.\",\"uncertainty\":\"X and Telegram are poorly indexed, so a private call group or an X post could have triggered the burst. Holder counts are inconsistent across sources (1,136 / 2,571 / 6,463).\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Wrapped price (~$0.32) sits at a ~22-25% premium to native FTT (~$0.255-0.263). Holders can bridge native FTT in via Wormhole and sell into the premium, which caps upside and pushes toward mean reversion\",\"Thin liquidity (~$27k in the main pool), fragmented across several Raydium/Meteora pools\",\"The top holder has 22% (likely a bridge-related or large legacy holder); GeckoTerminal top-10 share is ~66%\",\"Native FTT is overbought after its Sept 20-21 rally (RSI ~80 reported) and is now declining\",\"Mint authority is not renounced (expected for a Wormhole wrapper: the bridge mints as tokens come in, which adds supply)\",\"The FTX estate may liquidate FTT; the token has no utility\"]},\"counterargument\":\"Native FTT is highly news-sensitive and prone to sharp pumps: a 60% spike on an SBF-account tweet in 2025, and a 33% rally two days ago. If native FTT restarts its rally, or SBF or FTX estate headlines land (for example on the Supreme Court petition), the Solana wrapper could lead or amplify the move. Solana degens could also keep treating it as a nostalgic 'FTX' meme in its own right. A premium that persists would suggest bridge arbitrage is practically slow, which would let a price gap sustain.\",\"unknowns\":[\"Whether native FTT moved in the last hour (the price pages may be cached or lagging)\",\"Who drove the m15 burst: arbitrage bots, a call group, or one whale\",\"The identity of the 22.33% top holder\",\"Whether any X post or Telegram call referenced the Solana FTT pool\",\"Why the Solana wrapper sustains a ~25% premium over native\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"News covers only native FTT (the Sept 20-21 rally) and SBF's Supreme Court petition. For the project, Wormhole's GitHub token list confirms the contract is canonical. The DexScreener API showed multiple wrapper pools. No social discussion specific to the Solana wrapper was found.\"},\"thesis\":\"This is noise, or a spillover and arbitrage burst in a thin Solana wrapper pool of legitimate FTT. It is not a new narrative. The wrapper trades at a ~25% premium to a native asset that is itself cooling after a catalyst-free rally, so the move is structurally prone to mean reversion.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://github.com/certusone/wormhole-token-list/blob/main/content/dest_solana.md\",\"what\":\"Wormhole token list including FTT on Solana (canonical wrapper)\"},{\"url\":\"https://solscan.io/token/EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv\",\"what\":\"Token explorer page\"},{\"url\":\"https://ambcrypto.com/ftx-tokens-volume-explodes-2187-as-price-rallies-33-can-ftts-breakout-last/\",\"what\":\"Native FTT 33% rally Sept 20-21 2026, no fundamental catalyst, RSI 80\"},{\"url\":\"https://www.kucoin.com/news/flash/ftx-token-surges-33-amid-2-187-volume-spike\",\"what\":\"FTT surge report\"},{\"url\":\"https://coinmarketcap.com/currencies/ftx-token/\",\"what\":\"Native FTT ~$0.2553, -5.94% 24h\"},{\"url\":\"https://www.coingecko.com/en/coins/ftx-token\",\"what\":\"Native FTT ~$0.2634, -3.3% 24h, +25.7% 7d\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv\",\"what\":\"Multiple Solana wrapper pools priced $0.27-0.33\"},{\"url\":\"https://www.theblock.co/news/regulation/2026-09-11-sam-bankman-fried-supreme-court-petition-414226\",\"what\":\"SBF Supreme Court petition Sept 2026\"},{\"url\":\"https://finance.yahoo.com/news/ftx-token-ftt-faces-pump-090847725.html\",\"what\":\"Historical precedent: FTT pump and dump on an SBF-account tweet\"}]}",
+ "structured_output": {
+  "what_is_happening": "The token is the legitimate Wormhole-wrapped FTX Token (FTT) on Solana, created in Sept 2021 (created_unix 1631699792). It is listed in Wormhole's official Solana token list and GeckoTerminal links it to the @wormholecrypto X handle. A Raydium pool created 2026-09-20 had a burst of about $57.8k volume in a roughly 15-minute window, when m15 volume was nearly all of the h1 volume. Buys and sells were near parity: 413 buys vs 428 sells in m15, from 197 unique buyers and 147 unique sellers. Price rose about 28-30% in the hour. At the same time the wrapped token trades at about $0.32, a roughly 22-25% premium to native FTT at about $0.255-0.263 (CMC/CoinGecko, down 3-6% over 24h). Native FTT had its own 33% rally on Sept 20-21, which press attributed to altcoin rotation with no fundamental catalyst. So this looks like a localized burst in a thin, low-liquidity Solana wrapper pool that has disconnected from, and sits above, the underlying asset. It does not look like new attention to FTT itself. No token-specific social chatter was found.",
+  "narrative": {
+   "description": "The FTX/FTT legacy token trades as a speculative proxy for FTX bankruptcy news and SBF headlines. Native FTT rallied about 33% on Sept 20-21 2026 on altcoin rotation with no fundamental catalyst, and is now cooling (-3% to -6% over 24h). SBF filed a Supreme Court petition on Sept 10-11. No fresh catalyst was found for Sept 22.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Spillover from native FTT's Sept 20-21 speculative rally, possibly with Solana traders or bots finding the wrapped pool, which was created Sept 20. No social or news driver specific to the Solana wrapper was found. The m15 burst with buy/sell parity suggests bot or arbitrage churn more than a retail crowd."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the canonical Wormhole-bridged FTT on Solana, a real wrapped asset rather than a meme copycat. It is only a secondary venue, though. Real FTT attention and liquidity sit on CEXs such as Binance, with about $4-17M daily volume, versus about $160k here.",
+   "competing_tokens": "No same-name tokens are listed in the packet. The competing venue is native FTT on Ethereum and CEXs, which is priced about 20-25% lower. There are several other thin wrapper pools on Raydium and Meteora priced $0.27-0.33.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "There are no DexScreener boosts, profile, paid ads, degen calls or smart-money signals (GMGN). No X, Reddit or Telegram posts about the Solana wrapper were found. Volume came in a single roughly 15-minute burst with near-equal buys and sells (413/428), which fits bot churn or arbitrage. GMGN's wallet tags (1000 bundler, 1000 fresh) look unreliable for a 2021 wrapped token and conflict with a bundler share of only 6.5%.",
+   "uncertainty": "X and Telegram are poorly indexed, so a private call group or an X post could have triggered the burst. Holder counts are inconsistent across sources (1,136 / 2,571 / 6,463)."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Wrapped price (~$0.32) sits at a ~22-25% premium to native FTT (~$0.255-0.263). Holders can bridge native FTT in via Wormhole and sell into the premium, which caps upside and pushes toward mean reversion",
+    "Thin liquidity (~$27k in the main pool), fragmented across several Raydium/Meteora pools",
+    "The top holder has 22% (likely a bridge-related or large legacy holder); GeckoTerminal top-10 share is ~66%",
+    "Native FTT is overbought after its Sept 20-21 rally (RSI ~80 reported) and is now declining",
+    "Mint authority is not renounced (expected for a Wormhole wrapper: the bridge mints as tokens come in, which adds supply)",
+    "The FTX estate may liquidate FTT; the token has no utility"
+   ]
+  },
+  "counterargument": "Native FTT is highly news-sensitive and prone to sharp pumps: a 60% spike on an SBF-account tweet in 2025, and a 33% rally two days ago. If native FTT restarts its rally, or SBF or FTX estate headlines land (for example on the Supreme Court petition), the Solana wrapper could lead or amplify the move. Solana degens could also keep treating it as a nostalgic 'FTX' meme in its own right. A premium that persists would suggest bridge arbitrage is practically slow, which would let a price gap sustain.",
+  "unknowns": [
+   "Whether native FTT moved in the last hour (the price pages may be cached or lagging)",
+   "Who drove the m15 burst: arbitrage bots, a call group, or one whale",
+   "The identity of the 22.33% top holder",
+   "Whether any X post or Telegram call referenced the Solana FTT pool",
+   "Why the Solana wrapper sustains a ~25% premium over native"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "News covers only native FTT (the Sept 20-21 rally) and SBF's Supreme Court petition. For the project, Wormhole's GitHub token list confirms the contract is canonical. The DexScreener API showed multiple wrapper pools. No social discussion specific to the Solana wrapper was found."
+  },
+  "thesis": "This is noise, or a spillover and arbitrage burst in a thin Solana wrapper pool of legitimate FTT. It is not a new narrative. The wrapper trades at a ~25% premium to a native asset that is itself cooling after a catalyst-free rally, so the move is structurally prone to mean reversion.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://github.com/certusone/wormhole-token-list/blob/main/content/dest_solana.md",
+    "what": "Wormhole token list including FTT on Solana (canonical wrapper)"
+   },
+   {
+    "url": "https://solscan.io/token/EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv",
+    "what": "Token explorer page"
+   },
+   {
+    "url": "https://ambcrypto.com/ftx-tokens-volume-explodes-2187-as-price-rallies-33-can-ftts-breakout-last/",
+    "what": "Native FTT 33% rally Sept 20-21 2026, no fundamental catalyst, RSI 80"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/ftx-token-surges-33-amid-2-187-volume-spike",
+    "what": "FTT surge report"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/ftx-token/",
+    "what": "Native FTT ~$0.2553, -5.94% 24h"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/ftx-token",
+    "what": "Native FTT ~$0.2634, -3.3% 24h, +25.7% 7d"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv",
+    "what": "Multiple Solana wrapper pools priced $0.27-0.33"
+   },
+   {
+    "url": "https://www.theblock.co/news/regulation/2026-09-11-sam-bankman-fried-supreme-court-petition-414226",
+    "what": "SBF Supreme Court petition Sept 2026"
+   },
+   {
+    "url": "https://finance.yahoo.com/news/ftx-token-ftt-faces-pump-090847725.html",
+    "what": "Historical precedent: FTT pump and dump on an SBF-account tweet"
+   }
+  ]
+ },
+ "ttft_ms": 2336,
+ "type": "result",
+ "duration_ms": 109466,
+ "uuid": "e09be712-e6bc-48a1-b48c-2ace464810c9",
+ "ttft_stream_ms": 846,
+ "time_to_request_ms": 54,
+ "first_content_frame_ms": 846,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

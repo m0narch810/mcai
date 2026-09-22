@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 66347,
+ "stop_reason": "tool_use",
+ "session_id": "4caf79da-b0ba-4bc4-a0ff-00082f225925",
+ "total_cost_usd": 0.361692,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13335,
+  "cache_read_input_tokens": 35440,
+  "output_tokens": 4802,
+  "output_tokens_details": {
+   "thinking_tokens": 105
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13335,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2212,
+    "cache_read_input_tokens": 13547,
+    "cache_creation_input_tokens": 2288,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2288
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 8,
+   "outputTokens": 4802,
+   "cacheReadInputTokens": 35440,
+   "cacheCreationInputTokens": 13335,
+   "webSearchRequests": 0,
+   "costUSD": 0.27116,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 105,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 41932,
+   "outputTokens": 1720,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.090532,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This token isn't a memecoin or a narrative token. It is Wormhole/Portal-bridged BNB on Solana, a wrapped asset meant to track BNB 1:1. The mint authority is still enabled, which is normal for a bridge-controlled token: the bridge mints and burns supply as people move BNB in and out. The pool is 2+ years old. The trigger was one 5-minute burst of about $26.7k volume (roughly 280 transactions, about 114 unique buyers and 90 sellers) that barely moved the price (+0.46%). The price follows BNB, which is trading around $790\u2013805 after a weekly rally of about 5%. The most likely cause is routing and arbitrage flow through Solana DEX aggregators (and/or rebalancing between the Orca and Meteora pools) while BNB moves. I found no speculative story attracting attention to this specific token.\",\"narrative\":{\"description\":\"There is no token-specific story. The only related context is BNB's own price move: up about 5% this week, near $800, with traders watching a weekly close above $823. That is a large-cap asset story, and the wrapped token can only follow it.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"Nothing is spreading. The volume looks like mechanical aggregator or arbitrage flow tied to BNB price changes, not social attention.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"It is the canonical Wormhole Portal BNB mint on Solana (Solscan and Solflare show 'Binance Coin (Portal)'). Its price is pegged to BNB, so attention cannot build up here the way it does on a speculative token.\",\"competing_tokens\":\"None in the packet. Native BNB on BNB Chain and CEX markets set the price; this is only a bridged copy.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"There was no social discussion of this mint and no DexScreener profile or boosts. A burst of about 280 transactions from about 200 unique wallets in 5 minutes, with the price basically flat, looks like aggregator routing or arbitrage bots rather than people chasing a story.\",\"uncertainty\":\"I can't see wallets, so I can't tell whether this was one arbitrage or rebalancing actor, a single large routed swap split into many transactions, or wash activity.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The mint authority is enabled. This is expected for a Wormhole-controlled wrapped asset, but it means the token depends on the bridge staying secure.\",\"The price is pegged to BNB, so there is no independent upside. Any gap from the peg gets arbitraged away.\",\"Liquidity is $145k in this pool and about $383k across markets, which is thin for a $790 asset but fine for the volume it sees.\",\"Risk of the peg breaking if the bridge or its guardians fail.\"]},\"counterargument\":\"If BNB keeps breaking out (for example a weekly close above $823), Solana users may bridge in and trade more wrapped BNB, so volume could stay high over the window. Even so, that would be BNB's own momentum, not attention specific to this token, and the price would only follow BNB.\",\"unknowns\":[\"Wallet-level makeup of the 5-minute burst\",\"Whether a big bridge inflow or outflow happened at the same time\",\"What BNB's price does next over the window\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address only returned explorers (Solscan, Solflare, Solana Explorer, Phemex). X results were generic Wormhole posts, with nothing about this token now. News covered BNB's price. There is no project site beyond Wormhole/Portal itself. I didn't search Discord because the token is bridge infrastructure, not a community project.\"},\"thesis\":\"This is a false positive. The trigger fired on a bridged BNB token with a pegged price, where a short burst of routing or arbitrage flow happened as BNB moved up. There is no narrative and no token-specific attention, and the price can only follow BNB. The volume spike should fade back to its usual level.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://solscan.io/token/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa\",\"what\":\"Confirms the mint is Wrapped BNB (Wormhole)\"},{\"url\":\"https://www.solflare.com/prices/binance-coin-portal/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa/\",\"what\":\"Lists the mint as Binance Coin (Portal)\"},{\"url\":\"https://explorer.solana.com/address/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa\",\"what\":\"Solana Explorer page naming the token Binance Coin (Portal)\"},{\"url\":\"https://www.coingecko.com/en/coins/bnb\",\"what\":\"BNB price context (about $805, +~5% in 24h)\"},{\"url\":\"https://www.coingabbar.com/en/price-prediction/bnb-price-prediction-september-2026-pasteur-hardfork\",\"what\":\"BNB September 2026 price context, including the $823 level traders are watching\"},{\"url\":\"https://x.com/wormhole/status/1805277312533012666\",\"what\":\"Generic Wormhole wrapped-asset post; no current discussion of WBNB\"}]}",
+ "structured_output": {
+  "what_is_happening": "This token isn't a memecoin or a narrative token. It is Wormhole/Portal-bridged BNB on Solana, a wrapped asset meant to track BNB 1:1. The mint authority is still enabled, which is normal for a bridge-controlled token: the bridge mints and burns supply as people move BNB in and out. The pool is 2+ years old. The trigger was one 5-minute burst of about $26.7k volume (roughly 280 transactions, about 114 unique buyers and 90 sellers) that barely moved the price (+0.46%). The price follows BNB, which is trading around $790\u2013805 after a weekly rally of about 5%. The most likely cause is routing and arbitrage flow through Solana DEX aggregators (and/or rebalancing between the Orca and Meteora pools) while BNB moves. I found no speculative story attracting attention to this specific token.",
+  "narrative": {
+   "description": "There is no token-specific story. The only related context is BNB's own price move: up about 5% this week, near $800, with traders watching a weekly close above $823. That is a large-cap asset story, and the wrapped token can only follow it.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "Nothing is spreading. The volume looks like mechanical aggregator or arbitrage flow tied to BNB price changes, not social attention."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "It is the canonical Wormhole Portal BNB mint on Solana (Solscan and Solflare show 'Binance Coin (Portal)'). Its price is pegged to BNB, so attention cannot build up here the way it does on a speculative token.",
+   "competing_tokens": "None in the packet. Native BNB on BNB Chain and CEX markets set the price; this is only a bridged copy.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "There was no social discussion of this mint and no DexScreener profile or boosts. A burst of about 280 transactions from about 200 unique wallets in 5 minutes, with the price basically flat, looks like aggregator routing or arbitrage bots rather than people chasing a story.",
+   "uncertainty": "I can't see wallets, so I can't tell whether this was one arbitrage or rebalancing actor, a single large routed swap split into many transactions, or wash activity."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The mint authority is enabled. This is expected for a Wormhole-controlled wrapped asset, but it means the token depends on the bridge staying secure.",
+    "The price is pegged to BNB, so there is no independent upside. Any gap from the peg gets arbitraged away.",
+    "Liquidity is $145k in this pool and about $383k across markets, which is thin for a $790 asset but fine for the volume it sees.",
+    "Risk of the peg breaking if the bridge or its guardians fail."
+   ]
+  },
+  "counterargument": "If BNB keeps breaking out (for example a weekly close above $823), Solana users may bridge in and trade more wrapped BNB, so volume could stay high over the window. Even so, that would be BNB's own momentum, not attention specific to this token, and the price would only follow BNB.",
+  "unknowns": [
+   "Wallet-level makeup of the 5-minute burst",
+   "Whether a big bridge inflow or outflow happened at the same time",
+   "What BNB's price does next over the window"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address only returned explorers (Solscan, Solflare, Solana Explorer, Phemex). X results were generic Wormhole posts, with nothing about this token now. News covered BNB's price. There is no project site beyond Wormhole/Portal itself. I didn't search Discord because the token is bridge infrastructure, not a community project."
+  },
+  "thesis": "This is a false positive. The trigger fired on a bridged BNB token with a pegged price, where a short burst of routing or arbitrage flow happened as BNB moved up. There is no narrative and no token-specific attention, and the price can only follow BNB. The volume spike should fade back to its usual level.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://solscan.io/token/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+    "what": "Confirms the mint is Wrapped BNB (Wormhole)"
+   },
+   {
+    "url": "https://www.solflare.com/prices/binance-coin-portal/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa/",
+    "what": "Lists the mint as Binance Coin (Portal)"
+   },
+   {
+    "url": "https://explorer.solana.com/address/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+    "what": "Solana Explorer page naming the token Binance Coin (Portal)"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/bnb",
+    "what": "BNB price context (about $805, +~5% in 24h)"
+   },
+   {
+    "url": "https://www.coingabbar.com/en/price-prediction/bnb-price-prediction-september-2026-pasteur-hardfork",
+    "what": "BNB September 2026 price context, including the $823 level traders are watching"
+   },
+   {
+    "url": "https://x.com/wormhole/status/1805277312533012666",
+    "what": "Generic Wormhole wrapped-asset post; no current discussion of WBNB"
+   }
+  ]
+ },
+ "ttft_ms": 2918,
+ "type": "result",
+ "duration_ms": 58281,
+ "uuid": "1d42d8a3-c4ed-4cdc-ad25-d762b5d1bb7a",
+ "ttft_stream_ms": 1445,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 1445,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

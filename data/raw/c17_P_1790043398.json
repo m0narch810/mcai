@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 26891,
+ "stop_reason": "tool_use",
+ "session_id": "ed7f7f50-29d8-4a35-be73-2314f3cfa09d",
+ "total_cost_usd": 0.105429,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4709,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2296,
+  "output_tokens_details": {
+   "thinking_tokens": 181
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4709,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2296,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4709,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4709
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 2296,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4709,
+   "webSearchRequests": 0,
+   "costUSD": 0.105429,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 181,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 55-minute-old PumpSwap pair for \\\"Trump TV\\\" (TRUMPTV) shows extreme turnover: about $8.6M volume in its first hour against a ~$105k market cap, which is roughly 82x the market cap. The pool reports ~$186k liquidity, more than the market cap itself, while RugCheck reports total market liquidity of about $0. GeckoTerminal counts 1,228 unique buyers but only 37 unique sellers, and those 37 wallets made about 4,218 sell transactions (~114 sells per wallet). The top 10 holders own 97.3% of supply. At least 10 other \\\"Trump TV\\\"/TRUMPTV tokens were launched in the preceding ~4 hours, which suggests a real-world \\\"Trump TV\\\" headline or rumor that deployers are rushing to capture. This pair's activity pattern looks mostly bot-driven: a small group of wallets cycling volume, possibly alongside real retail buyers who can see the trending volume.\",\"narrative\":{\"description\":\"Trump-branded media meme ('Trump TV'). The packet cannot show whether a real announcement exists. The cluster of same-name launches over the prior ~4 hours suggests an external news trigger or rumor about a Trump TV network or streaming product.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Trump-related headlines reliably set off waves of copycat tokens on Solana. A dozen same-name deploys within hours points to a live topic, but Trump-themed memes are saturated, and attention splits across many clones instead of building up behind one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the highest h1 volume and the deepest active pool among the same-name tokens. The only official-looking link is an X community (not an official account) plus a Telegram handle 'thetrumptv'. There is no website, no DexScreener profile, and nothing ties it to any real Trump TV entity.\",\"competing_tokens\":\"At least 10 same-name tokens. D4sB... launched earlier (~4h ago) with $29k liquidity and $31k h1 volume. BKYD... shows $1.48M liquidity but zero volume, which is suspicious. Several ~$1.5M-mcap clones have negligible liquidity. 4Ahf... was launched about 1 minute before this pair. This token is not the first.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1) 37 unique sellers generating ~4,218 sells, far more than the ~1,228 unique buyers would imply for organic trading. This is a classic sign of a few bot wallets recycling volume or dumping into buyers. 2) Hourly volume at ~82x market cap is typical of wash or volume-bot activity. 3) Top 10 hold 97.3% of supply, and the creator still holds a large balance. 4) Reported pool liquidity is larger than the market cap, and RugCheck shows about $0 total market liquidity: inconsistent and suspicious. 5) The contract address is not a pump.fun vanity address and the deploy platform is unknown, which suggests a custom deploy aimed at a trending name.\",\"uncertainty\":\"Unique-buyer counts may include real retail pulled in by the trending volume. Holder concentration may include the pool account. No social data is available to check for organic discussion.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"97% of supply sits in the top 10 wallets, and the creator holds a large balance\",\"A small group of sell wallets (37) accounts for all selling, a likely extraction pattern\",\"Pool liquidity and market cap figures contradict each other; RugCheck flags Low Liquidity as danger\",\"Many clones split attention and liquidity\",\"Volume appears bot-inflated, so real demand is likely much lower\"]},\"counterargument\":\"If \\\"Trump TV\\\" is a genuine major headline (for example an official network or streaming launch), the Trump meme sector can produce a runner, and traders tend to pile into whichever clone has the most volume and liquidity. That is currently this one. Over 1,200 unique buyers in the first hour and a 58-63% gain with a still-positive 5-minute trend show real inflows. The 37-seller figure could partly reflect market-maker or arbitrage bots rather than insiders dumping, and a ~$105k market cap leaves plenty of room if the story goes viral.\",\"unknowns\":[\"Whether a real 'Trump TV' announcement exists, and how big it is\",\"Who controls the top-10 wallets, and whether the pool is counted among them\",\"Why pool liquidity exceeds market cap, and why RugCheck shows near-zero liquidity\",\"Actual activity in the X community and Telegram\",\"Whether any clone gets endorsed by an official or influencer account\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment rests only on the evidence packet.\"},\"thesis\":\"This looks like a bot-inflated clone riding a crowded Trump TV name wave. About 37 sellers doing thousands of sells, 97% concentration in the top 10, contradictory liquidity data, and no canonical claim to the name all point to the attention fading or the token being extracted within hours, even if the underlying headline is real.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 55-minute-old PumpSwap pair for \"Trump TV\" (TRUMPTV) shows extreme turnover: about $8.6M volume in its first hour against a ~$105k market cap, which is roughly 82x the market cap. The pool reports ~$186k liquidity, more than the market cap itself, while RugCheck reports total market liquidity of about $0. GeckoTerminal counts 1,228 unique buyers but only 37 unique sellers, and those 37 wallets made about 4,218 sell transactions (~114 sells per wallet). The top 10 holders own 97.3% of supply. At least 10 other \"Trump TV\"/TRUMPTV tokens were launched in the preceding ~4 hours, which suggests a real-world \"Trump TV\" headline or rumor that deployers are rushing to capture. This pair's activity pattern looks mostly bot-driven: a small group of wallets cycling volume, possibly alongside real retail buyers who can see the trending volume.",
+  "narrative": {
+   "description": "Trump-branded media meme ('Trump TV'). The packet cannot show whether a real announcement exists. The cluster of same-name launches over the prior ~4 hours suggests an external news trigger or rumor about a Trump TV network or streaming product.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Trump-related headlines reliably set off waves of copycat tokens on Solana. A dozen same-name deploys within hours points to a live topic, but Trump-themed memes are saturated, and attention splits across many clones instead of building up behind one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the highest h1 volume and the deepest active pool among the same-name tokens. The only official-looking link is an X community (not an official account) plus a Telegram handle 'thetrumptv'. There is no website, no DexScreener profile, and nothing ties it to any real Trump TV entity.",
+   "competing_tokens": "At least 10 same-name tokens. D4sB... launched earlier (~4h ago) with $29k liquidity and $31k h1 volume. BKYD... shows $1.48M liquidity but zero volume, which is suspicious. Several ~$1.5M-mcap clones have negligible liquidity. 4Ahf... was launched about 1 minute before this pair. This token is not the first.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1) 37 unique sellers generating ~4,218 sells, far more than the ~1,228 unique buyers would imply for organic trading. This is a classic sign of a few bot wallets recycling volume or dumping into buyers. 2) Hourly volume at ~82x market cap is typical of wash or volume-bot activity. 3) Top 10 hold 97.3% of supply, and the creator still holds a large balance. 4) Reported pool liquidity is larger than the market cap, and RugCheck shows about $0 total market liquidity: inconsistent and suspicious. 5) The contract address is not a pump.fun vanity address and the deploy platform is unknown, which suggests a custom deploy aimed at a trending name.",
+   "uncertainty": "Unique-buyer counts may include real retail pulled in by the trending volume. Holder concentration may include the pool account. No social data is available to check for organic discussion."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "97% of supply sits in the top 10 wallets, and the creator holds a large balance",
+    "A small group of sell wallets (37) accounts for all selling, a likely extraction pattern",
+    "Pool liquidity and market cap figures contradict each other; RugCheck flags Low Liquidity as danger",
+    "Many clones split attention and liquidity",
+    "Volume appears bot-inflated, so real demand is likely much lower"
+   ]
+  },
+  "counterargument": "If \"Trump TV\" is a genuine major headline (for example an official network or streaming launch), the Trump meme sector can produce a runner, and traders tend to pile into whichever clone has the most volume and liquidity. That is currently this one. Over 1,200 unique buyers in the first hour and a 58-63% gain with a still-positive 5-minute trend show real inflows. The 37-seller figure could partly reflect market-maker or arbitrage bots rather than insiders dumping, and a ~$105k market cap leaves plenty of room if the story goes viral.",
+  "unknowns": [
+   "Whether a real 'Trump TV' announcement exists, and how big it is",
+   "Who controls the top-10 wallets, and whether the pool is counted among them",
+   "Why pool liquidity exceeds market cap, and why RugCheck shows near-zero liquidity",
+   "Actual activity in the X community and Telegram",
+   "Whether any clone gets endorsed by an official or influencer account"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment rests only on the evidence packet."
+  },
+  "thesis": "This looks like a bot-inflated clone riding a crowded Trump TV name wave. About 37 sellers doing thousands of sells, 97% concentration in the top 10, contradictory liquidity data, and no canonical claim to the name all point to the attention fading or the token being extracted within hours, even if the underlying headline is real.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3966,
+ "type": "result",
+ "duration_ms": 26937,
+ "uuid": "93d3e8a3-2156-48bf-ab8d-d2757f029bf3",
+ "ttft_stream_ms": 1368,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1369,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

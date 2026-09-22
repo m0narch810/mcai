@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 81342,
+ "stop_reason": "tool_use",
+ "session_id": "10a0b43d-9358-40a8-9e9d-cbdaf50c9a12",
+ "total_cost_usd": 0.3595304,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16138,
+  "cache_read_input_tokens": 58002,
+  "output_tokens": 3879,
+  "output_tokens_details": {
+   "thinking_tokens": 324
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16138,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2321,
+    "cache_read_input_tokens": 17844,
+    "cache_creation_input_tokens": 794,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 794
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3879,
+   "cacheReadInputTokens": 58002,
+   "cacheCreationInputTokens": 16138,
+   "webSearchRequests": 0,
+   "costUSD": 0.21832440000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 324,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 66621,
+   "outputTokens": 2917,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.141206,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named 'Nike / Just Do It.' was launched about 40 minutes before detection on a Meteora virtual curve, which created and migrated it in the same second. It has a PumpSwap pool with $315k of liquidity and has traded $3.5\u20133.7M in its first 40 minutes, at a $1.29M market cap. Today at least 4 other tokens with the exact same name and image were launched. Each reached about $1.1\u20131.5M market cap and each now has about $0 liquidity. One of them (DHqf...) traded $8.59M before its liquidity went to zero. This token looks like the latest run of the same pump-and-pull template. I found no organic social discussion.\",\"narrative\":{\"description\":\"The theme is the Nike brand ('Just Do It'). The only real Nike-crypto news nearby is the tokenized NKE stock launched on Solana via Sunrise/Backpack on Sept 8, 2026. That news is two weeks old and has nothing to do with this memecoin. The only Nike news today is a routine sneaker drop.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no evidence of organic spread. The activity looks like bots and bundled wallets (136 bundlers, 245 unique buyers against about 4,100 transactions), and the same template has been relaunched repeatedly today.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing ties this token to Nike. The X handle 'Nike' is simply the real brand's account and not a project account. This is the fifth or later identical 'Just Do It.' launch today, and it happens to be the only copy that still has liquidity.\",\"competing_tokens\":\"Identical copies with ~$0 liquidity: DHqf... ($8.59M volume, rugged), DryN..., Af4h..., 638m.... Other copies: AH3J... NIKE, mZdW... Nike. The legitimate NKE tokenized stock (Sunrise/Backpack) is the actual Nike asset on Solana.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN tags 136 bundler wallets and 29 snipers among about 243 holders. Top-10 holders own 97.13%, and 30 insiders were detected in a trade network. Only 245 unique buyers produced about $3.5M of volume and 4,100 transactions. The token has no socials, no website and no DexScreener profile. GMGN shows 0 smart-money, 0 renowned and 0 call-channel wallets. The same name and image were reused 4+ times today, each copy peaked around $1.1\u20131.5M market cap and then its liquidity went to zero.\",\"uncertainty\":\"I couldn't see X or Telegram directly. The link to the earlier copies is inferred from identical name, image and market-cap profile, not from an on-chain funding trace.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Top-10 holders own 97% of supply\",\"136 bundler wallets and a 30-wallet insider network\",\"RugCheck flags a large share of LP unlocked; one of the market's pools shows 0% locked\",\"Earlier identical copies went to about $0 liquidity within hours\",\"Probable wash trading: volume is far too high for 245 unique buyers\",\"Nike trademark impersonation\"]},\"counterargument\":\"This is the only copy that still has deep liquidity ($315k), and GMGN shows lp_burn_ratio 1.0, which may mean the PumpSwap LP is burned. Buys slightly outnumber sells. If the deployer runs the same pattern as the earlier copies, the price could keep climbing for another hour before any exit. Also, a price push happening outside public view can't be ruled out.\",\"unknowns\":[\"Whether the PumpSwap LP is actually burned (GMGN says it is, RugCheck says it is unlocked)\",\"Whether this deployer is on-chain linked to the earlier rugged copies\",\"Any private Telegram or X promotion\",\"How long the earlier copies lasted before liquidity was pulled\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searching the contract address returned nothing relevant. The news results only covered the unrelated NKE tokenized stock (Sept 8) and today's sneaker drops. DexScreener API confirmed that the sibling copies have about $0 liquidity. The token has no project site or socials.\"},\"thesis\":\"This is not a narrative. It is a bundled Nike-impersonation token, apparently the fifth or later relaunch today of a template whose earlier copies were rugged after reaching roughly $1.3M market cap. This copy is sitting right at that level ($1.29M). The attention is manufactured, and the likely outcome is a liquidity pull or collapse.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/ANmVmAo9snLqq34GsQLSmJVUtbdTBeyeUeEaEVuph7BB\",\"what\":\"This token's pairs: $315k liquidity, no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/DHqfSuZVEKufyZ1cmzm1r7vhAKPHsgQFds651iDwopKV\",\"what\":\"Earlier identical copy: $8.59M volume, $0 liquidity\"},{\"url\":\"https://www.kucoin.com/news/flash/nike-launches-tokenized-nke-stock-on-solana-via-sunrise-initiative\",\"what\":\"Real Nike tokenized stock on Solana (unrelated)\"},{\"url\":\"https://sneakernews.com/2026/09/22/cpfm-nike-flea-1-cactus-plant-flea-market-iu5238-700/\",\"what\":\"Today's Nike news is routine\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token named 'Nike / Just Do It.' was launched about 40 minutes before detection on a Meteora virtual curve, which created and migrated it in the same second. It has a PumpSwap pool with $315k of liquidity and has traded $3.5\u20133.7M in its first 40 minutes, at a $1.29M market cap. Today at least 4 other tokens with the exact same name and image were launched. Each reached about $1.1\u20131.5M market cap and each now has about $0 liquidity. One of them (DHqf...) traded $8.59M before its liquidity went to zero. This token looks like the latest run of the same pump-and-pull template. I found no organic social discussion.",
+  "narrative": {
+   "description": "The theme is the Nike brand ('Just Do It'). The only real Nike-crypto news nearby is the tokenized NKE stock launched on Solana via Sunrise/Backpack on Sept 8, 2026. That news is two weeks old and has nothing to do with this memecoin. The only Nike news today is a routine sneaker drop.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no evidence of organic spread. The activity looks like bots and bundled wallets (136 bundlers, 245 unique buyers against about 4,100 transactions), and the same template has been relaunched repeatedly today."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing ties this token to Nike. The X handle 'Nike' is simply the real brand's account and not a project account. This is the fifth or later identical 'Just Do It.' launch today, and it happens to be the only copy that still has liquidity.",
+   "competing_tokens": "Identical copies with ~$0 liquidity: DHqf... ($8.59M volume, rugged), DryN..., Af4h..., 638m.... Other copies: AH3J... NIKE, mZdW... Nike. The legitimate NKE tokenized stock (Sunrise/Backpack) is the actual Nike asset on Solana.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN tags 136 bundler wallets and 29 snipers among about 243 holders. Top-10 holders own 97.13%, and 30 insiders were detected in a trade network. Only 245 unique buyers produced about $3.5M of volume and 4,100 transactions. The token has no socials, no website and no DexScreener profile. GMGN shows 0 smart-money, 0 renowned and 0 call-channel wallets. The same name and image were reused 4+ times today, each copy peaked around $1.1\u20131.5M market cap and then its liquidity went to zero.",
+   "uncertainty": "I couldn't see X or Telegram directly. The link to the earlier copies is inferred from identical name, image and market-cap profile, not from an on-chain funding trace."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Top-10 holders own 97% of supply",
+    "136 bundler wallets and a 30-wallet insider network",
+    "RugCheck flags a large share of LP unlocked; one of the market's pools shows 0% locked",
+    "Earlier identical copies went to about $0 liquidity within hours",
+    "Probable wash trading: volume is far too high for 245 unique buyers",
+    "Nike trademark impersonation"
+   ]
+  },
+  "counterargument": "This is the only copy that still has deep liquidity ($315k), and GMGN shows lp_burn_ratio 1.0, which may mean the PumpSwap LP is burned. Buys slightly outnumber sells. If the deployer runs the same pattern as the earlier copies, the price could keep climbing for another hour before any exit. Also, a price push happening outside public view can't be ruled out.",
+  "unknowns": [
+   "Whether the PumpSwap LP is actually burned (GMGN says it is, RugCheck says it is unlocked)",
+   "Whether this deployer is on-chain linked to the earlier rugged copies",
+   "Any private Telegram or X promotion",
+   "How long the earlier copies lasted before liquidity was pulled"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searching the contract address returned nothing relevant. The news results only covered the unrelated NKE tokenized stock (Sept 8) and today's sneaker drops. DexScreener API confirmed that the sibling copies have about $0 liquidity. The token has no project site or socials."
+  },
+  "thesis": "This is not a narrative. It is a bundled Nike-impersonation token, apparently the fifth or later relaunch today of a template whose earlier copies were rugged after reaching roughly $1.3M market cap. This copy is sitting right at that level ($1.29M). The attention is manufactured, and the likely outcome is a liquidity pull or collapse.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/ANmVmAo9snLqq34GsQLSmJVUtbdTBeyeUeEaEVuph7BB",
+    "what": "This token's pairs: $315k liquidity, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/DHqfSuZVEKufyZ1cmzm1r7vhAKPHsgQFds651iDwopKV",
+    "what": "Earlier identical copy: $8.59M volume, $0 liquidity"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/nike-launches-tokenized-nke-stock-on-solana-via-sunrise-initiative",
+    "what": "Real Nike tokenized stock on Solana (unrelated)"
+   },
+   {
+    "url": "https://sneakernews.com/2026/09/22/cpfm-nike-flea-1-cactus-plant-flea-market-iu5238-700/",
+    "what": "Today's Nike news is routine"
+   }
+  ]
+ },
+ "ttft_ms": 1379,
+ "type": "result",
+ "duration_ms": 55779,
+ "uuid": "f368f02f-4701-47e9-b0a3-6fc550b70947",
+ "ttft_stream_ms": 776,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 777,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

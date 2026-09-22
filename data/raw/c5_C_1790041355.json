@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 76030,
+ "stop_reason": "tool_use",
+ "session_id": "7503ab48-9adb-4665-8272-07939b4bd746",
+ "total_cost_usd": 0.329038,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 11377,
+  "cache_read_input_tokens": 44354,
+  "output_tokens": 3722,
+  "output_tokens_details": {
+   "thinking_tokens": 500
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11377,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2843,
+    "cache_read_input_tokens": 12542,
+    "cache_creation_input_tokens": 1335,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1335
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 10,
+   "outputTokens": 3722,
+   "cacheReadInputTokens": 44354,
+   "cacheCreationInputTokens": 11377,
+   "webSearchRequests": 0,
+   "costUSD": 0.229047,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 500,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 49156,
+   "outputTokens": 2167,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.099991,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A PumpSwap pair for a token named \\\"MetaDAO\u2014DEX\\\" (ticker META, mint 6rb4\u2026eoeL) was created about 41 minutes before detection. In that time it traded about $3.4M against roughly $320K of liquidity, and the price rose about 73%. It is not the real MetaDAO token. MetaDAO's docs give the official mint as METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta (https://docs.metadao.fi/token/details). The real token trades at about $75\u2013119M market cap on Meteora and similar venues (https://dexscreener.com/solana/expxkwcwdhjeyyc5pfnfxsu8futk4cdcytzr4apqnrzo, https://www.coingecko.com/en/coins/meta-2). The packet lists at least six other tokens with the identical name \\\"MetaDAO\u2014DEX\\\", created over roughly the past two days. All six now have $0.02\u2013$2 of liquidity, which suggests the same impersonation template has been deployed and drained again and again. The flows look artificial: GeckoTerminal counts 1,698 unique buyers but only 107 unique sellers in the hour. RugCheck flags 155 graph insiders, several transfer-linked insider clusters of 14\u201317 wallets each, and a large share of LP unlocked. I found no mention of this contract anywhere on the web.\",\"narrative\":{\"description\":\"Ticker and name impersonation of MetaDAO, a real Solana futarchy governance and launchpad protocol. The '\u2014DEX' suffix hints at a fake 'MetaDAO DEX' product. I found no announcement of any such product or token.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic story. Attention seems to come from the recognizable brand name showing up on new-pair and trending scanners, plus probable bot or insider volume. It does not come from any MetaDAO news event. The only MetaDAO-related news I found (e.g., a Ranger Finance ICO on MetaDAO) has nothing to do with this mint.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None: it is not the canonical token. The official mint is METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta per MetaDAO docs. This token has about 100B supply at $1.2e-5 per token, while real META trades around $5. GeckoTerminal's link to @MetaDAOProject appears to be scraped or matched by name, not a genuine link.\",\"competing_tokens\":\"Real META: METAwkXc\u2026 (official) and an older METADDFL6\u2026 listing. There are also at least six earlier 'MetaDAO\u2014DEX' clones (AUGFBF\u2026, FRFSU6\u2026, 6nDsoq\u2026, 2bXQiw\u2026, 8RRmzX\u2026, DPEWHc\u2026), all with near-zero liquidity now.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,698 unique buyers against only 107 unique sellers in about 40 minutes. 155 RugCheck graph insiders and several transfer-linked insider clusters. The LP is mostly unlocked, with few LP providers. There is no DexScreener profile, website or socials. At least six identically named clones launched in the past two days, and all of them are now drained. I found zero web or social mentions of the contract.\",\"uncertainty\":\"I had no X API, and search engines index X poorly, so there may be KOL or Telegram shilling I could not see. The buyer/seller asymmetry could partly reflect real retail FOMO from scanner visibility, not only bots.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Large share of LP unlocked; the deployer can pull liquidity at any time\",\"155 graph insiders and transfer-linked wallet clusters point to a concentrated insider supply\",\"Serial-clone pattern: the prior 'MetaDAO\u2014DEX' tokens all ended with near-zero liquidity\",\"Very few unique sellers compared with buyers, which may mean insider wallets are waiting to exit or that selling is restricted in some way\",\"No holder distribution data was available\"]},\"counterargument\":\"Brand impersonation tokens sometimes pump for hours as retail scanners pile in. At ~$320K, liquidity is substantial for a 41-minute-old pair. Net buying is heavy (about 3.8K buys vs 2.2K sells), mint and freeze authorities are renounced, and there is no transfer fee. If the deployer holds the LP instead of pulling it, momentum could carry the price higher over the next hour.\",\"unknowns\":[\"Whether any KOLs or Telegram groups are pushing this mint (X/Telegram not visible)\",\"Actual holder concentration (RugCheck gave no top-holder list)\",\"Who controls the unlocked LP and when they might remove it\",\"Whether the prior clones were rugged or simply abandoned\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"A search for the contract address returned nothing relevant. The news and project-site hits are about the real MetaDAO protocol and confirm a different official mint. I used the DexScreener API for pair data. I did not search Reddit, Telegram or Discord because of time limits.\"},\"thesis\":\"This looks like noise and manipulation, not a real narrative. The token is an impersonation clone of MetaDAO: it is not the official mint, and it belongs to a series of identically named tokens whose earlier copies were all drained. Volume looks insider- or bot-driven (1,698 buyers vs 107 sellers, 155 insiders), and most of the LP is unlocked. Any attention is likely to fade or end abruptly with a liquidity pull.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://docs.metadao.fi/token/details\",\"what\":\"Official META mint is METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta\"},{\"url\":\"https://www.coingecko.com/en/coins/meta-2\",\"what\":\"Real MetaDAO META at about $119M market cap\"},{\"url\":\"https://dexscreener.com/solana/expxkwcwdhjeyyc5pfnfxsu8futk4cdcytzr4apqnrzo\",\"what\":\"Real META/USDC pair on Meteora\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/6rb4tQg6k6Ka6AEvNA44NkGgBe3W5jKx9sAhgV8GeoeL\",\"what\":\"Pair data for this token: PumpSwap $319K liquidity, $3.4M volume, no socials\"},{\"url\":\"https://www.kucoin.com/news/flash/ranger-finance-launches-6m-ico-on-metadao-aims-to-improve-dex-order-routing\",\"what\":\"Only recent MetaDAO-related DEX news found; unrelated to this mint\"}]}",
+ "structured_output": {
+  "what_is_happening": "A PumpSwap pair for a token named \"MetaDAO\u2014DEX\" (ticker META, mint 6rb4\u2026eoeL) was created about 41 minutes before detection. In that time it traded about $3.4M against roughly $320K of liquidity, and the price rose about 73%. It is not the real MetaDAO token. MetaDAO's docs give the official mint as METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta (https://docs.metadao.fi/token/details). The real token trades at about $75\u2013119M market cap on Meteora and similar venues (https://dexscreener.com/solana/expxkwcwdhjeyyc5pfnfxsu8futk4cdcytzr4apqnrzo, https://www.coingecko.com/en/coins/meta-2). The packet lists at least six other tokens with the identical name \"MetaDAO\u2014DEX\", created over roughly the past two days. All six now have $0.02\u2013$2 of liquidity, which suggests the same impersonation template has been deployed and drained again and again. The flows look artificial: GeckoTerminal counts 1,698 unique buyers but only 107 unique sellers in the hour. RugCheck flags 155 graph insiders, several transfer-linked insider clusters of 14\u201317 wallets each, and a large share of LP unlocked. I found no mention of this contract anywhere on the web.",
+  "narrative": {
+   "description": "Ticker and name impersonation of MetaDAO, a real Solana futarchy governance and launchpad protocol. The '\u2014DEX' suffix hints at a fake 'MetaDAO DEX' product. I found no announcement of any such product or token.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic story. Attention seems to come from the recognizable brand name showing up on new-pair and trending scanners, plus probable bot or insider volume. It does not come from any MetaDAO news event. The only MetaDAO-related news I found (e.g., a Ranger Finance ICO on MetaDAO) has nothing to do with this mint."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None: it is not the canonical token. The official mint is METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta per MetaDAO docs. This token has about 100B supply at $1.2e-5 per token, while real META trades around $5. GeckoTerminal's link to @MetaDAOProject appears to be scraped or matched by name, not a genuine link.",
+   "competing_tokens": "Real META: METAwkXc\u2026 (official) and an older METADDFL6\u2026 listing. There are also at least six earlier 'MetaDAO\u2014DEX' clones (AUGFBF\u2026, FRFSU6\u2026, 6nDsoq\u2026, 2bXQiw\u2026, 8RRmzX\u2026, DPEWHc\u2026), all with near-zero liquidity now.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,698 unique buyers against only 107 unique sellers in about 40 minutes. 155 RugCheck graph insiders and several transfer-linked insider clusters. The LP is mostly unlocked, with few LP providers. There is no DexScreener profile, website or socials. At least six identically named clones launched in the past two days, and all of them are now drained. I found zero web or social mentions of the contract.",
+   "uncertainty": "I had no X API, and search engines index X poorly, so there may be KOL or Telegram shilling I could not see. The buyer/seller asymmetry could partly reflect real retail FOMO from scanner visibility, not only bots."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Large share of LP unlocked; the deployer can pull liquidity at any time",
+    "155 graph insiders and transfer-linked wallet clusters point to a concentrated insider supply",
+    "Serial-clone pattern: the prior 'MetaDAO\u2014DEX' tokens all ended with near-zero liquidity",
+    "Very few unique sellers compared with buyers, which may mean insider wallets are waiting to exit or that selling is restricted in some way",
+    "No holder distribution data was available"
+   ]
+  },
+  "counterargument": "Brand impersonation tokens sometimes pump for hours as retail scanners pile in. At ~$320K, liquidity is substantial for a 41-minute-old pair. Net buying is heavy (about 3.8K buys vs 2.2K sells), mint and freeze authorities are renounced, and there is no transfer fee. If the deployer holds the LP instead of pulling it, momentum could carry the price higher over the next hour.",
+  "unknowns": [
+   "Whether any KOLs or Telegram groups are pushing this mint (X/Telegram not visible)",
+   "Actual holder concentration (RugCheck gave no top-holder list)",
+   "Who controls the unlocked LP and when they might remove it",
+   "Whether the prior clones were rugged or simply abandoned"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "A search for the contract address returned nothing relevant. The news and project-site hits are about the real MetaDAO protocol and confirm a different official mint. I used the DexScreener API for pair data. I did not search Reddit, Telegram or Discord because of time limits."
+  },
+  "thesis": "This looks like noise and manipulation, not a real narrative. The token is an impersonation clone of MetaDAO: it is not the official mint, and it belongs to a series of identically named tokens whose earlier copies were all drained. Volume looks insider- or bot-driven (1,698 buyers vs 107 sellers, 155 insiders), and most of the LP is unlocked. Any attention is likely to fade or end abruptly with a liquidity pull.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://docs.metadao.fi/token/details",
+    "what": "Official META mint is METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/meta-2",
+    "what": "Real MetaDAO META at about $119M market cap"
+   },
+   {
+    "url": "https://dexscreener.com/solana/expxkwcwdhjeyyc5pfnfxsu8futk4cdcytzr4apqnrzo",
+    "what": "Real META/USDC pair on Meteora"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/6rb4tQg6k6Ka6AEvNA44NkGgBe3W5jKx9sAhgV8GeoeL",
+    "what": "Pair data for this token: PumpSwap $319K liquidity, $3.4M volume, no socials"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/ranger-finance-launches-6m-ico-on-metadao-aims-to-improve-dex-order-routing",
+    "what": "Only recent MetaDAO-related DEX news found; unrelated to this mint"
+   }
+  ]
+ },
+ "ttft_ms": 3645,
+ "type": "result",
+ "duration_ms": 65140,
+ "uuid": "4776bd49-afad-4fc9-85a8-0e23375b237e",
+ "ttft_stream_ms": 1204,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1205,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

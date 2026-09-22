@@ -1,0 +1,189 @@
+{
+ "duration_api_ms": 115933,
+ "stop_reason": "tool_use",
+ "session_id": "5897f4a6-5ab4-435b-a353-7106f30ee2db",
+ "total_cost_usd": 0.644354,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 21535,
+  "cache_read_input_tokens": 86792,
+  "output_tokens": 4983,
+  "output_tokens_details": {
+   "thinking_tokens": 711
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21535,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3202,
+    "cache_read_input_tokens": 22637,
+    "cache_creation_input_tokens": 1398,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1398
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 12,
+   "outputTokens": 4983,
+   "cacheReadInputTokens": 86792,
+   "cacheCreationInputTokens": 21535,
+   "webSearchRequests": 0,
+   "costUSD": 0.38338099999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 711,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 146688,
+   "outputTokens": 4857,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 9,
+   "costUSD": 0.26097299999999996,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 15,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is not a memecoin. BABA appears to be a tokenized Alibaba share (NYSE: BABA) issued by Backpack Securities. Its on-chain price (~$117) tracks the real stock, which is ~US$122 on Simply Wall St. GMGN says the deployer was funded from \\\"Backpack 2\\\", which fits Backpack issuing it. Mint and freeze authority are still enabled. That fits Backpack's mint-and-redeem \\\"dynamic supply\\\" design and a regulated issuer, not a scam. The volume spike comes from real Alibaba news. The Apsara Conference runs Sept 22\u201324. Alibaba unveiled the Zhenwu V900 AI chip and a $53B AI spending plan and launched Qwen3.8-Max. US-listed BABA rose more than 2% overnight and Hong Kong shares were up nearly 3%. Tokenized stocks trade 24/7, so they are where people trade that overnight move. The pair that set off the alert is a minor Raydium SOL pool with about $8.6K liquidity. DexScreener shows the main venue is an Orca USDC pool with about $171K liquidity and about $951K in 24h volume. So most of the Raydium flow (about 1,650 h1 transactions, 0.2% price change) is probably arbitrage between pools or routing, not new speculative attention. The $184K 'market cap' reflects only the tokenized supply, not a memecoin valuation.\",\"narrative\":{\"description\":\"The story is Alibaba's AI chip and model launches at Apsara 2026 lifting BABA overnight, traded through a 24/7 tokenized stock on Solana. The event is real and current, but it matters to equity traders. There is no meme or culture story here.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Alibaba news came out outside US market hours. Tokenized equities are one of the few ways to trade it before the US open. Market makers also rebalance across pools as the reference price moves. Price is anchored to the stock, so there is no reflexive meme loop.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"The name says 'Alibaba Group Holding - Backpack Securities' and GeckoTerminal lists the Twitter handle as 'Backpack'. The deployer was funded from a GMGN-labelled 'Backpack 2' wallet, the price matches the NYSE stock, and the token trades across several real pools (Orca USDC at $951K/24h). I could not find a news article or official list that names Alibaba among Backpack's 41 tokenized stocks, so I have not independently confirmed it is an official listing.\",\"competing_tokens\":\"Other tokens using BABA are dead memecoins: BABULLA (0 h1 volume), 'BABA' pump tokens with $0 liquidity, and Alibaba PeiPei. Ondo's BABAon is a rival tokenized Alibaba product, but it has a different ticker and issuer.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"No paid DexScreener boosts, ads or CTO flags. Smart-money signal count and degen call count are both 0. GMGN shows a low bot/degen rate (4.5%) and fresh-wallet rate (1.1%). Buyers and sellers are balanced (527/505 unique in h1). The price moves with a real equity catalyst reported by Yahoo Finance. I found no posts or shills about this contract.\",\"uncertainty\":\"Balanced two-way flow with almost no price change looks like arbitrage or market-maker bots, not humans. GMGN's bundler and fresh-wallet tags are both capped at 1000, so they can't be read. I found no social discussion of this token at all.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The price is pegged to the Alibaba stock, so it cannot run up like a memecoin. Any move is bounded by BABA equity moves of a few percent.\",\"The alert pool has only about $8.6K liquidity. Real liquidity sits in the Orca USDC pool (about $171K).\",\"Mint, freeze and permanent-delegate authority are all enabled. That is normal for a regulated issuer, but it means central control, including possible freezes for compliance.\",\"One holder has 30.9%, probably custody or issuer inventory.\",\"I could not confirm this mint is the official Backpack Alibaba listing. It rests on GMGN's 'Backpack 2' funding label and the naming.\"]},\"counterargument\":\"Alibaba is in the middle of a live catalyst: Apsara runs until Sept 24 and the AGM is on Sept 22. When the US market opens at 13:30 UTC, attention on BABA equity could rise sharply, along with 24/7 tokenized-stock volume, so activity could keep growing through the window. Also, tokenized-stock volume on Solana is rising fast ($684M supply, a record). A BABA listing might draw wider crypto attention as a 'China AI' play, which could push volume higher even though the price stays pegged.\",\"unknowns\":[\"Whether Backpack officially lists this mint as its Alibaba token\",\"How much of the Raydium flow is arbitrage bots versus human traders\",\"The identity of the 30.9% holder\",\"How BABA stock trades at the US open today\",\"Any X/Telegram discussion specific to this token (none found)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address found nothing. site:x.com only turned up general Alibaba and Backpack posts. News coverage confirms the Alibaba catalyst and Backpack's tokenized-stock program, but no article names Alibaba among Backpack's listings. DexScreener API shows the pool layout. Discord was not searched separately.\"},\"thesis\":\"By memecoin standards, this alert is noise. It is a tokenized Alibaba share pegged to the NYSE price, probably issued by Backpack. The volume spike reflects a real Alibaba AI-chip news day plus arbitrage in a thin Raydium pool. It is not a new narrative forming. Activity may stay high while the news cycle and US hours last, but the price cannot break away from the stock. There is no speculative attention to build on.\",\"continuation_view\":\"neutral\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://finance.yahoo.com/technology/ai/articles/baba-stock-spikes-overnight-alibaba-044951285.html\",\"what\":\"Alibaba's Zhenwu V900 chip and the overnight rise in BABA stock, Sept 22 2026\"},{\"url\":\"https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding\",\"what\":\"BABA at US$122.25, up 24.8% in 30 days; AGM on Sept 22; Qwen3.8-Max\"},{\"url\":\"https://cryptobriefing.com/backpack-tokenized-equities-dynamic-supply/\",\"what\":\"Backpack's mint-and-redeem dynamic supply model\"},{\"url\":\"https://solanacompass.com/news/backpack-adds-searchable-earnings-transcripts-analyst-estimates-and-earnings-history-to-all-41-tokenized-stock-pages\",\"what\":\"Backpack has 41 tokenized stocks; Alibaba not named\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/BABANGA4JE7Kkam4nTrALAwAVgsNJUuFJnnkF7S16BZp\",\"what\":\"Pool layout: the Orca USDC pool is the main venue with $951K in 24h volume\"},{\"url\":\"https://www.kucoin.com/news/flash/sunrise-adds-20-new-tokenized-stocks-on-solana-via-backpack-securities\",\"what\":\"Sunrise and Backpack tokenized stock expansion\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is not a memecoin. BABA appears to be a tokenized Alibaba share (NYSE: BABA) issued by Backpack Securities. Its on-chain price (~$117) tracks the real stock, which is ~US$122 on Simply Wall St. GMGN says the deployer was funded from \"Backpack 2\", which fits Backpack issuing it. Mint and freeze authority are still enabled. That fits Backpack's mint-and-redeem \"dynamic supply\" design and a regulated issuer, not a scam. The volume spike comes from real Alibaba news. The Apsara Conference runs Sept 22\u201324. Alibaba unveiled the Zhenwu V900 AI chip and a $53B AI spending plan and launched Qwen3.8-Max. US-listed BABA rose more than 2% overnight and Hong Kong shares were up nearly 3%. Tokenized stocks trade 24/7, so they are where people trade that overnight move. The pair that set off the alert is a minor Raydium SOL pool with about $8.6K liquidity. DexScreener shows the main venue is an Orca USDC pool with about $171K liquidity and about $951K in 24h volume. So most of the Raydium flow (about 1,650 h1 transactions, 0.2% price change) is probably arbitrage between pools or routing, not new speculative attention. The $184K 'market cap' reflects only the tokenized supply, not a memecoin valuation.",
+  "narrative": {
+   "description": "The story is Alibaba's AI chip and model launches at Apsara 2026 lifting BABA overnight, traded through a 24/7 tokenized stock on Solana. The event is real and current, but it matters to equity traders. There is no meme or culture story here.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Alibaba news came out outside US market hours. Tokenized equities are one of the few ways to trade it before the US open. Market makers also rebalance across pools as the reference price moves. Price is anchored to the stock, so there is no reflexive meme loop."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "The name says 'Alibaba Group Holding - Backpack Securities' and GeckoTerminal lists the Twitter handle as 'Backpack'. The deployer was funded from a GMGN-labelled 'Backpack 2' wallet, the price matches the NYSE stock, and the token trades across several real pools (Orca USDC at $951K/24h). I could not find a news article or official list that names Alibaba among Backpack's 41 tokenized stocks, so I have not independently confirmed it is an official listing.",
+   "competing_tokens": "Other tokens using BABA are dead memecoins: BABULLA (0 h1 volume), 'BABA' pump tokens with $0 liquidity, and Alibaba PeiPei. Ondo's BABAon is a rival tokenized Alibaba product, but it has a different ticker and issuer.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "No paid DexScreener boosts, ads or CTO flags. Smart-money signal count and degen call count are both 0. GMGN shows a low bot/degen rate (4.5%) and fresh-wallet rate (1.1%). Buyers and sellers are balanced (527/505 unique in h1). The price moves with a real equity catalyst reported by Yahoo Finance. I found no posts or shills about this contract.",
+   "uncertainty": "Balanced two-way flow with almost no price change looks like arbitrage or market-maker bots, not humans. GMGN's bundler and fresh-wallet tags are both capped at 1000, so they can't be read. I found no social discussion of this token at all."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The price is pegged to the Alibaba stock, so it cannot run up like a memecoin. Any move is bounded by BABA equity moves of a few percent.",
+    "The alert pool has only about $8.6K liquidity. Real liquidity sits in the Orca USDC pool (about $171K).",
+    "Mint, freeze and permanent-delegate authority are all enabled. That is normal for a regulated issuer, but it means central control, including possible freezes for compliance.",
+    "One holder has 30.9%, probably custody or issuer inventory.",
+    "I could not confirm this mint is the official Backpack Alibaba listing. It rests on GMGN's 'Backpack 2' funding label and the naming."
+   ]
+  },
+  "counterargument": "Alibaba is in the middle of a live catalyst: Apsara runs until Sept 24 and the AGM is on Sept 22. When the US market opens at 13:30 UTC, attention on BABA equity could rise sharply, along with 24/7 tokenized-stock volume, so activity could keep growing through the window. Also, tokenized-stock volume on Solana is rising fast ($684M supply, a record). A BABA listing might draw wider crypto attention as a 'China AI' play, which could push volume higher even though the price stays pegged.",
+  "unknowns": [
+   "Whether Backpack officially lists this mint as its Alibaba token",
+   "How much of the Raydium flow is arbitrage bots versus human traders",
+   "The identity of the 30.9% holder",
+   "How BABA stock trades at the US open today",
+   "Any X/Telegram discussion specific to this token (none found)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address found nothing. site:x.com only turned up general Alibaba and Backpack posts. News coverage confirms the Alibaba catalyst and Backpack's tokenized-stock program, but no article names Alibaba among Backpack's listings. DexScreener API shows the pool layout. Discord was not searched separately."
+  },
+  "thesis": "By memecoin standards, this alert is noise. It is a tokenized Alibaba share pegged to the NYSE price, probably issued by Backpack. The volume spike reflects a real Alibaba AI-chip news day plus arbitrage in a thin Raydium pool. It is not a new narrative forming. Activity may stay high while the news cycle and US hours last, but the price cannot break away from the stock. There is no speculative attention to build on.",
+  "continuation_view": "neutral",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://finance.yahoo.com/technology/ai/articles/baba-stock-spikes-overnight-alibaba-044951285.html",
+    "what": "Alibaba's Zhenwu V900 chip and the overnight rise in BABA stock, Sept 22 2026"
+   },
+   {
+    "url": "https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding",
+    "what": "BABA at US$122.25, up 24.8% in 30 days; AGM on Sept 22; Qwen3.8-Max"
+   },
+   {
+    "url": "https://cryptobriefing.com/backpack-tokenized-equities-dynamic-supply/",
+    "what": "Backpack's mint-and-redeem dynamic supply model"
+   },
+   {
+    "url": "https://solanacompass.com/news/backpack-adds-searchable-earnings-transcripts-analyst-estimates-and-earnings-history-to-all-41-tokenized-stock-pages",
+    "what": "Backpack has 41 tokenized stocks; Alibaba not named"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/BABANGA4JE7Kkam4nTrALAwAVgsNJUuFJnnkF7S16BZp",
+    "what": "Pool layout: the Orca USDC pool is the main venue with $951K in 24h volume"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/sunrise-adds-20-new-tokenized-stocks-on-solana-via-backpack-securities",
+    "what": "Sunrise and Backpack tokenized stock expansion"
+   }
+  ]
+ },
+ "ttft_ms": 2234,
+ "type": "result",
+ "duration_ms": 76662,
+ "uuid": "848c97f7-4df4-4992-9121-3006b7f3c0a1",
+ "ttft_stream_ms": 1142,
+ "time_to_request_ms": 301,
+ "first_content_frame_ms": 1142,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

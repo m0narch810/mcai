@@ -1,0 +1,190 @@
+{
+ "duration_api_ms": 124381,
+ "stop_reason": "tool_use",
+ "session_id": "c20cb640-c892-43dd-ac7c-f91caa967fb5",
+ "total_cost_usd": 0.5160629999999999,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 16735,
+  "cache_read_input_tokens": 79364,
+  "output_tokens": 5527,
+  "output_tokens_details": {
+   "thinking_tokens": 848
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16735,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3437,
+    "cache_read_input_tokens": 18015,
+    "cache_creation_input_tokens": 1220,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1220
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 14,
+   "outputTokens": 5527,
+   "cacheReadInputTokens": 79364,
+   "cacheCreationInputTokens": 16735,
+   "webSearchRequests": 0,
+   "costUSD": 0.345277,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 848,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 80261,
+   "outputTokens": 4105,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.170786,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 17,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BM2n1FQE\u2026 (\\\"claypad\\\") is a pool about 35 minutes old. It has done about $1.55M of volume in its first hour, and its price rose roughly 640% to about a $380k market cap. Its on-chain metadata points to claypad.fun and the X account @launchonclay (https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/info). Claypad.fun is a real product that is only partly built: you describe a token in plain language, it builds a pump.fun launch transaction, and you sign it yourself. Most features are marked \\\"Soon\\\" (https://claypad.fun). The project's own docs, however, name a different contract as the official token: CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75. The docs say it was launched on pump.fun and is pinned in the app's Discover section (https://claypad.fun/docs). That official token peaked around $48k and then fell about 94% to roughly $2.6k market cap (https://api.dexscreener.com/latest/dex/tokens/CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75). So the flow into BM2n looks like a copycat token taking over attention from a small new launchpad, not money going into the project's own token. BM2n also has an unusual set of pools: a Meteora DBC pool, a Meteora DAMM v2 pool and a PumpSwap pool. The PumpSwap pool holds about $60k in reserves (https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/pools). At least 7 other tokens with the same name were launched within about 20 minutes, per the evidence packet.\",\"narrative\":{\"description\":\"A new tool for launching Solana tokens by describing them in plain language (claypad.fun, @launchonclay). It fits the ongoing 'AI launchpad / agent-launched token' theme (ClawPad, Clawnch and similar).\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"I could not see any spread. I found no indexed X posts, Reddit threads, news or Telegram mentions of claypad, and the @launchonclay profile returned HTTP 402. The attention looks almost entirely on-chain: a new-launchpad story plus trenches traders piling onto whichever same-name token is moving.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"BM2n's metadata links to the real project site and X account, but anyone can put those links in token metadata. The project's docs explicitly name CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75 as the official token, not BM2n. The docs also say the official token was launched on pump.fun, while BM2n started on a Meteora DBC curve.\",\"competing_tokens\":\"The official one is CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75, at about $2.6k market cap with $2.5k liquidity after a 94% drop (it also shows a pump.fun pair at about $48k). Other same-name tokens include Hge7sut\u2026 ('claypad\uff0c' with $481k h1 volume on $11 liquidity, i.e. wash/bot volume), Ezr7wEL\u2026, J2FMr\u2026pump, and several $1 dust copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GeckoTerminal counts about 2,100 unique buyers but only about 102 unique sellers in the first hour, and 1,788 of those buyers arrived within one 30-minute window. That lopsided pattern fits bot or bundled buying, or a sniper wave, more than broad organic interest. Holder concentration is 91.6% in the top 10 (this may include pools), and the creator still holds a large balance (~7.9e13 raw units). I found no organic social discussion. DexScreener shows no paid profile. At least 7 same-name tokens appeared within minutes, including one with about $481k h1 volume on $11 liquidity, which shows a manipulation-heavy environment.\",\"uncertainty\":\"I could not access X. There may be real X discussion of the claypad launchpad that I cannot see, and the unique-seller count may simply reflect how early it is (holders not yet selling).\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Not the official token: the project's docs name a different contract, so it can be publicly called fake at any time\",\"Top 10 holders own 91.6% (may include pools); the creator holds a large balance\",\"Only about $60k pool reserves against a ~$380k market cap and $1.5M hourly volume\",\"Only 102 unique sellers vs 2,100 buyers: signs of bots or snipers, with a sell overhang\",\"Many same-name copycats splitting attention\",\"Split pool structure (DBC/DAMM/PumpSwap) with near-zero liquidity in two of the pools\"]},\"counterargument\":\"Traders often ignore which token is \\\"official\\\". The official CLAYw token already crashed 94%, so this could become the community's chosen claypad token. Its metadata links to the real site and X account, and it has $60k of liquidity plus 2,000+ holders in 35 minutes. If @launchonclay acknowledges it, or if the AI-launchpad story catches on, it could keep running. The team might also have moved to this contract without updating the docs yet.\",\"unknowns\":[\"Content of @launchonclay's X posts (HTTP 402)\",\"Whether the team has endorsed or disowned BM2n\",\"Who controls the top-10 wallets, and whether they are bundled with the creator\",\"Whether the docs will be updated\",\"How much real usage claypad.fun has\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Searches by contract address, by name and with site:x.com returned nothing relevant. Fetching the X profile failed with HTTP 402. The project site and docs were readable, and the docs name a different official contract.\"},\"thesis\":\"This looks like a copycat token riding the claypad.fun launchpad name. The project's docs point to a different official contract (CLAYw\u2026). The buyer/seller pattern looks like bots or snipers, the supply is highly concentrated, and I found no organic social discussion. Most likely the attention fades once the rotation stops or people notice it isn't the official token.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://claypad.fun/docs\",\"what\":\"Docs naming CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75 as the official token\"},{\"url\":\"https://claypad.fun\",\"what\":\"Description of the project's product\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/info\",\"what\":\"BM2n metadata linking to claypad.fun and @launchonclay; holder distribution\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/pools\",\"what\":\"Pool set (PumpSwap $60k reserves, Meteora DAMM v2, DBC)\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG\",\"what\":\"BM2n pairs, volume and price\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75\",\"what\":\"Official token down 94% to ~$2.6k market cap\"}]}",
+ "structured_output": {
+  "what_is_happening": "BM2n1FQE\u2026 (\"claypad\") is a pool about 35 minutes old. It has done about $1.55M of volume in its first hour, and its price rose roughly 640% to about a $380k market cap. Its on-chain metadata points to claypad.fun and the X account @launchonclay (https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/info). Claypad.fun is a real product that is only partly built: you describe a token in plain language, it builds a pump.fun launch transaction, and you sign it yourself. Most features are marked \"Soon\" (https://claypad.fun). The project's own docs, however, name a different contract as the official token: CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75. The docs say it was launched on pump.fun and is pinned in the app's Discover section (https://claypad.fun/docs). That official token peaked around $48k and then fell about 94% to roughly $2.6k market cap (https://api.dexscreener.com/latest/dex/tokens/CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75). So the flow into BM2n looks like a copycat token taking over attention from a small new launchpad, not money going into the project's own token. BM2n also has an unusual set of pools: a Meteora DBC pool, a Meteora DAMM v2 pool and a PumpSwap pool. The PumpSwap pool holds about $60k in reserves (https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/pools). At least 7 other tokens with the same name were launched within about 20 minutes, per the evidence packet.",
+  "narrative": {
+   "description": "A new tool for launching Solana tokens by describing them in plain language (claypad.fun, @launchonclay). It fits the ongoing 'AI launchpad / agent-launched token' theme (ClawPad, Clawnch and similar).",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "I could not see any spread. I found no indexed X posts, Reddit threads, news or Telegram mentions of claypad, and the @launchonclay profile returned HTTP 402. The attention looks almost entirely on-chain: a new-launchpad story plus trenches traders piling onto whichever same-name token is moving."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "BM2n's metadata links to the real project site and X account, but anyone can put those links in token metadata. The project's docs explicitly name CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75 as the official token, not BM2n. The docs also say the official token was launched on pump.fun, while BM2n started on a Meteora DBC curve.",
+   "competing_tokens": "The official one is CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75, at about $2.6k market cap with $2.5k liquidity after a 94% drop (it also shows a pump.fun pair at about $48k). Other same-name tokens include Hge7sut\u2026 ('claypad\uff0c' with $481k h1 volume on $11 liquidity, i.e. wash/bot volume), Ezr7wEL\u2026, J2FMr\u2026pump, and several $1 dust copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GeckoTerminal counts about 2,100 unique buyers but only about 102 unique sellers in the first hour, and 1,788 of those buyers arrived within one 30-minute window. That lopsided pattern fits bot or bundled buying, or a sniper wave, more than broad organic interest. Holder concentration is 91.6% in the top 10 (this may include pools), and the creator still holds a large balance (~7.9e13 raw units). I found no organic social discussion. DexScreener shows no paid profile. At least 7 same-name tokens appeared within minutes, including one with about $481k h1 volume on $11 liquidity, which shows a manipulation-heavy environment.",
+   "uncertainty": "I could not access X. There may be real X discussion of the claypad launchpad that I cannot see, and the unique-seller count may simply reflect how early it is (holders not yet selling)."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Not the official token: the project's docs name a different contract, so it can be publicly called fake at any time",
+    "Top 10 holders own 91.6% (may include pools); the creator holds a large balance",
+    "Only about $60k pool reserves against a ~$380k market cap and $1.5M hourly volume",
+    "Only 102 unique sellers vs 2,100 buyers: signs of bots or snipers, with a sell overhang",
+    "Many same-name copycats splitting attention",
+    "Split pool structure (DBC/DAMM/PumpSwap) with near-zero liquidity in two of the pools"
+   ]
+  },
+  "counterargument": "Traders often ignore which token is \"official\". The official CLAYw token already crashed 94%, so this could become the community's chosen claypad token. Its metadata links to the real site and X account, and it has $60k of liquidity plus 2,000+ holders in 35 minutes. If @launchonclay acknowledges it, or if the AI-launchpad story catches on, it could keep running. The team might also have moved to this contract without updating the docs yet.",
+  "unknowns": [
+   "Content of @launchonclay's X posts (HTTP 402)",
+   "Whether the team has endorsed or disowned BM2n",
+   "Who controls the top-10 wallets, and whether they are bundled with the creator",
+   "Whether the docs will be updated",
+   "How much real usage claypad.fun has"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Searches by contract address, by name and with site:x.com returned nothing relevant. Fetching the X profile failed with HTTP 402. The project site and docs were readable, and the docs name a different official contract."
+  },
+  "thesis": "This looks like a copycat token riding the claypad.fun launchpad name. The project's docs point to a different official contract (CLAYw\u2026). The buyer/seller pattern looks like bots or snipers, the supply is highly concentrated, and I found no organic social discussion. Most likely the attention fades once the rotation stops or people notice it isn't the official token.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://claypad.fun/docs",
+    "what": "Docs naming CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75 as the official token"
+   },
+   {
+    "url": "https://claypad.fun",
+    "what": "Description of the project's product"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/info",
+    "what": "BM2n metadata linking to claypad.fun and @launchonclay; holder distribution"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG/pools",
+    "what": "Pool set (PumpSwap $60k reserves, Meteora DAMM v2, DBC)"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/BM2n1FQEp7vke3CVE363TGQxR8MJw37fuN9gbCiBXvuG",
+    "what": "BM2n pairs, volume and price"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/CLAYwCrT4zgMqTEi2u2wfjEGkEsKE5UvxoRkVGKZAE75",
+    "what": "Official token down 94% to ~$2.6k market cap"
+   }
+  ]
+ },
+ "ttft_ms": 1999,
+ "type": "result",
+ "duration_ms": 95140,
+ "uuid": "f06100f8-417d-4fb6-8d89-8e0cfcbfdcad",
+ "ttft_stream_ms": 1265,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 1266,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

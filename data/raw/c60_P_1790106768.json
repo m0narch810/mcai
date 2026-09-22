@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 28275,
+ "stop_reason": "tool_use",
+ "session_id": "b0a4e153-4b6c-40a7-b1a1-71a2e229aa90",
+ "total_cost_usd": 0.0999356,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5472,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2789,
+  "output_tokens_details": {
+   "thinking_tokens": 679
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5472,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2789,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 5472,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5472
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2789,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 5472,
+   "webSearchRequests": 0,
+   "costUSD": 0.0999356,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 679,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Circle\\\" (CRCL), launched about 3.5 hours ago on a Meteora virtual curve and now trading on PumpSwap, has reached roughly $2M market cap with about $15M in 6-hour volume. Its hourly turnover is about 11.8x its market cap. Price is up about 150% in 6 hours and is at its all-time high. Its metadata copies the bio of Circle Internet Financial, the USDC issuer whose stock ticker is CRCL, and links to the official @circle X handle. Nothing in the packet shows Circle created or endorses it. The pattern (created and migrated in the same second, brand bio copied) fits a brand-bait launch, possibly one that points fee-sharing or a link at a famous account. Several copycat \\\"Circle\\\"/\\\"CIRCLE\\\"/\\\"CRCL\\\" tokens were launched the same day.\",\"narrative\":{\"description\":\"The story is borrowed from Circle, the USDC issuer listed as CRCL, suggesting an 'official' or 'Circle-linked' Solana token. Brand recognition is high, but nothing links the token to the company except copied metadata.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A famous brand and ticker, a link to the real @circle handle, and fast price gains draw people who hope it is official or that Circle will claim it. Heavy volume that looks bot-driven pushes it onto trending lists. There is no organic announcement from Circle in the packet.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This token has by far the most liquidity ($518k) and volume among the same-name tokens, so it is the current leader among the Circle copycats. Its only claim to be 'the' Circle token is metadata pointing at @circle, which anyone can set.\",\"competing_tokens\":\"There are several same-day copies: a 'Circle' token at $1.2M market cap with no liquidity, and two 'CIRCLE' tokens at about $30k each. There are also older 'Just a Circle' CRCL tokens. Ticker confusion is heavy.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Over 6 hours there were 3,277 unique buyers but only 168 unique sellers, and about 7,600 sells. That works out to roughly 45 sells per seller, which points to bot or market-maker cycling. Volume of 11.8x market cap per hour looks like wash trading. GMGN flags 166 bundler wallets and 61 insider ('rat trader') wallets. There is a 72-wallet insider network linked by transfers and 103 insiders detected by wallet graph analysis. GeckoTerminal shows the top 10 holders at 95%, though that figure may include pools. There is no smart-money or known-KOL wallet participation. The official brand's X account is used as the project link, which looks like impersonation. The X account's rename history ('circlepay' \u2192 'circle' \u2192 'arc') likely belongs to the real company, so it is not proof of a recycled account.\",\"uncertainty\":\"The creator may have set up fee-sharing to the real @circle account, and the company could acknowledge it. The top-10 concentration figure may be mostly pool accounts. GMGN says the top 10 hold only 2.2%, which contradicts GeckoTerminal.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The creator could disavow it, or Circle could publicly say it is not theirs, which usually crashes brand-bait tokens\",\"Liquidity-lock data conflicts: RugCheck flags most LP as unlocked in the top markets, while GMGN reports LP fully burned\",\"Very high bundler and insider presence (166 bundlers, a 72-wallet transfer network) sets up coordinated selling\",\"Wash-like turnover overstates real demand\",\"The buyer-to-seller asymmetry suggests many small buyers holding bags that bots can sell into\",\"Copycat tokens split attention\"]},\"counterargument\":\"Liquidity is real and substantial ($518k), there are over 3,300 holders, and the price is at its all-time high with volume still accelerating (the 5-minute rate is at or above the 1-hour rate). Brand-bait tokens tied to major companies sometimes run to $10M or more on speculation that the company will claim the fees or react. The Circle/CRCL name is highly recognisable to crypto traders. Momentum microcaps often keep rising for hours before the insider exit.\",\"unknowns\":[\"Whether Circle or anyone linked to it has acknowledged the token or a fee-share\",\"Whether the launchpad (possibly Bags-style) routes royalties to @circle\",\"What share of supply the insider and bundler clusters actually hold\",\"Whether the LP is truly burned\",\"X, KOL and Telegram promotion activity\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment rests only on the evidence packet.\"},\"thesis\":\"This looks like an unofficial token trading on Circle's brand. Volume appears inflated by bots, and bundlers and insiders are heavily present. The short-term momentum is real, but a company-impersonation token with coordinated wallet structure usually peaks within hours and then fades sharply, either when insiders exit or when the company disavows it.\",\"continuation_view\":\"fade\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Circle\" (CRCL), launched about 3.5 hours ago on a Meteora virtual curve and now trading on PumpSwap, has reached roughly $2M market cap with about $15M in 6-hour volume. Its hourly turnover is about 11.8x its market cap. Price is up about 150% in 6 hours and is at its all-time high. Its metadata copies the bio of Circle Internet Financial, the USDC issuer whose stock ticker is CRCL, and links to the official @circle X handle. Nothing in the packet shows Circle created or endorses it. The pattern (created and migrated in the same second, brand bio copied) fits a brand-bait launch, possibly one that points fee-sharing or a link at a famous account. Several copycat \"Circle\"/\"CIRCLE\"/\"CRCL\" tokens were launched the same day.",
+  "narrative": {
+   "description": "The story is borrowed from Circle, the USDC issuer listed as CRCL, suggesting an 'official' or 'Circle-linked' Solana token. Brand recognition is high, but nothing links the token to the company except copied metadata.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A famous brand and ticker, a link to the real @circle handle, and fast price gains draw people who hope it is official or that Circle will claim it. Heavy volume that looks bot-driven pushes it onto trending lists. There is no organic announcement from Circle in the packet."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This token has by far the most liquidity ($518k) and volume among the same-name tokens, so it is the current leader among the Circle copycats. Its only claim to be 'the' Circle token is metadata pointing at @circle, which anyone can set.",
+   "competing_tokens": "There are several same-day copies: a 'Circle' token at $1.2M market cap with no liquidity, and two 'CIRCLE' tokens at about $30k each. There are also older 'Just a Circle' CRCL tokens. Ticker confusion is heavy.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Over 6 hours there were 3,277 unique buyers but only 168 unique sellers, and about 7,600 sells. That works out to roughly 45 sells per seller, which points to bot or market-maker cycling. Volume of 11.8x market cap per hour looks like wash trading. GMGN flags 166 bundler wallets and 61 insider ('rat trader') wallets. There is a 72-wallet insider network linked by transfers and 103 insiders detected by wallet graph analysis. GeckoTerminal shows the top 10 holders at 95%, though that figure may include pools. There is no smart-money or known-KOL wallet participation. The official brand's X account is used as the project link, which looks like impersonation. The X account's rename history ('circlepay' \u2192 'circle' \u2192 'arc') likely belongs to the real company, so it is not proof of a recycled account.",
+   "uncertainty": "The creator may have set up fee-sharing to the real @circle account, and the company could acknowledge it. The top-10 concentration figure may be mostly pool accounts. GMGN says the top 10 hold only 2.2%, which contradicts GeckoTerminal."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The creator could disavow it, or Circle could publicly say it is not theirs, which usually crashes brand-bait tokens",
+    "Liquidity-lock data conflicts: RugCheck flags most LP as unlocked in the top markets, while GMGN reports LP fully burned",
+    "Very high bundler and insider presence (166 bundlers, a 72-wallet transfer network) sets up coordinated selling",
+    "Wash-like turnover overstates real demand",
+    "The buyer-to-seller asymmetry suggests many small buyers holding bags that bots can sell into",
+    "Copycat tokens split attention"
+   ]
+  },
+  "counterargument": "Liquidity is real and substantial ($518k), there are over 3,300 holders, and the price is at its all-time high with volume still accelerating (the 5-minute rate is at or above the 1-hour rate). Brand-bait tokens tied to major companies sometimes run to $10M or more on speculation that the company will claim the fees or react. The Circle/CRCL name is highly recognisable to crypto traders. Momentum microcaps often keep rising for hours before the insider exit.",
+  "unknowns": [
+   "Whether Circle or anyone linked to it has acknowledged the token or a fee-share",
+   "Whether the launchpad (possibly Bags-style) routes royalties to @circle",
+   "What share of supply the insider and bundler clusters actually hold",
+   "Whether the LP is truly burned",
+   "X, KOL and Telegram promotion activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment rests only on the evidence packet."
+  },
+  "thesis": "This looks like an unofficial token trading on Circle's brand. Volume appears inflated by bots, and bundlers and insiders are heavily present. The short-term momentum is real, but a company-impersonation token with coordinated wallet structure usually peaks within hours and then fades sharply, either when insiders exit or when the company disavows it.",
+  "continuation_view": "fade",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8288,
+ "type": "result",
+ "duration_ms": 28323,
+ "uuid": "3a5cd844-6893-441c-b740-c324f874463c",
+ "ttft_stream_ms": 822,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 822,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

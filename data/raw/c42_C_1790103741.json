@@ -1,0 +1,246 @@
+{
+ "duration_api_ms": 499361,
+ "stop_reason": "tool_use",
+ "session_id": "71d39032-016d-4a39-ab59-c16b5508a843",
+ "total_cost_usd": 2.087948,
+ "usage": {
+  "input_tokens": 40,
+  "cache_creation_input_tokens": 54999,
+  "cache_read_input_tokens": 647102,
+  "output_tokens": 25085,
+  "output_tokens_details": {
+   "thinking_tokens": 12901
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 54999,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 10148,
+    "cache_read_input_tokens": 54200,
+    "cache_creation_input_tokens": 3299,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3299
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 40,
+   "outputTokens": 25085,
+   "cacheReadInputTokens": 647102,
+   "cacheCreationInputTokens": 54999,
+   "webSearchRequests": 0,
+   "costUSD": 1.5008660000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 12901,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 321517,
+   "outputTokens": 13113,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 20,
+   "costUSD": 0.587082,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 40,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PreweJYE\u2026 is the canonical, currently-live PreStocks \\\"OpenAI\\\" tokenized pre-IPO token on Solana (confirmed by CoinGecko, prestocks.com/openai and Jupiter all pointing at this exact mint after PreStocks' contract migration). It is an extremely low-float instrument: circulating supply is only ~1,902 tokens (CoinMarketCap/Yahoo), market cap ~$4.3\u20135.0M, with liquidity fragmented across ~30 tiny Meteora/Raydium/Orca pools (packet: $330k total; Jupiter shows ~$1.0M incl. all venues). In the last 24h it printed an all-time high of ~$4,092 and a low of ~$1,656 on ~$4.4M volume \u2014 roughly 90\u2013100% of its own market cap turning over. At detection it was +29% on 1h/+33% on 24h but already \u221216.6% on 5m and \u221230% on 30m, i.e. the blow-off top had just happened.\\n\\nThree things I could establish about WHY:\\n(1) Macro narrative: OpenAI pre-IPO is genuinely hot \u2014 reports on 16 Sep of a new round at $1.2T (PYMNTS/Fortune) to $1.5T (Forbes) vs the $852B August tender; Pyth added OpenAI/Anthropic pre-IPO indices on 17 Sep; OKX launched OpenAI/Anthropic pre-IPO perps in Europe on 10 Sep. But that news is ~1 week stale, and today's actual OpenAI headline (Fortune, 22 Sep) is that OpenAI \\\"punted\\\" its IPO to 2027 \u2014 not a bullish catalyst.\\n(2) The move is idiosyncratic, not sector-wide. ANTHROPIC PreStocks (Pren1Fv\u2026), the sister asset on the same platform, is flat at \u22120.34% on 24h with similar liquidity. A genuine pre-IPO repricing would have moved both. It did not.\\n(3) The most plausible mechanical driver I found is reflexive quote-asset demand: PreStocks partnered with StonkFun, a Raydium LaunchLab-based Solana launchpad where new memecoins are quoted in tokenized stocks / pre-IPO tokens rather than SOL. DexScreener shows 13+ live memecoins (GPT, AGI, ALT-COIN, DOUG, JALAPE\u00d1O, ASTRA, CATGPT, ACTII, INFERENCE\u2026) and even a SOL pair using OPENAI as the quote asset, one with $2.91M/24h volume. Buying any of those first requires buying OPENAI \u2014 against a 1,902-token float. By 7 Sep tokenized stocks were the quote asset for ~42% of StonkFun launches.\\n\\nCritically, the token trades far above its own issuer mark: Jupiter displays a PreStocks mark (fair value) of ~$1,005 vs a trading price of $1,464 at the time of fetch (\u221245.7% discount shown), and current prints of $2,236\u20132,612 are ~2.2\u20132.6x that mark and ~3x Bitget's comparable preOPAI reference of ~$725/share. This is a premium/float squeeze, not a NAV revaluation. There is precedent: CMC's timeline records a +111% day to $3,509 on 11 Sep, which had fully mean-reverted to ~$1,129 by 15 Sep.\",\"narrative\":{\"description\":\"\\\"Own OpenAI before the IPO\\\" \u2014 tokenized pre-IPO equity exposure on Solana. Real, large and growing as a sector (PreStocks ~$1.4B cumulative volume, ~78% share of OpenAI/Anthropic pre-IPO token volume; OKX/Binance/Kraken/Gate all listed OpenAI pre-IPO derivatives in 2026). Layered on top is a second, more immediate narrative: StonkFun memecoins quoted in $OPENAI, which turns a 1,902-token float into a scarce quote asset.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The OpenAI IPO/mega-round story is one of the biggest financial narratives of 2026 and gives a crypto-native way to express it. But the specific attention flowing into this token today is not driven by fresh OpenAI news (today's actual headline is an IPO delay to 2027). It is driven by price itself: a 1,902-token float being squeezed 3x above issuer mark, which pulls in momentum traders \u2014 holder count +4.7% in 24h, 1,629 unique buyers in one hour. That is reflexive attention, and the 5m/30m prints (\u221216.6%/\u221230% off a fresh ATH) say the peak is already in.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF is the canonical post-migration PreStocks OPENAI mint. CoinGecko lists it as the contract for 'OpenAI PreStocks' and notes the migration from the old contract; prestocks.com/openai links this exact Solana address; Jupiter's token page resolves to it; GeckoTerminal attaches the official @PreStocks / t.me/PreStocksFi socials. So the token connection to the story is direct and legitimate \u2014 this is genuinely the instrument PreStocks issues for OpenAI SPV exposure.\",\"competing_tokens\":\"The packet lists 10 same-name 'OpenAI PreStocks' tokens. Their creation timestamps cluster in the last 2\u20133 days (several on 21\u201322 Sep 2026) \u2014 a copycat swarm chasing the trending name. The biggest, 5ar3v8Xaz55rgnkKiANFtNDUdje5iUg7z8W9nnTzoTGx, is a pump.fun/PumpSwap memecoin at $0.00001125 with $320k liquidity and ~$4.1M 24h volume (+81%) \u2014 i.e. it is doing MORE volume today than the real asset. Nine others are near-zero-liquidity shells. There is also Bitget's separate preOPAI product (~$725/token) on Solana.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Pro-organic: GMGN shows no paid promotion at all (dexscreener_paid_ad false, boost false, trending-bar false, profile not updated, community_takeover false), 0 degen calls, 0 smart-money signals, bot_degen_rate 1.51%, fresh_wallet_rate 0.97%, project X account has an empty rename history (not a recycled account). Participation looks broad: GeckoTerminal 1,629 unique buyers vs 1,272 unique sellers in 1h and 2,391 unique buyers in 24h; Jupiter shows 32.2K holders growing +4.72% in 24h with ~8.94K active traders. The issuer is a real, funded platform (prestocks.com, Jupiter Verified integration, Sacra/blocmates/SolanaFloor coverage), not an anon deployer. Pro-manufactured: I found zero indexed X, Reddit, Telegram or Discord discussion dated today explaining the move, and I could not access X directly (HTTP 402) or Reddit (blocked). GMGN flags top_entrapment_trader_pct 32.76% and top_bundler_trader_pct 15.73%; top-10 holders control 58.85% ex-AMM. On a 1,902-token float with ~$330k of on-chain liquidity, a handful of wallets can produce exactly this tape without any coordination being visible.\",\"uncertainty\":\"I could not observe X/Twitter at all. If there was a single viral thread or a KOL call today, it is invisible to me. Equally, the copycat pump.fun 'OpenAI PreStocks' doing $4M volume today suggests meme-desk attention on the NAME, and I cannot determine the direction of causality between that and the real token's squeeze.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Mint authority NOT renounced and freeze authority NOT renounced (RugCheck: 'Permanent Control Enabled', 'danger'). By design the issuer can mint new OPENAI tokens against new SPV exposure \u2014 which is exactly what arbitrages away a 2x+ premium \u2014 and can freeze tokens (PreStocks' documented redemption flow involves freezing tokens).\",\"Circulating float is only ~1,902 tokens; total on-chain liquidity ~$330k (packet) across ~30 pools. 24h volume of $4.4M against that is ~13x the liquidity \u2014 violent slippage in both directions.\",\"Severe price fragmentation across venues at the same moment: DexScreener shows pools printing $1,703, $1,728, $1,882, $2,232, $2,611, $3,186 and $3,374 for the same token. Execution risk is extreme and quoted 'price' is unreliable.\",\"Trading at roughly 2.2x the issuer's own mark price (~$1,005 per Jupiter) and ~3x Bitget's comparable preOPAI reference (~$725). Large, documented premium-to-NAV.\",\"Top-10 holders 58.85% ex-AMM (GeckoTerminal: 60.4%); top holder 13.0%, second 12.16%. Creator holds 4.2%. Any one of these exiting into $330k of liquidity ends the move.\",\"LP locked 0% on top markets; lp_burn_ratio 0.0.\",\"Legal/structural overhang: in May 2026 OpenAI and Anthropic publicly stated the SPV share-transfer structures behind these tokens are invalid, and the tokens fell ~40% (CoinDesk). OpenAI has repeatedly said such tokens are not equity. PreStocks itself states tokens are not available to U.S. persons and expire worthless if not converted within ~9 months post-IPO.\",\"Buy/sell tax 0.01 each side per GMGN and 'Fee config enabled' (owner can change fees), plus mutable metadata.\"]},\"counterargument\":\"The strongest case against my fade view: the supply squeeze may be structural rather than a one-off pump. StonkFun's PreStocks partnership means every new OPENAI-quoted memecoin permanently locks OPENAI into a bonding curve and then an LP \u2014 a one-way sink against a 1,902-token float. If PreStocks cannot or will not mint new supply quickly (SPV sourcing is slow, and after OpenAI/Anthropic declared SPV transfers invalid in May 2026, new SPV exposure may be genuinely hard to source), then the normal arbitrage that kills a closed-end-fund premium simply does not function, and the premium can expand far beyond 2\u20133x NAV and stay there. On top of that the fundamental anchor is genuinely moving: OpenAI's last tender marked $852B, but reports on 16 Sep put a new round at $1.2T (PYMNTS/Fortune) and as high as $1.5T (Forbes), with Altman calling sub-$1T a \\\"nonstarter\\\" \u2014 so the issuer's own ~$1,005 mark may itself be stale and lagging. If a $1.5T round is confirmed, or the IPO timeline re-accelerates, a repricing plus an uncoverable float could keep this bid and make today's move look like the start rather than the end. I also could not see X at all, so a real, growing organic catalyst may exist that I simply did not observe.\",\"unknowns\":[\"The specific trigger for today's move. No X, Reddit, Telegram or Discord post from 22 Sep 2026 explaining it was findable via search engines; x.com returned HTTP 402 and reddit.com is blocked to my user agent.\",\"Whether PreStocks has minted, or intends to mint, new OPENAI supply into the premium. Mint authority is live and this is the single biggest determinant of whether the premium persists.\",\"Whether the StonkFun quote-asset flywheel is actually accelerating today specifically, or whether I am retro-fitting a mechanism that has existed since early August.\",\"The true current PreStocks mark price. Jupiter's cached page showed ~$1,005 against a $1,464 trading price; I could not load prestocks.com/openai's live data fields (they rendered empty).\",\"Direction of causality between the real token's squeeze and the pump.fun copycat 'OpenAI PreStocks' (5ar3v8\u2026) doing ~$4.1M volume today.\",\"Identity/intent of the two largest non-pool holders (13.0% and 12.16%) \u2014 neither is insider-flagged, but together they are ~25% of supply against ~$330k of liquidity.\",\"Whether the packet's GMGN dev record (creator 4wa8FTHD\u2026, funded from Kraken, 8 tokens launched) refers to the PreStocks issuer or to an unrelated address; it differs from the RugCheck creator WV9PJN7X\u2026 which holds 4.2% and has launched 30 tokens \u2014 consistent with a multi-asset PreStocks issuer rather than a serial rugger, but unverified.\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"inaccessible\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"X: direct fetch of x.com/PreStocksFi returned HTTP 402 and twstalker mirror returned 403, so no live timeline. I did surface indexed X posts via site:x.com search (PreStocks launch announcement, Jupiter integration, PreStocks<>StonkFun partnership ~6 Aug 2026, Gate pre-market listing ~Apr 2026, a @PreStocksIntern long-form article on $OPENAI) but found NOTHING dated 21\u201322 Sep 2026. Reddit: both domain-filtered search and direct fetch were blocked to my user agent \u2014 genuine blind spot. Telegram: the project's public handle t.me/PreStocksFi is listed on GeckoTerminal but no indexed content from today was findable; private channel content is invisible. Discord: no official PreStocks Discord surfaced in any search, so not attempted separately. News: extensive \u2014 CoinDesk, Fortune, Forbes, PYMNTS, CNBC, SolanaFloor, BeInCrypto, Solana Compass. Project site: prestocks.com loaded (stats, disclaimers); prestocks.com/openai loaded but its live price/valuation/supply fields rendered empty. prestockprinter.com (a third-party $PRINT airdrop site referencing this mint) did not resolve \u2014 DNS failure.\"},\"thesis\":\"This is a real asset with a real narrative having a fake-looking move. PreweJYE\u2026 is genuinely the canonical PreStocks OpenAI pre-IPO token, and \\\"own OpenAI before the IPO\\\" is one of 2026's biggest financial stories. But today's +33\u201357% spike to an all-time high of $4,092 is not a fundamental repricing: the sister asset ANTHROPIC PreStocks is flat (\u22120.34%), today's actual OpenAI headline is an IPO delay to 2027, and the token is trading at roughly 2.2x its own issuer mark (~$1,005 on Jupiter) and ~3x Bitget's comparable preOPAI reference (~$725). What I can actually evidence is a mechanical low-float squeeze \u2014 ~1,902 circulating tokens, ~$330k of fragmented on-chain liquidity, $4.4M of turnover, and StonkFun memecoins that force buyers through OPENAI as a quote asset \u2014 amplified by a copycat swarm (10 same-name mints, most created in the last 48h, one pump.fun clone out-trading the real thing at $4.1M). The tape had already broken when the trigger fired: \u221216.6% in 5 minutes and \u221230% in 30 minutes off the ATH, with the identical pattern having played out on 11 Sep (+111% to $3,509, back to $1,129 by 15 Sep). With mint authority live, the issuer can print directly into the premium. I expect attention and price to decay over the next few hours rather than extend.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.coingecko.com/en/coins/openai-prestocks\",\"what\":\"Confirms PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF is the canonical post-migration OPENAI PreStocks contract; price ~$2,496 (+50.4% 24h), mcap ~$4.75M; notes the contract migration and the earlier warning about unauthorized tokenized-equity transfers.\"},{\"url\":\"https://coinmarketcap.com/currencies/openai-tokenized-stock-prestocks/\",\"what\":\"Circulating supply 1,902 tokens; 24h high $4,092.42 / low $1,656.19; all-time high set 22 Sep 2026; 24h volume $4.42M vs $4.96M mcap; CertiK rating 3.0/10.\"},{\"url\":\"https://jup.ag/tokens/PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF\",\"what\":\"Jupiter token page for this exact mint: trading price vs PreStocks mark price ~$1,005 (premium), 32.2K holders +4.72% in 24h, ~8.94K active traders, 88% net buyers, liquidity ~$1.01M.\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF\",\"what\":\"All 17 pools for the token: fragmented prices from $1,703 to $3,374 simultaneously; plus 13+ memecoins (GPT, AGI, ALT-COIN, DOUG, JALAPE\u00d1O, ASTRA, CATGPT, ACTII, INFERENCE) and a SOL pair using OPENAI as the QUOTE asset \u2014 the StonkFun mechanism.\"},{\"url\":\"https://api.dexscreener.com/latest/dex/search?q=ANTHROPIC%20PreStocks\",\"what\":\"Sister asset ANTHROPIC PreStocks (Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw) is FLAT at \u22120.34%/24h with $224k liquidity \u2014 proves today's OPENAI move is idiosyncratic, not a sector-wide pre-IPO repricing.\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/5ar3v8Xaz55rgnkKiANFtNDUdje5iUg7z8W9nnTzoTGx\",\"what\":\"The largest same-name competitor is a pump.fun/PumpSwap memecoin at $0.00001125 with $320,859 liquidity and $4.09M 24h volume (+81%) \u2014 a ticker/name hijack out-trading the real asset today.\"},{\"url\":\"https://fortune.com/2026/09/22/openai-punted-anthropic-stalled-the-hottest-imminent-ipo-fits-on-your-finger-oura/\",\"what\":\"Today's actual OpenAI headline (22 Sep 2026): OpenAI punted its IPO to 2027, Anthropic stalled to November \u2014 i.e. the day's real news is not bullish for the pre-IPO token.\"},{\"url\":\"https://www.pymnts.com/news/artificial-intelligence/2026/openai-eyes-1-2-trillion-valuation-in-pre-ipo-funding-round/\",\"what\":\"16 Sep 2026: OpenAI weighing a pre-IPO round at $1.2T valuation \u2014 the (week-stale) fundamental backdrop.\"},{\"url\":\"https://www.forbes.com/sites/siladityaray/2026/09/16/openai-is-reportedly-weighing-new-funding-round-at-15-trillion-valuation/\",\"what\":\"16 Sep 2026: reports of a round at up to $1.5T vs $730B/$852B prior marks \u2014 the bull case anchor.\"},{\"url\":\"https://www.coindesk.com/markets/2026/05/13/anthropic-openai-tokens-plunge-nearly-40-as-ai-firms-warn-spv-transfers-are-invalid\",\"what\":\"May 2026: OpenAI and Anthropic warned the SPV share-transfer structures behind these tokens are invalid; tokens fell ~40%. Core legal overhang.\"},{\"url\":\"https://medium.com/coinmonks/stonkfun-api-track-stock-paired-solana-launches-in-real-time-d21777fc7412\",\"what\":\"StonkFun quotes new Solana launches in tokenized stocks and PreStocks pre-IPO tokens including OPENAI and ANTHROPIC; since Sep 2026 runs on Raydium LaunchLab; by 7 Sep tokenized stocks were the quote asset for ~42% of launches vs ~10.5% for SOL.\"},{\"url\":\"https://x.com/PreStocks/status/2085207685365125566\",\"what\":\"PreStocks X post announcing the PreStocks<>StonkFun partnership ('StonkFun unlocks PreStocks-powered memecoins'), ~6 Aug 2026 \u2014 the structural source of OPENAI quote-asset demand.\"},{\"url\":\"https://prestocks.com/\",\"what\":\"Issuer site: tokens are 1:1 backed by SPV exposure, confer no ownership/voting/dividend rights, not endorsed by the companies, ~$1.4B cumulative volume, ~50k holders.\"},{\"url\":\"https://prestocks.com/openai\",\"what\":\"Official OpenAI product page linking this exact Solana mint (live price/valuation/supply fields rendered empty on fetch).\"},{\"url\":\"https://crypto.news/bitget-taps-4t-ai-boom-with-openai-linked-pre-ipo-token-on-solana/\",\"what\":\"Bitget's comparable Solana pre-IPO OpenAI token preOPAI priced at ~$725/token \u2014 independent NAV reference showing the ~3x premium on PreStocks OPENAI.\"},{\"url\":\"https://www.coindesk.com/markets/2026/09/10/okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows\",\"what\":\"10 Sep 2026: OKX launched OpenAI/Anthropic pre-IPO perps in Europe \u2014 evidence the sector narrative is real and institutionalising.\"},{\"url\":\"https://coinmarketcap.com/cmc-ai/openai-tokenized-stock-prestocks/latest-updates/\",\"what\":\"CMC event timeline including a prior +111.43% single-day spike to $3,509.30 on 11 Sep 2026 \u2014 precedent that these squeezes mean-revert within days (price was ~$1,129 by 15 Sep).\"},{\"url\":\"https://solanafloor.com/news/pre-stocks-success-on-solana\",\"what\":\"PreStocks holds ~78% of pre-IPO OpenAI/Anthropic token volume on Solana; $414.7M cumulative since Sep 2025 \u2014 the issuer is a genuine, dominant platform.\"},{\"url\":\"https://x.com/PreStocksIntern/article/2083113495298756842\",\"what\":\"PreStocks long-form explainer on $OPENAI: token tracks estimated private-market value, no equity/vote/dividend, price ~$714 implying ~$885B valuation, converts to tokenized public stock only within ~9 months post-IPO then expires worthless, not available to U.S. persons.\"}]}",
+ "structured_output": {
+  "what_is_happening": "PreweJYE\u2026 is the canonical, currently-live PreStocks \"OpenAI\" tokenized pre-IPO token on Solana (confirmed by CoinGecko, prestocks.com/openai and Jupiter all pointing at this exact mint after PreStocks' contract migration). It is an extremely low-float instrument: circulating supply is only ~1,902 tokens (CoinMarketCap/Yahoo), market cap ~$4.3\u20135.0M, with liquidity fragmented across ~30 tiny Meteora/Raydium/Orca pools (packet: $330k total; Jupiter shows ~$1.0M incl. all venues). In the last 24h it printed an all-time high of ~$4,092 and a low of ~$1,656 on ~$4.4M volume \u2014 roughly 90\u2013100% of its own market cap turning over. At detection it was +29% on 1h/+33% on 24h but already \u221216.6% on 5m and \u221230% on 30m, i.e. the blow-off top had just happened.\n\nThree things I could establish about WHY:\n(1) Macro narrative: OpenAI pre-IPO is genuinely hot \u2014 reports on 16 Sep of a new round at $1.2T (PYMNTS/Fortune) to $1.5T (Forbes) vs the $852B August tender; Pyth added OpenAI/Anthropic pre-IPO indices on 17 Sep; OKX launched OpenAI/Anthropic pre-IPO perps in Europe on 10 Sep. But that news is ~1 week stale, and today's actual OpenAI headline (Fortune, 22 Sep) is that OpenAI \"punted\" its IPO to 2027 \u2014 not a bullish catalyst.\n(2) The move is idiosyncratic, not sector-wide. ANTHROPIC PreStocks (Pren1Fv\u2026), the sister asset on the same platform, is flat at \u22120.34% on 24h with similar liquidity. A genuine pre-IPO repricing would have moved both. It did not.\n(3) The most plausible mechanical driver I found is reflexive quote-asset demand: PreStocks partnered with StonkFun, a Raydium LaunchLab-based Solana launchpad where new memecoins are quoted in tokenized stocks / pre-IPO tokens rather than SOL. DexScreener shows 13+ live memecoins (GPT, AGI, ALT-COIN, DOUG, JALAPE\u00d1O, ASTRA, CATGPT, ACTII, INFERENCE\u2026) and even a SOL pair using OPENAI as the quote asset, one with $2.91M/24h volume. Buying any of those first requires buying OPENAI \u2014 against a 1,902-token float. By 7 Sep tokenized stocks were the quote asset for ~42% of StonkFun launches.\n\nCritically, the token trades far above its own issuer mark: Jupiter displays a PreStocks mark (fair value) of ~$1,005 vs a trading price of $1,464 at the time of fetch (\u221245.7% discount shown), and current prints of $2,236\u20132,612 are ~2.2\u20132.6x that mark and ~3x Bitget's comparable preOPAI reference of ~$725/share. This is a premium/float squeeze, not a NAV revaluation. There is precedent: CMC's timeline records a +111% day to $3,509 on 11 Sep, which had fully mean-reverted to ~$1,129 by 15 Sep.",
+  "narrative": {
+   "description": "\"Own OpenAI before the IPO\" \u2014 tokenized pre-IPO equity exposure on Solana. Real, large and growing as a sector (PreStocks ~$1.4B cumulative volume, ~78% share of OpenAI/Anthropic pre-IPO token volume; OKX/Binance/Kraken/Gate all listed OpenAI pre-IPO derivatives in 2026). Layered on top is a second, more immediate narrative: StonkFun memecoins quoted in $OPENAI, which turns a 1,902-token float into a scarce quote asset.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The OpenAI IPO/mega-round story is one of the biggest financial narratives of 2026 and gives a crypto-native way to express it. But the specific attention flowing into this token today is not driven by fresh OpenAI news (today's actual headline is an IPO delay to 2027). It is driven by price itself: a 1,902-token float being squeezed 3x above issuer mark, which pulls in momentum traders \u2014 holder count +4.7% in 24h, 1,629 unique buyers in one hour. That is reflexive attention, and the 5m/30m prints (\u221216.6%/\u221230% off a fresh ATH) say the peak is already in."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF is the canonical post-migration PreStocks OPENAI mint. CoinGecko lists it as the contract for 'OpenAI PreStocks' and notes the migration from the old contract; prestocks.com/openai links this exact Solana address; Jupiter's token page resolves to it; GeckoTerminal attaches the official @PreStocks / t.me/PreStocksFi socials. So the token connection to the story is direct and legitimate \u2014 this is genuinely the instrument PreStocks issues for OpenAI SPV exposure.",
+   "competing_tokens": "The packet lists 10 same-name 'OpenAI PreStocks' tokens. Their creation timestamps cluster in the last 2\u20133 days (several on 21\u201322 Sep 2026) \u2014 a copycat swarm chasing the trending name. The biggest, 5ar3v8Xaz55rgnkKiANFtNDUdje5iUg7z8W9nnTzoTGx, is a pump.fun/PumpSwap memecoin at $0.00001125 with $320k liquidity and ~$4.1M 24h volume (+81%) \u2014 i.e. it is doing MORE volume today than the real asset. Nine others are near-zero-liquidity shells. There is also Bitget's separate preOPAI product (~$725/token) on Solana.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Pro-organic: GMGN shows no paid promotion at all (dexscreener_paid_ad false, boost false, trending-bar false, profile not updated, community_takeover false), 0 degen calls, 0 smart-money signals, bot_degen_rate 1.51%, fresh_wallet_rate 0.97%, project X account has an empty rename history (not a recycled account). Participation looks broad: GeckoTerminal 1,629 unique buyers vs 1,272 unique sellers in 1h and 2,391 unique buyers in 24h; Jupiter shows 32.2K holders growing +4.72% in 24h with ~8.94K active traders. The issuer is a real, funded platform (prestocks.com, Jupiter Verified integration, Sacra/blocmates/SolanaFloor coverage), not an anon deployer. Pro-manufactured: I found zero indexed X, Reddit, Telegram or Discord discussion dated today explaining the move, and I could not access X directly (HTTP 402) or Reddit (blocked). GMGN flags top_entrapment_trader_pct 32.76% and top_bundler_trader_pct 15.73%; top-10 holders control 58.85% ex-AMM. On a 1,902-token float with ~$330k of on-chain liquidity, a handful of wallets can produce exactly this tape without any coordination being visible.",
+   "uncertainty": "I could not observe X/Twitter at all. If there was a single viral thread or a KOL call today, it is invisible to me. Equally, the copycat pump.fun 'OpenAI PreStocks' doing $4M volume today suggests meme-desk attention on the NAME, and I cannot determine the direction of causality between that and the real token's squeeze."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Mint authority NOT renounced and freeze authority NOT renounced (RugCheck: 'Permanent Control Enabled', 'danger'). By design the issuer can mint new OPENAI tokens against new SPV exposure \u2014 which is exactly what arbitrages away a 2x+ premium \u2014 and can freeze tokens (PreStocks' documented redemption flow involves freezing tokens).",
+    "Circulating float is only ~1,902 tokens; total on-chain liquidity ~$330k (packet) across ~30 pools. 24h volume of $4.4M against that is ~13x the liquidity \u2014 violent slippage in both directions.",
+    "Severe price fragmentation across venues at the same moment: DexScreener shows pools printing $1,703, $1,728, $1,882, $2,232, $2,611, $3,186 and $3,374 for the same token. Execution risk is extreme and quoted 'price' is unreliable.",
+    "Trading at roughly 2.2x the issuer's own mark price (~$1,005 per Jupiter) and ~3x Bitget's comparable preOPAI reference (~$725). Large, documented premium-to-NAV.",
+    "Top-10 holders 58.85% ex-AMM (GeckoTerminal: 60.4%); top holder 13.0%, second 12.16%. Creator holds 4.2%. Any one of these exiting into $330k of liquidity ends the move.",
+    "LP locked 0% on top markets; lp_burn_ratio 0.0.",
+    "Legal/structural overhang: in May 2026 OpenAI and Anthropic publicly stated the SPV share-transfer structures behind these tokens are invalid, and the tokens fell ~40% (CoinDesk). OpenAI has repeatedly said such tokens are not equity. PreStocks itself states tokens are not available to U.S. persons and expire worthless if not converted within ~9 months post-IPO.",
+    "Buy/sell tax 0.01 each side per GMGN and 'Fee config enabled' (owner can change fees), plus mutable metadata."
+   ]
+  },
+  "counterargument": "The strongest case against my fade view: the supply squeeze may be structural rather than a one-off pump. StonkFun's PreStocks partnership means every new OPENAI-quoted memecoin permanently locks OPENAI into a bonding curve and then an LP \u2014 a one-way sink against a 1,902-token float. If PreStocks cannot or will not mint new supply quickly (SPV sourcing is slow, and after OpenAI/Anthropic declared SPV transfers invalid in May 2026, new SPV exposure may be genuinely hard to source), then the normal arbitrage that kills a closed-end-fund premium simply does not function, and the premium can expand far beyond 2\u20133x NAV and stay there. On top of that the fundamental anchor is genuinely moving: OpenAI's last tender marked $852B, but reports on 16 Sep put a new round at $1.2T (PYMNTS/Fortune) and as high as $1.5T (Forbes), with Altman calling sub-$1T a \"nonstarter\" \u2014 so the issuer's own ~$1,005 mark may itself be stale and lagging. If a $1.5T round is confirmed, or the IPO timeline re-accelerates, a repricing plus an uncoverable float could keep this bid and make today's move look like the start rather than the end. I also could not see X at all, so a real, growing organic catalyst may exist that I simply did not observe.",
+  "unknowns": [
+   "The specific trigger for today's move. No X, Reddit, Telegram or Discord post from 22 Sep 2026 explaining it was findable via search engines; x.com returned HTTP 402 and reddit.com is blocked to my user agent.",
+   "Whether PreStocks has minted, or intends to mint, new OPENAI supply into the premium. Mint authority is live and this is the single biggest determinant of whether the premium persists.",
+   "Whether the StonkFun quote-asset flywheel is actually accelerating today specifically, or whether I am retro-fitting a mechanism that has existed since early August.",
+   "The true current PreStocks mark price. Jupiter's cached page showed ~$1,005 against a $1,464 trading price; I could not load prestocks.com/openai's live data fields (they rendered empty).",
+   "Direction of causality between the real token's squeeze and the pump.fun copycat 'OpenAI PreStocks' (5ar3v8\u2026) doing ~$4.1M volume today.",
+   "Identity/intent of the two largest non-pool holders (13.0% and 12.16%) \u2014 neither is insider-flagged, but together they are ~25% of supply against ~$330k of liquidity.",
+   "Whether the packet's GMGN dev record (creator 4wa8FTHD\u2026, funded from Kraken, 8 tokens launched) refers to the PreStocks issuer or to an unrelated address; it differs from the RugCheck creator WV9PJN7X\u2026 which holds 4.2% and has launched 30 tokens \u2014 consistent with a multi-asset PreStocks issuer rather than a serial rugger, but unverified."
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "inaccessible",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "X: direct fetch of x.com/PreStocksFi returned HTTP 402 and twstalker mirror returned 403, so no live timeline. I did surface indexed X posts via site:x.com search (PreStocks launch announcement, Jupiter integration, PreStocks<>StonkFun partnership ~6 Aug 2026, Gate pre-market listing ~Apr 2026, a @PreStocksIntern long-form article on $OPENAI) but found NOTHING dated 21\u201322 Sep 2026. Reddit: both domain-filtered search and direct fetch were blocked to my user agent \u2014 genuine blind spot. Telegram: the project's public handle t.me/PreStocksFi is listed on GeckoTerminal but no indexed content from today was findable; private channel content is invisible. Discord: no official PreStocks Discord surfaced in any search, so not attempted separately. News: extensive \u2014 CoinDesk, Fortune, Forbes, PYMNTS, CNBC, SolanaFloor, BeInCrypto, Solana Compass. Project site: prestocks.com loaded (stats, disclaimers); prestocks.com/openai loaded but its live price/valuation/supply fields rendered empty. prestockprinter.com (a third-party $PRINT airdrop site referencing this mint) did not resolve \u2014 DNS failure."
+  },
+  "thesis": "This is a real asset with a real narrative having a fake-looking move. PreweJYE\u2026 is genuinely the canonical PreStocks OpenAI pre-IPO token, and \"own OpenAI before the IPO\" is one of 2026's biggest financial stories. But today's +33\u201357% spike to an all-time high of $4,092 is not a fundamental repricing: the sister asset ANTHROPIC PreStocks is flat (\u22120.34%), today's actual OpenAI headline is an IPO delay to 2027, and the token is trading at roughly 2.2x its own issuer mark (~$1,005 on Jupiter) and ~3x Bitget's comparable preOPAI reference (~$725). What I can actually evidence is a mechanical low-float squeeze \u2014 ~1,902 circulating tokens, ~$330k of fragmented on-chain liquidity, $4.4M of turnover, and StonkFun memecoins that force buyers through OPENAI as a quote asset \u2014 amplified by a copycat swarm (10 same-name mints, most created in the last 48h, one pump.fun clone out-trading the real thing at $4.1M). The tape had already broken when the trigger fired: \u221216.6% in 5 minutes and \u221230% in 30 minutes off the ATH, with the identical pattern having played out on 11 Sep (+111% to $3,509, back to $1,129 by 15 Sep). With mint authority live, the issuer can print directly into the premium. I expect attention and price to decay over the next few hours rather than extend.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.coingecko.com/en/coins/openai-prestocks",
+    "what": "Confirms PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF is the canonical post-migration OPENAI PreStocks contract; price ~$2,496 (+50.4% 24h), mcap ~$4.75M; notes the contract migration and the earlier warning about unauthorized tokenized-equity transfers."
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/openai-tokenized-stock-prestocks/",
+    "what": "Circulating supply 1,902 tokens; 24h high $4,092.42 / low $1,656.19; all-time high set 22 Sep 2026; 24h volume $4.42M vs $4.96M mcap; CertiK rating 3.0/10."
+   },
+   {
+    "url": "https://jup.ag/tokens/PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+    "what": "Jupiter token page for this exact mint: trading price vs PreStocks mark price ~$1,005 (premium), 32.2K holders +4.72% in 24h, ~8.94K active traders, 88% net buyers, liquidity ~$1.01M."
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+    "what": "All 17 pools for the token: fragmented prices from $1,703 to $3,374 simultaneously; plus 13+ memecoins (GPT, AGI, ALT-COIN, DOUG, JALAPE\u00d1O, ASTRA, CATGPT, ACTII, INFERENCE) and a SOL pair using OPENAI as the QUOTE asset \u2014 the StonkFun mechanism."
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/search?q=ANTHROPIC%20PreStocks",
+    "what": "Sister asset ANTHROPIC PreStocks (Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw) is FLAT at \u22120.34%/24h with $224k liquidity \u2014 proves today's OPENAI move is idiosyncratic, not a sector-wide pre-IPO repricing."
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/5ar3v8Xaz55rgnkKiANFtNDUdje5iUg7z8W9nnTzoTGx",
+    "what": "The largest same-name competitor is a pump.fun/PumpSwap memecoin at $0.00001125 with $320,859 liquidity and $4.09M 24h volume (+81%) \u2014 a ticker/name hijack out-trading the real asset today."
+   },
+   {
+    "url": "https://fortune.com/2026/09/22/openai-punted-anthropic-stalled-the-hottest-imminent-ipo-fits-on-your-finger-oura/",
+    "what": "Today's actual OpenAI headline (22 Sep 2026): OpenAI punted its IPO to 2027, Anthropic stalled to November \u2014 i.e. the day's real news is not bullish for the pre-IPO token."
+   },
+   {
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-eyes-1-2-trillion-valuation-in-pre-ipo-funding-round/",
+    "what": "16 Sep 2026: OpenAI weighing a pre-IPO round at $1.2T valuation \u2014 the (week-stale) fundamental backdrop."
+   },
+   {
+    "url": "https://www.forbes.com/sites/siladityaray/2026/09/16/openai-is-reportedly-weighing-new-funding-round-at-15-trillion-valuation/",
+    "what": "16 Sep 2026: reports of a round at up to $1.5T vs $730B/$852B prior marks \u2014 the bull case anchor."
+   },
+   {
+    "url": "https://www.coindesk.com/markets/2026/05/13/anthropic-openai-tokens-plunge-nearly-40-as-ai-firms-warn-spv-transfers-are-invalid",
+    "what": "May 2026: OpenAI and Anthropic warned the SPV share-transfer structures behind these tokens are invalid; tokens fell ~40%. Core legal overhang."
+   },
+   {
+    "url": "https://medium.com/coinmonks/stonkfun-api-track-stock-paired-solana-launches-in-real-time-d21777fc7412",
+    "what": "StonkFun quotes new Solana launches in tokenized stocks and PreStocks pre-IPO tokens including OPENAI and ANTHROPIC; since Sep 2026 runs on Raydium LaunchLab; by 7 Sep tokenized stocks were the quote asset for ~42% of launches vs ~10.5% for SOL."
+   },
+   {
+    "url": "https://x.com/PreStocks/status/2085207685365125566",
+    "what": "PreStocks X post announcing the PreStocks<>StonkFun partnership ('StonkFun unlocks PreStocks-powered memecoins'), ~6 Aug 2026 \u2014 the structural source of OPENAI quote-asset demand."
+   },
+   {
+    "url": "https://prestocks.com/",
+    "what": "Issuer site: tokens are 1:1 backed by SPV exposure, confer no ownership/voting/dividend rights, not endorsed by the companies, ~$1.4B cumulative volume, ~50k holders."
+   },
+   {
+    "url": "https://prestocks.com/openai",
+    "what": "Official OpenAI product page linking this exact Solana mint (live price/valuation/supply fields rendered empty on fetch)."
+   },
+   {
+    "url": "https://crypto.news/bitget-taps-4t-ai-boom-with-openai-linked-pre-ipo-token-on-solana/",
+    "what": "Bitget's comparable Solana pre-IPO OpenAI token preOPAI priced at ~$725/token \u2014 independent NAV reference showing the ~3x premium on PreStocks OPENAI."
+   },
+   {
+    "url": "https://www.coindesk.com/markets/2026/09/10/okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows",
+    "what": "10 Sep 2026: OKX launched OpenAI/Anthropic pre-IPO perps in Europe \u2014 evidence the sector narrative is real and institutionalising."
+   },
+   {
+    "url": "https://coinmarketcap.com/cmc-ai/openai-tokenized-stock-prestocks/latest-updates/",
+    "what": "CMC event timeline including a prior +111.43% single-day spike to $3,509.30 on 11 Sep 2026 \u2014 precedent that these squeezes mean-revert within days (price was ~$1,129 by 15 Sep)."
+   },
+   {
+    "url": "https://solanafloor.com/news/pre-stocks-success-on-solana",
+    "what": "PreStocks holds ~78% of pre-IPO OpenAI/Anthropic token volume on Solana; $414.7M cumulative since Sep 2025 \u2014 the issuer is a genuine, dominant platform."
+   },
+   {
+    "url": "https://x.com/PreStocksIntern/article/2083113495298756842",
+    "what": "PreStocks long-form explainer on $OPENAI: token tracks estimated private-market value, no equity/vote/dividend, price ~$714 implying ~$885B valuation, converts to tokenized public stock only within ~9 months post-IPO then expires worthless, not available to U.S. persons."
+   }
+  ]
+ },
+ "ttft_ms": 4280,
+ "type": "result",
+ "duration_ms": 430028,
+ "uuid": "39d14b6f-fcee-4855-8ea5-e66fa89e983f",
+ "ttft_stream_ms": 1177,
+ "time_to_request_ms": 36,
+ "first_content_frame_ms": 1177,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

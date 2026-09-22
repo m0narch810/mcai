@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 29278,
+ "stop_reason": "tool_use",
+ "session_id": "ab4c5ac4-799b-41e0-95d3-d22e97f6ae67",
+ "total_cost_usd": 0.0939796,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5595,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2442,
+  "output_tokens_details": {
+   "thinking_tokens": 327
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5595,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2442,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 5595,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5595
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2442,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 5595,
+   "webSearchRequests": 0,
+   "costUSD": 0.0939796,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 327,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is not a new memecoin. It is the Wormhole-bridged version of FTX's FTT token on Solana. GMGN puts the mint's creation date in September 2021, and the X handle is wormholecrypto. The unusual activity is in a fairly new Raydium pool (created 2026-09-20, about 49 hours old) with only about $27.6k of liquidity. In the last hour, volume was about $58.8k, turnover was 2.1x liquidity and price rose about 28\u201330%. Almost all of it happened in one 15-minute burst: 413 buys and 428 sells, from 197 buyers and 147 sellers. Buys and sells are roughly balanced. The latest 5-minute move is flat to slightly up. The most likely cause is a move in the real FTT price on centralised exchanges (FTT often spikes on FTX bankruptcy or distribution headlines), which is then traded back and forth by arbitrage bots, perhaps with some traders who think it is cheap. It is less likely to be a Solana-native story.\",\"narrative\":{\"description\":\"The legacy FTT/FTX narrative: FTT trades as a speculative bet on FTX bankruptcy news (creditor payouts, relaunch rumours, court rulings). It surfaces here only through a thin wrapped pool. The name has old brand recognition but no new story in the packet.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Likely driven by an outside FTT price move or headline, plus arbitrage between this pool and centralised-exchange FTT. The balanced buy/sell counts and the single 15-minute burst look like bots or a news reaction, not community growth. There is no DexScreener profile, no paid boosts and only 2 GMGN page visits, so retail attention on Solana is minimal.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the Wormhole-wrapped FTT mint, so it connects to FTT through the bridge, not through a copied ticker. If the bridge still works, its price should roughly follow centralised-exchange FTT, minus any discount for bridge risk.\",\"competing_tokens\":\"No same-ticker tokens appear in the packet. The canonical asset is FTT on centralised exchanges and Ethereum. Other wrapped versions, such as the old Sollet FTT, may exist.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"There are no paid boosts, ads or DexScreener profile, which argues against a promoted pump. The 2021 mint and the Wormhole handle point to a real bridged asset. But the activity is packed into about 15 minutes, buyers and sellers are near parity, and GMGN tags are maxed out (1000 bundler and 1000 fresh wallets, probably a display cap). That points to bots and arbitrage more than organic demand. The RugCheck warnings (mint authority not renounced, unlocked LP) are partly normal for a bridged token, where Wormhole controls minting. The unlocked LP in this new pool is still a real risk.\",\"uncertainty\":\"I cannot see what triggered the move on centralised exchanges, who created the new pool, or whether the 22% top holder is a bridge or custody account or a single whale.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Only about $27.6k of pool liquidity, and the LP is unlocked (RugCheck lists total market liquidity across markets at about $15), so whoever created the pool could pull it\",\"The pool is new and the creator is unknown, so it could be a pool set up to catch wrapped-FTT traders\",\"Mint authority is enabled; this is expected for Wormhole, but it is still flagged\",\"One non-pool holder owns 22%; GeckoTerminal puts the top 10 at 66%\",\"The market cap is computed only on the Solana-wrapped supply; the price mostly follows centralised-exchange FTT, which limits upside that is unique to this pool\",\"Bridge or redemption risk for a legacy asset with thin liquidity\"]},\"counterargument\":\"If an important FTX headline is unfolding (for example a big creditor distribution or relaunch news), FTT on centralised exchanges could keep trending for hours. This thin pool would then follow it with more volatility and draw more Solana degens who find FTT through screeners. The absence of paid promotion and the real brand make organic follow-through more plausible than for a typical microcap.\",\"unknowns\":[\"What moved FTT on centralised exchanges (if anything) and whether news is still coming\",\"Who created the Raydium pool and controls the unlocked LP\",\"Who the 22% top holder is\",\"Whether the wrapped token trades at a discount or premium to centralised-exchange FTT\",\"Whether Wormhole redemption for this asset still works\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the analysis uses only the evidence packet.\"},\"thesis\":\"A thin, new pool for legacy wrapped FTT is reacting to an outside FTT price move or bot arbitrage. The volume came in one burst, buys and sells are balanced, and the token has no Solana-native story or community. I expect Solana attention to fade back toward the price on centralised exchanges over the next 6 hours, unless an FTX news cycle keeps going.\",\"continuation_view\":\"fade\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is not a new memecoin. It is the Wormhole-bridged version of FTX's FTT token on Solana. GMGN puts the mint's creation date in September 2021, and the X handle is wormholecrypto. The unusual activity is in a fairly new Raydium pool (created 2026-09-20, about 49 hours old) with only about $27.6k of liquidity. In the last hour, volume was about $58.8k, turnover was 2.1x liquidity and price rose about 28\u201330%. Almost all of it happened in one 15-minute burst: 413 buys and 428 sells, from 197 buyers and 147 sellers. Buys and sells are roughly balanced. The latest 5-minute move is flat to slightly up. The most likely cause is a move in the real FTT price on centralised exchanges (FTT often spikes on FTX bankruptcy or distribution headlines), which is then traded back and forth by arbitrage bots, perhaps with some traders who think it is cheap. It is less likely to be a Solana-native story.",
+  "narrative": {
+   "description": "The legacy FTT/FTX narrative: FTT trades as a speculative bet on FTX bankruptcy news (creditor payouts, relaunch rumours, court rulings). It surfaces here only through a thin wrapped pool. The name has old brand recognition but no new story in the packet.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Likely driven by an outside FTT price move or headline, plus arbitrage between this pool and centralised-exchange FTT. The balanced buy/sell counts and the single 15-minute burst look like bots or a news reaction, not community growth. There is no DexScreener profile, no paid boosts and only 2 GMGN page visits, so retail attention on Solana is minimal."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the Wormhole-wrapped FTT mint, so it connects to FTT through the bridge, not through a copied ticker. If the bridge still works, its price should roughly follow centralised-exchange FTT, minus any discount for bridge risk.",
+   "competing_tokens": "No same-ticker tokens appear in the packet. The canonical asset is FTT on centralised exchanges and Ethereum. Other wrapped versions, such as the old Sollet FTT, may exist.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "There are no paid boosts, ads or DexScreener profile, which argues against a promoted pump. The 2021 mint and the Wormhole handle point to a real bridged asset. But the activity is packed into about 15 minutes, buyers and sellers are near parity, and GMGN tags are maxed out (1000 bundler and 1000 fresh wallets, probably a display cap). That points to bots and arbitrage more than organic demand. The RugCheck warnings (mint authority not renounced, unlocked LP) are partly normal for a bridged token, where Wormhole controls minting. The unlocked LP in this new pool is still a real risk.",
+   "uncertainty": "I cannot see what triggered the move on centralised exchanges, who created the new pool, or whether the 22% top holder is a bridge or custody account or a single whale."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Only about $27.6k of pool liquidity, and the LP is unlocked (RugCheck lists total market liquidity across markets at about $15), so whoever created the pool could pull it",
+    "The pool is new and the creator is unknown, so it could be a pool set up to catch wrapped-FTT traders",
+    "Mint authority is enabled; this is expected for Wormhole, but it is still flagged",
+    "One non-pool holder owns 22%; GeckoTerminal puts the top 10 at 66%",
+    "The market cap is computed only on the Solana-wrapped supply; the price mostly follows centralised-exchange FTT, which limits upside that is unique to this pool",
+    "Bridge or redemption risk for a legacy asset with thin liquidity"
+   ]
+  },
+  "counterargument": "If an important FTX headline is unfolding (for example a big creditor distribution or relaunch news), FTT on centralised exchanges could keep trending for hours. This thin pool would then follow it with more volatility and draw more Solana degens who find FTT through screeners. The absence of paid promotion and the real brand make organic follow-through more plausible than for a typical microcap.",
+  "unknowns": [
+   "What moved FTT on centralised exchanges (if anything) and whether news is still coming",
+   "Who created the Raydium pool and controls the unlocked LP",
+   "Who the 22% top holder is",
+   "Whether the wrapped token trades at a discount or premium to centralised-exchange FTT",
+   "Whether Wormhole redemption for this asset still works"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the analysis uses only the evidence packet."
+  },
+  "thesis": "A thin, new pool for legacy wrapped FTT is reacting to an outside FTT price move or bot arbitrage. The volume came in one burst, buys and sells are balanced, and the token has no Solana-native story or community. I expect Solana attention to fade back toward the price on centralised exchanges over the next 6 hours, unless an FTX news cycle keeps going.",
+  "continuation_view": "fade",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6527,
+ "type": "result",
+ "duration_ms": 29333,
+ "uuid": "3238d1cb-3f5a-4c86-95aa-0449d276ce09",
+ "ttft_stream_ms": 1974,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 1974,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

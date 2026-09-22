@@ -1,0 +1,144 @@
+{
+ "duration_api_ms": 36816,
+ "stop_reason": "tool_use",
+ "session_id": "7b692909-6000-47f2-b3ae-1478e50c02f1",
+ "total_cost_usd": 0.167491,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 6910,
+  "cache_read_input_tokens": 7664,
+  "output_tokens": 2789,
+  "output_tokens_details": {
+   "thinking_tokens": 551
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6910,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2086,
+    "cache_read_input_tokens": 6202,
+    "cache_creation_input_tokens": 2170,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2170
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 4,
+   "outputTokens": 2789,
+   "cacheReadInputTokens": 7664,
+   "cacheCreationInputTokens": 6910,
+   "webSearchRequests": 0,
+   "costUSD": 0.142677,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 551,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 11469,
+   "outputTokens": 669,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.024814,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This looks like a serial clone launched off a borrowed brand, with holdings concentrated in very few wallets and liquidity that can be pulled. It does not look like a real, lasting narrative.\\n\\n(1) Ticker hijack: the token calls itself the \\\"TikTok Official Token (TikTok)\\\" and names x.com/tiktok_us as its origin. No official TikTok crypto project is known, and search results describe TIKTOK tokens as unaffiliated. There is also no website, no DexScreener profile and no verified social account.\\n\\n(2) Serial clones: the same-name scan finds at least 7 earlier \\\"TikTokus\\\"/\\\"TikTokUS\\\" tokens. They were created over the past few days (including 2Ps\u2026, 5PC\u2026, Djp\u2026, 7KD\u2026, 4iu\u2026, AYB\u2026) and now hold $0.01\u2013$0.04 of liquidity with zero volume, but still show nominal market caps of $1\u201320M. That is the usual trace of repeated rug-pulls: launch, pump, remove liquidity. Phantom lists yet another \\\"TikTok Official Token\\\" (4nCG\u2026) with a market cap of about $1.42. This contract fits the same template: it was not launched on pump.fun (deploy platform unknown), it trades on PumpSwap, and the tool reports 0 other tokens from this creator, which is consistent with a fresh wallet used for each clone.\\n\\n(3) Concentration: the top 10 holders own 98.18% of supply, and the other 2,500+ holders share under 2%. The pool holds $349k of liquidity against a $1.04M market cap, so it cannot explain 98% on its own. Most of the supply therefore sits in a few non-pool wallets that can dump.\\n\\n(4) Removable liquidity: one of the two top markets has 0% of its LP locked, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" as danger and \\\"Low amount of LP Providers\\\" as a warning.\\n\\n(5) Suspicious flow: GeckoTerminal counts 3,766 unique buyers but only 104 unique sellers. Volume of $3.15M in 31 minutes is about 3x the market cap. Nearly all the flow came in one 30-minute burst ($3.2M in m30, falling to $193k in the latest m5). That pattern fits bot or bundled buying, or a crowd piling in while insiders wait to exit. It does not look like organic demand.\\n\\n(6) Competing tokens: another \\\"Tiktok Coin\\\" (8H2n\u2026) is doing $7.3M of volume an hour and \\\"TikTok US\\\" (9v7Y\u2026) is also live, so attention is split across rival clones.\",\"red_flags\":[\"Claims to be the 'TikTok Official Token', but there is no evidence TikTok is involved; brand hijack\",\"At least 7 earlier same-name 'TikTokus' clones now have about $0.03 of liquidity and zero volume, the pattern of repeated rug-pulls\",\"Top 10 holders own 98.18% of supply; the rest of the 2,551 holders share under 2%\",\"LP is 0% locked on one top market; RugCheck flags unlocked LP as danger\",\"Only 104 unique sellers against 3,766 unique buyers, which points to bots or insiders holding off\",\"Volume of about 3x market cap within 31 minutes, concentrated in one burst that is already fading (m5 is $193k vs $3.2M over m30)\",\"No website, no DexScreener profile, and a fresh creator wallet with no history\",\"Not launched on pump.fun; deploy platform unknown\",\"Rival TIKTOK tokens with larger volume are splitting attention\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"An official statement or verified account from TikTok/TikTok US endorsing this contract. Proof that the 98% top-10 share is mostly pool or locker accounts, with any large wallets locked or burned. The LP being locked or burned. Unique sellers rising to a normal ratio while price holds, which would show buyers can actually sell. On-chain evidence that the creator is not linked to the earlier dead TikTokus clones.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"I ran one web search and tried RugCheck. The RugCheck page only returned generic boilerplate: no holder list, no LP lock details. I could not check the x.com/tiktok_us account, X mention velocity, Telegram, or wallet-funding links between this creator and the earlier clones. The clone pattern and concentration figures come from the evidence packet, not from my own on-chain checks. The search found no news of any official TikTok token and no catalyst, but coverage was shallow.\",\"sources\":[{\"url\":\"https://web3.bitget.com/en/academy/how-to-buy-tiktok-token-tiktok-in-2026-a-beginners-step-by-step-guide-to-tiktok-token\",\"what\":\"Describes TIKTOK tokens as meme tokens unaffiliated with the TikTok platform\"},{\"url\":\"https://phantom.com/tokens/solana/4nCGAiSJg7urSJ7ZgtipmHQan1fxK4P8PGKToUd1VE8u\",\"what\":\"Another 'TikTok Official Token' clone with a market cap of about $1.42, showing the template's past outcomes\"},{\"url\":\"https://rugcheck.xyz/tokens/4E4AUGXrbbcU2abBXiL8wEJUGpXc59Fpjp8cfV48CytY\",\"what\":\"Tried for holder and LP details; the page only returned generic content\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This looks like a serial clone launched off a borrowed brand, with holdings concentrated in very few wallets and liquidity that can be pulled. It does not look like a real, lasting narrative.\n\n(1) Ticker hijack: the token calls itself the \"TikTok Official Token (TikTok)\" and names x.com/tiktok_us as its origin. No official TikTok crypto project is known, and search results describe TIKTOK tokens as unaffiliated. There is also no website, no DexScreener profile and no verified social account.\n\n(2) Serial clones: the same-name scan finds at least 7 earlier \"TikTokus\"/\"TikTokUS\" tokens. They were created over the past few days (including 2Ps\u2026, 5PC\u2026, Djp\u2026, 7KD\u2026, 4iu\u2026, AYB\u2026) and now hold $0.01\u2013$0.04 of liquidity with zero volume, but still show nominal market caps of $1\u201320M. That is the usual trace of repeated rug-pulls: launch, pump, remove liquidity. Phantom lists yet another \"TikTok Official Token\" (4nCG\u2026) with a market cap of about $1.42. This contract fits the same template: it was not launched on pump.fun (deploy platform unknown), it trades on PumpSwap, and the tool reports 0 other tokens from this creator, which is consistent with a fresh wallet used for each clone.\n\n(3) Concentration: the top 10 holders own 98.18% of supply, and the other 2,500+ holders share under 2%. The pool holds $349k of liquidity against a $1.04M market cap, so it cannot explain 98% on its own. Most of the supply therefore sits in a few non-pool wallets that can dump.\n\n(4) Removable liquidity: one of the two top markets has 0% of its LP locked, and RugCheck flags \"Large Amount of LP Unlocked\" as danger and \"Low amount of LP Providers\" as a warning.\n\n(5) Suspicious flow: GeckoTerminal counts 3,766 unique buyers but only 104 unique sellers. Volume of $3.15M in 31 minutes is about 3x the market cap. Nearly all the flow came in one 30-minute burst ($3.2M in m30, falling to $193k in the latest m5). That pattern fits bot or bundled buying, or a crowd piling in while insiders wait to exit. It does not look like organic demand.\n\n(6) Competing tokens: another \"Tiktok Coin\" (8H2n\u2026) is doing $7.3M of volume an hour and \"TikTok US\" (9v7Y\u2026) is also live, so attention is split across rival clones.",
+  "red_flags": [
+   "Claims to be the 'TikTok Official Token', but there is no evidence TikTok is involved; brand hijack",
+   "At least 7 earlier same-name 'TikTokus' clones now have about $0.03 of liquidity and zero volume, the pattern of repeated rug-pulls",
+   "Top 10 holders own 98.18% of supply; the rest of the 2,551 holders share under 2%",
+   "LP is 0% locked on one top market; RugCheck flags unlocked LP as danger",
+   "Only 104 unique sellers against 3,766 unique buyers, which points to bots or insiders holding off",
+   "Volume of about 3x market cap within 31 minutes, concentrated in one burst that is already fading (m5 is $193k vs $3.2M over m30)",
+   "No website, no DexScreener profile, and a fresh creator wallet with no history",
+   "Not launched on pump.fun; deploy platform unknown",
+   "Rival TIKTOK tokens with larger volume are splitting attention"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "An official statement or verified account from TikTok/TikTok US endorsing this contract. Proof that the 98% top-10 share is mostly pool or locker accounts, with any large wallets locked or burned. The LP being locked or burned. Unique sellers rising to a normal ratio while price holds, which would show buyers can actually sell. On-chain evidence that the creator is not linked to the earlier dead TikTokus clones.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "I ran one web search and tried RugCheck. The RugCheck page only returned generic boilerplate: no holder list, no LP lock details. I could not check the x.com/tiktok_us account, X mention velocity, Telegram, or wallet-funding links between this creator and the earlier clones. The clone pattern and concentration figures come from the evidence packet, not from my own on-chain checks. The search found no news of any official TikTok token and no catalyst, but coverage was shallow.",
+  "sources": [
+   {
+    "url": "https://web3.bitget.com/en/academy/how-to-buy-tiktok-token-tiktok-in-2026-a-beginners-step-by-step-guide-to-tiktok-token",
+    "what": "Describes TIKTOK tokens as meme tokens unaffiliated with the TikTok platform"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/4nCGAiSJg7urSJ7ZgtipmHQan1fxK4P8PGKToUd1VE8u",
+    "what": "Another 'TikTok Official Token' clone with a market cap of about $1.42, showing the template's past outcomes"
+   },
+   {
+    "url": "https://rugcheck.xyz/tokens/4E4AUGXrbbcU2abBXiL8wEJUGpXc59Fpjp8cfV48CytY",
+    "what": "Tried for holder and LP details; the page only returned generic content"
+   }
+  ]
+ },
+ "ttft_ms": 6029,
+ "type": "result",
+ "duration_ms": 33619,
+ "uuid": "82e71d08-750f-430f-bf4d-ba22d333935c",
+ "ttft_stream_ms": 1538,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 1538,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

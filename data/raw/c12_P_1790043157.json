@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 27508,
+ "stop_reason": "tool_use",
+ "session_id": "29e5aaf4-e27b-4221-9846-92c2acd90cf8",
+ "total_cost_usd": 0.117984,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4812,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2757,
+  "output_tokens_details": {
+   "thinking_tokens": 368
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4812,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2757,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4812,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4812
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 2757,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4812,
+   "webSearchRequests": 0,
+   "costUSD": 0.117984,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 368,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 31-minute-old PumpSwap pair called \\\"TikTokus\\\" (TIKTOK) says it is the \\\"TikTok Official Token \u2026 Created on https://x.com/tiktok_us\\\". In its first hour it traded about $3.15M against about $349k of liquidity, with about 5,058 buys to 1,485 sells and a 42% price rise. GeckoTerminal counts 3,766 unique buyers but only 104 unique sellers. The contract address does not end in \\\"pump\\\", the deploy platform is unknown, and the risk check flags a large amount of unlocked LP. The same-ticker list shows at least 7 other tokens with the exact name \\\"TikTokus\\\", created over the past few days. Each now has $0.03\u2013$0.04 of liquidity, meaning it was drained, yet still shows a paper market cap of $1\u20132M. This looks like a serial deployer launching copies of the same token, pumping each, then pulling the liquidity. It is probably riding some TikTok US story.\",\"narrative\":{\"description\":\"The token trades on TikTok US news (the sale or restructuring of TikTok's US business, or a rumour about a TikTok token) and claims to be the official token of the @tiktok_us account. It is almost certainly impersonation. TikTok is very unlikely to launch an unannounced token on PumpSwap.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A famous brand name plus a claimed 'official' link draws bots and fast-moving traders who chase famous names. The theme is live: several same-ticker tokens appeared in the last few hours, including 'Tiktok Coin' with $7.3M of volume in one hour. But the attention attaches to the brand, not to this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the self-written description pointing to x.com/tiktok_us. There is no verified website or socials and no DexScreener profile. The claim to be official cannot be checked and is very unlikely.\",\"competing_tokens\":\"There are many. 8H2n523\u2026 'Tiktok Coin' has $298k liquidity, $4.4M market cap and $7.3M one-hour volume, so it is currently the leader. 9v7YPo\u2026pump 'TikTok US' has $127k liquidity. At least 7 drained 'TikTokus' copies (2PsCcM\u2026, 5PCx3s\u2026, DjPxTe\u2026, 7KDQsm\u2026, 4iuXkd\u2026, AYB2Pa\u2026), plus two drained 'TikTokUS' tokens from about a week earlier.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1) The identical name 'TikTokus' was reused across at least 7 earlier tokens, all drained to about $0.04 of liquidity. That is a repeat deployer pattern. 2) Buyers and sellers are wildly unbalanced: 3,766 unique buyers against 104 unique sellers. That points to bot or wallet-farm buying, or to real buyers finding it hard to exit. 3) It is a non-pump.fun deployment and the LP is unlocked, with only a few LP providers. 4) The top 10 holders own 98.2%, which may include the pool but is still extreme. 5) There is no website and no DexScreener profile. The description claims it is official, which is standard impersonation bait.\",\"uncertainty\":\"I have no wallet-funding graph or on-chain view of sell attempts, so I can't confirm the buyers are fake or that selling is blocked. The mint and freeze authorities are renounced and there is no transfer fee, so this may not be a strict honeypot. Some real retail money from bots and fast traders is probably flowing in.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"A large share of the LP is unlocked, so the owner can remove liquidity at any time. Earlier copies were drained to about $0.04\",\"The top 10 holders own 98.18% (it is unclear how much of that is the pool)\",\"Only 104 unique sellers against 3,766 buyers, which suggests fake demand or a hard-to-exit setup\",\"The deployer appears to be running repeated 'TikTokus' rug pulls\",\"A stronger same-ticker competitor is pulling attention away\",\"Volume is about 9x liquidity in the first hour, which suggests wash trading or bot churn\"]},\"counterargument\":\"If there is real, breaking news about TikTok US, brand-name tokens can pull in large amounts of real money for a few hours. This pair has more liquidity ($349k) than the drained copies had, and it had just risen 42% with buys still ahead of sells. It could keep going for another hour or more before any liquidity is pulled, and a deployer who wants to maximise the take may let it run higher first. The 104-seller figure could partly reflect a new token where most buyers simply haven't sold yet, rather than blocked selling.\",\"unknowns\":[\"Whether a real TikTok US event is behind the run\",\"Whether sells go through normally, or whether the 104 sellers reflect an exit restriction\",\"Who holds the unlocked LP and whether it is the same deployer as the drained copies\",\"How much of the top-10 concentration is the pool account\",\"Whether any real social account is promoting this specific contract\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The analysis uses only the evidence packet.\"},\"thesis\":\"This is very likely another copy in a run of drained 'TikTokus' impersonation tokens: the same name, unlocked LP, an extreme buyer/seller imbalance, and a false claim to be the official token. Even if TikTok US news is real, the attention goes to the brand and to stronger competitors, not to this contract. There is a high chance the liquidity is pulled or the price collapses within hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 31-minute-old PumpSwap pair called \"TikTokus\" (TIKTOK) says it is the \"TikTok Official Token \u2026 Created on https://x.com/tiktok_us\". In its first hour it traded about $3.15M against about $349k of liquidity, with about 5,058 buys to 1,485 sells and a 42% price rise. GeckoTerminal counts 3,766 unique buyers but only 104 unique sellers. The contract address does not end in \"pump\", the deploy platform is unknown, and the risk check flags a large amount of unlocked LP. The same-ticker list shows at least 7 other tokens with the exact name \"TikTokus\", created over the past few days. Each now has $0.03\u2013$0.04 of liquidity, meaning it was drained, yet still shows a paper market cap of $1\u20132M. This looks like a serial deployer launching copies of the same token, pumping each, then pulling the liquidity. It is probably riding some TikTok US story.",
+  "narrative": {
+   "description": "The token trades on TikTok US news (the sale or restructuring of TikTok's US business, or a rumour about a TikTok token) and claims to be the official token of the @tiktok_us account. It is almost certainly impersonation. TikTok is very unlikely to launch an unannounced token on PumpSwap.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A famous brand name plus a claimed 'official' link draws bots and fast-moving traders who chase famous names. The theme is live: several same-ticker tokens appeared in the last few hours, including 'Tiktok Coin' with $7.3M of volume in one hour. But the attention attaches to the brand, not to this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the self-written description pointing to x.com/tiktok_us. There is no verified website or socials and no DexScreener profile. The claim to be official cannot be checked and is very unlikely.",
+   "competing_tokens": "There are many. 8H2n523\u2026 'Tiktok Coin' has $298k liquidity, $4.4M market cap and $7.3M one-hour volume, so it is currently the leader. 9v7YPo\u2026pump 'TikTok US' has $127k liquidity. At least 7 drained 'TikTokus' copies (2PsCcM\u2026, 5PCx3s\u2026, DjPxTe\u2026, 7KDQsm\u2026, 4iuXkd\u2026, AYB2Pa\u2026), plus two drained 'TikTokUS' tokens from about a week earlier.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1) The identical name 'TikTokus' was reused across at least 7 earlier tokens, all drained to about $0.04 of liquidity. That is a repeat deployer pattern. 2) Buyers and sellers are wildly unbalanced: 3,766 unique buyers against 104 unique sellers. That points to bot or wallet-farm buying, or to real buyers finding it hard to exit. 3) It is a non-pump.fun deployment and the LP is unlocked, with only a few LP providers. 4) The top 10 holders own 98.2%, which may include the pool but is still extreme. 5) There is no website and no DexScreener profile. The description claims it is official, which is standard impersonation bait.",
+   "uncertainty": "I have no wallet-funding graph or on-chain view of sell attempts, so I can't confirm the buyers are fake or that selling is blocked. The mint and freeze authorities are renounced and there is no transfer fee, so this may not be a strict honeypot. Some real retail money from bots and fast traders is probably flowing in."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "A large share of the LP is unlocked, so the owner can remove liquidity at any time. Earlier copies were drained to about $0.04",
+    "The top 10 holders own 98.18% (it is unclear how much of that is the pool)",
+    "Only 104 unique sellers against 3,766 buyers, which suggests fake demand or a hard-to-exit setup",
+    "The deployer appears to be running repeated 'TikTokus' rug pulls",
+    "A stronger same-ticker competitor is pulling attention away",
+    "Volume is about 9x liquidity in the first hour, which suggests wash trading or bot churn"
+   ]
+  },
+  "counterargument": "If there is real, breaking news about TikTok US, brand-name tokens can pull in large amounts of real money for a few hours. This pair has more liquidity ($349k) than the drained copies had, and it had just risen 42% with buys still ahead of sells. It could keep going for another hour or more before any liquidity is pulled, and a deployer who wants to maximise the take may let it run higher first. The 104-seller figure could partly reflect a new token where most buyers simply haven't sold yet, rather than blocked selling.",
+  "unknowns": [
+   "Whether a real TikTok US event is behind the run",
+   "Whether sells go through normally, or whether the 104 sellers reflect an exit restriction",
+   "Who holds the unlocked LP and whether it is the same deployer as the drained copies",
+   "How much of the top-10 concentration is the pool account",
+   "Whether any real social account is promoting this specific contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The analysis uses only the evidence packet."
+  },
+  "thesis": "This is very likely another copy in a run of drained 'TikTokus' impersonation tokens: the same name, unlocked LP, an extreme buyer/seller imbalance, and a false claim to be the official token. Even if TikTok US news is real, the attention goes to the brand and to stronger competitors, not to this contract. There is a high chance the liquidity is pulled or the price collapses within hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4796,
+ "type": "result",
+ "duration_ms": 27552,
+ "uuid": "5ef688eb-d28d-48f0-9bcb-29b44fcc490a",
+ "ttft_stream_ms": 1354,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1354,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

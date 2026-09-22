@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 41010,
+ "stop_reason": "tool_use",
+ "session_id": "0b5240a7-1c34-49d3-85ac-f0a2e8ae1db0",
+ "total_cost_usd": 0.181778,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 6496,
+  "cache_read_input_tokens": 6978,
+  "output_tokens": 2728,
+  "output_tokens_details": {
+   "thinking_tokens": 169
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6496,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2440,
+    "cache_read_input_tokens": 5516,
+    "cache_creation_input_tokens": 2442,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2442
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 4,
+   "outputTokens": 2728,
+   "cacheReadInputTokens": 6978,
+   "cacheCreationInputTokens": 6496,
+   "webSearchRequests": 0,
+   "costUSD": 0.136669,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 169,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22494,
+   "outputTokens": 523,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045109,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This is not a narrative token at all: it is Wormhole's bridged BNB on Solana. Solscan, DexScreener, Phantom and OKX all identify the contract as \\\"Wrapped BNB (Wormhole)\\\", and the only social link is Wormhole's official handle. Its price comes from BNB (~$792 against BNB at about $802.7 on 2026-09-21, from one loosely timestamped price page), so it cannot re-rate on its own story. The 'unusual activity' trigger is a single 5-minute burst (~$26.7K of the hour's $28K volume) with balanced buys and sells (158/125) and price change under 0.5%. That looks like arbitrage, aggregator routing or pool rebalancing, not new demand. Over 24h, sells lead (1,124 vs 890; 488 unique sellers vs 459 buyers). Nothing supports a durable token-specific narrative; any gains come only from BNB beta.\",\"red_flags\":[\"Token is a Wormhole-bridged pegged asset; price tracks BNB, no independent narrative possible\",\"Volume spike is concentrated in one 5-minute window with ~0.4% price change: bot, arb or routing signature\",\"24h sells exceed buys (1124 vs 890) and unique sellers exceed buyers\",\"Mint authority enabled (expected for a bridge, but not verified on-chain here) and mutable metadata\",\"LP unlocked in top markets (normal for a blue-chip wrapped asset, but no protection)\",\"Bridge risk: Wormhole was exploited in 2022; wrapped-asset depeg risk\",\"Holder counts disagree across sources (59,844 vs 18,165 vs 16,158)\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"A Solana-specific catalyst for this exact token (new incentives, a lending or perp listing that uses it as collateral, a Wormhole/Binance announcement) combined with volume staying high for hours rather than one 5-minute burst. Even then, price upside is bounded by BNB itself.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"high\",\"coverage_notes\":\"Confirmed the token's identity via search results (Solscan, DexScreener, Phantom, OKX). Got a BNB spot reference of ~$802.7 from one price page (single, loosely timestamped data point). Did not access X/Twitter or Telegram, did not fetch the individual pages (search results only), and did not verify on-chain that the mint authority is the Wormhole bridge. Confidence is high anyway because the asset's identity is clear.\",\"sources\":[{\"url\":\"https://solscan.io/token/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa\",\"what\":\"Token identity: Wrapped BNB (Wormhole)\"},{\"url\":\"https://dexscreener.com/solana/9gp2kcy3wa1ctvywqk75guqxuhfreomqydhltctcqila\",\"what\":\"Orca pair listing as Wrapped BNB (Wormhole)/SOL\"},{\"url\":\"https://phantom.com/tokens/solana/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa\",\"what\":\"Phantom token page confirming identity\"},{\"url\":\"https://web3.okx.com/token/solana/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa\",\"what\":\"OKX token page confirming identity\"},{\"url\":\"https://metamask.io/price/binancecoin\",\"what\":\"BNB spot ~$802.7, consistent with the token tracking BNB\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This is not a narrative token at all: it is Wormhole's bridged BNB on Solana. Solscan, DexScreener, Phantom and OKX all identify the contract as \"Wrapped BNB (Wormhole)\", and the only social link is Wormhole's official handle. Its price comes from BNB (~$792 against BNB at about $802.7 on 2026-09-21, from one loosely timestamped price page), so it cannot re-rate on its own story. The 'unusual activity' trigger is a single 5-minute burst (~$26.7K of the hour's $28K volume) with balanced buys and sells (158/125) and price change under 0.5%. That looks like arbitrage, aggregator routing or pool rebalancing, not new demand. Over 24h, sells lead (1,124 vs 890; 488 unique sellers vs 459 buyers). Nothing supports a durable token-specific narrative; any gains come only from BNB beta.",
+  "red_flags": [
+   "Token is a Wormhole-bridged pegged asset; price tracks BNB, no independent narrative possible",
+   "Volume spike is concentrated in one 5-minute window with ~0.4% price change: bot, arb or routing signature",
+   "24h sells exceed buys (1124 vs 890) and unique sellers exceed buyers",
+   "Mint authority enabled (expected for a bridge, but not verified on-chain here) and mutable metadata",
+   "LP unlocked in top markets (normal for a blue-chip wrapped asset, but no protection)",
+   "Bridge risk: Wormhole was exploited in 2022; wrapped-asset depeg risk",
+   "Holder counts disagree across sources (59,844 vs 18,165 vs 16,158)"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "A Solana-specific catalyst for this exact token (new incentives, a lending or perp listing that uses it as collateral, a Wormhole/Binance announcement) combined with volume staying high for hours rather than one 5-minute burst. Even then, price upside is bounded by BNB itself.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "high",
+  "coverage_notes": "Confirmed the token's identity via search results (Solscan, DexScreener, Phantom, OKX). Got a BNB spot reference of ~$802.7 from one price page (single, loosely timestamped data point). Did not access X/Twitter or Telegram, did not fetch the individual pages (search results only), and did not verify on-chain that the mint authority is the Wormhole bridge. Confidence is high anyway because the asset's identity is clear.",
+  "sources": [
+   {
+    "url": "https://solscan.io/token/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+    "what": "Token identity: Wrapped BNB (Wormhole)"
+   },
+   {
+    "url": "https://dexscreener.com/solana/9gp2kcy3wa1ctvywqk75guqxuhfreomqydhltctcqila",
+    "what": "Orca pair listing as Wrapped BNB (Wormhole)/SOL"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+    "what": "Phantom token page confirming identity"
+   },
+   {
+    "url": "https://web3.okx.com/token/solana/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+    "what": "OKX token page confirming identity"
+   },
+   {
+    "url": "https://metamask.io/price/binancecoin",
+    "what": "BNB spot ~$802.7, consistent with the token tracking BNB"
+   }
+  ]
+ },
+ "ttft_ms": 5128,
+ "type": "result",
+ "duration_ms": 38774,
+ "uuid": "385c4d3a-3eb2-4383-b7fd-8d0a5c1de8a1",
+ "ttft_stream_ms": 2692,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 2692,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

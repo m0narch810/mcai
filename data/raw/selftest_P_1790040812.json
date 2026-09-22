@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 20454,
+ "stop_reason": "tool_use",
+ "session_id": "96ee6d4b-9c49-4718-8da8-8dc1e238d4b3",
+ "total_cost_usd": 0.11227500000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6119,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2043,
+  "output_tokens_details": {
+   "thinking_tokens": 180
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6119,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2043,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 6119,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6119
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 2043,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 6119,
+   "webSearchRequests": 0,
+   "costUSD": 0.11227500000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 180,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"KOLCAT (\\\"KOL Cat\\\") is a Raydium pair created at 01:15:49 UTC, about 18 minutes before detection. In its first ~30 minutes it traded about $235\u2013240k with roughly 968 unique buyers and 647 unique sellers. Price rose about 205\u2013264% to a $179k market cap on $39k liquidity. Momentum is already rolling over: price is down 12\u201315% over the last 5 minutes, and GeckoTerminal's 5-minute volume (~$7.7k) is far below the 15-minute pace (~$148k), suggesting the first wave is spent. At least 10 other tokens named \\\"KOL Cat\\\" / KOLCAT launched within the same ~20-minute window. Most have been drained (liquidity around $1). One has $421k in hourly volume, and one shows $401k liquidity that looks fake.\",\"narrative\":{\"description\":\"The name is a meme that riffs on crypto-Twitter KOLs (key opinion leaders, i.e. paid influencers) plus a cat mascot. Many copies appearing at once suggests a single trigger, maybe a tweet, image or KOL post, that set off a race among deployers. Nothing in the packet says what that trigger was.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The swarm of same-name launches within minutes points to a short-lived external trigger, most likely a social post, and snipers/bots rushing to copy it rather than a lasting community story. Nearly 1,000 unique buyers is real activity, but on Solana this pattern usually reflects bots and trenchers rotating between copies.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has a website and an X account linked, a DexScreener profile, and the most liquidity among the active copies apart from the suspicious $401k pool. That gives it some claim to be the 'main' one, but it is not the earliest.\",\"competing_tokens\":\"FS6Mx8... launched about 6 minutes earlier (now drained). APBVKcs9... has $421k in hourly volume against its $28k market cap, more activity than this token. GMwEkAC2... shows $401k liquidity equal to its market cap, which looks like fake or self-supplied liquidity. At least 7 drained copies are still showing volume.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Nearly 1,000 unique buyers and a buy/sell ratio of about 1.4 suggest real participation. On the other hand, the rush of copycat deploys, the rugged clones, the fake-looking liquidity pool and missing holder data all fit a bot-driven, extractive 'trench' environment. The creator balance is 0 and the creator has no other tokens, which is consistent with a fresh wallet. The LP is 100% locked on the main market.\",\"uncertainty\":\"There is no holder distribution, no social data and no funding-graph data. Unique-wallet counts can be inflated by bots, and a 0 creator balance may just mean supply was spread across other wallets.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Holder concentration unknown (RugCheck returned no top holders)\",\"Liquidity of $39k against a $179k market cap: thin, and big sells will move the price hard\",\"Attention split across 10+ same-name clones\",\"Volume is falling fast and the 5-minute price is negative\",\"RugCheck warns of high market cap per holder\",\"Only 18 minutes old; the typical Solana launch pattern is a pump followed by a dump\"]},\"counterargument\":\"If the trigger was a large KOL or viral post and this is the copy the community settles on (it has a site, an X account, a DexScreener profile and locked LP), a 12\u201315% pullback after a ~3x move could just be consolidation before a second leg. Winning copies in clone races sometimes run to $1M+ as traders merge into one ticker.\",\"unknowns\":[\"What triggered the name and whether a real KOL is involved\",\"Holder distribution and sniper/bundle share\",\"Which copy the community treats as the real one\",\"Whether the linked X account has real followers or is new\",\"Whether the $401k-liquidity clone is real\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judgment is based only on the evidence packet.\"},\"thesis\":\"This is a clone-race meme token past its first spike. It is not the earliest copy, it is out-traded by at least one rival, and volume is falling fast while the 5-minute price turns down. The most likely path is a fade over the next hours.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "KOLCAT (\"KOL Cat\") is a Raydium pair created at 01:15:49 UTC, about 18 minutes before detection. In its first ~30 minutes it traded about $235\u2013240k with roughly 968 unique buyers and 647 unique sellers. Price rose about 205\u2013264% to a $179k market cap on $39k liquidity. Momentum is already rolling over: price is down 12\u201315% over the last 5 minutes, and GeckoTerminal's 5-minute volume (~$7.7k) is far below the 15-minute pace (~$148k), suggesting the first wave is spent. At least 10 other tokens named \"KOL Cat\" / KOLCAT launched within the same ~20-minute window. Most have been drained (liquidity around $1). One has $421k in hourly volume, and one shows $401k liquidity that looks fake.",
+  "narrative": {
+   "description": "The name is a meme that riffs on crypto-Twitter KOLs (key opinion leaders, i.e. paid influencers) plus a cat mascot. Many copies appearing at once suggests a single trigger, maybe a tweet, image or KOL post, that set off a race among deployers. Nothing in the packet says what that trigger was.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The swarm of same-name launches within minutes points to a short-lived external trigger, most likely a social post, and snipers/bots rushing to copy it rather than a lasting community story. Nearly 1,000 unique buyers is real activity, but on Solana this pattern usually reflects bots and trenchers rotating between copies."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has a website and an X account linked, a DexScreener profile, and the most liquidity among the active copies apart from the suspicious $401k pool. That gives it some claim to be the 'main' one, but it is not the earliest.",
+   "competing_tokens": "FS6Mx8... launched about 6 minutes earlier (now drained). APBVKcs9... has $421k in hourly volume against its $28k market cap, more activity than this token. GMwEkAC2... shows $401k liquidity equal to its market cap, which looks like fake or self-supplied liquidity. At least 7 drained copies are still showing volume.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Nearly 1,000 unique buyers and a buy/sell ratio of about 1.4 suggest real participation. On the other hand, the rush of copycat deploys, the rugged clones, the fake-looking liquidity pool and missing holder data all fit a bot-driven, extractive 'trench' environment. The creator balance is 0 and the creator has no other tokens, which is consistent with a fresh wallet. The LP is 100% locked on the main market.",
+   "uncertainty": "There is no holder distribution, no social data and no funding-graph data. Unique-wallet counts can be inflated by bots, and a 0 creator balance may just mean supply was spread across other wallets."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Holder concentration unknown (RugCheck returned no top holders)",
+    "Liquidity of $39k against a $179k market cap: thin, and big sells will move the price hard",
+    "Attention split across 10+ same-name clones",
+    "Volume is falling fast and the 5-minute price is negative",
+    "RugCheck warns of high market cap per holder",
+    "Only 18 minutes old; the typical Solana launch pattern is a pump followed by a dump"
+   ]
+  },
+  "counterargument": "If the trigger was a large KOL or viral post and this is the copy the community settles on (it has a site, an X account, a DexScreener profile and locked LP), a 12\u201315% pullback after a ~3x move could just be consolidation before a second leg. Winning copies in clone races sometimes run to $1M+ as traders merge into one ticker.",
+  "unknowns": [
+   "What triggered the name and whether a real KOL is involved",
+   "Holder distribution and sniper/bundle share",
+   "Which copy the community treats as the real one",
+   "Whether the linked X account has real followers or is new",
+   "Whether the $401k-liquidity clone is real"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judgment is based only on the evidence packet."
+  },
+  "thesis": "This is a clone-race meme token past its first spike. It is not the earliest copy, it is out-traded by at least one rival, and volume is falling fast while the 5-minute price turns down. The most likely path is a fade over the next hours.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3532,
+ "type": "result",
+ "duration_ms": 20495,
+ "uuid": "822c9c87-eda6-4d09-a77c-6aa1163641e8",
+ "ttft_stream_ms": 1380,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 1380,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,20 @@
+# Secrets - never commit
+data/discord_webhook.txt
+data/gmgn_key.txt
+data/*.pem
+data/twitterapi_key.txt
+*.key
+.env
+
+# Live runtime state (written continuously by the running loop).
+# A consistent point-in-time copy lives in snapshot/ instead.
+data/research.db
+data/research.db-*
+data/supervisor.lock
+data/agent_cwd/
+data/diag/
+data/*.log
+
+__pycache__/
+*.pyc
+.pytest_cache/

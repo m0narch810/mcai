@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24973,
+ "stop_reason": "tool_use",
+ "session_id": "7ef3888f-2f29-439d-9c12-f317e9b4924f",
+ "total_cost_usd": 0.096719,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4478,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2040,
+  "output_tokens_details": {
+   "thinking_tokens": 166
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4478,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2040,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4478,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4478
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 2040,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4478,
+   "webSearchRequests": 0,
+   "costUSD": 0.096719,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 166,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 41-minute-old PumpSwap pool for a token named \\\"MetaDAO\u2014DEX\\\" (ticker META) has done about $3.4M in volume on roughly $320K liquidity, and its price is up 28\u201373% depending on the data source. The name copies MetaDAO, a real Solana project whose token (METADDFL...) is the canonical META. The packet lists at least six other \\\"MetaDAO\u2014DEX\\\" clones from the past few days. Every one now has near-zero liquidity ($0.02\u2013$2) and zero volume, which fits a repeated launch-pump-pull cycle. This contract looks like the latest one.\",\"narrative\":{\"description\":\"Impersonation of MetaDAO, the real Solana futarchy/governance project, with a made-up 'DEX' angle. There is no website, no socials and no DexScreener profile. The only link is the GeckoTerminal Twitter handle 'MetaDAOProject', which is probably copied metadata. The attention likely comes from the borrowed brand name and from sniper/bot flow, not from a story of its own.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Borrowed brand name plus heavy early volume, which may be wash or bot trading. The project has no content or story of its own.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing ties this contract to MetaDAO. The real META is METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr, created about a year earlier, with $58K+ visible liquidity. This contract is one of at least 7 identically named copies.\",\"competing_tokens\":\"The canonical METADDFL... META, plus 6 dead 'MetaDAO\u2014DEX' clones (AUGFBF..., FRFSU6..., 6nDsoq..., 2bXQiw..., 8RRmzX..., DPEWHc...). All the clones have under $3 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 1,698 unique buyers against only 107 unique sellers, while sells run about 37% of transactions (2,240 sells vs 3,801 buys). A small set of wallets is doing most of the selling, which points to insiders distributing into bot or sniper buys. RugCheck flags 155 graph insiders and several transfer networks of 14\u201317 wallets. The same name was relaunched repeatedly and each earlier pool was drained to zero. LP is largely unlocked. Volume is about 10x liquidity within 41 minutes.\",\"uncertainty\":\"Holder distribution and top-holder data are missing. The 'buyers' could partly be organic retail who confused it with the real MetaDAO. The 107 sellers could also just be early traders taking profit.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is largely unlocked (0% locked on one top market), so the owner can pull liquidity at any time\",\"The same deployer pattern has drained 6 prior clones to near-zero liquidity\",\"155 insiders detected, in transfer clusters\",\"Very few unique sellers, which suggests insiders are distributing\",\"No holder data available; RugCheck warns of high market cap per holder\",\"Brand impersonation that could draw takedown notices or warnings from the real MetaDAO\"]},\"counterargument\":\"Buy pressure is still strong: 148 unique buyers in the last 5 minutes and a buy/sell ratio of about 1.7. Liquidity of $320K is sizable for a clone. If the operator keeps the LP in to farm more volume, the price could keep grinding up for the next 30 minutes to hours before any rug. Confusion with the real MetaDAO brand could also keep drawing buyers.\",\"unknowns\":[\"Whether the operator will pull the LP, and when\",\"The actual holder concentration\",\"Whether the buyers are bots or real retail\",\"Whether the real MetaDAO had any news around this time that is drawing clones\",\"Whether the deployer is linked to the prior clones' deployers\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This analysis uses only the evidence packet.\"},\"thesis\":\"A serial copycat that impersonates MetaDAO, with unlocked LP, insider clusters and very lopsided seller concentration. Its six same-name predecessors all ended with near-zero liquidity. Attention is highly likely to collapse, most likely through a liquidity pull or insider dump within hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 41-minute-old PumpSwap pool for a token named \"MetaDAO\u2014DEX\" (ticker META) has done about $3.4M in volume on roughly $320K liquidity, and its price is up 28\u201373% depending on the data source. The name copies MetaDAO, a real Solana project whose token (METADDFL...) is the canonical META. The packet lists at least six other \"MetaDAO\u2014DEX\" clones from the past few days. Every one now has near-zero liquidity ($0.02\u2013$2) and zero volume, which fits a repeated launch-pump-pull cycle. This contract looks like the latest one.",
+  "narrative": {
+   "description": "Impersonation of MetaDAO, the real Solana futarchy/governance project, with a made-up 'DEX' angle. There is no website, no socials and no DexScreener profile. The only link is the GeckoTerminal Twitter handle 'MetaDAOProject', which is probably copied metadata. The attention likely comes from the borrowed brand name and from sniper/bot flow, not from a story of its own.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Borrowed brand name plus heavy early volume, which may be wash or bot trading. The project has no content or story of its own."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing ties this contract to MetaDAO. The real META is METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr, created about a year earlier, with $58K+ visible liquidity. This contract is one of at least 7 identically named copies.",
+   "competing_tokens": "The canonical METADDFL... META, plus 6 dead 'MetaDAO\u2014DEX' clones (AUGFBF..., FRFSU6..., 6nDsoq..., 2bXQiw..., 8RRmzX..., DPEWHc...). All the clones have under $3 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 1,698 unique buyers against only 107 unique sellers, while sells run about 37% of transactions (2,240 sells vs 3,801 buys). A small set of wallets is doing most of the selling, which points to insiders distributing into bot or sniper buys. RugCheck flags 155 graph insiders and several transfer networks of 14\u201317 wallets. The same name was relaunched repeatedly and each earlier pool was drained to zero. LP is largely unlocked. Volume is about 10x liquidity within 41 minutes.",
+   "uncertainty": "Holder distribution and top-holder data are missing. The 'buyers' could partly be organic retail who confused it with the real MetaDAO. The 107 sellers could also just be early traders taking profit."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is largely unlocked (0% locked on one top market), so the owner can pull liquidity at any time",
+    "The same deployer pattern has drained 6 prior clones to near-zero liquidity",
+    "155 insiders detected, in transfer clusters",
+    "Very few unique sellers, which suggests insiders are distributing",
+    "No holder data available; RugCheck warns of high market cap per holder",
+    "Brand impersonation that could draw takedown notices or warnings from the real MetaDAO"
+   ]
+  },
+  "counterargument": "Buy pressure is still strong: 148 unique buyers in the last 5 minutes and a buy/sell ratio of about 1.7. Liquidity of $320K is sizable for a clone. If the operator keeps the LP in to farm more volume, the price could keep grinding up for the next 30 minutes to hours before any rug. Confusion with the real MetaDAO brand could also keep drawing buyers.",
+  "unknowns": [
+   "Whether the operator will pull the LP, and when",
+   "The actual holder concentration",
+   "Whether the buyers are bots or real retail",
+   "Whether the real MetaDAO had any news around this time that is drawing clones",
+   "Whether the deployer is linked to the prior clones' deployers"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This analysis uses only the evidence packet."
+  },
+  "thesis": "A serial copycat that impersonates MetaDAO, with unlocked LP, insider clusters and very lopsided seller concentration. Its six same-name predecessors all ended with near-zero liquidity. Attention is highly likely to collapse, most likely through a liquidity pull or insider dump within hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4702,
+ "type": "result",
+ "duration_ms": 25012,
+ "uuid": "199f14f7-b704-4c11-81a4-464855338c01",
+ "ttft_stream_ms": 1960,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1960,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

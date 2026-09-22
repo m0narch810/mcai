@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 20338,
+ "stop_reason": "tool_use",
+ "session_id": "2bbd0cd0-5190-4c81-88f6-038940a25bfe",
+ "total_cost_usd": 0.0916516,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6034,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2150,
+  "output_tokens_details": {
+   "thinking_tokens": 346
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6034,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2150,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 6034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6034
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2150,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 6034,
+   "webSearchRequests": 0,
+   "costUSD": 0.0916516,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 346,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Just Do It.\\\" (ticker Nike) was created and migrated to PumpSwap in the same second via a Meteora virtual curve, about 38 minutes before detection. It has traded about $3.5M in volume against a market cap of about $1.3M, which is roughly 11x turnover in one hour. Only about 245 unique buyers made more than 2,000 buys. Buy and sell counts are nearly equal. GMGN tags 136 of 243 holders as bundler wallets and finds a 30-wallet insider trading network. The top 10 wallets hold 97%, a figure that may include the pool. The packet lists four other tokens with the identical name and ticker (\\\"Just Do It.\\\" / Nike) launched in the previous ~7 hours. Each shows a market cap of about $1.1\u20131.5M, near-zero liquidity and no volume, so they were drained. This looks like the same launch-and-drain scheme being run again. The listed X handle \\\"Nike\\\" is the real brand's account and is not a genuine project link.\",\"narrative\":{\"description\":\"Borrows Nike's slogan and name. There is no project site, no description and no DexScreener profile. The X link points to the real Nike account, which is brand impersonation, not a community.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Nothing suggests organic spread. The activity is best explained by bundled or wash trading: many trades from few unique wallets, balanced buys and sells, and 136 bundler wallets. Promotion is also possible, but it cannot be seen in the packet.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the copy that is live right now. It has no known link to Nike or to any real event.\",\"competing_tokens\":\"At least four identical 'Just Do It.' / Nike tokens from earlier today (DHqf..., DryN..., Af4h..., 638m...). All show about $1.1\u20131.5M market cap with liquidity drained to near zero. Several older NIKE tokens are dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"136/243 bundler wallets; 29 snipers; a 30-wallet insider network; about 2,000 buys from only 245 unique buyers; near 1:1 buy/sell ratio; turnover over 10x market cap in under an hour; creation and migration at the same timestamp; a duplicated image (4 copies); impersonated Nike X handle; and repeated identical launches that were drained earlier the same day.\",\"uncertainty\":\"There is no X or Telegram data. Real latecomer buyers could briefly add to the volume. The LP data conflict: RugCheck flags unlocked LP, while GMGN reports a burn ratio of 1.0.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The four identical earlier tokens were drained to about $0 liquidity, a strong sign of a serial rug operator\",\"RugCheck flags a large amount of unlocked LP and few LP providers\",\"Top 10 hold 97% (may include the pool); a 30-wallet insider network\",\"Bundler wallets dominate and volume looks washed\",\"Creator raw balance of about 1.2e14 units may be a sizeable supply share if decimals are 6, which conflicts with GMGN's 0.12%\"]},\"counterargument\":\"Liquidity is real at about $314K, price is up 79\u2013125%, and the pool is only 38 minutes old. Wash-driven volume can push a token onto trending lists and pull in real buyers for another hour or so. GMGN shows no paid promotion and a burned LP, so this copy might run longer than the earlier ones.\",\"unknowns\":[\"Whether the LP is actually removable (the RugCheck and GMGN signals conflict)\",\"How many token decimals the creator balance uses\",\"Whether any off-chain promotion is happening, since X and Telegram were not visible\",\"Whether the earlier clones came from the same operator\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the evidence packet only.\"},\"thesis\":\"This is a serial copy-and-drain scheme that impersonates the Nike brand. It is propped up by bundled, wash-style volume and has no organic story. Earlier identical tokens were drained within hours, so attention is likely to collapse soon, most likely through a liquidity pull or dump.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Just Do It.\" (ticker Nike) was created and migrated to PumpSwap in the same second via a Meteora virtual curve, about 38 minutes before detection. It has traded about $3.5M in volume against a market cap of about $1.3M, which is roughly 11x turnover in one hour. Only about 245 unique buyers made more than 2,000 buys. Buy and sell counts are nearly equal. GMGN tags 136 of 243 holders as bundler wallets and finds a 30-wallet insider trading network. The top 10 wallets hold 97%, a figure that may include the pool. The packet lists four other tokens with the identical name and ticker (\"Just Do It.\" / Nike) launched in the previous ~7 hours. Each shows a market cap of about $1.1\u20131.5M, near-zero liquidity and no volume, so they were drained. This looks like the same launch-and-drain scheme being run again. The listed X handle \"Nike\" is the real brand's account and is not a genuine project link.",
+  "narrative": {
+   "description": "Borrows Nike's slogan and name. There is no project site, no description and no DexScreener profile. The X link points to the real Nike account, which is brand impersonation, not a community.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Nothing suggests organic spread. The activity is best explained by bundled or wash trading: many trades from few unique wallets, balanced buys and sells, and 136 bundler wallets. Promotion is also possible, but it cannot be seen in the packet."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the copy that is live right now. It has no known link to Nike or to any real event.",
+   "competing_tokens": "At least four identical 'Just Do It.' / Nike tokens from earlier today (DHqf..., DryN..., Af4h..., 638m...). All show about $1.1\u20131.5M market cap with liquidity drained to near zero. Several older NIKE tokens are dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "136/243 bundler wallets; 29 snipers; a 30-wallet insider network; about 2,000 buys from only 245 unique buyers; near 1:1 buy/sell ratio; turnover over 10x market cap in under an hour; creation and migration at the same timestamp; a duplicated image (4 copies); impersonated Nike X handle; and repeated identical launches that were drained earlier the same day.",
+   "uncertainty": "There is no X or Telegram data. Real latecomer buyers could briefly add to the volume. The LP data conflict: RugCheck flags unlocked LP, while GMGN reports a burn ratio of 1.0."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The four identical earlier tokens were drained to about $0 liquidity, a strong sign of a serial rug operator",
+    "RugCheck flags a large amount of unlocked LP and few LP providers",
+    "Top 10 hold 97% (may include the pool); a 30-wallet insider network",
+    "Bundler wallets dominate and volume looks washed",
+    "Creator raw balance of about 1.2e14 units may be a sizeable supply share if decimals are 6, which conflicts with GMGN's 0.12%"
+   ]
+  },
+  "counterargument": "Liquidity is real at about $314K, price is up 79\u2013125%, and the pool is only 38 minutes old. Wash-driven volume can push a token onto trending lists and pull in real buyers for another hour or so. GMGN shows no paid promotion and a burned LP, so this copy might run longer than the earlier ones.",
+  "unknowns": [
+   "Whether the LP is actually removable (the RugCheck and GMGN signals conflict)",
+   "How many token decimals the creator balance uses",
+   "Whether any off-chain promotion is happening, since X and Telegram were not visible",
+   "Whether the earlier clones came from the same operator"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the evidence packet only."
+  },
+  "thesis": "This is a serial copy-and-drain scheme that impersonates the Nike brand. It is propped up by bundled, wash-style volume and has no organic story. Earlier identical tokens were drained within hours, so attention is likely to collapse soon, most likely through a liquidity pull or dump.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4647,
+ "type": "result",
+ "duration_ms": 20397,
+ "uuid": "ed57b930-09b4-4216-8161-5ec9d8a068d5",
+ "ttft_stream_ms": 726,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 726,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

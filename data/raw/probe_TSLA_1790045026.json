@@ -1,0 +1,200 @@
+{
+ "duration_api_ms": 147684,
+ "stop_reason": "tool_use",
+ "session_id": "d86dd1d9-2c5c-489a-bbe5-b20b1c504652",
+ "total_cost_usd": 0.728819,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 23366,
+  "cache_read_input_tokens": 121506,
+  "output_tokens": 7052,
+  "output_tokens_details": {
+   "thinking_tokens": 1573
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 23366,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3713,
+    "cache_read_input_tokens": 24098,
+    "cache_creation_input_tokens": 1768,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1768
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 16,
+   "outputTokens": 7052,
+   "cacheReadInputTokens": 121506,
+   "cacheCreationInputTokens": 23366,
+   "webSearchRequests": 0,
+   "costUSD": 0.4707930000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1573,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 130966,
+   "outputTokens": 5412,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 10,
+   "costUSD": 0.258026,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 20,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Tesla\\\" (TSLA) is a generic brand-name memecoin. It is roughly 4.7 hours old, with a PumpSwap pool created 2026-09-21 21:57 UTC. It has done about $28M of volume on only ~$439K liquidity, which is about 64x turnover in under 5 hours, and price is up 374\u2013454% in 6h. I found no project of its own: no website, X account, Telegram, description or DexScreener profile. The only links, which GeckoTerminal shows, point to tesla.com and @Tesla, so the token impersonates the real company rather than having any community. The flows look lopsided. In the last hour there were 2,767 unique buyers against only 109 unique sellers, yet 2,868 sell transactions. A small set of wallets is making many sells while many wallets buy. RugCheck flags 490 wallets in insider networks, including a 439-wallet transfer network. The creator wallet holds about 10.1B of 100B tokens (~10%). GeckoTerminal says a Meteora DBC contract holds ~80B tokens. Web search turned up no X, Reddit, Telegram or news discussion of this contract. The only background is ordinary Tesla stock news (TSLA up about 3% on Sep 21 on robotaxi/AI hopes, an NHTSA Cybercab probe, SpaceX-merger speculation). I found no specific catalyst that would point people to this token.\",\"narrative\":{\"description\":\"A generic 'Tesla' memecoin riding the Tesla/Elon brand. Tesla stock has been strong in September (autonomy/AI enthusiasm, SpaceX-merger talk, Roadster event on Oct 1), but there is no crypto-specific event, no Musk post about a token and no official Tesla coin.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no evidence of organic spread. Attention seems to come from the brand name plus on-chain activity: very high transaction counts, lopsided buyer/seller counts and trending status in DEX scanners. Nobody appears to be telling a story about it.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name TSLA token with real liquidity right now ($439K against near-zero for the clones in the packet), so if anyone is trading a 'Tesla' memecoin today it's this one. But nothing ties it to Tesla. Its metadata simply borrows tesla.com and @Tesla.\",\"competing_tokens\":\"At least 10 same-name TSLA/'Tesla' tokens in the packet, most created in the past ~18h and now dead with ~$0 liquidity. There are also older ones (2quinr... from 2024, EUS4...pump 'Tesla Memecoin', 9khhe... 'Tesla on Solana', a 'Tesla Coin' Meteora pair) and the real tokenized stock TSLAx (xStocks).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"(1) In the last hour there were 2,767 unique buyers but only 109 unique sellers making 2,868 sells (GeckoTerminal, in the packet). That points to a few wallets selling repeatedly into a crowd of buyers. (2) RugCheck flags 490 insider wallets, including a 439-wallet transfer network holding ~8B tokens (~8%). (3) $28M volume on $439K liquidity, about 64x turnover in 5h, looks like bot or wash volume. (4) The creator holds ~10% of supply, and the PumpSwap LP is essentially unlocked (RugCheck). (5) There are no socials of its own, only borrowed Tesla branding. (6) Web searches for the contract address, ticker and name found no organic posts.\",\"uncertainty\":\"Search engines index X very poorly, so organic X or Telegram chatter could exist without my seeing it. The unique-buyer count could include real retail who arrived through trending lists. The insider-network numbers are heuristic.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"PumpSwap LP essentially unlocked (RugCheck flags 'Large Amount of LP Unlocked'): liquidity can be pulled\",\"Creator wallet holds ~10.1B/100B tokens (~10%), roughly $350K at current price, close to the entire pool's liquidity\",\"~80B tokens (80%) sit in a Meteora DBC contract, per GeckoTerminal. I couldn't tell how or when they could reach the market, so this is a possible supply overhang\",\"Top-10 holders own 97.3%, and the float outside the pools and insiders is tiny\",\"490 insider-network wallets, about 8% held through the transfer network\",\"Few sellers making many sells, which looks like steady distribution into buyers\",\"Many same-name clones and a brand-impersonation profile; delisting or flagging risk\"]},\"counterargument\":\"Brand-name memecoins can run hard purely on name recognition. Tesla stock has momentum, and there's a Roadster event on Oct 1 plus merger speculation. This is also the only liquid 'Tesla' token, so it could become the default pick for scanner-driven traders. Nearly 4,000 unique buyers in 6h and a 2:1 buy/sell transaction ratio, with price still rising (+25% in 1h), show that demand hadn't run out when the packet was collected. Also, the 80% in the DBC contract may be locked curve inventory rather than supply insiders can sell.\",\"unknowns\":[\"Whether organic X or Telegram discussion exists (poorly indexed)\",\"The nature and release terms of the 80B tokens in the Meteora DBC contract\",\"Whether the creator or insider wallets have already started selling\",\"Who created the PumpSwap pool and controls its LP\",\"The IPFS metadata contents (I got a 429 when fetching it)\",\"Whether any KOL or call group is pushing it\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched the contract address, the name and ticker, and site:x.com; nothing token-specific came up. The news I found is general Tesla stock coverage only, with nothing about this token. The project has no site of its own; its metadata points to tesla.com and @Tesla. Solscan and DexScreener pages returned 403 and IPFS returned 429. I used the RugCheck, GeckoTerminal and DexScreener APIs plus MEXC's DEX page.\"},\"thesis\":\"A brand-impersonation 'Tesla' memecoin with no community, no socials of its own and no catalyst. The volume looks bot- or insider-driven: a few sellers making many sells into many buyers, 64x liquidity turnover, 490 flagged insider wallets, a ~10% creator stake and unlocked LP. The attention appears manufactured by trading activity, not narrative, and the setup looks like distribution. I expect it to fade.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.rugcheck.xyz/v1/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ/report\",\"what\":\"Supply of 100B with 6 decimals, creator balance ~10.1B, unlocked PumpSwap LP, 490 insiders, no launchpad\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ/info\",\"what\":\"Website tesla.com and Twitter @Tesla (impersonation), no description, top-10 holders own 97.27%\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/C2aUx8v7czsivzhimXydVLBfoMFJB5Hpip6Q2GjWvGzL\",\"what\":\"Pool about 4h old, Meteora DBC contract holds 80B tokens, $28M volume\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ\",\"what\":\"PumpSwap is the main pair; Meteora pairs have negligible activity; no socials\"},{\"url\":\"https://www.mexc.com/dex/onchain/sol/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ\",\"what\":\"Only indexed page for the contract address; no socials\"},{\"url\":\"https://www.tradingkey.com/news/market-movers/262178435-market-movers-tsla-20260921\",\"what\":\"Tesla stock up about 3% on Sep 21 on autonomy/AI hopes\"},{\"url\":\"https://finance.yahoo.com/markets/stocks/articles/did-elon-musk-just-drop-143651826.html\",\"what\":\"SpaceX\u2013Tesla merger speculation\"},{\"url\":\"https://www.bybit.com/en/wiki/article/tesla-coin-review-tsla-what-it-is-what-it-is-not-and-how-to-check-it-safely/\",\"what\":\"There is no official Tesla coin; many unauthorized TSLA memecoins exist\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Tesla\" (TSLA) is a generic brand-name memecoin. It is roughly 4.7 hours old, with a PumpSwap pool created 2026-09-21 21:57 UTC. It has done about $28M of volume on only ~$439K liquidity, which is about 64x turnover in under 5 hours, and price is up 374\u2013454% in 6h. I found no project of its own: no website, X account, Telegram, description or DexScreener profile. The only links, which GeckoTerminal shows, point to tesla.com and @Tesla, so the token impersonates the real company rather than having any community. The flows look lopsided. In the last hour there were 2,767 unique buyers against only 109 unique sellers, yet 2,868 sell transactions. A small set of wallets is making many sells while many wallets buy. RugCheck flags 490 wallets in insider networks, including a 439-wallet transfer network. The creator wallet holds about 10.1B of 100B tokens (~10%). GeckoTerminal says a Meteora DBC contract holds ~80B tokens. Web search turned up no X, Reddit, Telegram or news discussion of this contract. The only background is ordinary Tesla stock news (TSLA up about 3% on Sep 21 on robotaxi/AI hopes, an NHTSA Cybercab probe, SpaceX-merger speculation). I found no specific catalyst that would point people to this token.",
+  "narrative": {
+   "description": "A generic 'Tesla' memecoin riding the Tesla/Elon brand. Tesla stock has been strong in September (autonomy/AI enthusiasm, SpaceX-merger talk, Roadster event on Oct 1), but there is no crypto-specific event, no Musk post about a token and no official Tesla coin.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no evidence of organic spread. Attention seems to come from the brand name plus on-chain activity: very high transaction counts, lopsided buyer/seller counts and trending status in DEX scanners. Nobody appears to be telling a story about it."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name TSLA token with real liquidity right now ($439K against near-zero for the clones in the packet), so if anyone is trading a 'Tesla' memecoin today it's this one. But nothing ties it to Tesla. Its metadata simply borrows tesla.com and @Tesla.",
+   "competing_tokens": "At least 10 same-name TSLA/'Tesla' tokens in the packet, most created in the past ~18h and now dead with ~$0 liquidity. There are also older ones (2quinr... from 2024, EUS4...pump 'Tesla Memecoin', 9khhe... 'Tesla on Solana', a 'Tesla Coin' Meteora pair) and the real tokenized stock TSLAx (xStocks).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "(1) In the last hour there were 2,767 unique buyers but only 109 unique sellers making 2,868 sells (GeckoTerminal, in the packet). That points to a few wallets selling repeatedly into a crowd of buyers. (2) RugCheck flags 490 insider wallets, including a 439-wallet transfer network holding ~8B tokens (~8%). (3) $28M volume on $439K liquidity, about 64x turnover in 5h, looks like bot or wash volume. (4) The creator holds ~10% of supply, and the PumpSwap LP is essentially unlocked (RugCheck). (5) There are no socials of its own, only borrowed Tesla branding. (6) Web searches for the contract address, ticker and name found no organic posts.",
+   "uncertainty": "Search engines index X very poorly, so organic X or Telegram chatter could exist without my seeing it. The unique-buyer count could include real retail who arrived through trending lists. The insider-network numbers are heuristic."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "PumpSwap LP essentially unlocked (RugCheck flags 'Large Amount of LP Unlocked'): liquidity can be pulled",
+    "Creator wallet holds ~10.1B/100B tokens (~10%), roughly $350K at current price, close to the entire pool's liquidity",
+    "~80B tokens (80%) sit in a Meteora DBC contract, per GeckoTerminal. I couldn't tell how or when they could reach the market, so this is a possible supply overhang",
+    "Top-10 holders own 97.3%, and the float outside the pools and insiders is tiny",
+    "490 insider-network wallets, about 8% held through the transfer network",
+    "Few sellers making many sells, which looks like steady distribution into buyers",
+    "Many same-name clones and a brand-impersonation profile; delisting or flagging risk"
+   ]
+  },
+  "counterargument": "Brand-name memecoins can run hard purely on name recognition. Tesla stock has momentum, and there's a Roadster event on Oct 1 plus merger speculation. This is also the only liquid 'Tesla' token, so it could become the default pick for scanner-driven traders. Nearly 4,000 unique buyers in 6h and a 2:1 buy/sell transaction ratio, with price still rising (+25% in 1h), show that demand hadn't run out when the packet was collected. Also, the 80% in the DBC contract may be locked curve inventory rather than supply insiders can sell.",
+  "unknowns": [
+   "Whether organic X or Telegram discussion exists (poorly indexed)",
+   "The nature and release terms of the 80B tokens in the Meteora DBC contract",
+   "Whether the creator or insider wallets have already started selling",
+   "Who created the PumpSwap pool and controls its LP",
+   "The IPFS metadata contents (I got a 429 when fetching it)",
+   "Whether any KOL or call group is pushing it"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched the contract address, the name and ticker, and site:x.com; nothing token-specific came up. The news I found is general Tesla stock coverage only, with nothing about this token. The project has no site of its own; its metadata points to tesla.com and @Tesla. Solscan and DexScreener pages returned 403 and IPFS returned 429. I used the RugCheck, GeckoTerminal and DexScreener APIs plus MEXC's DEX page."
+  },
+  "thesis": "A brand-impersonation 'Tesla' memecoin with no community, no socials of its own and no catalyst. The volume looks bot- or insider-driven: a few sellers making many sells into many buyers, 64x liquidity turnover, 490 flagged insider wallets, a ~10% creator stake and unlocked LP. The attention appears manufactured by trading activity, not narrative, and the setup looks like distribution. I expect it to fade.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.rugcheck.xyz/v1/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ/report",
+    "what": "Supply of 100B with 6 decimals, creator balance ~10.1B, unlocked PumpSwap LP, 490 insiders, no launchpad"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ/info",
+    "what": "Website tesla.com and Twitter @Tesla (impersonation), no description, top-10 holders own 97.27%"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/C2aUx8v7czsivzhimXydVLBfoMFJB5Hpip6Q2GjWvGzL",
+    "what": "Pool about 4h old, Meteora DBC contract holds 80B tokens, $28M volume"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ",
+    "what": "PumpSwap is the main pair; Meteora pairs have negligible activity; no socials"
+   },
+   {
+    "url": "https://www.mexc.com/dex/onchain/sol/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ",
+    "what": "Only indexed page for the contract address; no socials"
+   },
+   {
+    "url": "https://www.tradingkey.com/news/market-movers/262178435-market-movers-tsla-20260921",
+    "what": "Tesla stock up about 3% on Sep 21 on autonomy/AI hopes"
+   },
+   {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/did-elon-musk-just-drop-143651826.html",
+    "what": "SpaceX\u2013Tesla merger speculation"
+   },
+   {
+    "url": "https://www.bybit.com/en/wiki/article/tesla-coin-review-tsla-what-it-is-what-it-is-not-and-how-to-check-it-safely/",
+    "what": "There is no official Tesla coin; many unauthorized TSLA memecoins exist"
+   }
+  ]
+ },
+ "ttft_ms": 1769,
+ "type": "result",
+ "duration_ms": 104864,
+ "uuid": "624fb911-e34d-4355-8824-aa391c1b82bb",
+ "ttft_stream_ms": 1285,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1285,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

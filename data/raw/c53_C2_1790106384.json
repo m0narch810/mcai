@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 71040,
+ "stop_reason": "tool_use",
+ "session_id": "68b4e75f-9282-4fd1-a50f-2ec16e29a19a",
+ "total_cost_usd": 0.33655099999999993,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 14387,
+  "cache_read_input_tokens": 52580,
+  "output_tokens": 3668,
+  "output_tokens_details": {
+   "thinking_tokens": 505
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14387,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2466,
+    "cache_read_input_tokens": 15693,
+    "cache_creation_input_tokens": 1194,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1194
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3668,
+   "cacheReadInputTokens": 52580,
+   "cacheCreationInputTokens": 14387,
+   "webSearchRequests": 0,
+   "costUSD": 0.19901199999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 505,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 76089,
+   "outputTokens": 2290,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.13753899999999997,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is not a memecoin. It is the canonical Solana version of ApeCoin (APE), the Bored Ape Yacht Club / Yuga Labs token. @apecoin posted this exact contract address in September 2025 (https://x.com/apecoin/status/1965528309066088591). On 2026-09-22 Sunrise, Wormhole's system for bringing tokens to Solana (\\\"NTT\\\", Native Token Transfers), listed APE as a canonical token. Sunrise announced at 17:22 UTC and Raydium confirmed trading at 17:43 UTC. LaunchOnSF/StonkFun then began accepting APE as a base pair for new token launches (https://solanacompass.com/news/apecoin-ape-goes-live-on-solana-as-a-canonical-token-via-sunrise-trading-open-on-raydium). The Raydium pool is about 2.5 hours old. The rule fired because of listing-day volume ($10.3M in 6h), not a new narrative. The $190k \\\"market cap\\\" is misleading. It only counts APE supply bridged to Solana, while price is tied to Ethereum APE (about $0.14\u20130.16) through arbitrage.\",\"narrative\":{\"description\":\"An established cross-chain asset (ApeCoin) is being listed as a canonical Solana token through Sunrise/Wormhole NTT. It follows recent Sunrise listings of PEPE, INJ, AVAX, DOGE and MON. Launch-day volume is about $17.7M across about 206k trades, and holders number about 9.1k (Solana Compass).\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"It is an official listing event, amplified by @apecoin, Sunrise and Raydium, plus arbitrage/MEV bots and launchpad pairing (StonkFun). Buys and sells are roughly balanced (about 46.6k vs 44k in 6h), which fits arbitrage and bot flow rather than a meme-style attention wave. Price has only moved about 3\u20135%.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"This is the official canonical mint. @apecoin posted it on X, Sunrise/Raydium coverage cites it, and it is on OKX/Bitget wallet listings. The project socials in the packet (x.com/apecoin, apechain.com) match.\",\"competing_tokens\":\"'Evil Ape' (2Wkip...pump, $93k mcap, negligible volume) and a dead 'APE' (952g...). Neither is relevant.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"The attention comes from official channel announcements (ApeCoin, Sunrise, Raydium) and an ecosystem listing, which is real but coordinated corporate promotion. GMGN shows a paid DexScreener boost and 1000+ bundler-tagged wallets, most likely arbitrage/MEV bots routing between Solana pools and the NTT bridge. The 'creator' with 103 launches is most likely the Sunrise/NTT deployer address, not a memecoin dev.\",\"uncertainty\":\"I could not see X post volume directly. Private Discord/Telegram content is invisible. The GMGN wallet tags are hard to interpret for a bridged asset.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price is pegged by arbitrage to Ethereum/CEX APE, so there is no independent upside from Solana attention\",\"Mint authority is enabled, which is expected for NTT bridge minting, but the Solana supply can expand as holders bridge in\",\"Launch-day volume usually decays sharply after the first hours\",\"The GMGN bundler and 'entrapment' shares are high, but they probably reflect bots, not insiders\",\"The reported mcap/FDV ($190k) covers only bridged supply and is not a real valuation\"]},\"counterargument\":\"The listing is real, official and canonical. It comes from a well-known brand with hundreds of thousands of holders, and PEPE's Sunrise listing did about $40M in its first 24h. Volume could stay high as more venues (Orca, Meteora, Jupiter routing, StonkFun APE pairs) come online and as ApeCoin's \\\"Project R.A.I.D.\\\" Solana push continues. The holder count could keep growing steadily.\",\"unknowns\":[\"The exact current price of APE on Ethereum and CEXs, and any macro move in APE\",\"Whether more DEX pools or incentives are scheduled\",\"How PEPE/INJ volume decayed after their Sunrise listing days\",\"X post volume and sentiment\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"inaccessible\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"I found X posts through search indexing: the @apecoin CA post and Bankr bot mentions. News comes from Solana Compass, CryptoBriefing and MEXC/PANews. I did not do a Telegram search. The Discord in the packet is an invite link and its content was not accessible.\"},\"thesis\":\"The activity is real, but it is a one-off listing event for an established token whose price is pegged by arbitrage to Ethereum APE. Volume will likely decay from its launch-day peak, and price will follow broader APE, not Solana narrative flow. As a narrative-driven continuation, this is a fade.\",\"continuation_view\":\"fade\",\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://solanacompass.com/news/apecoin-ape-goes-live-on-solana-as-a-canonical-token-via-sunrise-trading-open-on-raydium\",\"what\":\"Sunrise canonical listing on 2026-09-22 at 17:22/17:43 UTC, CA, volume and holders, StonkFun pairing\"},{\"url\":\"https://x.com/apecoin/status/1965528309066088591\",\"what\":\"Official ApeCoin X post with the Solana CA (2025)\"},{\"url\":\"https://cryptobriefing.com/pepe-40m-volume-solana-sunrise/\",\"what\":\"PEPE precedent: $40M in the first 24h of its Sunrise listing\"},{\"url\":\"https://x.com/bankrbot/status/1969307078222364848\",\"what\":\"The same CA's prior history: $1.73 spike in Sept 2025\"},{\"url\":\"https://www.mexc.com/news/79995\",\"what\":\"ApeCoin's Solana expansion / Project R.A.I.D context\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is not a memecoin. It is the canonical Solana version of ApeCoin (APE), the Bored Ape Yacht Club / Yuga Labs token. @apecoin posted this exact contract address in September 2025 (https://x.com/apecoin/status/1965528309066088591). On 2026-09-22 Sunrise, Wormhole's system for bringing tokens to Solana (\"NTT\", Native Token Transfers), listed APE as a canonical token. Sunrise announced at 17:22 UTC and Raydium confirmed trading at 17:43 UTC. LaunchOnSF/StonkFun then began accepting APE as a base pair for new token launches (https://solanacompass.com/news/apecoin-ape-goes-live-on-solana-as-a-canonical-token-via-sunrise-trading-open-on-raydium). The Raydium pool is about 2.5 hours old. The rule fired because of listing-day volume ($10.3M in 6h), not a new narrative. The $190k \"market cap\" is misleading. It only counts APE supply bridged to Solana, while price is tied to Ethereum APE (about $0.14\u20130.16) through arbitrage.",
+  "narrative": {
+   "description": "An established cross-chain asset (ApeCoin) is being listed as a canonical Solana token through Sunrise/Wormhole NTT. It follows recent Sunrise listings of PEPE, INJ, AVAX, DOGE and MON. Launch-day volume is about $17.7M across about 206k trades, and holders number about 9.1k (Solana Compass).",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "It is an official listing event, amplified by @apecoin, Sunrise and Raydium, plus arbitrage/MEV bots and launchpad pairing (StonkFun). Buys and sells are roughly balanced (about 46.6k vs 44k in 6h), which fits arbitrage and bot flow rather than a meme-style attention wave. Price has only moved about 3\u20135%."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "This is the official canonical mint. @apecoin posted it on X, Sunrise/Raydium coverage cites it, and it is on OKX/Bitget wallet listings. The project socials in the packet (x.com/apecoin, apechain.com) match.",
+   "competing_tokens": "'Evil Ape' (2Wkip...pump, $93k mcap, negligible volume) and a dead 'APE' (952g...). Neither is relevant.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "The attention comes from official channel announcements (ApeCoin, Sunrise, Raydium) and an ecosystem listing, which is real but coordinated corporate promotion. GMGN shows a paid DexScreener boost and 1000+ bundler-tagged wallets, most likely arbitrage/MEV bots routing between Solana pools and the NTT bridge. The 'creator' with 103 launches is most likely the Sunrise/NTT deployer address, not a memecoin dev.",
+   "uncertainty": "I could not see X post volume directly. Private Discord/Telegram content is invisible. The GMGN wallet tags are hard to interpret for a bridged asset."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price is pegged by arbitrage to Ethereum/CEX APE, so there is no independent upside from Solana attention",
+    "Mint authority is enabled, which is expected for NTT bridge minting, but the Solana supply can expand as holders bridge in",
+    "Launch-day volume usually decays sharply after the first hours",
+    "The GMGN bundler and 'entrapment' shares are high, but they probably reflect bots, not insiders",
+    "The reported mcap/FDV ($190k) covers only bridged supply and is not a real valuation"
+   ]
+  },
+  "counterargument": "The listing is real, official and canonical. It comes from a well-known brand with hundreds of thousands of holders, and PEPE's Sunrise listing did about $40M in its first 24h. Volume could stay high as more venues (Orca, Meteora, Jupiter routing, StonkFun APE pairs) come online and as ApeCoin's \"Project R.A.I.D.\" Solana push continues. The holder count could keep growing steadily.",
+  "unknowns": [
+   "The exact current price of APE on Ethereum and CEXs, and any macro move in APE",
+   "Whether more DEX pools or incentives are scheduled",
+   "How PEPE/INJ volume decayed after their Sunrise listing days",
+   "X post volume and sentiment"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "inaccessible",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "I found X posts through search indexing: the @apecoin CA post and Bankr bot mentions. News comes from Solana Compass, CryptoBriefing and MEXC/PANews. I did not do a Telegram search. The Discord in the packet is an invite link and its content was not accessible."
+  },
+  "thesis": "The activity is real, but it is a one-off listing event for an established token whose price is pegged by arbitrage to Ethereum APE. Volume will likely decay from its launch-day peak, and price will follow broader APE, not Solana narrative flow. As a narrative-driven continuation, this is a fade.",
+  "continuation_view": "fade",
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://solanacompass.com/news/apecoin-ape-goes-live-on-solana-as-a-canonical-token-via-sunrise-trading-open-on-raydium",
+    "what": "Sunrise canonical listing on 2026-09-22 at 17:22/17:43 UTC, CA, volume and holders, StonkFun pairing"
+   },
+   {
+    "url": "https://x.com/apecoin/status/1965528309066088591",
+    "what": "Official ApeCoin X post with the Solana CA (2025)"
+   },
+   {
+    "url": "https://cryptobriefing.com/pepe-40m-volume-solana-sunrise/",
+    "what": "PEPE precedent: $40M in the first 24h of its Sunrise listing"
+   },
+   {
+    "url": "https://x.com/bankrbot/status/1969307078222364848",
+    "what": "The same CA's prior history: $1.73 spike in Sept 2025"
+   },
+   {
+    "url": "https://www.mexc.com/news/79995",
+    "what": "ApeCoin's Solana expansion / Project R.A.I.D context"
+   }
+  ]
+ },
+ "ttft_ms": 3183,
+ "type": "result",
+ "duration_ms": 55464,
+ "uuid": "2f67aaf1-ee3f-4fd8-88cc-40eb56d44dc7",
+ "ttft_stream_ms": 892,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 892,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

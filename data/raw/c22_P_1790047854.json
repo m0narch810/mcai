@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 29509,
+ "stop_reason": "tool_use",
+ "session_id": "b1d6062c-fe8b-43a6-82e7-a5b4498079ae",
+ "total_cost_usd": 0.126644,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6743,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2331,
+  "output_tokens_details": {
+   "thinking_tokens": 216
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6743,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2331,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 6743,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6743
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 2331,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 6743,
+   "webSearchRequests": 0,
+   "costUSD": 0.126644,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 216,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This looks like a tokenized equity, not a memecoin. The token appears to be Backpack Securities' on-chain version of Trump Media & Technology Group (DJT) stock. Its price is $9.17 and has moved only 0.1\u20133.8% across every timeframe (5 minutes to 24 hours), so it is tracking the underlying share price. The trigger fired because volume in the last 5 minutes (~$161k on DexScreener, ~$83k on GeckoTerminal) was about 23x the 6-hour run-rate, with buys and sells almost equal (1093 vs 1015). That points to arbitrage, market-making or bot rebalancing, not a directional wave of attention. The spike came at 03:30 UTC (~23:30 ET), when US equity markets were closed. That fits after-hours price discovery or arbitrage against off-chain DJT quotes and perps, not a social catalyst.\",\"narrative\":{\"description\":\"This is a real-world-asset (RWA) token: a tokenized DJT share issued by Backpack Securities. The only story is the broad theme of tokenized stocks, plus whatever news moves DJT itself (Trump-related headlines). No memecoin story, community, socials or website appear in the packet beyond the GeckoTerminal X handle 'Backpack'.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"It probably isn't spreading socially. The volume burst with a flat price and balanced buy/sell counts looks mechanical (arbitrage, market-making or rebalancing). A DJT-related off-hours news item could have caused a brief jump in trading, but any price effect is capped by the peg to the stock.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The name matches Backpack Securities' naming. The creator was funded from a wallet GMGN labels 'Backpack 2'. GeckoTerminal links the X handle Backpack. Mint and freeze authority are kept, as is normal for a regulated security token. This pool holds by far the most liquidity ($62k) of any DJT-ticker token in the packet.\",\"competing_tokens\":\"Several DJT-ticker memecoins (TrumpCoin, Trump Media & Technology Group C pump token, airport-themed tokens, Truth Coin) all have negligible liquidity and zero volume in the last hour. A second 'Backpack Securities'-named mint (9jx1...) has $0.43 in liquidity and may be an earlier or test deployment, or an impostor.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"No paid DexScreener boosts, ads or profile, and no degen calls or smart-money signals. About 626 unique buyers and 480 unique sellers traded in the last hour. The bot/degen rate (6.5%) and fresh-wallet rate (1.6%) are low. GMGN's 1000 'bundler' and 1000 'fresh' wallet tags look like capped counts, and the top bundler share is small (8.3%). The 47% top holder is probably issuer or custody inventory. The activity looks like market-structure trading, not coordinated promotion. It also isn't organic narrative spread.\",\"uncertainty\":\"The packet doesn't confirm who controls the 47% wallet. Backpack issuance can't be verified without browsing. The 5-minute volume differs between DexScreener and GeckoTerminal ($161k vs $83k), so the data may cover different pools or may be noisy.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Mint and freeze authority are enabled and the issuer has 'permanent control' over tokens. This is normal for a security token, but it means central control.\",\"One wallet holds 47%, probably issuer inventory, which can be minted or redeemed.\",\"The price is pegged to the DJT stock, so a memecoin-style breakout is structurally unlikely.\",\"Liquidity is $62k, thin compared with bursts of ~$160k in 5 minutes.\",\"A same-name mint with near-zero liquidity exists and could confuse buyers.\"]},\"counterargument\":\"If a major Trump or Truth Social headline hit while US markets were closed, on-chain DJT could be one of the few 24/7 venues. Volume and unique traders could keep rising for hours as people use it to trade the news before the market opens. That would put the token on DexScreener trending lists and draw further attention to tokenized stocks.\",\"unknowns\":[\"What triggered the 5-minute volume spike (DJT news, an arbitrage bot, or a market-maker rebalance)\",\"Whether the 47% holder is Backpack's custody or issuance wallet\",\"The price of DJT stock and its derivatives at the same moment\",\"Whether volume is spread across the 30 discovered pairs\",\"Whether the 9jx1... mint is official\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses only the evidence packet.\"},\"thesis\":\"This is a tokenized-stock RWA token tied to the DJT share price. The spike in unusual activity, with a flat price and balanced two-way flow, is most likely arbitrage or market-making, not a spreading story. Expect the volume burst to fade back toward its baseline, with the price following DJT and not breaking out.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This looks like a tokenized equity, not a memecoin. The token appears to be Backpack Securities' on-chain version of Trump Media & Technology Group (DJT) stock. Its price is $9.17 and has moved only 0.1\u20133.8% across every timeframe (5 minutes to 24 hours), so it is tracking the underlying share price. The trigger fired because volume in the last 5 minutes (~$161k on DexScreener, ~$83k on GeckoTerminal) was about 23x the 6-hour run-rate, with buys and sells almost equal (1093 vs 1015). That points to arbitrage, market-making or bot rebalancing, not a directional wave of attention. The spike came at 03:30 UTC (~23:30 ET), when US equity markets were closed. That fits after-hours price discovery or arbitrage against off-chain DJT quotes and perps, not a social catalyst.",
+  "narrative": {
+   "description": "This is a real-world-asset (RWA) token: a tokenized DJT share issued by Backpack Securities. The only story is the broad theme of tokenized stocks, plus whatever news moves DJT itself (Trump-related headlines). No memecoin story, community, socials or website appear in the packet beyond the GeckoTerminal X handle 'Backpack'.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "It probably isn't spreading socially. The volume burst with a flat price and balanced buy/sell counts looks mechanical (arbitrage, market-making or rebalancing). A DJT-related off-hours news item could have caused a brief jump in trading, but any price effect is capped by the peg to the stock."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The name matches Backpack Securities' naming. The creator was funded from a wallet GMGN labels 'Backpack 2'. GeckoTerminal links the X handle Backpack. Mint and freeze authority are kept, as is normal for a regulated security token. This pool holds by far the most liquidity ($62k) of any DJT-ticker token in the packet.",
+   "competing_tokens": "Several DJT-ticker memecoins (TrumpCoin, Trump Media & Technology Group C pump token, airport-themed tokens, Truth Coin) all have negligible liquidity and zero volume in the last hour. A second 'Backpack Securities'-named mint (9jx1...) has $0.43 in liquidity and may be an earlier or test deployment, or an impostor.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "No paid DexScreener boosts, ads or profile, and no degen calls or smart-money signals. About 626 unique buyers and 480 unique sellers traded in the last hour. The bot/degen rate (6.5%) and fresh-wallet rate (1.6%) are low. GMGN's 1000 'bundler' and 1000 'fresh' wallet tags look like capped counts, and the top bundler share is small (8.3%). The 47% top holder is probably issuer or custody inventory. The activity looks like market-structure trading, not coordinated promotion. It also isn't organic narrative spread.",
+   "uncertainty": "The packet doesn't confirm who controls the 47% wallet. Backpack issuance can't be verified without browsing. The 5-minute volume differs between DexScreener and GeckoTerminal ($161k vs $83k), so the data may cover different pools or may be noisy."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Mint and freeze authority are enabled and the issuer has 'permanent control' over tokens. This is normal for a security token, but it means central control.",
+    "One wallet holds 47%, probably issuer inventory, which can be minted or redeemed.",
+    "The price is pegged to the DJT stock, so a memecoin-style breakout is structurally unlikely.",
+    "Liquidity is $62k, thin compared with bursts of ~$160k in 5 minutes.",
+    "A same-name mint with near-zero liquidity exists and could confuse buyers."
+   ]
+  },
+  "counterargument": "If a major Trump or Truth Social headline hit while US markets were closed, on-chain DJT could be one of the few 24/7 venues. Volume and unique traders could keep rising for hours as people use it to trade the news before the market opens. That would put the token on DexScreener trending lists and draw further attention to tokenized stocks.",
+  "unknowns": [
+   "What triggered the 5-minute volume spike (DJT news, an arbitrage bot, or a market-maker rebalance)",
+   "Whether the 47% holder is Backpack's custody or issuance wallet",
+   "The price of DJT stock and its derivatives at the same moment",
+   "Whether volume is spread across the 30 discovered pairs",
+   "Whether the 9jx1... mint is official"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses only the evidence packet."
+  },
+  "thesis": "This is a tokenized-stock RWA token tied to the DJT share price. The spike in unusual activity, with a flat price and balanced two-way flow, is most likely arbitrage or market-making, not a spreading story. Expect the volume burst to fade back toward its baseline, with the price following DJT and not breaking out.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5565,
+ "type": "result",
+ "duration_ms": 29551,
+ "uuid": "a0d212b1-d981-414e-a34f-27d805759f96",
+ "ttft_stream_ms": 2029,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 2029,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

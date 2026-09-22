@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 29993,
+ "stop_reason": "tool_use",
+ "session_id": "33d9f74b-f4e3-4b8c-b55a-62c66d7f78da",
+ "total_cost_usd": 0.11885480000000001,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 6369,
+  "cache_read_input_tokens": 8014,
+  "output_tokens": 2170,
+  "output_tokens_details": {
+   "thinking_tokens": 203
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6369,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1950,
+    "cache_read_input_tokens": 6552,
+    "cache_creation_input_tokens": 1279,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1279
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2170,
+   "cacheReadInputTokens": 8014,
+   "cacheCreationInputTokens": 6369,
+   "webSearchRequests": 0,
+   "costUSD": 0.0959708,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 203,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 11194,
+   "outputTokens": 338,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.022884,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This is an impersonation token, not a real narrative. The symbol is \\\"TlKTOK\\\", spelled with a lowercase L in place of the I, which is a classic lookalike trick. The name claims \\\"TikTok Official Token\\\", and the description only says \\\"Created on https://x.com/tiktok_us\\\". That matches the pattern of launchpads that auto-mint a token when an X post is made, then attribute it to whatever account was tagged. GMGN says the dev X account (tiktok_us) has 6,734 tokens launched under it. That is spam-factory attribution, not a TikTok launch. Web search found several other Solana \\\"TikTok Official Token\\\" contracts (AxA9\u2026, 4nCG\u2026, 3pn4\u2026). Bitget's guide says TikTok-named tokens have no verified team or official affiliation with TikTok. The packet also lists three earlier same-name, same-ticker clones launched in the prior ~3.5 hours, each now at about $0.03 liquidity. This one is the latest in a rotating clone series.\\n\\nThe trading data points to coordination rather than organic interest:\\n- GMGN tags 331 of about 737 holders as bundler wallets, plus 28 snipers and 4 rat-trader wallets.\\n- Two insider trading networks of 11 and 33 wallets were detected (44 graph insiders).\\n- GeckoTerminal puts the top 10 holders at 96.7%, although that may include pool accounts.\\n- $5.2M of volume in one hour on $232K liquidity (22x turnover) came from only about 649 unique buyers and 195 sellers. That suggests heavy repeat or bot trading.\\n- There are zero smart-money or KOL wallets and 17 duplicate-image tokens.\\n- RugCheck flags a large amount of unlocked LP, with LP locked at 0% in one of the top markets.\\n\\nAny \\\"TikTok\\\" hook is borrowed from someone else's story, and the realistic outcome is dumping into late buyers, like the three previous clones.\",\"red_flags\":[\"Lookalike ticker 'TlKTOK' (lowercase L for I): an impersonation of the TikTok brand\",\"Three earlier identical-name/ticker clones in the prior ~3.5h, all now near $0 liquidity: a serial clone pattern\",\"Dev X account attribution (tiktok_us) linked to 6,734 launched tokens: auto-launch spam attribution, not an official launch\",\"331 bundler wallets, 28 snipers, 4 rat traders; 44 graph-detected insiders across 2 trade networks\",\"Top 10 holders at 96.7% (GeckoTerminal, may include pool)\",\"22x hourly turnover vs liquidity with only ~649 unique buyers: likely wash or bot volume\",\"Unlocked LP flagged as danger by RugCheck; few LP providers\",\"No website or socials of its own, no DexScreener profile, 0 smart-money or KOL wallets\",\"17 duplicate-image tokens\",\"No TikTok/ByteDance announcement found; third-party pages say TikTok-named tokens are unaffiliated\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"A verified announcement from TikTok or ByteDance (for example an official @tiktok_us post or a press release) naming this exact contract (HwWbtcr\u2026SqPos). Also refuting: evidence that the bundler and insider wallets are not holding or distributing supply, together with growing unique-holder counts and liquidity that holds after the clone-cycle window.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"high\",\"coverage_notes\":\"I ran one web search, which found multiple unrelated \\\"TikTok Official Token\\\" Solana contracts and a Bitget guide saying these tokens are not affiliated with TikTok. I did not read X posts directly (no access) or check private Telegram groups. I did not verify any @tiktok_us post on-chain or on X, so the lack of an official announcement comes from search results, not from a direct review of the account. Most of the conclusions come from the packet's structural and wallet data (GMGN, GeckoTerminal, RugCheck).\",\"sources\":[{\"url\":\"https://web3.bitget.com/en/academy/how-to-buy-tiktok-token-tiktok-in-2026-a-beginners-step-by-step-guide-to-tiktok-token\",\"what\":\"Says TikTok-named tokens have no verified team and no official affiliation with TikTok\"},{\"url\":\"https://opensea.io/token/solana/AxA9axmc1Rd3z5kDy6WGTNC7RqgyZoMonpqv1W6hZP1s\",\"what\":\"Another 'TikTok Official Token' Solana contract: evidence of many clones\"},{\"url\":\"https://phantom.com/tokens/solana/4nCGAiSJg7urSJ7ZgtipmHQan1fxK4P8PGKToUd1VE8u\",\"what\":\"Another 'TikTok Official Token' clone contract\"},{\"url\":\"https://solanacompass.com/tokens/3pn46THSsQZxDTmDu2mp8LBwfxACzubpPwr71pzUU4NM\",\"what\":\"Another 'TikTok Official Token' clone contract\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This is an impersonation token, not a real narrative. The symbol is \"TlKTOK\", spelled with a lowercase L in place of the I, which is a classic lookalike trick. The name claims \"TikTok Official Token\", and the description only says \"Created on https://x.com/tiktok_us\". That matches the pattern of launchpads that auto-mint a token when an X post is made, then attribute it to whatever account was tagged. GMGN says the dev X account (tiktok_us) has 6,734 tokens launched under it. That is spam-factory attribution, not a TikTok launch. Web search found several other Solana \"TikTok Official Token\" contracts (AxA9\u2026, 4nCG\u2026, 3pn4\u2026). Bitget's guide says TikTok-named tokens have no verified team or official affiliation with TikTok. The packet also lists three earlier same-name, same-ticker clones launched in the prior ~3.5 hours, each now at about $0.03 liquidity. This one is the latest in a rotating clone series.\n\nThe trading data points to coordination rather than organic interest:\n- GMGN tags 331 of about 737 holders as bundler wallets, plus 28 snipers and 4 rat-trader wallets.\n- Two insider trading networks of 11 and 33 wallets were detected (44 graph insiders).\n- GeckoTerminal puts the top 10 holders at 96.7%, although that may include pool accounts.\n- $5.2M of volume in one hour on $232K liquidity (22x turnover) came from only about 649 unique buyers and 195 sellers. That suggests heavy repeat or bot trading.\n- There are zero smart-money or KOL wallets and 17 duplicate-image tokens.\n- RugCheck flags a large amount of unlocked LP, with LP locked at 0% in one of the top markets.\n\nAny \"TikTok\" hook is borrowed from someone else's story, and the realistic outcome is dumping into late buyers, like the three previous clones.",
+  "red_flags": [
+   "Lookalike ticker 'TlKTOK' (lowercase L for I): an impersonation of the TikTok brand",
+   "Three earlier identical-name/ticker clones in the prior ~3.5h, all now near $0 liquidity: a serial clone pattern",
+   "Dev X account attribution (tiktok_us) linked to 6,734 launched tokens: auto-launch spam attribution, not an official launch",
+   "331 bundler wallets, 28 snipers, 4 rat traders; 44 graph-detected insiders across 2 trade networks",
+   "Top 10 holders at 96.7% (GeckoTerminal, may include pool)",
+   "22x hourly turnover vs liquidity with only ~649 unique buyers: likely wash or bot volume",
+   "Unlocked LP flagged as danger by RugCheck; few LP providers",
+   "No website or socials of its own, no DexScreener profile, 0 smart-money or KOL wallets",
+   "17 duplicate-image tokens",
+   "No TikTok/ByteDance announcement found; third-party pages say TikTok-named tokens are unaffiliated"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "A verified announcement from TikTok or ByteDance (for example an official @tiktok_us post or a press release) naming this exact contract (HwWbtcr\u2026SqPos). Also refuting: evidence that the bundler and insider wallets are not holding or distributing supply, together with growing unique-holder counts and liquidity that holds after the clone-cycle window.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "high",
+  "coverage_notes": "I ran one web search, which found multiple unrelated \"TikTok Official Token\" Solana contracts and a Bitget guide saying these tokens are not affiliated with TikTok. I did not read X posts directly (no access) or check private Telegram groups. I did not verify any @tiktok_us post on-chain or on X, so the lack of an official announcement comes from search results, not from a direct review of the account. Most of the conclusions come from the packet's structural and wallet data (GMGN, GeckoTerminal, RugCheck).",
+  "sources": [
+   {
+    "url": "https://web3.bitget.com/en/academy/how-to-buy-tiktok-token-tiktok-in-2026-a-beginners-step-by-step-guide-to-tiktok-token",
+    "what": "Says TikTok-named tokens have no verified team and no official affiliation with TikTok"
+   },
+   {
+    "url": "https://opensea.io/token/solana/AxA9axmc1Rd3z5kDy6WGTNC7RqgyZoMonpqv1W6hZP1s",
+    "what": "Another 'TikTok Official Token' Solana contract: evidence of many clones"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/4nCGAiSJg7urSJ7ZgtipmHQan1fxK4P8PGKToUd1VE8u",
+    "what": "Another 'TikTok Official Token' clone contract"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/3pn46THSsQZxDTmDu2mp8LBwfxACzubpPwr71pzUU4NM",
+    "what": "Another 'TikTok Official Token' clone contract"
+   }
+  ]
+ },
+ "ttft_ms": 4050,
+ "type": "result",
+ "duration_ms": 30049,
+ "uuid": "c30935bb-ef8c-4aa8-aec7-8ef6b180721b",
+ "ttft_stream_ms": 1303,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 1303,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

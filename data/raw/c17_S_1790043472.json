@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 61021,
+ "stop_reason": "tool_use",
+ "session_id": "c018a10f-4315-4277-bdeb-cb3ae249d4ec",
+ "total_cost_usd": 0.25364200000000003,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 9066,
+  "cache_read_input_tokens": 26598,
+  "output_tokens": 4026,
+  "output_tokens_details": {
+   "thinking_tokens": 805
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9066,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2773,
+    "cache_read_input_tokens": 9881,
+    "cache_creation_input_tokens": 647,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 647
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 8,
+   "outputTokens": 4026,
+   "cacheReadInputTokens": 26598,
+   "cacheCreationInputTokens": 9066,
+   "webSearchRequests": 0,
+   "costUSD": 0.204649,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 805,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22413,
+   "outputTokens": 1316,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.048992999999999995,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"TRUMPTV is one of 11+ same-name tokens launched within ~4 hours after the White House started the \\\"TRUMP TV: The Essentials Station\\\" stream (2026-09-21, 7pm ET). This token has no provable official link, no website and no DexScreener profile. The trading looks manufactured. In the last hour 1,228 unique wallets bought but only 37 sold, and those 37 made 4,218 sell trades (about 114 each). That points to a small group of wallets selling into retail buyers. About $8.6M traded on a ~$105k market cap, roughly 82x turnover, which suggests bot or wash volume. The top 10 holders own 97.3%. The creator's raw balance of ~8.84e14 is roughly 88% of supply if the token has 6 decimals and a 1B supply (fits price and mcap; decimals not verified). The pool also looks empty. RugCheck puts total market liquidity at ~$0.0000009, and DexScreener's live pair data shows $0 liquidity (0.0038 base tokens, 4e-9 SOL), yet it still records ~$338k of trades in the last 5 minutes. So the $186k liquidity figure in the packet is unreliable, and the token may be untradeable or already drained. The news catalyst is real but is a single event the token borrowed, not a durable story of its own.\",\"red_flags\":[\"Ticker borrows a real news story: White House 'Trump TV' launch on 2026-09-21; no official link to this contract\",\"At least 10 other TRUMPTV/Trump TV tokens launched within ~4 hours; several already have near-zero liquidity\",\"1,228 unique buyers vs 37 unique sellers, with ~114 sells per seller: repeated selling by a small group\",\"~82x turnover in under an hour ($8.6M volume on ~$105k mcap): bot or wash volume\",\"Top 10 holders own 97.3%; holders outside the top 40 own 1.76%\",\"Creator balance ~8.84e14 raw, roughly 88% of supply if 6 decimals and 1B supply (decimals not verified)\",\"RugCheck total market liquidity ~$0.0000009; DexScreener pair shows $0 liquidity, contradicting the $186k in the packet\",\"No website, no DexScreener profile, launchpad/deploy platform unknown, not a pump.fun address\",\"RugCheck risk flags: 'Low Liquidity' (danger) and 'High market cap per holder' (warn)\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"An official White House or Trump-affiliated endorsement of this contract. Independent on-chain confirmation that the pool really holds about $186k, with sells executing normally. The creator's roughly 88% balance turning out to be a pool or lock account. The number of unique sellers growing to hundreds while the price holds, and this token staying the clear leader among the copycats beyond a single news cycle.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"Confirmed the real-world catalyst from several news outlets. Fetched live DexScreener token and pair data, which show $0 liquidity while trading continues. Could not access X or Telegram content, the individual holder list, wallet-funding data, or the token's decimals, so the ~88% creator-share estimate is inferred. The empty-pool reading could be a DexScreener/RugCheck data error, but either way the liquidity figures can't be trusted.\",\"sources\":[{\"url\":\"https://www.forbes.com/sites/antoniopequenoiv/2026/09/21/white-house-launches-trump-tv-after-presidents-press-ban/\",\"what\":\"White House Trump TV launch on 2026-09-21 (the real catalyst)\"},{\"url\":\"https://www.newsweek.com/white-house-launches-trump-tv-amid-media-ban-what-we-know-12470372\",\"what\":\"Details of the Trump TV launch\"},{\"url\":\"https://www.yahoo.com/news/politics/articles/white-house-launch-trump-tv-212743245.html\",\"what\":\"Launch time: 7pm Monday\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7548Fk7wt3RuhAdExVJCFrcbXkqBpvixZM9CU1vjgDSn\",\"what\":\"Live token data: $0 liquidity, $8.65M volume, no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/GxprvWRFk68J3KmMdQdjeJsefpnditMyorBSnJaz4CRc\",\"what\":\"Pair data: liquidity 0.0038 base / 4e-9 quote while 5-minute volume is ~$338k\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "TRUMPTV is one of 11+ same-name tokens launched within ~4 hours after the White House started the \"TRUMP TV: The Essentials Station\" stream (2026-09-21, 7pm ET). This token has no provable official link, no website and no DexScreener profile. The trading looks manufactured. In the last hour 1,228 unique wallets bought but only 37 sold, and those 37 made 4,218 sell trades (about 114 each). That points to a small group of wallets selling into retail buyers. About $8.6M traded on a ~$105k market cap, roughly 82x turnover, which suggests bot or wash volume. The top 10 holders own 97.3%. The creator's raw balance of ~8.84e14 is roughly 88% of supply if the token has 6 decimals and a 1B supply (fits price and mcap; decimals not verified). The pool also looks empty. RugCheck puts total market liquidity at ~$0.0000009, and DexScreener's live pair data shows $0 liquidity (0.0038 base tokens, 4e-9 SOL), yet it still records ~$338k of trades in the last 5 minutes. So the $186k liquidity figure in the packet is unreliable, and the token may be untradeable or already drained. The news catalyst is real but is a single event the token borrowed, not a durable story of its own.",
+  "red_flags": [
+   "Ticker borrows a real news story: White House 'Trump TV' launch on 2026-09-21; no official link to this contract",
+   "At least 10 other TRUMPTV/Trump TV tokens launched within ~4 hours; several already have near-zero liquidity",
+   "1,228 unique buyers vs 37 unique sellers, with ~114 sells per seller: repeated selling by a small group",
+   "~82x turnover in under an hour ($8.6M volume on ~$105k mcap): bot or wash volume",
+   "Top 10 holders own 97.3%; holders outside the top 40 own 1.76%",
+   "Creator balance ~8.84e14 raw, roughly 88% of supply if 6 decimals and 1B supply (decimals not verified)",
+   "RugCheck total market liquidity ~$0.0000009; DexScreener pair shows $0 liquidity, contradicting the $186k in the packet",
+   "No website, no DexScreener profile, launchpad/deploy platform unknown, not a pump.fun address",
+   "RugCheck risk flags: 'Low Liquidity' (danger) and 'High market cap per holder' (warn)"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "An official White House or Trump-affiliated endorsement of this contract. Independent on-chain confirmation that the pool really holds about $186k, with sells executing normally. The creator's roughly 88% balance turning out to be a pool or lock account. The number of unique sellers growing to hundreds while the price holds, and this token staying the clear leader among the copycats beyond a single news cycle.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "Confirmed the real-world catalyst from several news outlets. Fetched live DexScreener token and pair data, which show $0 liquidity while trading continues. Could not access X or Telegram content, the individual holder list, wallet-funding data, or the token's decimals, so the ~88% creator-share estimate is inferred. The empty-pool reading could be a DexScreener/RugCheck data error, but either way the liquidity figures can't be trusted.",
+  "sources": [
+   {
+    "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/09/21/white-house-launches-trump-tv-after-presidents-press-ban/",
+    "what": "White House Trump TV launch on 2026-09-21 (the real catalyst)"
+   },
+   {
+    "url": "https://www.newsweek.com/white-house-launches-trump-tv-amid-media-ban-what-we-know-12470372",
+    "what": "Details of the Trump TV launch"
+   },
+   {
+    "url": "https://www.yahoo.com/news/politics/articles/white-house-launch-trump-tv-212743245.html",
+    "what": "Launch time: 7pm Monday"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7548Fk7wt3RuhAdExVJCFrcbXkqBpvixZM9CU1vjgDSn",
+    "what": "Live token data: $0 liquidity, $8.65M volume, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/GxprvWRFk68J3KmMdQdjeJsefpnditMyorBSnJaz4CRc",
+    "what": "Pair data: liquidity 0.0038 base / 4e-9 quote while 5-minute volume is ~$338k"
+   }
+  ]
+ },
+ "ttft_ms": 6064,
+ "type": "result",
+ "duration_ms": 56280,
+ "uuid": "18d3b21d-9be9-4ade-89e0-cf0af16a191d",
+ "ttft_stream_ms": 1385,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 1385,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

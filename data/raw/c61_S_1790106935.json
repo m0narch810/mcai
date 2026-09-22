@@ -1,0 +1,148 @@
+{
+ "duration_api_ms": 30519,
+ "stop_reason": "tool_use",
+ "session_id": "da21fce1-da07-45af-955c-2b2bb7314e64",
+ "total_cost_usd": 0.1261254,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 6664,
+  "cache_read_input_tokens": 7747,
+  "output_tokens": 2361,
+  "output_tokens_details": {
+   "thinking_tokens": 277
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6664,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1987,
+    "cache_read_input_tokens": 6285,
+    "cache_creation_input_tokens": 1841,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1841
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2361,
+   "cacheReadInputTokens": 7747,
+   "cacheCreationInputTokens": 6664,
+   "webSearchRequests": 0,
+   "costUSD": 0.1020974,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 277,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 11158,
+   "outputTokens": 574,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.024028,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This is a copycat that is probably rugged. The real narrative is Trump's UN speech, where he proposed renaming AI \\\"Super Intelligence.\\\" That story already belongs to an earlier \\\"Super Inu\\\" (SI) token, DEW9dSN6\u2026, which launched about 27 hours before this one. It is at roughly $3.4M market cap with about $214K liquidity, and KuCoin and ChainCatcher cover it at about $7M market cap. This token (8Tq9\u2026) is a same-name, same-ticker clone deployed on PumpSwap only about 50 minutes before detection, so it hijacks that story. Its only \\\"social\\\" link is a Trump status URL, not a project account. Structure: GMGN says the creator wallet holds 49.25% of supply (creator_hold_rate 0.4925, also tagged as the top rat/entrapment trader share), and the top 10 hold about 83%. GMGN reports an LP burn ratio of 0, while RugCheck reports 100% of LP locked, so the two sources disagree. Right after detection, DexScreener showed pool liquidity at $0 (0.005 SI and 3e-9 SOL). It was $44,955 at the trigger. Liquidity drained from the pool while price and market cap still display, so the token is effectively untradeable. That fits a pull or drain. The flow is also odd: about 2,062 unique buyers against only 59 unique sellers, a 68% fresh-wallet rate, and the buying came in one 15\u201330 minute burst. That looks like people or bots piling into the wrong contract by ticker-searching, plus bot flow, rather than organic demand. GeckoTerminal already shows -17% over 5 minutes and -23% over 15 minutes. KuCoin itself notes that Trump never mentioned the token and that early holders face heavy selling pressure.\",\"red_flags\":[\"Pool liquidity now $0 on DexScreener (was ~$45K at trigger), so it looks drained or untradeable\",\"Creator wallet holds ~49% of supply (GMGN creator_hold_rate 0.4925); top 10 hold ~83%\",\"Clone of an earlier, larger Super Inu (SI) token DEW9dSN6\u2026 (~$3.4M market cap) that owns the Trump 'Super Intelligence' narrative\",\"Another SI 'Super Inu' clone (1434kF\u2026) already sits at ~$0 liquidity, a pattern of ticker-sniping clones\",\"No website, no project socials, no DexScreener profile; the 'twitter' field is just a Trump post URL\",\"Unique buyers 2,062 vs unique sellers 59; 68% fresh wallets\",\"LP data conflicts: GMGN LP burn ratio 0 vs RugCheck's 100% lock claim\",\"Price already falling: -17% over 5 minutes and -23% over 15 minutes on GeckoTerminal\",\"Catalyst was a one-off speech remark that never mentioned the token\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"These would weaken the case: liquidity reappears on DexScreener or Solscan showing a healthy pool (so the $0 was just a data glitch); on-chain proof that the 49% creator-held balance is actually the bonding-curve or pool account rather than a dev wallet; and evidence that this contract, not DEW9\u2026, is the one being recognised by the community or by the original deployer.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"high\",\"coverage_notes\":\"In about 8 minutes I checked the live DexScreener API for this contract and ran one web search on the narrative. News coverage (KuCoin, ChainCatcher, Bitcoin Sistemi) describes the original Super Inu on the Stonk platform at about a $7M market cap, not this contract. I did not look at X posts or at Telegram and Discord. I did not check on-chain whether the creator's 49% is a dev wallet or a pool account, and I did not trace where the liquidity went.\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/8Tq9z8HdbKJjHz7qTGgDXwu2GjY9JfvjMwhqCcTwAZo6\",\"what\":\"Live pair data: liquidity $0, market cap $44.8K, +260% over 1 hour\"},{\"url\":\"https://www.kucoin.com/news/flash/solana-meme-coin-super-inu-surges-over-300-amid-trump-s-super-intelligence-mention\",\"what\":\"The original Super Inu (Stonk platform, about $7.23M market cap) tied to Trump's 'Super Intelligence' remark; notes Trump didn't mention the token\"},{\"url\":\"https://www.chaincatcher.com/en/article/2291567\",\"what\":\"Coverage of Trump's 'Super Intelligence' mention and the resulting meme pump\"},{\"url\":\"https://en.bitcoinsistemi.com/donald-trump-said-one-word-and-this-altcoin-soared-300-percent/\",\"what\":\"Coverage of the original SI surge\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This is a copycat that is probably rugged. The real narrative is Trump's UN speech, where he proposed renaming AI \"Super Intelligence.\" That story already belongs to an earlier \"Super Inu\" (SI) token, DEW9dSN6\u2026, which launched about 27 hours before this one. It is at roughly $3.4M market cap with about $214K liquidity, and KuCoin and ChainCatcher cover it at about $7M market cap. This token (8Tq9\u2026) is a same-name, same-ticker clone deployed on PumpSwap only about 50 minutes before detection, so it hijacks that story. Its only \"social\" link is a Trump status URL, not a project account. Structure: GMGN says the creator wallet holds 49.25% of supply (creator_hold_rate 0.4925, also tagged as the top rat/entrapment trader share), and the top 10 hold about 83%. GMGN reports an LP burn ratio of 0, while RugCheck reports 100% of LP locked, so the two sources disagree. Right after detection, DexScreener showed pool liquidity at $0 (0.005 SI and 3e-9 SOL). It was $44,955 at the trigger. Liquidity drained from the pool while price and market cap still display, so the token is effectively untradeable. That fits a pull or drain. The flow is also odd: about 2,062 unique buyers against only 59 unique sellers, a 68% fresh-wallet rate, and the buying came in one 15\u201330 minute burst. That looks like people or bots piling into the wrong contract by ticker-searching, plus bot flow, rather than organic demand. GeckoTerminal already shows -17% over 5 minutes and -23% over 15 minutes. KuCoin itself notes that Trump never mentioned the token and that early holders face heavy selling pressure.",
+  "red_flags": [
+   "Pool liquidity now $0 on DexScreener (was ~$45K at trigger), so it looks drained or untradeable",
+   "Creator wallet holds ~49% of supply (GMGN creator_hold_rate 0.4925); top 10 hold ~83%",
+   "Clone of an earlier, larger Super Inu (SI) token DEW9dSN6\u2026 (~$3.4M market cap) that owns the Trump 'Super Intelligence' narrative",
+   "Another SI 'Super Inu' clone (1434kF\u2026) already sits at ~$0 liquidity, a pattern of ticker-sniping clones",
+   "No website, no project socials, no DexScreener profile; the 'twitter' field is just a Trump post URL",
+   "Unique buyers 2,062 vs unique sellers 59; 68% fresh wallets",
+   "LP data conflicts: GMGN LP burn ratio 0 vs RugCheck's 100% lock claim",
+   "Price already falling: -17% over 5 minutes and -23% over 15 minutes on GeckoTerminal",
+   "Catalyst was a one-off speech remark that never mentioned the token"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "These would weaken the case: liquidity reappears on DexScreener or Solscan showing a healthy pool (so the $0 was just a data glitch); on-chain proof that the 49% creator-held balance is actually the bonding-curve or pool account rather than a dev wallet; and evidence that this contract, not DEW9\u2026, is the one being recognised by the community or by the original deployer.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "high",
+  "coverage_notes": "In about 8 minutes I checked the live DexScreener API for this contract and ran one web search on the narrative. News coverage (KuCoin, ChainCatcher, Bitcoin Sistemi) describes the original Super Inu on the Stonk platform at about a $7M market cap, not this contract. I did not look at X posts or at Telegram and Discord. I did not check on-chain whether the creator's 49% is a dev wallet or a pool account, and I did not trace where the liquidity went.",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/8Tq9z8HdbKJjHz7qTGgDXwu2GjY9JfvjMwhqCcTwAZo6",
+    "what": "Live pair data: liquidity $0, market cap $44.8K, +260% over 1 hour"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/solana-meme-coin-super-inu-surges-over-300-amid-trump-s-super-intelligence-mention",
+    "what": "The original Super Inu (Stonk platform, about $7.23M market cap) tied to Trump's 'Super Intelligence' remark; notes Trump didn't mention the token"
+   },
+   {
+    "url": "https://www.chaincatcher.com/en/article/2291567",
+    "what": "Coverage of Trump's 'Super Intelligence' mention and the resulting meme pump"
+   },
+   {
+    "url": "https://en.bitcoinsistemi.com/donald-trump-said-one-word-and-this-altcoin-soared-300-percent/",
+    "what": "Coverage of the original SI surge"
+   }
+  ]
+ },
+ "ttft_ms": 3039,
+ "type": "result",
+ "duration_ms": 26711,
+ "uuid": "c4854e37-6ff9-4fef-9b92-711e4ed11852",
+ "ttft_stream_ms": 1034,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 1034,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

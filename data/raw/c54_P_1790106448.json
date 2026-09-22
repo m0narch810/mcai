@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 28401,
+ "stop_reason": "tool_use",
+ "session_id": "8ef37b06-24b4-4a4d-af92-1e654698439f",
+ "total_cost_usd": 0.0939156,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5162,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2612,
+  "output_tokens_details": {
+   "thinking_tokens": 277
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5162,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2612,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 5162,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5162
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2612,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 5162,
+   "webSearchRequests": 0,
+   "costUSD": 0.0939156,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 277,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"TikTok Official Token\\\" with the ticker \\\"TlKTOK\\\" was launched about an hour ago on a Meteora virtual curve and moved straight to PumpSwap. The ticker uses a lowercase \\\"l\\\" in place of the capital \\\"I\\\", which is a lookalike-character trick. In its first hour it traded about $5.2M against about $232K of liquidity, which is roughly 22 times its liquidity. That came from about 6,500 transactions but only about 649 unique buyers and 195 unique sellers. Price is up about 250% and market cap is about $1.27M. The description says \\\"Created on https://x.com/tiktok_us\\\". GMGN also reports that the linked dev X account has launched 6,734 tokens. Both of these point to a tweet-to-token launch service or a bot tagging the handle, not to TikTok itself. Three earlier tokens with the exact same name and ticker, launched in the previous 1\u20134 hours, now show about $0.03 of liquidity and zero volume. That looks like a repeated deploy-and-drain pattern, and this is the one that caught volume.\",\"narrative\":{\"description\":\"The token pretends to be official TikTok, with nothing in the packet backing that up. The ticker uses a lowercase 'l' in place of the 'I', so it is not the real brand name. There is no website other than an X link, no Telegram, no DexScreener profile, and the token image appears 17 times elsewhere. The only 'story' is the TikTok brand name, which draws naive buyers who search for TikTok.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Most of the activity looks automated or insider-driven, not organic. There are 331 wallets GMGN tags as bundlers, 28 snipers and 44 insiders linked in the wallet graph (clusters of 11 and 33). About 10 trades per unique wallet suggests bots trading in circles. There is no smart-money or known-influencer wallet involvement, and no sign of any real news. A TikTok-related headline could exist, but the packet shows none.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is only one of several copies with the same name and a fake ticker. It is the one with liquidity and volume right now. There is no verifiable link to TikTok: the 'tiktok_us' handle is simply listed as the source, and a dev X account tied to 6,734 launches points to an automated launcher.\",\"competing_tokens\":\"Three identical TlKTOK / 'TikTok Official Token' contracts (6nKx..., Hsjw..., HpzR...) created 1\u20134 hours earlier, all now at about $0.03 liquidity and zero volume, which is consistent with being drained.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"331 bundler wallets; 44 insiders linked in the wallet graph across two clusters. GeckoTerminal shows the top 10 holders with 96.7% (possibly including pool accounts). Only about 649 unique buyers against about 6,500 trades. The same name was launched three times, and each earlier copy was drained. The lookalike ticker is a deliberate impersonation. The dev X account is linked to 6,734 launches. No smart-money or known-influencer wallets. Price is sitting right at its all-time high, which fits a pump before a drain.\",\"uncertainty\":\"Holder concentration figures conflict: GMGN puts the top 10 at 7.5% while GeckoTerminal puts them at 96.7%. The creator balance reading is also unclear. GMGN says LP is burned, while RugCheck flags a large amount of unlocked LP. There is no X data to rule out a real TikTok news event.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The data sources disagree on whether LP is burned (GMGN) or largely unlocked (RugCheck flags 'danger').\",\"Holder concentration may be extreme: GeckoTerminal puts the top 10 at 96.7%.\",\"Hundreds of bundler wallets and dozens of linked insiders are positioned to sell.\",\"The same deployer pattern already left three identical tokens drained to near-zero liquidity.\",\"Hourly volume is about 22 times liquidity, which points to wash or bot trading.\",\"The TikTok impersonation carries legal and delisting risk, and TikTok could publicly deny any connection.\"]},\"counterargument\":\"Brand-impersonation tokens sometimes run several times higher when a real news event is behind them, such as a TikTok US ownership or crypto announcement. Momentum is still positive: over the last 5 minutes volume ran slightly above its hourly pace, with the price up 6% and near its all-time high. GMGN reports LP burned and the dev holding only 0.12%, so an immediate liquidity pull may not be possible. If an actual TikTok-linked X post exists, retail flow could push the price well past $1.3M within the next few hours.\",\"unknowns\":[\"Whether @tiktok_us, or anyone at TikTok, actually posted about this token or is merely tagged by a launch bot.\",\"Which LP lock status is correct: burned per GMGN or unlocked per RugCheck.\",\"The true holder concentration once pool accounts are excluded.\",\"Whether any real TikTok or crypto news happened today.\",\"Whether the linked insider clusters have started selling.\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment is based only on the evidence packet.\"},\"thesis\":\"This looks like a coordinated fake of TikTok that uses a lookalike ticker (a lowercase 'l' in place of the 'I'). It comes from a serial launch pattern: three identical earlier copies are already drained. Trading is dominated by bundler wallets and linked insiders, turnover is very high and there is no organic or smart-money support. I expect the attention to fade sharply over the next 6 hours, with a significant chance of a drain or a crash once insiders exit.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"TikTok Official Token\" with the ticker \"TlKTOK\" was launched about an hour ago on a Meteora virtual curve and moved straight to PumpSwap. The ticker uses a lowercase \"l\" in place of the capital \"I\", which is a lookalike-character trick. In its first hour it traded about $5.2M against about $232K of liquidity, which is roughly 22 times its liquidity. That came from about 6,500 transactions but only about 649 unique buyers and 195 unique sellers. Price is up about 250% and market cap is about $1.27M. The description says \"Created on https://x.com/tiktok_us\". GMGN also reports that the linked dev X account has launched 6,734 tokens. Both of these point to a tweet-to-token launch service or a bot tagging the handle, not to TikTok itself. Three earlier tokens with the exact same name and ticker, launched in the previous 1\u20134 hours, now show about $0.03 of liquidity and zero volume. That looks like a repeated deploy-and-drain pattern, and this is the one that caught volume.",
+  "narrative": {
+   "description": "The token pretends to be official TikTok, with nothing in the packet backing that up. The ticker uses a lowercase 'l' in place of the 'I', so it is not the real brand name. There is no website other than an X link, no Telegram, no DexScreener profile, and the token image appears 17 times elsewhere. The only 'story' is the TikTok brand name, which draws naive buyers who search for TikTok.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Most of the activity looks automated or insider-driven, not organic. There are 331 wallets GMGN tags as bundlers, 28 snipers and 44 insiders linked in the wallet graph (clusters of 11 and 33). About 10 trades per unique wallet suggests bots trading in circles. There is no smart-money or known-influencer wallet involvement, and no sign of any real news. A TikTok-related headline could exist, but the packet shows none."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is only one of several copies with the same name and a fake ticker. It is the one with liquidity and volume right now. There is no verifiable link to TikTok: the 'tiktok_us' handle is simply listed as the source, and a dev X account tied to 6,734 launches points to an automated launcher.",
+   "competing_tokens": "Three identical TlKTOK / 'TikTok Official Token' contracts (6nKx..., Hsjw..., HpzR...) created 1\u20134 hours earlier, all now at about $0.03 liquidity and zero volume, which is consistent with being drained.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "331 bundler wallets; 44 insiders linked in the wallet graph across two clusters. GeckoTerminal shows the top 10 holders with 96.7% (possibly including pool accounts). Only about 649 unique buyers against about 6,500 trades. The same name was launched three times, and each earlier copy was drained. The lookalike ticker is a deliberate impersonation. The dev X account is linked to 6,734 launches. No smart-money or known-influencer wallets. Price is sitting right at its all-time high, which fits a pump before a drain.",
+   "uncertainty": "Holder concentration figures conflict: GMGN puts the top 10 at 7.5% while GeckoTerminal puts them at 96.7%. The creator balance reading is also unclear. GMGN says LP is burned, while RugCheck flags a large amount of unlocked LP. There is no X data to rule out a real TikTok news event."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The data sources disagree on whether LP is burned (GMGN) or largely unlocked (RugCheck flags 'danger').",
+    "Holder concentration may be extreme: GeckoTerminal puts the top 10 at 96.7%.",
+    "Hundreds of bundler wallets and dozens of linked insiders are positioned to sell.",
+    "The same deployer pattern already left three identical tokens drained to near-zero liquidity.",
+    "Hourly volume is about 22 times liquidity, which points to wash or bot trading.",
+    "The TikTok impersonation carries legal and delisting risk, and TikTok could publicly deny any connection."
+   ]
+  },
+  "counterargument": "Brand-impersonation tokens sometimes run several times higher when a real news event is behind them, such as a TikTok US ownership or crypto announcement. Momentum is still positive: over the last 5 minutes volume ran slightly above its hourly pace, with the price up 6% and near its all-time high. GMGN reports LP burned and the dev holding only 0.12%, so an immediate liquidity pull may not be possible. If an actual TikTok-linked X post exists, retail flow could push the price well past $1.3M within the next few hours.",
+  "unknowns": [
+   "Whether @tiktok_us, or anyone at TikTok, actually posted about this token or is merely tagged by a launch bot.",
+   "Which LP lock status is correct: burned per GMGN or unlocked per RugCheck.",
+   "The true holder concentration once pool accounts are excluded.",
+   "Whether any real TikTok or crypto news happened today.",
+   "Whether the linked insider clusters have started selling."
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment is based only on the evidence packet."
+  },
+  "thesis": "This looks like a coordinated fake of TikTok that uses a lookalike ticker (a lowercase 'l' in place of the 'I'). It comes from a serial launch pattern: three identical earlier copies are already drained. Trading is dominated by bundler wallets and linked insiders, turnover is very high and there is no organic or smart-money support. I expect the attention to fade sharply over the next 6 hours, with a significant chance of a drain or a crash once insiders exit.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5020,
+ "type": "result",
+ "duration_ms": 28449,
+ "uuid": "1ba59658-8f1f-4cd7-abfe-c9afe2e76a62",
+ "ttft_stream_ms": 1438,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 1439,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

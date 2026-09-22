@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 22122,
+ "stop_reason": "tool_use",
+ "session_id": "675c28e6-1142-4d70-b552-fa1ea29ec932",
+ "total_cost_usd": 0.0850196,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4895,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2274,
+  "output_tokens_details": {
+   "thinking_tokens": 246
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4895,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2274,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4895,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4895
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2274,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4895,
+   "webSearchRequests": 0,
+   "costUSD": 0.0850196,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 246,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 50-minute-old PumpSwap token, \\\"Super Inu\\\" (SI), traded about $600k in volume against a roughly $45k market cap, a turnover of about 13.7x in one hour. It is a copycat. An older \\\"Super Inu\\\" (DEW9...) launched about 27 hours earlier and sits at about $3.4M market cap with $214k liquidity. A third SI clone is already near zero. The creator wallet still holds about 49% of supply, and GMGN also classes that same 49% as rat-trader/entrapment holdings. The top 10 wallets hold about 83%. GeckoTerminal counts 2,062 unique buyers but only 59 unique sellers, and 68% of wallets are fresh. That looks like fabricated breadth (many throwaway wallets buying) rather than organic demand. Liquidity reported at $44,955 at detection now shows $0 (total market liquidity about $0). That could be a data glitch or a sign liquidity was pulled. GeckoTerminal price is already falling: -17% over 5 minutes and -23% over 15 minutes. The only social link is a Trump X status URL, which borrows a narrative and does not point to a project account.\",\"narrative\":{\"description\":\"This borrows the 'Super Inu' meme, which seems to have been started by the earlier $3.4M SI token and possibly tied to a Trump post (the GeckoTerminal twitter field points to a realDonaldTrump status). This token has no story of its own. It is a late clone of a narrative that already has a canonical token.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Most likely spillover from the original Super Inu/Trump-post attention, plus manufactured buy counts from fresh wallets. The GeckoTerminal price turned down over the last 15 minutes.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The name and ticker match the trending Super Inu meme, but this contract launched about 27 hours after the leading SI token. Its only social link is someone else's post, not a project account.\",\"competing_tokens\":\"DEW9dSN6... Super Inu (mcap about $3.4M, liquidity $214k, created about 27h earlier, the likely canonical token). 1434kFf... Super Inu (about $4.9k, dead clone). 4BjTvW... Super Intelligence (old, dead).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,062 unique buyers against 59 unique sellers, with a 68% fresh-wallet rate. The creator holds about 49% of supply, which GMGN flags as rat/entrapment wallet holdings. Top 10 hold 83%. There is no website, no project socials, no DexScreener profile, and no smart-money or KOL wallets. Liquidity now reads $0. Together this points to buying spread across many fresh wallets to fake breadth, with a large creator bag waiting to be sold.\",\"uncertainty\":\"The $0 liquidity may be a reporting artifact on PumpSwap. The one-sided seller count may partly reflect holders who simply haven't sold yet in an early spike. There is no X data to confirm or rule out organic spillover from the original meme.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Creator holds about 49% of supply and can dump it on the pool\",\"Top 10 wallets hold about 83%\",\"Reported liquidity dropped from about $45k to $0, a possible pull or data artifact\",\"LP burn ratio is 0 per GMGN (RugCheck shows the LP as locked, so the data conflicts)\",\"Copycat of a much larger canonical token, so it will struggle to attract new buyers\",\"Price already falling 17 to 23% over the last 15 minutes on GeckoTerminal\"]},\"counterargument\":\"Copycat tokens in a hot meme sometimes run as the cheap 'beta' play when the original is up in the millions. The buy counts are very large. If the Super Inu/Trump story is still gaining attention, traders chasing a low market cap could push this through its all-time high before the creator sells. Mint and freeze authorities are renounced, there is no tax, and the $0 liquidity may just be a data glitch.\",\"unknowns\":[\"Whether liquidity was actually removed or the $0 is a data artifact\",\"What the linked Trump post says and whether it names Super Inu\",\"Whether the creator's 49% is locked or will be sold\",\"Whether the fresh-wallet buyers are one operator's wallets\",\"X/Telegram activity around this specific contract\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment is based only on the evidence packet.\"},\"thesis\":\"This is a late Super Inu clone with a 49% creator bag, very concentrated holders, breadth that looks faked by fresh wallets (2,062 buyers against 59 sellers), liquidity now reading $0, and price already turning down. Attention is likely to fade sharply, or the token may be rugged, within 24 hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"24h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 50-minute-old PumpSwap token, \"Super Inu\" (SI), traded about $600k in volume against a roughly $45k market cap, a turnover of about 13.7x in one hour. It is a copycat. An older \"Super Inu\" (DEW9...) launched about 27 hours earlier and sits at about $3.4M market cap with $214k liquidity. A third SI clone is already near zero. The creator wallet still holds about 49% of supply, and GMGN also classes that same 49% as rat-trader/entrapment holdings. The top 10 wallets hold about 83%. GeckoTerminal counts 2,062 unique buyers but only 59 unique sellers, and 68% of wallets are fresh. That looks like fabricated breadth (many throwaway wallets buying) rather than organic demand. Liquidity reported at $44,955 at detection now shows $0 (total market liquidity about $0). That could be a data glitch or a sign liquidity was pulled. GeckoTerminal price is already falling: -17% over 5 minutes and -23% over 15 minutes. The only social link is a Trump X status URL, which borrows a narrative and does not point to a project account.",
+  "narrative": {
+   "description": "This borrows the 'Super Inu' meme, which seems to have been started by the earlier $3.4M SI token and possibly tied to a Trump post (the GeckoTerminal twitter field points to a realDonaldTrump status). This token has no story of its own. It is a late clone of a narrative that already has a canonical token.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Most likely spillover from the original Super Inu/Trump-post attention, plus manufactured buy counts from fresh wallets. The GeckoTerminal price turned down over the last 15 minutes."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The name and ticker match the trending Super Inu meme, but this contract launched about 27 hours after the leading SI token. Its only social link is someone else's post, not a project account.",
+   "competing_tokens": "DEW9dSN6... Super Inu (mcap about $3.4M, liquidity $214k, created about 27h earlier, the likely canonical token). 1434kFf... Super Inu (about $4.9k, dead clone). 4BjTvW... Super Intelligence (old, dead).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,062 unique buyers against 59 unique sellers, with a 68% fresh-wallet rate. The creator holds about 49% of supply, which GMGN flags as rat/entrapment wallet holdings. Top 10 hold 83%. There is no website, no project socials, no DexScreener profile, and no smart-money or KOL wallets. Liquidity now reads $0. Together this points to buying spread across many fresh wallets to fake breadth, with a large creator bag waiting to be sold.",
+   "uncertainty": "The $0 liquidity may be a reporting artifact on PumpSwap. The one-sided seller count may partly reflect holders who simply haven't sold yet in an early spike. There is no X data to confirm or rule out organic spillover from the original meme."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Creator holds about 49% of supply and can dump it on the pool",
+    "Top 10 wallets hold about 83%",
+    "Reported liquidity dropped from about $45k to $0, a possible pull or data artifact",
+    "LP burn ratio is 0 per GMGN (RugCheck shows the LP as locked, so the data conflicts)",
+    "Copycat of a much larger canonical token, so it will struggle to attract new buyers",
+    "Price already falling 17 to 23% over the last 15 minutes on GeckoTerminal"
+   ]
+  },
+  "counterargument": "Copycat tokens in a hot meme sometimes run as the cheap 'beta' play when the original is up in the millions. The buy counts are very large. If the Super Inu/Trump story is still gaining attention, traders chasing a low market cap could push this through its all-time high before the creator sells. Mint and freeze authorities are renounced, there is no tax, and the $0 liquidity may just be a data glitch.",
+  "unknowns": [
+   "Whether liquidity was actually removed or the $0 is a data artifact",
+   "What the linked Trump post says and whether it names Super Inu",
+   "Whether the creator's 49% is locked or will be sold",
+   "Whether the fresh-wallet buyers are one operator's wallets",
+   "X/Telegram activity around this specific contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment is based only on the evidence packet."
+  },
+  "thesis": "This is a late Super Inu clone with a 49% creator bag, very concentrated holders, breadth that looks faked by fresh wallets (2,062 buyers against 59 sellers), liquidity now reading $0, and price already turning down. Attention is likely to fade sharply, or the token may be rugged, within 24 hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "24h",
+  "sources": []
+ },
+ "ttft_ms": 3697,
+ "type": "result",
+ "duration_ms": 22179,
+ "uuid": "cc9f2d7c-6abd-4bab-b195-0af5c48ce096",
+ "ttft_stream_ms": 831,
+ "time_to_request_ms": 54,
+ "first_content_frame_ms": 831,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

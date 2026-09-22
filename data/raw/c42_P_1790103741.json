@@ -1,0 +1,158 @@
+{
+ "duration_api_ms": 155321,
+ "stop_reason": "tool_use",
+ "session_id": "433c63d9-1e8d-4d4c-be0f-8820f38a0f73",
+ "total_cost_usd": 0.4252250000000001,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11039,
+  "cache_read_input_tokens": 10730,
+  "output_tokens": 12378,
+  "output_tokens_details": {
+   "thinking_tokens": 2754
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11039,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4597,
+    "cache_read_input_tokens": 8872,
+    "cache_creation_input_tokens": 4025,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4025
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 4,
+   "outputTokens": 12378,
+   "cacheReadInputTokens": 10730,
+   "cacheCreationInputTokens": 11039,
+   "webSearchRequests": 0,
+   "costUSD": 0.4252250000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 2754,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"An older tokenized \\\"OpenAI PreStocks\\\" synthetic pre-IPO share (token minted ~Sep 2025, this Meteora pool ~Feb 2026), priced at ~$2,236/unit with only $38.9k of pool liquidity against a $4.25M market cap, saw an explosive one-hour burst. H1 volume was $350k versus $381k over 6h and $498k over 24h, i.e. roughly 70% of the full day's turnover compressed into 60 minutes (vol acceleration 5.5x h1/h6 and 6.3x m5/h6). GeckoTerminal shows 1,629 unique buyers and 1,272 unique sellers in that hour against 2,391/2,277 over 24h, so the large majority of the day's distinct participants arrived inside the spike. Price ran +42% on h1/h6 and +45% on h24, then broke down: -30.1% on 30m, -13.3% on 15m, -5.8% to -16.4% on 5m. Volume is already decaying (only $6.7k in the last 5 minutes). The shape is a news/catalyst-driven stampede into a very thin pool that has already topped and is retracing. Critically, the packet lists ~10 same-name \\\"OpenAI PreStocks\\\" contracts, most created within the last day, and one of them (5ar3v8...) already carries $320.9k liquidity and $3.34M of h1 volume, roughly 10x this pool's turnover and 8x its liquidity.\",\"narrative\":{\"description\":\"The story is \\\"own OpenAI before the IPO\\\" via PreStocks, a platform issuing tokenized pre-IPO equity exposure on Solana. The token is not a memecoin: it is a high-unit-price synthetic ($2,236/unit) with a descriptive issuer blurb about GPT/DALL-E, a vanity 'Pre' contract prefix, an X handle (@PreStocks) and Telegram (PreStocksFi). The spike almost certainly tracks an exogenous OpenAI headline (IPO/valuation/funding chatter) rather than anything endogenous to the token, because nearly all volume and unique wallets arrived within a single hour on a pool that is seven months old.\",\"stage\":\"peaking\",\"potential\":\"strong\",\"why_spreading\":\"OpenAI is the single strongest brand in the AI narrative, and pre-IPO exposure is one of the few crypto stories that appeals beyond degens: retail cannot buy OpenAI equity anywhere else, so any IPO-adjacent headline creates instant, broad demand. The breadth of the move (1,629 distinct buyers in an hour on a token with 34k-59k holders) is exactly what a headline-driven retail rush looks like. But the narrative is a sector narrative, not a token narrative: the attention accrues to 'OpenAI pre-IPO exposure' generically and can be expressed through any of the many same-name contracts or through the newer, deeper pool.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"This contract is a plausible canonical PreStocks OPENAI issue: it has the 'Pre' vanity address prefix, was created in Sep 2025 (long before the cluster of same-name contracts dated ~Sep 2026), carries 33.9k-59k holders, and GeckoTerminal resolves it to the PreStocks X/Telegram handles. So the link between the narrative and this specific asset is real, not a ticker squat. What weakens it to 'moderate' is that the narrative's economic expression is fragmented: total market liquidity across 30 discovered pairs is ~$331k while this headline pool holds only $38.9k, and a newer same-name contract is out-trading it roughly 10:1 right now.\",\"competing_tokens\":\"The packet lists ten contracts named 'OpenAI PreStocks' with OPENAI/OpenAI tickers. Most are dust (liquidity $0.02-$136, zero h1 volume) and appear to be stale, duplicate or re-issued series. The exception is 5ar3v8Xaz55rgnkKiANFtNDUdje5iUg7z8W9nnTzoTGx, created today, with $320,859 liquidity and $3,341,526 of h1 volume, far exceeding this token on both counts. Whether that is an issuer re-issue, a migration, a new share class or a copycat is not determinable from the packet, but it means the marginal OpenAI-narrative buyer today is mostly not buying this contract. GMGN also reports image_duplicate_count of 28, confirming heavy visual cloning of this asset.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Pro-organic: 1,629 unique buyers and 1,272 unique sellers in one hour against 3,176 buys and 2,471 sells implies ~2 transactions per wallet, which is far too wide a footprint for a small wash-trading cluster; an established 34k-59k holder base; buy/sell ratio a modest 1.29 rather than the engineered 5:1+ typical of manufactured pumps; no DexScreener paid ad, paid boost, paid trending bar or profile update flagged; no community-takeover flag; bot/degen rate only 1.51% and fresh-wallet rate 0.97%; zero sniper hold rate, zero rat/insider traders, zero insider-flagged top holders and zero insider networks in the graph. Counter-evidence: GMGN reports 1,000 bundler wallets and 1,000 fresh wallets (both look like API caps, so their true magnitude is unknown) and a 15.73% top-bundler-trader share plus a 32.76% 'top entrapment trader' share, which is a meaningful chunk of top-wallet flow behaving predatorily. Smart-money signal count is 0 and degen call count is 0, so there is no evidence of sophisticated accumulation or of call-channel promotion driving this. GMGN page visits of only 23 is strikingly low for a $350k/hour move, suggesting the flow is not coming from the usual degen-tracker audience.\",\"uncertainty\":\"With no X, Telegram, Discord or news access I cannot verify the catalyst, cannot see whether the issuer or a KOL amplified it, and cannot distinguish an exogenous OpenAI headline from a coordinated rotation between the issuer's own contracts. The 1,000/1,000 capped wallet-tag values make the bundler question genuinely unresolved.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Liquidity of $38,874 against a $4.25M market cap (0.9%) means the quoted price is close to meaningless; the +42% hour and the -30% half-hour are both artifacts of depth, and any real exit crushes the price\",\"Mint authority NOT renounced plus 'Permanent Control Enabled' (danger): the issuer can mint supply directly into any demand spike, structurally capping upside and creating unbounded dilution risk\",\"Freeze authority NOT renounced (danger): holder positions can be frozen and prevented from trading\",\"LP locked 0% across all top markets and lp_burn_ratio 0.0, so pool liquidity can be pulled at will\",\"Top 10 holders control 58.85% (RugCheck, excluding AMM/locker) / 60.39% (GeckoTerminal), with the largest three at 13.0%, 12.16% and 8.58% and the creator holding 4.2%\",\"Mutable metadata and an owner-changeable fee config (currently 1% buy / 1% sell tax) allow the economics to be altered post-hoc\",\"Liquidity fragmented across 30 discovered pairs and at least ten same-name contracts; this pool holds only ~12% of the asset's total $331k market liquidity\",\"Market cap ($4.25M) exceeds FDV ($2.57M) in the packet, an internal inconsistency that implies unreliable or shifting supply accounting for a synthetic instrument\",\"As a synthetic pre-IPO share with an issuer able to mint, the price is tethered to a reference valuation by arbitrage/redemption, so sustained premium expansion is mechanically unlikely\",\"Creator wallet is tagged 'creator_close' with 8 prior launches and 30 other tokens held; funded from Kraken\"]},\"counterargument\":\"The strongest case against my fade call: if the catalyst is a genuine, hard OpenAI IPO headline (an S-1 filing, a confirmed listing date, a landmark valuation print), pre-IPO exposure vehicles rerate over days and weeks, not minutes, and this is the oldest, canonical, vanity-addressed contract with a 34k-59k holder base already in place. A -16% five-minute candle after a +42% hour is an utterly ordinary first pullback, not a top, and 1,629 fresh unique buyers in an hour is exactly the kind of genuine retail discovery that usually produces a second, larger leg once the first wave of flippers is cleared. The same thin liquidity I call a structural defect cuts both ways: $38k of depth means even modest continued inflow moves price violently upward, and a token whose mark can go from $2,236 to multiples on a few hundred thousand dollars of buying is the ideal vehicle for a narrative this large. The newer 5ar3v8 contract with $3.3M of hourly volume may not be a competitor draining attention at all but rather proof that the OpenAI pre-IPO trade is going parabolic sector-wide, with spillover into every related contract including this one. And the mint authority that I treat as a cap is standard, expected infrastructure for a compliant tokenized-equity issuer, not a rug signal. If volume re-accelerates above the prior hour and price reclaims the h1 high, my read is simply wrong.\",\"unknowns\":[\"The actual catalyst: no X, news, Telegram or Discord access, so I cannot confirm whether an OpenAI IPO/valuation headline drove this or something endogenous to PreStocks\",\"Whether contract 5ar3v8... (created today, $321k liquidity, $3.34M h1 volume) is an official issuer re-issue/migration, a new share class, or a copycat \u2014 this determines whether attention is migrating away from this contract or spilling into it\",\"Why the packet lists ~8 same-name contracts all created within the last ~48 hours; a re-issue wave would materially change the supply and canonicality picture\",\"The true bundler and fresh-wallet counts, since GMGN reports both at exactly 1,000 (likely an API cap)\",\"Whether PreStocks operates a mint/redeem arbitrage mechanism that pegs price to a reference valuation, which would mechanically kill any premium\",\"The market-cap ($4.25M) vs FDV ($2.57M) inconsistency and what the real circulating supply is\",\"Identity and intent of the three unlabelled top holders controlling 33.7% combined\",\"Whether the h1 spike included a single large buyer or was genuinely distributed across the 1,629 unique wallets\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. All judgments derive solely from the supplied evidence packet plus general priors about Solana microcap and tokenized-RWA behaviour. The packet itself contains no X post data by design, and private Telegram/Discord content would be invisible regardless.\"},\"thesis\":\"A thin ~$39k-liquidity Meteora pool for a tokenized OpenAI pre-IPO share took a news-shaped vertical bid: roughly 70% of the day's volume and ~1,630 unique buyers arrived inside one hour, lifting price +42% on h1 \u2014 and it has already reversed hard (-30% on 30m, -13% on 15m) with volume collapsing to $6.7k in the last five minutes. The narrative is genuinely strong and the buyer breadth looks organic rather than a small wash cluster, but the tradable expression is broken. Liquidity is under 1% of market cap and fragmented across 30 pairs and ten same-name contracts, one of which \u2014 created today \u2014 already carries 8x the liquidity and 10x the hourly volume of this pool. Mint and freeze authority remain live, so the issuer can mint supply straight into any premium, which structurally caps the reflexive squeeze that thin-float tokens depend on, and as a synthetic share the price is tethered to a reference valuation by arbitrage. I read this as a catalyst spike that has already peaked within the detection window and is mean-reverting, with the marginal OpenAI-narrative dollar rotating to the newer, deeper contract. The narrative can persist for days; attention on this specific contract most likely cannot.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "An older tokenized \"OpenAI PreStocks\" synthetic pre-IPO share (token minted ~Sep 2025, this Meteora pool ~Feb 2026), priced at ~$2,236/unit with only $38.9k of pool liquidity against a $4.25M market cap, saw an explosive one-hour burst. H1 volume was $350k versus $381k over 6h and $498k over 24h, i.e. roughly 70% of the full day's turnover compressed into 60 minutes (vol acceleration 5.5x h1/h6 and 6.3x m5/h6). GeckoTerminal shows 1,629 unique buyers and 1,272 unique sellers in that hour against 2,391/2,277 over 24h, so the large majority of the day's distinct participants arrived inside the spike. Price ran +42% on h1/h6 and +45% on h24, then broke down: -30.1% on 30m, -13.3% on 15m, -5.8% to -16.4% on 5m. Volume is already decaying (only $6.7k in the last 5 minutes). The shape is a news/catalyst-driven stampede into a very thin pool that has already topped and is retracing. Critically, the packet lists ~10 same-name \"OpenAI PreStocks\" contracts, most created within the last day, and one of them (5ar3v8...) already carries $320.9k liquidity and $3.34M of h1 volume, roughly 10x this pool's turnover and 8x its liquidity.",
+  "narrative": {
+   "description": "The story is \"own OpenAI before the IPO\" via PreStocks, a platform issuing tokenized pre-IPO equity exposure on Solana. The token is not a memecoin: it is a high-unit-price synthetic ($2,236/unit) with a descriptive issuer blurb about GPT/DALL-E, a vanity 'Pre' contract prefix, an X handle (@PreStocks) and Telegram (PreStocksFi). The spike almost certainly tracks an exogenous OpenAI headline (IPO/valuation/funding chatter) rather than anything endogenous to the token, because nearly all volume and unique wallets arrived within a single hour on a pool that is seven months old.",
+   "stage": "peaking",
+   "potential": "strong",
+   "why_spreading": "OpenAI is the single strongest brand in the AI narrative, and pre-IPO exposure is one of the few crypto stories that appeals beyond degens: retail cannot buy OpenAI equity anywhere else, so any IPO-adjacent headline creates instant, broad demand. The breadth of the move (1,629 distinct buyers in an hour on a token with 34k-59k holders) is exactly what a headline-driven retail rush looks like. But the narrative is a sector narrative, not a token narrative: the attention accrues to 'OpenAI pre-IPO exposure' generically and can be expressed through any of the many same-name contracts or through the newer, deeper pool."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "This contract is a plausible canonical PreStocks OPENAI issue: it has the 'Pre' vanity address prefix, was created in Sep 2025 (long before the cluster of same-name contracts dated ~Sep 2026), carries 33.9k-59k holders, and GeckoTerminal resolves it to the PreStocks X/Telegram handles. So the link between the narrative and this specific asset is real, not a ticker squat. What weakens it to 'moderate' is that the narrative's economic expression is fragmented: total market liquidity across 30 discovered pairs is ~$331k while this headline pool holds only $38.9k, and a newer same-name contract is out-trading it roughly 10:1 right now.",
+   "competing_tokens": "The packet lists ten contracts named 'OpenAI PreStocks' with OPENAI/OpenAI tickers. Most are dust (liquidity $0.02-$136, zero h1 volume) and appear to be stale, duplicate or re-issued series. The exception is 5ar3v8Xaz55rgnkKiANFtNDUdje5iUg7z8W9nnTzoTGx, created today, with $320,859 liquidity and $3,341,526 of h1 volume, far exceeding this token on both counts. Whether that is an issuer re-issue, a migration, a new share class or a copycat is not determinable from the packet, but it means the marginal OpenAI-narrative buyer today is mostly not buying this contract. GMGN also reports image_duplicate_count of 28, confirming heavy visual cloning of this asset.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Pro-organic: 1,629 unique buyers and 1,272 unique sellers in one hour against 3,176 buys and 2,471 sells implies ~2 transactions per wallet, which is far too wide a footprint for a small wash-trading cluster; an established 34k-59k holder base; buy/sell ratio a modest 1.29 rather than the engineered 5:1+ typical of manufactured pumps; no DexScreener paid ad, paid boost, paid trending bar or profile update flagged; no community-takeover flag; bot/degen rate only 1.51% and fresh-wallet rate 0.97%; zero sniper hold rate, zero rat/insider traders, zero insider-flagged top holders and zero insider networks in the graph. Counter-evidence: GMGN reports 1,000 bundler wallets and 1,000 fresh wallets (both look like API caps, so their true magnitude is unknown) and a 15.73% top-bundler-trader share plus a 32.76% 'top entrapment trader' share, which is a meaningful chunk of top-wallet flow behaving predatorily. Smart-money signal count is 0 and degen call count is 0, so there is no evidence of sophisticated accumulation or of call-channel promotion driving this. GMGN page visits of only 23 is strikingly low for a $350k/hour move, suggesting the flow is not coming from the usual degen-tracker audience.",
+   "uncertainty": "With no X, Telegram, Discord or news access I cannot verify the catalyst, cannot see whether the issuer or a KOL amplified it, and cannot distinguish an exogenous OpenAI headline from a coordinated rotation between the issuer's own contracts. The 1,000/1,000 capped wallet-tag values make the bundler question genuinely unresolved."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Liquidity of $38,874 against a $4.25M market cap (0.9%) means the quoted price is close to meaningless; the +42% hour and the -30% half-hour are both artifacts of depth, and any real exit crushes the price",
+    "Mint authority NOT renounced plus 'Permanent Control Enabled' (danger): the issuer can mint supply directly into any demand spike, structurally capping upside and creating unbounded dilution risk",
+    "Freeze authority NOT renounced (danger): holder positions can be frozen and prevented from trading",
+    "LP locked 0% across all top markets and lp_burn_ratio 0.0, so pool liquidity can be pulled at will",
+    "Top 10 holders control 58.85% (RugCheck, excluding AMM/locker) / 60.39% (GeckoTerminal), with the largest three at 13.0%, 12.16% and 8.58% and the creator holding 4.2%",
+    "Mutable metadata and an owner-changeable fee config (currently 1% buy / 1% sell tax) allow the economics to be altered post-hoc",
+    "Liquidity fragmented across 30 discovered pairs and at least ten same-name contracts; this pool holds only ~12% of the asset's total $331k market liquidity",
+    "Market cap ($4.25M) exceeds FDV ($2.57M) in the packet, an internal inconsistency that implies unreliable or shifting supply accounting for a synthetic instrument",
+    "As a synthetic pre-IPO share with an issuer able to mint, the price is tethered to a reference valuation by arbitrage/redemption, so sustained premium expansion is mechanically unlikely",
+    "Creator wallet is tagged 'creator_close' with 8 prior launches and 30 other tokens held; funded from Kraken"
+   ]
+  },
+  "counterargument": "The strongest case against my fade call: if the catalyst is a genuine, hard OpenAI IPO headline (an S-1 filing, a confirmed listing date, a landmark valuation print), pre-IPO exposure vehicles rerate over days and weeks, not minutes, and this is the oldest, canonical, vanity-addressed contract with a 34k-59k holder base already in place. A -16% five-minute candle after a +42% hour is an utterly ordinary first pullback, not a top, and 1,629 fresh unique buyers in an hour is exactly the kind of genuine retail discovery that usually produces a second, larger leg once the first wave of flippers is cleared. The same thin liquidity I call a structural defect cuts both ways: $38k of depth means even modest continued inflow moves price violently upward, and a token whose mark can go from $2,236 to multiples on a few hundred thousand dollars of buying is the ideal vehicle for a narrative this large. The newer 5ar3v8 contract with $3.3M of hourly volume may not be a competitor draining attention at all but rather proof that the OpenAI pre-IPO trade is going parabolic sector-wide, with spillover into every related contract including this one. And the mint authority that I treat as a cap is standard, expected infrastructure for a compliant tokenized-equity issuer, not a rug signal. If volume re-accelerates above the prior hour and price reclaims the h1 high, my read is simply wrong.",
+  "unknowns": [
+   "The actual catalyst: no X, news, Telegram or Discord access, so I cannot confirm whether an OpenAI IPO/valuation headline drove this or something endogenous to PreStocks",
+   "Whether contract 5ar3v8... (created today, $321k liquidity, $3.34M h1 volume) is an official issuer re-issue/migration, a new share class, or a copycat \u2014 this determines whether attention is migrating away from this contract or spilling into it",
+   "Why the packet lists ~8 same-name contracts all created within the last ~48 hours; a re-issue wave would materially change the supply and canonicality picture",
+   "The true bundler and fresh-wallet counts, since GMGN reports both at exactly 1,000 (likely an API cap)",
+   "Whether PreStocks operates a mint/redeem arbitrage mechanism that pegs price to a reference valuation, which would mechanically kill any premium",
+   "The market-cap ($4.25M) vs FDV ($2.57M) inconsistency and what the real circulating supply is",
+   "Identity and intent of the three unlabelled top holders controlling 33.7% combined",
+   "Whether the h1 spike included a single large buyer or was genuinely distributed across the 1,629 unique wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. All judgments derive solely from the supplied evidence packet plus general priors about Solana microcap and tokenized-RWA behaviour. The packet itself contains no X post data by design, and private Telegram/Discord content would be invisible regardless."
+  },
+  "thesis": "A thin ~$39k-liquidity Meteora pool for a tokenized OpenAI pre-IPO share took a news-shaped vertical bid: roughly 70% of the day's volume and ~1,630 unique buyers arrived inside one hour, lifting price +42% on h1 \u2014 and it has already reversed hard (-30% on 30m, -13% on 15m) with volume collapsing to $6.7k in the last five minutes. The narrative is genuinely strong and the buyer breadth looks organic rather than a small wash cluster, but the tradable expression is broken. Liquidity is under 1% of market cap and fragmented across 30 pairs and ten same-name contracts, one of which \u2014 created today \u2014 already carries 8x the liquidity and 10x the hourly volume of this pool. Mint and freeze authority remain live, so the issuer can mint supply straight into any premium, which structurally caps the reflexive squeeze that thin-float tokens depend on, and as a synthetic share the price is tethered to a reference valuation by arbitrage. I read this as a catalyst spike that has already peaked within the detection window and is mean-reverting, with the marginal OpenAI-narrative dollar rotating to the newer, deeper contract. The narrative can persist for days; attention on this specific contract most likely cannot.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 38043,
+ "type": "result",
+ "duration_ms": 155375,
+ "uuid": "235ca1e7-7887-4fa8-97ad-b1bf903eecb1",
+ "ttft_stream_ms": 919,
+ "time_to_request_ms": 33,
+ "first_content_frame_ms": 920,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

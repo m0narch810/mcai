@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 43047,
+ "stop_reason": "tool_use",
+ "session_id": "581a53e0-f744-457d-94b4-461878b2a31c",
+ "total_cost_usd": 0.1818112,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 8422,
+  "cache_read_input_tokens": 8771,
+  "output_tokens": 3318,
+  "output_tokens_details": {
+   "thinking_tokens": 303
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8422,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2947,
+    "cache_read_input_tokens": 7309,
+    "cache_creation_input_tokens": 2575,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2575
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 3318,
+   "cacheReadInputTokens": 8771,
+   "cacheCreationInputTokens": 8422,
+   "webSearchRequests": 0,
+   "costUSD": 0.1355062,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 303,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22675,
+   "outputTokens": 726,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.046305,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This is a ticker/brand hijack with no project of its own. 'Apple\u2014DEX' uses Apple Inc.'s name, the @Apple X handle and apple.com as its website. It has no DexScreener profile, no socials and no description. It likely borrows from real Apple news that day (a stablecoin job posting, stock near a record, Mac AI headlines), and none of it connects to this contract. An identical 'Apple\u2014DEX' token (J4nX...3zh) launched about 3.2h earlier. It still shows a $1.34M mcap but has $0.03 liquidity, so it looks drained. GMGN counts the image twice, and the dev's linked X account has launched 5,059 tokens. That points to a serial launch operation repeating a template, not an organic narrative. Order flow looks engineered. Over 6h, 2,366 unique buyers faced only 139 unique sellers, who made about 5,079 sells (roughly 36 sells each). That fits bots or insiders distributing steadily into retail buying. One-hour volume was 13x liquidity, which suggests churn or wash trading. GMGN flags 202 bundler and 90 rat-trader (insider) wallets and finds zero smart-money, KOL or call signals. The top 10 holders own 93.45%, and 147 transfer-linked insiders sit in clusters of 14-15 wallets. RugCheck flags unlocked LP with few providers (GMGN says LP is burned, so the sources conflict). Creator status is 'creator_close', and the token was created and migrated in the same second, skipping a real curve phase. Expect a fade or rug, like the earlier copy.\",\"red_flags\":[\"Brand hijack: name 'Apple\u2014DEX', twitter @Apple and website apple.com belong to Apple Inc.; no real project links\",\"Identical 'Apple\u2014DEX' token launched ~3h earlier now has $0.03 liquidity with a $1.34M nominal mcap, likely rugged\",\"Dev-linked X account has launched 5,059 tokens; image_duplicate_count = 2\",\"2,366 unique buyers vs 139 unique sellers making ~5,079 sells (\u224836 each), consistent with bot or insider distribution\",\"h1 volume 13x liquidity, suggesting churn or wash trading\",\"202 bundler wallets and 90 rat-trader wallets; 0 smart-money or KOL wallets\",\"Top 10 hold 93.45%; 147 graph insiders in transfer clusters of 14-15 wallets\",\"RugCheck: large amount of LP unlocked (danger), few LP providers; conflicts with GMGN lp_burn_ratio 1.0\",\"Creator status 'creator_close'; created and migrated in the same second\",\"No DexScreener profile, no description, no organic social presence\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"The top-10 share turns out to be mostly the pool or locker. The unique-seller count rises broadly and holders keep growing past 20:12Z. On-chain evidence shows LP truly burned or locked and that this creator is unrelated to the earlier rugged 'Apple\u2014DEX'. An independent community or X account emerges with organic, non-bot engagement.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"Two web searches, no page fetches (8-minute limit). I found real Apple news that day (stablecoin job posting, stock near a record, Mac AI 'no cost per token'). I found no Apple 'DEX' product and no discussion of this contract. No X or Telegram access, so promotion in private call groups can't be ruled out and fits the bundler signals. I did not verify on-chain whether the earlier 'Apple\u2014DEX' copy shares this creator, or resolve the RugCheck vs GMGN LP-lock conflict.\",\"sources\":[{\"url\":\"https://cryptonews.com/news/crypto-stablecoins-apple-pay-google-roles/\",\"what\":\"Apple stablecoin job posting, the likely borrowed catalyst\"},{\"url\":\"https://cointelegraph.com/tags/apple\",\"what\":\"Apple crypto news tag page\"},{\"url\":\"https://www.benzinga.com/markets/prediction-markets/26/09/61932828/apple-macs-ai-no-cost-per-token-nvidia\",\"what\":\"Same-day Apple 'no cost per token' Mac AI headline\"},{\"url\":\"https://en.cryptonomist.ch/2026/09/22/apple-stock-is-just-0-81-away-from-a-fresh-record-high/\",\"what\":\"Apple stock near a record high on 2026-09-22\"},{\"url\":\"https://solanacompass.com/tokens/apple\",\"what\":\"Many 'Apple' ticker variants on Solana\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This is a ticker/brand hijack with no project of its own. 'Apple\u2014DEX' uses Apple Inc.'s name, the @Apple X handle and apple.com as its website. It has no DexScreener profile, no socials and no description. It likely borrows from real Apple news that day (a stablecoin job posting, stock near a record, Mac AI headlines), and none of it connects to this contract. An identical 'Apple\u2014DEX' token (J4nX...3zh) launched about 3.2h earlier. It still shows a $1.34M mcap but has $0.03 liquidity, so it looks drained. GMGN counts the image twice, and the dev's linked X account has launched 5,059 tokens. That points to a serial launch operation repeating a template, not an organic narrative. Order flow looks engineered. Over 6h, 2,366 unique buyers faced only 139 unique sellers, who made about 5,079 sells (roughly 36 sells each). That fits bots or insiders distributing steadily into retail buying. One-hour volume was 13x liquidity, which suggests churn or wash trading. GMGN flags 202 bundler and 90 rat-trader (insider) wallets and finds zero smart-money, KOL or call signals. The top 10 holders own 93.45%, and 147 transfer-linked insiders sit in clusters of 14-15 wallets. RugCheck flags unlocked LP with few providers (GMGN says LP is burned, so the sources conflict). Creator status is 'creator_close', and the token was created and migrated in the same second, skipping a real curve phase. Expect a fade or rug, like the earlier copy.",
+  "red_flags": [
+   "Brand hijack: name 'Apple\u2014DEX', twitter @Apple and website apple.com belong to Apple Inc.; no real project links",
+   "Identical 'Apple\u2014DEX' token launched ~3h earlier now has $0.03 liquidity with a $1.34M nominal mcap, likely rugged",
+   "Dev-linked X account has launched 5,059 tokens; image_duplicate_count = 2",
+   "2,366 unique buyers vs 139 unique sellers making ~5,079 sells (\u224836 each), consistent with bot or insider distribution",
+   "h1 volume 13x liquidity, suggesting churn or wash trading",
+   "202 bundler wallets and 90 rat-trader wallets; 0 smart-money or KOL wallets",
+   "Top 10 hold 93.45%; 147 graph insiders in transfer clusters of 14-15 wallets",
+   "RugCheck: large amount of LP unlocked (danger), few LP providers; conflicts with GMGN lp_burn_ratio 1.0",
+   "Creator status 'creator_close'; created and migrated in the same second",
+   "No DexScreener profile, no description, no organic social presence"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "The top-10 share turns out to be mostly the pool or locker. The unique-seller count rises broadly and holders keep growing past 20:12Z. On-chain evidence shows LP truly burned or locked and that this creator is unrelated to the earlier rugged 'Apple\u2014DEX'. An independent community or X account emerges with organic, non-bot engagement.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "Two web searches, no page fetches (8-minute limit). I found real Apple news that day (stablecoin job posting, stock near a record, Mac AI 'no cost per token'). I found no Apple 'DEX' product and no discussion of this contract. No X or Telegram access, so promotion in private call groups can't be ruled out and fits the bundler signals. I did not verify on-chain whether the earlier 'Apple\u2014DEX' copy shares this creator, or resolve the RugCheck vs GMGN LP-lock conflict.",
+  "sources": [
+   {
+    "url": "https://cryptonews.com/news/crypto-stablecoins-apple-pay-google-roles/",
+    "what": "Apple stablecoin job posting, the likely borrowed catalyst"
+   },
+   {
+    "url": "https://cointelegraph.com/tags/apple",
+    "what": "Apple crypto news tag page"
+   },
+   {
+    "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61932828/apple-macs-ai-no-cost-per-token-nvidia",
+    "what": "Same-day Apple 'no cost per token' Mac AI headline"
+   },
+   {
+    "url": "https://en.cryptonomist.ch/2026/09/22/apple-stock-is-just-0-81-away-from-a-fresh-record-high/",
+    "what": "Apple stock near a record high on 2026-09-22"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/apple",
+    "what": "Many 'Apple' ticker variants on Solana"
+   }
+  ]
+ },
+ "ttft_ms": 3867,
+ "type": "result",
+ "duration_ms": 37336,
+ "uuid": "7af665c0-b5fd-4216-9738-7b42c2ba0699",
+ "ttft_stream_ms": 733,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 733,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

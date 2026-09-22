@@ -1,0 +1,192 @@
+{
+ "duration_api_ms": 112103,
+ "stop_reason": "tool_use",
+ "session_id": "96454e78-71bf-4e3b-9dc8-9a0ce1efc52f",
+ "total_cost_usd": 0.5511575,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 20116,
+  "cache_read_input_tokens": 84485,
+  "output_tokens": 4370,
+  "output_tokens_details": {
+   "thinking_tokens": 393
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 20116,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3069,
+    "cache_read_input_tokens": 22130,
+    "cache_creation_input_tokens": 486,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 486
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 12,
+   "outputTokens": 4370,
+   "cacheReadInputTokens": 84485,
+   "cacheCreationInputTokens": 20116,
+   "webSearchRequests": 0,
+   "costUSD": 0.3527125,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 393,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 98685,
+   "outputTokens": 3952,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 8,
+   "costUSD": 0.198445,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This token looks like Backpack Securities' tokenized Trump Media (DJT) common stock on Solana. It is listed through Sunrise and is meant to be backed 1:1 and redeemable for the real share. It is not a memecoin. Its price of $9.17 tracks Nasdaq DJT, which traded around $9.00\u20139.33 on Sept 21 (https://www.cnn.com/markets/stocks/DJT). The Raydium pool was created 2026-09-09, the same day Sunrise/Backpack added about 20 new tokenized stocks (https://cryptobriefing.com/sunrise-tokenized-stocks-solana-backpack/). The creator wallet was funded by 'Backpack 2', according to GMGN. The alert fired at about 03:29 UTC, outside US cash-market hours, on a burst of about $161k in 5-minute volume with no price move (m5 +0.1%, h1 +0.56%). About 1,093 buys and 1,015 sells hit in 5 minutes, which is two-sided flow. That pattern fits bots, arbitrage or market-making, or a rebalancing flow in a thin pool. It does not fit a speculative inflow. News on the underlying stock is modest: the Truth API controversy and a 0.54% premarket rise (https://finance.yahoo.com/markets/stocks/articles/djt-stock-rises-premarket-trump-080632479.html). Nothing I found explains a sudden jump in on-chain attention.\",\"narrative\":{\"description\":\"Tokenized US equities on Solana (Backpack Securities / Sunrise), plus underlying Trump Media stock news: Truth API early-access feed controversy, and Warren/Schiff asking for an SEC probe. The token is a price-pegged stock wrapper, so there is no memecoin-style narrative that could re-rate it.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no sign of it spreading. The tokenized-stock sector keeps growing (https://solanacompass.com/news/backpack-securities-lists-tokenized-strategy-mstr-shares-on-solana-redeemable-11-for-real-stock), but this token's value is tied to the DJT share price, so on-chain attention cannot push it much beyond small premiums or discounts to the stock. The volume burst has flat price and two-sided flow, which points to mechanical trading rather than a story catching on.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The name matches Backpack Securities' naming format. The deployer was funded from a Backpack wallet (GMGN). The GeckoTerminal twitter handle is Backpack. The pool was created on the Sept 9 Sunrise listing batch, and the price tracks DJT stock 1:1. Bybit also has a price page under this exact name (https://www.bybit.com/en-GB/price/trump-media-technology-group-corp-common-stock-backpack-securities/). Mint and freeze authority staying enabled is normal for a regulated tokenized security.\",\"competing_tokens\":\"Same-ticker tokens: TrumpCoin DJT (HRw8...), a pump.fun copy named 'Trump Media & Technology Group C' (E5m2...pump), and an identically named 9jx1... token with $0.43 liquidity. All have zero hourly volume. Binance's DJTB is a separate CEX product (https://dailycoin.com/binance-adds-tokenized-trump-media-stock-for-collateral/).\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"There are no paid DexScreener boosts or ads (GMGN). The contract address has no indexed social posts. The volume spike came with flat price, near-equal buy and sell counts, and roughly 363 buyers and 287 sellers in 5 minutes, outside US market hours. GMGN tags 1,000 wallets as 'bundler', but for a brokerage-issued token that label probably reflects mint and distribution patterns, not a pump.\",\"uncertainty\":\"I can't see who is trading. The flow could be arbitrage against Backpack's own order book, a market maker rebalancing, or a batch of retail app orders routed on-chain.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The price is pegged to the underlying DJT share through redemption and arbitrage, so there is essentially no memecoin-style upside\",\"Only $62k DEX liquidity on the pair, while most activity likely happens on Backpack's exchange\",\"The top holder has 47% (probably the issuer or custody wallet) and a Raydium locker holds 19%; supply is created or destroyed as shares are deposited or redeemed\",\"Mint and freeze authority are enabled, which is normal for a regulated security but is centralized control\",\"The on-chain market cap of about $175k reflects only the tokenized float, not any valuation\"]},\"counterargument\":\"Tokenized-stock volume on Solana is growing fast (https://cryptobriefing.com/backpack-surpasses-xstocksfi-tokenized-equities-solana/). DJT is a politically charged, retail-heavy stock with a live SEC-probe controversy. If news breaks overnight, 24/7 on-chain trading could keep drawing unusual volume before the US market opens. Even then, price would follow the stock, not on-chain attention.\",\"unknowns\":[\"What caused the burst at 03:25\u201303:30 UTC (arbitrage bot, market-maker rebalance, or a large order being split up)\",\"Whether any overnight DJT news broke after my searches\",\"How much volume Backpack's centralized order book holds compared with this Raydium pool\",\"I did not verify the contract on Backpack's official asset list\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract-address search returned nothing relevant. The site:x.com search found Backpack's tokenized-stock posts but none specific to DJT. News covers Backpack Securities and Trump Media stock. The Bybit page timed out.\"},\"thesis\":\"This is not a speculative attention event. The token is Backpack's legitimate tokenized DJT share, and its price is pegged to the Nasdaq stock. The alert came from a flat-price, two-sided burst of volume during off-hours in a thin pool, most likely mechanical or arbitrage trading. Volume should drop back to normal, and price should follow DJT stock rather than any on-chain narrative.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.cnn.com/markets/stocks/DJT\",\"what\":\"DJT stock price about $9.10 on Sept 21, matching the token price\"},{\"url\":\"https://cryptobriefing.com/sunrise-tokenized-stocks-solana-backpack/\",\"what\":\"Sept 9, 2026 batch of 20 Backpack tokenized stocks, the same date the pool was created\"},{\"url\":\"https://solanacompass.com/news/backpack-securities-lists-tokenized-strategy-mstr-shares-on-solana-redeemable-11-for-real-stock\",\"what\":\"Backpack Securities 1:1 redeemable tokenized stocks on Solana\"},{\"url\":\"https://finance.yahoo.com/markets/stocks/articles/djt-stock-rises-premarket-trump-080632479.html\",\"what\":\"Truth API controversy; DJT up 0.54% premarket\"},{\"url\":\"https://www.bybit.com/en-GB/price/trump-media-technology-group-corp-common-stock-backpack-securities/\",\"what\":\"Bybit page for the Backpack Securities DJT token\"},{\"url\":\"https://dailycoin.com/binance-adds-tokenized-trump-media-stock-for-collateral/\",\"what\":\"Binance's separate DJTB tokenized product\"},{\"url\":\"https://cryptobriefing.com/backpack-surpasses-xstocksfi-tokenized-equities-solana/\",\"what\":\"Sector growth context\"}]}",
+ "structured_output": {
+  "what_is_happening": "This token looks like Backpack Securities' tokenized Trump Media (DJT) common stock on Solana. It is listed through Sunrise and is meant to be backed 1:1 and redeemable for the real share. It is not a memecoin. Its price of $9.17 tracks Nasdaq DJT, which traded around $9.00\u20139.33 on Sept 21 (https://www.cnn.com/markets/stocks/DJT). The Raydium pool was created 2026-09-09, the same day Sunrise/Backpack added about 20 new tokenized stocks (https://cryptobriefing.com/sunrise-tokenized-stocks-solana-backpack/). The creator wallet was funded by 'Backpack 2', according to GMGN. The alert fired at about 03:29 UTC, outside US cash-market hours, on a burst of about $161k in 5-minute volume with no price move (m5 +0.1%, h1 +0.56%). About 1,093 buys and 1,015 sells hit in 5 minutes, which is two-sided flow. That pattern fits bots, arbitrage or market-making, or a rebalancing flow in a thin pool. It does not fit a speculative inflow. News on the underlying stock is modest: the Truth API controversy and a 0.54% premarket rise (https://finance.yahoo.com/markets/stocks/articles/djt-stock-rises-premarket-trump-080632479.html). Nothing I found explains a sudden jump in on-chain attention.",
+  "narrative": {
+   "description": "Tokenized US equities on Solana (Backpack Securities / Sunrise), plus underlying Trump Media stock news: Truth API early-access feed controversy, and Warren/Schiff asking for an SEC probe. The token is a price-pegged stock wrapper, so there is no memecoin-style narrative that could re-rate it.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no sign of it spreading. The tokenized-stock sector keeps growing (https://solanacompass.com/news/backpack-securities-lists-tokenized-strategy-mstr-shares-on-solana-redeemable-11-for-real-stock), but this token's value is tied to the DJT share price, so on-chain attention cannot push it much beyond small premiums or discounts to the stock. The volume burst has flat price and two-sided flow, which points to mechanical trading rather than a story catching on."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The name matches Backpack Securities' naming format. The deployer was funded from a Backpack wallet (GMGN). The GeckoTerminal twitter handle is Backpack. The pool was created on the Sept 9 Sunrise listing batch, and the price tracks DJT stock 1:1. Bybit also has a price page under this exact name (https://www.bybit.com/en-GB/price/trump-media-technology-group-corp-common-stock-backpack-securities/). Mint and freeze authority staying enabled is normal for a regulated tokenized security.",
+   "competing_tokens": "Same-ticker tokens: TrumpCoin DJT (HRw8...), a pump.fun copy named 'Trump Media & Technology Group C' (E5m2...pump), and an identically named 9jx1... token with $0.43 liquidity. All have zero hourly volume. Binance's DJTB is a separate CEX product (https://dailycoin.com/binance-adds-tokenized-trump-media-stock-for-collateral/).",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "There are no paid DexScreener boosts or ads (GMGN). The contract address has no indexed social posts. The volume spike came with flat price, near-equal buy and sell counts, and roughly 363 buyers and 287 sellers in 5 minutes, outside US market hours. GMGN tags 1,000 wallets as 'bundler', but for a brokerage-issued token that label probably reflects mint and distribution patterns, not a pump.",
+   "uncertainty": "I can't see who is trading. The flow could be arbitrage against Backpack's own order book, a market maker rebalancing, or a batch of retail app orders routed on-chain."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The price is pegged to the underlying DJT share through redemption and arbitrage, so there is essentially no memecoin-style upside",
+    "Only $62k DEX liquidity on the pair, while most activity likely happens on Backpack's exchange",
+    "The top holder has 47% (probably the issuer or custody wallet) and a Raydium locker holds 19%; supply is created or destroyed as shares are deposited or redeemed",
+    "Mint and freeze authority are enabled, which is normal for a regulated security but is centralized control",
+    "The on-chain market cap of about $175k reflects only the tokenized float, not any valuation"
+   ]
+  },
+  "counterargument": "Tokenized-stock volume on Solana is growing fast (https://cryptobriefing.com/backpack-surpasses-xstocksfi-tokenized-equities-solana/). DJT is a politically charged, retail-heavy stock with a live SEC-probe controversy. If news breaks overnight, 24/7 on-chain trading could keep drawing unusual volume before the US market opens. Even then, price would follow the stock, not on-chain attention.",
+  "unknowns": [
+   "What caused the burst at 03:25\u201303:30 UTC (arbitrage bot, market-maker rebalance, or a large order being split up)",
+   "Whether any overnight DJT news broke after my searches",
+   "How much volume Backpack's centralized order book holds compared with this Raydium pool",
+   "I did not verify the contract on Backpack's official asset list"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "The contract-address search returned nothing relevant. The site:x.com search found Backpack's tokenized-stock posts but none specific to DJT. News covers Backpack Securities and Trump Media stock. The Bybit page timed out."
+  },
+  "thesis": "This is not a speculative attention event. The token is Backpack's legitimate tokenized DJT share, and its price is pegged to the Nasdaq stock. The alert came from a flat-price, two-sided burst of volume during off-hours in a thin pool, most likely mechanical or arbitrage trading. Volume should drop back to normal, and price should follow DJT stock rather than any on-chain narrative.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.cnn.com/markets/stocks/DJT",
+    "what": "DJT stock price about $9.10 on Sept 21, matching the token price"
+   },
+   {
+    "url": "https://cryptobriefing.com/sunrise-tokenized-stocks-solana-backpack/",
+    "what": "Sept 9, 2026 batch of 20 Backpack tokenized stocks, the same date the pool was created"
+   },
+   {
+    "url": "https://solanacompass.com/news/backpack-securities-lists-tokenized-strategy-mstr-shares-on-solana-redeemable-11-for-real-stock",
+    "what": "Backpack Securities 1:1 redeemable tokenized stocks on Solana"
+   },
+   {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/djt-stock-rises-premarket-trump-080632479.html",
+    "what": "Truth API controversy; DJT up 0.54% premarket"
+   },
+   {
+    "url": "https://www.bybit.com/en-GB/price/trump-media-technology-group-corp-common-stock-backpack-securities/",
+    "what": "Bybit page for the Backpack Securities DJT token"
+   },
+   {
+    "url": "https://dailycoin.com/binance-adds-tokenized-trump-media-stock-for-collateral/",
+    "what": "Binance's separate DJTB tokenized product"
+   },
+   {
+    "url": "https://cryptobriefing.com/backpack-surpasses-xstocksfi-tokenized-equities-solana/",
+    "what": "Sector growth context"
+   }
+  ]
+ },
+ "ttft_ms": 3790,
+ "type": "result",
+ "duration_ms": 136716,
+ "uuid": "11827977-97e2-44fd-b2c4-1212635990ae",
+ "ttft_stream_ms": 2172,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 2172,
+ "queued_turn_count": 0,
+ "result_index": 0
+}
