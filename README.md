@@ -157,8 +157,8 @@ Secrets are gitignored. To run the loop yourself, create your own:
 Research runs through `claude -p` (Claude Code CLI on a Max plan). Existing
 results are in `snapshot/research.db` (see `snapshot/README.md`), the raw
 per-arm model outputs in `data/raw/`, and the hash-chained ledger in
-`data/ledger.jsonl`. `PREREG` in `nr/config.py` is frozen for the running
-experiment: changing it changes `prereg_version`, which starts a new
-experiment rather than extending the current one.
+`data/ledger.jsonl`. `prereg_version` is a hash of `PREREG` (in `nr/config.py`), every
+prompt in `nr/prompts/`, and the Claude model. Changing any of them starts
+a new experiment version; results are never pooled across versions.
 
 `python -m pytest -q tests` should pass before any change is pushed.
