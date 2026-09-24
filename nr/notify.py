@@ -173,6 +173,7 @@ def _verdict_line(c: dict, rep: dict, late: bool, cost: float):
          rep["thesis"][:300], VIEW_COLOR.get(view, GREY),
          [("Setup", f"mcap ${t.get('mcap_usd', 0):,.0f} · liq ${t.get('liquidity_usd', 0):,.0f} · "
                     f"age {t.get('pair_age_min', 0):.0f}m · turnover {t.get('h1_turnover', 0)}x/h", False),
+          _links(c),
           ("", f"cost ${cost:.2f}{' · LATE (excluded)' if late else ''}", False)],
          url=_dex(c["token"]))
 
