@@ -1,0 +1,193 @@
+{
+ "duration_api_ms": 113888,
+ "stop_reason": "tool_use",
+ "session_id": "7170f027-0677-4c30-8a1e-ef0ddfaabc3b",
+ "total_cost_usd": 0.5145492,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 24419,
+  "cache_read_input_tokens": 84236,
+  "output_tokens": 5376,
+  "output_tokens_details": {
+   "thinking_tokens": 922
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 24419,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3254,
+    "cache_read_input_tokens": 22783,
+    "cache_creation_input_tokens": 1636,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1636
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 5376,
+   "cacheReadInputTokens": 84236,
+   "cacheCreationInputTokens": 24419,
+   "webSearchRequests": 0,
+   "costUSD": 0.3197672,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 922,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 92792,
+   "outputTokens": 4398,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 8,
+   "costUSD": 0.194782,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Moonshot AI\\\" (MOONSHOT) is a Solana token about 37 minutes old. It borrows the name of Moonshot AI, the Chinese company that makes the Kimi AI models. The news it trades on is real: Binance listed a MOONSHOTUSDT pre-IPO perpetual futures contract on Sept 22, 2026 (blockchain.news). Earlier, around Sept 3, Moonshot AI filed confidentially for a Hong Kong IPO (TechNode/SCMP). The token's only 'socials' are a link to a Binance X post, used as its twitter field, and a Russian Wikipedia page, used as its website. I found no X, Reddit, Telegram or news mention of this contract address. The on-chain structure looks manufactured. RugCheck shows one unlabeled wallet holding 80% of supply (800M tokens), outside the pool. The creator controls 99.99% of the PumpSwap LP, and that LP is unlocked. The token was created and 'migrated' in the same second on a Meteora virtual curve, so it was seeded rather than organically bonded. Volume is $13M against about $90k of liquidity (145x turnover in one hour). GeckoTerminal counts 6,576 sells from only 43 unique sellers, against 2,174 unique buyers. A few wallets are feeding supply into a stream of small buyers. At least 9 other MOONSHOT or 'Moonshot AI' tokens were launched today; most are dead with near-zero liquidity.\",\"narrative\":{\"description\":\"Binance listed a MOONSHOTUSDT pre-IPO perpetual on Sept 22, 2026. It tracks Moonshot AI, the Kimi maker valued at about $50B and heading for a Hong Kong IPO. Solana deployers are spinning up tokens with the same name to catch search traffic for 'MOONSHOT'.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The underlying news is real and recent: a Binance listing plus a well-known AI company with an IPO coming. But nothing ties this token to that news. The token only borrows the Binance post URL as its 'twitter' field. The attention looks like terminal and trending traffic from volume bots, not people discussing the token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name token today with real liquidity (about $90k) and volume. That makes it the de facto 'survivor' among the ticker spam, but it has no official link to Moonshot AI or Binance. Moonshot AI has no token. The name also collides with the Moonshot memecoin app run by DEX Screener.\",\"competing_tokens\":\"There are at least 9 other MOONSHOT or 'Moonshot AI' tokens, most from the past few hours: 5bN6..., 7DRG..., AXV9..., 4vYQ..., rvNS..., 4b2n..., and older pump tokens. All have near-zero liquidity. A KIMI 'Moonshot AI' token also exists.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1) One unlabeled wallet holds 80% of supply outside the pool (RugCheck). 2) The creator holds 99.99% of the PumpSwap LP, which is unlocked (RugCheck 'danger'). 3) Created and migrated at the same timestamp on meteora_virtual_curve, i.e. seeded liquidity rather than an organic bonding curve. 4) Only 43 unique sellers made 6,576 sells, while 2,174 unique buyers made 8,701 buys (GeckoTerminal). This fits a few wallets distributing or wash-trading into bot-driven small buys. 5) Turnover is 145x liquidity in one hour. 6) There are no project socials; the 'twitter' is a Binance post URL and the 'website' is Wikipedia. 7) I found zero organic mentions on X, Reddit or Telegram. GMGN tags 20 bundler wallets, and the token image appears as a duplicate 3 times.\",\"uncertainty\":\"The 80% wallet could conceivably be a lock or vesting account that RugCheck failed to label. However, GMGN reports creator hold rate 0 and lp_burn_ratio 1.0, which contradicts RugCheck's LP data. X is poorly indexed, so organic CT chatter might exist that I couldn't see.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80% of supply: a huge overhang against about $90k of liquidity\",\"Creator controls about 99.99% of unlocked PumpSwap LP, so liquidity can be pulled\",\"Only 43 unique sellers against 2,174 buyers, suggesting controlled distribution\",\"20 bundler wallets flagged by GMGN\",\"Wash-like turnover of 145x liquidity per hour\",\"Heavy same-name competition and confusion with the DEX Screener Moonshot app\"]},\"counterargument\":\"The Binance MOONSHOT pre-IPO perp is real, fresh news, and Moonshot AI is a prominent AI name with an IPO coming. This token has already beaten about 9 copycats to become the liquid one, with over 2,000 unique buyers in its first hour. Similar 'pre-IPO name' memes have sometimes run far past $1M market cap on narrative alone. The 80% holder might be an unlabeled lock, and GMGN reports LP burn ratio 1.0. If the holder is a lock, the overhang fear is overstated.\",\"unknowns\":[\"Who controls the 80% wallet (FhVo3.../EenYAy...), and whether it is locked\",\"Whether the creator's LP position is actually unlocked (RugCheck) or burned (GMGN lp_burn_ratio 1.0)\",\"Any X/CT discussion or KOL calls not indexed by search\",\"Whether Binance or Moonshot AI news continues today (e.g., perp volume headlines)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"The Binance X post returned HTTP 402. X searches found only Binance's pre-IPO perp posts, nothing about this contract address. The project 'site' is a Russian Wikipedia page, not a project site. News confirms the Binance MOONSHOT perp listing on Sept 22 and Moonshot AI's HK IPO filing. I used the RugCheck and DexScreener APIs for structure.\"},\"thesis\":\"The news behind it is real, but this token is an unofficial name-grab with a manufactured structure. One wallet holds 80% of supply, the creator controls unlocked LP, 43 sellers face 2,000+ buyers, and turnover is 145x liquidity. I found no organic discussion. Expect the attention to fade and the supply to be distributed or extracted rather than a sustained run.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://blockchain.news/flashnews/binance-moonshot-pre-ipo-perp-goes-live\",\"what\":\"Binance MOONSHOT pre-IPO perp listed Sept 22, 2026; no Solana mention\"},{\"url\":\"https://www.techflowpost.com/en-US/newsletter/137271\",\"what\":\"Binance will list MOONSHOTUSDT pre-IPO perpetual\"},{\"url\":\"https://technode.com/2026/09/03/moonshot-ai-reportedly-submits-confidential-hong-kong-ipo-filing/\",\"what\":\"Moonshot AI confidential HK IPO filing, Sept 3\"},{\"url\":\"https://www.benzinga.com/markets/prediction-markets/26/09/61601057/moonshot-ai-ipo-kimi-k3\",\"what\":\"Moonshot AI IPO at $50B valuation\"},{\"url\":\"https://api.rugcheck.xyz/v1/tokens/4DYKKTDviArqwzMtuwbNv1tXEXnToy4TBwHLPYJih1Nj/report\",\"what\":\"80% single unlabeled holder; creator holds 99.99% of unlocked PumpSwap LP\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/4DYKKTDviArqwzMtuwbNv1tXEXnToy4TBwHLPYJih1Nj\",\"what\":\"Pairs: PumpSwap $92k liquidity, $13.4M h1 volume; no socials\"},{\"url\":\"https://x.com/binance/status/2102480596152856799\",\"what\":\"Binance post used as the token's 'twitter' field (fetch returned 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Moonshot AI\" (MOONSHOT) is a Solana token about 37 minutes old. It borrows the name of Moonshot AI, the Chinese company that makes the Kimi AI models. The news it trades on is real: Binance listed a MOONSHOTUSDT pre-IPO perpetual futures contract on Sept 22, 2026 (blockchain.news). Earlier, around Sept 3, Moonshot AI filed confidentially for a Hong Kong IPO (TechNode/SCMP). The token's only 'socials' are a link to a Binance X post, used as its twitter field, and a Russian Wikipedia page, used as its website. I found no X, Reddit, Telegram or news mention of this contract address. The on-chain structure looks manufactured. RugCheck shows one unlabeled wallet holding 80% of supply (800M tokens), outside the pool. The creator controls 99.99% of the PumpSwap LP, and that LP is unlocked. The token was created and 'migrated' in the same second on a Meteora virtual curve, so it was seeded rather than organically bonded. Volume is $13M against about $90k of liquidity (145x turnover in one hour). GeckoTerminal counts 6,576 sells from only 43 unique sellers, against 2,174 unique buyers. A few wallets are feeding supply into a stream of small buyers. At least 9 other MOONSHOT or 'Moonshot AI' tokens were launched today; most are dead with near-zero liquidity.",
+  "narrative": {
+   "description": "Binance listed a MOONSHOTUSDT pre-IPO perpetual on Sept 22, 2026. It tracks Moonshot AI, the Kimi maker valued at about $50B and heading for a Hong Kong IPO. Solana deployers are spinning up tokens with the same name to catch search traffic for 'MOONSHOT'.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The underlying news is real and recent: a Binance listing plus a well-known AI company with an IPO coming. But nothing ties this token to that news. The token only borrows the Binance post URL as its 'twitter' field. The attention looks like terminal and trending traffic from volume bots, not people discussing the token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name token today with real liquidity (about $90k) and volume. That makes it the de facto 'survivor' among the ticker spam, but it has no official link to Moonshot AI or Binance. Moonshot AI has no token. The name also collides with the Moonshot memecoin app run by DEX Screener.",
+   "competing_tokens": "There are at least 9 other MOONSHOT or 'Moonshot AI' tokens, most from the past few hours: 5bN6..., 7DRG..., AXV9..., 4vYQ..., rvNS..., 4b2n..., and older pump tokens. All have near-zero liquidity. A KIMI 'Moonshot AI' token also exists.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1) One unlabeled wallet holds 80% of supply outside the pool (RugCheck). 2) The creator holds 99.99% of the PumpSwap LP, which is unlocked (RugCheck 'danger'). 3) Created and migrated at the same timestamp on meteora_virtual_curve, i.e. seeded liquidity rather than an organic bonding curve. 4) Only 43 unique sellers made 6,576 sells, while 2,174 unique buyers made 8,701 buys (GeckoTerminal). This fits a few wallets distributing or wash-trading into bot-driven small buys. 5) Turnover is 145x liquidity in one hour. 6) There are no project socials; the 'twitter' is a Binance post URL and the 'website' is Wikipedia. 7) I found zero organic mentions on X, Reddit or Telegram. GMGN tags 20 bundler wallets, and the token image appears as a duplicate 3 times.",
+   "uncertainty": "The 80% wallet could conceivably be a lock or vesting account that RugCheck failed to label. However, GMGN reports creator hold rate 0 and lp_burn_ratio 1.0, which contradicts RugCheck's LP data. X is poorly indexed, so organic CT chatter might exist that I couldn't see."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80% of supply: a huge overhang against about $90k of liquidity",
+    "Creator controls about 99.99% of unlocked PumpSwap LP, so liquidity can be pulled",
+    "Only 43 unique sellers against 2,174 buyers, suggesting controlled distribution",
+    "20 bundler wallets flagged by GMGN",
+    "Wash-like turnover of 145x liquidity per hour",
+    "Heavy same-name competition and confusion with the DEX Screener Moonshot app"
+   ]
+  },
+  "counterargument": "The Binance MOONSHOT pre-IPO perp is real, fresh news, and Moonshot AI is a prominent AI name with an IPO coming. This token has already beaten about 9 copycats to become the liquid one, with over 2,000 unique buyers in its first hour. Similar 'pre-IPO name' memes have sometimes run far past $1M market cap on narrative alone. The 80% holder might be an unlabeled lock, and GMGN reports LP burn ratio 1.0. If the holder is a lock, the overhang fear is overstated.",
+  "unknowns": [
+   "Who controls the 80% wallet (FhVo3.../EenYAy...), and whether it is locked",
+   "Whether the creator's LP position is actually unlocked (RugCheck) or burned (GMGN lp_burn_ratio 1.0)",
+   "Any X/CT discussion or KOL calls not indexed by search",
+   "Whether Binance or Moonshot AI news continues today (e.g., perp volume headlines)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "The Binance X post returned HTTP 402. X searches found only Binance's pre-IPO perp posts, nothing about this contract address. The project 'site' is a Russian Wikipedia page, not a project site. News confirms the Binance MOONSHOT perp listing on Sept 22 and Moonshot AI's HK IPO filing. I used the RugCheck and DexScreener APIs for structure."
+  },
+  "thesis": "The news behind it is real, but this token is an unofficial name-grab with a manufactured structure. One wallet holds 80% of supply, the creator controls unlocked LP, 43 sellers face 2,000+ buyers, and turnover is 145x liquidity. I found no organic discussion. Expect the attention to fade and the supply to be distributed or extracted rather than a sustained run.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://blockchain.news/flashnews/binance-moonshot-pre-ipo-perp-goes-live",
+    "what": "Binance MOONSHOT pre-IPO perp listed Sept 22, 2026; no Solana mention"
+   },
+   {
+    "url": "https://www.techflowpost.com/en-US/newsletter/137271",
+    "what": "Binance will list MOONSHOTUSDT pre-IPO perpetual"
+   },
+   {
+    "url": "https://technode.com/2026/09/03/moonshot-ai-reportedly-submits-confidential-hong-kong-ipo-filing/",
+    "what": "Moonshot AI confidential HK IPO filing, Sept 3"
+   },
+   {
+    "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61601057/moonshot-ai-ipo-kimi-k3",
+    "what": "Moonshot AI IPO at $50B valuation"
+   },
+   {
+    "url": "https://api.rugcheck.xyz/v1/tokens/4DYKKTDviArqwzMtuwbNv1tXEXnToy4TBwHLPYJih1Nj/report",
+    "what": "80% single unlabeled holder; creator holds 99.99% of unlocked PumpSwap LP"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/4DYKKTDviArqwzMtuwbNv1tXEXnToy4TBwHLPYJih1Nj",
+    "what": "Pairs: PumpSwap $92k liquidity, $13.4M h1 volume; no socials"
+   },
+   {
+    "url": "https://x.com/binance/status/2102480596152856799",
+    "what": "Binance post used as the token's 'twitter' field (fetch returned 402)"
+   }
+  ]
+ },
+ "ttft_ms": 3492,
+ "type": "result",
+ "duration_ms": 81689,
+ "uuid": "e87a66a5-d6bc-406b-923d-fbc2988caf13",
+ "ttft_stream_ms": 762,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 762,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

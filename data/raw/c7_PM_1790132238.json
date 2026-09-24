@@ -1,0 +1,139 @@
+{
+ "duration_api_ms": 36762,
+ "stop_reason": "tool_use",
+ "session_id": "ee34da57-bdf6-4b9f-89b6-b6a719df26d2",
+ "total_cost_usd": 0.147436,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9566,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 3545,
+  "output_tokens_details": {
+   "thinking_tokens": 1165
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9566,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3545,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 9566,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9566
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3545,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 9566,
+   "webSearchRequests": 0,
+   "costUSD": 0.147436,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1165,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The price had already risen about 2.3\u20132.4x between T2 ($131k market cap) and the decision/entry ($322k), within about 25 minutes, and no external catalyst was found. Entry therefore came at the top of a second leg that had no identified driver. The report noted this as a 'late entry' risk but did not weight it in the call.\",\"The pair was about 55 minutes old at decision time. The report cited the base rate that hour-old launches usually peak within the first few hours, and it matched: -20% at 11.5 minutes, -50% at 14.5 minutes, -48% at 6h and -90% at 24h.\",\"The report named extreme realized volatility and thin depth: liquidity was about 17% of market cap, and there had been a -57% swing over 15 minutes before T2. Pre-entry hourly sigma was about 1.70, and the price went through a 1-sigma down barrier within about 40 minutes. The warning about fragility was correct.\",\"No organic social spread could be verified (no indexed posts, X profile returned 402). The report rightly kept confidence low and did not treat on-chain breadth as proof of durable demand.\",\"The report assumed fee-funded reflection depends on sustained volume. The price decayed as volume presumably fell, which fits that dependency, but it was not directly tested.\"],\"misleading_observations\":[\"Renounced authorities, 100% locked LP and a creator balance of 0 are rug-safety signals, not upside signals. Liquidity never collapsed (minimum about $12.3k), yet the position still lost about 90% over 24h through ordinary price decay. These facts were partly used in the counterargument as reasons for continuation.\",\"The first-hour counts of about 1,357 unique buyers and 1,017 sellers look backward. They describe the launch burst, not demand left over at a $322k entry.\",\"About 10 same-name clones were read as 'attention growing'. Clone swarms are bot-driven mimicry that farms order flow. They may split buyers and do not show organic demand for the canonical token.\",\"Establishing the canonical token (profile, website, FLEX vanity address) answered 'which token', not 'will it continue'. Its strong 'token_connection' rating added no predictive value for price.\",\"The counterargument that 'a second leg is already happening' treated price momentum that had already happened as evidence of continuation, when it was mainly a worse entry price.\"],\"evidence_that_should_have_changed_conclusion\":[\"The report itself fetched the $309k market cap after T2. The decision rule should have used the entry-relative picture: a 2.3x rise with no driver, on liquidity of about 17% of market cap, in a pair under 1 hour old. Together these should have tilted the view from neutral to fade.\",\"GeckoTerminal already showed short-term activity decaying at T2: m5 had 14 unique buyers and $3k volume, against m15 with 443 buyers and $130k, plus a -56.6% m15 price change. This showed how fast the first burst was fading. The report did not discuss it. The later second leg shows that this signal was noisy.\",\"The report said 'most tokens like this, only an hour old, peak within the first few hours' but still called it a coin flip. Its own stated base rate supported a lean toward fading.\",\"Caveat: with an hourly sigma of about 1.7 and an MFE of +32% before the drawdown, even a correct fade call would have been only slightly better than chance for any single case.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"fair\",\"hypotheses_proposed\":[{\"statement\":\"When price at decision time is at least 2x the T2 price, the rise happened within 30 minutes, and research finds no external catalyst, the median 6h return from entry is negative. The fraction of cases touching -30% before +30% is above 60%.\",\"conditions\":\"Solana pairs under 2 hours old, liquidity under 25% of market cap, research unable to identify a news or social catalyst. Measured only with prices from T2 and decision time.\",\"market_structure_rationale\":\"A rapid second leg in a very young, thin pool usually comes from concentrated buying by snipers, call groups or momentum bots. Their exits face little bid depth, so an unexplained rise is more likely to be inventory set up for distribution than new demand.\"},{\"statement\":\"If the GeckoTerminal m5 unique-buyer count at T2 is below 5% of the m15 count divided by 3 (that is, a sharp burst decay), 6h returns from decision time are lower than in cases without such decay.\",\"conditions\":\"Pairs under 3 hours old where GeckoTerminal trade breakdowns are available at T2. The m15 window must contain at least 200 unique buyers.\",\"market_structure_rationale\":\"A collapse in marginal new buyers inside a launch burst means the pool of new participants is running out. With no fresh buyers, early holders' profit-taking meets a thinning bid.\"},{\"statement\":\"When five or more same-name or same-ticker tokens appear within 30 minutes of the canonical pair, the canonical token's 6h return from decision time is not higher than in comparable launches without clones. The clone count should not be treated as a bullish attention signal.\",\"conditions\":\"The canonical token is identified from linked socials or site. Clones are counted from same-name search results with pair creation within \u00b130 minutes. Compare within similar age and market-cap bands.\",\"market_structure_rationale\":\"Clone deployment is automated and triggered by the canonical token's own volume, so clone count is a function of past flow, not new demand. Clones also split and trap retail flow that might otherwise reach the canonical pool.\"}],\"summary\":\"The report took a neutral view with low confidence on KOLCAT for a 6h window. The trade entered at about $322k market cap, 2.4x the T2 price. The price fell 50% within 15 minutes, ended about -48% at 6h (MFE +32%, MAE -82%) and about -90% at 24h, with no liquidity collapse. The research did well on identifying the canonical token, on keeping confidence low given the invisible social layer, and on naming the structural risks: thin liquidity, fading of hour-old launches, and dependence on volume. Its weaknesses were that it did not turn its own stated base rate and the driverless 2.3x post-T2 run into a fade lean. It also leaned on rug-safety and copycat signals that say nothing about continuation, and it ignored the burst decay visible in GeckoTerminal's m5 vs m15 buyer counts. The direction was partly knowable at decision time. The size, and the brief +32% excursion, were not, given an hourly sigma of about 1.7. A single case like this cannot validate a fade rule; the hypotheses above are meant to be tested across many future cases.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The price had already risen about 2.3\u20132.4x between T2 ($131k market cap) and the decision/entry ($322k), within about 25 minutes, and no external catalyst was found. Entry therefore came at the top of a second leg that had no identified driver. The report noted this as a 'late entry' risk but did not weight it in the call.",
+   "The pair was about 55 minutes old at decision time. The report cited the base rate that hour-old launches usually peak within the first few hours, and it matched: -20% at 11.5 minutes, -50% at 14.5 minutes, -48% at 6h and -90% at 24h.",
+   "The report named extreme realized volatility and thin depth: liquidity was about 17% of market cap, and there had been a -57% swing over 15 minutes before T2. Pre-entry hourly sigma was about 1.70, and the price went through a 1-sigma down barrier within about 40 minutes. The warning about fragility was correct.",
+   "No organic social spread could be verified (no indexed posts, X profile returned 402). The report rightly kept confidence low and did not treat on-chain breadth as proof of durable demand.",
+   "The report assumed fee-funded reflection depends on sustained volume. The price decayed as volume presumably fell, which fits that dependency, but it was not directly tested."
+  ],
+  "misleading_observations": [
+   "Renounced authorities, 100% locked LP and a creator balance of 0 are rug-safety signals, not upside signals. Liquidity never collapsed (minimum about $12.3k), yet the position still lost about 90% over 24h through ordinary price decay. These facts were partly used in the counterargument as reasons for continuation.",
+   "The first-hour counts of about 1,357 unique buyers and 1,017 sellers look backward. They describe the launch burst, not demand left over at a $322k entry.",
+   "About 10 same-name clones were read as 'attention growing'. Clone swarms are bot-driven mimicry that farms order flow. They may split buyers and do not show organic demand for the canonical token.",
+   "Establishing the canonical token (profile, website, FLEX vanity address) answered 'which token', not 'will it continue'. Its strong 'token_connection' rating added no predictive value for price.",
+   "The counterargument that 'a second leg is already happening' treated price momentum that had already happened as evidence of continuation, when it was mainly a worse entry price."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "The report itself fetched the $309k market cap after T2. The decision rule should have used the entry-relative picture: a 2.3x rise with no driver, on liquidity of about 17% of market cap, in a pair under 1 hour old. Together these should have tilted the view from neutral to fade.",
+   "GeckoTerminal already showed short-term activity decaying at T2: m5 had 14 unique buyers and $3k volume, against m15 with 443 buyers and $130k, plus a -56.6% m15 price change. This showed how fast the first burst was fading. The report did not discuss it. The later second leg shows that this signal was noisy.",
+   "The report said 'most tokens like this, only an hour old, peak within the first few hours' but still called it a coin flip. Its own stated base rate supported a lean toward fading.",
+   "Caveat: with an hourly sigma of about 1.7 and an MFE of +32% before the drawdown, even a correct fade call would have been only slightly better than chance for any single case."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "fair",
+  "hypotheses_proposed": [
+   {
+    "statement": "When price at decision time is at least 2x the T2 price, the rise happened within 30 minutes, and research finds no external catalyst, the median 6h return from entry is negative. The fraction of cases touching -30% before +30% is above 60%.",
+    "conditions": "Solana pairs under 2 hours old, liquidity under 25% of market cap, research unable to identify a news or social catalyst. Measured only with prices from T2 and decision time.",
+    "market_structure_rationale": "A rapid second leg in a very young, thin pool usually comes from concentrated buying by snipers, call groups or momentum bots. Their exits face little bid depth, so an unexplained rise is more likely to be inventory set up for distribution than new demand."
+   },
+   {
+    "statement": "If the GeckoTerminal m5 unique-buyer count at T2 is below 5% of the m15 count divided by 3 (that is, a sharp burst decay), 6h returns from decision time are lower than in cases without such decay.",
+    "conditions": "Pairs under 3 hours old where GeckoTerminal trade breakdowns are available at T2. The m15 window must contain at least 200 unique buyers.",
+    "market_structure_rationale": "A collapse in marginal new buyers inside a launch burst means the pool of new participants is running out. With no fresh buyers, early holders' profit-taking meets a thinning bid."
+   },
+   {
+    "statement": "When five or more same-name or same-ticker tokens appear within 30 minutes of the canonical pair, the canonical token's 6h return from decision time is not higher than in comparable launches without clones. The clone count should not be treated as a bullish attention signal.",
+    "conditions": "The canonical token is identified from linked socials or site. Clones are counted from same-name search results with pair creation within \u00b130 minutes. Compare within similar age and market-cap bands.",
+    "market_structure_rationale": "Clone deployment is automated and triggered by the canonical token's own volume, so clone count is a function of past flow, not new demand. Clones also split and trap retail flow that might otherwise reach the canonical pool."
+   }
+  ],
+  "summary": "The report took a neutral view with low confidence on KOLCAT for a 6h window. The trade entered at about $322k market cap, 2.4x the T2 price. The price fell 50% within 15 minutes, ended about -48% at 6h (MFE +32%, MAE -82%) and about -90% at 24h, with no liquidity collapse. The research did well on identifying the canonical token, on keeping confidence low given the invisible social layer, and on naming the structural risks: thin liquidity, fading of hour-old launches, and dependence on volume. Its weaknesses were that it did not turn its own stated base rate and the driverless 2.3x post-T2 run into a fade lean. It also leaned on rug-safety and copycat signals that say nothing about continuation, and it ignored the burst decay visible in GeckoTerminal's m5 vs m15 buyer counts. The direction was partly knowable at decision time. The size, and the brief +32% excursion, were not, given an hourly sigma of about 1.7. A single case like this cannot validate a fade rule; the hypotheses above are meant to be tested across many future cases."
+ },
+ "ttft_ms": 13716,
+ "type": "result",
+ "duration_ms": 37011,
+ "uuid": "f2db50b0-e257-4a55-8e2a-8161a2238653",
+ "ttft_stream_ms": 1038,
+ "time_to_request_ms": 245,
+ "first_content_frame_ms": 1038,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

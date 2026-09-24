@@ -1,0 +1,134 @@
+{
+ "duration_api_ms": 28557,
+ "stop_reason": "tool_use",
+ "session_id": "41e144b3-0916-4278-96af-f4228a6d774c",
+ "total_cost_usd": 0.1206584,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7775,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 2914,
+  "output_tokens_details": {
+   "thinking_tokens": 539
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7775,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2914,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 7775,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7775
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2914,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 7775,
+   "webSearchRequests": 0,
+   "costUSD": 0.1206584,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 539,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"None can be confirmed. The outcome record does not appear to describe the researched token, so no observation in the report can be credited with predicting it.\",\"Conditionally relevant if the fade call is later scored against correct data: GeckoTerminal price change was -45.6% over 30 minutes and -22.6% over 1 hour at collection. The token had already fallen hard from its post-graduation peak.\",\"Conditionally relevant: 20.5k\u201320.8k transactions for about $147k of volume, an average of about $7 per trade. Unique buyers (3,032) and unique sellers (3,007) were nearly equal. This pattern fits volume or bundle bots better than organic demand.\",\"Conditionally relevant: I found no catalyst tied to the contract. The launch borrowed the official @SpiderManMovie handle, had no socials of its own, and the franchise news it rode on was days old.\"],\"misleading_observations\":[\"The -32.9% return in the outcome record looks like a fade confirmation, but it isn't. Gross price return was -0.01% at every horizon. The -32.9% is almost entirely fees and price impact from putting $250 into a pool with about $2.1k of liquidity.\",\"The outcome record's entry market cap ($2,108), entry liquidity ($2,145.57) and entry price (2.112e-06) match one of the dead same-name clones listed in the evidence packet (e.g. DJ6GAJ\u2026pump: liquidity $2,145.91, mcap $2,113). They do not match the researched token (mcap $631k, liquidity $70.6k, price 6.31e-04). The 'liquidity_collapse: true' flag and the 'neither' barrier results therefore describe a dormant clone, not the graduated token.\",\"The report says the price was 'down 45% from its 30-minute high'. GeckoTerminal's m30 figure is a window-to-now price change, not a drawdown from a peak. It is a small overstatement and did not drive the conclusion.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing in the T2 packet clearly argued against a fade. The strongest counterpoints were already addressed in the report's counterargument: clean holder distribution (top 10 about 15%), 100% locked LP, negligible creator balance, a +21% bounce over 5 minutes, and a mega-IP at peak cultural relevance. None of these outweighs the combination of a bot-like trade pattern, no catalyst and price already rolling over.\",\"The real problem is in scoring, not in the research. The outcome pipeline's entry snapshot differs from the T2 snapshot by about 300x in market cap and about 33x in liquidity. That should have blocked the outcome from being used to evaluate this call.\"],\"outcome_knowable\":\"unknowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Scoring integrity check: an outcome record is valid only if its entry market cap and entry liquidity are each within 3x of the T2 snapshot for the same contract and pair address. Records that fail this check should be excluded, not scored.\",\"conditions\":\"Every candidate, and especially tokens that have many same-name or same-ticker tokens listed in same_ticker_or_name_tokens.\",\"market_structure_rationale\":\"When outcome tracking resolves by symbol or name instead of contract or pair address, it can land on a dead clone whose flat price and thin pool fake a 'fade' result. Scoring by contract address removes that false signal.\"},{\"statement\":\"Consider pump.fun-graduated tokens under 2 hours old that meet all three conditions at decision time: (a) average trade size under $15 (h1 volume divided by h1 transaction count), (b) unique buyers divided by unique sellers between 0.9 and 1.1 over h1, and (c) m30 price change of -30% or worse. Their 6-hour return should be negative more often than for graduated tokens that fail these conditions.\",\"conditions\":\"Solana pump.fun or PumpSwap pairs, liquidity between $30k and $150k, market cap under $2M. Scored only on outcome records that pass the contract-integrity check above.\",\"market_structure_rationale\":\"Tiny, balanced trades from nearly equal buyer and seller populations suggest wash or volume-bot activity that inflates trending ranks without net new capital. A falling m30 price shows real sellers already outweigh real buyers once graduation demand is used up.\"},{\"statement\":\"Consider IP-name tokens that 'won' among at least 5 same-name clones launched in the prior 48 hours, have no socials of their own, and have no catalyst dated within 24 hours of launch. Over 6 hours, they should underperform graduated tokens with a unique name or a dated catalyst.\",\"conditions\":\"The same-ticker list shows at least 5 same-name tokens created within 48 hours of the candidate, and web or news search finds no event dated within 24 hours of pair creation.\",\"market_structure_rationale\":\"Generic IP names give no reason for attention to settle on one contract. Capital that arrived through graduation or trending feeds has no story to keep it there, and copycats keep splitting new attention.\"}],\"summary\":\"The fade call cannot be scored because the outcome record appears to describe a different token. The outcome's entry market cap ($2.1k), liquidity ($2.1k) and price (2.1e-06) match one of the dead Spider-Man clones in the packet, not the researched graduated token ($631k mcap, $70.6k liquidity, price 6.3e-04). Gross price return was flat (-0.01%). The -32.9% figure is fees and slippage on $250 in a $2k pool, and the liquidity_collapse flag and 'neither' barrier results come from a dormant clone. So the outcome gives no evidence either way on whether the fade call was right.\\n\\nOn its own terms, the research was sound. It correctly flagged:\\n- the borrowed official X handle and the lack of any socials of its own\\n- days-old franchise news with no catalyst tied to the contract\\n- a bot-like pattern of about $7 average trades with near-equal unique buyers and sellers\\n- price already -45% over 30 minutes and -22% over 1 hour\\n- high ticker-hijack risk from many clones\\n\\nIt also gave a fair counterargument (clean holders, locked LP, mega-IP, a 5-minute bounce). The only small error is calling the m30 change a drop 'from its 30-minute high'.\\n\\nRecommended actions:\\n- Re-run outcome tracking against pair AyMwV1JN\u2026 for contract 6sRE3sx9\u2026pump.\\n- Add an entry-snapshot sanity check that rejects any outcome whose entry mcap or liquidity differs from T2 by more than 3x.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "None can be confirmed. The outcome record does not appear to describe the researched token, so no observation in the report can be credited with predicting it.",
+   "Conditionally relevant if the fade call is later scored against correct data: GeckoTerminal price change was -45.6% over 30 minutes and -22.6% over 1 hour at collection. The token had already fallen hard from its post-graduation peak.",
+   "Conditionally relevant: 20.5k\u201320.8k transactions for about $147k of volume, an average of about $7 per trade. Unique buyers (3,032) and unique sellers (3,007) were nearly equal. This pattern fits volume or bundle bots better than organic demand.",
+   "Conditionally relevant: I found no catalyst tied to the contract. The launch borrowed the official @SpiderManMovie handle, had no socials of its own, and the franchise news it rode on was days old."
+  ],
+  "misleading_observations": [
+   "The -32.9% return in the outcome record looks like a fade confirmation, but it isn't. Gross price return was -0.01% at every horizon. The -32.9% is almost entirely fees and price impact from putting $250 into a pool with about $2.1k of liquidity.",
+   "The outcome record's entry market cap ($2,108), entry liquidity ($2,145.57) and entry price (2.112e-06) match one of the dead same-name clones listed in the evidence packet (e.g. DJ6GAJ\u2026pump: liquidity $2,145.91, mcap $2,113). They do not match the researched token (mcap $631k, liquidity $70.6k, price 6.31e-04). The 'liquidity_collapse: true' flag and the 'neither' barrier results therefore describe a dormant clone, not the graduated token.",
+   "The report says the price was 'down 45% from its 30-minute high'. GeckoTerminal's m30 figure is a window-to-now price change, not a drawdown from a peak. It is a small overstatement and did not drive the conclusion."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing in the T2 packet clearly argued against a fade. The strongest counterpoints were already addressed in the report's counterargument: clean holder distribution (top 10 about 15%), 100% locked LP, negligible creator balance, a +21% bounce over 5 minutes, and a mega-IP at peak cultural relevance. None of these outweighs the combination of a bot-like trade pattern, no catalyst and price already rolling over.",
+   "The real problem is in scoring, not in the research. The outcome pipeline's entry snapshot differs from the T2 snapshot by about 300x in market cap and about 33x in liquidity. That should have blocked the outcome from being used to evaluate this call."
+  ],
+  "outcome_knowable": "unknowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Scoring integrity check: an outcome record is valid only if its entry market cap and entry liquidity are each within 3x of the T2 snapshot for the same contract and pair address. Records that fail this check should be excluded, not scored.",
+    "conditions": "Every candidate, and especially tokens that have many same-name or same-ticker tokens listed in same_ticker_or_name_tokens.",
+    "market_structure_rationale": "When outcome tracking resolves by symbol or name instead of contract or pair address, it can land on a dead clone whose flat price and thin pool fake a 'fade' result. Scoring by contract address removes that false signal."
+   },
+   {
+    "statement": "Consider pump.fun-graduated tokens under 2 hours old that meet all three conditions at decision time: (a) average trade size under $15 (h1 volume divided by h1 transaction count), (b) unique buyers divided by unique sellers between 0.9 and 1.1 over h1, and (c) m30 price change of -30% or worse. Their 6-hour return should be negative more often than for graduated tokens that fail these conditions.",
+    "conditions": "Solana pump.fun or PumpSwap pairs, liquidity between $30k and $150k, market cap under $2M. Scored only on outcome records that pass the contract-integrity check above.",
+    "market_structure_rationale": "Tiny, balanced trades from nearly equal buyer and seller populations suggest wash or volume-bot activity that inflates trending ranks without net new capital. A falling m30 price shows real sellers already outweigh real buyers once graduation demand is used up."
+   },
+   {
+    "statement": "Consider IP-name tokens that 'won' among at least 5 same-name clones launched in the prior 48 hours, have no socials of their own, and have no catalyst dated within 24 hours of launch. Over 6 hours, they should underperform graduated tokens with a unique name or a dated catalyst.",
+    "conditions": "The same-ticker list shows at least 5 same-name tokens created within 48 hours of the candidate, and web or news search finds no event dated within 24 hours of pair creation.",
+    "market_structure_rationale": "Generic IP names give no reason for attention to settle on one contract. Capital that arrived through graduation or trending feeds has no story to keep it there, and copycats keep splitting new attention."
+   }
+  ],
+  "summary": "The fade call cannot be scored because the outcome record appears to describe a different token. The outcome's entry market cap ($2.1k), liquidity ($2.1k) and price (2.1e-06) match one of the dead Spider-Man clones in the packet, not the researched graduated token ($631k mcap, $70.6k liquidity, price 6.3e-04). Gross price return was flat (-0.01%). The -32.9% figure is fees and slippage on $250 in a $2k pool, and the liquidity_collapse flag and 'neither' barrier results come from a dormant clone. So the outcome gives no evidence either way on whether the fade call was right.\n\nOn its own terms, the research was sound. It correctly flagged:\n- the borrowed official X handle and the lack of any socials of its own\n- days-old franchise news with no catalyst tied to the contract\n- a bot-like pattern of about $7 average trades with near-equal unique buyers and sellers\n- price already -45% over 30 minutes and -22% over 1 hour\n- high ticker-hijack risk from many clones\n\nIt also gave a fair counterargument (clean holders, locked LP, mega-IP, a 5-minute bounce). The only small error is calling the m30 change a drop 'from its 30-minute high'.\n\nRecommended actions:\n- Re-run outcome tracking against pair AyMwV1JN\u2026 for contract 6sRE3sx9\u2026pump.\n- Add an entry-snapshot sanity check that rejects any outcome whose entry mcap or liquidity differs from T2 by more than 3x."
+ },
+ "ttft_ms": 5917,
+ "type": "result",
+ "duration_ms": 28609,
+ "uuid": "48926f06-0225-495f-8fca-478ff68c2290",
+ "ttft_stream_ms": 731,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 731,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

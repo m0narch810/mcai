@@ -1,0 +1,190 @@
+{
+ "duration_api_ms": 132132,
+ "stop_reason": "tool_use",
+ "session_id": "9cf022a8-9410-4511-ab24-da46d6c57c26",
+ "total_cost_usd": 0.5538448,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 21080,
+  "cache_read_input_tokens": 81159,
+  "output_tokens": 5873,
+  "output_tokens_details": {
+   "thinking_tokens": 795
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21080,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3741,
+    "cache_read_input_tokens": 22585,
+    "cache_creation_input_tokens": 995,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 995
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 5873,
+   "cacheReadInputTokens": 81159,
+   "cacheCreationInputTokens": 21080,
+   "webSearchRequests": 0,
+   "costUSD": 0.3023798,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 795,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 130165,
+   "outputTokens": 4260,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 10,
+   "costUSD": 0.251465,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 19,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Microsoft Azure\\\" (ticker Microso) is about 38 minutes old. It launched through Meteora's bonding-curve launchpad and moved to a PumpSwap pool in the same second (created_unix = migrated_unix = 1790145453). In its first hour it traded about $3.0M, roughly 9.5x its ~$1.1M market cap. Price rose about 77% and is at its all-time high. There are no socials, no website, no DexScreener profile and no description (DexScreener API: https://api.dexscreener.com/latest/dex/tokens/4VmVMmHBaAAoVW1N6fRK44kRNZxk4kmfoV9aBz4Zhuq2). Web searches for the contract address, the ticker and the name found no posts on X, no news and no community discussion. Microsoft itself has no news today that would explain this. The Azure items I found are weeks old: the Sep 2 Azure revenue disclosure (https://www.cnbc.com/2026/09/02/microsoft-to-disclose-azure-revenue-as-part-of-segment-changes.html) and the Sep 3 outage (https://www.meridian-micro.com/2026/09/08/azure-east-us-outage-september-2026-chatgpt-claude-grok-uk-smes-multi-cloud-resilience/). The on-chain data suggests an insider-built launch. GMGN tags 91 bundler wallets and 45 insider (\\\"rat trader\\\") wallets. There is a 112-wallet transfer-linked insider cluster, and 123 wallets are flagged as graph insiders. The top 10 holders own about 96% (GeckoTerminal; this includes a Meteora DBC account holding about 80B tokens). GeckoTerminal also warns that the dev holds more than 10% and that liquidity is unlocked (https://www.geckoterminal.com/solana/pools/CzY4YYmwxPuZj96Y7UvUvTUo49X3csPhkMvAYUwekxrk).\",\"narrative\":{\"description\":\"This is a generic brand-name token using a big-tech brand (Microsoft Azure) with no specific current event behind it. It has no stated idea, no meme angle and no connection to any Microsoft announcement. Azure has been in the news recently (revenue figures over $100B and the Sep 3 outage), but those stories are 3 weeks old and gave this token nothing specific to hook onto.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The buying looks like launch-window flow: bot and degen traders reacting to volume, plus bundled insider wallets. It does not look like people sharing a story. There are 1,713 unique buyers against 152 unique sellers, but new buyer counts are falling fast: 1,193 in the last 30 minutes, 573 in the last 15 and 108 in the last 5 (GeckoTerminal data in the packet).\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only connection is the name. There's no official link to Microsoft, and nothing makes this contract the canonical 'Azure' token. The Solana tokens that actually track Microsoft are tokenized-stock products like MSFTx (https://solanacompass.com/tokens/microsoft), and they are unrelated to this one.\",\"competing_tokens\":\"The packet lists no same-name tokens on Solana. Other 'Azure' tokens exist elsewhere (for example AZR on CoinMarketCap, https://coinmarketcap.com/currencies/azure/), and tokenized MSFT exists on Solana. Anyone can launch another copy in minutes.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1) Launch and migration happened in the same second, which fits a pre-arranged launch that skipped the bonding curve. 2) GMGN flags 91 bundler wallets and 45 insider wallets, a 112-wallet transfer-linked insider network, and 123 graph insiders. 3) Top-10 holders own about 96%, and GeckoTerminal says the dev holds more than 10%. 4) GMGN shows 3 duplicate uses of the token's image, pointing to a recycled template. 5) There are no socials, no profile and no discussion I could find anywhere. 6) GMGN page visits are only 2, so real outside attention is minimal. There are no paid boosts, but with no socials at all, that tells us nothing about organic interest.\",\"uncertainty\":\"I couldn't search X directly, Reddit blocked my search tool, and private Telegram call groups are invisible to me. A private call group could be pushing it. That would still count as promotion, not organic attention. Also, the 96% top-10 figure includes pool and curve accounts, so real insider concentration is probably lower.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Most LP is unlocked (RugCheck marks this as danger) and there are few LP providers, so liquidity could be pulled\",\"A 112-wallet insider cluster and 91 bundlers hold supply they can sell into late buyers\",\"GeckoTerminal says the dev holds more than 10%, and the creator status is 'creator_close'\",\"A Meteora DBC account holds about 80B tokens (~60-80% of supply) and it's unclear what happens to them\",\"Hourly turnover of 9.5x the market cap is extremely high for a 36-minute-old token, which suggests wash trading or bot churn\",\"New buyer counts are falling sharply over the last 5-15 minutes\"]},\"counterargument\":\"Buyers far outnumber sellers (1,713 vs 152 unique wallets), so many real small wallets are buying, and a well-known brand name can keep drawing traders who pile into anything trending. Liquidity is fairly deep for the size (~$318K). Bundlers and insiders together hold only about 3-6% of top-trader share per GMGN rates. The GMGN top-10 holder rate is 1.5%, which suggests supply may be less concentrated than the GeckoTerminal figure makes it look. If a KOL or trending list picks it up, it could keep running for several hours even without a story behind it.\",\"unknowns\":[\"Posts on X that mention the contract: search engines index X poorly and I found nothing\",\"Whether private Telegram or KOL call groups are driving the buying\",\"The real supply held by insiders, since the pool and curve accounts are mixed into the top-10 figure\",\"What the 80B tokens in the Meteora DBC account are and whether they can be released\",\"Who funded the creator wallet (funded_from is null)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"inaccessible\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched X through web search using the contract address, the ticker and the name, with and without site:x.com, and found nothing relevant. Reddit is blocked for my search tool. The Telegram search found nothing. There is no Discord or other social link to check. The news I found covers Microsoft and Azure in general, weeks old and unrelated to the token. The project has no site or socials, and the DexScreener API confirms there are no links. The DexScreener, GMGN and Solscan web pages returned 403 errors, but the DexScreener API and GeckoTerminal both worked.\"},\"thesis\":\"This looks like noise. The token is a brand-name launch with no narrative, no socials and no current catalyst. It launched and migrated in the same second, and the insider structure is heavy (91 bundlers, a 112-wallet insider cluster) with unlocked LP. The volume looks like launch-window bot and insider churn, and new buyers are already dropping off. I expect attention to fade within the observation window.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.geckoterminal.com/solana/pools/CzY4YYmwxPuZj96Y7UvUvTUo49X3csPhkMvAYUwekxrk\",\"what\":\"Pool metrics, warning that the dev holds more than 10%, unlocked liquidity, and the Meteora DBC account holding 80B tokens\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/4VmVMmHBaAAoVW1N6fRK44kRNZxk4kmfoV9aBz4Zhuq2\",\"what\":\"Three pairs (PumpSwap, Meteora DYN2, Meteora DBC) and no socials or websites\"},{\"url\":\"https://solanacompass.com/tokens/microsoft\",\"what\":\"The actual Microsoft tokens on Solana are tokenized stocks (MSFTx), unrelated to this token\"},{\"url\":\"https://www.cnbc.com/2026/09/02/microsoft-to-disclose-azure-revenue-as-part-of-segment-changes.html\",\"what\":\"Azure revenue disclosure news from Sep 2, weeks old\"},{\"url\":\"https://www.meridian-micro.com/2026/09/08/azure-east-us-outage-september-2026-chatgpt-claude-grok-uk-smes-multi-cloud-resilience/\",\"what\":\"Azure outage on Sep 3, weeks old\"},{\"url\":\"https://coinmarketcap.com/currencies/azure/\",\"what\":\"A different, unrelated 'Azure' token, showing the name is not unique\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Microsoft Azure\" (ticker Microso) is about 38 minutes old. It launched through Meteora's bonding-curve launchpad and moved to a PumpSwap pool in the same second (created_unix = migrated_unix = 1790145453). In its first hour it traded about $3.0M, roughly 9.5x its ~$1.1M market cap. Price rose about 77% and is at its all-time high. There are no socials, no website, no DexScreener profile and no description (DexScreener API: https://api.dexscreener.com/latest/dex/tokens/4VmVMmHBaAAoVW1N6fRK44kRNZxk4kmfoV9aBz4Zhuq2). Web searches for the contract address, the ticker and the name found no posts on X, no news and no community discussion. Microsoft itself has no news today that would explain this. The Azure items I found are weeks old: the Sep 2 Azure revenue disclosure (https://www.cnbc.com/2026/09/02/microsoft-to-disclose-azure-revenue-as-part-of-segment-changes.html) and the Sep 3 outage (https://www.meridian-micro.com/2026/09/08/azure-east-us-outage-september-2026-chatgpt-claude-grok-uk-smes-multi-cloud-resilience/). The on-chain data suggests an insider-built launch. GMGN tags 91 bundler wallets and 45 insider (\"rat trader\") wallets. There is a 112-wallet transfer-linked insider cluster, and 123 wallets are flagged as graph insiders. The top 10 holders own about 96% (GeckoTerminal; this includes a Meteora DBC account holding about 80B tokens). GeckoTerminal also warns that the dev holds more than 10% and that liquidity is unlocked (https://www.geckoterminal.com/solana/pools/CzY4YYmwxPuZj96Y7UvUvTUo49X3csPhkMvAYUwekxrk).",
+  "narrative": {
+   "description": "This is a generic brand-name token using a big-tech brand (Microsoft Azure) with no specific current event behind it. It has no stated idea, no meme angle and no connection to any Microsoft announcement. Azure has been in the news recently (revenue figures over $100B and the Sep 3 outage), but those stories are 3 weeks old and gave this token nothing specific to hook onto.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The buying looks like launch-window flow: bot and degen traders reacting to volume, plus bundled insider wallets. It does not look like people sharing a story. There are 1,713 unique buyers against 152 unique sellers, but new buyer counts are falling fast: 1,193 in the last 30 minutes, 573 in the last 15 and 108 in the last 5 (GeckoTerminal data in the packet)."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only connection is the name. There's no official link to Microsoft, and nothing makes this contract the canonical 'Azure' token. The Solana tokens that actually track Microsoft are tokenized-stock products like MSFTx (https://solanacompass.com/tokens/microsoft), and they are unrelated to this one.",
+   "competing_tokens": "The packet lists no same-name tokens on Solana. Other 'Azure' tokens exist elsewhere (for example AZR on CoinMarketCap, https://coinmarketcap.com/currencies/azure/), and tokenized MSFT exists on Solana. Anyone can launch another copy in minutes.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1) Launch and migration happened in the same second, which fits a pre-arranged launch that skipped the bonding curve. 2) GMGN flags 91 bundler wallets and 45 insider wallets, a 112-wallet transfer-linked insider network, and 123 graph insiders. 3) Top-10 holders own about 96%, and GeckoTerminal says the dev holds more than 10%. 4) GMGN shows 3 duplicate uses of the token's image, pointing to a recycled template. 5) There are no socials, no profile and no discussion I could find anywhere. 6) GMGN page visits are only 2, so real outside attention is minimal. There are no paid boosts, but with no socials at all, that tells us nothing about organic interest.",
+   "uncertainty": "I couldn't search X directly, Reddit blocked my search tool, and private Telegram call groups are invisible to me. A private call group could be pushing it. That would still count as promotion, not organic attention. Also, the 96% top-10 figure includes pool and curve accounts, so real insider concentration is probably lower."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Most LP is unlocked (RugCheck marks this as danger) and there are few LP providers, so liquidity could be pulled",
+    "A 112-wallet insider cluster and 91 bundlers hold supply they can sell into late buyers",
+    "GeckoTerminal says the dev holds more than 10%, and the creator status is 'creator_close'",
+    "A Meteora DBC account holds about 80B tokens (~60-80% of supply) and it's unclear what happens to them",
+    "Hourly turnover of 9.5x the market cap is extremely high for a 36-minute-old token, which suggests wash trading or bot churn",
+    "New buyer counts are falling sharply over the last 5-15 minutes"
+   ]
+  },
+  "counterargument": "Buyers far outnumber sellers (1,713 vs 152 unique wallets), so many real small wallets are buying, and a well-known brand name can keep drawing traders who pile into anything trending. Liquidity is fairly deep for the size (~$318K). Bundlers and insiders together hold only about 3-6% of top-trader share per GMGN rates. The GMGN top-10 holder rate is 1.5%, which suggests supply may be less concentrated than the GeckoTerminal figure makes it look. If a KOL or trending list picks it up, it could keep running for several hours even without a story behind it.",
+  "unknowns": [
+   "Posts on X that mention the contract: search engines index X poorly and I found nothing",
+   "Whether private Telegram or KOL call groups are driving the buying",
+   "The real supply held by insiders, since the pool and curve accounts are mixed into the top-10 figure",
+   "What the 80B tokens in the Meteora DBC account are and whether they can be released",
+   "Who funded the creator wallet (funded_from is null)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "inaccessible",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched X through web search using the contract address, the ticker and the name, with and without site:x.com, and found nothing relevant. Reddit is blocked for my search tool. The Telegram search found nothing. There is no Discord or other social link to check. The news I found covers Microsoft and Azure in general, weeks old and unrelated to the token. The project has no site or socials, and the DexScreener API confirms there are no links. The DexScreener, GMGN and Solscan web pages returned 403 errors, but the DexScreener API and GeckoTerminal both worked."
+  },
+  "thesis": "This looks like noise. The token is a brand-name launch with no narrative, no socials and no current catalyst. It launched and migrated in the same second, and the insider structure is heavy (91 bundlers, a 112-wallet insider cluster) with unlocked LP. The volume looks like launch-window bot and insider churn, and new buyers are already dropping off. I expect attention to fade within the observation window.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/CzY4YYmwxPuZj96Y7UvUvTUo49X3csPhkMvAYUwekxrk",
+    "what": "Pool metrics, warning that the dev holds more than 10%, unlocked liquidity, and the Meteora DBC account holding 80B tokens"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/4VmVMmHBaAAoVW1N6fRK44kRNZxk4kmfoV9aBz4Zhuq2",
+    "what": "Three pairs (PumpSwap, Meteora DYN2, Meteora DBC) and no socials or websites"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/microsoft",
+    "what": "The actual Microsoft tokens on Solana are tokenized stocks (MSFTx), unrelated to this token"
+   },
+   {
+    "url": "https://www.cnbc.com/2026/09/02/microsoft-to-disclose-azure-revenue-as-part-of-segment-changes.html",
+    "what": "Azure revenue disclosure news from Sep 2, weeks old"
+   },
+   {
+    "url": "https://www.meridian-micro.com/2026/09/08/azure-east-us-outage-september-2026-chatgpt-claude-grok-uk-smes-multi-cloud-resilience/",
+    "what": "Azure outage on Sep 3, weeks old"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/azure/",
+    "what": "A different, unrelated 'Azure' token, showing the name is not unique"
+   }
+  ]
+ },
+ "ttft_ms": 1706,
+ "type": "result",
+ "duration_ms": 89107,
+ "uuid": "dce38182-d205-4010-8ab2-3eafd76a1120",
+ "ttft_stream_ms": 1224,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 1224,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

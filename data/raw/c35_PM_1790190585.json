@@ -1,0 +1,138 @@
+{
+ "duration_api_ms": 38206,
+ "stop_reason": "tool_use",
+ "session_id": "2f59e2ce-4616-4ac2-a3b8-eb28af61cf6c",
+ "total_cost_usd": 0.15732400000000002,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10172,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 3797,
+  "output_tokens_details": {
+   "thinking_tokens": 1103
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10172,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3797,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 10172,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10172
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3797,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 10172,
+   "webSearchRequests": 0,
+   "costUSD": 0.15732400000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1103,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The report's main framing held up. The token had run about 27x (+2,740% over 6h) in under 4 hours, to roughly $1.9\u20132.3M market cap on about $255\u2013280K liquidity. It had no organic discussion anywhere the researcher could see. That is the setup where fading is the base-rate expectation. The outcome followed it: -15% at 1h, -48% at 6h, -63% at 24h.\",\"The bonding curve migrated 31 seconds after creation (created 1790049607, migrated 1790049638), and GMGN tagged 173 bundler wallets, an 81% bot/degen rate and 511 fresh wallets. Together these point to manufactured launch demand rather than organic buyers. It is plausible this bore on the steady bleed, but one case cannot confirm it.\",\"There was no paid promotion and no demand from informed wallets: smart_money_signal_count was 0 and degen_call_count was 0. Nothing visible could have kept the price up after the first momentum died.\",\"The narrative was a copycat in a crowded sector: StonkFun, StockLaunch, Long.xyz and others. The platform was tiny, with 27 coins at about $19K\u2013$70K market cap. Nothing specific to X7 separated it from other 'next STONK' candidates. That lowers the odds of a durable re-rating, though the effect is weak over hours.\",\"The report's primary horizon was 6h, and its 'fade' call matched a -48% 6h return. The price first touched -20% at 12.9 minutes, and none of the +50/+100/+200% levels were ever touched.\"],\"misleading_observations\":[\"'Price already about 10% below ATH, sells ahead of buys' was stale by decision time. The report quoted $0.001748. At entry the quote was $0.002333 and the next bar opened at $0.002441, above the earlier ATH of $0.00198 and about 33\u201340% above the report's price. The microstructure evidence the report cited had already been reversed when the decision was made. The call came out right despite that evidence, not because of it.\",\"Sell transactions only slightly exceeded buys (m5 265 vs 223; h1 1,752 vs 1,730), which is close to parity. Unique buyers clearly outnumbered unique sellers (h1 830 vs 560; h6 1,382 vs 915). Counting transactions as selling pressure pointed the wrong way from the wallet-level data.\",\"'173 bundler wallets hold a potential supply overhang' was not well supported. The top-70 sniper hold rate was 0.07%, top-10 holders held about 18\u201325%, and the creator and dev held 0%. That suggests much of the bundled supply had already been distributed. The fade may have come from late-momentum exhaustion rather than an overhang being released.\",\"The insider-network token_pct values (32151980710857, 6050776227510) are clearly malformed units. Citing 'transfer-linked insider networks' as a risk relied on data that could not be interpreted.\",\"'Burn revenue is negligible' is true, but a tokenomics fundamental like that has almost no bearing on a 1\u20136h price path. It added the feel of rigor without predictive content for this horizon.\",\"The MFE within 6h was +40.6%. So even after the entry above ATH, the path had a sizeable upside excursion. 'Fade' was right about direction but did not describe the path; a trader with a tight stop could have been shaken out.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time clearly argued for 'continue'. But the price was about 33% higher at decision time than in the research snapshot, and it was making a new ATH. That should have led the report to either drop its 'slipping off ATH' argument or lower its confidence, rather than keep a momentum argument the data had invalidated.\",\"Pre-entry hourly volatility was about 67%, so one sigma over 6h is roughly \u00b1165%. A -48% move is well inside noise. 'Medium' confidence was reasonable only because of the base rate for parabolic runs, not because the specific structural flags carried much weight.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"The 6h return is negative in most cases, and the median is below -25%, for Solana tokens that meet all of the following at decision time: pair age under 6h, h6 price change above +1,000%, bonding-curve migration under 60 seconds after creation (GMGN migrated_unix minus created_unix), GMGN smart_money_signal_count = 0, and no active DexScreener paid boost or ad.\",\"conditions\":\"Apply only to tokens that have migrated from a launchpad bonding curve, have a market cap between $0.5M and $10M, and have GMGN data available. Compare against tokens with similar h6 price change that migrated after more than 10 minutes, to isolate the effect of instant migration.\",\"market_structure_rationale\":\"An instant curve fill means early supply is held by coordinated or bundled buyers whose cost basis is far below the market. After a 10x+ run with no informed or paid-attention inflow, marginal demand depends on late retail momentum, while early holders have a strong incentive to distribute.\"},{\"statement\":\"When the price at decision time differs from the research snapshot by more than 20%, snapshot-level order-flow claims do not predict the 1h return better than chance. These claims include m5/h1 buy vs sell transaction counts and distance from ATH.\",\"conditions\":\"Any case where the gap between T2 collection and T_decision is 15 minutes or more. Measure this by the sign agreement between the snapshot m5 buy-minus-sell imbalance and the 1h return, split by the size of the price drift.\",\"market_structure_rationale\":\"Memecoin microstructure flips within minutes when hourly volatility is above 50%, so order-flow data collected about 20 minutes before entry is likely stale.\"},{\"statement\":\"The ratio of h1 unique buyers to unique sellers predicts the 1h return better than the ratio of buy to sell transaction counts, for tokens with a GMGN bot/degen rate above 0.6.\",\"conditions\":\"Only tokens with GeckoTerminal unique-wallet data and a high bot share.\",\"market_structure_rationale\":\"Bots and bundlers inflate transaction counts with many small trades from a few wallets. Counting unique wallets is closer to counting distinct participants.\"}],\"summary\":\"The 'fade' call was right: -15% at 1h, -48% at 6h and -63% at 24h, with none of the +50% upside levels ever touched. The main reason held up: a 27x parabolic run in under 4 hours on a copycat launchpad token. Its bonding curve filled in 31 seconds, bot and bundler activity was heavy, and there were no smart-money signals, paid promotion or visible organic discussion. That setup has a strong base rate of fading.\\n\\nSeveral specific supporting points were misleading or stale. By decision time the price had risen about 33% above the report's quote and was above the earlier ATH, so the 'slipping off ATH, sells ahead of buys' argument no longer held. Transaction sell counts were near parity, while unique buyers clearly outnumbered sellers. The bundler-overhang claim conflicts with low sniper and top-holder concentration. The insider-network data had malformed units. The weak burn revenue has no bearing on a 6h price path.\\n\\nWith hourly volatility around 67%, the -48% outcome is within noise. The direction was partly predictable from the base rate, but the path was not: there was a +41% excursion within 6h. Overall the reasoning was good, but some of the stated evidence did not support the correct conclusion.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The report's main framing held up. The token had run about 27x (+2,740% over 6h) in under 4 hours, to roughly $1.9\u20132.3M market cap on about $255\u2013280K liquidity. It had no organic discussion anywhere the researcher could see. That is the setup where fading is the base-rate expectation. The outcome followed it: -15% at 1h, -48% at 6h, -63% at 24h.",
+   "The bonding curve migrated 31 seconds after creation (created 1790049607, migrated 1790049638), and GMGN tagged 173 bundler wallets, an 81% bot/degen rate and 511 fresh wallets. Together these point to manufactured launch demand rather than organic buyers. It is plausible this bore on the steady bleed, but one case cannot confirm it.",
+   "There was no paid promotion and no demand from informed wallets: smart_money_signal_count was 0 and degen_call_count was 0. Nothing visible could have kept the price up after the first momentum died.",
+   "The narrative was a copycat in a crowded sector: StonkFun, StockLaunch, Long.xyz and others. The platform was tiny, with 27 coins at about $19K\u2013$70K market cap. Nothing specific to X7 separated it from other 'next STONK' candidates. That lowers the odds of a durable re-rating, though the effect is weak over hours.",
+   "The report's primary horizon was 6h, and its 'fade' call matched a -48% 6h return. The price first touched -20% at 12.9 minutes, and none of the +50/+100/+200% levels were ever touched."
+  ],
+  "misleading_observations": [
+   "'Price already about 10% below ATH, sells ahead of buys' was stale by decision time. The report quoted $0.001748. At entry the quote was $0.002333 and the next bar opened at $0.002441, above the earlier ATH of $0.00198 and about 33\u201340% above the report's price. The microstructure evidence the report cited had already been reversed when the decision was made. The call came out right despite that evidence, not because of it.",
+   "Sell transactions only slightly exceeded buys (m5 265 vs 223; h1 1,752 vs 1,730), which is close to parity. Unique buyers clearly outnumbered unique sellers (h1 830 vs 560; h6 1,382 vs 915). Counting transactions as selling pressure pointed the wrong way from the wallet-level data.",
+   "'173 bundler wallets hold a potential supply overhang' was not well supported. The top-70 sniper hold rate was 0.07%, top-10 holders held about 18\u201325%, and the creator and dev held 0%. That suggests much of the bundled supply had already been distributed. The fade may have come from late-momentum exhaustion rather than an overhang being released.",
+   "The insider-network token_pct values (32151980710857, 6050776227510) are clearly malformed units. Citing 'transfer-linked insider networks' as a risk relied on data that could not be interpreted.",
+   "'Burn revenue is negligible' is true, but a tokenomics fundamental like that has almost no bearing on a 1\u20136h price path. It added the feel of rigor without predictive content for this horizon.",
+   "The MFE within 6h was +40.6%. So even after the entry above ATH, the path had a sizeable upside excursion. 'Fade' was right about direction but did not describe the path; a trader with a tight stop could have been shaken out."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time clearly argued for 'continue'. But the price was about 33% higher at decision time than in the research snapshot, and it was making a new ATH. That should have led the report to either drop its 'slipping off ATH' argument or lower its confidence, rather than keep a momentum argument the data had invalidated.",
+   "Pre-entry hourly volatility was about 67%, so one sigma over 6h is roughly \u00b1165%. A -48% move is well inside noise. 'Medium' confidence was reasonable only because of the base rate for parabolic runs, not because the specific structural flags carried much weight."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "The 6h return is negative in most cases, and the median is below -25%, for Solana tokens that meet all of the following at decision time: pair age under 6h, h6 price change above +1,000%, bonding-curve migration under 60 seconds after creation (GMGN migrated_unix minus created_unix), GMGN smart_money_signal_count = 0, and no active DexScreener paid boost or ad.",
+    "conditions": "Apply only to tokens that have migrated from a launchpad bonding curve, have a market cap between $0.5M and $10M, and have GMGN data available. Compare against tokens with similar h6 price change that migrated after more than 10 minutes, to isolate the effect of instant migration.",
+    "market_structure_rationale": "An instant curve fill means early supply is held by coordinated or bundled buyers whose cost basis is far below the market. After a 10x+ run with no informed or paid-attention inflow, marginal demand depends on late retail momentum, while early holders have a strong incentive to distribute."
+   },
+   {
+    "statement": "When the price at decision time differs from the research snapshot by more than 20%, snapshot-level order-flow claims do not predict the 1h return better than chance. These claims include m5/h1 buy vs sell transaction counts and distance from ATH.",
+    "conditions": "Any case where the gap between T2 collection and T_decision is 15 minutes or more. Measure this by the sign agreement between the snapshot m5 buy-minus-sell imbalance and the 1h return, split by the size of the price drift.",
+    "market_structure_rationale": "Memecoin microstructure flips within minutes when hourly volatility is above 50%, so order-flow data collected about 20 minutes before entry is likely stale."
+   },
+   {
+    "statement": "The ratio of h1 unique buyers to unique sellers predicts the 1h return better than the ratio of buy to sell transaction counts, for tokens with a GMGN bot/degen rate above 0.6.",
+    "conditions": "Only tokens with GeckoTerminal unique-wallet data and a high bot share.",
+    "market_structure_rationale": "Bots and bundlers inflate transaction counts with many small trades from a few wallets. Counting unique wallets is closer to counting distinct participants."
+   }
+  ],
+  "summary": "The 'fade' call was right: -15% at 1h, -48% at 6h and -63% at 24h, with none of the +50% upside levels ever touched. The main reason held up: a 27x parabolic run in under 4 hours on a copycat launchpad token. Its bonding curve filled in 31 seconds, bot and bundler activity was heavy, and there were no smart-money signals, paid promotion or visible organic discussion. That setup has a strong base rate of fading.\n\nSeveral specific supporting points were misleading or stale. By decision time the price had risen about 33% above the report's quote and was above the earlier ATH, so the 'slipping off ATH, sells ahead of buys' argument no longer held. Transaction sell counts were near parity, while unique buyers clearly outnumbered sellers. The bundler-overhang claim conflicts with low sniper and top-holder concentration. The insider-network data had malformed units. The weak burn revenue has no bearing on a 6h price path.\n\nWith hourly volatility around 67%, the -48% outcome is within noise. The direction was partly predictable from the base rate, but the path was not: there was a +41% excursion within 6h. Overall the reasoning was good, but some of the stated evidence did not support the correct conclusion."
+ },
+ "ttft_ms": 12370,
+ "type": "result",
+ "duration_ms": 38248,
+ "uuid": "8656d0cc-2ede-487d-aee8-cd84ce5f9be8",
+ "ttft_stream_ms": 632,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 632,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

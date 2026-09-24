@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 24029,
+ "stop_reason": "tool_use",
+ "session_id": "5ffbd4d5-eca9-4416-b4e8-b7bc36a0c66f",
+ "total_cost_usd": 0.1001156,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6342,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2450,
+  "output_tokens_details": {
+   "thinking_tokens": 329
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6342,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2450,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 6342,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6342
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2450,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 6342,
+   "webSearchRequests": 0,
+   "costUSD": 0.1001156,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 329,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 36-minute-old pumpswap token called \\\"Tesla\\\" (TSLA), launched through the meteora_virtual_curve launchpad, hit the activity trigger. In about 36 minutes it did $2.74M of volume against an $819K market cap and $188K of liquidity, and its price rose about 191%. It is the latest in a series of identical \\\"Tesla/TSLA\\\" clones launched over roughly the last 32 hours, using Tesla's real X handle and website as its \\\"socials\\\". At least 9 earlier clones now show $0 liquidity and no volume, which suggests they were rugged or abandoned after peaks of $1\u20134M market cap. Another TSLA clone (4nY1\u2026), launched about 37 minutes earlier, has more liquidity ($345K) and far more volume ($6.2M in the last hour), so this token is not even the leading clone in the current cycle. GMGN flags 204 bundler wallets, 20 snipers and a 35-wallet insider trade network. It also shows 8,537 tokens tied to the \\\"dev X account\\\", which is really the Tesla handle being reused by spam launches. Buyers far outnumber sellers (1,685 vs 163), a pattern typical of bundled or bot-driven early buying before distribution.\",\"narrative\":{\"description\":\"Impersonation of Tesla, the famous brand. There is no project-specific story: no website or socials of its own, only a link to tesla.com and the @Tesla handle. The token is a vehicle for a repeated clone cycle, not a narrative.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Brand recognition plus serial relaunches. Traders chasing the TSLA ticker rotate into each new clone, possibly helped by a Tesla/Elon news item, but the attention belongs to the ticker, not to this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None beyond being a fresh relaunch of the same name. It has no official link to Tesla and nothing ties it to any real event.\",\"competing_tokens\":\"At least 10 same-name TSLA tokens were created in the prior ~32h. Nine of them have $0 liquidity (peak market caps $1.1\u20134.3M). 4nY1fDwfG2xz\u2026 (created ~37 min earlier) has $345K liquidity and $6.2M volume in the last hour, outpacing this token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 204 bundler wallets, 20 snipers and 3 insider-tagged ('rat') wallets. There is a 35-wallet insider trade network. Top 10 holders own 94.9% (this may include the pool). There were 1,685 unique buyers vs 163 sellers. At least 9 earlier same-name clones went to zero liquidity. Five tokens reuse the same image. The 'dev X account' is linked to 8,537 launched tokens. There are no paid DexScreener promotions, but the whole setup looks like a serial launch-and-dump operation.\",\"uncertainty\":\"No X data is available, so a real Tesla news catalyst could be adding organic retail flow. GMGN's creator hold rate (0.12%) and top-10 rate (3.4%) conflict with GeckoTerminal's 94.9% top-10 figure. The LP-unlocked warning also conflicts with lp_burn_ratio 1.0.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Serial clone pattern: earlier TSLA copies all ended at $0 liquidity\",\"The liquidity lock status is contradictory: RugCheck warns that LP is unlocked and there are few LP providers\",\"204 bundler wallets and a 35-wallet insider network could dump into the retail buying\",\"A stronger same-ticker competitor is pulling flow away\",\"Hourly turnover of 14.6\u00d7 the market cap is churn, not accumulation; the 5-minute price change has already slowed to +6%\"]},\"counterargument\":\"Tesla/TSLA is one of the most recognizable tickers there is. If a real catalyst is running (Tesla news, an Elon post, tokenized-stock hype), flow could concentrate in one clone and push it well past earlier peaks. Buyers still outnumber sellers about 1.6:1 in the last 5 minutes, the pool is deep ($188K), mint and freeze authority are renounced, and the LP may be burned (lp_burn_ratio 1.0). The token could run toward $2\u20135M before fading.\",\"unknowns\":[\"Whether a real Tesla or Elon news event is driving the TSLA clone wave\",\"Whether the LP is actually burned or can be pulled\",\"Whether the bundler wallets still hold a large supply\",\"How flow will split between this token and the 4nY1 clone\",\"Whether promotion is happening in call channels or on X\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This assessment relies only on the evidence packet.\"},\"thesis\":\"This is a brand-impersonation clone in a fast launch-and-rug series. The ticker's attention is spread across many copies, and the earlier ones all went to zero liquidity. Heavy bundler and insider activity, together with a stronger same-name competitor, make fading or a rug the likely outcome over the next few hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 36-minute-old pumpswap token called \"Tesla\" (TSLA), launched through the meteora_virtual_curve launchpad, hit the activity trigger. In about 36 minutes it did $2.74M of volume against an $819K market cap and $188K of liquidity, and its price rose about 191%. It is the latest in a series of identical \"Tesla/TSLA\" clones launched over roughly the last 32 hours, using Tesla's real X handle and website as its \"socials\". At least 9 earlier clones now show $0 liquidity and no volume, which suggests they were rugged or abandoned after peaks of $1\u20134M market cap. Another TSLA clone (4nY1\u2026), launched about 37 minutes earlier, has more liquidity ($345K) and far more volume ($6.2M in the last hour), so this token is not even the leading clone in the current cycle. GMGN flags 204 bundler wallets, 20 snipers and a 35-wallet insider trade network. It also shows 8,537 tokens tied to the \"dev X account\", which is really the Tesla handle being reused by spam launches. Buyers far outnumber sellers (1,685 vs 163), a pattern typical of bundled or bot-driven early buying before distribution.",
+  "narrative": {
+   "description": "Impersonation of Tesla, the famous brand. There is no project-specific story: no website or socials of its own, only a link to tesla.com and the @Tesla handle. The token is a vehicle for a repeated clone cycle, not a narrative.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Brand recognition plus serial relaunches. Traders chasing the TSLA ticker rotate into each new clone, possibly helped by a Tesla/Elon news item, but the attention belongs to the ticker, not to this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None beyond being a fresh relaunch of the same name. It has no official link to Tesla and nothing ties it to any real event.",
+   "competing_tokens": "At least 10 same-name TSLA tokens were created in the prior ~32h. Nine of them have $0 liquidity (peak market caps $1.1\u20134.3M). 4nY1fDwfG2xz\u2026 (created ~37 min earlier) has $345K liquidity and $6.2M volume in the last hour, outpacing this token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 204 bundler wallets, 20 snipers and 3 insider-tagged ('rat') wallets. There is a 35-wallet insider trade network. Top 10 holders own 94.9% (this may include the pool). There were 1,685 unique buyers vs 163 sellers. At least 9 earlier same-name clones went to zero liquidity. Five tokens reuse the same image. The 'dev X account' is linked to 8,537 launched tokens. There are no paid DexScreener promotions, but the whole setup looks like a serial launch-and-dump operation.",
+   "uncertainty": "No X data is available, so a real Tesla news catalyst could be adding organic retail flow. GMGN's creator hold rate (0.12%) and top-10 rate (3.4%) conflict with GeckoTerminal's 94.9% top-10 figure. The LP-unlocked warning also conflicts with lp_burn_ratio 1.0."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Serial clone pattern: earlier TSLA copies all ended at $0 liquidity",
+    "The liquidity lock status is contradictory: RugCheck warns that LP is unlocked and there are few LP providers",
+    "204 bundler wallets and a 35-wallet insider network could dump into the retail buying",
+    "A stronger same-ticker competitor is pulling flow away",
+    "Hourly turnover of 14.6\u00d7 the market cap is churn, not accumulation; the 5-minute price change has already slowed to +6%"
+   ]
+  },
+  "counterargument": "Tesla/TSLA is one of the most recognizable tickers there is. If a real catalyst is running (Tesla news, an Elon post, tokenized-stock hype), flow could concentrate in one clone and push it well past earlier peaks. Buyers still outnumber sellers about 1.6:1 in the last 5 minutes, the pool is deep ($188K), mint and freeze authority are renounced, and the LP may be burned (lp_burn_ratio 1.0). The token could run toward $2\u20135M before fading.",
+  "unknowns": [
+   "Whether a real Tesla or Elon news event is driving the TSLA clone wave",
+   "Whether the LP is actually burned or can be pulled",
+   "Whether the bundler wallets still hold a large supply",
+   "How flow will split between this token and the 4nY1 clone",
+   "Whether promotion is happening in call channels or on X"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This assessment relies only on the evidence packet."
+  },
+  "thesis": "This is a brand-impersonation clone in a fast launch-and-rug series. The ticker's attention is spread across many copies, and the earlier ones all went to zero liquidity. Heavy bundler and insider activity, together with a stronger same-name competitor, make fading or a rug the likely outcome over the next few hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4389,
+ "type": "result",
+ "duration_ms": 24074,
+ "uuid": "d940486b-8bf7-4805-a9b7-3699d37ee6b7",
+ "ttft_stream_ms": 728,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 728,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

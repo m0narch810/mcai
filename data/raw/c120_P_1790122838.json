@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 43075,
+ "stop_reason": "tool_use",
+ "session_id": "7a8187d8-8cb7-4863-90ac-a42f29cebfdc",
+ "total_cost_usd": 0.1642778,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 7905,
+  "cache_read_input_tokens": 10109,
+  "output_tokens": 4950,
+  "output_tokens_details": {
+   "thinking_tokens": 387
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7905,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2016,
+    "cache_read_input_tokens": 8251,
+    "cache_creation_input_tokens": 1512,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1512
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 4950,
+   "cacheReadInputTokens": 10109,
+   "cacheCreationInputTokens": 7905,
+   "webSearchRequests": 0,
+   "costUSD": 0.1642778,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 387,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called TSLA/\\\"Tesla\\\" launched about 40 minutes ago. It started on a Meteora virtual curve and moved straight to its own pool (created and migrated at the same second). In the first hour it traded about $3.9M with around $318k liquidity and a market cap of about $1.1M, and the price rose about 77%. Its only 'socials' are Tesla's own X handle and tesla.com, so it borrows the brand and has no project behind it. The packet lists about 10 other TSLA/Tesla tokens launched in the past ~26 hours. All now have zero liquidity, including one launched about 3 hours earlier that did $1M in 1-hour volume.\",\"narrative\":{\"description\":\"A borrowed-brand token for Tesla / Elon Musk. It has no original story or community, and its links point to Tesla's official accounts.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Tesla is a well-known ticker and traders chase fresh launches; the flow also looks bundled or bot-driven. The same name has been re-launched many times in the past day, so the draw is the recycled ticker, not a new narrative. There may be an outside Musk or Tesla news trigger, but I can't check that without internet access.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most liquidity and volume of the TSLA launches. That is the only reason this one stands out; it has no official or unique tie to Tesla.\",\"competing_tokens\":\"At least 7 other TSLA/Tesla tokens plus variants ('TSLA AI', 'Tesla' with a moon emoji) were launched in the past ~26 hours, all now at zero liquidity. Examples: 3gAX... (market cap $4.3M, dead), E5zE... ($2.0M, dead), and 54pN... ($1M 1-hour volume about 3 hours ago, now zero liquidity).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 53 bundler wallets and 60 rat-trader (insider) wallets. Graph analysis found 112 insiders, including a 74-wallet transfer network. GeckoTerminal counts 2,280 unique buyers but only 104 unique sellers, so a small group of wallets is selling into a wide pool of buyers, which looks like insider distribution. The 1-hour volume was about 12x liquidity, which suggests bot or wash volume. There is no DexScreener profile or paid promotion. The logo image appears 3 times elsewhere. Repeated TSLA launches that die within hours point to a serial launch-pump-dump operation.\",\"uncertainty\":\"GMGN's rates are low (bundler share 4.1%, top-10 holder rate 1.95%), which conflicts with GeckoTerminal's 96% top-10 figure. The GeckoTerminal number probably includes pool accounts. I have no X data, so I can't rule out a real Tesla news trigger.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags a large amount of unlocked LP on one of the top markets and very few LP providers, so liquidity can be pulled.\",\"The GMGN creator status is 'creator_close'.\",\"GeckoTerminal puts the top-10 holders at 96% (may include pools), and graph analysis found 112 insider wallets.\",\"Only 104 unique sellers against 2,280 unique buyers, so selling is concentrated in a few wallets.\",\"12x hourly turnover suggests bot-driven volume.\",\"Many identical-ticker copies, all of which have gone to zero liquidity.\"]},\"counterargument\":\"The volume is real and large: over 2,000 unique buyers in the first hour, a 77% price gain, and liquidity above $300k is unusually deep for a token 37 minutes old. If a real Tesla or Musk news event is driving demand for Tesla-named tokens, the deepest-liquidity version can become the one traders settle on and keep running. Mint and freeze authority are renounced, GMGN reports the LP as fully burned, and the dev holds nothing.\",\"unknowns\":[\"Whether there is a real Tesla or Musk news trigger right now\",\"Whether GMGN's 'LP burned' reading or RugCheck's 'LP unlocked' warning is correct\",\"Who the 104 sellers are and how much supply they still hold\",\"Whether this is the same operator as the earlier TSLA launches\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The report uses only the evidence packet.\"},\"thesis\":\"This is a recycled, borrowed-brand TSLA launch, about the tenth in a day. It shows coordinated insider and bundler activity, very lopsided seller concentration, and bot-level turnover. Earlier copies all went to zero liquidity within hours, so I expect this one to fade sharply within the next few hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called TSLA/\"Tesla\" launched about 40 minutes ago. It started on a Meteora virtual curve and moved straight to its own pool (created and migrated at the same second). In the first hour it traded about $3.9M with around $318k liquidity and a market cap of about $1.1M, and the price rose about 77%. Its only 'socials' are Tesla's own X handle and tesla.com, so it borrows the brand and has no project behind it. The packet lists about 10 other TSLA/Tesla tokens launched in the past ~26 hours. All now have zero liquidity, including one launched about 3 hours earlier that did $1M in 1-hour volume.",
+  "narrative": {
+   "description": "A borrowed-brand token for Tesla / Elon Musk. It has no original story or community, and its links point to Tesla's official accounts.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Tesla is a well-known ticker and traders chase fresh launches; the flow also looks bundled or bot-driven. The same name has been re-launched many times in the past day, so the draw is the recycled ticker, not a new narrative. There may be an outside Musk or Tesla news trigger, but I can't check that without internet access."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most liquidity and volume of the TSLA launches. That is the only reason this one stands out; it has no official or unique tie to Tesla.",
+   "competing_tokens": "At least 7 other TSLA/Tesla tokens plus variants ('TSLA AI', 'Tesla' with a moon emoji) were launched in the past ~26 hours, all now at zero liquidity. Examples: 3gAX... (market cap $4.3M, dead), E5zE... ($2.0M, dead), and 54pN... ($1M 1-hour volume about 3 hours ago, now zero liquidity).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 53 bundler wallets and 60 rat-trader (insider) wallets. Graph analysis found 112 insiders, including a 74-wallet transfer network. GeckoTerminal counts 2,280 unique buyers but only 104 unique sellers, so a small group of wallets is selling into a wide pool of buyers, which looks like insider distribution. The 1-hour volume was about 12x liquidity, which suggests bot or wash volume. There is no DexScreener profile or paid promotion. The logo image appears 3 times elsewhere. Repeated TSLA launches that die within hours point to a serial launch-pump-dump operation.",
+   "uncertainty": "GMGN's rates are low (bundler share 4.1%, top-10 holder rate 1.95%), which conflicts with GeckoTerminal's 96% top-10 figure. The GeckoTerminal number probably includes pool accounts. I have no X data, so I can't rule out a real Tesla news trigger."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags a large amount of unlocked LP on one of the top markets and very few LP providers, so liquidity can be pulled.",
+    "The GMGN creator status is 'creator_close'.",
+    "GeckoTerminal puts the top-10 holders at 96% (may include pools), and graph analysis found 112 insider wallets.",
+    "Only 104 unique sellers against 2,280 unique buyers, so selling is concentrated in a few wallets.",
+    "12x hourly turnover suggests bot-driven volume.",
+    "Many identical-ticker copies, all of which have gone to zero liquidity."
+   ]
+  },
+  "counterargument": "The volume is real and large: over 2,000 unique buyers in the first hour, a 77% price gain, and liquidity above $300k is unusually deep for a token 37 minutes old. If a real Tesla or Musk news event is driving demand for Tesla-named tokens, the deepest-liquidity version can become the one traders settle on and keep running. Mint and freeze authority are renounced, GMGN reports the LP as fully burned, and the dev holds nothing.",
+  "unknowns": [
+   "Whether there is a real Tesla or Musk news trigger right now",
+   "Whether GMGN's 'LP burned' reading or RugCheck's 'LP unlocked' warning is correct",
+   "Who the 104 sellers are and how much supply they still hold",
+   "Whether this is the same operator as the earlier TSLA launches"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The report uses only the evidence packet."
+  },
+  "thesis": "This is a recycled, borrowed-brand TSLA launch, about the tenth in a day. It shows coordinated insider and bundler activity, very lopsided seller concentration, and bot-level turnover. Earlier copies all went to zero liquidity within hours, so I expect this one to fade sharply within the next few hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4848,
+ "type": "result",
+ "duration_ms": 43123,
+ "uuid": "51fcacac-0e48-4cd3-a5a7-dd2dc1963897",
+ "ttft_stream_ms": 647,
+ "time_to_request_ms": 34,
+ "first_content_frame_ms": 647,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,162 @@
+{
+ "duration_api_ms": 37157,
+ "stop_reason": "tool_use",
+ "session_id": "e053b7ca-a3ca-4cbc-97c0-2a57dc23455a",
+ "total_cost_usd": 0.1751424,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 8913,
+  "cache_read_input_tokens": 9437,
+  "output_tokens": 2779,
+  "output_tokens_details": {
+   "thinking_tokens": 237
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8913,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2579,
+    "cache_read_input_tokens": 7975,
+    "cache_creation_input_tokens": 2400,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2400
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2779,
+   "cacheReadInputTokens": 9437,
+   "cacheCreationInputTokens": 8913,
+   "webSearchRequests": 0,
+   "costUSD": 0.1287874,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 237,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22575,
+   "outputTokens": 756,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.046355,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This is a ticker hijack of someone else's news, riding a one-off catalyst. The token is named \\\"AnthropicAI\\\" with ticker \\\"Anthropic\\\". It has no project website, no DexScreener profile and no description. The X handle it lists, @AnthropicAI, is the real company's account, which has nothing to do with this token. Web search shows the likely trigger: Anthropic launched Claude Opus 5.5 on Sept 22, 2026. The token appeared within hours of that news, so this looks like a news-driven launch rather than a narrative the token owns.\\n\\nThe copycat pattern is heavy:\\n- The packet lists at least 10 other Solana tokens named AnthropicAI or Anthropic. Their liquidity is near zero (from $0.04 to $13) even though some show $1.6M to $80M \\\"market caps\\\".\\n- Two of those clones launched only 2\u20136 minutes before this pair.\\n- GMGN counts 700 duplicates of the token's image.\\n- RugCheck flags it as a \\\"Copycat token\\\".\\n\\nThe earlier clones died, and this one is likely to follow once attention moves on.\\n\\nThe holder structure points to a coordinated launch:\\n- 153 insider wallets detected by graph analysis, forming transfer-linked clusters of 64, 26, 25, 26 and 7 wallets.\\n- GMGN tags 75 bundler wallets and 97 \\\"rat trader\\\" (insider) wallets.\\n- The top 10 holders own 96.2% by GeckoTerminal's count. This may include the pool, so treat it cautiously.\\n- The creator wallet has closed its position (\\\"creator_close\\\"). Token creation and migration happened in the same second, which suggests a pre-arranged migration on Meteora's launchpad rather than organic bonding-curve demand.\\n- RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\". GMGN instead reports lp_burn_ratio 1.0, and the two sources conflict.\\n\\nThe trading pattern is lopsided. There were 1,550 unique buyers but only 158 unique sellers, with volume of $2.9M against a $1.05M market cap (9.5x turnover in the first hour). That fits clustered wallets holding supply while late buyers pile in, before a distribution phase. There are no smart-money or KOL wallets and zero smart-money signals.\",\"red_flags\":[\"Ticker/name hijack of Anthropic; lists the real company's @AnthropicAI X handle with no affiliation\",\"Copycat token flag from RugCheck; 700 duplicates of the token's image (GMGN)\",\"10+ same-name clones, several launched minutes earlier, now with near-zero liquidity\",\"Launch looks timed to the Claude Opus 5.5 news on Sept 22, 2026, a one-off catalyst\",\"153 graph-detected insider wallets in transfer-linked clusters (largest: 64 wallets)\",\"75 bundler wallets and 97 rat-trader (insider) wallets tagged by GMGN\",\"Top 10 holders own 96.2% (may include pool)\",\"Creator has closed its position; creation and migration happened in the same second\",\"RugCheck: large amount of LP unlocked and few LP providers (conflicts with GMGN lp_burn 1.0)\",\"Buyer-to-seller imbalance (1,550 vs 158 unique) with 9.5x hourly turnover, consistent with a pre-distribution setup\",\"No website, no DexScreener profile, zero smart-money or KOL wallets\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"Several things would weaken this case:\\n- A clear consensus among traders that this contract is \\\"the\\\" Anthropic token, with sustained volume after the Opus 5.5 news cycle fades.\\n- The insider and bundler clusters holding or selling slowly instead of dumping.\\n- Confirmation that the LP is actually burned (GMGN's 1.0 figure) and that the 96% top-10 figure is mostly the pool.\\n- Unique seller counts rising while price holds above roughly $1M market cap for several days.\\n- Any real acknowledgement from Anthropic. This is extremely unlikely.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"Time was limited to 2 web searches:\\n- The first search confirmed the likely catalyst: the Claude Opus 5.5 launch on Sept 22, 2026, per news aggregators.\\n- The second search found several other AnthropicAI Solana contracts on Phantom, GeckoTerminal and CoinSwitch. It also found a DL News article on the separate Anthropic \\\"PreStocks\\\" token, which is illiquid.\\n- No results mentioned this specific contract, BiJBX\u2026.\\n\\nI did not access X, Telegram or Discord, so I could not check for coordinated calls or KOL promotion. There is also no X data in the packet. The top-10 concentration may include pool accounts. LP lock status conflicts between RugCheck (unlocked) and GMGN (burned).\",\"sources\":[{\"url\":\"https://aiweekly.co/ai-news-today\",\"what\":\"Sept 22 AI news, including the Anthropic Claude Opus 5.5 launch (likely catalyst)\"},{\"url\":\"https://github.com/yaojiejia/agents-radar/issues/174\",\"what\":\"Official AI content report for 2026-09-22 (Anthropic announcements)\"},{\"url\":\"https://www.anthropic.com/news\",\"what\":\"Anthropic newsroom; no crypto token affiliation\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/BQkSjpMAVSrR9UPP3RwCwnLwAKge7fVQS8AeFy4nnoUQ\",\"what\":\"Another AnthropicAI/SOL PumpSwap pool: a dead clone with $0 volume\"},{\"url\":\"https://phantom.com/tokens/solana/63fKC23v4N2NWgek4AD1jY6JVANVU7zNy5VJzy1mpump\",\"what\":\"Another AnthropicAI clone token on Solana\"},{\"url\":\"https://coinswitch.co/web3/anthropic-GzU5HLYfM4LBHCkZkzC33g2RTrwXNEwrzoJKa5uJ421p\",\"what\":\"Another AnthropicAI (ANTHROPIC) clone on Solana\"},{\"url\":\"https://www.dlnews.com/articles/defi/prestocks-anthropic-token-lacks-liquidity-to-cash-out/\",\"what\":\"DL News on the separate Anthropic PreStocks token and its illiquidity\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This is a ticker hijack of someone else's news, riding a one-off catalyst. The token is named \"AnthropicAI\" with ticker \"Anthropic\". It has no project website, no DexScreener profile and no description. The X handle it lists, @AnthropicAI, is the real company's account, which has nothing to do with this token. Web search shows the likely trigger: Anthropic launched Claude Opus 5.5 on Sept 22, 2026. The token appeared within hours of that news, so this looks like a news-driven launch rather than a narrative the token owns.\n\nThe copycat pattern is heavy:\n- The packet lists at least 10 other Solana tokens named AnthropicAI or Anthropic. Their liquidity is near zero (from $0.04 to $13) even though some show $1.6M to $80M \"market caps\".\n- Two of those clones launched only 2\u20136 minutes before this pair.\n- GMGN counts 700 duplicates of the token's image.\n- RugCheck flags it as a \"Copycat token\".\n\nThe earlier clones died, and this one is likely to follow once attention moves on.\n\nThe holder structure points to a coordinated launch:\n- 153 insider wallets detected by graph analysis, forming transfer-linked clusters of 64, 26, 25, 26 and 7 wallets.\n- GMGN tags 75 bundler wallets and 97 \"rat trader\" (insider) wallets.\n- The top 10 holders own 96.2% by GeckoTerminal's count. This may include the pool, so treat it cautiously.\n- The creator wallet has closed its position (\"creator_close\"). Token creation and migration happened in the same second, which suggests a pre-arranged migration on Meteora's launchpad rather than organic bonding-curve demand.\n- RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\". GMGN instead reports lp_burn_ratio 1.0, and the two sources conflict.\n\nThe trading pattern is lopsided. There were 1,550 unique buyers but only 158 unique sellers, with volume of $2.9M against a $1.05M market cap (9.5x turnover in the first hour). That fits clustered wallets holding supply while late buyers pile in, before a distribution phase. There are no smart-money or KOL wallets and zero smart-money signals.",
+  "red_flags": [
+   "Ticker/name hijack of Anthropic; lists the real company's @AnthropicAI X handle with no affiliation",
+   "Copycat token flag from RugCheck; 700 duplicates of the token's image (GMGN)",
+   "10+ same-name clones, several launched minutes earlier, now with near-zero liquidity",
+   "Launch looks timed to the Claude Opus 5.5 news on Sept 22, 2026, a one-off catalyst",
+   "153 graph-detected insider wallets in transfer-linked clusters (largest: 64 wallets)",
+   "75 bundler wallets and 97 rat-trader (insider) wallets tagged by GMGN",
+   "Top 10 holders own 96.2% (may include pool)",
+   "Creator has closed its position; creation and migration happened in the same second",
+   "RugCheck: large amount of LP unlocked and few LP providers (conflicts with GMGN lp_burn 1.0)",
+   "Buyer-to-seller imbalance (1,550 vs 158 unique) with 9.5x hourly turnover, consistent with a pre-distribution setup",
+   "No website, no DexScreener profile, zero smart-money or KOL wallets"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "Several things would weaken this case:\n- A clear consensus among traders that this contract is \"the\" Anthropic token, with sustained volume after the Opus 5.5 news cycle fades.\n- The insider and bundler clusters holding or selling slowly instead of dumping.\n- Confirmation that the LP is actually burned (GMGN's 1.0 figure) and that the 96% top-10 figure is mostly the pool.\n- Unique seller counts rising while price holds above roughly $1M market cap for several days.\n- Any real acknowledgement from Anthropic. This is extremely unlikely.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "Time was limited to 2 web searches:\n- The first search confirmed the likely catalyst: the Claude Opus 5.5 launch on Sept 22, 2026, per news aggregators.\n- The second search found several other AnthropicAI Solana contracts on Phantom, GeckoTerminal and CoinSwitch. It also found a DL News article on the separate Anthropic \"PreStocks\" token, which is illiquid.\n- No results mentioned this specific contract, BiJBX\u2026.\n\nI did not access X, Telegram or Discord, so I could not check for coordinated calls or KOL promotion. There is also no X data in the packet. The top-10 concentration may include pool accounts. LP lock status conflicts between RugCheck (unlocked) and GMGN (burned).",
+  "sources": [
+   {
+    "url": "https://aiweekly.co/ai-news-today",
+    "what": "Sept 22 AI news, including the Anthropic Claude Opus 5.5 launch (likely catalyst)"
+   },
+   {
+    "url": "https://github.com/yaojiejia/agents-radar/issues/174",
+    "what": "Official AI content report for 2026-09-22 (Anthropic announcements)"
+   },
+   {
+    "url": "https://www.anthropic.com/news",
+    "what": "Anthropic newsroom; no crypto token affiliation"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/BQkSjpMAVSrR9UPP3RwCwnLwAKge7fVQS8AeFy4nnoUQ",
+    "what": "Another AnthropicAI/SOL PumpSwap pool: a dead clone with $0 volume"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/63fKC23v4N2NWgek4AD1jY6JVANVU7zNy5VJzy1mpump",
+    "what": "Another AnthropicAI clone token on Solana"
+   },
+   {
+    "url": "https://coinswitch.co/web3/anthropic-GzU5HLYfM4LBHCkZkzC33g2RTrwXNEwrzoJKa5uJ421p",
+    "what": "Another AnthropicAI (ANTHROPIC) clone on Solana"
+   },
+   {
+    "url": "https://www.dlnews.com/articles/defi/prestocks-anthropic-token-lacks-liquidity-to-cash-out/",
+    "what": "DL News on the separate Anthropic PreStocks token and its illiquidity"
+   }
+  ]
+ },
+ "ttft_ms": 1232,
+ "type": "result",
+ "duration_ms": 32014,
+ "uuid": "f29966b3-18f2-4de3-8af3-c0bc355cafbf",
+ "ttft_stream_ms": 623,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 623,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

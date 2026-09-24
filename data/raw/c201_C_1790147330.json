@@ -1,0 +1,189 @@
+{
+ "duration_api_ms": 112426,
+ "stop_reason": "tool_use",
+ "session_id": "4082d9fe-df21-4c53-97b5-a79897ba279b",
+ "total_cost_usd": 0.4399679999999999,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 16171,
+  "cache_read_input_tokens": 85215,
+  "output_tokens": 7754,
+  "output_tokens_details": {
+   "thinking_tokens": 658
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16171,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2674,
+    "cache_read_input_tokens": 17403,
+    "cache_creation_input_tokens": 1268,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1268
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 7754,
+   "cacheReadInputTokens": 85215,
+   "cacheCreationInputTokens": 16171,
+   "webSearchRequests": 0,
+   "costUSD": 0.301547,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 658,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 74981,
+   "outputTokens": 2688,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.138421,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 15,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 51-minute-old Solana PumpSwap pair called ARGUS 'Argus' traded about $1.5M in volume in its first hour and rose 70-114%. It borrows the identity of Argus (@Arguspad), the leading token launchpad on Circle's Arc L1. That project's ARGUS token launched Sept 2, 2026 and reached a $38M market cap after Arc mainnet opened on Sept 16. GeckoTerminal links this Solana pool to @arguspad and argus.world. I found nothing from Argus announcing a Solana token. The Argus sites were behind traffic checks, and a KuCoin write-up of Argus doesn't mention Solana. The pool was seeded directly on PumpSwap with about 187 SOL, not through a pump.fun bonding curve (launchpad null, migrated 0). Liquidity (about $41-44K) is larger than market cap (about $29-33K), the pool holds about 666M tokens, and the LP is 0% locked or burned. Trade flow is lopsided: 2,061 unique buyers against only 59 unique sellers. Those 59 sellers made about 1,500 sells, which points to a small group selling into a wide set of small buyers. That could be buy bots, or people who think this is an official Solana listing of the Arc token.\",\"narrative\":{\"description\":\"The borrowed story is the real Argus launchpad on Circle's Arc chain, which was the first breakout of the Arc era in September 2026. On Solana, this is a copycat or impersonation token, not an extension of the project.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The Arc/Argus story is real and recent, which likely makes people searching ARGUS on Solana think they've found an early or bridged listing. I found no organic Solana discussion of this contract on X, Reddit, Telegram or news. The flow of 2,061 buyers against 59 sellers looks more like engineered distribution than organic spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its only link is the name and ticker plus a GeckoTerminal social field pointing to @arguspad and argus.world. Anyone deploying a token can set that field. Argus is an Arc-native launchpad, and I found no Solana deployment announced by the project.\",\"competing_tokens\":\"The canonical ARGUS is on Arc (CoinMarketCap: argus-arc, about $20M market cap). On Solana there are at least 4 other same-name ARGUS tokens, including two with claimed $16-20M liquidity and zero volume, which looks like fake or unusable liquidity. There is also an 'Arguspad' token (HV31t3...) with 35 holders. This one is just one copycat among many.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 59 unique sellers made about 1,500 sells, against 2,061 unique buyers. The creator seeded a PumpSwap pool directly with about 187 SOL, the LP is unlocked (RugCheck: 'Large Amount of LP Unlocked', 'Low amount of LP Providers'), GeckoTerminal says the dev holds over 10%, and GT's security score is 47/100. The social links borrow the real Arc project's handle. GMGN shows no smart or renowned wallets and no calls. I found no organic posts about the contract.\",\"uncertainty\":\"GMGN shows 0 bundlers, 0 snipers and a 0% bot/degen rate, and I couldn't see X directly (402 error), so there could be real retail confusion flow. The buyer/seller asymmetry could partly be a GeckoTerminal counting artifact.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 0% locked or burned, so the creator can pull about $41K of liquidity at any time\",\"Top 10 holders hold 91% (including the pool, which holds about 66% of supply)\",\"Liquidity is larger than market cap on a non-pump.fun pool the dev seeded directly\",\"59 sellers are selling steadily into 2,000+ buyers\",\"Price already fell 28% over the last 15 minutes, from an ATH of about $6.66e-5 to $2.9e-5\",\"It impersonates a real project, which invites a denial from Argus and the price dropping\"]},\"counterargument\":\"Arc/Argus is a hot, real, very recent story, and Solana traders often push up bridged or ticker-matched plays. More than 2,000 unique buyers in an hour is real breadth, and GMGN flags no bundlers or snipers. If Argus ever acknowledged a Solana presence, or if the confusion spreads, volume could last longer than the window.\",\"unknowns\":[\"Whether Argus/@Arguspad has said anything about Solana (X was inaccessible)\",\"Who seeded the 187 SOL of LP, and whether it will be pulled\",\"Whether the 2,061 buyers are real people or bot-generated\",\"Private Telegram call-channel activity\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"X returned 402. The contract-address search returned nothing. News coverage exists only for the Arc-chain Argus. arguspad.io and argus.world showed only traffic checks. DexScreener returned 403, and GeckoTerminal fetched fine.\"},\"thesis\":\"A Solana copycat of Argus, the real Arc-chain launchpad. The creator seeded the pool with liquidity that isn't locked, and a small group of sellers is selling steadily into many buyers. There is no canonical link and no organic discussion. It has high rug and fade risk.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://airdropalert.com/blogs/what-is-argus/\",\"what\":\"The real Argus is an Arc launchpad, launched Sept 2, with a $38M market cap peak\"},{\"url\":\"https://coinmarketcap.com/currencies/argus-arc/\",\"what\":\"Canonical ARGUS on Arc\"},{\"url\":\"https://github.com/arguspad/argus-world\",\"what\":\"Official repo: an Arc launchpad\"},{\"url\":\"https://www.kucoin.com/news/insight/USDC/6aaab0967d10fa0007cdee20\",\"what\":\"Argus coverage with no mention of Solana\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/4NXc63yUdsMQMNycswMq9tK4sFxfuRdSNN5Sa3wjx5Mp\",\"what\":\"Pool data, @arguspad social field, dev holds over 10%, LP unlocked, 187 SOL in pool\"},{\"url\":\"https://solanacompass.com/tokens/HV31t3wwXEz9a5d2KDbWNsE8hz6BreyrsDpgtevTwTEQ\",\"what\":\"Another Solana 'Arguspad' copycat with 35 holders\"}]}",
+ "structured_output": {
+  "what_is_happening": "A 51-minute-old Solana PumpSwap pair called ARGUS 'Argus' traded about $1.5M in volume in its first hour and rose 70-114%. It borrows the identity of Argus (@Arguspad), the leading token launchpad on Circle's Arc L1. That project's ARGUS token launched Sept 2, 2026 and reached a $38M market cap after Arc mainnet opened on Sept 16. GeckoTerminal links this Solana pool to @arguspad and argus.world. I found nothing from Argus announcing a Solana token. The Argus sites were behind traffic checks, and a KuCoin write-up of Argus doesn't mention Solana. The pool was seeded directly on PumpSwap with about 187 SOL, not through a pump.fun bonding curve (launchpad null, migrated 0). Liquidity (about $41-44K) is larger than market cap (about $29-33K), the pool holds about 666M tokens, and the LP is 0% locked or burned. Trade flow is lopsided: 2,061 unique buyers against only 59 unique sellers. Those 59 sellers made about 1,500 sells, which points to a small group selling into a wide set of small buyers. That could be buy bots, or people who think this is an official Solana listing of the Arc token.",
+  "narrative": {
+   "description": "The borrowed story is the real Argus launchpad on Circle's Arc chain, which was the first breakout of the Arc era in September 2026. On Solana, this is a copycat or impersonation token, not an extension of the project.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The Arc/Argus story is real and recent, which likely makes people searching ARGUS on Solana think they've found an early or bridged listing. I found no organic Solana discussion of this contract on X, Reddit, Telegram or news. The flow of 2,061 buyers against 59 sellers looks more like engineered distribution than organic spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its only link is the name and ticker plus a GeckoTerminal social field pointing to @arguspad and argus.world. Anyone deploying a token can set that field. Argus is an Arc-native launchpad, and I found no Solana deployment announced by the project.",
+   "competing_tokens": "The canonical ARGUS is on Arc (CoinMarketCap: argus-arc, about $20M market cap). On Solana there are at least 4 other same-name ARGUS tokens, including two with claimed $16-20M liquidity and zero volume, which looks like fake or unusable liquidity. There is also an 'Arguspad' token (HV31t3...) with 35 holders. This one is just one copycat among many.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 59 unique sellers made about 1,500 sells, against 2,061 unique buyers. The creator seeded a PumpSwap pool directly with about 187 SOL, the LP is unlocked (RugCheck: 'Large Amount of LP Unlocked', 'Low amount of LP Providers'), GeckoTerminal says the dev holds over 10%, and GT's security score is 47/100. The social links borrow the real Arc project's handle. GMGN shows no smart or renowned wallets and no calls. I found no organic posts about the contract.",
+   "uncertainty": "GMGN shows 0 bundlers, 0 snipers and a 0% bot/degen rate, and I couldn't see X directly (402 error), so there could be real retail confusion flow. The buyer/seller asymmetry could partly be a GeckoTerminal counting artifact."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 0% locked or burned, so the creator can pull about $41K of liquidity at any time",
+    "Top 10 holders hold 91% (including the pool, which holds about 66% of supply)",
+    "Liquidity is larger than market cap on a non-pump.fun pool the dev seeded directly",
+    "59 sellers are selling steadily into 2,000+ buyers",
+    "Price already fell 28% over the last 15 minutes, from an ATH of about $6.66e-5 to $2.9e-5",
+    "It impersonates a real project, which invites a denial from Argus and the price dropping"
+   ]
+  },
+  "counterargument": "Arc/Argus is a hot, real, very recent story, and Solana traders often push up bridged or ticker-matched plays. More than 2,000 unique buyers in an hour is real breadth, and GMGN flags no bundlers or snipers. If Argus ever acknowledged a Solana presence, or if the confusion spreads, volume could last longer than the window.",
+  "unknowns": [
+   "Whether Argus/@Arguspad has said anything about Solana (X was inaccessible)",
+   "Who seeded the 187 SOL of LP, and whether it will be pulled",
+   "Whether the 2,061 buyers are real people or bot-generated",
+   "Private Telegram call-channel activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "X returned 402. The contract-address search returned nothing. News coverage exists only for the Arc-chain Argus. arguspad.io and argus.world showed only traffic checks. DexScreener returned 403, and GeckoTerminal fetched fine."
+  },
+  "thesis": "A Solana copycat of Argus, the real Arc-chain launchpad. The creator seeded the pool with liquidity that isn't locked, and a small group of sellers is selling steadily into many buyers. There is no canonical link and no organic discussion. It has high rug and fade risk.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://airdropalert.com/blogs/what-is-argus/",
+    "what": "The real Argus is an Arc launchpad, launched Sept 2, with a $38M market cap peak"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/argus-arc/",
+    "what": "Canonical ARGUS on Arc"
+   },
+   {
+    "url": "https://github.com/arguspad/argus-world",
+    "what": "Official repo: an Arc launchpad"
+   },
+   {
+    "url": "https://www.kucoin.com/news/insight/USDC/6aaab0967d10fa0007cdee20",
+    "what": "Argus coverage with no mention of Solana"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/4NXc63yUdsMQMNycswMq9tK4sFxfuRdSNN5Sa3wjx5Mp",
+    "what": "Pool data, @arguspad social field, dev holds over 10%, LP unlocked, 187 SOL in pool"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/HV31t3wwXEz9a5d2KDbWNsE8hz6BreyrsDpgtevTwTEQ",
+    "what": "Another Solana 'Arguspad' copycat with 35 holders"
+   }
+  ]
+ },
+ "ttft_ms": 1433,
+ "type": "result",
+ "duration_ms": 111091,
+ "uuid": "73f7c235-016d-4c6a-908d-b1e7bc8a3b25",
+ "ttft_stream_ms": 865,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 866,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

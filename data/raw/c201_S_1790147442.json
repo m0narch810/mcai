@@ -1,0 +1,160 @@
+{
+ "duration_api_ms": 36313,
+ "stop_reason": "tool_use",
+ "session_id": "d2323aef-39ff-456b-a1e4-6c03fe5f8323",
+ "total_cost_usd": 0.1739956,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 8036,
+  "cache_read_input_tokens": 17293,
+  "output_tokens": 2382,
+  "output_tokens_details": {
+   "thinking_tokens": 341
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8036,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1814,
+    "cache_read_input_tokens": 9071,
+    "cache_creation_input_tokens": 427,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 427
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2382,
+   "cacheReadInputTokens": 17293,
+   "cacheCreationInputTokens": 8036,
+   "webSearchRequests": 0,
+   "costUSD": 0.1154106,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 341,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 34410,
+   "outputTokens": 835,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.058585,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This looks like a ticker hijack. The real \\\"Argus\\\" (@Arguspad, arguspad.io) is a token launchpad on Arc, Circle's Layer 1 blockchain, not on Solana. Its official ARGUS token is on Arc, contract 0xece5\u2026212cb3c, and Bitget lists it with no mention of Solana. Arguspad took most of Arc's first-day volume (reported at about $202M), and GeckoTerminal promoted it. That makes it a hot story that copycats can borrow.\\n\\nThis Solana PumpSwap token has no website, no socials and no DexScreener profile. Its only social link is a GeckoTerminal-listed Twitter handle, \\\"arguspad\\\", which points to the Arc project. At least four other Solana \\\"ARGUS / Argus\\\" tokens were created over the past several days, which is typical of a copycat wave. The move is borrowed attention, not a story that belongs to this token.\\n\\nThe structure also looks bad. Turnover in the first hour was about 34x market cap: $1.5M of volume on a roughly $30k cap. GeckoTerminal counts about 2,061 unique buyers but only 59 unique sellers over the hour, while sell transactions (1,502) are close to buys (3,243). A few wallets are making many sells into many small buys, which fits distribution into small, bot-like buys or airdrop-style buying. The top 10 holders own 91% of supply by GeckoTerminal's count, which may include the pool. The liquidity pool is 0% burned and unlocked, which RugCheck rates as \\\"danger\\\", and only a few wallets provide it. The deployer has already closed its position (creator_token_status is \\\"creator_close\\\").\\n\\nThe momentum has already rolled over. Price was down 28% over 15 minutes and 10% over 5 minutes at collection, and it sits about 56% below its all-time high less than an hour after launch.\",\"red_flags\":[\"Ticker hijack: the linked handle @Arguspad belongs to an Arc (Circle L1) launchpad whose official ARGUS token is on Arc, not Solana\",\"At least 4 other Solana ARGUS/Argus tokens exist, a copycat wave\",\"No website, socials or DexScreener profile; the only social link points to another project\",\"LP unlocked and 0% burned; RugCheck rates it 'danger', with few LP providers\",\"Top 10 holders own 91% (GeckoTerminal, may include pool)\",\"2,061 unique buyers vs 59 unique sellers with a similar number of sells: a few wallets distributing into many small buys\",\"Turnover of about 34x market cap in the first hour, consistent with wash or bot trading\",\"Creator already closed its position\",\"Price down 28% over 15 min and about 56% below ATH within an hour of launch\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"The bear case would fail if @Arguspad or the Arc team publicly endorsed this Solana contract (GGoKx\u2026) as an official or bridged token. It would also fail if the token kept its liquidity and holder base for several hours after the Arc hype, with LP locked or burned and the seller base widening organically.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"I had about 8 minutes, ran 2 web searches and fetched 1 page. I confirmed that Arguspad is an Arc project and that its ARGUS token is on Arc. I could not see X posts directly, so I could not check whether @Arguspad has mentioned or disowned this Solana contract. I also did not check on-chain wallet flows. Telegram and Discord were not accessible.\",\"sources\":[{\"url\":\"https://x.com/Arguspad\",\"what\":\"Official Argus on Arc X account (the handle linked to this Solana token)\"},{\"url\":\"https://arguspad.io/\",\"what\":\"Argus launchpad on Arc website\"},{\"url\":\"https://github.com/arguspad/argus-world\",\"what\":\"Repo describing Argus as an Arc/Uniswap v4 launchpad\"},{\"url\":\"https://www.bitget.com/price/argus-arc/what-is\",\"what\":\"Official ARGUS token on Arc chain, contract 0xece5\u2026212cb3c, no Solana mention\"},{\"url\":\"https://cryptorank.io/news/feed/20d52-arc-mainnet-meme-coin-launchpad-volume\",\"what\":\"Arc launch hype and launchpad volume, the story being borrowed\"},{\"url\":\"https://x.com/GeckoTerminal/status/2100080606717845934\",\"what\":\"GeckoTerminal promoting Arguspad on Arc\"},{\"url\":\"https://solanacompass.com/tokens/HV31t3wwXEz9a5d2KDbWNsE8hz6BreyrsDpgtevTwTEQ\",\"what\":\"Yet another Solana 'Arguspad' ARGUS token, evidence of copycats\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This looks like a ticker hijack. The real \"Argus\" (@Arguspad, arguspad.io) is a token launchpad on Arc, Circle's Layer 1 blockchain, not on Solana. Its official ARGUS token is on Arc, contract 0xece5\u2026212cb3c, and Bitget lists it with no mention of Solana. Arguspad took most of Arc's first-day volume (reported at about $202M), and GeckoTerminal promoted it. That makes it a hot story that copycats can borrow.\n\nThis Solana PumpSwap token has no website, no socials and no DexScreener profile. Its only social link is a GeckoTerminal-listed Twitter handle, \"arguspad\", which points to the Arc project. At least four other Solana \"ARGUS / Argus\" tokens were created over the past several days, which is typical of a copycat wave. The move is borrowed attention, not a story that belongs to this token.\n\nThe structure also looks bad. Turnover in the first hour was about 34x market cap: $1.5M of volume on a roughly $30k cap. GeckoTerminal counts about 2,061 unique buyers but only 59 unique sellers over the hour, while sell transactions (1,502) are close to buys (3,243). A few wallets are making many sells into many small buys, which fits distribution into small, bot-like buys or airdrop-style buying. The top 10 holders own 91% of supply by GeckoTerminal's count, which may include the pool. The liquidity pool is 0% burned and unlocked, which RugCheck rates as \"danger\", and only a few wallets provide it. The deployer has already closed its position (creator_token_status is \"creator_close\").\n\nThe momentum has already rolled over. Price was down 28% over 15 minutes and 10% over 5 minutes at collection, and it sits about 56% below its all-time high less than an hour after launch.",
+  "red_flags": [
+   "Ticker hijack: the linked handle @Arguspad belongs to an Arc (Circle L1) launchpad whose official ARGUS token is on Arc, not Solana",
+   "At least 4 other Solana ARGUS/Argus tokens exist, a copycat wave",
+   "No website, socials or DexScreener profile; the only social link points to another project",
+   "LP unlocked and 0% burned; RugCheck rates it 'danger', with few LP providers",
+   "Top 10 holders own 91% (GeckoTerminal, may include pool)",
+   "2,061 unique buyers vs 59 unique sellers with a similar number of sells: a few wallets distributing into many small buys",
+   "Turnover of about 34x market cap in the first hour, consistent with wash or bot trading",
+   "Creator already closed its position",
+   "Price down 28% over 15 min and about 56% below ATH within an hour of launch"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "The bear case would fail if @Arguspad or the Arc team publicly endorsed this Solana contract (GGoKx\u2026) as an official or bridged token. It would also fail if the token kept its liquidity and holder base for several hours after the Arc hype, with LP locked or burned and the seller base widening organically.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "I had about 8 minutes, ran 2 web searches and fetched 1 page. I confirmed that Arguspad is an Arc project and that its ARGUS token is on Arc. I could not see X posts directly, so I could not check whether @Arguspad has mentioned or disowned this Solana contract. I also did not check on-chain wallet flows. Telegram and Discord were not accessible.",
+  "sources": [
+   {
+    "url": "https://x.com/Arguspad",
+    "what": "Official Argus on Arc X account (the handle linked to this Solana token)"
+   },
+   {
+    "url": "https://arguspad.io/",
+    "what": "Argus launchpad on Arc website"
+   },
+   {
+    "url": "https://github.com/arguspad/argus-world",
+    "what": "Repo describing Argus as an Arc/Uniswap v4 launchpad"
+   },
+   {
+    "url": "https://www.bitget.com/price/argus-arc/what-is",
+    "what": "Official ARGUS token on Arc chain, contract 0xece5\u2026212cb3c, no Solana mention"
+   },
+   {
+    "url": "https://cryptorank.io/news/feed/20d52-arc-mainnet-meme-coin-launchpad-volume",
+    "what": "Arc launch hype and launchpad volume, the story being borrowed"
+   },
+   {
+    "url": "https://x.com/GeckoTerminal/status/2100080606717845934",
+    "what": "GeckoTerminal promoting Arguspad on Arc"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/HV31t3wwXEz9a5d2KDbWNsE8hz6BreyrsDpgtevTwTEQ",
+    "what": "Yet another Solana 'Arguspad' ARGUS token, evidence of copycats"
+   }
+  ]
+ },
+ "ttft_ms": 2917,
+ "type": "result",
+ "duration_ms": 31785,
+ "uuid": "b8d1bd83-7b0a-438d-9511-195eadf2fe0d",
+ "ttft_stream_ms": 659,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 659,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

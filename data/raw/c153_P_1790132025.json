@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 25303,
+ "stop_reason": "tool_use",
+ "session_id": "b624db97-6a11-411c-aa8f-57abea0766f1",
+ "total_cost_usd": 0.1050316,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6704,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2551,
+  "output_tokens_details": {
+   "thinking_tokens": 424
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6704,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2551,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 6704,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6704
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2551,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 6704,
+   "webSearchRequests": 0,
+   "costUSD": 0.1050316,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 424,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"BLIND APE\\\" (with its ticker \\\"APE\\\" and name written in braille characters) launched directly on a PumpSwap pool about 2.2 hours before detection. It shows about $10.1M of volume in 6 hours against a market cap of about $122k, which is about 13.8x the market cap traded per hour. Liquidity (about $203k) is larger than market cap. Price is up about 82\u201390% over 6h and sits right at its all-time high (about $125k market cap). The trade pattern looks strongly artificial. Over 6h there were 2,020 unique buyers but only 43 unique sellers. In the last 5, 15 and 30 minutes, buy and sell counts are exactly equal (59/59, 262/262, 563/563), with 26 unique buyers matching 26 unique sellers. That is typical of volume bots running round trips, plus sprays of tiny buys that inflate the holder count. GMGN flags 132 bundler wallets and a 21-wallet insider trade network, and finds zero smart-money or KOL wallets. The LP is 0% locked or burned and has few providers, and the creator wallet is closed. The links go to a tweet from @1lloak and a page on Two Blind Brothers, a real clothing brand, about braille. At least 10 other tokens with the same name and ticker were launched earlier the same day, and most are now dead with zero liquidity.\",\"narrative\":{\"description\":\"Braille-styled 'Blind Ape' meme that seems to hang off a tweet and/or the Two Blind Brothers braille page (a real apparel brand). It is a novelty-font ticker gimmick. Nothing in the packet shows a real news event or organic community behind it.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The spread appears to be manufactured. Volume and holder growth fit volume bots and bundled buy sprays: 2,020 buyers against 43 sellers, and exactly matched recent buys and sells. The many copycat deploys show that launch farmers are cycling the name, not that organic interest is growing.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most volume and liquidity among the same-name tokens, but it is a late deploy. At least 9 earlier tokens with the same name and ticker exist, the earliest about 6.5 hours before this pair.\",\"competing_tokens\":\"At least 10 same-name tokens. CgxXsJ\u2026 is the earliest (created about 6.5h earlier) and still has about $64k liquidity. 8v1yDf\u2026 has about $177k liquidity. The rest (G9E7a6\u2026, 81yCJX\u2026, EKeGkv\u2026, AC1bGh\u2026 and others) have zero liquidity, which points to rugs or abandoned copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Over 6h, 2,020 unique buyers against 43 unique sellers. Buy and sell counts are exactly equal in the 5-, 15- and 30-minute windows, and unique buyers equal unique sellers (26/26). Hourly turnover of 13.8x market cap. GMGN finds 132 bundler wallets, a 21-wallet insider network, and zero smart-money or KOL wallets. The pool was deployed directly without a launchpad, LP is 0% locked, and the creator wallet is closed. The name has been farmed many times the same day.\",\"uncertainty\":\"No X data. The linked tweet could have real reach, and the GMGN rates (e.g. 7% top-bundler share) are fairly mild. Top-10 concentration may include the pool.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% LP locked or burned, with few LP providers: the deployer can pull liquidity at any time\",\"Liquidity larger than market cap on a direct PumpSwap deploy, a common rug-farm setup\",\"Volume looks wash-traded by bots, so real depth of demand is unknown\",\"132 bundler wallets and a 21-wallet insider network\",\"Top-10 holders at about 93% (may include the pool)\",\"Many same-name clones that already rugged to zero liquidity, the same pattern from the same farm\"]},\"counterargument\":\"It is the leading clone by liquidity and volume, and it is sitting at its all-time high with steady hourly gains. Real holders number over 2,000, and if even part of them are organic, a braille/blind-ape novelty could catch real attention on X. Deep liquidity also makes a sudden price wipeout less likely than on thin pools. Bot-driven volume sometimes pulls in real traders from trending lists and pushes the price higher for several hours.\",\"unknowns\":[\"Reach and author of the linked @1lloak tweet\",\"Whether the liquidity provider is the deployer and plans to withdraw\",\"How many of the 2,020 holders are real versus dust-buy wallets\",\"Whether Two Blind Brothers has any real link to the token\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. Judged only from the evidence packet.\"},\"thesis\":\"A late clone in a same-day name farm, with manufactured volume and holder counts and unlocked LP. The attention is bot-made and the structure allows a rug. Expect it to fade or rug within hours, like the earlier clones that now have zero liquidity.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"BLIND APE\" (with its ticker \"APE\" and name written in braille characters) launched directly on a PumpSwap pool about 2.2 hours before detection. It shows about $10.1M of volume in 6 hours against a market cap of about $122k, which is about 13.8x the market cap traded per hour. Liquidity (about $203k) is larger than market cap. Price is up about 82\u201390% over 6h and sits right at its all-time high (about $125k market cap). The trade pattern looks strongly artificial. Over 6h there were 2,020 unique buyers but only 43 unique sellers. In the last 5, 15 and 30 minutes, buy and sell counts are exactly equal (59/59, 262/262, 563/563), with 26 unique buyers matching 26 unique sellers. That is typical of volume bots running round trips, plus sprays of tiny buys that inflate the holder count. GMGN flags 132 bundler wallets and a 21-wallet insider trade network, and finds zero smart-money or KOL wallets. The LP is 0% locked or burned and has few providers, and the creator wallet is closed. The links go to a tweet from @1lloak and a page on Two Blind Brothers, a real clothing brand, about braille. At least 10 other tokens with the same name and ticker were launched earlier the same day, and most are now dead with zero liquidity.",
+  "narrative": {
+   "description": "Braille-styled 'Blind Ape' meme that seems to hang off a tweet and/or the Two Blind Brothers braille page (a real apparel brand). It is a novelty-font ticker gimmick. Nothing in the packet shows a real news event or organic community behind it.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The spread appears to be manufactured. Volume and holder growth fit volume bots and bundled buy sprays: 2,020 buyers against 43 sellers, and exactly matched recent buys and sells. The many copycat deploys show that launch farmers are cycling the name, not that organic interest is growing."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most volume and liquidity among the same-name tokens, but it is a late deploy. At least 9 earlier tokens with the same name and ticker exist, the earliest about 6.5 hours before this pair.",
+   "competing_tokens": "At least 10 same-name tokens. CgxXsJ\u2026 is the earliest (created about 6.5h earlier) and still has about $64k liquidity. 8v1yDf\u2026 has about $177k liquidity. The rest (G9E7a6\u2026, 81yCJX\u2026, EKeGkv\u2026, AC1bGh\u2026 and others) have zero liquidity, which points to rugs or abandoned copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Over 6h, 2,020 unique buyers against 43 unique sellers. Buy and sell counts are exactly equal in the 5-, 15- and 30-minute windows, and unique buyers equal unique sellers (26/26). Hourly turnover of 13.8x market cap. GMGN finds 132 bundler wallets, a 21-wallet insider network, and zero smart-money or KOL wallets. The pool was deployed directly without a launchpad, LP is 0% locked, and the creator wallet is closed. The name has been farmed many times the same day.",
+   "uncertainty": "No X data. The linked tweet could have real reach, and the GMGN rates (e.g. 7% top-bundler share) are fairly mild. Top-10 concentration may include the pool."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% LP locked or burned, with few LP providers: the deployer can pull liquidity at any time",
+    "Liquidity larger than market cap on a direct PumpSwap deploy, a common rug-farm setup",
+    "Volume looks wash-traded by bots, so real depth of demand is unknown",
+    "132 bundler wallets and a 21-wallet insider network",
+    "Top-10 holders at about 93% (may include the pool)",
+    "Many same-name clones that already rugged to zero liquidity, the same pattern from the same farm"
+   ]
+  },
+  "counterargument": "It is the leading clone by liquidity and volume, and it is sitting at its all-time high with steady hourly gains. Real holders number over 2,000, and if even part of them are organic, a braille/blind-ape novelty could catch real attention on X. Deep liquidity also makes a sudden price wipeout less likely than on thin pools. Bot-driven volume sometimes pulls in real traders from trending lists and pushes the price higher for several hours.",
+  "unknowns": [
+   "Reach and author of the linked @1lloak tweet",
+   "Whether the liquidity provider is the deployer and plans to withdraw",
+   "How many of the 2,020 holders are real versus dust-buy wallets",
+   "Whether Two Blind Brothers has any real link to the token"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. Judged only from the evidence packet."
+  },
+  "thesis": "A late clone in a same-day name farm, with manufactured volume and holder counts and unlocked LP. The attention is bot-made and the structure allows a rug. Expect it to fade or rug within hours, like the earlier clones that now have zero liquidity.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5827,
+ "type": "result",
+ "duration_ms": 25348,
+ "uuid": "8acd1b5c-5376-41d9-9cde-c236149be7e5",
+ "ttft_stream_ms": 1145,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1145,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

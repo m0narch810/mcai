@@ -1,0 +1,188 @@
+{
+ "duration_api_ms": 106548,
+ "stop_reason": "tool_use",
+ "session_id": "8133ce37-0053-4b0a-95c4-15e9651408cd",
+ "total_cost_usd": 0.49728079999999997,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 20495,
+  "cache_read_input_tokens": 92509,
+  "output_tokens": 4807,
+  "output_tokens_details": {
+   "thinking_tokens": 787
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 20495,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2884,
+    "cache_read_input_tokens": 21001,
+    "cache_creation_input_tokens": 1994,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1994
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 4807,
+   "cacheReadInputTokens": 92509,
+   "cacheCreationInputTokens": 20495,
+   "webSearchRequests": 0,
+   "costUSD": 0.2786578,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 787,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 108958,
+   "outputTokens": 3933,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 9,
+   "costUSD": 0.21862299999999998,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 16,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Concrete\\\" (CT) was created on Meteora's launch curve, moved to PumpSwap about 40 minutes before detection, and did about $4.7M of volume in its first hour. Its metadata points to the X account of the real DeFi project Concrete (@ConcreteXYZ). But Concrete's real CT token was announced around 2026-09-18 as an Ethereum (ERC-20) token with a fixed supply of 1B. The project said TGE details would come later and that there are \\\"currently no claims, presales, or early access programs\\\". This looks like a Solana copycat launched just before the real token's TGE. At almost the same second (pair created 53 seconds later), a \\\"City Protocol\\\" CT token appeared with similar size ($280k liquidity, $4.07M hourly volume), even though City Protocol's real ticker is CP. That points to the same operator launching several copycat tokens at once.\",\"narrative\":{\"description\":\"Front-running the TGE of a real, funded DeFi project: Concrete, backed by Polychain, YZi Labs and VanEck, which announced its CT governance token on Ethereum about 5 days ago. Traders buy a Solana ticker that shares the project's name and X handle.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The real Concrete CT announcement is fresh news on KuCoin and ChainCatcher, and some aggregators list a TGE date around 2026-09-28. Traders expecting the real token may buy a lookalike on Solana. None of this attention points to this Solana contract, and no organic discussion of it was found.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"The only link is the name/ticker and a Twitter handle set in the metadata, which anyone can type in. Official material says CT is an ERC-20 on Ethereum with no presale or early access. I found no official post naming a Solana contract.\",\"competing_tokens\":\"The packet lists several Solana CT tokens. One is an earlier 'Concrete' CT (5WtW..., now dead). Others are 'City Protocol' CT tokens, including 4i7b..., launched about 1 minute after this one with $4M hourly volume, which suggests the same operator. The real canonical CT will be the Ethereum ERC-20 from Concrete.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Nothing on X, Reddit, Telegram or in the news mentions this contract. The project's socials are borrowed from a real project that says its token is on Ethereum. A same-minute copycat of another project's ticker ('City Protocol' CT, whose real ticker is CP) launched with similar liquidity and volume. The pool was deep from the start ($385k), and the market cap equals the FDV at $1.2M. The ratio of unique buyers to sellers is very skewed (1833 vs 170). The top 10 holders own 96.8% per GeckoTerminal, and GeckoTerminal warns that the dev holds more than 10%. RugCheck flags the LP as mostly unlocked and warns there are few LP providers.\",\"uncertainty\":\"X is paywalled (HTTP 402), so I could not see any KOL posts or whether Concrete has warned about fakes. GMGN shows zero bundlers or snipers and a low bot rate, which somewhat conflicts with a purely wash-traded picture. Some buyers may be real people who were misled.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP largely unlocked (RugCheck 'danger'), so liquidity can be pulled\",\"Top 10 holders own 96.8% (GeckoTerminal, may include pool); GeckoTerminal warns the dev holds more than 10%\",\"Real Concrete TGE on Ethereum, or a fake-token warning from the project, would destroy the premise\",\"Same-minute copycat twin (City Protocol CT) points to a serial operator farming lookalike tickers\",\"Only 170 unique sellers vs 1833 buyers, so exit liquidity is being built up\"]},\"counterargument\":\"Concrete is a real, well-funded project with a live token announcement and a TGE expected within about a week, so attention on \\\"Concrete CT\\\" can keep rising. Solana copycat tickers sometimes pump for hours on confusion alone. GMGN shows no bundlers, snipers or fresh-wallet clusters, and 1,800+ unique buyers is real participation. If the operator keeps the liquidity in, momentum traders could push it higher before the real TGE.\",\"unknowns\":[\"Whether @ConcreteXYZ has posted warnings about fake Solana CT (X inaccessible)\",\"Whether any KOL or call channel is pushing this contract\",\"Who holds the top-10 supply outside the pool\",\"Exact date of the real Concrete TGE and which chains it launches on\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"X profile fetch returned 402 and DexScreener returned 403. Searching for the contract address found nothing. The news found covers the real ERC-20 CT announcement, not this Solana token. GeckoTerminal pool page fetched.\"},\"thesis\":\"This looks like a ticker hijack of Concrete's upcoming Ethereum CT token. It was probably launched by an operator who deployed a twin copycat ('City Protocol' CT) in the same minute. Nothing ties it to the official project, the LP is unlocked and the supply is concentrated. Attention should fade, and there is a meaningful risk of a rug or a sharp drop when the real TGE happens or the project posts a warning.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.kucoin.com/news/flash/concrete-launches-foundation-and-governance-token-ct-with-1-billion-fixed-supply\",\"what\":\"Real Concrete CT is an ERC-20 on Ethereum; no claims, presales or early access (article dated 2026-09-18)\"},{\"url\":\"https://www.kucoin.com/news/community/ETH/6aad07e462cf37000742e47c\",\"what\":\"Community post: CT is ERC-20; TGE venue and timing not yet disclosed\"},{\"url\":\"https://www.chaincatcher.com/en/article/2290626\",\"what\":\"News of the Concrete foundation/token launch\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/7jhZ5meFCZd2XsVeKsWZhDvf2fCaTbHAW5RrZqEmhynj\",\"what\":\"Pool metrics; warns that the dev holds more than 10%; security score 57; Twitter set to @ConcreteXYZ\"},{\"url\":\"https://city-protocol.gitbook.io/docs/city-protocol/tokenomics\",\"what\":\"City Protocol's real ticker is CP, so the same-minute City Protocol CT is also a copycat\"},{\"url\":\"https://x.com/ConcreteXYZ\",\"what\":\"Official project X account (inaccessible, 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Concrete\" (CT) was created on Meteora's launch curve, moved to PumpSwap about 40 minutes before detection, and did about $4.7M of volume in its first hour. Its metadata points to the X account of the real DeFi project Concrete (@ConcreteXYZ). But Concrete's real CT token was announced around 2026-09-18 as an Ethereum (ERC-20) token with a fixed supply of 1B. The project said TGE details would come later and that there are \"currently no claims, presales, or early access programs\". This looks like a Solana copycat launched just before the real token's TGE. At almost the same second (pair created 53 seconds later), a \"City Protocol\" CT token appeared with similar size ($280k liquidity, $4.07M hourly volume), even though City Protocol's real ticker is CP. That points to the same operator launching several copycat tokens at once.",
+  "narrative": {
+   "description": "Front-running the TGE of a real, funded DeFi project: Concrete, backed by Polychain, YZi Labs and VanEck, which announced its CT governance token on Ethereum about 5 days ago. Traders buy a Solana ticker that shares the project's name and X handle.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The real Concrete CT announcement is fresh news on KuCoin and ChainCatcher, and some aggregators list a TGE date around 2026-09-28. Traders expecting the real token may buy a lookalike on Solana. None of this attention points to this Solana contract, and no organic discussion of it was found."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "The only link is the name/ticker and a Twitter handle set in the metadata, which anyone can type in. Official material says CT is an ERC-20 on Ethereum with no presale or early access. I found no official post naming a Solana contract.",
+   "competing_tokens": "The packet lists several Solana CT tokens. One is an earlier 'Concrete' CT (5WtW..., now dead). Others are 'City Protocol' CT tokens, including 4i7b..., launched about 1 minute after this one with $4M hourly volume, which suggests the same operator. The real canonical CT will be the Ethereum ERC-20 from Concrete.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Nothing on X, Reddit, Telegram or in the news mentions this contract. The project's socials are borrowed from a real project that says its token is on Ethereum. A same-minute copycat of another project's ticker ('City Protocol' CT, whose real ticker is CP) launched with similar liquidity and volume. The pool was deep from the start ($385k), and the market cap equals the FDV at $1.2M. The ratio of unique buyers to sellers is very skewed (1833 vs 170). The top 10 holders own 96.8% per GeckoTerminal, and GeckoTerminal warns that the dev holds more than 10%. RugCheck flags the LP as mostly unlocked and warns there are few LP providers.",
+   "uncertainty": "X is paywalled (HTTP 402), so I could not see any KOL posts or whether Concrete has warned about fakes. GMGN shows zero bundlers or snipers and a low bot rate, which somewhat conflicts with a purely wash-traded picture. Some buyers may be real people who were misled."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP largely unlocked (RugCheck 'danger'), so liquidity can be pulled",
+    "Top 10 holders own 96.8% (GeckoTerminal, may include pool); GeckoTerminal warns the dev holds more than 10%",
+    "Real Concrete TGE on Ethereum, or a fake-token warning from the project, would destroy the premise",
+    "Same-minute copycat twin (City Protocol CT) points to a serial operator farming lookalike tickers",
+    "Only 170 unique sellers vs 1833 buyers, so exit liquidity is being built up"
+   ]
+  },
+  "counterargument": "Concrete is a real, well-funded project with a live token announcement and a TGE expected within about a week, so attention on \"Concrete CT\" can keep rising. Solana copycat tickers sometimes pump for hours on confusion alone. GMGN shows no bundlers, snipers or fresh-wallet clusters, and 1,800+ unique buyers is real participation. If the operator keeps the liquidity in, momentum traders could push it higher before the real TGE.",
+  "unknowns": [
+   "Whether @ConcreteXYZ has posted warnings about fake Solana CT (X inaccessible)",
+   "Whether any KOL or call channel is pushing this contract",
+   "Who holds the top-10 supply outside the pool",
+   "Exact date of the real Concrete TGE and which chains it launches on"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "X profile fetch returned 402 and DexScreener returned 403. Searching for the contract address found nothing. The news found covers the real ERC-20 CT announcement, not this Solana token. GeckoTerminal pool page fetched."
+  },
+  "thesis": "This looks like a ticker hijack of Concrete's upcoming Ethereum CT token. It was probably launched by an operator who deployed a twin copycat ('City Protocol' CT) in the same minute. Nothing ties it to the official project, the LP is unlocked and the supply is concentrated. Attention should fade, and there is a meaningful risk of a rug or a sharp drop when the real TGE happens or the project posts a warning.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.kucoin.com/news/flash/concrete-launches-foundation-and-governance-token-ct-with-1-billion-fixed-supply",
+    "what": "Real Concrete CT is an ERC-20 on Ethereum; no claims, presales or early access (article dated 2026-09-18)"
+   },
+   {
+    "url": "https://www.kucoin.com/news/community/ETH/6aad07e462cf37000742e47c",
+    "what": "Community post: CT is ERC-20; TGE venue and timing not yet disclosed"
+   },
+   {
+    "url": "https://www.chaincatcher.com/en/article/2290626",
+    "what": "News of the Concrete foundation/token launch"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/7jhZ5meFCZd2XsVeKsWZhDvf2fCaTbHAW5RrZqEmhynj",
+    "what": "Pool metrics; warns that the dev holds more than 10%; security score 57; Twitter set to @ConcreteXYZ"
+   },
+   {
+    "url": "https://city-protocol.gitbook.io/docs/city-protocol/tokenomics",
+    "what": "City Protocol's real ticker is CP, so the same-minute City Protocol CT is also a copycat"
+   },
+   {
+    "url": "https://x.com/ConcreteXYZ",
+    "what": "Official project X account (inaccessible, 402)"
+   }
+  ]
+ },
+ "ttft_ms": 2246,
+ "type": "result",
+ "duration_ms": 80054,
+ "uuid": "0dff84f5-6cf8-4ae1-a98d-4c8624d4f980",
+ "ttft_stream_ms": 793,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 793,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,144 @@
+{
+ "duration_api_ms": 42462,
+ "stop_reason": "tool_use",
+ "session_id": "7deeb576-efdf-48bf-bde8-caf7415b145e",
+ "total_cost_usd": 0.194085,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10907,
+  "cache_read_input_tokens": 17840,
+  "output_tokens": 2854,
+  "output_tokens_details": {
+   "thinking_tokens": 334
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10907,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2233,
+    "cache_read_input_tokens": 10168,
+    "cache_creation_input_tokens": 739,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 739
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2854,
+   "cacheReadInputTokens": 17840,
+   "cacheCreationInputTokens": 10907,
+   "webSearchRequests": 0,
+   "costUSD": 0.147928,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 334,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21142,
+   "outputTokens": 1003,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.046157000000000004,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"SRI looks like a single-session pump-and-dump in a clone war, not a narrative. Nothing I found suggests a story sits behind the name. (1) Name/ticker spam: the packet lists at least 10 other tokens named \\\"Super Retarded Inu\\\" / SRI, all launched within about 45 minutes of each other (pair_created_at_ms 1790119741000\u20131790122390000). Three of them are also trading hundreds of thousands of dollars per hour. One of those three, AoGRJ\u2026, shows $2.6M of h1 volume against $96 of liquidity, which is almost certainly wash or bot volume. When a name gets cloned this fast, traders are betting on which copy wins. There is no underlying story, and whichever copy \\\"wins\\\" can lose the flow within hours. GMGN also counts 4 duplicate uses of the token image. (2) The trading looks manufactured. GMGN tags 109 bundler wallets. Turnover in the first hour was 37x market cap. GeckoTerminal shows about 9,600 buys from 2,152 unique buyers, but only 136 unique buyers in the last 30 minutes and 125 in the last 5. So about 2,000 buyers came in during a short early burst, and after that roughly the same ~120 wallets are trading in both directions (m5: 125 buyers vs 118 sellers), which is the pattern of bots and scalpers. Top-10 holders own 94.66% on GeckoTerminal. That figure may include pools, and GMGN reports only 7% for the top 10, so the concentration is unclear, not proven. (3) The price has already peaked. ATH was about $0.00076904759 (roughly $769k market cap). By t2 the price was $0.0004378, and a live DexScreener fetch minutes later showed $0.0002675 (about $267k market cap), down about 65% from the peak. Price change in the last 5 minutes was -33% to -43% in several snapshots. (4) There is nothing behind it: no website, no socials, no DexScreener profile, no description, no Telegram, no X handle. Web searches for \\\"Super Retarded Inu\\\" and the SRI ticker return nothing relevant. Dev status is \\\"creator_close\\\", meaning the creator has already exited. (5) The liquidity setup is shaky: RugCheck flags LP as largely unlocked (0% locked on one top market), and there are few LP providers. GMGN, on the other hand, reports lp_burn_ratio 1.0, so the sources disagree.\",\"red_flags\":[\"10+ same-name/same-ticker clones launched within ~45 min; one clone has $2.6M h1 volume on $96 liquidity (wash)\",\"109 GMGN-tagged bundler wallets\",\"~2,000 unique buyers crammed into the first ~30 min, then only ~120-136 active wallets; m5 buyers \u2248 sellers (bot churn)\",\"h1 turnover 37x market cap\",\"Price down ~65% from ATH (~$769k mcap \u2192 ~$267k) within about an hour of launch; m5 change -33% to -43%\",\"Creator status 'creator_close' (dev exited)\",\"No website, socials, description or DexScreener profile; no web discussion found\",\"Image duplicated 4 times per GMGN\",\"RugCheck: large amount of LP unlocked (danger), few LP providers; top10 94.66% per GeckoTerminal (may include pools)\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"These would weaken the case: (1) a real catalyst, such as a viral X post, a well-known figure or an event, that explains the name, with this contract clearly accepted as the canonical one over the clones; (2) a steady, broad base of new unique buyers after the first 30 minutes, not the same ~120 wallets churning; (3) the price holding a higher low above roughly $250k market cap instead of continuing to bleed; (4) a community forming on its own (a real X or Telegram, a CTO) without paid boosts; (5) GMGN's lp_burn_ratio of 1.0 and its 7% top-10 figure being confirmed as correct.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"I had about 8 minutes. I ran two web searches (\\\"Super Retarded Inu\\\" SRI solana, and \\\"Super Retarded Inu\\\"); neither turned up anything about this token. I did one live DexScreener API fetch, which showed the price down to about $267k market cap with no socials listed. I could not see X or Twitter (no API), Telegram or Discord. The launch context, such as a tweet that may have inspired the name, could exist there and be invisible to me. Sources conflict in two places: GeckoTerminal says top-10 holders own 94.66% while GMGN says 7%, and RugCheck says LP is unlocked while GMGN says it is 100% burned. The clone-war and bot-churn evidence comes from the packet's own market data, which I consider solid.\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2z37Vk5RKzHPJpUbjSWdH1Zzsd1uFAZ5f7jPMHKRdx5K\",\"what\":\"Live pair data at about 00:22Z: price $0.0002675, market cap about $267k, m5 -32.7%, no websites or socials\"},{\"url\":\"https://www.kucoin.com/news/flash/solana-meme-coin-super-inu-surges-over-300-amid-trump-s-super-intelligence-mention\",\"what\":\"Only 'Super Inu' hit in the search; it is an unrelated older token, so no narrative source was found for SRI\"},{\"url\":\"https://solana.fm/address/6sqL5tzzVuH4H8ZfY9qLiqHGxtZQ4Uupanhz8Tvcpump?cluster=mainnet-alpha&address=Az3gSBLyqebjDBamGxczkn9MhtFip82294uPdTK5T3Dp\",\"what\":\"Search result for an unrelated 'Super Retarded Dog' token; shows the name recycles an older meme\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "SRI looks like a single-session pump-and-dump in a clone war, not a narrative. Nothing I found suggests a story sits behind the name. (1) Name/ticker spam: the packet lists at least 10 other tokens named \"Super Retarded Inu\" / SRI, all launched within about 45 minutes of each other (pair_created_at_ms 1790119741000\u20131790122390000). Three of them are also trading hundreds of thousands of dollars per hour. One of those three, AoGRJ\u2026, shows $2.6M of h1 volume against $96 of liquidity, which is almost certainly wash or bot volume. When a name gets cloned this fast, traders are betting on which copy wins. There is no underlying story, and whichever copy \"wins\" can lose the flow within hours. GMGN also counts 4 duplicate uses of the token image. (2) The trading looks manufactured. GMGN tags 109 bundler wallets. Turnover in the first hour was 37x market cap. GeckoTerminal shows about 9,600 buys from 2,152 unique buyers, but only 136 unique buyers in the last 30 minutes and 125 in the last 5. So about 2,000 buyers came in during a short early burst, and after that roughly the same ~120 wallets are trading in both directions (m5: 125 buyers vs 118 sellers), which is the pattern of bots and scalpers. Top-10 holders own 94.66% on GeckoTerminal. That figure may include pools, and GMGN reports only 7% for the top 10, so the concentration is unclear, not proven. (3) The price has already peaked. ATH was about $0.00076904759 (roughly $769k market cap). By t2 the price was $0.0004378, and a live DexScreener fetch minutes later showed $0.0002675 (about $267k market cap), down about 65% from the peak. Price change in the last 5 minutes was -33% to -43% in several snapshots. (4) There is nothing behind it: no website, no socials, no DexScreener profile, no description, no Telegram, no X handle. Web searches for \"Super Retarded Inu\" and the SRI ticker return nothing relevant. Dev status is \"creator_close\", meaning the creator has already exited. (5) The liquidity setup is shaky: RugCheck flags LP as largely unlocked (0% locked on one top market), and there are few LP providers. GMGN, on the other hand, reports lp_burn_ratio 1.0, so the sources disagree.",
+  "red_flags": [
+   "10+ same-name/same-ticker clones launched within ~45 min; one clone has $2.6M h1 volume on $96 liquidity (wash)",
+   "109 GMGN-tagged bundler wallets",
+   "~2,000 unique buyers crammed into the first ~30 min, then only ~120-136 active wallets; m5 buyers \u2248 sellers (bot churn)",
+   "h1 turnover 37x market cap",
+   "Price down ~65% from ATH (~$769k mcap \u2192 ~$267k) within about an hour of launch; m5 change -33% to -43%",
+   "Creator status 'creator_close' (dev exited)",
+   "No website, socials, description or DexScreener profile; no web discussion found",
+   "Image duplicated 4 times per GMGN",
+   "RugCheck: large amount of LP unlocked (danger), few LP providers; top10 94.66% per GeckoTerminal (may include pools)"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "These would weaken the case: (1) a real catalyst, such as a viral X post, a well-known figure or an event, that explains the name, with this contract clearly accepted as the canonical one over the clones; (2) a steady, broad base of new unique buyers after the first 30 minutes, not the same ~120 wallets churning; (3) the price holding a higher low above roughly $250k market cap instead of continuing to bleed; (4) a community forming on its own (a real X or Telegram, a CTO) without paid boosts; (5) GMGN's lp_burn_ratio of 1.0 and its 7% top-10 figure being confirmed as correct.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "I had about 8 minutes. I ran two web searches (\"Super Retarded Inu\" SRI solana, and \"Super Retarded Inu\"); neither turned up anything about this token. I did one live DexScreener API fetch, which showed the price down to about $267k market cap with no socials listed. I could not see X or Twitter (no API), Telegram or Discord. The launch context, such as a tweet that may have inspired the name, could exist there and be invisible to me. Sources conflict in two places: GeckoTerminal says top-10 holders own 94.66% while GMGN says 7%, and RugCheck says LP is unlocked while GMGN says it is 100% burned. The clone-war and bot-churn evidence comes from the packet's own market data, which I consider solid.",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2z37Vk5RKzHPJpUbjSWdH1Zzsd1uFAZ5f7jPMHKRdx5K",
+    "what": "Live pair data at about 00:22Z: price $0.0002675, market cap about $267k, m5 -32.7%, no websites or socials"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/solana-meme-coin-super-inu-surges-over-300-amid-trump-s-super-intelligence-mention",
+    "what": "Only 'Super Inu' hit in the search; it is an unrelated older token, so no narrative source was found for SRI"
+   },
+   {
+    "url": "https://solana.fm/address/6sqL5tzzVuH4H8ZfY9qLiqHGxtZQ4Uupanhz8Tvcpump?cluster=mainnet-alpha&address=Az3gSBLyqebjDBamGxczkn9MhtFip82294uPdTK5T3Dp",
+    "what": "Search result for an unrelated 'Super Retarded Dog' token; shows the name recycles an older meme"
+   }
+  ]
+ },
+ "ttft_ms": 4233,
+ "type": "result",
+ "duration_ms": 38323,
+ "uuid": "b2a1c119-36ab-4d1d-a73d-643daf9a4611",
+ "ttft_stream_ms": 709,
+ "time_to_request_ms": 36,
+ "first_content_frame_ms": 710,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

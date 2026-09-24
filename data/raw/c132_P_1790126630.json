@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 25963,
+ "stop_reason": "tool_use",
+ "session_id": "627c0db7-c703-4454-9a09-ce00f6d0d5c7",
+ "total_cost_usd": 0.1028596,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6335,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2590,
+  "output_tokens_details": {
+   "thinking_tokens": 310
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6335,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2590,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 6335,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6335
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2590,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 6335,
+   "webSearchRequests": 0,
+   "costUSD": 0.1028596,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 310,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"SHIELD / \\\"Shield.fun\\\" was deployed about 40 minutes before detection through a Meteora virtual curve (GMGN records creation and migration at the same second). It then traded on a PumpSwap pair. In roughly its first hour it did about $2.06M of volume on about $40\u201345k of liquidity, a turnover of about 50x. Price hit an all-time high of about $0.00134, then fell sharply: -68% over 15 minutes and -35% to -61% over 5 minutes. It now trades near $0.000276, roughly 80% below its peak, at about $276k market cap. At least 10 other tokens using the same SHIELD / Shield.fun name appeared within the same roughly 40-minute window, several with over $1M of hourly volume. That is a same-name launch frenzy, probably set off by an X post from an account called @shielddotfun: GeckoTerminal's 'twitter handle' field holds a status URL rather than a handle. The creator wallet shows 'creator_close', which suggests the dev has exited. GMGN flags 71 bundler wallets. The project image appears on 6 other tokens.\",\"narrative\":{\"description\":\"Shield.fun looks like a real or announced product: a privacy, 'shield' or launchpad-style '.fun' platform, whose X announcement sparked a burst of copycat launches. In this packet the story belongs to the external project, not to this contract. The linked website 'shieldss.fun' (double s) looks like a possible typosquat and does not match the handle 'shielddotfun'.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A single tweet from @shielddotfun probably prompted deployers to race copycat tokens so they could catch 'CA?' demand before (or instead of) any official token. Attention is split across at least 10 contracts, and this one is already down about 80% from its peak.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing ties this contract to the project. There is no DexScreener profile and no official socials beyond a status-URL link. The website domain (shieldss.fun) looks spoofed, the image is duplicated on 6 other tokens, and the launch was not first. Its main distinction is that it currently has the most hourly volume among the copies.\",\"competing_tokens\":\"At least 10 tokens with the same name, all created within about 40 minutes of each other. The main ones are AFaJQ... ($1.58M h1 volume, $58k liquidity, created about 13 minutes earlier), 2SgJ4... ($1.55M h1, $68k liquidity), 9Y3Qw... ($557k), ESN3... ($487k) and 5UdD5... ($585k market cap). There are also several pump.fun versions, one with a nonsensical $1.5B market cap on zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 71 bundler wallets and puts the top bundler traders' share at 11%. There were about 2,119 unique buyers against only 114 unique sellers in h1, while buyers in the last 30 minutes were just 170. That pattern points to a front-loaded surge of many small, bot-like buyers. The creator has closed out ('creator_close'). The image appears on 6 duplicate tokens and the website domain looks spoofed. At the same time there are no paid DexScreener boosts, no smart-money or KOL wallets, and no degen calls.\",\"uncertainty\":\"The two top-10 holder figures conflict: GeckoTerminal shows 92%, which may include pools, while GMGN shows 3.9%. There are no X data, so I cannot confirm whether the project endorsed any contract. Some of the buyers could be genuine retail chasing the tweet.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One of the top markets has 0% of its LP locked, and RugCheck flags 'Large Amount of LP Unlocked'.\",\"Only about $45k of liquidity supports about $2M of hourly volume, which makes the price extremely volatile.\",\"Price is already about 80% below its all-time high and still falling fast.\",\"Liquidity is split across at least 10 same-name clones.\",\"The creator has exited, and 71 bundler wallets are present.\",\"GeckoTerminal's top-10 concentration of 92% may be real rather than pool accounts.\"]},\"counterargument\":\"If Shield.fun is a real project that is gaining traction, and this contract becomes the 'volume winner' the market settles on (it currently leads its clones on hourly volume), then after the flush there could be a second leg as new buyers arrive from the X post. Mint and freeze authority are renounced, there is no tax, the LP burn ratio is 1.0 according to GMGN, and there are no paid boosts. Holders numbering 2,100+ in 40 minutes shows real demand for the name.\",\"unknowns\":[\"Whether @shielddotfun has endorsed any contract address, or has said it has no token\",\"What the X status actually says\",\"Whether shieldss.fun is the official site or a spoof\",\"The true holder concentration, given the 92% vs 3.9% discrepancy\",\"Who holds the unlocked LP\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This report uses only the evidence packet.\"},\"thesis\":\"This looks like one of at least 10 copycat tokens riding an @shielddotfun tweet. It is not first, it has no verified link to the project, the website looks spoofed, and the creator has exited. Price has already fallen about 80% from its peak on bundled, front-loaded buying. Fragmented attention and unlocked LP make it likely that attention fades or the token rugs rather than holding up.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "SHIELD / \"Shield.fun\" was deployed about 40 minutes before detection through a Meteora virtual curve (GMGN records creation and migration at the same second). It then traded on a PumpSwap pair. In roughly its first hour it did about $2.06M of volume on about $40\u201345k of liquidity, a turnover of about 50x. Price hit an all-time high of about $0.00134, then fell sharply: -68% over 15 minutes and -35% to -61% over 5 minutes. It now trades near $0.000276, roughly 80% below its peak, at about $276k market cap. At least 10 other tokens using the same SHIELD / Shield.fun name appeared within the same roughly 40-minute window, several with over $1M of hourly volume. That is a same-name launch frenzy, probably set off by an X post from an account called @shielddotfun: GeckoTerminal's 'twitter handle' field holds a status URL rather than a handle. The creator wallet shows 'creator_close', which suggests the dev has exited. GMGN flags 71 bundler wallets. The project image appears on 6 other tokens.",
+  "narrative": {
+   "description": "Shield.fun looks like a real or announced product: a privacy, 'shield' or launchpad-style '.fun' platform, whose X announcement sparked a burst of copycat launches. In this packet the story belongs to the external project, not to this contract. The linked website 'shieldss.fun' (double s) looks like a possible typosquat and does not match the handle 'shielddotfun'.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A single tweet from @shielddotfun probably prompted deployers to race copycat tokens so they could catch 'CA?' demand before (or instead of) any official token. Attention is split across at least 10 contracts, and this one is already down about 80% from its peak."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing ties this contract to the project. There is no DexScreener profile and no official socials beyond a status-URL link. The website domain (shieldss.fun) looks spoofed, the image is duplicated on 6 other tokens, and the launch was not first. Its main distinction is that it currently has the most hourly volume among the copies.",
+   "competing_tokens": "At least 10 tokens with the same name, all created within about 40 minutes of each other. The main ones are AFaJQ... ($1.58M h1 volume, $58k liquidity, created about 13 minutes earlier), 2SgJ4... ($1.55M h1, $68k liquidity), 9Y3Qw... ($557k), ESN3... ($487k) and 5UdD5... ($585k market cap). There are also several pump.fun versions, one with a nonsensical $1.5B market cap on zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 71 bundler wallets and puts the top bundler traders' share at 11%. There were about 2,119 unique buyers against only 114 unique sellers in h1, while buyers in the last 30 minutes were just 170. That pattern points to a front-loaded surge of many small, bot-like buyers. The creator has closed out ('creator_close'). The image appears on 6 duplicate tokens and the website domain looks spoofed. At the same time there are no paid DexScreener boosts, no smart-money or KOL wallets, and no degen calls.",
+   "uncertainty": "The two top-10 holder figures conflict: GeckoTerminal shows 92%, which may include pools, while GMGN shows 3.9%. There are no X data, so I cannot confirm whether the project endorsed any contract. Some of the buyers could be genuine retail chasing the tweet."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One of the top markets has 0% of its LP locked, and RugCheck flags 'Large Amount of LP Unlocked'.",
+    "Only about $45k of liquidity supports about $2M of hourly volume, which makes the price extremely volatile.",
+    "Price is already about 80% below its all-time high and still falling fast.",
+    "Liquidity is split across at least 10 same-name clones.",
+    "The creator has exited, and 71 bundler wallets are present.",
+    "GeckoTerminal's top-10 concentration of 92% may be real rather than pool accounts."
+   ]
+  },
+  "counterargument": "If Shield.fun is a real project that is gaining traction, and this contract becomes the 'volume winner' the market settles on (it currently leads its clones on hourly volume), then after the flush there could be a second leg as new buyers arrive from the X post. Mint and freeze authority are renounced, there is no tax, the LP burn ratio is 1.0 according to GMGN, and there are no paid boosts. Holders numbering 2,100+ in 40 minutes shows real demand for the name.",
+  "unknowns": [
+   "Whether @shielddotfun has endorsed any contract address, or has said it has no token",
+   "What the X status actually says",
+   "Whether shieldss.fun is the official site or a spoof",
+   "The true holder concentration, given the 92% vs 3.9% discrepancy",
+   "Who holds the unlocked LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This report uses only the evidence packet."
+  },
+  "thesis": "This looks like one of at least 10 copycat tokens riding an @shielddotfun tweet. It is not first, it has no verified link to the project, the website looks spoofed, and the creator has exited. Price has already fallen about 80% from its peak on bundled, front-loaded buying. Fragmented attention and unlocked LP make it likely that attention fades or the token rugs rather than holding up.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4330,
+ "type": "result",
+ "duration_ms": 26000,
+ "uuid": "75458e14-2c19-4e31-a1f3-2134a85daf52",
+ "ttft_stream_ms": 784,
+ "time_to_request_ms": 36,
+ "first_content_frame_ms": 784,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

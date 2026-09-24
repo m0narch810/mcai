@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 53883,
+ "stop_reason": "tool_use",
+ "session_id": "50129cef-f3a5-49ff-bead-5278182def93",
+ "total_cost_usd": 0.2153102,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10281,
+  "cache_read_input_tokens": 16596,
+  "output_tokens": 4246,
+  "output_tokens_details": {
+   "thinking_tokens": 1101
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10281,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3666,
+    "cache_read_input_tokens": 9275,
+    "cache_creation_input_tokens": 1006,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1006
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 4246,
+   "cacheReadInputTokens": 16596,
+   "cacheCreationInputTokens": 10281,
+   "webSearchRequests": 0,
+   "costUSD": 0.17051119999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1101,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20984,
+   "outputTokens": 763,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.044799000000000005,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"The trading flow looks like distribution into bot-inflated buying, not organic demand. In the first hour DexScreener shows about 8,676 buys against 896 sells, and GeckoTerminal counts 6,080 unique buyers against 394 unique sellers. Yet $453k of volume through a pool holding only about $48k raised the price just 230-260%. If most of that volume had been net buying, the price would have risen far more, so sell volume in dollars must have been close to buy volume. A rough estimate from pool size puts the average buy at about $25-50 and the average sell at about $250. That is a few hundred wallets exiting in size into thousands of tiny buys, which is also how micro-buy and holder-boost bot services inflate transaction and holder counts for trending lists. The holder base supports this: about 5,900 holders 42 minutes after the pool was created, and the top 10 wallets each hold between 0.30% and 0.33%, suspiciously even and consistent with a wallet farm buying fixed amounts. Other signs: the creator has sold out (balance 0, GMGN status 'creator_close'), the dev's X account has launched 3 tokens, and a community takeover is already flagged under 42 minutes after launch. Two same-name, same-ticker tokens were created within seconds of this one, one about 4 minutes before and one 29 seconds after; they may be copycat snipers rather than a coordinated deploy. There is no narrative: the description is a generic dog meme, web search returns only older unrelated Hyper Inu tokens on BSC and Ethereum, and nothing turned up for the X handle. The 'Hyper' name at best borrows a popular prefix without any real link to Hyperliquid or another story. Expect a fade once the bot-driven buying stops.\",\"red_flags\":[\"Buy/sell count ratio of about 9.7:1 and unique buyers/sellers of about 15:1, yet price is only +230% on $453k volume through a ~$48k pool. Sells must be large in dollars, which looks like a few big sellers distributing into many tiny buys\",\"Estimated average buy of roughly $25-50, consistent with micro-buy or holder-boost bots\",\"About 5,900 holders 42 minutes after the pool was created, with the top 10 wallets unusually even at 0.30-0.33% each, suggesting a wallet farm\",\"Creator balance is 0 and GMGN creator status is 'creator_close': the dev has exited\",\"Dev's X account has launched 3 tokens\",\"Community takeover flagged under 42 minutes after launch\",\"Two same-name, same-ticker tokens created within seconds of this one (about 4 minutes before and 29 seconds after); may be copycats rather than coordination\",\"GMGN flags 6 bundler wallets and 3 sniper wallets\",\"No identifiable narrative or catalyst: generic dog-meme description and no external discussion found\",\"No smart, renowned or KOL wallets participating\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"The case would weaken if net buying shows up in price and liquidity keeps growing, not just gross volume. It would also weaken if the unique-holder count stays sticky and the top holders spread out, or if independent organic X or community posts appear from accounts other than the project, alert bots and call channels. A real cultural or news catalyst tied to 'Hyper Inu' would also count against it. So would the price holding near $0.0003 or higher after the burst of buy transactions stops.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"Two web searches: the token name returned only older unrelated Hyper Inu tokens on BSC and Ethereum, and the X handle returned nothing. The hyperinu.lol fetch returned only the page title. I did not access X/Twitter posts, Telegram, GMGN pages or DexScreener pages because of time and access limits, so 'no discussion found' is not proof that none exists. The flow-based points are inferences from the evidence packet; the average buy and sell sizes are my estimates from pool arithmetic, not measured figures. Safety signals are in order: authorities renounced, LP burned, no taxes, and no paid boosts flagged.\",\"sources\":[{\"url\":\"https://bscscan.com/token/0xe11F708A7769cB2D26cED9fd12bA54f6d07bF850\",\"what\":\"Older unrelated Hyper Inu (HPE) token on BSC; the name is recycled\"},{\"url\":\"https://etherscan.io/token/0xce8e4fd656061b2abe3dc3e372f50464d594622a\",\"what\":\"Older unrelated Hyper Inu Shiba (HYPERINU) token on Ethereum from 2021\"},{\"url\":\"https://github.com/HyperInu\",\"what\":\"Older HyperInu GitHub, unrelated to this Solana token\"},{\"url\":\"https://hyperinu.lol\",\"what\":\"Project website; the fetch returned only a title with no substantive content\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "The trading flow looks like distribution into bot-inflated buying, not organic demand. In the first hour DexScreener shows about 8,676 buys against 896 sells, and GeckoTerminal counts 6,080 unique buyers against 394 unique sellers. Yet $453k of volume through a pool holding only about $48k raised the price just 230-260%. If most of that volume had been net buying, the price would have risen far more, so sell volume in dollars must have been close to buy volume. A rough estimate from pool size puts the average buy at about $25-50 and the average sell at about $250. That is a few hundred wallets exiting in size into thousands of tiny buys, which is also how micro-buy and holder-boost bot services inflate transaction and holder counts for trending lists. The holder base supports this: about 5,900 holders 42 minutes after the pool was created, and the top 10 wallets each hold between 0.30% and 0.33%, suspiciously even and consistent with a wallet farm buying fixed amounts. Other signs: the creator has sold out (balance 0, GMGN status 'creator_close'), the dev's X account has launched 3 tokens, and a community takeover is already flagged under 42 minutes after launch. Two same-name, same-ticker tokens were created within seconds of this one, one about 4 minutes before and one 29 seconds after; they may be copycat snipers rather than a coordinated deploy. There is no narrative: the description is a generic dog meme, web search returns only older unrelated Hyper Inu tokens on BSC and Ethereum, and nothing turned up for the X handle. The 'Hyper' name at best borrows a popular prefix without any real link to Hyperliquid or another story. Expect a fade once the bot-driven buying stops.",
+  "red_flags": [
+   "Buy/sell count ratio of about 9.7:1 and unique buyers/sellers of about 15:1, yet price is only +230% on $453k volume through a ~$48k pool. Sells must be large in dollars, which looks like a few big sellers distributing into many tiny buys",
+   "Estimated average buy of roughly $25-50, consistent with micro-buy or holder-boost bots",
+   "About 5,900 holders 42 minutes after the pool was created, with the top 10 wallets unusually even at 0.30-0.33% each, suggesting a wallet farm",
+   "Creator balance is 0 and GMGN creator status is 'creator_close': the dev has exited",
+   "Dev's X account has launched 3 tokens",
+   "Community takeover flagged under 42 minutes after launch",
+   "Two same-name, same-ticker tokens created within seconds of this one (about 4 minutes before and 29 seconds after); may be copycats rather than coordination",
+   "GMGN flags 6 bundler wallets and 3 sniper wallets",
+   "No identifiable narrative or catalyst: generic dog-meme description and no external discussion found",
+   "No smart, renowned or KOL wallets participating"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "The case would weaken if net buying shows up in price and liquidity keeps growing, not just gross volume. It would also weaken if the unique-holder count stays sticky and the top holders spread out, or if independent organic X or community posts appear from accounts other than the project, alert bots and call channels. A real cultural or news catalyst tied to 'Hyper Inu' would also count against it. So would the price holding near $0.0003 or higher after the burst of buy transactions stops.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "coverage_notes": "Two web searches: the token name returned only older unrelated Hyper Inu tokens on BSC and Ethereum, and the X handle returned nothing. The hyperinu.lol fetch returned only the page title. I did not access X/Twitter posts, Telegram, GMGN pages or DexScreener pages because of time and access limits, so 'no discussion found' is not proof that none exists. The flow-based points are inferences from the evidence packet; the average buy and sell sizes are my estimates from pool arithmetic, not measured figures. Safety signals are in order: authorities renounced, LP burned, no taxes, and no paid boosts flagged.",
+  "sources": [
+   {
+    "url": "https://bscscan.com/token/0xe11F708A7769cB2D26cED9fd12bA54f6d07bF850",
+    "what": "Older unrelated Hyper Inu (HPE) token on BSC; the name is recycled"
+   },
+   {
+    "url": "https://etherscan.io/token/0xce8e4fd656061b2abe3dc3e372f50464d594622a",
+    "what": "Older unrelated Hyper Inu Shiba (HYPERINU) token on Ethereum from 2021"
+   },
+   {
+    "url": "https://github.com/HyperInu",
+    "what": "Older HyperInu GitHub, unrelated to this Solana token"
+   },
+   {
+    "url": "https://hyperinu.lol",
+    "what": "Project website; the fetch returned only a title with no substantive content"
+   }
+  ]
+ },
+ "ttft_ms": 4293,
+ "type": "result",
+ "duration_ms": 50414,
+ "uuid": "655d5931-d1a6-4f23-9595-21a265422609",
+ "ttft_stream_ms": 708,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 708,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

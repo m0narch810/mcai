@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 22734,
+ "stop_reason": "tool_use",
+ "session_id": "58ac3247-ddea-43db-bf79-e256f070c70d",
+ "total_cost_usd": 0.0870956,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4952,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2355,
+  "output_tokens_details": {
+   "thinking_tokens": 279
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4952,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2355,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4952,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4952
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2355,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4952,
+   "webSearchRequests": 0,
+   "costUSD": 0.0870956,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 279,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Microsoft Azure\\\" (ticker \\\"Microso\\\", apparently cut short) launched through a Meteora virtual curve. GMGN shows creation and migration at the same second. It trades on a PumpSwap pair created about 36 minutes before detection. In its first hour it did about $3.0M of volume on roughly $317k of liquidity, which is about 9.5 times turnover. Price rose 52\u201378% (depending on source) to a market cap of about $1.1M, right at its all-time high. Buyers far outnumber sellers (1,713 unique buyers vs 152 unique sellers in h1), but new buyers are slowing: GeckoTerminal shows 1,193 in m30, 573 in m15 and 108 in m5. There are no website, socials, X handle, description or DexScreener profile. The token uses a big-tech brand name with no visible link to Microsoft. It shows heavy coordination signals: 91 bundler wallets, 45 rat-trader (insider) wallets, 123 graph-detected insiders, and one 112-wallet transfer network. The creator's status is \\\"creator_close\\\", meaning the creator has exited.\",\"narrative\":{\"description\":\"Borrows a big-tech brand (Microsoft Azure) with no project links. It may be riding some Microsoft/Azure news item (e.g., an AI or crypto-related Azure announcement), but nothing in the packet confirms a catalyst. Brand-impersonation tickers like this rarely hold a lasting story. Microsoft will not endorse it, and any news hook tends to be short-lived.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The early spread looks driven by the brand name, possibly a news hook, and by coordinated or bundled buying (a 112-wallet transfer network, 91 bundlers) rather than organic community growth. With no socials or profile, nobody is promoting it in a way that could sustain attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The packet lists no same-name or same-ticker tokens, and this one has already traded about $3M, so it may be the leading 'Microsoft Azure' token for now. But it has no official connection to the brand, and the ticker is a truncated string.\",\"competing_tokens\":\"None listed in the packet. Brand-name tokens usually attract many copycats quickly, and the image appears as a duplicate 3 times, which points to clones or reuse.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"91 bundler wallets; 45 rat-trader wallets; 123 graph insiders, including a 112-wallet transfer cluster; the image is duplicated 3 times; the creator has closed their position; there are no socials. The buy/sell skew (about 11 buyers per seller) with a large number of small buyers fits bot or bundle-driven volume. On the other side, GMGN rates show bot/degen share at 0 and top bundler holdings at only 3.4%.\",\"uncertainty\":\"GMGN rates suggest the bundlers now hold only small shares. The GeckoTerminal top-10 figure of 96% probably includes the pool account and is inconsistent with GMGN's 1.5% top-10 rate. So current concentration is unclear, and real retail inflow could be part of the 1,713 buyers.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"RugCheck flags a large share of LP as unlocked on one market (the 0% locked entry), even though GMGN reports lp_burn_ratio 1.0\",\"Insider transfer network of 112 wallets that could sell together\",\"Creator already exited (creator_close)\",\"Top-10 holder data conflicts (96% on GeckoTerminal vs 1.5% on GMGN)\",\"New-buyer growth decelerating sharply while price is at ATH\",\"Brand-name impersonation invites clones and possible delisting or flagging\"]},\"counterargument\":\"Liquidity is solid for its age (about $317k), mint and freeze authorities are renounced, and taxes are zero. It has 1,700+ unique buyers against only 152 sellers, and price is still making new highs. A Microsoft Azure-themed token could catch a real news cycle, for example around AI or crypto, and pull in trenches traders, pushing it through the $1M mark to multi-million. Low seller count also means little supply has been distributed yet.\",\"unknowns\":[\"Whether there is a real Microsoft/Azure news catalyst on 2026-09-23\",\"What the insider and bundler cluster currently holds, and when it will sell\",\"Which LP market is unlocked and who controls it\",\"Whether any X/KOL promotion is happening off-packet\",\"How many copycat Azure tokens exist on other launchpads\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged only from the evidence packet.\"},\"thesis\":\"This is a brand-impersonation launch with no socials and heavy bundler and insider structure. The creator has already exited, and new-buyer arrivals are slowing fast while price sits at its high. The most likely path is a distribution top followed by a fade over the next several hours. A real news hook is the main upside risk.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Microsoft Azure\" (ticker \"Microso\", apparently cut short) launched through a Meteora virtual curve. GMGN shows creation and migration at the same second. It trades on a PumpSwap pair created about 36 minutes before detection. In its first hour it did about $3.0M of volume on roughly $317k of liquidity, which is about 9.5 times turnover. Price rose 52\u201378% (depending on source) to a market cap of about $1.1M, right at its all-time high. Buyers far outnumber sellers (1,713 unique buyers vs 152 unique sellers in h1), but new buyers are slowing: GeckoTerminal shows 1,193 in m30, 573 in m15 and 108 in m5. There are no website, socials, X handle, description or DexScreener profile. The token uses a big-tech brand name with no visible link to Microsoft. It shows heavy coordination signals: 91 bundler wallets, 45 rat-trader (insider) wallets, 123 graph-detected insiders, and one 112-wallet transfer network. The creator's status is \"creator_close\", meaning the creator has exited.",
+  "narrative": {
+   "description": "Borrows a big-tech brand (Microsoft Azure) with no project links. It may be riding some Microsoft/Azure news item (e.g., an AI or crypto-related Azure announcement), but nothing in the packet confirms a catalyst. Brand-impersonation tickers like this rarely hold a lasting story. Microsoft will not endorse it, and any news hook tends to be short-lived.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The early spread looks driven by the brand name, possibly a news hook, and by coordinated or bundled buying (a 112-wallet transfer network, 91 bundlers) rather than organic community growth. With no socials or profile, nobody is promoting it in a way that could sustain attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The packet lists no same-name or same-ticker tokens, and this one has already traded about $3M, so it may be the leading 'Microsoft Azure' token for now. But it has no official connection to the brand, and the ticker is a truncated string.",
+   "competing_tokens": "None listed in the packet. Brand-name tokens usually attract many copycats quickly, and the image appears as a duplicate 3 times, which points to clones or reuse.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "91 bundler wallets; 45 rat-trader wallets; 123 graph insiders, including a 112-wallet transfer cluster; the image is duplicated 3 times; the creator has closed their position; there are no socials. The buy/sell skew (about 11 buyers per seller) with a large number of small buyers fits bot or bundle-driven volume. On the other side, GMGN rates show bot/degen share at 0 and top bundler holdings at only 3.4%.",
+   "uncertainty": "GMGN rates suggest the bundlers now hold only small shares. The GeckoTerminal top-10 figure of 96% probably includes the pool account and is inconsistent with GMGN's 1.5% top-10 rate. So current concentration is unclear, and real retail inflow could be part of the 1,713 buyers."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "RugCheck flags a large share of LP as unlocked on one market (the 0% locked entry), even though GMGN reports lp_burn_ratio 1.0",
+    "Insider transfer network of 112 wallets that could sell together",
+    "Creator already exited (creator_close)",
+    "Top-10 holder data conflicts (96% on GeckoTerminal vs 1.5% on GMGN)",
+    "New-buyer growth decelerating sharply while price is at ATH",
+    "Brand-name impersonation invites clones and possible delisting or flagging"
+   ]
+  },
+  "counterargument": "Liquidity is solid for its age (about $317k), mint and freeze authorities are renounced, and taxes are zero. It has 1,700+ unique buyers against only 152 sellers, and price is still making new highs. A Microsoft Azure-themed token could catch a real news cycle, for example around AI or crypto, and pull in trenches traders, pushing it through the $1M mark to multi-million. Low seller count also means little supply has been distributed yet.",
+  "unknowns": [
+   "Whether there is a real Microsoft/Azure news catalyst on 2026-09-23",
+   "What the insider and bundler cluster currently holds, and when it will sell",
+   "Which LP market is unlocked and who controls it",
+   "Whether any X/KOL promotion is happening off-packet",
+   "How many copycat Azure tokens exist on other launchpads"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged only from the evidence packet."
+  },
+  "thesis": "This is a brand-impersonation launch with no socials and heavy bundler and insider structure. The creator has already exited, and new-buyer arrivals are slowing fast while price sits at its high. The most likely path is a distribution top followed by a fade over the next several hours. A real news hook is the main upside risk.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3905,
+ "type": "result",
+ "duration_ms": 22772,
+ "uuid": "e4685ed7-208b-49ff-915e-477be23619a3",
+ "ttft_stream_ms": 754,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 755,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

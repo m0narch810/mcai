@@ -1,0 +1,137 @@
+{
+ "duration_api_ms": 39535,
+ "stop_reason": "tool_use",
+ "session_id": "f86089b9-66db-4a2b-9c47-32db577b25cd",
+ "total_cost_usd": 0.1589704,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10084,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 3906,
+  "output_tokens_details": {
+   "thinking_tokens": 1348
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10084,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3906,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 10084,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10084
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3906,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 10084,
+   "webSearchRequests": 0,
+   "costUSD": 0.1589704,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1348,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The flow behind the trigger was tiny: about $1.6k of 5-minute volume against about $41k of pool liquidity, and only $3.5k over 6h. The report treated this as the main reason to call it noise. That was right: over 6h the price hit neither the \u00b11\u03c3 nor the \u00b12\u03c3 barrier, and it touched none of the +50%, -20% or larger levels.\",\"The pre-trigger hourly sigma was about 14.6%. The trigger moved the price roughly 12\u201315%, which is under one pre-trigger hourly sigma, so the move sat inside the token's normal noise. The report did not use this framing, but its point about the small absolute size of the move carried the same information.\",\"The 32.6x 'acceleration' (5-minute vs 6h volume) came from a very small 6h base ($3.5k). Big ratios on a small denominator carry little information. The report correctly looked past the ratio to the dollar amounts.\",\"Nothing in the structure pointed to a sudden collapse: LP 100% locked/burned, mint and freeze renounced, stable liquidity of about $41k, no rug flags, and the token had survived two months. This correctly implied limited tail risk. The 24h minimum liquidity was $40.4k, and there was no collapse and no -20% touch.\",\"No catalyst was found on the reachable channels (Reddit, news, the 258-member Telegram, the contract-address search). This fits the absence of any continuation: the 6h maximum favorable excursion was +11%, and the price never pushed to new highs.\"],\"misleading_observations\":[\"'1000+ bundler wallets and 1000+ fresh wallets' was cited as authenticity evidence. Both numbers look like round API caps, and they conflict with GMGN's own rate fields in the same packet (fresh_wallet_rate 1.4%, top_bundler_trader_pct 0%). Capped counts that contradict their rate fields should have been treated as uninformative.\",\"The 'one cent per trade' arithmetic mixed windows. GeckoTerminal's 5-minute window ($0.45) came after the burst, while DexScreener's 5-minute window had $1,603 on 125 transactions. GeckoTerminal's 15-minute window ($1,598) shows the burst was real volume. Micro-trading bots may well be present, but this particular calculation overstated the case.\",\"The 'active paid DexScreener boost' came from a GMGN boolean. The packet's own dexscreener_paid_boosts_active field is null, so the boost may be historical. Rating the token 'strong_promotional' leaned on it too heavily.\",\"'The dev wallet still holds ~1.3%' uses GMGN's creator address. RugCheck names a different creator with a balance of 0. The report did not reconcile the two sources.\",\"The 'fade' framing implied the price would give back the burst. In fact the price held roughly flat: gross +1.1% at 6h and +4.5% at 24h, while net returns were -3.0% and +0.2%. The negative net returns come mostly from fees and the entry price, not from a fade. The call that nothing would continue was right, but the direction it implied was not really tested.\"],\"evidence_that_should_have_changed_conclusion\":[\"No evidence available at decision time should have flipped the call to continuation. However, the stable locked liquidity, the sub-1\u03c3 trigger move and the old, surviving pool should have pushed the forecast from 'fade' toward 'flat / range-bound noise'. The report could have separated 'no continuation' from 'reversal'.\",\"The internal contradictions in GMGN's wallet-tag data (capped at 1000 vs low rates) should have lowered the weight on the 'bot/bundler' authenticity argument. That would not have changed the direction of the call, but it should have tempered the 'strong_promotional' label.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"fair\",\"hypotheses_proposed\":[{\"statement\":\"When the trigger's price move is smaller than the token's pre-trigger hourly sigma and the trigger-window dollar volume is under ~5% of pool liquidity, the 6h path will hit neither the +1\u03c3 nor the -1\u03c3 barrier more often than the base rate across all triggers.\",\"conditions\":\"Tokens with pair age over 7 days, measurable pre-trigger sigma, and pool liquidity of $20k or more. Compare against all triggered candidates under the same preregistered rule.\",\"market_structure_rationale\":\"A move inside normal volatility, driven by flow that is small relative to pool depth, does not shift the supply/demand balance. With no new marginal buyers, the price should random-walk inside its usual range and not trend.\"},{\"statement\":\"For old tokens (over 30 days) with LP locked or burned, renounced authorities and a stable liquidity history, 'no continuation' calls will more often end flat than as a drop of 20% or more within 24h. The expected downside is fees plus noise, not a collapse.\",\"conditions\":\"LP burn ratio of 1.0 or locked, no rug flags, and liquidity variation under ~10% over the prior 24h, all read at decision time.\",\"market_structure_rationale\":\"Locked liquidity and a holder base that has already survived a large drawdown from ATH remove the rug and liquidity-pull exit that drives sharp declines on young tokens. The remaining sellers are dispersed and slow.\"},{\"statement\":\"When GMGN wallet-tag counts equal a round cap (e.g., 1000) and contradict GMGN's own rate fields, those counts carry no predictive value for 6h returns or barrier hits.\",\"conditions\":\"Any candidate where a wallet_tags count equals exactly 1000 while the matching rate field (fresh_wallet_rate, top_bundler_trader_pct) is under 5%.\",\"market_structure_rationale\":\"Truncated counts are a property of the data source, not of the token's order flow. Any apparent link to outcomes would come from confounding, not from real bot pressure.\"}],\"summary\":\"The report called the trigger noise and expected a fade. What followed was a non-event: net returns were -6.2% at 1h, -3.0% at 6h and +0.2% at 24h, the gross 24h return was +4.5%, and the price hit no sigma barrier and no % level. Liquidity stayed stable at about $41k. The core reasoning held up and bore on the outcome: a ~$1.6k burst on a $41k pool, a move smaller than one pre-trigger hourly sigma, a small-base acceleration ratio, and no catalyst found. A 'no continuation' view was justified at decision time. Several supporting points were weak or misread: GMGN wallet counts that look capped at 1000 and contradict the rate fields, per-trade arithmetic mixed across mismatched windows, a boost flag the packet's own DexScreener field did not confirm, and conflicting creator addresses. None of these made a difference, because the outcome was driven by the absence of new flow. The direction of the 'fade' was not confirmed: the price stayed near entry rather than giving back the burst, and the negative net returns mostly reflect fees and entry slippage. It was knowable that nothing large would happen; the direction within the noise was not. One flat outcome is weak evidence either way.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The flow behind the trigger was tiny: about $1.6k of 5-minute volume against about $41k of pool liquidity, and only $3.5k over 6h. The report treated this as the main reason to call it noise. That was right: over 6h the price hit neither the \u00b11\u03c3 nor the \u00b12\u03c3 barrier, and it touched none of the +50%, -20% or larger levels.",
+   "The pre-trigger hourly sigma was about 14.6%. The trigger moved the price roughly 12\u201315%, which is under one pre-trigger hourly sigma, so the move sat inside the token's normal noise. The report did not use this framing, but its point about the small absolute size of the move carried the same information.",
+   "The 32.6x 'acceleration' (5-minute vs 6h volume) came from a very small 6h base ($3.5k). Big ratios on a small denominator carry little information. The report correctly looked past the ratio to the dollar amounts.",
+   "Nothing in the structure pointed to a sudden collapse: LP 100% locked/burned, mint and freeze renounced, stable liquidity of about $41k, no rug flags, and the token had survived two months. This correctly implied limited tail risk. The 24h minimum liquidity was $40.4k, and there was no collapse and no -20% touch.",
+   "No catalyst was found on the reachable channels (Reddit, news, the 258-member Telegram, the contract-address search). This fits the absence of any continuation: the 6h maximum favorable excursion was +11%, and the price never pushed to new highs."
+  ],
+  "misleading_observations": [
+   "'1000+ bundler wallets and 1000+ fresh wallets' was cited as authenticity evidence. Both numbers look like round API caps, and they conflict with GMGN's own rate fields in the same packet (fresh_wallet_rate 1.4%, top_bundler_trader_pct 0%). Capped counts that contradict their rate fields should have been treated as uninformative.",
+   "The 'one cent per trade' arithmetic mixed windows. GeckoTerminal's 5-minute window ($0.45) came after the burst, while DexScreener's 5-minute window had $1,603 on 125 transactions. GeckoTerminal's 15-minute window ($1,598) shows the burst was real volume. Micro-trading bots may well be present, but this particular calculation overstated the case.",
+   "The 'active paid DexScreener boost' came from a GMGN boolean. The packet's own dexscreener_paid_boosts_active field is null, so the boost may be historical. Rating the token 'strong_promotional' leaned on it too heavily.",
+   "'The dev wallet still holds ~1.3%' uses GMGN's creator address. RugCheck names a different creator with a balance of 0. The report did not reconcile the two sources.",
+   "The 'fade' framing implied the price would give back the burst. In fact the price held roughly flat: gross +1.1% at 6h and +4.5% at 24h, while net returns were -3.0% and +0.2%. The negative net returns come mostly from fees and the entry price, not from a fade. The call that nothing would continue was right, but the direction it implied was not really tested."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "No evidence available at decision time should have flipped the call to continuation. However, the stable locked liquidity, the sub-1\u03c3 trigger move and the old, surviving pool should have pushed the forecast from 'fade' toward 'flat / range-bound noise'. The report could have separated 'no continuation' from 'reversal'.",
+   "The internal contradictions in GMGN's wallet-tag data (capped at 1000 vs low rates) should have lowered the weight on the 'bot/bundler' authenticity argument. That would not have changed the direction of the call, but it should have tempered the 'strong_promotional' label."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "fair",
+  "hypotheses_proposed": [
+   {
+    "statement": "When the trigger's price move is smaller than the token's pre-trigger hourly sigma and the trigger-window dollar volume is under ~5% of pool liquidity, the 6h path will hit neither the +1\u03c3 nor the -1\u03c3 barrier more often than the base rate across all triggers.",
+    "conditions": "Tokens with pair age over 7 days, measurable pre-trigger sigma, and pool liquidity of $20k or more. Compare against all triggered candidates under the same preregistered rule.",
+    "market_structure_rationale": "A move inside normal volatility, driven by flow that is small relative to pool depth, does not shift the supply/demand balance. With no new marginal buyers, the price should random-walk inside its usual range and not trend."
+   },
+   {
+    "statement": "For old tokens (over 30 days) with LP locked or burned, renounced authorities and a stable liquidity history, 'no continuation' calls will more often end flat than as a drop of 20% or more within 24h. The expected downside is fees plus noise, not a collapse.",
+    "conditions": "LP burn ratio of 1.0 or locked, no rug flags, and liquidity variation under ~10% over the prior 24h, all read at decision time.",
+    "market_structure_rationale": "Locked liquidity and a holder base that has already survived a large drawdown from ATH remove the rug and liquidity-pull exit that drives sharp declines on young tokens. The remaining sellers are dispersed and slow."
+   },
+   {
+    "statement": "When GMGN wallet-tag counts equal a round cap (e.g., 1000) and contradict GMGN's own rate fields, those counts carry no predictive value for 6h returns or barrier hits.",
+    "conditions": "Any candidate where a wallet_tags count equals exactly 1000 while the matching rate field (fresh_wallet_rate, top_bundler_trader_pct) is under 5%.",
+    "market_structure_rationale": "Truncated counts are a property of the data source, not of the token's order flow. Any apparent link to outcomes would come from confounding, not from real bot pressure."
+   }
+  ],
+  "summary": "The report called the trigger noise and expected a fade. What followed was a non-event: net returns were -6.2% at 1h, -3.0% at 6h and +0.2% at 24h, the gross 24h return was +4.5%, and the price hit no sigma barrier and no % level. Liquidity stayed stable at about $41k. The core reasoning held up and bore on the outcome: a ~$1.6k burst on a $41k pool, a move smaller than one pre-trigger hourly sigma, a small-base acceleration ratio, and no catalyst found. A 'no continuation' view was justified at decision time. Several supporting points were weak or misread: GMGN wallet counts that look capped at 1000 and contradict the rate fields, per-trade arithmetic mixed across mismatched windows, a boost flag the packet's own DexScreener field did not confirm, and conflicting creator addresses. None of these made a difference, because the outcome was driven by the absence of new flow. The direction of the 'fade' was not confirmed: the price stayed near entry rather than giving back the burst, and the negative net returns mostly reflect fees and entry slippage. It was knowable that nothing large would happen; the direction within the noise was not. One flat outcome is weak evidence either way."
+ },
+ "ttft_ms": 15471,
+ "type": "result",
+ "duration_ms": 39587,
+ "uuid": "f939e888-6c70-458c-abeb-8265e3af33d9",
+ "ttft_stream_ms": 746,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 746,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

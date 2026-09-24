@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 23272,
+ "stop_reason": "tool_use",
+ "session_id": "cb37aa16-1279-4218-8970-bda7f0c08f99",
+ "total_cost_usd": 0.113448,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8140,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2416,
+  "output_tokens_details": {
+   "thinking_tokens": 379
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8140,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2416,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 8140,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8140
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2416,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 8140,
+   "webSearchRequests": 0,
+   "costUSD": 0.113448,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 379,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"SRI (\\\"Super Retarded Inu\\\") is a 36-minute-old PumpSwap pair. GMGN shows it launched on a Meteora virtual curve, with creation and migration logged in the same second. Price went up about 530\u2013745% in the first hour on about $2.17M of volume, which is about 37x turnover against a roughly $327K market cap at detection. It had already fallen 33\u201343% in the latest 5 minutes and sits about 43% below its all-time high ($0.000769 ATH vs $0.000438 now). At least 10 other tokens with the same name and ticker launched within about 40 minutes of each other. One of them shows $2.6M of hourly volume on just $96 of liquidity. The name is being mass-deployed, which suggests an external meme or trigger that the packet does not show. This contract currently has the largest market cap and liquidity of the clones.\",\"narrative\":{\"description\":\"The name is a crude inu-style meme with no website, socials, description or DexScreener profile. Ten or more same-name deploys in a short window point to a shared outside trigger, probably a post or meme, that the packet can't identify. There is no visible story beyond the name itself.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Whatever is behind it looks like a race to deploy a trending phrase, not attention to this project. The activity is mostly bots and bundlers trading several copies of the same ticker at once. There is no organic social signal in the packet and no X data.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It leads the same-name clones on market cap ($438K) and liquidity ($67K), and it tripped the activity rule. Nothing links it to an original source: no socials, and the creator's token status is 'creator_close'.\",\"competing_tokens\":\"There are at least 10 SRI 'Super Retarded Inu' tokens. GCUv\u2026 and oisn\u2026 were created 9 and 2 minutes before this pair and have about $109K market cap each and $31K liquidity. AoGR\u2026 has $2.6M of hourly volume on $96 of liquidity. B26a\u2026pump is a later pump.fun deploy. Several others are dead at about $3.3K market cap.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 109 bundler wallets. Unique buyers (2,152) outnumber unique sellers (153) about 14 to 1, and there were 9,601 buys. That is the typical pattern of bot-sprayed small buys or a bundle distributed across many wallets, not organic two-sided trading. The image is duplicated on 4 other tokens and GMGN recorded only 1 page visit. There are no smart-money or renowned wallets and no KOL calls. Same-second creation and migration suggests a scripted launch.\",\"uncertainty\":\"GMGN's top-10 holding rate (7%) is much lower than GeckoTerminal's (94.7%, which likely counts pool accounts), so the real concentration is unclear. There is no social data, so real organic interest can't be ruled out.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck says a large amount of LP is unlocked, which conflicts with GMGN's lp_burn_ratio of 1.0; the first of the two top markets shows 0% locked\",\"Few liquidity providers\",\"109 bundler wallets\",\"Top-10 holding of 94.7% on GeckoTerminal (may include pools)\",\"Heavy dilution of attention across 10+ same-ticker clones\",\"Already down about 43% from ATH, with the latest 5 minutes negative\",\"Liquidity of about $67K against $2M+ hourly volume means wash-like turnover\"]},\"counterargument\":\"If an outside meme really is going viral, a mass deploy race usually settles on one winner, and this contract currently has the most liquidity and market cap. Mint and freeze authority are renounced, there's no tax, and GMGN reports the LP burned and the dev holding nothing. More than 2,100 holders within 36 minutes is a large base. GeckoTerminal's 5-minute price change is +2.4%, so the pullback may be stabilising, and a second leg toward $1M+ market cap is possible if a KOL or community settles on this contract.\",\"unknowns\":[\"What triggered the name (tweet, streamer, earlier meme)\",\"Whether any community or KOL is pointing at this specific contract\",\"The real holder concentration excluding pools\",\"Whether the LP is actually locked or burned\",\"Whether the bundler wallets are still holding or distributing\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; judged only from the evidence packet.\"},\"thesis\":\"This looks like a bot- and bundler-driven launch race over a crude meme name, with 10+ same-ticker copies. There are no socials, no smart money, and a buyer/seller asymmetry typical of manufactured activity. It has already retraced sharply from its peak. The expected path is fading volume and price within 6 hours as attention scatters across clones and early bundlers exit.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "SRI (\"Super Retarded Inu\") is a 36-minute-old PumpSwap pair. GMGN shows it launched on a Meteora virtual curve, with creation and migration logged in the same second. Price went up about 530\u2013745% in the first hour on about $2.17M of volume, which is about 37x turnover against a roughly $327K market cap at detection. It had already fallen 33\u201343% in the latest 5 minutes and sits about 43% below its all-time high ($0.000769 ATH vs $0.000438 now). At least 10 other tokens with the same name and ticker launched within about 40 minutes of each other. One of them shows $2.6M of hourly volume on just $96 of liquidity. The name is being mass-deployed, which suggests an external meme or trigger that the packet does not show. This contract currently has the largest market cap and liquidity of the clones.",
+  "narrative": {
+   "description": "The name is a crude inu-style meme with no website, socials, description or DexScreener profile. Ten or more same-name deploys in a short window point to a shared outside trigger, probably a post or meme, that the packet can't identify. There is no visible story beyond the name itself.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Whatever is behind it looks like a race to deploy a trending phrase, not attention to this project. The activity is mostly bots and bundlers trading several copies of the same ticker at once. There is no organic social signal in the packet and no X data."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It leads the same-name clones on market cap ($438K) and liquidity ($67K), and it tripped the activity rule. Nothing links it to an original source: no socials, and the creator's token status is 'creator_close'.",
+   "competing_tokens": "There are at least 10 SRI 'Super Retarded Inu' tokens. GCUv\u2026 and oisn\u2026 were created 9 and 2 minutes before this pair and have about $109K market cap each and $31K liquidity. AoGR\u2026 has $2.6M of hourly volume on $96 of liquidity. B26a\u2026pump is a later pump.fun deploy. Several others are dead at about $3.3K market cap.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 109 bundler wallets. Unique buyers (2,152) outnumber unique sellers (153) about 14 to 1, and there were 9,601 buys. That is the typical pattern of bot-sprayed small buys or a bundle distributed across many wallets, not organic two-sided trading. The image is duplicated on 4 other tokens and GMGN recorded only 1 page visit. There are no smart-money or renowned wallets and no KOL calls. Same-second creation and migration suggests a scripted launch.",
+   "uncertainty": "GMGN's top-10 holding rate (7%) is much lower than GeckoTerminal's (94.7%, which likely counts pool accounts), so the real concentration is unclear. There is no social data, so real organic interest can't be ruled out."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck says a large amount of LP is unlocked, which conflicts with GMGN's lp_burn_ratio of 1.0; the first of the two top markets shows 0% locked",
+    "Few liquidity providers",
+    "109 bundler wallets",
+    "Top-10 holding of 94.7% on GeckoTerminal (may include pools)",
+    "Heavy dilution of attention across 10+ same-ticker clones",
+    "Already down about 43% from ATH, with the latest 5 minutes negative",
+    "Liquidity of about $67K against $2M+ hourly volume means wash-like turnover"
+   ]
+  },
+  "counterargument": "If an outside meme really is going viral, a mass deploy race usually settles on one winner, and this contract currently has the most liquidity and market cap. Mint and freeze authority are renounced, there's no tax, and GMGN reports the LP burned and the dev holding nothing. More than 2,100 holders within 36 minutes is a large base. GeckoTerminal's 5-minute price change is +2.4%, so the pullback may be stabilising, and a second leg toward $1M+ market cap is possible if a KOL or community settles on this contract.",
+  "unknowns": [
+   "What triggered the name (tweet, streamer, earlier meme)",
+   "Whether any community or KOL is pointing at this specific contract",
+   "The real holder concentration excluding pools",
+   "Whether the LP is actually locked or burned",
+   "Whether the bundler wallets are still holding or distributing"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; judged only from the evidence packet."
+  },
+  "thesis": "This looks like a bot- and bundler-driven launch race over a crude meme name, with 10+ same-ticker copies. There are no socials, no smart money, and a buyer/seller asymmetry typical of manufactured activity. It has already retraced sharply from its peak. The expected path is fading volume and price within 6 hours as attention scatters across clones and early bundlers exit.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5157,
+ "type": "result",
+ "duration_ms": 23315,
+ "uuid": "179a4029-5075-4f6c-aa78-19ffc2147e8d",
+ "ttft_stream_ms": 683,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 684,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

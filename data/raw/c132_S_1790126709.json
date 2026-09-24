@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 38043,
+ "stop_reason": "tool_use",
+ "session_id": "68ee9625-bcfa-4763-aa86-1f43ccd6fc29",
+ "total_cost_usd": 0.1755634,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 9248,
+  "cache_read_input_tokens": 18442,
+  "output_tokens": 2511,
+  "output_tokens_details": {
+   "thinking_tokens": 226
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9248,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1981,
+    "cache_read_input_tokens": 9255,
+    "cache_creation_input_tokens": 1455,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1455
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2511,
+   "cacheReadInputTokens": 18442,
+   "cacheCreationInputTokens": 9248,
+   "webSearchRequests": 0,
+   "costUSD": 0.12791639999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 226,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 23062,
+   "outputTokens": 917,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.047646999999999995,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This looks like one of many copycat tokens riding a single tweet, not a durable narrative. At least 10 other tokens named \\\"Shield.fun\\\" / SHIELD launched on Solana within about 40 minutes of each other (pair creation times run from 1790123441 to 1790125717). Several of them traded at similar or higher volume: AFaJQ\u2026 had $1.58M in h1 volume, 2SgJ4\u2026 had $1.55M, 9Y3Q\u2026 had $557k and ESN3\u2026 had $487k. This token has no official status. Its \\\"twitter\\\" link is not a project account but a link to a single status from @shielddotfun. Its website is \\\"shieldss.fun\\\", with a doubled 's' that looks like typosquatting. That site only shows a ZEC-powered launchpad tagline and a \\\"Something went wrong\\\" error. There is no DexScreener profile and no description. Whatever @shielddotfun announced, possibly a ZEC-shielded launchpad, is someone else's story, and this contract is one of a dozen tickers competing to capture it. The trading pattern points the same way. The price rose 246\u2013339% in the first hour, then fell 35\u201361% in the last 5 minutes and 68% over 15 minutes. The ATH was $0.00134, and at $0.000276 the price is about 80% below it within the first hour. GeckoTerminal counts 2,119 unique buyers but only 114 unique sellers. Most buyers are therefore holding bags, while a small group is taking profit. GMGN flags 71 bundler wallets, and bundlers hold about 11% of top-trader share. The top 10 holders own 92% (this may include the pool). One market has 0% of LP locked, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" as a danger. Creator status is \\\"creator_close\\\", meaning the creator has exited. The token image is duplicated 6 times. h1 turnover of about 50x market cap in the first 37 minutes is typical of a sniper/bot rotation in the first hour of a launch, not organic accumulation.\",\"red_flags\":[\"10+ same-name 'Shield.fun' SHIELD tokens launched within ~40 min; several with comparable $0.5\u20131.6M h1 volume \u2014 ticker hijack / clone war\",\"Project 'twitter' is a link to a single tweet by @shielddotfun, not an official token account; no evidence @shielddotfun endorses this contract\",\"Website shieldss.fun (double 's') looks like a typosquat; page shows only a tagline and an error\",\"Price down ~80% from ATH ($0.00134 \u2192 $0.000276) within the first hour; -68% over m15\",\"2,119 unique buyers vs 114 unique sellers: concentrated distribution to a crowd of buyers\",\"71 GMGN bundler wallets; top bundler trader share 11.3%\",\"Top 10 holders 92% (may include pool); LP 0% locked on one market; RugCheck 'Large Amount of LP Unlocked' danger\",\"Creator status creator_close (dev exited); token image duplicated 6 times\",\"h1 turnover ~50x market cap in first ~37 min, suggesting bot/sniper churn\",\"No DexScreener profile, no description, no organic web discussion found\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"The bear case would fail if @shielddotfun, or the team behind the ZEC-shield launchpad, publicly named THIS contract (9V75\u2026dRpf) as the official token, for example in a pinned tweet or on the real site. Other things that would count against it: the clones fading to zero while this one keeps liquidity and holders, sellers broadening without the price collapsing, LP getting locked or burned on all markets, and independent organic discussion of the underlying product beyond launch-time alert bots.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"I could not read the X status (x.com returned 402), so I don't know what @shielddotfun actually posted or whether it names a contract address. Web search found nothing about a \\\"Shield.fun\\\" token launch. It only turned up unrelated SHIELD projects: Token Shield (tokenshield.fun), Solflare Shield, and BSC's Shield Protocol. The shieldss.fun site returned only a ZEC launchpad tagline plus an error. I checked no Telegram, Discord or X replies. I did not fetch the other clone contracts to see which one, if any, is official. The bear case rests mostly on the packet data (the clone list, buyer/seller asymmetry, the drop from ATH, bundlers, LP flags), and those numbers are internally consistent.\",\"sources\":[{\"url\":\"https://x.com/shielddotfun/status/2102553957792952569\",\"what\":\"Tweet linked as the token's twitter; fetch blocked (HTTP 402)\"},{\"url\":\"https://shieldss.fun/\",\"what\":\"Linked website: only a ZEC-shield launchpad tagline and an error, no contract address\"},{\"url\":\"http://tokenshield.fun/\",\"what\":\"Unrelated Solana 'Token Shield' project using $SHIELD, showing the ticker is crowded\"},{\"url\":\"https://www.solflare.com/blog/introducing-solflare-shield-solflares-hardware-wallet/\",\"what\":\"Unrelated Solana 'Shield' product that turned up in the search\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This looks like one of many copycat tokens riding a single tweet, not a durable narrative. At least 10 other tokens named \"Shield.fun\" / SHIELD launched on Solana within about 40 minutes of each other (pair creation times run from 1790123441 to 1790125717). Several of them traded at similar or higher volume: AFaJQ\u2026 had $1.58M in h1 volume, 2SgJ4\u2026 had $1.55M, 9Y3Q\u2026 had $557k and ESN3\u2026 had $487k. This token has no official status. Its \"twitter\" link is not a project account but a link to a single status from @shielddotfun. Its website is \"shieldss.fun\", with a doubled 's' that looks like typosquatting. That site only shows a ZEC-powered launchpad tagline and a \"Something went wrong\" error. There is no DexScreener profile and no description. Whatever @shielddotfun announced, possibly a ZEC-shielded launchpad, is someone else's story, and this contract is one of a dozen tickers competing to capture it. The trading pattern points the same way. The price rose 246\u2013339% in the first hour, then fell 35\u201361% in the last 5 minutes and 68% over 15 minutes. The ATH was $0.00134, and at $0.000276 the price is about 80% below it within the first hour. GeckoTerminal counts 2,119 unique buyers but only 114 unique sellers. Most buyers are therefore holding bags, while a small group is taking profit. GMGN flags 71 bundler wallets, and bundlers hold about 11% of top-trader share. The top 10 holders own 92% (this may include the pool). One market has 0% of LP locked, and RugCheck flags \"Large Amount of LP Unlocked\" as a danger. Creator status is \"creator_close\", meaning the creator has exited. The token image is duplicated 6 times. h1 turnover of about 50x market cap in the first 37 minutes is typical of a sniper/bot rotation in the first hour of a launch, not organic accumulation.",
+  "red_flags": [
+   "10+ same-name 'Shield.fun' SHIELD tokens launched within ~40 min; several with comparable $0.5\u20131.6M h1 volume \u2014 ticker hijack / clone war",
+   "Project 'twitter' is a link to a single tweet by @shielddotfun, not an official token account; no evidence @shielddotfun endorses this contract",
+   "Website shieldss.fun (double 's') looks like a typosquat; page shows only a tagline and an error",
+   "Price down ~80% from ATH ($0.00134 \u2192 $0.000276) within the first hour; -68% over m15",
+   "2,119 unique buyers vs 114 unique sellers: concentrated distribution to a crowd of buyers",
+   "71 GMGN bundler wallets; top bundler trader share 11.3%",
+   "Top 10 holders 92% (may include pool); LP 0% locked on one market; RugCheck 'Large Amount of LP Unlocked' danger",
+   "Creator status creator_close (dev exited); token image duplicated 6 times",
+   "h1 turnover ~50x market cap in first ~37 min, suggesting bot/sniper churn",
+   "No DexScreener profile, no description, no organic web discussion found"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "The bear case would fail if @shielddotfun, or the team behind the ZEC-shield launchpad, publicly named THIS contract (9V75\u2026dRpf) as the official token, for example in a pinned tweet or on the real site. Other things that would count against it: the clones fading to zero while this one keeps liquidity and holders, sellers broadening without the price collapsing, LP getting locked or burned on all markets, and independent organic discussion of the underlying product beyond launch-time alert bots.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "I could not read the X status (x.com returned 402), so I don't know what @shielddotfun actually posted or whether it names a contract address. Web search found nothing about a \"Shield.fun\" token launch. It only turned up unrelated SHIELD projects: Token Shield (tokenshield.fun), Solflare Shield, and BSC's Shield Protocol. The shieldss.fun site returned only a ZEC launchpad tagline plus an error. I checked no Telegram, Discord or X replies. I did not fetch the other clone contracts to see which one, if any, is official. The bear case rests mostly on the packet data (the clone list, buyer/seller asymmetry, the drop from ATH, bundlers, LP flags), and those numbers are internally consistent.",
+  "sources": [
+   {
+    "url": "https://x.com/shielddotfun/status/2102553957792952569",
+    "what": "Tweet linked as the token's twitter; fetch blocked (HTTP 402)"
+   },
+   {
+    "url": "https://shieldss.fun/",
+    "what": "Linked website: only a ZEC-shield launchpad tagline and an error, no contract address"
+   },
+   {
+    "url": "http://tokenshield.fun/",
+    "what": "Unrelated Solana 'Token Shield' project using $SHIELD, showing the ticker is crowded"
+   },
+   {
+    "url": "https://www.solflare.com/blog/introducing-solflare-shield-solflares-hardware-wallet/",
+    "what": "Unrelated Solana 'Shield' product that turned up in the search"
+   }
+  ]
+ },
+ "ttft_ms": 2840,
+ "type": "result",
+ "duration_ms": 34446,
+ "uuid": "a50e0ca9-0ce8-461e-82c9-406eec7f9d17",
+ "ttft_stream_ms": 672,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 672,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

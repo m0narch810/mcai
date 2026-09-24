@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 45401,
+ "stop_reason": "tool_use",
+ "session_id": "8c28b35d-8bda-47dd-9ca3-d57c297ebbf4",
+ "total_cost_usd": 0.1950202,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 9126,
+  "cache_read_input_tokens": 19491,
+  "output_tokens": 3580,
+  "output_tokens_details": {
+   "thinking_tokens": 465
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9126,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3165,
+    "cache_read_input_tokens": 10246,
+    "cache_creation_input_tokens": 342,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 342
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3580,
+   "cacheReadInputTokens": 19491,
+   "cacheCreationInputTokens": 9126,
+   "webSearchRequests": 0,
+   "costUSD": 0.1485302,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 465,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22620,
+   "outputTokens": 774,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.046490000000000004,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This is a ticker-hijack of Tesla, one of a serial run of more than 10 identical \\\"TSLA/Tesla\\\" launches in the past ~26 hours. It is not a narrative the token owns. It lists @Tesla and tesla.com as its links with no connection to Tesla, has no DexScreener profile and no description. Every earlier TSLA copy in the packet now shows $0 liquidity. One launched ~3h earlier did ~$1M in hourly volume before dying, which fits a launch, pump and abandon cycle that repeats on the same ticker. The flow looks like distribution, not organic demand. There are 2,280 unique buyers but only 104 unique sellers, and those 104 made ~2,000 sells (~19 each), consistent with a small set of wallets feeding tokens into retail buying. The packet's wallet-graph scan flagged 112 connected insider wallets, including a 74-wallet group that received tokens by transfer. GMGN tags 53 bundler and 60 rat-trader (insider) wallets. Top-10 holders hold 96% on GeckoTerminal's count, which may include the pool. The token was created and migrated in the same second on the Meteora virtual curve (no organic bonding phase), and its logo image is a duplicate of 3 others. My search found no positive Tesla or Musk catalyst for a 00:00 UTC pump. Recent news is negative: a federal safety investigation into the Cybercab, and the stock dropped after the Sept 4 Cybercab update.\",\"red_flags\":[\"Impersonates Tesla: X handle @Tesla and website tesla.com with no connection to Tesla\",\"10+ same-name TSLA/Tesla tokens launched in prior ~26h, all now $0 liquidity (serial copy cycle)\",\"Unique sellers 104 vs buyers 2,280; ~19 sells per seller, which looks like scheduled distribution\",\"Wallet-graph scan flagged 112 connected insider wallets, including a 74-wallet group that received tokens by transfer\",\"GMGN: 53 bundler wallets, 60 rat-trader (insider) wallets\",\"Top-10 holders 96.3% per GeckoTerminal (may include pool)\",\"Created and migrated in the same second on meteora_virtual_curve, so no organic bonding phase\",\"Logo image duplicated 3 times\",\"One risk scanner flags LP largely unlocked / few LP providers (conflicts with GMGN lp_burn_ratio 1.0)\",\"No DexScreener profile, no description, no project-owned socials\",\"No positive Tesla or Musk news catalyst found for the timing\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"A verifiable Tesla or Musk catalyst tied to this specific contract. Organic, non-bot social discussion naming this contract as the canonical TSLA. The seller count widening and the price holding for hours after the other copies die. Confirmation that the LP is actually burned or locked, and that the 74-wallet transfer group is not selling.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"DexScreener pair page fetch returned HTTP 403. No X/Twitter data available, and private Telegram/Discord are invisible. Web search found only general Tesla news (Cybercab investigation, stock drop in early September) and unrelated older Tesla memecoins. It found nothing about this contract. The two LP-lock readings conflict and I did not resolve them. The two top-10 concentration figures also conflict (GeckoTerminal 96% vs GMGN 1.95%), probably because one counts pool/vault accounts. The bear case rests mainly on packet on-chain data plus the pattern of copies.\",\"sources\":[{\"url\":\"https://en.wikipedia.org/wiki/Tesla_Cybercab\",\"what\":\"Sept 2026 federal safety investigation into Cybercab; no positive catalyst\"},{\"url\":\"https://blog.mean.ceo/elon-musk-news-september-2026/\",\"what\":\"General Musk news September 2026; no token-relevant catalyst\"},{\"url\":\"https://www.coinbase.com/price/solana-tesla-coin-pump\",\"what\":\"Other unrelated Tesla memecoins on Solana, showing the ticker is heavily reused\"},{\"url\":\"https://solscan.io/token/9khheQFN6cokPY6nGvikE5rhUMDjTzaAh3jT94To3HJh\",\"what\":\"Another 'Tesla on Solana' TSLA token: further evidence of ticker copies\"},{\"url\":\"https://dexscreener.com/solana/QY5GVgvwYXjBXrdnejTv4bJpXz2ra4KCPzDWtiiZ1YQ\",\"what\":\"Pair page, fetch blocked (403)\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This is a ticker-hijack of Tesla, one of a serial run of more than 10 identical \"TSLA/Tesla\" launches in the past ~26 hours. It is not a narrative the token owns. It lists @Tesla and tesla.com as its links with no connection to Tesla, has no DexScreener profile and no description. Every earlier TSLA copy in the packet now shows $0 liquidity. One launched ~3h earlier did ~$1M in hourly volume before dying, which fits a launch, pump and abandon cycle that repeats on the same ticker. The flow looks like distribution, not organic demand. There are 2,280 unique buyers but only 104 unique sellers, and those 104 made ~2,000 sells (~19 each), consistent with a small set of wallets feeding tokens into retail buying. The packet's wallet-graph scan flagged 112 connected insider wallets, including a 74-wallet group that received tokens by transfer. GMGN tags 53 bundler and 60 rat-trader (insider) wallets. Top-10 holders hold 96% on GeckoTerminal's count, which may include the pool. The token was created and migrated in the same second on the Meteora virtual curve (no organic bonding phase), and its logo image is a duplicate of 3 others. My search found no positive Tesla or Musk catalyst for a 00:00 UTC pump. Recent news is negative: a federal safety investigation into the Cybercab, and the stock dropped after the Sept 4 Cybercab update.",
+  "red_flags": [
+   "Impersonates Tesla: X handle @Tesla and website tesla.com with no connection to Tesla",
+   "10+ same-name TSLA/Tesla tokens launched in prior ~26h, all now $0 liquidity (serial copy cycle)",
+   "Unique sellers 104 vs buyers 2,280; ~19 sells per seller, which looks like scheduled distribution",
+   "Wallet-graph scan flagged 112 connected insider wallets, including a 74-wallet group that received tokens by transfer",
+   "GMGN: 53 bundler wallets, 60 rat-trader (insider) wallets",
+   "Top-10 holders 96.3% per GeckoTerminal (may include pool)",
+   "Created and migrated in the same second on meteora_virtual_curve, so no organic bonding phase",
+   "Logo image duplicated 3 times",
+   "One risk scanner flags LP largely unlocked / few LP providers (conflicts with GMGN lp_burn_ratio 1.0)",
+   "No DexScreener profile, no description, no project-owned socials",
+   "No positive Tesla or Musk news catalyst found for the timing"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "A verifiable Tesla or Musk catalyst tied to this specific contract. Organic, non-bot social discussion naming this contract as the canonical TSLA. The seller count widening and the price holding for hours after the other copies die. Confirmation that the LP is actually burned or locked, and that the 74-wallet transfer group is not selling.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "DexScreener pair page fetch returned HTTP 403. No X/Twitter data available, and private Telegram/Discord are invisible. Web search found only general Tesla news (Cybercab investigation, stock drop in early September) and unrelated older Tesla memecoins. It found nothing about this contract. The two LP-lock readings conflict and I did not resolve them. The two top-10 concentration figures also conflict (GeckoTerminal 96% vs GMGN 1.95%), probably because one counts pool/vault accounts. The bear case rests mainly on packet on-chain data plus the pattern of copies.",
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Tesla_Cybercab",
+    "what": "Sept 2026 federal safety investigation into Cybercab; no positive catalyst"
+   },
+   {
+    "url": "https://blog.mean.ceo/elon-musk-news-september-2026/",
+    "what": "General Musk news September 2026; no token-relevant catalyst"
+   },
+   {
+    "url": "https://www.coinbase.com/price/solana-tesla-coin-pump",
+    "what": "Other unrelated Tesla memecoins on Solana, showing the ticker is heavily reused"
+   },
+   {
+    "url": "https://solscan.io/token/9khheQFN6cokPY6nGvikE5rhUMDjTzaAh3jT94To3HJh",
+    "what": "Another 'Tesla on Solana' TSLA token: further evidence of ticker copies"
+   },
+   {
+    "url": "https://dexscreener.com/solana/QY5GVgvwYXjBXrdnejTv4bJpXz2ra4KCPzDWtiiZ1YQ",
+    "what": "Pair page, fetch blocked (403)"
+   }
+  ]
+ },
+ "ttft_ms": 1668,
+ "type": "result",
+ "duration_ms": 40541,
+ "uuid": "57356066-bc52-4532-8913-3d522e20db19",
+ "ttft_stream_ms": 660,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 660,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

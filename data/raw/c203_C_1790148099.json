@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 101357,
+ "stop_reason": "tool_use",
+ "session_id": "cb59fcf8-f899-4926-b63f-639cdcbee295",
+ "total_cost_usd": 0.488187,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 18735,
+  "cache_read_input_tokens": 72795,
+  "output_tokens": 4604,
+  "output_tokens_details": {
+   "thinking_tokens": 810
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18735,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2926,
+    "cache_read_input_tokens": 19093,
+    "cache_creation_input_tokens": 2142,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2142
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 4604,
+   "cacheReadInputTokens": 72795,
+   "cacheCreationInputTokens": 18735,
+   "webSearchRequests": 0,
+   "costUSD": 0.256567,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 810,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 113630,
+   "outputTokens": 3598,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 10,
+   "costUSD": 0.23162000000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 16,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 37-minute-old token called \\\"Dior\\\" (DIOR) on PumpSwap, launched through a Meteora virtual-curve launchpad (created and migrated in the same second), rose about 700% in an hour on about $2.3M of volume, against about $65K of liquidity and about $0.42M market cap. I could not find anything that explains why attention is arriving now. A search for the contract address returned nothing about the token. News searches found no Dior event today; the most recent brand news is the A24 partnership and the SS27 menswear show on June 24, 2026. The token has no socials, and its only link is the real brand's website, dior.com, which is brand impersonation. There is precedent: in Feb 2025, a fake \\\"Dior Official Coin\\\" was pushed through Dior's hacked Instagram account and crashed 90%. I found nothing suggesting a new hack or official post today. Flow looks unusual: GeckoTerminal counts about 2,087 unique buyers against only 89 unique sellers in the hour, with about 6.7K buys against 4.7K sells, and GMGN flags 52 bundler wallets. That pattern fits a buy-bot or wallet-farm campaign better than organic interest.\",\"narrative\":{\"description\":\"Borrowed luxury-brand name (Dior), with no project story and no current catalyst. A possible side angle: the Solana KOL @Dior100x (about 122K followers) shares the name, and two older copycat tokens are named 'Drio100x' and 'Dior1\u00d8\u00d8x'. But I found no post linking that KOL to this contract.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"No organic reason found. The likeliest drivers are the recognisable brand name and a coordinated or bot-driven buy flow (2,087 unique buyers vs 89 unique sellers; 52 bundler wallets).\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has by far the most volume and liquidity of the DIOR-ticker tokens right now. Other same-name tokens launched within the last hour or so (GT2p...pump, with $156K of 1h volume, and 2vV5...) are tiny or already dead. It is not tied to the Dior brand in any way; the dior.com link is an impersonation.\",\"competing_tokens\":\"GT2p1Lt6...pump (Dior, $2K mcap, $156K h1 volume), 2vV5CUC6... (Dior, dead), HgcwHp... (Drio100x), 5m2MjJ... (Dior1\u00d8\u00d8x), plus the earlier 2025 'OFFICIAL DIOR COIN' tokens from the Instagram hack\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal shows 2,087 unique buyers against 89 unique sellers in 1h, with 6,779 buys. In the last 30 minutes there were only about 68 unique buyers, so buyer breadth collapsed after the first burst. GMGN flags 52 bundler wallets and 11.3% of trading held by top bundlers. There are no socials, no DexScreener profile and no boosts. The dev wallet has launched 6 tokens (status 'creator_close'; best ATH about $644K). GeckoTerminal warns that the dev holds more than 10%. I found no organic posts anywhere.\",\"uncertainty\":\"I could not read X directly (402/403 errors), so I cannot see any KOL or call-channel posts that may be driving flow. GMGN's 'fresh wallet' rate is 0, which slightly weakens the wallet-farm reading.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Top 10 holders own 92.4%. The Meteora DBC account alone holds about 800M tokens (about 80% of supply) as a supply overhang.\",\"RugCheck flags a large share of LP as unlocked and few LP providers. GMGN reports an LP burn ratio of 1.0, which conflicts.\",\"Liquidity is about $65K against $2.3M of hourly volume (35x turnover), so price is very fragile.\",\"52 bundler wallets, and a serial deployer with 6 prior launches\",\"Brand impersonation (dior.com link), which invites takedown or scam labelling\"]},\"counterargument\":\"Brand-name tickers with a strong first hour sometimes get picked up by KOLs, and the name overlap with @Dior100x, a large Solana KOL, could draw cross-attention. The deployer has already taken a token to about $644K ATH, and 2,000+ holders in 40 minutes is a big base. If an X call or trending placement I couldn't see is driving this, momentum could carry on through the observation window.\",\"unknowns\":[\"Whether any X KOL or call channel posted this contract (X could not be read)\",\"Whether @Dior100x is involved at all\",\"What the Meteora DBC account's 800M-token position really is, and whether it can be sold\",\"Who the 2,000 single-buy wallets are\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Contract-address search: nothing. site:x.com searches found only @Dior100x KOL posts, none about this contract. Direct fetches of X, DexScreener and GMGN were blocked; the GeckoTerminal fetch worked. News turned up only the 2025 Instagram hack and ordinary brand news. The project 'site' is the real dior.com, which is impersonation. I did not search Discord.\"},\"thesis\":\"This is a brand-impersonation launch with no catalyst. Flow is bot- and bundler-heavy (2,087 buyers vs 89 sellers), holdings are extremely concentrated, and the deployer is a serial launcher. Buyer breadth has already collapsed from the first burst. I expect attention to fade.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.geckoterminal.com/solana/pools/AwcPrLdBJvCdQSm2vHzT2cGLroqSVFSY4Fxr1LfHoSYv\",\"what\":\"Pool data, dior.com link, dev >10% warning, Meteora DBC holding 800M tokens\"},{\"url\":\"https://crypto.news/dior-coin-crashes-90-after-dior-recovers-hacked-account/\",\"what\":\"2025 fake Dior coin after the Instagram hack\"},{\"url\":\"https://www.luxurydaily.com/dior-finds-new-stage-with-a24\",\"what\":\"Recent Dior brand news (A24), unrelated to crypto\"},{\"url\":\"https://x.com/Dior100x\",\"what\":\"Solana KOL account named Dior, no link to this contract found\"},{\"url\":\"https://wwd.com/runway/mens-spring-2027/paris/dior-homme-collection/review/\",\"what\":\"Most recent Dior show (June 2026), not a current catalyst\"}]}",
+ "structured_output": {
+  "what_is_happening": "A 37-minute-old token called \"Dior\" (DIOR) on PumpSwap, launched through a Meteora virtual-curve launchpad (created and migrated in the same second), rose about 700% in an hour on about $2.3M of volume, against about $65K of liquidity and about $0.42M market cap. I could not find anything that explains why attention is arriving now. A search for the contract address returned nothing about the token. News searches found no Dior event today; the most recent brand news is the A24 partnership and the SS27 menswear show on June 24, 2026. The token has no socials, and its only link is the real brand's website, dior.com, which is brand impersonation. There is precedent: in Feb 2025, a fake \"Dior Official Coin\" was pushed through Dior's hacked Instagram account and crashed 90%. I found nothing suggesting a new hack or official post today. Flow looks unusual: GeckoTerminal counts about 2,087 unique buyers against only 89 unique sellers in the hour, with about 6.7K buys against 4.7K sells, and GMGN flags 52 bundler wallets. That pattern fits a buy-bot or wallet-farm campaign better than organic interest.",
+  "narrative": {
+   "description": "Borrowed luxury-brand name (Dior), with no project story and no current catalyst. A possible side angle: the Solana KOL @Dior100x (about 122K followers) shares the name, and two older copycat tokens are named 'Drio100x' and 'Dior1\u00d8\u00d8x'. But I found no post linking that KOL to this contract.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "No organic reason found. The likeliest drivers are the recognisable brand name and a coordinated or bot-driven buy flow (2,087 unique buyers vs 89 unique sellers; 52 bundler wallets)."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has by far the most volume and liquidity of the DIOR-ticker tokens right now. Other same-name tokens launched within the last hour or so (GT2p...pump, with $156K of 1h volume, and 2vV5...) are tiny or already dead. It is not tied to the Dior brand in any way; the dior.com link is an impersonation.",
+   "competing_tokens": "GT2p1Lt6...pump (Dior, $2K mcap, $156K h1 volume), 2vV5CUC6... (Dior, dead), HgcwHp... (Drio100x), 5m2MjJ... (Dior1\u00d8\u00d8x), plus the earlier 2025 'OFFICIAL DIOR COIN' tokens from the Instagram hack",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal shows 2,087 unique buyers against 89 unique sellers in 1h, with 6,779 buys. In the last 30 minutes there were only about 68 unique buyers, so buyer breadth collapsed after the first burst. GMGN flags 52 bundler wallets and 11.3% of trading held by top bundlers. There are no socials, no DexScreener profile and no boosts. The dev wallet has launched 6 tokens (status 'creator_close'; best ATH about $644K). GeckoTerminal warns that the dev holds more than 10%. I found no organic posts anywhere.",
+   "uncertainty": "I could not read X directly (402/403 errors), so I cannot see any KOL or call-channel posts that may be driving flow. GMGN's 'fresh wallet' rate is 0, which slightly weakens the wallet-farm reading."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Top 10 holders own 92.4%. The Meteora DBC account alone holds about 800M tokens (about 80% of supply) as a supply overhang.",
+    "RugCheck flags a large share of LP as unlocked and few LP providers. GMGN reports an LP burn ratio of 1.0, which conflicts.",
+    "Liquidity is about $65K against $2.3M of hourly volume (35x turnover), so price is very fragile.",
+    "52 bundler wallets, and a serial deployer with 6 prior launches",
+    "Brand impersonation (dior.com link), which invites takedown or scam labelling"
+   ]
+  },
+  "counterargument": "Brand-name tickers with a strong first hour sometimes get picked up by KOLs, and the name overlap with @Dior100x, a large Solana KOL, could draw cross-attention. The deployer has already taken a token to about $644K ATH, and 2,000+ holders in 40 minutes is a big base. If an X call or trending placement I couldn't see is driving this, momentum could carry on through the observation window.",
+  "unknowns": [
+   "Whether any X KOL or call channel posted this contract (X could not be read)",
+   "Whether @Dior100x is involved at all",
+   "What the Meteora DBC account's 800M-token position really is, and whether it can be sold",
+   "Who the 2,000 single-buy wallets are"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Contract-address search: nothing. site:x.com searches found only @Dior100x KOL posts, none about this contract. Direct fetches of X, DexScreener and GMGN were blocked; the GeckoTerminal fetch worked. News turned up only the 2025 Instagram hack and ordinary brand news. The project 'site' is the real dior.com, which is impersonation. I did not search Discord."
+  },
+  "thesis": "This is a brand-impersonation launch with no catalyst. Flow is bot- and bundler-heavy (2,087 buyers vs 89 sellers), holdings are extremely concentrated, and the deployer is a serial launcher. Buyer breadth has already collapsed from the first burst. I expect attention to fade.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/AwcPrLdBJvCdQSm2vHzT2cGLroqSVFSY4Fxr1LfHoSYv",
+    "what": "Pool data, dior.com link, dev >10% warning, Meteora DBC holding 800M tokens"
+   },
+   {
+    "url": "https://crypto.news/dior-coin-crashes-90-after-dior-recovers-hacked-account/",
+    "what": "2025 fake Dior coin after the Instagram hack"
+   },
+   {
+    "url": "https://www.luxurydaily.com/dior-finds-new-stage-with-a24",
+    "what": "Recent Dior brand news (A24), unrelated to crypto"
+   },
+   {
+    "url": "https://x.com/Dior100x",
+    "what": "Solana KOL account named Dior, no link to this contract found"
+   },
+   {
+    "url": "https://wwd.com/runway/mens-spring-2027/paris/dior-homme-collection/review/",
+    "what": "Most recent Dior show (June 2026), not a current catalyst"
+   }
+  ]
+ },
+ "ttft_ms": 1306,
+ "type": "result",
+ "duration_ms": 69937,
+ "uuid": "370ce588-2290-4903-8460-87701cd24f0e",
+ "ttft_stream_ms": 758,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 759,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

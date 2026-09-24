@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 22224,
+ "stop_reason": "tool_use",
+ "session_id": "779e50c3-b4a7-4ad2-9b4c-d3ea36e3f73a",
+ "total_cost_usd": 0.08949960000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5405,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2294,
+  "output_tokens_details": {
+   "thinking_tokens": 345
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5405,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2294,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 5405,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5405
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2294,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 5405,
+   "webSearchRequests": 0,
+   "costUSD": 0.08949960000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 345,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DIOR, a token named after the luxury brand with no socials, is about 38 minutes old. It launched on a Meteora virtual curve and migrated to PumpSwap at creation. It rose about 700% to roughly $417k market cap and traded about $2.3M against about $65k of liquidity, which is 35x turnover in one hour. The participant data points to bot or wash activity rather than broad demand. There were 2,087 unique buyers in the hour, but only 68 unique buyers in the last 30 minutes, while that same window had 3,186 buys. Only 89 unique sellers produced 4,703 sells. GMGN tags 52 bundler wallets. The creator has launched 6 tokens and is marked creator_close. The only link is dior.com, the real brand's site, which has no connection to the project.\",\"narrative\":{\"description\":\"This is a brand-name ticker ('Dior') that links to the real luxury brand's website. No project, community or news hook is visible. It is a generic celebrity/brand-name meme with no stated catalyst.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The packet shows no organic spread. The early wave of unique buyers probably came from volume/bundle bots and the migration moment. Fresh unique buyers have nearly stopped (53\u201368 per 5\u201330 minute window) while transaction counts stay high, which fits automated volume. If a real Dior news event is driving this, it is not visible here.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most liquidity and volume of the DIOR tokens listed. However, a brand ticker gives no claim to being canonical. The website field points to dior.com, which the token has no real affiliation with.\",\"competing_tokens\":\"Four other DIOR/Dior tokens are listed. One pump.fun 'Dior' launched about 45 minutes earlier and did $156k of volume in the hour, but now has only $2k market cap. Two others are dead, and another launched minutes before this one. This is a crowded, serial-copy ticker.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Volume is 35x liquidity in one hour. 89 unique sellers against 2,087 buyers means a few wallets are doing most of the selling. Unique buyers collapsed to about 68 in the last 30 minutes, yet that window had over 3,000 buys, a strong sign of bots. GMGN tags 52 bundler wallets, and the top bundler holds about 11%. The serial creator (6 launches, creator_close) had a best ATH of $644k. There are no socials.\",\"uncertainty\":\"GMGN puts top-10 holders at 5.3%, while GeckoTerminal says 92%, likely because the pool is counted. Unique-trader counts from GeckoTerminal can be incomplete. There is no X data, so a real brand news catalyst cannot be ruled out.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One LP market shows 0% locked and RugCheck flags 'Large Amount of LP Unlocked'. GMGN reports lp_burn_ratio 1.0, so the sources conflict.\",\"$65k of liquidity is carrying $2.3M an hour, which points to wash/volume-bot trading\",\"52 bundler wallets, and the top bundler trader holds about 11%\",\"Serial creator with 6 launches, status creator_close\",\"Holder concentration data conflicts (92% vs 5%)\",\"Few LP providers\"]},\"counterargument\":\"The token has strong early momentum: 700% in an hour, thousands of holders, and it is now the dominant DIOR pair, with price still up 5\u201310% in the last 5 minutes. Brand-name metas can run on Solana. The creator has already reached $644k ATH once, and this token is near $420k, so a push toward $0.5\u20131M within 6 hours is plausible if a KOL picks it up. Mint and freeze authority are renounced, and there are no taxes or honeypot.\",\"unknowns\":[\"Whether a real Dior-related news event or viral post exists\",\"Actual LP lock/burn status, since the sources conflict\",\"Real holder concentration excluding the pool\",\"Whether KOL or call-channel promotion is under way off-packet\",\"Identity and activity of the bundler wallets\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This judgment is based only on the evidence packet.\"},\"thesis\":\"This looks like a generic brand-name serial launch whose volume is mostly automated or bundled: turnover is extreme, a small set of wallets does the selling, and new buyers have nearly stopped. With no socials, a copycat ticker, a serial creator and a possible LP pull risk, attention is likely to fade over the next 6 hours rather than grow.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "DIOR, a token named after the luxury brand with no socials, is about 38 minutes old. It launched on a Meteora virtual curve and migrated to PumpSwap at creation. It rose about 700% to roughly $417k market cap and traded about $2.3M against about $65k of liquidity, which is 35x turnover in one hour. The participant data points to bot or wash activity rather than broad demand. There were 2,087 unique buyers in the hour, but only 68 unique buyers in the last 30 minutes, while that same window had 3,186 buys. Only 89 unique sellers produced 4,703 sells. GMGN tags 52 bundler wallets. The creator has launched 6 tokens and is marked creator_close. The only link is dior.com, the real brand's site, which has no connection to the project.",
+  "narrative": {
+   "description": "This is a brand-name ticker ('Dior') that links to the real luxury brand's website. No project, community or news hook is visible. It is a generic celebrity/brand-name meme with no stated catalyst.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The packet shows no organic spread. The early wave of unique buyers probably came from volume/bundle bots and the migration moment. Fresh unique buyers have nearly stopped (53\u201368 per 5\u201330 minute window) while transaction counts stay high, which fits automated volume. If a real Dior news event is driving this, it is not visible here."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most liquidity and volume of the DIOR tokens listed. However, a brand ticker gives no claim to being canonical. The website field points to dior.com, which the token has no real affiliation with.",
+   "competing_tokens": "Four other DIOR/Dior tokens are listed. One pump.fun 'Dior' launched about 45 minutes earlier and did $156k of volume in the hour, but now has only $2k market cap. Two others are dead, and another launched minutes before this one. This is a crowded, serial-copy ticker.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Volume is 35x liquidity in one hour. 89 unique sellers against 2,087 buyers means a few wallets are doing most of the selling. Unique buyers collapsed to about 68 in the last 30 minutes, yet that window had over 3,000 buys, a strong sign of bots. GMGN tags 52 bundler wallets, and the top bundler holds about 11%. The serial creator (6 launches, creator_close) had a best ATH of $644k. There are no socials.",
+   "uncertainty": "GMGN puts top-10 holders at 5.3%, while GeckoTerminal says 92%, likely because the pool is counted. Unique-trader counts from GeckoTerminal can be incomplete. There is no X data, so a real brand news catalyst cannot be ruled out."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One LP market shows 0% locked and RugCheck flags 'Large Amount of LP Unlocked'. GMGN reports lp_burn_ratio 1.0, so the sources conflict.",
+    "$65k of liquidity is carrying $2.3M an hour, which points to wash/volume-bot trading",
+    "52 bundler wallets, and the top bundler trader holds about 11%",
+    "Serial creator with 6 launches, status creator_close",
+    "Holder concentration data conflicts (92% vs 5%)",
+    "Few LP providers"
+   ]
+  },
+  "counterargument": "The token has strong early momentum: 700% in an hour, thousands of holders, and it is now the dominant DIOR pair, with price still up 5\u201310% in the last 5 minutes. Brand-name metas can run on Solana. The creator has already reached $644k ATH once, and this token is near $420k, so a push toward $0.5\u20131M within 6 hours is plausible if a KOL picks it up. Mint and freeze authority are renounced, and there are no taxes or honeypot.",
+  "unknowns": [
+   "Whether a real Dior-related news event or viral post exists",
+   "Actual LP lock/burn status, since the sources conflict",
+   "Real holder concentration excluding the pool",
+   "Whether KOL or call-channel promotion is under way off-packet",
+   "Identity and activity of the bundler wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This judgment is based only on the evidence packet."
+  },
+  "thesis": "This looks like a generic brand-name serial launch whose volume is mostly automated or bundled: turnover is extreme, a small set of wallets does the selling, and new buyers have nearly stopped. With no socials, a copycat ticker, a serial creator and a possible LP pull risk, attention is likely to fade over the next 6 hours rather than grow.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4231,
+ "type": "result",
+ "duration_ms": 22263,
+ "uuid": "f305544f-042d-4614-9a67-d92ced486611",
+ "ttft_stream_ms": 686,
+ "time_to_request_ms": 36,
+ "first_content_frame_ms": 686,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

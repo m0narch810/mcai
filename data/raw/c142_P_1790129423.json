@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 22477,
+ "stop_reason": "tool_use",
+ "session_id": "d93fd521-06df-49c9-8690-78e596d348cf",
+ "total_cost_usd": 0.08685960000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4815,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2398,
+  "output_tokens_details": {
+   "thinking_tokens": 291
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4815,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2398,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 4815,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4815
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2398,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 4815,
+   "webSearchRequests": 0,
+   "costUSD": 0.08685960000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 291,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token created 36 minutes before detection on a Meteora pool, with no launchpad, named \\\"Bbangsong\\\" (roughly Korean for a bread or bun item) and using the Chinese ticker \u9762\u5305 (\\\"bread\\\"), rose about 670\u2013800% in its first hour. Volume was about $1.6M against a market cap of about $78\u201391k and liquidity of about $56\u201360k, so the whole market cap traded over roughly 28 times in one hour. The flow looks bot-driven, not organic. GeckoTerminal shows about 2,109 unique buyers but only 109 unique sellers, and those 109 sellers made about 5,486 sell transactions, around 50 each. That points to a small group of wallets repeatedly selling into a crowd of many small buy wallets. Unique buyers jumped to 1,411 in the last 30 minutes but only 89 in the last 5 minutes, so the buyer surge is already slowing while volume stays high. GMGN flags 90 bundler wallets, with bundlers making up 66% of top traders. None of the LP is locked or burned, there are only a few liquidity providers, and the creator has already closed out. There is no website, no DexScreener profile, and no Telegram. The only 'twitter' link is a status URL on an unrelated-looking account (ForListj), not a project account.\",\"narrative\":{\"description\":\"A generic food meme, 'bread' / \u9762\u5305, in the style of Chinese-character tickers, with a Korean-sounding name. It has no visible story, community, catalyst or project links beyond a single linked X post.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The attention looks manufactured. It is price-driven and bot-driven: many small buy wallets, which could be real buyers chasing the move or sybil wallets, against about 109 wallets repeatedly selling. No organic social footprint is visible in the packet.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"No same-ticker or same-name competitors appear in the packet. The only social tie is a single X status link, which may be the source of the meme (for example a viral post about a bread item), but its content is unknown.\",\"competing_tokens\":\"None listed in the packet. Chinese food tickers are easy to copy, though, and copycats are likely if any story is behind it.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The buyer/seller asymmetry is extreme: 2,109 unique buyers against 109 unique sellers, and those sellers made about 5,486 sells, around 50 each. GMGN flags 90 bundler wallets, and bundlers are 66% of top traders. Volume turned over about 28 times the market cap in one hour. There are no fresh wallets, no smart-money wallets and no KOL wallets. No LP is burned or locked, and the pool is on Meteora with no launchpad and few LPs, so the pool deployer can pull liquidity. The creator has closed out and holds 0%. Top 10 holders hold 72% by GeckoTerminal's count (which may include the pool) or 33% by GMGN's.\",\"uncertainty\":\"The large number of unique buyers could partly be real retail chasing an 800% candle. The linked X post could be a genuine viral trigger. Without X data I can't verify either.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"No LP is locked or burned, and there are only a few LP providers, so liquidity can be removed at any time\",\"90 bundler wallets, making up 66% of top traders\",\"Only about 109 sellers, cycling sells against about 2,100 buyers, which looks like extraction or a wash pattern\",\"Top 10 hold 72% (GeckoTerminal, may include the pool)\",\"The creator has already closed out\",\"No project socials, website or profile\",\"The new-buyer rate is falling sharply (89 in the last 5 minutes versus about 1,400 in the last 30), while sell transactions in the last 5 minutes outnumber buys\"]},\"counterargument\":\"More than 2,100 holders in 36 minutes with the price still near its all-time high is real breadth for a microcap. Chinese-character tickers have had fast runs driven by a single viral post. Liquidity of about $60k against a $91k market cap is a deep ratio. If the linked X post is a genuine viral moment, the token could run toward several hundred thousand in market cap before bundlers finish exiting.\",\"unknowns\":[\"What the linked X post (ForListj/status/2102564079084667019) actually says and how far it has spread\",\"Who controls the unlocked Meteora LP\",\"Whether the 2,100 buyers are real users or sybil or dust wallets\",\"Whether bundlers are still holding supply or have already sold\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The analysis is based only on the evidence packet.\"},\"thesis\":\"This is a bundled, bot-heavy launch on a Meteora pool with unlocked liquidity, and a small set of wallets is selling repeatedly into a burst of small buyers. The flow of new buyers is already falling. Rug-pull risk is high and there is no organic narrative. Most likely outcome: a sharp fade or a liquidity pull within hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token created 36 minutes before detection on a Meteora pool, with no launchpad, named \"Bbangsong\" (roughly Korean for a bread or bun item) and using the Chinese ticker \u9762\u5305 (\"bread\"), rose about 670\u2013800% in its first hour. Volume was about $1.6M against a market cap of about $78\u201391k and liquidity of about $56\u201360k, so the whole market cap traded over roughly 28 times in one hour. The flow looks bot-driven, not organic. GeckoTerminal shows about 2,109 unique buyers but only 109 unique sellers, and those 109 sellers made about 5,486 sell transactions, around 50 each. That points to a small group of wallets repeatedly selling into a crowd of many small buy wallets. Unique buyers jumped to 1,411 in the last 30 minutes but only 89 in the last 5 minutes, so the buyer surge is already slowing while volume stays high. GMGN flags 90 bundler wallets, with bundlers making up 66% of top traders. None of the LP is locked or burned, there are only a few liquidity providers, and the creator has already closed out. There is no website, no DexScreener profile, and no Telegram. The only 'twitter' link is a status URL on an unrelated-looking account (ForListj), not a project account.",
+  "narrative": {
+   "description": "A generic food meme, 'bread' / \u9762\u5305, in the style of Chinese-character tickers, with a Korean-sounding name. It has no visible story, community, catalyst or project links beyond a single linked X post.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The attention looks manufactured. It is price-driven and bot-driven: many small buy wallets, which could be real buyers chasing the move or sybil wallets, against about 109 wallets repeatedly selling. No organic social footprint is visible in the packet."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "No same-ticker or same-name competitors appear in the packet. The only social tie is a single X status link, which may be the source of the meme (for example a viral post about a bread item), but its content is unknown.",
+   "competing_tokens": "None listed in the packet. Chinese food tickers are easy to copy, though, and copycats are likely if any story is behind it.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The buyer/seller asymmetry is extreme: 2,109 unique buyers against 109 unique sellers, and those sellers made about 5,486 sells, around 50 each. GMGN flags 90 bundler wallets, and bundlers are 66% of top traders. Volume turned over about 28 times the market cap in one hour. There are no fresh wallets, no smart-money wallets and no KOL wallets. No LP is burned or locked, and the pool is on Meteora with no launchpad and few LPs, so the pool deployer can pull liquidity. The creator has closed out and holds 0%. Top 10 holders hold 72% by GeckoTerminal's count (which may include the pool) or 33% by GMGN's.",
+   "uncertainty": "The large number of unique buyers could partly be real retail chasing an 800% candle. The linked X post could be a genuine viral trigger. Without X data I can't verify either."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "No LP is locked or burned, and there are only a few LP providers, so liquidity can be removed at any time",
+    "90 bundler wallets, making up 66% of top traders",
+    "Only about 109 sellers, cycling sells against about 2,100 buyers, which looks like extraction or a wash pattern",
+    "Top 10 hold 72% (GeckoTerminal, may include the pool)",
+    "The creator has already closed out",
+    "No project socials, website or profile",
+    "The new-buyer rate is falling sharply (89 in the last 5 minutes versus about 1,400 in the last 30), while sell transactions in the last 5 minutes outnumber buys"
+   ]
+  },
+  "counterargument": "More than 2,100 holders in 36 minutes with the price still near its all-time high is real breadth for a microcap. Chinese-character tickers have had fast runs driven by a single viral post. Liquidity of about $60k against a $91k market cap is a deep ratio. If the linked X post is a genuine viral moment, the token could run toward several hundred thousand in market cap before bundlers finish exiting.",
+  "unknowns": [
+   "What the linked X post (ForListj/status/2102564079084667019) actually says and how far it has spread",
+   "Who controls the unlocked Meteora LP",
+   "Whether the 2,100 buyers are real users or sybil or dust wallets",
+   "Whether bundlers are still holding supply or have already sold"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The analysis is based only on the evidence packet."
+  },
+  "thesis": "This is a bundled, bot-heavy launch on a Meteora pool with unlocked liquidity, and a small set of wallets is selling repeatedly into a burst of small buyers. The flow of new buyers is already falling. Rug-pull risk is high and there is no organic narrative. Most likely outcome: a sharp fade or a liquidity pull within hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3818,
+ "type": "result",
+ "duration_ms": 22517,
+ "uuid": "72c603a8-f7ac-48e0-9834-975fb974f598",
+ "ttft_stream_ms": 707,
+ "time_to_request_ms": 36,
+ "first_content_frame_ms": 707,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

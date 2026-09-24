@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24953,
+ "stop_reason": "tool_use",
+ "session_id": "babf65c5-2c32-4dca-9c71-328aabd96815",
+ "total_cost_usd": 0.124464,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9022,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2614,
+  "output_tokens_details": {
+   "thinking_tokens": 462
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9022,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2614,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 9022,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9022
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2614,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 9022,
+   "webSearchRequests": 0,
+   "costUSD": 0.124464,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 462,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Moonshot AI\\\" (MOONSHOT), about 35 minutes old, went up roughly 200\u2013600% in its first hour, to about $390k market cap with about $90k liquidity. Its hour-one volume was about $13M, which is about 145x its liquidity. Its X link points to a Binance status post and its website to the Russian Wikipedia page for Moonshot AI (the Chinese lab behind Kimi). That suggests a news-driven launch tied to some Binance post about Moonshot AI. Several other same-name tokens were launched within minutes of this one. This one is the only one with real liquidity and volume. The flow looks heavily manufactured. GeckoTerminal shows 2,174 unique buyers but only 43 unique sellers, and those 43 sellers made about 6,576 sell transactions. GMGN flags 20 bundler wallets. The creator has already closed its position.\",\"narrative\":{\"description\":\"A token named after a real company. The trigger is probably a Binance announcement or post that mentions Moonshot AI / Kimi, and deployers race to launch a ticker for it. The story belongs to a real company that has no link to this token.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A news headline (a Binance status link) sets off a race among copycat deployers. Attention comes from the headline and from trading bots, not from a community around this token. Headline tokens like this usually peak within the first hour.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the same-name deployment that won the liquidity race: the only one with meaningful liquidity (about $90k) and volume, among several 'Moonshot AI'/MOONSHOT tokens launched within minutes. Nothing official ties it to Moonshot AI. The links are just a Binance tweet and a Wikipedia page.\",\"competing_tokens\":\"At least 9 other tokens use the MOONSHOT ticker or the Moonshot AI name. Two 'Moonshot AI' copies were deployed 2\u20134 minutes earlier and are now dead. Several MOONSHOT tokens launched a few hours earlier show inflated market caps on near-zero liquidity. There is an older KIMI/'Moonshot AI' token. There is also the older, well-known Moonshot app/brand. Any of these can pull attention away.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 43 unique sellers made about 6,576 sell transactions, against 2,174 unique buyers, which looks like volume or market-making bots doing small buys and concentrated sells. Hour-one turnover of 145x liquidity is not believable as organic demand. GMGN counts 20 bundler wallets. The creator has closed its position ('creator_close'). The token was created and migrated in the same second, so it skipped any bonding-curve discovery. The image is duplicated 3 times. GMGN shows 0 smart or renowned wallets and only 3 page visits. The links are borrowed (a Binance tweet and Wikipedia), and there is no project socials account.\",\"uncertainty\":\"There is no X data, so I can't tell whether real crypto Twitter picked up the Binance post. Some of the 2,174 buyers may be real retail chasing the headline. The 80% unlabeled top holder is probably a pool or curve account (GMGN's top-10 holder rate is 4.3%), but I can't confirm that.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Liquidity is thin (about $90k) compared with $13M of bot-driven volume\",\"RugCheck flags a large amount of unlocked LP ('danger'), and one of the top markets has 0% of its LP locked\",\"There are few LP providers\",\"One unlabeled wallet holds 80%. If it isn't a pool account, that is catastrophic concentration\",\"The creator has exited, and 20 bundler wallets are present\",\"Sellers are concentrated in 43 wallets that can drain buy flow\"]},\"counterargument\":\"If the Binance post is major news (for example, a Binance listing or investment involving Moonshot AI/Kimi), this could become the canonical Solana ticker for the headline. Being the only copy with liquidity and 2,000+ buyers is how headline runners get chosen. The mint and freeze authorities are renounced, GMGN reports lp_burn_ratio 1.0, and it could run to a few million in market cap as the news spreads during the day in Asia and the US.\",\"unknowns\":[\"What the Binance status post actually says, and how important it is\",\"Whether the 80% holder is a pool or curve account or a single wallet\",\"Whether real X/KOL attention exists beyond the bots\",\"Whether the unlocked LP is controlled by the deployer\",\"Whether a better-positioned competitor with the same ticker will appear\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment uses only the evidence packet.\"},\"thesis\":\"This is a headline copy of Moonshot AI launched off a Binance post. It won the same-name deployment race but shows strong signs of manufactured volume: 43 sellers against 2,174 buyers, 145x turnover, bundlers, and a creator who has exited. It also carries LP-unlock risk. Attention is most likely at or near its peak and should fade over the next several hours. A sharp drawdown or liquidity pull is a real possibility.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Moonshot AI\" (MOONSHOT), about 35 minutes old, went up roughly 200\u2013600% in its first hour, to about $390k market cap with about $90k liquidity. Its hour-one volume was about $13M, which is about 145x its liquidity. Its X link points to a Binance status post and its website to the Russian Wikipedia page for Moonshot AI (the Chinese lab behind Kimi). That suggests a news-driven launch tied to some Binance post about Moonshot AI. Several other same-name tokens were launched within minutes of this one. This one is the only one with real liquidity and volume. The flow looks heavily manufactured. GeckoTerminal shows 2,174 unique buyers but only 43 unique sellers, and those 43 sellers made about 6,576 sell transactions. GMGN flags 20 bundler wallets. The creator has already closed its position.",
+  "narrative": {
+   "description": "A token named after a real company. The trigger is probably a Binance announcement or post that mentions Moonshot AI / Kimi, and deployers race to launch a ticker for it. The story belongs to a real company that has no link to this token.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A news headline (a Binance status link) sets off a race among copycat deployers. Attention comes from the headline and from trading bots, not from a community around this token. Headline tokens like this usually peak within the first hour."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the same-name deployment that won the liquidity race: the only one with meaningful liquidity (about $90k) and volume, among several 'Moonshot AI'/MOONSHOT tokens launched within minutes. Nothing official ties it to Moonshot AI. The links are just a Binance tweet and a Wikipedia page.",
+   "competing_tokens": "At least 9 other tokens use the MOONSHOT ticker or the Moonshot AI name. Two 'Moonshot AI' copies were deployed 2\u20134 minutes earlier and are now dead. Several MOONSHOT tokens launched a few hours earlier show inflated market caps on near-zero liquidity. There is an older KIMI/'Moonshot AI' token. There is also the older, well-known Moonshot app/brand. Any of these can pull attention away.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 43 unique sellers made about 6,576 sell transactions, against 2,174 unique buyers, which looks like volume or market-making bots doing small buys and concentrated sells. Hour-one turnover of 145x liquidity is not believable as organic demand. GMGN counts 20 bundler wallets. The creator has closed its position ('creator_close'). The token was created and migrated in the same second, so it skipped any bonding-curve discovery. The image is duplicated 3 times. GMGN shows 0 smart or renowned wallets and only 3 page visits. The links are borrowed (a Binance tweet and Wikipedia), and there is no project socials account.",
+   "uncertainty": "There is no X data, so I can't tell whether real crypto Twitter picked up the Binance post. Some of the 2,174 buyers may be real retail chasing the headline. The 80% unlabeled top holder is probably a pool or curve account (GMGN's top-10 holder rate is 4.3%), but I can't confirm that."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Liquidity is thin (about $90k) compared with $13M of bot-driven volume",
+    "RugCheck flags a large amount of unlocked LP ('danger'), and one of the top markets has 0% of its LP locked",
+    "There are few LP providers",
+    "One unlabeled wallet holds 80%. If it isn't a pool account, that is catastrophic concentration",
+    "The creator has exited, and 20 bundler wallets are present",
+    "Sellers are concentrated in 43 wallets that can drain buy flow"
+   ]
+  },
+  "counterargument": "If the Binance post is major news (for example, a Binance listing or investment involving Moonshot AI/Kimi), this could become the canonical Solana ticker for the headline. Being the only copy with liquidity and 2,000+ buyers is how headline runners get chosen. The mint and freeze authorities are renounced, GMGN reports lp_burn_ratio 1.0, and it could run to a few million in market cap as the news spreads during the day in Asia and the US.",
+  "unknowns": [
+   "What the Binance status post actually says, and how important it is",
+   "Whether the 80% holder is a pool or curve account or a single wallet",
+   "Whether real X/KOL attention exists beyond the bots",
+   "Whether the unlocked LP is controlled by the deployer",
+   "Whether a better-positioned competitor with the same ticker will appear"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment uses only the evidence packet."
+  },
+  "thesis": "This is a headline copy of Moonshot AI launched off a Binance post. It won the same-name deployment race but shows strong signs of manufactured volume: 43 sellers against 2,174 buyers, 145x turnover, bundlers, and a creator who has exited. It also carries LP-unlock risk. Attention is most likely at or near its peak and should fade over the next several hours. A sharp drawdown or liquidity pull is a real possibility.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5679,
+ "type": "result",
+ "duration_ms": 24992,
+ "uuid": "41519fad-606e-4d3b-a447-dc82bc50fb97",
+ "ttft_stream_ms": 746,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 746,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24639,
+ "stop_reason": "tool_use",
+ "session_id": "c146254a-8780-4b50-a013-82f4eeb540a1",
+ "total_cost_usd": 0.09377959999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5370,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2522,
+  "output_tokens_details": {
+   "thinking_tokens": 349
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5370,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2522,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 5370,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5370
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2522,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 5370,
+   "webSearchRequests": 0,
+   "costUSD": 0.09377959999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 349,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called ARGUS (Argus) was deployed straight to a PumpSwap pool about 50 minutes before detection. The launchpad is unknown and there was no migration. It traded about $1.5M in volume against a market cap of about $30k, so the whole cap turned over roughly 35 times in one hour. The trading pattern looks manufactured. There were 2,061 unique buyers but only 59 unique sellers. Those 59 sellers made about 1,500 sell transactions, roughly 25 each, which looks like a small group repeatedly selling into a crowd of small buyers. Unique buyers jumped to 396 in the 30-minute window but dropped to 48 in the 15-minute window, so the buyer burst has already collapsed. Price is down about 28% over 15 minutes and about 56% from its all-time high (6.66e-5 at the high, now 2.9e-5). LP is 0% locked or burned, and the creator's token account is closed. The only social link is a GeckoTerminal X handle, 'arguspad'. There is no DexScreener profile, no website and no Telegram. At least four other ARGUS/Argus tokens exist.\",\"narrative\":{\"description\":\"The only narrative clue is the name 'Argus' (the many-eyed watcher of Greek myth, a common name for security, monitoring or AI-agent projects) and the X handle 'arguspad', which hints at a launchpad product. The packet has no description, website or community links, so no actual story is visible.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity doesn't look narrative-driven. About 2,000 unique buyers against only 59 sellers within an hour, with no profile, no paid promotion and 1 GMGN page visit, fits a scripted or airdrop-style buyer farm, or bot-driven distribution, better than organic discovery.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This pair has the only active volume among the ARGUS tokens listed, and GeckoTerminal links it to an 'arguspad' X handle. Nothing in the packet confirms that handle actually endorses this contract.\",\"competing_tokens\":\"There are four other ARGUS/Argus tokens. Two report about $20M and $16M market cap with liquidity roughly equal to market cap and almost no volume, which suggests fake or self-paired pools. The others are at about $1.47M and $1.49M (one with only $558 of liquidity). All were created before this one; one is about 6 days older.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Buyer and seller counts are extremely lopsided: 2,061 unique buyers vs 59 unique sellers, with about 1,500 sells. Turnover is 34x market cap per hour on $41k of liquidity. The buyer burst collapsed from 396 unique buyers (30-minute window) to 48 (15-minute window). GeckoTerminal shows the top 10 holding 91%, with the 'rest' holding 0.019% across roughly 2,000 holders, which means dust-sized buyer wallets. LP is unlocked with few providers. The creator account is closed, and GMGN shows only 1 page visit despite $1.5M in volume.\",\"uncertainty\":\"GMGN flags no bundlers, snipers or bot/degen wallets, and a 16.6% fresh-wallet rate is only moderate. The top-10 figure may include the pool. Without X data I can't rule out a real launchpad team announcing this contract.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of LP locked or burned, and RugCheck flags it as a danger (liquidity can be pulled at any time)\",\"Few LP providers\",\"Top 10 hold 91% on GeckoTerminal, and roughly 2,000 holders hold dust\",\"Wash-like turnover: $1.5M volume on a $30k market cap\",\"Price is already down about 56% from the high, with a sharp decline over the last 15 minutes\",\"Crowded ticker, with several ARGUS tokens, some showing apparently fake liquidity\"]},\"counterargument\":\"If 'arguspad' is a real launchpad project and this is its official token, a launch-day audience could explain the roughly 2,000 unique buyers. GMGN found no bundlers, snipers or bot wallets, and the creator holds nothing, so there is no obvious dev dump. At a $29k market cap with $41k of liquidity, one real announcement or KOL post could send it several times higher. The lopsided seller count could also just be a few active traders taking profits.\",\"unknowns\":[\"Whether the arguspad X account exists, is active, and endorses this contract\",\"Who controls the unlocked LP\",\"Whether the approximately 2,000 buyers are real users or scripted dust wallets\",\"Why the other ARGUS tokens show liquidity roughly equal to their market cap\",\"What the 59 sellers are doing, and who is funding them\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This is the no-internet condition. The judgment is based only on the evidence packet.\"},\"thesis\":\"This looks like a manufactured launch-hour pump that is already fading. About 2,000 dust buyers faced 59 repeat sellers, volume turned over roughly 35 times the market cap, the buyer burst has collapsed, price is down about 56% from the high, LP is unlocked, and the ticker is contested. Attention is unlikely to persist over 24 hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"24h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called ARGUS (Argus) was deployed straight to a PumpSwap pool about 50 minutes before detection. The launchpad is unknown and there was no migration. It traded about $1.5M in volume against a market cap of about $30k, so the whole cap turned over roughly 35 times in one hour. The trading pattern looks manufactured. There were 2,061 unique buyers but only 59 unique sellers. Those 59 sellers made about 1,500 sell transactions, roughly 25 each, which looks like a small group repeatedly selling into a crowd of small buyers. Unique buyers jumped to 396 in the 30-minute window but dropped to 48 in the 15-minute window, so the buyer burst has already collapsed. Price is down about 28% over 15 minutes and about 56% from its all-time high (6.66e-5 at the high, now 2.9e-5). LP is 0% locked or burned, and the creator's token account is closed. The only social link is a GeckoTerminal X handle, 'arguspad'. There is no DexScreener profile, no website and no Telegram. At least four other ARGUS/Argus tokens exist.",
+  "narrative": {
+   "description": "The only narrative clue is the name 'Argus' (the many-eyed watcher of Greek myth, a common name for security, monitoring or AI-agent projects) and the X handle 'arguspad', which hints at a launchpad product. The packet has no description, website or community links, so no actual story is visible.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity doesn't look narrative-driven. About 2,000 unique buyers against only 59 sellers within an hour, with no profile, no paid promotion and 1 GMGN page visit, fits a scripted or airdrop-style buyer farm, or bot-driven distribution, better than organic discovery."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This pair has the only active volume among the ARGUS tokens listed, and GeckoTerminal links it to an 'arguspad' X handle. Nothing in the packet confirms that handle actually endorses this contract.",
+   "competing_tokens": "There are four other ARGUS/Argus tokens. Two report about $20M and $16M market cap with liquidity roughly equal to market cap and almost no volume, which suggests fake or self-paired pools. The others are at about $1.47M and $1.49M (one with only $558 of liquidity). All were created before this one; one is about 6 days older.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Buyer and seller counts are extremely lopsided: 2,061 unique buyers vs 59 unique sellers, with about 1,500 sells. Turnover is 34x market cap per hour on $41k of liquidity. The buyer burst collapsed from 396 unique buyers (30-minute window) to 48 (15-minute window). GeckoTerminal shows the top 10 holding 91%, with the 'rest' holding 0.019% across roughly 2,000 holders, which means dust-sized buyer wallets. LP is unlocked with few providers. The creator account is closed, and GMGN shows only 1 page visit despite $1.5M in volume.",
+   "uncertainty": "GMGN flags no bundlers, snipers or bot/degen wallets, and a 16.6% fresh-wallet rate is only moderate. The top-10 figure may include the pool. Without X data I can't rule out a real launchpad team announcing this contract."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of LP locked or burned, and RugCheck flags it as a danger (liquidity can be pulled at any time)",
+    "Few LP providers",
+    "Top 10 hold 91% on GeckoTerminal, and roughly 2,000 holders hold dust",
+    "Wash-like turnover: $1.5M volume on a $30k market cap",
+    "Price is already down about 56% from the high, with a sharp decline over the last 15 minutes",
+    "Crowded ticker, with several ARGUS tokens, some showing apparently fake liquidity"
+   ]
+  },
+  "counterargument": "If 'arguspad' is a real launchpad project and this is its official token, a launch-day audience could explain the roughly 2,000 unique buyers. GMGN found no bundlers, snipers or bot wallets, and the creator holds nothing, so there is no obvious dev dump. At a $29k market cap with $41k of liquidity, one real announcement or KOL post could send it several times higher. The lopsided seller count could also just be a few active traders taking profits.",
+  "unknowns": [
+   "Whether the arguspad X account exists, is active, and endorses this contract",
+   "Who controls the unlocked LP",
+   "Whether the approximately 2,000 buyers are real users or scripted dust wallets",
+   "Why the other ARGUS tokens show liquidity roughly equal to their market cap",
+   "What the 59 sellers are doing, and who is funding them"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This is the no-internet condition. The judgment is based only on the evidence packet."
+  },
+  "thesis": "This looks like a manufactured launch-hour pump that is already fading. About 2,000 dust buyers faced 59 repeat sellers, volume turned over roughly 35 times the market cap, the buyer burst has collapsed, price is down about 56% from the high, LP is unlocked, and the ticker is contested. Attention is unlikely to persist over 24 hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "24h",
+  "sources": []
+ },
+ "ttft_ms": 4592,
+ "type": "result",
+ "duration_ms": 24674,
+ "uuid": "21e1760e-505b-4ab1-b92c-4364250bf85d",
+ "ttft_stream_ms": 689,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 689,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

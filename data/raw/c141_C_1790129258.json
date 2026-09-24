@@ -1,0 +1,189 @@
+{
+ "duration_api_ms": 101516,
+ "stop_reason": "tool_use",
+ "session_id": "b6147816-e820-4df7-8faf-dc7bb3d9e395",
+ "total_cost_usd": 0.478645,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 19487,
+  "cache_read_input_tokens": 61185,
+  "output_tokens": 5057,
+  "output_tokens_details": {
+   "thinking_tokens": 1009
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19487,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3582,
+    "cache_read_input_tokens": 19746,
+    "cache_creation_input_tokens": 2241,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2241
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 5057,
+   "cacheReadInputTokens": 61185,
+   "cacheCreationInputTokens": 19487,
+   "webSearchRequests": 0,
+   "costUSD": 0.269313,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1009,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 101457,
+   "outputTokens": 3575,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 9,
+   "costUSD": 0.209332,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A brand-name \\\"Walmart\\\" token was launched about 40 minutes before detection. Its metadata links to the real @Walmart X account and uses Walmart's slogan, \\\"Save money. Live better.\\\" Nothing shows that Walmart is involved. It met the activity rule on $3.87M of volume in its first hour against a $1M market cap, with 4.3k buys and 2k sells. GeckoTerminal counts 2,532 unique buyers but only 156 unique sellers. I found no current Walmart news that would explain a memecoin. Walmart's recent crypto news (OnePay adding tokens, SP3ND stockbacks on Sept 17) is older and has nothing to do with this contract. The launch structure is unusual. GMGN says it was created on Meteora's launch curve (meteora_virtual_curve) and \\\"migrated\\\" in the same second it was created. GeckoTerminal says the Meteora DBC account holds about 80B of roughly 100B tokens. The trading pool is a separately created PumpSwap pool with about $306k of liquidity, and RugCheck flags that pool's LP as unlocked (\\\"danger\\\"). There are 180 graph-flagged insiders, including a 120-wallet transfer network, plus 80 bundler and 96 rat-trader wallets. I found no posts mentioning the contract on X, Reddit or Telegram.\",\"narrative\":{\"description\":\"A generic memecoin borrowing the Walmart brand, with no catalyst found. Walmart is famous, but I found no current Walmart event (tweet, crypto announcement or viral moment) that would explain this launch. Same-name Walmart tokens are launched all the time: the packet lists 7 others, and GMGN says 741 tokens have been launched citing the @Walmart X account.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"No organic trigger found. The flow looks like launch-hour trading driven by the setup itself: a vanity contract address, a pool seeded with plenty of liquidity, and bundler/insider wallets. It does not look like attention reacting to any news.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the Walmart-named token with real liquidity and volume right now. Others: 2wrQ\u2026 was created about 4 minutes earlier with $0.02 liquidity and a fake $45M market cap, and a7Aw\u2026 has $2k liquidity. But brand-name tokens have no canonical version. Walmart did not issue it, and the @Walmart link is borrowed.\",\"competing_tokens\":\"At least 7 same-name tokens (2wrQ\u2026, 5xog\u2026, GvkDo\u2026, AXY9\u2026, ATmq\u2026, 3jdg\u2026, a7Aw\u2026). An older Walmart meme account (@Walmart_SOLANA1) and older WALMART pairs also exist.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Signs of coordination: 180 graph insiders, including a 120-wallet transfer network; 80 bundler and 96 rat-trader wallets; 0 smart-money or KOL wallets. The token was created and migrated in the same second, and the trading pool is a manually seeded PumpSwap pool with unlocked LP. Only 156 unique sellers produced about 2,000 sells, while 2,532 buyers appeared, so selling is concentrated in a few wallets. The contract address is a vanity one (ends in 'cartoAB'). No organic posts found anywhere.\",\"uncertainty\":\"I could not see X directly (fetches returned HTTP 402). Private Telegram call groups may be pushing it, and I can't see those. Some of the 2.5k buyers may be real retail sniping the brand name.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP on the main PumpSwap pool is flagged as unlocked ('Large Amount of LP Unlocked', danger), so about $306k of liquidity can be pulled\",\"About 80% of supply (80B) sits in a Meteora DBC account, a supply overhang whose release conditions are unclear; top 10 hold 96%\",\"180 graph-flagged insiders, including a 120-wallet transfer cluster, plus bundlers and rat traders\",\"A small number of sellers (156) against 2.5k buyers suggests insiders are distributing into retail\",\"Price momentum is slowing: GeckoTerminal shows +39% over 1h but only +15% over 30m and +6% over 15m\",\"Many same-name copycat tokens split the attention\"]},\"counterargument\":\"Walmart is one of the most recognisable brands in the world, and Walmart-linked crypto news (OnePay listing SOL, SP3ND stockbacks) keeps the name in circulation. A liquid, well-seeded pool with 2.5k buyers in 40 minutes shows real retail demand. Brand-name tokens with deep early liquidity have sometimes run to multi-million market caps before fading, and the buy count is still more than twice the sell count in the latest 5 minutes.\",\"unknowns\":[\"Whether any current X post (from Walmart or an influencer) triggered this; I could not read X directly\",\"Who controls the unlocked PumpSwap LP, and the unlock terms of the 80B tokens held in Meteora DBC\",\"Whether private Telegram call groups are coordinating buys\",\"Who the 156 sellers are, and how much of the insider cluster's supply is still unsold\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searching the contract address returned nothing relevant. A site:x.com $Walmart search found only an older @Walmart_SOLANA1 meme account; fetching it returned HTTP 402. News searches found only unrelated or older Walmart crypto items (OnePay, SP3ND) and no Walmart catalyst on Sept 22. The project has no website; its only social is the borrowed @Walmart handle. I checked the DexScreener API and the GeckoTerminal pool page.\"},\"thesis\":\"This looks like noise or manipulation. It is a brand-name token with no catalyst, a coordinated insider and bundler structure, unlocked LP of about $306k, 80% of supply held in a Meteora DBC account, and selling concentrated in about 156 wallets. The momentum is already slowing, so the attention is likely to fade within hours, with a real risk of a liquidity pull.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7cZL2MPhTcZdS1wp3n8QeEQM1V3dzNNjjcAMdCartoAB\",\"what\":\"Pairs: PumpSwap main pool with $306k liquidity and $3.9M volume, plus Meteora DYN2 and DBC pairs; no socials\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/BMMNDaCxnbieKfdS348HyvFeTBudfv17AoXuvJm6cGnK\",\"what\":\"Meteora DBC holds about 80B tokens; dev holds over 10%; LP not locked; twitter @Walmart; security score 57\"},{\"url\":\"https://cointelegraph.com/news/walmart-backed-onepay-adds-a-dozen-new-tokens-in-push-to-serve-new-to-crypto-customers\",\"what\":\"Real but older Walmart OnePay crypto news, not linked to this token\"},{\"url\":\"https://solanacompass.com/news/sp3nd-launches-stockbacks-stablecoin-shoppers-earn-tokenized-equity-in-amazon-walmart-nvidia-and-more\",\"what\":\"SP3ND stockbacks including Walmart (Sept 17), unrelated to this contract\"},{\"url\":\"https://corporate.walmart.com/news/2026/09/q3-leadership-investor-events\",\"what\":\"Walmart corporate news: nothing crypto or memecoin-related\"},{\"url\":\"https://x.com/walmart_solana1?lang=en\",\"what\":\"Older Walmart meme coin X account, evidence of recurring same-name tokens\"}]}",
+ "structured_output": {
+  "what_is_happening": "A brand-name \"Walmart\" token was launched about 40 minutes before detection. Its metadata links to the real @Walmart X account and uses Walmart's slogan, \"Save money. Live better.\" Nothing shows that Walmart is involved. It met the activity rule on $3.87M of volume in its first hour against a $1M market cap, with 4.3k buys and 2k sells. GeckoTerminal counts 2,532 unique buyers but only 156 unique sellers. I found no current Walmart news that would explain a memecoin. Walmart's recent crypto news (OnePay adding tokens, SP3ND stockbacks on Sept 17) is older and has nothing to do with this contract. The launch structure is unusual. GMGN says it was created on Meteora's launch curve (meteora_virtual_curve) and \"migrated\" in the same second it was created. GeckoTerminal says the Meteora DBC account holds about 80B of roughly 100B tokens. The trading pool is a separately created PumpSwap pool with about $306k of liquidity, and RugCheck flags that pool's LP as unlocked (\"danger\"). There are 180 graph-flagged insiders, including a 120-wallet transfer network, plus 80 bundler and 96 rat-trader wallets. I found no posts mentioning the contract on X, Reddit or Telegram.",
+  "narrative": {
+   "description": "A generic memecoin borrowing the Walmart brand, with no catalyst found. Walmart is famous, but I found no current Walmart event (tweet, crypto announcement or viral moment) that would explain this launch. Same-name Walmart tokens are launched all the time: the packet lists 7 others, and GMGN says 741 tokens have been launched citing the @Walmart X account.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "No organic trigger found. The flow looks like launch-hour trading driven by the setup itself: a vanity contract address, a pool seeded with plenty of liquidity, and bundler/insider wallets. It does not look like attention reacting to any news."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the Walmart-named token with real liquidity and volume right now. Others: 2wrQ\u2026 was created about 4 minutes earlier with $0.02 liquidity and a fake $45M market cap, and a7Aw\u2026 has $2k liquidity. But brand-name tokens have no canonical version. Walmart did not issue it, and the @Walmart link is borrowed.",
+   "competing_tokens": "At least 7 same-name tokens (2wrQ\u2026, 5xog\u2026, GvkDo\u2026, AXY9\u2026, ATmq\u2026, 3jdg\u2026, a7Aw\u2026). An older Walmart meme account (@Walmart_SOLANA1) and older WALMART pairs also exist.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Signs of coordination: 180 graph insiders, including a 120-wallet transfer network; 80 bundler and 96 rat-trader wallets; 0 smart-money or KOL wallets. The token was created and migrated in the same second, and the trading pool is a manually seeded PumpSwap pool with unlocked LP. Only 156 unique sellers produced about 2,000 sells, while 2,532 buyers appeared, so selling is concentrated in a few wallets. The contract address is a vanity one (ends in 'cartoAB'). No organic posts found anywhere.",
+   "uncertainty": "I could not see X directly (fetches returned HTTP 402). Private Telegram call groups may be pushing it, and I can't see those. Some of the 2.5k buyers may be real retail sniping the brand name."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP on the main PumpSwap pool is flagged as unlocked ('Large Amount of LP Unlocked', danger), so about $306k of liquidity can be pulled",
+    "About 80% of supply (80B) sits in a Meteora DBC account, a supply overhang whose release conditions are unclear; top 10 hold 96%",
+    "180 graph-flagged insiders, including a 120-wallet transfer cluster, plus bundlers and rat traders",
+    "A small number of sellers (156) against 2.5k buyers suggests insiders are distributing into retail",
+    "Price momentum is slowing: GeckoTerminal shows +39% over 1h but only +15% over 30m and +6% over 15m",
+    "Many same-name copycat tokens split the attention"
+   ]
+  },
+  "counterargument": "Walmart is one of the most recognisable brands in the world, and Walmart-linked crypto news (OnePay listing SOL, SP3ND stockbacks) keeps the name in circulation. A liquid, well-seeded pool with 2.5k buyers in 40 minutes shows real retail demand. Brand-name tokens with deep early liquidity have sometimes run to multi-million market caps before fading, and the buy count is still more than twice the sell count in the latest 5 minutes.",
+  "unknowns": [
+   "Whether any current X post (from Walmart or an influencer) triggered this; I could not read X directly",
+   "Who controls the unlocked PumpSwap LP, and the unlock terms of the 80B tokens held in Meteora DBC",
+   "Whether private Telegram call groups are coordinating buys",
+   "Who the 156 sellers are, and how much of the insider cluster's supply is still unsold"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searching the contract address returned nothing relevant. A site:x.com $Walmart search found only an older @Walmart_SOLANA1 meme account; fetching it returned HTTP 402. News searches found only unrelated or older Walmart crypto items (OnePay, SP3ND) and no Walmart catalyst on Sept 22. The project has no website; its only social is the borrowed @Walmart handle. I checked the DexScreener API and the GeckoTerminal pool page."
+  },
+  "thesis": "This looks like noise or manipulation. It is a brand-name token with no catalyst, a coordinated insider and bundler structure, unlocked LP of about $306k, 80% of supply held in a Meteora DBC account, and selling concentrated in about 156 wallets. The momentum is already slowing, so the attention is likely to fade within hours, with a real risk of a liquidity pull.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7cZL2MPhTcZdS1wp3n8QeEQM1V3dzNNjjcAMdCartoAB",
+    "what": "Pairs: PumpSwap main pool with $306k liquidity and $3.9M volume, plus Meteora DYN2 and DBC pairs; no socials"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/BMMNDaCxnbieKfdS348HyvFeTBudfv17AoXuvJm6cGnK",
+    "what": "Meteora DBC holds about 80B tokens; dev holds over 10%; LP not locked; twitter @Walmart; security score 57"
+   },
+   {
+    "url": "https://cointelegraph.com/news/walmart-backed-onepay-adds-a-dozen-new-tokens-in-push-to-serve-new-to-crypto-customers",
+    "what": "Real but older Walmart OnePay crypto news, not linked to this token"
+   },
+   {
+    "url": "https://solanacompass.com/news/sp3nd-launches-stockbacks-stablecoin-shoppers-earn-tokenized-equity-in-amazon-walmart-nvidia-and-more",
+    "what": "SP3ND stockbacks including Walmart (Sept 17), unrelated to this contract"
+   },
+   {
+    "url": "https://corporate.walmart.com/news/2026/09/q3-leadership-investor-events",
+    "what": "Walmart corporate news: nothing crypto or memecoin-related"
+   },
+   {
+    "url": "https://x.com/walmart_solana1?lang=en",
+    "what": "Older Walmart meme coin X account, evidence of recurring same-name tokens"
+   }
+  ]
+ },
+ "ttft_ms": 2295,
+ "type": "result",
+ "duration_ms": 67734,
+ "uuid": "901b5471-b25e-474c-9329-e1e88a33ab8c",
+ "ttft_stream_ms": 742,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 742,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

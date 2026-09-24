@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 25741,
+ "stop_reason": "tool_use",
+ "session_id": "1f448dca-ba22-48da-87fa-6746ddf4e6f5",
+ "total_cost_usd": 0.1041556,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6332,
+  "cache_read_input_tokens": 1858,
+  "output_tokens": 2656,
+  "output_tokens_details": {
+   "thinking_tokens": 527
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6332,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2656,
+    "cache_read_input_tokens": 1858,
+    "cache_creation_input_tokens": 6332,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6332
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2656,
+   "cacheReadInputTokens": 1858,
+   "cacheCreationInputTokens": 6332,
+   "webSearchRequests": 0,
+   "costUSD": 0.1041556,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 527,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 37-minute-old PumpSwap pair called \\\"Concrete\\\" (CT) launched through a Meteora virtual-curve path, with creation and migration in the same second. It has about $4.5M of volume in its first hour against a $1.19M market cap and $379k liquidity, which is roughly 12x hourly turnover. Buys outnumber sells about 2:1 (1,769 unique buyers against 161 unique sellers), and the price is up about 40%. Momentum has flattened: +9.5% over 30 minutes, +3.6% over 15 minutes and +1.3% over 5 minutes, and the price sits right at its all-time high. The token links to the X handle @ConcreteXYZ, which is the name of a real DeFi vault/yield project. GMGN says that X account has been attached to 34 launched tokens. The packet also lists two earlier Solana \\\"Concrete\\\" CT tokens from the last day, both now at $0.03 liquidity. That looks like a wave of copycats cashing in on expected Concrete/CT token-launch news, and the earlier copies appear to have had their liquidity pulled.\",\"narrative\":{\"description\":\"Ticker-sniping on a real project's brand. Traders are betting that this is the official Concrete (CT) token, or that it will ride hype around the official launch. A parallel wave of 'City Protocol' CT tokens is running at the same time (one has $7M of hourly volume).\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Real-brand name recognition, and possibly anticipation of an official launch, draws buyers who search for the ticker. The very high turnover and heavy buy skew fit bot, alert-channel or wash flow better than organic discovery. Nothing in the packet shows the official Concrete team endorsing a Solana token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The name and the linked X handle match the real Concrete project. However, 34 tokens have been launched against that X handle, and an official project launching at a $1.2M fully diluted value on a Solana memecoin venue is implausible. It looks like an impersonation.\",\"competing_tokens\":\"At least two earlier 'Concrete' CT tokens from the past day (6iNF..., 5WtW...), both drained to about $0.03 liquidity. There are also several 'City Protocol' CT tokens, one with $290k liquidity and $7M hourly volume, plus old unrelated CT tokens.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The earlier clones with the same name were drained to near-zero liquidity, a serial launch pattern. RugCheck flags a large amount of LP as unlocked, and only a few wallets provide liquidity. Liquidity is large relative to market cap, which suggests it was seeded by the deployer. There are 49 insider ('rat trader') wallets. The skew of 1,769 buyers against 161 sellers with this much turnover points to engineered flow or bots. The X account has been linked to 34 token launches.\",\"uncertainty\":\"The sources conflict on holder concentration: GMGN puts the top-10 holding rate at 0.9%, while GeckoTerminal says 96.7%, which probably includes pool accounts. GMGN also shows LP burn at 1.0, while RugCheck says LP is unlocked. There is no X data, so I can't confirm whether Concrete has announced anything official.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags a large amount of unlocked LP with few LP providers; the previous same-name clones went to about $0.03 liquidity\",\"The holder data conflicts (GeckoTerminal top-10 at 96.7%)\",\"Heavy competition for the same ticker splits buyers\",\"The creator's token status is 'creator_close'; I can't tell whether that means the creator closed the account or exited, but either way the creator holds none of the token\",\"If the official Concrete token launches elsewhere or disowns this one, demand disappears\"]},\"counterargument\":\"If Concrete really is holding its token launch now and this is the contract people are finding, the attention could keep going. Liquidity is deep for this market cap, the security checks are clean (mint and freeze authority renounced, no taxes, GMGN shows the LP burned), and the 1,769 unique buyers show real retail interest. Of all the same-name copies, this one has survived longest with liquidity intact, so ticker hunters could keep piling into it and push the market cap several times higher within the hour.\",\"unknowns\":[\"Whether Concrete has officially announced a CT token or a Solana deployment\",\"Whether the LP is actually locked or burned (GMGN and RugCheck disagree)\",\"Who the liquidity provider is, and whether it is the same deployer as the drained clones\",\"How much of the volume is wash or bot trading\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; I used only the evidence packet.\"},\"thesis\":\"This is most likely one more copycat in a series of 'Concrete' CT tokens riding the real Concrete brand. The earlier copies were drained, the LP is flagged as unlocked, and momentum is already stalling at the all-time high. I expect attention and liquidity to fade or be pulled within hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 37-minute-old PumpSwap pair called \"Concrete\" (CT) launched through a Meteora virtual-curve path, with creation and migration in the same second. It has about $4.5M of volume in its first hour against a $1.19M market cap and $379k liquidity, which is roughly 12x hourly turnover. Buys outnumber sells about 2:1 (1,769 unique buyers against 161 unique sellers), and the price is up about 40%. Momentum has flattened: +9.5% over 30 minutes, +3.6% over 15 minutes and +1.3% over 5 minutes, and the price sits right at its all-time high. The token links to the X handle @ConcreteXYZ, which is the name of a real DeFi vault/yield project. GMGN says that X account has been attached to 34 launched tokens. The packet also lists two earlier Solana \"Concrete\" CT tokens from the last day, both now at $0.03 liquidity. That looks like a wave of copycats cashing in on expected Concrete/CT token-launch news, and the earlier copies appear to have had their liquidity pulled.",
+  "narrative": {
+   "description": "Ticker-sniping on a real project's brand. Traders are betting that this is the official Concrete (CT) token, or that it will ride hype around the official launch. A parallel wave of 'City Protocol' CT tokens is running at the same time (one has $7M of hourly volume).",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Real-brand name recognition, and possibly anticipation of an official launch, draws buyers who search for the ticker. The very high turnover and heavy buy skew fit bot, alert-channel or wash flow better than organic discovery. Nothing in the packet shows the official Concrete team endorsing a Solana token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The name and the linked X handle match the real Concrete project. However, 34 tokens have been launched against that X handle, and an official project launching at a $1.2M fully diluted value on a Solana memecoin venue is implausible. It looks like an impersonation.",
+   "competing_tokens": "At least two earlier 'Concrete' CT tokens from the past day (6iNF..., 5WtW...), both drained to about $0.03 liquidity. There are also several 'City Protocol' CT tokens, one with $290k liquidity and $7M hourly volume, plus old unrelated CT tokens.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The earlier clones with the same name were drained to near-zero liquidity, a serial launch pattern. RugCheck flags a large amount of LP as unlocked, and only a few wallets provide liquidity. Liquidity is large relative to market cap, which suggests it was seeded by the deployer. There are 49 insider ('rat trader') wallets. The skew of 1,769 buyers against 161 sellers with this much turnover points to engineered flow or bots. The X account has been linked to 34 token launches.",
+   "uncertainty": "The sources conflict on holder concentration: GMGN puts the top-10 holding rate at 0.9%, while GeckoTerminal says 96.7%, which probably includes pool accounts. GMGN also shows LP burn at 1.0, while RugCheck says LP is unlocked. There is no X data, so I can't confirm whether Concrete has announced anything official."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags a large amount of unlocked LP with few LP providers; the previous same-name clones went to about $0.03 liquidity",
+    "The holder data conflicts (GeckoTerminal top-10 at 96.7%)",
+    "Heavy competition for the same ticker splits buyers",
+    "The creator's token status is 'creator_close'; I can't tell whether that means the creator closed the account or exited, but either way the creator holds none of the token",
+    "If the official Concrete token launches elsewhere or disowns this one, demand disappears"
+   ]
+  },
+  "counterargument": "If Concrete really is holding its token launch now and this is the contract people are finding, the attention could keep going. Liquidity is deep for this market cap, the security checks are clean (mint and freeze authority renounced, no taxes, GMGN shows the LP burned), and the 1,769 unique buyers show real retail interest. Of all the same-name copies, this one has survived longest with liquidity intact, so ticker hunters could keep piling into it and push the market cap several times higher within the hour.",
+  "unknowns": [
+   "Whether Concrete has officially announced a CT token or a Solana deployment",
+   "Whether the LP is actually locked or burned (GMGN and RugCheck disagree)",
+   "Who the liquidity provider is, and whether it is the same deployer as the drained clones",
+   "How much of the volume is wash or bot trading"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; I used only the evidence packet."
+  },
+  "thesis": "This is most likely one more copycat in a series of 'Concrete' CT tokens riding the real Concrete brand. The earlier copies were drained, the LP is flagged as unlocked, and momentum is already stalling at the all-time high. I expect attention and liquidity to fade or be pulled within hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6020,
+ "type": "result",
+ "duration_ms": 25783,
+ "uuid": "a671e093-0369-46ef-86db-3c554727c61a",
+ "ttft_stream_ms": 725,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 726,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

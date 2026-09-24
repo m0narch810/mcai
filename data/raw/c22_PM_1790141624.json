@@ -1,0 +1,140 @@
+{
+ "duration_api_ms": 47755,
+ "stop_reason": "tool_use",
+ "session_id": "8677069b-cf92-4700-913a-7cbe182094ec",
+ "total_cost_usd": 0.17401840000000002,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10245,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 4594,
+  "output_tokens_details": {
+   "thinking_tokens": 1476
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10245,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4594,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 10245,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10245
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4594,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 10245,
+   "webSearchRequests": 0,
+   "costUSD": 0.17401840000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1476,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The researcher identified the token as Backpack Securities' tokenized DJT share. The evidence was the name format, a deployer funded from 'Backpack 2', the GeckoTerminal handle 'Backpack', the pool being created in the Sept 9 Sunrise listing batch, and a $9.17 token price matching Nasdaq DJT at about $9.00\u20139.33. This was the key call. A redeemable 1:1 wrapper is held to the underlying price by arbitrage, and the outcome fits that: MFE over 6h was +1.83%, MAE was -1.96%, no \u00b11\u03c3 or \u00b12\u03c3 barrier was touched, and no \u00b120/30/50/100/200% level was reached.\",\"At detection, price was flat (m5 +0.1%, h1 +0.56%) while volume spiked, and buy and sell counts were nearly equal (1,093 vs 1,015 in m5; 363 vs 287 unique buyers vs sellers). That points to mechanical, arbitrage or market-making flow rather than directional demand. Price stayed flat afterward (gross -0.83% at 1h, -0.38% at 6h).\",\"The alert fired at about 03:29 UTC, during US overnight hours (late Monday ET). The underlying stock market was closed, so there was no fresh price discovery for the wrapper to follow. That makes a large move in the 1h and 6h windows unlikely.\",\"The same-ticker competitors all had zero h1 volume. This correctly showed there was no ticker hijack or copycat attention event pulling flow.\",\"Liquidity was about $62k at detection and fell to a minimum of about $40.6k over 24h without collapsing. This supports the view that the pool is a stable venue for the issuer's product, not a rug setup.\"],\"misleading_observations\":[\"The RugCheck 'danger' flags (mint and freeze authority enabled, 'Permanent Control', single holder at 47%, low liquidity) would read as extreme rug risk for a memecoin. For a regulated tokenized security they describe normal issuer controls and custody wallets. The researcher correctly discounted them.\",\"GMGN tagged 1,000 wallets as 'bundler' and 1,000 as 'fresh', and counted 454 'smart' and 64 'renowned' wallets. These classifiers are built for memecoins, and here they carry no information about continuation. The round 1,000 counts look like an API cap. Neither pump risk nor smart-money interest showed up in the outcome.\",\"The m5-vs-h6 volume acceleration of 23x is what triggered the candidate. For a pegged asset, volume acceleration says nothing about price direction. The trigger was structurally mis-specified for this asset class.\",\"The pre-entry hourly sigma of about 5.8% overstated the realistic range for a stock wrapper, probably because of noise in a thin pool. Sigma-scaled barriers built on it were never going to be touched.\",\"The two sources disagreed on m5 volume ($161k on DexScreener vs $83k on GeckoTerminal). GMGN's ath_price of 8.82 was below the current price of 9.17. The report never reconciled either. Neither discrepancy mattered to the outcome, but both show the data fields are noisy.\",\"The label 'fade' was only half right. Volume likely did normalize and price did not break out. But price did not fall meaningfully either: gross -0.38% at 6h, then +3.52% at 24h, likely following the underlying stock during the next US session. The accurate call was 'no attention-driven move / non-tradable', not a directional fade.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time argued for continuation. The core conclusion, that no speculative move would happen, was well supported.\",\"The report should have made its framing explicit: 'fade' applied to volume and to the absence of a re-rating, not to price direction. After the next US open, the 24h direction of a pegged wrapper depends on the underlying stock's session, which nobody could know at 03:54 UTC.\",\"The report did not quantify friction. The outcome shows net returns of -4.31% at 1h and -4.00% at 6h against gross -0.83% and -0.38%. Even with a +3.52% gross move at 24h, the net was -0.12%. Implied round-trip cost was about 3.5\u20133.9%, far above the 0.25% fee, probably because of entry slippage or a quote-to-reference gap in a $47k-liquidity pool. The researcher could have flagged at decision time that any plausible peg-bounded move (\u00b12%) was smaller than execution cost, which makes the setup untradable in either direction.\",\"The researcher could have checked the wrapper's premium or discount to DJT's last close (about 9.17 vs about 9.10\u20139.33). A near-zero premium means no convergence trade was on offer either.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Candidates identified at decision time as issuer-backed tokenized equities will not touch +20% or -20% within 24h, regardless of the volume-acceleration trigger. The identifying signals are: deployer funded by a known issuer wallet, a name matching the issuer's format (e.g. '- Backpack Securities', 'xStock'), and token price within 3% of the underlying's last traded price.\",\"conditions\":\"Applies to tokens whose price tracks a listed equity within 3% at detection and whose issuer supports redemption. Does not apply if the underlying has a scheduled catalyst (earnings, court ruling) inside the window, or if the wrapper trades at more than a 5% premium or discount.\",\"market_structure_rationale\":\"Redemption and arbitrage against the underlying share cap how far on-chain price can deviate. On-chain attention cannot re-rate the asset, so memecoin-style momentum triggers carry no signal here.\"},{\"statement\":\"For pegged or wrapped assets, a volume spike with |price_change_m5| < 0.5% and a buy-to-sell count ratio between 0.8 and 1.25 will be followed by 6h gross absolute returns below 0.5x the pre-entry hourly sigma.\",\"conditions\":\"Pegged or wrapped assets (tokenized stocks, stable-pegged or LST-like tokens) where the peg reference trades on another venue. Most informative when the reference market is closed at detection.\",\"market_structure_rationale\":\"Two-sided flow with no price impact is how arbitrage, market-making rebalances or split orders look, not directional demand. When the reference market is closed there is no new information to push the peg.\"},{\"statement\":\"When the absolute premium or discount to the underlying's last close is below 1.5%, and estimated round-trip execution cost (fee plus the observed quote-to-reference gap and pool-depth slippage for the position size) exceeds 2%, the expected net return at every horizon up to 24h is negative.\",\"conditions\":\"Thin DEX pools (liquidity under about $100k) for pegged assets, at the experiment's $250 position size. Cost can be estimated at decision time from quote vs pool mid and from liquidity depth.\",\"market_structure_rationale\":\"Peg arbitrage bounds the achievable move, while friction in a thin pool is fixed and front-loaded. If the bound on gross move is smaller than friction, the setup is untradable whichever direction the call takes.\"}],\"summary\":\"The researcher correctly identified the token as Backpack Securities' tokenized DJT share, not a memecoin. The evidence was the issuer-funded deployer, the name format, the listing-batch date and a price matching Nasdaq DJT. The researcher then read the off-hours, flat-price, two-sided volume burst as mechanical flow. The outcome fits that reading. Price stayed within about \u00b12% over 6h, no sigma or percentage barrier was touched and liquidity held. Gross returns were -0.8% at 1h, -0.4% at 6h and +3.5% at 24h. The 24h move most likely followed the underlying stock's next US session, which could not be known at decision time. So 'fade' was right in spirit (no attention-driven re-rating) but not in a strict directional sense. What mattered was the peg identification and the flat-price, balanced-flow read. The misleading or irrelevant signals were the RugCheck danger flags, GMGN's bundler, fresh and smart-wallet tags, and the 23x volume-acceleration trigger, which is structurally uninformative for a pegged asset. The main gap was friction. The results show net returns about 3.5\u20133.9 points below gross at every horizon, more than any peg-bounded move could cover. So the correct operational verdict was 'untradable / exclude', not a directional fade. This one case confirms the logic but proves little on its own. Filtering tokenized-equity wrappers out of a memecoin momentum universe looks like a structural fix to test, not a lucky call.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The researcher identified the token as Backpack Securities' tokenized DJT share. The evidence was the name format, a deployer funded from 'Backpack 2', the GeckoTerminal handle 'Backpack', the pool being created in the Sept 9 Sunrise listing batch, and a $9.17 token price matching Nasdaq DJT at about $9.00\u20139.33. This was the key call. A redeemable 1:1 wrapper is held to the underlying price by arbitrage, and the outcome fits that: MFE over 6h was +1.83%, MAE was -1.96%, no \u00b11\u03c3 or \u00b12\u03c3 barrier was touched, and no \u00b120/30/50/100/200% level was reached.",
+   "At detection, price was flat (m5 +0.1%, h1 +0.56%) while volume spiked, and buy and sell counts were nearly equal (1,093 vs 1,015 in m5; 363 vs 287 unique buyers vs sellers). That points to mechanical, arbitrage or market-making flow rather than directional demand. Price stayed flat afterward (gross -0.83% at 1h, -0.38% at 6h).",
+   "The alert fired at about 03:29 UTC, during US overnight hours (late Monday ET). The underlying stock market was closed, so there was no fresh price discovery for the wrapper to follow. That makes a large move in the 1h and 6h windows unlikely.",
+   "The same-ticker competitors all had zero h1 volume. This correctly showed there was no ticker hijack or copycat attention event pulling flow.",
+   "Liquidity was about $62k at detection and fell to a minimum of about $40.6k over 24h without collapsing. This supports the view that the pool is a stable venue for the issuer's product, not a rug setup."
+  ],
+  "misleading_observations": [
+   "The RugCheck 'danger' flags (mint and freeze authority enabled, 'Permanent Control', single holder at 47%, low liquidity) would read as extreme rug risk for a memecoin. For a regulated tokenized security they describe normal issuer controls and custody wallets. The researcher correctly discounted them.",
+   "GMGN tagged 1,000 wallets as 'bundler' and 1,000 as 'fresh', and counted 454 'smart' and 64 'renowned' wallets. These classifiers are built for memecoins, and here they carry no information about continuation. The round 1,000 counts look like an API cap. Neither pump risk nor smart-money interest showed up in the outcome.",
+   "The m5-vs-h6 volume acceleration of 23x is what triggered the candidate. For a pegged asset, volume acceleration says nothing about price direction. The trigger was structurally mis-specified for this asset class.",
+   "The pre-entry hourly sigma of about 5.8% overstated the realistic range for a stock wrapper, probably because of noise in a thin pool. Sigma-scaled barriers built on it were never going to be touched.",
+   "The two sources disagreed on m5 volume ($161k on DexScreener vs $83k on GeckoTerminal). GMGN's ath_price of 8.82 was below the current price of 9.17. The report never reconciled either. Neither discrepancy mattered to the outcome, but both show the data fields are noisy.",
+   "The label 'fade' was only half right. Volume likely did normalize and price did not break out. But price did not fall meaningfully either: gross -0.38% at 6h, then +3.52% at 24h, likely following the underlying stock during the next US session. The accurate call was 'no attention-driven move / non-tradable', not a directional fade."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time argued for continuation. The core conclusion, that no speculative move would happen, was well supported.",
+   "The report should have made its framing explicit: 'fade' applied to volume and to the absence of a re-rating, not to price direction. After the next US open, the 24h direction of a pegged wrapper depends on the underlying stock's session, which nobody could know at 03:54 UTC.",
+   "The report did not quantify friction. The outcome shows net returns of -4.31% at 1h and -4.00% at 6h against gross -0.83% and -0.38%. Even with a +3.52% gross move at 24h, the net was -0.12%. Implied round-trip cost was about 3.5\u20133.9%, far above the 0.25% fee, probably because of entry slippage or a quote-to-reference gap in a $47k-liquidity pool. The researcher could have flagged at decision time that any plausible peg-bounded move (\u00b12%) was smaller than execution cost, which makes the setup untradable in either direction.",
+   "The researcher could have checked the wrapper's premium or discount to DJT's last close (about 9.17 vs about 9.10\u20139.33). A near-zero premium means no convergence trade was on offer either."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Candidates identified at decision time as issuer-backed tokenized equities will not touch +20% or -20% within 24h, regardless of the volume-acceleration trigger. The identifying signals are: deployer funded by a known issuer wallet, a name matching the issuer's format (e.g. '- Backpack Securities', 'xStock'), and token price within 3% of the underlying's last traded price.",
+    "conditions": "Applies to tokens whose price tracks a listed equity within 3% at detection and whose issuer supports redemption. Does not apply if the underlying has a scheduled catalyst (earnings, court ruling) inside the window, or if the wrapper trades at more than a 5% premium or discount.",
+    "market_structure_rationale": "Redemption and arbitrage against the underlying share cap how far on-chain price can deviate. On-chain attention cannot re-rate the asset, so memecoin-style momentum triggers carry no signal here."
+   },
+   {
+    "statement": "For pegged or wrapped assets, a volume spike with |price_change_m5| < 0.5% and a buy-to-sell count ratio between 0.8 and 1.25 will be followed by 6h gross absolute returns below 0.5x the pre-entry hourly sigma.",
+    "conditions": "Pegged or wrapped assets (tokenized stocks, stable-pegged or LST-like tokens) where the peg reference trades on another venue. Most informative when the reference market is closed at detection.",
+    "market_structure_rationale": "Two-sided flow with no price impact is how arbitrage, market-making rebalances or split orders look, not directional demand. When the reference market is closed there is no new information to push the peg."
+   },
+   {
+    "statement": "When the absolute premium or discount to the underlying's last close is below 1.5%, and estimated round-trip execution cost (fee plus the observed quote-to-reference gap and pool-depth slippage for the position size) exceeds 2%, the expected net return at every horizon up to 24h is negative.",
+    "conditions": "Thin DEX pools (liquidity under about $100k) for pegged assets, at the experiment's $250 position size. Cost can be estimated at decision time from quote vs pool mid and from liquidity depth.",
+    "market_structure_rationale": "Peg arbitrage bounds the achievable move, while friction in a thin pool is fixed and front-loaded. If the bound on gross move is smaller than friction, the setup is untradable whichever direction the call takes."
+   }
+  ],
+  "summary": "The researcher correctly identified the token as Backpack Securities' tokenized DJT share, not a memecoin. The evidence was the issuer-funded deployer, the name format, the listing-batch date and a price matching Nasdaq DJT. The researcher then read the off-hours, flat-price, two-sided volume burst as mechanical flow. The outcome fits that reading. Price stayed within about \u00b12% over 6h, no sigma or percentage barrier was touched and liquidity held. Gross returns were -0.8% at 1h, -0.4% at 6h and +3.5% at 24h. The 24h move most likely followed the underlying stock's next US session, which could not be known at decision time. So 'fade' was right in spirit (no attention-driven re-rating) but not in a strict directional sense. What mattered was the peg identification and the flat-price, balanced-flow read. The misleading or irrelevant signals were the RugCheck danger flags, GMGN's bundler, fresh and smart-wallet tags, and the 23x volume-acceleration trigger, which is structurally uninformative for a pegged asset. The main gap was friction. The results show net returns about 3.5\u20133.9 points below gross at every horizon, more than any peg-bounded move could cover. So the correct operational verdict was 'untradable / exclude', not a directional fade. This one case confirms the logic but proves little on its own. Filtering tokenized-equity wrappers out of a memecoin momentum universe looks like a structural fix to test, not a lucky call."
+ },
+ "ttft_ms": 17890,
+ "type": "result",
+ "duration_ms": 47792,
+ "uuid": "32db177a-96a5-43f6-a835-2a84ec991dd5",
+ "ttft_stream_ms": 1210,
+ "time_to_request_ms": 33,
+ "first_content_frame_ms": 1211,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

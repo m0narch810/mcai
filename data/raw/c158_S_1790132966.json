@@ -1,0 +1,165 @@
+{
+ "duration_api_ms": 77393,
+ "stop_reason": "tool_use",
+ "session_id": "163037da-969b-4171-a506-8c6255d7b7c6",
+ "total_cost_usd": 0.33343959999999995,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 14055,
+  "cache_read_input_tokens": 58388,
+  "output_tokens": 4637,
+  "output_tokens_details": {
+   "thinking_tokens": 1273
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14055,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3119,
+    "cache_read_input_tokens": 14362,
+    "cache_creation_input_tokens": 1155,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1155
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 4637,
+   "cacheReadInputTokens": 58388,
+   "cacheCreationInputTokens": 14055,
+   "webSearchRequests": 0,
+   "costUSD": 0.2169056,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1273,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 55279,
+   "outputTokens": 2251,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11653400000000003,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This looks like a ticker hijack of a real, VC-backed project, not a narrative of its own. City Protocol (formerly Cooking City) is real. It raised $11M from Dragonfly, Jump Crypto, CMT Digital and others, runs Venzo vaults with $30\u201340M TVL, and has a points/airdrop program. Its docs name $CT as the native token. That makes '$CT City Protocol' an obvious thing to front-run or impersonate before an official launch. I found no official TGE announcement, contract address, or launch-venue announcement in any source I could reach. Four things in the packet point to an impersonator rather than the official launch. (1) At least three 'City Protocol' CT tokens appeared within about 15 hours. One (3TrSG\u2026) launched only about 2.5 minutes before this pair, and a 'Concrete' CT launched within the same few minutes with even more h1 volume ($4.65M). That is a ticker-sniping cluster, not a single canonical launch. (2) The FDV is about $858k. A protocol that raised $11M across seed and Pre-A would not do a TGE at under $1M fully diluted. The FDV alone makes an official launch very unlikely. (3) Metadata is minimal: the description is just 'City Protocol', there's no website, no DexScreener profile and no Telegram. The only link is the X handle, which a deployer can set without the project's permission. GMGN says the X account 'launched' 9 tokens, which fits the official handle being attached to many impersonator mints. (4) The creator wallet has 2 prior launches, zero balance, and its token status is 'creator_close'. GeckoTerminal shows the top 10 holders with 97.3% of supply, and RugCheck flags 'Large Amount of LP Unlocked' plus 'few LP providers'. That LP flag conflicts with GMGN's lp_burn_ratio of 1.0, so the rug risk is unresolved. The flow is extremely one-sided: 1,746 unique buyers vs 185 sellers, turnover of 14x liquidity in 36 minutes, and all volume inside the first hour. That is what a crowd aping the name of a known project looks like. If the official team posts a different contract, or says nothing, this pool is likely to lose its bid quickly.\",\"red_flags\":[\"Several same-name 'City Protocol' $CT tokens launched within hours, one about 2.5 min before this pair; 'Concrete' $CT launched in the same few minutes with more volume\",\"About $858k FDV doesn't fit a TGE by a project that raised $11M (Dragonfly/Jump/CMT)\",\"No official TGE or contract-address announcement found; the official X feed couldn't be fetched (HTTP 402)\",\"Token metadata is minimal: no website, no DexScreener profile, description is just 'City Protocol'\",\"GMGN shows the linked X account with 9 'launched' tokens, consistent with impersonators tagging the official handle\",\"GeckoTerminal top-10 concentration is 97.26% (may include the pool) and conflicts with GMGN's 0.73%\",\"RugCheck: 'Large Amount of LP Unlocked' (danger) and 'Low amount of LP Providers', which conflicts with GMGN lp_burn_ratio 1.0\",\"Creator wallet has 2 launches, 0 balance, status creator_close\",\"Pair only 36 min old; h1 volume of $4.1M on $281k liquidity (14x turnover), buyers:sellers about 9.4:1, all activity in the first hour\",\"The X rename cookingcityHQ\u2192cityprotocolHQ matches the real rebrand, so it's not a red flag by itself, but it also doesn't prove this contract is official\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"The bear case falls apart if @cityprotocolHQ, the City Protocol docs, or cityprotocol.co publish contract 4i7bMumYkqc8jnRVUEgZoKgWhxgGbH1qDH4svwnuxFoH as the official $CT. Other refuting evidence: a TGE announcement that names a Meteora launch at this time and valuation, or a creator wallet funded from a known City Protocol treasury or multisig. In that case the 97% top-10 share could just be team and treasury vesting, and the move would be a real TGE catalyst, though possibly already priced in.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"What I confirmed: City Protocol is real (the $11M raise, Venzo, Polis points), and the official docs name $CT as the token. What I couldn't access: the X profile (HTTP 402) and the DexScreener pair page (HTTP 403). I also found no official contract address or TGE-date announcement. That absence isn't proof, because a same-day announcement on X would be invisible to me. The old gitbook tokenomics URL returned 404; the current tokenomics page confirms the ticker but gives no contract, supply or date. I didn't check the creator wallet on-chain (funding source). The FDV-vs-raise mismatch and the cluster of same-name launches are the main evidence. If this does turn out to be the official launch, the bear case weakens a lot.\",\"sources\":[{\"url\":\"https://city-protocol.gitbook.io/docs/infrastructure/tokenomics\",\"what\":\"Official docs name $CT as the native token; no contract address or TGE date given\"},{\"url\":\"https://beincrypto.com/city-protocol-raises-11m-onchain-structured-products/\",\"what\":\"$11M seed + Pre-A raise (Dragonfly, Jump Crypto, CMT Digital), so an FDV under $1M doesn't fit an official launch\"},{\"url\":\"https://crypto.news/city-protocol-secures-11m-as-venzo-vaults-reach-40m-tvl/\",\"what\":\"Real project with Venzo vault TVL; a well-known name that invites ticker hijacking\"},{\"url\":\"https://cryptorank.io/ico/cooking-city\",\"what\":\"City Protocol previously named Cooking City (explains the X rename history); lists ticker as CP\"},{\"url\":\"https://www.web3researchglobal.com/p/city-protocol\",\"what\":\"Project background, Solana IPCM infrastructure\"},{\"url\":\"https://airdrops.io/city-protocol/\",\"what\":\"Airdrop/points program ongoing; no confirmed TGE contract\"},{\"url\":\"https://x.com/cityprotocolHQ\",\"what\":\"Official X; fetch failed (HTTP 402), so I couldn't verify a contract announcement\"},{\"url\":\"https://dexscreener.com/solana/EJ6rLHP68z3NAqNkxD3bpN3ae8UrzQX4mPkz1rkk7bSk\",\"what\":\"Pair page; fetch failed (HTTP 403)\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This looks like a ticker hijack of a real, VC-backed project, not a narrative of its own. City Protocol (formerly Cooking City) is real. It raised $11M from Dragonfly, Jump Crypto, CMT Digital and others, runs Venzo vaults with $30\u201340M TVL, and has a points/airdrop program. Its docs name $CT as the native token. That makes '$CT City Protocol' an obvious thing to front-run or impersonate before an official launch. I found no official TGE announcement, contract address, or launch-venue announcement in any source I could reach. Four things in the packet point to an impersonator rather than the official launch. (1) At least three 'City Protocol' CT tokens appeared within about 15 hours. One (3TrSG\u2026) launched only about 2.5 minutes before this pair, and a 'Concrete' CT launched within the same few minutes with even more h1 volume ($4.65M). That is a ticker-sniping cluster, not a single canonical launch. (2) The FDV is about $858k. A protocol that raised $11M across seed and Pre-A would not do a TGE at under $1M fully diluted. The FDV alone makes an official launch very unlikely. (3) Metadata is minimal: the description is just 'City Protocol', there's no website, no DexScreener profile and no Telegram. The only link is the X handle, which a deployer can set without the project's permission. GMGN says the X account 'launched' 9 tokens, which fits the official handle being attached to many impersonator mints. (4) The creator wallet has 2 prior launches, zero balance, and its token status is 'creator_close'. GeckoTerminal shows the top 10 holders with 97.3% of supply, and RugCheck flags 'Large Amount of LP Unlocked' plus 'few LP providers'. That LP flag conflicts with GMGN's lp_burn_ratio of 1.0, so the rug risk is unresolved. The flow is extremely one-sided: 1,746 unique buyers vs 185 sellers, turnover of 14x liquidity in 36 minutes, and all volume inside the first hour. That is what a crowd aping the name of a known project looks like. If the official team posts a different contract, or says nothing, this pool is likely to lose its bid quickly.",
+  "red_flags": [
+   "Several same-name 'City Protocol' $CT tokens launched within hours, one about 2.5 min before this pair; 'Concrete' $CT launched in the same few minutes with more volume",
+   "About $858k FDV doesn't fit a TGE by a project that raised $11M (Dragonfly/Jump/CMT)",
+   "No official TGE or contract-address announcement found; the official X feed couldn't be fetched (HTTP 402)",
+   "Token metadata is minimal: no website, no DexScreener profile, description is just 'City Protocol'",
+   "GMGN shows the linked X account with 9 'launched' tokens, consistent with impersonators tagging the official handle",
+   "GeckoTerminal top-10 concentration is 97.26% (may include the pool) and conflicts with GMGN's 0.73%",
+   "RugCheck: 'Large Amount of LP Unlocked' (danger) and 'Low amount of LP Providers', which conflicts with GMGN lp_burn_ratio 1.0",
+   "Creator wallet has 2 launches, 0 balance, status creator_close",
+   "Pair only 36 min old; h1 volume of $4.1M on $281k liquidity (14x turnover), buyers:sellers about 9.4:1, all activity in the first hour",
+   "The X rename cookingcityHQ\u2192cityprotocolHQ matches the real rebrand, so it's not a red flag by itself, but it also doesn't prove this contract is official"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "The bear case falls apart if @cityprotocolHQ, the City Protocol docs, or cityprotocol.co publish contract 4i7bMumYkqc8jnRVUEgZoKgWhxgGbH1qDH4svwnuxFoH as the official $CT. Other refuting evidence: a TGE announcement that names a Meteora launch at this time and valuation, or a creator wallet funded from a known City Protocol treasury or multisig. In that case the 97% top-10 share could just be team and treasury vesting, and the move would be a real TGE catalyst, though possibly already priced in.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "What I confirmed: City Protocol is real (the $11M raise, Venzo, Polis points), and the official docs name $CT as the token. What I couldn't access: the X profile (HTTP 402) and the DexScreener pair page (HTTP 403). I also found no official contract address or TGE-date announcement. That absence isn't proof, because a same-day announcement on X would be invisible to me. The old gitbook tokenomics URL returned 404; the current tokenomics page confirms the ticker but gives no contract, supply or date. I didn't check the creator wallet on-chain (funding source). The FDV-vs-raise mismatch and the cluster of same-name launches are the main evidence. If this does turn out to be the official launch, the bear case weakens a lot.",
+  "sources": [
+   {
+    "url": "https://city-protocol.gitbook.io/docs/infrastructure/tokenomics",
+    "what": "Official docs name $CT as the native token; no contract address or TGE date given"
+   },
+   {
+    "url": "https://beincrypto.com/city-protocol-raises-11m-onchain-structured-products/",
+    "what": "$11M seed + Pre-A raise (Dragonfly, Jump Crypto, CMT Digital), so an FDV under $1M doesn't fit an official launch"
+   },
+   {
+    "url": "https://crypto.news/city-protocol-secures-11m-as-venzo-vaults-reach-40m-tvl/",
+    "what": "Real project with Venzo vault TVL; a well-known name that invites ticker hijacking"
+   },
+   {
+    "url": "https://cryptorank.io/ico/cooking-city",
+    "what": "City Protocol previously named Cooking City (explains the X rename history); lists ticker as CP"
+   },
+   {
+    "url": "https://www.web3researchglobal.com/p/city-protocol",
+    "what": "Project background, Solana IPCM infrastructure"
+   },
+   {
+    "url": "https://airdrops.io/city-protocol/",
+    "what": "Airdrop/points program ongoing; no confirmed TGE contract"
+   },
+   {
+    "url": "https://x.com/cityprotocolHQ",
+    "what": "Official X; fetch failed (HTTP 402), so I couldn't verify a contract announcement"
+   },
+   {
+    "url": "https://dexscreener.com/solana/EJ6rLHP68z3NAqNkxD3bpN3ae8UrzQX4mPkz1rkk7bSk",
+    "what": "Pair page; fetch failed (HTTP 403)"
+   }
+  ]
+ },
+ "ttft_ms": 2887,
+ "type": "result",
+ "duration_ms": 67910,
+ "uuid": "f25016ad-e039-4366-a665-1a9c52d9f926",
+ "ttft_stream_ms": 628,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 629,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

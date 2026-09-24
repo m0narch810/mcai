@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 52599,
+ "stop_reason": "tool_use",
+ "session_id": "2d303ffe-75d8-4cf9-97df-5ebcbb8d9ee2",
+ "total_cost_usd": 0.22238899999999995,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10858,
+  "cache_read_input_tokens": 19385,
+  "output_tokens": 2902,
+  "output_tokens_details": {
+   "thinking_tokens": 454
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10858,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2469,
+    "cache_read_input_tokens": 10248,
+    "cache_creation_input_tokens": 2072,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2072
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2902,
+   "cacheReadInputTokens": 19385,
+   "cacheCreationInputTokens": 10858,
+   "webSearchRequests": 0,
+   "costUSD": 0.148805,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 454,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 34849,
+   "outputTokens": 1747,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.07358400000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"I couldn't find anything tying this token to a narrative of its own. \\\"Claude\\\" is a generic ticker trading on Anthropic's brand, and nothing links the token to Anthropic. It has no website, no socials, no description and no DexScreener profile. The packet lists at least 10 other same-name \\\"Claude\\\" tokens. One of them, \\\"Claude Ai\\\" (2mDD7\u2026), launched about 74 minutes earlier and did $523k of volume in the last hour, so the market is spreading money across several copycat tokens rather than backing this one.\\n\\nThe trading looks set up by insiders:\\n- GMGN tags 70 bundler wallets and 29 rat-trader wallets among 87 top traders.\\n- It also flags a 50-wallet insider trading network.\\n- GMGN shows creation and migration at the same Unix second (Meteora virtual curve), which fits a bundled launch that skipped the organic bonding-curve stage.\\n- The creator's token status is \\\"creator_close\\\".\\n\\nAbout $2.9M traded in 35 minutes, roughly 9x the market cap. Churn like that on a token with about 137\u2013713 holders points to bots, bundles or wash trading, not organic demand. Buyer activity is already slowing: unique buyers fell from 601 over 15 minutes to 168 over 5 minutes. Sources also disagree on the price move (DexScreener +56% vs GeckoTerminal +18%).\\n\\nRugCheck flags a large amount of unlocked LP as \\\"danger\\\" and few LP providers. GeckoTerminal puts the top 10 holders at 96% (this may include the pool). No smart or renowned wallets are buying. The only outside catalyst I found is a generic one: speculation about an Anthropic Claude model launch (a Polymarket market around a Sept 27 Opus launch). That lifts every Claude-named token, gives this one nothing specific, and fades once it happens or is priced in.\",\"red_flags\":[\"Generic ticker trading on Anthropic's brand; 10+ same-name clones, including 'Claude Ai' (2mDD7\u2026) launched ~74 minutes earlier and actively traded ($523k h1 volume)\",\"No website, socials, description or DexScreener profile\",\"GMGN: 70 bundler wallets, 29 rat-trader/insider wallets; 50-wallet insider trade network detected\",\"Created and migrated in the same second (Meteora virtual curve), consistent with a bundled launch\",\"Volume ~9x market cap in 35 minutes with few holders, suggesting bot or wash churn\",\"RugCheck: large amount of LP unlocked (danger), low number of LP providers (conflicts with GMGN lp_burn_ratio 1.0)\",\"GeckoTerminal top-10 holders at 96% (may include the pool)\",\"Unique buyers slowing (m15 601 vs m5 168); price change disagrees across sources (56% vs 18%)\",\"Zero smart-money or renowned wallets; creator_token_status 'creator_close'\",\"Any catalyst (a possible Anthropic model launch) is generic across all Claude tokens and time-limited\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"Any of the following would weaken the case:\\n- Evidence that Anthropic or a prominent figure linked to Claude acknowledged this specific contract.\\n- A real community forming (X account, Telegram) with organic, non-bot posts pointing to this contract rather than the clones.\\n- Holder count growing steadily toward thousands while bundler and rat-trader share falls.\\n- Verified LP lock or burn.\\n- Smart or renowned wallets buying.\\n- This token consolidating as the 'canonical' Claude token after the rumored Opus launch, while the clones die.\",\"continuation_view\":\"fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"Searched the web for the contract address and found no mentions of it at all. Searched Anthropic news: product updates, pricing, and a Polymarket market on an Opus launch by Sept 27 (the headline wasn't opened). Fetched the DexScreener API: 3 pairs, only PumpSwap has real liquidity, no socials. The API lists 'Jan 20, 2025' as the pair creation date, which is likely a parsing error; GeckoTerminal says the pool was created 2026-09-23. I had no access to X/Twitter, Telegram or GMGN pages, so KOL or call-channel promotion may exist without my seeing it. Holder data conflicts: GeckoTerminal shows 137 holders and top-10 at 96%, GMGN shows 713 holders and top-10 at 2%. LP lock data also conflicts: RugCheck says unlocked, GMGN says burned.\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7U3DVij6YCv29UiPFuYxUSxJHQynXCQjQAYAcy9vac5E\",\"what\":\"Pair list, liquidity, volume; no socials or info\"},{\"url\":\"https://www.kucoin.com/news/flash/polymarket-predicts-90-chance-for-anthropic-s-claude-opus-launch-by-sept-27\",\"what\":\"Generic Claude-brand catalyst (search result headline only)\"},{\"url\":\"https://www.coindesk.com/markets/2026/01/21/solana-outpaces-crypto-market-as-claude-code-linked-token-frenzy-lifts-network-activity\",\"what\":\"Earlier Claude-themed token frenzy on Solana: a recurring copycat theme\"},{\"url\":\"https://releasebot.io/updates/anthropic/claude\",\"what\":\"Anthropic Sept 2026 updates; nothing tied to any token\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "I couldn't find anything tying this token to a narrative of its own. \"Claude\" is a generic ticker trading on Anthropic's brand, and nothing links the token to Anthropic. It has no website, no socials, no description and no DexScreener profile. The packet lists at least 10 other same-name \"Claude\" tokens. One of them, \"Claude Ai\" (2mDD7\u2026), launched about 74 minutes earlier and did $523k of volume in the last hour, so the market is spreading money across several copycat tokens rather than backing this one.\n\nThe trading looks set up by insiders:\n- GMGN tags 70 bundler wallets and 29 rat-trader wallets among 87 top traders.\n- It also flags a 50-wallet insider trading network.\n- GMGN shows creation and migration at the same Unix second (Meteora virtual curve), which fits a bundled launch that skipped the organic bonding-curve stage.\n- The creator's token status is \"creator_close\".\n\nAbout $2.9M traded in 35 minutes, roughly 9x the market cap. Churn like that on a token with about 137\u2013713 holders points to bots, bundles or wash trading, not organic demand. Buyer activity is already slowing: unique buyers fell from 601 over 15 minutes to 168 over 5 minutes. Sources also disagree on the price move (DexScreener +56% vs GeckoTerminal +18%).\n\nRugCheck flags a large amount of unlocked LP as \"danger\" and few LP providers. GeckoTerminal puts the top 10 holders at 96% (this may include the pool). No smart or renowned wallets are buying. The only outside catalyst I found is a generic one: speculation about an Anthropic Claude model launch (a Polymarket market around a Sept 27 Opus launch). That lifts every Claude-named token, gives this one nothing specific, and fades once it happens or is priced in.",
+  "red_flags": [
+   "Generic ticker trading on Anthropic's brand; 10+ same-name clones, including 'Claude Ai' (2mDD7\u2026) launched ~74 minutes earlier and actively traded ($523k h1 volume)",
+   "No website, socials, description or DexScreener profile",
+   "GMGN: 70 bundler wallets, 29 rat-trader/insider wallets; 50-wallet insider trade network detected",
+   "Created and migrated in the same second (Meteora virtual curve), consistent with a bundled launch",
+   "Volume ~9x market cap in 35 minutes with few holders, suggesting bot or wash churn",
+   "RugCheck: large amount of LP unlocked (danger), low number of LP providers (conflicts with GMGN lp_burn_ratio 1.0)",
+   "GeckoTerminal top-10 holders at 96% (may include the pool)",
+   "Unique buyers slowing (m15 601 vs m5 168); price change disagrees across sources (56% vs 18%)",
+   "Zero smart-money or renowned wallets; creator_token_status 'creator_close'",
+   "Any catalyst (a possible Anthropic model launch) is generic across all Claude tokens and time-limited"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "Any of the following would weaken the case:\n- Evidence that Anthropic or a prominent figure linked to Claude acknowledged this specific contract.\n- A real community forming (X account, Telegram) with organic, non-bot posts pointing to this contract rather than the clones.\n- Holder count growing steadily toward thousands while bundler and rat-trader share falls.\n- Verified LP lock or burn.\n- Smart or renowned wallets buying.\n- This token consolidating as the 'canonical' Claude token after the rumored Opus launch, while the clones die.",
+  "continuation_view": "fade",
+  "research_confidence": "medium",
+  "coverage_notes": "Searched the web for the contract address and found no mentions of it at all. Searched Anthropic news: product updates, pricing, and a Polymarket market on an Opus launch by Sept 27 (the headline wasn't opened). Fetched the DexScreener API: 3 pairs, only PumpSwap has real liquidity, no socials. The API lists 'Jan 20, 2025' as the pair creation date, which is likely a parsing error; GeckoTerminal says the pool was created 2026-09-23. I had no access to X/Twitter, Telegram or GMGN pages, so KOL or call-channel promotion may exist without my seeing it. Holder data conflicts: GeckoTerminal shows 137 holders and top-10 at 96%, GMGN shows 713 holders and top-10 at 2%. LP lock data also conflicts: RugCheck says unlocked, GMGN says burned.",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7U3DVij6YCv29UiPFuYxUSxJHQynXCQjQAYAcy9vac5E",
+    "what": "Pair list, liquidity, volume; no socials or info"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/polymarket-predicts-90-chance-for-anthropic-s-claude-opus-launch-by-sept-27",
+    "what": "Generic Claude-brand catalyst (search result headline only)"
+   },
+   {
+    "url": "https://www.coindesk.com/markets/2026/01/21/solana-outpaces-crypto-market-as-claude-code-linked-token-frenzy-lifts-network-activity",
+    "what": "Earlier Claude-themed token frenzy on Solana: a recurring copycat theme"
+   },
+   {
+    "url": "https://releasebot.io/updates/anthropic/claude",
+    "what": "Anthropic Sept 2026 updates; nothing tied to any token"
+   }
+  ]
+ },
+ "ttft_ms": 1214,
+ "type": "result",
+ "duration_ms": 41867,
+ "uuid": "b8bc0367-34e1-486a-9777-f8dae97d7dad",
+ "ttft_stream_ms": 653,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 653,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

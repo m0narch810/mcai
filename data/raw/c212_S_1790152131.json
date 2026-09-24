@@ -1,0 +1,147 @@
+{
+ "duration_api_ms": 34838,
+ "stop_reason": "tool_use",
+ "session_id": "56b1b5e6-6e45-48ba-ba0e-25c109e9a2d3",
+ "total_cost_usd": 0.1613098,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 9930,
+  "cache_read_input_tokens": 7729,
+  "output_tokens": 2622,
+  "output_tokens_details": {
+   "thinking_tokens": 1046
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9930,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2158,
+    "cache_read_input_tokens": 7729,
+    "cache_creation_input_tokens": 2201,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2201
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2622,
+   "cacheReadInputTokens": 7729,
+   "cacheCreationInputTokens": 9930,
+   "webSearchRequests": 0,
+   "costUSD": 0.1334418,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1046,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 14563,
+   "outputTokens": 661,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.027868,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"This token is a copycat that borrowed another project's links, not that project's token. Its packet points to buyxhandles.com (a third-party X-username marketplace) and the BuyXHandles X account. But that website's footer names a different contract as the project's token: JCvGrCbiHc84qCEDowgeuue7iXNoGgpCQstgoGYhFUCK. Our token (7dPoC1oc...) is one of at least 11 HANDLES-named tokens launched within about 45 minutes of each other, several of them before it, including the site's own. The story itself is not new: X announced its handle marketplace in October 2025, and the site says it is not affiliated with X Corp. The trading looks bot-driven. Unique buyers were 2,088 but unique sellers only 87. In the last 5 minutes, 57 wallets made 354 buys. Hourly volume was about 40 times liquidity. GMGN flags 51 bundler wallets. The creator has launched 9 tokens and GMGN marks the creator's position as closed. The logo appears on 5 other tokens. There is no DexScreener profile. Most likely this is a short-lived clone in a crowded launch rush that will fade as attention moves to the website's token or disappears.\",\"red_flags\":[\"The linked website names a different token contract (JCvG...), not 7dPoC1oc...\",\"At least 10 other HANDLES-named tokens launched within about 45 minutes; this one was not the first\",\"One clone (FkZM...) has a higher market cap at $2.27M\",\"2,088 unique buyers vs 87 unique sellers in the first hour\",\"In the last 5 minutes, 57 wallets made 354 buys (bot-like)\",\"Hourly volume about 40 times liquidity\",\"GMGN flags 51 bundler wallets\",\"Creator has launched 9 tokens; GMGN marks the creator's position as closed\",\"Logo duplicated on 5 other tokens\",\"Risk flags: large share of LP unlocked, few LP providers (RugCheck); GMGN reports the LP as fully burned, which conflicts\",\"GeckoTerminal top-10 holder share is 95% (may include the pool)\",\"The underlying X handle-marketplace story dates from 2025 and the site is not affiliated with X\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"An official BuyXHandles post or website update naming 7dPoC1oc... as the project's token. Or this token becoming the clear leader among the clones by liquidity and holders, with real sellers appearing and trading that doesn't look bot-driven.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"I fetched buyxhandles.com directly; its footer shows contract JCvG.... A web search confirmed that X's handle marketplace dates from 2025. I could not access X posts or private Telegram/Discord channels. I did not check when the website's footer contract was added or whether it has changed. The time budget was about 8 minutes.\",\"sources\":[{\"url\":\"https://buyxhandles.com/\",\"what\":\"Third-party X handle marketplace; footer lists CA JCvGrCbiHc84qCEDowgeuue7iXNoGgpCQstgoGYhFUCK, not this token\"},{\"url\":\"https://techcrunch.com/2025/10/20/x-to-launch-marketplace-for-buying-inactive-handles/\",\"what\":\"X handle-marketplace story dates from October 2025\"},{\"url\":\"https://www.engadget.com/social-media/xs-handle-marketplace-is-open-and-there-are-some-interesting-names-if-youre-willing-to-pay-000020665.html\",\"what\":\"X handle marketplace already open (existing story)\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "This token is a copycat that borrowed another project's links, not that project's token. Its packet points to buyxhandles.com (a third-party X-username marketplace) and the BuyXHandles X account. But that website's footer names a different contract as the project's token: JCvGrCbiHc84qCEDowgeuue7iXNoGgpCQstgoGYhFUCK. Our token (7dPoC1oc...) is one of at least 11 HANDLES-named tokens launched within about 45 minutes of each other, several of them before it, including the site's own. The story itself is not new: X announced its handle marketplace in October 2025, and the site says it is not affiliated with X Corp. The trading looks bot-driven. Unique buyers were 2,088 but unique sellers only 87. In the last 5 minutes, 57 wallets made 354 buys. Hourly volume was about 40 times liquidity. GMGN flags 51 bundler wallets. The creator has launched 9 tokens and GMGN marks the creator's position as closed. The logo appears on 5 other tokens. There is no DexScreener profile. Most likely this is a short-lived clone in a crowded launch rush that will fade as attention moves to the website's token or disappears.",
+  "red_flags": [
+   "The linked website names a different token contract (JCvG...), not 7dPoC1oc...",
+   "At least 10 other HANDLES-named tokens launched within about 45 minutes; this one was not the first",
+   "One clone (FkZM...) has a higher market cap at $2.27M",
+   "2,088 unique buyers vs 87 unique sellers in the first hour",
+   "In the last 5 minutes, 57 wallets made 354 buys (bot-like)",
+   "Hourly volume about 40 times liquidity",
+   "GMGN flags 51 bundler wallets",
+   "Creator has launched 9 tokens; GMGN marks the creator's position as closed",
+   "Logo duplicated on 5 other tokens",
+   "Risk flags: large share of LP unlocked, few LP providers (RugCheck); GMGN reports the LP as fully burned, which conflicts",
+   "GeckoTerminal top-10 holder share is 95% (may include the pool)",
+   "The underlying X handle-marketplace story dates from 2025 and the site is not affiliated with X"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "An official BuyXHandles post or website update naming 7dPoC1oc... as the project's token. Or this token becoming the clear leader among the clones by liquidity and holders, with real sellers appearing and trading that doesn't look bot-driven.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "I fetched buyxhandles.com directly; its footer shows contract JCvG.... A web search confirmed that X's handle marketplace dates from 2025. I could not access X posts or private Telegram/Discord channels. I did not check when the website's footer contract was added or whether it has changed. The time budget was about 8 minutes.",
+  "sources": [
+   {
+    "url": "https://buyxhandles.com/",
+    "what": "Third-party X handle marketplace; footer lists CA JCvGrCbiHc84qCEDowgeuue7iXNoGgpCQstgoGYhFUCK, not this token"
+   },
+   {
+    "url": "https://techcrunch.com/2025/10/20/x-to-launch-marketplace-for-buying-inactive-handles/",
+    "what": "X handle-marketplace story dates from October 2025"
+   },
+   {
+    "url": "https://www.engadget.com/social-media/xs-handle-marketplace-is-open-and-there-are-some-interesting-names-if-youre-willing-to-pay-000020665.html",
+    "what": "X handle marketplace already open (existing story)"
+   }
+  ]
+ },
+ "ttft_ms": 4040,
+ "type": "result",
+ "duration_ms": 30884,
+ "uuid": "1f79ab94-b620-4059-b9ad-eeee856def7c",
+ "ttft_stream_ms": 763,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 763,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

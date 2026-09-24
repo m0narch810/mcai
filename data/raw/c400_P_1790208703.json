@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 23044,
+ "stop_reason": "tool_use",
+ "session_id": "a379abed-8f9e-4d4f-89ac-aa6b9f4f1266",
+ "total_cost_usd": 0.127068,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9635,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2499,
+  "output_tokens_details": {
+   "thinking_tokens": 425
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9635,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2499,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 9635,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9635
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2499,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 9635,
+   "webSearchRequests": 0,
+   "costUSD": 0.127068,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 425,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Broke Boy Obie\\\" (OBIE) is a fresh PumpSwap pool, about 37 minutes old at detection. The pool was created directly: no pump.fun launch, no migration, and the contract address does not end in 'pump'. It opened with about $55k of liquidity against a market cap of about $63-68k, and 0% of the LP is locked or burned. Price is up about 540-585% and hourly volume is about $1.1M, 20x the liquidity. It is one of at least 10 same-name OBIE tokens launched within about 15 minutes of each other. Two earlier copies drew $125k and $1.8M of hourly volume and now show $3 and $23 of liquidity, which looks like they were rugged. GMGN tags 106 bundler wallets holding about 51% of top-trader share. There are 2,136 unique buyers but only 129 unique sellers, so selling is concentrated in a few wallets. The creator's wallet has closed and holds nothing. The only social link is a single X status from 'xcad3z', not a project account.\",\"narrative\":{\"description\":\"Some meme or character called 'Broke Boy Obie', likely drawn from a viral X post (the GeckoTerminal link points to an xcad3z status). There is enough attention that many deployers raced to launch the ticker, and one copy is named 'The Memecoin Trader', which suggests a trader or streamer persona.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A cluster of same-name launches within minutes points to a real but short-lived catalyst, probably one tweet or clip. So far the attention looks like it is being farmed by serial deployers rather than building a lasting community.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most liquidity of the OBIE tokens and is the surviving pool, mostly because the earlier copies have already been drained.\",\"competing_tokens\":\"At least 9 other OBIE / 'Broke Boy Obie' tokens. EkXT... did $1.8M of hourly volume and now has $23 of liquidity. GQ59... did $125k and now has $3. 8ipU...pump is a pump.fun version with about $4.9k of liquidity. The rest are dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"106 bundler wallets hold about 51% of top-trader share. There are 2,136 buyers against only 129 sellers, which looks like a few wallets selling into bot-driven or retail buys. Buy volume is heavy relative to the number of wallets. The pool was deployed directly with unlocked LP and the creator's wallet is closed. Two earlier same-name clones had huge volume and were then drained.\",\"uncertainty\":\"No X data is available, so the underlying meme could be real. The unique-buyer count is high, so some real retail money is in the pool.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is locked or burned, and RugCheck flags 'Large Amount of LP Unlocked' as a danger and 'Low amount of LP Providers' as a warning\",\"The pool was created directly on PumpSwap, not through a pump.fun bonding curve, so whoever deployed it controls the LP\",\"Liquidity (about $55k) is close to the market cap (about $67k), so pulling the LP takes almost all the value\",\"Bundlers hold about 51% of top-trader share\",\"Same-name clones before it were rugged after big volume, which looks like a serial pattern\",\"Price is already up about 550%, so doubling again from entry means a market cap of about $130k+\"]},\"counterargument\":\"If 'Broke Boy Obie' is a real viral moment, this pool could become the default OBIE simply because it survived and has the most liquidity. With about 2,100 real buyers and $1M+ of hourly volume, a move from about $65k to $130k+ market cap is easy for a hot meme. Also, $55k of LP is a lot to put in if the only goal were a quick rug. A deployer might leave it in to earn fees or to pump further first.\",\"unknowns\":[\"Who controls the LP, and whether they have pulled liquidity before (though the clones suggest yes)\",\"What the Broke Boy Obie meme is, and how large the audience behind the xcad3z post is\",\"Whether the 106 bundlers are linked to the deployer\",\"Price path over the 25 minutes before entry\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; judged from the packet only.\"},\"thesis\":\"This looks like a serial clone-and-drain setup riding a short-lived meme. The deployer created the PumpSwap pool directly with unlocked LP, liquidity is nearly equal to market cap, bundler concentration is heavy, selling is concentrated in a few wallets, and earlier same-name copies with large volume already look rugged. The most likely outcome within 6 hours is that liquidity is pulled, not a second doubling.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"Broke Boy Obie\" (OBIE) is a fresh PumpSwap pool, about 37 minutes old at detection. The pool was created directly: no pump.fun launch, no migration, and the contract address does not end in 'pump'. It opened with about $55k of liquidity against a market cap of about $63-68k, and 0% of the LP is locked or burned. Price is up about 540-585% and hourly volume is about $1.1M, 20x the liquidity. It is one of at least 10 same-name OBIE tokens launched within about 15 minutes of each other. Two earlier copies drew $125k and $1.8M of hourly volume and now show $3 and $23 of liquidity, which looks like they were rugged. GMGN tags 106 bundler wallets holding about 51% of top-trader share. There are 2,136 unique buyers but only 129 unique sellers, so selling is concentrated in a few wallets. The creator's wallet has closed and holds nothing. The only social link is a single X status from 'xcad3z', not a project account.",
+  "narrative": {
+   "description": "Some meme or character called 'Broke Boy Obie', likely drawn from a viral X post (the GeckoTerminal link points to an xcad3z status). There is enough attention that many deployers raced to launch the ticker, and one copy is named 'The Memecoin Trader', which suggests a trader or streamer persona.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A cluster of same-name launches within minutes points to a real but short-lived catalyst, probably one tweet or clip. So far the attention looks like it is being farmed by serial deployers rather than building a lasting community."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most liquidity of the OBIE tokens and is the surviving pool, mostly because the earlier copies have already been drained.",
+   "competing_tokens": "At least 9 other OBIE / 'Broke Boy Obie' tokens. EkXT... did $1.8M of hourly volume and now has $23 of liquidity. GQ59... did $125k and now has $3. 8ipU...pump is a pump.fun version with about $4.9k of liquidity. The rest are dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "106 bundler wallets hold about 51% of top-trader share. There are 2,136 buyers against only 129 sellers, which looks like a few wallets selling into bot-driven or retail buys. Buy volume is heavy relative to the number of wallets. The pool was deployed directly with unlocked LP and the creator's wallet is closed. Two earlier same-name clones had huge volume and were then drained.",
+   "uncertainty": "No X data is available, so the underlying meme could be real. The unique-buyer count is high, so some real retail money is in the pool."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is locked or burned, and RugCheck flags 'Large Amount of LP Unlocked' as a danger and 'Low amount of LP Providers' as a warning",
+    "The pool was created directly on PumpSwap, not through a pump.fun bonding curve, so whoever deployed it controls the LP",
+    "Liquidity (about $55k) is close to the market cap (about $67k), so pulling the LP takes almost all the value",
+    "Bundlers hold about 51% of top-trader share",
+    "Same-name clones before it were rugged after big volume, which looks like a serial pattern",
+    "Price is already up about 550%, so doubling again from entry means a market cap of about $130k+"
+   ]
+  },
+  "counterargument": "If 'Broke Boy Obie' is a real viral moment, this pool could become the default OBIE simply because it survived and has the most liquidity. With about 2,100 real buyers and $1M+ of hourly volume, a move from about $65k to $130k+ market cap is easy for a hot meme. Also, $55k of LP is a lot to put in if the only goal were a quick rug. A deployer might leave it in to earn fees or to pump further first.",
+  "unknowns": [
+   "Who controls the LP, and whether they have pulled liquidity before (though the clones suggest yes)",
+   "What the Broke Boy Obie meme is, and how large the audience behind the xcad3z post is",
+   "Whether the 106 bundlers are linked to the deployer",
+   "Price path over the 25 minutes before entry"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; judged from the packet only."
+  },
+  "thesis": "This looks like a serial clone-and-drain setup riding a short-lived meme. The deployer created the PumpSwap pool directly with unlocked LP, liquidity is nearly equal to market cap, bundler concentration is heavy, selling is concentrated in a few wallets, and earlier same-name copies with large volume already look rugged. The most likely outcome within 6 hours is that liquidity is pulled, not a second doubling.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4717,
+ "type": "result",
+ "duration_ms": 23089,
+ "uuid": "ab77dfbe-a605-43e9-9e8d-e0208bcfef39",
+ "ttft_stream_ms": 607,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 607,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

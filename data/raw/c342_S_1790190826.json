@@ -1,0 +1,147 @@
+{
+ "duration_api_ms": 51031,
+ "stop_reason": "tool_use",
+ "session_id": "e3396362-2a66-42e8-83be-a1efe601a766",
+ "total_cost_usd": 0.2257808,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 11081,
+  "cache_read_input_tokens": 32114,
+  "output_tokens": 3188,
+  "output_tokens_details": {
+   "thinking_tokens": 522
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11081,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2245,
+    "cache_read_input_tokens": 11893,
+    "cache_creation_input_tokens": 650,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 650
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3188,
+   "cacheReadInputTokens": 32114,
+   "cacheCreationInputTokens": 11081,
+   "webSearchRequests": 0,
+   "costUSD": 0.15886280000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 522,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 39778,
+   "outputTokens": 1428,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.066918,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"strongest_bear_case\":\"The evidence says this is a copycat token riding someone else's launch. It is not the real HYPERCAT. The real $HYPERCAT project (hypercat.run, X account @Hyper_cat_sol) is a Hylo/xHYPE rewards memecoin that says it is \\\"Launching on stonk.fun.\\\" Its site warns that \\\"anything claiming to be $HYPERCAT is fake\\\" unless the address appears on the site or is posted by @Hyper_cat_sol. When I fetched the site, it still showed \\\"CA soon.\\\" This token (2aJV\u2026BWqY) was deployed about 36 minutes before detection, on an unknown platform, with a PumpSwap pool rather than stonk.fun. It is the eleventh or later of at least 11 same-name HYPERCAT tokens created within roughly 90 minutes of each other. It is not even the leader of that group: jSB8\u2026 did about $4.8M of 1h volume, and 7Qy2\u2026 reached about $1.5M market cap, against $88k for this one. HY5Jo\u2026 has a vanity \\\"HY\\\" prefix and about $1.41M in liquidity, and is more plausibly the official launch, though I did not confirm that. The GeckoTerminal link to @Hyper_cat_sol is just metadata the deployer entered. It has no DexScreener profile, website or socials, and no confirmation from the project. The flow itself also looks artificial. About 2,144 unique buyers against only 135 unique sellers in the first hour, with only 129 unique buyers in the last 30 minutes, points to a burst of many small, one-off buy wallets early on. That pattern fits bot or sprayed wallets, not a durable community. Volume was 8.7 times the market cap in one hour. In the last 5 minutes, buys and sells were almost equal (113/110), and price was pinned near the $89k all-time high, which looks like distribution. Structure: 0% of LP burned or locked, RugCheck flags \\\"Large Amount of LP Unlocked\\\" as danger with few LP providers, and the creator's wallet is at 0 balance with status \\\"creator_close.\\\" The deployer can pull liquidity whenever they want. When the official contract address is published, or the market settles on one leader, copycat tokens like this one usually go close to zero.\",\"red_flags\":[\"Ticker hijack: official $HYPERCAT (hypercat.run / @Hyper_cat_sol) says it launches on stonk.fun and that any other CA is fake; this token is on PumpSwap from an unknown deploy platform\",\"At least 10 other same-name HYPERCAT tokens launched within about 90 minutes; this one is late (created ~2026-09-23T18:33Z) and small compared with the leaders (jSB8 about $4.8M 1h volume; 7Qy2 about $1.5M market cap; HY5Jo about $1.41M liquidity)\",\"LP 0% burned/locked; RugCheck 'Large Amount of LP Unlocked' (danger) and 'Low amount of LP Providers'\",\"Creator wallet at 0 balance, status 'creator_close'\",\"2,144 unique buyers vs 135 unique sellers in h1, with only 129 unique buyers in the last 30 minutes: an early burst of one-off buyer wallets, possibly bots\",\"h1 turnover 8.7x market cap; last-5-minute buys and sells nearly equal while price sits at ATH, which suggests distribution\",\"No DexScreener profile, website or socials; the X handle link is only unverified GeckoTerminal metadata\",\"GMGN: 2 bundler wallets, 1 rat-trader wallet, bot/degen rate about 21%, zero smart or renowned wallets\"],\"bear_case_strength\":\"strong\",\"what_would_refute_bear_case\":\"@Hyper_cat_sol or hypercat.run publishing 2aJVkSeV3JmzSZFE7RxwpCiPk1h4bF6V7qDXhAxcBWqY as the official CA, or proof that stonk.fun deploys to PumpSwap pools with this structure. LP later locked or burned. The buyer base staying active after this first burst, with unique sellers growing naturally and no liquidity pull.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"coverage_notes\":\"I could not access X, so I did not check @Hyper_cat_sol's posts to see whether an official CA was published after the site was cached. The hypercat.run page I fetched showed \\\"CA soon.\\\" It may be a cached or pre-launch version, so the official CA may already be out and may be a different token (possibly HY5Jo\u2026). I did not verify stonk.fun's pool mechanics. The CoinGecko \\\"Hypercat\\\" is an unrelated HyperEVM token. I confirmed live DexScreener data: market cap about $90k, h1 +830%. No private Telegram access.\",\"sources\":[{\"url\":\"https://hypercat.run/\",\"what\":\"Official HYPERCAT site: launching on stonk.fun, CA 'soon', warns that any other CA is fake, names @Hyper_cat_sol\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2aJVkSeV3JmzSZFE7RxwpCiPk1h4bF6V7qDXhAxcBWqY\",\"what\":\"Live pair data: PumpSwap, about $90k market cap, $61k liquidity, no socials\"},{\"url\":\"https://www.coingecko.com/en/coins/hypercat\",\"what\":\"Unrelated HyperEVM HYPERCAT token (0xa0e0\u2026), showing the name is also used elsewhere\"},{\"url\":\"https://www.kucoin.com/news/flash/hylo-launches-xp-graduation-mechanism-for-meme-coins-with-1m-market-cap\",\"what\":\"Hylo memecoin XP program: background for why HYPERCAT copies appeared\"}]}",
+ "structured_output": {
+  "strongest_bear_case": "The evidence says this is a copycat token riding someone else's launch. It is not the real HYPERCAT. The real $HYPERCAT project (hypercat.run, X account @Hyper_cat_sol) is a Hylo/xHYPE rewards memecoin that says it is \"Launching on stonk.fun.\" Its site warns that \"anything claiming to be $HYPERCAT is fake\" unless the address appears on the site or is posted by @Hyper_cat_sol. When I fetched the site, it still showed \"CA soon.\" This token (2aJV\u2026BWqY) was deployed about 36 minutes before detection, on an unknown platform, with a PumpSwap pool rather than stonk.fun. It is the eleventh or later of at least 11 same-name HYPERCAT tokens created within roughly 90 minutes of each other. It is not even the leader of that group: jSB8\u2026 did about $4.8M of 1h volume, and 7Qy2\u2026 reached about $1.5M market cap, against $88k for this one. HY5Jo\u2026 has a vanity \"HY\" prefix and about $1.41M in liquidity, and is more plausibly the official launch, though I did not confirm that. The GeckoTerminal link to @Hyper_cat_sol is just metadata the deployer entered. It has no DexScreener profile, website or socials, and no confirmation from the project. The flow itself also looks artificial. About 2,144 unique buyers against only 135 unique sellers in the first hour, with only 129 unique buyers in the last 30 minutes, points to a burst of many small, one-off buy wallets early on. That pattern fits bot or sprayed wallets, not a durable community. Volume was 8.7 times the market cap in one hour. In the last 5 minutes, buys and sells were almost equal (113/110), and price was pinned near the $89k all-time high, which looks like distribution. Structure: 0% of LP burned or locked, RugCheck flags \"Large Amount of LP Unlocked\" as danger with few LP providers, and the creator's wallet is at 0 balance with status \"creator_close.\" The deployer can pull liquidity whenever they want. When the official contract address is published, or the market settles on one leader, copycat tokens like this one usually go close to zero.",
+  "red_flags": [
+   "Ticker hijack: official $HYPERCAT (hypercat.run / @Hyper_cat_sol) says it launches on stonk.fun and that any other CA is fake; this token is on PumpSwap from an unknown deploy platform",
+   "At least 10 other same-name HYPERCAT tokens launched within about 90 minutes; this one is late (created ~2026-09-23T18:33Z) and small compared with the leaders (jSB8 about $4.8M 1h volume; 7Qy2 about $1.5M market cap; HY5Jo about $1.41M liquidity)",
+   "LP 0% burned/locked; RugCheck 'Large Amount of LP Unlocked' (danger) and 'Low amount of LP Providers'",
+   "Creator wallet at 0 balance, status 'creator_close'",
+   "2,144 unique buyers vs 135 unique sellers in h1, with only 129 unique buyers in the last 30 minutes: an early burst of one-off buyer wallets, possibly bots",
+   "h1 turnover 8.7x market cap; last-5-minute buys and sells nearly equal while price sits at ATH, which suggests distribution",
+   "No DexScreener profile, website or socials; the X handle link is only unverified GeckoTerminal metadata",
+   "GMGN: 2 bundler wallets, 1 rat-trader wallet, bot/degen rate about 21%, zero smart or renowned wallets"
+  ],
+  "bear_case_strength": "strong",
+  "what_would_refute_bear_case": "@Hyper_cat_sol or hypercat.run publishing 2aJVkSeV3JmzSZFE7RxwpCiPk1h4bF6V7qDXhAxcBWqY as the official CA, or proof that stonk.fun deploys to PumpSwap pools with this structure. LP later locked or burned. The buyer base staying active after this first burst, with unique sellers growing naturally and no liquidity pull.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "coverage_notes": "I could not access X, so I did not check @Hyper_cat_sol's posts to see whether an official CA was published after the site was cached. The hypercat.run page I fetched showed \"CA soon.\" It may be a cached or pre-launch version, so the official CA may already be out and may be a different token (possibly HY5Jo\u2026). I did not verify stonk.fun's pool mechanics. The CoinGecko \"Hypercat\" is an unrelated HyperEVM token. I confirmed live DexScreener data: market cap about $90k, h1 +830%. No private Telegram access.",
+  "sources": [
+   {
+    "url": "https://hypercat.run/",
+    "what": "Official HYPERCAT site: launching on stonk.fun, CA 'soon', warns that any other CA is fake, names @Hyper_cat_sol"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2aJVkSeV3JmzSZFE7RxwpCiPk1h4bF6V7qDXhAxcBWqY",
+    "what": "Live pair data: PumpSwap, about $90k market cap, $61k liquidity, no socials"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/hypercat",
+    "what": "Unrelated HyperEVM HYPERCAT token (0xa0e0\u2026), showing the name is also used elsewhere"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/hylo-launches-xp-graduation-mechanism-for-meme-coins-with-1m-market-cap",
+    "what": "Hylo memecoin XP program: background for why HYPERCAT copies appeared"
+   }
+  ]
+ },
+ "ttft_ms": 3640,
+ "type": "result",
+ "duration_ms": 46083,
+ "uuid": "a040b9c0-2548-4ff8-b5ab-84918a0cdb3c",
+ "ttft_stream_ms": 654,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 654,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

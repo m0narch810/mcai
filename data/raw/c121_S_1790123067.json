@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 43829,
+ "stop_reason": "tool_use",
+ "session_id": "b0e5d52e-726b-413f-af1e-5c3c9857dd89",
+ "total_cost_usd": 0.20269740000000003,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 9205,
+  "cache_read_input_tokens": 18097,
+  "output_tokens": 2855,
+  "output_tokens_details": {
+   "thinking_tokens": 492
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9205,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2584,
+    "cache_read_input_tokens": 9508,
+    "cache_creation_input_tokens": 1159,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1159
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2855,
+   "cacheReadInputTokens": 18097,
+   "cacheCreationInputTokens": 9205,
+   "webSearchRequests": 0,
+   "costUSD": 0.1343834,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 492,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 33574,
+   "outputTokens": 948,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.068314,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"bear_case_strength\":\"strong\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"strongest_bear_case\":\"The trading activity looks manufactured, and the token borrows a brand it has no link to. (1) The volume comes from bots. In the first hour GeckoTerminal counts about 36,500 trades (19,226 buys and 17,256 sells) but only about 270 unique buyers and 263 unique sellers. That works out to roughly 135 trades per wallet. The ~$250-270k of volume across ~37k trades averages about $7 per trade, which fits micro-trade volume bots used to game DexScreener and GMGN trending. The same ~210 wallets were active in the latest 5 minutes as across the whole hour, so the flow is the same wallets cycling, not new buyers. (2) The holder count looks inflated. GMGN and GeckoTerminal report about 2,025 holders, yet only about 270 wallets ever bought. Meanwhile the insider graph finds a 2,448-wallet 'transfer' network. Together this points to tokens being sprayed out to many wallets to fake a broad holder base. (3) GMGN insider metrics are extreme. The top entrapment-trader share is 79.7% and the top rat-trader (insider) share is 55.5%. Dev/team, bundler and top-70 sniper holdings are all exactly 12.85%, which suggests one bundled cluster holding about 13% of supply. The creation and migration timestamps are identical, so the pump.fun launch was probably bundled. (4) The token is hijacking a brand. It lists twitter 'Walmart' and walmart.com and uses Walmart's slogan, but I found no Walmart announcement, tweet, or crypto or memecoin catalyst on Sept 22, 2026. The only Walmart crypto news is the months-old OnePay token listings, which have nothing to do with this contract. The 739 tokens attributed to the linked X account show that many unrelated tokens name-drop @Walmart. At least 7 other Walmart/WALMART tokens exist, several launched in the past day and all now dead ($0-$7k liquidity). That is the typical pattern: repeated brand-ticker launches with no underlying story. (5) There is no smart-money or KOL interest (0 smart and 0 renowned wallets) and no DexScreener profile. The price is up about 3,600% in 36 minutes and the market cap of about $1.8M sits on only $121k of liquidity. The chart has already flattened to about +2% in the last 5 minutes while the market cap sits right at its all-time high, which usually comes before the bundled cluster sells into the bot-driven bid.\",\"red_flags\":[\"~36.5k txns from only ~270 unique buyers/263 sellers in h1 (~135 txns/wallet, ~$7 average trade): volume-bot/wash activity\",\"~2,025 holders vs ~270 buyers, plus a 2,448-wallet 'transfer' insider network: holder count likely inflated by token transfers\",\"GMGN top_entrapment_trader_pct 79.7%, top_rat_trader_pct 55.5%\",\"dev_team_hold_rate = bundler = top70 sniper = 12.85%: one bundled cluster holds ~13%\",\"Created and migrated at the same second: bundled pump.fun launch\",\"Brand impersonation: claims @Walmart and walmart.com, no official link\",\"Linked X account shows 739 launched tokens: tokens routinely name-drop Walmart\",\"At least 7 same-name Walmart tokens, several launched the same day, all dead\",\"No catalyst found in Walmart news for Sept 22, 2026\",\"0 smart/KOL wallets, no DexScreener profile\",\"+3,600% in 36 min; $1.8M market cap on $121k liquidity; momentum stalling at ATH\"],\"what_would_refute_bear_case\":\"An official Walmart post or verifiable mainstream news tying Walmart to this contract or to a memecoin story; unique buyer counts growing far faster than trade counts (hundreds to thousands of new wallets per hour); holder growth coming from buys rather than transfers; the 12.85% bundle cluster holding or being shown to be unrelated; smart-money or KOL wallets entering organically; the market cap holding above $1.5M for several hours with liquidity rising alongside it.\",\"coverage_notes\":\"I ran three web searches. None found a Walmart catalyst on Sept 22, 2026 or any coverage of this contract. The only Walmart crypto news is the older OnePay token listings. I had no X/Twitter or Telegram access, so any KOL call or CT thread would not show up for me. I did not fetch GMGN, DexScreener or Solscan pages, which render with JavaScript. The bot and transfer conclusions come from the packet's GeckoTerminal and GMGN figures, not from an independent on-chain trace. The ~8-minute limit restricted depth.\",\"sources\":[{\"url\":\"https://cointelegraph.com/news/walmart-backed-onepay-adds-a-dozen-new-tokens-in-push-to-serve-new-to-crypto-customers\",\"what\":\"Only Walmart crypto news found: older OnePay token listings, unrelated to this contract\"},{\"url\":\"https://coinmarketcap.com/academy/article/walmart-backed-onepay-adds-solana-arbitrum-and-more-to-crypto-platform\",\"what\":\"OnePay adds SOL etc.: old news, no memecoin link\"},{\"url\":\"https://corporate.walmart.com/news/2026/09/q3-leadership-investor-events\",\"what\":\"Walmart corporate news, Sept 2026: nothing crypto-related\"},{\"url\":\"https://phantom.com/tokens/solana/6zPhNvAHpvbSeEx5akLut846chwz5haYwCqLqDJMpump\",\"what\":\"Yet another 'Official WALMART COIN' pump.fun token: shows recurring brand-ticker launches\"}]}",
+ "structured_output": {
+  "bear_case_strength": "strong",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "strongest_bear_case": "The trading activity looks manufactured, and the token borrows a brand it has no link to. (1) The volume comes from bots. In the first hour GeckoTerminal counts about 36,500 trades (19,226 buys and 17,256 sells) but only about 270 unique buyers and 263 unique sellers. That works out to roughly 135 trades per wallet. The ~$250-270k of volume across ~37k trades averages about $7 per trade, which fits micro-trade volume bots used to game DexScreener and GMGN trending. The same ~210 wallets were active in the latest 5 minutes as across the whole hour, so the flow is the same wallets cycling, not new buyers. (2) The holder count looks inflated. GMGN and GeckoTerminal report about 2,025 holders, yet only about 270 wallets ever bought. Meanwhile the insider graph finds a 2,448-wallet 'transfer' network. Together this points to tokens being sprayed out to many wallets to fake a broad holder base. (3) GMGN insider metrics are extreme. The top entrapment-trader share is 79.7% and the top rat-trader (insider) share is 55.5%. Dev/team, bundler and top-70 sniper holdings are all exactly 12.85%, which suggests one bundled cluster holding about 13% of supply. The creation and migration timestamps are identical, so the pump.fun launch was probably bundled. (4) The token is hijacking a brand. It lists twitter 'Walmart' and walmart.com and uses Walmart's slogan, but I found no Walmart announcement, tweet, or crypto or memecoin catalyst on Sept 22, 2026. The only Walmart crypto news is the months-old OnePay token listings, which have nothing to do with this contract. The 739 tokens attributed to the linked X account show that many unrelated tokens name-drop @Walmart. At least 7 other Walmart/WALMART tokens exist, several launched in the past day and all now dead ($0-$7k liquidity). That is the typical pattern: repeated brand-ticker launches with no underlying story. (5) There is no smart-money or KOL interest (0 smart and 0 renowned wallets) and no DexScreener profile. The price is up about 3,600% in 36 minutes and the market cap of about $1.8M sits on only $121k of liquidity. The chart has already flattened to about +2% in the last 5 minutes while the market cap sits right at its all-time high, which usually comes before the bundled cluster sells into the bot-driven bid.",
+  "red_flags": [
+   "~36.5k txns from only ~270 unique buyers/263 sellers in h1 (~135 txns/wallet, ~$7 average trade): volume-bot/wash activity",
+   "~2,025 holders vs ~270 buyers, plus a 2,448-wallet 'transfer' insider network: holder count likely inflated by token transfers",
+   "GMGN top_entrapment_trader_pct 79.7%, top_rat_trader_pct 55.5%",
+   "dev_team_hold_rate = bundler = top70 sniper = 12.85%: one bundled cluster holds ~13%",
+   "Created and migrated at the same second: bundled pump.fun launch",
+   "Brand impersonation: claims @Walmart and walmart.com, no official link",
+   "Linked X account shows 739 launched tokens: tokens routinely name-drop Walmart",
+   "At least 7 same-name Walmart tokens, several launched the same day, all dead",
+   "No catalyst found in Walmart news for Sept 22, 2026",
+   "0 smart/KOL wallets, no DexScreener profile",
+   "+3,600% in 36 min; $1.8M market cap on $121k liquidity; momentum stalling at ATH"
+  ],
+  "what_would_refute_bear_case": "An official Walmart post or verifiable mainstream news tying Walmart to this contract or to a memecoin story; unique buyer counts growing far faster than trade counts (hundreds to thousands of new wallets per hour); holder growth coming from buys rather than transfers; the 12.85% bundle cluster holding or being shown to be unrelated; smart-money or KOL wallets entering organically; the market cap holding above $1.5M for several hours with liquidity rising alongside it.",
+  "coverage_notes": "I ran three web searches. None found a Walmart catalyst on Sept 22, 2026 or any coverage of this contract. The only Walmart crypto news is the older OnePay token listings. I had no X/Twitter or Telegram access, so any KOL call or CT thread would not show up for me. I did not fetch GMGN, DexScreener or Solscan pages, which render with JavaScript. The bot and transfer conclusions come from the packet's GeckoTerminal and GMGN figures, not from an independent on-chain trace. The ~8-minute limit restricted depth.",
+  "sources": [
+   {
+    "url": "https://cointelegraph.com/news/walmart-backed-onepay-adds-a-dozen-new-tokens-in-push-to-serve-new-to-crypto-customers",
+    "what": "Only Walmart crypto news found: older OnePay token listings, unrelated to this contract"
+   },
+   {
+    "url": "https://coinmarketcap.com/academy/article/walmart-backed-onepay-adds-solana-arbitrum-and-more-to-crypto-platform",
+    "what": "OnePay adds SOL etc.: old news, no memecoin link"
+   },
+   {
+    "url": "https://corporate.walmart.com/news/2026/09/q3-leadership-investor-events",
+    "what": "Walmart corporate news, Sept 2026: nothing crypto-related"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/6zPhNvAHpvbSeEx5akLut846chwz5haYwCqLqDJMpump",
+    "what": "Yet another 'Official WALMART COIN' pump.fun token: shows recurring brand-ticker launches"
+   }
+  ]
+ },
+ "ttft_ms": 1404,
+ "type": "result",
+ "duration_ms": 38389,
+ "uuid": "bac3821d-1676-47fb-a399-1cae4e568512",
+ "ttft_stream_ms": 715,
+ "time_to_request_ms": 35,
+ "first_content_frame_ms": 715,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

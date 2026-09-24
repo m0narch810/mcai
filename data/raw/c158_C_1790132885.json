@@ -1,0 +1,192 @@
+{
+ "duration_api_ms": 119203,
+ "stop_reason": "tool_use",
+ "session_id": "04399458-169d-4178-83e8-52274216ff3e",
+ "total_cost_usd": 0.5577216,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 22263,
+  "cache_read_input_tokens": 99128,
+  "output_tokens": 5242,
+  "output_tokens_details": {
+   "thinking_tokens": 990
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 22263,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2707,
+    "cache_read_input_tokens": 22624,
+    "cache_creation_input_tokens": 2139,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2139
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 5242,
+   "cacheReadInputTokens": 99128,
+   "cacheCreationInputTokens": 22263,
+   "webSearchRequests": 0,
+   "costUSD": 0.30282560000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 990,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 122226,
+   "outputTokens": 4534,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 11,
+   "costUSD": 0.254896,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 19,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"City Protocol\\\" with ticker CT launched about 38 minutes ago via a Meteora virtual-curve (DBC) launch that migrated the same second to a PumpSwap pool. It links to the X account of the real City Protocol (@cityprotocolHQ, formerly Cooking City), which is backed by Jump, Dragonfly and CMT Digital. It did about $4.1M volume on ~$281K liquidity in its first hour. The real project's documented token is $CP, not CT. The Kaito pre-TGE listing also shows it as CIT. I found no official TGE, contract address or launch announcement for September 2026. A second \\\"CT\\\" token named \\\"Concrete\\\" launched ~3 minutes earlier (pair created 1790130405 vs 1790130602) and shows the same pattern: $4.65M h1 volume on $385K liquidity. That borrows the ticker of Concrete's real ERC-20 governance token CT, whose TGE is reported for Sept 28. There are also two more \\\"City Protocol CT\\\" copies from the same day that are now dead. This looks like a batch of impostor or \\\"fake TGE\\\" tokens riding pre-TGE airdrop anticipation for known VC-backed projects. It does not look like an official launch.\",\"narrative\":{\"description\":\"Borrowed legitimacy: an impostor 'City Protocol' token that uses the real project's X handle. The real project is a VC-backed Solana/Base infrastructure project with a points and airdrop campaign and pre-TGE mindshare in Korea. The story is 'the TGE is here'. I found nothing that supports that.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Most likely traders on trending screeners and bots who read the name as the anticipated City Protocol TGE, plus possible wash or bot volume. The Concrete 'CT' launch a few minutes earlier has an almost identical volume/liquidity profile, which suggests the same operator or template. I found no organic posts, news or official announcement.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Only the name and the linked @cityprotocolHQ handle, which any deployer can set in metadata. The official ticker is $CP (docs, CryptoRank, airdrops.io), and a Kaito pre-TGE listing says CIT. I found no official post confirming this contract, and the official site shows no token or contract.\",\"competing_tokens\":\"Two other 'City Protocol CT' mints from the same day (3TrSG..., E84FV...) are now at near-zero liquidity. A same-window 'Concrete CT' (6iNFw...) has larger volume and impersonates Concrete's real ERC-20 CT, whose TGE is reported for Sept 28. There are also many unrelated CT memes.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Several copycat mints of the same name appeared on the same day. A parallel 'Concrete CT' launched minutes apart with a matching volume profile. Ticker CT does not match the official $CP. The DexScreener profile is empty and the project has no website or Telegram. GeckoTerminal shows 1,746 unique buyers against only 185 sellers, and h1 turnover of 14x liquidity. GeckoTerminal flags that the developer holds more than 10% and that the pool LP is not locked; RugCheck also flags 'Large Amount of LP Unlocked'. Meteora DBC holds about 80B of roughly 100B supply.\",\"uncertainty\":\"I could not read X, so I can't rule out that City Protocol officially endorsed this contract. It's possible (low probability) that the project launched on Solana under CT. GMGN shows no bundlers, snipers or bot share, which somewhat contradicts the wash-trading reading.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Meteora DBC account holds ~80% of supply (80B of ~100B), which is a potential supply overhang\",\"RugCheck and GeckoTerminal flag LP as unlocked or with few providers, so a pull is possible (GMGN says lp_burn_ratio 1.0, which conflicts)\",\"Impostor of an official $CP token: an official denial or a real TGE would likely collapse it\",\"Multiple same-name copies split attention\",\"GeckoTerminal says the dev holds more than 10%\"]},\"counterargument\":\"City Protocol runs a launchpad (Cooking City) on Meteora-style curves and is pre-TGE. It could have soft-launched a CT token via its own infrastructure and linked it from its real X account. The 1,700+ unique buyers could then be real airdrop farmers, and flow could keep growing as Korean community members pile in. GMGN shows no bundlers or snipers, and mint and freeze authority are both renounced.\",\"unknowns\":[\"Whether @cityprotocolHQ posted this contract, since X was inaccessible\",\"Whether the Concrete CT and City CT tokens share a deployer\",\"The real ownership of the LP and of the 80B held in DBC\",\"Whether the volume is organic or bot-driven\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"x.com returned 402. Contract search gave no hits. DexScreener and CryptoRank returned 403. GeckoTerminal was fetched. The official site and docs show no token or contract. News covered the official $CP token and Concrete's ERC-20 CT.\"},\"thesis\":\"This is most likely an impostor token that uses the real project's name and X handle. The real project's ticker is $CP, and I found no official Solana launch. It was launched in a batch alongside a matching Concrete CT fake. It has high hijack risk, a large DBC supply overhang and flagged unlocked-LP risk. The attention is likely to fade or collapse, and an official denial or rug would speed that up.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://airdrops.io/city-protocol/\",\"what\":\"City Protocol airdrop; token $CP\"},{\"url\":\"https://cryptorank.io/ico/cooking-city\",\"what\":\"City Protocol (prev. Cooking City) (CP)\"},{\"url\":\"https://github.com/MetaSearch-IO/KaitoPublicDataKnowledgeAssets/pull/224\",\"what\":\"Kaito pre-TGE listing (CIT)\"},{\"url\":\"https://www.cityprotocol.co/\",\"what\":\"Official site: no token or contract\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/EJ6rLHP68z3NAqNkxD3bpN3ae8UrzQX4mPkz1rkk7bSk\",\"what\":\"Pool data, DBC holding 80B, dev >10% warning, LP not locked\"},{\"url\":\"https://www.kucoin.com/news/flash/concrete-launches-foundation-and-governance-token-ct-with-1-billion-fixed-supply\",\"what\":\"Concrete's real CT is an ERC-20\"},{\"url\":\"https://x.com/cityprotocolHQ?lang=en\",\"what\":\"Official X (inaccessible)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"City Protocol\" with ticker CT launched about 38 minutes ago via a Meteora virtual-curve (DBC) launch that migrated the same second to a PumpSwap pool. It links to the X account of the real City Protocol (@cityprotocolHQ, formerly Cooking City), which is backed by Jump, Dragonfly and CMT Digital. It did about $4.1M volume on ~$281K liquidity in its first hour. The real project's documented token is $CP, not CT. The Kaito pre-TGE listing also shows it as CIT. I found no official TGE, contract address or launch announcement for September 2026. A second \"CT\" token named \"Concrete\" launched ~3 minutes earlier (pair created 1790130405 vs 1790130602) and shows the same pattern: $4.65M h1 volume on $385K liquidity. That borrows the ticker of Concrete's real ERC-20 governance token CT, whose TGE is reported for Sept 28. There are also two more \"City Protocol CT\" copies from the same day that are now dead. This looks like a batch of impostor or \"fake TGE\" tokens riding pre-TGE airdrop anticipation for known VC-backed projects. It does not look like an official launch.",
+  "narrative": {
+   "description": "Borrowed legitimacy: an impostor 'City Protocol' token that uses the real project's X handle. The real project is a VC-backed Solana/Base infrastructure project with a points and airdrop campaign and pre-TGE mindshare in Korea. The story is 'the TGE is here'. I found nothing that supports that.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Most likely traders on trending screeners and bots who read the name as the anticipated City Protocol TGE, plus possible wash or bot volume. The Concrete 'CT' launch a few minutes earlier has an almost identical volume/liquidity profile, which suggests the same operator or template. I found no organic posts, news or official announcement."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Only the name and the linked @cityprotocolHQ handle, which any deployer can set in metadata. The official ticker is $CP (docs, CryptoRank, airdrops.io), and a Kaito pre-TGE listing says CIT. I found no official post confirming this contract, and the official site shows no token or contract.",
+   "competing_tokens": "Two other 'City Protocol CT' mints from the same day (3TrSG..., E84FV...) are now at near-zero liquidity. A same-window 'Concrete CT' (6iNFw...) has larger volume and impersonates Concrete's real ERC-20 CT, whose TGE is reported for Sept 28. There are also many unrelated CT memes.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Several copycat mints of the same name appeared on the same day. A parallel 'Concrete CT' launched minutes apart with a matching volume profile. Ticker CT does not match the official $CP. The DexScreener profile is empty and the project has no website or Telegram. GeckoTerminal shows 1,746 unique buyers against only 185 sellers, and h1 turnover of 14x liquidity. GeckoTerminal flags that the developer holds more than 10% and that the pool LP is not locked; RugCheck also flags 'Large Amount of LP Unlocked'. Meteora DBC holds about 80B of roughly 100B supply.",
+   "uncertainty": "I could not read X, so I can't rule out that City Protocol officially endorsed this contract. It's possible (low probability) that the project launched on Solana under CT. GMGN shows no bundlers, snipers or bot share, which somewhat contradicts the wash-trading reading."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Meteora DBC account holds ~80% of supply (80B of ~100B), which is a potential supply overhang",
+    "RugCheck and GeckoTerminal flag LP as unlocked or with few providers, so a pull is possible (GMGN says lp_burn_ratio 1.0, which conflicts)",
+    "Impostor of an official $CP token: an official denial or a real TGE would likely collapse it",
+    "Multiple same-name copies split attention",
+    "GeckoTerminal says the dev holds more than 10%"
+   ]
+  },
+  "counterargument": "City Protocol runs a launchpad (Cooking City) on Meteora-style curves and is pre-TGE. It could have soft-launched a CT token via its own infrastructure and linked it from its real X account. The 1,700+ unique buyers could then be real airdrop farmers, and flow could keep growing as Korean community members pile in. GMGN shows no bundlers or snipers, and mint and freeze authority are both renounced.",
+  "unknowns": [
+   "Whether @cityprotocolHQ posted this contract, since X was inaccessible",
+   "Whether the Concrete CT and City CT tokens share a deployer",
+   "The real ownership of the LP and of the 80B held in DBC",
+   "Whether the volume is organic or bot-driven"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "x.com returned 402. Contract search gave no hits. DexScreener and CryptoRank returned 403. GeckoTerminal was fetched. The official site and docs show no token or contract. News covered the official $CP token and Concrete's ERC-20 CT."
+  },
+  "thesis": "This is most likely an impostor token that uses the real project's name and X handle. The real project's ticker is $CP, and I found no official Solana launch. It was launched in a batch alongside a matching Concrete CT fake. It has high hijack risk, a large DBC supply overhang and flagged unlocked-LP risk. The attention is likely to fade or collapse, and an official denial or rug would speed that up.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://airdrops.io/city-protocol/",
+    "what": "City Protocol airdrop; token $CP"
+   },
+   {
+    "url": "https://cryptorank.io/ico/cooking-city",
+    "what": "City Protocol (prev. Cooking City) (CP)"
+   },
+   {
+    "url": "https://github.com/MetaSearch-IO/KaitoPublicDataKnowledgeAssets/pull/224",
+    "what": "Kaito pre-TGE listing (CIT)"
+   },
+   {
+    "url": "https://www.cityprotocol.co/",
+    "what": "Official site: no token or contract"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/EJ6rLHP68z3NAqNkxD3bpN3ae8UrzQX4mPkz1rkk7bSk",
+    "what": "Pool data, DBC holding 80B, dev >10% warning, LP not locked"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/concrete-launches-foundation-and-governance-token-ct-with-1-billion-fixed-supply",
+    "what": "Concrete's real CT is an ERC-20"
+   },
+   {
+    "url": "https://x.com/cityprotocolHQ?lang=en",
+    "what": "Official X (inaccessible)"
+   }
+  ]
+ },
+ "ttft_ms": 2271,
+ "type": "result",
+ "duration_ms": 80281,
+ "uuid": "a9109075-c61d-4e4e-afde-b8cf3e1495f0",
+ "ttft_stream_ms": 720,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 720,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

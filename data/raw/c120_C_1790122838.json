@@ -1,0 +1,192 @@
+{
+ "duration_api_ms": 120285,
+ "stop_reason": "tool_use",
+ "session_id": "42a3b228-c2e2-4e91-bbc5-a990252624fd",
+ "total_cost_usd": 0.49309459999999994,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 21095,
+  "cache_read_input_tokens": 63133,
+  "output_tokens": 5334,
+  "output_tokens_details": {
+   "thinking_tokens": 712
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21095,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3438,
+    "cache_read_input_tokens": 21017,
+    "cache_creation_input_tokens": 2578,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2578
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 5334,
+   "cacheReadInputTokens": 63133,
+   "cacheCreationInputTokens": 21095,
+   "webSearchRequests": 0,
+   "costUSD": 0.2881066,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 712,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 101058,
+   "outputTokens": 4786,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 8,
+   "costUSD": 0.204988,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This token is \\\"Tesla\\\" (TSLA), created on the Meteora dynamic bonding curve and moved to PumpSwap in the same second (GMGN shows the same created and migrated unix time). The pool is about 40 minutes old. In that time it has done about $3.9M of volume against $318k of liquidity. It impersonates the real company: its links are tesla.com and the @Tesla X handle. There is no project site, no DexScreener profile and no project socials. It looks like the latest copy in a serial run of identical tokens. The packet lists 7 other tokens named Tesla/TSLA created in the last ~26 hours. Each reached $1.2M\u2013$4.3M market cap on $11M\u2013$46M of 24h volume, and DexScreener now shows $0 liquidity on every one of their PumpSwap pools. That points strongly to liquidity being pulled or drained (a rug) once each one peaked. The most recent copy (54pN\u2026, created about 3 hours before this one) had $1M of hourly volume and now has $0 liquidity. This token follows the same template: over 2,000 unique buyers but only ~104 unique sellers, 96% of supply in the top 10 holders (GeckoTerminal, may include the pool), 112 graph-detected insiders including a 74-wallet transfer network, 53 bundler wallets and 60 insider ('rat trader') wallets, and RugCheck warning that most LP is unlocked. There is real Tesla news: Grok Connectors in cars, a Roadster/Semi event ahead, and TSLA stock up 3%. But nothing ties that news to this token, and the name is simply being reused as a generic brand.\",\"narrative\":{\"description\":\"A generic 'Tesla' ticker memecoin. It borrows from the real Tesla/Elon news cycle (Grok in cars on Sept 22, an upcoming Roadster reveal and Semi event, TSLA stock +3%) and from the popularity of tokenized TSLA stock on Solana. No specific event, meme or post is tied to this contract.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. Volume appears to come from a repeated launch template that has recycled the same name and ticker at least 7 times in ~26 hours, attracting momentum and bot traders to each fresh copy. The buyer/seller skew (2,280 unique buyers vs 104 sellers) and the insider/bundler networks fit engineered flow, not word of mouth.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing makes this contract canonical. It is the newest of many identical 'Tesla/TSLA' tokens. It lists tesla.com and @Tesla, which is impersonation of a company with no link to it.\",\"competing_tokens\":\"At least 7 same-name TSLA tokens from the last ~26h (3gAX\u2026 $4.3M, E5zE\u2026 $2.0M, 7CdS\u2026 $1.6M, FiV7\u2026 $1.4M, 54pN\u2026 $1.2M, F6Yy\u2026, 92jX\u2026). All now show $0 liquidity after $11M\u2013$46M of volume. Older Tesla-themed tokens also exist, and there is legitimate tokenized Tesla stock (TSLAx) on Solana.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"This looks like a serial relaunch pattern: ~7 same-name clones in ~26h, each pumped to $1\u20134M and then left at $0 liquidity. Other signs: creation and migration in the same second, 112 graph insiders (a 74-wallet transfer cluster), 53 bundlers and 60 insider wallets, 2,280 buyers vs 104 sellers, zero smart or renowned wallets, impersonated official links, and no real social presence. Search found no X, Reddit or Telegram discussion of this contract.\",\"uncertainty\":\"I could not see X posts directly, and private call groups may be driving the buyers. The $0 liquidity on the clones could in theory be a DexScreener display quirk for drained pools, not an LP removal by the creator. Either way, those pools are dead.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"All 7 prior same-name clones from the last day now show $0 liquidity, a strong sign of a repeated rug template\",\"RugCheck flags most LP as unlocked (0% locked on the top market) and only a few LP providers. GMGN reports lp_burn_ratio 1.0, which conflicts with this\",\"Top 10 holders hold 96% per GeckoTerminal (may include the pool). There are 112 insider wallets, 53 bundlers and 60 insider ('rat trader') wallets\",\"Hourly turnover is ~12x liquidity, and buyers outnumber sellers ~22:1\",\"It impersonates Tesla, and many identical tickers split attention\"]},\"counterargument\":\"Each clone in this series still ran from launch to $1\u20134M market cap and did tens of millions in volume within hours. This one is only ~40 minutes old and still has $318k of liquidity, so the pump could carry on for a while before the pattern ends. Real Tesla catalysts (the Roadster/Semi event) could also send more degen flow into whichever TSLA copy is live. If the $0 liquidity on the clones reflects migrations or display quirks, not pulls, my rug conclusion is overstated.\",\"unknowns\":[\"Who controls the LP, and whether the clones' liquidity was removed by their creators or drained by selling\",\"Whether private Telegram call groups are driving buyers\",\"Whether the creators of the clones are linked on-chain to G4VnWFV\u2026\",\"The conflict between GMGN's lp_burn_ratio of 1.0 and RugCheck's unlocked-LP warning\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract address returned no web results. X site-search surfaced only generic TSLA stock/TSLAx posts. The 'project site' is just tesla.com (impersonation). News covers real Tesla events that are not linked to the token. DexScreener API was used for this token and for the clones.\"},\"thesis\":\"Noise, probably a rug. This is the latest copy in a serial 'Tesla/TSLA' launch template whose previous ~7 copies in the past day all now show zero liquidity. There is no canonical claim, no organic social trace, heavy insider/bundler structure and unlocked LP. The attention is engineered and likely to collapse within hours.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/BmDGR6faozaBNReHYPVJzHz7Zqk8qhx5EWPY5VUjZGJz\",\"what\":\"This token's pairs, liquidity and volume; no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ,54pNfUCgT23sh2xto2n3qTyn7XQ3LUZLiihAWHUg42Yy,E5zEYzWuuWkgaLpS5hngaJUpJCXeF8uNfJfzM8rT47uZ\",\"what\":\"Clone TSLA tokens: $0 liquidity after $15M\u2013$46M of volume\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7CdSoAVsN6kivhdSMA4iHyqGpKbsTENzSeSTgRbd8qst,FiV7obNYBsb8hatN9v6nNTdZe7PZMQqgtPXFiVHWMoyE,F6YyT3T5cEnhzSNaDX1DbbSAhuMMpJvKrcV7178jXWTR,92jXVGxxYjFNfKoEBVZNXvBEzzSDAErDhEbZi7QzPuyu\",\"what\":\"More clones, all with $0 PumpSwap liquidity\"},{\"url\":\"https://www.notateslaapp.com/news/4724/tesla-adds-grok-bot-to-vehicles-for-hands-free-errands-and-tasks\",\"what\":\"Real Tesla news on Sept 22 (Grok Connectors)\"},{\"url\":\"https://www.fxleaders.com/news/2026/09/22/tesla-stock-forecast-tsla-roadster-semi-event/\",\"what\":\"TSLA stock +3% ahead of the Roadster/Semi event\"},{\"url\":\"https://www.bybit.com/en/wiki/article/tesla-coin-review-tsla-what-it-is-what-it-is-not-and-how-to-check-it-safely/\",\"what\":\"Tesla-named tokens are unofficial and not endorsed by Tesla\"},{\"url\":\"https://x.com/solana/status/1978476854412505419\",\"what\":\"Legitimate tokenized TSLAx on Solana, a competing reference for the ticker\"}]}",
+ "structured_output": {
+  "what_is_happening": "This token is \"Tesla\" (TSLA), created on the Meteora dynamic bonding curve and moved to PumpSwap in the same second (GMGN shows the same created and migrated unix time). The pool is about 40 minutes old. In that time it has done about $3.9M of volume against $318k of liquidity. It impersonates the real company: its links are tesla.com and the @Tesla X handle. There is no project site, no DexScreener profile and no project socials. It looks like the latest copy in a serial run of identical tokens. The packet lists 7 other tokens named Tesla/TSLA created in the last ~26 hours. Each reached $1.2M\u2013$4.3M market cap on $11M\u2013$46M of 24h volume, and DexScreener now shows $0 liquidity on every one of their PumpSwap pools. That points strongly to liquidity being pulled or drained (a rug) once each one peaked. The most recent copy (54pN\u2026, created about 3 hours before this one) had $1M of hourly volume and now has $0 liquidity. This token follows the same template: over 2,000 unique buyers but only ~104 unique sellers, 96% of supply in the top 10 holders (GeckoTerminal, may include the pool), 112 graph-detected insiders including a 74-wallet transfer network, 53 bundler wallets and 60 insider ('rat trader') wallets, and RugCheck warning that most LP is unlocked. There is real Tesla news: Grok Connectors in cars, a Roadster/Semi event ahead, and TSLA stock up 3%. But nothing ties that news to this token, and the name is simply being reused as a generic brand.",
+  "narrative": {
+   "description": "A generic 'Tesla' ticker memecoin. It borrows from the real Tesla/Elon news cycle (Grok in cars on Sept 22, an upcoming Roadster reveal and Semi event, TSLA stock +3%) and from the popularity of tokenized TSLA stock on Solana. No specific event, meme or post is tied to this contract.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. Volume appears to come from a repeated launch template that has recycled the same name and ticker at least 7 times in ~26 hours, attracting momentum and bot traders to each fresh copy. The buyer/seller skew (2,280 unique buyers vs 104 sellers) and the insider/bundler networks fit engineered flow, not word of mouth."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing makes this contract canonical. It is the newest of many identical 'Tesla/TSLA' tokens. It lists tesla.com and @Tesla, which is impersonation of a company with no link to it.",
+   "competing_tokens": "At least 7 same-name TSLA tokens from the last ~26h (3gAX\u2026 $4.3M, E5zE\u2026 $2.0M, 7CdS\u2026 $1.6M, FiV7\u2026 $1.4M, 54pN\u2026 $1.2M, F6Yy\u2026, 92jX\u2026). All now show $0 liquidity after $11M\u2013$46M of volume. Older Tesla-themed tokens also exist, and there is legitimate tokenized Tesla stock (TSLAx) on Solana.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "This looks like a serial relaunch pattern: ~7 same-name clones in ~26h, each pumped to $1\u20134M and then left at $0 liquidity. Other signs: creation and migration in the same second, 112 graph insiders (a 74-wallet transfer cluster), 53 bundlers and 60 insider wallets, 2,280 buyers vs 104 sellers, zero smart or renowned wallets, impersonated official links, and no real social presence. Search found no X, Reddit or Telegram discussion of this contract.",
+   "uncertainty": "I could not see X posts directly, and private call groups may be driving the buyers. The $0 liquidity on the clones could in theory be a DexScreener display quirk for drained pools, not an LP removal by the creator. Either way, those pools are dead."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "All 7 prior same-name clones from the last day now show $0 liquidity, a strong sign of a repeated rug template",
+    "RugCheck flags most LP as unlocked (0% locked on the top market) and only a few LP providers. GMGN reports lp_burn_ratio 1.0, which conflicts with this",
+    "Top 10 holders hold 96% per GeckoTerminal (may include the pool). There are 112 insider wallets, 53 bundlers and 60 insider ('rat trader') wallets",
+    "Hourly turnover is ~12x liquidity, and buyers outnumber sellers ~22:1",
+    "It impersonates Tesla, and many identical tickers split attention"
+   ]
+  },
+  "counterargument": "Each clone in this series still ran from launch to $1\u20134M market cap and did tens of millions in volume within hours. This one is only ~40 minutes old and still has $318k of liquidity, so the pump could carry on for a while before the pattern ends. Real Tesla catalysts (the Roadster/Semi event) could also send more degen flow into whichever TSLA copy is live. If the $0 liquidity on the clones reflects migrations or display quirks, not pulls, my rug conclusion is overstated.",
+  "unknowns": [
+   "Who controls the LP, and whether the clones' liquidity was removed by their creators or drained by selling",
+   "Whether private Telegram call groups are driving buyers",
+   "Whether the creators of the clones are linked on-chain to G4VnWFV\u2026",
+   "The conflict between GMGN's lp_burn_ratio of 1.0 and RugCheck's unlocked-LP warning"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "The contract address returned no web results. X site-search surfaced only generic TSLA stock/TSLAx posts. The 'project site' is just tesla.com (impersonation). News covers real Tesla events that are not linked to the token. DexScreener API was used for this token and for the clones."
+  },
+  "thesis": "Noise, probably a rug. This is the latest copy in a serial 'Tesla/TSLA' launch template whose previous ~7 copies in the past day all now show zero liquidity. There is no canonical claim, no organic social trace, heavy insider/bundler structure and unlocked LP. The attention is engineered and likely to collapse within hours.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/BmDGR6faozaBNReHYPVJzHz7Zqk8qhx5EWPY5VUjZGJz",
+    "what": "This token's pairs, liquidity and volume; no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/3gAXa6khcC6G7tq6XBnonsiS7GQtq3auKnXCvdZvQtfJ,54pNfUCgT23sh2xto2n3qTyn7XQ3LUZLiihAWHUg42Yy,E5zEYzWuuWkgaLpS5hngaJUpJCXeF8uNfJfzM8rT47uZ",
+    "what": "Clone TSLA tokens: $0 liquidity after $15M\u2013$46M of volume"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7CdSoAVsN6kivhdSMA4iHyqGpKbsTENzSeSTgRbd8qst,FiV7obNYBsb8hatN9v6nNTdZe7PZMQqgtPXFiVHWMoyE,F6YyT3T5cEnhzSNaDX1DbbSAhuMMpJvKrcV7178jXWTR,92jXVGxxYjFNfKoEBVZNXvBEzzSDAErDhEbZi7QzPuyu",
+    "what": "More clones, all with $0 PumpSwap liquidity"
+   },
+   {
+    "url": "https://www.notateslaapp.com/news/4724/tesla-adds-grok-bot-to-vehicles-for-hands-free-errands-and-tasks",
+    "what": "Real Tesla news on Sept 22 (Grok Connectors)"
+   },
+   {
+    "url": "https://www.fxleaders.com/news/2026/09/22/tesla-stock-forecast-tsla-roadster-semi-event/",
+    "what": "TSLA stock +3% ahead of the Roadster/Semi event"
+   },
+   {
+    "url": "https://www.bybit.com/en/wiki/article/tesla-coin-review-tsla-what-it-is-what-it-is-not-and-how-to-check-it-safely/",
+    "what": "Tesla-named tokens are unofficial and not endorsed by Tesla"
+   },
+   {
+    "url": "https://x.com/solana/status/1978476854412505419",
+    "what": "Legitimate tokenized TSLAx on Solana, a competing reference for the ticker"
+   }
+  ]
+ },
+ "ttft_ms": 1123,
+ "type": "result",
+ "duration_ms": 79017,
+ "uuid": "e53cfff4-708e-4422-bbb9-2300e73bda4b",
+ "ttft_stream_ms": 629,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 629,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

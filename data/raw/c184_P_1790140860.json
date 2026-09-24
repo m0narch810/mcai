@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24670,
+ "stop_reason": "tool_use",
+ "session_id": "ab775ddc-5f0b-4e33-85a4-835be1fb5185",
+ "total_cost_usd": 0.11077200000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7433,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2565,
+  "output_tokens_details": {
+   "thinking_tokens": 352
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7433,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2565,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 7433,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7433
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2565,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 7433,
+   "webSearchRequests": 0,
+   "costUSD": 0.11077200000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 352,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 35-minute-old PumpSwap pair for \\\"Grokification\\\" (GROK) is showing $6.2M of 1-hour volume on roughly $140k of liquidity, which is about 44x turnover. The price is up about 150\u2013185%. The trading does not look organic. GeckoTerminal shows 1,081 unique buyers but only 28 unique sellers, and those 28 wallets made about 4,400 sells. In the latest 5 and 15 minutes, 10\u201311 unique buyers made 764\u20131,901 buys. So a small set of wallets, probably bots, is producing most of the volume. The in-memory buyer and seller counts barely rise from the 30-minute to the 1-hour window, and buying breadth has collapsed recently (buyers went from 424 in the 30-minute window to 10\u201311 in the 5\u201315 minute windows). This is the third token named \\\"Grokification\\\" in the packet. An earlier one (6HU4\u2026, created about 34 hours before this one) is at about $2.7M market cap. The description says it was deployed with j7tracker. The project X link is a status post from a recycled account with 6 renames, and the dev's X account has launched 13 tokens. The token image appears 173 times elsewhere.\",\"narrative\":{\"description\":\"\\\"Grokification\\\" is a meme phrase tied to Grok (xAI), probably copied from a tweet or trend (the linked X status). The theme already has a leading token: an earlier Grokification at about $2.7M market cap with steady volume. This pair looks like a late copycat trying to ride that attention.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The volume looks mostly wash or bot trading: a few seller wallets make thousands of sells, and a handful of buyer wallets make hundreds of buys every 5 minutes. That volume pushed the pair onto the unusual-activity screens. Real new-buyer growth stalled after the first roughly 30 minutes.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Only the name and ticker link it to the theme. It is a relaunch deployed through a sniping/deploy tool (j7tracker) and linked to a recycled X account's status post. Nothing marks it as the official or first token.\",\"competing_tokens\":\"GKeUT73\u2026 GROK (about $3.1M market cap, older). 6HU4Cm\u2026 Grokification (about $2.7M market cap, $216k volume in the last hour, created about 34 hours earlier, the likely canonical Grokification). 4mkQPR\u2026 Grokification (dead, 0 liquidity).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"28 unique sellers made about 4,400 sells. 10\u201311 unique buyers made 764\u20131,901 buys in the 5 and 15 minute windows. Turnover is 44x liquidity in one hour. GMGN flags 10 bundler wallets and 5 snipers. The token image is duplicated 173 times. The project X account is recycled (6 renames), and the dev's X account has launched 13 tokens. It was deployed through j7tracker. The LP-unlocked danger flag appears on one market.\",\"uncertainty\":\"The holder concentration data conflicts: GeckoTerminal's top 10 at 98.9% probably includes pool accounts, while GMGN puts it at 9.5%. The 1,081 unique buyers could include some real retail buyers who came in during the first 30 minutes. There is no X data to check whether the linked tweet went viral.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One of the top markets has 0% of its LP locked, and RugCheck flags 'Large Amount of LP Unlocked' as a danger\",\"Volume is dominated by bots or wash trading, so real depth is far below what volume suggests\",\"A copycat of an established same-name token that is bigger and older\",\"Top-10 concentration figures conflict (98.9% vs 9.5%)\",\"The creator still holds about 3.6% of supply\",\"Only a few LP providers\"]},\"counterargument\":\"Grok and xAI memes can go viral fast. If the linked tweet takes off, this pair's low market cap (about $0.73M, against $2.7M for the older Grokification) could attract rotation from traders looking for a cheaper version. Roughly 1,000 unique buyers in the first 30 minutes is not trivial. Liquidity of about $140k is healthy for this size, the mint and freeze authorities are renounced, and GMGN reports the LP burned. Bot volume can keep the token visible on trending lists long enough to pull in more real buyers.\",\"unknowns\":[\"Contents and reach of the linked X status (lebombjam)\",\"Whether the ~1,081 buyers are real or a sybil set\",\"Which accounts make up the top-10 holders, and the true pool share\",\"Whether the unlocked LP can be pulled by the deployer\",\"Whether the older Grokification token is absorbing the flow instead\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"There was no internet access in this condition. The assessment is based only on the evidence packet.\"},\"thesis\":\"This is a copycat \\\"Grokification\\\" launch through a deploy/snipe tool, linked to a recycled X account. Its headline volume is mostly bot or wash trading by a few wallets (28 sellers made about 4,400 sells), and new-buyer breadth has already collapsed to about 10 per 5 minutes. A larger and older token with the same name is the likely canonical one. Attention will probably fade over the next 6 hours, with a meaningful chance of a dump or liquidity pull.\",\"continuation_view\":\"strong_fade\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 35-minute-old PumpSwap pair for \"Grokification\" (GROK) is showing $6.2M of 1-hour volume on roughly $140k of liquidity, which is about 44x turnover. The price is up about 150\u2013185%. The trading does not look organic. GeckoTerminal shows 1,081 unique buyers but only 28 unique sellers, and those 28 wallets made about 4,400 sells. In the latest 5 and 15 minutes, 10\u201311 unique buyers made 764\u20131,901 buys. So a small set of wallets, probably bots, is producing most of the volume. The in-memory buyer and seller counts barely rise from the 30-minute to the 1-hour window, and buying breadth has collapsed recently (buyers went from 424 in the 30-minute window to 10\u201311 in the 5\u201315 minute windows). This is the third token named \"Grokification\" in the packet. An earlier one (6HU4\u2026, created about 34 hours before this one) is at about $2.7M market cap. The description says it was deployed with j7tracker. The project X link is a status post from a recycled account with 6 renames, and the dev's X account has launched 13 tokens. The token image appears 173 times elsewhere.",
+  "narrative": {
+   "description": "\"Grokification\" is a meme phrase tied to Grok (xAI), probably copied from a tweet or trend (the linked X status). The theme already has a leading token: an earlier Grokification at about $2.7M market cap with steady volume. This pair looks like a late copycat trying to ride that attention.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The volume looks mostly wash or bot trading: a few seller wallets make thousands of sells, and a handful of buyer wallets make hundreds of buys every 5 minutes. That volume pushed the pair onto the unusual-activity screens. Real new-buyer growth stalled after the first roughly 30 minutes."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Only the name and ticker link it to the theme. It is a relaunch deployed through a sniping/deploy tool (j7tracker) and linked to a recycled X account's status post. Nothing marks it as the official or first token.",
+   "competing_tokens": "GKeUT73\u2026 GROK (about $3.1M market cap, older). 6HU4Cm\u2026 Grokification (about $2.7M market cap, $216k volume in the last hour, created about 34 hours earlier, the likely canonical Grokification). 4mkQPR\u2026 Grokification (dead, 0 liquidity).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "28 unique sellers made about 4,400 sells. 10\u201311 unique buyers made 764\u20131,901 buys in the 5 and 15 minute windows. Turnover is 44x liquidity in one hour. GMGN flags 10 bundler wallets and 5 snipers. The token image is duplicated 173 times. The project X account is recycled (6 renames), and the dev's X account has launched 13 tokens. It was deployed through j7tracker. The LP-unlocked danger flag appears on one market.",
+   "uncertainty": "The holder concentration data conflicts: GeckoTerminal's top 10 at 98.9% probably includes pool accounts, while GMGN puts it at 9.5%. The 1,081 unique buyers could include some real retail buyers who came in during the first 30 minutes. There is no X data to check whether the linked tweet went viral."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One of the top markets has 0% of its LP locked, and RugCheck flags 'Large Amount of LP Unlocked' as a danger",
+    "Volume is dominated by bots or wash trading, so real depth is far below what volume suggests",
+    "A copycat of an established same-name token that is bigger and older",
+    "Top-10 concentration figures conflict (98.9% vs 9.5%)",
+    "The creator still holds about 3.6% of supply",
+    "Only a few LP providers"
+   ]
+  },
+  "counterargument": "Grok and xAI memes can go viral fast. If the linked tweet takes off, this pair's low market cap (about $0.73M, against $2.7M for the older Grokification) could attract rotation from traders looking for a cheaper version. Roughly 1,000 unique buyers in the first 30 minutes is not trivial. Liquidity of about $140k is healthy for this size, the mint and freeze authorities are renounced, and GMGN reports the LP burned. Bot volume can keep the token visible on trending lists long enough to pull in more real buyers.",
+  "unknowns": [
+   "Contents and reach of the linked X status (lebombjam)",
+   "Whether the ~1,081 buyers are real or a sybil set",
+   "Which accounts make up the top-10 holders, and the true pool share",
+   "Whether the unlocked LP can be pulled by the deployer",
+   "Whether the older Grokification token is absorbing the flow instead"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "There was no internet access in this condition. The assessment is based only on the evidence packet."
+  },
+  "thesis": "This is a copycat \"Grokification\" launch through a deploy/snipe tool, linked to a recycled X account. Its headline volume is mostly bot or wash trading by a few wallets (28 sellers made about 4,400 sells), and new-buyer breadth has already collapsed to about 10 per 5 minutes. A larger and older token with the same name is the likely canonical one. Attention will probably fade over the next 6 hours, with a meaningful chance of a dump or liquidity pull.",
+  "continuation_view": "strong_fade",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4217,
+ "type": "result",
+ "duration_ms": 24719,
+ "uuid": "5a221c0e-c570-4de5-a2b1-307be455eaf1",
+ "ttft_stream_ms": 729,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 729,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

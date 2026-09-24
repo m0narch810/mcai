@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 64305,
+ "stop_reason": "tool_use",
+ "session_id": "de727b7a-3dc8-4513-b18d-ab40dbe9219d",
+ "total_cost_usd": 0.3355168,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 17801,
+  "cache_read_input_tokens": 40564,
+  "output_tokens": 3732,
+  "output_tokens_details": {
+   "thinking_tokens": 640
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17801,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2751,
+    "cache_read_input_tokens": 16062,
+    "cache_creation_input_tokens": 1739,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1739
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3732,
+   "cacheReadInputTokens": 40564,
+   "cacheCreationInputTokens": 17801,
+   "webSearchRequests": 0,
+   "costUSD": 0.2251928,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 640,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 50369,
+   "outputTokens": 1991,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11032399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"OBIE (\\\"Broke Boy Obie\\\") is a token that was not launched through pump.fun's bonding curve. Its address has no \\\"pump\\\" suffix, GMGN shows migrated_unix=0, and the platform is listed as unknown. The PumpSwap pool was seeded directly on 2026-09-23 at 23:32 UTC, and 0% of the LP is locked or burned (RugCheck flags it as \\\"Large Amount of LP Unlocked \u2013 danger\\\"). In about 37 minutes the price rose roughly 550% on about $1.1M of volume against about $55k of liquidity (h1 turnover about 20x). The flow looks strongly engineered. GeckoTerminal counts 2,136 unique buyers but only 129 unique sellers, and those 129 sellers made 2,230 sells, which suggests a few wallets dumping into many small buys. GMGN tags 106 bundler wallets, puts the top bundler trader share at 50.7%, and finds 72 graph insiders across one transfer network and one trade network. At least 10 other tokens share the same name and ticker. Two of them already did $125k and $1.8M of h1 volume and now show $3 and $23 of liquidity, which means they were rugged in the last hour. Only 2 GMGN page visits. The only social link is a single X post (xcad3z/status/2102899793378804098), which I could not open (HTTP 402). Web searches found nothing about \\\"Broke Boy Obie\\\" as a meme, a person or an event.\",\"narrative\":{\"description\":\"Apparently a meme about a persona called 'Broke Boy Obie' / 'The Memecoin Trader', probably taken from one X post or clip. I could not identify the underlying person or event.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no evidence of organic spread. The attention seems to come from a rapid wave of same-name launches, probably from one X post, with the volume driven by bots and bundlers.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most liquidity of all the same-name tokens, and it is the one GeckoTerminal links to the xcad3z X post. Nothing marks it as the official token.\",\"competing_tokens\":\"10+ OBIE / Broke Boy Obie tokens were created within about 15 minutes of each other. EkXTao... (h1 volume $1.8M, now $23 liquidity) and GQ59WK... (h1 volume $125k, $3 liquidity) have already been drained, and 8ipUAs...pump is still live at $5k mcap.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"106 bundler wallets, with bundlers making up 50.7% of the top traders. 72 graph insiders. 2,136 unique buyers against only 129 unique sellers who made 2,230 sells, so a few wallets are dumping into many small buys. No smart-money or KOL wallets, and only 2 GMGN page visits. The LP was self-seeded and is fully unlocked. Same-name tokens that ran the same way were rugged earlier in the same hour.\",\"uncertainty\":\"I could not read the X post or any X discussion, so a real viral clip may exist behind it.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and the creator seeded the pool, so liquidity can be pulled at any moment\",\"Bundler and insider networks control a large share of trading\",\"Volume far exceeds liquidity (about 20x per hour), which looks like wash or bot volume\",\"Several same-name clones were already rugged within the hour\",\"It is not a pump.fun graduate, so the pool comes from a custom deployment\"]},\"counterargument\":\"The price is still climbing (+20% in the last 5 minutes on DexScreener) and the liquidity of about $55k is real. If the underlying X post is actually viral, this surviving pool with the most liquidity could become the default OBIE, and a 2x from about $65k to $130k mcap is a small absolute move that momentum traders could deliver fast.\",\"unknowns\":[\"What the xcad3z X post says and how widely it spread\",\"Who controls the LP tokens\",\"Whether the rugged clones share a deployer with this token\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The X post fetch returned 402. Searches for the contract address, the name and the ticker returned nothing relevant. DexScreener and GeckoTerminal APIs were fetched. The Reddit and news results come from general web searches that returned nothing relevant; I did not search Telegram or Discord.\"},\"thesis\":\"A custom-deployed pool with unlocked LP, heavy bundler activity and volume concentrated in a few selling wallets, riding a flood of same-name launches whose siblings were already drained. This looks like a serial rug pattern, and I found no verifiable organic narrative.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/8bbx8bPqP4xUwrkppLebhuYT1iBFFosXbZuXzkLnTtod\",\"what\":\"Live price, liquidity and volume; no socials listed\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/F73nJqKFNTxf9BRrtmvfBiA8BATyZKK1LSibapwqFSjW/ohlcv/minute?aggregate=5&limit=12\",\"what\":\"5-minute candles showing a steady climb on about 150k OBIE per candle\"},{\"url\":\"https://x.com/xcad3z/status/2102899793378804098\",\"what\":\"The only linked X post (inaccessible, HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "OBIE (\"Broke Boy Obie\") is a token that was not launched through pump.fun's bonding curve. Its address has no \"pump\" suffix, GMGN shows migrated_unix=0, and the platform is listed as unknown. The PumpSwap pool was seeded directly on 2026-09-23 at 23:32 UTC, and 0% of the LP is locked or burned (RugCheck flags it as \"Large Amount of LP Unlocked \u2013 danger\"). In about 37 minutes the price rose roughly 550% on about $1.1M of volume against about $55k of liquidity (h1 turnover about 20x). The flow looks strongly engineered. GeckoTerminal counts 2,136 unique buyers but only 129 unique sellers, and those 129 sellers made 2,230 sells, which suggests a few wallets dumping into many small buys. GMGN tags 106 bundler wallets, puts the top bundler trader share at 50.7%, and finds 72 graph insiders across one transfer network and one trade network. At least 10 other tokens share the same name and ticker. Two of them already did $125k and $1.8M of h1 volume and now show $3 and $23 of liquidity, which means they were rugged in the last hour. Only 2 GMGN page visits. The only social link is a single X post (xcad3z/status/2102899793378804098), which I could not open (HTTP 402). Web searches found nothing about \"Broke Boy Obie\" as a meme, a person or an event.",
+  "narrative": {
+   "description": "Apparently a meme about a persona called 'Broke Boy Obie' / 'The Memecoin Trader', probably taken from one X post or clip. I could not identify the underlying person or event.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no evidence of organic spread. The attention seems to come from a rapid wave of same-name launches, probably from one X post, with the volume driven by bots and bundlers."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most liquidity of all the same-name tokens, and it is the one GeckoTerminal links to the xcad3z X post. Nothing marks it as the official token.",
+   "competing_tokens": "10+ OBIE / Broke Boy Obie tokens were created within about 15 minutes of each other. EkXTao... (h1 volume $1.8M, now $23 liquidity) and GQ59WK... (h1 volume $125k, $3 liquidity) have already been drained, and 8ipUAs...pump is still live at $5k mcap.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "106 bundler wallets, with bundlers making up 50.7% of the top traders. 72 graph insiders. 2,136 unique buyers against only 129 unique sellers who made 2,230 sells, so a few wallets are dumping into many small buys. No smart-money or KOL wallets, and only 2 GMGN page visits. The LP was self-seeded and is fully unlocked. Same-name tokens that ran the same way were rugged earlier in the same hour.",
+   "uncertainty": "I could not read the X post or any X discussion, so a real viral clip may exist behind it."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and the creator seeded the pool, so liquidity can be pulled at any moment",
+    "Bundler and insider networks control a large share of trading",
+    "Volume far exceeds liquidity (about 20x per hour), which looks like wash or bot volume",
+    "Several same-name clones were already rugged within the hour",
+    "It is not a pump.fun graduate, so the pool comes from a custom deployment"
+   ]
+  },
+  "counterargument": "The price is still climbing (+20% in the last 5 minutes on DexScreener) and the liquidity of about $55k is real. If the underlying X post is actually viral, this surviving pool with the most liquidity could become the default OBIE, and a 2x from about $65k to $130k mcap is a small absolute move that momentum traders could deliver fast.",
+  "unknowns": [
+   "What the xcad3z X post says and how widely it spread",
+   "Who controls the LP tokens",
+   "Whether the rugged clones share a deployer with this token"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The X post fetch returned 402. Searches for the contract address, the name and the ticker returned nothing relevant. DexScreener and GeckoTerminal APIs were fetched. The Reddit and news results come from general web searches that returned nothing relevant; I did not search Telegram or Discord."
+  },
+  "thesis": "A custom-deployed pool with unlocked LP, heavy bundler activity and volume concentrated in a few selling wallets, riding a flood of same-name launches whose siblings were already drained. This looks like a serial rug pattern, and I found no verifiable organic narrative.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/8bbx8bPqP4xUwrkppLebhuYT1iBFFosXbZuXzkLnTtod",
+    "what": "Live price, liquidity and volume; no socials listed"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/F73nJqKFNTxf9BRrtmvfBiA8BATyZKK1LSibapwqFSjW/ohlcv/minute?aggregate=5&limit=12",
+    "what": "5-minute candles showing a steady climb on about 150k OBIE per candle"
+   },
+   {
+    "url": "https://x.com/xcad3z/status/2102899793378804098",
+    "what": "The only linked X post (inaccessible, HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 2205,
+ "type": "result",
+ "duration_ms": 47674,
+ "uuid": "0becd7fc-c427-41a6-bb88-9da20b1e4639",
+ "ttft_stream_ms": 700,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 700,
+ "queued_turn_count": 0,
+ "result_index": 0
+}
