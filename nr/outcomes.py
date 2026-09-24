@@ -16,7 +16,7 @@ import math
 from datetime import timedelta
 
 from . import db, sources
-from .config import PREREG
+from .config import PREREG, PREREG_VERSION
 
 P = PREREG
 
@@ -44,7 +44,7 @@ def take_entry(c: dict):
     if "C" in reps and not reps["C"]["late"]:
         from . import notify
         rep = json.loads(reps["C"]["report_json"])
-        if rep["continuation_view"] in notify.BULLISH or notify._all():
+        if notify.is_trade(rep) or notify._all():
             sk = json.loads(reps["S"]["report_json"]) if "S" in reps else None
             notify.entry(c, rep, sk, price, liq, mcap)
 
@@ -162,6 +162,30 @@ def _race(up_t, dn_t):
     return "up" if up_t < dn_t else "down"
 
 
+def bracket(bars, t_fill, entry_ref, target, stop, max_minutes):
+    """The v3 trade: take profit at entry*(1+target), stop at entry*(1+stop),
+    else exit at the last close before t_fill + max_minutes.
+
+    Returns (result, exit_ts, exit_price). Strictly sequential on 1-min bars.
+    The stop is checked first, so a bar containing both levels is a loss. On
+    the fill bar only the adverse side is knowable, so the target cannot fill
+    there. The target is a resting limit and fills only if price traded
+    THROUGH it (high > level), at the level. The stop is a market order once
+    touched, filled at the worse of the level, the bar's open (a gap through)
+    and its close - never better than the level."""
+    up = entry_ref * (1 + target)
+    dn = entry_ref * (1 + stop)
+    end = t_fill + max_minutes * 60
+    for ts, o, h, l, c, _ in bars:
+        if ts + 60 <= t_fill or ts >= end:
+            continue
+        if l <= dn:
+            return "stop", ts + 60, min(dn, o, c)
+        if not (ts <= t_fill < ts + 60) and h > up:
+            return "target", ts + 60, up
+    return "time", end, _last_close_at(bars, end)
+
+
 def _sigma_hourly(bars, t_fill):
     """Pre-entry realized vol: 1-min log returns on a forward-filled grid over
     the PREREG window ending at T_D, scaled to 1 hour."""
@@ -201,6 +225,13 @@ def evaluate(c: dict, max_minutes: int | None = None) -> dict:
     out = {"candidate_id": cid, "bars": len(bars), "fee": fee,
            "position_usd": P["position_usd"], "notes": []}
 
+    unfillable = not e or not e["ok"] or not e["liquidity_usd"]
+    if unfillable and P.get("unfillable_is_no_trade") and c.get("prereg_version") == PREREG_VERSION:
+        # Nothing to buy into: no position is opened, so nothing is won or lost.
+        out.update(entry_ok=False, unfillable=True, returns={str(h): 0.0 for h in horizons},
+                   bracket={"result": "unfilled", "net": 0.0})
+        out["notes"].append("no pair or no liquidity at T_D: unfillable, no trade")
+        return out
     if not e or not e["ok"]:
         out.update(entry_ok=False, returns={str(h): -1.0 for h in horizons})
         out["notes"].append("no executable quote at T_D: counted as total loss")
@@ -248,6 +279,19 @@ def evaluate(c: dict, max_minutes: int | None = None) -> dict:
         exits[str(h)] = {"exit_ref": px, "exit_liquidity": liq_out, "pair_present": present,
                          "gross_return": round(px / entry_ref - 1, 4) if px else None}
     out["returns"], out["exits"] = returns, exits
+
+    bmax = P.get("bracket_max_minutes")
+    if bmax and (max_minutes is None or max_minutes >= bmax):
+        res, ts, px = bracket(bars, t_fill, entry_ref, P["bracket_target"],
+                              P["bracket_stop"], bmax)
+        lo = liq_at(db.iso(db.parse_iso(c["t_decision"]) + timedelta(seconds=ts - t_fill)))
+        liq_out = lo["liquidity_usd"] if lo and lo["present"] else None
+        if px is None and liq_out:
+            px = lo["price_usd"]
+        out["bracket"] = {"result": res, "exit_min": round((ts - t_fill) / 60, 1),
+                          "exit_ref": px, "exit_liquidity": liq_out,
+                          "net": round(_round_trip(entry_ref, px, e["liquidity_usd"],
+                                                   liq_out, fee), 4)}
 
     liqs = [o["liquidity_usd"] for o in obs if o["present"] and o["liquidity_usd"]]
     out["min_liquidity_24h"] = min(liqs) if liqs else None

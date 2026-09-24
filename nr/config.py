@@ -108,6 +108,32 @@ PREREG = {
     "pct_stops": [-0.2, -0.3, -0.5],
     "pre_entry_sigma_minutes": 60,
 
+    # ---- v3: the trade being forecast ------------------------------------------
+    # v2 asked "will attention persist over 6h" and scored a 6h hold. In this
+    # universe ~60% of coins have their LP pulled within 6h and ~1 in 7 double
+    # first, so a hold-to-6h label cannot tell a runner from a rug and Claude
+    # faded everything, runners included. v3 asks Claude for a probability of
+    # one concrete bracket trade and scores exactly that trade:
+    #   buy at T_D, take profit at +100%, stop at -50%, else sell at 6h.
+    # +100%/-50% is symmetric in log space (x2 / x0.5), so for a driftless
+    # price the chance of hitting the target first is 0.5 - a known null.
+    # Sequential on 1-min bars; same bar = loss; a pulled LP is -100%, not a
+    # filled stop. These levels were fixed from the payoff, not the data.
+    "bracket_target": 1.0,
+    "bracket_stop": -0.5,
+    "bracket_max_minutes": 360,
+    # Trade iff Claude's p_runner >= this. Break-even hit rate for +100% vs
+    # -50% is 1/3; 35 adds a margin for costs. Derived from the payoff only.
+    "trade_p_runner_min": 35,
+    # A pool with no liquidity (or no pair) at T_D cannot be bought. v2
+    # scored those as -100%; v3 records them as unfilled (net 0, no trade)
+    # and reports how many there were.
+    "unfillable_is_no_trade": True,
+    # The skeptic never changed a verdict in v2 (it only ever agreed on fade)
+    # and cost ~$0.40 a run. Budget, not the random draw, was deciding which
+    # coins got researched, so its spend goes to researching more coins.
+    "skeptic_enabled": False,
+
     # ---- Evidence sources (part of the experiment definition) -------------------------
     # TwitterAPI.io (paid) is off: the user is staying on free data. Flip
     # x_social_enabled to True to re-enable; that starts a new version.

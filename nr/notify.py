@@ -9,7 +9,7 @@ import time
 
 import requests
 
-from .config import DATA_DIR, RUNTIME
+from .config import DATA_DIR, PREREG, RUNTIME
 
 _q: "queue.Queue[dict]" = queue.Queue(maxsize=200)
 _started = False
@@ -17,6 +17,23 @@ _last_error_sent = 0.0
 
 GREEN, RED, GREY, BLUE, AMBER = 0x2ECC71, 0xE74C3C, 0x95A5A6, 0x3498DB, 0xF1C40F
 BULLISH = ("continue", "strong_continue")
+
+
+def is_trade(rep: dict | None) -> bool:
+    """Would this report open the position? v3: p_runner at or above the
+    pre-registered threshold. Older reports: a continue call."""
+    if not rep:
+        return False
+    if rep.get("p_runner") is not None:
+        return rep["p_runner"] >= PREREG.get("trade_p_runner_min", 101)
+    return rep.get("continuation_view") in BULLISH
+
+
+def _label(rep: dict) -> str:
+    v = rep["continuation_view"].replace("_", " ")
+    if rep.get("p_runner") is None:
+        return v
+    return f"{rep['p_runner']}% runner / {rep.get('p_rug', '?')}% rug ({v})"
 
 
 def _all() -> bool:
@@ -149,10 +166,10 @@ def _verdict_line(c: dict, rep: dict, late: bool, cost: float):
     """One compact line per researched candidate, fades included. A night of
     nothing but fades must not look the same as a night of nothing at all."""
     view = rep["continuation_view"]
-    if view in BULLISH:
+    if is_trade(rep):
         return          # the full ENTRY card covers these
     t = json.loads(c["trigger_json"]) if isinstance(c.get("trigger_json"), str) else {}
-    send(f"· #{c['id']} {c.get('symbol')}: {view.replace('_', ' ')}",
+    send(f"· #{c['id']} {c.get('symbol')}: {_label(rep)}",
          rep["thesis"][:300], VIEW_COLOR.get(view, GREY),
          [("Setup", f"mcap ${t.get('mcap_usd', 0):,.0f} · liq ${t.get('liquidity_usd', 0):,.0f} · "
                     f"age {t.get('pair_age_min', 0):.0f}m · turnover {t.get('h1_turnover', 0)}x/h", False),
@@ -201,7 +218,6 @@ def research_paused(reason: str | None):
 def entry(c: dict, rep: dict, skeptic: dict | None, price: float | None,
           liq: float | None, mcap: float | None):
     """One message per token Claude would take: verdict + paper entry."""
-    view = rep["continuation_view"]
     fields = [
         ("Entry price", f"${price:.8g}" if price else "n/a", True),
         ("Market cap", f"${mcap:,.0f}" if mcap else "n/a", True),
@@ -216,19 +232,23 @@ def entry(c: dict, rep: dict, skeptic: dict | None, price: float | None,
                        f"{skeptic['continuation_view'].replace('_', ' ')}: "
                        f"{skeptic['strongest_bear_case']}", False))
     fields.append(_links(c))
-    send(f"🟢 ENTRY #{c['id']} {c.get('symbol')}: Claude says {view.replace('_', ' ')}",
-         rep["thesis"] + "\n\n$250 paper position, main measure = 6h result.",
+    tp, sl = PREREG.get("bracket_target"), PREREG.get("bracket_stop")
+    plan = (f"$250 paper position: take profit {tp:+.0%}, stop {sl:+.0%}, else sell at 6h."
+            if tp is not None else "$250 paper position, main measure = 6h result.")
+    send(f"🟢 ENTRY #{c['id']} {c.get('symbol')}: Claude says {_label(rep)}",
+         rep["thesis"] + "\n\n" + plan,
          GREEN, fields, url=_dex(c["token"]))
 
 
-def outcome(c: dict, out: dict, view: str | None):
-    if not _all() and view not in BULLISH:
+def outcome(c: dict, out: dict, rep: dict | None):
+    if not _all() and not is_trade(rep):
         return
+    view = _label(rep) if rep else None
     r = out.get("returns", {})
     fmt = lambda k: "n/a" if r.get(k) is None else f"{r[k]:+.1%}"
     net = r.get("1440")
     color = GREY if net is None else GREEN if net > 0 else RED
-    who = f"Claude said **{view.replace('_', ' ')}**" if view else "control (not researched)"
+    who = f"Claude said **{view}**" if view else "control (not researched)"
     send(f"📈 #{c['id']} {c.get('symbol')}: final 24h result {fmt('1440')} (6h {fmt('360')})",
          f"{who}. Net of fees, impact and slippage on a $250 paper position.", color, [
              ("1h", fmt("60"), True), ("6h", fmt("360"), True), ("24h", fmt("1440"), True),
@@ -239,13 +259,32 @@ def outcome(c: dict, out: dict, view: str | None):
          ], url=_dex(c["token"]))
 
 
-def interim(c: dict, out: dict, view: str):
+def interim(c: dict, out: dict, rep: dict):
     """Primary-horizon (6h) result, posted as soon as it is known."""
     r = out.get("returns", {}).get("360")
-    if r is None or (not _all() and view not in BULLISH):
+    if r is None or (not _all() and not is_trade(rep)):
         return
     pct = lambda k: "n/a" if out.get(k) is None else f"{out[k]:+.0%}"
     r1 = out["returns"].get("60")
+    view = rep["continuation_view"]
+    b = out.get("bracket")
+    if b and rep.get("p_runner") is not None:
+        names = {"target": "hit +100% first", "stop": "hit the stop first",
+                 "time": "neither level, sold at 6h", "unfilled": "could not be bought"}
+        took = is_trade(rep)
+        good = None if b["result"] == "unfilled" else (b["net"] > 0) == took
+        send(f"⏱️ #{c['id']} {c.get('symbol')}: trade {names.get(b['result'], b['result'])}, "
+             f"net {b['net']:+.1%}",
+             f"Claude said **{_label(rep)}**, so the position was "
+             f"{'TAKEN' if took else 'skipped'}"
+             f"{'' if good is None else (' ✅' if good else ' ❌')}.",
+             GREEN if b["net"] > 0 else RED if b["net"] < 0 else GREY, [
+                 ("Exit after", f"{b.get('exit_min', 0):.0f} min", True),
+                 ("Hold-to-6h", f"{r:+.1%}", True),
+                 ("Max up 6h", pct("mfe_6h"), True),
+                 _links(c),
+             ], url=_dex(c["token"]))
+        return
     if view == "neutral":
         verdict = "➖ Claude was neutral"
     elif (r > 0) == (view in ("continue", "strong_continue")):

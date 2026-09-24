@@ -110,6 +110,73 @@ def _hour_coverage_line() -> str:
     return f"Hours observed (7d, UTC 00->23): {bar}   (# mostly up, - partial, . never)"
 
 
+def _p(rep_row, key="p_runner"):
+    """A usable, on-time v3 score from a reports row, else None."""
+    if not rep_row or not rep_row["ok"] or rep_row["late"]:
+        return None
+    return json.loads(rep_row["report_json"]).get(key)
+
+
+def _bracket_section(done, ctrl) -> list[str]:
+    """v3 primary readout: the pre-registered bracket trade (+100% / -50% /
+    6h). Empty for versions without a bracket."""
+    rows = [c for c in done if c["outcome"].get("bracket")]
+    if not rows:
+        return []
+    thr = PREREG["trade_p_runner_min"]
+    hit = lambda c: c["outcome"]["bracket"]["result"] == "target"
+    net = lambda c: c["outcome"]["bracket"]["net"]
+    filled = [c for c in rows if c["outcome"]["bracket"]["result"] != "unfilled"]
+    L = ["## 1b. v3 trading test: buy at T_D, +100% target, -50% stop, else 6h (PRIMARY)"]
+    res = Counter(c["outcome"]["bracket"]["result"] for c in rows)
+    L.append(f"  All candidates: {dict(res)}  (unfilled = no pair/liquidity at T_D, no trade)")
+    cf = [c for c in ctrl if c in filled]
+    dec = [c for c in cf if c["outcome"]["bracket"]["result"] in ("target", "stop")]
+    if dec:
+        up = sum(map(hit, dec)) / len(dec)
+        flag = ("n too small to judge" if len(dec) < 30 else
+                "INVESTIGATE: above a driftless coin" if up > 0.6 else "OK")
+        L.append(f"  Null check, control pool: target-first {up:.3f} of decided (n={len(dec)}) -> {flag}")
+        L.append("    +100%/-50% is log-symmetric, so a driftless price gives 0.5. Memecoin decay "
+                 "and rugs should pull this well BELOW 0.5; above ~0.6 suggests a fill leak.")
+    if cf:
+        L.append(f"  Buy-everything baseline (control, filled): mean net {st.mean(map(net, cf)):+.3f}  "
+                 f"median {st.median(map(net, cf)):+.3f}  target-hit {sum(map(hit, cf)) / len(cf):.2f}  "
+                 f"(n={len(cf)})")
+    for arm in ("C", "P"):
+        sc = [(c, _p((c.get("reports") or {}).get(arm))) for c in filled]
+        sc = [(c, v) for c, v in sc if v is not None]
+        if not sc:
+            continue
+        vals = [v for _, v in sc]
+        a = auc(vals, [hit(c) for c, _ in sc])
+        ci = boot_ci(vals, [hit(c) for c, _ in sc])
+        L.append(f"  Arm {arm}: n={len(sc)}  distinct p_runner values {len(set(vals))}  "
+                 f"AUC(p_runner, target hit) {_fmt(a)} [{_fmt(ci[0]) if ci else 'n/a'}, "
+                 f"{_fmt(ci[1]) if ci else 'n/a'}]")
+        take = [c for c, v in sc if v >= thr]
+        skip = [c for c, v in sc if v < thr]
+        for lab, grp in ((f"TAKEN (p_runner >= {thr})", take), ("skipped", skip)):
+            if grp:
+                L.append(f"    {lab:<22} n={len(grp):3d}  target-hit {sum(map(hit, grp)) / len(grp):.2f}  "
+                         f"mean net {st.mean(map(net, grp)):+.3f}  median {st.median(map(net, grp)):+.3f}  "
+                         f"P&L ${sum(map(net, grp)) * PREREG['position_usd']:+,.0f}")
+        bins = defaultdict(list)
+        for c, v in sc:
+            bins[min(v // 20 * 20, 80)].append(hit(c))
+        L.append("    calibration (p_runner bin -> observed target rate): " + ", ".join(
+            f"{k}-{k + 19}: {sum(h) / len(h):.2f} (n={len(h)})" for k, h in sorted(bins.items())))
+        rg = [(c, _p((c.get("reports") or {}).get(arm), "p_rug")) for c in filled]
+        rg = [(c, v) for c, v in rg if v is not None]
+        if rg:
+            L.append(f"    AUC(p_rug, liquidity collapse within 24h) "
+                     f"{_fmt(auc([v for _, v in rg], [bool(c['outcome'].get('liquidity_collapse')) for c, _ in rg]))}")
+    if len(filled) < MIN_N:
+        L.append(f"  n < {MIN_N}: pipeline check only, do not read the numbers.")
+    L.append("")
+    return L
+
+
 def report(version: str | None = None) -> str:
     version = version or PREREG_VERSION
     cands = _load(version)
@@ -162,6 +229,8 @@ def report(version: str | None = None) -> str:
                      f"(n={len(a)}). These should NOT differ systematically; research "
                      f"does not change the price.")
     L.append("")
+
+    L += _bracket_section(done, ctrl)
 
     # ---------------- base rates
     L.append("## 2. Base rates (all candidates, net of costs)")

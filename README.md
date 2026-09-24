@@ -39,9 +39,11 @@ every 60s   discover tokens (GeckoTerminal trending + DexScreener boosts/profile
 research    C  : Claude + web search/fetch                      T3 -> frozen T4
             P  : Claude, packet only, no internet
             C2 : independent rerun of C on 10% (self-consistency)
-            S  : skeptic, only when the pre-registered trigger fires
+            S  : skeptic (off in v3: it never changed a call; its budget
+                 researches more coins instead)
 T1 + 25m    paper entry for EVERY candidate (all arms share it)  T_D
 +20m...     liquidity snapshots for 24h
+T_D + 6h    v3 bracket trade resolved: +100% target / -50% stop / 6h exit
 T_D + 24h   outcome from 1-min bars -> post-mortem (leftover budget)
 ```
 
@@ -53,9 +55,10 @@ T_D + 24h   outcome from 1-min bars -> post-mortem (leftover budget)
 | P | Claude reading only the packet: isolates what *browsing* adds |
 | C | Claude doing real research |
 
-The primary metric is AUC of each arm's ranking against "net 6h return > 0"
-(pre-registered primary horizon; 1h and 24h are secondary),
-with bootstrap CIs, plus runner detection and results split by market-cap bucket.
+**v3 primary metric**: AUC of Claude's `p_runner` against "the bracket trade
+hit +100% before -50%", and the net P&L of the trades it would take
+(`p_runner >= 35`) against buying every control coin. See "v3" below. The v2
+metric (AUC against net 6h return > 0) is still reported as secondary.
 
 ## Integrity guarantees
 - **Pre-registration**: every threshold is in `nr/config.py` `PREREG`, hashed
@@ -105,6 +108,33 @@ live at T1". Neither references the token's own history before the last hour.
 Thresholds come from that reasoning, not from any observed return; no outcome
 data was consulted in choosing them. This is `PREREG_VERSION` `ebf0ce5fd7e7`
 and it does **not** pool with earlier versions in analysis.
+
+## v3: forecast the trade, not the vibe
+
+v2 (`ebf0ce5fd7e7`) asked "will attention persist over 6h?" and scored a 6h
+hold. Across the whole v2 pool (201 coins with a 6h result, researched or
+not): **61%** had their LP pulled within 6h (verified on trade data: volume
+stops dead the minute liquidity reads $0), **7%** were up at 6h, but **~27%**
+touched +50% and **~14%** doubled first. Claude faded every coin, which was
+right on the median and wrong on the tail: of 33 faded coins, Anthropic
+(+1225% at 6h), CT (+184%, +128%) and three coins that doubled then rugged
+were all `strong_fade` with no gradation. A 5-level label with two levels in
+use cannot rank, and a hold-to-6h outcome cannot tell a runner from a rug.
+
+v3 (`5e07836521a5`) changes the question, not the coins (same universe rule):
+- Claude outputs `p_runner` (0-100): the chance a bracket trade bought at T_D
+  hits **+100% before -50%** within 6h, and `p_rug` (0-100). The prompt states
+  the measured v2 base rates instead of "most tokens are noise".
+- The trade is scored exactly as described: strictly sequential on 1-min bars,
+  stop checked first (same bar = loss), target fills only if price traded
+  through it, stop fills at the worse of level/open/close, pulled LP = -100%.
+- A position is taken iff `p_runner >= 35`: the break-even hit rate of a
+  +100%/-50% payoff is 1/3, plus a margin for costs. Nothing was fitted.
+- +100%/-50% is log-symmetric, so a driftless coin hits the target first half
+  the time (unit-tested); the readout checks the control pool against that.
+- A pool with no pair or $0 liquidity at T_D is recorded as **unfilled** (no
+  trade, net 0) instead of -100%: you cannot buy into an empty pool.
+- Reading rules were written before any v3 outcome: `data/v3_prereg.md`.
 
 ## Known limitations (Phase 1)
 - **No X post data** (no paid X API). Claude reaches X only through web

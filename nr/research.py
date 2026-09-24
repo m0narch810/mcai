@@ -205,7 +205,10 @@ def freeze(cid: int, arm: str, t3: str, t_decision: str, res: dict):
     db.ledger("report", body | {"sha256": h})
     _meter(f"research_{arm}", cid, res.get("cost") or 0.0)
     status = "OK" if res["ok"] else f"FAILED ({res.get('error')})"
-    view = (res.get("obj") or {}).get("continuation_view", "")
+    obj = res.get("obj") or {}
+    view = obj.get("continuation_view", "")
+    if obj.get("p_runner") is not None:
+        view += f" p_runner={obj['p_runner']} p_rug={obj.get('p_rug')}"
     db.log("info", f"report #{cid} arm={arm} {status} {view} late={late} "
                    f"cost=${res.get('cost') or 0:.2f}")
     if res["ok"] and arm in ("C", "S"):
@@ -266,6 +269,8 @@ def research_candidate(c: dict):
         freeze(cid, a, t3, td, res)
 
     c_res = results["C"]
+    if not PREREG.get("skeptic_enabled", True):
+        return
     if not (c_res["ok"] and skeptic_triggered(c_res["obj"])):
         return
     left = _remaining_s(td)

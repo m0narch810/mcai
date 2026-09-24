@@ -12,6 +12,13 @@
 import json
 import sys
 
+# Windows consoles default to cp1252; token names and model text often aren't.
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
 from nr import db
 from nr.config import PREREG, PREREG_VERSION, RUNTIME
 
@@ -21,17 +28,21 @@ def cmd_status():
     db.init()
     c = db.conn()
     q = lambda s, *a: c.execute(s, a).fetchone()[0]
-    print(f"prereg {PREREG_VERSION}")
-    print(f"candidates      {q('SELECT COUNT(*) FROM candidates')}")
-    for r in c.execute("SELECT research_status, COUNT(*) FROM candidates GROUP BY 1"):
+    V = PREREG_VERSION
+    cur = "FROM candidates c WHERE c.prereg_version=?"
+    print(f"prereg {V}  (counts below are this version only; older versions are archived)")
+    print(f"candidates      {q('SELECT COUNT(*) ' + cur, V)}")
+    for r in c.execute("SELECT research_status, COUNT(*) " + cur + " GROUP BY 1", (V,)):
         print(f"  {r[0]:<14}{r[1]}")
-    print(f"packets         {q('SELECT COUNT(*) FROM packets')}")
-    for r in c.execute("SELECT arm, SUM(ok), SUM(late), COUNT(*) FROM reports GROUP BY arm"):
+    join = " JOIN candidates c ON c.id=t.candidate_id AND c.prereg_version=?"
+    print(f"packets         {q('SELECT COUNT(*) FROM packets t' + join, V)}")
+    for r in c.execute("SELECT arm, SUM(ok), SUM(late), COUNT(*) FROM reports t" + join +
+                       " GROUP BY arm", (V,)):
         print(f"reports {r[0]:<3}     ok={r[1]} late={r[2]} total={r[3]}")
-    print(f"entries         {q('SELECT COUNT(*) FROM entries WHERE ok=1')} ok, "
-          f"{q('SELECT COUNT(*) FROM entries WHERE ok=0')} failed/missed")
-    print(f"outcomes        {q('SELECT COUNT(*) FROM outcomes')}")
-    print(f"postmortems     {q('SELECT COUNT(*) FROM postmortems WHERE ok=1')}")
+    print(f"entries         {q('SELECT COUNT(*) FROM entries t' + join + ' WHERE t.ok=1', V)} ok, "
+          f"{q('SELECT COUNT(*) FROM entries t' + join + ' WHERE t.ok=0', V)} failed/missed")
+    print(f"outcomes        {q('SELECT COUNT(*) FROM outcomes t' + join, V)}")
+    print(f"postmortems     {q('SELECT COUNT(*) FROM postmortems t' + join + ' WHERE t.ok=1', V)}")
     print(f"coverage        {db.coverage(24):.0%} of last 24h observed, "
           f"{db.coverage(168):.0%} of last 7d")
     print(f"budget          24h ${spent(24):.2f}/{RUNTIME['daily_budget_usd']}  "
@@ -119,7 +130,8 @@ def cmd_selftest():
               f"err={res.get('error')}")
         if res["ok"]:
             r = res["obj"]
-            print(f"  continuation={r['continuation_view']} conf={r['research_confidence']} "
+            print(f"  p_runner={r.get('p_runner')} p_rug={r.get('p_rug')} "
+                  f"continuation={r['continuation_view']} conf={r['research_confidence']} "
                   f"narrative={r['narrative']['potential']} conn={r['token_connection']['assessment']} "
                   f"feas={r['market_feasibility']['assessment']} auth={r['authenticity']['assessment']}")
             print(f"  thesis: {r['thesis'][:400]}")

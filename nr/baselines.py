@@ -107,7 +107,10 @@ def ordinal(value: str, scale: list[str]) -> float:
 
 
 def arm_claude(report: dict) -> float:
-    """Primary Claude score = the frozen continuation_view ordinal."""
+    """Primary Claude score: p_runner (v3) as 0..1, else the frozen
+    continuation_view ordinal (v1/v2 reports have no p_runner)."""
+    if report.get("p_runner") is not None:
+        return report["p_runner"] / 100
     return ordinal(report["continuation_view"], CONTINUATION)
 
 

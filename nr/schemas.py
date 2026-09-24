@@ -13,14 +13,15 @@ CONFIDENCE = ["low", "medium", "high"]
 
 _str = {"type": "string"}
 _strs = {"type": "array", "items": _str}
+_pct = {"type": "integer", "minimum": 0, "maximum": 100}
 
 REPORT = {
     "type": "object",
     "additionalProperties": False,
     "required": ["what_is_happening", "narrative", "token_connection", "authenticity",
                  "market_feasibility", "counterargument", "unknowns", "source_coverage",
-                 "thesis", "continuation_view", "research_confidence",
-                 "observation_window", "sources"],
+                 "thesis", "continuation_view", "p_runner", "p_rug",
+                 "research_confidence", "observation_window", "sources"],
     "properties": {
         "what_is_happening": _str,
         "narrative": {
@@ -70,6 +71,10 @@ REPORT = {
                            "notes": _str}},
         "thesis": _str,
         "continuation_view": {"type": "string", "enum": CONTINUATION},
+        # v3 primary score: % chance the bracket trade hits +100% before -50%.
+        "p_runner": _pct,
+        # % chance liquidity is pulled or the pair dies within 6h.
+        "p_rug": _pct,
         "research_confidence": {"type": "string", "enum": CONFIDENCE},
         "observation_window": {"type": "string", "enum": ["1h", "6h", "24h"]},
         "sources": {"type": "array", "items": {
@@ -145,5 +150,10 @@ def validate(obj, schema) -> list[str]:
                 errs.append(f"{path}: expected string")
             elif "enum" in s and o not in s["enum"]:
                 errs.append(f"{path}: {o!r} not in {s['enum']}")
+        elif t == "integer":
+            if not isinstance(o, int) or isinstance(o, bool):
+                errs.append(f"{path}: expected integer")
+            elif not s.get("minimum", o) <= o <= s.get("maximum", o):
+                errs.append(f"{path}: {o} outside [{s.get('minimum')}, {s.get('maximum')}]")
     walk(obj, schema, "$")
     return errs

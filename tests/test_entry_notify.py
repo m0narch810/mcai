@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from nr.config import PREREG  # noqa: E402
 from nr import config
 
 TMP = Path(tempfile.mkdtemp())
@@ -25,7 +26,7 @@ def _fake_quote(pair):
     return {"priceUsd": "0.001", "liquidity": {"usd": 50000}, "marketCap": 400000}
 
 
-def make(cid, view, late=False, skeptic=False):
+def make(cid, view, late=False, skeptic=False, p_runner=None):
     c = db.conn()
     c.execute("INSERT INTO candidates (id,prereg_version,token,symbol,pair_address,t1_detected,t_decision,"
               "trigger_json,research_draw,research_status,rerun_draw) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
@@ -33,7 +34,7 @@ def make(cid, view, late=False, skeptic=False):
                "2026-01-01T00:25:00.000000Z", "{}", 0.1, "selected", 0.9))
     td = "2000-01-01T00:00:00.000000Z" if late else "9999-01-01T00:00:00.000000Z"
     research.freeze(cid, "C", "2026-01-01T00:01:00.000000Z", td,
-                    {"ok": True, "obj": fake_report(view), "cost": 0})
+                    {"ok": True, "obj": fake_report(view, p_runner), "cost": 0})
     if skeptic:
         research.freeze(cid, "S", "2026-01-01T00:02:00.000000Z", "9999-01-01T00:00:00.000000Z",
                         {"ok": True, "cost": 0, "obj": {
@@ -59,6 +60,15 @@ class EntryNotify(unittest.TestCase):
                                     (5, "strong_fade", False, False), (6, "continue", True, False)]:
             outcomes.take_entry(make(cid, view, late, sk))
         self.assertEqual(sent, [(1, "continue", True), (2, "strong_continue", False)])
+
+    def test_v3_p_runner_threshold_decides_not_the_label(self):
+        # A fade label with a high p_runner is a trade; a continue label with a
+        # low p_runner is not. The threshold is the pre-registered break-even.
+        del sent[:]
+        thr = PREREG["trade_p_runner_min"]
+        for cid, view, p in [(11, "fade", thr), (12, "continue", thr - 1), (13, "strong_fade", 90)]:
+            outcomes.take_entry(make(cid, view, p_runner=p))
+        self.assertEqual([s[0] for s in sent], [11, 13])
 
 
 if __name__ == "__main__":

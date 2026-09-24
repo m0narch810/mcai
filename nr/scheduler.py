@@ -59,10 +59,17 @@ def step_detect(pool: ThreadPoolExecutor):
             pool.submit(_research_job, c)
 
 
+# Only the current PREREG_VERSION is worked on. Older versions' rows stay in
+# the (append-only) database as an archive, but get no entries, snapshots,
+# outcomes, Discord results or post-mortems - their budget goes to the
+# live experiment.
+
+
 def step_entries():
     now = db.now_utc()
     due = _rows("SELECT c.* FROM candidates c LEFT JOIN entries e ON e.candidate_id=c.id "
-                "WHERE e.candidate_id IS NULL AND c.t_decision<=?", db.iso(now))
+                "WHERE e.candidate_id IS NULL AND c.t_decision<=? AND c.prereg_version=?",
+                db.iso(now), PREREG_VERSION)
     for c in due:
         late_s = (now - db.parse_iso(c["t_decision"])).total_seconds()
         if late_s > MISSED_ENTRY_GRACE_S:
@@ -87,7 +94,8 @@ def step_liquidity():
     now = db.now_utc()
     horizon_start = db.iso(now - timedelta(minutes=H_MAX + 30))
     open_ = _rows("SELECT c.* FROM candidates c JOIN entries e ON e.candidate_id=c.id "
-                  "WHERE e.ok=1 AND c.t_decision>=?", horizon_start)
+                  "WHERE e.ok=1 AND c.t_decision>=? AND c.prereg_version=?",
+                  horizon_start, PREREG_VERSION)
     if open_:
         _safe(outcomes.snapshot_liquidity, open_)
 
@@ -96,8 +104,8 @@ def step_outcomes():
     cutoff = db.iso(db.now_utc() - timedelta(minutes=H_MAX + 15))
     due = _rows("SELECT c.* FROM candidates c JOIN entries e ON e.candidate_id=c.id "
                 "LEFT JOIN outcomes o ON o.candidate_id=c.id "
-                "WHERE o.candidate_id IS NULL AND c.t_decision<=? "
-                "AND (e.ok=1 OR e.note NOT LIKE 'MISSED%')", cutoff)
+                "WHERE o.candidate_id IS NULL AND c.t_decision<=? AND c.prereg_version=? "
+                "AND (e.ok=1 OR e.note NOT LIKE 'MISSED%')", cutoff, PREREG_VERSION)
     for c in due[:10]:   # GeckoTerminal rate limit: spread the work
         out = _safe(outcomes.evaluate, c)
         if out is None:
@@ -107,7 +115,7 @@ def step_outcomes():
         rep = db.conn().execute("SELECT report_json FROM reports WHERE candidate_id=? "
                                 "AND arm='C' AND ok=1", (c["id"],)).fetchone()
         if rep:   # controls are summarised in the daily digest instead
-            notify.outcome(c, out, json.loads(rep[0])["continuation_view"])
+            notify.outcome(c, out, json.loads(rep[0]))
 
 
 PRIMARY = PREREG["primary_horizon_minutes"]
@@ -123,12 +131,15 @@ def step_interim():
                 "JOIN entries e ON e.candidate_id=c.id AND e.ok=1 "
                 "JOIN reports r ON r.candidate_id=c.id AND r.arm='C' AND r.ok=1 "
                 "LEFT JOIN interim_sent s ON s.candidate_id=c.id "
-                "WHERE s.candidate_id IS NULL AND c.t_decision BETWEEN ? AND ?", lo, hi)
+                "WHERE s.candidate_id IS NULL AND c.t_decision BETWEEN ? AND ? "
+                "AND c.prereg_version=?", lo, hi, PREREG_VERSION)
     for c in due[:5]:
         out = outcomes.evaluate(c, max_minutes=PRIMARY)
         db.conn().execute("INSERT OR IGNORE INTO interim_sent VALUES (?)", (c["id"],))
-        notify.interim(c, out, json.loads(c["report_json"])["continuation_view"])
-        db.log("info", f"interim #{c['id']} {c.get('symbol')} net6h={out['returns'].get(str(PRIMARY))}")
+        notify.interim(c, out, json.loads(c["report_json"]))
+        b = out.get("bracket") or {}
+        db.log("info", f"interim #{c['id']} {c.get('symbol')} net6h={out['returns'].get(str(PRIMARY))}"
+                       f" bracket={b.get('result')} {b.get('net')}")
 
 
 def step_quiet():
@@ -162,9 +173,10 @@ def step_postmortems(pool: ThreadPoolExecutor):
             or not research.session_ok()):
         return
     due = _rows("SELECT o.candidate_id, o.outcome_json FROM outcomes o "
+                "JOIN candidates c ON c.id=o.candidate_id AND c.prereg_version=? "
                 "JOIN reports r ON r.candidate_id=o.candidate_id AND r.arm='C' AND r.ok=1 "
                 "LEFT JOIN postmortems p ON p.candidate_id=o.candidate_id "
-                "WHERE p.candidate_id IS NULL LIMIT 1")
+                "WHERE p.candidate_id IS NULL LIMIT 1", PREREG_VERSION)
     for r in due:
         _pm_inflight.add(r["candidate_id"])
         pool.submit(_pm_job, r["candidate_id"], json.loads(r["outcome_json"]))
@@ -201,8 +213,12 @@ def step_digest():
         "Late/failed (24h)": q("SELECT COUNT(*) FROM reports WHERE (late=1 OR ok=0) AND t4_frozen>=?", since),
         "Researched since last yes": q(
             "SELECT COUNT(*) FROM reports WHERE arm='C' AND ok=1 AND id > COALESCE((SELECT MAX(id) "
-            "FROM reports WHERE arm='C' AND ok=1 AND json_extract(report_json,'$.continuation_view') "
-            "IN ('continue','strong_continue')), 0)"),
+            "FROM reports WHERE arm='C' AND ok=1 AND (json_extract(report_json,'$.continuation_view') "
+            "IN ('continue','strong_continue') OR json_extract(report_json,'$.p_runner') >= ?)), 0)",
+            PREREG.get("trade_p_runner_min", 101)),
+        "Trades taken (24h, p_runner >= threshold)": q(
+            "SELECT COUNT(*) FROM reports WHERE arm='C' AND ok=1 AND late=0 AND t4_frozen>=? "
+            "AND json_extract(report_json,'$.p_runner') >= ?", since, PREREG.get("trade_p_runner_min", 101)),
         "Outcomes total": q("SELECT COUNT(*) FROM outcomes"),
         "Median 6h, researched": med(rets["selected"]),
         "Median 6h, control": med(rets["control"]),
@@ -264,8 +280,9 @@ def run_forever():
     # before T_D (research_candidate itself refuses if too little time is left).
     for c in _rows("SELECT c.* FROM candidates c JOIN packets p ON p.candidate_id=c.id "
                    "LEFT JOIN reports r ON r.candidate_id=c.id AND r.arm='C' "
-                   "WHERE c.research_status='selected' AND r.id IS NULL AND c.t_decision>?",
-                   db.iso(db.now_utc() + timedelta(minutes=3))):
+                   "WHERE c.research_status='selected' AND r.id IS NULL AND c.t_decision>? "
+                   "AND c.prereg_version=?",
+                   db.iso(db.now_utc() + timedelta(minutes=3)), PREREG_VERSION):
         db.log("info", f"resuming interrupted research for #{c['id']}")
         pool.submit(_research_job, c)
     while True:

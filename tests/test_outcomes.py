@@ -34,6 +34,59 @@ class FirstTouch(unittest.TestCase):
         self.assertIsNone(o._first_touch(bars, T, 2, "up", T + 3600))
 
 
+class Bracket(unittest.TestCase):
+    """v3 trade: +100% target, -50% stop, else time exit."""
+    def run_(self, bars, mins=360):
+        return o.bracket(bars, T, 1.0, 1.0, -0.5, mins)
+
+    def test_stop_first_is_loss_even_if_target_later(self):
+        bars = [bar(T - 30, 1, 1, 1, 1), bar(T + 30, 1, 1, 0.45, 0.5), bar(T + 90, 0.5, 3, 0.5, 3)]
+        res, _, px = self.run_(bars)
+        self.assertEqual(res, "stop")
+        self.assertLessEqual(px, 0.5)
+
+    def test_same_bar_both_levels_is_loss(self):
+        bars = [bar(T - 30, 1, 1, 1, 1), bar(T + 30, 1, 2.5, 0.4, 1)]
+        self.assertEqual(self.run_(bars)[0], "stop")
+
+    def test_target_needs_trade_through_and_fills_at_level(self):
+        touch = [bar(T - 30, 1, 1, 1, 1), bar(T + 30, 1, 2.0, 0.9, 1.5)]
+        self.assertEqual(self.run_(touch)[0], "time")
+        through = [bar(T - 30, 1, 1, 1, 1), bar(T + 30, 1, 2.4, 0.9, 2.3)]
+        res, _, px = self.run_(through)
+        self.assertEqual((res, px), ("target", 2.0))
+
+    def test_fill_bar_high_cannot_fill_target(self):
+        bars = [bar(T - 30, 1, 5.0, 0.9, 1)]
+        self.assertEqual(self.run_(bars)[0], "time")
+
+    def test_gap_through_stop_fills_at_open_not_level(self):
+        bars = [bar(T - 30, 1, 1, 1, 1), bar(T + 30, 0.2, 0.25, 0.1, 0.15)]
+        res, _, px = self.run_(bars)
+        self.assertEqual(res, "stop")
+        self.assertAlmostEqual(px, 0.15)
+
+    def test_time_exit_uses_last_close_before_end(self):
+        bars = [bar(T - 30, 1, 1, 1, 1), bar(T + 30, 1, 1.2, 0.9, 1.1), bar(T + 7200, 1.1, 1.3, 1, 1.3)]
+        res, ts, px = self.run_(bars, mins=60)
+        self.assertEqual((res, ts, px), ("time", T + 3600, 1.1))
+
+    def test_log_symmetric_bracket_random_walk_is_half(self):
+        # Null: x2 / x0.5 on a driftless log random walk -> target first ~0.5.
+        rng, wins, n = random.Random(3), 0, 0
+        for _ in range(1500):
+            p, t, bars = 1.0, T - 30, []
+            for _ in range(3000):
+                q = p * math.exp(rng.gauss(0, 0.03))
+                bars.append((t, p, max(p, q), min(p, q), q, 1.0))
+                p, t = q, t + 60
+            res = o.bracket(bars, T, 1.0, 1.0, -0.5, 3000)[0]
+            if res != "time":
+                n += 1
+                wins += res == "target"
+        self.assertAlmostEqual(wins / n, 0.5, delta=0.05)
+
+
 class Costs(unittest.TestCase):
     def test_flat_price_loses_costs(self):
         r = o._round_trip(1.0, 1.0, 50_000, 50_000, 0.0025)

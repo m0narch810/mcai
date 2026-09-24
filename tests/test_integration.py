@@ -20,8 +20,8 @@ analysis.DATA_DIR = TMP
 POOL = "7a8xxAJBELDo6P9dikSYctdw6ce8F4mWr3ahcAD8Ao49"   # liquid Solana pool
 
 
-def fake_report(view):
-    return {"what_is_happening": "x", "narrative": {"description": "d", "stage": "nascent",
+def fake_report(view, p_runner=None):
+    rep = {"what_is_happening": "x", "narrative": {"description": "d", "stage": "nascent",
             "potential": random.choice(["weak", "strong"]), "why_spreading": "w"},
             "token_connection": {"assessment": "moderate", "why_this_token": "w",
             "competing_tokens": "c", "is_first_or_canonical": "yes", "ticker_hijack_risk": "low"},
@@ -33,6 +33,9 @@ def fake_report(view):
                 "project_site": "searched_found", "notes": ""},
             "thesis": "t", "continuation_view": view, "research_confidence": "low",
             "observation_window": "6h", "sources": []}
+    if p_runner is not None:
+        rep.update(p_runner=p_runner, p_rug=100 - p_runner)
+    return rep
 
 
 class Pipeline(unittest.TestCase):
@@ -93,7 +96,7 @@ class Pipeline(unittest.TestCase):
                 "same_ticker_or_name_tokens": []}), "h"))
             for arm in ("C", "P"):
                 research.freeze(cid, arm, db.iso(td - timedelta(minutes=20)), "9999",
-                                {"ok": True, "obj": fake_report(view), "cost": 0.0})
+                                {"ok": True, "obj": fake_report(view, 20 + 30 * i), "cost": 0.0})
         cand = dict(c.execute("SELECT * FROM candidates WHERE id=1000").fetchone())
         out = outcomes.evaluate(cand)
         print("\noutcome sample:", json.dumps({k: out.get(k) for k in (
@@ -101,12 +104,26 @@ class Pipeline(unittest.TestCase):
             "mae_6h")}, default=str)[:900])
         self.assertGreater(out["bars"], 100)
         self.assertIn("1440", out["returns"])
+        self.assertIn(out["bracket"]["result"], ("target", "stop", "time"))
+        self.assertIsNotNone(out["bracket"]["net"])
+        # A pool with no liquidity at T_D cannot be bought: no trade, not -100%.
+        c.execute("INSERT INTO candidates (id,prereg_version,token,symbol,pair_address,dex_id,"
+                  "t1_detected,t_decision,trigger_json,research_draw,research_status,rerun_draw)"
+                  " VALUES (1100,?,?,?,?,?,?,?,'{}',0.9,'not_sampled',0.9)",
+                  (config.PREREG_VERSION, "T0", "ZERO", POOL, pair["dexId"],
+                   db.iso(td - timedelta(minutes=25)), db.iso(td)))
+        c.execute("INSERT INTO entries VALUES (1100,?,0.001,0,1e5,'{}',1,NULL)", (db.iso(td),))
+        z = outcomes.evaluate(dict(c.execute("SELECT * FROM candidates WHERE id=1100").fetchone()))
+        self.assertTrue(z.get("unfillable"))
+        self.assertEqual(z["bracket"]["result"], "unfilled")
+        self.assertEqual(z["returns"]["360"], 0.0)
         for cid in ids:
             cc = dict(c.execute("SELECT * FROM candidates WHERE id=?", (cid,)).fetchone())
             outcomes.store(cid, outcomes.evaluate(cc))
         txt = analysis.report()
         print(txt[:2500])
         self.assertIn("Null sanity", txt)
+        self.assertIn("v3 trading test", txt)
 
 
 if __name__ == "__main__":
