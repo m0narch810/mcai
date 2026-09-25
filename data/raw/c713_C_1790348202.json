@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 96329,
+ "stop_reason": "tool_use",
+ "session_id": "11ff481e-fdcf-4367-9a62-e0cdab3649f7",
+ "total_cost_usd": 0.3904390000000001,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 18314,
+  "cache_read_input_tokens": 78270,
+  "output_tokens": 5858,
+  "output_tokens_details": {
+   "thinking_tokens": 702
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18314,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2259,
+    "cache_read_input_tokens": 18709,
+    "cache_creation_input_tokens": 2181,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2181
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 5858,
+   "cacheReadInputTokens": 78270,
+   "cacheCreationInputTokens": 18314,
+   "webSearchRequests": 0,
+   "costUSD": 0.279374,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 702,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 58370,
+   "outputTokens": 2539,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.11106499999999998,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal counts 2,173 sells in the first hour but only 43 unique sellers. It also counts 886 unique buyers making 3,021 buys. $4.66M traded in the hour against a $95k market cap, which is 27.8x turnover. GMGN tags 111 bundler wallets, and RugCheck shows a 23-wallet trade insider network. The token was deployed with j7tracker, a tool for sniping tweets. There is no DexScreener profile, no website and no socials, and the only link is to a random X status. Smart-money wallets: 0. Renowned (KOL) wallets: 0.\",\"uncertainty\":\"I could not read X, so there may be genuine discussion of a Backpack-related cat post that I can't see. Some of the 886 buyers could be real retail traders.\"},\"counterargument\":\"Right now this is the BackCat pair with the most volume, 886 buyers and the most liquidity. It is also up 46% while the other copies fall. If Backpack or its CEO (who has promoted Backpack memes before) points to this contract, attention could consolidate here. The deep seeded liquidity could then carry a move from $95k to $190k quickly. And a dev who seeded about $80k of SOL may want to pump the coin before exiting, not pull the LP right away.\",\"continuation_view\":\"strong_fade\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 0% locked or burned, RugCheck shows 'Few LP providers', and liquidity ($169k) is larger than market cap ($95k). The creator seeded the pool and can pull it at any time.\",\"Only 43 unique sellers made 2,173 sells, which points to wash or bot trading.\",\"GMGN tags 111 bundler wallets, and there is a 23-wallet insider network.\",\"At least 10 same-name copies launched in the last 1.5 hours, and the leading ones fell 55-57% in the last hour.\"]},\"narrative\":{\"description\":\"'Backpack Cat' is probably a copy of a post by the Backpack exchange or wallet (or its CEO) about a cat. There is a copy-launch rush across Solana, Base/ETH (Uniswap) and other chains. I could not confirm the source post.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Tweet-sniping bots (j7tracker) auto-deploy tokens named after posts from crypto brands. The earliest copies (ATqKV..., created about 1.5 hours ago) already peaked and are down about 56% over the last hour.\"},\"observation_window\":\"6h\",\"p_rug\":72,\"p_runner\":6,\"research_confidence\":\"medium\",\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The X status linked in the packet returned HTTP 402. Web search found no page for BackCat or the contract address. DexScreener search showed many BackCat copies across chains; the earliest Solana one is down about 56% over the last hour.\"},\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/search?q=Backpack%20Cat\",\"what\":\"Many BackCat copies across chains. This pair: $4.7M h1 volume with $169k liquidity.\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/ATqKVVa4h5WqjAMqJdG3mjtWXsW5SshyyUY7dXdvSvRs\",\"what\":\"The earliest Solana BackCat copy is down 55% over h1.\"},{\"url\":\"https://x.com/ddddddd8a/status/2101726174112088507\",\"what\":\"Linked X status; inaccessible (402)\"},{\"url\":\"https://x.com/armaniferrante/status/2097168748864233892\",\"what\":\"Backpack CEO tweeted about Backpack memes earlier in September; possible context for the theme\"}],\"thesis\":\"This looks like a j7tracker tweet-snipe copy with no socials, created 37 minutes ago. The dev controls unlocked LP that is worth more than the market cap. The volume looks washed (43 sellers made about 2,200 sells), and there are 111 bundler wallets. The narrative has split across 10+ same-name tokens, and the earlier ones are already down about 56%. The most likely outcome is an LP pull or bleed-out, not a double.\",\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only reason is that this pair currently has the most volume. It is a late copy (created 37 minutes ago) with no socials or profile, and it was deployed by a sniping tool.\",\"competing_tokens\":\"ATqKVVa4... (earliest on Solana, Raydium/Meteora, down 55% h1), CojRgHo... (liquidity $1.5M but 0 volume), AjgSUZ...pump, 3mir...pump, Uniswap copies on Base/ETH, and more.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"What the source post was and who wrote it\",\"Whether the dev will pull the unlocked LP\",\"Whether real retail is behind the 886 buyers\"],\"what_is_happening\":\"A same-name copy of 'Backpack Cat' was deployed with j7tracker directly into a PumpSwap pool (not pump.fun's bonding curve). The creator supplied the LP, and it is unlocked. Heavy volume that looks bot-driven, from a small set of sellers, pushed it to the top of the BackCat copies, while the earlier copies are collapsing.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal counts 2,173 sells in the first hour but only 43 unique sellers. It also counts 886 unique buyers making 3,021 buys. $4.66M traded in the hour against a $95k market cap, which is 27.8x turnover. GMGN tags 111 bundler wallets, and RugCheck shows a 23-wallet trade insider network. The token was deployed with j7tracker, a tool for sniping tweets. There is no DexScreener profile, no website and no socials, and the only link is to a random X status. Smart-money wallets: 0. Renowned (KOL) wallets: 0.",
+   "uncertainty": "I could not read X, so there may be genuine discussion of a Backpack-related cat post that I can't see. Some of the 886 buyers could be real retail traders."
+  },
+  "counterargument": "Right now this is the BackCat pair with the most volume, 886 buyers and the most liquidity. It is also up 46% while the other copies fall. If Backpack or its CEO (who has promoted Backpack memes before) points to this contract, attention could consolidate here. The deep seeded liquidity could then carry a move from $95k to $190k quickly. And a dev who seeded about $80k of SOL may want to pump the coin before exiting, not pull the LP right away.",
+  "continuation_view": "strong_fade",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 0% locked or burned, RugCheck shows 'Few LP providers', and liquidity ($169k) is larger than market cap ($95k). The creator seeded the pool and can pull it at any time.",
+    "Only 43 unique sellers made 2,173 sells, which points to wash or bot trading.",
+    "GMGN tags 111 bundler wallets, and there is a 23-wallet insider network.",
+    "At least 10 same-name copies launched in the last 1.5 hours, and the leading ones fell 55-57% in the last hour."
+   ]
+  },
+  "narrative": {
+   "description": "'Backpack Cat' is probably a copy of a post by the Backpack exchange or wallet (or its CEO) about a cat. There is a copy-launch rush across Solana, Base/ETH (Uniswap) and other chains. I could not confirm the source post.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Tweet-sniping bots (j7tracker) auto-deploy tokens named after posts from crypto brands. The earliest copies (ATqKV..., created about 1.5 hours ago) already peaked and are down about 56% over the last hour."
+  },
+  "observation_window": "6h",
+  "p_rug": 72,
+  "p_runner": 6,
+  "research_confidence": "medium",
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The X status linked in the packet returned HTTP 402. Web search found no page for BackCat or the contract address. DexScreener search showed many BackCat copies across chains; the earliest Solana one is down about 56% over the last hour."
+  },
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/search?q=Backpack%20Cat",
+    "what": "Many BackCat copies across chains. This pair: $4.7M h1 volume with $169k liquidity."
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/ATqKVVa4h5WqjAMqJdG3mjtWXsW5SshyyUY7dXdvSvRs",
+    "what": "The earliest Solana BackCat copy is down 55% over h1."
+   },
+   {
+    "url": "https://x.com/ddddddd8a/status/2101726174112088507",
+    "what": "Linked X status; inaccessible (402)"
+   },
+   {
+    "url": "https://x.com/armaniferrante/status/2097168748864233892",
+    "what": "Backpack CEO tweeted about Backpack memes earlier in September; possible context for the theme"
+   }
+  ],
+  "thesis": "This looks like a j7tracker tweet-snipe copy with no socials, created 37 minutes ago. The dev controls unlocked LP that is worth more than the market cap. The volume looks washed (43 sellers made about 2,200 sells), and there are 111 bundler wallets. The narrative has split across 10+ same-name tokens, and the earlier ones are already down about 56%. The most likely outcome is an LP pull or bleed-out, not a double.",
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only reason is that this pair currently has the most volume. It is a late copy (created 37 minutes ago) with no socials or profile, and it was deployed by a sniping tool.",
+   "competing_tokens": "ATqKVVa4... (earliest on Solana, Raydium/Meteora, down 55% h1), CojRgHo... (liquidity $1.5M but 0 volume), AjgSUZ...pump, 3mir...pump, Uniswap copies on Base/ETH, and more.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "What the source post was and who wrote it",
+   "Whether the dev will pull the unlocked LP",
+   "Whether real retail is behind the 886 buyers"
+  ],
+  "what_is_happening": "A same-name copy of 'Backpack Cat' was deployed with j7tracker directly into a PumpSwap pool (not pump.fun's bonding curve). The creator supplied the LP, and it is unlocked. Heavy volume that looks bot-driven, from a small set of sellers, pushed it to the top of the BackCat copies, while the earlier copies are collapsing."
+ },
+ "ttft_ms": 4729,
+ "type": "result",
+ "duration_ms": 87023,
+ "uuid": "2c4336da-8211-4960-8145-63fa9c8f607d",
+ "ttft_stream_ms": 814,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 814,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

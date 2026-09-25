@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 88950,
+ "stop_reason": "tool_use",
+ "session_id": "c06af4b8-e691-4064-a870-f1275e8d89af",
+ "total_cost_usd": 0.369367,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 17118,
+  "cache_read_input_tokens": 59685,
+  "output_tokens": 4415,
+  "output_tokens_details": {
+   "thinking_tokens": 860
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17118,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2704,
+    "cache_read_input_tokens": 17766,
+    "cache_creation_input_tokens": 1928,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1928
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4415,
+   "cacheReadInputTokens": 59685,
+   "cacheCreationInputTokens": 17118,
+   "webSearchRequests": 0,
+   "costUSD": 0.237221,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 860,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 66846,
+   "outputTokens": 3060,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.13214599999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PROM (promx.fun, @usePromX) appears to be a real, brand-new platform. Coins launched on it send their pump.fun creator fees to a pool, and people who post about those coins on X get paid 0.5% of the pool in SOL. Its site lists no official $PROM token or contract address. Within about 35 minutes, at least 8 same-ticker PROM tokens launched (packet same_ticker list), and all of them pumped hard at once. This is a classic clone war. UWiW is one of those clones. It started on a Meteora virtual curve and graduated at once, and the pool it now trades in on PumpSwap looks like it was added by hand, with most of the LP unlocked (RugCheck says 0% locked on one of the top markets). It has no DexScreener profile. The copy of the token with the larger market cap (8xhS, about $630-800k) and the one listing the promx.fun website on DexScreener (EFW3, created first) are other contracts. At the time I checked, the other clones were down 10-41% over the last 5 minutes, which points to the wave cooling off.\",\"narrative\":{\"description\":\"A new 'get paid to shill' platform (PROM / promx.fun) that pays posters on X a cut of pooled pump.fun creator fees. Its launch set off a race to launch $PROM tokens.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The platform is new, and speculators are guessing which contract is the 'official' platform token. That spread money across 8+ copycats in about 35 minutes. Some bundled buying probably helped: GMGN tags 99 bundler wallets, and there were 2,133 unique buyers against only 133 unique sellers.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"GMGN links this token to a @usePromX status URL and to promx.fun, but anyone can attach those metadata links. The site names no official token. On DexScreener, EFW3 shows the promx.fun website, and 8xhS leads the clones on market cap and volume. UWiW is just one mid-sized clone.\",\"competing_tokens\":\"8xhS (about $630-800k mcap, $3.7M h1 vol), EFW3 (created first, has the website on DexScreener, about $200k), FReo (about $115-244k), GPxp, 7MsR, JA8d, DZMi. There is also an older PROM (Fkeg, about $67M), which is unrelated.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN tags 99 bundler wallets. Unique buyers (2,133) vastly outnumber unique sellers (133), a pattern that suggests many small bot buys. The pool was set up by hand with a few LP providers and unlocked LP. The token image shows up 7 times as a duplicate. Launching this many near-identical clones at the same moment is typical of farming deployers.\",\"uncertainty\":\"I could not read X, and the usePromX status post returned HTTP 402, so I can't tell which contract, if any, the project itself endorses.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"PumpSwap LP is 0% locked on one of the top markets, and RugCheck flags danger that a large amount of LP is unlocked and can be pulled\",\"One unlabeled wallet (FhVo...) holds 80% of supply, a possible huge overhang unless it is an unlabeled pool vault\",\"99 bundler wallets\",\"Up about 370% in 1h already, with same-ticker clones dumping 10-41% over the last 5 minutes\",\"Liquidity of about $45k against $230k market cap, split across clones\"]},\"counterargument\":\"If PROM itself keeps trending and the market settles on UWiW as the token to hold (for example, because the @usePromX status linked in GMGN actually endorses this contract), then a $230k market cap is small next to the leading clone at about $700k. Money that rotates between clones could double it quickly.\",\"unknowns\":[\"Which contract, if any, @usePromX officially endorses\",\"Who holds wallet FhVo (80% of supply): a pool vault or an insider?\",\"Who controls the unlocked PumpSwap LP\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X status returned 402, and site:x.com and contract-address searches found nothing. promx.fun describes the platform but names no token. DexScreener API checked for UWiW and the rival clones. I did not search Reddit, Telegram or Discord, which falls short of the task's minimum coverage.\"},\"thesis\":\"UWiW is a non-canonical clone in a same-ticker clone war around a new platform that has no token. The LP is unlocked and was added by hand, there are heavy bundlers, the price has already run about 370%, and the other clones are dumping. Doubling is unlikely, and the liquidity getting pulled or the pair dying is likely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.promx.fun/\",\"what\":\"Describes the PROM platform (paid posting on X from a pool of pump.fun creator fees); no official token address\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/UWiWLeZCVJM8mGug6TujNJWiVe9Td97SfeDJBRJFwTv\",\"what\":\"UWiW pairs: PumpSwap about $45k liquidity, Meteora pairs nearly empty, no profile or socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/8xhSYeD6CwWZgUBnvSvfSBmEGipYX1eA2KpN2Y619nK9,EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9,FReonXF7MSMM2oho2RF2xAdhcy45HsQf1UURxnCpmF5n\",\"what\":\"Competing clones: 8xhS the largest, EFW3 lists promx.fun; clones down 10-41% over the last 5 minutes\"},{\"url\":\"https://x.com/usePromX/status/2103095000846467218\",\"what\":\"Linked project tweet; returned HTTP 402, inaccessible\"}]}",
+ "structured_output": {
+  "what_is_happening": "PROM (promx.fun, @usePromX) appears to be a real, brand-new platform. Coins launched on it send their pump.fun creator fees to a pool, and people who post about those coins on X get paid 0.5% of the pool in SOL. Its site lists no official $PROM token or contract address. Within about 35 minutes, at least 8 same-ticker PROM tokens launched (packet same_ticker list), and all of them pumped hard at once. This is a classic clone war. UWiW is one of those clones. It started on a Meteora virtual curve and graduated at once, and the pool it now trades in on PumpSwap looks like it was added by hand, with most of the LP unlocked (RugCheck says 0% locked on one of the top markets). It has no DexScreener profile. The copy of the token with the larger market cap (8xhS, about $630-800k) and the one listing the promx.fun website on DexScreener (EFW3, created first) are other contracts. At the time I checked, the other clones were down 10-41% over the last 5 minutes, which points to the wave cooling off.",
+  "narrative": {
+   "description": "A new 'get paid to shill' platform (PROM / promx.fun) that pays posters on X a cut of pooled pump.fun creator fees. Its launch set off a race to launch $PROM tokens.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The platform is new, and speculators are guessing which contract is the 'official' platform token. That spread money across 8+ copycats in about 35 minutes. Some bundled buying probably helped: GMGN tags 99 bundler wallets, and there were 2,133 unique buyers against only 133 unique sellers."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "GMGN links this token to a @usePromX status URL and to promx.fun, but anyone can attach those metadata links. The site names no official token. On DexScreener, EFW3 shows the promx.fun website, and 8xhS leads the clones on market cap and volume. UWiW is just one mid-sized clone.",
+   "competing_tokens": "8xhS (about $630-800k mcap, $3.7M h1 vol), EFW3 (created first, has the website on DexScreener, about $200k), FReo (about $115-244k), GPxp, 7MsR, JA8d, DZMi. There is also an older PROM (Fkeg, about $67M), which is unrelated.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN tags 99 bundler wallets. Unique buyers (2,133) vastly outnumber unique sellers (133), a pattern that suggests many small bot buys. The pool was set up by hand with a few LP providers and unlocked LP. The token image shows up 7 times as a duplicate. Launching this many near-identical clones at the same moment is typical of farming deployers.",
+   "uncertainty": "I could not read X, and the usePromX status post returned HTTP 402, so I can't tell which contract, if any, the project itself endorses."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "PumpSwap LP is 0% locked on one of the top markets, and RugCheck flags danger that a large amount of LP is unlocked and can be pulled",
+    "One unlabeled wallet (FhVo...) holds 80% of supply, a possible huge overhang unless it is an unlabeled pool vault",
+    "99 bundler wallets",
+    "Up about 370% in 1h already, with same-ticker clones dumping 10-41% over the last 5 minutes",
+    "Liquidity of about $45k against $230k market cap, split across clones"
+   ]
+  },
+  "counterargument": "If PROM itself keeps trending and the market settles on UWiW as the token to hold (for example, because the @usePromX status linked in GMGN actually endorses this contract), then a $230k market cap is small next to the leading clone at about $700k. Money that rotates between clones could double it quickly.",
+  "unknowns": [
+   "Which contract, if any, @usePromX officially endorses",
+   "Who holds wallet FhVo (80% of supply): a pool vault or an insider?",
+   "Who controls the unlocked PumpSwap LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X status returned 402, and site:x.com and contract-address searches found nothing. promx.fun describes the platform but names no token. DexScreener API checked for UWiW and the rival clones. I did not search Reddit, Telegram or Discord, which falls short of the task's minimum coverage."
+  },
+  "thesis": "UWiW is a non-canonical clone in a same-ticker clone war around a new platform that has no token. The LP is unlocked and was added by hand, there are heavy bundlers, the price has already run about 370%, and the other clones are dumping. Doubling is unlikely, and the liquidity getting pulled or the pair dying is likely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.promx.fun/",
+    "what": "Describes the PROM platform (paid posting on X from a pool of pump.fun creator fees); no official token address"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/UWiWLeZCVJM8mGug6TujNJWiVe9Td97SfeDJBRJFwTv",
+    "what": "UWiW pairs: PumpSwap about $45k liquidity, Meteora pairs nearly empty, no profile or socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/8xhSYeD6CwWZgUBnvSvfSBmEGipYX1eA2KpN2Y619nK9,EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9,FReonXF7MSMM2oho2RF2xAdhcy45HsQf1UURxnCpmF5n",
+    "what": "Competing clones: 8xhS the largest, EFW3 lists promx.fun; clones down 10-41% over the last 5 minutes"
+   },
+   {
+    "url": "https://x.com/usePromX/status/2103095000846467218",
+    "what": "Linked project tweet; returned HTTP 402, inaccessible"
+   }
+  ]
+ },
+ "ttft_ms": 1970,
+ "type": "result",
+ "duration_ms": 65626,
+ "uuid": "bfd3e4f4-ce94-40d4-aa2a-614e18f891e1",
+ "ttft_stream_ms": 889,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 889,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 92121,
+ "stop_reason": "tool_use",
+ "session_id": "92ef51d0-86df-41df-9c99-461aa15fac7e",
+ "total_cost_usd": 0.43456120000000004,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 19674,
+  "cache_read_input_tokens": 63696,
+  "output_tokens": 6209,
+  "output_tokens_details": {
+   "thinking_tokens": 781
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19674,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2293,
+    "cache_read_input_tokens": 19719,
+    "cache_creation_input_tokens": 2531,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2531
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 6209,
+   "cacheReadInputTokens": 63696,
+   "cacheCreationInputTokens": 19674,
+   "webSearchRequests": 0,
+   "costUSD": 0.29435120000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 781,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 66835,
+   "outputTokens": 2675,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.14021000000000003,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"1,189 unique buyers but only 93 unique sellers made 1,922 sells in the first hour. That pattern fits bot or volume-bot churn. GMGN flags 56 bundler wallets holding about 12.8% and a 58-wallet insider trade network (RugCheck). There are no smart or renowned wallets and no paid DexScreener promotion. The attached X post (QuantKeef) is paywalled (HTTP 402), so I could not tell if it is organic. About 9 copycat 'The Depressed Monkey' tokens launched within minutes, which suggests some external trigger, probably a tweet.\",\"uncertainty\":\"I could not read the QuantKeef or Rahmon429790 posts or their engagement. The buyer count could be partly real retail attention driven by a viral tweet.\"},\"continuation_view\":\"fade\",\"counterargument\":\"About 1,190 unique buyers in the first hour is broad participation, and this pair clearly won the copycat race. If the source tweet is truly viral, a $44k coin only needs to reach ~$90k to double, which is small. The dev has already taken profit through the pool's gains and may leave the LP in place. Contract security is clean (mint and freeze authority renounced, no tax).\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The PumpSwap pool was created directly (migrated_unix=0, blank launchpad, mint does not end in 'pump'), and its LP is 0% locked or burned. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. The LP owner can pull about 195 SOL (~$22k).\",\"Liquidity is about equal to market cap, which is typical of a dev-seeded pool\",\"56 bundler wallets and a 58-wallet insider network\",\"The sell side is concentrated: 93 sellers made 1,922 sells, which looks like bot volume\",\"There are 9+ same-name copies that split attention\"]},\"narrative\":{\"description\":\"'The Depressed Monkey' is a known reaction-image meme (a sad monkey with hands on its head). GeckoTerminal links the token to an X status by QuantKeef. The token probably references a tweet or image that briefly went viral.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A tweet (QuantKeef/Rahmon429790) probably set off a race of copycat launches, and this pair got most of the flow. It is a generic evergreen meme with no current news event I could verify.\"},\"observation_window\":\"6h\",\"p_rug\":70,\"p_runner\":11,\"research_confidence\":\"low\",\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The X status link returned HTTP 402. Searches for the contract address returned nothing. site:x.com found only unrelated older 'depressed monkey' accounts. There is no website, description or DexScreener profile. GeckoTerminal lists the handles QuantKeef and Rahmon429790.\"},\"sources\":[{\"url\":\"https://dexscreener.com/solana/hz4qwisauygpca2vbps3knzuybxssn8wjpccnvte2ej4\",\"what\":\"Pair data: ~$45k liquidity, ~199 SOL in the pool, $1.07M volume, +364%\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/Hz4QwisAUYGpCa2vbpS3KNzuyBXssn8wJpCCnvte2EJ4\",\"what\":\"Liquidity not locked, linked X handles, security score 47/100\"},{\"url\":\"https://x.com/QuantKeef/status/2103000218048602231\",\"what\":\"Linked X post, inaccessible (402)\"},{\"url\":\"https://imgflip.com/memetemplate/315113838/Depressed-Monkey\",\"what\":\"Depressed Monkey is an existing meme template\"},{\"url\":\"https://x.com/depressedmunkey?lang=en\",\"what\":\"Unrelated older 'depressed monkey' X account\"}],\"thesis\":\"This is a copycat race over a generic sad-monkey meme, probably set off by one tweet. This pair won the race, but its pool was seeded by the dev directly on PumpSwap, the LP is fully unlocked, and about $22k of SOL can be pulled. Combined with bundler and insider networks and churn-like sell flow, the most likely outcome is an LP pull or a fade, not a 2x.\",\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has by far the most liquidity ($44k) of the 'The Depressed Monkey' copies and the most volume. The other copies have $0-10 liquidity. GeckoTerminal links it to the QuantKeef status.\",\"competing_tokens\":\"There are 9+ same-name copies launched within about 40 minutes (56P2..., ApdL..., CHEk..., 8HjG..., E3NQ...). Most are dead, but ApdL... and 8HjG... still show $130-240k of hourly volume.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"unknowns\":[\"What the QuantKeef tweet says and how much engagement it has\",\"Who holds the LP tokens and whether the dev can withdraw\",\"What 'creator_close' means in practice\",\"Whether the buyers are real retail or bots\"],\"what_is_happening\":\"'The Depressed Monkey' ($Monkey) pool was created directly on PumpSwap about 40 minutes ago and is up ~350%, from roughly $10k to $44k mcap, on about $1M of volume. It is one of about 10 same-name tokens launched in a burst, probably after an X post by QuantKeef. The LP is unlocked and there is heavy bundler and insider activity.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "1,189 unique buyers but only 93 unique sellers made 1,922 sells in the first hour. That pattern fits bot or volume-bot churn. GMGN flags 56 bundler wallets holding about 12.8% and a 58-wallet insider trade network (RugCheck). There are no smart or renowned wallets and no paid DexScreener promotion. The attached X post (QuantKeef) is paywalled (HTTP 402), so I could not tell if it is organic. About 9 copycat 'The Depressed Monkey' tokens launched within minutes, which suggests some external trigger, probably a tweet.",
+   "uncertainty": "I could not read the QuantKeef or Rahmon429790 posts or their engagement. The buyer count could be partly real retail attention driven by a viral tweet."
+  },
+  "continuation_view": "fade",
+  "counterargument": "About 1,190 unique buyers in the first hour is broad participation, and this pair clearly won the copycat race. If the source tweet is truly viral, a $44k coin only needs to reach ~$90k to double, which is small. The dev has already taken profit through the pool's gains and may leave the LP in place. Contract security is clean (mint and freeze authority renounced, no tax).",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The PumpSwap pool was created directly (migrated_unix=0, blank launchpad, mint does not end in 'pump'), and its LP is 0% locked or burned. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. The LP owner can pull about 195 SOL (~$22k).",
+    "Liquidity is about equal to market cap, which is typical of a dev-seeded pool",
+    "56 bundler wallets and a 58-wallet insider network",
+    "The sell side is concentrated: 93 sellers made 1,922 sells, which looks like bot volume",
+    "There are 9+ same-name copies that split attention"
+   ]
+  },
+  "narrative": {
+   "description": "'The Depressed Monkey' is a known reaction-image meme (a sad monkey with hands on its head). GeckoTerminal links the token to an X status by QuantKeef. The token probably references a tweet or image that briefly went viral.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A tweet (QuantKeef/Rahmon429790) probably set off a race of copycat launches, and this pair got most of the flow. It is a generic evergreen meme with no current news event I could verify."
+  },
+  "observation_window": "6h",
+  "p_rug": 70,
+  "p_runner": 11,
+  "research_confidence": "low",
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The X status link returned HTTP 402. Searches for the contract address returned nothing. site:x.com found only unrelated older 'depressed monkey' accounts. There is no website, description or DexScreener profile. GeckoTerminal lists the handles QuantKeef and Rahmon429790."
+  },
+  "sources": [
+   {
+    "url": "https://dexscreener.com/solana/hz4qwisauygpca2vbps3knzuybxssn8wjpccnvte2ej4",
+    "what": "Pair data: ~$45k liquidity, ~199 SOL in the pool, $1.07M volume, +364%"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/Hz4QwisAUYGpCa2vbpS3KNzuyBXssn8wJpCCnvte2EJ4",
+    "what": "Liquidity not locked, linked X handles, security score 47/100"
+   },
+   {
+    "url": "https://x.com/QuantKeef/status/2103000218048602231",
+    "what": "Linked X post, inaccessible (402)"
+   },
+   {
+    "url": "https://imgflip.com/memetemplate/315113838/Depressed-Monkey",
+    "what": "Depressed Monkey is an existing meme template"
+   },
+   {
+    "url": "https://x.com/depressedmunkey?lang=en",
+    "what": "Unrelated older 'depressed monkey' X account"
+   }
+  ],
+  "thesis": "This is a copycat race over a generic sad-monkey meme, probably set off by one tweet. This pair won the race, but its pool was seeded by the dev directly on PumpSwap, the LP is fully unlocked, and about $22k of SOL can be pulled. Combined with bundler and insider networks and churn-like sell flow, the most likely outcome is an LP pull or a fade, not a 2x.",
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has by far the most liquidity ($44k) of the 'The Depressed Monkey' copies and the most volume. The other copies have $0-10 liquidity. GeckoTerminal links it to the QuantKeef status.",
+   "competing_tokens": "There are 9+ same-name copies launched within about 40 minutes (56P2..., ApdL..., CHEk..., 8HjG..., E3NQ...). Most are dead, but ApdL... and 8HjG... still show $130-240k of hourly volume.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "unknowns": [
+   "What the QuantKeef tweet says and how much engagement it has",
+   "Who holds the LP tokens and whether the dev can withdraw",
+   "What 'creator_close' means in practice",
+   "Whether the buyers are real retail or bots"
+  ],
+  "what_is_happening": "'The Depressed Monkey' ($Monkey) pool was created directly on PumpSwap about 40 minutes ago and is up ~350%, from roughly $10k to $44k mcap, on about $1M of volume. It is one of about 10 same-name tokens launched in a burst, probably after an X post by QuantKeef. The LP is unlocked and there is heavy bundler and insider activity."
+ },
+ "ttft_ms": 2989,
+ "type": "result",
+ "duration_ms": 67721,
+ "uuid": "76d40135-92d9-4c92-b589-3e58d9fcd84e",
+ "ttft_stream_ms": 725,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 725,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

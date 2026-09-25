@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 23859,
+ "stop_reason": "tool_use",
+ "session_id": "4f41c6ae-3516-4234-a943-8d9565c02e3d",
+ "total_cost_usd": 0.1095428,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7771,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2349,
+  "output_tokens_details": {
+   "thinking_tokens": 407
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7771,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2349,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7771,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7771
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2349,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7771,
+   "webSearchRequests": 0,
+   "costUSD": 0.1095428,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 407,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PROM is a 37-minute-old coin launched through a Meteora virtual curve (created and migrated in the same second), now trading on a pumpswap pair. At detection it was about $226k market cap with about $45k liquidity. It rose roughly 370% in its first hour on $845k volume (19x turnover). It is one of at least 8 same-name 'PROM' coins created within about 40 minutes of each other. The largest of these clones (8xhS\u2026, created about 2.5 minutes earlier) is at about $796k market cap with $3.7M h1 volume. The rest cluster at $100k-$250k. A $67M 'Prom' token already exists. The metadata points to an X post (usePromX/status/\u2026) and promx.fun, which suggests some real announcement or launch that clone deployers are chasing. Momentum has already stalled: m15 is -2%, m5 is -4% to -6%, and only about 30 unique buyers traded in the last 5 minutes. Buyers and sellers are now about even.\",\"narrative\":{\"description\":\"Some 'PROM / PromX' event, probably a product or X post from usePromX, set off a burst of copycat launches. The name has real attention, but it is spread across many contracts.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Launch sniping across many copies after a trigger post. Traders spray buys over the clones, which explains the huge buy count against few unique sellers. There is no sign that this contract has been endorsed.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its name and linked X post match the story, but so do those of about 8 other contracts deployed within minutes. Nothing marks this one as the official token. The dev has launched only this one token, and there is no DexScreener profile or website verification.\",\"competing_tokens\":\"8xhS\u2026 PROM ($796k mcap, $3.7M h1 volume, created earlier and the clear leader); FReo\u2026 ($244k); EFW3\u2026 ($204k, created earliest); 7MsR\u2026, GPxp\u2026, JA8d\u2026, DZMi\u2026; and an established $67M 'Prom' (FkeG\u2026).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 99 bundler wallets. About 5,100 buys came from about 2,100 'unique buyers' but only 133 sellers in h1, which looks like a buy distribution spread across many wallets or dust buying. The image is duplicated 7 times, and near-identical clones launched in the same window. No paid promotion was detected. The creator's status is 'creator_close', meaning the creator has already exited.\",\"uncertainty\":\"The underlying PromX story may be real, so some of the flow could be organic clone-hunting. The unlabeled 80% holder (FhVo\u2026) is probably a pool or vault account, since GMGN's top-10 rate is only 2%, but this is unverified.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags one market as having 0% LP locked ('Large amount of LP unlocked', few LP providers), while GMGN reports lp_burn_ratio 1.0. The two sources conflict.\",\"An unlabeled wallet holds 80.05%. If it is not a pool account, one holder controls the supply.\",\"Liquidity is $45k against about $845k in hourly volume. The market is thin and churning, and volume is fading.\",\"It is competing against a larger clone of the same name, so capital is likely to rotate to the leader or fade.\",\"99 bundler wallets could dump in a coordinated way.\"]},\"counterargument\":\"If PromX is a real, viral launch and this contract gets picked up as the 'real' one, or the leader rugs and traders rotate into the next-largest clone, a move from about $230k to $460k is only one leg for a coin already up 4x in an hour. Liquidity is fine for its size, the security flags are clean, and GMGN shows LP burned.\",\"unknowns\":[\"Whether any PROM contract is official, and which one\",\"What the 80.05% holder FhVo\u2026 actually is\",\"Whether the LP is burned (GMGN says it is; RugCheck flags 0% locked on one market)\",\"What the usePromX post actually says\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; judged only from the packet.\"},\"thesis\":\"This is a non-canonical, second-tier clone in a swarm of same-name launches. It is heavily bundled, has momentum already stalling, and trails a leader that is 3x its size. Doubling from entry would need it to pull away from all the other clones without any sign that it is official. Fading or bleeding out is much more likely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":9,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "PROM is a 37-minute-old coin launched through a Meteora virtual curve (created and migrated in the same second), now trading on a pumpswap pair. At detection it was about $226k market cap with about $45k liquidity. It rose roughly 370% in its first hour on $845k volume (19x turnover). It is one of at least 8 same-name 'PROM' coins created within about 40 minutes of each other. The largest of these clones (8xhS\u2026, created about 2.5 minutes earlier) is at about $796k market cap with $3.7M h1 volume. The rest cluster at $100k-$250k. A $67M 'Prom' token already exists. The metadata points to an X post (usePromX/status/\u2026) and promx.fun, which suggests some real announcement or launch that clone deployers are chasing. Momentum has already stalled: m15 is -2%, m5 is -4% to -6%, and only about 30 unique buyers traded in the last 5 minutes. Buyers and sellers are now about even.",
+  "narrative": {
+   "description": "Some 'PROM / PromX' event, probably a product or X post from usePromX, set off a burst of copycat launches. The name has real attention, but it is spread across many contracts.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Launch sniping across many copies after a trigger post. Traders spray buys over the clones, which explains the huge buy count against few unique sellers. There is no sign that this contract has been endorsed."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its name and linked X post match the story, but so do those of about 8 other contracts deployed within minutes. Nothing marks this one as the official token. The dev has launched only this one token, and there is no DexScreener profile or website verification.",
+   "competing_tokens": "8xhS\u2026 PROM ($796k mcap, $3.7M h1 volume, created earlier and the clear leader); FReo\u2026 ($244k); EFW3\u2026 ($204k, created earliest); 7MsR\u2026, GPxp\u2026, JA8d\u2026, DZMi\u2026; and an established $67M 'Prom' (FkeG\u2026).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 99 bundler wallets. About 5,100 buys came from about 2,100 'unique buyers' but only 133 sellers in h1, which looks like a buy distribution spread across many wallets or dust buying. The image is duplicated 7 times, and near-identical clones launched in the same window. No paid promotion was detected. The creator's status is 'creator_close', meaning the creator has already exited.",
+   "uncertainty": "The underlying PromX story may be real, so some of the flow could be organic clone-hunting. The unlabeled 80% holder (FhVo\u2026) is probably a pool or vault account, since GMGN's top-10 rate is only 2%, but this is unverified."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags one market as having 0% LP locked ('Large amount of LP unlocked', few LP providers), while GMGN reports lp_burn_ratio 1.0. The two sources conflict.",
+    "An unlabeled wallet holds 80.05%. If it is not a pool account, one holder controls the supply.",
+    "Liquidity is $45k against about $845k in hourly volume. The market is thin and churning, and volume is fading.",
+    "It is competing against a larger clone of the same name, so capital is likely to rotate to the leader or fade.",
+    "99 bundler wallets could dump in a coordinated way."
+   ]
+  },
+  "counterargument": "If PromX is a real, viral launch and this contract gets picked up as the 'real' one, or the leader rugs and traders rotate into the next-largest clone, a move from about $230k to $460k is only one leg for a coin already up 4x in an hour. Liquidity is fine for its size, the security flags are clean, and GMGN shows LP burned.",
+  "unknowns": [
+   "Whether any PROM contract is official, and which one",
+   "What the 80.05% holder FhVo\u2026 actually is",
+   "Whether the LP is burned (GMGN says it is; RugCheck flags 0% locked on one market)",
+   "What the usePromX post actually says"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; judged only from the packet."
+  },
+  "thesis": "This is a non-canonical, second-tier clone in a swarm of same-name launches. It is heavily bundled, has momentum already stalling, and trails a leader that is 3x its size. Doubling from entry would need it to pull away from all the other clones without any sign that it is official. Fading or bleeding out is much more likely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 9,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5205,
+ "type": "result",
+ "duration_ms": 23901,
+ "uuid": "b6935492-daac-446d-a87b-f1b0449d985f",
+ "ttft_stream_ms": 680,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 680,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

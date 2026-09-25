@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 21429,
+ "stop_reason": "tool_use",
+ "session_id": "3cb2b6a6-d851-4d47-a791-13becd4317ae",
+ "total_cost_usd": 0.1097228,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7991,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2270,
+  "output_tokens_details": {
+   "thinking_tokens": 416
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7991,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2270,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7991,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7991
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2270,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7991,
+   "webSearchRequests": 0,
+   "costUSD": 0.1097228,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 416,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PROM is one of at least 8 active same-ticker \\\"PROM\\\" clones launched within minutes of each other around 12:18\u201312:50 UTC. A large $67M \\\"Prom\\\" token already exists. This contract, launched on a Meteora virtual curve and now trading on PumpSwap, ran about 5x in its first 30 minutes to an all-time high near $0.00058 (roughly $580k market cap), on $1.7M of volume. It is now crashing. GeckoTerminal shows -55% over 5 minutes and -50% over 15 minutes, and the price ($0.00026) is about 55% below the high. Unique buyers in the last 5 minutes (116) are a small fraction of the 2,139 over the hour, so the wave of new buyers has already passed. Another clone (8xhS\u2026) is ahead at about $796k market cap with twice the hourly volume. The project link fields are a garbled mash of several unrelated URLs (promx.fun, a Guardian article, other tickers' sites), which points to a hurried copycat launch. GMGN flags 101 bundler wallets and 7 duplicate images.\",\"narrative\":{\"description\":\"A 'PromX' / prom meme, apparently tied to a single X post (usePromX status link) and possibly a Gen-Alpha slang news hook. A clone war has broken out, with many tickers competing for one small story.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"An X post or a promx.fun launch set off a rush of same-ticker deploys. Attention is split across clones, and the leading clone is a different contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its only claim is a matching name and ticker, plus link fields copied from elsewhere. Nothing shows it is the official PromX contract.\",\"competing_tokens\":\"8xhS\u2026 PROM at $796k market cap and $3.7M hourly volume (leading clone); EFW3\u2026 at $204k; UWiW\u2026 at $226k; GPxp\u2026, 7MsR\u2026, JA8d\u2026; an established $67M 'Prom' (FkeG\u2026).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"101 bundler wallets. Many identical clones deployed within minutes, with 7 duplicate images. Link metadata is a concatenation of scraped URLs. The huge buy count (10.4k) against only 136 unique sellers looks bot-driven. There are no paid boosts and no profile.\",\"uncertainty\":\"There is no X data, so I can't tell whether PromX is a real project that endorses any contract. The 2,139 unique buyers suggest some real retail participation.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Price already down about 55% from its high, with sharp momentum to the downside\",\"New-buyer inflow collapsing (116 unique buyers over 5 minutes vs 2,139 over the hour)\",\"Split liquidity across several clone contracts, with a stronger rival clone\",\"RugCheck flags one market's LP as unlocked, although GMGN reports the LP as burned\",\"The 80% top holder is unlabeled, probably the curve or pool vault, but unverified\",\"101 bundler wallets could dump\"]},\"counterargument\":\"Clone wars sometimes pick a second winner. Volume is still very high ($190k+ in 5 minutes) and the price is only halfway down from its high, so a bounce back to $0.00058 would be about 2x from here. If PromX endorses this contract, or the leading clone rugs and traders rotate into this one, it could double quickly. The LP burn ratio of 1.0 also means a literal LP pull may not be possible.\",\"unknowns\":[\"Which contract, if any, PromX officially endorses\",\"What the 80% top-holder address is\",\"Whether the bundlers have already exited\",\"The price path in the 25 minutes before entry\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; judged from the evidence packet only.\"},\"thesis\":\"This is a non-canonical clone in a crowded PROM ticker war. It has already fallen about 55% from its high, new buyers are drying up, bundler activity is heavy, and a rival clone leads. It most likely bleeds out or dies within 6 hours. A double from entry would need a fresh catalyst.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":55,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "PROM is one of at least 8 active same-ticker \"PROM\" clones launched within minutes of each other around 12:18\u201312:50 UTC. A large $67M \"Prom\" token already exists. This contract, launched on a Meteora virtual curve and now trading on PumpSwap, ran about 5x in its first 30 minutes to an all-time high near $0.00058 (roughly $580k market cap), on $1.7M of volume. It is now crashing. GeckoTerminal shows -55% over 5 minutes and -50% over 15 minutes, and the price ($0.00026) is about 55% below the high. Unique buyers in the last 5 minutes (116) are a small fraction of the 2,139 over the hour, so the wave of new buyers has already passed. Another clone (8xhS\u2026) is ahead at about $796k market cap with twice the hourly volume. The project link fields are a garbled mash of several unrelated URLs (promx.fun, a Guardian article, other tickers' sites), which points to a hurried copycat launch. GMGN flags 101 bundler wallets and 7 duplicate images.",
+  "narrative": {
+   "description": "A 'PromX' / prom meme, apparently tied to a single X post (usePromX status link) and possibly a Gen-Alpha slang news hook. A clone war has broken out, with many tickers competing for one small story.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "An X post or a promx.fun launch set off a rush of same-ticker deploys. Attention is split across clones, and the leading clone is a different contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its only claim is a matching name and ticker, plus link fields copied from elsewhere. Nothing shows it is the official PromX contract.",
+   "competing_tokens": "8xhS\u2026 PROM at $796k market cap and $3.7M hourly volume (leading clone); EFW3\u2026 at $204k; UWiW\u2026 at $226k; GPxp\u2026, 7MsR\u2026, JA8d\u2026; an established $67M 'Prom' (FkeG\u2026).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "101 bundler wallets. Many identical clones deployed within minutes, with 7 duplicate images. Link metadata is a concatenation of scraped URLs. The huge buy count (10.4k) against only 136 unique sellers looks bot-driven. There are no paid boosts and no profile.",
+   "uncertainty": "There is no X data, so I can't tell whether PromX is a real project that endorses any contract. The 2,139 unique buyers suggest some real retail participation."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Price already down about 55% from its high, with sharp momentum to the downside",
+    "New-buyer inflow collapsing (116 unique buyers over 5 minutes vs 2,139 over the hour)",
+    "Split liquidity across several clone contracts, with a stronger rival clone",
+    "RugCheck flags one market's LP as unlocked, although GMGN reports the LP as burned",
+    "The 80% top holder is unlabeled, probably the curve or pool vault, but unverified",
+    "101 bundler wallets could dump"
+   ]
+  },
+  "counterargument": "Clone wars sometimes pick a second winner. Volume is still very high ($190k+ in 5 minutes) and the price is only halfway down from its high, so a bounce back to $0.00058 would be about 2x from here. If PromX endorses this contract, or the leading clone rugs and traders rotate into this one, it could double quickly. The LP burn ratio of 1.0 also means a literal LP pull may not be possible.",
+  "unknowns": [
+   "Which contract, if any, PromX officially endorses",
+   "What the 80% top-holder address is",
+   "Whether the bundlers have already exited",
+   "The price path in the 25 minutes before entry"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; judged from the evidence packet only."
+  },
+  "thesis": "This is a non-canonical clone in a crowded PROM ticker war. It has already fallen about 55% from its high, new buyers are drying up, bundler activity is heavy, and a rival clone leads. It most likely bleeds out or dies within 6 hours. A double from entry would need a fresh catalyst.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 55,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5500,
+ "type": "result",
+ "duration_ms": 21498,
+ "uuid": "c5afe303-43a5-4af5-a1b3-7f4ee3dc3d86",
+ "ttft_stream_ms": 763,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 763,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

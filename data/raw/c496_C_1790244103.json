@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 75569,
+ "stop_reason": "tool_use",
+ "session_id": "f57d0876-9b52-4054-b08f-b62708dc56b1",
+ "total_cost_usd": 0.2811634,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 14488,
+  "cache_read_input_tokens": 56982,
+  "output_tokens": 3706,
+  "output_tokens_details": {
+   "thinking_tokens": 669
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14488,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2250,
+    "cache_read_input_tokens": 15768,
+    "cache_creation_input_tokens": 1296,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1296
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3706,
+   "cacheReadInputTokens": 56982,
+   "cacheCreationInputTokens": 14488,
+   "webSearchRequests": 0,
+   "costUSD": 0.20146039999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 669,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 37883,
+   "outputTokens": 2364,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.079703,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal shows 2,091 unique buyers but only 91 unique sellers in the first hour, alongside 4,126 buys. That pattern points to wallet fan-out or bot buying, not organic retail. GMGN flags 31 bundler wallets and a 52-wallet insider trade network (RugCheck). The image is duplicated 9 times, and there are about 10 same-name clones. There is no DexScreener profile and no socials of its own. Apart from the vise.fun project, which names a different contract, I found no organic mentions anywhere.\",\"uncertainty\":\"X is inaccessible (HTTP 402), so I cannot rule out a caller or KOL pushing this CA.\"},\"continuation_view\":\"strong_fade\",\"counterargument\":\"The volume is large for its size ($850k in the first hour), and this copy trades above the official token ($181k vs $54k market cap), so traders may be treating it as the main VISE. If the 80% wallet is actually a program or vault account that RugCheck did not label, the supply overhang is not real, and momentum traders could push it back toward its $984k ATH, which would be a 5x. The vise.fun product (fee-sharing locks for pump.fun coins) is a plausible story that could bring more buyers to anything with this ticker.\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"A single unlabeled wallet (FhVo...) holds 80.05% of supply against only about $31k of pool liquidity. Selling it would drain the pool.\",\"RugCheck flags 'Large Amount of LP Unlocked' (danger) and 'Low amount of LP Providers'. One of the top markets has 0% of its LP locked.\",\"31 bundler wallets and a 52-wallet insider trade network\",\"Buyer/seller asymmetry (2,091 unique buyers vs 91 unique sellers) suggests artificial buying\",\"Price is already about 80% below its ATH and fell 44% over 15 minutes; m5 volume is fading\",\"Launched on Meteora DBC, then moved to PumpSwap within seconds (created_unix = migrated_unix)\"]},\"narrative\":{\"description\":\"vise.fun is a real-looking protocol that lets holders lock pump.fun coins and pays out fees in SOL to people who stay locked. It has an official $VISE token and the X account @visedotfun.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The real project launched today and spawned many same-name clones. This contract appears to be one of those clones, trading on the name while the official token draws attention.\"},\"observation_window\":\"6h\",\"p_rug\":68,\"p_runner\":5,\"research_confidence\":\"medium\",\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"vise.fun names 4vXJMB... as the official contract, not this one. x.com returned HTTP 402. Web searches for the contract address and $VISE found nothing about this contract. DexScreener shows no socials for this token, while the official token's pairs list vise.fun and @visedotfun.\"},\"sources\":[{\"url\":\"https://vise.fun/\",\"what\":\"The official site names contract 4vXJMBFT6rcxNHohy2e4UPXGSv8eYpWRZmEQTqi6uRdg as $VISE, not this token\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/4vXJMBFT6rcxNHohy2e4UPXGSv8eYpWRZmEQTqi6uRdg\",\"what\":\"Official VISE pairs at about $54k market cap, with vise.fun and @visedotfun listed as socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/C7KefLmRNXvwdSsvQ4tGU7x4PGkuCQT6UEtJekMHEkKt\",\"what\":\"This token's pairs (PumpSwap, Meteora DYN2, DBC) with no socials; m5 price -24%\"},{\"url\":\"https://x.com/visedotfun\",\"what\":\"Project X account (fetch failed, HTTP 402)\"}],\"thesis\":\"This coin looks like a ticker hijack of the vise.fun project, whose own site names a different contract as the official $VISE. One wallet holds 80% of supply, the LP is unlocked, there are many bundlers, and the buyer pattern looks botted. The price is already 80% below its ATH and falling. Doubling from here is unlikely. A dump or drain within 6 hours is likely.\",\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It uses the VISE name, and GMGN metadata links it to vise.fun. But vise.fun itself names 4vXJMB... as the official contract, so this token is not the project's.\",\"competing_tokens\":\"4vXJMBFT6rcxNHohy2e4UPXGSv8eYpWRZmEQTqi6uRdg is the official one ($54k market cap, $169k 1h volume), plus about 9 other dead clones\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Who controls the 80% wallet FhVo... (possibly an unlabeled program or vault)\",\"Whether any X callers are pushing this CA\",\"Why this clone's market cap is higher than the official token's\"],\"what_is_happening\":\"vise.fun launched a real fee-routing and locking product with its own $VISE token (4vXJMB...). This contract (C7Kef...) is a same-name copy. It launched on Meteora DBC, moved to PumpSwap straight away, and pumped to a $984k ATH before crashing to about $181k. One unlabeled wallet holds 80% of supply, the buying looks botted, and the price is falling.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal shows 2,091 unique buyers but only 91 unique sellers in the first hour, alongside 4,126 buys. That pattern points to wallet fan-out or bot buying, not organic retail. GMGN flags 31 bundler wallets and a 52-wallet insider trade network (RugCheck). The image is duplicated 9 times, and there are about 10 same-name clones. There is no DexScreener profile and no socials of its own. Apart from the vise.fun project, which names a different contract, I found no organic mentions anywhere.",
+   "uncertainty": "X is inaccessible (HTTP 402), so I cannot rule out a caller or KOL pushing this CA."
+  },
+  "continuation_view": "strong_fade",
+  "counterargument": "The volume is large for its size ($850k in the first hour), and this copy trades above the official token ($181k vs $54k market cap), so traders may be treating it as the main VISE. If the 80% wallet is actually a program or vault account that RugCheck did not label, the supply overhang is not real, and momentum traders could push it back toward its $984k ATH, which would be a 5x. The vise.fun product (fee-sharing locks for pump.fun coins) is a plausible story that could bring more buyers to anything with this ticker.",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "A single unlabeled wallet (FhVo...) holds 80.05% of supply against only about $31k of pool liquidity. Selling it would drain the pool.",
+    "RugCheck flags 'Large Amount of LP Unlocked' (danger) and 'Low amount of LP Providers'. One of the top markets has 0% of its LP locked.",
+    "31 bundler wallets and a 52-wallet insider trade network",
+    "Buyer/seller asymmetry (2,091 unique buyers vs 91 unique sellers) suggests artificial buying",
+    "Price is already about 80% below its ATH and fell 44% over 15 minutes; m5 volume is fading",
+    "Launched on Meteora DBC, then moved to PumpSwap within seconds (created_unix = migrated_unix)"
+   ]
+  },
+  "narrative": {
+   "description": "vise.fun is a real-looking protocol that lets holders lock pump.fun coins and pays out fees in SOL to people who stay locked. It has an official $VISE token and the X account @visedotfun.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The real project launched today and spawned many same-name clones. This contract appears to be one of those clones, trading on the name while the official token draws attention."
+  },
+  "observation_window": "6h",
+  "p_rug": 68,
+  "p_runner": 5,
+  "research_confidence": "medium",
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "vise.fun names 4vXJMB... as the official contract, not this one. x.com returned HTTP 402. Web searches for the contract address and $VISE found nothing about this contract. DexScreener shows no socials for this token, while the official token's pairs list vise.fun and @visedotfun."
+  },
+  "sources": [
+   {
+    "url": "https://vise.fun/",
+    "what": "The official site names contract 4vXJMBFT6rcxNHohy2e4UPXGSv8eYpWRZmEQTqi6uRdg as $VISE, not this token"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/4vXJMBFT6rcxNHohy2e4UPXGSv8eYpWRZmEQTqi6uRdg",
+    "what": "Official VISE pairs at about $54k market cap, with vise.fun and @visedotfun listed as socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/C7KefLmRNXvwdSsvQ4tGU7x4PGkuCQT6UEtJekMHEkKt",
+    "what": "This token's pairs (PumpSwap, Meteora DYN2, DBC) with no socials; m5 price -24%"
+   },
+   {
+    "url": "https://x.com/visedotfun",
+    "what": "Project X account (fetch failed, HTTP 402)"
+   }
+  ],
+  "thesis": "This coin looks like a ticker hijack of the vise.fun project, whose own site names a different contract as the official $VISE. One wallet holds 80% of supply, the LP is unlocked, there are many bundlers, and the buyer pattern looks botted. The price is already 80% below its ATH and falling. Doubling from here is unlikely. A dump or drain within 6 hours is likely.",
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It uses the VISE name, and GMGN metadata links it to vise.fun. But vise.fun itself names 4vXJMB... as the official contract, so this token is not the project's.",
+   "competing_tokens": "4vXJMBFT6rcxNHohy2e4UPXGSv8eYpWRZmEQTqi6uRdg is the official one ($54k market cap, $169k 1h volume), plus about 9 other dead clones",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Who controls the 80% wallet FhVo... (possibly an unlabeled program or vault)",
+   "Whether any X callers are pushing this CA",
+   "Why this clone's market cap is higher than the official token's"
+  ],
+  "what_is_happening": "vise.fun launched a real fee-routing and locking product with its own $VISE token (4vXJMB...). This contract (C7Kef...) is a same-name copy. It launched on Meteora DBC, moved to PumpSwap straight away, and pumped to a $984k ATH before crashing to about $181k. One unlabeled wallet holds 80% of supply, the buying looks botted, and the price is falling."
+ },
+ "ttft_ms": 3643,
+ "type": "result",
+ "duration_ms": 63660,
+ "uuid": "c9dfd2a4-c579-4d20-a4e4-a1bd04146ef9",
+ "ttft_stream_ms": 771,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 771,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

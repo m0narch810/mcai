@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 27847,
+ "stop_reason": "tool_use",
+ "session_id": "6b4d6739-d3e2-41b3-994d-c17e5e26ba20",
+ "total_cost_usd": 0.135768,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10020,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2780,
+  "output_tokens_details": {
+   "thinking_tokens": 698
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10020,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2780,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 10020,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10020
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2780,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 10020,
+   "webSearchRequests": 0,
+   "costUSD": 0.135768,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 698,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a 45-minute-old PumpSwap pair for \\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\" (51X). The name means \\\"51 Chigua (Chinese gossip site) official first-launch meme\\\". It was not created through the pump.fun curve: migrated_unix is 0, the launchpad field is empty and the deploy platform is unknown. It launched straight onto PumpSwap with about $47k of liquidity against a $52k market cap, and 0% of the LP is locked or burned. The creator still holds 20.5% of supply. It has done $355k of volume and is up about 300% in the hour. The buyer and seller counts are extreme. GeckoTerminal shows 1,952 unique buyers but only 58 unique sellers across the whole life of the pair. Buyers jumped from 50 to 779 between the 15-minute and 30-minute windows, then fell back to about 46 per 5 minutes, and price is now flat to slightly down. At least 10 other tokens with the exact same name and ticker were created over the past ~12 hours. Almost all show $0 liquidity, meaning they were pulled. One of them, DUtv..., was created about 5 minutes before this pair and has already been drained ($0.01 liquidity at a stated $503k mcap).\",\"narrative\":{\"description\":\"The pitch is an 'official first-launch' token for 51\u5403\u74dc\u7f51, a well-known Chinese gossip/leak site aimed at Chinese-speaking degens. The 'official' claim has no project website, no DexScreener profile and no description. The only link is a GeckoTerminal X handle, gua51x.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A recognizable Chinese brand plus the word 'official' draws CN-community buyers. But the buyer surge is concentrated in a single 15-minute window and has already cooled. That looks like bot or coordinated buying rather than steady organic spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the only live pair with meaningful liquidity under this name, and it has the X handle attached on GeckoTerminal. Neither proves it is the official launch.\",\"competing_tokens\":\"At least 10 identical-name 51X tokens were created over the past ~12 hours. Almost all now show $0 liquidity. DUtv... launched about 5 minutes before this one and is already drained.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There are 1,952 unique buyers against only 58 unique sellers, with 2,907 buys against 1,034 sells: roughly 1,000 sells coming from 58 wallets. A burst of about 730 new buyers arrived in a single 15-minute window. The pair launched directly with deep liquidity that is not locked. The creator still holds 20.5%. A string of same-name clones was created and drained in sequence. Together this fits a repeated launch, pump and pull-liquidity operation.\",\"uncertainty\":\"The official brand could genuinely have run an airdrop or campaign that brought in many small buyers. The GMGN tags are mild: 4 bundlers and no snipers. I have no X data.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is locked or burned, and RugCheck flags it as danger: the owner can remove liquidity at any time\",\"The creator holds 20.5% of supply and can sell it into the pool\",\"The pair was created directly on PumpSwap rather than graduating from the curve, so the liquidity is one party's own deposit\",\"Same-name clones have been rugged repeatedly over ~12 hours, including one 5 minutes earlier\",\"The unique buyer/seller imbalance suggests wash trading or bot buying\",\"Buying has already slowed after a 300% move\"]},\"counterargument\":\"This could be the real launch tied to a large Chinese gossip brand, with an X handle attached and nearly 2,000 holders. The clones would then be the snipers' copies, and this one survived. Mint and freeze authority are renounced, with no tax and no honeypot flag. At a $52k mcap, a genuine CN-community wave could easily push it to $105k+, and CN-community coins sometimes run hard in waves.\",\"unknowns\":[\"Whether gua51x is really the gossip site's official account\",\"Who provided the LP, and whether it is the creator wallet\",\"Why so few unique sellers: bots, or something that restricts selling\",\"Whether the drained clones share a deployer or funder with this token\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This run had no internet access, so the judgment rests only on the evidence packet.\"},\"thesis\":\"This is a likely rug. The LP is unlocked and the pair was launched directly on PumpSwap. The creator still holds 20.5%. Only 58 unique sellers exist against about 1,950 buyers. The same name has been launched and drained about 10 times in 12 hours, including 5 minutes before this pair. Buying already peaked and is fading. The chance of reaching 2x before the liquidity is pulled is small.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":75,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is a 45-minute-old PumpSwap pair for \"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\" (51X). The name means \"51 Chigua (Chinese gossip site) official first-launch meme\". It was not created through the pump.fun curve: migrated_unix is 0, the launchpad field is empty and the deploy platform is unknown. It launched straight onto PumpSwap with about $47k of liquidity against a $52k market cap, and 0% of the LP is locked or burned. The creator still holds 20.5% of supply. It has done $355k of volume and is up about 300% in the hour. The buyer and seller counts are extreme. GeckoTerminal shows 1,952 unique buyers but only 58 unique sellers across the whole life of the pair. Buyers jumped from 50 to 779 between the 15-minute and 30-minute windows, then fell back to about 46 per 5 minutes, and price is now flat to slightly down. At least 10 other tokens with the exact same name and ticker were created over the past ~12 hours. Almost all show $0 liquidity, meaning they were pulled. One of them, DUtv..., was created about 5 minutes before this pair and has already been drained ($0.01 liquidity at a stated $503k mcap).",
+  "narrative": {
+   "description": "The pitch is an 'official first-launch' token for 51\u5403\u74dc\u7f51, a well-known Chinese gossip/leak site aimed at Chinese-speaking degens. The 'official' claim has no project website, no DexScreener profile and no description. The only link is a GeckoTerminal X handle, gua51x.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A recognizable Chinese brand plus the word 'official' draws CN-community buyers. But the buyer surge is concentrated in a single 15-minute window and has already cooled. That looks like bot or coordinated buying rather than steady organic spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the only live pair with meaningful liquidity under this name, and it has the X handle attached on GeckoTerminal. Neither proves it is the official launch.",
+   "competing_tokens": "At least 10 identical-name 51X tokens were created over the past ~12 hours. Almost all now show $0 liquidity. DUtv... launched about 5 minutes before this one and is already drained.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There are 1,952 unique buyers against only 58 unique sellers, with 2,907 buys against 1,034 sells: roughly 1,000 sells coming from 58 wallets. A burst of about 730 new buyers arrived in a single 15-minute window. The pair launched directly with deep liquidity that is not locked. The creator still holds 20.5%. A string of same-name clones was created and drained in sequence. Together this fits a repeated launch, pump and pull-liquidity operation.",
+   "uncertainty": "The official brand could genuinely have run an airdrop or campaign that brought in many small buyers. The GMGN tags are mild: 4 bundlers and no snipers. I have no X data."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is locked or burned, and RugCheck flags it as danger: the owner can remove liquidity at any time",
+    "The creator holds 20.5% of supply and can sell it into the pool",
+    "The pair was created directly on PumpSwap rather than graduating from the curve, so the liquidity is one party's own deposit",
+    "Same-name clones have been rugged repeatedly over ~12 hours, including one 5 minutes earlier",
+    "The unique buyer/seller imbalance suggests wash trading or bot buying",
+    "Buying has already slowed after a 300% move"
+   ]
+  },
+  "counterargument": "This could be the real launch tied to a large Chinese gossip brand, with an X handle attached and nearly 2,000 holders. The clones would then be the snipers' copies, and this one survived. Mint and freeze authority are renounced, with no tax and no honeypot flag. At a $52k mcap, a genuine CN-community wave could easily push it to $105k+, and CN-community coins sometimes run hard in waves.",
+  "unknowns": [
+   "Whether gua51x is really the gossip site's official account",
+   "Who provided the LP, and whether it is the creator wallet",
+   "Why so few unique sellers: bots, or something that restricts selling",
+   "Whether the drained clones share a deployer or funder with this token"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This run had no internet access, so the judgment rests only on the evidence packet."
+  },
+  "thesis": "This is a likely rug. The LP is unlocked and the pair was launched directly on PumpSwap. The creator still holds 20.5%. Only 58 unique sellers exist against about 1,950 buyers. The same name has been launched and drained about 10 times in 12 hours, including 5 minutes before this pair. Buying already peaked and is fading. The chance of reaching 2x before the liquidity is pulled is small.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 75,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8240,
+ "type": "result",
+ "duration_ms": 27893,
+ "uuid": "265497af-5438-4634-b027-f5a7701542d9",
+ "ttft_stream_ms": 778,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 778,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

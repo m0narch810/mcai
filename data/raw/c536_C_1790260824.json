@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 88462,
+ "stop_reason": "tool_use",
+ "session_id": "de7e31cd-5d88-45b4-aca5-8f0ad36c896b",
+ "total_cost_usd": 0.3773518,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 17148,
+  "cache_read_input_tokens": 60599,
+  "output_tokens": 4699,
+  "output_tokens_details": {
+   "thinking_tokens": 1059
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17148,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2886,
+    "cache_read_input_tokens": 17619,
+    "cache_creation_input_tokens": 2105,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2105
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4699,
+   "cacheReadInputTokens": 60599,
+   "cacheCreationInputTokens": 17148,
+   "webSearchRequests": 0,
+   "costUSD": 0.24332379999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1059,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 69998,
+   "outputTokens": 2806,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.134028,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PROM is the token tied to PromX (promx.fun), a small new pump.fun-based launchpad. Coins launched through it send their pump.fun creator fees into a pool, and holders who post about the coin on X (tagging @usePromX and #ad) get paid in SOL from that pool. The token launched at about 12:11 UTC and moved to PumpSwap within about 6 minutes. It reached an all-time high of about $342k market cap, then fell roughly 70-85%. It is now bouncing hard: GeckoTerminal shows +164% over 30 minutes and +58-62% over 5 minutes, and DexScreener currently has the price near $0.000114, about $110k market cap. Six-hour volume is about $1.6M, which is extreme turnover for this size. That volume comes with heavy bot activity: GMGN counts 550 bundler wallets, 1,000 fresh wallets and a 43% bot/degen rate. The token also has 10 paid DexScreener boosts, a community-takeover flag, and the creator has sold out ('creator_close').\",\"narrative\":{\"description\":\"The story is 'paid-to-shill' fee sharing: pump.fun creator fees get sent to holders who promote a coin on X. It fits the current creator-fee meta on pump.fun, and the product is live. It is very small, though: about 2 SOL paid out across 84 posts, with about 11.4 SOL sitting in reward pools. The mechanism is built to reward promotion.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"The product is live and pays for posts, so it produces self-promotion (#ad posts) rather than organic spread. On top of that come paid DexScreener boosts and bot/bundler volume. I found no news, Reddit or independent coverage.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"The pump.fun metadata links promx.fun and a status post by @usePromX. The name matches, and the description is the site's tagline. This pair was created at 12:17 UTC, before the clones in the packet, all of which were created between about 12:18 and 13:05 UTC. The site itself shows no official PROM contract address, and I could not read the linked X post (HTTP 402), so I could not confirm it is the official token.\",\"competing_tokens\":\"At least 8 PROM clones launched within the next hour, all with $0 liquidity and no volume now. There is also an unrelated older PROM token on Solana (FkeGp...) with about $67M liquidity, which matches the long-established Prom (PROM) project.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"There are 10 paid DexScreener boosts, 550 bundler wallets and 1,000 fresh wallets per GMGN, and a 43% bot/degen rate. The product itself pays people to post #ad shills. Volume of $1.6M against a market cap of about $94k suggests bot or wash trading. The creator has sold out and a community-takeover flag is set. No organic Reddit, news or X discussion turned up in search.\",\"uncertainty\":\"X is barely indexed and the linked post was not readable. Real crypto-Twitter attention may exist that I cannot see.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"550 bundler wallets and a large share of fresh wallets can dump into about $28-31k of liquidity\",\"Entry would come right after a +60% 5-minute and +164% 30-minute spike, so a retrace is likely\",\"The creator has fully exited, leaving no owner commitment\",\"Overhead supply sits between $110k and $342k from buyers at the all-time high\",\"Only $28k of liquidity, so a -50% move can happen quickly\"]},\"counterargument\":\"This looks like the canonical token for a real, working product in the active pump.fun creator-fee meta. The LP is burned, so liquidity cannot be pulled; about 5,000 holders and 40 smart wallets are involved, and the top-10 concentration is low at about 18%. It has already shown it can reach $342k. Doubling from about $110k to $220k only takes it back to about 65% of that high, and a V-shaped recovery with heavy volume often retests the high within hours. If @usePromX or bigger accounts push it, 2x is quite reachable.\",\"unknowns\":[\"Whether @usePromX officially endorses this contract (the linked post was unreadable)\",\"What X engagement and KOL involvement actually look like\",\"Whether the bundler wallets still hold supply or have already exited\",\"The cause of the current bounce: a real catalyst, or a coordinated pump using the boosts\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X status returned HTTP 402 and nitter refused the connection. Searching the contract address returned nothing relevant. The pump.fun API confirmed the metadata. DexScreener showed a live price of about $0.000114.\"},\"thesis\":\"A real but tiny paid-shill product, likely the canonical token, trading in a very bot-heavy, boosted, dev-exited structure. It has already made one large pump and dump and is now in a sharp dead-cat or recovery bounce. Doubling to about $220k is possible given the earlier $342k high. But entering right after a vertical 5-minute spike, with 550 bundlers and paid boosts, makes hitting the -50% stop first more likely.\",\"continuation_view\":\"fade\",\"p_runner\":21,\"p_rug\":28,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.promx.fun/\",\"what\":\"The product description, payout stats (about 2 SOL across 84 posts) and reward-pool coins; no PROM contract address shown\"},{\"url\":\"https://frontend-api-v3.pump.fun/coins/EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9\",\"what\":\"pump.fun metadata linking promx.fun and the @usePromX status\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9\",\"what\":\"Live price of about $0.000114 and $1.6M in 24h volume\"},{\"url\":\"https://x.com/usePromX/status/2103095000846467218\",\"what\":\"Linked X post; could not be read (HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "PROM is the token tied to PromX (promx.fun), a small new pump.fun-based launchpad. Coins launched through it send their pump.fun creator fees into a pool, and holders who post about the coin on X (tagging @usePromX and #ad) get paid in SOL from that pool. The token launched at about 12:11 UTC and moved to PumpSwap within about 6 minutes. It reached an all-time high of about $342k market cap, then fell roughly 70-85%. It is now bouncing hard: GeckoTerminal shows +164% over 30 minutes and +58-62% over 5 minutes, and DexScreener currently has the price near $0.000114, about $110k market cap. Six-hour volume is about $1.6M, which is extreme turnover for this size. That volume comes with heavy bot activity: GMGN counts 550 bundler wallets, 1,000 fresh wallets and a 43% bot/degen rate. The token also has 10 paid DexScreener boosts, a community-takeover flag, and the creator has sold out ('creator_close').",
+  "narrative": {
+   "description": "The story is 'paid-to-shill' fee sharing: pump.fun creator fees get sent to holders who promote a coin on X. It fits the current creator-fee meta on pump.fun, and the product is live. It is very small, though: about 2 SOL paid out across 84 posts, with about 11.4 SOL sitting in reward pools. The mechanism is built to reward promotion.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "The product is live and pays for posts, so it produces self-promotion (#ad posts) rather than organic spread. On top of that come paid DexScreener boosts and bot/bundler volume. I found no news, Reddit or independent coverage."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "The pump.fun metadata links promx.fun and a status post by @usePromX. The name matches, and the description is the site's tagline. This pair was created at 12:17 UTC, before the clones in the packet, all of which were created between about 12:18 and 13:05 UTC. The site itself shows no official PROM contract address, and I could not read the linked X post (HTTP 402), so I could not confirm it is the official token.",
+   "competing_tokens": "At least 8 PROM clones launched within the next hour, all with $0 liquidity and no volume now. There is also an unrelated older PROM token on Solana (FkeGp...) with about $67M liquidity, which matches the long-established Prom (PROM) project.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "There are 10 paid DexScreener boosts, 550 bundler wallets and 1,000 fresh wallets per GMGN, and a 43% bot/degen rate. The product itself pays people to post #ad shills. Volume of $1.6M against a market cap of about $94k suggests bot or wash trading. The creator has sold out and a community-takeover flag is set. No organic Reddit, news or X discussion turned up in search.",
+   "uncertainty": "X is barely indexed and the linked post was not readable. Real crypto-Twitter attention may exist that I cannot see."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "550 bundler wallets and a large share of fresh wallets can dump into about $28-31k of liquidity",
+    "Entry would come right after a +60% 5-minute and +164% 30-minute spike, so a retrace is likely",
+    "The creator has fully exited, leaving no owner commitment",
+    "Overhead supply sits between $110k and $342k from buyers at the all-time high",
+    "Only $28k of liquidity, so a -50% move can happen quickly"
+   ]
+  },
+  "counterargument": "This looks like the canonical token for a real, working product in the active pump.fun creator-fee meta. The LP is burned, so liquidity cannot be pulled; about 5,000 holders and 40 smart wallets are involved, and the top-10 concentration is low at about 18%. It has already shown it can reach $342k. Doubling from about $110k to $220k only takes it back to about 65% of that high, and a V-shaped recovery with heavy volume often retests the high within hours. If @usePromX or bigger accounts push it, 2x is quite reachable.",
+  "unknowns": [
+   "Whether @usePromX officially endorses this contract (the linked post was unreadable)",
+   "What X engagement and KOL involvement actually look like",
+   "Whether the bundler wallets still hold supply or have already exited",
+   "The cause of the current bounce: a real catalyst, or a coordinated pump using the boosts"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X status returned HTTP 402 and nitter refused the connection. Searching the contract address returned nothing relevant. The pump.fun API confirmed the metadata. DexScreener showed a live price of about $0.000114."
+  },
+  "thesis": "A real but tiny paid-shill product, likely the canonical token, trading in a very bot-heavy, boosted, dev-exited structure. It has already made one large pump and dump and is now in a sharp dead-cat or recovery bounce. Doubling to about $220k is possible given the earlier $342k high. But entering right after a vertical 5-minute spike, with 550 bundlers and paid boosts, makes hitting the -50% stop first more likely.",
+  "continuation_view": "fade",
+  "p_runner": 21,
+  "p_rug": 28,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.promx.fun/",
+    "what": "The product description, payout stats (about 2 SOL across 84 posts) and reward-pool coins; no PROM contract address shown"
+   },
+   {
+    "url": "https://frontend-api-v3.pump.fun/coins/EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9",
+    "what": "pump.fun metadata linking promx.fun and the @usePromX status"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9",
+    "what": "Live price of about $0.000114 and $1.6M in 24h volume"
+   },
+   {
+    "url": "https://x.com/usePromX/status/2103095000846467218",
+    "what": "Linked X post; could not be read (HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 3128,
+ "type": "result",
+ "duration_ms": 124618,
+ "uuid": "ee0f1b6a-79e1-46e2-993d-ef012c6f6dcf",
+ "ttft_stream_ms": 1051,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1051,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

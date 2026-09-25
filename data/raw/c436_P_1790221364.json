@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 21477,
+ "stop_reason": "tool_use",
+ "session_id": "d15a87cc-baf4-4520-86f7-639b98cb71b7",
+ "total_cost_usd": 0.1069108,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7587,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2291,
+  "output_tokens_details": {
+   "thinking_tokens": 338
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7587,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2291,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7587,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7587
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2291,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7587,
+   "webSearchRequests": 0,
+   "costUSD": 0.1069108,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 338,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Concrete\\\" (CT) launched about 37 minutes ago through a Meteora virtual curve and migrated to PumpSwap at the moment it was created. It has about $1.17M market cap, $370k liquidity and $4.3M volume, roughly 11.5x turnover in the first hour. Price is up about 15\u201339% depending on the source and sits right at its all-time high. The packet links it to the X handle ConcreteXYZ, which matches a real DeFi vault project. The same-ticker list holds at least 8 earlier CT tokens named \\\"Concrete\\\" or \\\"City Protocol\\\" from the past day or two. All but one now show near-zero liquidity, which means their liquidity was pulled. One unlabeled wallet holds 80% of supply, and RugCheck flags a large amount of unlocked LP.\",\"narrative\":{\"description\":\"This looks like a coin trading on the name of a real project (Concrete) around a token launch or airdrop it may be expecting. The story is 'buy the real Concrete token early'. The pattern of many same-name copies launched one after another points to a scam farm, not a real launch.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Attention comes from people searching the ticker for an expected launch, plus fast bot and wallet flow. There is no DexScreener profile, no website and no boosts. Buyers probably found it by searching for the name.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Only the name and a GeckoTerminal X handle link this token to the project. The packet has no site, no socials and no DexScreener profile. The dev's X account has launched 37 tokens, which does not fit an official project team.\",\"competing_tokens\":\"At least 8 same-name CT tokens (Concrete / City Protocol) show near-zero liquidity, and one of them shows a $202M market cap with no liquidity. A City Protocol CT (HW9K\u2026) is live right now with $310k liquidity and $6.7M hourly volume, the same template running in parallel.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Same-name tokens were launched one after another and each died with its liquidity gone. The launch migrated instantly with deep seeded liquidity. One unlabeled wallet holds 80% of supply. Buyers far outnumber sellers (1,766 vs 163): many small buyers and a few large sellers, the usual shape of an insider exit. The dev's X account has launched 37 tokens. RugCheck flags unlocked LP and few LP providers.\",\"uncertainty\":\"The 80% wallet could be a vesting or locker contract that RugCheck failed to label. GMGN's top-10 holder rate of 0.9% conflicts with RugCheck's figure. The 'lp_burn_ratio 1.0' reading conflicts with the unlocked-LP warning.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80% of supply and can dump into the pool\",\"RugCheck flags unlocked LP with few LP providers\",\"Serial same-name copies from the past day or two died with liquidity pulled\",\"Buyers vastly outnumber sellers, a sign of insider distribution\",\"If the real Concrete token launches, it makes this copy worthless at once\"]},\"counterargument\":\"Volume is very large ($4.3M in 37 minutes) and more than 1,700 unique wallets have bought. Liquidity is deep for a microcap. If the 80% wallet is really a locker or vesting contract, and GMGN's 0.9% top-10 figure suggests it may be, the float is spread thin. Mint and freeze authority are renounced, and GMGN shows no bundlers or snipers. Hype over an expected launch could take it from $1.2M to $2.4M+ within hours. The live City Protocol copy shows these copies can draw heavy flow before they die.\",\"unknowns\":[\"Whether the 80% holder is a locker, vesting contract or an extractable wallet\",\"Whether ConcreteXYZ has launched or announced an official token, and on which chain\",\"The actual LP lock or burn status (the sources conflict)\",\"Whether the dead same-name copies came from the same operator\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment rests only on the evidence packet.\"},\"sources\":[],\"thesis\":\"This looks like a copy of the real Concrete project, from a series of same-name launches that have been rugged one after another. One wallet holds 80% of supply and the LP is flagged as unlocked. It will most likely have its liquidity pulled or be dumped within hours. Doubling from entry is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":75,\"research_confidence\":\"medium\",\"observation_window\":\"6h\"}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Concrete\" (CT) launched about 37 minutes ago through a Meteora virtual curve and migrated to PumpSwap at the moment it was created. It has about $1.17M market cap, $370k liquidity and $4.3M volume, roughly 11.5x turnover in the first hour. Price is up about 15\u201339% depending on the source and sits right at its all-time high. The packet links it to the X handle ConcreteXYZ, which matches a real DeFi vault project. The same-ticker list holds at least 8 earlier CT tokens named \"Concrete\" or \"City Protocol\" from the past day or two. All but one now show near-zero liquidity, which means their liquidity was pulled. One unlabeled wallet holds 80% of supply, and RugCheck flags a large amount of unlocked LP.",
+  "narrative": {
+   "description": "This looks like a coin trading on the name of a real project (Concrete) around a token launch or airdrop it may be expecting. The story is 'buy the real Concrete token early'. The pattern of many same-name copies launched one after another points to a scam farm, not a real launch.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Attention comes from people searching the ticker for an expected launch, plus fast bot and wallet flow. There is no DexScreener profile, no website and no boosts. Buyers probably found it by searching for the name."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Only the name and a GeckoTerminal X handle link this token to the project. The packet has no site, no socials and no DexScreener profile. The dev's X account has launched 37 tokens, which does not fit an official project team.",
+   "competing_tokens": "At least 8 same-name CT tokens (Concrete / City Protocol) show near-zero liquidity, and one of them shows a $202M market cap with no liquidity. A City Protocol CT (HW9K\u2026) is live right now with $310k liquidity and $6.7M hourly volume, the same template running in parallel.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Same-name tokens were launched one after another and each died with its liquidity gone. The launch migrated instantly with deep seeded liquidity. One unlabeled wallet holds 80% of supply. Buyers far outnumber sellers (1,766 vs 163): many small buyers and a few large sellers, the usual shape of an insider exit. The dev's X account has launched 37 tokens. RugCheck flags unlocked LP and few LP providers.",
+   "uncertainty": "The 80% wallet could be a vesting or locker contract that RugCheck failed to label. GMGN's top-10 holder rate of 0.9% conflicts with RugCheck's figure. The 'lp_burn_ratio 1.0' reading conflicts with the unlocked-LP warning."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80% of supply and can dump into the pool",
+    "RugCheck flags unlocked LP with few LP providers",
+    "Serial same-name copies from the past day or two died with liquidity pulled",
+    "Buyers vastly outnumber sellers, a sign of insider distribution",
+    "If the real Concrete token launches, it makes this copy worthless at once"
+   ]
+  },
+  "counterargument": "Volume is very large ($4.3M in 37 minutes) and more than 1,700 unique wallets have bought. Liquidity is deep for a microcap. If the 80% wallet is really a locker or vesting contract, and GMGN's 0.9% top-10 figure suggests it may be, the float is spread thin. Mint and freeze authority are renounced, and GMGN shows no bundlers or snipers. Hype over an expected launch could take it from $1.2M to $2.4M+ within hours. The live City Protocol copy shows these copies can draw heavy flow before they die.",
+  "unknowns": [
+   "Whether the 80% holder is a locker, vesting contract or an extractable wallet",
+   "Whether ConcreteXYZ has launched or announced an official token, and on which chain",
+   "The actual LP lock or burn status (the sources conflict)",
+   "Whether the dead same-name copies came from the same operator"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment rests only on the evidence packet."
+  },
+  "sources": [],
+  "thesis": "This looks like a copy of the real Concrete project, from a series of same-name launches that have been rugged one after another. One wallet holds 80% of supply and the LP is flagged as unlocked. It will most likely have its liquidity pulled or be dumped within hours. Doubling from entry is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 75,
+  "research_confidence": "medium",
+  "observation_window": "6h"
+ },
+ "ttft_ms": 4273,
+ "type": "result",
+ "duration_ms": 21527,
+ "uuid": "3d3047fb-e657-43fd-9111-822fed42871e",
+ "ttft_stream_ms": 650,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 650,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,140 @@
+{
+ "duration_api_ms": 46190,
+ "stop_reason": "tool_use",
+ "session_id": "511e5646-7d19-4de2-bac6-8869d7e893bd",
+ "total_cost_usd": 0.15554239999999997,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8858,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 4225,
+  "output_tokens_details": {
+   "thinking_tokens": 1462
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8858,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4225,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 8858,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8858
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4225,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 8858,
+   "webSearchRequests": 0,
+   "costUSD": 0.15554239999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1462,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"Price had risen about 10x in roughly an hour (+557% h1, +995% h6) on a coin 98 minutes old. Many holders were sitting on large paper gains, and on the bonding curve nobody provides liquidity to absorb their selling. The report named this as a structural risk.\",\"The price was already below its high at T2: ATH market cap about $43k against about $36k (roughly 16% off), and m5 price change was negative. The report noted this. By decision time the price had fallen further, to an entry market cap of $28.5k, about 19% below T2 and about 34% below the ATH.\",\"Flow was dominated by bundlers and bots: 195 bundler-tagged wallets against a GMGN holder count of 268, 157 fresh wallets, a 63% bot/degen rate and a 34% top-bundler trader share. Supply bought in bundles tends to leave together. After entry the price hit -20% within 1.8 minutes and -50% within 48 minutes, which fits a concentrated exit. But one case cannot tell a bundler exit apart from ordinary profit-taking.\",\"The launch came from an AI-agent factory (funkos.fun), and the linked X account is tied to 26 launched tokens. The report found no organic X, Reddit, Telegram or news discussion and no outside catalyst. Without a community, there were no outside buyers to keep demand going after the first burst.\",\"There were no smart-money signals and no degen calls (both zero), despite 8 smart-tagged and 2 renowned wallets. Tagged wallets touching a coin is not the same as those wallets endorsing it.\",\"GeckoTerminal's short-window flow was decelerating sharply. m5 volume was about $4.5k against about $50k over m15, which is roughly a quarter of the m15 per-5-minute rate. There were 41 unique m5 buyers against 302 over m15. This was available at T2, but the report did not use it. The report only described the price as 'flat to slightly down' over 5 minutes.\"],\"misleading_observations\":[\"583 unique buyers in the last hour and a 1.6:1 buy/sell ratio looked like broad demand. With 195 bundler and 157 fresh wallets, those counts were inflated by bots and split wallets. They do not measure independent demand.\",\"The involvement of 8 smart and 2 renowned wallets looked like a positive signal. There was no smart-money signal and no call, so these were probably quick in-and-out trades rather than holders.\",\"Being 87% of the way to graduation was offered as the main route to upside. The price fell away from the graduation threshold instead. Nearness to graduation shows how far the curve has filled, not whether buying will continue.\",\"liquidity_usd of about $23k is a curve-equivalent depth derived from virtual reserves. RugCheck's total market liquidity was $9.6k, and entry-time liquidity was $13.3k. The headline figure overstated how much selling the market could absorb.\",\"RugCheck's top10 of 23.9% (with the pump.fun curve account excluded) made ownership look dispersed. The bundler share suggests the supply was effectively more concentrated than that. The GeckoTerminal 72.9% figure was stale and cuts the other way, so neither number was reliable.\",\"The DexScreener m5 volume of $22.3k seemed to show strong current activity, while GeckoTerminal showed $4.5k. The two sources' windows disagree, and the DexScreener number hid the slowdown.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time pointed toward a runner outcome. The fade call and the low p_runner were consistent with the evidence.\",\"The GeckoTerminal m5-versus-m15 deceleration and the already-negative distance from ATH could reasonably have pushed p_runner below 15% and the -50%-first probability above 45%. The outcome was a stop within 49 minutes. The price never reached +50% (best was +36% within 6h) and fell to -90% at 24h. The miss was in calibration, not direction.\",\"Between T2 and decision time the price fell about 19%, and the report could not see this. A process that rechecks price momentum at decision time would have seen the fade already under way.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"For pump.fun bonding-curve coins with h1 price change above +300%, if GeckoTerminal m5 volume is below 40% of the m15 per-5-minute rate (m15 volume / 3), the chance of reaching +100% before -50% is below 10%, and the median time to -50% is under 2 hours.\",\"conditions\":\"Token still on the bonding curve, pair age under 6h, market cap $10k\u2013$150k at decision, h1 price change above +300%, measured with the GeckoTerminal m5 and m15 windows available at T2 or at decision time.\",\"market_structure_rationale\":\"On the curve, price is a direct function of net SOL flowing in, and there is no outside liquidity provider. Once a vertical move stops attracting new buyers, holders with gains sell straight into the curve with nothing to cushion the price. A drop-off in short-window volume shows that the pool of marginal buyers is running out.\"},{\"statement\":\"For curve coins where GMGN bundler-tagged wallets make up at least 50% of the GMGN holder count and there are no smart-money signals, the bracket stop (-50%) is hit first at least 70% of the time.\",\"conditions\":\"Pump.fun curve coins with GMGN data available, bundler_wallets / holder_count >= 0.5, smart_money_signal_count = 0, price already up more than 3x on h6.\",\"market_structure_rationale\":\"Bundled supply is controlled by a few operators who sell together. The high buyer counts they create make demand look broader than it is, while the real exit pressure is concentrated.\"},{\"statement\":\"Coins launched by agent or factory launchers (dev X account linked to 10 or more launched tokens, and no project-specific socials beyond the platform) have a lower +100%-before--50% rate than other curve coins in the same market-cap band.\",\"conditions\":\"GMGN dev_x_account_launched_token_count >= 10, no DexScreener profile, no paid promotion, and web search finds no organic discussion at decision time.\",\"market_structure_rationale\":\"A factory keeps producing near-identical coins, which splits attention across substitutes and leaves no committed community to buy dips. Demand rests entirely on short-term trench bots.\"}],\"summary\":\"The report called a fade, with p_runner 15 and p_rug 45, and that turned out right. Entry was at about $28.5k market cap, already 19% below the T2 price. The -50% stop hit at 48.8 minutes. Within 6h the best move was +36% (no +50% touch), and the price was down 90% at 24h, without a liquidity collapse. The call rested on relevant evidence: a vertical 10x move with no outside catalyst, flow dominated by bundlers and bots, an AI-agent factory launcher with no organic social presence, zero smart-money signals, and a price already off its ATH. The misleading items were the ones the report correctly treated with suspicion: inflated unique-buyer and buy/sell counts, tagged smart and KOL wallets that were probably just passing through, graduation proximity, and the headline curve 'liquidity' figure. The report did not use one clear signal that was available: GeckoTerminal's m5 volume and buyer counts had collapsed relative to m15. Using it would likely have supported even lower runner odds. So this was sound reasoning with somewhat conservative calibration, not luck. Still, a single case cannot separate bundler-driven dumping from ordinary momentum exhaustion, so the outcome was only partially knowable. The direction was favoured by the evidence, but the exact path and speed were not predictable.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "Price had risen about 10x in roughly an hour (+557% h1, +995% h6) on a coin 98 minutes old. Many holders were sitting on large paper gains, and on the bonding curve nobody provides liquidity to absorb their selling. The report named this as a structural risk.",
+   "The price was already below its high at T2: ATH market cap about $43k against about $36k (roughly 16% off), and m5 price change was negative. The report noted this. By decision time the price had fallen further, to an entry market cap of $28.5k, about 19% below T2 and about 34% below the ATH.",
+   "Flow was dominated by bundlers and bots: 195 bundler-tagged wallets against a GMGN holder count of 268, 157 fresh wallets, a 63% bot/degen rate and a 34% top-bundler trader share. Supply bought in bundles tends to leave together. After entry the price hit -20% within 1.8 minutes and -50% within 48 minutes, which fits a concentrated exit. But one case cannot tell a bundler exit apart from ordinary profit-taking.",
+   "The launch came from an AI-agent factory (funkos.fun), and the linked X account is tied to 26 launched tokens. The report found no organic X, Reddit, Telegram or news discussion and no outside catalyst. Without a community, there were no outside buyers to keep demand going after the first burst.",
+   "There were no smart-money signals and no degen calls (both zero), despite 8 smart-tagged and 2 renowned wallets. Tagged wallets touching a coin is not the same as those wallets endorsing it.",
+   "GeckoTerminal's short-window flow was decelerating sharply. m5 volume was about $4.5k against about $50k over m15, which is roughly a quarter of the m15 per-5-minute rate. There were 41 unique m5 buyers against 302 over m15. This was available at T2, but the report did not use it. The report only described the price as 'flat to slightly down' over 5 minutes."
+  ],
+  "misleading_observations": [
+   "583 unique buyers in the last hour and a 1.6:1 buy/sell ratio looked like broad demand. With 195 bundler and 157 fresh wallets, those counts were inflated by bots and split wallets. They do not measure independent demand.",
+   "The involvement of 8 smart and 2 renowned wallets looked like a positive signal. There was no smart-money signal and no call, so these were probably quick in-and-out trades rather than holders.",
+   "Being 87% of the way to graduation was offered as the main route to upside. The price fell away from the graduation threshold instead. Nearness to graduation shows how far the curve has filled, not whether buying will continue.",
+   "liquidity_usd of about $23k is a curve-equivalent depth derived from virtual reserves. RugCheck's total market liquidity was $9.6k, and entry-time liquidity was $13.3k. The headline figure overstated how much selling the market could absorb.",
+   "RugCheck's top10 of 23.9% (with the pump.fun curve account excluded) made ownership look dispersed. The bundler share suggests the supply was effectively more concentrated than that. The GeckoTerminal 72.9% figure was stale and cuts the other way, so neither number was reliable.",
+   "The DexScreener m5 volume of $22.3k seemed to show strong current activity, while GeckoTerminal showed $4.5k. The two sources' windows disagree, and the DexScreener number hid the slowdown."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time pointed toward a runner outcome. The fade call and the low p_runner were consistent with the evidence.",
+   "The GeckoTerminal m5-versus-m15 deceleration and the already-negative distance from ATH could reasonably have pushed p_runner below 15% and the -50%-first probability above 45%. The outcome was a stop within 49 minutes. The price never reached +50% (best was +36% within 6h) and fell to -90% at 24h. The miss was in calibration, not direction.",
+   "Between T2 and decision time the price fell about 19%, and the report could not see this. A process that rechecks price momentum at decision time would have seen the fade already under way."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "For pump.fun bonding-curve coins with h1 price change above +300%, if GeckoTerminal m5 volume is below 40% of the m15 per-5-minute rate (m15 volume / 3), the chance of reaching +100% before -50% is below 10%, and the median time to -50% is under 2 hours.",
+    "conditions": "Token still on the bonding curve, pair age under 6h, market cap $10k\u2013$150k at decision, h1 price change above +300%, measured with the GeckoTerminal m5 and m15 windows available at T2 or at decision time.",
+    "market_structure_rationale": "On the curve, price is a direct function of net SOL flowing in, and there is no outside liquidity provider. Once a vertical move stops attracting new buyers, holders with gains sell straight into the curve with nothing to cushion the price. A drop-off in short-window volume shows that the pool of marginal buyers is running out."
+   },
+   {
+    "statement": "For curve coins where GMGN bundler-tagged wallets make up at least 50% of the GMGN holder count and there are no smart-money signals, the bracket stop (-50%) is hit first at least 70% of the time.",
+    "conditions": "Pump.fun curve coins with GMGN data available, bundler_wallets / holder_count >= 0.5, smart_money_signal_count = 0, price already up more than 3x on h6.",
+    "market_structure_rationale": "Bundled supply is controlled by a few operators who sell together. The high buyer counts they create make demand look broader than it is, while the real exit pressure is concentrated."
+   },
+   {
+    "statement": "Coins launched by agent or factory launchers (dev X account linked to 10 or more launched tokens, and no project-specific socials beyond the platform) have a lower +100%-before--50% rate than other curve coins in the same market-cap band.",
+    "conditions": "GMGN dev_x_account_launched_token_count >= 10, no DexScreener profile, no paid promotion, and web search finds no organic discussion at decision time.",
+    "market_structure_rationale": "A factory keeps producing near-identical coins, which splits attention across substitutes and leaves no committed community to buy dips. Demand rests entirely on short-term trench bots."
+   }
+  ],
+  "summary": "The report called a fade, with p_runner 15 and p_rug 45, and that turned out right. Entry was at about $28.5k market cap, already 19% below the T2 price. The -50% stop hit at 48.8 minutes. Within 6h the best move was +36% (no +50% touch), and the price was down 90% at 24h, without a liquidity collapse. The call rested on relevant evidence: a vertical 10x move with no outside catalyst, flow dominated by bundlers and bots, an AI-agent factory launcher with no organic social presence, zero smart-money signals, and a price already off its ATH. The misleading items were the ones the report correctly treated with suspicion: inflated unique-buyer and buy/sell counts, tagged smart and KOL wallets that were probably just passing through, graduation proximity, and the headline curve 'liquidity' figure. The report did not use one clear signal that was available: GeckoTerminal's m5 volume and buyer counts had collapsed relative to m15. Using it would likely have supported even lower runner odds. So this was sound reasoning with somewhat conservative calibration, not luck. Still, a single case cannot separate bundler-driven dumping from ordinary momentum exhaustion, so the outcome was only partially knowable. The direction was favoured by the evidence, but the exact path and speed were not predictable."
+ },
+ "ttft_ms": 17979,
+ "type": "result",
+ "duration_ms": 46243,
+ "uuid": "dbe4e581-613c-41b6-8608-612165d473cd",
+ "ttft_stream_ms": 1307,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 1308,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

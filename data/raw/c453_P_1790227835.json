@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 27544,
+ "stop_reason": "tool_use",
+ "session_id": "c1cb7513-4989-46bf-8813-6d44212bcf93",
+ "total_cost_usd": 0.1184308,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7817,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2775,
+  "output_tokens_details": {
+   "thinking_tokens": 625
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7817,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2775,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7817,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7817
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2775,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7817,
+   "webSearchRequests": 0,
+   "costUSD": 0.1184308,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 625,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u6d4e\u516c (Ji Gong, the Chinese folk-legend \\\"mad monk\\\") is a 41-minute-old token. It launched directly on a PumpSwap pool: the pair was created 3 seconds after the mint, with no pump.fun bonding-curve migration. The LP is 0% burned or locked, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\". In one hour it rose about 350-377% to roughly $48k market cap, on about $1M of volume. That is 22x the market cap and liquidity changing hands in an hour. There were 3.3k buys and 1.3k sells. GeckoTerminal counts 2,058 unique buyers but only 52 unique sellers. About 800 of those buyers arrived in a single 15-30 minute window, and the last 15 minutes had only about 50. Buys and sells over the last 5 minutes are now balanced (about 125 vs 127). It is one of at least 11 tokens named \u6d4e\u516c launched in the past ~2 hours. Almost all the others have $0 liquidity (pulled or dead), and two of them had real volume before dying.\",\"narrative\":{\"description\":\"Chinese-language meme coin named after Ji Gong, a well-known Buddhist folk figure. It is part of a burst of same-name launches, probably riding a small Chinese-meme or CT theme. There is no website, no socials and no DexScreener profile.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Chinese-character memes sometimes get Asian-degen rotation flows. Many clones launching in ~2 hours shows people were chasing the ticker, but that also means a cluster of launch-and-pull copies. The token has no social presence of its own.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is currently the only \u6d4e\u516c pair with real liquidity (~$47k) and active volume, so it is the surviving venue for the ticker right now.\",\"competing_tokens\":\"There are at least 10 same-name tokens, created about 10-110 minutes earlier. Almost all show about $0 liquidity, which looks like a pattern of liquidity pulls. 5yvR5... had $267k of h1 volume before liquidity went to 0, and ENJa... was created 2 minutes before this one and is already at 0 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The dev launched straight onto a PumpSwap pool they funded, with unlocked LP. Clone tokens with the same name have been dying, apparently from liquidity pulls. There are 2,058 unique buyers against only 52 unique sellers, with 1,316 sells: a small set of wallets does all the selling while many new wallets only buy. That fits wash trading or sybil wallet distribution. Turnover of 22x liquidity in an hour looks like a volume bot. The creator's status is 'creator_close', the creator holds 0, and there is no funding source.\",\"uncertainty\":\"GMGN shows 0 bundlers, 0 snipers, 0 bots and a low fresh-wallet rate, and the top holders are spread out at 2-4% each. That could mean real retail distribution. GMGN may simply not classify wallets well this early.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The LP is fully unlocked and not burned, and dev-seeded liquidity can be pulled at any moment. Doing this is the apparent pattern among the same-name clones.\",\"Only a few LP providers\",\"The price has already risen about 4-5x in the first hour. To take profit, it would need to reach about $100k+ market cap from the entry point.\",\"Buyer and seller counts are extremely lopsided, which suggests artificial activity\",\"The unique-buyer inflow has collapsed (about 800 in the 30-minute window vs about 50 in the last 15 minutes)\"]},\"counterargument\":\"This is the one \u6d4e\u516c pair that survived and gathered liquidity while the clones died. It has about 2,000 holders, no bundlers or snipers, a spread-out top-10 (about 24%), renounced mint and freeze authority, and it was still printing new highs (+8-20% over 5 minutes) at detection. Chinese-meme runs can go from $50k to several hundred thousand in hours if the Asian community settles on one contract. The dev may have walked away (creator_close) rather than planning a pull.\",\"unknowns\":[\"Who controls the LP tokens and whether they will be pulled\",\"Whether the 2,058 buyers are real people or sybil wallets\",\"What triggered the \u6d4e\u516c theme and whether it has any real-world catalyst\",\"Whether any Chinese KOLs or TG groups have settled on this contract\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment is based only on the evidence packet.\"},\"thesis\":\"This looks like a dev-seeded PumpSwap pool with unlocked LP, in a ticker cluster where the earlier same-name pools went to zero liquidity. Volume and buyer counts look artificial, the price is already up about 4x, and new-buyer inflow is fading. The chance of a liquidity pull within 6 hours is high, and the chance of a clean 2x from entry is low.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":60,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\u6d4e\u516c (Ji Gong, the Chinese folk-legend \"mad monk\") is a 41-minute-old token. It launched directly on a PumpSwap pool: the pair was created 3 seconds after the mint, with no pump.fun bonding-curve migration. The LP is 0% burned or locked, and RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\". In one hour it rose about 350-377% to roughly $48k market cap, on about $1M of volume. That is 22x the market cap and liquidity changing hands in an hour. There were 3.3k buys and 1.3k sells. GeckoTerminal counts 2,058 unique buyers but only 52 unique sellers. About 800 of those buyers arrived in a single 15-30 minute window, and the last 15 minutes had only about 50. Buys and sells over the last 5 minutes are now balanced (about 125 vs 127). It is one of at least 11 tokens named \u6d4e\u516c launched in the past ~2 hours. Almost all the others have $0 liquidity (pulled or dead), and two of them had real volume before dying.",
+  "narrative": {
+   "description": "Chinese-language meme coin named after Ji Gong, a well-known Buddhist folk figure. It is part of a burst of same-name launches, probably riding a small Chinese-meme or CT theme. There is no website, no socials and no DexScreener profile.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Chinese-character memes sometimes get Asian-degen rotation flows. Many clones launching in ~2 hours shows people were chasing the ticker, but that also means a cluster of launch-and-pull copies. The token has no social presence of its own."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is currently the only \u6d4e\u516c pair with real liquidity (~$47k) and active volume, so it is the surviving venue for the ticker right now.",
+   "competing_tokens": "There are at least 10 same-name tokens, created about 10-110 minutes earlier. Almost all show about $0 liquidity, which looks like a pattern of liquidity pulls. 5yvR5... had $267k of h1 volume before liquidity went to 0, and ENJa... was created 2 minutes before this one and is already at 0 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The dev launched straight onto a PumpSwap pool they funded, with unlocked LP. Clone tokens with the same name have been dying, apparently from liquidity pulls. There are 2,058 unique buyers against only 52 unique sellers, with 1,316 sells: a small set of wallets does all the selling while many new wallets only buy. That fits wash trading or sybil wallet distribution. Turnover of 22x liquidity in an hour looks like a volume bot. The creator's status is 'creator_close', the creator holds 0, and there is no funding source.",
+   "uncertainty": "GMGN shows 0 bundlers, 0 snipers, 0 bots and a low fresh-wallet rate, and the top holders are spread out at 2-4% each. That could mean real retail distribution. GMGN may simply not classify wallets well this early."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The LP is fully unlocked and not burned, and dev-seeded liquidity can be pulled at any moment. Doing this is the apparent pattern among the same-name clones.",
+    "Only a few LP providers",
+    "The price has already risen about 4-5x in the first hour. To take profit, it would need to reach about $100k+ market cap from the entry point.",
+    "Buyer and seller counts are extremely lopsided, which suggests artificial activity",
+    "The unique-buyer inflow has collapsed (about 800 in the 30-minute window vs about 50 in the last 15 minutes)"
+   ]
+  },
+  "counterargument": "This is the one \u6d4e\u516c pair that survived and gathered liquidity while the clones died. It has about 2,000 holders, no bundlers or snipers, a spread-out top-10 (about 24%), renounced mint and freeze authority, and it was still printing new highs (+8-20% over 5 minutes) at detection. Chinese-meme runs can go from $50k to several hundred thousand in hours if the Asian community settles on one contract. The dev may have walked away (creator_close) rather than planning a pull.",
+  "unknowns": [
+   "Who controls the LP tokens and whether they will be pulled",
+   "Whether the 2,058 buyers are real people or sybil wallets",
+   "What triggered the \u6d4e\u516c theme and whether it has any real-world catalyst",
+   "Whether any Chinese KOLs or TG groups have settled on this contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment is based only on the evidence packet."
+  },
+  "thesis": "This looks like a dev-seeded PumpSwap pool with unlocked LP, in a ticker cluster where the earlier same-name pools went to zero liquidity. Volume and buyer counts look artificial, the price is already up about 4x, and new-buyer inflow is fading. The chance of a liquidity pull within 6 hours is high, and the chance of a clean 2x from entry is low.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 60,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7055,
+ "type": "result",
+ "duration_ms": 27582,
+ "uuid": "129df32e-94d2-4e31-98e8-f99b493819c1",
+ "ttft_stream_ms": 708,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 709,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,187 @@
+{
+ "duration_api_ms": 78453,
+ "stop_reason": "tool_use",
+ "session_id": "3e048c88-9b2f-4a35-8843-d4c5e80b373c",
+ "total_cost_usd": 0.36623219999999995,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 17017,
+  "cache_read_input_tokens": 59051,
+  "output_tokens": 4126,
+  "output_tokens_details": {
+   "thinking_tokens": 1031
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17017,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2650,
+    "cache_read_input_tokens": 17226,
+    "cache_creation_input_tokens": 2367,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2367
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4126,
+   "cacheReadInputTokens": 59051,
+   "cacheCreationInputTokens": 17017,
+   "webSearchRequests": 0,
+   "costUSD": 0.2305062,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1031,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 64026,
+   "outputTokens": 2340,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.13572599999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u7389\u5154 (Jade Rabbit) is a Chinese-language Solana meme. Its pool was created directly on PumpSwap about 2 hours before detection. It is not a pump.fun curve graduate: migrated_unix is 0 and there is no launchpad. The token's only linked \\\"social\\\" is a Binance Chinese account (@binancezh) status URL. Timing fits the Mid-Autumn Festival on 2026-09-25, and the Jade Rabbit is the moon symbol of that festival. Reported volume is $13M over 6h against a $137k market cap. Liquidity is $226k, more than the market cap, because 83% of supply sits in the pool. GeckoTerminal counts 1,350 unique buyers in the last hour but only 31 unique sellers making about 2,000 sells. That pattern strongly suggests bot or wash volume from a small set of wallets. GMGN tags 235 bundler wallets. The LP is 0% burned or locked, and the creator has closed out. Ten earlier same-name \u7389\u5154 tokens from the last day are all dead, with near-zero liquidity.\",\"narrative\":{\"description\":\"The Mid-Autumn Festival (Sept 25, 2026) Jade Rabbit theme, apparently tied to a @binancezh post. Chinese memes spun off Binance and exec posts have run before (\u5e01\u5b89\u4eba\u751f, \u6211\u8e0f\u9a6c\u6765\u4e86), though mostly on BSC.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The festival is today in Asia, so it is a seasonal and cultural moment. A Binance ZH post may have used the rabbit imagery. I could not read the post (X returned 402). The theme is generic and short-lived: it expires once the festival ends, and anyone can launch a copy.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name Solana token with live liquidity and volume. The ten earlier copies are dead. Nothing ties it to Binance except a pasted tweet link in its metadata. There is no website, no Telegram and no DexScreener profile.\",\"competing_tokens\":\"Ten dead Solana \u7389\u5154 copies from the past ~22h are listed in the packet. A BSC/four.meme version is likely wherever the Binance-driven Chinese crowd actually trades, but I did not verify one.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"31 unique sellers against 1,350 unique buyers per hour, with about 2,000 sells. There are 235 bundler wallets. Volume is 95x market cap in 6h. The pool was self-seeded with $226k of liquidity that is unlocked. The creator has closed out. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers', plus a 28-wallet insider trade network.\",\"uncertainty\":\"The buyer count could include real retail from Chinese-speaking traders drawn in by the festival. I found no X, Telegram or Reddit discussion to confirm organic interest.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% locked or burned on a self-created PumpSwap pool, holding roughly $113k of SOL that can be pulled\",\"Sell flow is concentrated in about 31 wallets, which looks like a wash or market-making bot\",\"235 bundler wallets and a 28-wallet insider network\",\"Price already up about 105% in 6h, and the m5 is negative\",\"Deep pool relative to market cap: doubling to about $275k needs heavy real net buying\",\"Festival attention has a short lifespan\"]},\"counterargument\":\"The festival is literally today, and it is morning in Asia. Chinese meme rotations tied to Binance have produced sudden 10x moves. This is the only live Solana \u7389\u5154, with real-looking buyer breadth (2,663 unique buyers) and deep liquidity that makes it tradeable for larger players. If the linked @binancezh post really features the Jade Rabbit and Binance Square picks it up, a doubling from $137k is not hard.\",\"unknowns\":[\"What the @binancezh status actually says (fetch blocked)\",\"Whether a BSC \u7389\u5154 is the canonical version that draws the flow\",\"Who controls the LP\",\"Whether the buyer counts are real retail or bot-distributed wallets\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Fetching the X status returned 402. Searching the contract address found nothing. News confirms the Mid-Autumn date (Sept 25, 2026) and past Binance-driven Chinese memes. There is no project website or socials. I checked DexScreener live data.\"},\"thesis\":\"A real and timely festival theme sits on a structurally manufactured market: a self-seeded, unlocked LP, sell flow from about 31 wallets, heavy bundling, and 95x volume-to-market-cap. The price has already doubled. Most likely the volume is being farmed to attract buyers and the LP is pulled or the price bleeds. There is a small chance the festival and Binance hype carry it to 2x.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":55,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/HbeCyEPetH7PEzcFtmwd3eWXr4Evn7UZNhja4AQrcNTa\",\"what\":\"Live price, liquidity and volume\"},{\"url\":\"https://x.com/binancezh/status/2099698950521651346\",\"what\":\"Linked Binance ZH post (fetch blocked, 402)\"},{\"url\":\"https://www.sina.cn/weibo/detail/5346938094618281.html\",\"what\":\"Mid-Autumn Festival 2026-09-25 with Jade Rabbit imagery\"},{\"url\":\"https://news.marsbit.co/20251008134151192169.html\",\"what\":\"Precedent: Chinese Binance-driven memes running\"},{\"url\":\"https://news.qq.com/rain/a/20260124A03ZVF00\",\"what\":\"BSC Chinese meme context\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u7389\u5154 (Jade Rabbit) is a Chinese-language Solana meme. Its pool was created directly on PumpSwap about 2 hours before detection. It is not a pump.fun curve graduate: migrated_unix is 0 and there is no launchpad. The token's only linked \"social\" is a Binance Chinese account (@binancezh) status URL. Timing fits the Mid-Autumn Festival on 2026-09-25, and the Jade Rabbit is the moon symbol of that festival. Reported volume is $13M over 6h against a $137k market cap. Liquidity is $226k, more than the market cap, because 83% of supply sits in the pool. GeckoTerminal counts 1,350 unique buyers in the last hour but only 31 unique sellers making about 2,000 sells. That pattern strongly suggests bot or wash volume from a small set of wallets. GMGN tags 235 bundler wallets. The LP is 0% burned or locked, and the creator has closed out. Ten earlier same-name \u7389\u5154 tokens from the last day are all dead, with near-zero liquidity.",
+  "narrative": {
+   "description": "The Mid-Autumn Festival (Sept 25, 2026) Jade Rabbit theme, apparently tied to a @binancezh post. Chinese memes spun off Binance and exec posts have run before (\u5e01\u5b89\u4eba\u751f, \u6211\u8e0f\u9a6c\u6765\u4e86), though mostly on BSC.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The festival is today in Asia, so it is a seasonal and cultural moment. A Binance ZH post may have used the rabbit imagery. I could not read the post (X returned 402). The theme is generic and short-lived: it expires once the festival ends, and anyone can launch a copy."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name Solana token with live liquidity and volume. The ten earlier copies are dead. Nothing ties it to Binance except a pasted tweet link in its metadata. There is no website, no Telegram and no DexScreener profile.",
+   "competing_tokens": "Ten dead Solana \u7389\u5154 copies from the past ~22h are listed in the packet. A BSC/four.meme version is likely wherever the Binance-driven Chinese crowd actually trades, but I did not verify one.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "31 unique sellers against 1,350 unique buyers per hour, with about 2,000 sells. There are 235 bundler wallets. Volume is 95x market cap in 6h. The pool was self-seeded with $226k of liquidity that is unlocked. The creator has closed out. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers', plus a 28-wallet insider trade network.",
+   "uncertainty": "The buyer count could include real retail from Chinese-speaking traders drawn in by the festival. I found no X, Telegram or Reddit discussion to confirm organic interest."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% locked or burned on a self-created PumpSwap pool, holding roughly $113k of SOL that can be pulled",
+    "Sell flow is concentrated in about 31 wallets, which looks like a wash or market-making bot",
+    "235 bundler wallets and a 28-wallet insider network",
+    "Price already up about 105% in 6h, and the m5 is negative",
+    "Deep pool relative to market cap: doubling to about $275k needs heavy real net buying",
+    "Festival attention has a short lifespan"
+   ]
+  },
+  "counterargument": "The festival is literally today, and it is morning in Asia. Chinese meme rotations tied to Binance have produced sudden 10x moves. This is the only live Solana \u7389\u5154, with real-looking buyer breadth (2,663 unique buyers) and deep liquidity that makes it tradeable for larger players. If the linked @binancezh post really features the Jade Rabbit and Binance Square picks it up, a doubling from $137k is not hard.",
+  "unknowns": [
+   "What the @binancezh status actually says (fetch blocked)",
+   "Whether a BSC \u7389\u5154 is the canonical version that draws the flow",
+   "Who controls the LP",
+   "Whether the buyer counts are real retail or bot-distributed wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Fetching the X status returned 402. Searching the contract address found nothing. News confirms the Mid-Autumn date (Sept 25, 2026) and past Binance-driven Chinese memes. There is no project website or socials. I checked DexScreener live data."
+  },
+  "thesis": "A real and timely festival theme sits on a structurally manufactured market: a self-seeded, unlocked LP, sell flow from about 31 wallets, heavy bundling, and 95x volume-to-market-cap. The price has already doubled. Most likely the volume is being farmed to attract buyers and the LP is pulled or the price bleeds. There is a small chance the festival and Binance hype carry it to 2x.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 55,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/HbeCyEPetH7PEzcFtmwd3eWXr4Evn7UZNhja4AQrcNTa",
+    "what": "Live price, liquidity and volume"
+   },
+   {
+    "url": "https://x.com/binancezh/status/2099698950521651346",
+    "what": "Linked Binance ZH post (fetch blocked, 402)"
+   },
+   {
+    "url": "https://www.sina.cn/weibo/detail/5346938094618281.html",
+    "what": "Mid-Autumn Festival 2026-09-25 with Jade Rabbit imagery"
+   },
+   {
+    "url": "https://news.marsbit.co/20251008134151192169.html",
+    "what": "Precedent: Chinese Binance-driven memes running"
+   },
+   {
+    "url": "https://news.qq.com/rain/a/20260124A03ZVF00",
+    "what": "BSC Chinese meme context"
+   }
+  ]
+ },
+ "ttft_ms": 5156,
+ "type": "result",
+ "duration_ms": 63131,
+ "uuid": "b635deea-d34f-460e-8c89-f009ae9a74a9",
+ "ttft_stream_ms": 886,
+ "time_to_request_ms": 56,
+ "first_content_frame_ms": 886,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

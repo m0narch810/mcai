@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 20605,
+ "stop_reason": "tool_use",
+ "session_id": "1ed6ead5-ef4f-4af0-87dc-504af589fab8",
+ "total_cost_usd": 0.1037228,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7631,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2114,
+  "output_tokens_details": {
+   "thinking_tokens": 338
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7631,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2114,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7631,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7631
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2114,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7631,
+   "webSearchRequests": 0,
+   "costUSD": 0.1037228,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 338,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"FOOMS, created via unorich.com and trading on a PumpSwap pool about 37 minutes old, has done roughly $6.8M of volume on about a $165k market cap (28x turnover in one hour). The pool holds more liquidity (about $234k) than the coin's whole market cap. The LP is 0% burned or locked and is flagged \\\"danger\\\" for unlocked LP, with few liquidity providers. The 4,150 sells come from only 55 unique sellers, compared with 1,919 unique buyers. GMGN flags 50 bundler wallets holding about 21% of trader volume. The same name and ticker exists on at least 9 other contracts launched within about 3 hours. One of them, 7zJ4, has a nearly identical structure ($258k liquidity, $185k mcap, $4.2M h1 volume), and several have already dropped to $0 liquidity. This looks like a templated volume-farming or liquidity-pull operation, not organic attention.\",\"narrative\":{\"description\":\"'fooms' is a meaningless name with no website, socials or DexScreener profile. The only link is the launchpad URL, and the X handle is just a search link. There is no identifiable story.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"The activity does not look like spreading attention. A handful of sellers make thousands of sells and bundlers are heavily present, which points to bot-generated volume. The same name is being relaunched over and over on different contracts.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name clone that tripped the activity rule in this window. Nothing makes it canonical.\",\"competing_tokens\":\"At least 9 other FOOMS/fooms contracts. The earlier ones (K3dB, 6xG6, Hx6U, CGr3) now show $0 liquidity, which is consistent with serial rugs. 7zJ4 was created later and is a live twin with similar liquidity and volume. 59Qk launched even more recently.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 55 unique sellers against 4,150 sells, i.e. repetitive bot selling. 50 bundler wallets with a 21% bundler share. Liquidity is larger than market cap and fully unlocked. There are serial same-name clones, several already at $0 liquidity. No organic socials, no promotion flags, and only 2 GMGN page visits despite $6.8M of volume.\",\"uncertainty\":\"Buyer counts (1,919 unique) could include some real retail chasing the chart. Wallet labels can be wrong. There is no X data.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP unlocked (0% burned), which allows an instant liquidity pull\",\"Liquidity exceeds market cap, a typical pattern for operators who seed the pool and then withdraw it\",\"Bundler-heavy wallet makeup and very few unique sellers\",\"Serial clone launches with prior clones already at $0 liquidity\",\"Wash-like 28x hourly turnover\"]},\"counterargument\":\"About 1,900 unique buyers and a 1.5:1 buy/sell count ratio could mean real retail is arriving. Price is up 114% in an hour and still rising in the last 5 minutes. If the operator keeps pumping to farm more buyers before pulling, price could double from entry within the 6-hour window. Top holders outside the pool are small (largest 3.2%), and the dev holds almost nothing.\",\"unknowns\":[\"Who controls the LP tokens and when they will be withdrawn\",\"Whether the 1,919 buyers are real or bot-farmed\",\"What unorich.com is and how it relates to the clone farm\",\"Any X or Telegram promotion\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment is based only on the packet.\"},\"thesis\":\"This looks like a templated clone-farm pool with an unlocked, oversized LP and bot-driven volume. The most likely outcome is a liquidity pull or collapse, not a clean doubling from the entry 25 minutes after detection.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "FOOMS, created via unorich.com and trading on a PumpSwap pool about 37 minutes old, has done roughly $6.8M of volume on about a $165k market cap (28x turnover in one hour). The pool holds more liquidity (about $234k) than the coin's whole market cap. The LP is 0% burned or locked and is flagged \"danger\" for unlocked LP, with few liquidity providers. The 4,150 sells come from only 55 unique sellers, compared with 1,919 unique buyers. GMGN flags 50 bundler wallets holding about 21% of trader volume. The same name and ticker exists on at least 9 other contracts launched within about 3 hours. One of them, 7zJ4, has a nearly identical structure ($258k liquidity, $185k mcap, $4.2M h1 volume), and several have already dropped to $0 liquidity. This looks like a templated volume-farming or liquidity-pull operation, not organic attention.",
+  "narrative": {
+   "description": "'fooms' is a meaningless name with no website, socials or DexScreener profile. The only link is the launchpad URL, and the X handle is just a search link. There is no identifiable story.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "The activity does not look like spreading attention. A handful of sellers make thousands of sells and bundlers are heavily present, which points to bot-generated volume. The same name is being relaunched over and over on different contracts."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name clone that tripped the activity rule in this window. Nothing makes it canonical.",
+   "competing_tokens": "At least 9 other FOOMS/fooms contracts. The earlier ones (K3dB, 6xG6, Hx6U, CGr3) now show $0 liquidity, which is consistent with serial rugs. 7zJ4 was created later and is a live twin with similar liquidity and volume. 59Qk launched even more recently.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 55 unique sellers against 4,150 sells, i.e. repetitive bot selling. 50 bundler wallets with a 21% bundler share. Liquidity is larger than market cap and fully unlocked. There are serial same-name clones, several already at $0 liquidity. No organic socials, no promotion flags, and only 2 GMGN page visits despite $6.8M of volume.",
+   "uncertainty": "Buyer counts (1,919 unique) could include some real retail chasing the chart. Wallet labels can be wrong. There is no X data."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP unlocked (0% burned), which allows an instant liquidity pull",
+    "Liquidity exceeds market cap, a typical pattern for operators who seed the pool and then withdraw it",
+    "Bundler-heavy wallet makeup and very few unique sellers",
+    "Serial clone launches with prior clones already at $0 liquidity",
+    "Wash-like 28x hourly turnover"
+   ]
+  },
+  "counterargument": "About 1,900 unique buyers and a 1.5:1 buy/sell count ratio could mean real retail is arriving. Price is up 114% in an hour and still rising in the last 5 minutes. If the operator keeps pumping to farm more buyers before pulling, price could double from entry within the 6-hour window. Top holders outside the pool are small (largest 3.2%), and the dev holds almost nothing.",
+  "unknowns": [
+   "Who controls the LP tokens and when they will be withdrawn",
+   "Whether the 1,919 buyers are real or bot-farmed",
+   "What unorich.com is and how it relates to the clone farm",
+   "Any X or Telegram promotion"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment is based only on the packet."
+  },
+  "thesis": "This looks like a templated clone-farm pool with an unlocked, oversized LP and bot-driven volume. The most likely outcome is a liquidity pull or collapse, not a clean doubling from the entry 25 minutes after detection.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4363,
+ "type": "result",
+ "duration_ms": 20644,
+ "uuid": "b6e639d9-7600-40fa-8858-b565b1266998",
+ "ttft_stream_ms": 701,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 701,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 26829,
+ "stop_reason": "tool_use",
+ "session_id": "dffeac1f-6b4a-4c26-88f9-c2443091bdd8",
+ "total_cost_usd": 0.1170988,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7648,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2776,
+  "output_tokens_details": {
+   "thinking_tokens": 496
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7648,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2776,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7648,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7648
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2776,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7648,
+   "webSearchRequests": 0,
+   "costUSD": 0.1170988,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 496,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"UNTXD (\\\"Untaxed App\\\") is a 37-minute-old Solana token. GMGN says it launched on a Meteora virtual curve and migrated in the same second it was created. The pair being tracked is on PumpSwap, and the packet lists 3 discovered pairs. Price is up about 835\u2013894% in the first hour on roughly $2.1M of volume, against about $77\u201379k liquidity and about $770k market cap. That is about 28x the liquidity turning over in one hour. Buying is broad (2,094 unique buyers) but selling is concentrated (only 87 unique sellers made about 4,100 sells). That fits a small group of wallets, including 51 wallets GMGN tags as bundlers, distributing into retail buying. At least 10 other tokens use the same name and ticker, all launched within minutes of each other. One of them (9v93\u2026) has more liquidity ($289k vs $79k) and a higher market cap ($964k vs $769k). In the last 5 minutes momentum has flattened: DexScreener shows +1.8% and buys and sells are roughly equal.\",\"narrative\":{\"description\":\"The name \\\"Untaxed App\\\" and the handle @untaxedsolana suggest a product-style or slogan narrative, probably tied to an app, a tweet or a site (untaxed.wtf). There is no description, no DexScreener profile, and no linked socials beyond the handle. More than 10 same-name clones launching in the same window suggests a tweet or announcement set off a race to launch copies. That means there is some real attention, but it is split across many contracts.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"A burst of same-name launches points to an outside trigger, such as a tweet or an app announcement, that deployer bots and snipers raced to capitalize on. Buyer counts are high, but the flat last 5 minutes and slowing unique-buyer growth (65 in the last 5 minutes vs 1,184 in the last 30) suggest the first wave is ending.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"This is one of the earlier deployments (pair created about 00:56 UTC) and has the second-highest volume of the group. GMGN links it to the @untaxedsolana handle and the untaxed.wtf site, but GMGN also says the dev's X account is linked to 43 launched tokens. That weakens any claim that this is the official token.\",\"competing_tokens\":\"9v93WzpC\u2026 has more liquidity ($289k) and a higher market cap ($964k), was created about 13 minutes after this pair, and shows $2.3M volume in the last hour. It looks like the market's current favorite. 3tzkdx\u2026pump (a pump.fun launch) is the earliest, with $1.4M volume but only a $74k market cap. Seven or more other clones have already lost their liquidity or died.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"There are no paid boosts and no promotion flags, and 2,094 unique buyers suggests real retail participation. Against that: 51 bundler wallets; bundlers hold about 13.7% of top-trader volume; only 87 unique sellers against more than 4,000 sells; the image is reused 11 times; the dev X account is linked to 43 launches; and more than 10 clones exist. All of this suggests extraction by a small group of wallets from a genuine outside trigger.\",\"uncertainty\":\"I can't see the X post that triggered this, so I can't tell whether @untaxedsolana is a real project that picked this contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags the tracked PumpSwap pool's LP as unlocked (0% locked), which means the liquidity can be pulled\",\"One unlabeled wallet holds 80% of supply. It is probably a Meteora pool or vault, since GMGN puts the top-10 holder rate at 5.5%, but that is not confirmed\",\"Liquidity is thin (about $79k) compared with $2M in hourly volume, so the price is very volatile\",\"A higher-liquidity clone (9v93) may pull attention and money away from this pair\",\"Already about 9x in the first hour, and 5-minute momentum has stalled\",\"Creator status is creator_close, meaning the creator has exited\"]},\"counterargument\":\"If @untaxedsolana or the app team names this contract as the official token, this pair's liquidity and early-launch position could pull money over from the clones. A token that got to $770k in 37 minutes can reach $1.5M+ within hours when the trigger is real (GMGN puts the dev's best token all-time-high market cap at $1.24M). Burned LP on the Meteora side (burn ratio 1.0) also limits how much liquidity can be pulled there.\",\"unknowns\":[\"Which contract, if any, the project or X account endorses\",\"What the unlabeled 80% holder wallet is\",\"What the underlying trigger was (tweet or app launch)\",\"Whether the unlocked PumpSwap LP belongs to the deployer\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this report uses only the evidence packet.\"},\"thesis\":\"Of more than 10 same-ticker clones, this one is the second-strongest. It has already run about 9x in its first hour, a small group of bundler and seller wallets is distributing, and the PumpSwap LP is unlocked. Doubling again from entry would need this contract to win the canonical race, and a higher-liquidity rival (9v93) is currently ahead. Fading or a liquidity pull is more likely.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":52,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "UNTXD (\"Untaxed App\") is a 37-minute-old Solana token. GMGN says it launched on a Meteora virtual curve and migrated in the same second it was created. The pair being tracked is on PumpSwap, and the packet lists 3 discovered pairs. Price is up about 835\u2013894% in the first hour on roughly $2.1M of volume, against about $77\u201379k liquidity and about $770k market cap. That is about 28x the liquidity turning over in one hour. Buying is broad (2,094 unique buyers) but selling is concentrated (only 87 unique sellers made about 4,100 sells). That fits a small group of wallets, including 51 wallets GMGN tags as bundlers, distributing into retail buying. At least 10 other tokens use the same name and ticker, all launched within minutes of each other. One of them (9v93\u2026) has more liquidity ($289k vs $79k) and a higher market cap ($964k vs $769k). In the last 5 minutes momentum has flattened: DexScreener shows +1.8% and buys and sells are roughly equal.",
+  "narrative": {
+   "description": "The name \"Untaxed App\" and the handle @untaxedsolana suggest a product-style or slogan narrative, probably tied to an app, a tweet or a site (untaxed.wtf). There is no description, no DexScreener profile, and no linked socials beyond the handle. More than 10 same-name clones launching in the same window suggests a tweet or announcement set off a race to launch copies. That means there is some real attention, but it is split across many contracts.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "A burst of same-name launches points to an outside trigger, such as a tweet or an app announcement, that deployer bots and snipers raced to capitalize on. Buyer counts are high, but the flat last 5 minutes and slowing unique-buyer growth (65 in the last 5 minutes vs 1,184 in the last 30) suggest the first wave is ending."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "This is one of the earlier deployments (pair created about 00:56 UTC) and has the second-highest volume of the group. GMGN links it to the @untaxedsolana handle and the untaxed.wtf site, but GMGN also says the dev's X account is linked to 43 launched tokens. That weakens any claim that this is the official token.",
+   "competing_tokens": "9v93WzpC\u2026 has more liquidity ($289k) and a higher market cap ($964k), was created about 13 minutes after this pair, and shows $2.3M volume in the last hour. It looks like the market's current favorite. 3tzkdx\u2026pump (a pump.fun launch) is the earliest, with $1.4M volume but only a $74k market cap. Seven or more other clones have already lost their liquidity or died.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "There are no paid boosts and no promotion flags, and 2,094 unique buyers suggests real retail participation. Against that: 51 bundler wallets; bundlers hold about 13.7% of top-trader volume; only 87 unique sellers against more than 4,000 sells; the image is reused 11 times; the dev X account is linked to 43 launches; and more than 10 clones exist. All of this suggests extraction by a small group of wallets from a genuine outside trigger.",
+   "uncertainty": "I can't see the X post that triggered this, so I can't tell whether @untaxedsolana is a real project that picked this contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags the tracked PumpSwap pool's LP as unlocked (0% locked), which means the liquidity can be pulled",
+    "One unlabeled wallet holds 80% of supply. It is probably a Meteora pool or vault, since GMGN puts the top-10 holder rate at 5.5%, but that is not confirmed",
+    "Liquidity is thin (about $79k) compared with $2M in hourly volume, so the price is very volatile",
+    "A higher-liquidity clone (9v93) may pull attention and money away from this pair",
+    "Already about 9x in the first hour, and 5-minute momentum has stalled",
+    "Creator status is creator_close, meaning the creator has exited"
+   ]
+  },
+  "counterargument": "If @untaxedsolana or the app team names this contract as the official token, this pair's liquidity and early-launch position could pull money over from the clones. A token that got to $770k in 37 minutes can reach $1.5M+ within hours when the trigger is real (GMGN puts the dev's best token all-time-high market cap at $1.24M). Burned LP on the Meteora side (burn ratio 1.0) also limits how much liquidity can be pulled there.",
+  "unknowns": [
+   "Which contract, if any, the project or X account endorses",
+   "What the unlabeled 80% holder wallet is",
+   "What the underlying trigger was (tweet or app launch)",
+   "Whether the unlocked PumpSwap LP belongs to the deployer"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this report uses only the evidence packet."
+  },
+  "thesis": "Of more than 10 same-ticker clones, this one is the second-strongest. It has already run about 9x in its first hour, a small group of bundler and seller wallets is distributing, and the PumpSwap LP is unlocked. Doubling again from entry would need this contract to win the canonical race, and a higher-liquidity rival (9v93) is currently ahead. Fading or a liquidity pull is more likely.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 52,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5784,
+ "type": "result",
+ "duration_ms": 26875,
+ "uuid": "6f601411-ac5a-4bef-ab2d-4dc96be42a9d",
+ "ttft_stream_ms": 676,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 676,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

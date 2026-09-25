@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 24530,
+ "stop_reason": "tool_use",
+ "session_id": "56dbf8ba-4f13-4e46-9285-0fd786703357",
+ "total_cost_usd": 0.10275480000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6745,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2420,
+  "output_tokens_details": {
+   "thinking_tokens": 401
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6745,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2420,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 6745,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6745
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2420,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 6745,
+   "webSearchRequests": 0,
+   "costUSD": 0.10275480000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 401,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"\ud83d\udcb2SATAN\\\" is a PumpSwap pair about 44 minutes old. It was not launched through pump.fun: there is no launchpad and the contract address has no \\\"pump\\\" suffix. The pool was created 6 seconds after the token was minted. At detection, liquidity was about $66k and market cap about $54k. It had done about $291k of volume in its first hour and the price was up 147%. Three minutes later, reported liquidity is $0.01 and RugCheck's total market liquidity is $0.0078. The market-cap figure has jumped to $214k and the 1-hour price change to +871%. A market cap that high with a pool that is essentially empty is what the numbers look like after liquidity has been pulled or the pool drained. The creator still holds 61.05% of supply. The LP burn ratio is 0. The pair had about 1,124 unique buyers but only 116 unique sellers. In the past hour, at least two more \\\"\ud83d\udcb2SATAN\\\" tokens with the same emoji ticker were launched minutes apart, and both also show about $0 liquidity. That looks like one operator repeatedly launching copies of the same token.\",\"narrative\":{\"description\":\"The name is a generic edgy meme (\\\"SATAN\\\") with no website, socials, description or DexScreener profile. Nothing in the packet shows a story or catalyst beyond the ticker.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks driven by the launch itself: a big first-hour pump drawing in buyers, possibly bot volume. Nothing points to organic attention. Seeing several identical-ticker clones launch at the same time points to a launch farm, not to a real narrative.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has by far the most volume and holders of the \\\"\ud83d\udcb2SATAN\\\" clones, but it is one of several launched minutes apart. The token is not tied to anything beyond its name.\",\"competing_tokens\":\"Two other \\\"\ud83d\udcb2SATAN\\\" tokens: 6Gfz\u2026 ($27k market cap, $0 liquidity) and 5nRF\u2026 ($25k, $0.01 liquidity), both created 8\u201311 minutes earlier. Also an older \\\"Satan\\\" pump.fun token, AFER\u2026, now dead at $3k.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The creator holds 61% of supply and the LP was not burned. Reported liquidity collapsed from $66k to $0.01 within minutes. The same emoji ticker was launched repeatedly within minutes. There were 16 bundler wallets. Only 116 unique sellers against 1,124 buyers suggests many holders are trapped, or that the volume came from few real participants. GMGN rates this token's rat-trader and entrapment share at 61%, the same figure as the creator's holding. There are no socials at all.\",\"uncertainty\":\"The $0.01 liquidity could be an indexing glitch on PumpSwap. The other clones show similar zero values, which could point to a data bug, not a pull. Still, the RugCheck and DexScreener figures agree with each other.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Pool liquidity is effectively zero ($0.01), which is consistent with the LP having been pulled\",\"The creator holds 61% of supply and can dump it\",\"LP burn ratio is 0, so the LP was never burned; RugCheck's 100% 'locked' figure conflicts with this\",\"Top 10 holders own 74.7%\",\"16 bundler wallets\",\"The same operator appears to be launching clones of the same token\",\"No socials or community to support a recovery\"]},\"counterargument\":\"The liquidity reading may be a PumpSwap indexing error. The market-cap figure rising to $214k and the price up 871% could mean the coin is still pumping hard, with more than 1,100 buyers in its first hour. The creator's 61% could also just be the pool's reserve that RugCheck mislabeled as a creator wallet. If so, this is a hot, fast-moving launch that could 2x from the entry price.\",\"unknowns\":[\"Whether the $0.01 liquidity is real or an indexing error\",\"Whether the creator's 61% is really the pool reserve, mislabeled\",\"Actual trading activity after 08:38\",\"Whether anyone is sharing the coin on X or Telegram\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment uses only the evidence packet.\"},\"thesis\":\"The most likely reading is that the liquidity has already been pulled, or the pool is being drained. Liquidity went from $66k to $0.01 within minutes of detection. The creator holds 61% with no LP burn. The same ticker was launched in several copies, and there are no socials. The chance of a 2x from an entry 25 minutes after detection is very low. The main risk is that the position is simply worthless.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":87,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"\ud83d\udcb2SATAN\" is a PumpSwap pair about 44 minutes old. It was not launched through pump.fun: there is no launchpad and the contract address has no \"pump\" suffix. The pool was created 6 seconds after the token was minted. At detection, liquidity was about $66k and market cap about $54k. It had done about $291k of volume in its first hour and the price was up 147%. Three minutes later, reported liquidity is $0.01 and RugCheck's total market liquidity is $0.0078. The market-cap figure has jumped to $214k and the 1-hour price change to +871%. A market cap that high with a pool that is essentially empty is what the numbers look like after liquidity has been pulled or the pool drained. The creator still holds 61.05% of supply. The LP burn ratio is 0. The pair had about 1,124 unique buyers but only 116 unique sellers. In the past hour, at least two more \"\ud83d\udcb2SATAN\" tokens with the same emoji ticker were launched minutes apart, and both also show about $0 liquidity. That looks like one operator repeatedly launching copies of the same token.",
+  "narrative": {
+   "description": "The name is a generic edgy meme (\"SATAN\") with no website, socials, description or DexScreener profile. Nothing in the packet shows a story or catalyst beyond the ticker.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The activity looks driven by the launch itself: a big first-hour pump drawing in buyers, possibly bot volume. Nothing points to organic attention. Seeing several identical-ticker clones launch at the same time points to a launch farm, not to a real narrative."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has by far the most volume and holders of the \"\ud83d\udcb2SATAN\" clones, but it is one of several launched minutes apart. The token is not tied to anything beyond its name.",
+   "competing_tokens": "Two other \"\ud83d\udcb2SATAN\" tokens: 6Gfz\u2026 ($27k market cap, $0 liquidity) and 5nRF\u2026 ($25k, $0.01 liquidity), both created 8\u201311 minutes earlier. Also an older \"Satan\" pump.fun token, AFER\u2026, now dead at $3k.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The creator holds 61% of supply and the LP was not burned. Reported liquidity collapsed from $66k to $0.01 within minutes. The same emoji ticker was launched repeatedly within minutes. There were 16 bundler wallets. Only 116 unique sellers against 1,124 buyers suggests many holders are trapped, or that the volume came from few real participants. GMGN rates this token's rat-trader and entrapment share at 61%, the same figure as the creator's holding. There are no socials at all.",
+   "uncertainty": "The $0.01 liquidity could be an indexing glitch on PumpSwap. The other clones show similar zero values, which could point to a data bug, not a pull. Still, the RugCheck and DexScreener figures agree with each other."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Pool liquidity is effectively zero ($0.01), which is consistent with the LP having been pulled",
+    "The creator holds 61% of supply and can dump it",
+    "LP burn ratio is 0, so the LP was never burned; RugCheck's 100% 'locked' figure conflicts with this",
+    "Top 10 holders own 74.7%",
+    "16 bundler wallets",
+    "The same operator appears to be launching clones of the same token",
+    "No socials or community to support a recovery"
+   ]
+  },
+  "counterargument": "The liquidity reading may be a PumpSwap indexing error. The market-cap figure rising to $214k and the price up 871% could mean the coin is still pumping hard, with more than 1,100 buyers in its first hour. The creator's 61% could also just be the pool's reserve that RugCheck mislabeled as a creator wallet. If so, this is a hot, fast-moving launch that could 2x from the entry price.",
+  "unknowns": [
+   "Whether the $0.01 liquidity is real or an indexing error",
+   "Whether the creator's 61% is really the pool reserve, mislabeled",
+   "Actual trading activity after 08:38",
+   "Whether anyone is sharing the coin on X or Telegram"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment uses only the evidence packet."
+  },
+  "thesis": "The most likely reading is that the liquidity has already been pulled, or the pool is being drained. Liquidity went from $66k to $0.01 within minutes of detection. The creator holds 61% with no LP burn. The same ticker was launched in several copies, and there are no socials. The chance of a 2x from an entry 25 minutes after detection is very low. The main risk is that the position is simply worthless.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 87,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": []
+ },
+ "ttft_ms": 6039,
+ "type": "result",
+ "duration_ms": 24568,
+ "uuid": "4120cfc2-b3e7-44e5-9f72-4cf9756a3e27",
+ "ttft_stream_ms": 1575,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1575,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

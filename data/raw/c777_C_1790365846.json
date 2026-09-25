@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 33090,
+ "stop_reason": "tool_use",
+ "session_id": "a1054021-ac8d-4c03-88b1-03cec6d85a91",
+ "total_cost_usd": 0.1714068,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 9975,
+  "cache_read_input_tokens": 13059,
+  "output_tokens": 2260,
+  "output_tokens_details": {
+   "thinking_tokens": 279
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9975,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1955,
+    "cache_read_input_tokens": 10295,
+    "cache_creation_input_tokens": 2444,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2444
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2260,
+   "cacheReadInputTokens": 13059,
+   "cacheCreationInputTokens": 9975,
+   "webSearchRequests": 0,
+   "costUSD": 0.1276278,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 279,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20219,
+   "outputTokens": 712,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043779,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Solana token named PONS was created about 10 minutes before detection with a PumpSwap pool made directly, not through a pump.fun curve. GeckoTerminal lists the handle @ponsdotfamily as its X account. That account belongs to Pons.family, a real launchpad on Robinhood Chain whose own $PONS token trades at about $30M market cap. This looks like a copy (ticker hijack) of a trending non-Solana project. Price is up about 177% in 10 minutes, with around 1,093 unique buyers against 87 sellers. One wallet outside the pool (AgkH\u2026) holds 62% of supply.\",\"narrative\":{\"description\":\"Borrows the name of Pons.family, a Robinhood Chain launchpad with a live ~$30M $PONS token, over $5M paid out to creators, and an active X account.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The real project is getting attention on Robinhood Chain. A Solana copy with the same name picks up buyers who search for the ticker, plus bot flow.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the name/ticker and the listed X handle. The real $PONS lives on Robinhood Chain. I found nothing showing that @ponsdotfamily endorses a Solana deployment.\",\"competing_tokens\":\"The official $PONS on Robinhood Chain, about $30M market cap.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"1,093 unique buyers against 87 sellers within about 10 minutes of pool creation on a coin with no website and no DexScreener profile. That lopsided pattern suggests bots or buyers following a copied ticker. GMGN shows 1 page visit and 0 smart or KOL wallets.\",\"uncertainty\":\"I could not see X posts about this contract. GMGN also reports a 0 bot/degen rate, which cuts against the bot reading.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One wallet outside the pool holds 62% of supply, a very large overhang that can drain the ~$34k pool\",\"The pool was created directly on PumpSwap with an LP burn ratio of 0, so liquidity can be pulled\",\"The creator wallet is closed and its funding source is unknown\",\"It impersonates a project on another chain\"]},\"counterargument\":\"Copies of hot tickers sometimes run hard in the first hour, and 1,000+ unique buyers is real demand at a $46k cap. The 62% wallet could be a locker or a second pool that RugCheck failed to label. If the real Pons team acknowledged a Solana version, the price could multiply.\",\"unknowns\":[\"Identity of the 62% holder AgkH\u2026\",\"Whether Pons.family has any link to this Solana mint\",\"X posts about this contract\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address found nothing. Searching the handle led to the real Robinhood Chain Pons.family project. I skipped Reddit, Telegram and Discord because of the time limit.\"},\"thesis\":\"This looks like a Solana ticker hijack of a real Robinhood Chain launchpad token. One wallet outside the pool holds 62% of supply and the liquidity is not locked, so a rug or dump is likely. The early buyer surge gives it some chance of a quick 2x, but the structure is heavily against the trade.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":55,\"survival_score\":15,\"attention_score\":55,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/ponsdotfamily\",\"what\":\"The real Pons X account\"},{\"url\":\"https://x.com/andrewtalksdefi/status/2079848918976774386\",\"what\":\"Post describing PONS as a Robinhood Chain launchpad\"},{\"url\":\"https://docs.ponsfamily.com/\",\"what\":\"Pons documentation\"},{\"url\":\"https://www.coingecko.com/en/exchanges/pons-dot-family\",\"what\":\"CoinGecko page for the Pons.family exchange\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Solana token named PONS was created about 10 minutes before detection with a PumpSwap pool made directly, not through a pump.fun curve. GeckoTerminal lists the handle @ponsdotfamily as its X account. That account belongs to Pons.family, a real launchpad on Robinhood Chain whose own $PONS token trades at about $30M market cap. This looks like a copy (ticker hijack) of a trending non-Solana project. Price is up about 177% in 10 minutes, with around 1,093 unique buyers against 87 sellers. One wallet outside the pool (AgkH\u2026) holds 62% of supply.",
+  "narrative": {
+   "description": "Borrows the name of Pons.family, a Robinhood Chain launchpad with a live ~$30M $PONS token, over $5M paid out to creators, and an active X account.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The real project is getting attention on Robinhood Chain. A Solana copy with the same name picks up buyers who search for the ticker, plus bot flow."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the name/ticker and the listed X handle. The real $PONS lives on Robinhood Chain. I found nothing showing that @ponsdotfamily endorses a Solana deployment.",
+   "competing_tokens": "The official $PONS on Robinhood Chain, about $30M market cap.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "1,093 unique buyers against 87 sellers within about 10 minutes of pool creation on a coin with no website and no DexScreener profile. That lopsided pattern suggests bots or buyers following a copied ticker. GMGN shows 1 page visit and 0 smart or KOL wallets.",
+   "uncertainty": "I could not see X posts about this contract. GMGN also reports a 0 bot/degen rate, which cuts against the bot reading."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One wallet outside the pool holds 62% of supply, a very large overhang that can drain the ~$34k pool",
+    "The pool was created directly on PumpSwap with an LP burn ratio of 0, so liquidity can be pulled",
+    "The creator wallet is closed and its funding source is unknown",
+    "It impersonates a project on another chain"
+   ]
+  },
+  "counterargument": "Copies of hot tickers sometimes run hard in the first hour, and 1,000+ unique buyers is real demand at a $46k cap. The 62% wallet could be a locker or a second pool that RugCheck failed to label. If the real Pons team acknowledged a Solana version, the price could multiply.",
+  "unknowns": [
+   "Identity of the 62% holder AgkH\u2026",
+   "Whether Pons.family has any link to this Solana mint",
+   "X posts about this contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address found nothing. Searching the handle led to the real Robinhood Chain Pons.family project. I skipped Reddit, Telegram and Discord because of the time limit."
+  },
+  "thesis": "This looks like a Solana ticker hijack of a real Robinhood Chain launchpad token. One wallet outside the pool holds 62% of supply and the liquidity is not locked, so a rug or dump is likely. The early buyer surge gives it some chance of a quick 2x, but the structure is heavily against the trade.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 55,
+  "survival_score": 15,
+  "attention_score": 55,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/ponsdotfamily",
+    "what": "The real Pons X account"
+   },
+   {
+    "url": "https://x.com/andrewtalksdefi/status/2079848918976774386",
+    "what": "Post describing PONS as a Robinhood Chain launchpad"
+   },
+   {
+    "url": "https://docs.ponsfamily.com/",
+    "what": "Pons documentation"
+   },
+   {
+    "url": "https://www.coingecko.com/en/exchanges/pons-dot-family",
+    "what": "CoinGecko page for the Pons.family exchange"
+   }
+  ]
+ },
+ "ttft_ms": 2615,
+ "type": "result",
+ "duration_ms": 28170,
+ "uuid": "cdf031ec-cf57-4b6b-b568-6dd8b49084a1",
+ "ttft_stream_ms": 865,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 865,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

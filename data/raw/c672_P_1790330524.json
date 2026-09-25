@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 28449,
+ "stop_reason": "tool_use",
+ "session_id": "086be782-e8d9-42dc-b2dc-c2e9c83e4422",
+ "total_cost_usd": 0.1156228,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7781,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2649,
+  "output_tokens_details": {
+   "thinking_tokens": 707
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7781,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2649,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7781,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7781
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2649,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7781,
+   "webSearchRequests": 0,
+   "costUSD": 0.1156228,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 707,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Shillpad\\\" launched about 36 minutes before detection. GMGN says it was created through a Meteora virtual curve and \\\"migrated\\\" in the same second it was created. It trades on a PumpSwap pair. In roughly 40 minutes it ran up 150-400%, depending on the data source, on about $1.03M of volume against about $40k of liquidity, a 25x turnover. The momentum is now fading: GeckoTerminal shows -10% over 5 minutes and -24% over 15 minutes, and the price is about 32% below its high of 0.000422. The buyer/seller pattern is very lopsided: 2,084 unique buyers against only 86 unique sellers, who made about 1,925 sells. New unique buyers collapsed from 1,531 in the 30-minute window to 192 in the 15-minute window and 57 in the 5-minute window. At least 10 copycat 'Shillpad' tokens were launched in the preceding 40 minutes. That suggests an outside project or tweet (shillpad.fun, @Shillpaddotfun) that people are racing to tokenize.\",\"narrative\":{\"description\":\"The name suggests a 'shill launchpad' platform/meme, with a website (shillpad.fun) and an X status link. The ticker-sniping swarm points to an outside trigger, such as a project tweet or an announcement of a launchpad product.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The attention looks like a ticker race after an X post, not organic community growth. The collapse in new unique buyers shows the first wave has already been absorbed.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"It has by far the most volume and liquidity among the same-name tokens, and GMGN links it to the shillpad.fun site and an @Shillpaddotfun status. That may mean it is the recognized CA, or that a deployer just pasted the links in.\",\"competing_tokens\":\"At least 10 same-name tokens were created 20-50 minutes earlier. One shows a stale $7.2M mcap with zero liquidity. One (6Cw4...) is still trading $50k/hour. Most are dead.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,084 unique buyers against 86 unique sellers who made about 1,925 sells. That pattern suggests a small set of wallets (bots or insiders) cycling sells into a crowd of small buyers, or a fake-holder bot inflating buyer counts. GMGN flags 28 bundlers and 8 snipers. There is no DexScreener profile and no paid boosts. Creator status is 'creator_close'. The 25x hourly turnover is extreme.\",\"uncertainty\":\"Without X data I can't tell whether the linked project really endorses this CA. If it does, real demand could come back.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags a large amount of unlocked LP, and one market shows 0% locked (GMGN's lp_burn_ratio of 1.0 conflicts with this)\",\"The top holder at 80% is unlabeled, though it is probably a pool/curve account because GMGN puts the top-10 holder rate at 9%. This is unresolved.\",\"Liquidity is only $42k against $1M in hourly volume, so the price is very volatile in both directions\",\"Momentum is fading: -24% over 15 minutes, and new buyers are drying up\",\"Crowded field of same-ticker copycats\"]},\"counterargument\":\"If this CA is the one the Shillpad project/X account endorses, a second wave could arrive as the linked post spreads. That could come from KOL quote-tweets or the launchpad going live. At a $250-290k mcap, doubling to about $550k only requires a retest just above the ATH (~$420k-equivalent). Many buyers holding without selling could also mean conviction rather than fakes.\",\"unknowns\":[\"Whether @Shillpaddotfun endorses this contract\",\"Who the 80% top holder is (pool or not)\",\"LP lock status across the three pairs\",\"Whether the 2,000+ buyers are real or bot-generated\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; I judged from the packet only.\"},\"thesis\":\"This looks like a ticker-race coin that is past its first pump. New buyers are collapsing, very few wallets are doing the selling, the LP is partly unlocked, and many copycats are competing. At entry it would need about a 2x to above its ATH, while downside and rug risk are high. Fade.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"Shillpad\" launched about 36 minutes before detection. GMGN says it was created through a Meteora virtual curve and \"migrated\" in the same second it was created. It trades on a PumpSwap pair. In roughly 40 minutes it ran up 150-400%, depending on the data source, on about $1.03M of volume against about $40k of liquidity, a 25x turnover. The momentum is now fading: GeckoTerminal shows -10% over 5 minutes and -24% over 15 minutes, and the price is about 32% below its high of 0.000422. The buyer/seller pattern is very lopsided: 2,084 unique buyers against only 86 unique sellers, who made about 1,925 sells. New unique buyers collapsed from 1,531 in the 30-minute window to 192 in the 15-minute window and 57 in the 5-minute window. At least 10 copycat 'Shillpad' tokens were launched in the preceding 40 minutes. That suggests an outside project or tweet (shillpad.fun, @Shillpaddotfun) that people are racing to tokenize.",
+  "narrative": {
+   "description": "The name suggests a 'shill launchpad' platform/meme, with a website (shillpad.fun) and an X status link. The ticker-sniping swarm points to an outside trigger, such as a project tweet or an announcement of a launchpad product.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The attention looks like a ticker race after an X post, not organic community growth. The collapse in new unique buyers shows the first wave has already been absorbed."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "It has by far the most volume and liquidity among the same-name tokens, and GMGN links it to the shillpad.fun site and an @Shillpaddotfun status. That may mean it is the recognized CA, or that a deployer just pasted the links in.",
+   "competing_tokens": "At least 10 same-name tokens were created 20-50 minutes earlier. One shows a stale $7.2M mcap with zero liquidity. One (6Cw4...) is still trading $50k/hour. Most are dead.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,084 unique buyers against 86 unique sellers who made about 1,925 sells. That pattern suggests a small set of wallets (bots or insiders) cycling sells into a crowd of small buyers, or a fake-holder bot inflating buyer counts. GMGN flags 28 bundlers and 8 snipers. There is no DexScreener profile and no paid boosts. Creator status is 'creator_close'. The 25x hourly turnover is extreme.",
+   "uncertainty": "Without X data I can't tell whether the linked project really endorses this CA. If it does, real demand could come back."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags a large amount of unlocked LP, and one market shows 0% locked (GMGN's lp_burn_ratio of 1.0 conflicts with this)",
+    "The top holder at 80% is unlabeled, though it is probably a pool/curve account because GMGN puts the top-10 holder rate at 9%. This is unresolved.",
+    "Liquidity is only $42k against $1M in hourly volume, so the price is very volatile in both directions",
+    "Momentum is fading: -24% over 15 minutes, and new buyers are drying up",
+    "Crowded field of same-ticker copycats"
+   ]
+  },
+  "counterargument": "If this CA is the one the Shillpad project/X account endorses, a second wave could arrive as the linked post spreads. That could come from KOL quote-tweets or the launchpad going live. At a $250-290k mcap, doubling to about $550k only requires a retest just above the ATH (~$420k-equivalent). Many buyers holding without selling could also mean conviction rather than fakes.",
+  "unknowns": [
+   "Whether @Shillpaddotfun endorses this contract",
+   "Who the 80% top holder is (pool or not)",
+   "LP lock status across the three pairs",
+   "Whether the 2,000+ buyers are real or bot-generated"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; I judged from the packet only."
+  },
+  "thesis": "This looks like a ticker-race coin that is past its first pump. New buyers are collapsing, very few wallets are doing the selling, the LP is partly unlocked, and many copycats are competing. At entry it would need about a 2x to above its ATH, while downside and rug risk are high. Fade.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 9731,
+ "type": "result",
+ "duration_ms": 28498,
+ "uuid": "79b5db36-282c-40c9-ad50-d4837f8f148c",
+ "ttft_stream_ms": 833,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 833,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

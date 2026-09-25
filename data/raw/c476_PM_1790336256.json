@@ -1,0 +1,139 @@
+{
+ "duration_api_ms": 38103,
+ "stop_reason": "tool_use",
+ "session_id": "8261bf14-aebc-4568-b6ed-0db9e94eacb0",
+ "total_cost_usd": 0.148648,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9925,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 3462,
+  "output_tokens_details": {
+   "thinking_tokens": 923
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9925,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3462,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 9925,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9925
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3462,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 9925,
+   "webSearchRequests": 0,
+   "costUSD": 0.148648,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 923,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"Bundler concentration: GMGN tagged 74 bundler wallets and 91 fresh wallets among about 136 holders, with a 46% top-entrapment-trader share and a bot/degen rate of 0.44. The drop from +58% MFE to -92% happened within about 16 minutes (between the +50% touch at about 61 min and the -50% touch at about 77 min). Curve-equivalent liquidity fell from about $20.6k to about $2.8k. That pattern fits coordinated selling of bundled supply back into the curve, but this one path cannot confirm it.\",\"Dev status was creator_close, with a creator hold rate of 0. The 'engine' pitch depended on an operator who had no remaining exposure, and no holder-aligned party was visibly supporting the price.\",\"No organic social footprint could be found (web, Reddit, Telegram, news). Three same-name clones appeared within minutes. Attention looked like bot or cloner activity rather than spreading interest, so there was little outside demand to absorb supply once selling started.\",\"The token had already run about 6x in its first hour and m5 was negative (-18% to -35%) at T2, so late entry into an insider-built run was a real risk. The report correctly treated this as a structural risk rather than as momentum.\",\"The report's overall numbers (p_runner 12, p_rug 50, fade) matched the result: +100% was never touched, the -50% bracket stop hit at about 77 min, and liquidity collapsed.\"],\"misleading_observations\":[\"The counterargument that 'the curve is 72% of the way to migration and migration brings buying' partly played out: price hit +58% (entry mcap about $28.9k, peak around $45k). The token then collapsed without migrating (pair still present on the curve with about $2.7k liquidity). Curve progress drew buyers in but did not protect the downside.\",\"More unique buyers than sellers (323 vs 228 in h1) looked like demand. With 74 bundler and 91 fresh wallets, buyer counts mostly reflect wallet splitting, not independent buyers.\",\"Clean security (mint and freeze renounced, lp_burn_ratio 1.0, 100% LP locked, no honeypot) was irrelevant. On a pump.fun curve there is no LP to pull, and the 'liquidity collapse' was holders selling into the curve, which renouncements cannot prevent.\",\"'No paid boost' and 'real build effort on the website' (Round 4 dashboard) suggested legitimacy. They did not bear on who held the supply.\",\"The first-hour result (+12% gross at 60 min, +50% touched at about 61 min) would have made a fade call look wrong at that checkpoint. Single-horizon checks on this kind of token are dominated by path noise.\",\"Holder counts disagreed across sources (RugCheck 269, GMGN 136, GeckoTerminal 88), and the creator address differed between RugCheck and GMGN. The report quietly used GMGN's figure. The bundler ratio depends on which denominator is right, and the report did not flag this.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at T2 should have reversed the fade call. It was directionally correct.\",\"The evidence arguably supported a higher p_rug than 50. A bundler share of about 54% of GMGN holders, creator_close, no organic social signal and clone attention together describe a coordinated-launch structure. The report could have weighted that more than the migration counterargument.\",\"The report should have noted that the entry would likely happen after further markup. The entry reference was about 13.8% above the quote, and mcap was $28.9k at entry vs $24.3k at T2, which made the risk/reward worse than the T2 snapshot showed.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"On pump.fun bonding-curve tokens under 2 hours old, where GMGN bundler_wallets / GMGN holder_count >= 0.4 and creator_token_status is creator_close (or creator_hold_rate = 0), the share that touch -50% from entry within 6h is materially higher than the base rate for bonding-curve candidates in the same universe.\",\"conditions\":\"Applies only to bonding-curve (unmigrated) tokens in the $10k-$300k mcap universe, with GMGN data available at T2. Compare against all curve candidates without both flags. Needs at least 30 flagged cases before drawing conclusions.\",\"market_structure_rationale\":\"Bundled wallets are a concentrated supply held by one or a few actors. With the creator already out, nobody has an incentive to support the price, and the curve lets any holder sell straight into virtual reserves, so coordinated exits drain the curve quickly.\"},{\"statement\":\"Among curve tokens with curve progress >= 65% at T2 and a high bundler share (>= 0.4), touching +50% before -50% does NOT predict migration. Most will hit -50% within 3h without migrating.\",\"conditions\":\"Bonding-curve tokens with virtual-SOL progress logged at T2. Measure the order of first touches and whether migrated_unix becomes non-zero within 6h.\",\"market_structure_rationale\":\"Nearness to migration draws speculative buyers, which gives bundled holders exit liquidity. Insiders can sell into that bid before completion, so the approach to migration becomes a distribution window rather than a catalyst.\"},{\"statement\":\"For curve tokens, the gap between the T2 quote and the entry reference (entry markup) is a negative predictor of 6h return, independent of p_runner.\",\"conditions\":\"All candidates with entry_ok. Compute (entry_ref / T2 price - 1) and correlate it with the 360-min return.\",\"market_structure_rationale\":\"Markup between research and entry on thin curves often means an insider push that has not finished. Entering higher shrinks the distance to where insiders take profit.\"}],\"summary\":\"The report called a fade (p_runner 12, p_rug 50), and that matched the outcome. After entry (at about $28.9k mcap, already above the T2 price) the token rose to +58% within about an hour, then fell to -92% by about 77 minutes. Curve liquidity dropped from about $20.6k to about $2.7k, and the token never migrated. The parts of the report that bore on the result were about who held the supply: heavy bundler and fresh-wallet counts, a creator already out (creator_close), no organic social signal, and bot-driven clone activity. The misleading inputs were the migration-proximity counterargument (it produced the brief spike, not support), buyers outnumbering sellers (inflated by wallet splitting), and clean security or LP-lock fields (meaningless on a curve). No evidence at T2 argued for a runner call. If anything, the structure supported a higher rug probability and a note about entry markup. The exact timing and size of the dump could not be known, and the 60-minute checkpoint would have made the call look wrong. This is one case, so it does not show the reasoning was right. It is consistent with the view that supply structure matters more than narrative for this kind of token. The report also missed inconsistent holder counts and creator addresses across data sources.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "Bundler concentration: GMGN tagged 74 bundler wallets and 91 fresh wallets among about 136 holders, with a 46% top-entrapment-trader share and a bot/degen rate of 0.44. The drop from +58% MFE to -92% happened within about 16 minutes (between the +50% touch at about 61 min and the -50% touch at about 77 min). Curve-equivalent liquidity fell from about $20.6k to about $2.8k. That pattern fits coordinated selling of bundled supply back into the curve, but this one path cannot confirm it.",
+   "Dev status was creator_close, with a creator hold rate of 0. The 'engine' pitch depended on an operator who had no remaining exposure, and no holder-aligned party was visibly supporting the price.",
+   "No organic social footprint could be found (web, Reddit, Telegram, news). Three same-name clones appeared within minutes. Attention looked like bot or cloner activity rather than spreading interest, so there was little outside demand to absorb supply once selling started.",
+   "The token had already run about 6x in its first hour and m5 was negative (-18% to -35%) at T2, so late entry into an insider-built run was a real risk. The report correctly treated this as a structural risk rather than as momentum.",
+   "The report's overall numbers (p_runner 12, p_rug 50, fade) matched the result: +100% was never touched, the -50% bracket stop hit at about 77 min, and liquidity collapsed."
+  ],
+  "misleading_observations": [
+   "The counterargument that 'the curve is 72% of the way to migration and migration brings buying' partly played out: price hit +58% (entry mcap about $28.9k, peak around $45k). The token then collapsed without migrating (pair still present on the curve with about $2.7k liquidity). Curve progress drew buyers in but did not protect the downside.",
+   "More unique buyers than sellers (323 vs 228 in h1) looked like demand. With 74 bundler and 91 fresh wallets, buyer counts mostly reflect wallet splitting, not independent buyers.",
+   "Clean security (mint and freeze renounced, lp_burn_ratio 1.0, 100% LP locked, no honeypot) was irrelevant. On a pump.fun curve there is no LP to pull, and the 'liquidity collapse' was holders selling into the curve, which renouncements cannot prevent.",
+   "'No paid boost' and 'real build effort on the website' (Round 4 dashboard) suggested legitimacy. They did not bear on who held the supply.",
+   "The first-hour result (+12% gross at 60 min, +50% touched at about 61 min) would have made a fade call look wrong at that checkpoint. Single-horizon checks on this kind of token are dominated by path noise.",
+   "Holder counts disagreed across sources (RugCheck 269, GMGN 136, GeckoTerminal 88), and the creator address differed between RugCheck and GMGN. The report quietly used GMGN's figure. The bundler ratio depends on which denominator is right, and the report did not flag this."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at T2 should have reversed the fade call. It was directionally correct.",
+   "The evidence arguably supported a higher p_rug than 50. A bundler share of about 54% of GMGN holders, creator_close, no organic social signal and clone attention together describe a coordinated-launch structure. The report could have weighted that more than the migration counterargument.",
+   "The report should have noted that the entry would likely happen after further markup. The entry reference was about 13.8% above the quote, and mcap was $28.9k at entry vs $24.3k at T2, which made the risk/reward worse than the T2 snapshot showed."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "On pump.fun bonding-curve tokens under 2 hours old, where GMGN bundler_wallets / GMGN holder_count >= 0.4 and creator_token_status is creator_close (or creator_hold_rate = 0), the share that touch -50% from entry within 6h is materially higher than the base rate for bonding-curve candidates in the same universe.",
+    "conditions": "Applies only to bonding-curve (unmigrated) tokens in the $10k-$300k mcap universe, with GMGN data available at T2. Compare against all curve candidates without both flags. Needs at least 30 flagged cases before drawing conclusions.",
+    "market_structure_rationale": "Bundled wallets are a concentrated supply held by one or a few actors. With the creator already out, nobody has an incentive to support the price, and the curve lets any holder sell straight into virtual reserves, so coordinated exits drain the curve quickly."
+   },
+   {
+    "statement": "Among curve tokens with curve progress >= 65% at T2 and a high bundler share (>= 0.4), touching +50% before -50% does NOT predict migration. Most will hit -50% within 3h without migrating.",
+    "conditions": "Bonding-curve tokens with virtual-SOL progress logged at T2. Measure the order of first touches and whether migrated_unix becomes non-zero within 6h.",
+    "market_structure_rationale": "Nearness to migration draws speculative buyers, which gives bundled holders exit liquidity. Insiders can sell into that bid before completion, so the approach to migration becomes a distribution window rather than a catalyst."
+   },
+   {
+    "statement": "For curve tokens, the gap between the T2 quote and the entry reference (entry markup) is a negative predictor of 6h return, independent of p_runner.",
+    "conditions": "All candidates with entry_ok. Compute (entry_ref / T2 price - 1) and correlate it with the 360-min return.",
+    "market_structure_rationale": "Markup between research and entry on thin curves often means an insider push that has not finished. Entering higher shrinks the distance to where insiders take profit."
+   }
+  ],
+  "summary": "The report called a fade (p_runner 12, p_rug 50), and that matched the outcome. After entry (at about $28.9k mcap, already above the T2 price) the token rose to +58% within about an hour, then fell to -92% by about 77 minutes. Curve liquidity dropped from about $20.6k to about $2.7k, and the token never migrated. The parts of the report that bore on the result were about who held the supply: heavy bundler and fresh-wallet counts, a creator already out (creator_close), no organic social signal, and bot-driven clone activity. The misleading inputs were the migration-proximity counterargument (it produced the brief spike, not support), buyers outnumbering sellers (inflated by wallet splitting), and clean security or LP-lock fields (meaningless on a curve). No evidence at T2 argued for a runner call. If anything, the structure supported a higher rug probability and a note about entry markup. The exact timing and size of the dump could not be known, and the 60-minute checkpoint would have made the call look wrong. This is one case, so it does not show the reasoning was right. It is consistent with the view that supply structure matters more than narrative for this kind of token. The report also missed inconsistent holder counts and creator addresses across data sources."
+ },
+ "ttft_ms": 11219,
+ "type": "result",
+ "duration_ms": 38154,
+ "uuid": "c69650b7-01de-4191-ba98-453ee11fd06b",
+ "ttft_stream_ms": 758,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 758,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

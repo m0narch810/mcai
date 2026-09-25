@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 98849,
+ "stop_reason": "tool_use",
+ "session_id": "1348a57b-9f7f-4416-a8ca-92c1005bad73",
+ "total_cost_usd": 0.47131920000000005,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 20530,
+  "cache_read_input_tokens": 118766,
+  "output_tokens": 5953,
+  "output_tokens_details": {
+   "thinking_tokens": 677
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 20530,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2168,
+    "cache_read_input_tokens": 21024,
+    "cache_creation_input_tokens": 2082,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2082
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 16,
+   "outputTokens": 5953,
+   "cacheReadInputTokens": 118766,
+   "cacheCreationInputTokens": 20530,
+   "webSearchRequests": 0,
+   "costUSD": 0.3071172,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 677,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 78472,
+   "outputTokens": 3146,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.16420200000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN tags 100 bundler wallets, and bundlers are 28% of top traders. About 2,111 unique buyers against only 108 unique sellers in the last hour, with ~10.7k transactions and $1.9M volume on a $41k market cap (41x turnover). That pattern looks like micro-buy bot or volume-bot activity, not people finding the coin. No smart-money, KOL or organic social mentions were found. The social handles in the metadata point to a launcher site and to StonkFun's Telegram, not to a community for this coin.\",\"uncertainty\":\"No X data was available, and private Telegram/Discord could hold real discussion. The buyer/seller asymmetry may partly reflect how GeckoTerminal counts wallets.\"},\"continuation_view\":\"fade\",\"counterargument\":\"About 2,100 holders, a wide spread (top 10 hold only ~11% excluding the pool), and 13% more in the last 5 minutes are real momentum signals. A launch-tool meta ('everyone starts a company') can spill over, and if the tool or its X auto-posting catches on, the most liquid clones could 2x from $41k fast. The 108-seller figure could mean holders are not selling rather than bots, and the creator holds nothing.\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The PumpSwap pool was not created by a pump.fun migration (migrated_unix=0). The LP is 0% burned and 0% locked, and RugCheck flags 'Large Amount of LP Unlocked' and few LP providers, so the creator can pull the liquidity.\",\"Liquidity ($46k) is larger than market cap ($41k), which suggests the LP was seeded by the deployer.\",\"100 bundler wallets, and bundlers are 28% of top traders.\",\"Turnover of 41x in an hour on 108 unique sellers points to wash or bot volume.\",\"At least 7 clones with the same name were launched in the same hour, several already at zero liquidity.\"]},\"narrative\":{\"description\":\"One of a swarm of tokens named 'company' deployed within about an hour. Metadata points to startacompany.fun, a Solana token-launch tool with optional automatic posting to X. There is no identifiable cultural or news event behind it.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The attention looks like a launch-tool fad plus bot or bundled volume. It does not come from an external story.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the second most active 'company' pair by volume, but it is not the first. 6sEf... was created about 33 minutes earlier and is at a $208k market cap.\",\"competing_tokens\":\"6sEf597z... ($208k mcap, $1.02M h1 volume, created earlier), 92iX..., ForVg..., GUrk..., 5a4A..., GcGC... and FjU6... are all 'company' tokens from the same hour, several with liquidity already at 0.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"observation_window\":\"6h\",\"p_rug\":70,\"p_runner\":8,\"research_confidence\":\"medium\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"A search for the contract address returned nothing. GeckoTerminal's info page gives startacompany.fun as the website, a generic launch tool with an X auto-post feature. The Telegram handle stonkfunxyz belongs to the StonkFun launchpad, not to this coin. The DexScreener page returned 403.\"},\"sources\":[{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/tokens/FCHzXMULoUQUcRsmHV3F4c1soNLYRRNWAYjAzTm8vB2A/info\",\"what\":\"Token metadata: website startacompany.fun, twitter yourcompanyfun, telegram stonkfunxyz, no description\"},{\"url\":\"https://www.startacompany.fun\",\"what\":\"Generic Solana token-launch tool with an X auto-post option\"},{\"url\":\"https://coinmarketcap.com/currencies/stonk-fun/\",\"what\":\"StonkFun is a separate launchpad; the Telegram handle belongs to it\"}],\"thesis\":\"This is a clone 'company' token, apparently deployed with the startacompany.fun launch tool into a PumpSwap pool the deployer seeded with unlocked LP. Its huge volume comes from about 2,100 buyers but only about 108 sellers, with 100 bundler wallets, which looks manufactured. It is not the canonical 'company' token (6sEf is older and bigger), and same-name siblings are already dying at zero liquidity. A 2x before a -50% move or an LP pull is unlikely.\",\"unknowns\":[\"Whether the creator controls the unlocked LP\",\"The actual X activity around yourcompanyfun or startacompany.fun\",\"Whether the buyer/seller asymmetry is a bot artifact or a real retail distribution\"],\"what_is_happening\":\"Within one hour a swarm of Solana tokens all named 'company' was launched, apparently via startacompany.fun. This one is 36 minutes old, up about 318%, with $1.9M of volume that looks bot-heavy against a $41k market cap. Its LP is unlocked and was seeded outside pump.fun, and it is not the leading 'company' clone.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN tags 100 bundler wallets, and bundlers are 28% of top traders. About 2,111 unique buyers against only 108 unique sellers in the last hour, with ~10.7k transactions and $1.9M volume on a $41k market cap (41x turnover). That pattern looks like micro-buy bot or volume-bot activity, not people finding the coin. No smart-money, KOL or organic social mentions were found. The social handles in the metadata point to a launcher site and to StonkFun's Telegram, not to a community for this coin.",
+   "uncertainty": "No X data was available, and private Telegram/Discord could hold real discussion. The buyer/seller asymmetry may partly reflect how GeckoTerminal counts wallets."
+  },
+  "continuation_view": "fade",
+  "counterargument": "About 2,100 holders, a wide spread (top 10 hold only ~11% excluding the pool), and 13% more in the last 5 minutes are real momentum signals. A launch-tool meta ('everyone starts a company') can spill over, and if the tool or its X auto-posting catches on, the most liquid clones could 2x from $41k fast. The 108-seller figure could mean holders are not selling rather than bots, and the creator holds nothing.",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The PumpSwap pool was not created by a pump.fun migration (migrated_unix=0). The LP is 0% burned and 0% locked, and RugCheck flags 'Large Amount of LP Unlocked' and few LP providers, so the creator can pull the liquidity.",
+    "Liquidity ($46k) is larger than market cap ($41k), which suggests the LP was seeded by the deployer.",
+    "100 bundler wallets, and bundlers are 28% of top traders.",
+    "Turnover of 41x in an hour on 108 unique sellers points to wash or bot volume.",
+    "At least 7 clones with the same name were launched in the same hour, several already at zero liquidity."
+   ]
+  },
+  "narrative": {
+   "description": "One of a swarm of tokens named 'company' deployed within about an hour. Metadata points to startacompany.fun, a Solana token-launch tool with optional automatic posting to X. There is no identifiable cultural or news event behind it.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The attention looks like a launch-tool fad plus bot or bundled volume. It does not come from an external story."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the second most active 'company' pair by volume, but it is not the first. 6sEf... was created about 33 minutes earlier and is at a $208k market cap.",
+   "competing_tokens": "6sEf597z... ($208k mcap, $1.02M h1 volume, created earlier), 92iX..., ForVg..., GUrk..., 5a4A..., GcGC... and FjU6... are all 'company' tokens from the same hour, several with liquidity already at 0.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "observation_window": "6h",
+  "p_rug": 70,
+  "p_runner": 8,
+  "research_confidence": "medium",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "A search for the contract address returned nothing. GeckoTerminal's info page gives startacompany.fun as the website, a generic launch tool with an X auto-post feature. The Telegram handle stonkfunxyz belongs to the StonkFun launchpad, not to this coin. The DexScreener page returned 403."
+  },
+  "sources": [
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/tokens/FCHzXMULoUQUcRsmHV3F4c1soNLYRRNWAYjAzTm8vB2A/info",
+    "what": "Token metadata: website startacompany.fun, twitter yourcompanyfun, telegram stonkfunxyz, no description"
+   },
+   {
+    "url": "https://www.startacompany.fun",
+    "what": "Generic Solana token-launch tool with an X auto-post option"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/stonk-fun/",
+    "what": "StonkFun is a separate launchpad; the Telegram handle belongs to it"
+   }
+  ],
+  "thesis": "This is a clone 'company' token, apparently deployed with the startacompany.fun launch tool into a PumpSwap pool the deployer seeded with unlocked LP. Its huge volume comes from about 2,100 buyers but only about 108 sellers, with 100 bundler wallets, which looks manufactured. It is not the canonical 'company' token (6sEf is older and bigger), and same-name siblings are already dying at zero liquidity. A 2x before a -50% move or an LP pull is unlikely.",
+  "unknowns": [
+   "Whether the creator controls the unlocked LP",
+   "The actual X activity around yourcompanyfun or startacompany.fun",
+   "Whether the buyer/seller asymmetry is a bot artifact or a real retail distribution"
+  ],
+  "what_is_happening": "Within one hour a swarm of Solana tokens all named 'company' was launched, apparently via startacompany.fun. This one is 36 minutes old, up about 318%, with $1.9M of volume that looks bot-heavy against a $41k market cap. Its LP is unlocked and was seeded outside pump.fun, and it is not the leading 'company' clone."
+ },
+ "ttft_ms": 4166,
+ "type": "result",
+ "duration_ms": 86872,
+ "uuid": "10993da9-c64a-4c3c-ae5d-322eb913183d",
+ "ttft_stream_ms": 983,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 983,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 26080,
+ "stop_reason": "tool_use",
+ "session_id": "0c3cbd34-3f60-4d38-a20b-11fedbee5e7b",
+ "total_cost_usd": 0.1147908,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7662,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2655,
+  "output_tokens_details": {
+   "thinking_tokens": 507
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7662,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2655,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7662,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7662
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2655,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7662,
+   "webSearchRequests": 0,
+   "costUSD": 0.1147908,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 507,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Asset is a pump.fun coin. It was created at unix 1790231364 and migrated to PumpSwap just 162 seconds later, a very fast curve fill that is consistent with a bundled launch. GMGN tags 72 bundler wallets and puts the top bundler trader share at about 18%. In the 36 minutes after migration it traded about $243k of volume against $28k of liquidity, a turnover of 8.5x. There were roughly 3.1k buys and 2.95k sells from about 2.4k unique buyers and 2.2k unique sellers. Price is up 60-86% on the hour. At detection the market cap was $111k, near the $128k all-time high, and it has since slipped to $106k. The creator has sold out completely (creator_close, balance 0). LP is 100% burned, mint and freeze authority are renounced, and the top 10 holders own only about 10.7%. The dev profile was updated and the coin is flagged as a community takeover. The project pitches itself as a wallet (\\\"A Simpler Wallet\\\") with a .pro website and an X handle, asset_safe. At least 10 earlier same-name 'Asset' pump.fun launches in the previous 2.5 hours all died near $3k.\",\"narrative\":{\"description\":\"A generic 'Asset' wallet/fintech theme. The run of repeated same-name launches before this one suggests something external may have prompted the name, such as a product announcement or a tweet, but the packet doesn't show what. The .pro website and wallet tagline look like standard low-effort pump.fun packaging.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The attention seems to come mostly from the mechanics of a fresh migration: new-pair scanners, bundled volume and bot-driven turnover. There is no visible organic catalyst. With 132 fresh wallets and heavy bundling, much of the activity may be manufactured.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the only 'Asset' token that migrated and holds real liquidity and volume. Every same-name competitor is dead at about $3k.\",\"competing_tokens\":\"At least 10 same-name 'Asset' pump.fun tokens, created 2.5 hours to 5 minutes before this one. All are at about $3.2k mcap with zero liquidity. One (HeSaFt...) did $15k of volume in the last hour.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Signs of manufactured activity: 72 bundler wallets, a 162-second curve fill, 132 of 310 GMGN holders being fresh wallets, a 10.4% entrapment-trader share, and the dev selling out. Signs of real participation: about 2.4k unique buyers, a low top-10 concentration of 10.7%, 4 smart wallets, no paid DexScreener boosts, a burned LP and a CTO flag.\",\"uncertainty\":\"I can't see X posts or where the name came from. Holder counts disagree between sources (2477 from RugCheck vs 310-311 from GMGN and GeckoTerminal).\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The dev exited, and bundlers holding about 18% can dump into $28k of thin liquidity\",\"Price is already up about 86% in its first hour, so entering 25 minutes after detection is likely late in the first leg\",\"A double from entry needs roughly a $200k+ mcap, which means breaking the $128k ATH decisively\",\"Very high turnover on a young pair usually decays fast once scanner flow dries up\",\"Copycat 'Asset' launches may split attention\"]},\"counterargument\":\"Because the LP is burned, a classic liquidity pull can't happen. Holdings are unusually well spread, with about 2.4k unique buyers in under an hour. The coin is already the clear winner among many same-name attempts. A CTO with an updated profile at $100k, near its ATH and with steady buy pressure (m5 buys at roughly twice sells), is exactly the setup that sometimes runs to $300k-$1M on the second wave. If an outside 'Asset' catalyst exists, a double within 6 hours is quite plausible.\",\"unknowns\":[\"What prompted the repeated 'Asset' launches (product news or a tweet?)\",\"Whether the X account asset_safe has real followers\",\"How much of the bundler supply has already been sold\",\"Price at the moment of entry, 25 minutes after detection\",\"Whether any KOL or call-channel push is scheduled\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. The judgment is based only on the packet.\"},\"thesis\":\"This is a fast-bonded, bundled pump.fun launch with a generic wallet name and a dev who has already sold out. Its structure is healthier than usual, with a burned LP and spread-out holders, so an outright rug is less likely than the pool base rate. Still, the first leg (+86%) has probably already happened. Doubling from an entry near $100k requires breaking the ATH on turnover that is likely to decay. It is somewhat better than the 1-in-7 base rate, but well below the 35 needed to take the trade.\",\"continuation_view\":\"fade\",\"p_runner\":20,\"p_rug\":40,\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "Asset is a pump.fun coin. It was created at unix 1790231364 and migrated to PumpSwap just 162 seconds later, a very fast curve fill that is consistent with a bundled launch. GMGN tags 72 bundler wallets and puts the top bundler trader share at about 18%. In the 36 minutes after migration it traded about $243k of volume against $28k of liquidity, a turnover of 8.5x. There were roughly 3.1k buys and 2.95k sells from about 2.4k unique buyers and 2.2k unique sellers. Price is up 60-86% on the hour. At detection the market cap was $111k, near the $128k all-time high, and it has since slipped to $106k. The creator has sold out completely (creator_close, balance 0). LP is 100% burned, mint and freeze authority are renounced, and the top 10 holders own only about 10.7%. The dev profile was updated and the coin is flagged as a community takeover. The project pitches itself as a wallet (\"A Simpler Wallet\") with a .pro website and an X handle, asset_safe. At least 10 earlier same-name 'Asset' pump.fun launches in the previous 2.5 hours all died near $3k.",
+  "narrative": {
+   "description": "A generic 'Asset' wallet/fintech theme. The run of repeated same-name launches before this one suggests something external may have prompted the name, such as a product announcement or a tweet, but the packet doesn't show what. The .pro website and wallet tagline look like standard low-effort pump.fun packaging.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The attention seems to come mostly from the mechanics of a fresh migration: new-pair scanners, bundled volume and bot-driven turnover. There is no visible organic catalyst. With 132 fresh wallets and heavy bundling, much of the activity may be manufactured."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the only 'Asset' token that migrated and holds real liquidity and volume. Every same-name competitor is dead at about $3k.",
+   "competing_tokens": "At least 10 same-name 'Asset' pump.fun tokens, created 2.5 hours to 5 minutes before this one. All are at about $3.2k mcap with zero liquidity. One (HeSaFt...) did $15k of volume in the last hour.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Signs of manufactured activity: 72 bundler wallets, a 162-second curve fill, 132 of 310 GMGN holders being fresh wallets, a 10.4% entrapment-trader share, and the dev selling out. Signs of real participation: about 2.4k unique buyers, a low top-10 concentration of 10.7%, 4 smart wallets, no paid DexScreener boosts, a burned LP and a CTO flag.",
+   "uncertainty": "I can't see X posts or where the name came from. Holder counts disagree between sources (2477 from RugCheck vs 310-311 from GMGN and GeckoTerminal)."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The dev exited, and bundlers holding about 18% can dump into $28k of thin liquidity",
+    "Price is already up about 86% in its first hour, so entering 25 minutes after detection is likely late in the first leg",
+    "A double from entry needs roughly a $200k+ mcap, which means breaking the $128k ATH decisively",
+    "Very high turnover on a young pair usually decays fast once scanner flow dries up",
+    "Copycat 'Asset' launches may split attention"
+   ]
+  },
+  "counterargument": "Because the LP is burned, a classic liquidity pull can't happen. Holdings are unusually well spread, with about 2.4k unique buyers in under an hour. The coin is already the clear winner among many same-name attempts. A CTO with an updated profile at $100k, near its ATH and with steady buy pressure (m5 buys at roughly twice sells), is exactly the setup that sometimes runs to $300k-$1M on the second wave. If an outside 'Asset' catalyst exists, a double within 6 hours is quite plausible.",
+  "unknowns": [
+   "What prompted the repeated 'Asset' launches (product news or a tweet?)",
+   "Whether the X account asset_safe has real followers",
+   "How much of the bundler supply has already been sold",
+   "Price at the moment of entry, 25 minutes after detection",
+   "Whether any KOL or call-channel push is scheduled"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. The judgment is based only on the packet."
+  },
+  "thesis": "This is a fast-bonded, bundled pump.fun launch with a generic wallet name and a dev who has already sold out. Its structure is healthier than usual, with a burned LP and spread-out holders, so an outright rug is less likely than the pool base rate. Still, the first leg (+86%) has probably already happened. Doubling from an entry near $100k requires breaking the ATH on turnover that is likely to decay. It is somewhat better than the 1-in-7 base rate, but well below the 35 needed to take the trade.",
+  "continuation_view": "fade",
+  "p_runner": 20,
+  "p_rug": 40,
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6788,
+ "type": "result",
+ "duration_ms": 26120,
+ "uuid": "207c190f-9976-4d24-981a-9a4059640f9a",
+ "ttft_stream_ms": 1472,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1472,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

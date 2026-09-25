@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 25545,
+ "stop_reason": "tool_use",
+ "session_id": "4fac4647-c38e-41c8-845f-e88b58d8bb99",
+ "total_cost_usd": 0.11486679999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7654,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2662,
+  "output_tokens_details": {
+   "thinking_tokens": 485
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7654,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2662,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7654,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7654
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2662,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7654,
+   "webSearchRequests": 0,
+   "costUSD": 0.11486679999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 485,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DESKS \\\"desks.fun\\\" is 48 minutes old. It was minted and a PumpSwap pool was created about 3 seconds apart (created_unix 1790238370 vs pair 1790238373). There was no pump.fun bonding-curve launch and no migration (migrated_unix 0, deploy_platform unknown, no 'pump' suffix). The dev seeded about $55k of liquidity, and 0% of the LP is locked or burned. RugCheck flags 'Large Amount of LP Unlocked' as danger and 'Low amount of LP Providers'. The price is up about 530-584% in an hour on about $1.27M of volume, which is 23x turnover against market cap. The last 5 minutes are down 10-25%, and the price is about 25% below its all-time high. The flow looks strange: 2,080 unique buyers against only 74 unique sellers. GMGN tags 68 bundler wallets and puts the top bundler trader share at 52%. The coin has no website, socials, description or DexScreener profile. At least 10 other tokens use the same DESKS/desks.fun ticker, all launched within minutes of each other. One of them, FTJm..., did $2.0M of volume in the last hour, more than this one. Another, EUxb..., did $859k with $34k of liquidity. This looks like a fake-contract-address war around some 'desks.fun' reference.\",\"narrative\":{\"description\":\"The name 'desks.fun' looks like a domain, maybe a new launchpad, game or product that people are front-running. The packet contains no links and no description, so the underlying story can't be checked. More than 10 copycat contracts suggest a real external trigger (a launch, a tweet, a site) is drawing ticker-sniping deployers.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most likely deployers are racing to claim a hyped domain or product name, and bots are trading every same-name contract. There is no evidence that this particular contract is the one the story refers to.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most holders among the copies in the packet (about 2,080) and meaningful liquidity. But it is not the earliest copy, has no linked socials, and is not endorsed by any project link.\",\"competing_tokens\":\"There are at least 10 same-name tokens. FTJm... ('desks') has $2.0M of volume in the last hour and a $157k market cap, both above this token's. EUxb... has $859k of volume and $34k of liquidity. 3uJh...pump has $199k of volume. Several earlier copies (2TKp, 8vh2, 6DSS, 2CNE, AB8h) are already dead with about $0 liquidity, which shows how this pattern usually ends.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The dev created the pool directly with a fully unlocked LP. There are 68 bundler wallets with a 52% top-bundler share. The 2,080 unique buyers against 74 unique sellers looks like bot or airdrop-style buy spraying, not organic traders. There is no smart-money or KOL participation, no social links, and the coin is one of many clones launched in a burst.\",\"uncertainty\":\"There is no X data, so I can't tell whether a real desks.fun project exists or which contract (if any) it endorses. The unique-seller count may be undercounted by GeckoTerminal.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and the dev created the pool, so the dev can pull about $55k of liquidity at any moment\",\"Only a few LP providers\",\"68 bundler wallets holding a 52% trader share\",\"Momentum is already rolling over: -10 to -25% in 5 minutes, and about 25% below the all-time high\",\"Competing clones with higher volume are splitting attention\",\"Earlier clones with the same name are already at $0 liquidity\"]},\"counterargument\":\"If desks.fun is a real, hyped product and this contract ends up as the market's consensus choice (it has the most holders of any copy), the coin could keep being bid. With $55k of real liquidity against a $67k market cap and heavy turnover, reaching a $130k market cap within 6 hours is not unreasonable. Mint and freeze authority are renounced, the top 10 non-pool holders own only about 16%, and the dev holds almost nothing. A dev who seeds $55k of their own liquidity might want fees and volume rather than a quick pull.\",\"unknowns\":[\"Whether a real desks.fun project exists, and which contract it endorses\",\"Whether the dev intends to remove the unlocked LP\",\"Whether the buyer count is inflated by bots or airdrops\",\"What happens with the FTJm... copy, which has higher volume\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This condition had no internet access, so the judgement rests only on the evidence packet.\"},\"thesis\":\"This is one of more than 10 clones in a ticker-sniping burst. The dev created the PumpSwap pool directly, the LP is fully unlocked, bundler share is heavy, there are no socials, and it isn't canonical. It has already made a 6x pump and is now fading. The most likely outcome is an LP pull or a bleed to zero, like the earlier dead clones. Doubling again from entry is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "DESKS \"desks.fun\" is 48 minutes old. It was minted and a PumpSwap pool was created about 3 seconds apart (created_unix 1790238370 vs pair 1790238373). There was no pump.fun bonding-curve launch and no migration (migrated_unix 0, deploy_platform unknown, no 'pump' suffix). The dev seeded about $55k of liquidity, and 0% of the LP is locked or burned. RugCheck flags 'Large Amount of LP Unlocked' as danger and 'Low amount of LP Providers'. The price is up about 530-584% in an hour on about $1.27M of volume, which is 23x turnover against market cap. The last 5 minutes are down 10-25%, and the price is about 25% below its all-time high. The flow looks strange: 2,080 unique buyers against only 74 unique sellers. GMGN tags 68 bundler wallets and puts the top bundler trader share at 52%. The coin has no website, socials, description or DexScreener profile. At least 10 other tokens use the same DESKS/desks.fun ticker, all launched within minutes of each other. One of them, FTJm..., did $2.0M of volume in the last hour, more than this one. Another, EUxb..., did $859k with $34k of liquidity. This looks like a fake-contract-address war around some 'desks.fun' reference.",
+  "narrative": {
+   "description": "The name 'desks.fun' looks like a domain, maybe a new launchpad, game or product that people are front-running. The packet contains no links and no description, so the underlying story can't be checked. More than 10 copycat contracts suggest a real external trigger (a launch, a tweet, a site) is drawing ticker-sniping deployers.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most likely deployers are racing to claim a hyped domain or product name, and bots are trading every same-name contract. There is no evidence that this particular contract is the one the story refers to."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most holders among the copies in the packet (about 2,080) and meaningful liquidity. But it is not the earliest copy, has no linked socials, and is not endorsed by any project link.",
+   "competing_tokens": "There are at least 10 same-name tokens. FTJm... ('desks') has $2.0M of volume in the last hour and a $157k market cap, both above this token's. EUxb... has $859k of volume and $34k of liquidity. 3uJh...pump has $199k of volume. Several earlier copies (2TKp, 8vh2, 6DSS, 2CNE, AB8h) are already dead with about $0 liquidity, which shows how this pattern usually ends.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The dev created the pool directly with a fully unlocked LP. There are 68 bundler wallets with a 52% top-bundler share. The 2,080 unique buyers against 74 unique sellers looks like bot or airdrop-style buy spraying, not organic traders. There is no smart-money or KOL participation, no social links, and the coin is one of many clones launched in a burst.",
+   "uncertainty": "There is no X data, so I can't tell whether a real desks.fun project exists or which contract (if any) it endorses. The unique-seller count may be undercounted by GeckoTerminal."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and the dev created the pool, so the dev can pull about $55k of liquidity at any moment",
+    "Only a few LP providers",
+    "68 bundler wallets holding a 52% trader share",
+    "Momentum is already rolling over: -10 to -25% in 5 minutes, and about 25% below the all-time high",
+    "Competing clones with higher volume are splitting attention",
+    "Earlier clones with the same name are already at $0 liquidity"
+   ]
+  },
+  "counterargument": "If desks.fun is a real, hyped product and this contract ends up as the market's consensus choice (it has the most holders of any copy), the coin could keep being bid. With $55k of real liquidity against a $67k market cap and heavy turnover, reaching a $130k market cap within 6 hours is not unreasonable. Mint and freeze authority are renounced, the top 10 non-pool holders own only about 16%, and the dev holds almost nothing. A dev who seeds $55k of their own liquidity might want fees and volume rather than a quick pull.",
+  "unknowns": [
+   "Whether a real desks.fun project exists, and which contract it endorses",
+   "Whether the dev intends to remove the unlocked LP",
+   "Whether the buyer count is inflated by bots or airdrops",
+   "What happens with the FTJm... copy, which has higher volume"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This condition had no internet access, so the judgement rests only on the evidence packet."
+  },
+  "thesis": "This is one of more than 10 clones in a ticker-sniping burst. The dev created the PumpSwap pool directly, the LP is fully unlocked, bundler share is heavy, there are no socials, and it isn't canonical. It has already made a 6x pump and is now fading. The most likely outcome is an LP pull or a bleed to zero, like the earlier dead clones. Doubling again from entry is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6291,
+ "type": "result",
+ "duration_ms": 25614,
+ "uuid": "6158c640-e3bd-4b8a-b856-49bb418b3a75",
+ "ttft_stream_ms": 783,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 783,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

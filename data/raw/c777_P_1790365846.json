@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 26296,
+ "stop_reason": "tool_use",
+ "session_id": "5d83aac9-de00-47cc-b1d8-50156a69bdf3",
+ "total_cost_usd": 0.1044244,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6849,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2460,
+  "output_tokens_details": {
+   "thinking_tokens": 530
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6849,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2460,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6849,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6849
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2460,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6849,
+   "webSearchRequests": 0,
+   "costUSD": 0.1044244,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 530,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PONS is about 11 minutes old. It sits in a PumpSwap pool that was created directly, not migrated from pump.fun (migrated_unix 0, launchpad unknown). The price is up about 177% to a ~$46k market cap, with $34k of liquidity. In roughly 10 minutes there were ~1,100 buys from ~1,093 unique buyers against 87 sellers, but total volume was only ~$37k. That is an average buy of about $33, which looks like a swarm of micro-buys. Supply is extremely concentrated: one unlabeled wallet holds 62.04%, the pool holds 36.83%, and everyone else shares under 1.2%. The creator shows 0 balance (status creator_close). An X handle, ponsdotfamily, appears on GeckoTerminal, but there is no DexScreener profile, website or paid promotion.\",\"narrative\":{\"description\":\"The name is PONS and the X handle is 'ponsdotfamily', which hints at a community or 'family' brand. The packet gives no description or story. The narrative cannot be judged from what is here.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The spread looks mechanical: about 1,100 tiny buys from nearly as many unique wallets in 10 minutes. That pattern fits a buy-bot or airdrop-style push to inflate the holder count more than organic discovery. With no profile or links, there is little for organic buyers to find.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"It has the only discovered pair, and the packet lists no same-ticker tokens. The PONS link to the ponsdotfamily X handle comes only from GeckoTerminal metadata.\",\"competing_tokens\":\"None in the packet\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 1,093 unique buyers averaged about $33 per buy, with a 12:1 unique buyer-to-seller ratio. Holders outside the top two accounts own only about 1.1% combined. Real speculative demand at 177% gains would produce bigger buys and more sellers. GMGN reports bot_degen_rate 0 and no bundlers, but distribution-bot swarms often avoid those tags.\",\"uncertainty\":\"The buys could be a real community push, such as a 'family' group buying small amounts together. The 62% holder could be an unlabeled locker or treasury rather than a dumper.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"A single unlabeled wallet holds 62% of supply, worth more than the pool's SOL side. One sell could crash the price by more than 80%.\",\"The LP burn ratio is 0 and no lock is detected, so the LP could be pulled from a directly created PumpSwap pool.\",\"The creator has closed out (0 balance). The 62% wallet may be a dev-linked second wallet.\",\"Holders apart from the top two accounts own only about 1.1% of supply, so the holder count is hollow.\"]},\"counterargument\":\"Mint and freeze authority are renounced, there are no snipers or bundlers, and there is no paid promotion. The pool is relatively deep for the market cap at about 74% liquidity-to-market-cap, and more than 1,000 unique buyers is strong breadth for 10 minutes. The creator's previous best token reached a $324k all-time-high market cap. If the 62% wallet is a team treasury or locker held off-market, a community-driven coin could keep rising and double from $46k to about $92k quickly.\",\"unknowns\":[\"Who controls the 62% wallet, and whether it is locked\",\"Whether the LP can be withdrawn\",\"Whether the ponsdotfamily X account exists and has real followers\",\"Whether the micro-buys come from a bot or airdrop tool\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. Judged from the packet only.\"},\"thesis\":\"The structure is dominated by a single 62% holder next to an unburned pool created directly on PumpSwap. The volume is about 1,100 micro-buys that look manufactured. The upside needs this whale to hold while organic buyers arrive, which is unlikely. Downside or rug risk is high, so this coin ranks below the typical coin in the pool.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":45,\"survival_score\":22,\"attention_score\":48,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "PONS is about 11 minutes old. It sits in a PumpSwap pool that was created directly, not migrated from pump.fun (migrated_unix 0, launchpad unknown). The price is up about 177% to a ~$46k market cap, with $34k of liquidity. In roughly 10 minutes there were ~1,100 buys from ~1,093 unique buyers against 87 sellers, but total volume was only ~$37k. That is an average buy of about $33, which looks like a swarm of micro-buys. Supply is extremely concentrated: one unlabeled wallet holds 62.04%, the pool holds 36.83%, and everyone else shares under 1.2%. The creator shows 0 balance (status creator_close). An X handle, ponsdotfamily, appears on GeckoTerminal, but there is no DexScreener profile, website or paid promotion.",
+  "narrative": {
+   "description": "The name is PONS and the X handle is 'ponsdotfamily', which hints at a community or 'family' brand. The packet gives no description or story. The narrative cannot be judged from what is here.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The spread looks mechanical: about 1,100 tiny buys from nearly as many unique wallets in 10 minutes. That pattern fits a buy-bot or airdrop-style push to inflate the holder count more than organic discovery. With no profile or links, there is little for organic buyers to find."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "It has the only discovered pair, and the packet lists no same-ticker tokens. The PONS link to the ponsdotfamily X handle comes only from GeckoTerminal metadata.",
+   "competing_tokens": "None in the packet",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 1,093 unique buyers averaged about $33 per buy, with a 12:1 unique buyer-to-seller ratio. Holders outside the top two accounts own only about 1.1% combined. Real speculative demand at 177% gains would produce bigger buys and more sellers. GMGN reports bot_degen_rate 0 and no bundlers, but distribution-bot swarms often avoid those tags.",
+   "uncertainty": "The buys could be a real community push, such as a 'family' group buying small amounts together. The 62% holder could be an unlabeled locker or treasury rather than a dumper."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "A single unlabeled wallet holds 62% of supply, worth more than the pool's SOL side. One sell could crash the price by more than 80%.",
+    "The LP burn ratio is 0 and no lock is detected, so the LP could be pulled from a directly created PumpSwap pool.",
+    "The creator has closed out (0 balance). The 62% wallet may be a dev-linked second wallet.",
+    "Holders apart from the top two accounts own only about 1.1% of supply, so the holder count is hollow."
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced, there are no snipers or bundlers, and there is no paid promotion. The pool is relatively deep for the market cap at about 74% liquidity-to-market-cap, and more than 1,000 unique buyers is strong breadth for 10 minutes. The creator's previous best token reached a $324k all-time-high market cap. If the 62% wallet is a team treasury or locker held off-market, a community-driven coin could keep rising and double from $46k to about $92k quickly.",
+  "unknowns": [
+   "Who controls the 62% wallet, and whether it is locked",
+   "Whether the LP can be withdrawn",
+   "Whether the ponsdotfamily X account exists and has real followers",
+   "Whether the micro-buys come from a bot or airdrop tool"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. Judged from the packet only."
+  },
+  "thesis": "The structure is dominated by a single 62% holder next to an unburned pool created directly on PumpSwap. The volume is about 1,100 micro-buys that look manufactured. The upside needs this whale to hold while organic buyers arrive, which is unlikely. Downside or rug risk is high, so this coin ranks below the typical coin in the pool.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 45,
+  "survival_score": 22,
+  "attention_score": 48,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7778,
+ "type": "result",
+ "duration_ms": 26336,
+ "uuid": "d5fd67d0-d51a-495c-a668-7f8e52cb8137",
+ "ttft_stream_ms": 1427,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 1427,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,187 @@
+{
+ "duration_api_ms": 98124,
+ "stop_reason": "tool_use",
+ "session_id": "2cc22fcb-3131-4499-8b5b-abcc030db55e",
+ "total_cost_usd": 0.4261918,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 18652,
+  "cache_read_input_tokens": 78034,
+  "output_tokens": 6140,
+  "output_tokens_details": {
+   "thinking_tokens": 690
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18652,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2453,
+    "cache_read_input_tokens": 18886,
+    "cache_creation_input_tokens": 2342,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2342
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 6140,
+   "cacheReadInputTokens": 78034,
+   "cacheCreationInputTokens": 18652,
+   "webSearchRequests": 0,
+   "costUSD": 0.2876708,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 690,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 66786,
+   "outputTokens": 2347,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.138521,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \u73a9\u5e01\u5f52\u8d75 launched about an hour ago as a direct PumpSwap pool, with more liquidity than market cap. It peaked near a $70k market cap and has come back to ~$30k. It shows extreme volume with a lopsided buyer/seller count, and nothing links it to any outside event or social account.\",\"narrative\":{\"description\":\"The name \u73a9\u5e01\u5f52\u8d75 is a pun on the idiom \u5b8c\u74a7\u5f52\u8d75. In crypto slang it means that all money in crypto ends up with Changpeng Zhao (CZ). It is an old, well-known Chinese crypto meme. I found no new event today that revives it.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no catalyst: no CZ post, news item or X post turned up for today. The activity looks self-generated through on-chain volume, not driven by outside attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name pair with real liquidity and volume. But it is not the earliest: F21Wn and 325Z were created about 1.5 hours earlier and are now dead. No community or social account backs any of them.\",\"competing_tokens\":\"On Solana: GLFyrr (broken, $0.08 liquidity), 83kRa (51k volume, $0 liquidity), and F21Wn and 325Z (both dead). On BSC: 0x158B\u20264444, dormant.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The volume doesn't look like real demand. There was $1.42M of volume on a ~$30k market cap in under an hour, 37x turnover (DexScreener). GeckoTerminal counts 2,058 unique buyers but only 55 unique sellers over the hour. In the last 30 minutes, buyers (50) and sellers (51) are nearly equal and the trades match one-for-one. That fits a burst of tiny buys to inflate the holder count, then a bot cycling volume. The coin launched straight onto PumpSwap without a pump.fun curve, and liquidity ($38k) is larger than market cap ($30k). No socials, website or X posts were found. GMGN tags no smart or KOL wallets.\",\"uncertainty\":\"GMGN reports a 0% bot/degen rate and no bundlers or snipers, which cuts against my wash-trading read. I could not see private Telegram groups.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked or burned. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers', so the pool creator can pull liquidity\",\"Created directly as a PumpSwap pool (migrated_unix 0), not graduated from the curve. Liquidity > market cap suggests the deployer seeded the pool\",\"Creator account closed / holds 0 tokens\",\"Price is already down about 58% from its ATH of 7.08e-5 and is falling on m5\",\"Buys and sells are matched 1:1 in recent windows, a sign of wash/volume-bot activity\",\"Several same-name clone tokens were spun up with liquidity near zero\"]},\"counterargument\":\"The idiom is instantly recognisable to Chinese crypto traders, and CZ-themed memes have exploded before off a single CZ or He Yi post. Liquidity ($38k) is deep compared with a $30k market cap, and there are 2,000+ holders with low top-10 concentration (~17%). If a Chinese KOL or CZ touched the phrase today, a double from $30k back to its $70k ATH would take little new money. GMGN also shows no bundlers, snipers or bots.\",\"unknowns\":[\"Whether CZ or He Yi posted anything today that triggered this\",\"Who owns the LP tokens\",\"Whether private Chinese Telegram groups are pushing it\",\"Whether the ~2,000 buyers are real people or dusted wallets\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The news results only explain the idiom and show past CZ-meme cycles. Nothing is current or specific to this token. Searching the contract address returned nothing. The packet lists no project socials or site.\"},\"thesis\":\"This is a zero-social, dev-seeded PumpSwap pool named after an old CZ idiom, with no fresh catalyst I could find. Volume is 37x market cap, over 2,000 buyers face only 55 sellers, and recent buys and sells match 1:1. That looks like manufactured activity. LP is unlocked and price is already about 58% below its ATH. A double to ~$60k before -50% is unlikely, and a pull or fade is the more likely outcome.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":62,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://chinadigitaltimes.net/chinese/424411.html\",\"what\":\"Meaning of the \u73a9\u5e01\u5f52\u8d75 idiom\"},{\"url\":\"https://www.binance.com/en/square/post/1444769\",\"what\":\"The idiom used as a crypto meme about CZ\"},{\"url\":\"https://www.kucoin.com/news/flash/cz-s-meme-post-sparks-short-term-surge-in-bsc-chain-meme-coins\",\"what\":\"How CZ posts have driven Chinese meme coins in the past\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7JF3Ja2PkXrmkoiYaFHE4TEvfVqBMcC7voXjmqfE7j4b\",\"what\":\"Live pair data: ~$29.9k market cap, $1.43M h1 volume, -11% m5\"},{\"url\":\"https://api.dexscreener.com/latest/dex/search?q=\u73a9\u5e01\u5f52\u8d75\",\"what\":\"Same-name tokens on Solana and BSC, all dead or clones\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token named \u73a9\u5e01\u5f52\u8d75 launched about an hour ago as a direct PumpSwap pool, with more liquidity than market cap. It peaked near a $70k market cap and has come back to ~$30k. It shows extreme volume with a lopsided buyer/seller count, and nothing links it to any outside event or social account.",
+  "narrative": {
+   "description": "The name \u73a9\u5e01\u5f52\u8d75 is a pun on the idiom \u5b8c\u74a7\u5f52\u8d75. In crypto slang it means that all money in crypto ends up with Changpeng Zhao (CZ). It is an old, well-known Chinese crypto meme. I found no new event today that revives it.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no catalyst: no CZ post, news item or X post turned up for today. The activity looks self-generated through on-chain volume, not driven by outside attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name pair with real liquidity and volume. But it is not the earliest: F21Wn and 325Z were created about 1.5 hours earlier and are now dead. No community or social account backs any of them.",
+   "competing_tokens": "On Solana: GLFyrr (broken, $0.08 liquidity), 83kRa (51k volume, $0 liquidity), and F21Wn and 325Z (both dead). On BSC: 0x158B\u20264444, dormant.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The volume doesn't look like real demand. There was $1.42M of volume on a ~$30k market cap in under an hour, 37x turnover (DexScreener). GeckoTerminal counts 2,058 unique buyers but only 55 unique sellers over the hour. In the last 30 minutes, buyers (50) and sellers (51) are nearly equal and the trades match one-for-one. That fits a burst of tiny buys to inflate the holder count, then a bot cycling volume. The coin launched straight onto PumpSwap without a pump.fun curve, and liquidity ($38k) is larger than market cap ($30k). No socials, website or X posts were found. GMGN tags no smart or KOL wallets.",
+   "uncertainty": "GMGN reports a 0% bot/degen rate and no bundlers or snipers, which cuts against my wash-trading read. I could not see private Telegram groups."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked or burned. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers', so the pool creator can pull liquidity",
+    "Created directly as a PumpSwap pool (migrated_unix 0), not graduated from the curve. Liquidity > market cap suggests the deployer seeded the pool",
+    "Creator account closed / holds 0 tokens",
+    "Price is already down about 58% from its ATH of 7.08e-5 and is falling on m5",
+    "Buys and sells are matched 1:1 in recent windows, a sign of wash/volume-bot activity",
+    "Several same-name clone tokens were spun up with liquidity near zero"
+   ]
+  },
+  "counterargument": "The idiom is instantly recognisable to Chinese crypto traders, and CZ-themed memes have exploded before off a single CZ or He Yi post. Liquidity ($38k) is deep compared with a $30k market cap, and there are 2,000+ holders with low top-10 concentration (~17%). If a Chinese KOL or CZ touched the phrase today, a double from $30k back to its $70k ATH would take little new money. GMGN also shows no bundlers, snipers or bots.",
+  "unknowns": [
+   "Whether CZ or He Yi posted anything today that triggered this",
+   "Who owns the LP tokens",
+   "Whether private Chinese Telegram groups are pushing it",
+   "Whether the ~2,000 buyers are real people or dusted wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The news results only explain the idiom and show past CZ-meme cycles. Nothing is current or specific to this token. Searching the contract address returned nothing. The packet lists no project socials or site."
+  },
+  "thesis": "This is a zero-social, dev-seeded PumpSwap pool named after an old CZ idiom, with no fresh catalyst I could find. Volume is 37x market cap, over 2,000 buyers face only 55 sellers, and recent buys and sells match 1:1. That looks like manufactured activity. LP is unlocked and price is already about 58% below its ATH. A double to ~$60k before -50% is unlikely, and a pull or fade is the more likely outcome.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 62,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://chinadigitaltimes.net/chinese/424411.html",
+    "what": "Meaning of the \u73a9\u5e01\u5f52\u8d75 idiom"
+   },
+   {
+    "url": "https://www.binance.com/en/square/post/1444769",
+    "what": "The idiom used as a crypto meme about CZ"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/cz-s-meme-post-sparks-short-term-surge-in-bsc-chain-meme-coins",
+    "what": "How CZ posts have driven Chinese meme coins in the past"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7JF3Ja2PkXrmkoiYaFHE4TEvfVqBMcC7voXjmqfE7j4b",
+    "what": "Live pair data: ~$29.9k market cap, $1.43M h1 volume, -11% m5"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/search?q=\u73a9\u5e01\u5f52\u8d75",
+    "what": "Same-name tokens on Solana and BSC, all dead or clones"
+   }
+  ]
+ },
+ "ttft_ms": 3687,
+ "type": "result",
+ "duration_ms": 85499,
+ "uuid": "3a032a56-55d9-4fff-8317-e06b440f3382",
+ "ttft_stream_ms": 1421,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 1422,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

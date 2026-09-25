@@ -1,0 +1,190 @@
+{
+ "duration_api_ms": 85537,
+ "stop_reason": "tool_use",
+ "session_id": "f8e94f49-1eaf-4337-bde7-659ef593f3d2",
+ "total_cost_usd": 0.39252539999999997,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 17897,
+  "cache_read_input_tokens": 61167,
+  "output_tokens": 4102,
+  "output_tokens_details": {
+   "thinking_tokens": 819
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17897,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2660,
+    "cache_read_input_tokens": 18094,
+    "cache_creation_input_tokens": 2379,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2379
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4102,
+   "cacheReadInputTokens": 61167,
+   "cacheCreationInputTokens": 17897,
+   "webSearchRequests": 0,
+   "costUSD": 0.23748940000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 819,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 70186,
+   "outputTokens": 2970,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.155036,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is one of at least 10 \\\"Bagwork\\\" tokens launched within about an hour of each other, apparently all reacting to one post by an X account called @bagworkagent. That account is linked in the packet (status 2103487827610657258), but I could not read the post (HTTP 402). The packet description says the coin was \\\"Launched on discord.gg/uxento\\\". Uxento is a tool that deploys a coin from highlighted tweet text in one click, which explains why so many clones appeared at once. The coin did not start on the pump.fun bonding curve. It went straight to a PumpSwap pool, and the liquidity figure ($174k) is higher than the market cap ($99k). That means someone put roughly $85k of SOL into the pool themselves, and the LP is 0% locked or burned. Trading looks fake: $4.85M volume in about 36 minutes (28x turnover) from 807 unique buyers but only 55 unique sellers, who made 2,268 sells between them. GMGN tags 70 bundler wallets. The creator's balance is 0 and GMGN reports the creator token status as \\\"creator_close\\\". A sibling with the same name (Avo9...) shows $1.3M market cap, so this one is not the leading clone.\",\"narrative\":{\"description\":\"The name 'Bagwork' refers to the 2025 pump.fun streamer coin (7Pnqg...pump), which peaked around $50M, and to the common trader slang 'bagwork'. The trigger today appears to be a post by @bagworkagent, possibly an 'agent' version of the idea. I could not see the post, and I found no news, Reddit or indexed X discussion of a new Bagwork agent event.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"A burst of copycat deploys from tweet-sniping tools (uxento) after one X post. The attention is spread across 10+ clones, and I found no organic discussion of this particular contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It links to the @bagworkagent post and bagworkagent.fun, but so can any uxento clone. Nothing shows this contract is endorsed by the account.\",\"competing_tokens\":\"Avo9... (listed at $1.3M market cap, $1.7M hourly volume), DsbHv..., 5NhN6...pump, E2wCg..., F96D5... and more, all created within the same ~50 minutes. Also the original 2025 Bagwork 7Pnqg...pump.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 55 unique sellers made 2,268 sells, while 807 buyers made 3,026 buys: a classic pattern of a volume bot or bundle. GMGN counts 70 bundler wallets. Turnover of 28x in the first hour is far beyond what organic trading produces. The pool was self-seeded with more liquidity than the market cap and the LP is fully unlocked. The same image appears on 9 other tokens.\",\"uncertainty\":\"I could not read the X post or the uxento Discord. The unique-buyer count of 807 may include some real retail chasing the clone wave.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP locked or burned, and the liquidity (~$85k SOL) was supplied by the deployer, who can pull it at any time\",\"Liquidity is larger than market cap, a common setup for a volume-bot-then-pull rug\",\"70 bundler wallets, and 55 unique sellers account for 2,268 sells\",\"The creator's balance is 0 and the status is 'creator_close'\",\"10+ competing clones with the same name, and a bigger one sits at about $1.3M\"]},\"counterargument\":\"If @bagworkagent is a real, growing account and this contract gets recognised as its token, the deep liquidity and the 807 buyers could carry it past $200k market cap quickly. The clone wave shows real demand for the name, and pure speculative flow can double a $100k coin within 6 hours. The price is already up about 50% in the first hour.\",\"unknowns\":[\"What the @bagworkagent post says, and whether it names a contract\",\"Whether the deployer controls the LP tokens and plans to pull them\",\"Which clone the community is treating as canonical\",\"What 'creator_close' means in GMGN's terms\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"searched_found\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X post returned 402. Searching the contract address found nothing. bagworkagent.fun shows only the word 'BAGWORK'. The only uxento information I found is its public docs; the Discord itself is private. News covers only the 2025 Bagwork. DexScreener returned 403.\"},\"thesis\":\"This looks like a tweet-sniped uxento clone in a crowded field of same-name coins. The pool was self-seeded, the LP is unlocked, and trading shows heavy bot or bundle activity (55 sellers making 2,268 sells). It is not the leading clone. The most likely outcome is an LP pull or a fade, and a double before the -50% stop is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://uxento.gitbook.io/uxento/tools/udev\",\"what\":\"uxento uDev quick-deploy coins from tweet text\"},{\"url\":\"https://www.uxento.io/\",\"what\":\"uxento deployment platform\"},{\"url\":\"https://heybeluga.com/articles/bagwork-memecoin-pumpfun-streamers/\",\"what\":\"Background on the original 2025 Bagwork coin\"},{\"url\":\"https://pump.fun/coin/7Pnqg1S6MYrL6AP1ZXcToTHfdBbTB77ze6Y33qBBpump\",\"what\":\"Original Bagwork token\"},{\"url\":\"https://bagworkagent.fun/\",\"what\":\"Project site, contains only the word 'BAGWORK'\"},{\"url\":\"https://x.com/bagworkagent/status/2103487827610657258\",\"what\":\"Linked X post (inaccessible, 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is one of at least 10 \"Bagwork\" tokens launched within about an hour of each other, apparently all reacting to one post by an X account called @bagworkagent. That account is linked in the packet (status 2103487827610657258), but I could not read the post (HTTP 402). The packet description says the coin was \"Launched on discord.gg/uxento\". Uxento is a tool that deploys a coin from highlighted tweet text in one click, which explains why so many clones appeared at once. The coin did not start on the pump.fun bonding curve. It went straight to a PumpSwap pool, and the liquidity figure ($174k) is higher than the market cap ($99k). That means someone put roughly $85k of SOL into the pool themselves, and the LP is 0% locked or burned. Trading looks fake: $4.85M volume in about 36 minutes (28x turnover) from 807 unique buyers but only 55 unique sellers, who made 2,268 sells between them. GMGN tags 70 bundler wallets. The creator's balance is 0 and GMGN reports the creator token status as \"creator_close\". A sibling with the same name (Avo9...) shows $1.3M market cap, so this one is not the leading clone.",
+  "narrative": {
+   "description": "The name 'Bagwork' refers to the 2025 pump.fun streamer coin (7Pnqg...pump), which peaked around $50M, and to the common trader slang 'bagwork'. The trigger today appears to be a post by @bagworkagent, possibly an 'agent' version of the idea. I could not see the post, and I found no news, Reddit or indexed X discussion of a new Bagwork agent event.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "A burst of copycat deploys from tweet-sniping tools (uxento) after one X post. The attention is spread across 10+ clones, and I found no organic discussion of this particular contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It links to the @bagworkagent post and bagworkagent.fun, but so can any uxento clone. Nothing shows this contract is endorsed by the account.",
+   "competing_tokens": "Avo9... (listed at $1.3M market cap, $1.7M hourly volume), DsbHv..., 5NhN6...pump, E2wCg..., F96D5... and more, all created within the same ~50 minutes. Also the original 2025 Bagwork 7Pnqg...pump.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 55 unique sellers made 2,268 sells, while 807 buyers made 3,026 buys: a classic pattern of a volume bot or bundle. GMGN counts 70 bundler wallets. Turnover of 28x in the first hour is far beyond what organic trading produces. The pool was self-seeded with more liquidity than the market cap and the LP is fully unlocked. The same image appears on 9 other tokens.",
+   "uncertainty": "I could not read the X post or the uxento Discord. The unique-buyer count of 807 may include some real retail chasing the clone wave."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP locked or burned, and the liquidity (~$85k SOL) was supplied by the deployer, who can pull it at any time",
+    "Liquidity is larger than market cap, a common setup for a volume-bot-then-pull rug",
+    "70 bundler wallets, and 55 unique sellers account for 2,268 sells",
+    "The creator's balance is 0 and the status is 'creator_close'",
+    "10+ competing clones with the same name, and a bigger one sits at about $1.3M"
+   ]
+  },
+  "counterargument": "If @bagworkagent is a real, growing account and this contract gets recognised as its token, the deep liquidity and the 807 buyers could carry it past $200k market cap quickly. The clone wave shows real demand for the name, and pure speculative flow can double a $100k coin within 6 hours. The price is already up about 50% in the first hour.",
+  "unknowns": [
+   "What the @bagworkagent post says, and whether it names a contract",
+   "Whether the deployer controls the LP tokens and plans to pull them",
+   "Which clone the community is treating as canonical",
+   "What 'creator_close' means in GMGN's terms"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "searched_found",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X post returned 402. Searching the contract address found nothing. bagworkagent.fun shows only the word 'BAGWORK'. The only uxento information I found is its public docs; the Discord itself is private. News covers only the 2025 Bagwork. DexScreener returned 403."
+  },
+  "thesis": "This looks like a tweet-sniped uxento clone in a crowded field of same-name coins. The pool was self-seeded, the LP is unlocked, and trading shows heavy bot or bundle activity (55 sellers making 2,268 sells). It is not the leading clone. The most likely outcome is an LP pull or a fade, and a double before the -50% stop is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://uxento.gitbook.io/uxento/tools/udev",
+    "what": "uxento uDev quick-deploy coins from tweet text"
+   },
+   {
+    "url": "https://www.uxento.io/",
+    "what": "uxento deployment platform"
+   },
+   {
+    "url": "https://heybeluga.com/articles/bagwork-memecoin-pumpfun-streamers/",
+    "what": "Background on the original 2025 Bagwork coin"
+   },
+   {
+    "url": "https://pump.fun/coin/7Pnqg1S6MYrL6AP1ZXcToTHfdBbTB77ze6Y33qBBpump",
+    "what": "Original Bagwork token"
+   },
+   {
+    "url": "https://bagworkagent.fun/",
+    "what": "Project site, contains only the word 'BAGWORK'"
+   },
+   {
+    "url": "https://x.com/bagworkagent/status/2103487827610657258",
+    "what": "Linked X post (inaccessible, 402)"
+   }
+  ]
+ },
+ "ttft_ms": 4015,
+ "type": "result",
+ "duration_ms": 66074,
+ "uuid": "61348520-26c4-4114-9202-a6da93b2e8ae",
+ "ttft_stream_ms": 1069,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 1069,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 22697,
+ "stop_reason": "tool_use",
+ "session_id": "19353920-cc7c-4ee6-bf65-4a9f0a6cc9a1",
+ "total_cost_usd": 0.10332279999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7151,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2286,
+  "output_tokens_details": {
+   "thinking_tokens": 305
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7151,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2286,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7151,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7151
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2286,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7151,
+   "webSearchRequests": 0,
+   "costUSD": 0.10332279999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 305,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"FOOMS (7zJ4\u2026) was launched through unorich.com, not the pump.fun bonding curve. It went straight to a PumpSwap pool that holds about 72% of supply and has about $263k of liquidity, which is more than its $185k market cap. None of the LP is locked or burned, and RugCheck finds very few LP providers. In 35 minutes it traded about $6.3M, which is 23 times the pool's liquidity in one hour. That volume came from about 1,732 unique buyers but only 57 unique sellers, who between them made about 3,900 sells. At least six other tokens named 'fooms' / FOOMS were created in the last few hours. Two of them already show $0 liquidity after heavy volume (K3dB\u2026 traded $2.28M in an hour, then its liquidity went to 0; Foye\u2026 now shows no liquidity). Another clone, PSuzun\u2026, is running the same pattern right now with $8.8M of hourly volume and $243k of liquidity. This looks like a serial clone-and-pull operation. The deployer seeds a large unlocked pool, uses bots to generate volume and a price chart that pulls in buyers, and then removes the liquidity.\",\"narrative\":{\"description\":\"No real narrative. The name 'fooms' has no links, no socials (the X field is just a search URL) and no DexScreener profile, and the description is only 'Created on unorich.com'. All the attention seems to come from volume made to show up on scanners and trending lists.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Heavy bot volume and a 2x price chart put it on screeners, which draws in retail buyers. Several same-name clones are fighting for the same flow, which suggests a deployer farm rather than organic spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is one of at least six 'fooms' clones launched within hours. Nothing marks it as the canonical one. It triggered only because its volume is currently high.\",\"competing_tokens\":\"PSuzun\u2026 ($8.8M h1 volume, $243k liquidity, same pattern). K3dB\u2026 and Foye\u2026 (liquidity already 0, probably pulled). EvEk\u2026, 5gty\u2026 and CGr3\u2026 are dead or small.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"57 unique sellers against 1,732 buyers, with about 3,900 sells, means a few wallets sell over and over, which is a bot or market-making pattern. Hourly volume is 23x liquidity. GMGN tags 49 bundler wallets holding about 22.6% of top-trader activity. The LP is 0% locked and burned, with few LP providers. There are no socials. Same-name clones have already gone to $0 liquidity.\",\"uncertainty\":\"Top holders outside the pool are spread out (top10 about 10%), and the 1.7k buyers may partly be real retail. Without on-chain data I can't confirm who owns the LP or that the clones share a deployer.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"All of the LP (about $263k) is unlocked and removable at any moment by what appears to be a single provider\",\"Sibling clones with the same name already show $0 liquidity, consistent with pulled pools\",\"Wash-traded volume: 57 sellers making about 3,900 sells\",\"49 bundler wallets\",\"Launched through unorich.com rather than the pump.fun curve, so none of the curve's graduation protections apply\",\"Liquidity above market cap is unnatural and points to an engineered pool\"]},\"counterargument\":\"Some of these seeded-pool clones are left running for hours while the operator farms fees and volume, and a retail FOMO wave can push one to 2x before the pull. With 1.7k buyers, a 2.2x move in 35 minutes and deep liquidity, the price could keep climbing through the 6h window if the deployer keeps pumping. The distributed top holders and zero dev holdings could also mean the deployer plans to farm fees rather than rug quickly.\",\"unknowns\":[\"Who owns the LP tokens, and whether it is the same deployer as the pulled clones\",\"Whether K3dB and Foye actually rugged or only migrated or reindexed\",\"Timing of the operator's pull cycle\",\"Whether any real social or KOL push exists off-chain\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. The judgment rests only on the evidence packet.\"},\"thesis\":\"This looks like a serial unorich clone with an unlocked, engineered pool and wash-traded volume, and same-name siblings already show $0 liquidity. The most likely outcome is that the liquidity is pulled within hours. A 2x from entry before a pull is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":82,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "FOOMS (7zJ4\u2026) was launched through unorich.com, not the pump.fun bonding curve. It went straight to a PumpSwap pool that holds about 72% of supply and has about $263k of liquidity, which is more than its $185k market cap. None of the LP is locked or burned, and RugCheck finds very few LP providers. In 35 minutes it traded about $6.3M, which is 23 times the pool's liquidity in one hour. That volume came from about 1,732 unique buyers but only 57 unique sellers, who between them made about 3,900 sells. At least six other tokens named 'fooms' / FOOMS were created in the last few hours. Two of them already show $0 liquidity after heavy volume (K3dB\u2026 traded $2.28M in an hour, then its liquidity went to 0; Foye\u2026 now shows no liquidity). Another clone, PSuzun\u2026, is running the same pattern right now with $8.8M of hourly volume and $243k of liquidity. This looks like a serial clone-and-pull operation. The deployer seeds a large unlocked pool, uses bots to generate volume and a price chart that pulls in buyers, and then removes the liquidity.",
+  "narrative": {
+   "description": "No real narrative. The name 'fooms' has no links, no socials (the X field is just a search URL) and no DexScreener profile, and the description is only 'Created on unorich.com'. All the attention seems to come from volume made to show up on scanners and trending lists.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Heavy bot volume and a 2x price chart put it on screeners, which draws in retail buyers. Several same-name clones are fighting for the same flow, which suggests a deployer farm rather than organic spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is one of at least six 'fooms' clones launched within hours. Nothing marks it as the canonical one. It triggered only because its volume is currently high.",
+   "competing_tokens": "PSuzun\u2026 ($8.8M h1 volume, $243k liquidity, same pattern). K3dB\u2026 and Foye\u2026 (liquidity already 0, probably pulled). EvEk\u2026, 5gty\u2026 and CGr3\u2026 are dead or small.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "57 unique sellers against 1,732 buyers, with about 3,900 sells, means a few wallets sell over and over, which is a bot or market-making pattern. Hourly volume is 23x liquidity. GMGN tags 49 bundler wallets holding about 22.6% of top-trader activity. The LP is 0% locked and burned, with few LP providers. There are no socials. Same-name clones have already gone to $0 liquidity.",
+   "uncertainty": "Top holders outside the pool are spread out (top10 about 10%), and the 1.7k buyers may partly be real retail. Without on-chain data I can't confirm who owns the LP or that the clones share a deployer."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "All of the LP (about $263k) is unlocked and removable at any moment by what appears to be a single provider",
+    "Sibling clones with the same name already show $0 liquidity, consistent with pulled pools",
+    "Wash-traded volume: 57 sellers making about 3,900 sells",
+    "49 bundler wallets",
+    "Launched through unorich.com rather than the pump.fun curve, so none of the curve's graduation protections apply",
+    "Liquidity above market cap is unnatural and points to an engineered pool"
+   ]
+  },
+  "counterargument": "Some of these seeded-pool clones are left running for hours while the operator farms fees and volume, and a retail FOMO wave can push one to 2x before the pull. With 1.7k buyers, a 2.2x move in 35 minutes and deep liquidity, the price could keep climbing through the 6h window if the deployer keeps pumping. The distributed top holders and zero dev holdings could also mean the deployer plans to farm fees rather than rug quickly.",
+  "unknowns": [
+   "Who owns the LP tokens, and whether it is the same deployer as the pulled clones",
+   "Whether K3dB and Foye actually rugged or only migrated or reindexed",
+   "Timing of the operator's pull cycle",
+   "Whether any real social or KOL push exists off-chain"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. The judgment rests only on the evidence packet."
+  },
+  "thesis": "This looks like a serial unorich clone with an unlocked, engineered pool and wash-traded volume, and same-name siblings already show $0 liquidity. The most likely outcome is that the liquidity is pulled within hours. A 2x from entry before a pull is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 82,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3878,
+ "type": "result",
+ "duration_ms": 22741,
+ "uuid": "8ddef7a6-9ac1-4236-8be8-9225f57a7969",
+ "ttft_stream_ms": 708,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 708,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 63696,
+ "stop_reason": "tool_use",
+ "session_id": "909c98cd-190e-468d-a7ad-f916ec5e1b9f",
+ "total_cost_usd": 0.3103266,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 14508,
+  "cache_read_input_tokens": 55963,
+  "output_tokens": 3583,
+  "output_tokens_details": {
+   "thinking_tokens": 620
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14508,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2257,
+    "cache_read_input_tokens": 15455,
+    "cache_creation_input_tokens": 1629,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1629
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3583,
+   "cacheReadInputTokens": 55963,
+   "cacheCreationInputTokens": 14508,
+   "webSearchRequests": 0,
+   "costUSD": 0.19895660000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 620,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 53025,
+   "outputTokens": 1669,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11137000000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Gamblepad\\\" with ticker GP was deployed straight onto a PumpSwap pool 37 minutes before detection. It did not come through the pump.fun bonding curve: launchpad is null and the contract address does not end in \\\"pump\\\". Its LP is 0% burned or locked, and the creator's status is \\\"creator_close\\\". In a roughly 5-minute window at least four \\\"Gamblepad\\\"/GP tokens were launched: GrW1\u2026, k7jH\u2026, FLu5\u2026 and this one, 7rfs\u2026. Two of the earlier ones already have about $0\u20133 of liquidity (FLu5 did about $1M in volume, then went to zero liquidity), and GrW1 is down to about $8.7k. The project_description field of this token even points at GrW1's Solscan metadata. That looks like one operator rotating copies of the same launch. Gamblepad (gamblepad.xyz) does appear to be a real product that launches coins on pump.fun and plays creator fees in a casino for holders. However, I found no official link from it to this contract.\",\"narrative\":{\"description\":\"Gamblepad is a casino layer on top of pump.fun: creator fees go into a pot that is played for holders who have $20 or more. It is a real, if niche, product, and it fits the theme of pump.fun's holder-reward mechanics from mid-September.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Most likely the product name is being used to launch rotating copies. The volume is mostly churn, bundled or bot-driven: about $1.1M in volume on a $33k market cap, and similar buyer and seller counts in 5\u201315 minute windows. I found no organic posts.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The name matches the Gamblepad product. But Gamblepad says it launches coins on pump.fun, and this token was not launched there. It is a raw PumpSwap pool with unlocked LP. I found nothing from the project linking to this contract address.\",\"competing_tokens\":\"There are at least three other Gamblepad/GP tokens launched within minutes of this one: GrW1\u2026 (the one the metadata references), k7jH\u2026 and FLu5\u2026, the last two with near-zero liquidity. There is also 8kNgo\u2026pump (GAMBLE, 'Gamblepad'), created about 19 hours earlier and now dead. Separately, RuneScape Gold GP has a $25M market cap and Graphite GP has a $14M market cap.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 40 bundler wallets holding 28% of the top-trader share, and RugCheck finds a 40-wallet insider trade network. The rapid serial redeploys of the same name show the earlier copies being drained of liquidity. The creator has closed their position. In the last 5\u201315 minutes buyer and seller counts are nearly equal (51 vs 53, 19 vs 19), which looks like churn. GMGN page visits are 2 and degen call count is 0.\",\"uncertainty\":\"I could not see X posts; the X profile returned 403 and DexScreener was blocked. A real Gamblepad team could conceivably have launched this one.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 0% burned or locked in a raw PumpSwap pool, so the deployer can remove liquidity at any time\",\"Two sibling copies launched in the same minutes already have about $0 of liquidity, which is a serial-rug pattern\",\"40 bundler wallets and a 40-wallet insider network\",\"Liquidity ($38.7k) is larger than market cap ($32.7k), which is typical of a dev-seeded pool set up to be pulled\",\"Volume of $1.1M on a $33k market cap suggests wash or bot churn\"]},\"counterargument\":\"Gamblepad is a real product with a fresh, understandable hook (casino payouts to holders). If this copy turns out to be the one the team or community settles on, it already has the most liquidity and about 650 holders and could double quickly from $33k. The market cap is tiny, the price is up 238% in an hour, and a 2x needs only about $33k of net inflow.\",\"unknowns\":[\"Whether the Gamblepad team endorses any of these contract addresses\",\"Contents of the @Gamblepadsol X account\",\"Who controls the LP tokens\",\"Live price and liquidity after T2\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Searching the contract address returned nothing. A site:x.com search did not find @Gamblepadsol, and fetching the profile directly returned 403. gamblepad.xyz failed with an SSL error, though search snippets describe the product. DexScreener returned 403.\"},\"thesis\":\"This is very likely one of several rotating Gamblepad copies from the same operator. The LP is unlocked and the pattern of sibling copies being drained is already visible. I expect the liquidity to be pulled rather than the price to double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":80,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://gamblepad.xyz/\",\"what\":\"Gamblepad product description (from search snippets): launches coins on pump.fun and plays fees in a casino for holders\"},{\"url\":\"https://x.com/Gamblepadsol\",\"what\":\"The project X handle listed by GeckoTerminal; fetching it returned 403\"},{\"url\":\"https://www.tradingview.com/news/coinmarketcal:df0f05658094b:0-pump-fun-holder-rewards-launch-replaces-cashback-mode-12-sep-2026/\",\"what\":\"Pump.fun holder-rewards context\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Gamblepad\" with ticker GP was deployed straight onto a PumpSwap pool 37 minutes before detection. It did not come through the pump.fun bonding curve: launchpad is null and the contract address does not end in \"pump\". Its LP is 0% burned or locked, and the creator's status is \"creator_close\". In a roughly 5-minute window at least four \"Gamblepad\"/GP tokens were launched: GrW1\u2026, k7jH\u2026, FLu5\u2026 and this one, 7rfs\u2026. Two of the earlier ones already have about $0\u20133 of liquidity (FLu5 did about $1M in volume, then went to zero liquidity), and GrW1 is down to about $8.7k. The project_description field of this token even points at GrW1's Solscan metadata. That looks like one operator rotating copies of the same launch. Gamblepad (gamblepad.xyz) does appear to be a real product that launches coins on pump.fun and plays creator fees in a casino for holders. However, I found no official link from it to this contract.",
+  "narrative": {
+   "description": "Gamblepad is a casino layer on top of pump.fun: creator fees go into a pot that is played for holders who have $20 or more. It is a real, if niche, product, and it fits the theme of pump.fun's holder-reward mechanics from mid-September.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Most likely the product name is being used to launch rotating copies. The volume is mostly churn, bundled or bot-driven: about $1.1M in volume on a $33k market cap, and similar buyer and seller counts in 5\u201315 minute windows. I found no organic posts."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The name matches the Gamblepad product. But Gamblepad says it launches coins on pump.fun, and this token was not launched there. It is a raw PumpSwap pool with unlocked LP. I found nothing from the project linking to this contract address.",
+   "competing_tokens": "There are at least three other Gamblepad/GP tokens launched within minutes of this one: GrW1\u2026 (the one the metadata references), k7jH\u2026 and FLu5\u2026, the last two with near-zero liquidity. There is also 8kNgo\u2026pump (GAMBLE, 'Gamblepad'), created about 19 hours earlier and now dead. Separately, RuneScape Gold GP has a $25M market cap and Graphite GP has a $14M market cap.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 40 bundler wallets holding 28% of the top-trader share, and RugCheck finds a 40-wallet insider trade network. The rapid serial redeploys of the same name show the earlier copies being drained of liquidity. The creator has closed their position. In the last 5\u201315 minutes buyer and seller counts are nearly equal (51 vs 53, 19 vs 19), which looks like churn. GMGN page visits are 2 and degen call count is 0.",
+   "uncertainty": "I could not see X posts; the X profile returned 403 and DexScreener was blocked. A real Gamblepad team could conceivably have launched this one."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 0% burned or locked in a raw PumpSwap pool, so the deployer can remove liquidity at any time",
+    "Two sibling copies launched in the same minutes already have about $0 of liquidity, which is a serial-rug pattern",
+    "40 bundler wallets and a 40-wallet insider network",
+    "Liquidity ($38.7k) is larger than market cap ($32.7k), which is typical of a dev-seeded pool set up to be pulled",
+    "Volume of $1.1M on a $33k market cap suggests wash or bot churn"
+   ]
+  },
+  "counterargument": "Gamblepad is a real product with a fresh, understandable hook (casino payouts to holders). If this copy turns out to be the one the team or community settles on, it already has the most liquidity and about 650 holders and could double quickly from $33k. The market cap is tiny, the price is up 238% in an hour, and a 2x needs only about $33k of net inflow.",
+  "unknowns": [
+   "Whether the Gamblepad team endorses any of these contract addresses",
+   "Contents of the @Gamblepadsol X account",
+   "Who controls the LP tokens",
+   "Live price and liquidity after T2"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Searching the contract address returned nothing. A site:x.com search did not find @Gamblepadsol, and fetching the profile directly returned 403. gamblepad.xyz failed with an SSL error, though search snippets describe the product. DexScreener returned 403."
+  },
+  "thesis": "This is very likely one of several rotating Gamblepad copies from the same operator. The LP is unlocked and the pattern of sibling copies being drained is already visible. I expect the liquidity to be pulled rather than the price to double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 80,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://gamblepad.xyz/",
+    "what": "Gamblepad product description (from search snippets): launches coins on pump.fun and plays fees in a casino for holders"
+   },
+   {
+    "url": "https://x.com/Gamblepadsol",
+    "what": "The project X handle listed by GeckoTerminal; fetching it returned 403"
+   },
+   {
+    "url": "https://www.tradingview.com/news/coinmarketcal:df0f05658094b:0-pump-fun-holder-rewards-launch-replaces-cashback-mode-12-sep-2026/",
+    "what": "Pump.fun holder-rewards context"
+   }
+  ]
+ },
+ "ttft_ms": 3935,
+ "type": "result",
+ "duration_ms": 54387,
+ "uuid": "5dd777e8-10aa-42fd-be96-7ad582610083",
+ "ttft_stream_ms": 792,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 792,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

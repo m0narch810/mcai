@@ -1,0 +1,140 @@
+{
+ "duration_api_ms": 43181,
+ "stop_reason": "tool_use",
+ "session_id": "a2e3f9cd-062c-435a-878c-631f84d586e8",
+ "total_cost_usd": 0.1562464,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9176,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 4133,
+  "output_tokens_details": {
+   "thinking_tokens": 1358
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9176,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4133,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9176,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9176
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4133,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9176,
+   "webSearchRequests": 0,
+   "costUSD": 0.1562464,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1358,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The LP was 0% locked or burned (GMGN lp_burn_ratio 0; RugCheck 'Large Amount of LP Unlocked', 'Low amount of LP Providers'). One party held the LP and could withdraw it. This matches the outcome: no pair or liquidity at T_D, about 22 minutes after T2.\",\"The Pump Fun AMM pool held about 76% of supply, and liquidity ($185k) was higher than market cap ($120k). A pool seeded directly by the dev with most of the supply means buyer SOL builds up in a pool the LP owner can drain. The bigger the SOL side gets, the more the dev gains by pulling.\",\"There was no pump.fun launch record (launchpad blank, migrated_unix 0, and the mint does not end in 'pump'). The dev created the PumpSwap pool 65 seconds after the mint, while the metadata copied the canonical project's website and X handle. That is a deliberate impersonation setup, not an organic launch.\",\"At least 7 same-name 'NPCs' siblings created in the prior 1 to 3 hours all showed $0 liquidity at T2. That is direct evidence of a repeated clone-and-pull pattern around this exact ticker in this time window.\",\"A live canonical token existed (68SV...pump, about $6.2M market cap). With the real coin easy to find, the clone had no reason to keep liquidity once misdirected buyers slowed down.\",\"RugCheck flagged it as 'Copycat token', and GMGN showed about 45 bundler wallets with about 20% of top-trader share, which fits manufactured activity.\"],\"misleading_observations\":[\"The momentum numbers looked like a runner: +60\u201370% in 1 hour, $1.4M of volume in 45 minutes, 8x hourly turnover, a 6x m5/h1 acceleration, and 534 unique buyers. For a clone with unlocked LP, these mainly measure how much SOL was available to pull.\",\"The top-10 holder share of 9.58% looked well spread, but it excludes the 76% AMM pool. The pool is exactly where the risk sat, because one party controls the LP.\",\"The 'creator_hold' status, creator_hold_rate of 0.0012, and 'no dev dump yet' were cited in the counterargument as signs a pull was not imminent. When the dev owns the LP, removing liquidity is the exit, and token holdings do not bear on it.\",\"Security checks passed (mint and freeze renounced, honeypot 0, 0% tax). This is irrelevant to LP-removal risk and could suggest false safety.\",\"Holder counts disagreed across sources (5,027 on RugCheck, 607 on GMGN, 477 on GeckoTerminal). Any of them could make the token look more widely held than it was. The report correctly did not rely on them.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time pointed toward a runner. The direction of the call (strong_fade, p_rug 82, p_runner 5) was supported by the evidence.\",\"The evidence supported a shorter time horizon and arguably a higher p_rug. Every same-name sibling in the prior 1 to 3 hours was already drained, and this pool was 45 minutes old with a large withdrawable SOL side. Saying 'LP pull within hours' with a 6h observation window understated how soon it would happen. The pull came before the 07:36 decision time, roughly 25 minutes after detection.\",\"The counterargument that 'creator_hold means the pull is not imminent' should have been dropped. It confuses token-holding behaviour with LP ownership.\",\"Caveat: an 'unfillable' outcome records only that no pair or liquidity existed at T_D. It is very likely an LP pull, but the outcome record cannot separate that from a data or indexing failure.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Same-name clones of a trending token are unfillable (liquidity removed) by T_D, about 25 minutes after detection, at a rate of 70% or more. This applies when the clone has no launchpad record, a dev-seeded AMM pool, LP burn ratio of 0, and RugCheck 'Copycat' or 'Low LP providers' flags.\",\"conditions\":\"Solana tokens with no launchpad and migrated_unix 0. A same-ticker token must exist with at least 10x the market cap, created within the prior 24 hours. The LP must be 0% locked or burned. Measure the unfillable rate at T_D and the 60-minute return.\",\"market_structure_rationale\":\"The dev who owns the LP can withdraw all SOL that buyers have deposited. The clone only exists to catch misdirected ticker searches, so the incentive to keep liquidity is gone once that flow slows. Nothing constrains the timing except the dev's patience.\"},{\"statement\":\"Among candidates matching the clone pattern above, the share of same-name siblings already at $0 liquidity predicts pull timing. If 3 or more siblings created in the prior 3 hours are at $0 liquidity, the candidate is unfillable within 30 minutes of detection more often than clones with no dead siblings.\",\"conditions\":\"Count same_ticker_or_name_tokens entries with liquidity_usd 0 and pair_created_at within 3 hours before detection. Compare unfillable rates at T_D across the two groups, with at least 20 cases per group before drawing conclusions.\",\"market_structure_rationale\":\"Several dead siblings suggest one operator, or a crowded field of operators, running short clone-and-pull cycles. That means the pull window is short and the operator gains little by waiting.\"},{\"statement\":\"For pools with unlocked LP where the AMM holds more than 70% of supply and liquidity is higher than market cap, strong short-term momentum (h1 price change above 50%, h1 turnover above 5x) does not raise the 6h runner rate. Instead it is associated with a higher unfillable or rug rate than in similar pools with lower momentum.\",\"conditions\":\"Non-canonical tokens with LP burn ratio 0 and a single or few LP providers. Split by h1 turnover and price change at detection, then compare the runner rate (+100% bracket hit) and the unfillable rate.\",\"market_structure_rationale\":\"In a pool whose LP one party can withdraw, inflows grow the SOL the LP owner can take, which raises the payoff from pulling, instead of building a durable holder base.\"}],\"summary\":\"The report called this token a same-name clone of the $6M 'NPCs' coin and predicted a rug (strong_fade, p_rug 82, p_runner 5). The outcome is consistent with that call: the pair or its liquidity was gone by the decision time, about 22 minutes after evidence collection, so no trade could be filled. The call rested on real signals available at the time: LP 0% locked or burned, a dev-seeded PumpSwap pool holding 76% of supply, no pump.fun launch record, metadata copied from the canonical project, RugCheck's copycat flag, and 7 or more sibling clones already at $0 liquidity. The misleading signals were the strong momentum and buyer numbers, the low top-10 share (which excludes the AMM pool), and the 'creator_hold' status, which the report wrongly treated as a reason the pull might be delayed. The one real weakness was timing: the evidence pointed to a pull within minutes, but the report said 'within hours' and used a 6h window. There was also a small inconsistency in keeping a weak counterargument. Because the result was 'unfillable', no trade was measured, and the outcome record cannot fully separate an LP pull from a data failure. The rug direction was knowable at the time; the exact timing and the cause of the missing liquidity are only partly confirmed. The reasoning was good, and this was more than luck.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The LP was 0% locked or burned (GMGN lp_burn_ratio 0; RugCheck 'Large Amount of LP Unlocked', 'Low amount of LP Providers'). One party held the LP and could withdraw it. This matches the outcome: no pair or liquidity at T_D, about 22 minutes after T2.",
+   "The Pump Fun AMM pool held about 76% of supply, and liquidity ($185k) was higher than market cap ($120k). A pool seeded directly by the dev with most of the supply means buyer SOL builds up in a pool the LP owner can drain. The bigger the SOL side gets, the more the dev gains by pulling.",
+   "There was no pump.fun launch record (launchpad blank, migrated_unix 0, and the mint does not end in 'pump'). The dev created the PumpSwap pool 65 seconds after the mint, while the metadata copied the canonical project's website and X handle. That is a deliberate impersonation setup, not an organic launch.",
+   "At least 7 same-name 'NPCs' siblings created in the prior 1 to 3 hours all showed $0 liquidity at T2. That is direct evidence of a repeated clone-and-pull pattern around this exact ticker in this time window.",
+   "A live canonical token existed (68SV...pump, about $6.2M market cap). With the real coin easy to find, the clone had no reason to keep liquidity once misdirected buyers slowed down.",
+   "RugCheck flagged it as 'Copycat token', and GMGN showed about 45 bundler wallets with about 20% of top-trader share, which fits manufactured activity."
+  ],
+  "misleading_observations": [
+   "The momentum numbers looked like a runner: +60\u201370% in 1 hour, $1.4M of volume in 45 minutes, 8x hourly turnover, a 6x m5/h1 acceleration, and 534 unique buyers. For a clone with unlocked LP, these mainly measure how much SOL was available to pull.",
+   "The top-10 holder share of 9.58% looked well spread, but it excludes the 76% AMM pool. The pool is exactly where the risk sat, because one party controls the LP.",
+   "The 'creator_hold' status, creator_hold_rate of 0.0012, and 'no dev dump yet' were cited in the counterargument as signs a pull was not imminent. When the dev owns the LP, removing liquidity is the exit, and token holdings do not bear on it.",
+   "Security checks passed (mint and freeze renounced, honeypot 0, 0% tax). This is irrelevant to LP-removal risk and could suggest false safety.",
+   "Holder counts disagreed across sources (5,027 on RugCheck, 607 on GMGN, 477 on GeckoTerminal). Any of them could make the token look more widely held than it was. The report correctly did not rely on them."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time pointed toward a runner. The direction of the call (strong_fade, p_rug 82, p_runner 5) was supported by the evidence.",
+   "The evidence supported a shorter time horizon and arguably a higher p_rug. Every same-name sibling in the prior 1 to 3 hours was already drained, and this pool was 45 minutes old with a large withdrawable SOL side. Saying 'LP pull within hours' with a 6h observation window understated how soon it would happen. The pull came before the 07:36 decision time, roughly 25 minutes after detection.",
+   "The counterargument that 'creator_hold means the pull is not imminent' should have been dropped. It confuses token-holding behaviour with LP ownership.",
+   "Caveat: an 'unfillable' outcome records only that no pair or liquidity existed at T_D. It is very likely an LP pull, but the outcome record cannot separate that from a data or indexing failure."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Same-name clones of a trending token are unfillable (liquidity removed) by T_D, about 25 minutes after detection, at a rate of 70% or more. This applies when the clone has no launchpad record, a dev-seeded AMM pool, LP burn ratio of 0, and RugCheck 'Copycat' or 'Low LP providers' flags.",
+    "conditions": "Solana tokens with no launchpad and migrated_unix 0. A same-ticker token must exist with at least 10x the market cap, created within the prior 24 hours. The LP must be 0% locked or burned. Measure the unfillable rate at T_D and the 60-minute return.",
+    "market_structure_rationale": "The dev who owns the LP can withdraw all SOL that buyers have deposited. The clone only exists to catch misdirected ticker searches, so the incentive to keep liquidity is gone once that flow slows. Nothing constrains the timing except the dev's patience."
+   },
+   {
+    "statement": "Among candidates matching the clone pattern above, the share of same-name siblings already at $0 liquidity predicts pull timing. If 3 or more siblings created in the prior 3 hours are at $0 liquidity, the candidate is unfillable within 30 minutes of detection more often than clones with no dead siblings.",
+    "conditions": "Count same_ticker_or_name_tokens entries with liquidity_usd 0 and pair_created_at within 3 hours before detection. Compare unfillable rates at T_D across the two groups, with at least 20 cases per group before drawing conclusions.",
+    "market_structure_rationale": "Several dead siblings suggest one operator, or a crowded field of operators, running short clone-and-pull cycles. That means the pull window is short and the operator gains little by waiting."
+   },
+   {
+    "statement": "For pools with unlocked LP where the AMM holds more than 70% of supply and liquidity is higher than market cap, strong short-term momentum (h1 price change above 50%, h1 turnover above 5x) does not raise the 6h runner rate. Instead it is associated with a higher unfillable or rug rate than in similar pools with lower momentum.",
+    "conditions": "Non-canonical tokens with LP burn ratio 0 and a single or few LP providers. Split by h1 turnover and price change at detection, then compare the runner rate (+100% bracket hit) and the unfillable rate.",
+    "market_structure_rationale": "In a pool whose LP one party can withdraw, inflows grow the SOL the LP owner can take, which raises the payoff from pulling, instead of building a durable holder base."
+   }
+  ],
+  "summary": "The report called this token a same-name clone of the $6M 'NPCs' coin and predicted a rug (strong_fade, p_rug 82, p_runner 5). The outcome is consistent with that call: the pair or its liquidity was gone by the decision time, about 22 minutes after evidence collection, so no trade could be filled. The call rested on real signals available at the time: LP 0% locked or burned, a dev-seeded PumpSwap pool holding 76% of supply, no pump.fun launch record, metadata copied from the canonical project, RugCheck's copycat flag, and 7 or more sibling clones already at $0 liquidity. The misleading signals were the strong momentum and buyer numbers, the low top-10 share (which excludes the AMM pool), and the 'creator_hold' status, which the report wrongly treated as a reason the pull might be delayed. The one real weakness was timing: the evidence pointed to a pull within minutes, but the report said 'within hours' and used a 6h window. There was also a small inconsistency in keeping a weak counterargument. Because the result was 'unfillable', no trade was measured, and the outcome record cannot fully separate an LP pull from a data failure. The rug direction was knowable at the time; the exact timing and the cause of the missing liquidity are only partly confirmed. The reasoning was good, and this was more than luck."
+ },
+ "ttft_ms": 16396,
+ "type": "result",
+ "duration_ms": 43228,
+ "uuid": "1b705573-dbdf-4219-98b9-47dbde2c7595",
+ "ttft_stream_ms": 822,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 822,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

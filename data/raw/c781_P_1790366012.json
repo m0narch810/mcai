@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 25025,
+ "stop_reason": "tool_use",
+ "session_id": "b0acb63c-86b0-4c50-b779-6183b61718d4",
+ "total_cost_usd": 0.11564840000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8257,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2458,
+  "output_tokens_details": {
+   "thinking_tokens": 558
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8257,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2458,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8257,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8257
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2458,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8257,
+   "webSearchRequests": 0,
+   "costUSD": 0.11564840000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 558,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"TALIS (\\\"Created on https://talis.markets\\\", X @usetalis, TG talismarkets) looks like an official project token. The creator seeded a PumpSwap pool directly, not through a pump.fun curve migration. The pool is deep for the size: about $208k liquidity against a $145k market cap, with 70% of supply in the pool. In about 12 minutes it did about $2M volume, 554 unique buyers against 61 unique sellers, and price roughly 2x. Before this pair was created, at least 10 same-name TALIS fakes were launched, which points to an anticipated launch that snipers front-ran. The 5-minute price is now flat to down after the initial doubling. GMGN flags 49 bundler wallets holding about 25% among top traders. The LP is 100% unlocked and controlled by very few providers.\",\"narrative\":{\"description\":\"An official token for a product-branded project (talis.markets, apparently a markets or launch platform) with linked X and Telegram. The pile of pre-launch copycats shows people were waiting for it.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"An anticipated official launch drew immediate broad buying: 554 unique buyers in about 12 minutes. The fakes launched earlier suggest the community was watching for the real contract.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"It is the only TALIS pair with real liquidity. Its description and links point to talis.markets and @usetalis, and the dev seeded the pool directly with deep liquidity, which fits an official deployment.\",\"competing_tokens\":\"Ten or more TALIS/Talis clones launched 15 to 100 minutes earlier, all with roughly zero liquidity and absurd market caps. They are dead fakes.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Buyer breadth is real (554 buyers against 61 sellers, 577 holders in about 12 minutes). There are no paid DexScreener boosts and no call-channel or KOL flags. On the other side, 49 bundler wallets hold about 25% of top-trader volume, and $2M of turnover on a $145k cap implies heavy bot and MEV churn.\",\"uncertainty\":\"No X data. I can't verify that @usetalis actually announced this contract. The 'dev X account launched 39 tokens' figure may come from the fakes using the handle, or it may be a real red flag.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"100% of LP unlocked and held by very few providers: the creator can pull about $200k of liquidity at any time\",\"49 bundler wallets, about 25% bundler share among top traders\",\"Liquidity above market cap means 2x needs sustained heavy buying of roughly $150k+ net\",\"Already up about 100% before entry, and m5 momentum is fading\",\"GeckoTerminal top-10 at 87% likely includes the pool; the ex-pool top-10 is about 12%, which is fine\"]},\"counterargument\":\"Official project launches with visible anticipation (front-run by fakes) and hundreds of unique buyers in minutes can re-rate hard once the X account posts the contract, and a $145k cap is tiny for a real platform token. The case against is structural: the dev holds unlocked LP, the price already doubled, and bundlers could dump. The move may already be spent, or the 'project' could be a pull-the-LP scheme dressed with a website.\",\"unknowns\":[\"Whether @usetalis officially posted this contract\",\"What talis.markets actually is and how big its audience is\",\"Whether the dev will lock or burn the LP\",\"Bundler exit timing\",\"What the dev X account's 39 launched tokens actually are\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; this is a packet-only judgment.\"},\"thesis\":\"This looks like a genuine official launch of an anticipated project with broad early buyer breadth and no paid promotion. That puts it above a typical pool coin for runner odds. Offsetting that, the LP is unlocked (rug tail), bundlers are heavy, the price already doubled, and deep liquidity makes a further 2x from entry demanding.\",\"continuation_view\":\"neutral\",\"p_runner\":21,\"p_rug\":20,\"survival_score\":52,\"attention_score\":78,\"manipulation_risk\":50,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "TALIS (\"Created on https://talis.markets\", X @usetalis, TG talismarkets) looks like an official project token. The creator seeded a PumpSwap pool directly, not through a pump.fun curve migration. The pool is deep for the size: about $208k liquidity against a $145k market cap, with 70% of supply in the pool. In about 12 minutes it did about $2M volume, 554 unique buyers against 61 unique sellers, and price roughly 2x. Before this pair was created, at least 10 same-name TALIS fakes were launched, which points to an anticipated launch that snipers front-ran. The 5-minute price is now flat to down after the initial doubling. GMGN flags 49 bundler wallets holding about 25% among top traders. The LP is 100% unlocked and controlled by very few providers.",
+  "narrative": {
+   "description": "An official token for a product-branded project (talis.markets, apparently a markets or launch platform) with linked X and Telegram. The pile of pre-launch copycats shows people were waiting for it.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "An anticipated official launch drew immediate broad buying: 554 unique buyers in about 12 minutes. The fakes launched earlier suggest the community was watching for the real contract."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "It is the only TALIS pair with real liquidity. Its description and links point to talis.markets and @usetalis, and the dev seeded the pool directly with deep liquidity, which fits an official deployment.",
+   "competing_tokens": "Ten or more TALIS/Talis clones launched 15 to 100 minutes earlier, all with roughly zero liquidity and absurd market caps. They are dead fakes.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Buyer breadth is real (554 buyers against 61 sellers, 577 holders in about 12 minutes). There are no paid DexScreener boosts and no call-channel or KOL flags. On the other side, 49 bundler wallets hold about 25% of top-trader volume, and $2M of turnover on a $145k cap implies heavy bot and MEV churn.",
+   "uncertainty": "No X data. I can't verify that @usetalis actually announced this contract. The 'dev X account launched 39 tokens' figure may come from the fakes using the handle, or it may be a real red flag."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "100% of LP unlocked and held by very few providers: the creator can pull about $200k of liquidity at any time",
+    "49 bundler wallets, about 25% bundler share among top traders",
+    "Liquidity above market cap means 2x needs sustained heavy buying of roughly $150k+ net",
+    "Already up about 100% before entry, and m5 momentum is fading",
+    "GeckoTerminal top-10 at 87% likely includes the pool; the ex-pool top-10 is about 12%, which is fine"
+   ]
+  },
+  "counterargument": "Official project launches with visible anticipation (front-run by fakes) and hundreds of unique buyers in minutes can re-rate hard once the X account posts the contract, and a $145k cap is tiny for a real platform token. The case against is structural: the dev holds unlocked LP, the price already doubled, and bundlers could dump. The move may already be spent, or the 'project' could be a pull-the-LP scheme dressed with a website.",
+  "unknowns": [
+   "Whether @usetalis officially posted this contract",
+   "What talis.markets actually is and how big its audience is",
+   "Whether the dev will lock or burn the LP",
+   "Bundler exit timing",
+   "What the dev X account's 39 launched tokens actually are"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; this is a packet-only judgment."
+  },
+  "thesis": "This looks like a genuine official launch of an anticipated project with broad early buyer breadth and no paid promotion. That puts it above a typical pool coin for runner odds. Offsetting that, the LP is unlocked (rug tail), bundlers are heavy, the price already doubled, and deep liquidity makes a further 2x from entry demanding.",
+  "continuation_view": "neutral",
+  "p_runner": 21,
+  "p_rug": 20,
+  "survival_score": 52,
+  "attention_score": 78,
+  "manipulation_risk": 50,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7165,
+ "type": "result",
+ "duration_ms": 25075,
+ "uuid": "5f5d1102-1853-49b4-92e9-28c8818feefe",
+ "ttft_stream_ms": 701,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 701,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

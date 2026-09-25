@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 25110,
+ "stop_reason": "tool_use",
+ "session_id": "44701b18-af2d-4f80-9662-f01813844ad0",
+ "total_cost_usd": 0.1126228,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7781,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2499,
+  "output_tokens_details": {
+   "thinking_tokens": 534
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7781,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2499,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7781,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7781
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2499,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7781,
+   "webSearchRequests": 0,
+   "costUSD": 0.1126228,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 534,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Hybrid cat\\\" is a 40-minute-old token. Its PumpSwap pool was created 3 seconds after the mint, so it was not a bonding-curve graduation (migrated_unix = 0). It has about $283k in volume against a $49.6k market cap and $63k of liquidity. Liquidity is larger than the market cap, the LP is 0% locked or burned, RugCheck flags \\\"Large Amount of LP Unlocked\\\" as danger with few LP providers, and the creator already holds nothing (\\\"creator_close\\\"). The packet also lists at least 10 other tokens with the ticker \\\"Hybrid cat\\\" (named \\\"Penguin Cat\\\") launched in the past ~24h. All of them now have $0\u2013$0.01 liquidity and no volume. That looks like a serial deploy-and-pull operation. The trading pattern is also suspicious: 3,447 buys but only 109 unique sellers in the last hour, and the last 5 minutes are roughly balanced (99 buyers / 95 sellers, price slightly down) after a +124% run. 21 bundler wallets were tagged. The only theme is the description \u4e2d\u79cb\u5feb\u4e50 (\\\"Happy Mid-Autumn Festival\\\"), which matches the date.\",\"narrative\":{\"description\":\"There is no real story. A generic cat name with a Mid-Autumn Festival greeting, timed to the holiday. It has no website, socials, DexScreener profile or X handle.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks driven by volume and bots, not by people telling a story. Heavy trade counts from a small set of sellers suggest wash trading or market-making to attract screener traffic.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only live pair among many same-ticker tokens, but only because the earlier ones have already been drained.\",\"competing_tokens\":\"At least 10 'Hybrid cat' / 'Penguin Cat' tokens from the last ~24h, all with near-zero liquidity. That fits a repeated launch-and-rug template, not competition for a real meme.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The pool was self-seeded on PumpSwap with unlocked LP. Liquidity is bigger than the market cap. There are 1,116 unique buyers but only 109 unique sellers against 2,383 sells. 21 bundler wallets were tagged. The creator has already exited. A prior series of same-ticker tokens are all at $0 liquidity.\",\"uncertainty\":\"The gecko m15/m30 unique counts look capped at 100, so the buyer/seller breakdown is imprecise. The same-ticker clones may come from other deployers, since the packet's creator shows 0 other tokens. That could be a fresh wallet per launch, though.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked or burned; whoever deployed the liquidity can remove it at any time\",\"Few LP providers; liquidity above market cap points to a single seeded pool\",\"About 10 prior same-ticker tokens all drained to ~$0 liquidity within hours\",\"Creator balance 0 / creator_close, so the dev has already exited the token side\",\"Volume likely inflated by bots (few unique sellers, bundlers present)\",\"Momentum already stalled: m5 and m15 are negative after a +124% hour\"]},\"counterargument\":\"Holder distribution outside the pool is fairly flat: after the 10.55% wallet the rest are about 0.3% each. There are over 1,100 holders, no mint or freeze authority, no taxes, and no insider flags. The Mid-Autumn date gives a real, if weak, holiday hook. If the LP provider is a market maker and not a rugger, the high turnover could carry it from $50k to $100k+. Chinese-community holiday memes sometimes run at exactly this time.\",\"unknowns\":[\"Who holds the LP position, and whether it is the creator or a linked wallet\",\"Whether the dead same-ticker tokens share a deployer or funding source with this one\",\"What the 10.55% top holder is\",\"Whether there is organic X or Chinese-community attention around Mid-Autumn\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"The structure fits a repeat LP-pull scheme: a self-seeded PumpSwap pool with unlocked LP, the dev already out, bot-heavy volume, and a trail of drained same-ticker clones. Doubling from the entry price 25 minutes after the trigger is unlikely, and a liquidity pull within 6 hours is the most likely outcome.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"Hybrid cat\" is a 40-minute-old token. Its PumpSwap pool was created 3 seconds after the mint, so it was not a bonding-curve graduation (migrated_unix = 0). It has about $283k in volume against a $49.6k market cap and $63k of liquidity. Liquidity is larger than the market cap, the LP is 0% locked or burned, RugCheck flags \"Large Amount of LP Unlocked\" as danger with few LP providers, and the creator already holds nothing (\"creator_close\"). The packet also lists at least 10 other tokens with the ticker \"Hybrid cat\" (named \"Penguin Cat\") launched in the past ~24h. All of them now have $0\u2013$0.01 liquidity and no volume. That looks like a serial deploy-and-pull operation. The trading pattern is also suspicious: 3,447 buys but only 109 unique sellers in the last hour, and the last 5 minutes are roughly balanced (99 buyers / 95 sellers, price slightly down) after a +124% run. 21 bundler wallets were tagged. The only theme is the description \u4e2d\u79cb\u5feb\u4e50 (\"Happy Mid-Autumn Festival\"), which matches the date.",
+  "narrative": {
+   "description": "There is no real story. A generic cat name with a Mid-Autumn Festival greeting, timed to the holiday. It has no website, socials, DexScreener profile or X handle.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The activity looks driven by volume and bots, not by people telling a story. Heavy trade counts from a small set of sellers suggest wash trading or market-making to attract screener traffic."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only live pair among many same-ticker tokens, but only because the earlier ones have already been drained.",
+   "competing_tokens": "At least 10 'Hybrid cat' / 'Penguin Cat' tokens from the last ~24h, all with near-zero liquidity. That fits a repeated launch-and-rug template, not competition for a real meme.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The pool was self-seeded on PumpSwap with unlocked LP. Liquidity is bigger than the market cap. There are 1,116 unique buyers but only 109 unique sellers against 2,383 sells. 21 bundler wallets were tagged. The creator has already exited. A prior series of same-ticker tokens are all at $0 liquidity.",
+   "uncertainty": "The gecko m15/m30 unique counts look capped at 100, so the buyer/seller breakdown is imprecise. The same-ticker clones may come from other deployers, since the packet's creator shows 0 other tokens. That could be a fresh wallet per launch, though."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked or burned; whoever deployed the liquidity can remove it at any time",
+    "Few LP providers; liquidity above market cap points to a single seeded pool",
+    "About 10 prior same-ticker tokens all drained to ~$0 liquidity within hours",
+    "Creator balance 0 / creator_close, so the dev has already exited the token side",
+    "Volume likely inflated by bots (few unique sellers, bundlers present)",
+    "Momentum already stalled: m5 and m15 are negative after a +124% hour"
+   ]
+  },
+  "counterargument": "Holder distribution outside the pool is fairly flat: after the 10.55% wallet the rest are about 0.3% each. There are over 1,100 holders, no mint or freeze authority, no taxes, and no insider flags. The Mid-Autumn date gives a real, if weak, holiday hook. If the LP provider is a market maker and not a rugger, the high turnover could carry it from $50k to $100k+. Chinese-community holiday memes sometimes run at exactly this time.",
+  "unknowns": [
+   "Who holds the LP position, and whether it is the creator or a linked wallet",
+   "Whether the dead same-ticker tokens share a deployer or funding source with this one",
+   "What the 10.55% top holder is",
+   "Whether there is organic X or Chinese-community attention around Mid-Autumn"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "The structure fits a repeat LP-pull scheme: a self-seeded PumpSwap pool with unlocked LP, the dev already out, bot-heavy volume, and a trail of drained same-ticker clones. Doubling from the entry price 25 minutes after the trigger is unlikely, and a liquidity pull within 6 hours is the most likely outcome.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6256,
+ "type": "result",
+ "duration_ms": 25155,
+ "uuid": "1a144344-6d3d-418f-bdf9-40933c0d6420",
+ "ttft_stream_ms": 735,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 735,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

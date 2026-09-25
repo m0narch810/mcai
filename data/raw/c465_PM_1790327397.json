@@ -1,0 +1,146 @@
+{
+ "duration_api_ms": 48388,
+ "stop_reason": "tool_use",
+ "session_id": "0edb952f-d589-4aeb-bac0-88d18a1aa8ef",
+ "total_cost_usd": 0.17054239999999998,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9673,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 4649,
+  "output_tokens_details": {
+   "thinking_tokens": 1450
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9673,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4649,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9673,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9673
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4649,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9673,
+   "webSearchRequests": 0,
+   "costUSD": 0.17054239999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1450,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The outcome was mostly settled before entry. At T2 (07:11Z) the price was about 1.06e-4 with about $106k market cap and $27.8k liquidity. At the next bar after the decision (07:33Z) the entry reference was 2.39e-6 with about $2.3k market cap and $2.5k liquidity: roughly a 98% collapse within about 22 minutes. The LP was burned (lp_burn_ratio 1.0), and the liquidity fell by about as much as a constant-product pool would after a large dump. That fits a dump of held supply, not an LP pull. Any bearing the research had on the outcome comes from how it read the dump risk.\",\"Supply was concentrated through bundles and fresh wallets: GMGN counted 72 bundler wallets (top_bundler_trader_pct 17.9%) and 132 fresh wallets on a token 36 minutes old. This is sellable supply controlled by a few operators. The report named it as the main risk.\",\"The creator had already exited (creator_close, 0% held) and GMGN flagged a 'community takeover' within about 36 minutes of launch. A CTO flag that early means the deployer walked away, not that a community actually took over.\",\"At least 10 same-name, same-ticker pump.fun tokens had been launched in the previous 2.5 hours, all dead at about $3.3k market cap. This fits an operator relaunching until one graduates, which makes the graduated copy the exit vehicle rather than an organic winner.\",\"Market structure: h1 turnover of 8.5x liquidity, buys roughly equal to sells over the hour (3,089/2,954), and price near its ATH at entry. Heavy two-way churn at the top of a fresh graduation is what distribution by insiders looks like.\",\"There was no organic narrative: a template 'in development' wallet site, no team, and no web or news mentions. Nothing outside the launch was generating demand to absorb the bundled supply.\",\"top_entrapment_trader_pct was 10.4%. That is a further GMGN signal of manipulative trader behavior, and the report did not use it.\"],\"misleading_observations\":[\"The 2,446 unique buyers and 3,000+ buys in the first hour looked like broad retail interest. With 72 bundlers, 132 fresh wallets and bot-level transaction counts, this number was mostly inflated by bots and bundles. Holder counts also conflicted: RugCheck said 2,477, while GMGN and GeckoTerminal said about 310.\",\"A top-10 holder share of about 10.7% looked well distributed. Bundlers deliberately spread supply across many wallets, so the top-10 share understated how concentrated control really was.\",\"LP burned or 100% locked looked protective. It only rules out an LP pull. It does nothing to stop a dump of held supply, which is what apparently happened.\",\"Buys outnumbered sells about 2:1 over the last 5 minutes and price was pushing toward the ATH. A short-window buy skew at the top is easy to manufacture and was followed by collapse within minutes.\",\"A DexScreener profile, website and X account looked like project effort. They cost little and did not stop the rapid collapse.\",\"Measurement caveat: net bracket returns (for example -34% at 6h) were far worse than gross price moves (-6%). This is price impact from a $250 position in a pool of about $2.4k, not later market movement. The post-entry path of a token that was already dead says nothing about the runner question.\"],\"evidence_that_should_have_changed_conclusion\":[\"The conclusion (fade, p_runner 18) was right in direction. The available evidence arguably supported a higher p_rug than 50 and a lower p_runner than 18. Four red flags lined up on a coin under 40 minutes old: a creator who had already exited, an early CTO flag, serial same-name relaunches, and 72 bundlers. With nothing outside the launch driving demand, the chance of a fast dump was plausibly well above even odds.\",\"The report's counterargument leaned on the unique-buyer count and the low top-10 share. It should have discounted both explicitly, given the bundler and fresh-wallet tallies and the conflicting holder counts (about 2,477 vs about 310).\",\"Process issue, not analysis: the 22-minute gap between T2 and decision time was long compared with how fast a graduation like this dumps. For hyper-turnover tokens under an hour old, the state at decision time can differ completely from the packet. The packet had no mechanism to flag this.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"When a graduated pump.fun token is the only survivor among 5 or more same-name, same-ticker tokens launched in the prior 3 hours (the others dead below about $5k market cap), it is more likely than baseline graduated candidates to fall 50% or more from its T2 price within 30 minutes.\",\"conditions\":\"Pump.fun/PumpSwap tokens with pair age under 2 hours at T2. Same-name tokens counted from the packet's same_ticker_or_name_tokens list. Compare against graduated candidates with fewer than 2 same-name tokens.\",\"market_structure_rationale\":\"Serial relaunching suggests an operator farming graduation with pre-positioned or bundled supply. The token that graduates is the exit vehicle, and demand comes from bots chasing the graduation rather than from outside buyers.\"},{\"statement\":\"Tokens under 60 minutes old with at least 50 GMGN bundler wallets (or top_bundler_trader_pct of 15% or more) AND creator_token_status = creator_close show a median T2-to-T_decision+60m return of -50% or worse. A CTO flag on a token under 2 hours old adds further predictive power.\",\"conditions\":\"Pair age under 60 minutes, GMGN data available, h1 turnover above 3x liquidity. Measure against candidates of the same age that lack these flags.\",\"market_structure_rationale\":\"Supply is held by coordinated wallets and the deployer has already exited, so nobody has an interest in supporting price. Heavy turnover gives those wallets the liquidity to exit fully at once.\"},{\"statement\":\"For candidates with pair age under 60 minutes and h1 turnover above 5x, the price change between T2 and decision time is large enough to undo the packet. A material share (for example over 25%) will have lost 50% or more before entry. Re-checking price at decision time and invalidating the report when price moved more than 40% would improve measured outcomes.\",\"conditions\":\"A pipeline-level test across all candidates. Requires logging price at t_decision alongside T2.\",\"market_structure_rationale\":\"Fresh graduations with extreme churn have a price half-life measured in minutes, so evidence collected more than 20 minutes earlier describes a different market.\"},{\"statement\":\"A large ratio of total_holders in RugCheck to holders in GMGN/GeckoTerminal (for example above 5x), or unique buyers above 5x the GMGN holder count within the first hour, marks activity inflated by bots or dust. It predicts a worse 1-hour return than for tokens with consistent counts.\",\"conditions\":\"Tokens under 2 hours old where both holder sources are available.\",\"market_structure_rationale\":\"Wash trading and bots can manufacture buyer and holder counts, making demand look broader than it is. Many transient wallets are not real holders with conviction who would absorb selling.\"}],\"summary\":\"The report called a fade (p_runner 18, p_rug 50). The token collapsed about 98% (market cap about $106k \u2192 about $2.3k, liquidity $27.8k \u2192 $2.5k) in the roughly 22 minutes between evidence collection and decision time. The +100% bracket was never touched, and the measured post-entry losses mostly reflect price impact in a dead $2.4k pool.\\n\\nThe call was right, and it rested on the right evidence:\\n- 72 bundler wallets holding about 18%, plus 132 fresh wallets\\n- the dev had already sold out, with a community-takeover flag on a 36-minute-old coin\\n- 10+ dead same-name relaunches earlier that morning, which points to an operator farming graduations\\n- 8.5x turnover with buys roughly equal to sells near the ATH\\n- no organic narrative\\n\\nThree things looked reassuring and misled:\\n- 2,400+ unique buyers\\n- a top-10 holder share of about 11%\\n- the burned LP\\n\\nThey were inflated or irrelevant, because the collapse was a supply dump, not an LP pull.\\n\\nImprovements:\\n- The evidence arguably justified a higher p_rug than 50.\\n- The report should have discounted the buyer and holder counts, given the bundler tallies and the conflicting holder counts (about 2,477 vs about 310).\\n- The pipeline's 22-minute decision gap is too long for tokens this young and churny.\\n\\nThe outcome was only partly knowable. The direction and high dump risk were readable from structure at the time. The exact timing and depth were not.\\n\\nCaveat: I checked that the entry-pair data fits a dump on the same pool, but I could not independently verify that the outcome tracker followed the correct pair. One case proves little.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The outcome was mostly settled before entry. At T2 (07:11Z) the price was about 1.06e-4 with about $106k market cap and $27.8k liquidity. At the next bar after the decision (07:33Z) the entry reference was 2.39e-6 with about $2.3k market cap and $2.5k liquidity: roughly a 98% collapse within about 22 minutes. The LP was burned (lp_burn_ratio 1.0), and the liquidity fell by about as much as a constant-product pool would after a large dump. That fits a dump of held supply, not an LP pull. Any bearing the research had on the outcome comes from how it read the dump risk.",
+   "Supply was concentrated through bundles and fresh wallets: GMGN counted 72 bundler wallets (top_bundler_trader_pct 17.9%) and 132 fresh wallets on a token 36 minutes old. This is sellable supply controlled by a few operators. The report named it as the main risk.",
+   "The creator had already exited (creator_close, 0% held) and GMGN flagged a 'community takeover' within about 36 minutes of launch. A CTO flag that early means the deployer walked away, not that a community actually took over.",
+   "At least 10 same-name, same-ticker pump.fun tokens had been launched in the previous 2.5 hours, all dead at about $3.3k market cap. This fits an operator relaunching until one graduates, which makes the graduated copy the exit vehicle rather than an organic winner.",
+   "Market structure: h1 turnover of 8.5x liquidity, buys roughly equal to sells over the hour (3,089/2,954), and price near its ATH at entry. Heavy two-way churn at the top of a fresh graduation is what distribution by insiders looks like.",
+   "There was no organic narrative: a template 'in development' wallet site, no team, and no web or news mentions. Nothing outside the launch was generating demand to absorb the bundled supply.",
+   "top_entrapment_trader_pct was 10.4%. That is a further GMGN signal of manipulative trader behavior, and the report did not use it."
+  ],
+  "misleading_observations": [
+   "The 2,446 unique buyers and 3,000+ buys in the first hour looked like broad retail interest. With 72 bundlers, 132 fresh wallets and bot-level transaction counts, this number was mostly inflated by bots and bundles. Holder counts also conflicted: RugCheck said 2,477, while GMGN and GeckoTerminal said about 310.",
+   "A top-10 holder share of about 10.7% looked well distributed. Bundlers deliberately spread supply across many wallets, so the top-10 share understated how concentrated control really was.",
+   "LP burned or 100% locked looked protective. It only rules out an LP pull. It does nothing to stop a dump of held supply, which is what apparently happened.",
+   "Buys outnumbered sells about 2:1 over the last 5 minutes and price was pushing toward the ATH. A short-window buy skew at the top is easy to manufacture and was followed by collapse within minutes.",
+   "A DexScreener profile, website and X account looked like project effort. They cost little and did not stop the rapid collapse.",
+   "Measurement caveat: net bracket returns (for example -34% at 6h) were far worse than gross price moves (-6%). This is price impact from a $250 position in a pool of about $2.4k, not later market movement. The post-entry path of a token that was already dead says nothing about the runner question."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "The conclusion (fade, p_runner 18) was right in direction. The available evidence arguably supported a higher p_rug than 50 and a lower p_runner than 18. Four red flags lined up on a coin under 40 minutes old: a creator who had already exited, an early CTO flag, serial same-name relaunches, and 72 bundlers. With nothing outside the launch driving demand, the chance of a fast dump was plausibly well above even odds.",
+   "The report's counterargument leaned on the unique-buyer count and the low top-10 share. It should have discounted both explicitly, given the bundler and fresh-wallet tallies and the conflicting holder counts (about 2,477 vs about 310).",
+   "Process issue, not analysis: the 22-minute gap between T2 and decision time was long compared with how fast a graduation like this dumps. For hyper-turnover tokens under an hour old, the state at decision time can differ completely from the packet. The packet had no mechanism to flag this."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "When a graduated pump.fun token is the only survivor among 5 or more same-name, same-ticker tokens launched in the prior 3 hours (the others dead below about $5k market cap), it is more likely than baseline graduated candidates to fall 50% or more from its T2 price within 30 minutes.",
+    "conditions": "Pump.fun/PumpSwap tokens with pair age under 2 hours at T2. Same-name tokens counted from the packet's same_ticker_or_name_tokens list. Compare against graduated candidates with fewer than 2 same-name tokens.",
+    "market_structure_rationale": "Serial relaunching suggests an operator farming graduation with pre-positioned or bundled supply. The token that graduates is the exit vehicle, and demand comes from bots chasing the graduation rather than from outside buyers."
+   },
+   {
+    "statement": "Tokens under 60 minutes old with at least 50 GMGN bundler wallets (or top_bundler_trader_pct of 15% or more) AND creator_token_status = creator_close show a median T2-to-T_decision+60m return of -50% or worse. A CTO flag on a token under 2 hours old adds further predictive power.",
+    "conditions": "Pair age under 60 minutes, GMGN data available, h1 turnover above 3x liquidity. Measure against candidates of the same age that lack these flags.",
+    "market_structure_rationale": "Supply is held by coordinated wallets and the deployer has already exited, so nobody has an interest in supporting price. Heavy turnover gives those wallets the liquidity to exit fully at once."
+   },
+   {
+    "statement": "For candidates with pair age under 60 minutes and h1 turnover above 5x, the price change between T2 and decision time is large enough to undo the packet. A material share (for example over 25%) will have lost 50% or more before entry. Re-checking price at decision time and invalidating the report when price moved more than 40% would improve measured outcomes.",
+    "conditions": "A pipeline-level test across all candidates. Requires logging price at t_decision alongside T2.",
+    "market_structure_rationale": "Fresh graduations with extreme churn have a price half-life measured in minutes, so evidence collected more than 20 minutes earlier describes a different market."
+   },
+   {
+    "statement": "A large ratio of total_holders in RugCheck to holders in GMGN/GeckoTerminal (for example above 5x), or unique buyers above 5x the GMGN holder count within the first hour, marks activity inflated by bots or dust. It predicts a worse 1-hour return than for tokens with consistent counts.",
+    "conditions": "Tokens under 2 hours old where both holder sources are available.",
+    "market_structure_rationale": "Wash trading and bots can manufacture buyer and holder counts, making demand look broader than it is. Many transient wallets are not real holders with conviction who would absorb selling."
+   }
+  ],
+  "summary": "The report called a fade (p_runner 18, p_rug 50). The token collapsed about 98% (market cap about $106k \u2192 about $2.3k, liquidity $27.8k \u2192 $2.5k) in the roughly 22 minutes between evidence collection and decision time. The +100% bracket was never touched, and the measured post-entry losses mostly reflect price impact in a dead $2.4k pool.\n\nThe call was right, and it rested on the right evidence:\n- 72 bundler wallets holding about 18%, plus 132 fresh wallets\n- the dev had already sold out, with a community-takeover flag on a 36-minute-old coin\n- 10+ dead same-name relaunches earlier that morning, which points to an operator farming graduations\n- 8.5x turnover with buys roughly equal to sells near the ATH\n- no organic narrative\n\nThree things looked reassuring and misled:\n- 2,400+ unique buyers\n- a top-10 holder share of about 11%\n- the burned LP\n\nThey were inflated or irrelevant, because the collapse was a supply dump, not an LP pull.\n\nImprovements:\n- The evidence arguably justified a higher p_rug than 50.\n- The report should have discounted the buyer and holder counts, given the bundler tallies and the conflicting holder counts (about 2,477 vs about 310).\n- The pipeline's 22-minute decision gap is too long for tokens this young and churny.\n\nThe outcome was only partly knowable. The direction and high dump risk were readable from structure at the time. The exact timing and depth were not.\n\nCaveat: I checked that the entry-pair data fits a dump on the same pool, but I could not independently verify that the outcome tracker followed the correct pair. One case proves little."
+ },
+ "ttft_ms": 16766,
+ "type": "result",
+ "duration_ms": 48439,
+ "uuid": "dfb0f3da-d9b1-498d-9a8a-9112d0411ae4",
+ "ttft_stream_ms": 884,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 884,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

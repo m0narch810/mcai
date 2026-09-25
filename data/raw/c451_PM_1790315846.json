@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 48760,
+ "stop_reason": "tool_use",
+ "session_id": "c694a662-7af2-4066-af1a-1d48476b77d8",
+ "total_cost_usd": 0.1624664,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9006,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 4512,
+  "output_tokens_details": {
+   "thinking_tokens": 1542
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9006,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4512,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9006,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9006
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4512,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9006,
+   "webSearchRequests": 0,
+   "costUSD": 0.1624664,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1542,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"Unlocked LP on a pool deployed straight to PumpSwap (created 3s after mint, no pump.fun curve, lp_burn_ratio 0). The deployer controlled roughly $59k of liquidity, which gave them a way to exit. The report treated this as central, and the fade call held: price fell 50% within 54 minutes.\",\"Breadth was lopsided: about 1,949 unique buyers against 53 unique sellers in the first hour. That is weak evidence of real distribution. It points to a buying campaign spread across many wallets, and to later sellers having almost nobody left to sell to. The report read this as coordination, which fits the result.\",\"Buyer arrival was fading: 49 unique buyers in the last 15 minutes against about 1,300 in the 30-60 minute window. Demand was running out while price was still marked up. Price still rose about 68% before entry, so this signal was right about direction but wrong about short-term timing.\",\"The name is a copy of a token on another chain, with no link to the project. Four other Solana 'musebook' copies already existed, and the older, highest-liquidity copy (DSyg..., $142k liquidity) had zero h1 volume. That showed attention moving from one copy to the next and then leaving dead copies behind. This was available at the time.\",\"Holder concentration was heavy: one unlabeled wallet held 22.89%, and GeckoTerminal's top 10 held about 76% (including the AMM). There was a large overhang against a thin float.\",\"Holder breadth was mostly dust, and the report missed it. GeckoTerminal's 'rest' bucket (holders outside the top 40) held only 2.51% of supply spread across about 1,910 wallets. The '1,950 holders' figure was therefore close to meaningless as evidence of real distribution.\"],\"misleading_observations\":[\"GMGN wallet tags (0 bundlers, 0 snipers, 0 fresh wallets, 0 bot/degen share). The report correctly flagged the tension, but these labels plainly did not catch the many-wallet buying pattern. A zero in these fields should not be read as clean.\",\"'About 1,950 holders' and 'buyers outnumber sellers 4 to 1' in the counterargument. Both are counts that are easy to inflate, and the 2.5% 'rest' bucket shows most of those holders held dust.\",\"'The parent narrative is real and large ($20-35M)'. The parent's size did not carry over to a copy with no link to the project. Real narrative strength did not rescue a non-canonical copy.\",\"The 'creator_close' status and creator_balance 0 look reassuring (no dev bag), but they say nothing about who supplied the LP or owns the 22.89% wallet.\",\"The outcome data looks like a rug (exit_liquidity 0 at 360 and 1440 minutes) but contradicts itself: min_liquidity_24h is $60k and liquidity_collapse is false. p_rug=62 can't be counted as confirmed. The confirmed outcome is a 50% stop-out, not a verified liquidity pull.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time argued against the fade. The report's direction was supported. The evidence that should have changed it was evidence that it should have been more confident.\",\"The 2.51% 'rest' bucket across about 1,910 holders (the 'dust holder' point above) should have discounted the holder count further and lowered p_runner below 12.\",\"Price moved about 68% between T2 collection and decision time, so entry was at about $146k market cap, not $88k. Measured from the T2 price, the final exit price was only about 17% lower. Most of the -52% came from buying after that extra run-up. This was not visible to the researcher when writing, but it matters for how much credit the call gets.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Tokens whose GeckoTerminal 'rest' bucket (holders ranked 41 and below) holds under 5% of supply while the holder count exceeds 1,000 will touch -50% within 6h more often, and +100% less often, than tokens with the same holder count and a rest bucket above 10%.\",\"conditions\":\"Solana pair age under 3h, market cap $10k-$300k, GeckoTerminal holder distribution available at T2.\",\"market_structure_rationale\":\"A large count of dust holders is cheap to create. It hides a float that is really held by a few wallets. When those holders sell, the only buyers are a thin pool of real ones.\"},{\"statement\":\"Pools deployed directly to PumpSwap (pool created within 60s of mint, no pump.fun curve migration, lp_burn_ratio 0) will have a higher 6h -50% touch rate than pump.fun-migrated pools of similar market cap and age.\",\"conditions\":\"Pair age under 2h, GMGN migrated_unix == 0 and launchpad empty, RugCheck LP locked at 0%.\",\"market_structure_rationale\":\"Migrated pump.fun pools have burned LP. In a direct deploy the deployer keeps the LP tokens and can pull liquidity or dump into their own pool. That gives the deployer a structural exit that curve launches don't have.\"},{\"statement\":\"When the unique-seller to unique-buyer ratio in the first hour is below 0.05 and unique buyers per 15 minutes have fallen more than 70% from the prior 30-minute rate, forward 1h returns from decision time will be negative in most cases.\",\"conditions\":\"Pair age 30-120 min, h1 price change above +200%, GeckoTerminal unique buyer and seller windows available.\",\"market_structure_rationale\":\"Very few sellers against many buyers suggests many-wallet or campaign buying. Once new-buyer arrival stops, the positions already built up have to be sold into thin demand.\"},{\"statement\":\"Name copies of a token on another chain, where an older, higher-liquidity Solana copy with the same name already shows near-zero h1 volume, will reach +100% less often than first-of-name Solana tokens.\",\"conditions\":\"same_ticker_or_name_tokens contains at least one older copy with liquidity at or above the candidate's and volume_h1 near 0; no canonical link from the project.\",\"market_structure_rationale\":\"Spillover attention rotates to the newest copy and then leaves it. A dead earlier copy shows how long that attention lasts. With no canonical link, nothing anchors demand once the next copy launches.\"},{\"statement\":\"Pipeline check: for fade-rated candidates whose price at decision time is more than 40% above the T2 price, the bracket-stop rate will be higher than for candidates with less drift. Returns should also be reported from the T2 price.\",\"conditions\":\"Any candidate with h1 price change above +200% at T2.\",\"market_structure_rationale\":\"Mechanically chasing a vertical move between research and entry increases the drawdown from any given peak. That mixes timing luck into the scoring of the research.\"}],\"summary\":\"The report's call was fade, with p_runner 12 and p_rug 62, and it held up. Entry was at about $146k market cap. Price never gained more than 3.5%, fell 20% within 17 minutes and 50% within 54 minutes, and the trade stopped out at -52%. The main drivers the report identified were real and available at the time:\\n- the pool was deployed straight to PumpSwap with unlocked LP that the deployer controlled;\\n- the token was a name copy with no link to the project, and earlier copies were already dead;\\n- buying was lopsided (1,949 unique buyers against 53 unique sellers) and new-buyer arrival was fading;\\n- one wallet held 22.89% of supply.\\n\\nThe report missed one strong clue. Holders outside the top 40 held only 2.5% of supply, which shows the holder count was mostly dust wallets. Its counterargument also leaned on counts that are easy to inflate: holders and the buy/sell ratio.\\n\\nTwo things cap how much credit the call gets. First, price rose about 68% between data collection and entry. The -52% loss is mostly entry timing, and measured from the T2 price the exit was only about 17% lower. Second, the rug is not confirmed. The data shows zero exit liquidity at 6h and 24h, but it also reports minimum 24h liquidity of $60k and no liquidity collapse.\\n\\nSo the outcome was knowable in direction but not in timing or size. The reasoning was good, and it could have been more confident.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "Unlocked LP on a pool deployed straight to PumpSwap (created 3s after mint, no pump.fun curve, lp_burn_ratio 0). The deployer controlled roughly $59k of liquidity, which gave them a way to exit. The report treated this as central, and the fade call held: price fell 50% within 54 minutes.",
+   "Breadth was lopsided: about 1,949 unique buyers against 53 unique sellers in the first hour. That is weak evidence of real distribution. It points to a buying campaign spread across many wallets, and to later sellers having almost nobody left to sell to. The report read this as coordination, which fits the result.",
+   "Buyer arrival was fading: 49 unique buyers in the last 15 minutes against about 1,300 in the 30-60 minute window. Demand was running out while price was still marked up. Price still rose about 68% before entry, so this signal was right about direction but wrong about short-term timing.",
+   "The name is a copy of a token on another chain, with no link to the project. Four other Solana 'musebook' copies already existed, and the older, highest-liquidity copy (DSyg..., $142k liquidity) had zero h1 volume. That showed attention moving from one copy to the next and then leaving dead copies behind. This was available at the time.",
+   "Holder concentration was heavy: one unlabeled wallet held 22.89%, and GeckoTerminal's top 10 held about 76% (including the AMM). There was a large overhang against a thin float.",
+   "Holder breadth was mostly dust, and the report missed it. GeckoTerminal's 'rest' bucket (holders outside the top 40) held only 2.51% of supply spread across about 1,910 wallets. The '1,950 holders' figure was therefore close to meaningless as evidence of real distribution."
+  ],
+  "misleading_observations": [
+   "GMGN wallet tags (0 bundlers, 0 snipers, 0 fresh wallets, 0 bot/degen share). The report correctly flagged the tension, but these labels plainly did not catch the many-wallet buying pattern. A zero in these fields should not be read as clean.",
+   "'About 1,950 holders' and 'buyers outnumber sellers 4 to 1' in the counterargument. Both are counts that are easy to inflate, and the 2.5% 'rest' bucket shows most of those holders held dust.",
+   "'The parent narrative is real and large ($20-35M)'. The parent's size did not carry over to a copy with no link to the project. Real narrative strength did not rescue a non-canonical copy.",
+   "The 'creator_close' status and creator_balance 0 look reassuring (no dev bag), but they say nothing about who supplied the LP or owns the 22.89% wallet.",
+   "The outcome data looks like a rug (exit_liquidity 0 at 360 and 1440 minutes) but contradicts itself: min_liquidity_24h is $60k and liquidity_collapse is false. p_rug=62 can't be counted as confirmed. The confirmed outcome is a 50% stop-out, not a verified liquidity pull."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time argued against the fade. The report's direction was supported. The evidence that should have changed it was evidence that it should have been more confident.",
+   "The 2.51% 'rest' bucket across about 1,910 holders (the 'dust holder' point above) should have discounted the holder count further and lowered p_runner below 12.",
+   "Price moved about 68% between T2 collection and decision time, so entry was at about $146k market cap, not $88k. Measured from the T2 price, the final exit price was only about 17% lower. Most of the -52% came from buying after that extra run-up. This was not visible to the researcher when writing, but it matters for how much credit the call gets."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Tokens whose GeckoTerminal 'rest' bucket (holders ranked 41 and below) holds under 5% of supply while the holder count exceeds 1,000 will touch -50% within 6h more often, and +100% less often, than tokens with the same holder count and a rest bucket above 10%.",
+    "conditions": "Solana pair age under 3h, market cap $10k-$300k, GeckoTerminal holder distribution available at T2.",
+    "market_structure_rationale": "A large count of dust holders is cheap to create. It hides a float that is really held by a few wallets. When those holders sell, the only buyers are a thin pool of real ones."
+   },
+   {
+    "statement": "Pools deployed directly to PumpSwap (pool created within 60s of mint, no pump.fun curve migration, lp_burn_ratio 0) will have a higher 6h -50% touch rate than pump.fun-migrated pools of similar market cap and age.",
+    "conditions": "Pair age under 2h, GMGN migrated_unix == 0 and launchpad empty, RugCheck LP locked at 0%.",
+    "market_structure_rationale": "Migrated pump.fun pools have burned LP. In a direct deploy the deployer keeps the LP tokens and can pull liquidity or dump into their own pool. That gives the deployer a structural exit that curve launches don't have."
+   },
+   {
+    "statement": "When the unique-seller to unique-buyer ratio in the first hour is below 0.05 and unique buyers per 15 minutes have fallen more than 70% from the prior 30-minute rate, forward 1h returns from decision time will be negative in most cases.",
+    "conditions": "Pair age 30-120 min, h1 price change above +200%, GeckoTerminal unique buyer and seller windows available.",
+    "market_structure_rationale": "Very few sellers against many buyers suggests many-wallet or campaign buying. Once new-buyer arrival stops, the positions already built up have to be sold into thin demand."
+   },
+   {
+    "statement": "Name copies of a token on another chain, where an older, higher-liquidity Solana copy with the same name already shows near-zero h1 volume, will reach +100% less often than first-of-name Solana tokens.",
+    "conditions": "same_ticker_or_name_tokens contains at least one older copy with liquidity at or above the candidate's and volume_h1 near 0; no canonical link from the project.",
+    "market_structure_rationale": "Spillover attention rotates to the newest copy and then leaves it. A dead earlier copy shows how long that attention lasts. With no canonical link, nothing anchors demand once the next copy launches."
+   },
+   {
+    "statement": "Pipeline check: for fade-rated candidates whose price at decision time is more than 40% above the T2 price, the bracket-stop rate will be higher than for candidates with less drift. Returns should also be reported from the T2 price.",
+    "conditions": "Any candidate with h1 price change above +200% at T2.",
+    "market_structure_rationale": "Mechanically chasing a vertical move between research and entry increases the drawdown from any given peak. That mixes timing luck into the scoring of the research."
+   }
+  ],
+  "summary": "The report's call was fade, with p_runner 12 and p_rug 62, and it held up. Entry was at about $146k market cap. Price never gained more than 3.5%, fell 20% within 17 minutes and 50% within 54 minutes, and the trade stopped out at -52%. The main drivers the report identified were real and available at the time:\n- the pool was deployed straight to PumpSwap with unlocked LP that the deployer controlled;\n- the token was a name copy with no link to the project, and earlier copies were already dead;\n- buying was lopsided (1,949 unique buyers against 53 unique sellers) and new-buyer arrival was fading;\n- one wallet held 22.89% of supply.\n\nThe report missed one strong clue. Holders outside the top 40 held only 2.5% of supply, which shows the holder count was mostly dust wallets. Its counterargument also leaned on counts that are easy to inflate: holders and the buy/sell ratio.\n\nTwo things cap how much credit the call gets. First, price rose about 68% between data collection and entry. The -52% loss is mostly entry timing, and measured from the T2 price the exit was only about 17% lower. Second, the rug is not confirmed. The data shows zero exit liquidity at 6h and 24h, but it also reports minimum 24h liquidity of $60k and no liquidity collapse.\n\nSo the outcome was knowable in direction but not in timing or size. The reasoning was good, and it could have been more confident."
+ },
+ "ttft_ms": 18169,
+ "type": "result",
+ "duration_ms": 48813,
+ "uuid": "d23d7da0-a7f3-4e36-b862-4e255a577d43",
+ "ttft_stream_ms": 761,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 761,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

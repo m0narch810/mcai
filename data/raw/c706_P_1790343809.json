@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 31434,
+ "stop_reason": "tool_use",
+ "session_id": "7b277678-0c04-48d9-ba51-be36693e565e",
+ "total_cost_usd": 0.1234708,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7802,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 3033,
+  "output_tokens_details": {
+   "thinking_tokens": 659
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7802,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3033,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7802,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7802
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3033,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7802,
+   "webSearchRequests": 0,
+   "costUSD": 0.1234708,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 659,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GOCAT (\\\"Go Cat\\\") is a pump.fun coin. Its pool was created on PumpSwap at 13:05 UTC. It was about 35 minutes old when the rule triggered. The pool's liquidity tokens are 100% burned and the mint and freeze authorities are renounced. It rose about 130% in its first hour and was trading at its all-time high when detected, with market cap about $165-170k and liquidity about $36k. Activity was very large for its size: about 4,900 buys against 1,350 sells, 4,127 unique buyers in the hour, and $263k of volume (hourly turnover about 7x liquidity). The average trade was small, about $40. The dev wallet has sold out and holds 0%. GMGN flags a community takeover (CTO). Holdings are extremely spread out: the top 10 wallets hold 2.58% together, each about 0.25-0.27%. There are no smart-money or known-influencer (KOL) wallets and no paid DexScreener boosts. It also has a website, an X account and a Telegram. Ten other tokens use the same GOCAT ticker from the past day, and almost all are dead.\",\"narrative\":{\"description\":\"A generic viral cat meme. The project description is vague ('posted about its viral cat meme... playful internet cat craze'). The ticker keeps getting relaunched over the last ~27 hours, which points to an ongoing 'Go Cat' meme or trend that people keep trying to monetize. This contract is the one that caught the flow.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"More than 4,000 unique buyers in the first hour and a 3.7:1 buy/sell ratio suggest broad retail discovery, probably from the pump.fun front page, trending lists and Telegram call channels, since there is no paid boost. The repeated relaunches of the same ticker suggest the meme has an outside source. I cannot verify any of this without X data.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"This is the only GOCAT with real liquidity and volume right now: $36k liquidity and $263k hourly volume, against at most about $2k hourly volume for any other. It is the one that migrated off the pump.fun curve, and the CTO flag suggests the community has gathered around it.\",\"competing_tokens\":\"Ten same-name or same-ticker tokens appeared in the past ~27h. Most have 0 liquidity. ALAgBy... shows a $269k market cap on only $2.4k liquidity, which is a meaningless figure. 3MqTo... has $12k liquidity and $16k market cap.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Signs of genuine demand: many unique buyers, few bundlers (1.29% of top traders), 0% held by snipers, no dev holdings, no insider networks, and no paid boosts. Signs of manipulation: the top-10 holders are suspiciously uniform at about 0.25% each, and the average trade is about $40. That pattern can come from a micro-buy bot or a spread-out wallet farm pumping the transaction count and the unique-buyer number. The dev sold everything almost immediately, and the CTO flag means the original team walked away.\",\"uncertainty\":\"Without X or Telegram data I cannot tell whether the buyer count is real retail or bot-generated volume. The flat holder distribution could be either.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Burned liquidity rules out a classic liquidity pull, so the realistic 'rug' is a crash from sell pressure.\",\"Detected at the all-time high after a 130% run. Entry is 25 minutes later, most likely into a pullback or distribution.\",\"Doubling from about $165k needs roughly $330k+ market cap on about $36k liquidity, which takes sustained new buying.\",\"The dev has exited and the CTO flag leaves no committed team.\",\"Possible bot-inflated transaction and buyer counts.\",\"Same-ticker clones spread attention.\"]},\"counterargument\":\"This is an unusually clean young coin. It has thousands of real-looking buyers, no concentrated holders, burned liquidity, no bundle or sniper overhang, and it is the clear winner among the GOCAT copies. Coins like this sometimes run from about $150k to $500k+ within hours, once they reach pump.fun and GMGN trending and KOLs pile in. Momentum at detection was still accelerating: +21% in the last 5 minutes, with the 5-minute volume rate matching the hourly rate.\",\"unknowns\":[\"Whether the 'Go Cat' meme exists off-chain (X or TikTok virality)\",\"Whether the unique buyers are real people or a bot farm\",\"The price path in the 25 minutes before entry\",\"Whether the CTO group is active or promoting\",\"Whether the KOL or call-channel wave is still ahead or already spent\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. Judged only from the evidence packet.\"},\"thesis\":\"GOCAT is the most active of about ten GOCAT copies, with a clean structure (burned liquidity, a very spread-out holder base, no bundlers or snipers). But it was detected at its all-time high after a +130% first hour, the dev has left, and the unusually uniform small holdings hint at bot-driven activity. Entering 25 minutes later probably means buying after the first wave, and it needs to reach about $330k+ to hit the take-profit. The chance of doubling is real but below break-even. Death is more likely to come through selling than a liquidity pull.\",\"continuation_view\":\"fade\",\"p_runner\":22,\"p_rug\":35,\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GOCAT (\"Go Cat\") is a pump.fun coin. Its pool was created on PumpSwap at 13:05 UTC. It was about 35 minutes old when the rule triggered. The pool's liquidity tokens are 100% burned and the mint and freeze authorities are renounced. It rose about 130% in its first hour and was trading at its all-time high when detected, with market cap about $165-170k and liquidity about $36k. Activity was very large for its size: about 4,900 buys against 1,350 sells, 4,127 unique buyers in the hour, and $263k of volume (hourly turnover about 7x liquidity). The average trade was small, about $40. The dev wallet has sold out and holds 0%. GMGN flags a community takeover (CTO). Holdings are extremely spread out: the top 10 wallets hold 2.58% together, each about 0.25-0.27%. There are no smart-money or known-influencer (KOL) wallets and no paid DexScreener boosts. It also has a website, an X account and a Telegram. Ten other tokens use the same GOCAT ticker from the past day, and almost all are dead.",
+  "narrative": {
+   "description": "A generic viral cat meme. The project description is vague ('posted about its viral cat meme... playful internet cat craze'). The ticker keeps getting relaunched over the last ~27 hours, which points to an ongoing 'Go Cat' meme or trend that people keep trying to monetize. This contract is the one that caught the flow.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "More than 4,000 unique buyers in the first hour and a 3.7:1 buy/sell ratio suggest broad retail discovery, probably from the pump.fun front page, trending lists and Telegram call channels, since there is no paid boost. The repeated relaunches of the same ticker suggest the meme has an outside source. I cannot verify any of this without X data."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "This is the only GOCAT with real liquidity and volume right now: $36k liquidity and $263k hourly volume, against at most about $2k hourly volume for any other. It is the one that migrated off the pump.fun curve, and the CTO flag suggests the community has gathered around it.",
+   "competing_tokens": "Ten same-name or same-ticker tokens appeared in the past ~27h. Most have 0 liquidity. ALAgBy... shows a $269k market cap on only $2.4k liquidity, which is a meaningless figure. 3MqTo... has $12k liquidity and $16k market cap.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Signs of genuine demand: many unique buyers, few bundlers (1.29% of top traders), 0% held by snipers, no dev holdings, no insider networks, and no paid boosts. Signs of manipulation: the top-10 holders are suspiciously uniform at about 0.25% each, and the average trade is about $40. That pattern can come from a micro-buy bot or a spread-out wallet farm pumping the transaction count and the unique-buyer number. The dev sold everything almost immediately, and the CTO flag means the original team walked away.",
+   "uncertainty": "Without X or Telegram data I cannot tell whether the buyer count is real retail or bot-generated volume. The flat holder distribution could be either."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Burned liquidity rules out a classic liquidity pull, so the realistic 'rug' is a crash from sell pressure.",
+    "Detected at the all-time high after a 130% run. Entry is 25 minutes later, most likely into a pullback or distribution.",
+    "Doubling from about $165k needs roughly $330k+ market cap on about $36k liquidity, which takes sustained new buying.",
+    "The dev has exited and the CTO flag leaves no committed team.",
+    "Possible bot-inflated transaction and buyer counts.",
+    "Same-ticker clones spread attention."
+   ]
+  },
+  "counterargument": "This is an unusually clean young coin. It has thousands of real-looking buyers, no concentrated holders, burned liquidity, no bundle or sniper overhang, and it is the clear winner among the GOCAT copies. Coins like this sometimes run from about $150k to $500k+ within hours, once they reach pump.fun and GMGN trending and KOLs pile in. Momentum at detection was still accelerating: +21% in the last 5 minutes, with the 5-minute volume rate matching the hourly rate.",
+  "unknowns": [
+   "Whether the 'Go Cat' meme exists off-chain (X or TikTok virality)",
+   "Whether the unique buyers are real people or a bot farm",
+   "The price path in the 25 minutes before entry",
+   "Whether the CTO group is active or promoting",
+   "Whether the KOL or call-channel wave is still ahead or already spent"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. Judged only from the evidence packet."
+  },
+  "thesis": "GOCAT is the most active of about ten GOCAT copies, with a clean structure (burned liquidity, a very spread-out holder base, no bundlers or snipers). But it was detected at its all-time high after a +130% first hour, the dev has left, and the unusually uniform small holdings hint at bot-driven activity. Entering 25 minutes later probably means buying after the first wave, and it needs to reach about $330k+ to hit the take-profit. The chance of doubling is real but below break-even. Death is more likely to come through selling than a liquidity pull.",
+  "continuation_view": "fade",
+  "p_runner": 22,
+  "p_rug": 35,
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8502,
+ "type": "result",
+ "duration_ms": 31477,
+ "uuid": "edc5957f-dd01-4c9f-85c6-186980326cf1",
+ "ttft_stream_ms": 864,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 864,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

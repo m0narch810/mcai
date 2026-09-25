@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 57179,
+ "stop_reason": "tool_use",
+ "session_id": "1e6bdb96-b1d1-4a78-b163-5d1a67c16eae",
+ "total_cost_usd": 0.25314,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 12386,
+  "cache_read_input_tokens": 39490,
+  "output_tokens": 2808,
+  "output_tokens_details": {
+   "thinking_tokens": 235
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12386,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2111,
+    "cache_read_input_tokens": 14587,
+    "cache_creation_input_tokens": 375,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 375
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 2808,
+   "cacheReadInputTokens": 39490,
+   "cacheCreationInputTokens": 12386,
+   "webSearchRequests": 0,
+   "costUSD": 0.16317800000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 235,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42247,
+   "outputTokens": 1543,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.089962,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"ONCE (Oncepay) is a pump.fun token about 45 minutes old, still on the bonding curve at about $12k market cap. It is up about 240% in 1 hour on about $28k volume from 216 unique buyers, and is sitting near its all-time high (~$12.7k). The project pitches a utility idea: a live dashboard that reads pump.fun's \\\"fee sharing config can only be updated once\\\" rule and routes a coin's creator fees to an X handle. The website is live and shows on-chain scan figures. Beyond the project's own site and X handle, I found no outside discussion anywhere.\",\"narrative\":{\"description\":\"A dev-tool/utility story about pump.fun creator-fee assignment: showing which mints have already spent their one-time fee config, and assigning fees to X handles. It is niche, technically literate and insider-focused. It is not a meme or news event.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Nothing shows it spreading outside the pump.fun trading flow. Volume looks like normal new-coin curve trading plus bundled buys. Searches found no posts, news or community mentions.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The project site oncepay.fun names this exact contract as $ONCE, and the packet lists no same-name or same-ticker tokens.\",\"competing_tokens\":\"None found\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"GMGN tags 91 wallets as bundlers, and top bundler traders account for 32%. 45 fresh wallets (23% rate). Creator status is 'creator_close', so the dev has exited, and the creator holds 0%. The coin is flagged as a community takeover. Only 2 smart wallets, no KOL wallets, no paid boosts. The dev wallet was funded from MEXC, and this is its first launch. X profile inaccessible (403). Web searches for the contract, the name and the handle found nothing.\",\"uncertainty\":\"I could not see X posts, so real organic X attention may exist without me finding it. The high bundler count could be how the launch was set up rather than a sign of coordinated dumping.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Very small bonding-curve depth (~58 virtual SOL), so price is very sensitive to moves both ways\",\"Heavy bundler presence (91 wallets, top bundler traders 32%) is supply that could be sold into the curve\",\"Dev has already exited (creator_close), and the coin is marked as a community takeover\",\"3.75% of supply sits in a Streamflow vault\",\"Only 55-174 holders, depending on the data source\"]},\"counterargument\":\"At $12k, a double only needs about $24k market cap, which is a small absolute inflow on the curve. The site is unusually polished and technical, which could attract builder types on crypto X or a pump.fun-ecosystem retweet. Buys are running ahead of sells (m5 43/24), the price is at its all-time high, and a creator-fee-routing tool is a live topic in the pump.fun community. Momentum toward graduation could easily carry it through 2x.\",\"unknowns\":[\"The X account's age, follower count and posts\",\"Whether the bundler wallets are still holding or already selling\",\"Who built the site\",\"Whether any pump.fun or ecosystem figure has engaged with it\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"searched_nothing_found\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Contract-address search returned only unrelated results. site:x.com search returned unrelated OnePay accounts. The X profile fetch returned 403. The site is live and names this contract. DexScreener API data was confirmed live.\"},\"thesis\":\"This is a real-looking but niche utility narrative with no outside attention found. The coin is dominated by bundler wallets, and the dev has already exited. The tiny market cap makes a 2x mechanically possible, but the most likely path is a fade as bundled supply is sold into the curve. Both outcomes carry substantial probability; I lean fade.\",\"continuation_view\":\"fade\",\"p_runner\":20,\"p_rug\":45,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://oncepay.fun/\",\"what\":\"Project site: a live fee-config scanner that names $ONCE and this contract\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/CtfJwtgz664X8PhMJg2ZbKJRNBYiR5kG6EKB9UQepump\",\"what\":\"Live market cap ~$11.8k, m5 +18%, h1 +242%\"},{\"url\":\"https://x.com/oncepay_\",\"what\":\"Project X account (403, inaccessible)\"}]}",
+ "structured_output": {
+  "what_is_happening": "ONCE (Oncepay) is a pump.fun token about 45 minutes old, still on the bonding curve at about $12k market cap. It is up about 240% in 1 hour on about $28k volume from 216 unique buyers, and is sitting near its all-time high (~$12.7k). The project pitches a utility idea: a live dashboard that reads pump.fun's \"fee sharing config can only be updated once\" rule and routes a coin's creator fees to an X handle. The website is live and shows on-chain scan figures. Beyond the project's own site and X handle, I found no outside discussion anywhere.",
+  "narrative": {
+   "description": "A dev-tool/utility story about pump.fun creator-fee assignment: showing which mints have already spent their one-time fee config, and assigning fees to X handles. It is niche, technically literate and insider-focused. It is not a meme or news event.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Nothing shows it spreading outside the pump.fun trading flow. Volume looks like normal new-coin curve trading plus bundled buys. Searches found no posts, news or community mentions."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The project site oncepay.fun names this exact contract as $ONCE, and the packet lists no same-name or same-ticker tokens.",
+   "competing_tokens": "None found",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "GMGN tags 91 wallets as bundlers, and top bundler traders account for 32%. 45 fresh wallets (23% rate). Creator status is 'creator_close', so the dev has exited, and the creator holds 0%. The coin is flagged as a community takeover. Only 2 smart wallets, no KOL wallets, no paid boosts. The dev wallet was funded from MEXC, and this is its first launch. X profile inaccessible (403). Web searches for the contract, the name and the handle found nothing.",
+   "uncertainty": "I could not see X posts, so real organic X attention may exist without me finding it. The high bundler count could be how the launch was set up rather than a sign of coordinated dumping."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Very small bonding-curve depth (~58 virtual SOL), so price is very sensitive to moves both ways",
+    "Heavy bundler presence (91 wallets, top bundler traders 32%) is supply that could be sold into the curve",
+    "Dev has already exited (creator_close), and the coin is marked as a community takeover",
+    "3.75% of supply sits in a Streamflow vault",
+    "Only 55-174 holders, depending on the data source"
+   ]
+  },
+  "counterargument": "At $12k, a double only needs about $24k market cap, which is a small absolute inflow on the curve. The site is unusually polished and technical, which could attract builder types on crypto X or a pump.fun-ecosystem retweet. Buys are running ahead of sells (m5 43/24), the price is at its all-time high, and a creator-fee-routing tool is a live topic in the pump.fun community. Momentum toward graduation could easily carry it through 2x.",
+  "unknowns": [
+   "The X account's age, follower count and posts",
+   "Whether the bundler wallets are still holding or already selling",
+   "Who built the site",
+   "Whether any pump.fun or ecosystem figure has engaged with it"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "searched_nothing_found",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Contract-address search returned only unrelated results. site:x.com search returned unrelated OnePay accounts. The X profile fetch returned 403. The site is live and names this contract. DexScreener API data was confirmed live."
+  },
+  "thesis": "This is a real-looking but niche utility narrative with no outside attention found. The coin is dominated by bundler wallets, and the dev has already exited. The tiny market cap makes a 2x mechanically possible, but the most likely path is a fade as bundled supply is sold into the curve. Both outcomes carry substantial probability; I lean fade.",
+  "continuation_view": "fade",
+  "p_runner": 20,
+  "p_rug": 45,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://oncepay.fun/",
+    "what": "Project site: a live fee-config scanner that names $ONCE and this contract"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/CtfJwtgz664X8PhMJg2ZbKJRNBYiR5kG6EKB9UQepump",
+    "what": "Live market cap ~$11.8k, m5 +18%, h1 +242%"
+   },
+   {
+    "url": "https://x.com/oncepay_",
+    "what": "Project X account (403, inaccessible)"
+   }
+  ]
+ },
+ "ttft_ms": 1694,
+ "type": "result",
+ "duration_ms": 45543,
+ "uuid": "401b2e77-96de-4c36-baca-2d2ce930300d",
+ "ttft_stream_ms": 1423,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 1423,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

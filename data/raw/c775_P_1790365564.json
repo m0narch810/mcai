@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 22784,
+ "stop_reason": "tool_use",
+ "session_id": "8e1b4852-0b15-4051-9b01-4e851bf96c65",
+ "total_cost_usd": 0.10502039999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7196,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2351,
+  "output_tokens_details": {
+   "thinking_tokens": 372
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7196,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2351,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7196,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7196
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2351,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7196,
+   "webSearchRequests": 0,
+   "costUSD": 0.10502039999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 372,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"KBR WORLD\\\" (KBR) is about 11\u201312 minutes old. It was deployed straight onto a PumpSwap pool, not through the pump.fun curve, and has no launchpad. Its market cap is about $21k and it has about $30k of liquidity, and 100% of the LP is unlocked. In roughly 12 minutes it traded about $360k with price up about 110%. GeckoTerminal counts 1,554 unique buyers but only 61 unique sellers. At least three other tokens with the same name exist. One of them is a pump.fun-address coin (HFz...pump) created about 5 minutes before this pair, with a similar market cap and $247k of hourly volume. Another non-pump coin (Bny...) was created 4 seconds after this one and has $600k of hourly volume. This looks like a cluster of copies racing over a single meme or tweet (the linked X status from 'kubrenrunit').\",\"narrative\":{\"description\":\"Some 'KBR WORLD' meme tied to one X post (kubrenrunit status). There is no website, no DexScreener profile and no description. The story is unknown and probably a short-lived tweet trend.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Several same-name tokens launched within minutes of each other, so the cause is probably one viral post or trend. Deployers are copying the name quickly, which spreads the demand across the copies.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The name and ticker match exactly, and it has decent liquidity and volume. But it is not the first launch, and it uses a non-pump.fun direct deploy with unlocked LP, which is a common setup for a copy built to be rugged.\",\"competing_tokens\":\"HFzBj1...pump (pump.fun address, created about 5 min earlier, $24.5k mcap, $247k h1 volume); BnyPFN... (created 4 s later, $602k h1 volume, $15k mcap); HBoaay...pump (dead).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Many buyers (1,554) and a 2.6:1 buy/sell ratio, but GMGN flags 46 bundler wallets holding about 16% of the top traders' share. Only 61 unique sellers against 1,554 buyers is unusual and fits bot or bundled buying. Hourly turnover of about 11x market cap. No smart-money or KOL wallets, and only 84 GMGN page visits. Liquidity above market cap (LP seeded by the creator) and 100% unlocked LP point to a creator who controls the pool.\",\"uncertainty\":\"Some of the buyer count may be real retail chasing the trend, and I cannot see the X post or its reach.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and there are few LP providers, so the creator can pull liquidity at any time\",\"Direct PumpSwap deploy, not through the pump.fun curve, which is a typical copy-and-rug pattern\",\"Creator has launched 2 tokens and closed out his position; creator balance is 0\",\"46 bundler wallets\",\"Same-name competitors split the demand, and an earlier pump.fun version exists\",\"Very skewed seller count, possibly bots\"]},\"counterargument\":\"Top-10 holders own only 14%, mint and freeze authority are renounced, there is no tax and no honeypot, and there are 1,600+ holders after 12 minutes with strong buy pressure. If the underlying post goes viral and this copy ends up with the most liquidity (at $30k it currently has more than the pump.fun version), it could double from about $21k market cap to $42k+ easily. The creator's best earlier token reached about $450k at its peak.\",\"unknowns\":[\"What the kubrenrunit X post is and how far it has spread\",\"Whether the creator will pull the unlocked LP\",\"Which KBR copy the market will treat as the real one\",\"Why there are so few unique sellers\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; the judgment uses only the evidence packet.\"},\"thesis\":\"This is a non-canonical copy deployed directly with unlocked LP, a creator who has sold out, and bundlers. It is racing at least two other KBR WORLD tokens. The volume is strong, but the structure favours a liquidity pull or fade over a clean 2x. Rank it below average.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":55,\"survival_score\":22,\"attention_score\":62,\"manipulation_risk\":72,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"KBR WORLD\" (KBR) is about 11\u201312 minutes old. It was deployed straight onto a PumpSwap pool, not through the pump.fun curve, and has no launchpad. Its market cap is about $21k and it has about $30k of liquidity, and 100% of the LP is unlocked. In roughly 12 minutes it traded about $360k with price up about 110%. GeckoTerminal counts 1,554 unique buyers but only 61 unique sellers. At least three other tokens with the same name exist. One of them is a pump.fun-address coin (HFz...pump) created about 5 minutes before this pair, with a similar market cap and $247k of hourly volume. Another non-pump coin (Bny...) was created 4 seconds after this one and has $600k of hourly volume. This looks like a cluster of copies racing over a single meme or tweet (the linked X status from 'kubrenrunit').",
+  "narrative": {
+   "description": "Some 'KBR WORLD' meme tied to one X post (kubrenrunit status). There is no website, no DexScreener profile and no description. The story is unknown and probably a short-lived tweet trend.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Several same-name tokens launched within minutes of each other, so the cause is probably one viral post or trend. Deployers are copying the name quickly, which spreads the demand across the copies."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The name and ticker match exactly, and it has decent liquidity and volume. But it is not the first launch, and it uses a non-pump.fun direct deploy with unlocked LP, which is a common setup for a copy built to be rugged.",
+   "competing_tokens": "HFzBj1...pump (pump.fun address, created about 5 min earlier, $24.5k mcap, $247k h1 volume); BnyPFN... (created 4 s later, $602k h1 volume, $15k mcap); HBoaay...pump (dead).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Many buyers (1,554) and a 2.6:1 buy/sell ratio, but GMGN flags 46 bundler wallets holding about 16% of the top traders' share. Only 61 unique sellers against 1,554 buyers is unusual and fits bot or bundled buying. Hourly turnover of about 11x market cap. No smart-money or KOL wallets, and only 84 GMGN page visits. Liquidity above market cap (LP seeded by the creator) and 100% unlocked LP point to a creator who controls the pool.",
+   "uncertainty": "Some of the buyer count may be real retail chasing the trend, and I cannot see the X post or its reach."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and there are few LP providers, so the creator can pull liquidity at any time",
+    "Direct PumpSwap deploy, not through the pump.fun curve, which is a typical copy-and-rug pattern",
+    "Creator has launched 2 tokens and closed out his position; creator balance is 0",
+    "46 bundler wallets",
+    "Same-name competitors split the demand, and an earlier pump.fun version exists",
+    "Very skewed seller count, possibly bots"
+   ]
+  },
+  "counterargument": "Top-10 holders own only 14%, mint and freeze authority are renounced, there is no tax and no honeypot, and there are 1,600+ holders after 12 minutes with strong buy pressure. If the underlying post goes viral and this copy ends up with the most liquidity (at $30k it currently has more than the pump.fun version), it could double from about $21k market cap to $42k+ easily. The creator's best earlier token reached about $450k at its peak.",
+  "unknowns": [
+   "What the kubrenrunit X post is and how far it has spread",
+   "Whether the creator will pull the unlocked LP",
+   "Which KBR copy the market will treat as the real one",
+   "Why there are so few unique sellers"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; the judgment uses only the evidence packet."
+  },
+  "thesis": "This is a non-canonical copy deployed directly with unlocked LP, a creator who has sold out, and bundlers. It is racing at least two other KBR WORLD tokens. The volume is strong, but the structure favours a liquidity pull or fade over a clean 2x. Rank it below average.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 55,
+  "survival_score": 22,
+  "attention_score": 62,
+  "manipulation_risk": 72,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4709,
+ "type": "result",
+ "duration_ms": 22827,
+ "uuid": "a64ab082-f46e-41d9-967b-144dde448122",
+ "ttft_stream_ms": 643,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 644,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 57368,
+ "stop_reason": "tool_use",
+ "session_id": "9f4af8c6-9176-4d29-8fc7-08dc56109648",
+ "total_cost_usd": 0.2625308,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 12617,
+  "cache_read_input_tokens": 38294,
+  "output_tokens": 3151,
+  "output_tokens_details": {
+   "thinking_tokens": 363
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12617,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2293,
+    "cache_read_input_tokens": 13723,
+    "cache_creation_input_tokens": 1470,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1470
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3151,
+   "cacheReadInputTokens": 38294,
+   "cacheCreationInputTokens": 12617,
+   "webSearchRequests": 0,
+   "costUSD": 0.1716468,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 363,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42934,
+   "outputTokens": 1590,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09088399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Shurikane is a pump.fun coin that launched at 02:19:52Z and migrated to PumpSwap about 4 minutes later (02:23:35Z). That speed points to a coordinated or bundled launch; GMGN tags 60 bundler wallets and 16 snipers. It is pitched as a \\\"utility\\\" token for a Solana cloud wallet (\\\"Precision in custody\\\"). The website says the wallet is still in development, shows only a prototype with sample data, lists no team and promises a future community airdrop. It has 30 paid DexScreener boosts. Within about 40 minutes it went up ~110\u2013124% on roughly $257k of volume, with 9.2k buys to 3.85k sells from about 2.6k unique buyers. That many small buys fits volume and boost-driven trading. At T2 the 15-minute buys and sells were about equal (422/426) and the 5-minute window had slightly more sells. FDV was about $134k, against an all-time high of about $158k.\",\"narrative\":{\"description\":\"A generic 'Solana cloud wallet / custody' utility pitch with a vaporware prototype site and an airdrop promise. There is no cultural or news event behind it.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Attention seems to come from paid DexScreener boosts (30), the fast bundled bonding-curve fill and pump.fun trending flow, not from organic discussion. I found no posts from third parties.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"The project website and X handle are linked from the token profile, so this is the project's own token. It has no same-name competitors. Search results only turn up the unrelated Shuriken trading bot.\",\"competing_tokens\":\"None in the packet. Shuriken (a Telegram trading bot) is a different project with a similar name.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"30 paid DexScreener boosts. 60 bundler wallets and 16 snipers. The curve filled in about 4 minutes. A 'community takeover' flag appears on a coin under an hour old. The creator was funded from MEXC and has closed their position. The website is a fresh, generic prototype with no team. Web searches for the contract, the name and the X handle found no third-party posts.\",\"uncertainty\":\"X could not be accessed (402), and search engines index X poorly. The organic share of the ~2.6k buyers is unknown.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The high-turnover volume looks bot-driven, and buy/sell flow was even or leaning to sells at T2\",\"Price was about 15% below its high after a +110% hour, so the latest buyers are exposed\",\"The $31k pool is thin compared with trading volume\",\"Bundler clusters could exit\",\"LP is burned, so a literal liquidity pull is unlikely; the risk is death by dumping\"]},\"counterargument\":\"Holder distribution is broad (top 10 own about 12%, the dev holds nothing, LP is burned, no insider flags). There are 2.6k unique buyers, and it has enough boost spend to stay visible. A 'utility wallet' story can pick up a second wave from pump.fun trending. Doubling only takes it to about $270k FDV, which is not much of an ask for a coin moving $250k an hour.\",\"unknowns\":[\"Contents and age of the X account\",\"Whether any KOL or Telegram calls were made privately\",\"Whether the boost spend continues\",\"What the bundlers are doing\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X profile fetch returned 402, and the DexScreener fetch returned 403. GeckoTerminal API data was used for the market state. Searches for the contract, name and site: variants returned nothing relevant.\"},\"thesis\":\"This is a boosted, bundled launch with a vaporware wallet pitch and no organic narrative I could find. Its momentum is already stalling below the high. The structure is clean enough that a sudden rug is less likely than a slow bleed, but doubling from about $134k to $270k needs fresh organic demand, and I found no sign of it.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":45,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://shurikane.xyz/\",\"what\":\"Project site: cloud wallet in development, prototype only, no team, airdrop promise\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/CDZMG8hza43irMPes1mXnKdCByt13hdcHZMbztXaRP9j\",\"what\":\"Pool state: FDV about $134k, reserve about $30.8k, m15 buys and sells even\"},{\"url\":\"https://docs.shuriken.trade\",\"what\":\"Unrelated Shuriken trading bot (name confusion only)\"}]}",
+ "structured_output": {
+  "what_is_happening": "Shurikane is a pump.fun coin that launched at 02:19:52Z and migrated to PumpSwap about 4 minutes later (02:23:35Z). That speed points to a coordinated or bundled launch; GMGN tags 60 bundler wallets and 16 snipers. It is pitched as a \"utility\" token for a Solana cloud wallet (\"Precision in custody\"). The website says the wallet is still in development, shows only a prototype with sample data, lists no team and promises a future community airdrop. It has 30 paid DexScreener boosts. Within about 40 minutes it went up ~110\u2013124% on roughly $257k of volume, with 9.2k buys to 3.85k sells from about 2.6k unique buyers. That many small buys fits volume and boost-driven trading. At T2 the 15-minute buys and sells were about equal (422/426) and the 5-minute window had slightly more sells. FDV was about $134k, against an all-time high of about $158k.",
+  "narrative": {
+   "description": "A generic 'Solana cloud wallet / custody' utility pitch with a vaporware prototype site and an airdrop promise. There is no cultural or news event behind it.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Attention seems to come from paid DexScreener boosts (30), the fast bundled bonding-curve fill and pump.fun trending flow, not from organic discussion. I found no posts from third parties."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "The project website and X handle are linked from the token profile, so this is the project's own token. It has no same-name competitors. Search results only turn up the unrelated Shuriken trading bot.",
+   "competing_tokens": "None in the packet. Shuriken (a Telegram trading bot) is a different project with a similar name.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "30 paid DexScreener boosts. 60 bundler wallets and 16 snipers. The curve filled in about 4 minutes. A 'community takeover' flag appears on a coin under an hour old. The creator was funded from MEXC and has closed their position. The website is a fresh, generic prototype with no team. Web searches for the contract, the name and the X handle found no third-party posts.",
+   "uncertainty": "X could not be accessed (402), and search engines index X poorly. The organic share of the ~2.6k buyers is unknown."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The high-turnover volume looks bot-driven, and buy/sell flow was even or leaning to sells at T2",
+    "Price was about 15% below its high after a +110% hour, so the latest buyers are exposed",
+    "The $31k pool is thin compared with trading volume",
+    "Bundler clusters could exit",
+    "LP is burned, so a literal liquidity pull is unlikely; the risk is death by dumping"
+   ]
+  },
+  "counterargument": "Holder distribution is broad (top 10 own about 12%, the dev holds nothing, LP is burned, no insider flags). There are 2.6k unique buyers, and it has enough boost spend to stay visible. A 'utility wallet' story can pick up a second wave from pump.fun trending. Doubling only takes it to about $270k FDV, which is not much of an ask for a coin moving $250k an hour.",
+  "unknowns": [
+   "Contents and age of the X account",
+   "Whether any KOL or Telegram calls were made privately",
+   "Whether the boost spend continues",
+   "What the bundlers are doing"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X profile fetch returned 402, and the DexScreener fetch returned 403. GeckoTerminal API data was used for the market state. Searches for the contract, name and site: variants returned nothing relevant."
+  },
+  "thesis": "This is a boosted, bundled launch with a vaporware wallet pitch and no organic narrative I could find. Its momentum is already stalling below the high. The structure is clean enough that a sudden rug is less likely than a slow bleed, but doubling from about $134k to $270k needs fresh organic demand, and I found no sign of it.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 45,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://shurikane.xyz/",
+    "what": "Project site: cloud wallet in development, prototype only, no team, airdrop promise"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/CDZMG8hza43irMPes1mXnKdCByt13hdcHZMbztXaRP9j",
+    "what": "Pool state: FDV about $134k, reserve about $30.8k, m15 buys and sells even"
+   },
+   {
+    "url": "https://docs.shuriken.trade",
+    "what": "Unrelated Shuriken trading bot (name confusion only)"
+   }
+  ]
+ },
+ "ttft_ms": 1482,
+ "type": "result",
+ "duration_ms": 44517,
+ "uuid": "b8521c34-ee54-4b85-94a6-21b63d93b4e8",
+ "ttft_stream_ms": 843,
+ "time_to_request_ms": 68,
+ "first_content_frame_ms": 843,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

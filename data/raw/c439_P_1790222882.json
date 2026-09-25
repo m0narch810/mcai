@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 22399,
+ "stop_reason": "tool_use",
+ "session_id": "5919fd97-22a8-4513-9678-05259e6d1c50",
+ "total_cost_usd": 0.1098868,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7944,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2297,
+  "output_tokens_details": {
+   "thinking_tokens": 369
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7944,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2297,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7944,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7944
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2297,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7944,
+   "webSearchRequests": 0,
+   "costUSD": 0.1098868,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 369,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is one of at least 10 \\\"Christopher Rufo\\\" / $Rufo tokens launched within about 45 minutes, so it is a name-trend spam cluster. This one launched on a Meteora virtual curve and migrated in the same second it was created. It spiked to an all-time high of about $400k market cap, then collapsed. At detection it was about $100k, down 57% in the last 5 minutes. Two same-name competitors are much larger: zNNX\u2026 at about $1.4M with $4.5M of hourly volume, and FBcU\u2026 at about $1.0M with $2.6M. Buying has dried up. GeckoTerminal counted 723 unique buyers in the last 30 minutes but only 76 in the last 15 and 59 in the last 5. Over the hour there were about 2,098 unique buyers against only 99 unique sellers, a pattern that suggests a few wallets are dumping into a crowd of retail buyers.\",\"narrative\":{\"description\":\"A token named after Christopher Rufo, a political activist, apparently tied to a news moment ('California's Shadow Welfare' appears as one competitor's name). This is typical flash-trend spam: many copycat tokens launched at once, with attention split across them.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A topical news event about a political figure set off a burst of copycat launches. Attention is going to the leading contracts, not to this one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing in the packet ties this token to the story beyond its name. It was not first: several same-name pairs predate it by roughly 30 minutes. It is also not the volume leader.\",\"competing_tokens\":\"zNNXka\u2026 ($1.4M market cap, $96k liquidity, $4.46M hourly volume) and FBcUtN\u2026 ($1.0M market cap, $2.6M hourly volume) clearly lead. 6TcFqn\u2026 and 3r58J1\u2026 are similar-sized also-rans, and several other copies are already dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 51 bundler wallets. The project's X account was previously named 'Pumpliquititty' and is now 'Bootstrapdev1', so it is a recycled launch account. The website is a usepaid.app link. The buyer/seller split is extreme: 2,098 unique buyers against 99 unique sellers, meaning a few sellers dumped into many buyers. The creator has already closed out (creator_close). The token spiked to about $400k and has already lost about 75% from that peak.\",\"uncertainty\":\"The 80% top holder is probably the pool or curve vault rather than a real holder, because GMGN shows the top 10 holding only 3.5%. Without X data, how organic the Rufo news attention is cannot be checked.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One market has 0% of its LP locked, and RugCheck flags a large amount of unlocked LP\",\"Two much larger same-name competitors are soaking up the flow\",\"It is already down about 75% from its peak, with buying collapsing sharply\",\"51 bundler wallets and a creator who has already closed out\",\"The X account is recycled and the website is a paid link\"]},\"counterargument\":\"Political news trends can bring several waves of attention. Roughly $1.3M of volume on only $30k of liquidity shows real retail interest. Liquidity is still intact, and the security flags are clean: mint and freeze authority renounced, lp_burn_ratio of 1.0 on GMGN. After a 57% drop, a dead-cat bounce back toward the $200k\u2013$400k area is possible if the cluster's leaders keep pumping and traders rotate into cheaper copies. A 2x from the $100k entry would only need a return to half of its peak.\",\"unknowns\":[\"Whether the Rufo news story is still developing\",\"Whether the unlabeled 80% holder is the pool vault or a real wallet\",\"Price and entry at the decision time, 25 minutes after detection\",\"Whether the unlocked LP belongs to the deployer\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this report uses only the evidence packet.\"},\"thesis\":\"This is a late, non-canonical copy in a spam cluster of same-name tokens. It has already pumped and dumped, from a $400k peak to $100k. Buyers are fading, and it shows bundlers, a recycled X account and unlocked LP. It is far more likely to bleed out or be abandoned than to double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":60,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is one of at least 10 \"Christopher Rufo\" / $Rufo tokens launched within about 45 minutes, so it is a name-trend spam cluster. This one launched on a Meteora virtual curve and migrated in the same second it was created. It spiked to an all-time high of about $400k market cap, then collapsed. At detection it was about $100k, down 57% in the last 5 minutes. Two same-name competitors are much larger: zNNX\u2026 at about $1.4M with $4.5M of hourly volume, and FBcU\u2026 at about $1.0M with $2.6M. Buying has dried up. GeckoTerminal counted 723 unique buyers in the last 30 minutes but only 76 in the last 15 and 59 in the last 5. Over the hour there were about 2,098 unique buyers against only 99 unique sellers, a pattern that suggests a few wallets are dumping into a crowd of retail buyers.",
+  "narrative": {
+   "description": "A token named after Christopher Rufo, a political activist, apparently tied to a news moment ('California's Shadow Welfare' appears as one competitor's name). This is typical flash-trend spam: many copycat tokens launched at once, with attention split across them.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A topical news event about a political figure set off a burst of copycat launches. Attention is going to the leading contracts, not to this one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing in the packet ties this token to the story beyond its name. It was not first: several same-name pairs predate it by roughly 30 minutes. It is also not the volume leader.",
+   "competing_tokens": "zNNXka\u2026 ($1.4M market cap, $96k liquidity, $4.46M hourly volume) and FBcUtN\u2026 ($1.0M market cap, $2.6M hourly volume) clearly lead. 6TcFqn\u2026 and 3r58J1\u2026 are similar-sized also-rans, and several other copies are already dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 51 bundler wallets. The project's X account was previously named 'Pumpliquititty' and is now 'Bootstrapdev1', so it is a recycled launch account. The website is a usepaid.app link. The buyer/seller split is extreme: 2,098 unique buyers against 99 unique sellers, meaning a few sellers dumped into many buyers. The creator has already closed out (creator_close). The token spiked to about $400k and has already lost about 75% from that peak.",
+   "uncertainty": "The 80% top holder is probably the pool or curve vault rather than a real holder, because GMGN shows the top 10 holding only 3.5%. Without X data, how organic the Rufo news attention is cannot be checked."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One market has 0% of its LP locked, and RugCheck flags a large amount of unlocked LP",
+    "Two much larger same-name competitors are soaking up the flow",
+    "It is already down about 75% from its peak, with buying collapsing sharply",
+    "51 bundler wallets and a creator who has already closed out",
+    "The X account is recycled and the website is a paid link"
+   ]
+  },
+  "counterargument": "Political news trends can bring several waves of attention. Roughly $1.3M of volume on only $30k of liquidity shows real retail interest. Liquidity is still intact, and the security flags are clean: mint and freeze authority renounced, lp_burn_ratio of 1.0 on GMGN. After a 57% drop, a dead-cat bounce back toward the $200k\u2013$400k area is possible if the cluster's leaders keep pumping and traders rotate into cheaper copies. A 2x from the $100k entry would only need a return to half of its peak.",
+  "unknowns": [
+   "Whether the Rufo news story is still developing",
+   "Whether the unlabeled 80% holder is the pool vault or a real wallet",
+   "Price and entry at the decision time, 25 minutes after detection",
+   "Whether the unlocked LP belongs to the deployer"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this report uses only the evidence packet."
+  },
+  "thesis": "This is a late, non-canonical copy in a spam cluster of same-name tokens. It has already pumped and dumped, from a $400k peak to $100k. Buyers are fading, and it shows bundlers, a recycled X account and unlocked LP. It is far more likely to bleed out or be abandoned than to double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 60,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4883,
+ "type": "result",
+ "duration_ms": 22445,
+ "uuid": "c64401de-95e6-402d-a6ed-413f406e615c",
+ "ttft_stream_ms": 821,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 822,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 69903,
+ "stop_reason": "tool_use",
+ "session_id": "14d16863-76a7-4b2b-835f-4e72298e0805",
+ "total_cost_usd": 0.3174842,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15253,
+  "cache_read_input_tokens": 43821,
+  "output_tokens": 3623,
+  "output_tokens_details": {
+   "thinking_tokens": 547
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15253,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2424,
+    "cache_read_input_tokens": 15873,
+    "cache_creation_input_tokens": 1956,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1956
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3623,
+   "cacheReadInputTokens": 43821,
+   "cacheCreationInputTokens": 15253,
+   "webSearchRequests": 0,
+   "costUSD": 0.2032802,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 547,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 53249,
+   "outputTokens": 2191,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.114204,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"FOOMS (PSuzun\u2026) is a 37-minute-old PumpSwap pool. It did not migrate from the pump.fun curve: GMGN shows migrated_unix=0, and the description reads \\\"Created on https://unorich.com\\\". It has done about $6.8M of volume at a ~$160k market cap, a turnover near 29x. Liquidity (~$232k) is larger than the market cap, and RugCheck shows 0% of the LP locked with \\\"Low amount of LP Providers\\\". GeckoTerminal counts 1,919 unique buyers but only 55 unique sellers, and those 55 made about 4,150 sells. GMGN flags 50 bundler wallets holding about 21% of top-trader volume. The packet lists at least 9 other tokens called \\\"fooms\\\"/FOOMS launched in the last ~3 hours with the same pattern. Clone 7zJ4 (created about 13 minutes after this one) shows the same +109% in 1h with $4.5M volume and $253k liquidity. Clone K3dB did $2.3M of volume in 1h and now has $0 liquidity. Clone 5gty now has $8.89 liquidity. This looks like a serial wash-volume and liquidity-pull farm, not an organic narrative.\",\"narrative\":{\"description\":\"I found no narrative. 'fooms' matches no meme, event or news I could find. The name looks like it was picked to be spun up over and over by one operator's launch tool.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"It is not spreading organically. The volume looks machine-made: thousands of trades from very few seller wallets, 50 bundler wallets, near-identical clones launched back to back, and no social presence at all.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None of the fooms tokens is canonical. They are serial copies, apparently from the same operator. This one simply happened to trip the volume rule.\",\"competing_tokens\":\"At least 9 other FOOMS/fooms mints. 7zJ4 is running at the same time with $4.5M volume. K3dB went to $0 liquidity after $2.3M volume, 5gty has $8.89 liquidity, and several others have zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"55 unique sellers against 1,919 buyers while sell transactions number about 4,150. GMGN tags 50 bundler wallets (21% of top-trader share). Liquidity is larger than the market cap, which points to the creator seeding the pool; the LP is 0% locked. Same-name clones show the same shape, and at least two of them were drained to about $0 liquidity within the hour. There are no socials, no DexScreener profile, and 2 GMGN page visits.\",\"uncertainty\":\"I cannot see wallet-level links between the clone deployers, so the shared-operator link is inferred from the name, timing and identical metrics. The unorich.com site would not load.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is locked and it sits with few providers, so the owner can remove it at any time\",\"The pattern matches sibling clones that went to $0 liquidity within about an hour\",\"Wash volume from about 55 seller wallets and 50 bundlers\",\"About 72% of supply sits in the AMM pool the deployer seeded; the price can collapse when the LP is removed\",\"There is no organic holder base or community\"]},\"counterargument\":\"Some of these farm tokens keep pumping for a while as volume bots attract real degens, and 7zJ4 is still up 109%. The top holders are small (the largest is 3.16%) and there are no insider flags. If the operator keeps the pump going for another hour, a 2x from ~$160k to ~$320k is possible before the pull.\",\"unknowns\":[\"Who is behind unorich.com (the site would not load)\",\"Whether the clone deployers are linked on-chain\",\"When the operator will pull the LP\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Searches for the contract address, the ticker and the name returned nothing relevant. unorich.com gave an SSL error. I used the DexScreener API for live and clone metrics.\"},\"thesis\":\"A wash-traded token from a serial clone farm with an unlocked, creator-seeded LP. Sibling clones have already been drained to zero liquidity within about an hour, so a liquidity pull is far more likely than a real 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":85,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/PSuzunVYyFGEF8Q91KoRi2snQfBL3ShUVVXh7xqHA2y\",\"what\":\"Live metrics: $160k mcap, $232k liquidity, $6.9M 1h volume\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7zJ4DCD4am9MAJuzGBz1cJ55Es96iyHAHnEEtuxETfs,K3dBv3pdsaAGSGCVXbqZNe6PEiuRRDK8T7FmdUuF745,5gty1XrS3mqX8ZJiezSWr6RaGwEz3rUY7JNNjuuv56Kr\",\"what\":\"Clone tokens: same pattern; K3dB and 5gty drained to about $0 liquidity\"},{\"url\":\"https://unorich.com\",\"what\":\"Project site from the description; would not load (SSL error)\"}]}",
+ "structured_output": {
+  "what_is_happening": "FOOMS (PSuzun\u2026) is a 37-minute-old PumpSwap pool. It did not migrate from the pump.fun curve: GMGN shows migrated_unix=0, and the description reads \"Created on https://unorich.com\". It has done about $6.8M of volume at a ~$160k market cap, a turnover near 29x. Liquidity (~$232k) is larger than the market cap, and RugCheck shows 0% of the LP locked with \"Low amount of LP Providers\". GeckoTerminal counts 1,919 unique buyers but only 55 unique sellers, and those 55 made about 4,150 sells. GMGN flags 50 bundler wallets holding about 21% of top-trader volume. The packet lists at least 9 other tokens called \"fooms\"/FOOMS launched in the last ~3 hours with the same pattern. Clone 7zJ4 (created about 13 minutes after this one) shows the same +109% in 1h with $4.5M volume and $253k liquidity. Clone K3dB did $2.3M of volume in 1h and now has $0 liquidity. Clone 5gty now has $8.89 liquidity. This looks like a serial wash-volume and liquidity-pull farm, not an organic narrative.",
+  "narrative": {
+   "description": "I found no narrative. 'fooms' matches no meme, event or news I could find. The name looks like it was picked to be spun up over and over by one operator's launch tool.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "It is not spreading organically. The volume looks machine-made: thousands of trades from very few seller wallets, 50 bundler wallets, near-identical clones launched back to back, and no social presence at all."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None of the fooms tokens is canonical. They are serial copies, apparently from the same operator. This one simply happened to trip the volume rule.",
+   "competing_tokens": "At least 9 other FOOMS/fooms mints. 7zJ4 is running at the same time with $4.5M volume. K3dB went to $0 liquidity after $2.3M volume, 5gty has $8.89 liquidity, and several others have zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "55 unique sellers against 1,919 buyers while sell transactions number about 4,150. GMGN tags 50 bundler wallets (21% of top-trader share). Liquidity is larger than the market cap, which points to the creator seeding the pool; the LP is 0% locked. Same-name clones show the same shape, and at least two of them were drained to about $0 liquidity within the hour. There are no socials, no DexScreener profile, and 2 GMGN page visits.",
+   "uncertainty": "I cannot see wallet-level links between the clone deployers, so the shared-operator link is inferred from the name, timing and identical metrics. The unorich.com site would not load."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is locked and it sits with few providers, so the owner can remove it at any time",
+    "The pattern matches sibling clones that went to $0 liquidity within about an hour",
+    "Wash volume from about 55 seller wallets and 50 bundlers",
+    "About 72% of supply sits in the AMM pool the deployer seeded; the price can collapse when the LP is removed",
+    "There is no organic holder base or community"
+   ]
+  },
+  "counterargument": "Some of these farm tokens keep pumping for a while as volume bots attract real degens, and 7zJ4 is still up 109%. The top holders are small (the largest is 3.16%) and there are no insider flags. If the operator keeps the pump going for another hour, a 2x from ~$160k to ~$320k is possible before the pull.",
+  "unknowns": [
+   "Who is behind unorich.com (the site would not load)",
+   "Whether the clone deployers are linked on-chain",
+   "When the operator will pull the LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Searches for the contract address, the ticker and the name returned nothing relevant. unorich.com gave an SSL error. I used the DexScreener API for live and clone metrics."
+  },
+  "thesis": "A wash-traded token from a serial clone farm with an unlocked, creator-seeded LP. Sibling clones have already been drained to zero liquidity within about an hour, so a liquidity pull is far more likely than a real 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 85,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/PSuzunVYyFGEF8Q91KoRi2snQfBL3ShUVVXh7xqHA2y",
+    "what": "Live metrics: $160k mcap, $232k liquidity, $6.9M 1h volume"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7zJ4DCD4am9MAJuzGBz1cJ55Es96iyHAHnEEtuxETfs,K3dBv3pdsaAGSGCVXbqZNe6PEiuRRDK8T7FmdUuF745,5gty1XrS3mqX8ZJiezSWr6RaGwEz3rUY7JNNjuuv56Kr",
+    "what": "Clone tokens: same pattern; K3dB and 5gty drained to about $0 liquidity"
+   },
+   {
+    "url": "https://unorich.com",
+    "what": "Project site from the description; would not load (SSL error)"
+   }
+  ]
+ },
+ "ttft_ms": 3812,
+ "type": "result",
+ "duration_ms": 53337,
+ "uuid": "081f7bc2-09d5-4f22-8748-16abf8f5a93d",
+ "ttft_stream_ms": 858,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 858,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

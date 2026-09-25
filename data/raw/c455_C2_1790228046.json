@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 70242,
+ "stop_reason": "tool_use",
+ "session_id": "949cef22-1509-49a4-af04-953a497baf39",
+ "total_cost_usd": 0.3573622000000001,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16622,
+  "cache_read_input_tokens": 60531,
+  "output_tokens": 3821,
+  "output_tokens_details": {
+   "thinking_tokens": 585
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16622,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2631,
+    "cache_read_input_tokens": 17682,
+    "cache_creation_input_tokens": 1516,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1516
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3821,
+   "cacheReadInputTokens": 60531,
+   "cacheCreationInputTokens": 16622,
+   "webSearchRequests": 0,
+   "costUSD": 0.22154220000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 585,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 64820,
+   "outputTokens": 2200,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.13582,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BROOD (Brood) is a pump.fun coin that graduated to PumpSwap about 40 minutes before detection. It is pitched as an \\\"agentic launchpad\\\" (\\\"Every coin hatches an AI trader,\\\" per broodsolana.fun). Market cap peaked near $110k (GMGN ath_price), fell sharply, then climbed back to about $67-69k: GeckoTerminal shows +197% over 15 minutes and +596% over 30 minutes. It has about $21.5k of liquidity, which is locked or burned. Order flow is heavy and two-sided: 761 unique buyers against 666 sellers in the hour, and buys lead in the last 5 minutes (311 vs 219). A live DexScreener check during research showed it still rising (+6.7% m5, mcap $69k). At least 9 same-ticker copycats have launched, including \\\"FISRST AGENTIC LAUNCHPAD HUGE\\\" and \\\"THEY STOLE FUNKOS FROM BROOD\\\", plus \\\"Play Brood\\\" tokens from the day before. That suggests the Brood name and account had some attention before this launch.\",\"narrative\":{\"description\":\"A launchpad story: an AI-agent or agentic platform where every launched coin comes with an AI trading bot. It fits the ongoing AI-agent-on-Solana theme, and a Genfinity interview on 2026-09-23 shows agentic launchpads are being talked about now. I found no external coverage of Brood itself.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"Most likely driven by the project's X account (@brooddfun) and pump.fun trenches flow. The copycat tickers, including a dev-drama name ('THEY STOLE FUNKOS FROM BROOD') and earlier 'Play Brood' tokens, point to some existing X following or storyline. I could not verify it because X is paywalled and not indexed.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"This is the only same-ticker token linked to broodsolana.fun and @brooddfun (DexScreener profile and GMGN). It also has by far the most volume, holders and liquidity among the BROOD tokens.\",\"competing_tokens\":\"9LjF8y... (BROOD, $11k mcap, $20.9k liquidity, $17k h1 volume, created later: a likely hijack or copy); Dvp1AX... ($27.7k mcap, no liquidity); several dead $3k 'Play Brood' and 'FISRST AGENTIC LAUNCHPAD' clones.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The breadth looks real: 761 unique buyers, about 3,000 transactions, and 80 GMGN page visits. Against that, GMGN tags 160 bundler wallets, 39 snipers, 267 fresh wallets and a 49% bot/degen rate. 8 smart wallets and 2 renowned wallets are present. No paid DexScreener boosts. There is a community_takeover flag and creator_token_status is 'creator_close', meaning the dev sold out. The dev's X account is tied to 3 token launches (GMGN), which matches the earlier same-name tokens. The dev wallet was funded from Binance.\",\"uncertainty\":\"I could not see X posts, so I cannot judge whether the account has a real following or is a recycled launch shell.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"160 bundler wallets; top bundler traders hold about 10.8%\",\"Dev has exited and the CTO flag is set; the X account is linked to 3 launches\",\"Volatile: fell from about $110k ATH to about $23k and back within 30 minutes\",\"Liquidity of about $21k is thin against about $130k/h of volume, so sharp moves either way\",\"A double from entry needs about $135-140k, above the prior ATH where earlier buyers will likely sell\"]},\"counterargument\":\"The V-shaped recovery on heavy, broad buying, a product-style AI launchpad story that already draws copycats, locked liquidity, a dev who no longer holds supply, and smart and KOL wallets present are exactly the pattern of early runners. Going from $70k to $140k is a small move for a coin with $130k/h of volume, and a single X post from the account or a KOL could do it within the hour.\",\"unknowns\":[\"Content, age and follower count of @brooddfun on X (fetch returned HTTP 402)\",\"Whether there is an actual product at broodsolana.fun beyond the tagline\",\"What the 'THEY STOLE FUNKOS' drama refers to\",\"Whether the bundler wallets are still holding or have already sold\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract-address search returned nothing relevant. A site:x.com search found no Brood posts, and fetching x.com returned HTTP 402. The site has only a tagline. DexScreener API confirmed live price and links.\"},\"thesis\":\"This is the canonical coin of a thin but on-theme AI-launchpad story. Real trader breadth has produced a V-shaped recovery, but the structure is bundle-heavy, the dev has exited, and there is overhead supply near the $110k ATH. A 2x to about $140k is plausible but not the likely outcome. I could not verify the social drivers.\",\"continuation_view\":\"neutral\",\"p_runner\":24,\"p_rug\":45,\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://broodsolana.fun/\",\"what\":\"Project site; tagline 'Every coin hatches an AI trader'\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/FdCQhzKRrADd5Ffmu1TPxzbUz9t89HpHm1U7YuTMpump\",\"what\":\"Live price, mcap, volume and links\"},{\"url\":\"https://x.com/brooddfun\",\"what\":\"Project X account (inaccessible, HTTP 402)\"},{\"url\":\"https://genfinity.io/2026/09/23/attention-mine-district-xyz-ai-agent-token-solana-interview/\",\"what\":\"Current agentic-launchpad theme on Solana (not Brood-specific)\"}]}",
+ "structured_output": {
+  "what_is_happening": "BROOD (Brood) is a pump.fun coin that graduated to PumpSwap about 40 minutes before detection. It is pitched as an \"agentic launchpad\" (\"Every coin hatches an AI trader,\" per broodsolana.fun). Market cap peaked near $110k (GMGN ath_price), fell sharply, then climbed back to about $67-69k: GeckoTerminal shows +197% over 15 minutes and +596% over 30 minutes. It has about $21.5k of liquidity, which is locked or burned. Order flow is heavy and two-sided: 761 unique buyers against 666 sellers in the hour, and buys lead in the last 5 minutes (311 vs 219). A live DexScreener check during research showed it still rising (+6.7% m5, mcap $69k). At least 9 same-ticker copycats have launched, including \"FISRST AGENTIC LAUNCHPAD HUGE\" and \"THEY STOLE FUNKOS FROM BROOD\", plus \"Play Brood\" tokens from the day before. That suggests the Brood name and account had some attention before this launch.",
+  "narrative": {
+   "description": "A launchpad story: an AI-agent or agentic platform where every launched coin comes with an AI trading bot. It fits the ongoing AI-agent-on-Solana theme, and a Genfinity interview on 2026-09-23 shows agentic launchpads are being talked about now. I found no external coverage of Brood itself.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "Most likely driven by the project's X account (@brooddfun) and pump.fun trenches flow. The copycat tickers, including a dev-drama name ('THEY STOLE FUNKOS FROM BROOD') and earlier 'Play Brood' tokens, point to some existing X following or storyline. I could not verify it because X is paywalled and not indexed."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "This is the only same-ticker token linked to broodsolana.fun and @brooddfun (DexScreener profile and GMGN). It also has by far the most volume, holders and liquidity among the BROOD tokens.",
+   "competing_tokens": "9LjF8y... (BROOD, $11k mcap, $20.9k liquidity, $17k h1 volume, created later: a likely hijack or copy); Dvp1AX... ($27.7k mcap, no liquidity); several dead $3k 'Play Brood' and 'FISRST AGENTIC LAUNCHPAD' clones.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The breadth looks real: 761 unique buyers, about 3,000 transactions, and 80 GMGN page visits. Against that, GMGN tags 160 bundler wallets, 39 snipers, 267 fresh wallets and a 49% bot/degen rate. 8 smart wallets and 2 renowned wallets are present. No paid DexScreener boosts. There is a community_takeover flag and creator_token_status is 'creator_close', meaning the dev sold out. The dev's X account is tied to 3 token launches (GMGN), which matches the earlier same-name tokens. The dev wallet was funded from Binance.",
+   "uncertainty": "I could not see X posts, so I cannot judge whether the account has a real following or is a recycled launch shell."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "160 bundler wallets; top bundler traders hold about 10.8%",
+    "Dev has exited and the CTO flag is set; the X account is linked to 3 launches",
+    "Volatile: fell from about $110k ATH to about $23k and back within 30 minutes",
+    "Liquidity of about $21k is thin against about $130k/h of volume, so sharp moves either way",
+    "A double from entry needs about $135-140k, above the prior ATH where earlier buyers will likely sell"
+   ]
+  },
+  "counterargument": "The V-shaped recovery on heavy, broad buying, a product-style AI launchpad story that already draws copycats, locked liquidity, a dev who no longer holds supply, and smart and KOL wallets present are exactly the pattern of early runners. Going from $70k to $140k is a small move for a coin with $130k/h of volume, and a single X post from the account or a KOL could do it within the hour.",
+  "unknowns": [
+   "Content, age and follower count of @brooddfun on X (fetch returned HTTP 402)",
+   "Whether there is an actual product at broodsolana.fun beyond the tagline",
+   "What the 'THEY STOLE FUNKOS' drama refers to",
+   "Whether the bundler wallets are still holding or have already sold"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The contract-address search returned nothing relevant. A site:x.com search found no Brood posts, and fetching x.com returned HTTP 402. The site has only a tagline. DexScreener API confirmed live price and links."
+  },
+  "thesis": "This is the canonical coin of a thin but on-theme AI-launchpad story. Real trader breadth has produced a V-shaped recovery, but the structure is bundle-heavy, the dev has exited, and there is overhead supply near the $110k ATH. A 2x to about $140k is plausible but not the likely outcome. I could not verify the social drivers.",
+  "continuation_view": "neutral",
+  "p_runner": 24,
+  "p_rug": 45,
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://broodsolana.fun/",
+    "what": "Project site; tagline 'Every coin hatches an AI trader'"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/FdCQhzKRrADd5Ffmu1TPxzbUz9t89HpHm1U7YuTMpump",
+    "what": "Live price, mcap, volume and links"
+   },
+   {
+    "url": "https://x.com/brooddfun",
+    "what": "Project X account (inaccessible, HTTP 402)"
+   },
+   {
+    "url": "https://genfinity.io/2026/09/23/attention-mine-district-xyz-ai-agent-token-solana-interview/",
+    "what": "Current agentic-launchpad theme on Solana (not Brood-specific)"
+   }
+  ]
+ },
+ "ttft_ms": 1560,
+ "type": "result",
+ "duration_ms": 56618,
+ "uuid": "afb9f392-8b5e-4bfc-beac-03bf2a4202df",
+ "ttft_stream_ms": 1032,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 1032,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

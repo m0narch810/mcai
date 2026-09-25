@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 76152,
+ "stop_reason": "tool_use",
+ "session_id": "158b8da8-e40e-46c1-b0b3-852b0eccc591",
+ "total_cost_usd": 0.3240686,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 15299,
+  "cache_read_input_tokens": 68358,
+  "output_tokens": 4547,
+  "output_tokens_details": {
+   "thinking_tokens": 558
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15299,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2663,
+    "cache_read_input_tokens": 16364,
+    "cache_creation_input_tokens": 1511,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1511
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 4547,
+   "cacheReadInputTokens": 68358,
+   "cacheCreationInputTokens": 15299,
+   "webSearchRequests": 0,
+   "costUSD": 0.22705160000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 558,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 45192,
+   "outputTokens": 2365,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09701699999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Muse Protocol\\\" ($Protocol, AttLKdv...) is a PumpSwap pool made directly at 08:44Z. It is not a pump.fun bonding-curve migration: both pump.fun API lookups returned 404. It is a same-name copy of an older token, QwtDtZ..., whose pool was made 22 minutes earlier at 08:22Z. That older token trades about $10.1M an hour at about $200k FDV with $301k in reserves, and in that hour it had 3,263 buyers but only 66 sellers. The cloned token shows the same pattern: 2,003 unique buyers against 108 sellers in its first hour, and buyers spiking from 95 in the last 15 minutes to 1,068 over 30 minutes. That looks like buy-spam or microbuy bots, not organic demand. Price rose about 750% in the first hour, then fell about 22-26% in the last 5 minutes. It is about 39% below its ATH (0.0001387 \u2192 0.0000846), and sells now outnumber buys. The creator holds 18.59% of supply, 0% of the LP is locked or burned, and RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. The name likely rides on Meta's Muse AI agent, launched 2026-09-08 and covered by TechCrunch on 2026-09-23. I found no public social discussion of either contract.\",\"narrative\":{\"description\":\"The name probably borrows attention from Meta's 'Muse' personal AI agent, launched 2026-09-08 with about 2.8M downloads. The main theme is an AI or Muse meme played out between two same-name tokens.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Meta Muse is real and recent news. But the attention for this ticker is concentrated in the older same-name token QwtDtZ..., and its volume looks bot-inflated. I found no organic posts for either contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. It is a second deployment with the same name and ticker, 22 minutes after the older token, which has about 40x the volume and 5x the liquidity.\",\"competing_tokens\":\"QwtDtZHqB1pYinapNpe1h2E8Cxffbo5MsmCoArR5gc6: $10.1M volume in the last hour, about $200k FDV, $301k reserves, pool made 08:22Z. It is most likely the original. Gr8xaU...: made later, about $52k market cap, almost no volume.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Unique buyers and sellers are very lopsided (2,003 vs 108; the older token has 3,263 vs 66), which is typical of microbuy bots making holder counts look bigger. It is a direct PumpSwap pool with no curve, the creator holds 18.59% of supply, the LP is not locked, there are no socials apart from a GeckoTerminal handle (x.com returned 402), and I found no web mentions of the contract.\",\"uncertainty\":\"I could not read X or Telegram. Some real traders may be looking for a cheaper copy of the older token.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is not locked (0% burned), so the likely LP provider (the dev) can pull liquidity at any time\",\"The creator holds 18.59% of supply, which could be dumped into about $58k of liquidity\",\"It is a copy of a larger same-name token and could be abandoned\",\"Price is already about 39% below its ATH and sells now outnumber buys in the last 5 minutes\",\"Holder counts look bot-inflated\"]},\"counterargument\":\"The older same-name token is drawing about $10M an hour of flow. A cheaper copy at an $85k market cap could catch spillover from traders looking for a 'second Protocol'. Liquidity of $58k against an $85k market cap is deep for the size. RugCheck and GMGN show no bundlers or snipers and no insider networks. The dev has no prior launches, and a previous best-token ATH of $450k is listed. If the older token keeps running, a 2x from $85k to $170k is mechanically plausible.\",\"unknowns\":[\"Who holds the LP tokens, and whether the creator can pull them\",\"Whether any X or Telegram group is promoting this particular copy\",\"Whether the older token's volume is real or wash trading\",\"Why the GeckoTerminal X handle museprotocollol exists (fetching it was blocked)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searches for the contract strings found nothing. x.com/museprotocollol returned 402. The pump.fun API returned 404 for both tokens, so neither is a pump.fun curve token. News found only Meta's Muse AI agent and older, unrelated MUSE tokens. DexScreener and GeckoTerminal APIs were used for both contracts.\"},\"thesis\":\"This is a later copy of a larger same-name token. It shows bot-like buyer inflation, the LP is not locked, the creator holds 18.59%, and momentum has already turned down. A double before a -50% drop or a rug is unlikely. A liquidity pull or a slow bleed is more likely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":70,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/AttLKdv1UaWeUa5F9grZMLmJakgdQR5eDajugijSxrP\",\"what\":\"Live market data for this token: $82.9k market cap, $58k liquidity, -21% m5, no socials\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/tokens/QwtDtZHqB1pYinapNpe1h2E8Cxffbo5MsmCoArR5gc6/pools\",\"what\":\"Older same-name token: $10.1M volume in 1h, 3,263 buyers vs 66 sellers, pool made 08:22Z\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/QwtDtZHqB1pYinapNpe1h2E8Cxffbo5MsmCoArR5gc6\",\"what\":\"Older token's pair data: about $200k market cap\"},{\"url\":\"https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/\",\"what\":\"Meta Muse AI agent news, the likely source of the name\"},{\"url\":\"https://www.kucoin.com/blog/meta-muse-ai-agents-revenue-engine\",\"what\":\"Meta Muse reached 2.8M downloads\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Muse Protocol\" ($Protocol, AttLKdv...) is a PumpSwap pool made directly at 08:44Z. It is not a pump.fun bonding-curve migration: both pump.fun API lookups returned 404. It is a same-name copy of an older token, QwtDtZ..., whose pool was made 22 minutes earlier at 08:22Z. That older token trades about $10.1M an hour at about $200k FDV with $301k in reserves, and in that hour it had 3,263 buyers but only 66 sellers. The cloned token shows the same pattern: 2,003 unique buyers against 108 sellers in its first hour, and buyers spiking from 95 in the last 15 minutes to 1,068 over 30 minutes. That looks like buy-spam or microbuy bots, not organic demand. Price rose about 750% in the first hour, then fell about 22-26% in the last 5 minutes. It is about 39% below its ATH (0.0001387 \u2192 0.0000846), and sells now outnumber buys. The creator holds 18.59% of supply, 0% of the LP is locked or burned, and RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. The name likely rides on Meta's Muse AI agent, launched 2026-09-08 and covered by TechCrunch on 2026-09-23. I found no public social discussion of either contract.",
+  "narrative": {
+   "description": "The name probably borrows attention from Meta's 'Muse' personal AI agent, launched 2026-09-08 with about 2.8M downloads. The main theme is an AI or Muse meme played out between two same-name tokens.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Meta Muse is real and recent news. But the attention for this ticker is concentrated in the older same-name token QwtDtZ..., and its volume looks bot-inflated. I found no organic posts for either contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. It is a second deployment with the same name and ticker, 22 minutes after the older token, which has about 40x the volume and 5x the liquidity.",
+   "competing_tokens": "QwtDtZHqB1pYinapNpe1h2E8Cxffbo5MsmCoArR5gc6: $10.1M volume in the last hour, about $200k FDV, $301k reserves, pool made 08:22Z. It is most likely the original. Gr8xaU...: made later, about $52k market cap, almost no volume.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Unique buyers and sellers are very lopsided (2,003 vs 108; the older token has 3,263 vs 66), which is typical of microbuy bots making holder counts look bigger. It is a direct PumpSwap pool with no curve, the creator holds 18.59% of supply, the LP is not locked, there are no socials apart from a GeckoTerminal handle (x.com returned 402), and I found no web mentions of the contract.",
+   "uncertainty": "I could not read X or Telegram. Some real traders may be looking for a cheaper copy of the older token."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is not locked (0% burned), so the likely LP provider (the dev) can pull liquidity at any time",
+    "The creator holds 18.59% of supply, which could be dumped into about $58k of liquidity",
+    "It is a copy of a larger same-name token and could be abandoned",
+    "Price is already about 39% below its ATH and sells now outnumber buys in the last 5 minutes",
+    "Holder counts look bot-inflated"
+   ]
+  },
+  "counterargument": "The older same-name token is drawing about $10M an hour of flow. A cheaper copy at an $85k market cap could catch spillover from traders looking for a 'second Protocol'. Liquidity of $58k against an $85k market cap is deep for the size. RugCheck and GMGN show no bundlers or snipers and no insider networks. The dev has no prior launches, and a previous best-token ATH of $450k is listed. If the older token keeps running, a 2x from $85k to $170k is mechanically plausible.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether the creator can pull them",
+   "Whether any X or Telegram group is promoting this particular copy",
+   "Whether the older token's volume is real or wash trading",
+   "Why the GeckoTerminal X handle museprotocollol exists (fetching it was blocked)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searches for the contract strings found nothing. x.com/museprotocollol returned 402. The pump.fun API returned 404 for both tokens, so neither is a pump.fun curve token. News found only Meta's Muse AI agent and older, unrelated MUSE tokens. DexScreener and GeckoTerminal APIs were used for both contracts."
+  },
+  "thesis": "This is a later copy of a larger same-name token. It shows bot-like buyer inflation, the LP is not locked, the creator holds 18.59%, and momentum has already turned down. A double before a -50% drop or a rug is unlikely. A liquidity pull or a slow bleed is more likely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 70,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/AttLKdv1UaWeUa5F9grZMLmJakgdQR5eDajugijSxrP",
+    "what": "Live market data for this token: $82.9k market cap, $58k liquidity, -21% m5, no socials"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/tokens/QwtDtZHqB1pYinapNpe1h2E8Cxffbo5MsmCoArR5gc6/pools",
+    "what": "Older same-name token: $10.1M volume in 1h, 3,263 buyers vs 66 sellers, pool made 08:22Z"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/QwtDtZHqB1pYinapNpe1h2E8Cxffbo5MsmCoArR5gc6",
+    "what": "Older token's pair data: about $200k market cap"
+   },
+   {
+    "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+    "what": "Meta Muse AI agent news, the likely source of the name"
+   },
+   {
+    "url": "https://www.kucoin.com/blog/meta-muse-ai-agents-revenue-engine",
+    "what": "Meta Muse reached 2.8M downloads"
+   }
+  ]
+ },
+ "ttft_ms": 2421,
+ "type": "result",
+ "duration_ms": 68006,
+ "uuid": "0769372f-61f9-46aa-8a87-b35ebaa1d775",
+ "ttft_stream_ms": 892,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 892,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

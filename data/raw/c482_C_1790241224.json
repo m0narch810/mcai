@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 70504,
+ "stop_reason": "tool_use",
+ "session_id": "33c68b33-eace-4186-a93e-72730bd13333",
+ "total_cost_usd": 0.36875100000000005,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13925,
+  "cache_read_input_tokens": 41150,
+  "output_tokens": 3879,
+  "output_tokens_details": {
+   "thinking_tokens": 870
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13925,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2776,
+    "cache_read_input_tokens": 14488,
+    "cache_creation_input_tokens": 2013,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2013
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3879,
+   "cacheReadInputTokens": 41150,
+   "cacheCreationInputTokens": 13925,
+   "webSearchRequests": 0,
+   "costUSD": 0.197242,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 870,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 131104,
+   "outputTokens": 2081,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.17150900000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This coin is a 38-minute-old copy of AROS (\\\"American Reserved Oil Supply\\\"), an oil-reserve parody memecoin on Solana. It launched on Meteora's virtual curve and graduated in the same second it was created (GMGN created_unix equals migrated_unix). Nearly all trading now happens in a PumpSwap pool: about $80k liquidity against a $50k market cap, and $146k of volume in the first hour. There were 408 buys against 200 sells in the last 5 minutes and price is up about 56% in the hour, sitting at its all-time high. There are at least 10 other tokens with the same ticker and name. The one tied to the real site, aros.help, and to third-party write-ups is DVdVsMUC..., which has existed for days. This token lists aros.help as its website, so it is borrowing the canonical project's identity. It has no socials, no DexScreener profile, and only 2 GMGN page visits.\",\"narrative\":{\"description\":\"AROS is a parody memecoin built on the idea of the US Strategic Petroleum Reserve, sitting inside a wider group of oil-reserve memecoins (USOR, OSOR, AOR, AOAS). The narrative is real and has spawned many copies. The canonical AROS token is at about $2.8M market cap, and some same-name pools report very large market caps.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Oil-reserve memes did well, so deployers keep launching copies with the same ticker to catch buyers searching for 'AROS'. None of the attention I found points at this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. It is one of 10+ same-name clones. It points to the canonical project's website, aros.help, but I found no link going the other way.\",\"competing_tokens\":\"DVdVsMUC8RyZcWtd6jn7BnyTd7dHEh7k4C5zsM9PCMtd is the contract cited alongside aros.help. Other clones: 12PUF...pump, 6gU6b...pump, 7hMgP...pump, Cx5GX...pump and more, many with much larger liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN tags 20 bundler wallets holding about 19.7% of supply. The top 10 holders each hold a suspiciously even ~1.0\u20131.2%. The token graduated in the same second it was created, and the creator's position is closed (creator_close). Buying is very heavy (about 1,200 unique buyers in 38 minutes) while GMGN shows only 2 page visits and I found no social footprint, which looks like bot or volume farming rather than organic interest. RugCheck flags a large amount of unlocked LP and only a few LP providers.\",\"uncertainty\":\"GMGN reports lp_burn_ratio 1.0 while RugCheck shows 0% and 43.55% locked, so the two sources conflict. The unique-buyer counts could include some real clone-hunters.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags the LP as largely unlocked, so the deployer can pull liquidity\",\"About 20% of supply sits with bundler wallets, which is overhang ready to dump\",\"Same-ticker clone with no community of its own\",\"Price is at its all-time high after a +56% hour, and the buying looks bot-driven\",\"Liquidity is larger than market cap, meaning the deployer seeded the pool heavily, a typical setup before pulling liquidity\"]},\"counterargument\":\"Buying is strong and steady (1,200 unique buyers, buys outnumbering sells about 2.4 to 1) and the market cap is only $50k. If traders hunting for a 'fresh AROS' pile in, a copy riding a big narrative can double to $100k quickly, and deep liquidity for its size makes that easier. If GMGN's LP-burned reading is correct, liquidity cannot be pulled at all.\",\"unknowns\":[\"Who controls the PumpSwap LP (the RugCheck and GMGN readings conflict)\",\"Whether the buyers are real people or volume bots\",\"Any X or Telegram promotion of this contract, since X indexing is poor\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"The news and articles I found cover the AROS narrative and its canonical contract, not this clone. aros.help only returned image data. DexScreener shows three pairs, and only the PumpSwap one is active.\"},\"thesis\":\"This is a bundled clone of the AROS oil-reserve meme with the same ticker, no social presence of its own, and LP control flagged as unlocked. The volume looks manufactured, and the most likely outcome is a liquidity pull or a slow bleed rather than a double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":10,\"p_rug\":62,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.top1markets.com/insights/crypto/what-is-american-reserved-oil-supply-aros-crypto-legit-or-scam-f28\",\"what\":\"Names DVdVsMUC... as the AROS contract, links aros.help, warns about copycats\"},{\"url\":\"https://phantom.com/tokens/solana/DVdVsMUC8RyZcWtd6jn7BnyTd7dHEh7k4C5zsM9PCMtd\",\"what\":\"Canonical AROS at about $2.8M market cap\"},{\"url\":\"https://aros.help/\",\"what\":\"Canonical project site, which this clone claims as its own\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2CiP7UkCwJwpzd141bo1oyqbBvfpciySBewXA2Np8Tvm\",\"what\":\"Live pair data: PumpSwap $80k liquidity, $50k market cap, +56% in 1h\"},{\"url\":\"https://www.ccn.com/education/crypto/is-usor-a-scam-on-chain-data-us-oil-reserves-claim/\",\"what\":\"Context on the wider group of oil-reserve memecoins\"}]}",
+ "structured_output": {
+  "what_is_happening": "This coin is a 38-minute-old copy of AROS (\"American Reserved Oil Supply\"), an oil-reserve parody memecoin on Solana. It launched on Meteora's virtual curve and graduated in the same second it was created (GMGN created_unix equals migrated_unix). Nearly all trading now happens in a PumpSwap pool: about $80k liquidity against a $50k market cap, and $146k of volume in the first hour. There were 408 buys against 200 sells in the last 5 minutes and price is up about 56% in the hour, sitting at its all-time high. There are at least 10 other tokens with the same ticker and name. The one tied to the real site, aros.help, and to third-party write-ups is DVdVsMUC..., which has existed for days. This token lists aros.help as its website, so it is borrowing the canonical project's identity. It has no socials, no DexScreener profile, and only 2 GMGN page visits.",
+  "narrative": {
+   "description": "AROS is a parody memecoin built on the idea of the US Strategic Petroleum Reserve, sitting inside a wider group of oil-reserve memecoins (USOR, OSOR, AOR, AOAS). The narrative is real and has spawned many copies. The canonical AROS token is at about $2.8M market cap, and some same-name pools report very large market caps.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Oil-reserve memes did well, so deployers keep launching copies with the same ticker to catch buyers searching for 'AROS'. None of the attention I found points at this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. It is one of 10+ same-name clones. It points to the canonical project's website, aros.help, but I found no link going the other way.",
+   "competing_tokens": "DVdVsMUC8RyZcWtd6jn7BnyTd7dHEh7k4C5zsM9PCMtd is the contract cited alongside aros.help. Other clones: 12PUF...pump, 6gU6b...pump, 7hMgP...pump, Cx5GX...pump and more, many with much larger liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN tags 20 bundler wallets holding about 19.7% of supply. The top 10 holders each hold a suspiciously even ~1.0\u20131.2%. The token graduated in the same second it was created, and the creator's position is closed (creator_close). Buying is very heavy (about 1,200 unique buyers in 38 minutes) while GMGN shows only 2 page visits and I found no social footprint, which looks like bot or volume farming rather than organic interest. RugCheck flags a large amount of unlocked LP and only a few LP providers.",
+   "uncertainty": "GMGN reports lp_burn_ratio 1.0 while RugCheck shows 0% and 43.55% locked, so the two sources conflict. The unique-buyer counts could include some real clone-hunters."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags the LP as largely unlocked, so the deployer can pull liquidity",
+    "About 20% of supply sits with bundler wallets, which is overhang ready to dump",
+    "Same-ticker clone with no community of its own",
+    "Price is at its all-time high after a +56% hour, and the buying looks bot-driven",
+    "Liquidity is larger than market cap, meaning the deployer seeded the pool heavily, a typical setup before pulling liquidity"
+   ]
+  },
+  "counterargument": "Buying is strong and steady (1,200 unique buyers, buys outnumbering sells about 2.4 to 1) and the market cap is only $50k. If traders hunting for a 'fresh AROS' pile in, a copy riding a big narrative can double to $100k quickly, and deep liquidity for its size makes that easier. If GMGN's LP-burned reading is correct, liquidity cannot be pulled at all.",
+  "unknowns": [
+   "Who controls the PumpSwap LP (the RugCheck and GMGN readings conflict)",
+   "Whether the buyers are real people or volume bots",
+   "Any X or Telegram promotion of this contract, since X indexing is poor"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "The news and articles I found cover the AROS narrative and its canonical contract, not this clone. aros.help only returned image data. DexScreener shows three pairs, and only the PumpSwap one is active."
+  },
+  "thesis": "This is a bundled clone of the AROS oil-reserve meme with the same ticker, no social presence of its own, and LP control flagged as unlocked. The volume looks manufactured, and the most likely outcome is a liquidity pull or a slow bleed rather than a double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 10,
+  "p_rug": 62,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.top1markets.com/insights/crypto/what-is-american-reserved-oil-supply-aros-crypto-legit-or-scam-f28",
+    "what": "Names DVdVsMUC... as the AROS contract, links aros.help, warns about copycats"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/DVdVsMUC8RyZcWtd6jn7BnyTd7dHEh7k4C5zsM9PCMtd",
+    "what": "Canonical AROS at about $2.8M market cap"
+   },
+   {
+    "url": "https://aros.help/",
+    "what": "Canonical project site, which this clone claims as its own"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2CiP7UkCwJwpzd141bo1oyqbBvfpciySBewXA2Np8Tvm",
+    "what": "Live pair data: PumpSwap $80k liquidity, $50k market cap, +56% in 1h"
+   },
+   {
+    "url": "https://www.ccn.com/education/crypto/is-usor-a-scam-on-chain-data-us-oil-reserves-claim/",
+    "what": "Context on the wider group of oil-reserve memecoins"
+   }
+  ]
+ },
+ "ttft_ms": 2256,
+ "type": "result",
+ "duration_ms": 57968,
+ "uuid": "e2f2cb0d-0b44-4283-af69-903b84bcf762",
+ "ttft_stream_ms": 740,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 740,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

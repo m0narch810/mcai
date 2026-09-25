@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 80329,
+ "stop_reason": "tool_use",
+ "session_id": "56aa606a-d490-4bfc-a624-12987d368fa9",
+ "total_cost_usd": 0.3603208,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 16757,
+  "cache_read_input_tokens": 74189,
+  "output_tokens": 5661,
+  "output_tokens_details": {
+   "thinking_tokens": 370
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16757,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2354,
+    "cache_read_input_tokens": 17162,
+    "cache_creation_input_tokens": 2171,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2171
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 5661,
+   "cacheReadInputTokens": 74189,
+   "cacheCreationInputTokens": 16757,
+   "webSearchRequests": 0,
+   "costUSD": 0.2621618,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 370,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 48849,
+   "outputTokens": 1862,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.098159,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"This pool was created directly on PumpSwap. It skipped the pump.fun curve, and the deploy platform is listed as unknown. Liquidity (~$37.9k) is larger than market cap (~$31k), and 61% of supply sits in the AMM with the LP 0% locked/burned. GMGN flags 61 bundler wallets holding about 27% of top-trader supply, and RugCheck finds a 22-wallet insider trade network. Volume is about $1M in 35 minutes on a ~$31k cap (25x turnover). The m5 buy and sell counts are almost equal (216/222), which looks like bot or wash trading rather than organic demand. GMGN counts 0 smart-money and 0 KOL wallets. At least 10 copies share the same name, and several have already gone to 0 liquidity.\",\"uncertainty\":\"No X data was available, and the spermracing tweet returned HTTP 402, so I can't see whether real people are posting about this contract.\"},\"continuation_view\":\"strong_fade\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 100% unlocked, the creator can remove liquidity at any time ('Large Amount of LP Unlocked' is flagged as danger)\",\"61 bundler wallets / 27% bundler share, plus a 22-wallet insider network\",\"Volume looks wash-traded: $1M on a $31k cap\",\"Duplicate ticker; the canonical CUMINU is a different contract at 15x this market cap\",\"Price is already falling: -8.5% over 5 minutes and below the $44k ATH\"]},\"narrative\":{\"description\":\"CUMINU is a crude meme name. The GeckoTerminal twitter field points to a @spermracing post, and the real Sperm Racing World Cup is scheduled for late 2026. The name also recycles the 2021 ERC-20 CumInu. The event exists, but I found no current news spike tied to it.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Several CUMINU tokens launched within about 25 minutes of each other (the name was being mass-deployed), and one version (8i1a7...) reached ~$470k. That points to a short ticker frenzy, possibly started by a spermracing tweet. This token appears to be one of the copies launched on the back of it.\"},\"observation_window\":\"6h\",\"p_rug\":70,\"p_runner\":7,\"research_confidence\":\"medium\",\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The X status fetch returned HTTP 402. Searches for the contract address and $CUMINU only returned the 2021 ERC-20 CumInu and an unrelated Bitget cumINU token. DexScreener shows no socials or website for this pair. News covers the Sperm Racing World Cup 2026, but nothing links it to CUMINU.\"},\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/EcUrWocukrdkBBYWtvJxJfSg3EJhnyaAc6vL2McQmiDK,8i1a7QABkMtjk7U4roqSkVk7YzxVdS1ingvSTKxBvXT1\",\"what\":\"Live pair data: this pair at $31k with -9% over 5 minutes; the leading CUMINU at ~$473k with 735% over 1 hour; no socials listed\"},{\"url\":\"https://x.com/spermracing/status/2103021310196523373\",\"what\":\"Tweet linked on GeckoTerminal; fetch returned 402, so contents are unverified\"},{\"url\":\"https://www.spermracing.com/worldcup\",\"what\":\"Real Sperm Racing World Cup 2026 event\"},{\"url\":\"https://etherscan.io/token/0xd6327ce1fb9d6020e8c2c0e124a1ec23dcab7536\",\"what\":\"Original 2021 ERC-20 CumInu; the name is being recycled\"}],\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It was one of the first CUMINU contracts deployed (07:22 UTC), but the market has picked another one. The contract 8i1a7... launched about 4 minutes later and is now worth ~$470k with more liquidity, while this one sits at $31k.\",\"competing_tokens\":\"There are at least 10 same-name tokens. 8i1a7QAB... (~$470k market cap) is the leader, followed by B4pLeAps, GKewJ1po and 5YrcQr4b at $100-136k. Several copies already show 0 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"What the spermracing tweet actually says, and whether it names any contract\",\"Who controls the unlocked LP (creator status shows as 'creator_close')\",\"Whether the volume is organic or wash trading\"],\"what_is_happening\":\"A group of CUMINU tokens launched on Solana within about 25 minutes. One of them (8i1a7...) ran to ~$470k. This contract was among the first deployed, but it now trades at $31k and is falling, on bot-like volume with its LP unlocked.\",\"counterargument\":\"This was one of the earliest CUMINU deployments, 445 unique buyers is real breadth, and top-10 concentration is low at about 10-12%. If the spermracing tweet named or boosted this contract, traders rotating away from the $470k leader might pick up the cheap early copy and send it past 2x from $31k. Low market cap makes a 2x mechanically easy.\",\"thesis\":\"This is a copycat CUMINU in a crowded same-name frenzy, and the market has already picked a different contract (~$470k). The pool here is PumpSwap-direct with 100% unlocked LP, heavy bundling, an insider network and wash-like volume, and its price is falling. A rug is more likely than a 2x.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "This pool was created directly on PumpSwap. It skipped the pump.fun curve, and the deploy platform is listed as unknown. Liquidity (~$37.9k) is larger than market cap (~$31k), and 61% of supply sits in the AMM with the LP 0% locked/burned. GMGN flags 61 bundler wallets holding about 27% of top-trader supply, and RugCheck finds a 22-wallet insider trade network. Volume is about $1M in 35 minutes on a ~$31k cap (25x turnover). The m5 buy and sell counts are almost equal (216/222), which looks like bot or wash trading rather than organic demand. GMGN counts 0 smart-money and 0 KOL wallets. At least 10 copies share the same name, and several have already gone to 0 liquidity.",
+   "uncertainty": "No X data was available, and the spermracing tweet returned HTTP 402, so I can't see whether real people are posting about this contract."
+  },
+  "continuation_view": "strong_fade",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 100% unlocked, the creator can remove liquidity at any time ('Large Amount of LP Unlocked' is flagged as danger)",
+    "61 bundler wallets / 27% bundler share, plus a 22-wallet insider network",
+    "Volume looks wash-traded: $1M on a $31k cap",
+    "Duplicate ticker; the canonical CUMINU is a different contract at 15x this market cap",
+    "Price is already falling: -8.5% over 5 minutes and below the $44k ATH"
+   ]
+  },
+  "narrative": {
+   "description": "CUMINU is a crude meme name. The GeckoTerminal twitter field points to a @spermracing post, and the real Sperm Racing World Cup is scheduled for late 2026. The name also recycles the 2021 ERC-20 CumInu. The event exists, but I found no current news spike tied to it.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Several CUMINU tokens launched within about 25 minutes of each other (the name was being mass-deployed), and one version (8i1a7...) reached ~$470k. That points to a short ticker frenzy, possibly started by a spermracing tweet. This token appears to be one of the copies launched on the back of it."
+  },
+  "observation_window": "6h",
+  "p_rug": 70,
+  "p_runner": 7,
+  "research_confidence": "medium",
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The X status fetch returned HTTP 402. Searches for the contract address and $CUMINU only returned the 2021 ERC-20 CumInu and an unrelated Bitget cumINU token. DexScreener shows no socials or website for this pair. News covers the Sperm Racing World Cup 2026, but nothing links it to CUMINU."
+  },
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/EcUrWocukrdkBBYWtvJxJfSg3EJhnyaAc6vL2McQmiDK,8i1a7QABkMtjk7U4roqSkVk7YzxVdS1ingvSTKxBvXT1",
+    "what": "Live pair data: this pair at $31k with -9% over 5 minutes; the leading CUMINU at ~$473k with 735% over 1 hour; no socials listed"
+   },
+   {
+    "url": "https://x.com/spermracing/status/2103021310196523373",
+    "what": "Tweet linked on GeckoTerminal; fetch returned 402, so contents are unverified"
+   },
+   {
+    "url": "https://www.spermracing.com/worldcup",
+    "what": "Real Sperm Racing World Cup 2026 event"
+   },
+   {
+    "url": "https://etherscan.io/token/0xd6327ce1fb9d6020e8c2c0e124a1ec23dcab7536",
+    "what": "Original 2021 ERC-20 CumInu; the name is being recycled"
+   }
+  ],
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It was one of the first CUMINU contracts deployed (07:22 UTC), but the market has picked another one. The contract 8i1a7... launched about 4 minutes later and is now worth ~$470k with more liquidity, while this one sits at $31k.",
+   "competing_tokens": "There are at least 10 same-name tokens. 8i1a7QAB... (~$470k market cap) is the leader, followed by B4pLeAps, GKewJ1po and 5YrcQr4b at $100-136k. Several copies already show 0 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "What the spermracing tweet actually says, and whether it names any contract",
+   "Who controls the unlocked LP (creator status shows as 'creator_close')",
+   "Whether the volume is organic or wash trading"
+  ],
+  "what_is_happening": "A group of CUMINU tokens launched on Solana within about 25 minutes. One of them (8i1a7...) ran to ~$470k. This contract was among the first deployed, but it now trades at $31k and is falling, on bot-like volume with its LP unlocked.",
+  "counterargument": "This was one of the earliest CUMINU deployments, 445 unique buyers is real breadth, and top-10 concentration is low at about 10-12%. If the spermracing tweet named or boosted this contract, traders rotating away from the $470k leader might pick up the cheap early copy and send it past 2x from $31k. Low market cap makes a 2x mechanically easy.",
+  "thesis": "This is a copycat CUMINU in a crowded same-name frenzy, and the market has already picked a different contract (~$470k). The pool here is PumpSwap-direct with 100% unlocked LP, heavy bundling, an insider network and wash-like volume, and its price is falling. A rug is more likely than a 2x."
+ },
+ "ttft_ms": 2562,
+ "type": "result",
+ "duration_ms": 72988,
+ "uuid": "d7983102-d642-4cbf-80d8-38cbbb8cccf8",
+ "ttft_stream_ms": 862,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 862,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

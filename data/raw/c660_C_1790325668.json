@@ -1,0 +1,172 @@
+{
+ "duration_api_ms": 42986,
+ "stop_reason": "tool_use",
+ "session_id": "3a575b10-4d92-49bd-9c8c-acf307ce437c",
+ "total_cost_usd": 0.22242720000000002,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 11810,
+  "cache_read_input_tokens": 37796,
+  "output_tokens": 2599,
+  "output_tokens_details": {
+   "thinking_tokens": 385
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11810,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1830,
+    "cache_read_input_tokens": 13273,
+    "cache_creation_input_tokens": 1113,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1113
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 2599,
+   "cacheReadInputTokens": 37796,
+   "cacheCreationInputTokens": 11810,
+   "webSearchRequests": 0,
+   "costUSD": 0.1540512,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 385,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 33106,
+   "outputTokens": 1054,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06837599999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This coin looks like it has already been rugged. When it was detected, the PumpSwap pool held about $66k of liquidity and the market cap was $54k. By the time the packet was collected, 3 minutes later, liquidity was $0.01. A direct DexScreener pair fetch shows the pool holds just 24.7 base tokens and 0.000055 SOL. The listed $214k market cap and +871% 1h price change are artifacts of a nearly empty pool, where a tiny trade moves the price a lot. They are not real demand. The token was not a pump.fun curve launch: the creator minted it and opened the PumpSwap pool 6 seconds later, and still holds 61% of supply. At least two other identical '\ud83d\udcb2SATAN' tokens were launched minutes before this one. That points to a serial deploy-and-drain pattern, not a real community coin.\",\"narrative\":{\"description\":\"A generic 'SATAN' meme with an emoji ticker. No cultural event, website, socials or X account was found.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"The volume looks bot-driven and cyclical. GeckoTerminal counts 1,124 unique buyers but only 116 unique sellers, and buy/sell counts are nearly balanced every 5 minutes. None of this is organic narrative attention.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"It has the most volume of the same-name clones, but there is no project behind any of them.\",\"competing_tokens\":\"6Gfzrf...du61 and 5nRFSW...zePX both use the same '\ud83d\udcb2SATAN' symbol, were created 8 and 11 minutes earlier, and both have about $0 liquidity. AFER6N...pump is an older, dead Satan token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The creator holds 61%, and GMGN flags that same 61% as rat/entrapment trader share. GMGN also tags 16 bundler wallets. The liquidity went from $66k to $0.01 within minutes. There are no socials and no paid promotion. Several clone tokens were launched in quick succession.\",\"uncertainty\":\"The DexScreener liquidity figure could in principle be a data glitch. But the raw pool reserves (24.7 tokens and 0.000055 SOL) confirm the pool is drained.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Pool liquidity is about $0.01, so the pool is effectively drained\",\"The creator holds 61% of supply and one other wallet holds 10.5%\",\"16 bundler wallets\",\"A serial clone deploy pattern\",\"The listed price and market cap are meaningless with no liquidity behind them\"]},\"counterargument\":\"A dead pool can occasionally be reseeded, and the DexScreener price could show a spike from a tiny trade. But a paper position bought into $0.01 of liquidity cannot realistically get a 2x fill. This is a rug under the trade rules.\",\"unknowns\":[\"The exact transaction that drained the pool (not checked on-chain)\",\"Whether the creator will reseed liquidity\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"No socials in the packet. Searching the contract address and ticker returned nothing relevant. Research was kept short because the pool is already drained.\"},\"thesis\":\"Already rugged: pool liquidity went from about $66k to $0.01 within minutes of detection, and the creator holds 61%. The narrative is a fake-looking clone with no socials. I expect a total loss on entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":1,\"p_rug\":96,\"research_confidence\":\"high\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/4mXdnwhrwBKWAUBQGFZjaEg7WZw1i9dqEBRD2yXxLjih\",\"what\":\"Pair data showing $0.01 liquidity and pool reserves of 24.7 tokens and 0.000055 SOL\"},{\"url\":\"https://dexscreener.com/solana/4mXdnwhrwBKWAUBQGFZjaEg7WZw1i9dqEBRD2yXxLjih\",\"what\":\"Pair page: no socials listed\"}]}",
+ "structured_output": {
+  "what_is_happening": "This coin looks like it has already been rugged. When it was detected, the PumpSwap pool held about $66k of liquidity and the market cap was $54k. By the time the packet was collected, 3 minutes later, liquidity was $0.01. A direct DexScreener pair fetch shows the pool holds just 24.7 base tokens and 0.000055 SOL. The listed $214k market cap and +871% 1h price change are artifacts of a nearly empty pool, where a tiny trade moves the price a lot. They are not real demand. The token was not a pump.fun curve launch: the creator minted it and opened the PumpSwap pool 6 seconds later, and still holds 61% of supply. At least two other identical '\ud83d\udcb2SATAN' tokens were launched minutes before this one. That points to a serial deploy-and-drain pattern, not a real community coin.",
+  "narrative": {
+   "description": "A generic 'SATAN' meme with an emoji ticker. No cultural event, website, socials or X account was found.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "The volume looks bot-driven and cyclical. GeckoTerminal counts 1,124 unique buyers but only 116 unique sellers, and buy/sell counts are nearly balanced every 5 minutes. None of this is organic narrative attention."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "It has the most volume of the same-name clones, but there is no project behind any of them.",
+   "competing_tokens": "6Gfzrf...du61 and 5nRFSW...zePX both use the same '\ud83d\udcb2SATAN' symbol, were created 8 and 11 minutes earlier, and both have about $0 liquidity. AFER6N...pump is an older, dead Satan token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The creator holds 61%, and GMGN flags that same 61% as rat/entrapment trader share. GMGN also tags 16 bundler wallets. The liquidity went from $66k to $0.01 within minutes. There are no socials and no paid promotion. Several clone tokens were launched in quick succession.",
+   "uncertainty": "The DexScreener liquidity figure could in principle be a data glitch. But the raw pool reserves (24.7 tokens and 0.000055 SOL) confirm the pool is drained."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Pool liquidity is about $0.01, so the pool is effectively drained",
+    "The creator holds 61% of supply and one other wallet holds 10.5%",
+    "16 bundler wallets",
+    "A serial clone deploy pattern",
+    "The listed price and market cap are meaningless with no liquidity behind them"
+   ]
+  },
+  "counterargument": "A dead pool can occasionally be reseeded, and the DexScreener price could show a spike from a tiny trade. But a paper position bought into $0.01 of liquidity cannot realistically get a 2x fill. This is a rug under the trade rules.",
+  "unknowns": [
+   "The exact transaction that drained the pool (not checked on-chain)",
+   "Whether the creator will reseed liquidity"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "No socials in the packet. Searching the contract address and ticker returned nothing relevant. Research was kept short because the pool is already drained."
+  },
+  "thesis": "Already rugged: pool liquidity went from about $66k to $0.01 within minutes of detection, and the creator holds 61%. The narrative is a fake-looking clone with no socials. I expect a total loss on entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 1,
+  "p_rug": 96,
+  "research_confidence": "high",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/4mXdnwhrwBKWAUBQGFZjaEg7WZw1i9dqEBRD2yXxLjih",
+    "what": "Pair data showing $0.01 liquidity and pool reserves of 24.7 tokens and 0.000055 SOL"
+   },
+   {
+    "url": "https://dexscreener.com/solana/4mXdnwhrwBKWAUBQGFZjaEg7WZw1i9dqEBRD2yXxLjih",
+    "what": "Pair page: no socials listed"
+   }
+  ]
+ },
+ "ttft_ms": 4292,
+ "type": "result",
+ "duration_ms": 39905,
+ "uuid": "e65a6f7c-60e5-489a-a6d0-43e3157da4ba",
+ "ttft_stream_ms": 832,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 832,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

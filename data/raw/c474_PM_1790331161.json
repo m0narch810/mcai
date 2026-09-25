@@ -1,0 +1,136 @@
+{
+ "duration_api_ms": 39316,
+ "stop_reason": "tool_use",
+ "session_id": "8a4a07db-1eb3-4a07-a573-c7571b41beb9",
+ "total_cost_usd": 0.15210239999999997,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9633,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 3743,
+  "output_tokens_details": {
+   "thinking_tokens": 1341
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9633,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3743,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9633,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9633
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3743,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9633,
+   "webSearchRequests": 0,
+   "costUSD": 0.15210239999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1341,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The pool was created directly on PumpSwap (bonding_curve=false, migrated_unix=0, deploy_platform unknown) with lp_burn_ratio 0 and lp_locked 0%. When a pool is created directly rather than by pump.fun migration, the deployer usually keeps the LP tokens. RugCheck also flagged 'Large Amount of LP Unlocked' as danger. This is the mechanism behind what happened: liquidity went to $0 within the first 60-minute bar, and every horizon returned -100%.\",\"Liquidity (~$38k) was larger than market cap (~$31k), 61% of supply sat in the AMM, and RugCheck warned of 'Low amount of LP Providers'. Taken together, most of the tradable value sat in a pool that one party controlled and could withdraw.\",\"Among the same-name copies launched within about 25 minutes, 5 of the 10 listed already showed $0 liquidity at T2, and at least two had vanity '7777' addresses. That is direct, same-cluster evidence of pools being deployed and then pulled. The report noted it, but used it to argue about ticker hijacking rather than as a base rate for rugs.\",\"creator_token_status = 'creator_close'. The creator was out of the token position, so the main value the creator had left to extract was the LP.\"],\"misleading_observations\":[\"'Price is already falling (-8.5% m5)'. Between T2 and the decision time the price went from 3.11e-5 to 5.13e-5 (+65%), and market cap rose to about $51k. Short-term price direction did not bear on the outcome, and it was stale by the time of entry.\",\"The canonical-ticker / 'market picked another contract' argument. The loss came from the liquidity being pulled, not from losing the ticker race. A copy that loses that race can still pump, and this one did before the pull.\",\"Wash-trade inference from m5 buy/sell parity (216/222) and 25x turnover. Very high turnover is common on tokens this young. It does not tell you whether the LP will be pulled.\",\"Low top-10 concentration (11.57%) and 445 unique buyers, cited in the counterargument. The top-10 figure excludes the AMM account, and that account held 61% of supply controlled by the LP owner. Holder breadth does not protect against an LP withdrawal.\",\"The bundler count (61) and the 22-wallet insider network. These are generic risk flags, but they are not the mechanism that produced this outcome.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time argued for reversing the fade/rug call. However, the evidence supported a higher p_rug than 70. The deployer controlled 100% of an unburned LP on a directly created pool, and half of the sibling copies had already been pulled to $0 in the same half hour. Together these arguably justified a p_rug of 85-90+.\",\"The +65% move between T2 and the decision time was visible if the report had been refreshed before entry. It should not have changed the direction of the call. It does show that the 'falling price' reasoning was fragile.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Tokens whose pool was created directly on a DEX AMM (not migrated from a launchpad curve), with an LP burn/lock ratio of 0 and liquidity/mcap \u2265 0.8, will see liquidity drop by \u226590% within 6h at a much higher rate than launchpad-migrated pools with burned LP.\",\"conditions\":\"Solana tokens under 2h old at decision time; bonding_curve=false and migrated_unix=0; lp_burn_ratio=0 and lp_locked=0; compare against pump.fun-migrated pools in the same market-cap band ($10k-$300k).\",\"market_structure_rationale\":\"Pump.fun migration burns the LP tokens, so nobody can withdraw the liquidity. On a directly created pool the deployer holds the LP tokens and can take all the SOL side of the pool in one transaction. When the pool holds most of the tradable value, the payoff from pulling is at its largest relative to the market cap.\"},{\"statement\":\"If a same-name cluster has \u22653 sibling contracts launched within 60 minutes of the candidate already showing $0 liquidity at T2, the candidate's 6h rug rate is significantly higher than for same-age tokens without such siblings.\",\"conditions\":\"Only applies when a same-ticker/name search at T2 returns several contracts created within about 1h of each other, and some of them show liquidity_usd = 0 at collection time.\",\"market_structure_rationale\":\"Mass deployments under one trending name are often a single operator or a copy-paste farm that seeds pools and then pulls them. Siblings that have already been pulled show which exit tactic that operator uses, and they show it before the candidate is pulled.\"},{\"statement\":\"Holder concentration measured after excluding the AMM account understates control risk. When the excluded AMM share is \u226550% and LP providers are few or unlocked, top-10 holder % should not count as evidence of dispersed ownership.\",\"conditions\":\"The RugCheck/GMGN top-10 figure excludes the AMM, the excluded AMM share is \u226550%, and the LP is unlocked or has few providers.\",\"market_structure_rationale\":\"Tokens held in the pool are effectively controlled by whoever holds the LP tokens. If one party can withdraw the pool, it controls the majority of supply, however spread out the non-pool wallets look.\"}],\"summary\":\"The report called strong_fade with p_rug 70 and p_runner 7, and the outcome matched: liquidity went to $0 within the first 60-minute bar. The recorded exit price was only 6.3% below entry, but with no liquidity the realized return was -100% at 60, 360 and 1440 minutes. The price was already stale after the pull, since it never touched any \u00b120% level. The reasoning that actually bore on this was structural. The pool was created directly on PumpSwap, so the deployer kept the LP tokens, and they were 0% burned or locked. Liquidity exceeded market cap, few parties supplied LP, and half the sibling copies had already been pulled to zero liquidity. Several of the report's other arguments did not explain the result: the canonical-ticker competition, wash-trade inference, bundler counts, and the 'price falling' claim. The price-falling claim was already stale, because the price rose 65% between T2 and entry. The direction of the call was knowable at decision time, and the evidence arguably justified a higher p_rug. The exact timing of the pull was not knowable. This is one case, so it validates the LP-control mechanism rather than proving it. That mechanism should be tested prospectively using the hypotheses above.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The pool was created directly on PumpSwap (bonding_curve=false, migrated_unix=0, deploy_platform unknown) with lp_burn_ratio 0 and lp_locked 0%. When a pool is created directly rather than by pump.fun migration, the deployer usually keeps the LP tokens. RugCheck also flagged 'Large Amount of LP Unlocked' as danger. This is the mechanism behind what happened: liquidity went to $0 within the first 60-minute bar, and every horizon returned -100%.",
+   "Liquidity (~$38k) was larger than market cap (~$31k), 61% of supply sat in the AMM, and RugCheck warned of 'Low amount of LP Providers'. Taken together, most of the tradable value sat in a pool that one party controlled and could withdraw.",
+   "Among the same-name copies launched within about 25 minutes, 5 of the 10 listed already showed $0 liquidity at T2, and at least two had vanity '7777' addresses. That is direct, same-cluster evidence of pools being deployed and then pulled. The report noted it, but used it to argue about ticker hijacking rather than as a base rate for rugs.",
+   "creator_token_status = 'creator_close'. The creator was out of the token position, so the main value the creator had left to extract was the LP."
+  ],
+  "misleading_observations": [
+   "'Price is already falling (-8.5% m5)'. Between T2 and the decision time the price went from 3.11e-5 to 5.13e-5 (+65%), and market cap rose to about $51k. Short-term price direction did not bear on the outcome, and it was stale by the time of entry.",
+   "The canonical-ticker / 'market picked another contract' argument. The loss came from the liquidity being pulled, not from losing the ticker race. A copy that loses that race can still pump, and this one did before the pull.",
+   "Wash-trade inference from m5 buy/sell parity (216/222) and 25x turnover. Very high turnover is common on tokens this young. It does not tell you whether the LP will be pulled.",
+   "Low top-10 concentration (11.57%) and 445 unique buyers, cited in the counterargument. The top-10 figure excludes the AMM account, and that account held 61% of supply controlled by the LP owner. Holder breadth does not protect against an LP withdrawal.",
+   "The bundler count (61) and the 22-wallet insider network. These are generic risk flags, but they are not the mechanism that produced this outcome."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time argued for reversing the fade/rug call. However, the evidence supported a higher p_rug than 70. The deployer controlled 100% of an unburned LP on a directly created pool, and half of the sibling copies had already been pulled to $0 in the same half hour. Together these arguably justified a p_rug of 85-90+.",
+   "The +65% move between T2 and the decision time was visible if the report had been refreshed before entry. It should not have changed the direction of the call. It does show that the 'falling price' reasoning was fragile."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Tokens whose pool was created directly on a DEX AMM (not migrated from a launchpad curve), with an LP burn/lock ratio of 0 and liquidity/mcap \u2265 0.8, will see liquidity drop by \u226590% within 6h at a much higher rate than launchpad-migrated pools with burned LP.",
+    "conditions": "Solana tokens under 2h old at decision time; bonding_curve=false and migrated_unix=0; lp_burn_ratio=0 and lp_locked=0; compare against pump.fun-migrated pools in the same market-cap band ($10k-$300k).",
+    "market_structure_rationale": "Pump.fun migration burns the LP tokens, so nobody can withdraw the liquidity. On a directly created pool the deployer holds the LP tokens and can take all the SOL side of the pool in one transaction. When the pool holds most of the tradable value, the payoff from pulling is at its largest relative to the market cap."
+   },
+   {
+    "statement": "If a same-name cluster has \u22653 sibling contracts launched within 60 minutes of the candidate already showing $0 liquidity at T2, the candidate's 6h rug rate is significantly higher than for same-age tokens without such siblings.",
+    "conditions": "Only applies when a same-ticker/name search at T2 returns several contracts created within about 1h of each other, and some of them show liquidity_usd = 0 at collection time.",
+    "market_structure_rationale": "Mass deployments under one trending name are often a single operator or a copy-paste farm that seeds pools and then pulls them. Siblings that have already been pulled show which exit tactic that operator uses, and they show it before the candidate is pulled."
+   },
+   {
+    "statement": "Holder concentration measured after excluding the AMM account understates control risk. When the excluded AMM share is \u226550% and LP providers are few or unlocked, top-10 holder % should not count as evidence of dispersed ownership.",
+    "conditions": "The RugCheck/GMGN top-10 figure excludes the AMM, the excluded AMM share is \u226550%, and the LP is unlocked or has few providers.",
+    "market_structure_rationale": "Tokens held in the pool are effectively controlled by whoever holds the LP tokens. If one party can withdraw the pool, it controls the majority of supply, however spread out the non-pool wallets look."
+   }
+  ],
+  "summary": "The report called strong_fade with p_rug 70 and p_runner 7, and the outcome matched: liquidity went to $0 within the first 60-minute bar. The recorded exit price was only 6.3% below entry, but with no liquidity the realized return was -100% at 60, 360 and 1440 minutes. The price was already stale after the pull, since it never touched any \u00b120% level. The reasoning that actually bore on this was structural. The pool was created directly on PumpSwap, so the deployer kept the LP tokens, and they were 0% burned or locked. Liquidity exceeded market cap, few parties supplied LP, and half the sibling copies had already been pulled to zero liquidity. Several of the report's other arguments did not explain the result: the canonical-ticker competition, wash-trade inference, bundler counts, and the 'price falling' claim. The price-falling claim was already stale, because the price rose 65% between T2 and entry. The direction of the call was knowable at decision time, and the evidence arguably justified a higher p_rug. The exact timing of the pull was not knowable. This is one case, so it validates the LP-control mechanism rather than proving it. That mechanism should be tested prospectively using the hypotheses above."
+ },
+ "ttft_ms": 16102,
+ "type": "result",
+ "duration_ms": 39362,
+ "uuid": "ff4242d5-0335-4857-b1f5-59c9502ee5e1",
+ "ttft_stream_ms": 789,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 790,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

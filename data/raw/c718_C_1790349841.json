@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 66493,
+ "stop_reason": "tool_use",
+ "session_id": "f57efc62-887e-4e76-955d-3888424e1beb",
+ "total_cost_usd": 0.31365919999999997,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 14664,
+  "cache_read_input_tokens": 56021,
+  "output_tokens": 3483,
+  "output_tokens_details": {
+   "thinking_tokens": 409
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14664,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2149,
+    "cache_read_input_tokens": 16717,
+    "cache_creation_input_tokens": 523,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 523
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3483,
+   "cacheReadInputTokens": 56021,
+   "cacheCreationInputTokens": 14664,
+   "webSearchRequests": 0,
+   "costUSD": 0.19821619999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 409,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 55193,
+   "outputTokens": 2050,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11544300000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"CORDON launched on pump.fun at 14:25 UTC. It went up about 13x in its first hour, from a few thousand dollars to about $49k market cap, and graduated to a PumpSwap pool at about 15:23 UTC (GMGN migrated_unix). The new PumpSwap pool holds about $18k of liquidity. It is a low-effort 'AI bot-detection utility' launch: cordon.world is a template-style landing page with an outlook.com contact email. The page says the $CORDON token is 'not yet live', the contract will be 'published at launch', and it points to X handle @Cordonxyz. The token metadata instead points to @cordonworld. The website never mentions this contract or @cordonworld. I found no organic discussion anywhere. The flow looks like a bonding-curve pump driven by bundlers and bots: GMGN tags 95 bundler wallets, 27 snipers and 105 fresh wallets, with a 45% bot/degen rate.\",\"narrative\":{\"description\":\"Generic 'AI agent / bot-detection' utility claim with a SaaS-style site. There is no cultural or news hook.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Nothing indicates organic spread. The move comes from pump.fun curve momentum, graduation hype and bundler/sniper activity. There were no search hits for the contract, the ticker or the handles.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The token links cordon.world. But that site says its token is not yet launched and lists a different X handle (@Cordonxyz, not @cordonworld). So the link between the token and the 'project' is unverified and inconsistent.\",\"competing_tokens\":\"One dead earlier 'Cordon' pump.fun token (8jF36..., $4.4k market cap, zero volume). It is not relevant.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN: 95 bundler wallets, top bundler trader share 33%, 27 snipers, 105 fresh wallets, bot/degen rate 45%. RugCheck: a 5-wallet transfer insider network. Social: no organic mentions found; X handle mismatch between the site and the token metadata; outlook.com contact email.\",\"uncertainty\":\"X could not be fetched (HTTP 402), so there could be KOL posts or X activity I could not see. 3 smart wallets and 1 renowned wallet are present.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Just graduated to PumpSwap: post-migration dumps by curve buyers and bundlers are typical\",\"Heavy bundler presence (95 wallets, 33% top bundler trader share)\",\"Liquidity only about $18k in the new pool\",\"The dev X account has launched 3 tokens; the creator's best ATH was only about $54k (this token)\",\"A 13x run in the first hour is already priced in\"]},\"counterargument\":\"Graduated pump.fun coins with 400+ unique buyers, $58k volume in the first hour and a buy/sell ratio of about 1.7 sometimes keep running on PumpSwap as trending bots pick them up. A $49k market cap is tiny, so going from $50k to $100k needs only modest new inflows. The 'AI bot detection' utility framing plus a polished site could pull in utility-narrative buyers. Smart and renowned wallets are present. Supply is fairly spread out: top 10 hold 22%, and the dev holds 1%.\",\"unknowns\":[\"Contents of the @cordonworld X account and whether any KOLs posted it\",\"Price action right after migration beyond the first few minutes\",\"Whether the bundler wallets are already exiting\",\"Whether the Cordonxyz/cordonworld mismatch means the website was borrowed\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"x.com returned 402. Searches for the contract, $CORDON and the handles gave no relevant hits. The DexScreener API showed a PumpSwap pair at $49k market cap with $18k liquidity, +9% over 5 minutes after migration.\"},\"thesis\":\"A coordinated pump.fun launch dressed up as an AI utility project. The site does not confirm this token, and heavy bundler activity plus a fresh graduation to PumpSwap usually lead to a dump. The chance of another 2x before a halving is low but not negligible, given the small market cap and active trading.\",\"continuation_view\":\"fade\",\"p_runner\":12,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://cordon.world\",\"what\":\"Project site: bot-detection SaaS, token 'not yet live', X handle @Cordonxyz, outlook email\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/GSGErUNRVESS4CGBQ2A56rVBEVPms9BEGLMgTwv7pump\",\"what\":\"PumpSwap pair after migration: $49k market cap, $18k liquidity\"},{\"url\":\"https://x.com/cordonworld\",\"what\":\"Token-linked X account; fetch returned 402\"}]}",
+ "structured_output": {
+  "what_is_happening": "CORDON launched on pump.fun at 14:25 UTC. It went up about 13x in its first hour, from a few thousand dollars to about $49k market cap, and graduated to a PumpSwap pool at about 15:23 UTC (GMGN migrated_unix). The new PumpSwap pool holds about $18k of liquidity. It is a low-effort 'AI bot-detection utility' launch: cordon.world is a template-style landing page with an outlook.com contact email. The page says the $CORDON token is 'not yet live', the contract will be 'published at launch', and it points to X handle @Cordonxyz. The token metadata instead points to @cordonworld. The website never mentions this contract or @cordonworld. I found no organic discussion anywhere. The flow looks like a bonding-curve pump driven by bundlers and bots: GMGN tags 95 bundler wallets, 27 snipers and 105 fresh wallets, with a 45% bot/degen rate.",
+  "narrative": {
+   "description": "Generic 'AI agent / bot-detection' utility claim with a SaaS-style site. There is no cultural or news hook.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Nothing indicates organic spread. The move comes from pump.fun curve momentum, graduation hype and bundler/sniper activity. There were no search hits for the contract, the ticker or the handles."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The token links cordon.world. But that site says its token is not yet launched and lists a different X handle (@Cordonxyz, not @cordonworld). So the link between the token and the 'project' is unverified and inconsistent.",
+   "competing_tokens": "One dead earlier 'Cordon' pump.fun token (8jF36..., $4.4k market cap, zero volume). It is not relevant.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN: 95 bundler wallets, top bundler trader share 33%, 27 snipers, 105 fresh wallets, bot/degen rate 45%. RugCheck: a 5-wallet transfer insider network. Social: no organic mentions found; X handle mismatch between the site and the token metadata; outlook.com contact email.",
+   "uncertainty": "X could not be fetched (HTTP 402), so there could be KOL posts or X activity I could not see. 3 smart wallets and 1 renowned wallet are present."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Just graduated to PumpSwap: post-migration dumps by curve buyers and bundlers are typical",
+    "Heavy bundler presence (95 wallets, 33% top bundler trader share)",
+    "Liquidity only about $18k in the new pool",
+    "The dev X account has launched 3 tokens; the creator's best ATH was only about $54k (this token)",
+    "A 13x run in the first hour is already priced in"
+   ]
+  },
+  "counterargument": "Graduated pump.fun coins with 400+ unique buyers, $58k volume in the first hour and a buy/sell ratio of about 1.7 sometimes keep running on PumpSwap as trending bots pick them up. A $49k market cap is tiny, so going from $50k to $100k needs only modest new inflows. The 'AI bot detection' utility framing plus a polished site could pull in utility-narrative buyers. Smart and renowned wallets are present. Supply is fairly spread out: top 10 hold 22%, and the dev holds 1%.",
+  "unknowns": [
+   "Contents of the @cordonworld X account and whether any KOLs posted it",
+   "Price action right after migration beyond the first few minutes",
+   "Whether the bundler wallets are already exiting",
+   "Whether the Cordonxyz/cordonworld mismatch means the website was borrowed"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "x.com returned 402. Searches for the contract, $CORDON and the handles gave no relevant hits. The DexScreener API showed a PumpSwap pair at $49k market cap with $18k liquidity, +9% over 5 minutes after migration."
+  },
+  "thesis": "A coordinated pump.fun launch dressed up as an AI utility project. The site does not confirm this token, and heavy bundler activity plus a fresh graduation to PumpSwap usually lead to a dump. The chance of another 2x before a halving is low but not negligible, given the small market cap and active trading.",
+  "continuation_view": "fade",
+  "p_runner": 12,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://cordon.world",
+    "what": "Project site: bot-detection SaaS, token 'not yet live', X handle @Cordonxyz, outlook email"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/GSGErUNRVESS4CGBQ2A56rVBEVPms9BEGLMgTwv7pump",
+    "what": "PumpSwap pair after migration: $49k market cap, $18k liquidity"
+   },
+   {
+    "url": "https://x.com/cordonworld",
+    "what": "Token-linked X account; fetch returned 402"
+   }
+  ]
+ },
+ "ttft_ms": 2413,
+ "type": "result",
+ "duration_ms": 48780,
+ "uuid": "277db546-68ac-41b7-8f38-40d4bb6739dc",
+ "ttft_stream_ms": 793,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 794,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

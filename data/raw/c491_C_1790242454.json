@@ -1,0 +1,187 @@
+{
+ "duration_api_ms": 78443,
+ "stop_reason": "tool_use",
+ "session_id": "31a484fd-a4be-4cb4-a160-1bcc6a34a0a6",
+ "total_cost_usd": 0.3499926,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16880,
+  "cache_read_input_tokens": 61548,
+  "output_tokens": 4166,
+  "output_tokens_details": {
+   "thinking_tokens": 559
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16880,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2792,
+    "cache_read_input_tokens": 18070,
+    "cache_creation_input_tokens": 1386,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1386
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4166,
+   "cacheReadInputTokens": 61548,
+   "cacheCreationInputTokens": 16880,
+   "webSearchRequests": 0,
+   "costUSD": 0.23070959999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 559,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 56748,
+   "outputTokens": 2507,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.119283,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"SDOG \\\"Sitting Dog\\\" (yFcT\u2026pump) is a pump.fun coin created about 08:27 UTC that moved to PumpSwap around 08:39 UTC. At detection it was at a $58k market cap, and $66k by T2, after a +158% 5-minute spike. Its 1-hour volume is about $150k and liquidity about $21.6k, per DexScreener. It is one of at least 10 \\\"Sitting Dog\\\"/SDOG tokens launched within minutes of each other, which points to a meme (probably from a TikTok video) being farmed by launch bots. The volume leader of that cluster is a different token: vpccb9DN\u2026 on PumpSwap, at about $108k market cap, $33k liquidity, about $897k of 1-hour volume and +851% in 1 hour. Another one, 5RrRz\u2026, did $1.86M of volume and now has $0 liquidity. The trigger-time 5-minute spike on this token looks like spillover from the leader rather than its own attention. The deployer, per GMGN, has launched 2,441 tokens and has already closed their position. The coin is flagged as a community takeover (CTO), and its only socials are someone else's X status link and a TikTok video link.\",\"narrative\":{\"description\":\"A 'Sitting Dog' animal meme, apparently sourced from a TikTok video (@thaianhh1011) and an X post by 000xy_0. The packet links both, but neither could be read (X returned 402 and TikTok returned no content). I could not confirm on the open web that it is a viral trend.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"At least 10 same-name tokens were launched within about 20 minutes, and one of them did roughly $1.8M of 1-hour volume. That points to a short-lived pump.fun meta, and possibly a real viral clip. Beyond on-chain copycat launches, I found no web or news evidence of an event that is growing.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It looks like the earliest-created pump.fun SDOG (created_unix 1790238422, about 08:27 UTC), and it has real holders (about 1,177) and 100% burned LP. But the market has settled elsewhere: vpccb9DN\u2026 has about 6x the 1-hour volume, a higher market cap and more liquidity.\",\"competing_tokens\":\"vpccb9DNXYDumuryMK2Sg2FLbeCvDgXwduZAyjJfmci: about $108k market cap, $897k 1-hour volume, +851% in 1 hour; the clear leader. 5RrRzk4dEjitFSnwDuNsb6SGJZtZmzkdE1KAiurRTTVn: $1.86M 1-hour volume, now $0 liquidity (dead or pulled). About 8 more SDOG clones are dead or near zero.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 187 bundler wallets and 43 snipers, with a 64% bot/degen rate. The creator has launched 2,441 tokens, is marked creator_close (sold out), and funding is unknown. The linked X account was renamed twice (denatixxx, then 000xy_0). The coin is flagged as a community takeover and its DexScreener profile was updated. There are no smart-money signals and no degen calls. Clone launches on the same name point to bot farming of the meme.\",\"uncertainty\":\"I could not read X or TikTok content. There may be genuine organic viewers of the source video, but I could not see them.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"A secondary SDOG token competing for the same attention against a leader with 6x the volume\",\"Serial deployer (2,441 launches) who has already exited\",\"187 bundler wallets; bundlers hold about 23% of top traders\",\"About $21k liquidity against about $150k of 1-hour volume, so it moves easily in both directions\",\"The +158% 5-minute spike may simply be a spillover wick that fades\",\"LP is burned, so a classic liquidity pull is unlikely, but the pair can bleed to death\"]},\"counterargument\":\"This token may be the earliest pump.fun SDOG, and it has a 1,177-holder base and burned LP. If the Sitting Dog meta keeps growing (the leader already did +851%), rotation money could flow into the 'original' pump.fun version. A move from $66k to $130k market cap is small in absolute terms, and it just printed +158% in 5 minutes.\",\"unknowns\":[\"What the source TikTok video and X post actually contain, and how far they have spread\",\"Whether the vpccb token is seen as the canonical CTO\",\"Price path between T2 and the 09:55 entry\",\"Whether bundler wallets are still holding\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The X status link returned HTTP 402. The TikTok page returned no content. Searches for the contract address, $SDOG and site:x.com found nothing relevant (only an unrelated @TheSittingDog account). I used the DexScreener API for this token and for its competitors.\"},\"thesis\":\"This is a secondary clone in a bot-farmed 'Sitting Dog' meta. The leader is another token (vpccb\u2026), the deployer is a serial launcher who has already exited, and bundlers are heavy. The 5-minute spike looks like spillover. Doubling from entry would mean overtaking the leader's market cap, which is unlikely. Fade.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/yFcTuQJCMsd1Asya15GZ7h4KGdxsujRLcUiTWWXpump\",\"what\":\"Current price, market cap $66k, liquidity $21.6k, +158% over 5 minutes\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/vpccb9DNXYDumuryMK2Sg2FLbeCvDgXwduZAyjJfmci,5RrRzk4dEjitFSnwDuNsb6SGJZtZmzkdE1KAiurRTTVn\",\"what\":\"Competing SDOG tokens: the leader at $108k market cap with $897k 1-hour volume, and one with $1.86M volume now at $0 liquidity\"},{\"url\":\"https://x.com/000xy_0/status/2103038471522722038\",\"what\":\"Linked X post (HTTP 402, could not read)\"},{\"url\":\"https://www.tiktok.com/@thaianhh1011/video/7687902965465681170\",\"what\":\"Linked TikTok video (no content returned)\"},{\"url\":\"https://x.com/thesittingdog?lang=en\",\"what\":\"Unrelated Sitting Dog X account; only X search hit\"}]}",
+ "structured_output": {
+  "what_is_happening": "SDOG \"Sitting Dog\" (yFcT\u2026pump) is a pump.fun coin created about 08:27 UTC that moved to PumpSwap around 08:39 UTC. At detection it was at a $58k market cap, and $66k by T2, after a +158% 5-minute spike. Its 1-hour volume is about $150k and liquidity about $21.6k, per DexScreener. It is one of at least 10 \"Sitting Dog\"/SDOG tokens launched within minutes of each other, which points to a meme (probably from a TikTok video) being farmed by launch bots. The volume leader of that cluster is a different token: vpccb9DN\u2026 on PumpSwap, at about $108k market cap, $33k liquidity, about $897k of 1-hour volume and +851% in 1 hour. Another one, 5RrRz\u2026, did $1.86M of volume and now has $0 liquidity. The trigger-time 5-minute spike on this token looks like spillover from the leader rather than its own attention. The deployer, per GMGN, has launched 2,441 tokens and has already closed their position. The coin is flagged as a community takeover (CTO), and its only socials are someone else's X status link and a TikTok video link.",
+  "narrative": {
+   "description": "A 'Sitting Dog' animal meme, apparently sourced from a TikTok video (@thaianhh1011) and an X post by 000xy_0. The packet links both, but neither could be read (X returned 402 and TikTok returned no content). I could not confirm on the open web that it is a viral trend.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "At least 10 same-name tokens were launched within about 20 minutes, and one of them did roughly $1.8M of 1-hour volume. That points to a short-lived pump.fun meta, and possibly a real viral clip. Beyond on-chain copycat launches, I found no web or news evidence of an event that is growing."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It looks like the earliest-created pump.fun SDOG (created_unix 1790238422, about 08:27 UTC), and it has real holders (about 1,177) and 100% burned LP. But the market has settled elsewhere: vpccb9DN\u2026 has about 6x the 1-hour volume, a higher market cap and more liquidity.",
+   "competing_tokens": "vpccb9DNXYDumuryMK2Sg2FLbeCvDgXwduZAyjJfmci: about $108k market cap, $897k 1-hour volume, +851% in 1 hour; the clear leader. 5RrRzk4dEjitFSnwDuNsb6SGJZtZmzkdE1KAiurRTTVn: $1.86M 1-hour volume, now $0 liquidity (dead or pulled). About 8 more SDOG clones are dead or near zero.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 187 bundler wallets and 43 snipers, with a 64% bot/degen rate. The creator has launched 2,441 tokens, is marked creator_close (sold out), and funding is unknown. The linked X account was renamed twice (denatixxx, then 000xy_0). The coin is flagged as a community takeover and its DexScreener profile was updated. There are no smart-money signals and no degen calls. Clone launches on the same name point to bot farming of the meme.",
+   "uncertainty": "I could not read X or TikTok content. There may be genuine organic viewers of the source video, but I could not see them."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "A secondary SDOG token competing for the same attention against a leader with 6x the volume",
+    "Serial deployer (2,441 launches) who has already exited",
+    "187 bundler wallets; bundlers hold about 23% of top traders",
+    "About $21k liquidity against about $150k of 1-hour volume, so it moves easily in both directions",
+    "The +158% 5-minute spike may simply be a spillover wick that fades",
+    "LP is burned, so a classic liquidity pull is unlikely, but the pair can bleed to death"
+   ]
+  },
+  "counterargument": "This token may be the earliest pump.fun SDOG, and it has a 1,177-holder base and burned LP. If the Sitting Dog meta keeps growing (the leader already did +851%), rotation money could flow into the 'original' pump.fun version. A move from $66k to $130k market cap is small in absolute terms, and it just printed +158% in 5 minutes.",
+  "unknowns": [
+   "What the source TikTok video and X post actually contain, and how far they have spread",
+   "Whether the vpccb token is seen as the canonical CTO",
+   "Price path between T2 and the 09:55 entry",
+   "Whether bundler wallets are still holding"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The X status link returned HTTP 402. The TikTok page returned no content. Searches for the contract address, $SDOG and site:x.com found nothing relevant (only an unrelated @TheSittingDog account). I used the DexScreener API for this token and for its competitors."
+  },
+  "thesis": "This is a secondary clone in a bot-farmed 'Sitting Dog' meta. The leader is another token (vpccb\u2026), the deployer is a serial launcher who has already exited, and bundlers are heavy. The 5-minute spike looks like spillover. Doubling from entry would mean overtaking the leader's market cap, which is unlikely. Fade.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/yFcTuQJCMsd1Asya15GZ7h4KGdxsujRLcUiTWWXpump",
+    "what": "Current price, market cap $66k, liquidity $21.6k, +158% over 5 minutes"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/vpccb9DNXYDumuryMK2Sg2FLbeCvDgXwduZAyjJfmci,5RrRzk4dEjitFSnwDuNsb6SGJZtZmzkdE1KAiurRTTVn",
+    "what": "Competing SDOG tokens: the leader at $108k market cap with $897k 1-hour volume, and one with $1.86M volume now at $0 liquidity"
+   },
+   {
+    "url": "https://x.com/000xy_0/status/2103038471522722038",
+    "what": "Linked X post (HTTP 402, could not read)"
+   },
+   {
+    "url": "https://www.tiktok.com/@thaianhh1011/video/7687902965465681170",
+    "what": "Linked TikTok video (no content returned)"
+   },
+   {
+    "url": "https://x.com/thesittingdog?lang=en",
+    "what": "Unrelated Sitting Dog X account; only X search hit"
+   }
+  ]
+ },
+ "ttft_ms": 1377,
+ "type": "result",
+ "duration_ms": 62161,
+ "uuid": "223ed36c-3c8b-49c3-be90-1e4784a52e99",
+ "ttft_stream_ms": 811,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 811,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

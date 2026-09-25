@@ -1,0 +1,191 @@
+{
+ "duration_api_ms": 90034,
+ "stop_reason": "tool_use",
+ "session_id": "180cbbdb-974a-48bb-859e-f5681ff3abe4",
+ "total_cost_usd": 0.41270280000000004,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 19443,
+  "cache_read_input_tokens": 70149,
+  "output_tokens": 4630,
+  "output_tokens_details": {
+   "thinking_tokens": 1311
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19443,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2654,
+    "cache_read_input_tokens": 17219,
+    "cache_creation_input_tokens": 2224,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2224
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 4630,
+   "cacheReadInputTokens": 70149,
+   "cacheCreationInputTokens": 19443,
+   "webSearchRequests": 0,
+   "costUSD": 0.2622218,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1311,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 75096,
+   "outputTokens": 3077,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.15048100000000003,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Solana copy of 'musebook' was deployed straight onto PumpSwap about 39 minutes before detection. It did not go through the pump.fun curve: GMGN shows no launchpad, and the pool was created 3 seconds after the mint. Its price is up about 600%, to roughly $88k market cap, on about $240k of volume. The real 'musebook' meme is a Robinhood Chain token (0x91a2...) at about $19-35M market cap. It is tied to @musebooklol and @wyn_eth's AI-agent 'Muse' town, and was reportedly boosted by Meta AI's Alexandr Wang. This Solana token is riding that attention by copying the name.\",\"narrative\":{\"description\":\"The musebook AI-agent social town, whose Robinhood Chain meme token pumped 260-300% to a $20M+ market cap on Sept 21-22, reportedly after Meta AI leadership noticed it.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The parent token on Robinhood Chain is getting mainstream crypto press coverage (KuCoin, ChainCatcher, CoinMarketCap). Solana traders are buying copies of the name. I found nothing tying the project to this Solana contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Name copy only. The contract appears in no search result, has no DexScreener profile and no website. The only link is the @musebooklol handle on GeckoTerminal, and anyone can set that.\",\"competing_tokens\":\"The canonical token is on Robinhood Chain (0x91A2DAe9699f0B82540B5886b0d8759C22820bA3). On Solana there are at least 4 other same-name tokens, including DSyg... ($142k liquidity, about 7 days old, zero h1 volume), ER5M..., and 9vBy... ('musebook.trade').\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal counts 1,949 unique buyers but only 53 unique sellers in the first hour. About 1,300 of those buyers came in a burst 30-60 minutes ago, while only 49 unique buyers showed up in the last 15 minutes. That is more consistent with multi-wallet or bot buying than with organic spread. There is no public discussion of this contract anywhere, and GMGN shows only 2 page visits.\",\"uncertainty\":\"GMGN reports 0 bundlers, 0 fresh wallets and 0 bot/degen share, which cuts against the coordination read. I could not check X directly.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is locked or burned, so whoever supplied the liquidity can pull about 259 SOL at any time; RugCheck rates this 'danger'\",\"The pool was created directly on PumpSwap, not by migrating from the pump.fun curve, so the creator controls the LP\",\"One unlabeled wallet holds 22.89% of supply\",\"Price is already up about 600% from launch, so there is a large supply overhang\",\"GMGN reports creator_token_status 'creator_close'\",\"Buyer activity is decaying: 49 unique buyers in the last 15 minutes against about 1,900 in the hour\"]},\"counterargument\":\"The parent narrative is real, large and current: a $20-35M token with Meta AI attention. Solana copies of hot names can run to several hundred thousand dollars in market cap on spillover alone. This one leads its Solana peers on volume, has about 1,950 holders, and has buyers outnumbering sellers 4 to 1. A 2x from about $90k to $180k is small compared with the parent's valuation, and GMGN shows no bundlers or snipers.\",\"unknowns\":[\"Whether @musebooklol or @wyn_eth has acknowledged any Solana contract\",\"Who owns the 22.89% wallet and who controls the LP\",\"Whether the buyer burst was organic or a multi-wallet operation\",\"Current direction of the parent token on Robinhood Chain\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"The news I found covers only the Robinhood Chain token. musebook.lol did not resolve (DNS error). The contract address returned zero search hits. I found the @musebooklol X profile through search but could not read its posts.\"},\"thesis\":\"This is a non-canonical Solana copy of a hot Robinhood Chain meme. It launched straight onto PumpSwap with an unlocked, creator-controlled pool, one holder with 23% of supply, and a buyer pattern that looks suspicious. It has already gone up about 6x. The narrative is real, but the connection to this token is weak and the structure favors a liquidity pull or a bleed-out over another 2x.\",\"continuation_view\":\"fade\",\"p_runner\":12,\"p_rug\":62,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.coingecko.com/en/coins/musebook\",\"what\":\"The canonical musebook token and its market data\"},{\"url\":\"https://www.kucoin.com/news/flash/robinhood-s-on-chain-token-musebook-market-capitalization-breaks-through-27-million-to-reach-a-new-high\",\"what\":\"The Robinhood Chain musebook token hit $27M market cap on Sept 22\"},{\"url\":\"https://phantom.com/tokens/robinhood/0x91a2dae9699f0b82540b5886b0d8759c22820ba3\",\"what\":\"Canonical contract address on Robinhood Chain\"},{\"url\":\"https://x.com/musebooklol\",\"what\":\"The project's X account (wynjr)\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/DK84djZFz9iRUSJzMpCnNLMzD4RhJoVL5LarRZyN4Nwz\",\"what\":\"Live pair data: about $89k market cap, $60k liquidity, no socials listed\"},{\"url\":\"https://github.com/Solizardking/musebook\",\"what\":\"Unofficial 'musebook solana' GitHub repo with no contract address\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Solana copy of 'musebook' was deployed straight onto PumpSwap about 39 minutes before detection. It did not go through the pump.fun curve: GMGN shows no launchpad, and the pool was created 3 seconds after the mint. Its price is up about 600%, to roughly $88k market cap, on about $240k of volume. The real 'musebook' meme is a Robinhood Chain token (0x91a2...) at about $19-35M market cap. It is tied to @musebooklol and @wyn_eth's AI-agent 'Muse' town, and was reportedly boosted by Meta AI's Alexandr Wang. This Solana token is riding that attention by copying the name.",
+  "narrative": {
+   "description": "The musebook AI-agent social town, whose Robinhood Chain meme token pumped 260-300% to a $20M+ market cap on Sept 21-22, reportedly after Meta AI leadership noticed it.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The parent token on Robinhood Chain is getting mainstream crypto press coverage (KuCoin, ChainCatcher, CoinMarketCap). Solana traders are buying copies of the name. I found nothing tying the project to this Solana contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Name copy only. The contract appears in no search result, has no DexScreener profile and no website. The only link is the @musebooklol handle on GeckoTerminal, and anyone can set that.",
+   "competing_tokens": "The canonical token is on Robinhood Chain (0x91A2DAe9699f0B82540B5886b0d8759C22820bA3). On Solana there are at least 4 other same-name tokens, including DSyg... ($142k liquidity, about 7 days old, zero h1 volume), ER5M..., and 9vBy... ('musebook.trade').",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal counts 1,949 unique buyers but only 53 unique sellers in the first hour. About 1,300 of those buyers came in a burst 30-60 minutes ago, while only 49 unique buyers showed up in the last 15 minutes. That is more consistent with multi-wallet or bot buying than with organic spread. There is no public discussion of this contract anywhere, and GMGN shows only 2 page visits.",
+   "uncertainty": "GMGN reports 0 bundlers, 0 fresh wallets and 0 bot/degen share, which cuts against the coordination read. I could not check X directly."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is locked or burned, so whoever supplied the liquidity can pull about 259 SOL at any time; RugCheck rates this 'danger'",
+    "The pool was created directly on PumpSwap, not by migrating from the pump.fun curve, so the creator controls the LP",
+    "One unlabeled wallet holds 22.89% of supply",
+    "Price is already up about 600% from launch, so there is a large supply overhang",
+    "GMGN reports creator_token_status 'creator_close'",
+    "Buyer activity is decaying: 49 unique buyers in the last 15 minutes against about 1,900 in the hour"
+   ]
+  },
+  "counterargument": "The parent narrative is real, large and current: a $20-35M token with Meta AI attention. Solana copies of hot names can run to several hundred thousand dollars in market cap on spillover alone. This one leads its Solana peers on volume, has about 1,950 holders, and has buyers outnumbering sellers 4 to 1. A 2x from about $90k to $180k is small compared with the parent's valuation, and GMGN shows no bundlers or snipers.",
+  "unknowns": [
+   "Whether @musebooklol or @wyn_eth has acknowledged any Solana contract",
+   "Who owns the 22.89% wallet and who controls the LP",
+   "Whether the buyer burst was organic or a multi-wallet operation",
+   "Current direction of the parent token on Robinhood Chain"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "The news I found covers only the Robinhood Chain token. musebook.lol did not resolve (DNS error). The contract address returned zero search hits. I found the @musebooklol X profile through search but could not read its posts."
+  },
+  "thesis": "This is a non-canonical Solana copy of a hot Robinhood Chain meme. It launched straight onto PumpSwap with an unlocked, creator-controlled pool, one holder with 23% of supply, and a buyer pattern that looks suspicious. It has already gone up about 6x. The narrative is real, but the connection to this token is weak and the structure favors a liquidity pull or a bleed-out over another 2x.",
+  "continuation_view": "fade",
+  "p_runner": 12,
+  "p_rug": 62,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.coingecko.com/en/coins/musebook",
+    "what": "The canonical musebook token and its market data"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/robinhood-s-on-chain-token-musebook-market-capitalization-breaks-through-27-million-to-reach-a-new-high",
+    "what": "The Robinhood Chain musebook token hit $27M market cap on Sept 22"
+   },
+   {
+    "url": "https://phantom.com/tokens/robinhood/0x91a2dae9699f0b82540b5886b0d8759c22820ba3",
+    "what": "Canonical contract address on Robinhood Chain"
+   },
+   {
+    "url": "https://x.com/musebooklol",
+    "what": "The project's X account (wynjr)"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/DK84djZFz9iRUSJzMpCnNLMzD4RhJoVL5LarRZyN4Nwz",
+    "what": "Live pair data: about $89k market cap, $60k liquidity, no socials listed"
+   },
+   {
+    "url": "https://github.com/Solizardking/musebook",
+    "what": "Unofficial 'musebook solana' GitHub repo with no contract address"
+   }
+  ]
+ },
+ "ttft_ms": 3649,
+ "type": "result",
+ "duration_ms": 73083,
+ "uuid": "fbdcc28d-7c55-42d5-9e12-abcf33da163f",
+ "ttft_stream_ms": 729,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 729,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

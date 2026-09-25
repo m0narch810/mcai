@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 64837,
+ "stop_reason": "tool_use",
+ "session_id": "51c5bf0a-25bc-45fe-bdfb-ac1b3721057f",
+ "total_cost_usd": 0.289209,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14875,
+  "cache_read_input_tokens": 42980,
+  "output_tokens": 3575,
+  "output_tokens_details": {
+   "thinking_tokens": 557
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14875,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2614,
+    "cache_read_input_tokens": 15506,
+    "cache_creation_input_tokens": 1945,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1945
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3575,
+   "cacheReadInputTokens": 42980,
+   "cacheCreationInputTokens": 14875,
+   "webSearchRequests": 0,
+   "costUSD": 0.19912799999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 557,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 40626,
+   "outputTokens": 1891,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.090081,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Pok\u00e9mon\\\" (ticker Pok\u00e9mon, contract 82UYHz\u2026, not a pump.fun \\\"\u2026pump\\\" mint) was put straight into a PumpSwap pool about 40 minutes before detection. It was never on a bonding curve and never migrated from one (migrated_unix=0, launchpad null). The creator supplied the liquidity and it is 0% locked/burned. RugCheck flags \\\"Large Amount of LP Unlocked\\\" as danger. It has done $404k of volume at about a $42k market cap (h1 turnover about 7.9x) and is up about 170% since the pool opened. The trade counts look lopsided: GeckoTerminal shows 1,113 unique buyers against only 105 unique sellers, and those 105 sellers made 2,305 sells (about 22 each). That pattern suggests volume or market-making bots plus many tiny \\\"holder-farm\\\" buys, not organic demand. The description is a Chinese classical poem line (\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929), which has nothing to do with Pok\u00e9mon. At least five other tokens named \\\"Pok\u00e9mon\\\" were created in the past ~1 day with the same non-pump contract style, and all now show ~$0 liquidity with no volume. That fits a repeated pattern of launching a pool, faking activity, and pulling the LP. I found no X, Reddit, Telegram or news mention of this contract.\",\"narrative\":{\"description\":\"The generic Pok\u00e9mon franchise name. Pok\u00e9mon is always culturally relevant (30th Celebration TCG set and Pok\u00e9mon GO events in Sept 2026), and an earlier POKEMON memecoin ran in late August after the official Pok\u00e9mon X account was hacked. But there is no fresh catalyst tied to this token today, and the project description is an unrelated Chinese poem.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The activity looks bot-driven (few sellers making many sells, many micro-buyers), inside a creator-funded pool with unlocked LP.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing links it to any real Pok\u00e9mon event or community. It is one of many same-name copies launched in the past day.\",\"competing_tokens\":\"At least 9 same-name tokens appear in the packet (278n2Q\u2026, 9NQ1sK\u2026, HqfY7y\u2026, U436GS\u2026, 3QU3y7\u2026, etc.). Almost all have ~$0 liquidity. The earlier August hack-related POKEMON PumpSwap pool also exists.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,113 unique buyers against 105 unique sellers who made 2,305 sells, which points to bot or market-making sell flow. GMGN tags 27 bundler wallets. There is no social presence, no website and no DexScreener profile. Same-name, same-style tokens from the prior day now have zero liquidity, which suggests a serial LP-pull pattern.\",\"uncertainty\":\"I could not see X directly. The 'creator_best_token_ath_mcap' field suggests the creator has launched before, even though the launched-token count shows 0. The sibling tokens are not confirmed to share this deployer.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator-supplied LP is 0% locked or burned and can be pulled at any moment\",\"Liquidity ($51k) is larger than market cap ($42k), and the pool holds 60% of supply, all controlled by the LP owner\",\"Same-name tokens from the prior ~24h all show ~$0 liquidity, a repeat rug pattern\",\"Volume looks bot-inflated\",\"27 bundler wallets\"]},\"counterargument\":\"Holder concentration outside the pool is low (top10 is about 8.5%), there are over 1,100 holders, mint and freeze authority are renounced, and there are no taxes. Pok\u00e9mon is a globally recognised name, and a POKEMON coin ran to about $576k in August. If the creator leaves the LP in and real traders keep arriving, a $42k cap coin could double to $85k fast. The creator's best token reportedly reached a $247k ATH.\",\"unknowns\":[\"Whether the dead same-name tokens share this creator or LP owner\",\"Whether any X or Telegram call group is pushing it\",\"Who owns the LP tokens\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The contract search returned nothing. A site:x.com search found only unrelated Pok\u00e9mon-themed Solana projects. News covered only the general Pok\u00e9mon calendar and the August hack coin. DexScreener returned 403. GeckoTerminal API confirmed the pool stats. The packet lists no project website or socials. I did not search Reddit, Telegram or Discord separately; given how anonymous this launch is, I judged them very unlikely to have anything.\"},\"thesis\":\"This looks like a generic-name, creator-funded PumpSwap pool with unlocked LP and bot-inflated volume. It is part of a batch of same-name tokens that have already had their liquidity drained. The chance of a pull within 6 hours is high, and the chance of an honest 2x before -50% is low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":80,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/3fvthme8LECDQdHJTNMxbhRzPBK3EjPYPKHshVgfS4on\",\"what\":\"Pool stats: 1,113 buyers vs 105 sellers, $404k volume, $51.8k reserve\"},{\"url\":\"https://www.bitget.com/academy/what-is-pokemon-meme-coin-x-account-hack-price-surge-review\",\"what\":\"The earlier August POKEMON memecoin tied to the Pok\u00e9mon X account hack\"},{\"url\":\"https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-september-2026\",\"what\":\"General Pok\u00e9mon news for Sept 2026; no specific catalyst\"},{\"url\":\"https://x.com/poke_solana\",\"what\":\"Unrelated Pok\u00e9mon Solana accounts found in the X search\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Pok\u00e9mon\" (ticker Pok\u00e9mon, contract 82UYHz\u2026, not a pump.fun \"\u2026pump\" mint) was put straight into a PumpSwap pool about 40 minutes before detection. It was never on a bonding curve and never migrated from one (migrated_unix=0, launchpad null). The creator supplied the liquidity and it is 0% locked/burned. RugCheck flags \"Large Amount of LP Unlocked\" as danger. It has done $404k of volume at about a $42k market cap (h1 turnover about 7.9x) and is up about 170% since the pool opened. The trade counts look lopsided: GeckoTerminal shows 1,113 unique buyers against only 105 unique sellers, and those 105 sellers made 2,305 sells (about 22 each). That pattern suggests volume or market-making bots plus many tiny \"holder-farm\" buys, not organic demand. The description is a Chinese classical poem line (\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929), which has nothing to do with Pok\u00e9mon. At least five other tokens named \"Pok\u00e9mon\" were created in the past ~1 day with the same non-pump contract style, and all now show ~$0 liquidity with no volume. That fits a repeated pattern of launching a pool, faking activity, and pulling the LP. I found no X, Reddit, Telegram or news mention of this contract.",
+  "narrative": {
+   "description": "The generic Pok\u00e9mon franchise name. Pok\u00e9mon is always culturally relevant (30th Celebration TCG set and Pok\u00e9mon GO events in Sept 2026), and an earlier POKEMON memecoin ran in late August after the official Pok\u00e9mon X account was hacked. But there is no fresh catalyst tied to this token today, and the project description is an unrelated Chinese poem.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The activity looks bot-driven (few sellers making many sells, many micro-buyers), inside a creator-funded pool with unlocked LP."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing links it to any real Pok\u00e9mon event or community. It is one of many same-name copies launched in the past day.",
+   "competing_tokens": "At least 9 same-name tokens appear in the packet (278n2Q\u2026, 9NQ1sK\u2026, HqfY7y\u2026, U436GS\u2026, 3QU3y7\u2026, etc.). Almost all have ~$0 liquidity. The earlier August hack-related POKEMON PumpSwap pool also exists.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,113 unique buyers against 105 unique sellers who made 2,305 sells, which points to bot or market-making sell flow. GMGN tags 27 bundler wallets. There is no social presence, no website and no DexScreener profile. Same-name, same-style tokens from the prior day now have zero liquidity, which suggests a serial LP-pull pattern.",
+   "uncertainty": "I could not see X directly. The 'creator_best_token_ath_mcap' field suggests the creator has launched before, even though the launched-token count shows 0. The sibling tokens are not confirmed to share this deployer."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator-supplied LP is 0% locked or burned and can be pulled at any moment",
+    "Liquidity ($51k) is larger than market cap ($42k), and the pool holds 60% of supply, all controlled by the LP owner",
+    "Same-name tokens from the prior ~24h all show ~$0 liquidity, a repeat rug pattern",
+    "Volume looks bot-inflated",
+    "27 bundler wallets"
+   ]
+  },
+  "counterargument": "Holder concentration outside the pool is low (top10 is about 8.5%), there are over 1,100 holders, mint and freeze authority are renounced, and there are no taxes. Pok\u00e9mon is a globally recognised name, and a POKEMON coin ran to about $576k in August. If the creator leaves the LP in and real traders keep arriving, a $42k cap coin could double to $85k fast. The creator's best token reportedly reached a $247k ATH.",
+  "unknowns": [
+   "Whether the dead same-name tokens share this creator or LP owner",
+   "Whether any X or Telegram call group is pushing it",
+   "Who owns the LP tokens"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The contract search returned nothing. A site:x.com search found only unrelated Pok\u00e9mon-themed Solana projects. News covered only the general Pok\u00e9mon calendar and the August hack coin. DexScreener returned 403. GeckoTerminal API confirmed the pool stats. The packet lists no project website or socials. I did not search Reddit, Telegram or Discord separately; given how anonymous this launch is, I judged them very unlikely to have anything."
+  },
+  "thesis": "This looks like a generic-name, creator-funded PumpSwap pool with unlocked LP and bot-inflated volume. It is part of a batch of same-name tokens that have already had their liquidity drained. The chance of a pull within 6 hours is high, and the chance of an honest 2x before -50% is low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 80,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/3fvthme8LECDQdHJTNMxbhRzPBK3EjPYPKHshVgfS4on",
+    "what": "Pool stats: 1,113 buyers vs 105 sellers, $404k volume, $51.8k reserve"
+   },
+   {
+    "url": "https://www.bitget.com/academy/what-is-pokemon-meme-coin-x-account-hack-price-surge-review",
+    "what": "The earlier August POKEMON memecoin tied to the Pok\u00e9mon X account hack"
+   },
+   {
+    "url": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-september-2026",
+    "what": "General Pok\u00e9mon news for Sept 2026; no specific catalyst"
+   },
+   {
+    "url": "https://x.com/poke_solana",
+    "what": "Unrelated Pok\u00e9mon Solana accounts found in the X search"
+   }
+  ]
+ },
+ "ttft_ms": 3775,
+ "type": "result",
+ "duration_ms": 57907,
+ "uuid": "91795f09-ee5f-4396-99aa-8ba03e3f5be2",
+ "ttft_stream_ms": 755,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 756,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

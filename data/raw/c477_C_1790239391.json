@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 81479,
+ "stop_reason": "tool_use",
+ "session_id": "d427bf24-17a0-4e84-b299-c8174face667",
+ "total_cost_usd": 0.3438774,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16371,
+  "cache_read_input_tokens": 58832,
+  "output_tokens": 4309,
+  "output_tokens_details": {
+   "thinking_tokens": 973
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16371,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2645,
+    "cache_read_input_tokens": 17509,
+    "cache_creation_input_tokens": 1438,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1438
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4309,
+   "cacheReadInputTokens": 58832,
+   "cacheCreationInputTokens": 16371,
+   "webSearchRequests": 0,
+   "costUSD": 0.2289544,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 973,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 51463,
+   "outputTokens": 2692,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.114923,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"NPC (Led1Uu\u2026) is a copycat of the real \\\"NPCs\\\" token, not the project itself. The real one is 68SVgJ\u2026pump, a pump.fun coin that DexScreener shows at about $9.4M market cap, up roughly 19,000% in 24 hours. It belongs to wenpc.family, a site where creator fees spawn LLM-run \\\"NPC\\\" wallets that trade on pump.fun and buy $NPC. This copy has no 'pump' mint suffix and was not launched through pump.fun's curve. Someone deployed it straight into a PumpSwap pool about 40 minutes before detection, putting in roughly $160k of unlocked liquidity. That is more than the whole market cap. It also reuses the real project's X handle and website in its metadata. The trading looks manufactured. About $5.2M traded in one hour against a ~$115k market cap, which is about 46x turnover. GeckoTerminal counts 2,064 unique buyers but only 55 unique sellers. GMGN flags 48 bundler wallets holding about 23% of trader volume, and says the dev's X account has launched 48 tokens. At least 9 other 'NPCs' clones appeared in the last few hours, and most are already at $0 liquidity.\",\"narrative\":{\"description\":\"wenpc.family runs an autonomous AI-agent project: every $10 of creator fees spawns an LLM wallet that trades on pump.fun and never sells $NPC. The real token went up about 190x in a day, which drew a wave of copycats.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The real NPCs token is a strong AI-agent story that surged within the last day. Clones are riding that attention, but the story belongs to 68SV\u2026pump, not to this mint.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its only link is copied metadata: the wenpc.family description and the @wenpcfamily handle. The site says $NPC trades on pump.fun, and this mint is not a pump.fun mint.\",\"competing_tokens\":\"The real one is 68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump (about $9.4M market cap, $273k liquidity). Plus at least 8 dead 'NPCs' clones from the last few hours (a4h4\u2026, CZJN\u2026, 3Vkm\u2026, 6kgc\u2026, BCvE\u2026, GQZM\u2026, E12o\u2026), all at $0 liquidity, and the older Non-Playable Coin tokens.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"$5.2M of volume in one hour against a ~$115k market cap. 2,064 unique buyers but only 55 unique sellers, which suggests bot-sprayed buys and/or wallets that can't or don't sell. 48 bundler wallets holding 23% of trader share. The dev's X account has launched 48 tokens. The creator seeded the pool with unlocked liquidity bigger than the market cap. Sibling clones from the same wave are already at $0 liquidity.\",\"uncertainty\":\"I couldn't see X posts (fetching x.com returned HTTP 402). Buyer counts could include some real people who confused this with the real token.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is locked or burned, and a single creator supplies it. RugCheck flags this as danger and warns there are few LP providers.\",\"The creator seeded ~$160k of SOL that they can withdraw at any moment.\",\"Sibling clones have already had their liquidity pulled to $0.\",\"Volume is heavily inflated by bots and bundlers.\",\"RugCheck flags it as a copycat token, and GMGN finds its image duplicated 8 times.\"]},\"counterargument\":\"The real NPCs story is hot, and there are over 2,000 holders with top-10 concentration of only ~13%. Confused buyers could push this clone to 2x before the creator pulls. Liquidity above market cap also means big buys move the price less, so the creator might let it run longer to attract more buyers.\",\"unknowns\":[\"The creator's plan and timing for pulling the LP\",\"Whether the 55-seller figure means a sell restriction or just bot behaviour\",\"What is being posted on X about this contract\",\"Whether wenpc.family has any real tie to this mint (it looks very unlikely)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"wenpc.family describes $NPC as a pump.fun token. DexScreener confirms the real 68SV\u2026pump token at $9.4M. Searching the contract address returned nothing. x.com returned 402.\"},\"thesis\":\"This is a copycat of a hot AI-agent coin. It has fake volume, creator-controlled unlocked liquidity, and a batch of sibling clones that have already been rugged. The most likely outcome is an LP pull well inside 6 hours. The chance of a 2x from entry is small.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://wenpc.family\",\"what\":\"The real project's site: an AI NPC agent trading project whose $NPC token trades on pump.fun\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump\",\"what\":\"The real NPCs token at about $9.4M market cap, +19,378% in 24h\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/Led1Uu4h1sp9KN1Bkbz8egx8oPv4gAq2n93kPn4tuKF\",\"what\":\"This clone's pair: ~$110k market cap, $157k liquidity, $5.3M volume, no socials\"},{\"url\":\"https://x.com/wenpcfamily\",\"what\":\"Project X account; could not be fetched (HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "NPC (Led1Uu\u2026) is a copycat of the real \"NPCs\" token, not the project itself. The real one is 68SVgJ\u2026pump, a pump.fun coin that DexScreener shows at about $9.4M market cap, up roughly 19,000% in 24 hours. It belongs to wenpc.family, a site where creator fees spawn LLM-run \"NPC\" wallets that trade on pump.fun and buy $NPC. This copy has no 'pump' mint suffix and was not launched through pump.fun's curve. Someone deployed it straight into a PumpSwap pool about 40 minutes before detection, putting in roughly $160k of unlocked liquidity. That is more than the whole market cap. It also reuses the real project's X handle and website in its metadata. The trading looks manufactured. About $5.2M traded in one hour against a ~$115k market cap, which is about 46x turnover. GeckoTerminal counts 2,064 unique buyers but only 55 unique sellers. GMGN flags 48 bundler wallets holding about 23% of trader volume, and says the dev's X account has launched 48 tokens. At least 9 other 'NPCs' clones appeared in the last few hours, and most are already at $0 liquidity.",
+  "narrative": {
+   "description": "wenpc.family runs an autonomous AI-agent project: every $10 of creator fees spawns an LLM wallet that trades on pump.fun and never sells $NPC. The real token went up about 190x in a day, which drew a wave of copycats.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The real NPCs token is a strong AI-agent story that surged within the last day. Clones are riding that attention, but the story belongs to 68SV\u2026pump, not to this mint."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its only link is copied metadata: the wenpc.family description and the @wenpcfamily handle. The site says $NPC trades on pump.fun, and this mint is not a pump.fun mint.",
+   "competing_tokens": "The real one is 68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump (about $9.4M market cap, $273k liquidity). Plus at least 8 dead 'NPCs' clones from the last few hours (a4h4\u2026, CZJN\u2026, 3Vkm\u2026, 6kgc\u2026, BCvE\u2026, GQZM\u2026, E12o\u2026), all at $0 liquidity, and the older Non-Playable Coin tokens.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "$5.2M of volume in one hour against a ~$115k market cap. 2,064 unique buyers but only 55 unique sellers, which suggests bot-sprayed buys and/or wallets that can't or don't sell. 48 bundler wallets holding 23% of trader share. The dev's X account has launched 48 tokens. The creator seeded the pool with unlocked liquidity bigger than the market cap. Sibling clones from the same wave are already at $0 liquidity.",
+   "uncertainty": "I couldn't see X posts (fetching x.com returned HTTP 402). Buyer counts could include some real people who confused this with the real token."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is locked or burned, and a single creator supplies it. RugCheck flags this as danger and warns there are few LP providers.",
+    "The creator seeded ~$160k of SOL that they can withdraw at any moment.",
+    "Sibling clones have already had their liquidity pulled to $0.",
+    "Volume is heavily inflated by bots and bundlers.",
+    "RugCheck flags it as a copycat token, and GMGN finds its image duplicated 8 times."
+   ]
+  },
+  "counterargument": "The real NPCs story is hot, and there are over 2,000 holders with top-10 concentration of only ~13%. Confused buyers could push this clone to 2x before the creator pulls. Liquidity above market cap also means big buys move the price less, so the creator might let it run longer to attract more buyers.",
+  "unknowns": [
+   "The creator's plan and timing for pulling the LP",
+   "Whether the 55-seller figure means a sell restriction or just bot behaviour",
+   "What is being posted on X about this contract",
+   "Whether wenpc.family has any real tie to this mint (it looks very unlikely)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "wenpc.family describes $NPC as a pump.fun token. DexScreener confirms the real 68SV\u2026pump token at $9.4M. Searching the contract address returned nothing. x.com returned 402."
+  },
+  "thesis": "This is a copycat of a hot AI-agent coin. It has fake volume, creator-controlled unlocked liquidity, and a batch of sibling clones that have already been rugged. The most likely outcome is an LP pull well inside 6 hours. The chance of a 2x from entry is small.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://wenpc.family",
+    "what": "The real project's site: an AI NPC agent trading project whose $NPC token trades on pump.fun"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump",
+    "what": "The real NPCs token at about $9.4M market cap, +19,378% in 24h"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/Led1Uu4h1sp9KN1Bkbz8egx8oPv4gAq2n93kPn4tuKF",
+    "what": "This clone's pair: ~$110k market cap, $157k liquidity, $5.3M volume, no socials"
+   },
+   {
+    "url": "https://x.com/wenpcfamily",
+    "what": "Project X account; could not be fetched (HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 3844,
+ "type": "result",
+ "duration_ms": 65685,
+ "uuid": "741b5746-20d0-400d-8659-ebc43f26c008",
+ "ttft_stream_ms": 857,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 857,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,194 @@
+{
+ "duration_api_ms": 69729,
+ "stop_reason": "tool_use",
+ "session_id": "201497b8-6d9e-42a0-aed9-bc250ae169b1",
+ "total_cost_usd": 0.32572740000000006,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15481,
+  "cache_read_input_tokens": 44127,
+  "output_tokens": 3718,
+  "output_tokens_details": {
+   "thinking_tokens": 368
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15481,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2755,
+    "cache_read_input_tokens": 16196,
+    "cache_creation_input_tokens": 1861,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1861
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3718,
+   "cacheReadInputTokens": 44127,
+   "cacheCreationInputTokens": 15481,
+   "webSearchRequests": 0,
+   "costUSD": 0.2070654,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 368,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 58242,
+   "outputTokens": 2084,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11866199999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"TTP is the official token of TrendTrader Pro, a subscription service that sells AI trading signals. The project's own site lists this exact contract address, gives fair-launch tokenomics (no team allocation) and describes a \\\"Fund A\\\" hedge-fund subsidiary that it says will spend half its profits buying and burning TTP. The token launched on pump.fun about 1h50m ago and moved to PumpSwap about 74 minutes before detection. Price rose about 350% in 6h, reached a high near $353k market cap, then pulled back to about $215k. The last 5 minutes show a +20% bounce on about $1.1M of 6h volume. A re-check of DexScreener at report time showed $218k market cap, $43.5k liquidity, 1h change -10%, 5m change +23%, and slightly more sells than buys.\",\"narrative\":{\"description\":\"A token from an existing business: a trading-signals SaaS whose founder says he previously built and sold Tradiso and founded DexToro. The pitch is a hedge-fund subsidiary that will buy back and burn the token. This is not a meme or cultural story. It is a founder/utility pitch, which pulls in some buyers but is a common shape on pump.fun.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Most likely the project's own existing audience (X, TikTok, Instagram, YouTube) plus trending bots on pump.fun, GMGN and DexScreener ('trending on pump.fun, +3852%'). I found no organic third-party discussion. The founder's earlier token, DexToro's DTORO, is reported as a dead project with its site and socials deleted, and the project's X account is that recycled DexToro account.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"trendtrader.pro/ttp/ lists this exact contract address (5iqjhP...pump) as the official token.\",\"competing_tokens\":\"About 8 copycat TTP/TrendTrader Pro tokens, all with near-zero liquidity. HYPCG... shows strange volume on $25 of liquidity, which looks like wash trading or a scam.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"The project X account has a 5-name history (dextoro_ \u2192 dextoro_com \u2192 DexToroApp \u2192 dextoro \u2192 trendtraderalgo). The dev's X account has launched 3 tokens and deleted 22 token posts. GMGN flags 659 bundler wallets and 1000 fresh wallets, and marks the token as a community takeover. The creator's balance is 0 ('creator_close'). Search reports describe DexToro/DTORO as dead with its socials deleted. The only third-party mention I found was a pump.fun trending listing.\",\"uncertainty\":\"X was not accessible (HTTP 402), so I could not judge the tone or reach of the founder's posts. Some of the bundler wallets could be ordinary trading bots.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Heavy bundler/fresh-wallet presence (659 bundlers, 1000 fresh wallets): coordinated supply could be dumped\",\"Price is already 38% below its high of about $353k. A 2x from about $220k means about $440k, which is well above that high\",\"Creator holds 0% and the dev has closed their position, so the dev has no stake to keep supporting the price\",\"Liquidity (about $43k) is thin compared with more than $1M of volume, which points to fast bot churn\",\"Sell counts slightly exceed buy counts in the h1 and m5 windows\"]},\"counterargument\":\"This is a real, doxxed-ish business that publicly lists this contract address, has multiple social channels and a stated buyback-and-burn mechanism tied to a claimed $1M fund raise. The LP is 100% burned, so the liquidity cannot be pulled. Top-10 holders own only about 23%, and GMGN counts 44 smart wallets and 7 KOL wallets. \\\"Corporate\\\" tokens with a credible founder sometimes get a second leg once the founder posts again, and the latest 5 minutes show a sharp +20% bounce. A retest of the $353k high followed by a breakout to $440k within 6 hours is plausible.\",\"unknowns\":[\"Size and engagement of the founder's X audience\",\"Whether the Fund A $1M raise is real\",\"What happened to the DTORO token and its holders\",\"Who controls the bundled wallets\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The project site confirms this contract address. X returned 402. A search for the contract address returned nothing relevant. Searches on DexToro gave some prior-project context (reported dead). DexScreener was re-checked live at report time.\"},\"thesis\":\"This is the canonical token of a real SaaS company, but it looks like a founder cash-grab pattern: a recycled X account from a dead earlier token project, the dev fully exited, heavy bundling, and price already 38% off its high. Doubling to about $440k needs a new catalyst I could not find. The most likely path is a slow bleed with high churn. The LP burn lowers the risk of the liquidity being pulled, but not the risk of the coin dying.\",\"continuation_view\":\"fade\",\"p_runner\":17,\"p_rug\":30,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://trendtrader.pro/ttp/\",\"what\":\"Official page listing this contract address, the tokenomics and the Fund A buyback plan\"},{\"url\":\"https://trendtrader.pro/\",\"what\":\"TrendTrader Pro business site\"},{\"url\":\"https://cryptorank.io/ico/dextoro\",\"what\":\"Earlier DexToro DTORO token sale\"},{\"url\":\"https://coinlaunch.space/projects/dextoro/\",\"what\":\"DexToro reported as a dead project with site and socials deleted (search snippet; direct fetch returned 403)\"},{\"url\":\"https://www.linkedin.com/in/nicknechanicky/\",\"what\":\"Founder profile: Tradiso acquired in 2022\"},{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/359UV3H3g2ZVff14AnZTWGeKaykLGdd7Ze3Kar68n6xR\",\"what\":\"Live price, liquidity and volume re-check\"},{\"url\":\"https://pump.fun/explore\",\"what\":\"Trending listing (search snippet: $133k market cap, +3852%)\"}]}",
+ "structured_output": {
+  "what_is_happening": "TTP is the official token of TrendTrader Pro, a subscription service that sells AI trading signals. The project's own site lists this exact contract address, gives fair-launch tokenomics (no team allocation) and describes a \"Fund A\" hedge-fund subsidiary that it says will spend half its profits buying and burning TTP. The token launched on pump.fun about 1h50m ago and moved to PumpSwap about 74 minutes before detection. Price rose about 350% in 6h, reached a high near $353k market cap, then pulled back to about $215k. The last 5 minutes show a +20% bounce on about $1.1M of 6h volume. A re-check of DexScreener at report time showed $218k market cap, $43.5k liquidity, 1h change -10%, 5m change +23%, and slightly more sells than buys.",
+  "narrative": {
+   "description": "A token from an existing business: a trading-signals SaaS whose founder says he previously built and sold Tradiso and founded DexToro. The pitch is a hedge-fund subsidiary that will buy back and burn the token. This is not a meme or cultural story. It is a founder/utility pitch, which pulls in some buyers but is a common shape on pump.fun.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Most likely the project's own existing audience (X, TikTok, Instagram, YouTube) plus trending bots on pump.fun, GMGN and DexScreener ('trending on pump.fun, +3852%'). I found no organic third-party discussion. The founder's earlier token, DexToro's DTORO, is reported as a dead project with its site and socials deleted, and the project's X account is that recycled DexToro account."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "trendtrader.pro/ttp/ lists this exact contract address (5iqjhP...pump) as the official token.",
+   "competing_tokens": "About 8 copycat TTP/TrendTrader Pro tokens, all with near-zero liquidity. HYPCG... shows strange volume on $25 of liquidity, which looks like wash trading or a scam.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "The project X account has a 5-name history (dextoro_ \u2192 dextoro_com \u2192 DexToroApp \u2192 dextoro \u2192 trendtraderalgo). The dev's X account has launched 3 tokens and deleted 22 token posts. GMGN flags 659 bundler wallets and 1000 fresh wallets, and marks the token as a community takeover. The creator's balance is 0 ('creator_close'). Search reports describe DexToro/DTORO as dead with its socials deleted. The only third-party mention I found was a pump.fun trending listing.",
+   "uncertainty": "X was not accessible (HTTP 402), so I could not judge the tone or reach of the founder's posts. Some of the bundler wallets could be ordinary trading bots."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Heavy bundler/fresh-wallet presence (659 bundlers, 1000 fresh wallets): coordinated supply could be dumped",
+    "Price is already 38% below its high of about $353k. A 2x from about $220k means about $440k, which is well above that high",
+    "Creator holds 0% and the dev has closed their position, so the dev has no stake to keep supporting the price",
+    "Liquidity (about $43k) is thin compared with more than $1M of volume, which points to fast bot churn",
+    "Sell counts slightly exceed buy counts in the h1 and m5 windows"
+   ]
+  },
+  "counterargument": "This is a real, doxxed-ish business that publicly lists this contract address, has multiple social channels and a stated buyback-and-burn mechanism tied to a claimed $1M fund raise. The LP is 100% burned, so the liquidity cannot be pulled. Top-10 holders own only about 23%, and GMGN counts 44 smart wallets and 7 KOL wallets. \"Corporate\" tokens with a credible founder sometimes get a second leg once the founder posts again, and the latest 5 minutes show a sharp +20% bounce. A retest of the $353k high followed by a breakout to $440k within 6 hours is plausible.",
+  "unknowns": [
+   "Size and engagement of the founder's X audience",
+   "Whether the Fund A $1M raise is real",
+   "What happened to the DTORO token and its holders",
+   "Who controls the bundled wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The project site confirms this contract address. X returned 402. A search for the contract address returned nothing relevant. Searches on DexToro gave some prior-project context (reported dead). DexScreener was re-checked live at report time."
+  },
+  "thesis": "This is the canonical token of a real SaaS company, but it looks like a founder cash-grab pattern: a recycled X account from a dead earlier token project, the dev fully exited, heavy bundling, and price already 38% off its high. Doubling to about $440k needs a new catalyst I could not find. The most likely path is a slow bleed with high churn. The LP burn lowers the risk of the liquidity being pulled, but not the risk of the coin dying.",
+  "continuation_view": "fade",
+  "p_runner": 17,
+  "p_rug": 30,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://trendtrader.pro/ttp/",
+    "what": "Official page listing this contract address, the tokenomics and the Fund A buyback plan"
+   },
+   {
+    "url": "https://trendtrader.pro/",
+    "what": "TrendTrader Pro business site"
+   },
+   {
+    "url": "https://cryptorank.io/ico/dextoro",
+    "what": "Earlier DexToro DTORO token sale"
+   },
+   {
+    "url": "https://coinlaunch.space/projects/dextoro/",
+    "what": "DexToro reported as a dead project with site and socials deleted (search snippet; direct fetch returned 403)"
+   },
+   {
+    "url": "https://www.linkedin.com/in/nicknechanicky/",
+    "what": "Founder profile: Tradiso acquired in 2022"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/359UV3H3g2ZVff14AnZTWGeKaykLGdd7Ze3Kar68n6xR",
+    "what": "Live price, liquidity and volume re-check"
+   },
+   {
+    "url": "https://pump.fun/explore",
+    "what": "Trending listing (search snippet: $133k market cap, +3852%)"
+   }
+  ]
+ },
+ "ttft_ms": 1576,
+ "type": "result",
+ "duration_ms": 54141,
+ "uuid": "bc0a0e98-ad78-4719-b558-788ddb5fc4e1",
+ "ttft_stream_ms": 1391,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 1392,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

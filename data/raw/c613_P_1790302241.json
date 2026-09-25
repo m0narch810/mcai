@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 28796,
+ "stop_reason": "tool_use",
+ "session_id": "7b04708d-ef03-4d38-b632-b045447a5ef6",
+ "total_cost_usd": 0.1202268,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7864,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2846,
+  "output_tokens_details": {
+   "thinking_tokens": 746
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7864,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2846,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7864,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7864
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2846,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7864,
+   "webSearchRequests": 0,
+   "costUSD": 0.1202268,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 746,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u7389\u5154 (\\\"Jade Rabbit\\\", the Moon rabbit of the Mid-Autumn Festival, which falls around 25 Sep 2026) is a pool that was created about 2 hours ago directly on PumpSwap. There is no pump.fun bonding-curve history (migrated_unix=0). The token's only 'social' link is a Binance Chinese (binancezh) X status URL, presumably a Mid-Autumn post the token borrows from. The pool holds 82.9% of supply and about $226k of liquidity against a $137k market cap. That means the deployer seeded a large pool itself, and 0% of the LP is burned or locked. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. Volume is extreme: $13.1M in about 2h, 19x market cap per hour. On GeckoTerminal, 2,663 unique buyers traded against only 41 unique sellers, yet those 41 wallets made about 6,200 sells. That pattern points strongly to a small set of bot wallets making the volume, not two-sided organic trading. GMGN tags 235 bundler wallets and a 28-wallet insider trade network. Price is up about 105% over 6h, flat to down in the last 5 minutes.\",\"narrative\":{\"description\":\"Chinese-language Mid-Autumn Festival meme (Jade Rabbit) timed to the holiday, riding the Binance/CZ Chinese-meme meta by linking a binancezh tweet instead of its own project account.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The timing is real: Mid-Autumn is today or tomorrow in Asia, and Chinese-name memes linked to Binance posts have had speculative waves. But many copies exist, so the theme is not tied to this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only \u7389\u5154 pair with live liquidity and volume right now. Its only link is a borrowed Binance post, not an owned project account.\",\"competing_tokens\":\"At least 10 other \u7389\u5154 tokens were launched in the past ~22h, all now dead (liquidity about $0). That shows repeated farming of this name. More copies are likely as the holiday peaks.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,663 unique buyers against 41 unique sellers, with those 41 wallets making about 6,200 sells, is a bot volume-farming signature. There are 235 GMGN bundler wallets and a 28-wallet insider network. Turnover is 19x market cap per hour. The dev seeded a PumpSwap pool directly with 83% of supply and kept the LP unlocked. There are no smart-money or KOL wallets and no GMGN page visits. The dev's linked X account shows 104 launched tokens, and the image appears in 3 other tokens.\",\"uncertainty\":\"GeckoTerminal's unique-seller count may be undercounted, or router aggregation may hide real sellers. Some of the buyers could be real retail pulled in by the holiday theme.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is burned or locked, and the deployer appears to be the main LP provider, so about $113k of SOL can be withdrawn at any time\",\"Liquidity is larger than market cap because the pool holds 83% of supply. That setup is typical of a self-seeded pool built to be pulled\",\"Volume looks bot-made and one-sided (41 sellers)\",\"The name has already been farmed and rugged about 10 times in the last day\",\"The dev's X account is linked to 104 launches; the image is duplicated\"]},\"counterargument\":\"Holiday timing is genuine, and a Binance-linked Chinese meme on Mid-Autumn night in Asia could draw real flow. Mint and freeze authority are renounced, there is no tax, and the top 10 non-pool holders own only about 9%. The deep pool means a 2x only needs roughly $100k+ of net inflow, which $4M/h of volume could supply if even part of it is real. Pools seeded directly on PumpSwap are not always pulled.\",\"unknowns\":[\"Who owns the LP tokens: the creator wallet shows 'creator_close'\",\"Whether the binancezh post actually mentions this token or just the holiday\",\"The true count of unique sellers\",\"Whether the 2,663 buyers are real or bot-funded\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. Evidence packet only.\"},\"thesis\":\"The holiday narrative is real but can be copied by anyone, and 10 dead copies of this name were launched in the last day. This instance has the structure of a self-seeded, unlocked-LP pool with bot-farmed volume: 41 sellers against 2,663 buyers, 235 bundlers, and a 28-wallet insider network. The likeliest outcome is that the LP is pulled or the pair bleeds out within hours, not a clean 2x from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\u7389\u5154 (\"Jade Rabbit\", the Moon rabbit of the Mid-Autumn Festival, which falls around 25 Sep 2026) is a pool that was created about 2 hours ago directly on PumpSwap. There is no pump.fun bonding-curve history (migrated_unix=0). The token's only 'social' link is a Binance Chinese (binancezh) X status URL, presumably a Mid-Autumn post the token borrows from. The pool holds 82.9% of supply and about $226k of liquidity against a $137k market cap. That means the deployer seeded a large pool itself, and 0% of the LP is burned or locked. RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. Volume is extreme: $13.1M in about 2h, 19x market cap per hour. On GeckoTerminal, 2,663 unique buyers traded against only 41 unique sellers, yet those 41 wallets made about 6,200 sells. That pattern points strongly to a small set of bot wallets making the volume, not two-sided organic trading. GMGN tags 235 bundler wallets and a 28-wallet insider trade network. Price is up about 105% over 6h, flat to down in the last 5 minutes.",
+  "narrative": {
+   "description": "Chinese-language Mid-Autumn Festival meme (Jade Rabbit) timed to the holiday, riding the Binance/CZ Chinese-meme meta by linking a binancezh tweet instead of its own project account.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The timing is real: Mid-Autumn is today or tomorrow in Asia, and Chinese-name memes linked to Binance posts have had speculative waves. But many copies exist, so the theme is not tied to this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only \u7389\u5154 pair with live liquidity and volume right now. Its only link is a borrowed Binance post, not an owned project account.",
+   "competing_tokens": "At least 10 other \u7389\u5154 tokens were launched in the past ~22h, all now dead (liquidity about $0). That shows repeated farming of this name. More copies are likely as the holiday peaks.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,663 unique buyers against 41 unique sellers, with those 41 wallets making about 6,200 sells, is a bot volume-farming signature. There are 235 GMGN bundler wallets and a 28-wallet insider network. Turnover is 19x market cap per hour. The dev seeded a PumpSwap pool directly with 83% of supply and kept the LP unlocked. There are no smart-money or KOL wallets and no GMGN page visits. The dev's linked X account shows 104 launched tokens, and the image appears in 3 other tokens.",
+   "uncertainty": "GeckoTerminal's unique-seller count may be undercounted, or router aggregation may hide real sellers. Some of the buyers could be real retail pulled in by the holiday theme."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is burned or locked, and the deployer appears to be the main LP provider, so about $113k of SOL can be withdrawn at any time",
+    "Liquidity is larger than market cap because the pool holds 83% of supply. That setup is typical of a self-seeded pool built to be pulled",
+    "Volume looks bot-made and one-sided (41 sellers)",
+    "The name has already been farmed and rugged about 10 times in the last day",
+    "The dev's X account is linked to 104 launches; the image is duplicated"
+   ]
+  },
+  "counterargument": "Holiday timing is genuine, and a Binance-linked Chinese meme on Mid-Autumn night in Asia could draw real flow. Mint and freeze authority are renounced, there is no tax, and the top 10 non-pool holders own only about 9%. The deep pool means a 2x only needs roughly $100k+ of net inflow, which $4M/h of volume could supply if even part of it is real. Pools seeded directly on PumpSwap are not always pulled.",
+  "unknowns": [
+   "Who owns the LP tokens: the creator wallet shows 'creator_close'",
+   "Whether the binancezh post actually mentions this token or just the holiday",
+   "The true count of unique sellers",
+   "Whether the 2,663 buyers are real or bot-funded"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. Evidence packet only."
+  },
+  "thesis": "The holiday narrative is real but can be copied by anyone, and 10 dead copies of this name were launched in the last day. This instance has the structure of a self-seeded, unlocked-LP pool with bot-farmed volume: 41 sellers against 2,663 buyers, 235 bundlers, and a 28-wallet insider network. The likeliest outcome is that the LP is pulled or the pair bleeds out within hours, not a clean 2x from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8565,
+ "type": "result",
+ "duration_ms": 28852,
+ "uuid": "f3ae97de-3484-49d0-b7b7-dbbbef6794f1",
+ "ttft_stream_ms": 798,
+ "time_to_request_ms": 54,
+ "first_content_frame_ms": 799,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

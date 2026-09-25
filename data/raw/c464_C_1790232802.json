@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 81400,
+ "stop_reason": "tool_use",
+ "session_id": "17835139-9010-44f5-8a07-68a1e3b4fb7b",
+ "total_cost_usd": 0.3871856,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 17980,
+  "cache_read_input_tokens": 48583,
+  "output_tokens": 3657,
+  "output_tokens_details": {
+   "thinking_tokens": 642
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17980,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2591,
+    "cache_read_input_tokens": 20102,
+    "cache_creation_input_tokens": 454,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 454
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3657,
+   "cacheReadInputTokens": 48583,
+   "cacheCreationInputTokens": 17980,
+   "webSearchRequests": 0,
+   "costUSD": 0.2267286,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 642,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 75307,
+   "outputTokens": 3030,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.160457,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Pok\u00e9mon\\\" is a token on a PumpSwap pool that was set up by hand. It is about 47 minutes old, with roughly $60k market cap and $69k liquidity. That is odd: the pool holds 57.5% of supply and liquidity is higher than market cap. Price is up about 170% in the first hour on about $375k of volume. This is not a normal pump.fun graduate. The contract does not end in \\\"pump\\\", deploy_platform is unknown, migrated_unix is 0, and LP burn is 0% with the LP unlocked (a RugCheck \\\"danger\\\" flag). The packet lists at least 9 other tokens named exactly \\\"Pok\u00e9mon\\\" launched in the past few hours and days, and every one now has about $0 liquidity. One (8jwv\u2026) showed $1.4M market cap and was created about 48 minutes before this pair. Another (HqfY\u2026) was created 8 minutes before this pair, did $53k of hourly volume, and now has $0 liquidity. That fits a serial LP-pull farm reusing the Pok\u00e9mon name. There is no fresh Pok\u00e9mon crypto news to explain it. The only real Pok\u00e9mon crypto event was the August 27, 2026 hack of the official @Pokemon X account, which promoted a different $POKEMON token. Today's Pok\u00e9mon news is routine game content.\",\"narrative\":{\"description\":\"Generic Pok\u00e9mon brand meme, with some leftover memory of the August 2026 hack of the official @Pokemon X account, which shilled a different $POKEMON token. I found no new catalyst today (Sept 24): only routine news such as Pok\u00e9mon Unite adding Toxtricity and Pok\u00e9mon GO events.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The flow looks produced by the deployer: a manually created pool, lots of same-name clones, and a buyer/seller imbalance (1,113 unique buyers against 107 unique sellers) that points to bot or retail-trap buying, not social discovery.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing makes this the canonical Pok\u00e9mon token. It is one of at least 10 tokens with the same name, and it has no socials, website or DexScreener profile. The token tied to the hack is a different one: an August 28 PumpSwap POKEMON/SOL pool.\",\"competing_tokens\":\"At least 9 same-name 'Pok\u00e9mon' tokens, all with about $0 liquidity now, several created within the past hour (8jwv\u2026, HqfY\u2026, U436\u2026, 3FNF\u2026). There is also the August 2026 hack-linked $POKEMON token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The pool was created by hand with unlocked LP and 0% burn. A single wallet holding 10.55% is tagged as dev/team/sniper. GMGN flags 6 bundler wallets. Unique buyers are about 10 times unique sellers. There are no socials. Several same-name tokens from the past few hours now sit at about $0 liquidity, a typical serial LP-pull pattern.\",\"uncertainty\":\"I could not confirm on-chain that the same deployer made the clone tokens, and I have no X post data, so there may be a Telegram call group driving buyers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 100% unlocked (lp_burn_ratio 0) on a manually created PumpSwap pool, so whoever deployed it can pull liquidity instantly\",\"Almost all liquidity is the deployer's own. Liquidity above market cap suggests seeded LP that can be withdrawn\",\"One wallet holds 10.55%, tagged by GMGN as dev team\",\"Same-name clones launched in the past hour have already been drained to about $0 liquidity\",\"6 bundler wallets\"]},\"counterargument\":\"About 1,100 distinct buyers and still-rising 5-minute buy counts could mean real retail rotation between Pok\u00e9mon clones. If the deployer waits for more inflow before pulling, price could briefly double from about $60k to $120k market cap. Mint and freeze authorities are renounced and there is no tax.\",\"unknowns\":[\"Whether the deployer of the drained same-name clones is the same entity as this creator\",\"Whether a Telegram call channel is driving the buyers\",\"Exactly when the LP owner will withdraw\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searching the contract address returned nothing relevant. News found only the August 2026 @Pokemon account hack, which involved a different token. DexScreener shows no socials.\"},\"thesis\":\"This looks like a serial LP-farm token reusing the Pok\u00e9mon name. The LP is unlocked and was seeded by hand. Recently launched clones with the same name are already drained. There is no narrative catalyst and no canonical claim. A rug within 6 hours is highly likely, and a clean 2x before a pull is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":82,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/9NQ1sKSuK2MQ7sTSRRzZoueY2zHLxHNGWkWYQ66ekTJ8\",\"what\":\"Current market cap $60.6k, liquidity $69.7k, no socials\"},{\"url\":\"https://www.nintendolife.com/news/2026/08/pokemons-social-media-temporarily-compromised-promotes-cryptocurrency\",\"what\":\"August 2026 hack of the official Pok\u00e9mon X account that promoted a memecoin\"},{\"url\":\"https://www.bitget.com/academy/what-is-pokemon-meme-coin-x-account-hack-price-surge-review\",\"what\":\"The hack-linked POKEMON token is a different pool created August 28\"},{\"url\":\"https://pokemongohub.net/post/event/this-week-in-pokemon-go-september-21-27-2026/\",\"what\":\"Only routine Pok\u00e9mon news this week\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Pok\u00e9mon\" is a token on a PumpSwap pool that was set up by hand. It is about 47 minutes old, with roughly $60k market cap and $69k liquidity. That is odd: the pool holds 57.5% of supply and liquidity is higher than market cap. Price is up about 170% in the first hour on about $375k of volume. This is not a normal pump.fun graduate. The contract does not end in \"pump\", deploy_platform is unknown, migrated_unix is 0, and LP burn is 0% with the LP unlocked (a RugCheck \"danger\" flag). The packet lists at least 9 other tokens named exactly \"Pok\u00e9mon\" launched in the past few hours and days, and every one now has about $0 liquidity. One (8jwv\u2026) showed $1.4M market cap and was created about 48 minutes before this pair. Another (HqfY\u2026) was created 8 minutes before this pair, did $53k of hourly volume, and now has $0 liquidity. That fits a serial LP-pull farm reusing the Pok\u00e9mon name. There is no fresh Pok\u00e9mon crypto news to explain it. The only real Pok\u00e9mon crypto event was the August 27, 2026 hack of the official @Pokemon X account, which promoted a different $POKEMON token. Today's Pok\u00e9mon news is routine game content.",
+  "narrative": {
+   "description": "Generic Pok\u00e9mon brand meme, with some leftover memory of the August 2026 hack of the official @Pokemon X account, which shilled a different $POKEMON token. I found no new catalyst today (Sept 24): only routine news such as Pok\u00e9mon Unite adding Toxtricity and Pok\u00e9mon GO events.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The flow looks produced by the deployer: a manually created pool, lots of same-name clones, and a buyer/seller imbalance (1,113 unique buyers against 107 unique sellers) that points to bot or retail-trap buying, not social discovery."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing makes this the canonical Pok\u00e9mon token. It is one of at least 10 tokens with the same name, and it has no socials, website or DexScreener profile. The token tied to the hack is a different one: an August 28 PumpSwap POKEMON/SOL pool.",
+   "competing_tokens": "At least 9 same-name 'Pok\u00e9mon' tokens, all with about $0 liquidity now, several created within the past hour (8jwv\u2026, HqfY\u2026, U436\u2026, 3FNF\u2026). There is also the August 2026 hack-linked $POKEMON token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The pool was created by hand with unlocked LP and 0% burn. A single wallet holding 10.55% is tagged as dev/team/sniper. GMGN flags 6 bundler wallets. Unique buyers are about 10 times unique sellers. There are no socials. Several same-name tokens from the past few hours now sit at about $0 liquidity, a typical serial LP-pull pattern.",
+   "uncertainty": "I could not confirm on-chain that the same deployer made the clone tokens, and I have no X post data, so there may be a Telegram call group driving buyers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 100% unlocked (lp_burn_ratio 0) on a manually created PumpSwap pool, so whoever deployed it can pull liquidity instantly",
+    "Almost all liquidity is the deployer's own. Liquidity above market cap suggests seeded LP that can be withdrawn",
+    "One wallet holds 10.55%, tagged by GMGN as dev team",
+    "Same-name clones launched in the past hour have already been drained to about $0 liquidity",
+    "6 bundler wallets"
+   ]
+  },
+  "counterargument": "About 1,100 distinct buyers and still-rising 5-minute buy counts could mean real retail rotation between Pok\u00e9mon clones. If the deployer waits for more inflow before pulling, price could briefly double from about $60k to $120k market cap. Mint and freeze authorities are renounced and there is no tax.",
+  "unknowns": [
+   "Whether the deployer of the drained same-name clones is the same entity as this creator",
+   "Whether a Telegram call channel is driving the buyers",
+   "Exactly when the LP owner will withdraw"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searching the contract address returned nothing relevant. News found only the August 2026 @Pokemon account hack, which involved a different token. DexScreener shows no socials."
+  },
+  "thesis": "This looks like a serial LP-farm token reusing the Pok\u00e9mon name. The LP is unlocked and was seeded by hand. Recently launched clones with the same name are already drained. There is no narrative catalyst and no canonical claim. A rug within 6 hours is highly likely, and a clean 2x before a pull is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 82,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/9NQ1sKSuK2MQ7sTSRRzZoueY2zHLxHNGWkWYQ66ekTJ8",
+    "what": "Current market cap $60.6k, liquidity $69.7k, no socials"
+   },
+   {
+    "url": "https://www.nintendolife.com/news/2026/08/pokemons-social-media-temporarily-compromised-promotes-cryptocurrency",
+    "what": "August 2026 hack of the official Pok\u00e9mon X account that promoted a memecoin"
+   },
+   {
+    "url": "https://www.bitget.com/academy/what-is-pokemon-meme-coin-x-account-hack-price-surge-review",
+    "what": "The hack-linked POKEMON token is a different pool created August 28"
+   },
+   {
+    "url": "https://pokemongohub.net/post/event/this-week-in-pokemon-go-september-21-27-2026/",
+    "what": "Only routine Pok\u00e9mon news this week"
+   }
+  ]
+ },
+ "ttft_ms": 4738,
+ "type": "result",
+ "duration_ms": 51405,
+ "uuid": "2504c83f-4ccd-485b-b87a-d5a7bda6db1e",
+ "ttft_stream_ms": 807,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 807,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 26272,
+ "stop_reason": "tool_use",
+ "session_id": "4fbf552a-7268-49b5-b6a1-6dd8220ff5fc",
+ "total_cost_usd": 0.1140388,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7703,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2601,
+  "output_tokens_details": {
+   "thinking_tokens": 715
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7703,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2601,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7703,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7703
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2601,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7703,
+   "webSearchRequests": 0,
+   "costUSD": 0.1140388,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 715,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GO/LESGO is a 46-minute-old PumpSwap pool. It was created directly on the AMM 4 seconds after the mint (migrated_unix=0, not on the curve). The token has a very popular name: the packet lists 10 other \\\"LESGO/GO\\\" tokens. One is at $8.8M mcap with $4.3M liquidity and one at $5.2M is still trading. Several ~$1.4M-mcap clones show liquidity about equal to mcap, and a few ~$1.5M clones sit at around $560 of liquidity, which looks like they were already drained. This pair has done $1.27M volume on about $56k of liquidity (22.7x turnover in an hour) and is up about 350%. The trade flow is badly lopsided: 2,057 unique buyers against only 53 unique sellers, with 1,400 sells. The \\\"rest\\\" of holders own 1.4% of supply. The creator has closed out, the LP is 0% locked/burned, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\".\",\"narrative\":{\"description\":\"LESGO appears to be a real trending ticker elsewhere, given the $5-9M same-name tokens and the lesgodotfun handle. This contract is one of many clones riding that name, not the source of the story.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most likely name confusion plus bot-made activity: many small buyer wallets and a few repeat sellers. Any real spread belongs to the canonical LESGO, not to this clone.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Only the shared name/ticker. The GeckoTerminal twitter handle 'lesgodotfun' has probably been copied from the original project, and there is no website, no DexScreener profile and no links.\",\"competing_tokens\":\"At least 10 same-name GO/LESGO tokens: DKGi\u2026 ($8.8M mcap, $4.3M liq, created about 6.75h earlier), D1YZ\u2026 ($5.2M, active volume, about 21h old, likely the canonical one) and many ~$1.4M clones with liquidity equal to mcap or already drained.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,057 unique buyers against 53 unique sellers, with holders beyond the top 40 owning 1.4% of supply. That fits a dust-wallet bot spraying buys to inflate holder counts while a few wallets sell repeatedly. It sits alongside a serial clone pattern on the same name, a single-provider unlocked LP, the creator having closed out, and 22x hourly turnover on a thin pool.\",\"uncertainty\":\"GMGN shows no bundlers, snipers or fresh wallets and a 0 bot rate. Some real buyers confused about the ticker could be taking part.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked/burned, with a single or few LP providers who can pull at any time\",\"Several same-name clones already drained to about $560 liquidity, a repeat rug template\",\"Creator closed out; the pool was made directly on PumpSwap with no curve\",\"Volume is about 22x liquidity, with buyers concentrated in dust wallets\",\"Price already fell back about 19% from its high; m30 was -12%\"]},\"counterargument\":\"If LESGO is a hot ticker, confused buyers could keep pouring in. From about $56k, a doubling to about $110k only needs modest real inflow, and sister clones reportedly reached ~$1.4M displayed mcap. GMGN finds no snipers, bundlers or insiders, and the top holders are spread out at 1.6-4.5% each.\",\"unknowns\":[\"Who holds the LP tokens and when they plan to pull\",\"Whether the ~$1.4M-mcap clones ever had real trading or just showed fake-looking liquidity equal to mcap\",\"Which LESGO is canonical and how much real attention it has\",\"Whether the 2,057 buyers are real people\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged only from the packet.\"},\"thesis\":\"This looks like a clone of a trending ticker with an unlocked single-provider LP and bot-shaped flow (thousands of dust buyers, 53 sellers). Several siblings have already been drained. The most likely outcome is an LP pull within hours, not a 2x from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GO/LESGO is a 46-minute-old PumpSwap pool. It was created directly on the AMM 4 seconds after the mint (migrated_unix=0, not on the curve). The token has a very popular name: the packet lists 10 other \"LESGO/GO\" tokens. One is at $8.8M mcap with $4.3M liquidity and one at $5.2M is still trading. Several ~$1.4M-mcap clones show liquidity about equal to mcap, and a few ~$1.5M clones sit at around $560 of liquidity, which looks like they were already drained. This pair has done $1.27M volume on about $56k of liquidity (22.7x turnover in an hour) and is up about 350%. The trade flow is badly lopsided: 2,057 unique buyers against only 53 unique sellers, with 1,400 sells. The \"rest\" of holders own 1.4% of supply. The creator has closed out, the LP is 0% locked/burned, and RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\".",
+  "narrative": {
+   "description": "LESGO appears to be a real trending ticker elsewhere, given the $5-9M same-name tokens and the lesgodotfun handle. This contract is one of many clones riding that name, not the source of the story.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most likely name confusion plus bot-made activity: many small buyer wallets and a few repeat sellers. Any real spread belongs to the canonical LESGO, not to this clone."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Only the shared name/ticker. The GeckoTerminal twitter handle 'lesgodotfun' has probably been copied from the original project, and there is no website, no DexScreener profile and no links.",
+   "competing_tokens": "At least 10 same-name GO/LESGO tokens: DKGi\u2026 ($8.8M mcap, $4.3M liq, created about 6.75h earlier), D1YZ\u2026 ($5.2M, active volume, about 21h old, likely the canonical one) and many ~$1.4M clones with liquidity equal to mcap or already drained.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,057 unique buyers against 53 unique sellers, with holders beyond the top 40 owning 1.4% of supply. That fits a dust-wallet bot spraying buys to inflate holder counts while a few wallets sell repeatedly. It sits alongside a serial clone pattern on the same name, a single-provider unlocked LP, the creator having closed out, and 22x hourly turnover on a thin pool.",
+   "uncertainty": "GMGN shows no bundlers, snipers or fresh wallets and a 0 bot rate. Some real buyers confused about the ticker could be taking part."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked/burned, with a single or few LP providers who can pull at any time",
+    "Several same-name clones already drained to about $560 liquidity, a repeat rug template",
+    "Creator closed out; the pool was made directly on PumpSwap with no curve",
+    "Volume is about 22x liquidity, with buyers concentrated in dust wallets",
+    "Price already fell back about 19% from its high; m30 was -12%"
+   ]
+  },
+  "counterargument": "If LESGO is a hot ticker, confused buyers could keep pouring in. From about $56k, a doubling to about $110k only needs modest real inflow, and sister clones reportedly reached ~$1.4M displayed mcap. GMGN finds no snipers, bundlers or insiders, and the top holders are spread out at 1.6-4.5% each.",
+  "unknowns": [
+   "Who holds the LP tokens and when they plan to pull",
+   "Whether the ~$1.4M-mcap clones ever had real trading or just showed fake-looking liquidity equal to mcap",
+   "Which LESGO is canonical and how much real attention it has",
+   "Whether the 2,057 buyers are real people"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged only from the packet."
+  },
+  "thesis": "This looks like a clone of a trending ticker with an unlocked single-provider LP and bot-shaped flow (thousands of dust buyers, 53 sellers). Several siblings have already been drained. The most likely outcome is an LP pull within hours, not a 2x from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8428,
+ "type": "result",
+ "duration_ms": 26318,
+ "uuid": "0d0785b2-f895-4a2b-ae68-3bcaf6633288",
+ "ttft_stream_ms": 861,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 862,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

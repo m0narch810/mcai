@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 83485,
+ "stop_reason": "tool_use",
+ "session_id": "dd40874a-d0dc-4cd3-9e3c-5eeee0e5caff",
+ "total_cost_usd": 0.3637806,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16882,
+  "cache_read_input_tokens": 61478,
+  "output_tokens": 4677,
+  "output_tokens_details": {
+   "thinking_tokens": 1130
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16882,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2646,
+    "cache_read_input_tokens": 17992,
+    "cache_creation_input_tokens": 1466,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1466
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4677,
+   "cacheReadInputTokens": 61478,
+   "cacheCreationInputTokens": 16882,
+   "webSearchRequests": 0,
+   "costUSD": 0.2409316,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1130,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 59964,
+   "outputTokens": 2577,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.12284899999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"MORX (\\\"Moorix\\\") is 37 minutes old. It launched on Meteora's launchpad and was moved to a PumpSwap pool in the same second (created and migrated times are identical). It presents itself as the token of a \\\"no-liquidation perps on Robinhood Chain\\\" app. The website moorix.app is polished and describes a tokenomics plan: buybacks, burns, staking tiers. The GitHub org 'moorixapp' joined on 2026-09-23, one day ago, and has 4 repos with 0 stars. I found no posts on X, Reddit, Telegram or in the news about the token or the project. The @moorixapp X page returned 402, so I could not read it. On-chain the token did $3.6M of volume on about $54k of liquidity in under an hour, a turnover of 67x. There were 24.7k transactions but only about 186 unique buyers and 179 sellers in the last 30 minutes, which looks like bot or wash trading. Price swung -56% over 15 minutes before recovering. One unlabeled wallet (FhVo\u2026) holds 80% of supply outside the pool. PumpSwap LP is about 99% unlocked per RugCheck. The dev has launched 7 tokens, and there are about 10 same-name MORX clones, most of them dead at $1 market cap.\",\"narrative\":{\"description\":\"A fake-utility 'DeFi app' pitch: perps with no liquidation price on Robinhood Chain, plus a MORX token with buyback and burn. It rides the general Robinhood Chain / tokenized-stocks theme. There is no real news event, product traction or community behind it.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The attention seems to come from the on-chain volume itself: trending on DEX screeners, pushed by bot or bundled volume (GMGN flags 152 bundler wallets). The day-old website and GitHub look built to seem credible.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"GeckoTerminal/GMGN link this contract to the X handle moorixapp and the site moorix.app, and it holds almost all of the MORX volume and liquidity. But the 'project' is one day old and the website shows no contract address.\",\"competing_tokens\":\"About 10 same-name MORX/Moorix tokens. Most were deployed in the hours before this one and sit at $1 market cap. HFNnKv\u2026 has $0.9M of h1 volume but $20 of liquidity. This looks like one operator's test deploys or serial launches.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GitHub org created 2026-09-23. No independent social mentions found. 152 bundler wallets. 2210 h1 unique buyers but only about 186 in the last 30 minutes, against 15k+ transactions in that window (bot churn). Volume is 67x liquidity. The dev has launched 7 prior tokens and there are many clones with the same name. One wallet holds 80% of supply.\",\"uncertainty\":\"I could not read X, so any real KOL or community push is invisible to me. The 80% wallet might be a vesting or treasury contract that RugCheck does not label.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80.05% of supply outside the pool, so the supply overhang is catastrophic\",\"PumpSwap LP is about 99% unlocked (RugCheck), so it can be pulled at any time\",\"Only $54k of liquidity against a $260k market cap, with wash-like turnover\",\"Creator is a serial launcher (7 tokens) and there are same-name clones\",\"Already dropped -56% within 15 minutes, which shows extreme volatility\"]},\"counterargument\":\"Fake-utility tokens with polished sites sometimes get pumped hard before the pull. The creator's best token reached a $1.7M ATH, so a pump to around $500k+ from $260k is within this operator's history. The 80% wallet could be a locked treasury, and heavy bot volume can keep price rising for hours.\",\"unknowns\":[\"Who controls the FhVo\u2026 wallet holding 80%, and whether it is locked\",\"Contents and age of the @moorixapp X account (402)\",\"Whether a KOL or call-channel push is underway\",\"Who the LP owner is on PumpSwap\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract-address search returned nothing. site:x.com search found no moorix account. The X profile fetch returned 402. The website and a GitHub org one day old were found. DexScreener and RugCheck APIs were used.\"},\"thesis\":\"This looks like a day-old fake-utility token. One wallet controls 80% of supply, the LP is unlocked, a serial-launcher dev deployed it, and bot or bundled volume inflates it. For a +100% move before -50%, market cap would have to go from about $260k to over $500k without a dump or pull. That is unlikely, and a rug within 6 hours is the most likely outcome.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://moorix.app/\",\"what\":\"Project site: Robinhood Chain perps pitch and MORX tokenomics, no contract address\"},{\"url\":\"https://github.com/moorixapp\",\"what\":\"GitHub org joined 2026-09-23, 4 repos, 0 stars\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/HYmWcM4ox5LSwNM8b7ZvkCVCh8jfbTrgwiR6qJSSv5mc\",\"what\":\"Pairs, $54k liquidity, $3.66M h1 volume\"},{\"url\":\"https://api.rugcheck.xyz/v1/tokens/HYmWcM4ox5LSwNM8b7ZvkCVCh8jfbTrgwiR6qJSSv5mc/report/summary\",\"what\":\"LP about 99% unlocked, danger rating\"},{\"url\":\"https://x.com/moorixapp\",\"what\":\"X profile inaccessible (402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "MORX (\"Moorix\") is 37 minutes old. It launched on Meteora's launchpad and was moved to a PumpSwap pool in the same second (created and migrated times are identical). It presents itself as the token of a \"no-liquidation perps on Robinhood Chain\" app. The website moorix.app is polished and describes a tokenomics plan: buybacks, burns, staking tiers. The GitHub org 'moorixapp' joined on 2026-09-23, one day ago, and has 4 repos with 0 stars. I found no posts on X, Reddit, Telegram or in the news about the token or the project. The @moorixapp X page returned 402, so I could not read it. On-chain the token did $3.6M of volume on about $54k of liquidity in under an hour, a turnover of 67x. There were 24.7k transactions but only about 186 unique buyers and 179 sellers in the last 30 minutes, which looks like bot or wash trading. Price swung -56% over 15 minutes before recovering. One unlabeled wallet (FhVo\u2026) holds 80% of supply outside the pool. PumpSwap LP is about 99% unlocked per RugCheck. The dev has launched 7 tokens, and there are about 10 same-name MORX clones, most of them dead at $1 market cap.",
+  "narrative": {
+   "description": "A fake-utility 'DeFi app' pitch: perps with no liquidation price on Robinhood Chain, plus a MORX token with buyback and burn. It rides the general Robinhood Chain / tokenized-stocks theme. There is no real news event, product traction or community behind it.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The attention seems to come from the on-chain volume itself: trending on DEX screeners, pushed by bot or bundled volume (GMGN flags 152 bundler wallets). The day-old website and GitHub look built to seem credible."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "GeckoTerminal/GMGN link this contract to the X handle moorixapp and the site moorix.app, and it holds almost all of the MORX volume and liquidity. But the 'project' is one day old and the website shows no contract address.",
+   "competing_tokens": "About 10 same-name MORX/Moorix tokens. Most were deployed in the hours before this one and sit at $1 market cap. HFNnKv\u2026 has $0.9M of h1 volume but $20 of liquidity. This looks like one operator's test deploys or serial launches.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GitHub org created 2026-09-23. No independent social mentions found. 152 bundler wallets. 2210 h1 unique buyers but only about 186 in the last 30 minutes, against 15k+ transactions in that window (bot churn). Volume is 67x liquidity. The dev has launched 7 prior tokens and there are many clones with the same name. One wallet holds 80% of supply.",
+   "uncertainty": "I could not read X, so any real KOL or community push is invisible to me. The 80% wallet might be a vesting or treasury contract that RugCheck does not label."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80.05% of supply outside the pool, so the supply overhang is catastrophic",
+    "PumpSwap LP is about 99% unlocked (RugCheck), so it can be pulled at any time",
+    "Only $54k of liquidity against a $260k market cap, with wash-like turnover",
+    "Creator is a serial launcher (7 tokens) and there are same-name clones",
+    "Already dropped -56% within 15 minutes, which shows extreme volatility"
+   ]
+  },
+  "counterargument": "Fake-utility tokens with polished sites sometimes get pumped hard before the pull. The creator's best token reached a $1.7M ATH, so a pump to around $500k+ from $260k is within this operator's history. The 80% wallet could be a locked treasury, and heavy bot volume can keep price rising for hours.",
+  "unknowns": [
+   "Who controls the FhVo\u2026 wallet holding 80%, and whether it is locked",
+   "Contents and age of the @moorixapp X account (402)",
+   "Whether a KOL or call-channel push is underway",
+   "Who the LP owner is on PumpSwap"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The contract-address search returned nothing. site:x.com search found no moorix account. The X profile fetch returned 402. The website and a GitHub org one day old were found. DexScreener and RugCheck APIs were used."
+  },
+  "thesis": "This looks like a day-old fake-utility token. One wallet controls 80% of supply, the LP is unlocked, a serial-launcher dev deployed it, and bot or bundled volume inflates it. For a +100% move before -50%, market cap would have to go from about $260k to over $500k without a dump or pull. That is unlikely, and a rug within 6 hours is the most likely outcome.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://moorix.app/",
+    "what": "Project site: Robinhood Chain perps pitch and MORX tokenomics, no contract address"
+   },
+   {
+    "url": "https://github.com/moorixapp",
+    "what": "GitHub org joined 2026-09-23, 4 repos, 0 stars"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/HYmWcM4ox5LSwNM8b7ZvkCVCh8jfbTrgwiR6qJSSv5mc",
+    "what": "Pairs, $54k liquidity, $3.66M h1 volume"
+   },
+   {
+    "url": "https://api.rugcheck.xyz/v1/tokens/HYmWcM4ox5LSwNM8b7ZvkCVCh8jfbTrgwiR6qJSSv5mc/report/summary",
+    "what": "LP about 99% unlocked, danger rating"
+   },
+   {
+    "url": "https://x.com/moorixapp",
+    "what": "X profile inaccessible (402)"
+   }
+  ]
+ },
+ "ttft_ms": 4223,
+ "type": "result",
+ "duration_ms": 63109,
+ "uuid": "7d6f6768-a1c0-493c-841b-dcc0f2674eba",
+ "ttft_stream_ms": 782,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 782,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

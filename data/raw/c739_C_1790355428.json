@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 60012,
+ "stop_reason": "tool_use",
+ "session_id": "64f479ce-795b-4880-984d-5e4bd91a87c5",
+ "total_cost_usd": 0.2798892,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14532,
+  "cache_read_input_tokens": 43826,
+  "output_tokens": 2946,
+  "output_tokens_details": {
+   "thinking_tokens": 395
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14532,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2295,
+    "cache_read_input_tokens": 16479,
+    "cache_creation_input_tokens": 629,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 629
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 2946,
+   "cacheReadInputTokens": 43826,
+   "cacheCreationInputTokens": 14532,
+   "webSearchRequests": 0,
+   "costUSD": 0.1839732,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 395,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 46806,
+   "outputTokens": 1822,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09591599999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"I rate this a likely rug with close to no runner chance. It's a copycat token called \\\"Ondo Finance\\\" (ONDO) on PumpSwap, 42 minutes old. It uses the real Ondo Finance brand, X handle and website (https://ondo.finance/), and the logo image is duplicated 65 times across tokens. The trigger was $5.7M of volume in one hour on about $60k of liquidity, which is 95x turnover. GeckoTerminal counts 1,765 unique buyers against only 51 unique sellers, with 4.5k buys and 2.4k sells. Buyers and sellers that lopsided look like volume bots or wash trading, not organic demand. One unlabeled wallet (FhVo3...) holds 80% of supply. The pool holds only about 12.8%, so the circulating float is tiny and a huge overhang can be dumped into a thin pool. The same-name pairs from the same wave are already dead ($0.3 liquidity). The news hook is real: Ondo launched BlackRock-backed portfolios on 2026-09-24. But it belongs to the real ONDO token, not this one.\",\"narrative\":{\"description\":\"Impersonation of Ondo Finance, the real RWA project, off the back of real news (BlackRock-backed Intelligent Portfolios, Sept 24 2026). The real ONDO already trades with hundreds of millions in liquidity.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The volume looks bot-generated (buyers vastly outnumber sellers, 95x turnover) and there is no organic discussion. The real Ondo news gives a cover story for scanners and alert bots.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None. It borrows the brand of an established project that already has canonical ONDO tokens on Solana.\",\"competing_tokens\":\"Real/bridged ONDO tokens with $78M-$430M liquidity (9uXf..., FWkj..., 8852..., oKx4...), plus several dead same-name copycats from the last 24h (G2s9..., FGKt..., 7h9z...).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,765 unique buyers vs 51 unique sellers. $5.7M volume on $60k liquidity. 20 bundler wallets. Logo image duplicated 65 times. The dev's X account has launched 14 tokens. The project X account is recycled (renamed from OndoFinance to Ondo) and borrowed from the real brand. No web or X mentions of the contract address.\",\"uncertainty\":\"I can't see X posts or private Telegram groups, and I can't identify the 80% wallet. It could conceivably be a locker or program account that RugCheck did not label.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80% of supply against a pool holding about 12.8%, a massive dump overhang\",\"RugCheck flags LP as largely unlocked (danger) with few LP providers, though GMGN reports lp_burn_ratio 1.0, so the sources conflict\",\"Volume looks bot/wash-driven\",\"Same-name copycats from the same wave have already died\",\"Price is already down 10-15% over 5 minutes, off an ATH around $309k mcap\"]},\"counterargument\":\"Brand-impersonation coins riding real news sometimes get a second leg when the news trends. Bot volume can pull in real degens off trending lists, and 1,700+ buyers suggests some real participation. If the 80% wallet is actually a locked or program account, the float is fine, and a push from $240k to $480k is plausible in a volatile tape.\",\"unknowns\":[\"Who controls FhVo3... (80%)\",\"Whether the LP is actually burned (GMGN) or unlocked (RugCheck)\",\"X/Telegram promotion activity\",\"Whether the buyers are real or bot wallets\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"News and site results are for the real Ondo Finance and unrelated to this token. Searching the contract address gave nothing relevant. DexScreener API confirmed 3 pairs, with only PumpSwap holding liquidity.\"},\"thesis\":\"A brand-impersonation copycat with bot-like volume, an 80% single-wallet overhang and dead sibling copies. The chance of a runner is low and the chance of a rug or pair death within 6h is high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":75,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/FhDaACP6tNahnzFQTmT3LoJatZpmo6uki2wb8MAs9QC7\",\"what\":\"Pairs, liquidity, falling m5 price\"},{\"url\":\"https://coinmarketcap.com/cmc-ai/ondo-finance/latest-updates/\",\"what\":\"Real Ondo news (BlackRock portfolios, Sept 24 2026)\"},{\"url\":\"https://www.newsbtc.com/altcoins/ondo-pushes-usdy-deeper-into-solana-defi/\",\"what\":\"Real Ondo Solana activity\"}]}",
+ "structured_output": {
+  "what_is_happening": "I rate this a likely rug with close to no runner chance. It's a copycat token called \"Ondo Finance\" (ONDO) on PumpSwap, 42 minutes old. It uses the real Ondo Finance brand, X handle and website (https://ondo.finance/), and the logo image is duplicated 65 times across tokens. The trigger was $5.7M of volume in one hour on about $60k of liquidity, which is 95x turnover. GeckoTerminal counts 1,765 unique buyers against only 51 unique sellers, with 4.5k buys and 2.4k sells. Buyers and sellers that lopsided look like volume bots or wash trading, not organic demand. One unlabeled wallet (FhVo3...) holds 80% of supply. The pool holds only about 12.8%, so the circulating float is tiny and a huge overhang can be dumped into a thin pool. The same-name pairs from the same wave are already dead ($0.3 liquidity). The news hook is real: Ondo launched BlackRock-backed portfolios on 2026-09-24. But it belongs to the real ONDO token, not this one.",
+  "narrative": {
+   "description": "Impersonation of Ondo Finance, the real RWA project, off the back of real news (BlackRock-backed Intelligent Portfolios, Sept 24 2026). The real ONDO already trades with hundreds of millions in liquidity.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The volume looks bot-generated (buyers vastly outnumber sellers, 95x turnover) and there is no organic discussion. The real Ondo news gives a cover story for scanners and alert bots."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None. It borrows the brand of an established project that already has canonical ONDO tokens on Solana.",
+   "competing_tokens": "Real/bridged ONDO tokens with $78M-$430M liquidity (9uXf..., FWkj..., 8852..., oKx4...), plus several dead same-name copycats from the last 24h (G2s9..., FGKt..., 7h9z...).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,765 unique buyers vs 51 unique sellers. $5.7M volume on $60k liquidity. 20 bundler wallets. Logo image duplicated 65 times. The dev's X account has launched 14 tokens. The project X account is recycled (renamed from OndoFinance to Ondo) and borrowed from the real brand. No web or X mentions of the contract address.",
+   "uncertainty": "I can't see X posts or private Telegram groups, and I can't identify the 80% wallet. It could conceivably be a locker or program account that RugCheck did not label."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80% of supply against a pool holding about 12.8%, a massive dump overhang",
+    "RugCheck flags LP as largely unlocked (danger) with few LP providers, though GMGN reports lp_burn_ratio 1.0, so the sources conflict",
+    "Volume looks bot/wash-driven",
+    "Same-name copycats from the same wave have already died",
+    "Price is already down 10-15% over 5 minutes, off an ATH around $309k mcap"
+   ]
+  },
+  "counterargument": "Brand-impersonation coins riding real news sometimes get a second leg when the news trends. Bot volume can pull in real degens off trending lists, and 1,700+ buyers suggests some real participation. If the 80% wallet is actually a locked or program account, the float is fine, and a push from $240k to $480k is plausible in a volatile tape.",
+  "unknowns": [
+   "Who controls FhVo3... (80%)",
+   "Whether the LP is actually burned (GMGN) or unlocked (RugCheck)",
+   "X/Telegram promotion activity",
+   "Whether the buyers are real or bot wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "News and site results are for the real Ondo Finance and unrelated to this token. Searching the contract address gave nothing relevant. DexScreener API confirmed 3 pairs, with only PumpSwap holding liquidity."
+  },
+  "thesis": "A brand-impersonation copycat with bot-like volume, an 80% single-wallet overhang and dead sibling copies. The chance of a runner is low and the chance of a rug or pair death within 6h is high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 75,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/FhDaACP6tNahnzFQTmT3LoJatZpmo6uki2wb8MAs9QC7",
+    "what": "Pairs, liquidity, falling m5 price"
+   },
+   {
+    "url": "https://coinmarketcap.com/cmc-ai/ondo-finance/latest-updates/",
+    "what": "Real Ondo news (BlackRock portfolios, Sept 24 2026)"
+   },
+   {
+    "url": "https://www.newsbtc.com/altcoins/ondo-pushes-usdy-deeper-into-solana-defi/",
+    "what": "Real Ondo Solana activity"
+   }
+  ]
+ },
+ "ttft_ms": 3753,
+ "type": "result",
+ "duration_ms": 49277,
+ "uuid": "c2576919-155d-4f2f-9e07-88d1a302333c",
+ "ttft_stream_ms": 1430,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1430,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 25660,
+ "stop_reason": "tool_use",
+ "session_id": "0661c317-1f8c-498d-bd9d-119f97bdeec8",
+ "total_cost_usd": 0.1202588,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8138,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2738,
+  "output_tokens_details": {
+   "thinking_tokens": 542
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8138,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2738,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 8138,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8138
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2738,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 8138,
+   "webSearchRequests": 0,
+   "costUSD": 0.1202588,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 542,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 37-minute-old copycat token, \u548c\u5e73\u718a\u732b (\\\"peace panda\\\", named \\\"Ping Ping and Fu Shuang\\\"), tripped the rule after a burst of about $1.07M in volume against only about $22k of liquidity (roughly 44x hourly turnover). It launched through a Meteora virtual curve (created and migrated in the same second) and now trades on a PumpSwap pair. The price peaked at about 2.23e-6 and is now about 9.0e-7, down roughly 60% from that peak and 27-33% over the last 5-15 minutes. The packet lists at least 10 tokens with the same name, several launched within the same ~2 hours, and two of them (8nJJ, C2tJ) have similar or larger hourly volume. The project description links to a BSC contract, which suggests this is a Solana copy of a Chinese-language meme that started on BSC.\",\"narrative\":{\"description\":\"Chinese-language panda meme ('Ping Ping and Fu Shuang', \u548c\u5e73\u718a\u732b / \u53cb\u8c0a\u4f7f\u8005 'friendship envoy'). It is probably tied to a panda-diplomacy news item and to the Chinese meme wave on BSC. The X link points to a news account's status post (chinanow24), not a project account.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A news hook plus the Chinese-meme trend drew rapid-fire copy launches across Solana. Attention is split among many clones, and the story's home seems to be BSC. The price on this pair is already falling hard.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It uses the same name and ticker as the theme and briefly led on volume in its first hour. Nothing marks it as the official or canonical token.\",\"competing_tokens\":\"At least 10 same-name tokens. The older 13i7...pump (\u718a\u732b, about $1.1M market cap, $122k liquidity) is the established one. Two fresh clones from the same wave are also active: 8nJJ (\u548c\u5e73\u718a\u732b, $430k hourly volume, $54k liquidity) and C2tJ (\u53cb\u8c0a\u4f7f\u8005, $553k hourly volume). Several other copies are already dead with near-zero liquidity. The BSC original is probably the real canonical token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The hour saw 2,136 unique buyers but only 123 unique sellers, and 4.3k buys against 2.4k sells. That lopsided pattern is typical of bot or bundled buying. GMGN tags 68 bundler wallets. Hourly volume is about 44x liquidity, which points to wash or bot churn. The coin has no DexScreener profile and no socials of its own, and the X link goes to a news post. The image is a duplicate of 4 others. The creator wallet has closed out, and its best previous token peaked at about $223k market cap.\",\"uncertainty\":\"There is no X data, so I cannot tell whether real Chinese-speaking communities are pushing this specific contract. GMGN's low bot/degen rate (0.03) partly contradicts the wash-trading reading.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck gives a 'Large Amount of LP Unlocked' danger flag for one market and a low-LP-provider warning. GMGN reports lp_burn_ratio 1.0, so the two sources conflict.\",\"An unlabeled wallet holds 80.05% of supply (FhVo...). It is probably the Meteora or curve vault, but if it is not, the concentration is extreme.\",\"Liquidity is only about $22k against more than $1M of churn, so it could be drained quickly.\",\"The price is already down about 60% from its high, with sells outnumbering buys in the last 5 minutes.\",\"Many fresh clones are splitting the same attention.\"]},\"counterargument\":\"Chinese-language memes linked to real news have produced sharp second legs. More than 2,100 unique buyers in the first hour is real breadth for a $100k coin. After a 60% drawdown, a bounce back to about 1.5e-6 would double from a low entry and would still sit below the high. Mint and freeze authorities are renounced, the creator holds nothing, and GMGN says the LP is burned, so a classic liquidity pull may be less likely than on a normal launch.\",\"unknowns\":[\"Whether the 80% holder is the pool or curve vault or a real wallet\",\"Whether the LP on the main PumpSwap pair is actually burned or unlocked\",\"What the price will be at the 25-minute entry\",\"Whether the BSC original or a Solana clone becomes the chosen one\",\"What the underlying news event is and how much momentum it has\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This assessment is based only on the evidence packet.\"},\"thesis\":\"This is one of many same-wave clones of a Chinese panda meme that seems to belong to BSC. Buying looks bot-heavy (2,136 unique buyers against 123 sellers, and 68 bundler wallets), and churn is about 44x liquidity. The price has already fallen about 60% from its high, and rivals such as 8nJJ and C2tJ are competing for the same flow. A +100% move before a -50% drop within 6 hours is unlikely. Fading or dying is the likely outcome.\",\"continuation_view\":\"strong_fade\",\"p_runner\":9,\"p_rug\":58,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 37-minute-old copycat token, \u548c\u5e73\u718a\u732b (\"peace panda\", named \"Ping Ping and Fu Shuang\"), tripped the rule after a burst of about $1.07M in volume against only about $22k of liquidity (roughly 44x hourly turnover). It launched through a Meteora virtual curve (created and migrated in the same second) and now trades on a PumpSwap pair. The price peaked at about 2.23e-6 and is now about 9.0e-7, down roughly 60% from that peak and 27-33% over the last 5-15 minutes. The packet lists at least 10 tokens with the same name, several launched within the same ~2 hours, and two of them (8nJJ, C2tJ) have similar or larger hourly volume. The project description links to a BSC contract, which suggests this is a Solana copy of a Chinese-language meme that started on BSC.",
+  "narrative": {
+   "description": "Chinese-language panda meme ('Ping Ping and Fu Shuang', \u548c\u5e73\u718a\u732b / \u53cb\u8c0a\u4f7f\u8005 'friendship envoy'). It is probably tied to a panda-diplomacy news item and to the Chinese meme wave on BSC. The X link points to a news account's status post (chinanow24), not a project account.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A news hook plus the Chinese-meme trend drew rapid-fire copy launches across Solana. Attention is split among many clones, and the story's home seems to be BSC. The price on this pair is already falling hard."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It uses the same name and ticker as the theme and briefly led on volume in its first hour. Nothing marks it as the official or canonical token.",
+   "competing_tokens": "At least 10 same-name tokens. The older 13i7...pump (\u718a\u732b, about $1.1M market cap, $122k liquidity) is the established one. Two fresh clones from the same wave are also active: 8nJJ (\u548c\u5e73\u718a\u732b, $430k hourly volume, $54k liquidity) and C2tJ (\u53cb\u8c0a\u4f7f\u8005, $553k hourly volume). Several other copies are already dead with near-zero liquidity. The BSC original is probably the real canonical token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The hour saw 2,136 unique buyers but only 123 unique sellers, and 4.3k buys against 2.4k sells. That lopsided pattern is typical of bot or bundled buying. GMGN tags 68 bundler wallets. Hourly volume is about 44x liquidity, which points to wash or bot churn. The coin has no DexScreener profile and no socials of its own, and the X link goes to a news post. The image is a duplicate of 4 others. The creator wallet has closed out, and its best previous token peaked at about $223k market cap.",
+   "uncertainty": "There is no X data, so I cannot tell whether real Chinese-speaking communities are pushing this specific contract. GMGN's low bot/degen rate (0.03) partly contradicts the wash-trading reading."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck gives a 'Large Amount of LP Unlocked' danger flag for one market and a low-LP-provider warning. GMGN reports lp_burn_ratio 1.0, so the two sources conflict.",
+    "An unlabeled wallet holds 80.05% of supply (FhVo...). It is probably the Meteora or curve vault, but if it is not, the concentration is extreme.",
+    "Liquidity is only about $22k against more than $1M of churn, so it could be drained quickly.",
+    "The price is already down about 60% from its high, with sells outnumbering buys in the last 5 minutes.",
+    "Many fresh clones are splitting the same attention."
+   ]
+  },
+  "counterargument": "Chinese-language memes linked to real news have produced sharp second legs. More than 2,100 unique buyers in the first hour is real breadth for a $100k coin. After a 60% drawdown, a bounce back to about 1.5e-6 would double from a low entry and would still sit below the high. Mint and freeze authorities are renounced, the creator holds nothing, and GMGN says the LP is burned, so a classic liquidity pull may be less likely than on a normal launch.",
+  "unknowns": [
+   "Whether the 80% holder is the pool or curve vault or a real wallet",
+   "Whether the LP on the main PumpSwap pair is actually burned or unlocked",
+   "What the price will be at the 25-minute entry",
+   "Whether the BSC original or a Solana clone becomes the chosen one",
+   "What the underlying news event is and how much momentum it has"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This assessment is based only on the evidence packet."
+  },
+  "thesis": "This is one of many same-wave clones of a Chinese panda meme that seems to belong to BSC. Buying looks bot-heavy (2,136 unique buyers against 123 sellers, and 68 bundler wallets), and churn is about 44x liquidity. The price has already fallen about 60% from its high, and rivals such as 8nJJ and C2tJ are competing for the same flow. A +100% move before a -50% drop within 6 hours is unlikely. Fading or dying is the likely outcome.",
+  "continuation_view": "strong_fade",
+  "p_runner": 9,
+  "p_rug": 58,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6327,
+ "type": "result",
+ "duration_ms": 25704,
+ "uuid": "214833b4-6341-4aac-9975-474ea7341603",
+ "ttft_stream_ms": 740,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 740,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

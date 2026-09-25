@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 24193,
+ "stop_reason": "tool_use",
+ "session_id": "a269d3ba-80e7-4a27-b2c2-2881ed63d27d",
+ "total_cost_usd": 0.1162004,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8166,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2522,
+  "output_tokens_details": {
+   "thinking_tokens": 542
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8166,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2522,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8166,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8166
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2522,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8166,
+   "webSearchRequests": 0,
+   "costUSD": 0.1162004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 542,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"gram token\\\" (GRAM) is a pool on PumpSwap that is 15.6 minutes old. It was not launched on the pump.fun bonding curve: the mint does not end in \\\"pump\\\", the deploy platform is unknown and migrated_unix is 0. That means the creator seeded the pool directly, and 100% of the LP is unlocked. It has traded about $465k at roughly $32k market cap, with 799 unique buyers against 122 sellers, and price is up about 129% in the hour and +41% in the last 5 minutes. Other \\\"gram token\\\" coins were deployed within seconds of this one. One (4EaRQ\u2026) has already been drained to $2 of liquidity after $89k of volume. Another is still on the pump.fun curve (GjzduhV\u2026pump). GeckoTerminal's twitter field points to a \\\"telegram/status/\u2026\\\" post, which suggests a Telegram-related \\\"Gram\\\" news or post trigger that sent several deployers racing to launch.\",\"narrative\":{\"description\":\"A \\\"Gram\\\" story linked to Telegram, probably a reaction to a Telegram or Durov post that mentions Gram (the old TON token name). Several same-name tokens deployed within one minute suggest a real outside trigger that deployers are front-running.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Several near-simultaneous same-name launches and the Telegram status link point to an outside trigger. Buyer breadth (799 buyers vs 122 sellers) suggests real, spread-out demand, not just a few wallets.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"This is currently the \\\"gram token\\\" copy with the most liquidity and volume. It absorbed the flow after the earlier sibling 4EaRQ was drained.\",\"competing_tokens\":\"4EaRQ\u2026 (gram token, launched ~1 min earlier, liquidity drained to $2), GjzduhV\u2026pump (gram token on the pump.fun curve, $62k mcap, little volume), and several fake 'Gram' tokens showing ~$1.4B liquidity with no volume.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Buyer breadth is wide (799 unique buyers, 808\u2013826 holders, top 10 hold 12.3%, no snipers or fresh wallets). But GMGN flags 62 bundler wallets holding 20.8% as top traders. There are no paid boosts and no DexScreener profile. A same-name sibling launched a minute earlier was already rug-pulled.\",\"uncertainty\":\"I can't see the Telegram post that apparently triggered this, or whether this creator deployed the sibling rugs as well.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"100% of the LP is unlocked and was seeded by the creator (not a pump.fun migration), so the creator can pull liquidity at any time\",\"A same-name token launched a minute earlier has already had its liquidity pulled\",\"62 bundler wallets, 20.8% top bundler trader share\",\"Heavy ticker competition and fake GRAM tokens\",\"creator_close status and no dev history, so the creator's intentions can't be checked\"]},\"counterargument\":\"Demand is unusually broad for a 15-minute-old coin: about 800 unique buyers, a low top-10 share, no snipers, and a likely real Telegram news trigger. If this becomes the accepted \\\"gram token\\\", $32k to $64k+ is easy with $38k of liquidity and $100k+ of volume every 5 minutes. The creator holds no tokens, and a creator who wanted to drain the pool may already have done so, as the sibling's creator did.\",\"unknowns\":[\"What the Telegram post says and how big its reach is\",\"Whether this creator is connected to the rugged sibling\",\"Whether the creator still holds the LP tokens\",\"Whether the bundlers exit on the next leg up\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the evidence packet only.\"},\"thesis\":\"Strong, broad early demand on a copycat race after a news trigger, but the LP is unlocked and creator-seeded, and a sibling launched in the same minute was just rug-pulled. There is real upside from $32k if it becomes the accepted \\\"gram token\\\", but the chance of a liquidity pull within 6 hours is high. Entry after a 5-minute +41% candle also adds pullback risk.\",\"continuation_view\":\"neutral\",\"p_runner\":15,\"p_rug\":45,\"survival_score\":28,\"attention_score\":74,\"manipulation_risk\":55,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"gram token\" (GRAM) is a pool on PumpSwap that is 15.6 minutes old. It was not launched on the pump.fun bonding curve: the mint does not end in \"pump\", the deploy platform is unknown and migrated_unix is 0. That means the creator seeded the pool directly, and 100% of the LP is unlocked. It has traded about $465k at roughly $32k market cap, with 799 unique buyers against 122 sellers, and price is up about 129% in the hour and +41% in the last 5 minutes. Other \"gram token\" coins were deployed within seconds of this one. One (4EaRQ\u2026) has already been drained to $2 of liquidity after $89k of volume. Another is still on the pump.fun curve (GjzduhV\u2026pump). GeckoTerminal's twitter field points to a \"telegram/status/\u2026\" post, which suggests a Telegram-related \"Gram\" news or post trigger that sent several deployers racing to launch.",
+  "narrative": {
+   "description": "A \"Gram\" story linked to Telegram, probably a reaction to a Telegram or Durov post that mentions Gram (the old TON token name). Several same-name tokens deployed within one minute suggest a real outside trigger that deployers are front-running.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Several near-simultaneous same-name launches and the Telegram status link point to an outside trigger. Buyer breadth (799 buyers vs 122 sellers) suggests real, spread-out demand, not just a few wallets."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "This is currently the \"gram token\" copy with the most liquidity and volume. It absorbed the flow after the earlier sibling 4EaRQ was drained.",
+   "competing_tokens": "4EaRQ\u2026 (gram token, launched ~1 min earlier, liquidity drained to $2), GjzduhV\u2026pump (gram token on the pump.fun curve, $62k mcap, little volume), and several fake 'Gram' tokens showing ~$1.4B liquidity with no volume.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Buyer breadth is wide (799 unique buyers, 808\u2013826 holders, top 10 hold 12.3%, no snipers or fresh wallets). But GMGN flags 62 bundler wallets holding 20.8% as top traders. There are no paid boosts and no DexScreener profile. A same-name sibling launched a minute earlier was already rug-pulled.",
+   "uncertainty": "I can't see the Telegram post that apparently triggered this, or whether this creator deployed the sibling rugs as well."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "100% of the LP is unlocked and was seeded by the creator (not a pump.fun migration), so the creator can pull liquidity at any time",
+    "A same-name token launched a minute earlier has already had its liquidity pulled",
+    "62 bundler wallets, 20.8% top bundler trader share",
+    "Heavy ticker competition and fake GRAM tokens",
+    "creator_close status and no dev history, so the creator's intentions can't be checked"
+   ]
+  },
+  "counterargument": "Demand is unusually broad for a 15-minute-old coin: about 800 unique buyers, a low top-10 share, no snipers, and a likely real Telegram news trigger. If this becomes the accepted \"gram token\", $32k to $64k+ is easy with $38k of liquidity and $100k+ of volume every 5 minutes. The creator holds no tokens, and a creator who wanted to drain the pool may already have done so, as the sibling's creator did.",
+  "unknowns": [
+   "What the Telegram post says and how big its reach is",
+   "Whether this creator is connected to the rugged sibling",
+   "Whether the creator still holds the LP tokens",
+   "Whether the bundlers exit on the next leg up"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the evidence packet only."
+  },
+  "thesis": "Strong, broad early demand on a copycat race after a news trigger, but the LP is unlocked and creator-seeded, and a sibling launched in the same minute was just rug-pulled. There is real upside from $32k if it becomes the accepted \"gram token\", but the chance of a liquidity pull within 6 hours is high. Entry after a 5-minute +41% candle also adds pullback risk.",
+  "continuation_view": "neutral",
+  "p_runner": 15,
+  "p_rug": 45,
+  "survival_score": 28,
+  "attention_score": 74,
+  "manipulation_risk": 55,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6396,
+ "type": "result",
+ "duration_ms": 24238,
+ "uuid": "99f05c7a-b143-4a5a-b944-9fce86f2e773",
+ "ttft_stream_ms": 619,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 620,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

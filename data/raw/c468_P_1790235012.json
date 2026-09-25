@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 23680,
+ "stop_reason": "tool_use",
+ "session_id": "b5cbbdd6-3d58-455f-a699-bbe3198dc2e5",
+ "total_cost_usd": 0.11134279999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7736,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2453,
+  "output_tokens_details": {
+   "thinking_tokens": 447
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7736,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2453,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7736,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7736
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2453,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7736,
+   "webSearchRequests": 0,
+   "costUSD": 0.11134279999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 447,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"NPCs\\\" (NPC) is a 50-minute-old token that someone deployed straight into a PumpSwap pool. It did not launch on the pump.fun curve: its address has no 'pump' suffix, the launchpad field is empty and migrated_unix is 0. Price is up about 900% in the first hour, to roughly $100k market cap, on $358k of volume with 2,990 buys against 969 sells. The packet also lists at least nine other tokens called \\\"NPCs\\\", all created in the previous 3 hours. One of them (68SV...pump, about $6.8M market cap, $232k liquidity, created about 85 minutes before this one) looks like the real trending coin. Seven others now show $0 liquidity, which means they were already rugged. This token is one more late clone in that wave. The creator holds 18.59% of supply, and 0% of the LP is locked or burned. RugCheck flags 'Large Amount of LP Unlocked' (danger), 'Copycat token' and 'Low amount of LP Providers', so the creator appears to control the pool.\",\"narrative\":{\"description\":\"A same-name copy of an 'NPCs' meme that is trending right now. The real version seems to be the $6.8M pump.fun coin 68SV...pump. The story is borrowed and this token adds nothing of its own. The GeckoTerminal X handle 'wenpcfamily' may just be copied from the original project.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The parent NPCs coin is running, and that sets off a wave of copies that catch buyers searching by ticker and bots buying new pairs. The copy wave is already mature: at least 7 earlier clones have gone to zero.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the shared name and ticker. It was not first, it is far smaller than the leading NPCs coin, and nothing in the packet ties it to the original team.\",\"competing_tokens\":\"68SV...pump NPCs ($6.8M mcap, $232k liquidity, the likely canonical coin). Seven or more other NPCs clones with $0 liquidity (rugged). Older NPC 'Non-Playable Coin' tokens worth $85M-$189M.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The creator deployed straight into a self-seeded PumpSwap pool with unlocked LP and kept 18.6% of supply, and GMGN tags that wallet as a rat trader. Liquidity of $64k against a $100k market cap is unusually deep, which fits the dev having put in the SOL. The launch follows the same pattern as several clones that already went to $0 liquidity. There are no smart-money or KOL wallets, no socials and no DexScreener profile. The 1,943 unique buyers most likely come from ticker confusion and bots.\",\"uncertainty\":\"I can't see what the dev did with earlier tokens beyond one prior launch (ATH $733k). Some of the buyers may be real traders chasing the NPCs story, and unique sellers seem capped at 50 by the API.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of LP locked or burned, and the creator appears to be the only LP provider, so liquidity can be pulled at any moment\",\"Creator holds 18.59% of supply and is tagged as a rat/insider trader\",\"A copycat token while 7 or more same-name clones have already dropped to $0 liquidity\",\"Already up about 900% in its first hour, so a later entry buys after most of the move\"]},\"counterargument\":\"Buying is heavy and broad: about 1,900 unique buyers, a 3:1 buy/sell ratio, and price still rising over the last 30 minutes (+57%). The parent NPCs story is hot, and a clone with $64k of real liquidity looks healthier than most. If the dev chooses to farm fees and volume rather than pull, this could reach $200k+ within hours as rotation from the $6.8M original spills over.\",\"unknowns\":[\"Whether the creator wallet actually owns the LP tokens (very likely, but not confirmed)\",\"What happened to the creator's previous token (ATH $733k)\",\"Whether any real community is gathering around the 'wenpcfamily' handle\",\"How much of the buying is bots\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This report is based only on the evidence packet.\"},\"thesis\":\"This is a late copy of the trending NPCs coin. The creator seeded the pool, holds 18.6% of supply, and the LP is unlocked. The same pattern shows up in the 7+ same-name clones that already went to zero liquidity, so a liquidity pull within 6 hours is the most likely outcome. A clean double from the entry 25 minutes after detection is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"NPCs\" (NPC) is a 50-minute-old token that someone deployed straight into a PumpSwap pool. It did not launch on the pump.fun curve: its address has no 'pump' suffix, the launchpad field is empty and migrated_unix is 0. Price is up about 900% in the first hour, to roughly $100k market cap, on $358k of volume with 2,990 buys against 969 sells. The packet also lists at least nine other tokens called \"NPCs\", all created in the previous 3 hours. One of them (68SV...pump, about $6.8M market cap, $232k liquidity, created about 85 minutes before this one) looks like the real trending coin. Seven others now show $0 liquidity, which means they were already rugged. This token is one more late clone in that wave. The creator holds 18.59% of supply, and 0% of the LP is locked or burned. RugCheck flags 'Large Amount of LP Unlocked' (danger), 'Copycat token' and 'Low amount of LP Providers', so the creator appears to control the pool.",
+  "narrative": {
+   "description": "A same-name copy of an 'NPCs' meme that is trending right now. The real version seems to be the $6.8M pump.fun coin 68SV...pump. The story is borrowed and this token adds nothing of its own. The GeckoTerminal X handle 'wenpcfamily' may just be copied from the original project.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The parent NPCs coin is running, and that sets off a wave of copies that catch buyers searching by ticker and bots buying new pairs. The copy wave is already mature: at least 7 earlier clones have gone to zero."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the shared name and ticker. It was not first, it is far smaller than the leading NPCs coin, and nothing in the packet ties it to the original team.",
+   "competing_tokens": "68SV...pump NPCs ($6.8M mcap, $232k liquidity, the likely canonical coin). Seven or more other NPCs clones with $0 liquidity (rugged). Older NPC 'Non-Playable Coin' tokens worth $85M-$189M.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The creator deployed straight into a self-seeded PumpSwap pool with unlocked LP and kept 18.6% of supply, and GMGN tags that wallet as a rat trader. Liquidity of $64k against a $100k market cap is unusually deep, which fits the dev having put in the SOL. The launch follows the same pattern as several clones that already went to $0 liquidity. There are no smart-money or KOL wallets, no socials and no DexScreener profile. The 1,943 unique buyers most likely come from ticker confusion and bots.",
+   "uncertainty": "I can't see what the dev did with earlier tokens beyond one prior launch (ATH $733k). Some of the buyers may be real traders chasing the NPCs story, and unique sellers seem capped at 50 by the API."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of LP locked or burned, and the creator appears to be the only LP provider, so liquidity can be pulled at any moment",
+    "Creator holds 18.59% of supply and is tagged as a rat/insider trader",
+    "A copycat token while 7 or more same-name clones have already dropped to $0 liquidity",
+    "Already up about 900% in its first hour, so a later entry buys after most of the move"
+   ]
+  },
+  "counterargument": "Buying is heavy and broad: about 1,900 unique buyers, a 3:1 buy/sell ratio, and price still rising over the last 30 minutes (+57%). The parent NPCs story is hot, and a clone with $64k of real liquidity looks healthier than most. If the dev chooses to farm fees and volume rather than pull, this could reach $200k+ within hours as rotation from the $6.8M original spills over.",
+  "unknowns": [
+   "Whether the creator wallet actually owns the LP tokens (very likely, but not confirmed)",
+   "What happened to the creator's previous token (ATH $733k)",
+   "Whether any real community is gathering around the 'wenpcfamily' handle",
+   "How much of the buying is bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This report is based only on the evidence packet."
+  },
+  "thesis": "This is a late copy of the trending NPCs coin. The creator seeded the pool, holds 18.6% of supply, and the LP is unlocked. The same pattern shows up in the 7+ same-name clones that already went to zero liquidity, so a liquidity pull within 6 hours is the most likely outcome. A clean double from the entry 25 minutes after detection is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5896,
+ "type": "result",
+ "duration_ms": 23722,
+ "uuid": "340fd5a0-95f4-4f45-a12f-7c2d3d7d6f35",
+ "ttft_stream_ms": 871,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 871,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

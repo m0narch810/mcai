@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24226,
+ "stop_reason": "tool_use",
+ "session_id": "763c40b2-2eff-4476-8e0a-8192640ba6d0",
+ "total_cost_usd": 0.11361479999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7800,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2541,
+  "output_tokens_details": {
+   "thinking_tokens": 585
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7800,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2541,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7800,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7800
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2541,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7800,
+   "webSearchRequests": 0,
+   "costUSD": 0.11361479999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 585,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"The Depressed Monkey\\\" ($Monkey) is a PumpSwap pair about 40 minutes old. It was not launched on the pump.fun curve: migrated_unix is 0, the pool was created 3 seconds after the mint, and the deploy platform is unknown. So the pool was most likely seeded directly by the creator, and none of the LP is burned or locked. Price is up about 350% in the first hour on roughly $1.05M of volume against a ~$44k market cap (23x turnover). GeckoTerminal counts 1,189 unique buyers but only 93 unique sellers over the hour. The last 5 to 15 minutes have gone flat to slightly down, with buys and sells about even (m5 is 93 buys and 92 sells). At least 9 other tokens use the same name, launched within minutes of each other, and nearly all of them now have close to zero liquidity. That looks like a trending tweet or meme (GeckoTerminal links a QuantKeef X status) being farmed by many deployers. This contract is the one copy still holding liquidity and volume.\",\"narrative\":{\"description\":\"A 'Depressed Monkey' meme, apparently taken from a specific X post (the QuantKeef status linked on GeckoTerminal). Many deployers copied it at once, which means it has some real attention, but no project site, socials or DexScreener profile exist.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A viral meme or tweet set off a copycat launch race. This contract won the first wave of flow. There is no sign of KOL, smart-money or renowned wallets, and no community infrastructure.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has the most liquidity and volume of the same-name copies. The others are drained (liquidity at or near $0), so the market has for now picked this one.\",\"competing_tokens\":\"At least 9 'The Depressed Monkey' clones. Two were created earlier (56P2..., CHEk...) and are now dead. ApdLCz... and 8HjG... still show $100k+ h1 volume with almost no liquidity. There are also old unrelated MONKEY tickers.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN flags 56 bundler wallets holding 12.8% of the top traders' share, plus a 58-wallet insider trading network. Turnover of 23x in an hour points to heavy bot and wash activity. The 1,189 unique buyers against 93 unique sellers could be real retail inflow, or it could be many small bot buys. There are no paid boosts, and the top-10 holders are spread out (about 12-14%, excluding the pool). The creator holds 0% and has no prior launches (a fresh deployer).\",\"uncertainty\":\"There are no X posts to check whether the source tweet is organic. It is unclear who owns the LP tokens.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The LP is fully unlocked on a pool the creator seeded directly (RugCheck labels this 'danger', and there are few LP providers), so the creator can pull liquidity at any time\",\"A 58-wallet insider network and 56 bundlers could dump\",\"Nearly every clone is already drained, which shows this cohort of deployers is rug-farming\",\"Momentum is stalling: m5 is flat to negative after a 350% hour, and price is about 14% below its all-time high\",\"It needs to reach about $90k market cap for the +100% target\"]},\"counterargument\":\"This is the copy the market chose for a genuinely viral meme, with more than 1,100 distinct buyers and holders that are unusually well spread for a microcap. Winners of clone races sometimes run to $200k-$500k as the leftover attention consolidates into one contract. Doubling from about $45k needs only moderate new inflow, and the creator selling out without pulling LP (so far) could mean there is no rug planned.\",\"unknowns\":[\"Who holds the LP tokens, and whether the creator can remove liquidity\",\"Whether the source tweet is still spreading\",\"Whether the 1,189 buyers are real people or bot-spread wallets\",\"Price at the entry point 25 minutes after detection\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The report is based only on the packet.\"},\"thesis\":\"This is the winner of a copycat race for a meme, but it sits on an unlocked, creator-seeded PumpSwap pool. Heavy bundler and insider presence, clone contracts that were rugged in bulk, and momentum that is stalling after a 350% hour all point more toward fading or a liquidity pull than toward another 2x from entry.\",\"continuation_view\":\"fade\",\"p_runner\":15,\"p_rug\":60,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"The Depressed Monkey\" ($Monkey) is a PumpSwap pair about 40 minutes old. It was not launched on the pump.fun curve: migrated_unix is 0, the pool was created 3 seconds after the mint, and the deploy platform is unknown. So the pool was most likely seeded directly by the creator, and none of the LP is burned or locked. Price is up about 350% in the first hour on roughly $1.05M of volume against a ~$44k market cap (23x turnover). GeckoTerminal counts 1,189 unique buyers but only 93 unique sellers over the hour. The last 5 to 15 minutes have gone flat to slightly down, with buys and sells about even (m5 is 93 buys and 92 sells). At least 9 other tokens use the same name, launched within minutes of each other, and nearly all of them now have close to zero liquidity. That looks like a trending tweet or meme (GeckoTerminal links a QuantKeef X status) being farmed by many deployers. This contract is the one copy still holding liquidity and volume.",
+  "narrative": {
+   "description": "A 'Depressed Monkey' meme, apparently taken from a specific X post (the QuantKeef status linked on GeckoTerminal). Many deployers copied it at once, which means it has some real attention, but no project site, socials or DexScreener profile exist.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A viral meme or tweet set off a copycat launch race. This contract won the first wave of flow. There is no sign of KOL, smart-money or renowned wallets, and no community infrastructure."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has the most liquidity and volume of the same-name copies. The others are drained (liquidity at or near $0), so the market has for now picked this one.",
+   "competing_tokens": "At least 9 'The Depressed Monkey' clones. Two were created earlier (56P2..., CHEk...) and are now dead. ApdLCz... and 8HjG... still show $100k+ h1 volume with almost no liquidity. There are also old unrelated MONKEY tickers.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN flags 56 bundler wallets holding 12.8% of the top traders' share, plus a 58-wallet insider trading network. Turnover of 23x in an hour points to heavy bot and wash activity. The 1,189 unique buyers against 93 unique sellers could be real retail inflow, or it could be many small bot buys. There are no paid boosts, and the top-10 holders are spread out (about 12-14%, excluding the pool). The creator holds 0% and has no prior launches (a fresh deployer).",
+   "uncertainty": "There are no X posts to check whether the source tweet is organic. It is unclear who owns the LP tokens."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The LP is fully unlocked on a pool the creator seeded directly (RugCheck labels this 'danger', and there are few LP providers), so the creator can pull liquidity at any time",
+    "A 58-wallet insider network and 56 bundlers could dump",
+    "Nearly every clone is already drained, which shows this cohort of deployers is rug-farming",
+    "Momentum is stalling: m5 is flat to negative after a 350% hour, and price is about 14% below its all-time high",
+    "It needs to reach about $90k market cap for the +100% target"
+   ]
+  },
+  "counterargument": "This is the copy the market chose for a genuinely viral meme, with more than 1,100 distinct buyers and holders that are unusually well spread for a microcap. Winners of clone races sometimes run to $200k-$500k as the leftover attention consolidates into one contract. Doubling from about $45k needs only moderate new inflow, and the creator selling out without pulling LP (so far) could mean there is no rug planned.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether the creator can remove liquidity",
+   "Whether the source tweet is still spreading",
+   "Whether the 1,189 buyers are real people or bot-spread wallets",
+   "Price at the entry point 25 minutes after detection"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The report is based only on the packet."
+  },
+  "thesis": "This is the winner of a copycat race for a meme, but it sits on an unlocked, creator-seeded PumpSwap pool. Heavy bundler and insider presence, clone contracts that were rugged in bulk, and momentum that is stalling after a 350% hour all point more toward fading or a liquidity pull than toward another 2x from entry.",
+  "continuation_view": "fade",
+  "p_runner": 15,
+  "p_rug": 60,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6262,
+ "type": "result",
+ "duration_ms": 24271,
+ "uuid": "717c3fa5-a739-4eae-a60a-7bd96321488c",
+ "ttft_stream_ms": 799,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 800,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

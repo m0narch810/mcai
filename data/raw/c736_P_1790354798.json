@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 21429,
+ "stop_reason": "tool_use",
+ "session_id": "e0b865e7-96b1-430f-82b1-f231593076fa",
+ "total_cost_usd": 0.1049388,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7448,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2248,
+  "output_tokens_details": {
+   "thinking_tokens": 302
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7448,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2248,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7448,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7448
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2248,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7448,
+   "webSearchRequests": 0,
+   "costUSD": 0.1049388,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 302,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Bagwork\\\" whose mint address doesn't end in \\\"pump\\\". It was deployed directly as a PumpSwap pool (migrated_unix=0, launchpad unknown) with about $42k of liquidity, which is more than its about $38k market cap. That means the creator supplied the LP themselves, and 0% of it is locked or burned. In 37 minutes it did about $950k of volume, 20x its market cap. There were 1,855 unique buyers but only 97 unique sellers. GMGN flags 82 bundler wallets holding about 38% of top-trader activity, and RugCheck finds a 26-wallet insider trade network. Price rose about 300% in the hour but has turned down: -20% over 15 minutes and -14.6% over 5 minutes, about 23% below its all-time high. At least 7 other Bagwork tokens exist, including a pump.fun \\\"Bagwork\\\" at $1.26M market cap created about 6 minutes earlier and another with $2.9M of hourly volume. This one is a late copycat in a ticker cluster.\",\"narrative\":{\"description\":\"'Bagwork' / 'bagwork agent' (the GeckoTerminal X handle is bagworkagent) looks like a trending meme or AI-agent word that spawned a cluster of same-name launches today. The theme itself appears to have real attention, since several Bagwork tokens have large volume.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Many same-name deploys within hours suggests a live meme or agent story somewhere, probably on X. That attention mostly flows to the canonical token ($1.26M pump.fun version), not to later copies.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It shares the name and was one of the earlier deploys, but it isn't the pump.fun canonical token. It has no profile, website or socials beyond a GeckoTerminal handle that could be attached to any copy.\",\"competing_tokens\":\"5NhN...pump ($1.26M mcap, created about 6 min earlier, most likely canonical); FX7Y... ($128k mcap, $2.9M h1 volume, created earlier); D8MN... ($141k, created later); several dead pump.fun copies; an old 2025 Bagwork.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,855 unique buyers against 97 unique sellers, 82 bundler wallets (38% of top-trader activity), a 26-wallet insider trade network, and turnover 20x market cap. Together these point to bot or bundle-driven volume that makes the chart look active, not organic demand. There are no smart-money or KOL wallets, and GMGN page visits = 2.\",\"uncertainty\":\"The buyer count could partly reflect real spillover from the Bagwork theme. The 97-seller figure may be understated by aggregation.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The dev supplied the LP directly on PumpSwap, and 0% of it is locked or burned, so it can be pulled at any moment\",\"RugCheck flags 'Low amount of LP Providers'\",\"Liquidity is larger than market cap, typical of a dev-seeded rug pool\",\"Heavy bundler presence (82 wallets) and a 26-wallet insider network\",\"Price already fading from its all-time high while stronger same-name competitors pull attention away\"]},\"counterargument\":\"The Bagwork theme is clearly hot, with several copies doing millions in volume. At a $38k market cap with $42k of liquidity this is one of the cheapest versions, and nearly 1,900 holders with a flat top-10 distribution (about 10%) could let traders rotate into it as a cheap alternative to the $1.26M version. Dev-seeded PumpSwap pools don't always rug, and a doubling to about $80k only needs a return to near the $58k all-time high plus some more.\",\"unknowns\":[\"Which Bagwork token (if any) the originating X account or agent endorses\",\"Whether the creator wallet controls the LP tokens and intends to pull\",\"The real origin of the meme\",\"Price path in the 25 minutes before entry\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No-internet condition; the evidence packet was the only source.\"},\"thesis\":\"This is a non-canonical Bagwork copy in a crowded ticker cluster, deployed directly on PumpSwap with dev-owned, unlocked LP. Its volume is dominated by bundlers and bots, and price is already rolling over. The most likely outcome is an LP pull or a bleed-out; doubling from entry is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Bagwork\" whose mint address doesn't end in \"pump\". It was deployed directly as a PumpSwap pool (migrated_unix=0, launchpad unknown) with about $42k of liquidity, which is more than its about $38k market cap. That means the creator supplied the LP themselves, and 0% of it is locked or burned. In 37 minutes it did about $950k of volume, 20x its market cap. There were 1,855 unique buyers but only 97 unique sellers. GMGN flags 82 bundler wallets holding about 38% of top-trader activity, and RugCheck finds a 26-wallet insider trade network. Price rose about 300% in the hour but has turned down: -20% over 15 minutes and -14.6% over 5 minutes, about 23% below its all-time high. At least 7 other Bagwork tokens exist, including a pump.fun \"Bagwork\" at $1.26M market cap created about 6 minutes earlier and another with $2.9M of hourly volume. This one is a late copycat in a ticker cluster.",
+  "narrative": {
+   "description": "'Bagwork' / 'bagwork agent' (the GeckoTerminal X handle is bagworkagent) looks like a trending meme or AI-agent word that spawned a cluster of same-name launches today. The theme itself appears to have real attention, since several Bagwork tokens have large volume.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Many same-name deploys within hours suggests a live meme or agent story somewhere, probably on X. That attention mostly flows to the canonical token ($1.26M pump.fun version), not to later copies."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It shares the name and was one of the earlier deploys, but it isn't the pump.fun canonical token. It has no profile, website or socials beyond a GeckoTerminal handle that could be attached to any copy.",
+   "competing_tokens": "5NhN...pump ($1.26M mcap, created about 6 min earlier, most likely canonical); FX7Y... ($128k mcap, $2.9M h1 volume, created earlier); D8MN... ($141k, created later); several dead pump.fun copies; an old 2025 Bagwork.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,855 unique buyers against 97 unique sellers, 82 bundler wallets (38% of top-trader activity), a 26-wallet insider trade network, and turnover 20x market cap. Together these point to bot or bundle-driven volume that makes the chart look active, not organic demand. There are no smart-money or KOL wallets, and GMGN page visits = 2.",
+   "uncertainty": "The buyer count could partly reflect real spillover from the Bagwork theme. The 97-seller figure may be understated by aggregation."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The dev supplied the LP directly on PumpSwap, and 0% of it is locked or burned, so it can be pulled at any moment",
+    "RugCheck flags 'Low amount of LP Providers'",
+    "Liquidity is larger than market cap, typical of a dev-seeded rug pool",
+    "Heavy bundler presence (82 wallets) and a 26-wallet insider network",
+    "Price already fading from its all-time high while stronger same-name competitors pull attention away"
+   ]
+  },
+  "counterargument": "The Bagwork theme is clearly hot, with several copies doing millions in volume. At a $38k market cap with $42k of liquidity this is one of the cheapest versions, and nearly 1,900 holders with a flat top-10 distribution (about 10%) could let traders rotate into it as a cheap alternative to the $1.26M version. Dev-seeded PumpSwap pools don't always rug, and a doubling to about $80k only needs a return to near the $58k all-time high plus some more.",
+  "unknowns": [
+   "Which Bagwork token (if any) the originating X account or agent endorses",
+   "Whether the creator wallet controls the LP tokens and intends to pull",
+   "The real origin of the meme",
+   "Price path in the 25 minutes before entry"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No-internet condition; the evidence packet was the only source."
+  },
+  "thesis": "This is a non-canonical Bagwork copy in a crowded ticker cluster, deployed directly on PumpSwap with dev-owned, unlocked LP. Its volume is dominated by bundlers and bots, and price is already rolling over. The most likely outcome is an LP pull or a bleed-out; doubling from entry is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3998,
+ "type": "result",
+ "duration_ms": 21477,
+ "uuid": "76838019-fa24-48a3-86bf-cf2719d1f13d",
+ "ttft_stream_ms": 751,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 751,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

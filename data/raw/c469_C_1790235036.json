@@ -1,0 +1,183 @@
+{
+ "duration_api_ms": 87863,
+ "stop_reason": "tool_use",
+ "session_id": "22f1b1c9-fec3-483f-b361-8ad48e94ba77",
+ "total_cost_usd": 0.4039982,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 18373,
+  "cache_read_input_tokens": 62576,
+  "output_tokens": 4130,
+  "output_tokens_details": {
+   "thinking_tokens": 807
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18373,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2717,
+    "cache_read_input_tokens": 18902,
+    "cache_creation_input_tokens": 2047,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2047
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4130,
+   "cacheReadInputTokens": 62576,
+   "cacheCreationInputTokens": 18373,
+   "webSearchRequests": 0,
+   "costUSD": 0.2421392,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 807,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 75489,
+   "outputTokens": 3274,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.161859,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GOODS (\\\"Real-life Assets\\\") launched about 55 minutes ago on a Meteora virtual curve and migrated right away to a PumpSwap pair. On about $41-57k of liquidity it has done $4.6M of volume, and the price swings wildly: 5-minute candles range 3-5x, for example 0.00107\u21920.00027 and 0.00097\u21920.00016. The high was about 0.00132 (roughly $1.3M mcap) and it was about 0.00016-0.00031 at collection. GeckoTerminal counts 2,097 unique buyers but only 94 unique sellers in the hour, which suggests a small set of wallets cycling volume. In the latest partial 5-minute candle, volume fell to about $55k from about $450-520k per candle. At least 10 clones with the same name and ticker exist. I found no public narrative, news or posts beyond a bare placeholder website.\",\"narrative\":{\"description\":\"A vague 'real-life assets / markets for real things' RWA theme. goods.claims is a one-line placeholder page. The X account @goodsclaims could not be viewed (HTTP 402). I found no news, no product, no identifiable team and no external event.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no evidence of organic spread. The flow looks trading-driven: a huge buy count from very few sellers, tightly repeated volume per candle, and a serial deployer. That fits bot and volume-farming activity more than real attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This pair has by far the most liquidity and volume among the same-name tokens, and GMGN links it to the goods.claims site and @goodsclaims. So if the project is real, this is probably the token people mean. But the deployer has launched 17 tokens (21 via the dev's X account), and 9 duplicate images exist.\",\"competing_tokens\":\"At least 10 GOODS / 'Real-life Assets' clones, most with $0 liquidity. One (DdAQ...) did $1.68M of 1-hour volume and now has $71 liquidity, which looks already drained.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,097 unique buyers vs 94 unique sellers in the hour. About $450k of volume per 5 minutes on about $42k of liquidity (roughly 110x turnover per hour). 53 bundler wallets. A serial creator (17 launches) with creator_close status. 9 image duplicates and many same-name clones. Only 6 GMGN page visits despite $4.6M of volume, which points to little real human attention. No smart-money or KOL wallets.\",\"uncertainty\":\"I could not see X or Telegram. There might be a real startup behind goods.claims, but nothing public confirms it.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"RugCheck flags a large amount of LP as unlocked (0% locked in one top market), though GMGN reports lp_burn_ratio 1.0, so the data conflict\",\"One holder with 80% of supply (probably a pool vault, but not confirmed)\",\"Serial deployer with 17 launches\",\"Volume looks bot- or wash-driven and is fading in the latest candle\",\"Extreme volatility: -80% moves happen within 5 minutes\"]},\"counterargument\":\"Volatility is so extreme that the chart has repeatedly gone from about 0.0002 to 0.001 within 10-20 minutes. If the bot cycling continues after entry, a +100% touch could easily come before -50%, and the ATH near $1.3M mcap shows buyers have pushed it far higher before. If goods.claims is a real RWA startup, attention could come back.\",\"unknowns\":[\"Contents and followers of @goodsclaims on X\",\"Whether the 80% holder is a pool vault or a real wallet\",\"Entry price at 07:52, given the price swings\",\"Whether the volume bot keeps running\",\"Whether the LP is actually burned: GMGN says 1.0, RugCheck says unlocked\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Searches for the contract address, the ticker, the name and goods.claims returned nothing relevant. x.com returned HTTP 402. The site is a one-line placeholder. DexScreener and GeckoTerminal APIs were fetched for current price and candles.\"},\"thesis\":\"This looks like an anonymous launch from a serial deployer, with volume that appears bot-cycled (94 sellers against 2,097 buyers), many clones, no visible narrative and fading volume in the latest candle. Swings are violent enough that a 2x touch is not impossible, but decay or abandonment within 6 hours is more likely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":22,\"p_rug\":62,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.goods.claims/\",\"what\":\"Placeholder site: 'Markets for real things', no details\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/wjt29Fap6WrP8yLX1BosrYoDU3QpZZAcdTvtW8KQWMT\",\"what\":\"Current pairs: PumpSwap price 0.000308, liquidity $57k, -61% over 5 minutes\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/4QsCjEBYshWTTcs6dXte9yXES5c4BUyKwjoX4bBZzcQ4/ohlcv/minute?aggregate=5&limit=15\",\"what\":\"5-minute candles showing extreme swings and fading volume in the last candle\"},{\"url\":\"https://x.com/goodsclaims\",\"what\":\"Project X account, inaccessible (HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "GOODS (\"Real-life Assets\") launched about 55 minutes ago on a Meteora virtual curve and migrated right away to a PumpSwap pair. On about $41-57k of liquidity it has done $4.6M of volume, and the price swings wildly: 5-minute candles range 3-5x, for example 0.00107\u21920.00027 and 0.00097\u21920.00016. The high was about 0.00132 (roughly $1.3M mcap) and it was about 0.00016-0.00031 at collection. GeckoTerminal counts 2,097 unique buyers but only 94 unique sellers in the hour, which suggests a small set of wallets cycling volume. In the latest partial 5-minute candle, volume fell to about $55k from about $450-520k per candle. At least 10 clones with the same name and ticker exist. I found no public narrative, news or posts beyond a bare placeholder website.",
+  "narrative": {
+   "description": "A vague 'real-life assets / markets for real things' RWA theme. goods.claims is a one-line placeholder page. The X account @goodsclaims could not be viewed (HTTP 402). I found no news, no product, no identifiable team and no external event.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no evidence of organic spread. The flow looks trading-driven: a huge buy count from very few sellers, tightly repeated volume per candle, and a serial deployer. That fits bot and volume-farming activity more than real attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This pair has by far the most liquidity and volume among the same-name tokens, and GMGN links it to the goods.claims site and @goodsclaims. So if the project is real, this is probably the token people mean. But the deployer has launched 17 tokens (21 via the dev's X account), and 9 duplicate images exist.",
+   "competing_tokens": "At least 10 GOODS / 'Real-life Assets' clones, most with $0 liquidity. One (DdAQ...) did $1.68M of 1-hour volume and now has $71 liquidity, which looks already drained.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,097 unique buyers vs 94 unique sellers in the hour. About $450k of volume per 5 minutes on about $42k of liquidity (roughly 110x turnover per hour). 53 bundler wallets. A serial creator (17 launches) with creator_close status. 9 image duplicates and many same-name clones. Only 6 GMGN page visits despite $4.6M of volume, which points to little real human attention. No smart-money or KOL wallets.",
+   "uncertainty": "I could not see X or Telegram. There might be a real startup behind goods.claims, but nothing public confirms it."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "RugCheck flags a large amount of LP as unlocked (0% locked in one top market), though GMGN reports lp_burn_ratio 1.0, so the data conflict",
+    "One holder with 80% of supply (probably a pool vault, but not confirmed)",
+    "Serial deployer with 17 launches",
+    "Volume looks bot- or wash-driven and is fading in the latest candle",
+    "Extreme volatility: -80% moves happen within 5 minutes"
+   ]
+  },
+  "counterargument": "Volatility is so extreme that the chart has repeatedly gone from about 0.0002 to 0.001 within 10-20 minutes. If the bot cycling continues after entry, a +100% touch could easily come before -50%, and the ATH near $1.3M mcap shows buyers have pushed it far higher before. If goods.claims is a real RWA startup, attention could come back.",
+  "unknowns": [
+   "Contents and followers of @goodsclaims on X",
+   "Whether the 80% holder is a pool vault or a real wallet",
+   "Entry price at 07:52, given the price swings",
+   "Whether the volume bot keeps running",
+   "Whether the LP is actually burned: GMGN says 1.0, RugCheck says unlocked"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Searches for the contract address, the ticker, the name and goods.claims returned nothing relevant. x.com returned HTTP 402. The site is a one-line placeholder. DexScreener and GeckoTerminal APIs were fetched for current price and candles."
+  },
+  "thesis": "This looks like an anonymous launch from a serial deployer, with volume that appears bot-cycled (94 sellers against 2,097 buyers), many clones, no visible narrative and fading volume in the latest candle. Swings are violent enough that a 2x touch is not impossible, but decay or abandonment within 6 hours is more likely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 22,
+  "p_rug": 62,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.goods.claims/",
+    "what": "Placeholder site: 'Markets for real things', no details"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/wjt29Fap6WrP8yLX1BosrYoDU3QpZZAcdTvtW8KQWMT",
+    "what": "Current pairs: PumpSwap price 0.000308, liquidity $57k, -61% over 5 minutes"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/4QsCjEBYshWTTcs6dXte9yXES5c4BUyKwjoX4bBZzcQ4/ohlcv/minute?aggregate=5&limit=15",
+    "what": "5-minute candles showing extreme swings and fading volume in the last candle"
+   },
+   {
+    "url": "https://x.com/goodsclaims",
+    "what": "Project X account, inaccessible (HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 3212,
+ "type": "result",
+ "duration_ms": 60011,
+ "uuid": "2e1b6ab0-feff-4b27-9ce8-5cf6d9b0c3e1",
+ "ttft_stream_ms": 869,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 869,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

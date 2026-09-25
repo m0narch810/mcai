@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 28439,
+ "stop_reason": "tool_use",
+ "session_id": "adf02f8f-530d-4af2-a338-57a822957e4d",
+ "total_cost_usd": 0.12413079999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7897,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 3028,
+  "output_tokens_details": {
+   "thinking_tokens": 864
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7897,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3028,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7897,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7897
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3028,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7897,
+   "webSearchRequests": 0,
+   "costUSD": 0.12413079999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 864,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u548c\u5e73\u718a\u732b (\\\"Peace Panda\\\", ticker \u718a\u732b) is a 39-minute-old token whose pool was created straight on PumpSwap. The pool opened 29 seconds after the mint, the contract address has no 'pump' suffix and migrated_unix is 0, so it never went through the pump.fun curve. It is up about 127% to roughly $190k market cap, sitting at its all-time high, on about $7M of volume (26x turnover in one hour). The pool shows $267k of liquidity, more than the market cap. That means the creator seeded a large one-sided position: the pool holds 69.6% of supply, 0% of the LP is locked, and RugCheck warns 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. GeckoTerminal counts 1,691 unique buyers but only 59 unique sellers, and those 59 wallets made about 4,050 sells. GMGN flags 49 bundler wallets holding about 24% of top-trader share. At least 9 other panda tokens with the same ticker ('Ping Ping and Fu Shuang') launched within the same roughly 1-hour window, which points to a fresh Chinese panda news item. The project's only link is a chinanow24 tweet.\",\"narrative\":{\"description\":\"A Chinese-language panda news meme. Many same-ticker 'Ping Ping and Fu Shuang' tokens launched at the same moment, which suggests a real news trigger (panda-related news covered by a chinanow24 X post). An older same-ticker token is at $1.6M market cap. This one uses a different name, 'Peace Panda', and links the news tweet.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A news-driven launch race among Chinese-meme traders. The sheer number of copies shows attention is real but spread across many tokens. About 1,700 unique buyers is meaningful demand for a 40-minute-old coin.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the highest volume and liquidity among the new copies, and the packet shows it linking the news tweet. Its name, 'Peace Panda', differs from the dominant 'Ping Ping and Fu Shuang' naming, and it was not deployed through pump.fun.\",\"competing_tokens\":\"At least 9 same-ticker \u718a\u732b tokens from the same hour. QCRhqH... is newer and has $611k h1 volume. 4ZsLrr... is at $168k market cap with no liquidity. An older 13i7...pump token is at $1.6M market cap. A 'Peace Pand' pump.fun copy also exists.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Buyer breadth looks organic: about 1,691 unique buyers, and the top 10 holders (excluding the pool) own only 12.7%. The sell side looks manufactured: only 59 sellers doing about 4,050 sells, 49 bundler wallets, 26x turnover, and a non-pump.fun direct pool with a large dev-seeded, unlocked LP. The data shows no paid promotion.\",\"uncertainty\":\"I cannot tell whether the 59 sellers are dev or team wallets distributing into buyers or ordinary MEV/arbitrage bots. I cannot see the tweet's reach.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Creator-seeded LP is 0% locked or burned and can be pulled at any moment; there is a large SOL side to extract\",\"Launched directly on PumpSwap, skipping the pump.fun curve (a common custom-rug setup)\",\"59 wallets account for about 4,000 sells, which suggests systematic distribution\",\"49 bundler wallets\",\"Deep liquidity means doubling from about $190k needs heavy net inflow\",\"Many same-ticker competitors are splitting attention\"]},\"counterargument\":\"This could be the leading token in a genuine news-driven Chinese meme race. It has broad buyer participation (about 1,700 unique buyers), low holder concentration, renounced authorities, no tax, and no paid promotion. Deep liquidity also makes it the safest venue for larger buyers. If the panda story trends on Chinese crypto X, a move to $400k+ in 6 hours is very plausible, and deep LP sometimes simply reflects a well-funded, honest dev.\",\"unknowns\":[\"What the chinanow24 tweet says and how far it has reached\",\"Whether the 59 sellers are linked to the creator\",\"Who holds the LP position and whether it will be withdrawn\",\"Which panda token Chinese KOLs pick as the canonical one\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; judged from the packet only.\"},\"thesis\":\"There is real news-driven demand, but the structure looks like a custom-pool rug: an unlocked creator LP larger than the market cap, a direct PumpSwap deploy, and a tiny set of sellers doing thousands of sells. It also faces a crowded same-ticker field. The chance of a rug or LP pull within 6 hours is high, and the chance of doubling from the entry 25 minutes after detection is modest.\",\"continuation_view\":\"fade\",\"p_runner\":18,\"p_rug\":60,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\u548c\u5e73\u718a\u732b (\"Peace Panda\", ticker \u718a\u732b) is a 39-minute-old token whose pool was created straight on PumpSwap. The pool opened 29 seconds after the mint, the contract address has no 'pump' suffix and migrated_unix is 0, so it never went through the pump.fun curve. It is up about 127% to roughly $190k market cap, sitting at its all-time high, on about $7M of volume (26x turnover in one hour). The pool shows $267k of liquidity, more than the market cap. That means the creator seeded a large one-sided position: the pool holds 69.6% of supply, 0% of the LP is locked, and RugCheck warns 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. GeckoTerminal counts 1,691 unique buyers but only 59 unique sellers, and those 59 wallets made about 4,050 sells. GMGN flags 49 bundler wallets holding about 24% of top-trader share. At least 9 other panda tokens with the same ticker ('Ping Ping and Fu Shuang') launched within the same roughly 1-hour window, which points to a fresh Chinese panda news item. The project's only link is a chinanow24 tweet.",
+  "narrative": {
+   "description": "A Chinese-language panda news meme. Many same-ticker 'Ping Ping and Fu Shuang' tokens launched at the same moment, which suggests a real news trigger (panda-related news covered by a chinanow24 X post). An older same-ticker token is at $1.6M market cap. This one uses a different name, 'Peace Panda', and links the news tweet.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A news-driven launch race among Chinese-meme traders. The sheer number of copies shows attention is real but spread across many tokens. About 1,700 unique buyers is meaningful demand for a 40-minute-old coin."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the highest volume and liquidity among the new copies, and the packet shows it linking the news tweet. Its name, 'Peace Panda', differs from the dominant 'Ping Ping and Fu Shuang' naming, and it was not deployed through pump.fun.",
+   "competing_tokens": "At least 9 same-ticker \u718a\u732b tokens from the same hour. QCRhqH... is newer and has $611k h1 volume. 4ZsLrr... is at $168k market cap with no liquidity. An older 13i7...pump token is at $1.6M market cap. A 'Peace Pand' pump.fun copy also exists.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Buyer breadth looks organic: about 1,691 unique buyers, and the top 10 holders (excluding the pool) own only 12.7%. The sell side looks manufactured: only 59 sellers doing about 4,050 sells, 49 bundler wallets, 26x turnover, and a non-pump.fun direct pool with a large dev-seeded, unlocked LP. The data shows no paid promotion.",
+   "uncertainty": "I cannot tell whether the 59 sellers are dev or team wallets distributing into buyers or ordinary MEV/arbitrage bots. I cannot see the tweet's reach."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Creator-seeded LP is 0% locked or burned and can be pulled at any moment; there is a large SOL side to extract",
+    "Launched directly on PumpSwap, skipping the pump.fun curve (a common custom-rug setup)",
+    "59 wallets account for about 4,000 sells, which suggests systematic distribution",
+    "49 bundler wallets",
+    "Deep liquidity means doubling from about $190k needs heavy net inflow",
+    "Many same-ticker competitors are splitting attention"
+   ]
+  },
+  "counterargument": "This could be the leading token in a genuine news-driven Chinese meme race. It has broad buyer participation (about 1,700 unique buyers), low holder concentration, renounced authorities, no tax, and no paid promotion. Deep liquidity also makes it the safest venue for larger buyers. If the panda story trends on Chinese crypto X, a move to $400k+ in 6 hours is very plausible, and deep LP sometimes simply reflects a well-funded, honest dev.",
+  "unknowns": [
+   "What the chinanow24 tweet says and how far it has reached",
+   "Whether the 59 sellers are linked to the creator",
+   "Who holds the LP position and whether it will be withdrawn",
+   "Which panda token Chinese KOLs pick as the canonical one"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; judged from the packet only."
+  },
+  "thesis": "There is real news-driven demand, but the structure looks like a custom-pool rug: an unlocked creator LP larger than the market cap, a direct PumpSwap deploy, and a tiny set of sellers doing thousands of sells. It also faces a crowded same-ticker field. The chance of a rug or LP pull within 6 hours is high, and the chance of doubling from the entry 25 minutes after detection is modest.",
+  "continuation_view": "fade",
+  "p_runner": 18,
+  "p_rug": 60,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 9785,
+ "type": "result",
+ "duration_ms": 28478,
+ "uuid": "b54ee095-fdb5-4df2-a468-4a896d254f82",
+ "ttft_stream_ms": 725,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 725,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

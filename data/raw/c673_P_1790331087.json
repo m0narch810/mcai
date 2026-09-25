@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 27454,
+ "stop_reason": "tool_use",
+ "session_id": "52697429-c901-4a8d-ba6b-4ce157f34691",
+ "total_cost_usd": 0.10829079999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6372,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2846,
+  "output_tokens_details": {
+   "thinking_tokens": 742
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6372,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2846,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 6372,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6372
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2846,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 6372,
+   "webSearchRequests": 0,
+   "costUSD": 0.10829079999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 742,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PONS was created on a third-party launchpad (ponsfamily.com), not on pump.fun's curve, and trades in a PumpSwap pool made about 36 minutes before detection. At detection the market cap was about $151k and liquidity about $224k. Liquidity higher than market cap is unusual and means the pool holds a lot of SOL, roughly $110k, against 73.8% of the token supply. Price is up about 106% in the first hour on $6.6M volume, which is about 30 times the market cap. The flow is very lopsided. GeckoTerminal shows about 1,850 unique buyers but only 60 unique sellers making about 3,860 sell transactions. That points to a small group of bot or market-maker wallets selling repeatedly into a large number of small buyers, possibly an airdrop-style or launchpad-community bot. GMGN flags 47 bundler wallets holding about 20% of top trader share. The LP is 0% locked and held by very few providers. The linked X account (ponsdotfamily) has 759 launched tokens tied to it, so it is the launchpad's own account, not a project account. The token image is duplicated 14 times.\",\"narrative\":{\"description\":\"No standalone story. 'Pons' looks like one of many tokens launched from a small launchpad (ponsfamily.com), and the only social link is the launchpad's X account, which has 759 tokens. The duplicated image suggests a template or copycat launch. Any attention is launchpad-ecosystem flow, not a meme with its own pull.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity seems driven by volume: many small buys, probably from launchpad users or bots, against repeated sells from a few wallets. Nothing in the packet shows organic social spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only token in the packet with this name or ticker, and it links to the ponsfamily launchpad. But the launchpad pushes many tokens, so this one is not special to any story.\",\"competing_tokens\":\"None in the packet. The launchpad itself has hundreds of sibling tokens under the same X account.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 1,850 unique buyers against 60 unique sellers, with about 3,860 sells coming from those 60 wallets. 47 bundler wallets hold about 20% of top trader share. Hourly turnover is about 30 times market cap. The social account is shared across 759 launchpad tokens, the image is duplicated 14 times, and GMGN page visits are near zero (2) even though volume is huge.\",\"uncertainty\":\"The buyer count could be real users of the launchpad ecosystem. The repeated sellers could be a launchpad market-making mechanism rather than extraction. The ponsfamily launchpad's reputation is unknown.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"LP is 0% locked/burned and held by only a few providers, so about $110k of SOL can be pulled at any time\",\"Launch was from a non-standard launchpad and there is no pump.fun curve protection\",\"A few repeat-selling wallets suggest steady extraction into buyers\",\"47 bundler wallets hold about 20% of top trader share\",\"Volume looks inflated by wash trading or bots, so real demand is unclear\",\"Price has already doubled in the first hour, so entry is near the ATH (ATH 1.62e-6 vs 1.51e-6)\"]},\"counterargument\":\"The pool has deep SOL for this market cap. With constant-product math, doubling the price needs only about 41% more SOL in the pool, roughly $45\u201350k of net buying. That is small next to 1,850 unique buyers and a buy/sell ratio of about 1.5. If the ponsfamily launchpad has a real user base that keeps buying, and its liquidity is launchpad-managed rather than something the dev will pull, PONS could climb to $300k+ quickly. Top-10 concentration outside the pool is also low (about 11\u201312%), and the creator holds almost nothing.\",\"unknowns\":[\"Who owns the unlocked LP: the launchpad or the dev\",\"Whether ponsfamily launchpad tokens usually hold up or get drained\",\"Whether the 1,850 buyers are real people or a bot or airdrop swarm\",\"What the 60 repeat sellers are: a market maker or extraction\",\"Any X or community activity (not collected)\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. The analysis uses only the evidence packet.\"},\"thesis\":\"This is a young token from a small launchpad with volume that looks manufactured: a few repeat sellers against many small buyers, heavy bundler share, and an X account shared with 759 other tokens. Its sizeable SOL liquidity is unlocked. It has already doubled, and the lopsided flow suggests extraction rather than organic demand. A second doubling from entry within 6 hours is possible because the pool is deep and the buyer count is large, but it is less likely than a drain or a fade. There is also a meaningful chance the LP gets pulled.\",\"continuation_view\":\"fade\",\"p_runner\":18,\"p_rug\":45,\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "PONS was created on a third-party launchpad (ponsfamily.com), not on pump.fun's curve, and trades in a PumpSwap pool made about 36 minutes before detection. At detection the market cap was about $151k and liquidity about $224k. Liquidity higher than market cap is unusual and means the pool holds a lot of SOL, roughly $110k, against 73.8% of the token supply. Price is up about 106% in the first hour on $6.6M volume, which is about 30 times the market cap. The flow is very lopsided. GeckoTerminal shows about 1,850 unique buyers but only 60 unique sellers making about 3,860 sell transactions. That points to a small group of bot or market-maker wallets selling repeatedly into a large number of small buyers, possibly an airdrop-style or launchpad-community bot. GMGN flags 47 bundler wallets holding about 20% of top trader share. The LP is 0% locked and held by very few providers. The linked X account (ponsdotfamily) has 759 launched tokens tied to it, so it is the launchpad's own account, not a project account. The token image is duplicated 14 times.",
+  "narrative": {
+   "description": "No standalone story. 'Pons' looks like one of many tokens launched from a small launchpad (ponsfamily.com), and the only social link is the launchpad's X account, which has 759 tokens. The duplicated image suggests a template or copycat launch. Any attention is launchpad-ecosystem flow, not a meme with its own pull.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity seems driven by volume: many small buys, probably from launchpad users or bots, against repeated sells from a few wallets. Nothing in the packet shows organic social spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only token in the packet with this name or ticker, and it links to the ponsfamily launchpad. But the launchpad pushes many tokens, so this one is not special to any story.",
+   "competing_tokens": "None in the packet. The launchpad itself has hundreds of sibling tokens under the same X account.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 1,850 unique buyers against 60 unique sellers, with about 3,860 sells coming from those 60 wallets. 47 bundler wallets hold about 20% of top trader share. Hourly turnover is about 30 times market cap. The social account is shared across 759 launchpad tokens, the image is duplicated 14 times, and GMGN page visits are near zero (2) even though volume is huge.",
+   "uncertainty": "The buyer count could be real users of the launchpad ecosystem. The repeated sellers could be a launchpad market-making mechanism rather than extraction. The ponsfamily launchpad's reputation is unknown."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "LP is 0% locked/burned and held by only a few providers, so about $110k of SOL can be pulled at any time",
+    "Launch was from a non-standard launchpad and there is no pump.fun curve protection",
+    "A few repeat-selling wallets suggest steady extraction into buyers",
+    "47 bundler wallets hold about 20% of top trader share",
+    "Volume looks inflated by wash trading or bots, so real demand is unclear",
+    "Price has already doubled in the first hour, so entry is near the ATH (ATH 1.62e-6 vs 1.51e-6)"
+   ]
+  },
+  "counterargument": "The pool has deep SOL for this market cap. With constant-product math, doubling the price needs only about 41% more SOL in the pool, roughly $45\u201350k of net buying. That is small next to 1,850 unique buyers and a buy/sell ratio of about 1.5. If the ponsfamily launchpad has a real user base that keeps buying, and its liquidity is launchpad-managed rather than something the dev will pull, PONS could climb to $300k+ quickly. Top-10 concentration outside the pool is also low (about 11\u201312%), and the creator holds almost nothing.",
+  "unknowns": [
+   "Who owns the unlocked LP: the launchpad or the dev",
+   "Whether ponsfamily launchpad tokens usually hold up or get drained",
+   "Whether the 1,850 buyers are real people or a bot or airdrop swarm",
+   "What the 60 repeat sellers are: a market maker or extraction",
+   "Any X or community activity (not collected)"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. The analysis uses only the evidence packet."
+  },
+  "thesis": "This is a young token from a small launchpad with volume that looks manufactured: a few repeat sellers against many small buyers, heavy bundler share, and an X account shared with 759 other tokens. Its sizeable SOL liquidity is unlocked. It has already doubled, and the lopsided flow suggests extraction rather than organic demand. A second doubling from entry within 6 hours is possible because the pool is deep and the buyer count is large, but it is less likely than a drain or a fade. There is also a meaningful chance the LP gets pulled.",
+  "continuation_view": "fade",
+  "p_runner": 18,
+  "p_rug": 45,
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8713,
+ "type": "result",
+ "duration_ms": 27498,
+ "uuid": "d677d39d-9c3c-40f7-a81f-da687d0c3288",
+ "ttft_stream_ms": 927,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 927,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,137 @@
+{
+ "duration_api_ms": 33534,
+ "stop_reason": "tool_use",
+ "session_id": "9d58f7e1-a0b1-4608-aabd-557955243b65",
+ "total_cost_usd": 0.144028,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10070,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 3173,
+  "output_tokens_details": {
+   "thinking_tokens": 730
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10070,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3173,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 10070,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10070
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3173,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 10070,
+   "webSearchRequests": 0,
+   "costUSD": 0.144028,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 730,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The pool was created directly on PumpSwap (migrated_unix=0, launchpad empty, bonding_curve=false) with 0% of LP burned or locked (lp_burn_ratio 0.0, lp_locked_pct 0.0) and RugCheck flagging 'Large Amount of LP Unlocked' as danger. Whoever deployed the pool could remove liquidity at will. A 'no pair or no liquidity at T_D' result 22 minutes later fits a liquidity pull.\",\"Liquidity (~$44k) was larger than market cap (~$42k). That points to a pool the deployer seeded themselves, so most of the capital sat in an LP position that one party controlled. The report correctly listed this as a structural risk.\",\"GMGN reported creator_token_status = 'creator_close' and creator_hold_rate 0. On a self-seeded pool, the creator's remaining exposure is the LP position, not tokens, so pulling liquidity is the natural way out. This supports the high p_rug.\",\"GeckoTerminal showed 2,072 unique buyers against 74 unique sellers, while buy and sell transaction counts were close to equal. A few wallets were selling into many small buys, which is a distribution pattern. Combined with 56 bundler wallets (41.6% of the top-trader share) and a 41-wallet insider network, this pointed to coordinated extraction.\",\"About 10 same-name ERN clones launched within minutes of each other, most of which already had near-zero liquidity at T2. The peer group showed that liquidity in this cohort was disposable. The earlier clone E53j... already had $0.50 of liquidity.\"],\"misleading_observations\":[\"The counterargument treated 'creator holds 0% and has closed their position' as reassuring. On a directly seeded pool with unlocked LP, it means the opposite: the creator's stake is the LP, and pulling it is how they exit.\",\"Mint and freeze authority were renounced and buy/sell tax was 0. These are standard reassurances, but they have no bearing on LP-removal risk, which was the relevant failure mode here.\",\"$1.1M of volume, about 2,000 holders and 2,072 unique buyers looked like strong activity. The seller asymmetry and bundler share suggest much of it was farmed or wash flow, so these counts overstated real demand.\",\"The insider-network token_pct value (2.7e12) is obviously malformed. It should not have been read as a meaningful magnitude either way.\",\"The unopened X post (HTTP 402) was an unknown that probably did not matter. With the LP unlocked, the narrative source was mostly irrelevant to the fastest failure mode.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at T2 argued against the fade/rug conclusion. The main correctable item is the reading of creator_close as positive. That should have pushed p_rug higher and made an early LP pull the leading scenario, which also matters for timing: a pull could happen before T_D, as the 'unfillable' result shows.\",\"The report used a 6h observation window. The structure (seeded pool, unlocked LP, creator already out of tokens) supported a much shorter expected time to failure. The 22 minutes between T2 and T_D was enough time for the pair to disappear.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Candidates whose pair was created directly on PumpSwap/Raydium without a bonding-curve migration, with LP burn/lock at 0%, liquidity_usd >= 0.9 \u00d7 market cap, and a creator holding 0% of tokens, will show liquidity removal (liquidity < $1k or pair missing) within 60 minutes of T2 at a much higher rate than curve-migrated candidates with similar market cap and volume.\",\"conditions\":\"Applies only when migrated_unix = 0 or launchpad is empty, lp_burn_ratio = 0, the LP-unlocked danger flag is present, and creator_hold_rate = 0. Check against a control group of curve-migrated pumpswap candidates in the same $10k\u2013$300k band.\",\"market_structure_rationale\":\"When the deployer seeds the pool and holds none of the tokens, almost all of their recoverable value is the LP position. Nothing stops them from withdrawing it, and there is no bonding-curve LP burn to prevent it.\"},{\"statement\":\"When h1 unique sellers / unique buyers < 0.05 while the sell/buy transaction ratio is > 0.4 (both from GeckoTerminal at T2), the 6h forward return is negative more often than for candidates with a seller/buyer ratio > 0.2, controlling for h1 turnover.\",\"conditions\":\"Tokens under 2h old with at least 1,000 h1 transactions and GeckoTerminal trader counts available.\",\"market_structure_rationale\":\"Near-equal sell transaction counts spread across very few distinct sellers mean supply is concentrated in a few wallets that keep distributing into fragmented, often bot-generated buying. Buyer counts then overstate real demand.\"},{\"statement\":\"For candidates meeting the hypothesis-1 structure, re-checking liquidity at T_D will show a higher unfillable rate than for other candidates. The unfillable rate should be tracked as its own outcome, not folded into zero-return trades.\",\"conditions\":\"Any candidate with a delay of 15 minutes or more between T2 and T_D.\",\"market_structure_rationale\":\"Pools with unlocked LP can disappear in minutes. Counting them as 0.0 returns hides the rug signal and inflates apparent risk-adjusted performance.\"}],\"summary\":\"The report called strong_fade with p_rug 68 and p_runner 9. At T_D, 22 minutes after data collection, the pair had no pair or no liquidity, so the trade was unfillable with 0 net. This fits the report's main thesis: an LP pull from a directly created PumpSwap pool with unlocked LP. However, the outcome record does not say whether liquidity was withdrawn or the data source failed, so it cannot be scored as a confirmed rug.\\n\\nThe report was grounded in market structure: unlocked LP, liquidity larger than market cap, bundlers and insiders, lopsided unique sellers, and a clone cohort. This was sound, and none of it relied on hindsight. The one real error was in the counterargument, which treated the creator's closed token position as reassuring. On a self-seeded pool, it points to the LP as the creator's exit and to fast failure, faster than the 6h window assumed.\\n\\nFor PnL, the call made no difference: the position was never filled. The direction was reasonably knowable at T2. The exact timing and whether the pool would be gone at T_D were not. This is one case, so it confirms nothing on its own. The hypotheses above are meant to be tested across many seeded-pool candidates.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The pool was created directly on PumpSwap (migrated_unix=0, launchpad empty, bonding_curve=false) with 0% of LP burned or locked (lp_burn_ratio 0.0, lp_locked_pct 0.0) and RugCheck flagging 'Large Amount of LP Unlocked' as danger. Whoever deployed the pool could remove liquidity at will. A 'no pair or no liquidity at T_D' result 22 minutes later fits a liquidity pull.",
+   "Liquidity (~$44k) was larger than market cap (~$42k). That points to a pool the deployer seeded themselves, so most of the capital sat in an LP position that one party controlled. The report correctly listed this as a structural risk.",
+   "GMGN reported creator_token_status = 'creator_close' and creator_hold_rate 0. On a self-seeded pool, the creator's remaining exposure is the LP position, not tokens, so pulling liquidity is the natural way out. This supports the high p_rug.",
+   "GeckoTerminal showed 2,072 unique buyers against 74 unique sellers, while buy and sell transaction counts were close to equal. A few wallets were selling into many small buys, which is a distribution pattern. Combined with 56 bundler wallets (41.6% of the top-trader share) and a 41-wallet insider network, this pointed to coordinated extraction.",
+   "About 10 same-name ERN clones launched within minutes of each other, most of which already had near-zero liquidity at T2. The peer group showed that liquidity in this cohort was disposable. The earlier clone E53j... already had $0.50 of liquidity."
+  ],
+  "misleading_observations": [
+   "The counterargument treated 'creator holds 0% and has closed their position' as reassuring. On a directly seeded pool with unlocked LP, it means the opposite: the creator's stake is the LP, and pulling it is how they exit.",
+   "Mint and freeze authority were renounced and buy/sell tax was 0. These are standard reassurances, but they have no bearing on LP-removal risk, which was the relevant failure mode here.",
+   "$1.1M of volume, about 2,000 holders and 2,072 unique buyers looked like strong activity. The seller asymmetry and bundler share suggest much of it was farmed or wash flow, so these counts overstated real demand.",
+   "The insider-network token_pct value (2.7e12) is obviously malformed. It should not have been read as a meaningful magnitude either way.",
+   "The unopened X post (HTTP 402) was an unknown that probably did not matter. With the LP unlocked, the narrative source was mostly irrelevant to the fastest failure mode."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at T2 argued against the fade/rug conclusion. The main correctable item is the reading of creator_close as positive. That should have pushed p_rug higher and made an early LP pull the leading scenario, which also matters for timing: a pull could happen before T_D, as the 'unfillable' result shows.",
+   "The report used a 6h observation window. The structure (seeded pool, unlocked LP, creator already out of tokens) supported a much shorter expected time to failure. The 22 minutes between T2 and T_D was enough time for the pair to disappear."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Candidates whose pair was created directly on PumpSwap/Raydium without a bonding-curve migration, with LP burn/lock at 0%, liquidity_usd >= 0.9 \u00d7 market cap, and a creator holding 0% of tokens, will show liquidity removal (liquidity < $1k or pair missing) within 60 minutes of T2 at a much higher rate than curve-migrated candidates with similar market cap and volume.",
+    "conditions": "Applies only when migrated_unix = 0 or launchpad is empty, lp_burn_ratio = 0, the LP-unlocked danger flag is present, and creator_hold_rate = 0. Check against a control group of curve-migrated pumpswap candidates in the same $10k\u2013$300k band.",
+    "market_structure_rationale": "When the deployer seeds the pool and holds none of the tokens, almost all of their recoverable value is the LP position. Nothing stops them from withdrawing it, and there is no bonding-curve LP burn to prevent it."
+   },
+   {
+    "statement": "When h1 unique sellers / unique buyers < 0.05 while the sell/buy transaction ratio is > 0.4 (both from GeckoTerminal at T2), the 6h forward return is negative more often than for candidates with a seller/buyer ratio > 0.2, controlling for h1 turnover.",
+    "conditions": "Tokens under 2h old with at least 1,000 h1 transactions and GeckoTerminal trader counts available.",
+    "market_structure_rationale": "Near-equal sell transaction counts spread across very few distinct sellers mean supply is concentrated in a few wallets that keep distributing into fragmented, often bot-generated buying. Buyer counts then overstate real demand."
+   },
+   {
+    "statement": "For candidates meeting the hypothesis-1 structure, re-checking liquidity at T_D will show a higher unfillable rate than for other candidates. The unfillable rate should be tracked as its own outcome, not folded into zero-return trades.",
+    "conditions": "Any candidate with a delay of 15 minutes or more between T2 and T_D.",
+    "market_structure_rationale": "Pools with unlocked LP can disappear in minutes. Counting them as 0.0 returns hides the rug signal and inflates apparent risk-adjusted performance."
+   }
+  ],
+  "summary": "The report called strong_fade with p_rug 68 and p_runner 9. At T_D, 22 minutes after data collection, the pair had no pair or no liquidity, so the trade was unfillable with 0 net. This fits the report's main thesis: an LP pull from a directly created PumpSwap pool with unlocked LP. However, the outcome record does not say whether liquidity was withdrawn or the data source failed, so it cannot be scored as a confirmed rug.\n\nThe report was grounded in market structure: unlocked LP, liquidity larger than market cap, bundlers and insiders, lopsided unique sellers, and a clone cohort. This was sound, and none of it relied on hindsight. The one real error was in the counterargument, which treated the creator's closed token position as reassuring. On a self-seeded pool, it points to the LP as the creator's exit and to fast failure, faster than the 6h window assumed.\n\nFor PnL, the call made no difference: the position was never filled. The direction was reasonably knowable at T2. The exact timing and whether the pool would be gone at T_D were not. This is one case, so it confirms nothing on its own. The hypotheses above are meant to be tested across many seeded-pool candidates."
+ },
+ "ttft_ms": 8705,
+ "type": "result",
+ "duration_ms": 33585,
+ "uuid": "4d7de7fa-8a70-4ec1-9572-48cb97150b21",
+ "ttft_stream_ms": 1040,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 1040,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

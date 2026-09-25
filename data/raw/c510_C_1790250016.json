@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 81097,
+ "stop_reason": "tool_use",
+ "session_id": "ec4272a4-9898-4a35-ba44-ddbf83ed19e1",
+ "total_cost_usd": 0.3641438,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16683,
+  "cache_read_input_tokens": 60554,
+  "output_tokens": 4122,
+  "output_tokens_details": {
+   "thinking_tokens": 605
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16683,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2718,
+    "cache_read_input_tokens": 16820,
+    "cache_creation_input_tokens": 2439,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2439
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4122,
+   "cacheReadInputTokens": 60554,
+   "cacheCreationInputTokens": 16683,
+   "webSearchRequests": 0,
+   "costUSD": 0.2280548,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 605,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 62834,
+   "outputTokens": 2651,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.13608900000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GENGO (\\\"gengo.world\\\") is a roughly 38-minute-old Solana token on a PumpSwap pool. The packet says it was not a pump.fun curve migration (migrated_unix 0, deploy platform unknown). The pool started at about $10k market cap and rose to about $34k, up roughly 250% in an hour on about $700k of volume. At least 10 other tokens use the same name and ticker (\\\"gengo.world\\\"). All of them launched within about 45 minutes of each other. One of them, 3T7b\u2026 on a Meteora pair, launched about 25 minutes after this one. It now has a higher market cap (~$47k) and far more volume in the last 5 minutes (~$490k, against ~$74k for this pool). So traders are shifting to the competing clone. The domain gengo.world exists, but its page shows only the text \\\"GENGO \u2014 find the signal\\\". It has no links, no contract address and no socials. No X, Reddit, Telegram or news mentions of a GENGO token were found. The flow also looks artificial: GeckoTerminal counts 2,059 unique buyers but only 50 unique sellers. GMGN flags 31 bundler wallets, with bundlers holding 42% of the top traders' share. LP is 0% locked and liquidity is larger than market cap, which suggests a single LP provider (probably the deployer) who could pull it.\",\"narrative\":{\"description\":\"The token is named after a website, gengo.world, that has only a placeholder page ('GENGO \u2014 find the signal'). I could not find any product, announcement or cultural event behind it. Many identical clones were deployed at nearly the same time. That suggests either someone expected a launch from gengo.world, or one launcher farming a name across many tokens.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no public reason for the attention. The flow looks bot- and bundle-driven: about 2,059 unique buyers against 50 sellers, and 31 bundler wallets. Most of the attention is also split across same-name clones rather than going to this token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing marks this token as the official one. The website has no contract address and the packet shows no socials. It was simply one of the earliest same-name clones to get a real pool.\",\"competing_tokens\":\"At least 10 same-name 'gengo.world' tokens exist. The 3T7bjridArVsD8fjZyF9faXK2ivXerX7ZsEnC4W5Dmho Meteora pair currently leads: about $47k market cap, $754k 1h volume and $490k 5m volume. That is far more short-term flow than this pool's ~$74k in 5 minutes. Most other clones have already lost their liquidity.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal shows 2,059 unique buyers against 50 unique sellers over 1h. The last 5 minutes are balanced (33 buyers, 32 sellers), which means the early buyer count was probably spray-buying by bots. GMGN counts 31 bundler wallets, a 42% top-bundler trader share and a 33% bot/degen rate. It found 0 smart-money or KOL wallets. RugCheck flags an insider trade network of 25 wallets. Many identical clones were launched within minutes of each other.\",\"uncertainty\":\"No X data was available, and private Telegram call groups can't be seen. A real launch could exist that my searches did not surface.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of LP is locked, liquidity is larger than market cap, and there are few LP providers, so the deployer could pull liquidity at any time\",\"31 bundler wallets and a 25-wallet insider network\",\"Competing same-name clone on Meteora is taking the flow\",\"The buyer surge looks bot-driven, and the last 5 minutes show balanced buys and sells, so the momentum is fading\",\"Other clones have already gone to zero liquidity, showing this launcher pattern ends in pulled liquidity\"]},\"counterargument\":\"If gengo.world is a real project about to launch, and this token is the one it recognises (it was among the earliest), a doubling from $34k to $68k is a small move for a hyped launch. The Meteora clone already reached about $47k. Top-10 non-pool holders are spread fairly evenly at about 29%, and the creator holds nothing. Those points slightly reduce the risk of a single dumping holder.\",\"unknowns\":[\"Whether gengo.world is a real upcoming project and which contract it recognises, if any\",\"Who controls the LP tokens\",\"Whether X posts or call groups are pushing one specific clone\",\"The deployer's identity and history (the packet shows no funding source)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"gengo.world returns only the 'GENGO \u2014 find the signal' placeholder. The pump.fun API returned a 404 for this contract. I used DexScreener to compare this token with the leading clone. Searches for the contract address and for site:x.com found no relevant GENGO token posts. The Reddit and Telegram searches were a single combined general web query, not searches of those platforms themselves. Discord was not searched.\"},\"thesis\":\"This looks like a name-farm clone war with no confirmed official token. This pool's liquidity is unlocked and probably controlled by the deployer. Buying looks bundled and bot-driven, and flow is moving to a competing clone on Meteora. A doubling before a -50% move or a liquidity pull is unlikely. The most likely outcome is a pulled or dead pool within 6 hours.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":70,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://gengo.world\",\"what\":\"Placeholder site 'GENGO \u2014 find the signal', no contract address or socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/5x8Q9ryULYEsAtifCcSsVwE3MjbboRGm4jhcGJhkkz5F,3T7bjridArVsD8fjZyF9faXK2ivXerX7ZsEnC4W5Dmho\",\"what\":\"Comparison with the Meteora clone, which has higher market cap and far more 5m volume\"},{\"url\":\"https://en.wikipedia.org/wiki/Gengo\",\"what\":\"The unrelated translation company Gengo; no crypto link found\"},{\"url\":\"https://x.com/GameGengo\",\"what\":\"X search found only unrelated Gengo accounts\"}]}",
+ "structured_output": {
+  "what_is_happening": "GENGO (\"gengo.world\") is a roughly 38-minute-old Solana token on a PumpSwap pool. The packet says it was not a pump.fun curve migration (migrated_unix 0, deploy platform unknown). The pool started at about $10k market cap and rose to about $34k, up roughly 250% in an hour on about $700k of volume. At least 10 other tokens use the same name and ticker (\"gengo.world\"). All of them launched within about 45 minutes of each other. One of them, 3T7b\u2026 on a Meteora pair, launched about 25 minutes after this one. It now has a higher market cap (~$47k) and far more volume in the last 5 minutes (~$490k, against ~$74k for this pool). So traders are shifting to the competing clone. The domain gengo.world exists, but its page shows only the text \"GENGO \u2014 find the signal\". It has no links, no contract address and no socials. No X, Reddit, Telegram or news mentions of a GENGO token were found. The flow also looks artificial: GeckoTerminal counts 2,059 unique buyers but only 50 unique sellers. GMGN flags 31 bundler wallets, with bundlers holding 42% of the top traders' share. LP is 0% locked and liquidity is larger than market cap, which suggests a single LP provider (probably the deployer) who could pull it.",
+  "narrative": {
+   "description": "The token is named after a website, gengo.world, that has only a placeholder page ('GENGO \u2014 find the signal'). I could not find any product, announcement or cultural event behind it. Many identical clones were deployed at nearly the same time. That suggests either someone expected a launch from gengo.world, or one launcher farming a name across many tokens.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no public reason for the attention. The flow looks bot- and bundle-driven: about 2,059 unique buyers against 50 sellers, and 31 bundler wallets. Most of the attention is also split across same-name clones rather than going to this token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing marks this token as the official one. The website has no contract address and the packet shows no socials. It was simply one of the earliest same-name clones to get a real pool.",
+   "competing_tokens": "At least 10 same-name 'gengo.world' tokens exist. The 3T7bjridArVsD8fjZyF9faXK2ivXerX7ZsEnC4W5Dmho Meteora pair currently leads: about $47k market cap, $754k 1h volume and $490k 5m volume. That is far more short-term flow than this pool's ~$74k in 5 minutes. Most other clones have already lost their liquidity.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal shows 2,059 unique buyers against 50 unique sellers over 1h. The last 5 minutes are balanced (33 buyers, 32 sellers), which means the early buyer count was probably spray-buying by bots. GMGN counts 31 bundler wallets, a 42% top-bundler trader share and a 33% bot/degen rate. It found 0 smart-money or KOL wallets. RugCheck flags an insider trade network of 25 wallets. Many identical clones were launched within minutes of each other.",
+   "uncertainty": "No X data was available, and private Telegram call groups can't be seen. A real launch could exist that my searches did not surface."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of LP is locked, liquidity is larger than market cap, and there are few LP providers, so the deployer could pull liquidity at any time",
+    "31 bundler wallets and a 25-wallet insider network",
+    "Competing same-name clone on Meteora is taking the flow",
+    "The buyer surge looks bot-driven, and the last 5 minutes show balanced buys and sells, so the momentum is fading",
+    "Other clones have already gone to zero liquidity, showing this launcher pattern ends in pulled liquidity"
+   ]
+  },
+  "counterargument": "If gengo.world is a real project about to launch, and this token is the one it recognises (it was among the earliest), a doubling from $34k to $68k is a small move for a hyped launch. The Meteora clone already reached about $47k. Top-10 non-pool holders are spread fairly evenly at about 29%, and the creator holds nothing. Those points slightly reduce the risk of a single dumping holder.",
+  "unknowns": [
+   "Whether gengo.world is a real upcoming project and which contract it recognises, if any",
+   "Who controls the LP tokens",
+   "Whether X posts or call groups are pushing one specific clone",
+   "The deployer's identity and history (the packet shows no funding source)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "gengo.world returns only the 'GENGO \u2014 find the signal' placeholder. The pump.fun API returned a 404 for this contract. I used DexScreener to compare this token with the leading clone. Searches for the contract address and for site:x.com found no relevant GENGO token posts. The Reddit and Telegram searches were a single combined general web query, not searches of those platforms themselves. Discord was not searched."
+  },
+  "thesis": "This looks like a name-farm clone war with no confirmed official token. This pool's liquidity is unlocked and probably controlled by the deployer. Buying looks bundled and bot-driven, and flow is moving to a competing clone on Meteora. A doubling before a -50% move or a liquidity pull is unlikely. The most likely outcome is a pulled or dead pool within 6 hours.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 70,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://gengo.world",
+    "what": "Placeholder site 'GENGO \u2014 find the signal', no contract address or socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/5x8Q9ryULYEsAtifCcSsVwE3MjbboRGm4jhcGJhkkz5F,3T7bjridArVsD8fjZyF9faXK2ivXerX7ZsEnC4W5Dmho",
+    "what": "Comparison with the Meteora clone, which has higher market cap and far more 5m volume"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gengo",
+    "what": "The unrelated translation company Gengo; no crypto link found"
+   },
+   {
+    "url": "https://x.com/GameGengo",
+    "what": "X search found only unrelated Gengo accounts"
+   }
+  ]
+ },
+ "ttft_ms": 1536,
+ "type": "result",
+ "duration_ms": 57130,
+ "uuid": "ee672907-f22c-4e21-b8eb-1c5b8fa1bbea",
+ "ttft_stream_ms": 931,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 931,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

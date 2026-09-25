@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 43936,
+ "stop_reason": "tool_use",
+ "session_id": "b5b9566a-bd79-4899-8866-54368563b021",
+ "total_cost_usd": 0.23065259999999999,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13017,
+  "cache_read_input_tokens": 28403,
+  "output_tokens": 2756,
+  "output_tokens_details": {
+   "thinking_tokens": 423
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13017,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2178,
+    "cache_read_input_tokens": 14026,
+    "cache_creation_input_tokens": 1755,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1755
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2756,
+   "cacheReadInputTokens": 28403,
+   "cacheCreationInputTokens": 13017,
+   "webSearchRequests": 0,
+   "costUSD": 0.1649606,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 423,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30032,
+   "outputTokens": 1132,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.065692,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GRAM \\\"gram token\\\" is a Solana coin about 16 minutes old. It launched straight onto a PumpSwap pool rather than a pump.fun curve (deploy platform unknown) and has about $32k market cap and $38k liquidity. In the first hour it traded about $467k volume, price is up about 129%, and it drew 799 unique buyers against 122 sellers. The coin's only listed link, the GeckoTerminal \\\"twitter handle\\\" field, points to a Telegram X status (telegram/status/2103568454754427216). That suggests the coin is riffing on an official Telegram/TON post about Gram. TON renamed Toncoin to Gram in June 2026, and Telegram began rolling out the Gram Wallet on Aug 31. Several copycat \\\"gram token\\\" coins launched within the same ~2 minutes.\",\"narrative\":{\"description\":\"This is a spin-off of Telegram/TON's Gram news: the Toncoin-to-Gram rebrand and the Gram Wallet rollout to 1B+ users. A new Telegram X post (not readable, HTTP 402) is the likely trigger.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"A big-brand headline (Telegram/Durov) produces a burst of low-cap Solana copycats. But the real asset, Gram/TON, lives on TON, so a Solana meme has little lasting claim to the story.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most liquidity and volume among the new 'gram token' clones, and it links the Telegram post. It is not an official token.\",\"competing_tokens\":\"4EaRQ4an... 'gram token' launched about 1 minute earlier; it has $89k h1 volume but its liquidity is now around $2, so it looks rugged. GjzduhV...pump is a pump.fun clone launched about 1 minute later. There are also many $1.3B+ 'Gram' listings, which are likely bridged or fake-liquidity entries.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The unique-buyer count (799 vs 122 sellers) looks broad. However, GMGN tags 62 bundler wallets holding 20.8% of top-trader share. There are no smart or KOL wallets and no paid boosts. Searching the contract address turned up nothing.\",\"uncertainty\":\"X is not visible to me, and I could not read the Telegram post the coin points to.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"100% of the LP is unlocked on a non-pump.fun PumpSwap pool, so the creator can remove liquidity at any time (RugCheck 'danger')\",\"Liquidity is larger than market cap, so the dev seeded the pool themselves\",\"62 bundler wallets\",\"A sister clone (4EaR...) already has about $2 of liquidity\",\"creator_close status: creator's position closed/sold (GMGN), dev holds 0%\"]},\"counterargument\":\"Telegram is a huge brand and the buyer base is broad (799 unique buyers in 15 minutes, a 1.8:1 buy/sell ratio). At a $32k market cap, a real narrative wave can double the price in minutes. This clone is also the liquidity leader among the copies.\",\"unknowns\":[\"What the linked Telegram X post says\",\"Who controls the LP\",\"Whether the bundlers are the dev\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-limited. News confirms the Gram rebrand and wallet rollout. Searching the contract address found nothing. Fetching the X post returned 402. I did not attempt Reddit, Telegram or Discord.\"},\"thesis\":\"A copycat of a real Telegram headline with strong early buying. But unlocked LP on a self-seeded pool, bundlers, and an already-rugged sibling clone put rug risk well above average. Runner odds are roughly at or slightly below the base rate.\",\"continuation_view\":\"fade\",\"p_runner\":11,\"p_rug\":45,\"survival_score\":25,\"attention_score\":62,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.theblock.co/news/ecosystems/2026-06-01-ton-revives-gram-token-brand-telegram-ceo-durov-network-returning-roots-403231\",\"what\":\"TON revives the Gram brand\"},{\"url\":\"https://www.hokanews.com/2026/09/gram-wallet-telegram-launch-begins-as.html\",\"what\":\"Gram Wallet rollout on Telegram\"},{\"url\":\"https://x.com/telegram/status/2103568454754427216\",\"what\":\"Linked Telegram post (HTTP 402, could not be read)\"}]}",
+ "structured_output": {
+  "what_is_happening": "GRAM \"gram token\" is a Solana coin about 16 minutes old. It launched straight onto a PumpSwap pool rather than a pump.fun curve (deploy platform unknown) and has about $32k market cap and $38k liquidity. In the first hour it traded about $467k volume, price is up about 129%, and it drew 799 unique buyers against 122 sellers. The coin's only listed link, the GeckoTerminal \"twitter handle\" field, points to a Telegram X status (telegram/status/2103568454754427216). That suggests the coin is riffing on an official Telegram/TON post about Gram. TON renamed Toncoin to Gram in June 2026, and Telegram began rolling out the Gram Wallet on Aug 31. Several copycat \"gram token\" coins launched within the same ~2 minutes.",
+  "narrative": {
+   "description": "This is a spin-off of Telegram/TON's Gram news: the Toncoin-to-Gram rebrand and the Gram Wallet rollout to 1B+ users. A new Telegram X post (not readable, HTTP 402) is the likely trigger.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "A big-brand headline (Telegram/Durov) produces a burst of low-cap Solana copycats. But the real asset, Gram/TON, lives on TON, so a Solana meme has little lasting claim to the story."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most liquidity and volume among the new 'gram token' clones, and it links the Telegram post. It is not an official token.",
+   "competing_tokens": "4EaRQ4an... 'gram token' launched about 1 minute earlier; it has $89k h1 volume but its liquidity is now around $2, so it looks rugged. GjzduhV...pump is a pump.fun clone launched about 1 minute later. There are also many $1.3B+ 'Gram' listings, which are likely bridged or fake-liquidity entries.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The unique-buyer count (799 vs 122 sellers) looks broad. However, GMGN tags 62 bundler wallets holding 20.8% of top-trader share. There are no smart or KOL wallets and no paid boosts. Searching the contract address turned up nothing.",
+   "uncertainty": "X is not visible to me, and I could not read the Telegram post the coin points to."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "100% of the LP is unlocked on a non-pump.fun PumpSwap pool, so the creator can remove liquidity at any time (RugCheck 'danger')",
+    "Liquidity is larger than market cap, so the dev seeded the pool themselves",
+    "62 bundler wallets",
+    "A sister clone (4EaR...) already has about $2 of liquidity",
+    "creator_close status: creator's position closed/sold (GMGN), dev holds 0%"
+   ]
+  },
+  "counterargument": "Telegram is a huge brand and the buyer base is broad (799 unique buyers in 15 minutes, a 1.8:1 buy/sell ratio). At a $32k market cap, a real narrative wave can double the price in minutes. This clone is also the liquidity leader among the copies.",
+  "unknowns": [
+   "What the linked Telegram X post says",
+   "Who controls the LP",
+   "Whether the bundlers are the dev"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-limited. News confirms the Gram rebrand and wallet rollout. Searching the contract address found nothing. Fetching the X post returned 402. I did not attempt Reddit, Telegram or Discord."
+  },
+  "thesis": "A copycat of a real Telegram headline with strong early buying. But unlocked LP on a self-seeded pool, bundlers, and an already-rugged sibling clone put rug risk well above average. Runner odds are roughly at or slightly below the base rate.",
+  "continuation_view": "fade",
+  "p_runner": 11,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 62,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.theblock.co/news/ecosystems/2026-06-01-ton-revives-gram-token-brand-telegram-ceo-durov-network-returning-roots-403231",
+    "what": "TON revives the Gram brand"
+   },
+   {
+    "url": "https://www.hokanews.com/2026/09/gram-wallet-telegram-launch-begins-as.html",
+    "what": "Gram Wallet rollout on Telegram"
+   },
+   {
+    "url": "https://x.com/telegram/status/2103568454754427216",
+    "what": "Linked Telegram post (HTTP 402, could not be read)"
+   }
+  ]
+ },
+ "ttft_ms": 1781,
+ "type": "result",
+ "duration_ms": 38570,
+ "uuid": "3bba0acd-9847-4089-a5c2-5510b4b52a75",
+ "ttft_stream_ms": 714,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 714,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

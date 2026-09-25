@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 16744,
+ "stop_reason": "tool_use",
+ "session_id": "66314b5b-9e8e-49d0-80b6-3d26a2b3f32d",
+ "total_cost_usd": 0.0978188,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7683,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 1798,
+  "output_tokens_details": {
+   "thinking_tokens": 131
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7683,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1798,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7683,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7683
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 1798,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7683,
+   "webSearchRequests": 0,
+   "costUSD": 0.0978188,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 131,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is almost certainly not a memecoin. BABA, \\\"Alibaba Group Holding - Backpack Securities\\\", looks like a tokenized equity (an RWA stock token) issued through Backpack. Its price of about $111.65 matches the range of Alibaba's share price. The creator was funded from \\\"Backpack 2\\\", and the GeckoTerminal X handle is \\\"Backpack\\\". Mint and freeze authority are still enabled, which is normal for a regulated tokenized security. The pool is about 15 days old. The \\\"unusual activity\\\" trigger is a burst of volume (about $23k in h1, 2x turnover) with essentially flat price (h1 +0.3%, h24 +0.5%). That looks like arbitrage or rebalancing flow around the stock price, possibly during US market hours (17:15 UTC is about 1:15pm ET), not speculative attention.\",\"narrative\":{\"description\":\"RWA tokenized-stock story (Alibaba equity via Backpack Securities). The price is anchored to the real BABA share price, so there is no memetic story that can drive a reprice.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"It isn't spreading. The volume spike is most likely arbitrage or market-hours trading against the underlying stock. Price moved less than 1% across all timeframes.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The name, description, Backpack-funded creator and a price that tracks the underlying share all point to this being the official Backpack tokenized BABA.\",\"competing_tokens\":\"Several dead pump.fun BABA/Alibaba copies under $25k mcap with zero volume. They are irrelevant.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"No paid boosts, no DexScreener profile, no degen calls or smart-money signals. The flow pattern (flat price, balanced buys and sells) fits arbitrage or equity-exposure trading, not coordinated pumping. GMGN's bundler and fresh-wallet counts are capped at 1000 and probably reflect how the distribution works, not a pump.\",\"uncertainty\":\"The single holder with 46% is likely the issuer or custody wallet. I can't verify that offline.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The price is pegged to Alibaba stock, so a 2x in 6 hours would need Alibaba equity to double, which is essentially impossible\",\"The issuer holds mint and freeze authority (normal for RWAs, but it means central control)\",\"One holder has 46%, likely the issuer or custody wallet\",\"Thin DEX liquidity of about $11k\"]},\"counterargument\":\"A thin pool could briefly depeg upward if someone makes a large market buy, so a wick to 2x is not impossible. The issuer could also pause or freeze trading, or liquidity could migrate, which might count as the pair \\\"dying\\\". Neither is likely within 6 hours. A depeg would be arbitraged back almost immediately, and a sustained 2x is not realistic.\",\"unknowns\":[\"Whether the 46% holder is issuer custody\",\"Whether Backpack could pause or freeze the token or move liquidity\",\"Whether any news about Alibaba is driving the volume\",\"How the tracker would score a brief wick caused by thin liquidity\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No-internet condition; judged from the packet only.\"},\"sources\":[],\"thesis\":\"This is a tokenized Alibaba share issued via Backpack, and its price tracks the real stock. The volume trigger comes with a flat price, which fits arbitrage flow. The chance of a +100% move in 6 hours is near zero. The chance of a rug is low because this is an issuer-backed RWA, not a memecoin dev. Skip.\",\"continuation_view\":\"strong_fade\",\"p_runner\":1,\"p_rug\":4,\"research_confidence\":\"high\",\"observation_window\":\"6h\"}",
+ "structured_output": {
+  "what_is_happening": "This is almost certainly not a memecoin. BABA, \"Alibaba Group Holding - Backpack Securities\", looks like a tokenized equity (an RWA stock token) issued through Backpack. Its price of about $111.65 matches the range of Alibaba's share price. The creator was funded from \"Backpack 2\", and the GeckoTerminal X handle is \"Backpack\". Mint and freeze authority are still enabled, which is normal for a regulated tokenized security. The pool is about 15 days old. The \"unusual activity\" trigger is a burst of volume (about $23k in h1, 2x turnover) with essentially flat price (h1 +0.3%, h24 +0.5%). That looks like arbitrage or rebalancing flow around the stock price, possibly during US market hours (17:15 UTC is about 1:15pm ET), not speculative attention.",
+  "narrative": {
+   "description": "RWA tokenized-stock story (Alibaba equity via Backpack Securities). The price is anchored to the real BABA share price, so there is no memetic story that can drive a reprice.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "It isn't spreading. The volume spike is most likely arbitrage or market-hours trading against the underlying stock. Price moved less than 1% across all timeframes."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The name, description, Backpack-funded creator and a price that tracks the underlying share all point to this being the official Backpack tokenized BABA.",
+   "competing_tokens": "Several dead pump.fun BABA/Alibaba copies under $25k mcap with zero volume. They are irrelevant.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "No paid boosts, no DexScreener profile, no degen calls or smart-money signals. The flow pattern (flat price, balanced buys and sells) fits arbitrage or equity-exposure trading, not coordinated pumping. GMGN's bundler and fresh-wallet counts are capped at 1000 and probably reflect how the distribution works, not a pump.",
+   "uncertainty": "The single holder with 46% is likely the issuer or custody wallet. I can't verify that offline."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The price is pegged to Alibaba stock, so a 2x in 6 hours would need Alibaba equity to double, which is essentially impossible",
+    "The issuer holds mint and freeze authority (normal for RWAs, but it means central control)",
+    "One holder has 46%, likely the issuer or custody wallet",
+    "Thin DEX liquidity of about $11k"
+   ]
+  },
+  "counterargument": "A thin pool could briefly depeg upward if someone makes a large market buy, so a wick to 2x is not impossible. The issuer could also pause or freeze trading, or liquidity could migrate, which might count as the pair \"dying\". Neither is likely within 6 hours. A depeg would be arbitraged back almost immediately, and a sustained 2x is not realistic.",
+  "unknowns": [
+   "Whether the 46% holder is issuer custody",
+   "Whether Backpack could pause or freeze the token or move liquidity",
+   "Whether any news about Alibaba is driving the volume",
+   "How the tracker would score a brief wick caused by thin liquidity"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No-internet condition; judged from the packet only."
+  },
+  "sources": [],
+  "thesis": "This is a tokenized Alibaba share issued via Backpack, and its price tracks the real stock. The volume trigger comes with a flat price, which fits arbitrage flow. The chance of a +100% move in 6 hours is near zero. The chance of a rug is low because this is an issuer-backed RWA, not a memecoin dev. Skip.",
+  "continuation_view": "strong_fade",
+  "p_runner": 1,
+  "p_rug": 4,
+  "research_confidence": "high",
+  "observation_window": "6h"
+ },
+ "ttft_ms": 2410,
+ "type": "result",
+ "duration_ms": 16787,
+ "uuid": "1eeaf0e3-3e94-4aa9-879d-98e59256899a",
+ "ttft_stream_ms": 726,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 726,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

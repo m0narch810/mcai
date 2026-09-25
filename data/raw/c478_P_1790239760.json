@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 23562,
+ "stop_reason": "tool_use",
+ "session_id": "d814de3a-cc41-4274-a5bf-37ae36317cf7",
+ "total_cost_usd": 0.1128228,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7776,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2511,
+  "output_tokens_details": {
+   "thinking_tokens": 503
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7776,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2511,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7776,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7776
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2511,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7776,
+   "webSearchRequests": 0,
+   "costUSD": 0.1128228,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 503,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DESKS (EKnS\u2026) is a 38-minute-old token launched on a Meteora virtual curve and migrated immediately, now trading on PumpSwap at about $171k market cap with $30k liquidity. It has done about $825k of volume and is up about 350% in its first hour. It sits inside a same-ticker swarm: at least 10 other DESKS / \\\"desks.fun\\\" tokens launched within about 1 hour of each other. Several of those already have $0 liquidity, and two live ones have more volume or a higher market cap (FTJm\u2026 \\\"desks\\\" at $1.7M h1 volume; 4QXA\u2026 \\\"desks.fun\\\" at $317k mcap). Price is about 37% below its ATH ($0.000272). The last 30 minutes show heavy two-way churn (m15 -8.5%, m5 +25%) and buyers and sellers are about equal in recent windows.\",\"narrative\":{\"description\":\"Some 'desks.fun' product or site launch is spawning a swarm of copycat tickers. This token links the website desks.fun, but its name is just 'DESKS'. We can't see what desks.fun is or whether it has endorsed any contract.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A new site or brand name attracts ticker snipers. Many deployers race to launch the same ticker, and volume spreads across the clones instead of building up in one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It lists desks.fun as its website in GMGN and has decent liquidity and volume. But other clones are equally or more active, and nothing in the packet shows that desks.fun endorses this contract.\",\"competing_tokens\":\"At least 10 same-ticker tokens. The strongest are FTJm\u2026 'desks' ($147k mcap, $1.7M h1 volume, $37.7k liquidity), 4QXA\u2026 'desks.fun' ($317k mcap, $1.23M h1 volume), 3uJh\u2026pump ($79k), and EUxb\u2026 ($38.5k, newest). Several earlier clones (U7VQ, 8vh2, AB8h, 2CNE, 9271) already have $0 liquidity, which looks like rugs.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"25 bundler wallets and a 52-wallet insider trade network. The creator has launched 10 tokens and has already closed out ('creator_close'). The logo appears on 6 other tokens (image_duplicate_count 6). h1 unique buyers were 2098 versus only 95 unique sellers, yet the m30 window had just 74 buyers: a burst of buyer wallets early on, typical of bots or micro-buys. There are no smart or renowned wallets, no socials, and no DexScreener profile.\",\"uncertainty\":\"The single 80% holder is most likely a pool or curve account that GMGN excludes (GMGN top-10 rate is 7%), so the concentration itself may be harmless. Some of the swarm volume may be real speculative flow chasing the desks.fun name.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags a large share of LP as unlocked, and one of the top markets has 0% locked LP\",\"The creator is a serial launcher (10 tokens) and has already exited\",\"Many same-ticker clones split the flow, and several clones have already gone to zero liquidity\",\"Price is 37% below ATH with high churn; doubling from entry needs about $340k+ mcap against $30k liquidity\",\"An unlabeled holder with 80% could be dangerous if it is not a pool account\"]},\"counterargument\":\"If desks.fun turns out to be a real product and this contract, the one that links the site, becomes the accepted one, the swarm could narrow onto it. In that case a return to ATH and beyond (about $350k+) within 6 hours is realistic, given $800k per hour of volume on a $171k cap. Mint and freeze authority are renounced, GMGN reports LP burn ratio 1.0, and there are no taxes.\",\"unknowns\":[\"What desks.fun is and whether it has endorsed any contract\",\"Who the 80% holder is (pool, curve, or wallet)\",\"Whether the LP-unlock flag or GMGN's LP-burned figure is correct\",\"Where price will be 25 minutes after detection\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; judgments are based only on the packet.\"},\"thesis\":\"This is a non-canonical clone inside a desks.fun ticker swarm. The dev is a serial launcher who has already exited, there are many bundlers, and it is already past a 350% spike and 37% off its ATH. Stronger clones compete for the same flow. Doubling from entry is unlikely; fading, or a liquidity pull like the earlier clones, is more likely.\",\"continuation_view\":\"fade\",\"p_runner\":10,\"p_rug\":55,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "DESKS (EKnS\u2026) is a 38-minute-old token launched on a Meteora virtual curve and migrated immediately, now trading on PumpSwap at about $171k market cap with $30k liquidity. It has done about $825k of volume and is up about 350% in its first hour. It sits inside a same-ticker swarm: at least 10 other DESKS / \"desks.fun\" tokens launched within about 1 hour of each other. Several of those already have $0 liquidity, and two live ones have more volume or a higher market cap (FTJm\u2026 \"desks\" at $1.7M h1 volume; 4QXA\u2026 \"desks.fun\" at $317k mcap). Price is about 37% below its ATH ($0.000272). The last 30 minutes show heavy two-way churn (m15 -8.5%, m5 +25%) and buyers and sellers are about equal in recent windows.",
+  "narrative": {
+   "description": "Some 'desks.fun' product or site launch is spawning a swarm of copycat tickers. This token links the website desks.fun, but its name is just 'DESKS'. We can't see what desks.fun is or whether it has endorsed any contract.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A new site or brand name attracts ticker snipers. Many deployers race to launch the same ticker, and volume spreads across the clones instead of building up in one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It lists desks.fun as its website in GMGN and has decent liquidity and volume. But other clones are equally or more active, and nothing in the packet shows that desks.fun endorses this contract.",
+   "competing_tokens": "At least 10 same-ticker tokens. The strongest are FTJm\u2026 'desks' ($147k mcap, $1.7M h1 volume, $37.7k liquidity), 4QXA\u2026 'desks.fun' ($317k mcap, $1.23M h1 volume), 3uJh\u2026pump ($79k), and EUxb\u2026 ($38.5k, newest). Several earlier clones (U7VQ, 8vh2, AB8h, 2CNE, 9271) already have $0 liquidity, which looks like rugs.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "25 bundler wallets and a 52-wallet insider trade network. The creator has launched 10 tokens and has already closed out ('creator_close'). The logo appears on 6 other tokens (image_duplicate_count 6). h1 unique buyers were 2098 versus only 95 unique sellers, yet the m30 window had just 74 buyers: a burst of buyer wallets early on, typical of bots or micro-buys. There are no smart or renowned wallets, no socials, and no DexScreener profile.",
+   "uncertainty": "The single 80% holder is most likely a pool or curve account that GMGN excludes (GMGN top-10 rate is 7%), so the concentration itself may be harmless. Some of the swarm volume may be real speculative flow chasing the desks.fun name."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags a large share of LP as unlocked, and one of the top markets has 0% locked LP",
+    "The creator is a serial launcher (10 tokens) and has already exited",
+    "Many same-ticker clones split the flow, and several clones have already gone to zero liquidity",
+    "Price is 37% below ATH with high churn; doubling from entry needs about $340k+ mcap against $30k liquidity",
+    "An unlabeled holder with 80% could be dangerous if it is not a pool account"
+   ]
+  },
+  "counterargument": "If desks.fun turns out to be a real product and this contract, the one that links the site, becomes the accepted one, the swarm could narrow onto it. In that case a return to ATH and beyond (about $350k+) within 6 hours is realistic, given $800k per hour of volume on a $171k cap. Mint and freeze authority are renounced, GMGN reports LP burn ratio 1.0, and there are no taxes.",
+  "unknowns": [
+   "What desks.fun is and whether it has endorsed any contract",
+   "Who the 80% holder is (pool, curve, or wallet)",
+   "Whether the LP-unlock flag or GMGN's LP-burned figure is correct",
+   "Where price will be 25 minutes after detection"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; judgments are based only on the packet."
+  },
+  "thesis": "This is a non-canonical clone inside a desks.fun ticker swarm. The dev is a serial launcher who has already exited, there are many bundlers, and it is already past a 350% spike and 37% off its ATH. Stronger clones compete for the same flow. Doubling from entry is unlikely; fading, or a liquidity pull like the earlier clones, is more likely.",
+  "continuation_view": "fade",
+  "p_runner": 10,
+  "p_rug": 55,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5728,
+ "type": "result",
+ "duration_ms": 23602,
+ "uuid": "6f1467ea-2659-490c-bd76-6cf86d511827",
+ "ttft_stream_ms": 784,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 784,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

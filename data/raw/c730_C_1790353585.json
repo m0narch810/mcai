@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 65633,
+ "stop_reason": "tool_use",
+ "session_id": "9725da00-7572-4349-91d2-0ddf58060848",
+ "total_cost_usd": 0.33483720000000006,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 18315,
+  "cache_read_input_tokens": 43076,
+  "output_tokens": 3443,
+  "output_tokens_details": {
+   "thinking_tokens": 589
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18315,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2231,
+    "cache_read_input_tokens": 16811,
+    "cache_creation_input_tokens": 1504,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1504
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3443,
+   "cacheReadInputTokens": 43076,
+   "cacheCreationInputTokens": 18315,
+   "webSearchRequests": 0,
+   "costUSD": 0.2240272,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 589,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 50510,
+   "outputTokens": 2060,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11081000000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"51X (\\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\", meaning \\\"51 Chigua official first-launch meme\\\") is a PumpSwap pair created about 45 minutes before detection. The creator seeded it straight onto PumpSwap without going through the pump.fun curve (migrated_unix=0; pool created 5 seconds after the mint). Price is up about 300% in the hour on roughly $355k of volume, against a $52k market cap and about $47k of liquidity. The token names 51\u5403\u74dc, a notorious Chinese gossip and adult-content site, and claims to be its \\\"official\\\" launch. The same name and ticker has been launched at least 10 times in the past roughly 12 hours, and every earlier copy now has $0 liquidity. The creator wallet holds 20.5% of supply and appears to be the only LP provider, and the LP is 0% burned or locked. GeckoTerminal shows 1,952 unique buyers but only 58 unique sellers in the hour. About 779 of those buyers arrived within one 30-minute window, then new buyers dropped to about 50 per 15 minutes. That pattern looks more like a bot fan-out of buyer wallets than organic discovery.\",\"narrative\":{\"description\":\"Borrowing the brand of 51\u5403\u74dc, a large Chinese gossip site, and claiming to be its 'official' token. I found no evidence that the site has endorsed or announced any token.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I could not find any organic discussion. The brand name brings recognition among Chinese speakers, but the repeated same-name launches point to a serial launch-and-pull scheme reusing a recognizable name, not a spreading story.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the newest and currently the only live copy. I found no link from any official 51\u5403\u74dc account to this contract. GeckoTerminal lists an X handle, @gua51x, but X returned 403 and I could not check it.\",\"competing_tokens\":\"At least 10 tokens with the same name and ticker launched between about 04:00 and 15:30 UTC today. All show $0 liquidity, and one has $0.01 liquidity despite a stated $503k market cap. This looks like repeated pulls.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Ten or more identical launches with liquidity pulled on each. 1,952 unique buyers against 58 unique sellers, with a burst of 779 buyers in 30 minutes followed by a collapse in new buyers. No DexScreener profile, no website, and no social links. The creator is the LP provider, and the LP is unlocked.\",\"uncertainty\":\"The buyer burst could have come from a real Chinese Telegram or WeChat channel push, which I cannot see. The creator here shows 0 prior tokens, so I cannot prove the earlier copies share the same deployer.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator appears to be the sole LP provider, with 0% of the LP burned or locked, so the liquidity can be pulled at any time\",\"The creator holds 20.5% of supply, which could be dumped into a thin pool\",\"Every earlier copy with this name was drained to $0 liquidity\",\"The ratio of unique buyers to sellers suggests bot-generated demand\",\"Liquidity is about 90% of market cap, so this is a creator-seeded pool, not organic migration\"]},\"counterargument\":\"The pull pattern might not repeat. This copy has lasted 45+ minutes, has about 2,000 holders, and has no sniper or bundler concentration flagged by GMGN beyond 4 bundlers. A real Chinese community push using a famous brand could keep lifting it from a $52k base. Going from $52k to $104k takes only about $50k of net inflow, and it just moved 3x in an hour.\",\"unknowns\":[\"Whether the @gua51x account is real and how many followers it has\",\"Whether the earlier same-name tokens share this creator or its funding source\",\"What private Chinese Telegram or WeChat promotion exists\",\"Whether any official 51\u5403\u74dc channel has endorsed a token\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Contract search returned nothing relevant. Name searches found only the 51\u5403\u74dc site and its X accounts, none mentioning a token. x.com/gua51x returned 403. I used the DexScreener API to confirm live figures.\"},\"thesis\":\"This looks like a serial brand-squatting scheme. The name has been launched and drained 10+ times today, and in this copy the creator controls both an unlocked LP and 20.5% of supply. Demand looks bot-generated. The most likely outcome is a liquidity pull or a creator dump, not a double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/HucJVNdJA5Fm5SPz2uWtw5EaSaJoEUQmGCn1PuWcpvaP\",\"what\":\"Live price, liquidity and volume; no social links\"},{\"url\":\"https://twitter.com/51chigua2\",\"what\":\"An official 51\u5403\u74dc X account; no token mention found\"},{\"url\":\"https://cg51.com/\",\"what\":\"The 51\u5403\u74dc site itself; a gossip platform with no token found\"},{\"url\":\"https://x.com/gua51x\",\"what\":\"Project X handle listed by GeckoTerminal; returned 403\"}]}",
+ "structured_output": {
+  "what_is_happening": "51X (\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\", meaning \"51 Chigua official first-launch meme\") is a PumpSwap pair created about 45 minutes before detection. The creator seeded it straight onto PumpSwap without going through the pump.fun curve (migrated_unix=0; pool created 5 seconds after the mint). Price is up about 300% in the hour on roughly $355k of volume, against a $52k market cap and about $47k of liquidity. The token names 51\u5403\u74dc, a notorious Chinese gossip and adult-content site, and claims to be its \"official\" launch. The same name and ticker has been launched at least 10 times in the past roughly 12 hours, and every earlier copy now has $0 liquidity. The creator wallet holds 20.5% of supply and appears to be the only LP provider, and the LP is 0% burned or locked. GeckoTerminal shows 1,952 unique buyers but only 58 unique sellers in the hour. About 779 of those buyers arrived within one 30-minute window, then new buyers dropped to about 50 per 15 minutes. That pattern looks more like a bot fan-out of buyer wallets than organic discovery.",
+  "narrative": {
+   "description": "Borrowing the brand of 51\u5403\u74dc, a large Chinese gossip site, and claiming to be its 'official' token. I found no evidence that the site has endorsed or announced any token.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I could not find any organic discussion. The brand name brings recognition among Chinese speakers, but the repeated same-name launches point to a serial launch-and-pull scheme reusing a recognizable name, not a spreading story."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the newest and currently the only live copy. I found no link from any official 51\u5403\u74dc account to this contract. GeckoTerminal lists an X handle, @gua51x, but X returned 403 and I could not check it.",
+   "competing_tokens": "At least 10 tokens with the same name and ticker launched between about 04:00 and 15:30 UTC today. All show $0 liquidity, and one has $0.01 liquidity despite a stated $503k market cap. This looks like repeated pulls.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Ten or more identical launches with liquidity pulled on each. 1,952 unique buyers against 58 unique sellers, with a burst of 779 buyers in 30 minutes followed by a collapse in new buyers. No DexScreener profile, no website, and no social links. The creator is the LP provider, and the LP is unlocked.",
+   "uncertainty": "The buyer burst could have come from a real Chinese Telegram or WeChat channel push, which I cannot see. The creator here shows 0 prior tokens, so I cannot prove the earlier copies share the same deployer."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator appears to be the sole LP provider, with 0% of the LP burned or locked, so the liquidity can be pulled at any time",
+    "The creator holds 20.5% of supply, which could be dumped into a thin pool",
+    "Every earlier copy with this name was drained to $0 liquidity",
+    "The ratio of unique buyers to sellers suggests bot-generated demand",
+    "Liquidity is about 90% of market cap, so this is a creator-seeded pool, not organic migration"
+   ]
+  },
+  "counterargument": "The pull pattern might not repeat. This copy has lasted 45+ minutes, has about 2,000 holders, and has no sniper or bundler concentration flagged by GMGN beyond 4 bundlers. A real Chinese community push using a famous brand could keep lifting it from a $52k base. Going from $52k to $104k takes only about $50k of net inflow, and it just moved 3x in an hour.",
+  "unknowns": [
+   "Whether the @gua51x account is real and how many followers it has",
+   "Whether the earlier same-name tokens share this creator or its funding source",
+   "What private Chinese Telegram or WeChat promotion exists",
+   "Whether any official 51\u5403\u74dc channel has endorsed a token"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Contract search returned nothing relevant. Name searches found only the 51\u5403\u74dc site and its X accounts, none mentioning a token. x.com/gua51x returned 403. I used the DexScreener API to confirm live figures."
+  },
+  "thesis": "This looks like a serial brand-squatting scheme. The name has been launched and drained 10+ times today, and in this copy the creator controls both an unlocked LP and 20.5% of supply. Demand looks bot-generated. The most likely outcome is a liquidity pull or a creator dump, not a double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/HucJVNdJA5Fm5SPz2uWtw5EaSaJoEUQmGCn1PuWcpvaP",
+    "what": "Live price, liquidity and volume; no social links"
+   },
+   {
+    "url": "https://twitter.com/51chigua2",
+    "what": "An official 51\u5403\u74dc X account; no token mention found"
+   },
+   {
+    "url": "https://cg51.com/",
+    "what": "The 51\u5403\u74dc site itself; a gossip platform with no token found"
+   },
+   {
+    "url": "https://x.com/gua51x",
+    "what": "Project X handle listed by GeckoTerminal; returned 403"
+   }
+  ]
+ },
+ "ttft_ms": 3803,
+ "type": "result",
+ "duration_ms": 51076,
+ "uuid": "5cfb6a50-90e6-4261-80a9-f084a92ae96a",
+ "ttft_stream_ms": 801,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 801,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

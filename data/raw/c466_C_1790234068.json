@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 70819,
+ "stop_reason": "tool_use",
+ "session_id": "7c187f16-906c-4004-b66b-29eb396f8e74",
+ "total_cost_usd": 0.3060414,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15676,
+  "cache_read_input_tokens": 44217,
+  "output_tokens": 3628,
+  "output_tokens_details": {
+   "thinking_tokens": 694
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15676,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2291,
+    "cache_read_input_tokens": 16687,
+    "cache_creation_input_tokens": 1565,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1565
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3628,
+   "cacheReadInputTokens": 44217,
+   "cacheCreationInputTokens": 15676,
+   "webSearchRequests": 0,
+   "costUSD": 0.2068434,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 694,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 46728,
+   "outputTokens": 2494,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.099198,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"NPC (1sMM...) is a copy of the \\\"NPCs\\\" $NPC project (wenpc.family / @wenpcfamily). That project's pitch is that creator fees spawn AI trading agents. The real coin looks like 68SVgJ...pump: it launched on pump.fun, sits at about $6.2M market cap and is up about 12,800% over 24h. This coin does not end in \\\"pump\\\", has no pump.fun launch record (launchpad blank, migrated_unix 0), and its PumpSwap pool was created directly by the dev 65 seconds after the mint. The dev also copied the canonical's website and X handle into its metadata. Liquidity ($185k) is higher than market cap ($120k). The LP is 0% locked or burned, and RugCheck flags it as 'Copycat' with 'Large Amount of LP Unlocked'. GMGN counts 45 bundler wallets holding about 20% of the top-trader share. It did $1.4M of volume in 45 minutes against 534 buyers but only 53 unique sellers. At least 7 other same-name 'NPCs' copies launched in the last 1-3 hours, and the packet shows $0 liquidity for all of them, so they appear pulled.\",\"narrative\":{\"description\":\"The story is 'NPCs', AI-agent wallets funded by creator fees that buy $NPC and trade pump.fun coins. It is a fresh AI-agent meme that works, since the canonical token ran to about $6M in hours.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The canonical coin went up about 12,800% in 24h, and that drew a wave of copycat same-name tokens trying to catch buyers who search the ticker.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None. This is a ticker/name hijack that copies the canonical project's website and X handle. The wenpc.family site says $NPC is on pump.fun, and this token was not launched on pump.fun.\",\"competing_tokens\":\"The canonical is 68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump ($6.2M market cap, $222k liquidity). The packet shows at least 7 other NPCs copies with $0 liquidity (a4h4..., CZJN..., 3Vkm..., 6kgc..., JBVp..., BCvE..., GQZM...). There are also the unrelated older Non-Playable Coin tokens.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The dev seeded a PumpSwap pool directly, with liquidity higher than market cap. The LP is unlocked (burn ratio 0). There are 45 bundler wallets. Buyers outnumber sellers about 10:1 (534 vs 53), which fits bot-driven volume or buyers who can't find exits. Volume turned over about 8x the market cap in 1 hour. The earlier same-name copies are now at $0 liquidity.\",\"uncertainty\":\"Some of the 534 buyers may be real traders who confused this coin with the canonical one. I could not see X posts about this contract.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The dev can pull the unlocked LP at any time (0% locked or burned)\",\"Copycat of a live, much larger canonical token\",\"7+ sibling copies already at $0 liquidity\",\"45 bundler wallets hold about 20% of the top-trader share\",\"Wash-like volume against a small, concentrated seller set\"]},\"counterargument\":\"Some copycats get pumped to 2x before the pull to bait more buyers. This one is already up 60-70% in an hour with 500+ buyers. Its market cap is only $120k against the canonical's $6M, so misdirected buyers could push it higher before the dev removes liquidity. Also, 'creator_hold' status and no dev dump yet could mean the pull is not imminent.\",\"unknowns\":[\"Whether the dev wallet funded or controls the bundler wallets\",\"Any X posts or calls pointing traders at this contract\",\"Exactly when the sibling copies' liquidity was removed\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract-address search returned nothing. The site:x.com search found only unrelated older NPC accounts. wenpc.family describes the canonical pump.fun project and lists no contract address. DexScreener API data on the canonical 68SV...pump confirms it is the $6M coin. I did not search Reddit, Telegram or Discord; a copy launched 45 minutes ago would almost certainly have no organic presence there.\"},\"thesis\":\"A copycat of a trending AI-agent meme that was not launched on pump.fun. The dev holds unlocked LP, there are bundlers, and several sibling copies have already been drained. The likeliest outcome is an LP pull within hours. A double before that is possible but unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":82,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://wenpc.family\",\"what\":\"Canonical NPCs project site: creator fees spawn AI trading agents, $NPC on pump.fun, links to @wenpcfamily\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump\",\"what\":\"Canonical NPCs token: $6.2M market cap, +12,809% over 24h, pump.fun origin\"},{\"url\":\"https://x.com/npcmemesol\",\"what\":\"X search result: unrelated older NPC accounts, nothing about this contract\"}]}",
+ "structured_output": {
+  "what_is_happening": "NPC (1sMM...) is a copy of the \"NPCs\" $NPC project (wenpc.family / @wenpcfamily). That project's pitch is that creator fees spawn AI trading agents. The real coin looks like 68SVgJ...pump: it launched on pump.fun, sits at about $6.2M market cap and is up about 12,800% over 24h. This coin does not end in \"pump\", has no pump.fun launch record (launchpad blank, migrated_unix 0), and its PumpSwap pool was created directly by the dev 65 seconds after the mint. The dev also copied the canonical's website and X handle into its metadata. Liquidity ($185k) is higher than market cap ($120k). The LP is 0% locked or burned, and RugCheck flags it as 'Copycat' with 'Large Amount of LP Unlocked'. GMGN counts 45 bundler wallets holding about 20% of the top-trader share. It did $1.4M of volume in 45 minutes against 534 buyers but only 53 unique sellers. At least 7 other same-name 'NPCs' copies launched in the last 1-3 hours, and the packet shows $0 liquidity for all of them, so they appear pulled.",
+  "narrative": {
+   "description": "The story is 'NPCs', AI-agent wallets funded by creator fees that buy $NPC and trade pump.fun coins. It is a fresh AI-agent meme that works, since the canonical token ran to about $6M in hours.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The canonical coin went up about 12,800% in 24h, and that drew a wave of copycat same-name tokens trying to catch buyers who search the ticker."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None. This is a ticker/name hijack that copies the canonical project's website and X handle. The wenpc.family site says $NPC is on pump.fun, and this token was not launched on pump.fun.",
+   "competing_tokens": "The canonical is 68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump ($6.2M market cap, $222k liquidity). The packet shows at least 7 other NPCs copies with $0 liquidity (a4h4..., CZJN..., 3Vkm..., 6kgc..., JBVp..., BCvE..., GQZM...). There are also the unrelated older Non-Playable Coin tokens.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The dev seeded a PumpSwap pool directly, with liquidity higher than market cap. The LP is unlocked (burn ratio 0). There are 45 bundler wallets. Buyers outnumber sellers about 10:1 (534 vs 53), which fits bot-driven volume or buyers who can't find exits. Volume turned over about 8x the market cap in 1 hour. The earlier same-name copies are now at $0 liquidity.",
+   "uncertainty": "Some of the 534 buyers may be real traders who confused this coin with the canonical one. I could not see X posts about this contract."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The dev can pull the unlocked LP at any time (0% locked or burned)",
+    "Copycat of a live, much larger canonical token",
+    "7+ sibling copies already at $0 liquidity",
+    "45 bundler wallets hold about 20% of the top-trader share",
+    "Wash-like volume against a small, concentrated seller set"
+   ]
+  },
+  "counterargument": "Some copycats get pumped to 2x before the pull to bait more buyers. This one is already up 60-70% in an hour with 500+ buyers. Its market cap is only $120k against the canonical's $6M, so misdirected buyers could push it higher before the dev removes liquidity. Also, 'creator_hold' status and no dev dump yet could mean the pull is not imminent.",
+  "unknowns": [
+   "Whether the dev wallet funded or controls the bundler wallets",
+   "Any X posts or calls pointing traders at this contract",
+   "Exactly when the sibling copies' liquidity was removed"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The contract-address search returned nothing. The site:x.com search found only unrelated older NPC accounts. wenpc.family describes the canonical pump.fun project and lists no contract address. DexScreener API data on the canonical 68SV...pump confirms it is the $6M coin. I did not search Reddit, Telegram or Discord; a copy launched 45 minutes ago would almost certainly have no organic presence there."
+  },
+  "thesis": "A copycat of a trending AI-agent meme that was not launched on pump.fun. The dev holds unlocked LP, there are bundlers, and several sibling copies have already been drained. The likeliest outcome is an LP pull within hours. A double before that is possible but unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 82,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://wenpc.family",
+    "what": "Canonical NPCs project site: creator fees spawn AI trading agents, $NPC on pump.fun, links to @wenpcfamily"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/68SVgJMajJ7YvW8fMU23jdwxCkCoFmVKdKcLMQ8qpump",
+    "what": "Canonical NPCs token: $6.2M market cap, +12,809% over 24h, pump.fun origin"
+   },
+   {
+    "url": "https://x.com/npcmemesol",
+    "what": "X search result: unrelated older NPC accounts, nothing about this contract"
+   }
+  ]
+ },
+ "ttft_ms": 2332,
+ "type": "result",
+ "duration_ms": 55622,
+ "uuid": "08ce9de9-4bc5-49c3-9e03-98672bb1e909",
+ "ttft_stream_ms": 836,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 836,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

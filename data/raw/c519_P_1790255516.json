@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 22501,
+ "stop_reason": "tool_use",
+ "session_id": "80b78c88-5d45-4cb6-b4fa-0c7c55e39033",
+ "total_cost_usd": 0.11186679999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7949,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2394,
+  "output_tokens_details": {
+   "thinking_tokens": 472
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7949,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2394,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7949,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7949
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2394,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7949,
+   "webSearchRequests": 0,
+   "costUSD": 0.11186679999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 472,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 36-minute-old \\\"GO / LESGO\\\" token on a PumpSwap pool that the creator seeded directly. It never went through the pump.fun curve: migrated_unix is 0 and no launchpad is listed. Its own description points to a different contract, D1YZ\u2026, as the real LESGO platform token. That token is about 23 hours old, has a $1.34M market cap and was launched on lesgo.fun. So this token looks like a copy using the real project's name. The packet lists several other LESGO copies, all with zero liquidity. One of them, AgeU5\u2026, was created about 20 minutes before this one, did $1.04M of volume in its first hour, and its liquidity is now zero, which means it was already rugged. Trading on this token looks faked. Volume is $5.5M in an hour against a $150k market cap (25x turnover). There were 2,064 unique buyers but only 57 unique sellers, and the seller count has barely changed since the 15-minute window. GMGN tags 51 bundler wallets, which account for 23% of top-trader activity. None of the LP is locked, RugCheck warns there are few LP providers, and pool liquidity ($217k) is larger than the market cap.\",\"narrative\":{\"description\":\"Borrowed story: a launchpad platform token whose revenue buys back and burns the token. The story belongs to the real LESGO token (D1YZ\u2026), not to this contract.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"People searching for LESGO/GO while the real launchpad token has attention land on copies. Fake volume pushes the copies up the DEX rankings.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"No valid reason. This token's own description links to D1YZ\u2026 as the real token, and it has no website or socials of its own.\",\"competing_tokens\":\"D1YZZg9\u2026 is the real LESGO: $1.34M market cap, $106k liquidity, launched about 23h ago. At least 5 other LESGO copies now have zero or near-zero liquidity (3KPm\u2026, AgeU5\u2026, 6MQ9\u2026, CKe2\u2026, 4CsR\u2026). AgeU5\u2026 rugged within about 20 minutes after $1M of volume.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 2,064 unique buyers against 57 unique sellers, and the seller count has not moved since the 15-minute window. 51 bundler wallets make up 23% of top-trader activity. Turnover is 25x in an hour. The creator seeded the pool directly and its LP is unlocked. The logo image is used by 12 other tokens. A near-identical copy launched 20 minutes earlier has already had its liquidity pulled.\",\"uncertainty\":\"Some of the buyers could be real people confused by the ticker. GMGN reports no honeypot and no tax.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"None of the LP is locked, few providers, and the pool was seeded by the creator, so liquidity can be pulled at any time\",\"A near-identical copy created 20 minutes earlier already rugged, a repeating pattern\",\"The very low number of unique sellers suggests fake volume, or that selling may be restricted in practice\",\"Liquidity is larger than market cap, so the creator gets a large payout by pulling it\",\"51 bundler wallets\"]},\"counterargument\":\"Security flags are clean: mint and freeze authority renounced, no honeypot, no tax. The top-10 non-pool holders own only 11.9%. The number of buyers is large and still rising, and the real LESGO token has attention that could spill over to this copy. With $217k of liquidity, an actual money flow from confused buyers could double the price before any pull. Some copies do run for hours before the rug.\",\"unknowns\":[\"Who controls the LP tokens, and whether the pool was seeded by the same people behind the copy that already rugged\",\"Whether ordinary holders can actually sell\",\"Whether the real LESGO team has publicly flagged the copies\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. Judged only from the evidence packet.\"},\"thesis\":\"This is a copy of the real LESGO platform token that borrows its ticker. The pool was seeded directly by the creator and its LP is unlocked. Trading looks faked: 2,064 unique buyers against 57 sellers, and 25x turnover in an hour. A near-identical copy launched 20 minutes earlier already rugged. The most likely outcome is the liquidity being pulled before or soon after the entry at +25 minutes.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":82,\"research_confidence\":\"high\",\"observation_window\":\"1h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 36-minute-old \"GO / LESGO\" token on a PumpSwap pool that the creator seeded directly. It never went through the pump.fun curve: migrated_unix is 0 and no launchpad is listed. Its own description points to a different contract, D1YZ\u2026, as the real LESGO platform token. That token is about 23 hours old, has a $1.34M market cap and was launched on lesgo.fun. So this token looks like a copy using the real project's name. The packet lists several other LESGO copies, all with zero liquidity. One of them, AgeU5\u2026, was created about 20 minutes before this one, did $1.04M of volume in its first hour, and its liquidity is now zero, which means it was already rugged. Trading on this token looks faked. Volume is $5.5M in an hour against a $150k market cap (25x turnover). There were 2,064 unique buyers but only 57 unique sellers, and the seller count has barely changed since the 15-minute window. GMGN tags 51 bundler wallets, which account for 23% of top-trader activity. None of the LP is locked, RugCheck warns there are few LP providers, and pool liquidity ($217k) is larger than the market cap.",
+  "narrative": {
+   "description": "Borrowed story: a launchpad platform token whose revenue buys back and burns the token. The story belongs to the real LESGO token (D1YZ\u2026), not to this contract.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "People searching for LESGO/GO while the real launchpad token has attention land on copies. Fake volume pushes the copies up the DEX rankings."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "No valid reason. This token's own description links to D1YZ\u2026 as the real token, and it has no website or socials of its own.",
+   "competing_tokens": "D1YZZg9\u2026 is the real LESGO: $1.34M market cap, $106k liquidity, launched about 23h ago. At least 5 other LESGO copies now have zero or near-zero liquidity (3KPm\u2026, AgeU5\u2026, 6MQ9\u2026, CKe2\u2026, 4CsR\u2026). AgeU5\u2026 rugged within about 20 minutes after $1M of volume.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 2,064 unique buyers against 57 unique sellers, and the seller count has not moved since the 15-minute window. 51 bundler wallets make up 23% of top-trader activity. Turnover is 25x in an hour. The creator seeded the pool directly and its LP is unlocked. The logo image is used by 12 other tokens. A near-identical copy launched 20 minutes earlier has already had its liquidity pulled.",
+   "uncertainty": "Some of the buyers could be real people confused by the ticker. GMGN reports no honeypot and no tax."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "None of the LP is locked, few providers, and the pool was seeded by the creator, so liquidity can be pulled at any time",
+    "A near-identical copy created 20 minutes earlier already rugged, a repeating pattern",
+    "The very low number of unique sellers suggests fake volume, or that selling may be restricted in practice",
+    "Liquidity is larger than market cap, so the creator gets a large payout by pulling it",
+    "51 bundler wallets"
+   ]
+  },
+  "counterargument": "Security flags are clean: mint and freeze authority renounced, no honeypot, no tax. The top-10 non-pool holders own only 11.9%. The number of buyers is large and still rising, and the real LESGO token has attention that could spill over to this copy. With $217k of liquidity, an actual money flow from confused buyers could double the price before any pull. Some copies do run for hours before the rug.",
+  "unknowns": [
+   "Who controls the LP tokens, and whether the pool was seeded by the same people behind the copy that already rugged",
+   "Whether ordinary holders can actually sell",
+   "Whether the real LESGO team has publicly flagged the copies"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. Judged only from the evidence packet."
+  },
+  "thesis": "This is a copy of the real LESGO platform token that borrows its ticker. The pool was seeded directly by the creator and its LP is unlocked. Trading looks faked: 2,064 unique buyers against 57 sellers, and 25x turnover in an hour. A near-identical copy launched 20 minutes earlier already rugged. The most likely outcome is the liquidity being pulled before or soon after the entry at +25 minutes.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 82,
+  "research_confidence": "high",
+  "observation_window": "1h",
+  "sources": []
+ },
+ "ttft_ms": 5479,
+ "type": "result",
+ "duration_ms": 22543,
+ "uuid": "89b8b52a-19f1-4c44-86ca-70fb2aea1066",
+ "ttft_stream_ms": 1059,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1059,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

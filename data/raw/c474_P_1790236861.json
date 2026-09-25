@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 24689,
+ "stop_reason": "tool_use",
+ "session_id": "9b4d5977-f866-435d-8119-7945ea50582d",
+ "total_cost_usd": 0.11310680000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7724,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2546,
+  "output_tokens_details": {
+   "thinking_tokens": 518
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7724,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2546,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7724,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7724
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2546,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7724,
+   "webSearchRequests": 0,
+   "costUSD": 0.11310680000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 518,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"CUMINU (EcUr\u2026) is a 35-minute-old token with a PumpSwap pool that looks like it was created directly, not through a pump.fun curve migration (migrated_unix=0, launchpad blank). At detection it was up about 260% in the hour on roughly $1M of volume against a $35k market cap. That is 25x turnover. It is now around $31k market cap, with m5 price change at -8.5% on DexScreener. At least 10 other CUMINU tokens launched within minutes of each other. One of them, 8i1a\u2026, is at a $457k market cap, far ahead of this one. The only social link is a GeckoTerminal \\\"twitter\\\" field pointing to a spermracing status post, which suggests a joke riffing on a Sperm Racing post or event.\",\"narrative\":{\"description\":\"A crude joke ticker ('CUMINU') seemingly tied to a Sperm Racing X post. This is the kind of topical joke that spawns a swarm of same-name deploys in the first hour.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A topical joke tied to a viral Sperm Racing post, plus the swarm of copies, produces a short burst of attention. But the attention is split across more than 10 contracts, and buyers have already piled into another CUMINU (8i1a\u2026, $457k).\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the earliest-created CUMINU pair in the packet (created ~1 minute before B4pL\u2026, ~4 minutes before 8i1a\u2026). Being first is its only claim to being the real one.\",\"competing_tokens\":\"8i1a\u2026 ($457k mcap, $947k h1 volume) is clearly the market's chosen CUMINU. B4pL\u2026 ($136k), GKew\u2026 ($117k), 5YrC\u2026 ($102k) and several dead $0-liquidity clones also exist.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 61 bundler wallets, and bundlers are the top traders by share (27%). RugCheck detects a 22-wallet insider trade network. Turnover of $1M in an hour on a ~$35k cap, with roughly equal buy and sell counts every 5 minutes (236/241), looks like bot or wash cycling. Only 89 unique sellers against 445 buyers over the hour, while the last 5 minutes show 65 buyers and 66 sellers, suggests a small set of wallets churning. There is no DexScreener profile and no paid boosts. Dev status is creator_close.\",\"uncertainty\":\"The buyer count (445) is non-trivial, so some organic joke-driven retail is likely mixed in. Without X data I can't verify how big the Sperm Racing tie-in really is.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% burned or locked, and RugCheck flags 'Large Amount of LP Unlocked' (danger) and few LP providers. The pool appears to be dev-seeded, so the creator can pull it at any time\",\"Liquidity ($38k) is larger than market cap ($31k), which fits a directly seeded pool that is quick to pull\",\"61 bundler wallets and a 22-wallet insider network\",\"Turnover of 25x per hour points to wash or bot volume\",\"A same-ticker competitor at 15x this market cap is absorbing the narrative\",\"Price is already about 30% below its ATH (~$44k mcap), and m5 is turning negative\"]},\"counterargument\":\"It is the first-deployed CUMINU. If the crowd decides the 'OG' contract matters, as sometimes happens in clone swarms, a rotation from the $457k leader could easily take a $31k cap past $62k. Holder spread is flat (top 10 about 11.6% excluding the pool), dev holdings are zero, and 445 unique buyers shows real participation. Heavy volume on a tiny cap means doubling needs only modest net inflow.\",\"unknowns\":[\"Whether the Sperm Racing link reflects a real viral event or is just a pasted link\",\"Who controls the unlocked LP, and whether it is the creator's\",\"Whether any community is pushing this contract as the OG over 8i1a\u2026\",\"How much of the volume is wash trading versus organic\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This was an offline condition with no browsing, so the judgment rests solely on the evidence packet.\"},\"thesis\":\"This is a losing clone in a same-ticker swarm. It sits on a directly seeded PumpSwap pool with unlocked LP, heavy bundler and insider activity, and wash-like turnover. The market has already chosen a different CUMINU at $457k. The most likely paths are a slow bleed or an LP pull. A 2x to about $62k+ market cap needs an 'OG contract' rotation, which is possible but unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":10,\"p_rug\":62,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "CUMINU (EcUr\u2026) is a 35-minute-old token with a PumpSwap pool that looks like it was created directly, not through a pump.fun curve migration (migrated_unix=0, launchpad blank). At detection it was up about 260% in the hour on roughly $1M of volume against a $35k market cap. That is 25x turnover. It is now around $31k market cap, with m5 price change at -8.5% on DexScreener. At least 10 other CUMINU tokens launched within minutes of each other. One of them, 8i1a\u2026, is at a $457k market cap, far ahead of this one. The only social link is a GeckoTerminal \"twitter\" field pointing to a spermracing status post, which suggests a joke riffing on a Sperm Racing post or event.",
+  "narrative": {
+   "description": "A crude joke ticker ('CUMINU') seemingly tied to a Sperm Racing X post. This is the kind of topical joke that spawns a swarm of same-name deploys in the first hour.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A topical joke tied to a viral Sperm Racing post, plus the swarm of copies, produces a short burst of attention. But the attention is split across more than 10 contracts, and buyers have already piled into another CUMINU (8i1a\u2026, $457k)."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the earliest-created CUMINU pair in the packet (created ~1 minute before B4pL\u2026, ~4 minutes before 8i1a\u2026). Being first is its only claim to being the real one.",
+   "competing_tokens": "8i1a\u2026 ($457k mcap, $947k h1 volume) is clearly the market's chosen CUMINU. B4pL\u2026 ($136k), GKew\u2026 ($117k), 5YrC\u2026 ($102k) and several dead $0-liquidity clones also exist.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 61 bundler wallets, and bundlers are the top traders by share (27%). RugCheck detects a 22-wallet insider trade network. Turnover of $1M in an hour on a ~$35k cap, with roughly equal buy and sell counts every 5 minutes (236/241), looks like bot or wash cycling. Only 89 unique sellers against 445 buyers over the hour, while the last 5 minutes show 65 buyers and 66 sellers, suggests a small set of wallets churning. There is no DexScreener profile and no paid boosts. Dev status is creator_close.",
+   "uncertainty": "The buyer count (445) is non-trivial, so some organic joke-driven retail is likely mixed in. Without X data I can't verify how big the Sperm Racing tie-in really is."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% burned or locked, and RugCheck flags 'Large Amount of LP Unlocked' (danger) and few LP providers. The pool appears to be dev-seeded, so the creator can pull it at any time",
+    "Liquidity ($38k) is larger than market cap ($31k), which fits a directly seeded pool that is quick to pull",
+    "61 bundler wallets and a 22-wallet insider network",
+    "Turnover of 25x per hour points to wash or bot volume",
+    "A same-ticker competitor at 15x this market cap is absorbing the narrative",
+    "Price is already about 30% below its ATH (~$44k mcap), and m5 is turning negative"
+   ]
+  },
+  "counterargument": "It is the first-deployed CUMINU. If the crowd decides the 'OG' contract matters, as sometimes happens in clone swarms, a rotation from the $457k leader could easily take a $31k cap past $62k. Holder spread is flat (top 10 about 11.6% excluding the pool), dev holdings are zero, and 445 unique buyers shows real participation. Heavy volume on a tiny cap means doubling needs only modest net inflow.",
+  "unknowns": [
+   "Whether the Sperm Racing link reflects a real viral event or is just a pasted link",
+   "Who controls the unlocked LP, and whether it is the creator's",
+   "Whether any community is pushing this contract as the OG over 8i1a\u2026",
+   "How much of the volume is wash trading versus organic"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This was an offline condition with no browsing, so the judgment rests solely on the evidence packet."
+  },
+  "thesis": "This is a losing clone in a same-ticker swarm. It sits on a directly seeded PumpSwap pool with unlocked LP, heavy bundler and insider activity, and wash-like turnover. The market has already chosen a different CUMINU at $457k. The most likely paths are a slow bleed or an LP pull. A 2x to about $62k+ market cap needs an 'OG contract' rotation, which is possible but unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 10,
+  "p_rug": 62,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6168,
+ "type": "result",
+ "duration_ms": 24742,
+ "uuid": "6bac8ff0-7f4e-4841-a9f2-dd462dd00c3f",
+ "ttft_stream_ms": 724,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 724,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

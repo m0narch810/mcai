@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 27974,
+ "stop_reason": "tool_use",
+ "session_id": "767ce6e8-a0d9-4442-9666-e0763662fd49",
+ "total_cost_usd": 0.11157879999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7023,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2750,
+  "output_tokens_details": {
+   "thinking_tokens": 548
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7023,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2750,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7023,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7023
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2750,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7023,
+   "webSearchRequests": 0,
+   "costUSD": 0.11157879999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 548,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a pool created directly on PumpSwap about 52 minutes before detection. It did not migrate from the pump.fun curve: migrated_unix=0 and the pair was created at about the same time as the token. The name \u73a9\u5e01\u5f52\u8d75 is a Chinese pun on the idiom \u5b8c\u74a7\u5f52\u8d75 ('return the jade intact to Zhao'), which almost certainly points to CZ (Zhao Changpeng) and Binance. It sits inside a burst of Chinese CZ-themed memes. It traded $1.4M in its first hour on a ~$30k market cap, which is 37x turnover. GeckoTerminal counts 2,058 unique buyers but only 55 unique sellers. In the last 30 minutes, 762 buys and 777 sells came from only ~50 wallets. Price rose about 200% in the first hour, but the all-time high (7.08e-5) is more than twice the current price (3.08e-5), so it is already about 57% off its peak and moving sideways. Liquidity ($38k) is larger than market cap, the LP is 0% locked or burned, and RugCheck flags few LP providers. The creator holds nothing and its token status is 'creator_close'.\",\"narrative\":{\"description\":\"This is a Chinese-language CZ/Binance meme built on a pun (\u73a9\u5e01\u5f52\u8d75 \u2248 \u5b8c\u74a7\u5f52\u8d75). Those memes come in waves, and many copycats launch together. The token has no website, socials, description or DexScreener profile.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Chinese CZ-pun memes tend to come in waves. There are at least four other tokens with the same name, and the first appeared about 1.7 hours earlier. That points to a meme being spammed onto many contracts, not a single community forming around this one. The activity pattern (thousands of one-time buyers against a few dozen repeat traders) looks like bot-made volume and a padded holder count, not real spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name token with real liquidity right now, probably because its creator put in a sizeable PumpSwap pool and ran volume through it.\",\"competing_tokens\":\"There are four other \u73a9\u5e01\u5f52\u8d75 tokens: F21W\u2026 (created about 1.7h earlier, now dead), 325Z\u2026 (dead), 83kR\u2026 (dead, but had $51k h1 volume) and GLFy\u2026 (liquidity is almost zero, mcap figure is broken). Several appear to be dead or rugged copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There were 2,058 unique buyers but only 55 unique sellers in h1. The last 30 minutes shows ~50 buyers and ~51 sellers making ~1,540 trades. Turnover was 37x mcap in one hour. The holder count (2,083) is roughly equal to the number of unique buyers, which fits dust or bot distribution. GMGN shows 0 smart or renowned wallets and 0 smart-money signals, and just 1 GMGN page visit. There is no promotion or profile. The pool was created directly on PumpSwap with unlocked LP.\",\"uncertainty\":\"GMGN reports 0 bundlers, snipers and bot/degen wallets, and a low top-10 share of about 16\u201317%. That could mean distribution is actually spread out. The 55-seller figure could also be a GeckoTerminal windowing artifact.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 0% locked or burned on a PumpSwap pool the creator made directly, so the creator can pull liquidity at any time.\",\"Liquidity is larger than market cap, which fits a creator-seeded pool built for extraction.\",\"Price is already about 57% below the ATH reached within the first hour.\",\"Volume looks wash-traded: a small group of wallets does the repeat trading.\",\"At least four other contracts share the name, which splits any attention.\",\"The creator status is 'creator_close', and the creator history data contradicts itself (0 tokens launched, yet a best ATH of $476k).\"]},\"counterargument\":\"Chinese CZ memes can take off quickly when Binance-adjacent accounts pick them up. This token is the surviving liquid copy, and GMGN shows no bundlers, snipers or insiders, with a top-10 share of only about 16%. At a $30k market cap, one CZ-related post or a Chinese KOL call could double it within minutes, and $38k of liquidity can absorb real buying. The 200% first-hour move shows there was real demand at some point.\",\"unknowns\":[\"Who controls the PumpSwap LP, and whether they will remove it\",\"Whether the 2,058 'buyers' are real or dust/bot wallets\",\"Whether any CZ/Binance-adjacent account has mentioned the pun\",\"Why the other same-name contracts died (rugged or abandoned)\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. The report relies only on the evidence packet.\"},\"thesis\":\"This is one of several same-name Chinese CZ-pun tokens. It was launched directly into an unlocked PumpSwap pool, and its volume looks like bot or wash trading. It has already retraced about 57% from its first-hour ATH, and there is no organic social footprint. The most likely outcome is liquidity pulled or a slow bleed. A clean 2x before -50% is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":65,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is a pool created directly on PumpSwap about 52 minutes before detection. It did not migrate from the pump.fun curve: migrated_unix=0 and the pair was created at about the same time as the token. The name \u73a9\u5e01\u5f52\u8d75 is a Chinese pun on the idiom \u5b8c\u74a7\u5f52\u8d75 ('return the jade intact to Zhao'), which almost certainly points to CZ (Zhao Changpeng) and Binance. It sits inside a burst of Chinese CZ-themed memes. It traded $1.4M in its first hour on a ~$30k market cap, which is 37x turnover. GeckoTerminal counts 2,058 unique buyers but only 55 unique sellers. In the last 30 minutes, 762 buys and 777 sells came from only ~50 wallets. Price rose about 200% in the first hour, but the all-time high (7.08e-5) is more than twice the current price (3.08e-5), so it is already about 57% off its peak and moving sideways. Liquidity ($38k) is larger than market cap, the LP is 0% locked or burned, and RugCheck flags few LP providers. The creator holds nothing and its token status is 'creator_close'.",
+  "narrative": {
+   "description": "This is a Chinese-language CZ/Binance meme built on a pun (\u73a9\u5e01\u5f52\u8d75 \u2248 \u5b8c\u74a7\u5f52\u8d75). Those memes come in waves, and many copycats launch together. The token has no website, socials, description or DexScreener profile.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Chinese CZ-pun memes tend to come in waves. There are at least four other tokens with the same name, and the first appeared about 1.7 hours earlier. That points to a meme being spammed onto many contracts, not a single community forming around this one. The activity pattern (thousands of one-time buyers against a few dozen repeat traders) looks like bot-made volume and a padded holder count, not real spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name token with real liquidity right now, probably because its creator put in a sizeable PumpSwap pool and ran volume through it.",
+   "competing_tokens": "There are four other \u73a9\u5e01\u5f52\u8d75 tokens: F21W\u2026 (created about 1.7h earlier, now dead), 325Z\u2026 (dead), 83kR\u2026 (dead, but had $51k h1 volume) and GLFy\u2026 (liquidity is almost zero, mcap figure is broken). Several appear to be dead or rugged copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There were 2,058 unique buyers but only 55 unique sellers in h1. The last 30 minutes shows ~50 buyers and ~51 sellers making ~1,540 trades. Turnover was 37x mcap in one hour. The holder count (2,083) is roughly equal to the number of unique buyers, which fits dust or bot distribution. GMGN shows 0 smart or renowned wallets and 0 smart-money signals, and just 1 GMGN page visit. There is no promotion or profile. The pool was created directly on PumpSwap with unlocked LP.",
+   "uncertainty": "GMGN reports 0 bundlers, snipers and bot/degen wallets, and a low top-10 share of about 16\u201317%. That could mean distribution is actually spread out. The 55-seller figure could also be a GeckoTerminal windowing artifact."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 0% locked or burned on a PumpSwap pool the creator made directly, so the creator can pull liquidity at any time.",
+    "Liquidity is larger than market cap, which fits a creator-seeded pool built for extraction.",
+    "Price is already about 57% below the ATH reached within the first hour.",
+    "Volume looks wash-traded: a small group of wallets does the repeat trading.",
+    "At least four other contracts share the name, which splits any attention.",
+    "The creator status is 'creator_close', and the creator history data contradicts itself (0 tokens launched, yet a best ATH of $476k)."
+   ]
+  },
+  "counterargument": "Chinese CZ memes can take off quickly when Binance-adjacent accounts pick them up. This token is the surviving liquid copy, and GMGN shows no bundlers, snipers or insiders, with a top-10 share of only about 16%. At a $30k market cap, one CZ-related post or a Chinese KOL call could double it within minutes, and $38k of liquidity can absorb real buying. The 200% first-hour move shows there was real demand at some point.",
+  "unknowns": [
+   "Who controls the PumpSwap LP, and whether they will remove it",
+   "Whether the 2,058 'buyers' are real or dust/bot wallets",
+   "Whether any CZ/Binance-adjacent account has mentioned the pun",
+   "Why the other same-name contracts died (rugged or abandoned)"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. The report relies only on the evidence packet."
+  },
+  "thesis": "This is one of several same-name Chinese CZ-pun tokens. It was launched directly into an unlocked PumpSwap pool, and its volume looks like bot or wash trading. It has already retraced about 57% from its first-hour ATH, and there is no organic social footprint. The most likely outcome is liquidity pulled or a slow bleed. A clean 2x before -50% is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 65,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7093,
+ "type": "result",
+ "duration_ms": 28020,
+ "uuid": "3176c19e-0446-4b7a-9574-4d889a62acfe",
+ "ttft_stream_ms": 894,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 894,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

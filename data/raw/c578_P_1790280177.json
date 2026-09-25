@@ -1,0 +1,149 @@
+{
+ "duration_api_ms": 19409,
+ "stop_reason": "tool_use",
+ "session_id": "fd4e2e8e-2d2a-48be-ba15-bb5f7368b5f6",
+ "total_cost_usd": 0.0962588,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7028,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 1982,
+  "output_tokens_details": {
+   "thinking_tokens": 285
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7028,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1982,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7028,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7028
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 1982,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7028,
+   "webSearchRequests": 0,
+   "costUSD": 0.0962588,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 285,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This looks like a tokenized equity, not a memecoin: 'Snap - Backpack Securities' at a price of about $5.44, which is close to what Snap Inc. (SNAP) stock trades at. Evidence for that: the creator was funded from 'Backpack 2', GeckoTerminal lists the X handle as Backpack, and the description says it is a Real World Asset (RWA) giving a claim on the underlying shares. Mint and freeze authority are both still on, as issuers of regulated tokenized securities usually keep them. The pool is 15 days old, most LP/supply sits in Raydium lockers, the token has about 6.7k holders, and price has moved only about 3% in 24h. The volume spike came at 20:00 UTC, which is the US stock market close (4pm ET). That timing suggests arbitrage or rebalancing against the stock, not a speculative wave.\",\"narrative\":{\"description\":\"A tokenized Snap stock (RWA) issued through Backpack. There is no meme story. Its price should track the SNAP share price.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"Nothing is really spreading. The volume burst lines up with the US market close and is small in dollar terms (about $14k in 5 minutes). Price is flat, as you would expect from arbitrage or rebalancing trades.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The name, the Backpack funding source, the Backpack X handle and a price in line with the SNAP share price all point to this being the issuer's official tokenized stock.\",\"competing_tokens\":\"Three dead SNAP memecoins (SnappedAI, SNAP, Snapchat Coin), each with a market cap under $5k and no volume. They are irrelevant.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"No paid boosts or promotion. Buys and sells are balanced and there are many unique traders. GMGN shows wallet-tag counts of 1000 bundler and 1000 fresh wallets (which look like capped numbers), but the bundler and fresh-wallet rates are low. This pattern fits market-maker or arbitrage flow on an RWA token, not coordinated pumping.\",\"uncertainty\":\"I could not confirm the Backpack issuance without web access. The GMGN tags may be misclassifying institutional or arbitrage wallets.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The price is anchored to the SNAP share price, so a 2x in 6 hours would need Snap stock to double, which effectively never happens\",\"Mint and freeze authority are enabled (expected for a regulated issuer, but it means the issuer can mint or freeze)\",\"Thin liquidity of about $18k\",\"US markets close at detection time, so there is little reason for the price to move afterwards\"]},\"counterargument\":\"If this is not really tracking the stock, for example if Backpack's backing or redemption is unclear or the pool gets thin, the token could come off its peg. It could also be a copycat that used 'Backpack' branding. In that case mint authority could be used to dump new supply. The volume burst could also be the start of speculators who misread it as a memecoin. Even so, a 2x in 6 hours with the price anchored at $5.44 is very unlikely.\",\"unknowns\":[\"Whether Backpack really issued this token and whether it can be redeemed\",\"Why volume spiked at detection (market close, earnings, or rebalancing)\",\"How the peg behaves when US markets are closed\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judgment is based only on the packet.\"},\"thesis\":\"This is a stock-tracking RWA token with low volatility. It is structurally unable to double in 6 hours, and a rug is unlikely because the liquidity is locked and there is an issuer behind it. Do not take the trade.\",\"continuation_view\":\"neutral\",\"p_runner\":1,\"p_rug\":3,\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This looks like a tokenized equity, not a memecoin: 'Snap - Backpack Securities' at a price of about $5.44, which is close to what Snap Inc. (SNAP) stock trades at. Evidence for that: the creator was funded from 'Backpack 2', GeckoTerminal lists the X handle as Backpack, and the description says it is a Real World Asset (RWA) giving a claim on the underlying shares. Mint and freeze authority are both still on, as issuers of regulated tokenized securities usually keep them. The pool is 15 days old, most LP/supply sits in Raydium lockers, the token has about 6.7k holders, and price has moved only about 3% in 24h. The volume spike came at 20:00 UTC, which is the US stock market close (4pm ET). That timing suggests arbitrage or rebalancing against the stock, not a speculative wave.",
+  "narrative": {
+   "description": "A tokenized Snap stock (RWA) issued through Backpack. There is no meme story. Its price should track the SNAP share price.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "Nothing is really spreading. The volume burst lines up with the US market close and is small in dollar terms (about $14k in 5 minutes). Price is flat, as you would expect from arbitrage or rebalancing trades."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The name, the Backpack funding source, the Backpack X handle and a price in line with the SNAP share price all point to this being the issuer's official tokenized stock.",
+   "competing_tokens": "Three dead SNAP memecoins (SnappedAI, SNAP, Snapchat Coin), each with a market cap under $5k and no volume. They are irrelevant.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "No paid boosts or promotion. Buys and sells are balanced and there are many unique traders. GMGN shows wallet-tag counts of 1000 bundler and 1000 fresh wallets (which look like capped numbers), but the bundler and fresh-wallet rates are low. This pattern fits market-maker or arbitrage flow on an RWA token, not coordinated pumping.",
+   "uncertainty": "I could not confirm the Backpack issuance without web access. The GMGN tags may be misclassifying institutional or arbitrage wallets."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The price is anchored to the SNAP share price, so a 2x in 6 hours would need Snap stock to double, which effectively never happens",
+    "Mint and freeze authority are enabled (expected for a regulated issuer, but it means the issuer can mint or freeze)",
+    "Thin liquidity of about $18k",
+    "US markets close at detection time, so there is little reason for the price to move afterwards"
+   ]
+  },
+  "counterargument": "If this is not really tracking the stock, for example if Backpack's backing or redemption is unclear or the pool gets thin, the token could come off its peg. It could also be a copycat that used 'Backpack' branding. In that case mint authority could be used to dump new supply. The volume burst could also be the start of speculators who misread it as a memecoin. Even so, a 2x in 6 hours with the price anchored at $5.44 is very unlikely.",
+  "unknowns": [
+   "Whether Backpack really issued this token and whether it can be redeemed",
+   "Why volume spiked at detection (market close, earnings, or rebalancing)",
+   "How the peg behaves when US markets are closed"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judgment is based only on the packet."
+  },
+  "thesis": "This is a stock-tracking RWA token with low volatility. It is structurally unable to double in 6 hours, and a rug is unlikely because the liquidity is locked and there is an issuer behind it. Do not take the trade.",
+  "continuation_view": "neutral",
+  "p_runner": 1,
+  "p_rug": 3,
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3994,
+ "type": "result",
+ "duration_ms": 19451,
+ "uuid": "776f493c-acf7-496c-9f20-619978cc70ee",
+ "ttft_stream_ms": 778,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 778,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

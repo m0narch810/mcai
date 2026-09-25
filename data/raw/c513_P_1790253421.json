@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 22044,
+ "stop_reason": "tool_use",
+ "session_id": "9bcc85c7-9f30-45a2-bcef-d2741a7c7000",
+ "total_cost_usd": 0.10512679999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7284,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2323,
+  "output_tokens_details": {
+   "thinking_tokens": 323
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7284,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2323,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7284,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7284
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2323,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7284,
+   "webSearchRequests": 0,
+   "costUSD": 0.10512679999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 323,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GP 'Gamblepad' is a PumpSwap pool about 37 minutes old. It was not launched on pump.fun's bonding curve: launchpad is null, deploy platform is unknown and it never migrated. The creator appears to have seeded the pool directly, and 0% of the LP is locked or burned. Liquidity ($38.8k) is higher than market cap ($32.7k), and the pool holds about 60% of supply. At least four 'Gamblepad'/GP tokens were deployed within about 9 minutes of each other (GrW1, k7jH, FLu5 and this one, 7rfs). Two of them already show $0\u2013$3 liquidity after heavy volume: FLu5 traded about $1.0M in an hour and is now at $0 liquidity. This token's own description field links to the GrW1 contract, so it copies a sibling. Volume of $1.1M in the first hour is 28x liquidity. GeckoTerminal shows 646 unique buyers but only 69 unique sellers. GMGN flags 40 bundler wallets holding about 28% of top-trader share, and RugCheck finds a 40-wallet insider trade network.\",\"narrative\":{\"description\":\"A generic 'gambling launchpad' name with no website or socials in the packet. There is only a GeckoTerminal X handle (Gamblepadsol) and no DexScreener profile. There's no real story here: it looks like a name being farmed through serial redeploys.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks manufactured rather than organic. Several same-name clones were deployed within minutes, and bundlers plus probable wash volume are pumping the numbers. Two of the siblings have already been drained.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most liquidity of the Gamblepad clones, and its pool is still alive, unlike FLu5 and k7jH.\",\"competing_tokens\":\"GrW1 (earliest Gamblepad, $8.7k liquidity; this token's metadata points to it), k7jH (liquidity $3), FLu5 (liquidity $0 after about $1M of volume), and an older GAMBLE pump token. Unrelated GP tickers: RuneScape Gold ($25.7M) and Graphite ($14M), hence RugCheck's 'Copycat token' flag.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN tags 40 bundler wallets, and RugCheck finds a 40-wallet insider trade network. Buyers and sellers are badly unbalanced (646 unique buyers vs 69 unique sellers), which fits a few wallets doing repeated round-trips. Hourly turnover is 28x. Clones were deployed in sequence, and the earlier ones had their liquidity pulled after similar volume.\",\"uncertainty\":\"I can't check X or Telegram, so there may be a real community around one Gamblepad token. The 646 buyers could include real retail traders drawn in by the volume.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is burned or locked on a directly seeded PumpSwap pool, so the creator can remove liquidity at any time.\",\"Same-name sibling pools have already been drained to $0 liquidity: the same pattern, a serial rug operation.\",\"40 bundler wallets and a 40-wallet insider network.\",\"The token copies the ticker and metadata of other tokens, and it isn't the first Gamblepad.\",\"The volume looks like wash trading (28x turnover, few unique sellers).\"]},\"counterargument\":\"Of the clones, this one kept its liquidity and won the volume race, and it is up 238% in an hour. Pool liquidity is higher than market cap, so the price is fairly deep for its size, and there are 646 buyers. If the deployer is running the pump rather than the drain on this copy, a squeeze from $33k to $65k market cap within 6 hours is quite possible for a coin with this much momentum.\",\"unknowns\":[\"Whether the creator still controls the LP tokens (creator_close suggests the creator has exited).\",\"Whether the Gamblepadsol X account exists and which contract it endorses.\",\"The price path during the 25 minutes before entry.\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. I used only the evidence packet.\"},\"thesis\":\"This looks like one pool in a serial copycat operation. Same-name clones launched minutes apart have already been drained to zero liquidity after $1M-scale wash volume. This pool has 0% of its LP locked, heavy bundler and insider involvement, and probable fake volume. The most likely outcome is that liquidity gets pulled within hours, before a 2x from the entry price.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GP 'Gamblepad' is a PumpSwap pool about 37 minutes old. It was not launched on pump.fun's bonding curve: launchpad is null, deploy platform is unknown and it never migrated. The creator appears to have seeded the pool directly, and 0% of the LP is locked or burned. Liquidity ($38.8k) is higher than market cap ($32.7k), and the pool holds about 60% of supply. At least four 'Gamblepad'/GP tokens were deployed within about 9 minutes of each other (GrW1, k7jH, FLu5 and this one, 7rfs). Two of them already show $0\u2013$3 liquidity after heavy volume: FLu5 traded about $1.0M in an hour and is now at $0 liquidity. This token's own description field links to the GrW1 contract, so it copies a sibling. Volume of $1.1M in the first hour is 28x liquidity. GeckoTerminal shows 646 unique buyers but only 69 unique sellers. GMGN flags 40 bundler wallets holding about 28% of top-trader share, and RugCheck finds a 40-wallet insider trade network.",
+  "narrative": {
+   "description": "A generic 'gambling launchpad' name with no website or socials in the packet. There is only a GeckoTerminal X handle (Gamblepadsol) and no DexScreener profile. There's no real story here: it looks like a name being farmed through serial redeploys.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity looks manufactured rather than organic. Several same-name clones were deployed within minutes, and bundlers plus probable wash volume are pumping the numbers. Two of the siblings have already been drained."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most liquidity of the Gamblepad clones, and its pool is still alive, unlike FLu5 and k7jH.",
+   "competing_tokens": "GrW1 (earliest Gamblepad, $8.7k liquidity; this token's metadata points to it), k7jH (liquidity $3), FLu5 (liquidity $0 after about $1M of volume), and an older GAMBLE pump token. Unrelated GP tickers: RuneScape Gold ($25.7M) and Graphite ($14M), hence RugCheck's 'Copycat token' flag.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN tags 40 bundler wallets, and RugCheck finds a 40-wallet insider trade network. Buyers and sellers are badly unbalanced (646 unique buyers vs 69 unique sellers), which fits a few wallets doing repeated round-trips. Hourly turnover is 28x. Clones were deployed in sequence, and the earlier ones had their liquidity pulled after similar volume.",
+   "uncertainty": "I can't check X or Telegram, so there may be a real community around one Gamblepad token. The 646 buyers could include real retail traders drawn in by the volume."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is burned or locked on a directly seeded PumpSwap pool, so the creator can remove liquidity at any time.",
+    "Same-name sibling pools have already been drained to $0 liquidity: the same pattern, a serial rug operation.",
+    "40 bundler wallets and a 40-wallet insider network.",
+    "The token copies the ticker and metadata of other tokens, and it isn't the first Gamblepad.",
+    "The volume looks like wash trading (28x turnover, few unique sellers)."
+   ]
+  },
+  "counterargument": "Of the clones, this one kept its liquidity and won the volume race, and it is up 238% in an hour. Pool liquidity is higher than market cap, so the price is fairly deep for its size, and there are 646 buyers. If the deployer is running the pump rather than the drain on this copy, a squeeze from $33k to $65k market cap within 6 hours is quite possible for a coin with this much momentum.",
+  "unknowns": [
+   "Whether the creator still controls the LP tokens (creator_close suggests the creator has exited).",
+   "Whether the Gamblepadsol X account exists and which contract it endorses.",
+   "The price path during the 25 minutes before entry."
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. I used only the evidence packet."
+  },
+  "thesis": "This looks like one pool in a serial copycat operation. Same-name clones launched minutes apart have already been drained to zero liquidity after $1M-scale wash volume. This pool has 0% of its LP locked, heavy bundler and insider involvement, and probable fake volume. The most likely outcome is that liquidity gets pulled within hours, before a 2x from the entry price.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4470,
+ "type": "result",
+ "duration_ms": 22091,
+ "uuid": "a1eb5951-a670-4e6a-a5f1-56764caa361b",
+ "ttft_stream_ms": 751,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 751,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

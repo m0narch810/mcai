@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 26822,
+ "stop_reason": "tool_use",
+ "session_id": "3731069a-c665-4c73-997c-538fe25cbea3",
+ "total_cost_usd": 0.1191268,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7954,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2755,
+  "output_tokens_details": {
+   "thinking_tokens": 510
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7954,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2755,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7954,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7954
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2755,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7954,
+   "webSearchRequests": 0,
+   "costUSD": 0.1191268,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 510,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token with a Chinese name, \u5e73\u5e73\u548c\u798f\u53cc (roughly \\\"peace and double blessing\\\"), was created directly as a PumpSwap pool about 44 minutes before detection. It did not come from the pump.fun bonding curve: migrated_unix is 0 and no launchpad is listed. Its price has roughly doubled in the first hour on about $400k of volume, which is 6.7x its market cap. That volume came from about 1,119 unique buyers but only 114 unique sellers. Liquidity ($59.5k) is higher than market cap ($44.5k), 0% of the LP is locked, RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\", and the creator's token status is \\\"creator_close\\\". The packet lists nine other tokens with the exact same name, all created in the last roughly 3 hours, and all now show about $0 liquidity. One of them (47a7...) was created only about 15 minutes before this pair, did $105k of volume in the past hour, and is already at zero liquidity. This matches a serial LP-pull farm: the same name is redeployed with seeded, unlocked liquidity, bot and bundler buying draws in flow, and then the liquidity is removed.\",\"narrative\":{\"description\":\"A generic Chinese auspicious phrase, with a line from Su Shi's poem ('\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929') as the description. There is no website, no socials, no DexScreener profile and no X account. It fits the wave of low-effort Chinese-name tokens, but no specific story is attached to it.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks machine-driven, not narrative-driven. There are 1,119 buyers against 114 sellers and 49 bundler wallets, and the same name was cloned nine times in about 3 hours with every earlier clone now at zero liquidity. That points to wash trading, bot farming or a rug farm, not organic spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the only one of the same-name deployments that still has liquidity. It is not the original: other copies go back about 3 hours before it.\",\"competing_tokens\":\"Nine same-name tokens (8EkeSh..., 5tAMy3..., 53mhXv..., 47a7W5..., 4q98wM..., 9ZgjnoX..., 5CHPiE..., D3h9Fa..., 6CcC7Q...pump). All are at about $0 liquidity. 47a7... was created about 15 minutes earlier, had $105k of volume in the past hour, and is now dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"This looks coordinated. The same name was redeployed at least nine times within hours, with each copy ending at zero liquidity. Liquidity is higher than market cap and the LP is 0% locked, so the pool was seeded directly and the liquidity can be removed at any time. GMGN tags 49 bundler wallets. There are 1,119 unique buyers but only 114 unique sellers. One non-insider-labelled wallet holds 11.14%, and GMGN counts that same share as dev/team holdings. There are no socials and no organic promotion signals, and smart-money and KOL wallets are both zero.\",\"uncertainty\":\"The packet cannot show whether this pool shares a deployer or funder with the dead clones: funded_from is null, and the creator shows 0 other tokens, which suggests fresh wallets for each deploy. Some copycat deployments by unrelated actors are also possible.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is locked or burned, and RugCheck flags it as danger, so the creator can pull the liquidity at any time\",\"Liquidity is higher than market cap, which suggests the pool was seeded by the deployer, and that is the liquidity that can be removed\",\"Nine same-name clones are all at zero liquidity, which strongly suggests a repeated rug pattern\",\"A wallet tagged as dev/team holds 11.14%\",\"49 bundler wallets, and the buyer/seller asymmetry suggests bot-inflated activity\",\"Creator status is 'creator_close'\"]},\"counterargument\":\"Only this clone has kept liquidity, and it has real depth: $60k of liquidity and 1,100+ holders, with the top 10 holding a modest 14% outside the pool. If the deployer is running it honestly this time, or if buyers pile into it as the surviving 'real' one, a doubling from about $45k to $90k market cap is not a big move for a Chinese-meme coin during a live wave. Momentum stayed positive over the last 30 minutes (+26%).\",\"unknowns\":[\"Whether the deployers of the dead clones are linked to this creator or funder\",\"Who controls the 11.14% wallet and the LP tokens\",\"Whether a broader Chinese-meme wave on Solana is driving outside buyers\",\"Whether the dead clones rugged or just migrated or died naturally\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This judgment is based only on the evidence packet.\"},\"thesis\":\"This looks like one pool in a serial LP-pull farm: a same-name PumpSwap pool with unlocked, deployer-seeded liquidity, where every earlier clone is dead, one of them within about 15 minutes. The +105% move is likely bot or bundler inflow before the liquidity is pulled. A rug within 6 hours is much more likely than a clean doubling from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":82,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token with a Chinese name, \u5e73\u5e73\u548c\u798f\u53cc (roughly \"peace and double blessing\"), was created directly as a PumpSwap pool about 44 minutes before detection. It did not come from the pump.fun bonding curve: migrated_unix is 0 and no launchpad is listed. Its price has roughly doubled in the first hour on about $400k of volume, which is 6.7x its market cap. That volume came from about 1,119 unique buyers but only 114 unique sellers. Liquidity ($59.5k) is higher than market cap ($44.5k), 0% of the LP is locked, RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\", and the creator's token status is \"creator_close\". The packet lists nine other tokens with the exact same name, all created in the last roughly 3 hours, and all now show about $0 liquidity. One of them (47a7...) was created only about 15 minutes before this pair, did $105k of volume in the past hour, and is already at zero liquidity. This matches a serial LP-pull farm: the same name is redeployed with seeded, unlocked liquidity, bot and bundler buying draws in flow, and then the liquidity is removed.",
+  "narrative": {
+   "description": "A generic Chinese auspicious phrase, with a line from Su Shi's poem ('\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929') as the description. There is no website, no socials, no DexScreener profile and no X account. It fits the wave of low-effort Chinese-name tokens, but no specific story is attached to it.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity looks machine-driven, not narrative-driven. There are 1,119 buyers against 114 sellers and 49 bundler wallets, and the same name was cloned nine times in about 3 hours with every earlier clone now at zero liquidity. That points to wash trading, bot farming or a rug farm, not organic spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the only one of the same-name deployments that still has liquidity. It is not the original: other copies go back about 3 hours before it.",
+   "competing_tokens": "Nine same-name tokens (8EkeSh..., 5tAMy3..., 53mhXv..., 47a7W5..., 4q98wM..., 9ZgjnoX..., 5CHPiE..., D3h9Fa..., 6CcC7Q...pump). All are at about $0 liquidity. 47a7... was created about 15 minutes earlier, had $105k of volume in the past hour, and is now dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "This looks coordinated. The same name was redeployed at least nine times within hours, with each copy ending at zero liquidity. Liquidity is higher than market cap and the LP is 0% locked, so the pool was seeded directly and the liquidity can be removed at any time. GMGN tags 49 bundler wallets. There are 1,119 unique buyers but only 114 unique sellers. One non-insider-labelled wallet holds 11.14%, and GMGN counts that same share as dev/team holdings. There are no socials and no organic promotion signals, and smart-money and KOL wallets are both zero.",
+   "uncertainty": "The packet cannot show whether this pool shares a deployer or funder with the dead clones: funded_from is null, and the creator shows 0 other tokens, which suggests fresh wallets for each deploy. Some copycat deployments by unrelated actors are also possible."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is locked or burned, and RugCheck flags it as danger, so the creator can pull the liquidity at any time",
+    "Liquidity is higher than market cap, which suggests the pool was seeded by the deployer, and that is the liquidity that can be removed",
+    "Nine same-name clones are all at zero liquidity, which strongly suggests a repeated rug pattern",
+    "A wallet tagged as dev/team holds 11.14%",
+    "49 bundler wallets, and the buyer/seller asymmetry suggests bot-inflated activity",
+    "Creator status is 'creator_close'"
+   ]
+  },
+  "counterargument": "Only this clone has kept liquidity, and it has real depth: $60k of liquidity and 1,100+ holders, with the top 10 holding a modest 14% outside the pool. If the deployer is running it honestly this time, or if buyers pile into it as the surviving 'real' one, a doubling from about $45k to $90k market cap is not a big move for a Chinese-meme coin during a live wave. Momentum stayed positive over the last 30 minutes (+26%).",
+  "unknowns": [
+   "Whether the deployers of the dead clones are linked to this creator or funder",
+   "Who controls the 11.14% wallet and the LP tokens",
+   "Whether a broader Chinese-meme wave on Solana is driving outside buyers",
+   "Whether the dead clones rugged or just migrated or died naturally"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This judgment is based only on the evidence packet."
+  },
+  "thesis": "This looks like one pool in a serial LP-pull farm: a same-name PumpSwap pool with unlocked, deployer-seeded liquidity, where every earlier clone is dead, one of them within about 15 minutes. The +105% move is likely bot or bundler inflow before the liquidity is pulled. A rug within 6 hours is much more likely than a clean doubling from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 82,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": []
+ },
+ "ttft_ms": 6049,
+ "type": "result",
+ "duration_ms": 26881,
+ "uuid": "71b96c63-a079-400a-a9e9-96f7e6a08e12",
+ "ttft_stream_ms": 860,
+ "time_to_request_ms": 54,
+ "first_content_frame_ms": 860,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 57580,
+ "stop_reason": "tool_use",
+ "session_id": "fae2ce5b-1078-4ecf-ba40-224190e31c6f",
+ "total_cost_usd": 0.2800936,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14253,
+  "cache_read_input_tokens": 43608,
+  "output_tokens": 3350,
+  "output_tokens_details": {
+   "thinking_tokens": 496
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14253,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2287,
+    "cache_read_input_tokens": 15560,
+    "cache_creation_input_tokens": 1269,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1269
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3350,
+   "cacheReadInputTokens": 43608,
+   "cacheCreationInputTokens": 14253,
+   "webSearchRequests": 0,
+   "costUSD": 0.1897776,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 496,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42406,
+   "outputTokens": 1582,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09031600000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"HRid\u2026 is a copycat of the LESGO (GO) launchpad token, not the real one. It copies the real token's name, ticker and description, and even includes a link to the real token's lesgo.fun page (D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n). It launched on PumpSwap about 40 minutes ago. This was not a pump.fun migration (migrated_unix is 0). A single party seems to have seeded the pool with more liquidity (about $368k) than the whole coin's market cap (about $235k). That LP is 0% locked, and RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. It traded about $7.8M in one hour, 33x its market cap. GeckoTerminal shows 2,188 unique buyers but only 59 unique sellers. GMGN tags 50 bundler wallets, and they hold about 16% of top trader share. The real GO token (D1YZ\u2026) trades at about $5M market cap with about $23M in daily volume. The packet also lists at least 9 other GO/LESGO copycats, many with dead pools of about $560 liquidity.\",\"narrative\":{\"description\":\"LESGO is a real new launchpad on Raydium LaunchLab. Its X account @lesgodotfun has about 1.1k followers and joined in September 2026. Its platform token is GO, with revenue used to buy back and burn GO. The attention is real, but it belongs to the canonical token D1YZ\u2026.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A new launchpad with a buyback-and-burn token, and the canonical GO is at $5M market cap with high volume. Copycat launchers are farming the name.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing links this contract to the project. Its own description points to the canonical D1YZ\u2026 token page on lesgo.fun, and the project's site and X point to D1YZ\u2026.\",\"competing_tokens\":\"Canonical: D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n (Raydium, about $5-9M market cap). Many copycats: 7SVAn\u2026pump (about $70M market cap shown), BFBy\u2026pump, DKGi\u2026, 5ajG\u2026, DNzJ\u2026, and several dead ones with about $560 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"$7.8M of volume in 1 hour on a $235k market cap, with 2,188 unique buyers against 59 unique sellers. GMGN tags 50 bundler wallets. Liquidity is larger than market cap and was seeded by one party, with the LP unlocked. The image is duplicated 25 times. I found no organic posts about this contract anywhere.\",\"uncertainty\":\"The GeckoTerminal unique-seller count may be an undercount. Some buyers may be real people confused by the ticker.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% locked and seeded by the creator, who can pull $368k at any time\",\"Low number of LP providers\",\"50 bundler wallets\",\"Volume looks wash-traded or bot-driven\",\"Copycat of a canonical token, which gets exposed as soon as buyers check the contract\",\"About 9 prior copycats already dead, with about $560 liquidity\"]},\"counterargument\":\"Holder distribution looks spread out: top10 holds 9.26% and no insiders are flagged. The price is up 75% in the first hour and near its ATH. Confused buyers could keep pushing it up, and doubling from $235k to $470k needs only modest flow when volume is this heavy. Another copycat (7SVAn\u2026) shows about $70M market cap, so copycats can apparently run hard.\",\"unknowns\":[\"Who holds the LP tokens, and whether they are about to withdraw\",\"Whether any caller or KOL is pushing this specific contract\",\"Whether the ~$70M market cap copycat figure is real or an artifact of thin liquidity\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract-address search returned nothing. The X search found the project account @lesgodotfun, which ties to the canonical token. The lesgo.fun page lists no contract. DexScreener returned 403.\"},\"thesis\":\"This is a ticker-hijack copycat of LESGO's GO token. Its LP is unlocked and seeded by the creator, the volume looks bundled or washed, and buyers vastly outnumber sellers. The likeliest outcome is that the LP is pulled or the pair bleeds out soon.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":80,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://phantom.com/tokens/solana/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n\",\"what\":\"Canonical GO token: about $4.9M market cap, $23M daily volume\"},{\"url\":\"https://dexscreener.com/solana/chejuxvqrmpeb4ufwhz72afqptkm7aeb8giyznr7cpvh\",\"what\":\"Canonical GO/SOL pair on Raydium, about $5.26M\"},{\"url\":\"https://x.com/lesgodotfun\",\"what\":\"Project X account, joined September 2026\"},{\"url\":\"https://www.lesgo.fun/token/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n\",\"what\":\"Lesgo site page for the canonical token\"}]}",
+ "structured_output": {
+  "what_is_happening": "HRid\u2026 is a copycat of the LESGO (GO) launchpad token, not the real one. It copies the real token's name, ticker and description, and even includes a link to the real token's lesgo.fun page (D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n). It launched on PumpSwap about 40 minutes ago. This was not a pump.fun migration (migrated_unix is 0). A single party seems to have seeded the pool with more liquidity (about $368k) than the whole coin's market cap (about $235k). That LP is 0% locked, and RugCheck flags 'Large Amount of LP Unlocked' and 'Low amount of LP Providers'. It traded about $7.8M in one hour, 33x its market cap. GeckoTerminal shows 2,188 unique buyers but only 59 unique sellers. GMGN tags 50 bundler wallets, and they hold about 16% of top trader share. The real GO token (D1YZ\u2026) trades at about $5M market cap with about $23M in daily volume. The packet also lists at least 9 other GO/LESGO copycats, many with dead pools of about $560 liquidity.",
+  "narrative": {
+   "description": "LESGO is a real new launchpad on Raydium LaunchLab. Its X account @lesgodotfun has about 1.1k followers and joined in September 2026. Its platform token is GO, with revenue used to buy back and burn GO. The attention is real, but it belongs to the canonical token D1YZ\u2026.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A new launchpad with a buyback-and-burn token, and the canonical GO is at $5M market cap with high volume. Copycat launchers are farming the name."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing links this contract to the project. Its own description points to the canonical D1YZ\u2026 token page on lesgo.fun, and the project's site and X point to D1YZ\u2026.",
+   "competing_tokens": "Canonical: D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n (Raydium, about $5-9M market cap). Many copycats: 7SVAn\u2026pump (about $70M market cap shown), BFBy\u2026pump, DKGi\u2026, 5ajG\u2026, DNzJ\u2026, and several dead ones with about $560 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "$7.8M of volume in 1 hour on a $235k market cap, with 2,188 unique buyers against 59 unique sellers. GMGN tags 50 bundler wallets. Liquidity is larger than market cap and was seeded by one party, with the LP unlocked. The image is duplicated 25 times. I found no organic posts about this contract anywhere.",
+   "uncertainty": "The GeckoTerminal unique-seller count may be an undercount. Some buyers may be real people confused by the ticker."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% locked and seeded by the creator, who can pull $368k at any time",
+    "Low number of LP providers",
+    "50 bundler wallets",
+    "Volume looks wash-traded or bot-driven",
+    "Copycat of a canonical token, which gets exposed as soon as buyers check the contract",
+    "About 9 prior copycats already dead, with about $560 liquidity"
+   ]
+  },
+  "counterargument": "Holder distribution looks spread out: top10 holds 9.26% and no insiders are flagged. The price is up 75% in the first hour and near its ATH. Confused buyers could keep pushing it up, and doubling from $235k to $470k needs only modest flow when volume is this heavy. Another copycat (7SVAn\u2026) shows about $70M market cap, so copycats can apparently run hard.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether they are about to withdraw",
+   "Whether any caller or KOL is pushing this specific contract",
+   "Whether the ~$70M market cap copycat figure is real or an artifact of thin liquidity"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The contract-address search returned nothing. The X search found the project account @lesgodotfun, which ties to the canonical token. The lesgo.fun page lists no contract. DexScreener returned 403."
+  },
+  "thesis": "This is a ticker-hijack copycat of LESGO's GO token. Its LP is unlocked and seeded by the creator, the volume looks bundled or washed, and buyers vastly outnumber sellers. The likeliest outcome is that the LP is pulled or the pair bleeds out soon.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 80,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://phantom.com/tokens/solana/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n",
+    "what": "Canonical GO token: about $4.9M market cap, $23M daily volume"
+   },
+   {
+    "url": "https://dexscreener.com/solana/chejuxvqrmpeb4ufwhz72afqptkm7aeb8giyznr7cpvh",
+    "what": "Canonical GO/SOL pair on Raydium, about $5.26M"
+   },
+   {
+    "url": "https://x.com/lesgodotfun",
+    "what": "Project X account, joined September 2026"
+   },
+   {
+    "url": "https://www.lesgo.fun/token/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n",
+    "what": "Lesgo site page for the canonical token"
+   }
+  ]
+ },
+ "ttft_ms": 5144,
+ "type": "result",
+ "duration_ms": 48397,
+ "uuid": "06ab9447-0127-40ea-8950-f688c47ac801",
+ "ttft_stream_ms": 907,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 907,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 85167,
+ "stop_reason": "tool_use",
+ "session_id": "cd985ca0-93a3-4be8-b8db-a4786039b37c",
+ "total_cost_usd": 0.3555962,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 17021,
+  "cache_read_input_tokens": 75276,
+  "output_tokens": 5365,
+  "output_tokens_details": {
+   "thinking_tokens": 418
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17021,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2152,
+    "cache_read_input_tokens": 17549,
+    "cache_creation_input_tokens": 2048,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2048
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 5365,
+   "cacheReadInputTokens": 75276,
+   "cacheCreationInputTokens": 17021,
+   "webSearchRequests": 0,
+   "costUSD": 0.2585712,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 418,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 45165,
+   "outputTokens": 2372,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.097025,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 17.6k transactions in the first hour came from 1,793 unique buyers but only 113 unique sellers (GeckoTerminal). GMGN tags 61 bundler wallets. RugCheck found a 12-wallet trade insider network, and one unlabeled wallet holds 80%. That looks like bot or wash volume on a copycat token, not organic interest in this contract. There are no DexScreener boosts and no profile.\",\"uncertainty\":\"The 80% holder may be an unlabeled Meteora/DAMM vault rather than a person. I found no X posts for this contract, but search engines index X poorly.\"},\"continuation_view\":\"strong_fade\",\"counterargument\":\"This token has more volume ($4.5M in 1h) than the canonical 5Wpd ($660k), and GMGN links it to zop.family and @zopfamily. Traders may be treating it as the main ZOP, and holders often ignore official contract addresses. After an 80% drawdown from ATH, a bounce back toward $500k+ would be a 2x from a ~$180k entry. The creator's best token reached a $1.5M ATH.\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80% (RugCheck), and top10 is 84-88%\",\"12-wallet insider trade network; 61 bundler wallets\",\"RugCheck warns of large unlocked LP / few LP providers; GMGN says LP burn ratio is 1.0, so the reports conflict\",\"Crashing: -79% in 5m on the latest DexScreener check, mcap fell from $297k to ~$178k\",\"Liquidity has already been pulled from its Meteora pair ($5 left)\"]},\"narrative\":{\"description\":\"Zop (zop.family) describes itself as a social network where Claude-powered AI agents trade stonkfun coins and post their trades publicly. It is tied to the fomo.family and stonkfun ecosystem, and the AI-agent and stonkfun themes are current.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A real product launch in a hot category (AI trading agents, stonkfun), which set off a wave of same-name clone tokens within minutes.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The name and ticker match the project. But the official site zop.family lists contract 5WpdKV43mFmVQgy6KhgqmU1N4xtLE4rAFtnsTf8rApwd, not this one. DexScreener shows website and X links only on 5Wpd; this token's pairs have none.\",\"competing_tokens\":\"5WpdKV43 is the site-listed canonical token: ~$274-350k mcap, $51-58k liquidity, created about 9 minutes earlier. There are at least 9 other ZOP clones, most already dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"observation_window\":\"6h\",\"p_rug\":65,\"p_runner\":4,\"research_confidence\":\"high\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The project site settles which contract is canonical, and it is not this one. General web and X searches for the contract and $ZOP turned up nothing. I did not search Reddit, Telegram or Discord separately because the hijack finding was decisive.\"},\"sources\":[{\"url\":\"https://zop.family/\",\"what\":\"Official site lists the $ZOP contract as 5WpdKV43..., not 3pHP\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/3pHP7P9n7jpGuL5rGywEhN3ARZeUiPgezuPmVQZLgzjL\",\"what\":\"This token: $178k mcap, -79% in 5m, no socials, Meteora pair liquidity $5\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/5WpdKV43mFmVQgy6KhgqmU1N4xtLE4rAFtnsTf8rApwd\",\"what\":\"Canonical ZOP pair with website and X links, $51k liquidity\"},{\"url\":\"https://airdropalert.com/blogs/what-is-stonkfun/\",\"what\":\"Background on the stonkfun launchpad\"}],\"thesis\":\"This is a copycat of a real launch: the official zop.family site points to a different contract (5Wpd). This token spiked to about a $1.5M ATH on bot or bundled volume and is now collapsing, down 67-79% in 5 minutes with mcap falling toward $178k. One wallet holds 80%, there is an insider network, and it has no social links. A 2x from entry is very unlikely.\",\"unknowns\":[\"Whether the 80% holder is a pool vault or a person\",\"Whether any KOL or X posts are promoting this contract by mistake\",\"The exact entry price 25 minutes after detection\"],\"what_is_happening\":\"A real project (Zop, AI trading agents on stonkfun/fomo) launched a $ZOP token at contract 5Wpd. Within minutes more than 10 clones appeared. This clone (3pHP) pumped about 5x on bot-heavy volume, peaked near $1.5M, and is now dumping hard.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 17.6k transactions in the first hour came from 1,793 unique buyers but only 113 unique sellers (GeckoTerminal). GMGN tags 61 bundler wallets. RugCheck found a 12-wallet trade insider network, and one unlabeled wallet holds 80%. That looks like bot or wash volume on a copycat token, not organic interest in this contract. There are no DexScreener boosts and no profile.",
+   "uncertainty": "The 80% holder may be an unlabeled Meteora/DAMM vault rather than a person. I found no X posts for this contract, but search engines index X poorly."
+  },
+  "continuation_view": "strong_fade",
+  "counterargument": "This token has more volume ($4.5M in 1h) than the canonical 5Wpd ($660k), and GMGN links it to zop.family and @zopfamily. Traders may be treating it as the main ZOP, and holders often ignore official contract addresses. After an 80% drawdown from ATH, a bounce back toward $500k+ would be a 2x from a ~$180k entry. The creator's best token reached a $1.5M ATH.",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80% (RugCheck), and top10 is 84-88%",
+    "12-wallet insider trade network; 61 bundler wallets",
+    "RugCheck warns of large unlocked LP / few LP providers; GMGN says LP burn ratio is 1.0, so the reports conflict",
+    "Crashing: -79% in 5m on the latest DexScreener check, mcap fell from $297k to ~$178k",
+    "Liquidity has already been pulled from its Meteora pair ($5 left)"
+   ]
+  },
+  "narrative": {
+   "description": "Zop (zop.family) describes itself as a social network where Claude-powered AI agents trade stonkfun coins and post their trades publicly. It is tied to the fomo.family and stonkfun ecosystem, and the AI-agent and stonkfun themes are current.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A real product launch in a hot category (AI trading agents, stonkfun), which set off a wave of same-name clone tokens within minutes."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The name and ticker match the project. But the official site zop.family lists contract 5WpdKV43mFmVQgy6KhgqmU1N4xtLE4rAFtnsTf8rApwd, not this one. DexScreener shows website and X links only on 5Wpd; this token's pairs have none.",
+   "competing_tokens": "5WpdKV43 is the site-listed canonical token: ~$274-350k mcap, $51-58k liquidity, created about 9 minutes earlier. There are at least 9 other ZOP clones, most already dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "observation_window": "6h",
+  "p_rug": 65,
+  "p_runner": 4,
+  "research_confidence": "high",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The project site settles which contract is canonical, and it is not this one. General web and X searches for the contract and $ZOP turned up nothing. I did not search Reddit, Telegram or Discord separately because the hijack finding was decisive."
+  },
+  "sources": [
+   {
+    "url": "https://zop.family/",
+    "what": "Official site lists the $ZOP contract as 5WpdKV43..., not 3pHP"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/3pHP7P9n7jpGuL5rGywEhN3ARZeUiPgezuPmVQZLgzjL",
+    "what": "This token: $178k mcap, -79% in 5m, no socials, Meteora pair liquidity $5"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/5WpdKV43mFmVQgy6KhgqmU1N4xtLE4rAFtnsTf8rApwd",
+    "what": "Canonical ZOP pair with website and X links, $51k liquidity"
+   },
+   {
+    "url": "https://airdropalert.com/blogs/what-is-stonkfun/",
+    "what": "Background on the stonkfun launchpad"
+   }
+  ],
+  "thesis": "This is a copycat of a real launch: the official zop.family site points to a different contract (5Wpd). This token spiked to about a $1.5M ATH on bot or bundled volume and is now collapsing, down 67-79% in 5 minutes with mcap falling toward $178k. One wallet holds 80%, there is an insider network, and it has no social links. A 2x from entry is very unlikely.",
+  "unknowns": [
+   "Whether the 80% holder is a pool vault or a person",
+   "Whether any KOL or X posts are promoting this contract by mistake",
+   "The exact entry price 25 minutes after detection"
+  ],
+  "what_is_happening": "A real project (Zop, AI trading agents on stonkfun/fomo) launched a $ZOP token at contract 5Wpd. Within minutes more than 10 clones appeared. This clone (3pHP) pumped about 5x on bot-heavy volume, peaked near $1.5M, and is now dumping hard."
+ },
+ "ttft_ms": 3473,
+ "type": "result",
+ "duration_ms": 72402,
+ "uuid": "34b5f0f2-a734-4f65-94b2-10129c121e97",
+ "ttft_stream_ms": 849,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 850,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

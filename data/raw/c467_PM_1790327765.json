@@ -1,0 +1,144 @@
+{
+ "duration_api_ms": 43524,
+ "stop_reason": "tool_use",
+ "session_id": "c527cd33-8169-4111-aac8-c2949d5b581e",
+ "total_cost_usd": 0.1529904,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9114,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 3995,
+  "output_tokens_details": {
+   "thinking_tokens": 1173
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9114,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3995,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9114,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9114
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3995,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9114,
+   "webSearchRequests": 0,
+   "costUSD": 0.1529904,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1173,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The LP was 0% locked or burned (RugCheck 'danger'; GMGN lp_burn_ratio 0.0), and RugCheck also flagged 'Low amount of LP Providers'. The deployer could remove liquidity at any moment. The outcome, no pair or no liquidity by T_D about 25 minutes after detection, is what that allows.\",\"The token was created about 5 seconds before the PumpSwap pool (created_unix 1790228472 vs pair 1790228477). bonding_curve was false, migrated_unix was 0, and launchpad was empty. So this was not a pump.fun graduation, where the LP gets burned. The deployer seeded the pool directly and kept the LP tokens.\",\"Pool liquidity ($34k) was larger than market cap ($26k), and 65% of supply sat in the AMM. Most of the extractable value was in a pool that one party controlled.\",\"GMGN showed the creator token status as 'creator_close'. There was also an inconsistent creator record: 0 launched tokens but a 'best token ATH' of $231M. That looks like a fresh or spoofed wallet, not a track record.\",\"It was a metadata clone. It copied the kids.fun and YokaiCapital socials, while a canonical token (UpBB...kids) traded at about 90x the mcap on a different venue with locked-LP launch mechanics. A clone gives buyers no lasting reason to stay, and it gives the deployer a reason to pull liquidity quickly while confused buyers are still coming in.\",\"The same-name list showed several very recent clones, some with liquidity above their mcap and zero volume. That points to a wave of liquidity-seeded clones, consistent with a deploy-and-pull pattern.\"],\"misleading_observations\":[\"The GeckoTerminal unique-buyer and unique-seller counts were exactly 50 or 51 across the m15, m30 and h1 windows, while h6 buyers were 1,945. That looks like a counter cap, not proof of a 50-wallet wash ring. The report named the cap as a possibility but still used it as its main authenticity evidence. The conclusion held up anyway because of the LP structure, not because of the wash inference.\",\"1,968 holders, top-10 concentration of about 18% (excluding the AMM), and GMGN sniper, bundler, rat-trader and dev-hold rates all at 0 looked healthy. None of that matters when a single party controls the LP.\",\"Price up 163% over 6h, $500k of volume in 1h, and balanced buys and sells looked like momentum. They did not bear on the outcome.\",\"The reported $1M liquidity on clone C8GH... and the other clone liquidity figures are probably unreliable or seeded numbers. They are weak evidence of anything beyond clone activity.\",\"Mint and freeze authority renounced, 0 tax, and no honeypot flag are standard safety checks. They say nothing about LP-pull risk.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time argued for a runner, so the direction (strong_fade, p_runner 7) needed no change.\",\"The evidence supported a higher p_rug and a much shorter expected time to rug than the 6h window. It showed a self-seeded pool with no LP burn, liquidity above mcap, a creator_close status and a copied identity. Rugs of this type often happen within minutes, and the collapse happened before T_D.\",\"At the pipeline level, the same facts were available at T1. A rule that excludes non-curve, non-migrated pools with 0% LP burn could have rejected this candidate before any research was spent on it.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Solana candidates whose pool was created within 60 seconds of token creation, with no bonding-curve migration (bonding_curve false, migrated_unix 0, launchpad empty) and an LP burn/lock ratio of 0%, will be unfillable or have lost more than 90% of their liquidity by T_D (T1 + 25 minutes) at a much higher rate than pump.fun-graduated candidates with burned LP.\",\"conditions\":\"Applies to PumpSwap or Raydium pools under $300k mcap in the v4 universe. Measure it as the share of candidates marked 'unfillable' or with liquidity down more than 90% at T_D, compared against graduated or burned-LP candidates over the same period.\",\"market_structure_rationale\":\"When the deployer seeds the pool directly, the deployer keeps the LP tokens and can withdraw all the paired SOL in one transaction. Curve graduation burns the LP, which removes that option. The payoff from pulling is largest early, while outside buyers are still adding SOL.\"},{\"statement\":\"When the pool's USD liquidity is larger than the token's market cap and the LP is unlocked, the chance of a liquidity pull within 1 hour is higher than for unlocked-LP pools where liquidity is below 50% of mcap.\",\"conditions\":\"Non-bonding-curve Solana pools under 3 hours old, with LP burn at 0%.\",\"market_structure_rationale\":\"Liquidity above mcap means most of the token's value is sitting in a pool one party can drain. That makes a pull more profitable than holding and selling tokens into the market.\"},{\"statement\":\"A token that copies the socials or metadata of a same-name token with at least 20x its market cap, where the canonical token launched through a different venue or launchpad, reaches +100% before -50% less often than non-clone candidates with similar volume and mcap.\",\"conditions\":\"The same-name list includes a token with at least 20x the mcap that was created within the prior 24h, and the candidate's GeckoTerminal socials match that token's links.\",\"market_structure_rationale\":\"Buyers of a clone are mostly people who mistook it for the real token. Their flow stops once aggregators or community posts point to the canonical contract. There is no independent demand, and the clone deployer has a reason to exit early.\"},{\"statement\":\"When GeckoTerminal unique-trader counts equal exactly 50 (or 51) in two or more sub-hour windows, they are capped, and they will not match on-chain unique-wallet counts. They should not be used as evidence of wash trading.\",\"conditions\":\"Any candidate whose GeckoTerminal m15, m30 or h1 unique counts show 50 or 51. Check against on-chain or GMGN trader counts for the same window.\",\"market_structure_rationale\":\"This is about data quality, not market behavior. A capped counter creates fake concentration signals that can change authenticity calls in either direction.\"}],\"summary\":\"The report called this token a ticker-hijack clone with an unlocked LP and gave it p_rug 72 and p_runner 7. By decision time (about 25 minutes after detection) the pair had no liquidity, so the trade was unfillable and returned 0. That fits the predicted liquidity pull, but a single unfillable note could also be a data or delisting artifact.\\n\\nThe observations that actually bore on the outcome were structural:\\n- the deployer seeded the PumpSwap pool directly, with no bonding-curve migration\\n- the LP was 0% burned\\n- pool liquidity was larger than the market cap\\n- GMGN showed a creator_close status\\n- the token copied the metadata of a canonical token worth about 90x more\\n\\nThe report's main authenticity evidence was weaker. The GeckoTerminal unique-wallet counts sat at exactly 50 or 51, which is probably a counter cap, and the report itself noted that. The healthy-looking holder numbers and zero sniper and bundler rates were reassuring but beside the point.\\n\\nThe direction of the call could be predicted from what was known at the time. The exact timing could not. The main improvement would be to rate the risk of a very fast rug higher, and to have the pipeline drop self-seeded, unburned-LP pools at detection instead of sending them to research. Reasoning quality was good, and the correct call rested mostly on the right evidence. One outcome does not validate the probabilities.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The LP was 0% locked or burned (RugCheck 'danger'; GMGN lp_burn_ratio 0.0), and RugCheck also flagged 'Low amount of LP Providers'. The deployer could remove liquidity at any moment. The outcome, no pair or no liquidity by T_D about 25 minutes after detection, is what that allows.",
+   "The token was created about 5 seconds before the PumpSwap pool (created_unix 1790228472 vs pair 1790228477). bonding_curve was false, migrated_unix was 0, and launchpad was empty. So this was not a pump.fun graduation, where the LP gets burned. The deployer seeded the pool directly and kept the LP tokens.",
+   "Pool liquidity ($34k) was larger than market cap ($26k), and 65% of supply sat in the AMM. Most of the extractable value was in a pool that one party controlled.",
+   "GMGN showed the creator token status as 'creator_close'. There was also an inconsistent creator record: 0 launched tokens but a 'best token ATH' of $231M. That looks like a fresh or spoofed wallet, not a track record.",
+   "It was a metadata clone. It copied the kids.fun and YokaiCapital socials, while a canonical token (UpBB...kids) traded at about 90x the mcap on a different venue with locked-LP launch mechanics. A clone gives buyers no lasting reason to stay, and it gives the deployer a reason to pull liquidity quickly while confused buyers are still coming in.",
+   "The same-name list showed several very recent clones, some with liquidity above their mcap and zero volume. That points to a wave of liquidity-seeded clones, consistent with a deploy-and-pull pattern."
+  ],
+  "misleading_observations": [
+   "The GeckoTerminal unique-buyer and unique-seller counts were exactly 50 or 51 across the m15, m30 and h1 windows, while h6 buyers were 1,945. That looks like a counter cap, not proof of a 50-wallet wash ring. The report named the cap as a possibility but still used it as its main authenticity evidence. The conclusion held up anyway because of the LP structure, not because of the wash inference.",
+   "1,968 holders, top-10 concentration of about 18% (excluding the AMM), and GMGN sniper, bundler, rat-trader and dev-hold rates all at 0 looked healthy. None of that matters when a single party controls the LP.",
+   "Price up 163% over 6h, $500k of volume in 1h, and balanced buys and sells looked like momentum. They did not bear on the outcome.",
+   "The reported $1M liquidity on clone C8GH... and the other clone liquidity figures are probably unreliable or seeded numbers. They are weak evidence of anything beyond clone activity.",
+   "Mint and freeze authority renounced, 0 tax, and no honeypot flag are standard safety checks. They say nothing about LP-pull risk."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time argued for a runner, so the direction (strong_fade, p_runner 7) needed no change.",
+   "The evidence supported a higher p_rug and a much shorter expected time to rug than the 6h window. It showed a self-seeded pool with no LP burn, liquidity above mcap, a creator_close status and a copied identity. Rugs of this type often happen within minutes, and the collapse happened before T_D.",
+   "At the pipeline level, the same facts were available at T1. A rule that excludes non-curve, non-migrated pools with 0% LP burn could have rejected this candidate before any research was spent on it."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Solana candidates whose pool was created within 60 seconds of token creation, with no bonding-curve migration (bonding_curve false, migrated_unix 0, launchpad empty) and an LP burn/lock ratio of 0%, will be unfillable or have lost more than 90% of their liquidity by T_D (T1 + 25 minutes) at a much higher rate than pump.fun-graduated candidates with burned LP.",
+    "conditions": "Applies to PumpSwap or Raydium pools under $300k mcap in the v4 universe. Measure it as the share of candidates marked 'unfillable' or with liquidity down more than 90% at T_D, compared against graduated or burned-LP candidates over the same period.",
+    "market_structure_rationale": "When the deployer seeds the pool directly, the deployer keeps the LP tokens and can withdraw all the paired SOL in one transaction. Curve graduation burns the LP, which removes that option. The payoff from pulling is largest early, while outside buyers are still adding SOL."
+   },
+   {
+    "statement": "When the pool's USD liquidity is larger than the token's market cap and the LP is unlocked, the chance of a liquidity pull within 1 hour is higher than for unlocked-LP pools where liquidity is below 50% of mcap.",
+    "conditions": "Non-bonding-curve Solana pools under 3 hours old, with LP burn at 0%.",
+    "market_structure_rationale": "Liquidity above mcap means most of the token's value is sitting in a pool one party can drain. That makes a pull more profitable than holding and selling tokens into the market."
+   },
+   {
+    "statement": "A token that copies the socials or metadata of a same-name token with at least 20x its market cap, where the canonical token launched through a different venue or launchpad, reaches +100% before -50% less often than non-clone candidates with similar volume and mcap.",
+    "conditions": "The same-name list includes a token with at least 20x the mcap that was created within the prior 24h, and the candidate's GeckoTerminal socials match that token's links.",
+    "market_structure_rationale": "Buyers of a clone are mostly people who mistook it for the real token. Their flow stops once aggregators or community posts point to the canonical contract. There is no independent demand, and the clone deployer has a reason to exit early."
+   },
+   {
+    "statement": "When GeckoTerminal unique-trader counts equal exactly 50 (or 51) in two or more sub-hour windows, they are capped, and they will not match on-chain unique-wallet counts. They should not be used as evidence of wash trading.",
+    "conditions": "Any candidate whose GeckoTerminal m15, m30 or h1 unique counts show 50 or 51. Check against on-chain or GMGN trader counts for the same window.",
+    "market_structure_rationale": "This is about data quality, not market behavior. A capped counter creates fake concentration signals that can change authenticity calls in either direction."
+   }
+  ],
+  "summary": "The report called this token a ticker-hijack clone with an unlocked LP and gave it p_rug 72 and p_runner 7. By decision time (about 25 minutes after detection) the pair had no liquidity, so the trade was unfillable and returned 0. That fits the predicted liquidity pull, but a single unfillable note could also be a data or delisting artifact.\n\nThe observations that actually bore on the outcome were structural:\n- the deployer seeded the PumpSwap pool directly, with no bonding-curve migration\n- the LP was 0% burned\n- pool liquidity was larger than the market cap\n- GMGN showed a creator_close status\n- the token copied the metadata of a canonical token worth about 90x more\n\nThe report's main authenticity evidence was weaker. The GeckoTerminal unique-wallet counts sat at exactly 50 or 51, which is probably a counter cap, and the report itself noted that. The healthy-looking holder numbers and zero sniper and bundler rates were reassuring but beside the point.\n\nThe direction of the call could be predicted from what was known at the time. The exact timing could not. The main improvement would be to rate the risk of a very fast rug higher, and to have the pipeline drop self-seeded, unburned-LP pools at detection instead of sending them to research. Reasoning quality was good, and the correct call rested mostly on the right evidence. One outcome does not validate the probabilities."
+ },
+ "ttft_ms": 14985,
+ "type": "result",
+ "duration_ms": 43568,
+ "uuid": "c75a8ebf-602c-41e3-bf23-8d904830e609",
+ "ttft_stream_ms": 1470,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 1470,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

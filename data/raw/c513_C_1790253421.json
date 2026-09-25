@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 76415,
+ "stop_reason": "tool_use",
+ "session_id": "2fff221d-65dc-4179-9c01-c52ab4cc74ce",
+ "total_cost_usd": 0.33287040000000007,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 15182,
+  "cache_read_input_tokens": 58822,
+  "output_tokens": 4198,
+  "output_tokens_details": {
+   "thinking_tokens": 953
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15182,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2494,
+    "cache_read_input_tokens": 17258,
+    "cache_creation_input_tokens": 500,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 500
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4198,
+   "cacheReadInputTokens": 58822,
+   "cacheCreationInputTokens": 15182,
+   "webSearchRequests": 0,
+   "costUSD": 0.21722040000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 953,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 54140,
+   "outputTokens": 2302,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11565000000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GP \\\"Gamblepad\\\" (7rfsnm\u2026) is one of at least four same-name \\\"GP/Gamblepad\\\" tokens created within about 5 minutes of each other (GrW1 ~11:51 UTC, k7j ~11:53, FLu5 ~11:54, this one ~11:57). None of them went through a pump.fun launch: the pools were set up directly on PumpSwap, and this one has 0% of its LP locked. Its own metadata description points at a sibling token's (GrW1) Solscan page, so it was copied from the same template. Two siblings have already had their liquidity pulled: FLu5 did about $1.0M of volume and now has $0 liquidity, and k7j did $157k in the last hour and has $3.13 liquidity. This token is running the same way: about $1.1M of hourly volume on about $33k market cap (28x turnover), 646 unique buyers but only 69 unique sellers, 40 GMGN-tagged bundler wallets (28% bundler trader share), an evenly split buy/sell count in the last 5 minutes, and liquidity larger than market cap, which points to a manually seeded pool. The name borrows from a real product, the Gamblepad casino-rewards launchpad (gamblepad.xyz), which says it launches coins directly on pump.fun. This non-pump.fun contract has no link to that site that I could find.\",\"narrative\":{\"description\":\"Borrows the name of the Gamblepad casino-rewards launchpad, where pump.fun creator fees are gambled for holders. Any narrative interest attaches to the product, not to this contract.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"No organic spread found. The activity looks like wash or bundled volume plus serial clone launches meant to show up on volume and trending screens.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None found. There is no official contract address linking to this token, it was not launched on pump.fun (the real Gamblepad says it launches on pump.fun), and its metadata points to a sibling clone's page.\",\"competing_tokens\":\"GrW1 (Gamblepad GP, $8.7k liquidity), k7j (liquidity pulled, $3), FLu5 (liquidity pulled, $0 after $1M volume), 8kNgo\u2026pump ($GAMBLE Gamblepad, dead), plus unrelated GP tokens (RuneScape Gold $25M, Graphite $14M).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"4 clones in 5 minutes, and 2 of them already have liquidity pulled after heavy volume. 40 bundler wallets. Unique sellers (69) are far fewer than unique buyers (646). Nearly equal buy/sell transaction counts point to bot churn. LP is 0% locked and RugCheck flags 'Large Amount of LP Unlocked'. No web or X footprint for the contract or the @Gamblepadsol handle.\",\"uncertainty\":\"I could not see the deployer's link to the sibling clones on-chain, and I could not see X posts directly.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Unlocked LP that the creator can pull at any time (siblings already pulled)\",\"40-wallet bundle network with 28% bundler trader share\",\"Volume looks wash-traded (28x hourly turnover on $33k market cap)\",\"Multiple same-name clones dilute and confuse buyers\",\"Not a pump.fun token; manually seeded PumpSwap pool\"]},\"counterargument\":\"This pair is still alive after 40 minutes with rising liquidity ($40k) and price (+265% in 1h). The operator might pump it further before pulling, and the 25-minute entry could catch one more leg to 2x on a $35k market cap. Also, 646 unique buyers is not trivial, and some real retail may be buying the Gamblepad name.\",\"unknowns\":[\"Whether the same wallet deployed all the clones\",\"Whether the real Gamblepad team has an official token\",\"X/Telegram activity for @Gamblepadsol\",\"Who controls the LP\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"gamblepad.xyz shows up in search snippets (casino-rewards launchpad on pump.fun) but fetching it failed with an SSL error. The contract search returned nothing. DexScreener API confirms the sibling FLu5 has $0 liquidity. Reddit and Telegram were covered only by a generic web search.\"},\"thesis\":\"This looks like a serial clone-and-pull operation borrowing the Gamblepad name. Its siblings from the same 5-minute window have already had liquidity pulled after running up large fake volume, and this pair has the same structure (unlocked LP, 40 bundlers, wash-like turnover). A pull within 6 hours is highly likely. A clean 2x from the entry price before that happens is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":88,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://gamblepad.xyz/\",\"what\":\"Real Gamblepad product (seen in search snippets): launches coins on pump.fun, fee-funded casino for holders\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/FLu5nfSwiHnxaeEPZA3W9fx6znVNZxHPk5ytRKtuWGmX\",\"what\":\"Sibling Gamblepad clone: $1M volume, liquidity $0 (pulled)\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7rfsnmGqx3nFXK71SaavEr4TYDeKVgKv8Lx9oBaf8AMh\",\"what\":\"Current state of this pair: $40k liquidity, $35k market cap, $1.14M volume in 1h, 5-minute buys and sells about equal\"},{\"url\":\"https://solscan.io/token/GrW1bFdSfnDM1vNCMzaRnHbHAgus23hsJ3nJLdLiPzRi#metadata\",\"what\":\"The sibling clone's page that this token's metadata description points to\"}]}",
+ "structured_output": {
+  "what_is_happening": "GP \"Gamblepad\" (7rfsnm\u2026) is one of at least four same-name \"GP/Gamblepad\" tokens created within about 5 minutes of each other (GrW1 ~11:51 UTC, k7j ~11:53, FLu5 ~11:54, this one ~11:57). None of them went through a pump.fun launch: the pools were set up directly on PumpSwap, and this one has 0% of its LP locked. Its own metadata description points at a sibling token's (GrW1) Solscan page, so it was copied from the same template. Two siblings have already had their liquidity pulled: FLu5 did about $1.0M of volume and now has $0 liquidity, and k7j did $157k in the last hour and has $3.13 liquidity. This token is running the same way: about $1.1M of hourly volume on about $33k market cap (28x turnover), 646 unique buyers but only 69 unique sellers, 40 GMGN-tagged bundler wallets (28% bundler trader share), an evenly split buy/sell count in the last 5 minutes, and liquidity larger than market cap, which points to a manually seeded pool. The name borrows from a real product, the Gamblepad casino-rewards launchpad (gamblepad.xyz), which says it launches coins directly on pump.fun. This non-pump.fun contract has no link to that site that I could find.",
+  "narrative": {
+   "description": "Borrows the name of the Gamblepad casino-rewards launchpad, where pump.fun creator fees are gambled for holders. Any narrative interest attaches to the product, not to this contract.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "No organic spread found. The activity looks like wash or bundled volume plus serial clone launches meant to show up on volume and trending screens."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None found. There is no official contract address linking to this token, it was not launched on pump.fun (the real Gamblepad says it launches on pump.fun), and its metadata points to a sibling clone's page.",
+   "competing_tokens": "GrW1 (Gamblepad GP, $8.7k liquidity), k7j (liquidity pulled, $3), FLu5 (liquidity pulled, $0 after $1M volume), 8kNgo\u2026pump ($GAMBLE Gamblepad, dead), plus unrelated GP tokens (RuneScape Gold $25M, Graphite $14M).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "4 clones in 5 minutes, and 2 of them already have liquidity pulled after heavy volume. 40 bundler wallets. Unique sellers (69) are far fewer than unique buyers (646). Nearly equal buy/sell transaction counts point to bot churn. LP is 0% locked and RugCheck flags 'Large Amount of LP Unlocked'. No web or X footprint for the contract or the @Gamblepadsol handle.",
+   "uncertainty": "I could not see the deployer's link to the sibling clones on-chain, and I could not see X posts directly."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Unlocked LP that the creator can pull at any time (siblings already pulled)",
+    "40-wallet bundle network with 28% bundler trader share",
+    "Volume looks wash-traded (28x hourly turnover on $33k market cap)",
+    "Multiple same-name clones dilute and confuse buyers",
+    "Not a pump.fun token; manually seeded PumpSwap pool"
+   ]
+  },
+  "counterargument": "This pair is still alive after 40 minutes with rising liquidity ($40k) and price (+265% in 1h). The operator might pump it further before pulling, and the 25-minute entry could catch one more leg to 2x on a $35k market cap. Also, 646 unique buyers is not trivial, and some real retail may be buying the Gamblepad name.",
+  "unknowns": [
+   "Whether the same wallet deployed all the clones",
+   "Whether the real Gamblepad team has an official token",
+   "X/Telegram activity for @Gamblepadsol",
+   "Who controls the LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "gamblepad.xyz shows up in search snippets (casino-rewards launchpad on pump.fun) but fetching it failed with an SSL error. The contract search returned nothing. DexScreener API confirms the sibling FLu5 has $0 liquidity. Reddit and Telegram were covered only by a generic web search."
+  },
+  "thesis": "This looks like a serial clone-and-pull operation borrowing the Gamblepad name. Its siblings from the same 5-minute window have already had liquidity pulled after running up large fake volume, and this pair has the same structure (unlocked LP, 40 bundlers, wash-like turnover). A pull within 6 hours is highly likely. A clean 2x from the entry price before that happens is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 88,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://gamblepad.xyz/",
+    "what": "Real Gamblepad product (seen in search snippets): launches coins on pump.fun, fee-funded casino for holders"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/FLu5nfSwiHnxaeEPZA3W9fx6znVNZxHPk5ytRKtuWGmX",
+    "what": "Sibling Gamblepad clone: $1M volume, liquidity $0 (pulled)"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7rfsnmGqx3nFXK71SaavEr4TYDeKVgKv8Lx9oBaf8AMh",
+    "what": "Current state of this pair: $40k liquidity, $35k market cap, $1.14M volume in 1h, 5-minute buys and sells about equal"
+   },
+   {
+    "url": "https://solscan.io/token/GrW1bFdSfnDM1vNCMzaRnHbHAgus23hsJ3nJLdLiPzRi#metadata",
+    "what": "The sibling clone's page that this token's metadata description points to"
+   }
+  ]
+ },
+ "ttft_ms": 4091,
+ "type": "result",
+ "duration_ms": 62115,
+ "uuid": "c8b7a298-c0cb-424a-ada5-c5553bb34bff",
+ "ttft_stream_ms": 848,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 848,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

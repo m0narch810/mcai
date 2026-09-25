@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 26085,
+ "stop_reason": "tool_use",
+ "session_id": "80aadcdd-e5fc-491a-b1a3-54aaa7e75293",
+ "total_cost_usd": 0.1131148,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7835,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2502,
+  "output_tokens_details": {
+   "thinking_tokens": 509
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7835,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2502,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7835,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7835
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2502,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7835,
+   "webSearchRequests": 0,
+   "costUSD": 0.1131148,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 509,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Bagwork\\\" is a 36-minute-old PumpSwap pair. It did not graduate from the pump.fun curve (bonding_curve false, migrated_unix 0, deploy platform unknown) and was \\\"Launched on discord.gg/uxento\\\". The creator seeded the pool directly, and the pool holds 88% of supply. Liquidity of about $174k is larger than the $99k market cap, the LP is 0% locked or burned, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" as a danger. The coin traded $4.85M in about 36 minutes (28x turnover) with 3,026 buys and 2,268 sells. GeckoTerminal counts 807 unique buyers but only 55 unique sellers, so a small set of wallets is doing most of the selling. That points to bot, wash or extraction activity. GMGN tags 70 bundler wallets. Creator status is \\\"creator_close\\\", the creator holds 0, and the logo is shared with 9 other tokens. At least 10 other \\\"Bagwork\\\" tokens launched within the same half hour. Several already show $0 liquidity, including one at a $1.3M nominal cap. That looks like a serial-clone and rug cluster around some \\\"bagworkagent\\\" X post.\",\"narrative\":{\"description\":\"The name refers to an 'agent' meme (bagworkagent X status link, bagworkagent.fun website). It looks like a copy-launch race after some X post, with a dozen or more tickers racing each other.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A viral X post or 'agent' meme set off a rush of launches through a sniping/launch tool (uxento). Attention is split across many clones rather than building behind one coin.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most liquidity of the live clones and the largest trading volume. It was not the first launch. It has no DexScreener profile and no verified link to the originating account.\",\"competing_tokens\":\"At least 10 same-name tokens. Five launched earlier (5NhN6 at 1790345694, Azdjz, 2RXJj, FCpank, DsbH). Avo9 reached $1.3M nominal cap and now shows $0 liquidity. Several others are also at $0 liquidity, and F96D5 launched even later. There is also an older 2025 Bagwork token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 55 unique sellers produced 2,268 sells, and GMGN flags 70 bundler wallets. Volume is 28x the market cap within 36 minutes. The logo is duplicated 9 times. The pool was dev-seeded with unlocked LP. Sister clones with the same name have already been rugged to $0 liquidity.\",\"uncertainty\":\"Some of the 807 unique buyers may be real retail chasing the meme. I can't see the source X post or how big its reach is.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 100% unlocked and the creator controls it. Pulling it would take roughly $87k of SOL, a strong incentive to rug.\",\"The pool was created directly, not graduated from pump.fun, which is the typical setup for a liquidity-pull scam.\",\"A small set of seller wallets (bundlers or a wash cluster) is doing most of the selling.\",\"Same-name clones from the same half hour have already been rugged.\",\"Attention is split across more than 10 same-ticker tokens.\"]},\"counterargument\":\"Real buyer breadth is high: 807 unique buyers, 821 holders, and top-10 wallets outside the pool hold under 10%. The price is at its all-time high and rising (+5% over 5 minutes), and liquidity is deep for the market cap, so buys move the price efficiently. If this token becomes the 'winner' clone of a viral agent meme, reaching a $200k market cap within 6 hours only takes one more leg of momentum. Also, the creator has no recorded rug history.\",\"unknowns\":[\"Who controls the LP tokens, and whether the pull is only a matter of time\",\"The source and reach of the bagworkagent X post\",\"Whether the real project has endorsed any contract address\",\"The true identity of the 55 seller wallets\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment rests only on the packet.\"},\"thesis\":\"This looks like a dev-seeded PumpSwap clone with unlocked LP inside a swarm of same-name launches, several of which have already been pulled to $0. The skew between buyers and sellers, plus the bundler count, points to extraction rather than organic growth. A liquidity pull within 6 hours is the most likely outcome. Doubling from entry is possible but unlikely before a pull.\",\"continuation_view\":\"strong_fade\",\"p_runner\":12,\"p_rug\":75,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"Bagwork\" is a 36-minute-old PumpSwap pair. It did not graduate from the pump.fun curve (bonding_curve false, migrated_unix 0, deploy platform unknown) and was \"Launched on discord.gg/uxento\". The creator seeded the pool directly, and the pool holds 88% of supply. Liquidity of about $174k is larger than the $99k market cap, the LP is 0% locked or burned, and RugCheck flags \"Large Amount of LP Unlocked\" as a danger. The coin traded $4.85M in about 36 minutes (28x turnover) with 3,026 buys and 2,268 sells. GeckoTerminal counts 807 unique buyers but only 55 unique sellers, so a small set of wallets is doing most of the selling. That points to bot, wash or extraction activity. GMGN tags 70 bundler wallets. Creator status is \"creator_close\", the creator holds 0, and the logo is shared with 9 other tokens. At least 10 other \"Bagwork\" tokens launched within the same half hour. Several already show $0 liquidity, including one at a $1.3M nominal cap. That looks like a serial-clone and rug cluster around some \"bagworkagent\" X post.",
+  "narrative": {
+   "description": "The name refers to an 'agent' meme (bagworkagent X status link, bagworkagent.fun website). It looks like a copy-launch race after some X post, with a dozen or more tickers racing each other.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A viral X post or 'agent' meme set off a rush of launches through a sniping/launch tool (uxento). Attention is split across many clones rather than building behind one coin."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most liquidity of the live clones and the largest trading volume. It was not the first launch. It has no DexScreener profile and no verified link to the originating account.",
+   "competing_tokens": "At least 10 same-name tokens. Five launched earlier (5NhN6 at 1790345694, Azdjz, 2RXJj, FCpank, DsbH). Avo9 reached $1.3M nominal cap and now shows $0 liquidity. Several others are also at $0 liquidity, and F96D5 launched even later. There is also an older 2025 Bagwork token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 55 unique sellers produced 2,268 sells, and GMGN flags 70 bundler wallets. Volume is 28x the market cap within 36 minutes. The logo is duplicated 9 times. The pool was dev-seeded with unlocked LP. Sister clones with the same name have already been rugged to $0 liquidity.",
+   "uncertainty": "Some of the 807 unique buyers may be real retail chasing the meme. I can't see the source X post or how big its reach is."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 100% unlocked and the creator controls it. Pulling it would take roughly $87k of SOL, a strong incentive to rug.",
+    "The pool was created directly, not graduated from pump.fun, which is the typical setup for a liquidity-pull scam.",
+    "A small set of seller wallets (bundlers or a wash cluster) is doing most of the selling.",
+    "Same-name clones from the same half hour have already been rugged.",
+    "Attention is split across more than 10 same-ticker tokens."
+   ]
+  },
+  "counterargument": "Real buyer breadth is high: 807 unique buyers, 821 holders, and top-10 wallets outside the pool hold under 10%. The price is at its all-time high and rising (+5% over 5 minutes), and liquidity is deep for the market cap, so buys move the price efficiently. If this token becomes the 'winner' clone of a viral agent meme, reaching a $200k market cap within 6 hours only takes one more leg of momentum. Also, the creator has no recorded rug history.",
+  "unknowns": [
+   "Who controls the LP tokens, and whether the pull is only a matter of time",
+   "The source and reach of the bagworkagent X post",
+   "Whether the real project has endorsed any contract address",
+   "The true identity of the 55 seller wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment rests only on the packet."
+  },
+  "thesis": "This looks like a dev-seeded PumpSwap clone with unlocked LP inside a swarm of same-name launches, several of which have already been pulled to $0. The skew between buyers and sellers, plus the bundler count, points to extraction rather than organic growth. A liquidity pull within 6 hours is the most likely outcome. Doubling from entry is possible but unlikely before a pull.",
+  "continuation_view": "strong_fade",
+  "p_runner": 12,
+  "p_rug": 75,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7277,
+ "type": "result",
+ "duration_ms": 26133,
+ "uuid": "67561d07-7bb7-4182-abc5-8c8baa3803e4",
+ "ttft_stream_ms": 1474,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 1474,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

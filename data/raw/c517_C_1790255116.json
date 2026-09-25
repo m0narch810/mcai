@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 79427,
+ "stop_reason": "tool_use",
+ "session_id": "3430836f-7093-489a-9f19-040f59aa2d41",
+ "total_cost_usd": 0.35050519999999996,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16918,
+  "cache_read_input_tokens": 63501,
+  "output_tokens": 4210,
+  "output_tokens_details": {
+   "thinking_tokens": 1000
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16918,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2522,
+    "cache_read_input_tokens": 18874,
+    "cache_creation_input_tokens": 620,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 620
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4210,
+   "cacheReadInputTokens": 63501,
+   "cacheCreationInputTokens": 16918,
+   "webSearchRequests": 0,
+   "costUSD": 0.23228420000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1000,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 56276,
+   "outputTokens": 2389,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11822099999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Alpenglow\\\", created directly on PumpSwap about 38 minutes before detection, went up about 28x in its first hour. It traded $1.28M of volume against about $51k of liquidity. The name comes from Solana's real Alpenglow consensus upgrade. Alpenglow reached public testnet on Sept 23, 2026, and its mainnet activation is scheduled from Sept 28. That news has set off a swarm of copycat tokens: the packet lists at least 9 other \\\"Alpenglow\\\" tokens created in the last roughly 75 minutes. Several have already collapsed to near-zero liquidity despite hundreds of thousands in hourly volume. This one has no website, no socials, no DexScreener profile and no search footprint. Its on-chain structure is extreme: a single unlabeled wallet holds 81.26% of supply, while the pool holds about 8.7% (87.3M tokens). A sale of that 81% into the ~227 SOL pool would effectively wipe out the price.\",\"narrative\":{\"description\":\"The name trades on Solana's Alpenglow consensus upgrade (about 150ms finality). It moved to public testnet on Sept 23, and mainnet activation is scheduled to begin around Sept 28, 2026. The event is real, current and building toward a date.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The testnet news and the upcoming mainnet date make 'Alpenglow' an obvious ticker, so many deployers are launching clones at the same time. This is supply-side opportunism. I found no evidence of organic community demand for any particular token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has no link to Solana, Anza or any team, and no socials. It is simply one of many same-name launches. GeckoTerminal metadata points to a StonkFun Telegram channel and an unrelated X status, which looks like wrong or borrowed metadata. StonkFun's channel does not mention Alpenglow.\",\"competing_tokens\":\"At least 9 same-name tokens appeared in the last ~75 minutes (2GQv4\u2026, 3cAZd\u2026, 5eciR\u2026, 8Qp8i\u2026, BW3KN\u2026, 3qfoU\u2026, 8m2JV\u2026, 85boE\u2026, CW2pR\u2026), plus an older 2025 token called DNq98\u2026. Two show liquidity of $1M or more with almost no volume, which suggests fake or self-provided liquidity. Several have already been drained.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Across the hour there were 2,070 unique buyers but only 63 unique sellers, the bot/degen rate is 0.88, and GMGN flags 40 bundler wallets. Recent flow is about even (m5: 46 buyers and 46 sellers, roughly 265 buys and 251 sells), which looks like volume or wash bots. There is no social presence and no paid boosts. One unlabeled wallet holds 81%, and the token was created directly on PumpSwap rather than through a bonding curve.\",\"uncertainty\":\"The 81% wallet could conceivably be a lock or vesting contract that RugCheck didn't label. X content is inaccessible.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"A single unlabeled wallet holds 81.26% of supply, which is catastrophic overhang against about 227 SOL of liquidity\",\"LP is 0% burned or locked, and RugCheck flags it as unlocked\",\"The token was created directly on PumpSwap with no launchpad history, a common rug template\",\"Market cap is already about $290k after a 28x in 38 minutes, so a 2x needs roughly $580k\",\"Many same-name clones are draining attention, and several have already rugged\"]},\"counterargument\":\"Alpenglow is a real, date-driven Solana narrative, and this token has the most volume and liquidity among the fresh clones. It could become the de facto 'Alpenglow' coin and ride hype toward the Sept 28 activation. The 81% wallet might be locked or held by a team that won't sell. Volume of $150k per 5 minutes shows real momentum that could push it to about $600k.\",\"unknowns\":[\"Who controls the 81% wallet, and whether it is a lock contract\",\"Whether any KOL or X account is promoting this specific contract address\",\"Whether the StonkFun metadata links are real or spoofed\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"News confirms the Alpenglow upgrade timeline. A search for the contract address returned nothing. X status fetch returned 402. The StonkFun Telegram has no mention of this token. The DexScreener pair shows no socials.\"},\"thesis\":\"This is a ticker-farm clone of a real Solana upgrade narrative, with no socials and no link to the project. Trading looks bot- and bundler-driven, LP is unlocked, and one wallet holds 81% of supply, so it can be drained at any moment. A further 2x from about $290k is unlikely before a rug or dump.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://cryptoticker.io/en/solana-alpenglow-activation-date-validator-check/\",\"what\":\"Alpenglow activation scheduled from Sept 28\"},{\"url\":\"https://cryptoslate.com/solana-moves-alpenglow-into-testnet-as-sol-nears-january-highs/\",\"what\":\"Alpenglow moved to testnet\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/AjUbJnfmLPT7AD1UkBJoFRSZ1kJv6CfVXUoQoeZdyYFS\",\"what\":\"Pair data: 87.3M tokens and 227 SOL in the pool, no socials\"},{\"url\":\"https://t.me/s/stonkfunxyz\",\"what\":\"StonkFun Telegram has no mention of Alpenglow\"},{\"url\":\"https://x.com/ynmontyy/status/2102867584152486078\",\"what\":\"GeckoTerminal-listed X link, returned 402\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Alpenglow\", created directly on PumpSwap about 38 minutes before detection, went up about 28x in its first hour. It traded $1.28M of volume against about $51k of liquidity. The name comes from Solana's real Alpenglow consensus upgrade. Alpenglow reached public testnet on Sept 23, 2026, and its mainnet activation is scheduled from Sept 28. That news has set off a swarm of copycat tokens: the packet lists at least 9 other \"Alpenglow\" tokens created in the last roughly 75 minutes. Several have already collapsed to near-zero liquidity despite hundreds of thousands in hourly volume. This one has no website, no socials, no DexScreener profile and no search footprint. Its on-chain structure is extreme: a single unlabeled wallet holds 81.26% of supply, while the pool holds about 8.7% (87.3M tokens). A sale of that 81% into the ~227 SOL pool would effectively wipe out the price.",
+  "narrative": {
+   "description": "The name trades on Solana's Alpenglow consensus upgrade (about 150ms finality). It moved to public testnet on Sept 23, and mainnet activation is scheduled to begin around Sept 28, 2026. The event is real, current and building toward a date.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The testnet news and the upcoming mainnet date make 'Alpenglow' an obvious ticker, so many deployers are launching clones at the same time. This is supply-side opportunism. I found no evidence of organic community demand for any particular token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has no link to Solana, Anza or any team, and no socials. It is simply one of many same-name launches. GeckoTerminal metadata points to a StonkFun Telegram channel and an unrelated X status, which looks like wrong or borrowed metadata. StonkFun's channel does not mention Alpenglow.",
+   "competing_tokens": "At least 9 same-name tokens appeared in the last ~75 minutes (2GQv4\u2026, 3cAZd\u2026, 5eciR\u2026, 8Qp8i\u2026, BW3KN\u2026, 3qfoU\u2026, 8m2JV\u2026, 85boE\u2026, CW2pR\u2026), plus an older 2025 token called DNq98\u2026. Two show liquidity of $1M or more with almost no volume, which suggests fake or self-provided liquidity. Several have already been drained.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Across the hour there were 2,070 unique buyers but only 63 unique sellers, the bot/degen rate is 0.88, and GMGN flags 40 bundler wallets. Recent flow is about even (m5: 46 buyers and 46 sellers, roughly 265 buys and 251 sells), which looks like volume or wash bots. There is no social presence and no paid boosts. One unlabeled wallet holds 81%, and the token was created directly on PumpSwap rather than through a bonding curve.",
+   "uncertainty": "The 81% wallet could conceivably be a lock or vesting contract that RugCheck didn't label. X content is inaccessible."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "A single unlabeled wallet holds 81.26% of supply, which is catastrophic overhang against about 227 SOL of liquidity",
+    "LP is 0% burned or locked, and RugCheck flags it as unlocked",
+    "The token was created directly on PumpSwap with no launchpad history, a common rug template",
+    "Market cap is already about $290k after a 28x in 38 minutes, so a 2x needs roughly $580k",
+    "Many same-name clones are draining attention, and several have already rugged"
+   ]
+  },
+  "counterargument": "Alpenglow is a real, date-driven Solana narrative, and this token has the most volume and liquidity among the fresh clones. It could become the de facto 'Alpenglow' coin and ride hype toward the Sept 28 activation. The 81% wallet might be locked or held by a team that won't sell. Volume of $150k per 5 minutes shows real momentum that could push it to about $600k.",
+  "unknowns": [
+   "Who controls the 81% wallet, and whether it is a lock contract",
+   "Whether any KOL or X account is promoting this specific contract address",
+   "Whether the StonkFun metadata links are real or spoofed"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "News confirms the Alpenglow upgrade timeline. A search for the contract address returned nothing. X status fetch returned 402. The StonkFun Telegram has no mention of this token. The DexScreener pair shows no socials."
+  },
+  "thesis": "This is a ticker-farm clone of a real Solana upgrade narrative, with no socials and no link to the project. Trading looks bot- and bundler-driven, LP is unlocked, and one wallet holds 81% of supply, so it can be drained at any moment. A further 2x from about $290k is unlikely before a rug or dump.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://cryptoticker.io/en/solana-alpenglow-activation-date-validator-check/",
+    "what": "Alpenglow activation scheduled from Sept 28"
+   },
+   {
+    "url": "https://cryptoslate.com/solana-moves-alpenglow-into-testnet-as-sol-nears-january-highs/",
+    "what": "Alpenglow moved to testnet"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/AjUbJnfmLPT7AD1UkBJoFRSZ1kJv6CfVXUoQoeZdyYFS",
+    "what": "Pair data: 87.3M tokens and 227 SOL in the pool, no socials"
+   },
+   {
+    "url": "https://t.me/s/stonkfunxyz",
+    "what": "StonkFun Telegram has no mention of Alpenglow"
+   },
+   {
+    "url": "https://x.com/ynmontyy/status/2102867584152486078",
+    "what": "GeckoTerminal-listed X link, returned 402"
+   }
+  ]
+ },
+ "ttft_ms": 5870,
+ "type": "result",
+ "duration_ms": 64686,
+ "uuid": "91652533-5d3e-4b89-aa7f-ac278eee3f55",
+ "ttft_stream_ms": 1463,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1463,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

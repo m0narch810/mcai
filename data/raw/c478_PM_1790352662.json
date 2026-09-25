@@ -1,0 +1,142 @@
+{
+ "duration_api_ms": 48259,
+ "stop_reason": "tool_use",
+ "session_id": "6a920f98-96a4-4b91-a817-960bb4887b75",
+ "total_cost_usd": 0.1718984,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9980,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 4594,
+  "output_tokens_details": {
+   "thinking_tokens": 1723
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9980,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4594,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9980,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9980
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4594,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9980,
+   "webSearchRequests": 0,
+   "costUSD": 0.1718984,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1723,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The same-name cluster had a high failure rate: at T2, 6 of the 10 same-ticker DESKS/desks.fun copies already showed $0 or near-$0 liquidity within about 1 to 1.5 hours of launch. That gave a direct base rate for liquidity removal among near-identical tokens, and this token's liquidity went to 0 by the 60-minute mark.\",\"RugCheck flagged 'Large Amount of LP Unlocked' at danger level, and one of the top markets showed 0% LP locked. This was the mechanism that allowed the outcome: exit liquidity was $0 at 60, 360 and 1440 minutes, and the price stayed frozen at the same value, which fits a pulled or dead pool.\",\"The creator is a serial launcher (10 tokens), was already marked 'creator_close', and there were no socials, no DexScreener profile and no endorsed contract address. There was no party with a stake in supporting liquidity.\",\"The trading pattern looked manufactured: 2,098 unique buyers against 95 unique sellers in h1, only 74 buyers in m30, plus 25 GMGN bundler wallets and a 52-wallet RugCheck insider trade network. This points to bot or wallet-farmed flow rather than organic demand that could carry a +100% move after entry.\",\"The Meteora side pool had already been drained to $4.71. That showed liquidity was being removed from this token's own pools, not just from its siblings.\"],\"misleading_observations\":[\"GMGN's lp_burn_ratio of 1.0 contradicted RugCheck's LP-unlocked warning. The counterargument leaned on it, and the outcome (exit liquidity $0) suggests the RugCheck view was the relevant one for the pool that mattered.\",\"GMGN's top10_holder_rate of 7% conflicted with RugCheck's single 80.05% holder and GeckoTerminal's 95% top 10. The low GMGN figure would have understated concentration risk.\",\"The headline activity (over $1M per hour per copy, +45% on the 5-minute candle, buyers and sellers roughly balanced at 53 vs 47 over 5 minutes) looked like live momentum. In fact the token did roughly triple before the decision time (research-time about $208k, entry at $622k mcap). None of that carried into post-entry gains usable at 2x, and it ended with no exit liquidity.\",\"Using sibling 4QXA ($318k) as a price anchor for a double was a weak comparison. Siblings in a factory cluster compete for the same flow and share the same rug mechanics. They do not validate each other.\"],\"evidence_that_should_have_changed_conclusion\":[\"None that should have reversed the fade call. The available evidence supported it.\",\"The cluster's rug base rate at T2 (about 60% of copies already at $0 liquidity), combined with unlocked LP and a creator who had already exited, arguably justified a higher p_rug than 68 and research_confidence 'high' rather than 'medium'.\",\"The report framed its thesis around a ~$200k mcap, but entry happened 22 minutes later at ~$622k after a ~3x run. The report could have said explicitly that any further pre-decision pump in a coordinated cluster strengthens the fade case, because it creates exit liquidity for the operators rather than reducing the risk.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"When a candidate belongs to a same-name cluster of 5 or more tokens launched within 90 minutes, and at least 40% of those siblings already show liquidity below $1k at T2, the candidate's liquidity falls below 10% of its entry liquidity within 6 hours in more than 50% of cases, and it reaches +100% before -50% in fewer than 15% of cases.\",\"conditions\":\"Applies to young tokens (under 3 hours old) where the evidence packet's same_ticker_or_name_tokens list has 5 or more entries with pair_created_at within 90 minutes of each other. Sibling liquidity is measured at T2 only.\",\"market_structure_rationale\":\"Factory launchers deploy many copies of a trending name, add minimal LP, and pull it once flow peaks. Siblings share the same operator economics, so rugs already seen among siblings are a direct estimate of this token's hazard rate.\"},{\"statement\":\"Tokens whose h1 unique buyers exceed 10x h1 unique sellers, and whose m30 unique buyers are below 10% of h1 unique buyers, do not reach +100% from decision-time entry within 6 hours at a higher rate than the universe base rate.\",\"conditions\":\"Requires GeckoTerminal unique buyer and seller counts at T2 for a pair younger than 2 hours. Does not apply to tokens still on a bonding curve, where the airdrop-style buyer counts may reflect curve mechanics.\",\"market_structure_rationale\":\"A burst of thousands of unique buyers followed by a near-halt in new buyers, with very few sellers, points to scripted wallet farming that inflates holder and volume metrics. It does not signal organic demand that can absorb supply from the concentrated holders.\"},{\"statement\":\"When RugCheck flags LP unlocked at 'danger' level and GMGN reports lp_burn_ratio of 1.0 or higher for the same token, the rate at which liquidity collapses to near $0 within 6 hours matches the rate for tokens where both sources agree LP is unlocked, and is higher than the rate for tokens where both agree it is burned or locked.\",\"conditions\":\"Applies to any token with conflicting LP-lock readings across sources in the evidence packet, especially tokens with more than one pool (Meteora plus PumpSwap).\",\"market_structure_rationale\":\"Burn ratios may refer to a different pool (for example, a migrated DBC pool) than the one carrying the traded liquidity. A liquidity pull on the unlocked pool is enough to make the token unsellable.\"},{\"statement\":\"In coordinated or same-name clusters, a candidate whose price rises more than 2x between T2 collection and decision-time entry has a higher 6-hour liquidity-collapse rate than cluster candidates that did not rise.\",\"conditions\":\"Compare T2 price_usd with entry_ref for tokens the research labelled 'coordinated' or with ticker_hijack_risk 'high'.\",\"market_structure_rationale\":\"Operators of factory tokens pull LP when there is the most counterparty liquidity to extract. A late run-up raises pool reserves and makes the pull more likely soon after.\"}],\"summary\":\"The report called a strong fade (p_runner 10, p_rug 68). After entry the token never reached +100% or even +50% (MFE +28%). Exit liquidity was $0 at every horizon and the price stayed frozen, so the bracket scored it -1.0. That is consistent with a liquidity pull. The call was directionally right, and the evidence behind it held up. The strongest signals were the sibling rug base rate (6 of 10 copies already at $0 liquidity), RugCheck's unlocked-LP warning, a serial creator who had already closed out, no socials or endorsement, and a front-loaded bot-like buyer pattern. The misleading inputs were GMGN's LP-burn and low top-10 figures, and the raw volume and momentum. Nothing available at the time should have reversed the call. If anything, it supported a higher p_rug and higher confidence. The report also anchored on a ~$200k mcap when entry actually came at ~$622k after a ~3x pre-decision pump. That pump was upside the report did not capture, but it was not tradeable under the protocol. Two caveats limit how much this outcome proves. First, the outcome data is internally inconsistent: liquidity_collapse is false and min_liquidity_24h is null, yet exit liquidity is 0 and there are only 69 bars. The -1.0 should be checked to confirm it reflects a real LP pull and not a data artifact. Second, this is a single case. The exact timing of the rug was unknowable, but the high rug probability was knowable, so the outcome was partially knowable.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The same-name cluster had a high failure rate: at T2, 6 of the 10 same-ticker DESKS/desks.fun copies already showed $0 or near-$0 liquidity within about 1 to 1.5 hours of launch. That gave a direct base rate for liquidity removal among near-identical tokens, and this token's liquidity went to 0 by the 60-minute mark.",
+   "RugCheck flagged 'Large Amount of LP Unlocked' at danger level, and one of the top markets showed 0% LP locked. This was the mechanism that allowed the outcome: exit liquidity was $0 at 60, 360 and 1440 minutes, and the price stayed frozen at the same value, which fits a pulled or dead pool.",
+   "The creator is a serial launcher (10 tokens), was already marked 'creator_close', and there were no socials, no DexScreener profile and no endorsed contract address. There was no party with a stake in supporting liquidity.",
+   "The trading pattern looked manufactured: 2,098 unique buyers against 95 unique sellers in h1, only 74 buyers in m30, plus 25 GMGN bundler wallets and a 52-wallet RugCheck insider trade network. This points to bot or wallet-farmed flow rather than organic demand that could carry a +100% move after entry.",
+   "The Meteora side pool had already been drained to $4.71. That showed liquidity was being removed from this token's own pools, not just from its siblings."
+  ],
+  "misleading_observations": [
+   "GMGN's lp_burn_ratio of 1.0 contradicted RugCheck's LP-unlocked warning. The counterargument leaned on it, and the outcome (exit liquidity $0) suggests the RugCheck view was the relevant one for the pool that mattered.",
+   "GMGN's top10_holder_rate of 7% conflicted with RugCheck's single 80.05% holder and GeckoTerminal's 95% top 10. The low GMGN figure would have understated concentration risk.",
+   "The headline activity (over $1M per hour per copy, +45% on the 5-minute candle, buyers and sellers roughly balanced at 53 vs 47 over 5 minutes) looked like live momentum. In fact the token did roughly triple before the decision time (research-time about $208k, entry at $622k mcap). None of that carried into post-entry gains usable at 2x, and it ended with no exit liquidity.",
+   "Using sibling 4QXA ($318k) as a price anchor for a double was a weak comparison. Siblings in a factory cluster compete for the same flow and share the same rug mechanics. They do not validate each other."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "None that should have reversed the fade call. The available evidence supported it.",
+   "The cluster's rug base rate at T2 (about 60% of copies already at $0 liquidity), combined with unlocked LP and a creator who had already exited, arguably justified a higher p_rug than 68 and research_confidence 'high' rather than 'medium'.",
+   "The report framed its thesis around a ~$200k mcap, but entry happened 22 minutes later at ~$622k after a ~3x run. The report could have said explicitly that any further pre-decision pump in a coordinated cluster strengthens the fade case, because it creates exit liquidity for the operators rather than reducing the risk."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "When a candidate belongs to a same-name cluster of 5 or more tokens launched within 90 minutes, and at least 40% of those siblings already show liquidity below $1k at T2, the candidate's liquidity falls below 10% of its entry liquidity within 6 hours in more than 50% of cases, and it reaches +100% before -50% in fewer than 15% of cases.",
+    "conditions": "Applies to young tokens (under 3 hours old) where the evidence packet's same_ticker_or_name_tokens list has 5 or more entries with pair_created_at within 90 minutes of each other. Sibling liquidity is measured at T2 only.",
+    "market_structure_rationale": "Factory launchers deploy many copies of a trending name, add minimal LP, and pull it once flow peaks. Siblings share the same operator economics, so rugs already seen among siblings are a direct estimate of this token's hazard rate."
+   },
+   {
+    "statement": "Tokens whose h1 unique buyers exceed 10x h1 unique sellers, and whose m30 unique buyers are below 10% of h1 unique buyers, do not reach +100% from decision-time entry within 6 hours at a higher rate than the universe base rate.",
+    "conditions": "Requires GeckoTerminal unique buyer and seller counts at T2 for a pair younger than 2 hours. Does not apply to tokens still on a bonding curve, where the airdrop-style buyer counts may reflect curve mechanics.",
+    "market_structure_rationale": "A burst of thousands of unique buyers followed by a near-halt in new buyers, with very few sellers, points to scripted wallet farming that inflates holder and volume metrics. It does not signal organic demand that can absorb supply from the concentrated holders."
+   },
+   {
+    "statement": "When RugCheck flags LP unlocked at 'danger' level and GMGN reports lp_burn_ratio of 1.0 or higher for the same token, the rate at which liquidity collapses to near $0 within 6 hours matches the rate for tokens where both sources agree LP is unlocked, and is higher than the rate for tokens where both agree it is burned or locked.",
+    "conditions": "Applies to any token with conflicting LP-lock readings across sources in the evidence packet, especially tokens with more than one pool (Meteora plus PumpSwap).",
+    "market_structure_rationale": "Burn ratios may refer to a different pool (for example, a migrated DBC pool) than the one carrying the traded liquidity. A liquidity pull on the unlocked pool is enough to make the token unsellable."
+   },
+   {
+    "statement": "In coordinated or same-name clusters, a candidate whose price rises more than 2x between T2 collection and decision-time entry has a higher 6-hour liquidity-collapse rate than cluster candidates that did not rise.",
+    "conditions": "Compare T2 price_usd with entry_ref for tokens the research labelled 'coordinated' or with ticker_hijack_risk 'high'.",
+    "market_structure_rationale": "Operators of factory tokens pull LP when there is the most counterparty liquidity to extract. A late run-up raises pool reserves and makes the pull more likely soon after."
+   }
+  ],
+  "summary": "The report called a strong fade (p_runner 10, p_rug 68). After entry the token never reached +100% or even +50% (MFE +28%). Exit liquidity was $0 at every horizon and the price stayed frozen, so the bracket scored it -1.0. That is consistent with a liquidity pull. The call was directionally right, and the evidence behind it held up. The strongest signals were the sibling rug base rate (6 of 10 copies already at $0 liquidity), RugCheck's unlocked-LP warning, a serial creator who had already closed out, no socials or endorsement, and a front-loaded bot-like buyer pattern. The misleading inputs were GMGN's LP-burn and low top-10 figures, and the raw volume and momentum. Nothing available at the time should have reversed the call. If anything, it supported a higher p_rug and higher confidence. The report also anchored on a ~$200k mcap when entry actually came at ~$622k after a ~3x pre-decision pump. That pump was upside the report did not capture, but it was not tradeable under the protocol. Two caveats limit how much this outcome proves. First, the outcome data is internally inconsistent: liquidity_collapse is false and min_liquidity_24h is null, yet exit liquidity is 0 and there are only 69 bars. The -1.0 should be checked to confirm it reflects a real LP pull and not a data artifact. Second, this is a single case. The exact timing of the rug was unknowable, but the high rug probability was knowable, so the outcome was partially knowable."
+ },
+ "ttft_ms": 19614,
+ "type": "result",
+ "duration_ms": 48318,
+ "uuid": "b7664870-cc1d-4854-a0cd-78a9b91ca404",
+ "ttft_stream_ms": 822,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 822,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

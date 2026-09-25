@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 85049,
+ "stop_reason": "tool_use",
+ "session_id": "c1e5cc26-5ba4-41cd-b808-ff7f3e1988a8",
+ "total_cost_usd": 0.3709416,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 17523,
+  "cache_read_input_tokens": 81273,
+  "output_tokens": 4168,
+  "output_tokens_details": {
+   "thinking_tokens": 789
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17523,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2310,
+    "cache_read_input_tokens": 18737,
+    "cache_creation_input_tokens": 1362,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1362
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 4168,
+   "cacheReadInputTokens": 81273,
+   "cacheCreationInputTokens": 17523,
+   "webSearchRequests": 0,
+   "costUSD": 0.2398466,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 789,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 67125,
+   "outputTokens": 2794,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.131095,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Shartcoin coin launched today on YokaiCapital's kids.fun launchpad. The launchpad pitches it as the \\\"child\\\" of Fartcoin and Buttcoin, with 2,500 SOL committed at launch. The real token is UpBB...kids (its address ends in \\\"kids\\\"). It trades on Raydium at about $2.2M FDV, with a $676k pool and $4.7M of volume in 24h. The token under review (5xSY...) is a different contract. Its pool on PumpSwap is 95 minutes old and its LP is 0% locked/burned. It copies the metadata: GeckoTerminal lists kids.fun and YokaiCapital's post as its socials. It trades at about $26k mcap with about $500k of volume in 1h on $34k of liquidity, which is 15x turnover. GeckoTerminal shows only about 50 unique buyers and 51 unique sellers behind about 2,700 trades in the last hour, and only 51 unique sellers over 6h against 1,945 \\\"buyers\\\". That pattern points to bot or wash volume and farmed holder counts, not organic demand. The creator's token status is \\\"creator_close\\\".\",\"narrative\":{\"description\":\"Shartcoin is the kids.fun launch that merges Fartcoin and Buttcoin. It is real and current: launched today, and the canonical token is up about 700% in 24h at around $2.2M.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A new launchpad from a known trader (YokaiCapital) debuted with a meme tied to Fartcoin. That drew attention to the canonical coin and a wave of same-name clones.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"This is only a name and metadata clone. kids.fun launches go to Raydium with a permanently locked LP, but this token sits on PumpSwap with an unlocked LP and a different contract. The attention belongs to UpBB...kids.\",\"competing_tokens\":\"Canonical: UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids at $2.2M FDV with $676k Raydium liquidity. At least 9 other clones exist, including C8GH..., which was created 4 minutes before this one and reports $1M of liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal counts about 50 unique buyers and 51 unique sellers in 1h behind 1,375 buys and 1,342 sells, and 51 unique sellers in 6h against 1,945 buyers. Volume is 15x liquidity, buys and sells are almost exactly balanced, and the metadata copies the real project's links.\",\"uncertainty\":\"GeckoTerminal may cap unique-counter values at 50. I could not see X or Telegram activity.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 0% locked or burned, and the deployer can pull it at any time (RugCheck rates this 'danger').\",\"The volume looks like wash trading or bots.\",\"This is a clone of a $2M canonical token, so buyers who check the contract will leave.\",\"There are few LP providers.\"]},\"counterargument\":\"Clones of a hot launch sometimes get a lot of mistaken buying, and a $26k mcap only has to reach about $52k to double. The price is up 163% in 6h, and dev, sniper and bundler holdings are all reported as zero. A few more waves of confused buyers could double it before any pull.\",\"unknowns\":[\"Who controls the unlocked LP\",\"Whether any X or Telegram call channels are pushing this contract\",\"Whether the GeckoTerminal unique-wallet counts are capped\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address found nothing. X returned a 402 error and DexScreener a 403. The kids.fun GitHub and the GeckoTerminal API for both this token and the canonical one were reachable. I did not run separate Reddit, Telegram or Discord searches, and web searches for the name only turned up old tokens.\"},\"thesis\":\"This is a ticker-hijack clone of the kids.fun Shartcoin. Its LP is unlocked and its volume looks like wash trading from about 50 wallets. The narrative is real but belongs to the canonical UpBB...kids token. This clone is far more likely to be pulled than to double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://github.com/YokaiCapital/kids-launchpad\",\"what\":\"How kids.fun launches work: Raydium pool, locked LP, Shartcoin = Fartcoin+Buttcoin\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/tokens/UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids/pools\",\"what\":\"Canonical Shartcoin pools: $2.2M FDV, $676k liquidity\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/tokens/5xSYXdYWR8bBMU2jviiioedv8Jpc1847hhPUKx1qceji/info\",\"what\":\"This clone's copied kids.fun and YokaiCapital metadata\"},{\"url\":\"https://www.kucoin.com/news/flash/trader-yokaicapital-accuses-solana-meme-projects-and-kols-of-bundled-trading-and-fraud\",\"what\":\"Background on YokaiCapital\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Shartcoin coin launched today on YokaiCapital's kids.fun launchpad. The launchpad pitches it as the \"child\" of Fartcoin and Buttcoin, with 2,500 SOL committed at launch. The real token is UpBB...kids (its address ends in \"kids\"). It trades on Raydium at about $2.2M FDV, with a $676k pool and $4.7M of volume in 24h. The token under review (5xSY...) is a different contract. Its pool on PumpSwap is 95 minutes old and its LP is 0% locked/burned. It copies the metadata: GeckoTerminal lists kids.fun and YokaiCapital's post as its socials. It trades at about $26k mcap with about $500k of volume in 1h on $34k of liquidity, which is 15x turnover. GeckoTerminal shows only about 50 unique buyers and 51 unique sellers behind about 2,700 trades in the last hour, and only 51 unique sellers over 6h against 1,945 \"buyers\". That pattern points to bot or wash volume and farmed holder counts, not organic demand. The creator's token status is \"creator_close\".",
+  "narrative": {
+   "description": "Shartcoin is the kids.fun launch that merges Fartcoin and Buttcoin. It is real and current: launched today, and the canonical token is up about 700% in 24h at around $2.2M.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A new launchpad from a known trader (YokaiCapital) debuted with a meme tied to Fartcoin. That drew attention to the canonical coin and a wave of same-name clones."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "This is only a name and metadata clone. kids.fun launches go to Raydium with a permanently locked LP, but this token sits on PumpSwap with an unlocked LP and a different contract. The attention belongs to UpBB...kids.",
+   "competing_tokens": "Canonical: UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids at $2.2M FDV with $676k Raydium liquidity. At least 9 other clones exist, including C8GH..., which was created 4 minutes before this one and reports $1M of liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal counts about 50 unique buyers and 51 unique sellers in 1h behind 1,375 buys and 1,342 sells, and 51 unique sellers in 6h against 1,945 buyers. Volume is 15x liquidity, buys and sells are almost exactly balanced, and the metadata copies the real project's links.",
+   "uncertainty": "GeckoTerminal may cap unique-counter values at 50. I could not see X or Telegram activity."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 0% locked or burned, and the deployer can pull it at any time (RugCheck rates this 'danger').",
+    "The volume looks like wash trading or bots.",
+    "This is a clone of a $2M canonical token, so buyers who check the contract will leave.",
+    "There are few LP providers."
+   ]
+  },
+  "counterargument": "Clones of a hot launch sometimes get a lot of mistaken buying, and a $26k mcap only has to reach about $52k to double. The price is up 163% in 6h, and dev, sniper and bundler holdings are all reported as zero. A few more waves of confused buyers could double it before any pull.",
+  "unknowns": [
+   "Who controls the unlocked LP",
+   "Whether any X or Telegram call channels are pushing this contract",
+   "Whether the GeckoTerminal unique-wallet counts are capped"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address found nothing. X returned a 402 error and DexScreener a 403. The kids.fun GitHub and the GeckoTerminal API for both this token and the canonical one were reachable. I did not run separate Reddit, Telegram or Discord searches, and web searches for the name only turned up old tokens."
+  },
+  "thesis": "This is a ticker-hijack clone of the kids.fun Shartcoin. Its LP is unlocked and its volume looks like wash trading from about 50 wallets. The narrative is real but belongs to the canonical UpBB...kids token. This clone is far more likely to be pulled than to double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://github.com/YokaiCapital/kids-launchpad",
+    "what": "How kids.fun launches work: Raydium pool, locked LP, Shartcoin = Fartcoin+Buttcoin"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/tokens/UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids/pools",
+    "what": "Canonical Shartcoin pools: $2.2M FDV, $676k liquidity"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/tokens/5xSYXdYWR8bBMU2jviiioedv8Jpc1847hhPUKx1qceji/info",
+    "what": "This clone's copied kids.fun and YokaiCapital metadata"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/trader-yokaicapital-accuses-solana-meme-projects-and-kols-of-bundled-trading-and-fraud",
+    "what": "Background on YokaiCapital"
+   }
+  ]
+ },
+ "ttft_ms": 4648,
+ "type": "result",
+ "duration_ms": 71825,
+ "uuid": "0df7e9bd-0122-438c-bfad-3d8419a16f6a",
+ "ttft_stream_ms": 926,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 927,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

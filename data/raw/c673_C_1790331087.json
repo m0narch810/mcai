@@ -1,0 +1,194 @@
+{
+ "duration_api_ms": 96472,
+ "stop_reason": "tool_use",
+ "session_id": "1ca2119c-6043-4f2f-9144-0a21564d1b8c",
+ "total_cost_usd": 0.38449760000000005,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 16905,
+  "cache_read_input_tokens": 87538,
+  "output_tokens": 5512,
+  "output_tokens_details": {
+   "thinking_tokens": 1801
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16905,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2844,
+    "cache_read_input_tokens": 17537,
+    "cache_creation_input_tokens": 1944,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1944
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 5512,
+   "cacheReadInputTokens": 87538,
+   "cacheCreationInputTokens": 16905,
+   "webSearchRequests": 0,
+   "costUSD": 0.26304360000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1801,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 58309,
+   "outputTokens": 2629,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.12145399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Pons\\\" (PONS) that is not the real Pons token. Its pool was created on PumpSwap about 36 minutes before detection. It borrows the name, ticker and X handle (@ponsdotfamily) of Pons Family, a real and popular launchpad on Robinhood Chain. Its description claims it was \\\"Created on ponsfamily.com/launchpad\\\", but that launchpad runs on Robinhood Chain. The real $PONS is already on Solana under a different contract (poNSfquKq512ApeYjVghwViSun4x1MhCqHVH2Paq4jN), bridged through Sunrise/Wormhole around Sep 1. This pool was not a pump.fun graduation (migrated_unix=0). Someone created it directly and seeded it with a lot of SOL. It now holds about 963 SOL (~$114k) against a $151k market cap. The LP is 0% locked, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\". In about 36 minutes the pool did $6.6M of volume (about 30x the market cap per hour) from 1,853 unique buyers but only 60 unique sellers. GMGN tags 47 bundler wallets that hold about 20% of top-trader share, and 14 other tokens use the same image. This looks like manufactured volume on a fake copy of a well-known token, with a large pile of SOL sitting in an unlocked pool that the pool creator can withdraw.\",\"narrative\":{\"description\":\"Borrowed story: Pons Family is a real, high-fee launchpad on Robinhood Chain that expanded to Solana (token issuance from Sep 20, and $PONS bridged to Solana via Sunrise around Sep 1). This token lives off that brand recognition.\",\"stage\":\"unclear\",\"potential\":\"moderate\",\"why_spreading\":\"People searching for 'PONS' on Solana DEX screeners may confuse this pool with the real token. The volume pattern (1,853 buyers vs 60 sellers, 47 bundlers, 30x hourly turnover) points to bot or wash volume rather than organic discovery. I found no posts about this specific contract.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"No legitimate reason. The real Solana $PONS is poNSfquKq512ApeYjVghwViSun4x1MhCqHVH2Paq4jN (Sunrise/Wormhole NTT). This contract falsely claims to come from Pons' launchpad and uses the official X handle as its social link.\",\"competing_tokens\":\"The real PONS on Solana (poNSfq...), a roughly $30M-cap token. Coinbase also lists other Solana PONS mints ending in 'pump' (7nrsh...pump, 6hy1x...pump).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,853 unique buyers vs 60 unique sellers, yet 3,900+ sell transactions, so a small set of wallets is selling over and over. 47 bundler wallets. $6.6M volume on a $151k cap. Pool created directly rather than graduated, with a large dev SOL seed and an unlocked LP held by a single provider. 14 duplicate images. The description misattributes the token to a platform on another chain.\",\"uncertainty\":\"No X data for this contract, and on-chain LP-owner identity was not verified directly.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked with a single provider; the pool holds ~963 SOL (~$114k) the creator can withdraw\",\"Creator holds 120T raw units and may own the LP\",\"Bundler and wash-trading volume pattern\",\"Fake copy of a real token; the real Pons team or community may call it out\",\"Doubling from here needs a ~$300k market cap on manufactured demand\"]},\"counterargument\":\"Liquidity is deep for its market cap, and the activity is large and still active (m5 volume about $1M, net buying). Copycats of hot brands sometimes run hard for an hour or two while buyers confuse them with the real token. The pool creator may keep inflating it before pulling, so a 2x to about $300k before a rug is possible. It is also possible, though I found no evidence for it, that Pons' own Solana issuance tooling launched this token.\",\"unknowns\":[\"Who owns the LP tokens (creator or someone else)\",\"Whether any Pons official account acknowledged or denied this token\",\"Whether the buyers are real users or a bot farm\",\"Price action in the 20 minutes between detection and entry\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"X search found posts about the real Pons/$PONS (Solana and Wormhole announcements) but nothing about this contract. A contract-address search returned nothing. X pages returned 402 and DexScreener returned 403. The project site describes a Robinhood Chain launchpad.\"},\"thesis\":\"This is a fake copy of the real Pons/$PONS token. The pool was created directly and holds about $114k of SOL in an unlocked LP with a single provider. Volume looks manufactured: 60 unique sellers against 1,853 buyers, plus 47 bundlers. The creator has a strong reason to pull liquidity soon, and the chance of a clean 2x before a -50% move or a rug is low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":75,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.ponsfamily.com/launchpad\",\"what\":\"Pons launchpad is on Robinhood Chain\"},{\"url\":\"https://airdropalert.com/blogs/what-is-pons-token/\",\"what\":\"Real $PONS is the Robinhood Chain launchpad token, ~$30M cap\"},{\"url\":\"https://x.com/wormhole/status/2094486628769177658\",\"what\":\"Real $PONS live on Solana via Sunrise/Wormhole NTT\"},{\"url\":\"https://x.com/solana/status/2094460897603588396\",\"what\":\"Solana announcement of real $PONS on Solana\"},{\"url\":\"https://www.kucoin.com/news/flash/pons-launches-token-issuance-on-solana-80-fees-distributed-via-x-money\",\"what\":\"Pons Solana token issuance, Sep 20\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/6bXcBN9e5zJ4K4h2GeztswfnGuMiLWK9bx44Va1grFFT\",\"what\":\"Pool holds ~963 SOL, unlocked liquidity, 39 min old\"},{\"url\":\"https://www.coinbase.com/price/pons-solana-7nrshhxj2ehxhahc6prdjrxsp13dzerjpes7wztfpump-token\",\"what\":\"Other Solana PONS mints exist\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Pons\" (PONS) that is not the real Pons token. Its pool was created on PumpSwap about 36 minutes before detection. It borrows the name, ticker and X handle (@ponsdotfamily) of Pons Family, a real and popular launchpad on Robinhood Chain. Its description claims it was \"Created on ponsfamily.com/launchpad\", but that launchpad runs on Robinhood Chain. The real $PONS is already on Solana under a different contract (poNSfquKq512ApeYjVghwViSun4x1MhCqHVH2Paq4jN), bridged through Sunrise/Wormhole around Sep 1. This pool was not a pump.fun graduation (migrated_unix=0). Someone created it directly and seeded it with a lot of SOL. It now holds about 963 SOL (~$114k) against a $151k market cap. The LP is 0% locked, and RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\". In about 36 minutes the pool did $6.6M of volume (about 30x the market cap per hour) from 1,853 unique buyers but only 60 unique sellers. GMGN tags 47 bundler wallets that hold about 20% of top-trader share, and 14 other tokens use the same image. This looks like manufactured volume on a fake copy of a well-known token, with a large pile of SOL sitting in an unlocked pool that the pool creator can withdraw.",
+  "narrative": {
+   "description": "Borrowed story: Pons Family is a real, high-fee launchpad on Robinhood Chain that expanded to Solana (token issuance from Sep 20, and $PONS bridged to Solana via Sunrise around Sep 1). This token lives off that brand recognition.",
+   "stage": "unclear",
+   "potential": "moderate",
+   "why_spreading": "People searching for 'PONS' on Solana DEX screeners may confuse this pool with the real token. The volume pattern (1,853 buyers vs 60 sellers, 47 bundlers, 30x hourly turnover) points to bot or wash volume rather than organic discovery. I found no posts about this specific contract."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "No legitimate reason. The real Solana $PONS is poNSfquKq512ApeYjVghwViSun4x1MhCqHVH2Paq4jN (Sunrise/Wormhole NTT). This contract falsely claims to come from Pons' launchpad and uses the official X handle as its social link.",
+   "competing_tokens": "The real PONS on Solana (poNSfq...), a roughly $30M-cap token. Coinbase also lists other Solana PONS mints ending in 'pump' (7nrsh...pump, 6hy1x...pump).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,853 unique buyers vs 60 unique sellers, yet 3,900+ sell transactions, so a small set of wallets is selling over and over. 47 bundler wallets. $6.6M volume on a $151k cap. Pool created directly rather than graduated, with a large dev SOL seed and an unlocked LP held by a single provider. 14 duplicate images. The description misattributes the token to a platform on another chain.",
+   "uncertainty": "No X data for this contract, and on-chain LP-owner identity was not verified directly."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked with a single provider; the pool holds ~963 SOL (~$114k) the creator can withdraw",
+    "Creator holds 120T raw units and may own the LP",
+    "Bundler and wash-trading volume pattern",
+    "Fake copy of a real token; the real Pons team or community may call it out",
+    "Doubling from here needs a ~$300k market cap on manufactured demand"
+   ]
+  },
+  "counterargument": "Liquidity is deep for its market cap, and the activity is large and still active (m5 volume about $1M, net buying). Copycats of hot brands sometimes run hard for an hour or two while buyers confuse them with the real token. The pool creator may keep inflating it before pulling, so a 2x to about $300k before a rug is possible. It is also possible, though I found no evidence for it, that Pons' own Solana issuance tooling launched this token.",
+  "unknowns": [
+   "Who owns the LP tokens (creator or someone else)",
+   "Whether any Pons official account acknowledged or denied this token",
+   "Whether the buyers are real users or a bot farm",
+   "Price action in the 20 minutes between detection and entry"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "X search found posts about the real Pons/$PONS (Solana and Wormhole announcements) but nothing about this contract. A contract-address search returned nothing. X pages returned 402 and DexScreener returned 403. The project site describes a Robinhood Chain launchpad."
+  },
+  "thesis": "This is a fake copy of the real Pons/$PONS token. The pool was created directly and holds about $114k of SOL in an unlocked LP with a single provider. Volume looks manufactured: 60 unique sellers against 1,853 buyers, plus 47 bundlers. The creator has a strong reason to pull liquidity soon, and the chance of a clean 2x before a -50% move or a rug is low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 75,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.ponsfamily.com/launchpad",
+    "what": "Pons launchpad is on Robinhood Chain"
+   },
+   {
+    "url": "https://airdropalert.com/blogs/what-is-pons-token/",
+    "what": "Real $PONS is the Robinhood Chain launchpad token, ~$30M cap"
+   },
+   {
+    "url": "https://x.com/wormhole/status/2094486628769177658",
+    "what": "Real $PONS live on Solana via Sunrise/Wormhole NTT"
+   },
+   {
+    "url": "https://x.com/solana/status/2094460897603588396",
+    "what": "Solana announcement of real $PONS on Solana"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/pons-launches-token-issuance-on-solana-80-fees-distributed-via-x-money",
+    "what": "Pons Solana token issuance, Sep 20"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/6bXcBN9e5zJ4K4h2GeztswfnGuMiLWK9bx44Va1grFFT",
+    "what": "Pool holds ~963 SOL, unlocked liquidity, 39 min old"
+   },
+   {
+    "url": "https://www.coinbase.com/price/pons-solana-7nrshhxj2ehxhahc6prdjrxsp13dzerjpes7wztfpump-token",
+    "what": "Other Solana PONS mints exist"
+   }
+  ]
+ },
+ "ttft_ms": 3861,
+ "type": "result",
+ "duration_ms": 83220,
+ "uuid": "80ff4a53-7de3-4335-8e6f-a995d6450d6e",
+ "ttft_stream_ms": 844,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 844,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

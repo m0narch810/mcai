@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 46085,
+ "stop_reason": "tool_use",
+ "session_id": "6bd161a0-f4c6-4f33-9805-5fbc591a91d4",
+ "total_cost_usd": 0.25618680000000005,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 15320,
+  "cache_read_input_tokens": 24804,
+  "output_tokens": 3075,
+  "output_tokens_details": {
+   "thinking_tokens": 606
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15320,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2536,
+    "cache_read_input_tokens": 13556,
+    "cache_creation_input_tokens": 1764,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1764
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3075,
+   "cacheReadInputTokens": 24804,
+   "cacheCreationInputTokens": 15320,
+   "webSearchRequests": 0,
+   "costUSD": 0.1890448,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 606,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 31872,
+   "outputTokens": 1054,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06714200000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"goon\\\" is a pump.fun coin that moved to PumpSwap about 15 minutes before detection and is up about 2,290% in its first hour, at roughly $1.2M market cap on about $99k of liquidity (DexScreener). The ~7,600 trades add up to only about $49k of volume, so the average trade is about $6. That pattern points to swarms of tiny bot transactions, not organic buying. One wallet not labelled as an insider (EYiAw...) holds 14.86% of supply. That matches GMGN's dev_team_hold_rate (0.149), bundler share (0.149) and sniper hold rate (0.149), so one team or bundle cluster likely holds about 15%. RugCheck warns of high holder correlation. GMGN puts the 'entrapment' trader share at 0.79. The coin has no DexScreener profile and no website (the link is an Urban Dictionary definition). Its only social is an X community link, and its image is duplicated 89 times. It shares its generic ticker with at least three live 'goon' coins, including one at $12.4M mcap. The coin is also above the $300k band because this is a selftest.\",\"narrative\":{\"description\":\"A generic 'goon' internet-slang meme with no specific current event behind it. pump.fun's own X account has long used 'never goon' as a running joke.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The move looks driven by fresh-migration bot and bundle activity, not by a story.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. It is one of many same-name 'goon' deploys, with a reused image (89 duplicates) and only an X community link.\",\"competing_tokens\":\"6RHXf...pump goon ($12.4M mcap, $325k liquidity) is the larger and older one. HSUMi...pump goon ($1.1M) and 4FDaP... goon ($1.5M) are also live. This coin is not the canonical one.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 7,600 trades for about $49k of volume (roughly $6 per trade) suggests micro-transaction bot spam. One cluster holds about 15% (dev team, bundler and sniper rates are all 0.149), and RugCheck flags high holder correlation. The entrapment trader share is 0.79. There are no smart-money or KOL wallets and the coin has only 61 GMGN page visits.\",\"uncertainty\":\"I have no X post data. The coin's X community exists, but I could not see how active it is.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One unlabelled wallet or bundle cluster holds about 15% of supply and can dump into $99k of liquidity\",\"Up about 23x already, with a mcap/liquidity ratio of about 12\",\"Volume looks bot-inflated\",\"Generic ticker with larger same-name competitors\"]},\"counterargument\":\"Fresh migrations with 1,600+ unique buyers sometimes keep running on momentum. Mint and freeze authority are renounced and the LP is burned, so liquidity cannot be pulled. The 'goon' meme has lasting degen appeal, and a 2x from $1.2M only needs about $2.4M.\",\"unknowns\":[\"What the X community contains and how active it is\",\"Who holds the 14.86% wallet and whether it is the dev's bundle\",\"Whether the unique-buyer counts are real people or bot wallets\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract address search returned nothing, and site:x.com turned up only pump.fun 'never goon' posts plus an unrelated GoonCoinSol account. The 'website' is an Urban Dictionary page. I used DexScreener's API to refresh the market data. This was a time-limited selftest.\"},\"thesis\":\"A bot- and bundle-driven fresh-migration pump on a generic, duplicated ticker, already up about 23x, with about 15% of supply in one clustered wallet and no organic narrative. It is more likely to fade or get dumped than to double again.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":35,\"survival_score\":40,\"attention_score\":35,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/25nV9uMXjcqRwGL9yQZ1V2gQwHhkuwtSL98AtFDdpump\",\"what\":\"Current mcap $1.21M, liquidity $99.9k, +2,290% h1, h24 volume $49.6k\"},{\"url\":\"https://x.com/pumpdotfun/status/1860021870948704280\",\"what\":\"pump.fun's 'never goon' meme, showing the slang is generic\"},{\"url\":\"https://www.urbandictionary.com/define.php?term=goon\",\"what\":\"The project's 'website' is an Urban Dictionary definition\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"goon\" is a pump.fun coin that moved to PumpSwap about 15 minutes before detection and is up about 2,290% in its first hour, at roughly $1.2M market cap on about $99k of liquidity (DexScreener). The ~7,600 trades add up to only about $49k of volume, so the average trade is about $6. That pattern points to swarms of tiny bot transactions, not organic buying. One wallet not labelled as an insider (EYiAw...) holds 14.86% of supply. That matches GMGN's dev_team_hold_rate (0.149), bundler share (0.149) and sniper hold rate (0.149), so one team or bundle cluster likely holds about 15%. RugCheck warns of high holder correlation. GMGN puts the 'entrapment' trader share at 0.79. The coin has no DexScreener profile and no website (the link is an Urban Dictionary definition). Its only social is an X community link, and its image is duplicated 89 times. It shares its generic ticker with at least three live 'goon' coins, including one at $12.4M mcap. The coin is also above the $300k band because this is a selftest.",
+  "narrative": {
+   "description": "A generic 'goon' internet-slang meme with no specific current event behind it. pump.fun's own X account has long used 'never goon' as a running joke.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The move looks driven by fresh-migration bot and bundle activity, not by a story."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. It is one of many same-name 'goon' deploys, with a reused image (89 duplicates) and only an X community link.",
+   "competing_tokens": "6RHXf...pump goon ($12.4M mcap, $325k liquidity) is the larger and older one. HSUMi...pump goon ($1.1M) and 4FDaP... goon ($1.5M) are also live. This coin is not the canonical one.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 7,600 trades for about $49k of volume (roughly $6 per trade) suggests micro-transaction bot spam. One cluster holds about 15% (dev team, bundler and sniper rates are all 0.149), and RugCheck flags high holder correlation. The entrapment trader share is 0.79. There are no smart-money or KOL wallets and the coin has only 61 GMGN page visits.",
+   "uncertainty": "I have no X post data. The coin's X community exists, but I could not see how active it is."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One unlabelled wallet or bundle cluster holds about 15% of supply and can dump into $99k of liquidity",
+    "Up about 23x already, with a mcap/liquidity ratio of about 12",
+    "Volume looks bot-inflated",
+    "Generic ticker with larger same-name competitors"
+   ]
+  },
+  "counterargument": "Fresh migrations with 1,600+ unique buyers sometimes keep running on momentum. Mint and freeze authority are renounced and the LP is burned, so liquidity cannot be pulled. The 'goon' meme has lasting degen appeal, and a 2x from $1.2M only needs about $2.4M.",
+  "unknowns": [
+   "What the X community contains and how active it is",
+   "Who holds the 14.86% wallet and whether it is the dev's bundle",
+   "Whether the unique-buyer counts are real people or bot wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The contract address search returned nothing, and site:x.com turned up only pump.fun 'never goon' posts plus an unrelated GoonCoinSol account. The 'website' is an Urban Dictionary page. I used DexScreener's API to refresh the market data. This was a time-limited selftest."
+  },
+  "thesis": "A bot- and bundle-driven fresh-migration pump on a generic, duplicated ticker, already up about 23x, with about 15% of supply in one clustered wallet and no organic narrative. It is more likely to fade or get dumped than to double again.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 35,
+  "survival_score": 40,
+  "attention_score": 35,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/25nV9uMXjcqRwGL9yQZ1V2gQwHhkuwtSL98AtFDdpump",
+    "what": "Current mcap $1.21M, liquidity $99.9k, +2,290% h1, h24 volume $49.6k"
+   },
+   {
+    "url": "https://x.com/pumpdotfun/status/1860021870948704280",
+    "what": "pump.fun's 'never goon' meme, showing the slang is generic"
+   },
+   {
+    "url": "https://www.urbandictionary.com/define.php?term=goon",
+    "what": "The project's 'website' is an Urban Dictionary definition"
+   }
+  ]
+ },
+ "ttft_ms": 2002,
+ "type": "result",
+ "duration_ms": 38159,
+ "uuid": "ac762150-7671-4054-abf1-360ed1e075f5",
+ "ttft_stream_ms": 665,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 665,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

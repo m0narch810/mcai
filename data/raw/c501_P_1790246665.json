@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 23971,
+ "stop_reason": "tool_use",
+ "session_id": "91e9a63d-6b98-46d8-9560-04acab3296ee",
+ "total_cost_usd": 0.1052788,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7053,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2423,
+  "output_tokens_details": {
+   "thinking_tokens": 376
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7053,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2423,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7053,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7053
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2423,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7053,
+   "webSearchRequests": 0,
+   "costUSD": 0.1052788,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 376,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PINF is a pump.fun coin that left its bonding curve for PumpSwap 3 seconds after it was created. That almost certainly means the dev or a bundle bought out the whole curve at launch, and GMGN counts 236 bundler wallets. About 38 minutes later it had done about $2.8M in volume against about $45k of liquidity, a 62x turnover in one hour. The price went up about 4.3x to a high near $465k market cap. It has since fallen to about $201k: -31% to -44% over the last 5 minutes and -40% over 15 minutes. Buys and sells are roughly even, and in the last 5 minutes there are more unique sellers than buyers. The rule fired after the peak, while the price was falling.\",\"narrative\":{\"description\":\"The name is 'PINF' and the description is 'Call the pinf'. It looks like a meme or inside joke with no clear outside hook visible in the packet. It has a website, an X account and a Telegram, and a DexScreener profile with no paid ads or boosts. The name is not an obvious reference to a trending real-world event.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The spread is mostly launch mechanics: a bundled instant migration, then a burst of bots and fresh wallets (30% of traders are fresh wallets, 236 are bundlers). There is no evidence of a story spreading outside the chart. There are only 90 GMGN page visits, which is low attention for $2.8M of volume.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"This is the only PINF with real liquidity and volume. It carries the official site and socials, and it is the one that reached a $465k all-time high.\",\"competing_tokens\":\"There are several copycat PINF tokens with zero liquidity. Most were created about 16 hours before this one; one was created 12 minutes after it and another about 27 minutes after. None has any meaningful volume.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Creation and migration are 3 seconds apart, so the curve was bought out in a bundle. GMGN flags 236 bundler wallets, 418 fresh wallets and 26 snipers. Turnover is 62x liquidity. There are 0 smart-money signals, 0 KOL (renowned) wallets and 0 degen calls. On the other side, the holders are fairly spread out: the top 10 hold 13.9%, the creator holds 0.22%, the LP is burned, and about 2,000 unique buyers traded.\",\"uncertainty\":\"Bundlers may have spread their supply across many small wallets, so the low top-10 share could hide concentrated control. There is no X data to show whether real communities are joining.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The price has fallen about 57% from its high and is still dropping fast; the rule fired after the peak.\",\"A bundled instant migration means insiders probably spread supply across many wallets and are selling into buyers.\",\"Heavy bot churn: 62x turnover on about $45k of liquidity.\",\"A double from entry would need roughly a new all-time high above $400k market cap, while sellers outnumber buyers.\",\"The LP is burned, so the pool cannot be pulled, but the pair can still bleed out to nothing.\"]},\"counterargument\":\"About 2,000 unique buyers in the first hour is a large crowd. Minting and freeze rights are renounced, the LP is burned, the creator holds almost nothing, and the website and socials exist. The coin already showed it can reach a $465k high. If the -40% flush clears out the bundlers and the price settles near $100k-150k by entry, the entry would be much lower. A second leg back to the old high would then be a 2x or more, and second pumps after an early flush happen fairly often on coins with this much activity.\",\"unknowns\":[\"The price at entry, about 25 minutes after detection.\",\"Whether the bundler wallets have mostly finished selling.\",\"How much activity there is on X and Telegram, and whether real callers are involved.\",\"Whether the dev's X account ran the earlier PINF tokens that went nowhere.\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses only the evidence packet.\"},\"thesis\":\"This is a bundled launch that migrated instantly and has already peaked. The rule fired while the price was falling hard after a 4x run, and the heavy volume looks like bots and bundlers selling rather than new demand. A +100% move from entry would need a new high while sellers are in control. The burned LP makes a literal liquidity pull unlikely, but a slow bleed to a dead pair within 6 hours is quite plausible.\",\"continuation_view\":\"fade\",\"p_runner\":11,\"p_rug\":45,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "PINF is a pump.fun coin that left its bonding curve for PumpSwap 3 seconds after it was created. That almost certainly means the dev or a bundle bought out the whole curve at launch, and GMGN counts 236 bundler wallets. About 38 minutes later it had done about $2.8M in volume against about $45k of liquidity, a 62x turnover in one hour. The price went up about 4.3x to a high near $465k market cap. It has since fallen to about $201k: -31% to -44% over the last 5 minutes and -40% over 15 minutes. Buys and sells are roughly even, and in the last 5 minutes there are more unique sellers than buyers. The rule fired after the peak, while the price was falling.",
+  "narrative": {
+   "description": "The name is 'PINF' and the description is 'Call the pinf'. It looks like a meme or inside joke with no clear outside hook visible in the packet. It has a website, an X account and a Telegram, and a DexScreener profile with no paid ads or boosts. The name is not an obvious reference to a trending real-world event.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The spread is mostly launch mechanics: a bundled instant migration, then a burst of bots and fresh wallets (30% of traders are fresh wallets, 236 are bundlers). There is no evidence of a story spreading outside the chart. There are only 90 GMGN page visits, which is low attention for $2.8M of volume."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "This is the only PINF with real liquidity and volume. It carries the official site and socials, and it is the one that reached a $465k all-time high.",
+   "competing_tokens": "There are several copycat PINF tokens with zero liquidity. Most were created about 16 hours before this one; one was created 12 minutes after it and another about 27 minutes after. None has any meaningful volume.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Creation and migration are 3 seconds apart, so the curve was bought out in a bundle. GMGN flags 236 bundler wallets, 418 fresh wallets and 26 snipers. Turnover is 62x liquidity. There are 0 smart-money signals, 0 KOL (renowned) wallets and 0 degen calls. On the other side, the holders are fairly spread out: the top 10 hold 13.9%, the creator holds 0.22%, the LP is burned, and about 2,000 unique buyers traded.",
+   "uncertainty": "Bundlers may have spread their supply across many small wallets, so the low top-10 share could hide concentrated control. There is no X data to show whether real communities are joining."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The price has fallen about 57% from its high and is still dropping fast; the rule fired after the peak.",
+    "A bundled instant migration means insiders probably spread supply across many wallets and are selling into buyers.",
+    "Heavy bot churn: 62x turnover on about $45k of liquidity.",
+    "A double from entry would need roughly a new all-time high above $400k market cap, while sellers outnumber buyers.",
+    "The LP is burned, so the pool cannot be pulled, but the pair can still bleed out to nothing."
+   ]
+  },
+  "counterargument": "About 2,000 unique buyers in the first hour is a large crowd. Minting and freeze rights are renounced, the LP is burned, the creator holds almost nothing, and the website and socials exist. The coin already showed it can reach a $465k high. If the -40% flush clears out the bundlers and the price settles near $100k-150k by entry, the entry would be much lower. A second leg back to the old high would then be a 2x or more, and second pumps after an early flush happen fairly often on coins with this much activity.",
+  "unknowns": [
+   "The price at entry, about 25 minutes after detection.",
+   "Whether the bundler wallets have mostly finished selling.",
+   "How much activity there is on X and Telegram, and whether real callers are involved.",
+   "Whether the dev's X account ran the earlier PINF tokens that went nowhere."
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses only the evidence packet."
+  },
+  "thesis": "This is a bundled launch that migrated instantly and has already peaked. The rule fired while the price was falling hard after a 4x run, and the heavy volume looks like bots and bundlers selling rather than new demand. A +100% move from entry would need a new high while sellers are in control. The burned LP makes a literal liquidity pull unlikely, but a slow bleed to a dead pair within 6 hours is quite plausible.",
+  "continuation_view": "fade",
+  "p_runner": 11,
+  "p_rug": 45,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4808,
+ "type": "result",
+ "duration_ms": 24020,
+ "uuid": "e7a9f2fb-485c-4285-a58e-5ecc99166781",
+ "ttft_stream_ms": 887,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 887,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

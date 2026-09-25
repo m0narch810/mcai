@@ -1,0 +1,179 @@
+{
+ "duration_api_ms": 61883,
+ "stop_reason": "tool_use",
+ "session_id": "a1e178fc-e257-4c13-a6d5-5e1fa0f2116f",
+ "total_cost_usd": 0.304003,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14266,
+  "cache_read_input_tokens": 40360,
+  "output_tokens": 4519,
+  "output_tokens_details": {
+   "thinking_tokens": 369
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14266,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1935,
+    "cache_read_input_tokens": 14855,
+    "cache_creation_input_tokens": 1987,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1987
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4519,
+   "cacheReadInputTokens": 40360,
+   "cacheCreationInputTokens": 14266,
+   "webSearchRequests": 0,
+   "costUSD": 0.21261200000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 369,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 43466,
+   "outputTokens": 1585,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.091391,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"This is not a memecoin pump. The token price (~$5.44) matches Snap Inc. stock, which traded between $5.25 and $5.65 on 2026-09-24 (Yahoo Finance). The volume spike came right at the US market close (20:00 UTC). That fits arbitrage or rebalancing flow, not social promotion. There are no paid DexScreener boosts. The deployer was funded from a wallet labelled 'Backpack 2', and the creator's best token reached a $12.7M ATH, which fits other Backpack tokenized stocks.\",\"uncertainty\":\"I did not verify on-chain that the mint is Backpack's official SNAP token. Backpack's public listings I found did not name SNAP explicitly.\"},\"continuation_view\":\"neutral\",\"counterargument\":\"If this is not Backpack's official token but an impostor copying the vanity prefix, it could be a rug instead of a pegged asset. The 'Backpack 2' funding label and the price matching SNAP stock argue strongly against that. Even then, a 2x is still very unlikely, because an impostor pinned to the stock price would be unwound or dumped, not pumped.\",\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Price is pegged to SNAP equity by 1:1 redemption and arbitrage, so a 2x in 6h would need SNAP stock to double\",\"Mint and freeze authority are enabled, which is standard for regulated tokenized securities but also means the issuer controls supply\",\"Only $18k of liquidity in this pool\",\"US market is closed for the whole window, so there is no underlying price discovery\"]},\"narrative\":{\"description\":\"Backpack Securities / Sunrise tokenized US stocks on Solana. This token is Snap Inc. equity, redeemable 1:1. SNAP stock fell about 6% today after backlash over its SPECS glasses.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"The activity spike happened at the 4pm ET market close, most likely arbitrage or rebalancing against the underlying stock. No memetic attention was found.\"},\"observation_window\":\"6h\",\"p_runner\":1,\"p_rug\":3,\"research_confidence\":\"high\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address returned nothing useful. News covers the Backpack Securities tokenized stock program and today's SNAP stock move. Telegram and Discord were not searched, because this is a tokenized equity whose price is set by the stock, not by community attention.\"},\"sources\":[{\"url\":\"https://www.kucoin.com/news/flash/sunrise-adds-20-new-tokenized-stocks-on-solana-via-backpack-securities\",\"what\":\"Backpack Securities tokenized stocks on Solana\"},{\"url\":\"https://support.backpack.exchange/backpack-securities/tokenized-securities\",\"what\":\"Backpack tokenized securities, 1:1 redeemable\"},{\"url\":\"https://finance.yahoo.com/markets/stocks/articles/snap-stock-hits-over-1-053716244.html\",\"what\":\"SNAP stock at a 1-month low, price around $5.2-5.6\"},{\"url\":\"https://solanacompass.com/news/backpack-securities-opens-mint-and-redeem-api-to-all-solana-developers\",\"what\":\"Backpack mint/redeem API\"}],\"thesis\":\"SNAP is a tokenized share of Snap Inc. from Backpack Securities, and its price tracks the stock (about $5.4). The rule fired on arbitrage or rebalancing volume at the US market close. It cannot plausibly double in 6 hours while the underlying market is closed. A rug is unlikely if it is official, and there is a small tail risk if it is an impostor.\",\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The mint address uses the Backpack 'SNAP...' vanity prefix, the deployer was funded from a Backpack wallet, it has 6.7k holders, and the price matches SNAP stock. It appears to be the canonical tokenized Snap stock.\",\"competing_tokens\":\"The other SNAP tickers (SnappedAI, Snapchat Coin, and one other) are dead and have no volume.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"unknowns\":[\"No on-chain confirmation that this mint is on Backpack's official list\",\"Who drove the volume spike at the close\"],\"what_is_happening\":\"A tokenized Snap Inc. stock (Backpack Securities) traded heavily around the 20:00 UTC US market close, on a day when SNAP stock fell about 6%. The token's price follows the equity.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "This is not a memecoin pump. The token price (~$5.44) matches Snap Inc. stock, which traded between $5.25 and $5.65 on 2026-09-24 (Yahoo Finance). The volume spike came right at the US market close (20:00 UTC). That fits arbitrage or rebalancing flow, not social promotion. There are no paid DexScreener boosts. The deployer was funded from a wallet labelled 'Backpack 2', and the creator's best token reached a $12.7M ATH, which fits other Backpack tokenized stocks.",
+   "uncertainty": "I did not verify on-chain that the mint is Backpack's official SNAP token. Backpack's public listings I found did not name SNAP explicitly."
+  },
+  "continuation_view": "neutral",
+  "counterargument": "If this is not Backpack's official token but an impostor copying the vanity prefix, it could be a rug instead of a pegged asset. The 'Backpack 2' funding label and the price matching SNAP stock argue strongly against that. Even then, a 2x is still very unlikely, because an impostor pinned to the stock price would be unwound or dumped, not pumped.",
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Price is pegged to SNAP equity by 1:1 redemption and arbitrage, so a 2x in 6h would need SNAP stock to double",
+    "Mint and freeze authority are enabled, which is standard for regulated tokenized securities but also means the issuer controls supply",
+    "Only $18k of liquidity in this pool",
+    "US market is closed for the whole window, so there is no underlying price discovery"
+   ]
+  },
+  "narrative": {
+   "description": "Backpack Securities / Sunrise tokenized US stocks on Solana. This token is Snap Inc. equity, redeemable 1:1. SNAP stock fell about 6% today after backlash over its SPECS glasses.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "The activity spike happened at the 4pm ET market close, most likely arbitrage or rebalancing against the underlying stock. No memetic attention was found."
+  },
+  "observation_window": "6h",
+  "p_runner": 1,
+  "p_rug": 3,
+  "research_confidence": "high",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address returned nothing useful. News covers the Backpack Securities tokenized stock program and today's SNAP stock move. Telegram and Discord were not searched, because this is a tokenized equity whose price is set by the stock, not by community attention."
+  },
+  "sources": [
+   {
+    "url": "https://www.kucoin.com/news/flash/sunrise-adds-20-new-tokenized-stocks-on-solana-via-backpack-securities",
+    "what": "Backpack Securities tokenized stocks on Solana"
+   },
+   {
+    "url": "https://support.backpack.exchange/backpack-securities/tokenized-securities",
+    "what": "Backpack tokenized securities, 1:1 redeemable"
+   },
+   {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/snap-stock-hits-over-1-053716244.html",
+    "what": "SNAP stock at a 1-month low, price around $5.2-5.6"
+   },
+   {
+    "url": "https://solanacompass.com/news/backpack-securities-opens-mint-and-redeem-api-to-all-solana-developers",
+    "what": "Backpack mint/redeem API"
+   }
+  ],
+  "thesis": "SNAP is a tokenized share of Snap Inc. from Backpack Securities, and its price tracks the stock (about $5.4). The rule fired on arbitrage or rebalancing volume at the US market close. It cannot plausibly double in 6 hours while the underlying market is closed. A rug is unlikely if it is official, and there is a small tail risk if it is an impostor.",
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The mint address uses the Backpack 'SNAP...' vanity prefix, the deployer was funded from a Backpack wallet, it has 6.7k holders, and the price matches SNAP stock. It appears to be the canonical tokenized Snap stock.",
+   "competing_tokens": "The other SNAP tickers (SnappedAI, Snapchat Coin, and one other) are dead and have no volume.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "unknowns": [
+   "No on-chain confirmation that this mint is on Backpack's official list",
+   "Who drove the volume spike at the close"
+  ],
+  "what_is_happening": "A tokenized Snap Inc. stock (Backpack Securities) traded heavily around the 20:00 UTC US market close, on a day when SNAP stock fell about 6%. The token's price follows the equity."
+ },
+ "ttft_ms": 2799,
+ "type": "result",
+ "duration_ms": 50541,
+ "uuid": "a891728d-08c6-4e01-85e6-0848f3a081a5",
+ "ttft_stream_ms": 736,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 736,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

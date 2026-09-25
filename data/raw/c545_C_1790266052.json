@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 69114,
+ "stop_reason": "tool_use",
+ "session_id": "1cea1a95-15c0-43d6-aa52-6aaf62317ad4",
+ "total_cost_usd": 0.32548659999999996,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 15168,
+  "cache_read_input_tokens": 56763,
+  "output_tokens": 3491,
+  "output_tokens_details": {
+   "thinking_tokens": 388
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15168,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2334,
+    "cache_read_input_tokens": 16231,
+    "cache_creation_input_tokens": 1513,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1513
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3491,
+   "cacheReadInputTokens": 56763,
+   "cacheCreationInputTokens": 15168,
+   "webSearchRequests": 0,
+   "costUSD": 0.20255660000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 388,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 61950,
+   "outputTokens": 2196,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.12292999999999998,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BOARDCAT (\\\"Cat on Board\\\") is a pump.fun coin that graduated to PumpSwap about 41 minutes before detection. It has a generic \\\"captain cat\\\" theme and no event behind it. In about 40 minutes it did roughly $710k of volume across about 12.8k trades, averaging around $55 per trade, which is typical of bot or volume-bot flow rather than a crowd buying in. Price peaked near $0.000355 (ATH market cap about $355k) and has been falling hard since. At detection it was $0.000204 (-18% over 5 minutes). About 3 minutes later DexScreener showed $0.000161, a market cap of about $161k, and -43% over 5 minutes, so it is down about 55% from its high. Promotion is heavy: 30 paid DexScreener boosts, an updated paid profile, and a community-takeover flag. The project's X account was renamed from BasedCatSolX, so it is recycled. The Telegram group has 5 subscribers. A same-name BOARDCAT launched shortly before this one did $130k of volume and is now worth about $2k.\",\"narrative\":{\"description\":\"A generic cat mascot with a 'captain/boarding' theme. I found no news, viral clip or cultural event that 'Cat on Board' refers to. September 2026 cat news was about the 'Cat in the Hat' trend and unrelated stories.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The flow looks bought, not organic: paid DexScreener boosts, likely volume bots, and graduation momentum. No organic social discussion turned up anywhere I searched.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The project website lists this contract address, and this token holds almost all of the volume and liquidity. But the name has no meaning outside the token itself.\",\"competing_tokens\":\"2wheWMMf...pump BOARDCAT: same name, launched about 21 minutes earlier, $130k volume in 1h, now about $2k market cap (dead). 4JGAk... CATONBOARD: dead. This looks like a serial relaunch pattern.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"30 active paid DexScreener boosts. A recycled X account (formerly BasedCatSolX), and the dev's X account shows 2 launched tokens and 1 deleted token post. The Telegram group has 5 subscribers. The contract address and ticker return no search results. About 9.5k buys averaging a few dozen dollars each fits bot volume. GMGN shows 14 page visits.\",\"uncertainty\":\"X is poorly indexed, so real organic posts could exist that I could not see. Holder spread looks wide (top10 at 1.7%), which could reflect real retail interest, or it could be many small bot-funded wallets.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Price is already about 55% below its ATH and still falling fast (-43% over 5 minutes at last check)\",\"The trade needs about 2x from the entry price, which means a new high above roughly $300k market cap with no narrative behind it\",\"Volume is probably inflated by bots and boosts, and will fade when paid promotion stops\",\"Pattern of relaunching after the earlier same-name token died\",\"LP is burned (100% locked), so a classic liquidity pull is unlikely. The main risk is the pair bleeding out to dead volume\"]},\"counterargument\":\"The LP is burned, holders are widely spread (top10 at 1.7%, 3.4k holders), and mint and freeze authority are both renounced. Pumpswap graduates sometimes dip 50% and then run to new highs as boosts keep attracting attention. If entry happens after the drop finishes (around $100-150k), a 2x only needs about $250-300k, which is close to where it traded minutes ago.\",\"unknowns\":[\"Content of X posts from CatonBoard_x and any KOL calls\",\"Whether the volume came from a volume bot or from real users\",\"Exact price at entry (16:29 UTC)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The website only confirms the contract address and is template copy. The Telegram group has 5 subscribers. Searches for the contract address and ticker returned nothing. I found a YouTube channel called 'Cat On Board' but could not fetch its contents, and nothing links it to the token.\"},\"thesis\":\"This is a paid-promotion, bot-volume graduation pump with no narrative and a recycled X account, from what looks like a relaunch pattern. It is already down about 55% from its high and still dropping. A 2x from entry is unlikely. The burned LP means the likelier failure is a slow bleed, not a liquidity pull.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.boardcat.site\",\"what\":\"Project site: template copy, lists the contract address\"},{\"url\":\"https://t.me/s/CatonBoard_portal\",\"what\":\"Telegram group with 5 subscribers, created today\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/AB6GPhv1N39418hYjCqAqnffT7Je4mrXRDjBXtu6pump\",\"what\":\"Live price about $0.000161, market cap $161k, -43% over 5 minutes\"},{\"url\":\"https://kesq.com/news/2026/09/23/palm-springs-police-psusd-share-statement-on-disturbing-cat-in-the-hat-viral-trend/\",\"what\":\"The only current cat news found, unrelated to this token\"}]}",
+ "structured_output": {
+  "what_is_happening": "BOARDCAT (\"Cat on Board\") is a pump.fun coin that graduated to PumpSwap about 41 minutes before detection. It has a generic \"captain cat\" theme and no event behind it. In about 40 minutes it did roughly $710k of volume across about 12.8k trades, averaging around $55 per trade, which is typical of bot or volume-bot flow rather than a crowd buying in. Price peaked near $0.000355 (ATH market cap about $355k) and has been falling hard since. At detection it was $0.000204 (-18% over 5 minutes). About 3 minutes later DexScreener showed $0.000161, a market cap of about $161k, and -43% over 5 minutes, so it is down about 55% from its high. Promotion is heavy: 30 paid DexScreener boosts, an updated paid profile, and a community-takeover flag. The project's X account was renamed from BasedCatSolX, so it is recycled. The Telegram group has 5 subscribers. A same-name BOARDCAT launched shortly before this one did $130k of volume and is now worth about $2k.",
+  "narrative": {
+   "description": "A generic cat mascot with a 'captain/boarding' theme. I found no news, viral clip or cultural event that 'Cat on Board' refers to. September 2026 cat news was about the 'Cat in the Hat' trend and unrelated stories.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The flow looks bought, not organic: paid DexScreener boosts, likely volume bots, and graduation momentum. No organic social discussion turned up anywhere I searched."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The project website lists this contract address, and this token holds almost all of the volume and liquidity. But the name has no meaning outside the token itself.",
+   "competing_tokens": "2wheWMMf...pump BOARDCAT: same name, launched about 21 minutes earlier, $130k volume in 1h, now about $2k market cap (dead). 4JGAk... CATONBOARD: dead. This looks like a serial relaunch pattern.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "30 active paid DexScreener boosts. A recycled X account (formerly BasedCatSolX), and the dev's X account shows 2 launched tokens and 1 deleted token post. The Telegram group has 5 subscribers. The contract address and ticker return no search results. About 9.5k buys averaging a few dozen dollars each fits bot volume. GMGN shows 14 page visits.",
+   "uncertainty": "X is poorly indexed, so real organic posts could exist that I could not see. Holder spread looks wide (top10 at 1.7%), which could reflect real retail interest, or it could be many small bot-funded wallets."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Price is already about 55% below its ATH and still falling fast (-43% over 5 minutes at last check)",
+    "The trade needs about 2x from the entry price, which means a new high above roughly $300k market cap with no narrative behind it",
+    "Volume is probably inflated by bots and boosts, and will fade when paid promotion stops",
+    "Pattern of relaunching after the earlier same-name token died",
+    "LP is burned (100% locked), so a classic liquidity pull is unlikely. The main risk is the pair bleeding out to dead volume"
+   ]
+  },
+  "counterargument": "The LP is burned, holders are widely spread (top10 at 1.7%, 3.4k holders), and mint and freeze authority are both renounced. Pumpswap graduates sometimes dip 50% and then run to new highs as boosts keep attracting attention. If entry happens after the drop finishes (around $100-150k), a 2x only needs about $250-300k, which is close to where it traded minutes ago.",
+  "unknowns": [
+   "Content of X posts from CatonBoard_x and any KOL calls",
+   "Whether the volume came from a volume bot or from real users",
+   "Exact price at entry (16:29 UTC)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The website only confirms the contract address and is template copy. The Telegram group has 5 subscribers. Searches for the contract address and ticker returned nothing. I found a YouTube channel called 'Cat On Board' but could not fetch its contents, and nothing links it to the token."
+  },
+  "thesis": "This is a paid-promotion, bot-volume graduation pump with no narrative and a recycled X account, from what looks like a relaunch pattern. It is already down about 55% from its high and still dropping. A 2x from entry is unlikely. The burned LP means the likelier failure is a slow bleed, not a liquidity pull.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.boardcat.site",
+    "what": "Project site: template copy, lists the contract address"
+   },
+   {
+    "url": "https://t.me/s/CatonBoard_portal",
+    "what": "Telegram group with 5 subscribers, created today"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/AB6GPhv1N39418hYjCqAqnffT7Je4mrXRDjBXtu6pump",
+    "what": "Live price about $0.000161, market cap $161k, -43% over 5 minutes"
+   },
+   {
+    "url": "https://kesq.com/news/2026/09/23/palm-springs-police-psusd-share-statement-on-disturbing-cat-in-the-hat-viral-trend/",
+    "what": "The only current cat news found, unrelated to this token"
+   }
+  ]
+ },
+ "ttft_ms": 1390,
+ "type": "result",
+ "duration_ms": 51183,
+ "uuid": "2cc992e3-fb3f-46bb-b088-e4c0d6ddc996",
+ "ttft_stream_ms": 773,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 773,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

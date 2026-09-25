@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 70312,
+ "stop_reason": "tool_use",
+ "session_id": "3631be01-1a0a-4048-9f49-551aefb2b838",
+ "total_cost_usd": 0.3228786,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15535,
+  "cache_read_input_tokens": 44513,
+  "output_tokens": 3820,
+  "output_tokens_details": {
+   "thinking_tokens": 810
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15535,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2751,
+    "cache_read_input_tokens": 16711,
+    "cache_creation_input_tokens": 1400,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1400
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3820,
+   "cacheReadInputTokens": 44513,
+   "cacheCreationInputTokens": 15535,
+   "webSearchRequests": 0,
+   "costUSD": 0.2096146,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 810,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 53999,
+   "outputTokens": 1853,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.113264,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"About 40 minutes before detection, someone created a PumpSwap pool (08:50 UTC, 2026-09-25) for a token named \\\"TikTok US\\\" ($TIKTOK). It reached about $3.6M volume in under an hour. The pool held $144k liquidity against only a $96k market cap, and the LP is 100% unlocked (RugCheck rates this \\\"danger\\\"). The pool was not a pump.fun graduation (migrated_unix=0, launchpad unknown), so it was seeded directly. GeckoTerminal counts 1,633 unique buyers but only 62 unique sellers, and those 62 wallets made 2,235 sells. GMGN flags 49 bundler wallets with about 20% of top-trader share, 0 smart or KOL wallets, and 0 degen calls. The token image is duplicated 5,136 times. The linked X handle (@tiktok_us, the real TikTok account) has been attached to 6,766 launched tokens. The packet lists 10 earlier tokens with the identical name and ticker \\\"TikTok US / TIKTOK\\\". All of them now have about $0.05 of liquidity and absurd leftover market caps ($2M to $191M), which is what a pulled LP leaves behind. This fits a serial liquidity-farm or rug template: seed large unlocked LP, drive volume and buyer counts with bots, then remove liquidity. I found no organic trigger. TikTok US news exists as ongoing background, but I found no specific catalyst today and no discussion of this contract.\",\"narrative\":{\"description\":\"Brand impersonation of TikTok / TikTok US. The TikTok US divestiture/joint-venture story is real, but it has been running for a long time. I found no fresh catalyst on 2026-09-25 tied to this token.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The activity looks bot-generated: buyers massively outnumber sellers, a small set of repeat sellers does most of the selling, 49 bundlers are flagged, and the name and ticker have been cloned many times.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None of the TikTok US clones is canonical, and TikTok has no official token. This is the latest in a series of identical 'TikTok US' deployments.\",\"competing_tokens\":\"At least 10 earlier 'TikTok US'/TIKTOK tokens in the packet, all with about $0.05 liquidity (pulled). Several other TikTok-named Solana tokens also appear on Solana Compass.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,633 unique buyers vs 62 unique sellers, and those 62 made 2,235 sells. 49 GMGN-flagged bundlers. Liquidity is larger than market cap and the LP is unlocked. The pool was seeded directly rather than migrated from pump.fun. 5,136 duplicate images. The X handle is linked to 6,766 tokens. Ten identical-name predecessors all have drained liquidity.\",\"uncertainty\":\"I could not load the DexScreener page (HTTP 403) and have no X post data. It is possible some buyers are real retail traders pulled in by the volume.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and held by a single provider, so it can be pulled at any moment\",\"A serial clone template whose predecessors all show pulled liquidity\",\"Bundler share of about 20%; likely wash or bot volume\",\"The pool was seeded directly, not a pump.fun graduation\"]},\"counterargument\":\"The operator may keep pumping the price with bot buys before pulling, to lure in more buyers. Price already doubled in the pool's first 37 minutes, so a further +100% before the pull is possible. Some predecessors show leftover market caps as high as $191M, which may mean their prices were driven far up before the LP was removed. If the operator keeps the pool alive longer to farm fees or volume, the trade could hit its take-profit first.\",\"unknowns\":[\"When the LP owner will remove liquidity\",\"How far earlier clones ran in price before they were pulled\",\"Whether any real X or Telegram call exists for this contract\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"News covers TikTok US generally, not this token. The linked 'project site' and X handle belong to the real TikTok, not the token. The contract-address search returned nothing. DexScreener returned 403; the GeckoTerminal API worked.\"},\"thesis\":\"This is a serial 'TikTok US' LP-farm clone. The liquidity is unlocked and seeded directly, the volume is bot-driven (1,633 buyers vs 62 sellers), and ten identical predecessors all show drained liquidity. It is very likely to be rugged within 6 hours. A further 2x before the pull is possible but unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":9,\"p_rug\":85,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/HD7cfByFk3QbFEhkU1pSmfAXUiJFy4HGckJhdym6XMFy\",\"what\":\"Pool reserve $142k, FDV $95.6k, 1,633 buyers vs 62 sellers, created 08:50 UTC\"},{\"url\":\"https://solanacompass.com/tokens/89RAitwPJBEfLK4Gcg5iv7AjFABHWNvoD5rkvRkvpump\",\"what\":\"Other TikTok-named Solana tokens\"},{\"url\":\"https://techcrunch.com/2026/01/23/heres-whats-you-should-know-about-the-us-tiktok-deal/\",\"what\":\"TikTok US deal background (not a new catalyst)\"},{\"url\":\"https://x.com/tiktok_us?lang=en\",\"what\":\"The real TikTok US X account, used as an impersonation link\"}]}",
+ "structured_output": {
+  "what_is_happening": "About 40 minutes before detection, someone created a PumpSwap pool (08:50 UTC, 2026-09-25) for a token named \"TikTok US\" ($TIKTOK). It reached about $3.6M volume in under an hour. The pool held $144k liquidity against only a $96k market cap, and the LP is 100% unlocked (RugCheck rates this \"danger\"). The pool was not a pump.fun graduation (migrated_unix=0, launchpad unknown), so it was seeded directly. GeckoTerminal counts 1,633 unique buyers but only 62 unique sellers, and those 62 wallets made 2,235 sells. GMGN flags 49 bundler wallets with about 20% of top-trader share, 0 smart or KOL wallets, and 0 degen calls. The token image is duplicated 5,136 times. The linked X handle (@tiktok_us, the real TikTok account) has been attached to 6,766 launched tokens. The packet lists 10 earlier tokens with the identical name and ticker \"TikTok US / TIKTOK\". All of them now have about $0.05 of liquidity and absurd leftover market caps ($2M to $191M), which is what a pulled LP leaves behind. This fits a serial liquidity-farm or rug template: seed large unlocked LP, drive volume and buyer counts with bots, then remove liquidity. I found no organic trigger. TikTok US news exists as ongoing background, but I found no specific catalyst today and no discussion of this contract.",
+  "narrative": {
+   "description": "Brand impersonation of TikTok / TikTok US. The TikTok US divestiture/joint-venture story is real, but it has been running for a long time. I found no fresh catalyst on 2026-09-25 tied to this token.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The activity looks bot-generated: buyers massively outnumber sellers, a small set of repeat sellers does most of the selling, 49 bundlers are flagged, and the name and ticker have been cloned many times."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None of the TikTok US clones is canonical, and TikTok has no official token. This is the latest in a series of identical 'TikTok US' deployments.",
+   "competing_tokens": "At least 10 earlier 'TikTok US'/TIKTOK tokens in the packet, all with about $0.05 liquidity (pulled). Several other TikTok-named Solana tokens also appear on Solana Compass.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,633 unique buyers vs 62 unique sellers, and those 62 made 2,235 sells. 49 GMGN-flagged bundlers. Liquidity is larger than market cap and the LP is unlocked. The pool was seeded directly rather than migrated from pump.fun. 5,136 duplicate images. The X handle is linked to 6,766 tokens. Ten identical-name predecessors all have drained liquidity.",
+   "uncertainty": "I could not load the DexScreener page (HTTP 403) and have no X post data. It is possible some buyers are real retail traders pulled in by the volume."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and held by a single provider, so it can be pulled at any moment",
+    "A serial clone template whose predecessors all show pulled liquidity",
+    "Bundler share of about 20%; likely wash or bot volume",
+    "The pool was seeded directly, not a pump.fun graduation"
+   ]
+  },
+  "counterargument": "The operator may keep pumping the price with bot buys before pulling, to lure in more buyers. Price already doubled in the pool's first 37 minutes, so a further +100% before the pull is possible. Some predecessors show leftover market caps as high as $191M, which may mean their prices were driven far up before the LP was removed. If the operator keeps the pool alive longer to farm fees or volume, the trade could hit its take-profit first.",
+  "unknowns": [
+   "When the LP owner will remove liquidity",
+   "How far earlier clones ran in price before they were pulled",
+   "Whether any real X or Telegram call exists for this contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "News covers TikTok US generally, not this token. The linked 'project site' and X handle belong to the real TikTok, not the token. The contract-address search returned nothing. DexScreener returned 403; the GeckoTerminal API worked."
+  },
+  "thesis": "This is a serial 'TikTok US' LP-farm clone. The liquidity is unlocked and seeded directly, the volume is bot-driven (1,633 buyers vs 62 sellers), and ten identical predecessors all show drained liquidity. It is very likely to be rugged within 6 hours. A further 2x before the pull is possible but unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 9,
+  "p_rug": 85,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/HD7cfByFk3QbFEhkU1pSmfAXUiJFy4HGckJhdym6XMFy",
+    "what": "Pool reserve $142k, FDV $95.6k, 1,633 buyers vs 62 sellers, created 08:50 UTC"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/89RAitwPJBEfLK4Gcg5iv7AjFABHWNvoD5rkvRkvpump",
+    "what": "Other TikTok-named Solana tokens"
+   },
+   {
+    "url": "https://techcrunch.com/2026/01/23/heres-whats-you-should-know-about-the-us-tiktok-deal/",
+    "what": "TikTok US deal background (not a new catalyst)"
+   },
+   {
+    "url": "https://x.com/tiktok_us?lang=en",
+    "what": "The real TikTok US X account, used as an impersonation link"
+   }
+  ]
+ },
+ "ttft_ms": 4840,
+ "type": "result",
+ "duration_ms": 54551,
+ "uuid": "ac8c21ea-8055-4c88-9fae-522b0aea4a27",
+ "ttft_stream_ms": 903,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 903,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

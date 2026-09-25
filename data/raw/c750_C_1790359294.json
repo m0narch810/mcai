@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 82086,
+ "stop_reason": "tool_use",
+ "session_id": "0fcf67cc-c30a-45fb-abc5-99ee1978e22b",
+ "total_cost_usd": 0.35621579999999997,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16788,
+  "cache_read_input_tokens": 58659,
+  "output_tokens": 4341,
+  "output_tokens_details": {
+   "thinking_tokens": 1005
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16788,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2481,
+    "cache_read_input_tokens": 17109,
+    "cache_creation_input_tokens": 2255,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2255
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4341,
+   "cacheReadInputTokens": 58659,
+   "cacheCreationInputTokens": 16788,
+   "webSearchRequests": 0,
+   "costUSD": 0.23289580000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1005,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 60040,
+   "outputTokens": 2656,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.12332000000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This YAP token (AXAd\u2026Ech) looks like a copycat of a real launch, with its trading heavily inflated by bots. The real YAP is jLz71\u2026dyap. It launched through pump.fun, moved to PumpSwap and several other exchanges, and lists useyap.fun and the @useyapdotfun X post as its links. It sits at roughly $790k\u2013833k market cap, with about $1.07M traded in the past hour and a 24h gain of more than 1,600% (DexScreener). useyap.fun is a new launchpad for pump.fun coins that pays the coin creator's trading fees to people who post about the coin on X. Its site shows $0.00 paid out so far. The token in this packet is not a pump.fun mint: it does not have the 'pump' or 'dyap' vanity suffix, and GMGN shows migrated=0. The creator made the token and, 29 seconds later, set up its own PumpSwap pool. That pool holds $226k of liquidity, which is more than the $160k market cap. The liquidity is 0% locked and comes from only a few providers. The token copies the real project's description (\\\"Created on https://useyap.fun\\\") and X link. In 35 minutes it traded $5.7M, 25 times its market cap. GeckoTerminal shows about 3,300 sells from only 61 unique sellers, against 1,261 unique buyers. GMGN flags 49 bundler wallets holding about 23% of top-trader volume.\",\"narrative\":{\"description\":\"The story is YAP / useyap.fun, a launchpad that pays creator fees to people who post about a coin on X. It is new and has some real traction, but that traction belongs to the canonical jLz71\u2026dyap token, not this one.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The canonical token is up more than 1,600% in 24h and has become a meme on its own. A 'pay people to post' design builds promotion into the product. Copycat tokens are riding the ticker.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It copies the useyap.fun description and X link, but it is not the canonical mint. The canonical one has a pump.fun origin, a vanity 'dyap' suffix, trades on several exchanges and has 5x the market cap. This one launched its own pool with unlocked LP 3.4 hours after the real one.\",\"competing_tokens\":\"jLz71QZfjnZZMLjUaCBw7KmUyftkkNq8NkWi2u9dyap (canonical, about $833k market cap, $1.07M volume in the past hour). Several dead pump.fun YAP clones were created in the same 10 minutes.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 61 unique sellers made about 3,300 sells, and $5.7M traded in 35 minutes on a $160k market cap, which points to volume bots or wash trading. GMGN tags 49 bundler wallets. Liquidity is larger than market cap, was supplied by the deployer and is 100% unlocked. RugCheck flags 'Large Amount of LP Unlocked' as a danger. The token copies another project's metadata.\",\"uncertainty\":\"Some of the 1,261 buyers may be real people who were confused and bought the wrong YAP. I could not see X posts; the X fetch returned HTTP 402.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The deployer can pull all of the unlocked LP ($226k) at any time\",\"The pool was created by the deployer, not through a pump.fun migration\",\"Copycat of a larger canonical token\",\"Volume is dominated by bots and bundlers (61 unique sellers)\",\"About 71% of supply sits in a pool the deployer controls\"]},\"counterargument\":\"Buyers who can't tell the two tokens apart may keep coming in while the canonical YAP trends, and the deployer might run the price up for hours before pulling liquidity. Price already rose 118% in an hour, so doubling from $160k to $320k before a pull is possible if the deployer wants more exit liquidity.\",\"unknowns\":[\"Whether the useyap.fun team knows about this token or has called it a fake\",\"The real content of the X post (blocked, HTTP 402)\",\"Who holds the LP tokens, and whether the deployer is running the volume bots\",\"How the deployer was funded (funded_from is null)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"searched_nothing_found\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X status fetch returned 402. Searches for either contract address found nothing. The useyap.fun site describes the launchpad but lists no token contract address. DexScreener data for the canonical jLz71 token links to the same site and X post.\"},\"thesis\":\"This is a copycat of the canonical useyap.fun YAP token. The deployer supplied its own unlocked LP and the volume is bot-driven. The likely outcome is a liquidity pull, not a double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://useyap.fun/\",\"what\":\"Launchpad description: pump.fun coins, creator fees paid to X posters, $0 paid out so far\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/jLz71QZfjnZZMLjUaCBw7KmUyftkkNq8NkWi2u9dyap\",\"what\":\"Canonical YAP: about $790k market cap, pairs on PumpSwap, Meteora, Orca and pump.fun, same site and X links\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/AXAdbB8QronxDMsMqGyn1kW5wuJ6RhGsKtj2dgn6Ech\",\"what\":\"This token: single PumpSwap pair, $226k liquidity against $160k market cap, no socials listed\"},{\"url\":\"https://x.com/useyapdotfun/status/2103485898985787778\",\"what\":\"Project X post (inaccessible, HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "This YAP token (AXAd\u2026Ech) looks like a copycat of a real launch, with its trading heavily inflated by bots. The real YAP is jLz71\u2026dyap. It launched through pump.fun, moved to PumpSwap and several other exchanges, and lists useyap.fun and the @useyapdotfun X post as its links. It sits at roughly $790k\u2013833k market cap, with about $1.07M traded in the past hour and a 24h gain of more than 1,600% (DexScreener). useyap.fun is a new launchpad for pump.fun coins that pays the coin creator's trading fees to people who post about the coin on X. Its site shows $0.00 paid out so far. The token in this packet is not a pump.fun mint: it does not have the 'pump' or 'dyap' vanity suffix, and GMGN shows migrated=0. The creator made the token and, 29 seconds later, set up its own PumpSwap pool. That pool holds $226k of liquidity, which is more than the $160k market cap. The liquidity is 0% locked and comes from only a few providers. The token copies the real project's description (\"Created on https://useyap.fun\") and X link. In 35 minutes it traded $5.7M, 25 times its market cap. GeckoTerminal shows about 3,300 sells from only 61 unique sellers, against 1,261 unique buyers. GMGN flags 49 bundler wallets holding about 23% of top-trader volume.",
+  "narrative": {
+   "description": "The story is YAP / useyap.fun, a launchpad that pays creator fees to people who post about a coin on X. It is new and has some real traction, but that traction belongs to the canonical jLz71\u2026dyap token, not this one.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The canonical token is up more than 1,600% in 24h and has become a meme on its own. A 'pay people to post' design builds promotion into the product. Copycat tokens are riding the ticker."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It copies the useyap.fun description and X link, but it is not the canonical mint. The canonical one has a pump.fun origin, a vanity 'dyap' suffix, trades on several exchanges and has 5x the market cap. This one launched its own pool with unlocked LP 3.4 hours after the real one.",
+   "competing_tokens": "jLz71QZfjnZZMLjUaCBw7KmUyftkkNq8NkWi2u9dyap (canonical, about $833k market cap, $1.07M volume in the past hour). Several dead pump.fun YAP clones were created in the same 10 minutes.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 61 unique sellers made about 3,300 sells, and $5.7M traded in 35 minutes on a $160k market cap, which points to volume bots or wash trading. GMGN tags 49 bundler wallets. Liquidity is larger than market cap, was supplied by the deployer and is 100% unlocked. RugCheck flags 'Large Amount of LP Unlocked' as a danger. The token copies another project's metadata.",
+   "uncertainty": "Some of the 1,261 buyers may be real people who were confused and bought the wrong YAP. I could not see X posts; the X fetch returned HTTP 402."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The deployer can pull all of the unlocked LP ($226k) at any time",
+    "The pool was created by the deployer, not through a pump.fun migration",
+    "Copycat of a larger canonical token",
+    "Volume is dominated by bots and bundlers (61 unique sellers)",
+    "About 71% of supply sits in a pool the deployer controls"
+   ]
+  },
+  "counterargument": "Buyers who can't tell the two tokens apart may keep coming in while the canonical YAP trends, and the deployer might run the price up for hours before pulling liquidity. Price already rose 118% in an hour, so doubling from $160k to $320k before a pull is possible if the deployer wants more exit liquidity.",
+  "unknowns": [
+   "Whether the useyap.fun team knows about this token or has called it a fake",
+   "The real content of the X post (blocked, HTTP 402)",
+   "Who holds the LP tokens, and whether the deployer is running the volume bots",
+   "How the deployer was funded (funded_from is null)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "searched_nothing_found",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X status fetch returned 402. Searches for either contract address found nothing. The useyap.fun site describes the launchpad but lists no token contract address. DexScreener data for the canonical jLz71 token links to the same site and X post."
+  },
+  "thesis": "This is a copycat of the canonical useyap.fun YAP token. The deployer supplied its own unlocked LP and the volume is bot-driven. The likely outcome is a liquidity pull, not a double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://useyap.fun/",
+    "what": "Launchpad description: pump.fun coins, creator fees paid to X posters, $0 paid out so far"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/jLz71QZfjnZZMLjUaCBw7KmUyftkkNq8NkWi2u9dyap",
+    "what": "Canonical YAP: about $790k market cap, pairs on PumpSwap, Meteora, Orca and pump.fun, same site and X links"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/AXAdbB8QronxDMsMqGyn1kW5wuJ6RhGsKtj2dgn6Ech",
+    "what": "This token: single PumpSwap pair, $226k liquidity against $160k market cap, no socials listed"
+   },
+   {
+    "url": "https://x.com/useyapdotfun/status/2103485898985787778",
+    "what": "Project X post (inaccessible, HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 4485,
+ "type": "result",
+ "duration_ms": 64582,
+ "uuid": "2734fea8-f0c2-4ddd-834c-a14b1677074e",
+ "ttft_stream_ms": 715,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 715,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

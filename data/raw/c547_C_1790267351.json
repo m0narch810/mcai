@@ -1,0 +1,190 @@
+{
+ "duration_api_ms": 121754,
+ "stop_reason": "tool_use",
+ "session_id": "7d1b3b3f-8a2e-4e3f-9bc9-11eca4c3e287",
+ "total_cost_usd": 0.46792220000000007,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 21001,
+  "cache_read_input_tokens": 99956,
+  "output_tokens": 5819,
+  "output_tokens_details": {
+   "thinking_tokens": 1612
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21001,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3193,
+    "cache_read_input_tokens": 21482,
+    "cache_creation_input_tokens": 2095,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2095
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 5819,
+   "cacheReadInputTokens": 99956,
+   "cacheCreationInputTokens": 21001,
+   "webSearchRequests": 0,
+   "costUSD": 0.3044352,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1612,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 83457,
+   "outputTokens": 4006,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.163487,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"sBTC \\\"Shielded Bitcoin\\\" is a news-derived Solana coin, 41 minutes old at detection. It references a real Bitcoin privacy proposal published today (Sept 24, 2026) by [[alloc] init] researchers Clara Shikhelman, Misha Komarov (@nemothenoone, a Lido and =nil; builder) and Aleksei Moskvin. The token's website field points to Komarov's GitHub, and its X link is a bare status URL (i/status/2103147555311714541), probably the announcement tweet. I found no sign that Komarov or alloc init is involved with the token. At least 9 other same-name \\\"Shielded Bitcoin\\\" tokens launched within minutes. This one won that race with about $950k volume in its first hour, now around $120-140k market cap. It was launched through a Meteora DBC / Printr-style path that migrated at once. Most trading is on a PumpSwap pool whose LP is owned by the creator and unlocked. RugCheck shows one unlabeled wallet (FhVo\u2026) holding 80.05% of supply.\",\"narrative\":{\"description\":\"A real, same-day Bitcoin tech story: a base-layer privacy metaprotocol ('Zcash-like shielded pool on Bitcoin') from a known builder, covered by Bitcoin Magazine and KuCoin news. The theme combines privacy and BTC and was fresh today.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Memecoin traders are turning today's research announcement into a coin. The story is real and fresh but technical and niche. It is not a viral mainstream event, and the named figure is unlikely to endorse a Solana memecoin.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most volume and market cap of about 10 same-name clones launched within roughly 7 minutes. It links Komarov's GitHub and the announcement tweet, but the deployer has no known tie to the researchers.\",\"competing_tokens\":\"At least 9 other 'Shielded Bitcoin' sBTC tokens created 16:37-16:43 UTC (e.g. HD68JH9\u2026, XUJRUkP\u2026, 76JcX7\u2026, 5QHxihj\u2026pump), mostly under $7k market cap. There are also the unrelated Stacks sBTC and Starknet strkBTC 'shielded bitcoin' products.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN shows no promotion: no paid DEX ads or boosts, 0 smart-money wallets, 0 KOL wallets, 0 degen calls. But it tags 99 bundler wallets, and the flow is lopsided: GeckoTerminal counts 2,141 unique buyers vs 135 unique sellers in the first hour. That can mean a genuine rush of buyers, or bot-split buying. I found no organic posts on X, Reddit or Telegram through search.\",\"uncertainty\":\"X is effectively invisible to me: the status link returned HTTP 402 and search indexes X poorly. There may be real CT discussion I could not see.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The PumpSwap pool (about $36k liquidity, where nearly all trading happens) has its LP owned by the creator wallet and essentially unlocked (0% locked). The creator can pull it at any time.\",\"One unlabeled wallet (FhVo\u2026) holds 80.05% of supply according to RugCheck; GeckoTerminal puts the top 10 at 95%. It might be a Printr/launchpad vault, but that is unverified. If it is a normal wallet, the overhang is huge.\",\"GMGN reports creator status 'creator_close' and 99 bundler wallets.\",\"The DBC and DAMM v2 Meteora pools are nearly empty, so liquidity sits in one pool the creator controls.\",\"The clone competition splits attention across many tickers.\"]},\"counterargument\":\"This is the clear winner among the clones on a real, fresh, BTC-plus-privacy news story from a credible builder. It has over 2,000 unique buyers in under an hour and no paid promotion. Tech-news coins that win the clone race can easily go from $140k to $300k+ if CT or a KOL picks up the story, or if Komarov or alloc init quote-tweet. The 80% wallet may just be a launchpad vault, which would make the real float spread out (GMGN top-10 is only 2%).\",\"unknowns\":[\"Who owns the 80% wallet FhVo\u2026: a launchpad or bridge vault, or an insider?\",\"Whether the X status link is the researchers' announcement and whether anyone notable is tweeting the CA\",\"Whether the creator will pull the unlocked PumpSwap LP\",\"Real share of organic buyers vs bundled/bot buyers\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"News confirms a real same-day Shielded Bitcoin proposal (Bitcoin Magazine, KuCoin), with no token mentioned. The 'website' is Komarov's personal GitHub, not a project site. The X status fetch returned 402. Searches for the contract address and site:x.com found nothing relevant. The DexScreener API and RugCheck report were fetched.\"},\"thesis\":\"This is a real but niche tech-news narrative, and the token won the clone race, which gives some upside. But its structure is dangerous: the creator owns the unlocked LP of the only real pool, one unlabeled wallet holds 80% of supply, and GMGN tags 99 bundler wallets. The most likely path is fading or a rug before a 2x from roughly $140k.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://bitcoinmagazine.com/technical/alloc-init-releases-shielded-bitcoin-proposal-for-private-bitcoin-transactions\",\"what\":\"Confirms the Shielded Bitcoin proposal by alloc init researchers dated Sept 24, 2026; no token mentioned\"},{\"url\":\"https://www.kucoin.com/news/flash/researchers-propose-shielded-bitcoin-protocol-for-privacy-transactions\",\"what\":\"News flash naming Shikhelman, Komarov and Moskvin\"},{\"url\":\"https://github.com/nemothenoone\",\"what\":\"Misha Komarov's GitHub, used as the token's website\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/83EPKqsJ4zd1BEdTthaK94mBBn35pgDCKyA6AtveDaht\",\"what\":\"Pairs: PumpSwap about $36k liquidity, near-empty Meteora DYN2 and DBC pools\"},{\"url\":\"https://api.rugcheck.xyz/v1/tokens/83EPKqsJ4zd1BEdTthaK94mBBn35pgDCKyA6AtveDaht/report\",\"what\":\"PumpSwap LP owned by the creator and unlocked; FhVo wallet holds 80.05%; Printr stake pool listed\"},{\"url\":\"https://x.com/i/status/2103147555311714541\",\"what\":\"Linked X status; inaccessible (HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "sBTC \"Shielded Bitcoin\" is a news-derived Solana coin, 41 minutes old at detection. It references a real Bitcoin privacy proposal published today (Sept 24, 2026) by [[alloc] init] researchers Clara Shikhelman, Misha Komarov (@nemothenoone, a Lido and =nil; builder) and Aleksei Moskvin. The token's website field points to Komarov's GitHub, and its X link is a bare status URL (i/status/2103147555311714541), probably the announcement tweet. I found no sign that Komarov or alloc init is involved with the token. At least 9 other same-name \"Shielded Bitcoin\" tokens launched within minutes. This one won that race with about $950k volume in its first hour, now around $120-140k market cap. It was launched through a Meteora DBC / Printr-style path that migrated at once. Most trading is on a PumpSwap pool whose LP is owned by the creator and unlocked. RugCheck shows one unlabeled wallet (FhVo\u2026) holding 80.05% of supply.",
+  "narrative": {
+   "description": "A real, same-day Bitcoin tech story: a base-layer privacy metaprotocol ('Zcash-like shielded pool on Bitcoin') from a known builder, covered by Bitcoin Magazine and KuCoin news. The theme combines privacy and BTC and was fresh today.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Memecoin traders are turning today's research announcement into a coin. The story is real and fresh but technical and niche. It is not a viral mainstream event, and the named figure is unlikely to endorse a Solana memecoin."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most volume and market cap of about 10 same-name clones launched within roughly 7 minutes. It links Komarov's GitHub and the announcement tweet, but the deployer has no known tie to the researchers.",
+   "competing_tokens": "At least 9 other 'Shielded Bitcoin' sBTC tokens created 16:37-16:43 UTC (e.g. HD68JH9\u2026, XUJRUkP\u2026, 76JcX7\u2026, 5QHxihj\u2026pump), mostly under $7k market cap. There are also the unrelated Stacks sBTC and Starknet strkBTC 'shielded bitcoin' products.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN shows no promotion: no paid DEX ads or boosts, 0 smart-money wallets, 0 KOL wallets, 0 degen calls. But it tags 99 bundler wallets, and the flow is lopsided: GeckoTerminal counts 2,141 unique buyers vs 135 unique sellers in the first hour. That can mean a genuine rush of buyers, or bot-split buying. I found no organic posts on X, Reddit or Telegram through search.",
+   "uncertainty": "X is effectively invisible to me: the status link returned HTTP 402 and search indexes X poorly. There may be real CT discussion I could not see."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The PumpSwap pool (about $36k liquidity, where nearly all trading happens) has its LP owned by the creator wallet and essentially unlocked (0% locked). The creator can pull it at any time.",
+    "One unlabeled wallet (FhVo\u2026) holds 80.05% of supply according to RugCheck; GeckoTerminal puts the top 10 at 95%. It might be a Printr/launchpad vault, but that is unverified. If it is a normal wallet, the overhang is huge.",
+    "GMGN reports creator status 'creator_close' and 99 bundler wallets.",
+    "The DBC and DAMM v2 Meteora pools are nearly empty, so liquidity sits in one pool the creator controls.",
+    "The clone competition splits attention across many tickers."
+   ]
+  },
+  "counterargument": "This is the clear winner among the clones on a real, fresh, BTC-plus-privacy news story from a credible builder. It has over 2,000 unique buyers in under an hour and no paid promotion. Tech-news coins that win the clone race can easily go from $140k to $300k+ if CT or a KOL picks up the story, or if Komarov or alloc init quote-tweet. The 80% wallet may just be a launchpad vault, which would make the real float spread out (GMGN top-10 is only 2%).",
+  "unknowns": [
+   "Who owns the 80% wallet FhVo\u2026: a launchpad or bridge vault, or an insider?",
+   "Whether the X status link is the researchers' announcement and whether anyone notable is tweeting the CA",
+   "Whether the creator will pull the unlocked PumpSwap LP",
+   "Real share of organic buyers vs bundled/bot buyers"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "News confirms a real same-day Shielded Bitcoin proposal (Bitcoin Magazine, KuCoin), with no token mentioned. The 'website' is Komarov's personal GitHub, not a project site. The X status fetch returned 402. Searches for the contract address and site:x.com found nothing relevant. The DexScreener API and RugCheck report were fetched."
+  },
+  "thesis": "This is a real but niche tech-news narrative, and the token won the clone race, which gives some upside. But its structure is dangerous: the creator owns the unlocked LP of the only real pool, one unlabeled wallet holds 80% of supply, and GMGN tags 99 bundler wallets. The most likely path is fading or a rug before a 2x from roughly $140k.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://bitcoinmagazine.com/technical/alloc-init-releases-shielded-bitcoin-proposal-for-private-bitcoin-transactions",
+    "what": "Confirms the Shielded Bitcoin proposal by alloc init researchers dated Sept 24, 2026; no token mentioned"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/researchers-propose-shielded-bitcoin-protocol-for-privacy-transactions",
+    "what": "News flash naming Shikhelman, Komarov and Moskvin"
+   },
+   {
+    "url": "https://github.com/nemothenoone",
+    "what": "Misha Komarov's GitHub, used as the token's website"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/83EPKqsJ4zd1BEdTthaK94mBBn35pgDCKyA6AtveDaht",
+    "what": "Pairs: PumpSwap about $36k liquidity, near-empty Meteora DYN2 and DBC pools"
+   },
+   {
+    "url": "https://api.rugcheck.xyz/v1/tokens/83EPKqsJ4zd1BEdTthaK94mBBn35pgDCKyA6AtveDaht/report",
+    "what": "PumpSwap LP owned by the creator and unlocked; FhVo wallet holds 80.05%; Printr stake pool listed"
+   },
+   {
+    "url": "https://x.com/i/status/2103147555311714541",
+    "what": "Linked X status; inaccessible (HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 4643,
+ "type": "result",
+ "duration_ms": 102973,
+ "uuid": "131f4811-879e-4657-a9ef-b58c4445ea09",
+ "ttft_stream_ms": 1302,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 1303,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

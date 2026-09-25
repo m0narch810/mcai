@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 69830,
+ "stop_reason": "tool_use",
+ "session_id": "22db5cae-1030-4bb7-bc49-969bb43c6e3d",
+ "total_cost_usd": 0.30809260000000005,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15407,
+  "cache_read_input_tokens": 42348,
+  "output_tokens": 4017,
+  "output_tokens_details": {
+   "thinking_tokens": 745
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15407,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2661,
+    "cache_read_input_tokens": 15476,
+    "cache_creation_input_tokens": 2507,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2507
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4017,
+   "cacheReadInputTokens": 42348,
+   "cacheCreationInputTokens": 15407,
+   "webSearchRequests": 0,
+   "costUSD": 0.2120976,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 745,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 45030,
+   "outputTokens": 2193,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.095995,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"MLSSTR \\\"Madlads Strategy\\\" is one of at least 11 tokens with the same name and ticker, all launched within about 50 minutes of each other on 2026-09-25. It looks like a copy-launch swarm around a \\\"Madlads Strategy\\\" idea: a treasury-style \\\"strategy\\\" token tied to the Mad Lads NFT collection. The only lead to a trigger is a tweet handle in GeckoTerminal (mxetsi/status/2103472033979945208), and I couldn't open it (HTTP 402). This contract does not end in \\\"pump\\\", so it wasn't launched on pump.fun's bonding curve. Its PumpSwap pool was created directly, about 36 minutes before detection, and the LP is unlocked, 0% locked or burned. Liquidity is $40k, which is higher than the $34.6k market cap. It did about $1M of volume in its first hour. GeckoTerminal counts 2,114 unique buyers but only 106 unique sellers. GMGN tags 76 bundler wallets holding about 38% among top traders, and RugCheck finds a 57-wallet insider trade network. Price is about 36% below its all-time high (GMGN ATH 5.37e-5 vs 3.46e-5 now), and the 30-minute change is negative.\",\"narrative\":{\"description\":\"\\\"Madlads Strategy\\\" is a play on the treasury-company \\\"strategy\\\" meme applied to the Mad Lads/Backpack NFT brand. An older, dead MLSTRAT token with the same idea already exists on CoinGecko. I found no current news event behind a fresh Madlads Strategy launch today.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most likely a single tweet (mxetsi) that sniper and launch bots copied, producing 10+ copycat contracts within minutes. The ratio of 2,114 buyers to 106 sellers looks like farmed or bot buyers, not organic spread. I couldn't read the tweet.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most liquidity and volume in the same-name group right now. It wasn't first, though: it launched about 47 minutes after the earliest copies. It isn't a pump.fun mint and has no socials, website or DexScreener profile.\",\"competing_tokens\":\"At least 10 other MLSSTR / Madlads Strategy tokens exist. C3yN...pump was the earliest pump.fun one; it shows a $3.6M market cap but $0 liquidity, a fake-looking figure. 4Jy7... did $549k of hourly volume and now has $16 of liquidity, so it was already rugged. ubfPp... has $14k liquidity. There is also an older MLSTRAT token on CoinGecko.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,114 unique buyers vs 106 unique sellers (GeckoTerminal). 76 GMGN bundler wallets, with a top bundler trader share of 0.38. A 57-wallet insider trade network (RugCheck). No socials or profile. GMGN page visits: 3. Sibling copies with the same name show the same pattern of a big volume burst followed by liquidity pulled (4Jy7..., GqFy..., 9bGW...).\",\"uncertainty\":\"I couldn't read X, including the source tweet. There may be a real KOL post driving part of the flow.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 100% unlocked, and the pool was seeded by the dev on PumpSwap rather than migrated from pump.fun, so the dev can pull liquidity at any time\",\"Several same-name siblings have already been drained to near-zero liquidity\",\"Bundler and insider networks are large\",\"The buyer-to-seller ratio is heavily one-sided, pointing to farmed buyers who can't sustain demand\",\"Price is already about 36% below its all-time high, with negative 30-minute momentum\"]},\"counterargument\":\"Among the copies, this one currently has the most liquidity and turnover, so traders may treat it as the survivor. Buyer breadth is high, the top 10 holders own only 12.5%, and a 2x from a $35k market cap only needs about $70k. If the source tweet is from a real Mad Lads or Backpack figure, a fresh wave of attention could double it quickly.\",\"unknowns\":[\"What the mxetsi tweet says and who wrote it\",\"Who holds the LP tokens and whether the dev wallet is the LP provider\",\"Whether any real Mad Lads or Backpack account endorsed a 'Madlads Strategy' coin\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"X fetch returned 402. Searching the contract address found nothing. Name searches return only the older MLSTRAT CoinGecko listing and Backpack TGE news from March 2026. DexScreener shows no socials for this pair or the earliest pump.fun copy.\"},\"thesis\":\"This is a copycat ticker in a same-name launch swarm. The pool was seeded by the dev with unlocked LP, the buyer counts look farmed, bundler activity is heavy, and sibling copies were already drained. Rug risk is high and a real 2x is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/B8jXgwpriaF4aAoXopMeLLTSBFtyj74f8azUmnFd54LN\",\"what\":\"Pair data: $40k liquidity, $34.6k mcap, no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/C3yNKAw8Yr2TD9XT1CcmJHZCEp6cNwuShanBAryXpump\",\"what\":\"Earliest pump.fun copy: $0 liquidity, $3.6M mcap figure that looks fake\"},{\"url\":\"https://www.coingecko.com/en/coins/madlads-strategy\",\"what\":\"Older MLSTRAT 'Madlads Strategy' token, now dead\"},{\"url\":\"https://x.com/mxetsi/status/2103472033979945208\",\"what\":\"Tweet linked in GeckoTerminal; could not open (HTTP 402)\"},{\"url\":\"https://www.mexc.com/news/973821\",\"what\":\"Backpack/Mad Lads background; no current catalyst\"}]}",
+ "structured_output": {
+  "what_is_happening": "MLSSTR \"Madlads Strategy\" is one of at least 11 tokens with the same name and ticker, all launched within about 50 minutes of each other on 2026-09-25. It looks like a copy-launch swarm around a \"Madlads Strategy\" idea: a treasury-style \"strategy\" token tied to the Mad Lads NFT collection. The only lead to a trigger is a tweet handle in GeckoTerminal (mxetsi/status/2103472033979945208), and I couldn't open it (HTTP 402). This contract does not end in \"pump\", so it wasn't launched on pump.fun's bonding curve. Its PumpSwap pool was created directly, about 36 minutes before detection, and the LP is unlocked, 0% locked or burned. Liquidity is $40k, which is higher than the $34.6k market cap. It did about $1M of volume in its first hour. GeckoTerminal counts 2,114 unique buyers but only 106 unique sellers. GMGN tags 76 bundler wallets holding about 38% among top traders, and RugCheck finds a 57-wallet insider trade network. Price is about 36% below its all-time high (GMGN ATH 5.37e-5 vs 3.46e-5 now), and the 30-minute change is negative.",
+  "narrative": {
+   "description": "\"Madlads Strategy\" is a play on the treasury-company \"strategy\" meme applied to the Mad Lads/Backpack NFT brand. An older, dead MLSTRAT token with the same idea already exists on CoinGecko. I found no current news event behind a fresh Madlads Strategy launch today.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most likely a single tweet (mxetsi) that sniper and launch bots copied, producing 10+ copycat contracts within minutes. The ratio of 2,114 buyers to 106 sellers looks like farmed or bot buyers, not organic spread. I couldn't read the tweet."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most liquidity and volume in the same-name group right now. It wasn't first, though: it launched about 47 minutes after the earliest copies. It isn't a pump.fun mint and has no socials, website or DexScreener profile.",
+   "competing_tokens": "At least 10 other MLSSTR / Madlads Strategy tokens exist. C3yN...pump was the earliest pump.fun one; it shows a $3.6M market cap but $0 liquidity, a fake-looking figure. 4Jy7... did $549k of hourly volume and now has $16 of liquidity, so it was already rugged. ubfPp... has $14k liquidity. There is also an older MLSTRAT token on CoinGecko.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,114 unique buyers vs 106 unique sellers (GeckoTerminal). 76 GMGN bundler wallets, with a top bundler trader share of 0.38. A 57-wallet insider trade network (RugCheck). No socials or profile. GMGN page visits: 3. Sibling copies with the same name show the same pattern of a big volume burst followed by liquidity pulled (4Jy7..., GqFy..., 9bGW...).",
+   "uncertainty": "I couldn't read X, including the source tweet. There may be a real KOL post driving part of the flow."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 100% unlocked, and the pool was seeded by the dev on PumpSwap rather than migrated from pump.fun, so the dev can pull liquidity at any time",
+    "Several same-name siblings have already been drained to near-zero liquidity",
+    "Bundler and insider networks are large",
+    "The buyer-to-seller ratio is heavily one-sided, pointing to farmed buyers who can't sustain demand",
+    "Price is already about 36% below its all-time high, with negative 30-minute momentum"
+   ]
+  },
+  "counterargument": "Among the copies, this one currently has the most liquidity and turnover, so traders may treat it as the survivor. Buyer breadth is high, the top 10 holders own only 12.5%, and a 2x from a $35k market cap only needs about $70k. If the source tweet is from a real Mad Lads or Backpack figure, a fresh wave of attention could double it quickly.",
+  "unknowns": [
+   "What the mxetsi tweet says and who wrote it",
+   "Who holds the LP tokens and whether the dev wallet is the LP provider",
+   "Whether any real Mad Lads or Backpack account endorsed a 'Madlads Strategy' coin"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "X fetch returned 402. Searching the contract address found nothing. Name searches return only the older MLSTRAT CoinGecko listing and Backpack TGE news from March 2026. DexScreener shows no socials for this pair or the earliest pump.fun copy."
+  },
+  "thesis": "This is a copycat ticker in a same-name launch swarm. The pool was seeded by the dev with unlocked LP, the buyer counts look farmed, bundler activity is heavy, and sibling copies were already drained. Rug risk is high and a real 2x is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/B8jXgwpriaF4aAoXopMeLLTSBFtyj74f8azUmnFd54LN",
+    "what": "Pair data: $40k liquidity, $34.6k mcap, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/C3yNKAw8Yr2TD9XT1CcmJHZCEp6cNwuShanBAryXpump",
+    "what": "Earliest pump.fun copy: $0 liquidity, $3.6M mcap figure that looks fake"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/madlads-strategy",
+    "what": "Older MLSTRAT 'Madlads Strategy' token, now dead"
+   },
+   {
+    "url": "https://x.com/mxetsi/status/2103472033979945208",
+    "what": "Tweet linked in GeckoTerminal; could not open (HTTP 402)"
+   },
+   {
+    "url": "https://www.mexc.com/news/973821",
+    "what": "Backpack/Mad Lads background; no current catalyst"
+   }
+  ]
+ },
+ "ttft_ms": 3470,
+ "type": "result",
+ "duration_ms": 56222,
+ "uuid": "7e89dc3c-7ad6-44e3-b56b-284242ef82e1",
+ "ttft_stream_ms": 804,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 804,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

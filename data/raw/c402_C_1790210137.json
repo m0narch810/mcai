@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 105759,
+ "stop_reason": "tool_use",
+ "session_id": "2424c116-8d0b-4534-b57d-f5a90bb7b0a6",
+ "total_cost_usd": 0.4374992,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 19906,
+  "cache_read_input_tokens": 84521,
+  "output_tokens": 5331,
+  "output_tokens_details": {
+   "thinking_tokens": 1483
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19906,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2617,
+    "cache_read_input_tokens": 21333,
+    "cache_creation_input_tokens": 1149,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1149
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 5331,
+   "cacheReadInputTokens": 84521,
+   "cacheCreationInputTokens": 19906,
+   "webSearchRequests": 0,
+   "costUSD": 0.28282019999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1483,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 75309,
+   "outputTokens": 3874,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.15467899999999998,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A cluster of at least 11 tokens all called \\\"Untaxed App\\\" (UNTXD) launched on Solana within about 30 minutes (roughly 23:52\u201300:22 UTC). They borrow the name of Untaxed Wallet, a real zero-fee Solana trading wallet (untaxed.wtf, @UntaxedSolana). The project's own site and links page name only one contract: 3tzkdxJ1qVCaPAuWmd8FjRFKUbwMYpLUAq5gg4Vopump. That token appears in the packet as UNTXD, sitting at about $74\u201378k market cap. CERMY\u2026 is not the listed contract. It is a Token-2022 token from a Meteora virtual-curve launch, created and migrated in the same second, which points to a direct pool setup. It was pumped to about $770\u2013790k market cap with about $80k of liquidity on PumpSwap. Among the clones, 9v93\u2026 has more liquidity ($289k) and a higher market cap ($964k). The official project attracts real attention, but this particular contract has no claim to it.\",\"narrative\":{\"description\":\"Untaxed Wallet is a real product: a zero-fee Solana trading wallet and terminal on Chrome, iOS and Android, with a holder-benefit token. The clones feed off attention to what looks like a new or relaunched token from the project, or a buzz event around it.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A real app with a token-utility story, plus apparent launch buzz, set off a copycat race. Traders are buying whichever same-name contract is moving. I could not see the trigger post on X.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None beyond sharing the name and ticker and borrowing the project's X handle in its metadata. The official website and links page name 3tzkdx\u2026pump as the contract, not CERMY\u2026.\",\"competing_tokens\":\"There are 10+ same-name tokens. 3tzkdx\u2026pump is the project's listed contract ($78k market cap, $25k liquidity). 9v93\u2026 is the biggest clone ($964k market cap, $289k liquidity, $2.3M hourly volume). Several others have already hit zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"This looks like a copycat launch farm: 11 identical-name tokens within minutes, 11 duplicate images, and 51 bundler wallets (13.7% top-bundler trader share). Our contract has 2,094 unique buyers but only 87 unique sellers, which suggests a few wallets are distributing into retail. The creator has launched 3 tokens and has already closed their position. No paid DexScreener promotion was found.\",\"uncertainty\":\"I could not read the X timeline, so I can't tell whether the official account or any KOLs pointed at this contract.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"RugCheck shows 99.99% of LP unlocked (danger flag) and only a few LP providers, so liquidity can be pulled at any time\",\"A single unlabeled holder (FhVo\u2026) has 80.05% of supply. The Pump AMM pool holds only 5.15%, so this is a huge possible overhang unless it turns out to be a pool or locker\",\"Token-2022 token from a Meteora virtual curve, created and migrated in the same second, which suggests a direct pool setup\",\"Liquidity is about $80k against about $790k market cap, and the price is already up about 900% in 40 minutes\",\"It is not the canonical contract; a larger clone and the official contract compete for the same attention\"]},\"counterargument\":\"Copycat tokens sometimes win the market regardless of which contract the project lists. This one has real turnover (2,000+ buyers, $2M+ volume) and is second-largest among the clones. If the Untaxed brand keeps trending, it could go from $0.8M to $1.6M market cap in a 6-hour mania. GMGN reports a 5.5% top-10 holder rate and an LP burn ratio of 1.0, which may mean the 80% holder is a pool or locker and not a dump risk.\",\"unknowns\":[\"Who or what FhVo\u2026 (80% holder) is: a pool or locker, or the deployer\",\"What set off the rush: a tweet from @UntaxedSolana, a new token announcement, or a KOL call\",\"Whether the official project will publicly disown the clones\",\"Why the official contract trades far below the clones\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The project site and links page name 3tzkdx\u2026pump as the contract. Searching the CERMY contract returned nothing. X search surfaced the @UntaxedSolana handle but no relevant posts. DexScreener and RugCheck APIs were fetched.\"},\"thesis\":\"This is a non-canonical copycat of the Untaxed Wallet token. It is one of 11+ same-name launches, carries a large bundler share, the creator has already exited, LP is 99.99% unlocked, and an unexplained wallet holds 80% of supply. It is already up about 900% and is not even the largest clone. A liquidity pull or a slow bleed is far more likely than another doubling.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://untaxed.wtf/links\",\"what\":\"Official links page naming 3tzkdx\u2026pump as the contract\"},{\"url\":\"https://untaxed.wtf/\",\"what\":\"Project description and contract\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/CERMYtxBb2ciA3JZPiHcMPwwCQckedQrLaYJP7qEm9v7\",\"what\":\"Pairs and liquidity for CERMY, no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/3tzkdxJ1qVCaPAuWmd8FjRFKUbwMYpLUAq5gg4Vopump,9v93WzpCQSLhsdZ46zrMVEoxYuHmDxS4Qyz1pMFqpBJD\",\"what\":\"Official contract vs. largest clone metrics\"},{\"url\":\"https://api.rugcheck.xyz/v1/tokens/CERMYtxBb2ciA3JZPiHcMPwwCQckedQrLaYJP7qEm9v7/report/summary\",\"what\":\"Token-2022, 99.99% LP unlocked\"}]}",
+ "structured_output": {
+  "what_is_happening": "A cluster of at least 11 tokens all called \"Untaxed App\" (UNTXD) launched on Solana within about 30 minutes (roughly 23:52\u201300:22 UTC). They borrow the name of Untaxed Wallet, a real zero-fee Solana trading wallet (untaxed.wtf, @UntaxedSolana). The project's own site and links page name only one contract: 3tzkdxJ1qVCaPAuWmd8FjRFKUbwMYpLUAq5gg4Vopump. That token appears in the packet as UNTXD, sitting at about $74\u201378k market cap. CERMY\u2026 is not the listed contract. It is a Token-2022 token from a Meteora virtual-curve launch, created and migrated in the same second, which points to a direct pool setup. It was pumped to about $770\u2013790k market cap with about $80k of liquidity on PumpSwap. Among the clones, 9v93\u2026 has more liquidity ($289k) and a higher market cap ($964k). The official project attracts real attention, but this particular contract has no claim to it.",
+  "narrative": {
+   "description": "Untaxed Wallet is a real product: a zero-fee Solana trading wallet and terminal on Chrome, iOS and Android, with a holder-benefit token. The clones feed off attention to what looks like a new or relaunched token from the project, or a buzz event around it.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A real app with a token-utility story, plus apparent launch buzz, set off a copycat race. Traders are buying whichever same-name contract is moving. I could not see the trigger post on X."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None beyond sharing the name and ticker and borrowing the project's X handle in its metadata. The official website and links page name 3tzkdx\u2026pump as the contract, not CERMY\u2026.",
+   "competing_tokens": "There are 10+ same-name tokens. 3tzkdx\u2026pump is the project's listed contract ($78k market cap, $25k liquidity). 9v93\u2026 is the biggest clone ($964k market cap, $289k liquidity, $2.3M hourly volume). Several others have already hit zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "This looks like a copycat launch farm: 11 identical-name tokens within minutes, 11 duplicate images, and 51 bundler wallets (13.7% top-bundler trader share). Our contract has 2,094 unique buyers but only 87 unique sellers, which suggests a few wallets are distributing into retail. The creator has launched 3 tokens and has already closed their position. No paid DexScreener promotion was found.",
+   "uncertainty": "I could not read the X timeline, so I can't tell whether the official account or any KOLs pointed at this contract."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "RugCheck shows 99.99% of LP unlocked (danger flag) and only a few LP providers, so liquidity can be pulled at any time",
+    "A single unlabeled holder (FhVo\u2026) has 80.05% of supply. The Pump AMM pool holds only 5.15%, so this is a huge possible overhang unless it turns out to be a pool or locker",
+    "Token-2022 token from a Meteora virtual curve, created and migrated in the same second, which suggests a direct pool setup",
+    "Liquidity is about $80k against about $790k market cap, and the price is already up about 900% in 40 minutes",
+    "It is not the canonical contract; a larger clone and the official contract compete for the same attention"
+   ]
+  },
+  "counterargument": "Copycat tokens sometimes win the market regardless of which contract the project lists. This one has real turnover (2,000+ buyers, $2M+ volume) and is second-largest among the clones. If the Untaxed brand keeps trending, it could go from $0.8M to $1.6M market cap in a 6-hour mania. GMGN reports a 5.5% top-10 holder rate and an LP burn ratio of 1.0, which may mean the 80% holder is a pool or locker and not a dump risk.",
+  "unknowns": [
+   "Who or what FhVo\u2026 (80% holder) is: a pool or locker, or the deployer",
+   "What set off the rush: a tweet from @UntaxedSolana, a new token announcement, or a KOL call",
+   "Whether the official project will publicly disown the clones",
+   "Why the official contract trades far below the clones"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The project site and links page name 3tzkdx\u2026pump as the contract. Searching the CERMY contract returned nothing. X search surfaced the @UntaxedSolana handle but no relevant posts. DexScreener and RugCheck APIs were fetched."
+  },
+  "thesis": "This is a non-canonical copycat of the Untaxed Wallet token. It is one of 11+ same-name launches, carries a large bundler share, the creator has already exited, LP is 99.99% unlocked, and an unexplained wallet holds 80% of supply. It is already up about 900% and is not even the largest clone. A liquidity pull or a slow bleed is far more likely than another doubling.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://untaxed.wtf/links",
+    "what": "Official links page naming 3tzkdx\u2026pump as the contract"
+   },
+   {
+    "url": "https://untaxed.wtf/",
+    "what": "Project description and contract"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/CERMYtxBb2ciA3JZPiHcMPwwCQckedQrLaYJP7qEm9v7",
+    "what": "Pairs and liquidity for CERMY, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/3tzkdxJ1qVCaPAuWmd8FjRFKUbwMYpLUAq5gg4Vopump,9v93WzpCQSLhsdZ46zrMVEoxYuHmDxS4Qyz1pMFqpBJD",
+    "what": "Official contract vs. largest clone metrics"
+   },
+   {
+    "url": "https://api.rugcheck.xyz/v1/tokens/CERMYtxBb2ciA3JZPiHcMPwwCQckedQrLaYJP7qEm9v7/report/summary",
+    "what": "Token-2022, 99.99% LP unlocked"
+   }
+  ]
+ },
+ "ttft_ms": 3001,
+ "type": "result",
+ "duration_ms": 77709,
+ "uuid": "c722b103-9fc5-48ed-89ea-378e3f5e14fc",
+ "ttft_stream_ms": 795,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 796,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 72276,
+ "stop_reason": "tool_use",
+ "session_id": "93a31245-d459-46d2-a779-ff41e382abc5",
+ "total_cost_usd": 0.2911824,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 14446,
+  "cache_read_input_tokens": 58347,
+  "output_tokens": 5790,
+  "output_tokens_details": {
+   "thinking_tokens": 592
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14446,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2188,
+    "cache_read_input_tokens": 15771,
+    "cache_creation_input_tokens": 1439,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1439
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 5790,
+   "cacheReadInputTokens": 58347,
+   "cacheCreationInputTokens": 14446,
+   "webSearchRequests": 0,
+   "costUSD": 0.2430774,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 592,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20970,
+   "outputTokens": 1427,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.048105,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"LOAN (\\\"Loan Meme\\\", pitched as a meme lend/borrow protocol, X @loanmeme, site loanmeme.io) is a 16-minute-old token trading mainly in a PumpSwap pool. The pool was set up by hand: RugCheck shows 100% of its LP unlocked, and the token launched on Meteora's DBC curve, whose pools are now empty. It has about $2.5M volume on a ~$180-200k market cap and +200-250% in the first hour. One wallet (FhVo...) holds 80% of supply with no AMM or locker label. Another token with the same name, LOAN (paGVWB...), launched about 18 minutes before this pool. It did $2.29M of volume in the last hour and now shows $0 liquidity, which looks like a pulled pool. This looks like a relaunch of the same brand, and there are also many dead 'Loan Meme' copies on pump.fun from earlier today.\",\"narrative\":{\"description\":\"A meme coin that claims to be a lending protocol for memes ('the meme that runs a protocol'). The website is marketing only: no contract address, no docs, no team.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The attention seems to come from the brand/X account and from on-chain trading bots. I found no outside news or wider discussion. The many copycat pump.fun launches show some ticker interest, but they are all dead.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"GMGN links this token to the @loanmeme X account and loanmeme.io. Right now it is the only LOAN with live liquidity.\",\"competing_tokens\":\"paGVWB... LOAN had $2.29M volume in the last hour, launched about 18 minutes before this pair, and now shows 0 liquidity, which looks like a pulled pool. There are also 8+ dead 'Loan Meme' pump.fun clones at about $3k market cap.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"910 unique buyers but only 48 unique sellers, who made 1,174 sells between them. That points to bot or market-maker churn. GMGN flags 20 bundler wallets. No paid DexScreener promotion. No smart-money or KOL wallets. The dev's X account has launched 143 tokens.\",\"uncertainty\":\"X was inaccessible (HTTP 402), so I could not see real engagement.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80% of supply against about $47k of liquidity\",\"100% of the PumpSwap LP is unlocked (RugCheck danger flag)\",\"Same-name predecessor token appears to have had its liquidity pulled about 18 minutes earlier\",\"Dev's X account has launched 143 tokens\",\"20 bundler wallets; sells are concentrated in 48 wallets\"]},\"counterargument\":\"The 80% wallet might be a Meteora or protocol vault, or a lending-reserve contract that GMGN leaves out of its top-10 figure (GMGN puts top10_holder_rate at 5.9%, which contradicts RugCheck). If so, the float is spread across more than 900 buyers. Price is holding and rising (+247% in the last hour, still up over the last 5 minutes) with heavy volume. A branded 'protocol meme' with a live X account and website could keep running to $500k+.\",\"unknowns\":[\"Who owns the 80% wallet FhVo...\",\"Whether paGVWB... was rugged or migrated by the same team\",\"Real engagement and follower count on @loanmeme\",\"Who added the PumpSwap liquidity\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Contract-address search returned nothing. The X profile returned HTTP 402. Current pair data came from the DexScreener API. The site has marketing copy only. Time was short, so Telegram and Discord were not searched.\"},\"thesis\":\"A serial-launch pattern (dev X account with 143 launches, a same-name predecessor whose liquidity went to zero minutes ago, 80% of supply in one wallet, unlocked LP, sells concentrated in a few wallets) points to a likely extraction setup, despite strong-looking volume. Upside needs the price to double to about $400k while that 80% wallet does not dump. Low runner odds, high rug odds.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":60,\"survival_score\":15,\"attention_score\":55,\"manipulation_risk\":80,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://loanmeme.io/\",\"what\":\"Project site: marketing copy only, no contract address or team\"},{\"url\":\"https://x.com/loanmeme\",\"what\":\"Project X account (inaccessible, HTTP 402)\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/46HFmg7MeaLmN6EqYeXFnTYmEhHRMgxEcaEkDiPvNpKm\",\"what\":\"Current pairs: PumpSwap has $47k liquidity and ~$201k market cap; Meteora pools are empty\"}]}",
+ "structured_output": {
+  "what_is_happening": "LOAN (\"Loan Meme\", pitched as a meme lend/borrow protocol, X @loanmeme, site loanmeme.io) is a 16-minute-old token trading mainly in a PumpSwap pool. The pool was set up by hand: RugCheck shows 100% of its LP unlocked, and the token launched on Meteora's DBC curve, whose pools are now empty. It has about $2.5M volume on a ~$180-200k market cap and +200-250% in the first hour. One wallet (FhVo...) holds 80% of supply with no AMM or locker label. Another token with the same name, LOAN (paGVWB...), launched about 18 minutes before this pool. It did $2.29M of volume in the last hour and now shows $0 liquidity, which looks like a pulled pool. This looks like a relaunch of the same brand, and there are also many dead 'Loan Meme' copies on pump.fun from earlier today.",
+  "narrative": {
+   "description": "A meme coin that claims to be a lending protocol for memes ('the meme that runs a protocol'). The website is marketing only: no contract address, no docs, no team.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The attention seems to come from the brand/X account and from on-chain trading bots. I found no outside news or wider discussion. The many copycat pump.fun launches show some ticker interest, but they are all dead."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "GMGN links this token to the @loanmeme X account and loanmeme.io. Right now it is the only LOAN with live liquidity.",
+   "competing_tokens": "paGVWB... LOAN had $2.29M volume in the last hour, launched about 18 minutes before this pair, and now shows 0 liquidity, which looks like a pulled pool. There are also 8+ dead 'Loan Meme' pump.fun clones at about $3k market cap.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "910 unique buyers but only 48 unique sellers, who made 1,174 sells between them. That points to bot or market-maker churn. GMGN flags 20 bundler wallets. No paid DexScreener promotion. No smart-money or KOL wallets. The dev's X account has launched 143 tokens.",
+   "uncertainty": "X was inaccessible (HTTP 402), so I could not see real engagement."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80% of supply against about $47k of liquidity",
+    "100% of the PumpSwap LP is unlocked (RugCheck danger flag)",
+    "Same-name predecessor token appears to have had its liquidity pulled about 18 minutes earlier",
+    "Dev's X account has launched 143 tokens",
+    "20 bundler wallets; sells are concentrated in 48 wallets"
+   ]
+  },
+  "counterargument": "The 80% wallet might be a Meteora or protocol vault, or a lending-reserve contract that GMGN leaves out of its top-10 figure (GMGN puts top10_holder_rate at 5.9%, which contradicts RugCheck). If so, the float is spread across more than 900 buyers. Price is holding and rising (+247% in the last hour, still up over the last 5 minutes) with heavy volume. A branded 'protocol meme' with a live X account and website could keep running to $500k+.",
+  "unknowns": [
+   "Who owns the 80% wallet FhVo...",
+   "Whether paGVWB... was rugged or migrated by the same team",
+   "Real engagement and follower count on @loanmeme",
+   "Who added the PumpSwap liquidity"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Contract-address search returned nothing. The X profile returned HTTP 402. Current pair data came from the DexScreener API. The site has marketing copy only. Time was short, so Telegram and Discord were not searched."
+  },
+  "thesis": "A serial-launch pattern (dev X account with 143 launches, a same-name predecessor whose liquidity went to zero minutes ago, 80% of supply in one wallet, unlocked LP, sells concentrated in a few wallets) points to a likely extraction setup, despite strong-looking volume. Upside needs the price to double to about $400k while that 80% wallet does not dump. Low runner odds, high rug odds.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 55,
+  "manipulation_risk": 80,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://loanmeme.io/",
+    "what": "Project site: marketing copy only, no contract address or team"
+   },
+   {
+    "url": "https://x.com/loanmeme",
+    "what": "Project X account (inaccessible, HTTP 402)"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/46HFmg7MeaLmN6EqYeXFnTYmEhHRMgxEcaEkDiPvNpKm",
+    "what": "Current pairs: PumpSwap has $47k liquidity and ~$201k market cap; Meteora pools are empty"
+   }
+  ]
+ },
+ "ttft_ms": 3343,
+ "type": "result",
+ "duration_ms": 68922,
+ "uuid": "87d23190-a2a0-49a8-8f6d-74751fabca8f",
+ "ttft_stream_ms": 705,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 705,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

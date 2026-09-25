@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24274,
+ "stop_reason": "tool_use",
+ "session_id": "e9fc4ba0-5ca3-41dc-93a8-ff63d2d0f472",
+ "total_cost_usd": 0.1143788,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8043,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2482,
+  "output_tokens_details": {
+   "thinking_tokens": 512
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8043,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2482,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 8043,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8043
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2482,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 8043,
+   "webSearchRequests": 0,
+   "costUSD": 0.1143788,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 512,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u73a9\u5e01\u5f52\u8d75 is a Chinese-language meme token. The name puns on the idiom \u5b8c\u74a7\u5f52\u8d75 (\\\"return the jade intact to Zhao\\\") and probably alludes to CZ (Zhao Changpeng). It has a PumpSwap pair about 100 minutes old. The pool was created directly by the creator: it did not migrate from a pump.fun bonding curve (migrated_unix=0, no launchpad). Over 6h the price is up about 470%, market cap is about $73-79k and liquidity is about $62k. Last hour it traded $1.2M, about 19x its market cap. That hour shows 1,612 buys and 1,611 sells from only 52 unique buyers and 52 unique sellers, about 30 trades per wallet with buys and sells matched almost exactly. This looks like bot or wash volume. The creator still holds 19% of supply, and none of the LP is locked or burned (a single LP provider, which is probably the creator). At least 10 other tokens with the same name exist and are all dead.\",\"narrative\":{\"description\":\"Chinese CZ/Binance-adjacent wordplay meme (\u73a9\u5e01\u5f52\u8d75 \u2248 'coin-playing returns to Zhao'). The Chinese-meme theme on Solana recurs regularly but is thin. There is no website, socials, description or DexScreener profile.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The main thing spreading is volume, and most of it comes from about 52 wallets trading back and forth. That pattern fits volume-bot activity aimed at trending lists and scanners, not organic spread. The h6 count of about 2,063 unique buyers suggests some real retail inflow earlier, possibly from airdrop-like or dust buys, but only 56 unique sellers over 6h is odd.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the only same-name token with real liquidity and volume. All 10 others in the packet have near-zero liquidity and no volume.\",\"competing_tokens\":\"At least 10 same-name clones created over the prior ~7 hours, all dead (liquidity $0-0.08). That points to a name being farmed repeatedly by launchers.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"In h1, 52 unique buyers and 52 unique sellers made 1,612 buys and 1,611 sells: buys equal sells and each wallet averages about 30 trades. Turnover is 19x market cap. There is no social presence and no profile. The pool is creator-deployed with unlocked LP, and the creator holds 19%. Many dead clones share the name.\",\"uncertainty\":\"GeckoTerminal's unique-wallet counts can be unreliable. The h6 figure of about 2,063 unique buyers suggests there was real retail participation earlier. GMGN reports a 0% bot/degen rate and few bundlers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of LP locked or burned; the creator-deployed PumpSwap pool can be drained at any time\",\"The creator holds 19% of supply, which can be dumped into roughly $62k of liquidity\",\"Volume looks bot-generated or wash-traded, so the real demand depth is unknown\",\"Already up about 470% in 6h and near its all-time high at entry\",\"Only a few LP providers\"]},\"counterargument\":\"About 2,000 wallets bought within 6 hours, and liquidity of about $62k is large relative to market cap. Chinese CZ-themed memes have gone viral before. With volume bots keeping it on trending lists, it could move from about $80k to $160k+ quickly: the price rose 116% in the last 15 minutes alone. The GMGN dev history is clean, and there are no sniper or rat-trader holdings.\",\"unknowns\":[\"Whether the creator controls the LP tokens\",\"Whether any real CZ/Chinese KOL post is driving this\",\"Whether GeckoTerminal's unique-wallet counts are accurate\",\"Where the creator's funds came from\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses the packet only.\"},\"thesis\":\"The pool was created by the creator, none of its LP is locked, and the creator still holds 19% of supply. Nearly all of the volume comes from about 52 wallets trading back and forth, the price is up 470% in a few hours, and the coin has no socials. Many identical-name clones have already died. This is a classic setup for pumping volume and then pulling liquidity or dumping the creator's tokens. Doubling from an entry near the high is possible but much less likely than a drop of 50% or more, or a liquidity pull.\",\"continuation_view\":\"strong_fade\",\"p_runner\":9,\"p_rug\":65,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\u73a9\u5e01\u5f52\u8d75 is a Chinese-language meme token. The name puns on the idiom \u5b8c\u74a7\u5f52\u8d75 (\"return the jade intact to Zhao\") and probably alludes to CZ (Zhao Changpeng). It has a PumpSwap pair about 100 minutes old. The pool was created directly by the creator: it did not migrate from a pump.fun bonding curve (migrated_unix=0, no launchpad). Over 6h the price is up about 470%, market cap is about $73-79k and liquidity is about $62k. Last hour it traded $1.2M, about 19x its market cap. That hour shows 1,612 buys and 1,611 sells from only 52 unique buyers and 52 unique sellers, about 30 trades per wallet with buys and sells matched almost exactly. This looks like bot or wash volume. The creator still holds 19% of supply, and none of the LP is locked or burned (a single LP provider, which is probably the creator). At least 10 other tokens with the same name exist and are all dead.",
+  "narrative": {
+   "description": "Chinese CZ/Binance-adjacent wordplay meme (\u73a9\u5e01\u5f52\u8d75 \u2248 'coin-playing returns to Zhao'). The Chinese-meme theme on Solana recurs regularly but is thin. There is no website, socials, description or DexScreener profile.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The main thing spreading is volume, and most of it comes from about 52 wallets trading back and forth. That pattern fits volume-bot activity aimed at trending lists and scanners, not organic spread. The h6 count of about 2,063 unique buyers suggests some real retail inflow earlier, possibly from airdrop-like or dust buys, but only 56 unique sellers over 6h is odd."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the only same-name token with real liquidity and volume. All 10 others in the packet have near-zero liquidity and no volume.",
+   "competing_tokens": "At least 10 same-name clones created over the prior ~7 hours, all dead (liquidity $0-0.08). That points to a name being farmed repeatedly by launchers.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "In h1, 52 unique buyers and 52 unique sellers made 1,612 buys and 1,611 sells: buys equal sells and each wallet averages about 30 trades. Turnover is 19x market cap. There is no social presence and no profile. The pool is creator-deployed with unlocked LP, and the creator holds 19%. Many dead clones share the name.",
+   "uncertainty": "GeckoTerminal's unique-wallet counts can be unreliable. The h6 figure of about 2,063 unique buyers suggests there was real retail participation earlier. GMGN reports a 0% bot/degen rate and few bundlers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of LP locked or burned; the creator-deployed PumpSwap pool can be drained at any time",
+    "The creator holds 19% of supply, which can be dumped into roughly $62k of liquidity",
+    "Volume looks bot-generated or wash-traded, so the real demand depth is unknown",
+    "Already up about 470% in 6h and near its all-time high at entry",
+    "Only a few LP providers"
+   ]
+  },
+  "counterargument": "About 2,000 wallets bought within 6 hours, and liquidity of about $62k is large relative to market cap. Chinese CZ-themed memes have gone viral before. With volume bots keeping it on trending lists, it could move from about $80k to $160k+ quickly: the price rose 116% in the last 15 minutes alone. The GMGN dev history is clean, and there are no sniper or rat-trader holdings.",
+  "unknowns": [
+   "Whether the creator controls the LP tokens",
+   "Whether any real CZ/Chinese KOL post is driving this",
+   "Whether GeckoTerminal's unique-wallet counts are accurate",
+   "Where the creator's funds came from"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses the packet only."
+  },
+  "thesis": "The pool was created by the creator, none of its LP is locked, and the creator still holds 19% of supply. Nearly all of the volume comes from about 52 wallets trading back and forth, the price is up 470% in a few hours, and the coin has no socials. Many identical-name clones have already died. This is a classic setup for pumping volume and then pulling liquidity or dumping the creator's tokens. Doubling from an entry near the high is possible but much less likely than a drop of 50% or more, or a liquidity pull.",
+  "continuation_view": "strong_fade",
+  "p_runner": 9,
+  "p_rug": 65,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6434,
+ "type": "result",
+ "duration_ms": 24320,
+ "uuid": "a898c0c0-679f-48c9-b02e-47358255a09a",
+ "ttft_stream_ms": 820,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 820,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

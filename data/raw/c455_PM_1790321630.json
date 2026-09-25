@@ -1,0 +1,140 @@
+{
+ "duration_api_ms": 41257,
+ "stop_reason": "tool_use",
+ "session_id": "caf07084-6003-47a4-95dc-7e44fb811534",
+ "total_cost_usd": 0.15305439999999998,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9802,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 3723,
+  "output_tokens_details": {
+   "thinking_tokens": 1061
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9802,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3723,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9802,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9802
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3723,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9802,
+   "webSearchRequests": 0,
+   "costUSD": 0.15305439999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1061,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The report's structural red flags bore on the outcome. GMGN tagged 160 bundler wallets out of 408 holders (about 39%) and 267 fresh wallets, the bot/degen rate was 0.49, and first-hour buys and sells were balanced (about 1,500 each). Together these describe distribution and churn rather than accumulation, which fits the decline to -98% at 24h. That the price kept falling for hours after the initial stop points to sustained selling of the bundled supply, not a one-off wick.\",\"The creator had fully exited (creator_close) and the coin was flagged as a community takeover, so no one had an incentive to defend the price. There was no bid support during the 24h slide, when liquidity fell from about $46k to about $4.9k.\",\"Liquidity was thin relative to the move. At T2 liquidity was about $21k and market cap $67k. At entry, market cap had reached $218k with only $46k of liquidity. Selling pressure therefore moved the price hard: -50% came within 1.3 minutes, and liquidity_collapse was true.\",\"Extreme volatility before the decision was visible in the data. GeckoTerminal showed m30 price change of +596% and m15 of +197%, and the realized sigma_hourly_pre was 2.46. At that volatility, a \u00b150%/+100% bracket gets decided within minutes, and a stop-first outcome is at least as likely as a target-first one.\"],\"misleading_observations\":[\"The report's price frame was stale by entry time. It reasoned about a coin at about $69k market cap, 37% below a $110k ATH. In the roughly 21 minutes between T2 (05:34) and the decision (05:55), the price about quadrupled (6.7e-5 to 2.75e-4), and entry came at about $218k, about 2x the ATH the report treated as a ceiling. The 'fade' call was directionally right, but its supporting argument (that a 2x from $69k was unlikely) did not describe the trade actually taken.\",\"The counterargument's upside target of '$140k+' had already been exceeded before entry. Whether that level was reachable told us nothing about the actual bracket.\",\"The 8 smart and 2 renowned wallets, and the 761 unique first-hour buyers, looked like strength. Neither prevented an immediate -50%. With heavy bundler and fresh-wallet presence, those wallet counts are weak evidence of durable demand.\",\"The entry quote (2.751e-4) was about 29% above the next bar's open (1.96e-4), and -20% and -30% were both touched at minute 0. The entry reference looks like a spike-top print. The measured loss therefore partly reflects how entry was priced, not only the thesis. Bracket net was -60.7%, worse than the -50% stop.\"],\"evidence_that_should_have_changed_conclusion\":[\"No evidence available at the time argued against the fade conclusion. What was missing was a refresh of price and market cap near t_decision. That would have shown a roughly 4x vertical move to about $218k on about $46k of liquidity, which strengthens the fade case: a late entry into a parabolic spike with 160 bundler wallets holding supply to sell into it. The probabilities should have been conditioned on the entry price, not the T2 snapshot.\",\"Given sigma_hourly_pre of about 2.5, p_rug 50 and p_runner 15 were not well calibrated to the bracket's mechanics. At that volatility, one of the two barriers is almost certain to be hit within minutes. The report could have said so explicitly rather than giving a general 'unlikely 2x'.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"fair\",\"hypotheses_proposed\":[{\"statement\":\"For fresh pump.fun graduates where GMGN bundler wallets make up at least 25% of holder_count and creator_token_status is creator_close, the +100%/-50% bracket hits the stop first in most cases (well above 50%). The 6h maximum favorable excursion also stays below +50% in most cases.\",\"conditions\":\"Pair age under 2h at detection; post-migration pumpswap pair; bundler_wallets / holder_count \u2265 0.25; creator_close; no paid boosts. All of these are measured at T2.\",\"market_structure_rationale\":\"Bundled wallets hold supply acquired at near-zero cost at launch and tend to sell into any post-graduation bid. With the dev gone, no one has an incentive to absorb that selling. On thin pump.fun AMM liquidity, that selling dominates price.\"},{\"statement\":\"When the price at t_decision is 2x or more of the T2 price, or above the T2 ATH, and the move happened within 30 minutes, the stop is hit within 15 minutes more often than in cases without such a run-up.\",\"conditions\":\"Compare the price at T2 with the price at the decision time (both available before entry). Apply to coins with market cap under $300k and liquidity/mcap under 0.25 at entry.\",\"market_structure_rationale\":\"A late entry into a vertical move buys at the point where early holders and bundlers have the most unrealized profit. Thin liquidity means their selling produces large immediate price gaps.\"},{\"statement\":\"When pre-entry sigma_hourly is above 1.5, whether the bracket hits target or stop first is close to a coin flip, and p_runner should be calibrated near the driftless base rate (about 0.33\u20130.5 for symmetric log barriers), adjusted only by structural drift signals. Research-derived p_runner values far from this base rate will be poorly calibrated.\",\"conditions\":\"Any candidate where sigma_hourly_pre, or m15/m30 price change magnitude, shows extreme realized volatility at decision time.\",\"market_structure_rationale\":\"When a \u00b150%/+100% barrier sits within about half an hour of typical volatility, which barrier gets hit first is decided mostly by noise and order-flow timing, not by narrative.\"},{\"statement\":\"When the entry quote exceeds the next bar's open by more than 15%, the recorded outcome should be flagged as entry-price-contaminated and analyzed separately.\",\"conditions\":\"Compare entry_quote with next_bar_open in outcome records.\",\"market_structure_rationale\":\"On thin AMM pools, a single large buy can print a transient high that a real follower could not fill at. Scoring against that print exaggerates losses and confounds the evaluation of the thesis.\"}],\"summary\":\"The 'fade' call was correct: the stop was hit at 1.3 minutes, and returns were -92% at 6h and -98% at 24h. The structural reasons behind it carried real weight: 160 of 408 holders were bundler wallets, many fresh wallets, the dev had exited, first-hour buys and sells were balanced, and liquidity was thin. However, the report reasoned about a $69k coin 37% below its ATH. By decision time the price had risen about 4x, and entry happened near $218k at a spike top, with the entry quote about 29% above the next bar's open. So the right answer came partly from reasoning that described a different situation. At the actual entry the fade case was even stronger, a late entry into a parabolic move on bundled supply. With pre-entry hourly volatility of about 246%, however, how the bracket resolved was largely noise. The outcome's direction was partially knowable from the structure. Its speed and size depended heavily on the entry timing and how the entry was priced. Reasoning quality: fair. The structural analysis was sound, but the price anchor was stale and the probabilities were not tied to the bracket's volatility mechanics.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The report's structural red flags bore on the outcome. GMGN tagged 160 bundler wallets out of 408 holders (about 39%) and 267 fresh wallets, the bot/degen rate was 0.49, and first-hour buys and sells were balanced (about 1,500 each). Together these describe distribution and churn rather than accumulation, which fits the decline to -98% at 24h. That the price kept falling for hours after the initial stop points to sustained selling of the bundled supply, not a one-off wick.",
+   "The creator had fully exited (creator_close) and the coin was flagged as a community takeover, so no one had an incentive to defend the price. There was no bid support during the 24h slide, when liquidity fell from about $46k to about $4.9k.",
+   "Liquidity was thin relative to the move. At T2 liquidity was about $21k and market cap $67k. At entry, market cap had reached $218k with only $46k of liquidity. Selling pressure therefore moved the price hard: -50% came within 1.3 minutes, and liquidity_collapse was true.",
+   "Extreme volatility before the decision was visible in the data. GeckoTerminal showed m30 price change of +596% and m15 of +197%, and the realized sigma_hourly_pre was 2.46. At that volatility, a \u00b150%/+100% bracket gets decided within minutes, and a stop-first outcome is at least as likely as a target-first one."
+  ],
+  "misleading_observations": [
+   "The report's price frame was stale by entry time. It reasoned about a coin at about $69k market cap, 37% below a $110k ATH. In the roughly 21 minutes between T2 (05:34) and the decision (05:55), the price about quadrupled (6.7e-5 to 2.75e-4), and entry came at about $218k, about 2x the ATH the report treated as a ceiling. The 'fade' call was directionally right, but its supporting argument (that a 2x from $69k was unlikely) did not describe the trade actually taken.",
+   "The counterargument's upside target of '$140k+' had already been exceeded before entry. Whether that level was reachable told us nothing about the actual bracket.",
+   "The 8 smart and 2 renowned wallets, and the 761 unique first-hour buyers, looked like strength. Neither prevented an immediate -50%. With heavy bundler and fresh-wallet presence, those wallet counts are weak evidence of durable demand.",
+   "The entry quote (2.751e-4) was about 29% above the next bar's open (1.96e-4), and -20% and -30% were both touched at minute 0. The entry reference looks like a spike-top print. The measured loss therefore partly reflects how entry was priced, not only the thesis. Bracket net was -60.7%, worse than the -50% stop."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "No evidence available at the time argued against the fade conclusion. What was missing was a refresh of price and market cap near t_decision. That would have shown a roughly 4x vertical move to about $218k on about $46k of liquidity, which strengthens the fade case: a late entry into a parabolic spike with 160 bundler wallets holding supply to sell into it. The probabilities should have been conditioned on the entry price, not the T2 snapshot.",
+   "Given sigma_hourly_pre of about 2.5, p_rug 50 and p_runner 15 were not well calibrated to the bracket's mechanics. At that volatility, one of the two barriers is almost certain to be hit within minutes. The report could have said so explicitly rather than giving a general 'unlikely 2x'."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "fair",
+  "hypotheses_proposed": [
+   {
+    "statement": "For fresh pump.fun graduates where GMGN bundler wallets make up at least 25% of holder_count and creator_token_status is creator_close, the +100%/-50% bracket hits the stop first in most cases (well above 50%). The 6h maximum favorable excursion also stays below +50% in most cases.",
+    "conditions": "Pair age under 2h at detection; post-migration pumpswap pair; bundler_wallets / holder_count \u2265 0.25; creator_close; no paid boosts. All of these are measured at T2.",
+    "market_structure_rationale": "Bundled wallets hold supply acquired at near-zero cost at launch and tend to sell into any post-graduation bid. With the dev gone, no one has an incentive to absorb that selling. On thin pump.fun AMM liquidity, that selling dominates price."
+   },
+   {
+    "statement": "When the price at t_decision is 2x or more of the T2 price, or above the T2 ATH, and the move happened within 30 minutes, the stop is hit within 15 minutes more often than in cases without such a run-up.",
+    "conditions": "Compare the price at T2 with the price at the decision time (both available before entry). Apply to coins with market cap under $300k and liquidity/mcap under 0.25 at entry.",
+    "market_structure_rationale": "A late entry into a vertical move buys at the point where early holders and bundlers have the most unrealized profit. Thin liquidity means their selling produces large immediate price gaps."
+   },
+   {
+    "statement": "When pre-entry sigma_hourly is above 1.5, whether the bracket hits target or stop first is close to a coin flip, and p_runner should be calibrated near the driftless base rate (about 0.33\u20130.5 for symmetric log barriers), adjusted only by structural drift signals. Research-derived p_runner values far from this base rate will be poorly calibrated.",
+    "conditions": "Any candidate where sigma_hourly_pre, or m15/m30 price change magnitude, shows extreme realized volatility at decision time.",
+    "market_structure_rationale": "When a \u00b150%/+100% barrier sits within about half an hour of typical volatility, which barrier gets hit first is decided mostly by noise and order-flow timing, not by narrative."
+   },
+   {
+    "statement": "When the entry quote exceeds the next bar's open by more than 15%, the recorded outcome should be flagged as entry-price-contaminated and analyzed separately.",
+    "conditions": "Compare entry_quote with next_bar_open in outcome records.",
+    "market_structure_rationale": "On thin AMM pools, a single large buy can print a transient high that a real follower could not fill at. Scoring against that print exaggerates losses and confounds the evaluation of the thesis."
+   }
+  ],
+  "summary": "The 'fade' call was correct: the stop was hit at 1.3 minutes, and returns were -92% at 6h and -98% at 24h. The structural reasons behind it carried real weight: 160 of 408 holders were bundler wallets, many fresh wallets, the dev had exited, first-hour buys and sells were balanced, and liquidity was thin. However, the report reasoned about a $69k coin 37% below its ATH. By decision time the price had risen about 4x, and entry happened near $218k at a spike top, with the entry quote about 29% above the next bar's open. So the right answer came partly from reasoning that described a different situation. At the actual entry the fade case was even stronger, a late entry into a parabolic move on bundled supply. With pre-entry hourly volatility of about 246%, however, how the bracket resolved was largely noise. The outcome's direction was partially knowable from the structure. Its speed and size depended heavily on the entry timing and how the entry was priced. Reasoning quality: fair. The structural analysis was sound, but the price anchor was stale and the probabilities were not tied to the bracket's volatility mechanics."
+ },
+ "ttft_ms": 14405,
+ "type": "result",
+ "duration_ms": 41313,
+ "uuid": "5e500883-78f8-4243-acde-2a8ce59bbf38",
+ "ttft_stream_ms": 1402,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 1402,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

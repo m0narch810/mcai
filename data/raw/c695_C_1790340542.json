@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 75502,
+ "stop_reason": "tool_use",
+ "session_id": "c7e07429-23dc-4a9a-8486-bc37e28c600b",
+ "total_cost_usd": 0.358132,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 17179,
+  "cache_read_input_tokens": 46245,
+  "output_tokens": 3916,
+  "output_tokens_details": {
+   "thinking_tokens": 906
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17179,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2422,
+    "cache_read_input_tokens": 17730,
+    "cache_creation_input_tokens": 2025,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2025
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3916,
+   "cacheReadInputTokens": 46245,
+   "cacheCreationInputTokens": 17179,
+   "webSearchRequests": 0,
+   "costUSD": 0.225033,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 906,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 61324,
+   "outputTokens": 2355,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.13309900000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Chinese-named token, \u5e73\u5e73\u548c\u798f\u53cc (roughly \\\"peace and double blessings\\\"), with a Mid-Autumn poem line as its description (\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929). It was created directly as a PumpSwap pool, not through the pump.fun bonding curve (launchpad null, migrated_unix 0). About 44 minutes after creation it showed $400k of 1h volume, 6.7x turnover and +105%. The pool holds about 66.6% of supply plus about 248 SOL, around $60k of liquidity, which is more than the $45k market cap. The LP is 0% burned and unlocked, and RugCheck rates that as danger. Nine other tokens with the same name were created over the past ~3 hours. Every one now shows about $0 liquidity. One of them (47a7\u2026) was created only about 15 minutes before this one, had $105k in 1h volume and 1,671 buys, and its liquidity has already gone to zero. That looks like a repeated create-pool, pump volume, pull-LP operation, and this token looks like the latest one.\",\"narrative\":{\"description\":\"A Mid-Autumn Festival (\u4e2d\u79cb\u8282) blessing meme. The festival falls on 2026-09-25, so the cultural hook is real and current. But it is a generic holiday greeting, not a specific viral event, and I found no web or X discussion of this token name at all.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Nothing I found looks like organic spread. Activity is best explained by the operator's own volume and a festival-themed name that catches Chinese degen traders scanning new pairs. The pattern is 1,119 unique buyers against only 114 sellers, near-equal buy and sell transaction counts, and 49 bundler wallets.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is currently the only live pool among 10 tokens with the same name, but only because the earlier ones have already had their liquidity pulled. None is canonical. They look like serial copies from one scheme.\",\"competing_tokens\":\"Nine same-name tokens. All show $0 liquidity. 47a7\u2026 ran $105k of 1h volume before going to zero, about 15 minutes before this pair appeared.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The pool was seeded by the creator with unlocked LP. The creator has closed out its token position (creator_token_status creator_close). There are 49 bundler wallets, and one address holds 11.14%, which GMGN tags as dev/team and sniper. Buyer and seller counts are lopsided (1,119 vs 114) while transaction counts are nearly balanced, which fits scripted volume. Earlier same-name clones had their liquidity pulled. There are no socials, no website and no DexScreener profile.\",\"uncertainty\":\"I could not see on-chain who holds the LP tokens, or X posts directly. Some real Mid-Autumn retail buyers may be present.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% burned and unlocked, and the creator can remove about $60k at any moment\",\"Identical same-name clones created minutes earlier already went to $0 liquidity\",\"11.14% sits in a single dev/sniper-tagged wallet\",\"49 bundler wallets\",\"No socials and no community\"]},\"counterargument\":\"Mid-Autumn is today, and Chinese festival memes can draw real flow. This pool has deeper liquidity than the clones had and is still trading actively at +2% over 5 minutes. With 1,100+ holders, the operator could push it to 2x before pulling (entry around $45k, a double needs about $90k), since running the price up first tends to increase what can be extracted.\",\"unknowns\":[\"Who holds the LP tokens (assumed to be the creator)\",\"Whether the earlier clones were pulled by the same deployer\",\"Any Chinese Telegram or WeChat call groups pushing it\",\"How long the earlier clones lived before their pulls\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searches for the contract address and the name returned nothing relevant. News confirms only that Mid-Autumn falls on 2026-09-25. DexScreener API checks on this token and on clone 47a7\u2026 confirmed the clone now shows $0 liquidity.\"},\"thesis\":\"This looks like a serial rug operation. Same-name PumpSwap pools with unlocked, creator-seeded LP get volume pumped and are then pulled, and a clone from 15 minutes earlier already went to zero. The Mid-Autumn theme is real but generic. A pull within 6 hours is highly likely, and a clean 2x from entry is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":85,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/DspcAad5WcQZkUmVJ8XhJvFd12U8z5hMq87T17hZVvTf\",\"what\":\"This token: PumpSwap pair, about $60k liquidity, $406k 1h volume, no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/47a7W5fQWdZ6mcusPw5qu8g5a2ScVykpGuUKQ45fRuSg\",\"what\":\"Same-name clone with $120k volume that now has $0 liquidity\"},{\"url\":\"https://www.nao.ac.jp/astro/sky/2026/09-topics03.html\",\"what\":\"Mid-Autumn moon falls on 2026-09-25\"},{\"url\":\"https://www.sina.cn/weibo/detail/5346938946062841.html\",\"what\":\"2026 Mid-Autumn holiday, Sept 25-27\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Chinese-named token, \u5e73\u5e73\u548c\u798f\u53cc (roughly \"peace and double blessings\"), with a Mid-Autumn poem line as its description (\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929). It was created directly as a PumpSwap pool, not through the pump.fun bonding curve (launchpad null, migrated_unix 0). About 44 minutes after creation it showed $400k of 1h volume, 6.7x turnover and +105%. The pool holds about 66.6% of supply plus about 248 SOL, around $60k of liquidity, which is more than the $45k market cap. The LP is 0% burned and unlocked, and RugCheck rates that as danger. Nine other tokens with the same name were created over the past ~3 hours. Every one now shows about $0 liquidity. One of them (47a7\u2026) was created only about 15 minutes before this one, had $105k in 1h volume and 1,671 buys, and its liquidity has already gone to zero. That looks like a repeated create-pool, pump volume, pull-LP operation, and this token looks like the latest one.",
+  "narrative": {
+   "description": "A Mid-Autumn Festival (\u4e2d\u79cb\u8282) blessing meme. The festival falls on 2026-09-25, so the cultural hook is real and current. But it is a generic holiday greeting, not a specific viral event, and I found no web or X discussion of this token name at all.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Nothing I found looks like organic spread. Activity is best explained by the operator's own volume and a festival-themed name that catches Chinese degen traders scanning new pairs. The pattern is 1,119 unique buyers against only 114 sellers, near-equal buy and sell transaction counts, and 49 bundler wallets."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is currently the only live pool among 10 tokens with the same name, but only because the earlier ones have already had their liquidity pulled. None is canonical. They look like serial copies from one scheme.",
+   "competing_tokens": "Nine same-name tokens. All show $0 liquidity. 47a7\u2026 ran $105k of 1h volume before going to zero, about 15 minutes before this pair appeared.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The pool was seeded by the creator with unlocked LP. The creator has closed out its token position (creator_token_status creator_close). There are 49 bundler wallets, and one address holds 11.14%, which GMGN tags as dev/team and sniper. Buyer and seller counts are lopsided (1,119 vs 114) while transaction counts are nearly balanced, which fits scripted volume. Earlier same-name clones had their liquidity pulled. There are no socials, no website and no DexScreener profile.",
+   "uncertainty": "I could not see on-chain who holds the LP tokens, or X posts directly. Some real Mid-Autumn retail buyers may be present."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% burned and unlocked, and the creator can remove about $60k at any moment",
+    "Identical same-name clones created minutes earlier already went to $0 liquidity",
+    "11.14% sits in a single dev/sniper-tagged wallet",
+    "49 bundler wallets",
+    "No socials and no community"
+   ]
+  },
+  "counterargument": "Mid-Autumn is today, and Chinese festival memes can draw real flow. This pool has deeper liquidity than the clones had and is still trading actively at +2% over 5 minutes. With 1,100+ holders, the operator could push it to 2x before pulling (entry around $45k, a double needs about $90k), since running the price up first tends to increase what can be extracted.",
+  "unknowns": [
+   "Who holds the LP tokens (assumed to be the creator)",
+   "Whether the earlier clones were pulled by the same deployer",
+   "Any Chinese Telegram or WeChat call groups pushing it",
+   "How long the earlier clones lived before their pulls"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searches for the contract address and the name returned nothing relevant. News confirms only that Mid-Autumn falls on 2026-09-25. DexScreener API checks on this token and on clone 47a7\u2026 confirmed the clone now shows $0 liquidity."
+  },
+  "thesis": "This looks like a serial rug operation. Same-name PumpSwap pools with unlocked, creator-seeded LP get volume pumped and are then pulled, and a clone from 15 minutes earlier already went to zero. The Mid-Autumn theme is real but generic. A pull within 6 hours is highly likely, and a clean 2x from entry is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 85,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/DspcAad5WcQZkUmVJ8XhJvFd12U8z5hMq87T17hZVvTf",
+    "what": "This token: PumpSwap pair, about $60k liquidity, $406k 1h volume, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/47a7W5fQWdZ6mcusPw5qu8g5a2ScVykpGuUKQ45fRuSg",
+    "what": "Same-name clone with $120k volume that now has $0 liquidity"
+   },
+   {
+    "url": "https://www.nao.ac.jp/astro/sky/2026/09-topics03.html",
+    "what": "Mid-Autumn moon falls on 2026-09-25"
+   },
+   {
+    "url": "https://www.sina.cn/weibo/detail/5346938946062841.html",
+    "what": "2026 Mid-Autumn holiday, Sept 25-27"
+   }
+  ]
+ },
+ "ttft_ms": 5065,
+ "type": "result",
+ "duration_ms": 54331,
+ "uuid": "782d3bd7-6a54-4313-bcd6-d2bf991b76a9",
+ "ttft_stream_ms": 859,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 859,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 24233,
+ "stop_reason": "tool_use",
+ "session_id": "43940ec8-a5ff-4bb1-8b3b-916bdfa2a1e2",
+ "total_cost_usd": 0.11081880000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7738,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2426,
+  "output_tokens_details": {
+   "thinking_tokens": 393
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7738,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2426,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7738,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7738
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2426,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7738,
+   "webSearchRequests": 0,
+   "costUSD": 0.11081880000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 393,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GSTOCK/\\\"Gstock\\\" is a copycat token. It was deployed straight to a PumpSwap pool, not through the pump.fun bonding curve (migrated_unix=0, launchpad empty, pool about 36 minutes old at detection). It shares its name with an established GSTOCK token that has about $31M in liquidity, and with at least 8 dead \\\"Gstock/GstockCoin\\\" copies launched in the past few hours. Liquidity ($232k) is higher than market cap ($162k). The LP is 0% locked or burned, and RugCheck flags few LP providers, so the creator probably seeded the pool and can pull it. The pool has done $7.4M volume in its first hour, about 31\u201346x its market cap. Only 63 unique wallets have sold, yet they made about 4,400 sell transactions (about 70 each), against about 1,950 buyers. GMGN tags 49 bundler wallets holding about 21.5%, plus 10.7% 'entrapment' traders. The only metadata is a description pointing to an unrelated-looking domain (slinkcoinrbh.lol). There are no socials, no DexScreener profile and no boosts.\",\"narrative\":{\"description\":\"Ticker copy of an existing GSTOCK token (probably a stock/RWA-themed token with deep liquidity). This deployment has no project, socials or story of its own, and the site link looks like a launcher or template domain.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks machine-made rather than attention-driven. A few repeat seller wallets and very high turnover on a dev-seeded pool suggest volume bots creating chart and trending visibility, not organic spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the shared name and ticker with an established GSTOCK token. This contract is not the canonical one.\",\"competing_tokens\":\"GLXCy8yk... GSTOCK (~$31M liquidity, canonical-looking), plus about 8 dead GstockCoin/Gstock copies launched in the last ~4.5 hours with $0 liquidity, and 131VuH... 'Gstock SOL' (dead).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"63 unique sellers made 4,393 sells (about 70 each) against 1,947 unique buyers. Hourly turnover is about 31x market cap. GMGN shows 49 bundler wallets holding 21.5% and 10.7% entrapment-trader share. Liquidity exceeds market cap and the LP is 0% locked, meaning a self-seeded pool the creator can drain. There are no socials, no profile and no organic attention markers, and this is one of a string of same-name copies launched today.\",\"uncertainty\":\"The buyer count (about 1,950) may include real retail pulled in by volume bots. Without X data I cannot rule out outside hype around the canonical GSTOCK spilling over to this copy.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked or burned and the pool seeded by very few providers; the creator can remove about $232k of liquidity at any time\",\"Liquidity above market cap suggests an engineered pool set up to attract buyers before a pull\",\"Volume-bot pattern (few sellers, huge transaction counts)\",\"49 bundler wallets holding about 21.5%\",\"Name copy of a $31M-liquidity token; the dead-copy pattern repeats\",\"A 2x needs about $320k market cap with no organic buyers visible\"]},\"counterargument\":\"About 1,950 unique buyers and a 1.47 buy/sell count ratio are substantial for a 36-minute-old coin. Top-10 holders (excluding the pool) hold only 13%, and mint and freeze authority are renounced. Deep liquidity makes the price move slowly, so a -50% stop is less likely to trigger before any pull. If retail confusing it with the canonical GSTOCK keeps flowing in, or the operator pumps the price further before extracting, it could touch $320k market cap within 6 hours; volume-farmed coins sometimes run first.\",\"unknowns\":[\"Who provided the LP and whether they will remove it\",\"Whether the canonical GSTOCK has current hype this copy could ride\",\"Real versus bot share of the ~1,950 buyers\",\"What slinkcoinrbh.lol is\",\"X/Telegram activity\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No-internet condition; judged only from the evidence packet.\"},\"thesis\":\"A self-seeded, unlocked PumpSwap pool copying an established ticker, with wash-style volume from 63 repeat sellers and heavy bundling. This is a textbook extraction setup: the most likely path is a liquidity pull or bleed within hours, not a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":75,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GSTOCK/\"Gstock\" is a copycat token. It was deployed straight to a PumpSwap pool, not through the pump.fun bonding curve (migrated_unix=0, launchpad empty, pool about 36 minutes old at detection). It shares its name with an established GSTOCK token that has about $31M in liquidity, and with at least 8 dead \"Gstock/GstockCoin\" copies launched in the past few hours. Liquidity ($232k) is higher than market cap ($162k). The LP is 0% locked or burned, and RugCheck flags few LP providers, so the creator probably seeded the pool and can pull it. The pool has done $7.4M volume in its first hour, about 31\u201346x its market cap. Only 63 unique wallets have sold, yet they made about 4,400 sell transactions (about 70 each), against about 1,950 buyers. GMGN tags 49 bundler wallets holding about 21.5%, plus 10.7% 'entrapment' traders. The only metadata is a description pointing to an unrelated-looking domain (slinkcoinrbh.lol). There are no socials, no DexScreener profile and no boosts.",
+  "narrative": {
+   "description": "Ticker copy of an existing GSTOCK token (probably a stock/RWA-themed token with deep liquidity). This deployment has no project, socials or story of its own, and the site link looks like a launcher or template domain.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The activity looks machine-made rather than attention-driven. A few repeat seller wallets and very high turnover on a dev-seeded pool suggest volume bots creating chart and trending visibility, not organic spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the shared name and ticker with an established GSTOCK token. This contract is not the canonical one.",
+   "competing_tokens": "GLXCy8yk... GSTOCK (~$31M liquidity, canonical-looking), plus about 8 dead GstockCoin/Gstock copies launched in the last ~4.5 hours with $0 liquidity, and 131VuH... 'Gstock SOL' (dead).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "63 unique sellers made 4,393 sells (about 70 each) against 1,947 unique buyers. Hourly turnover is about 31x market cap. GMGN shows 49 bundler wallets holding 21.5% and 10.7% entrapment-trader share. Liquidity exceeds market cap and the LP is 0% locked, meaning a self-seeded pool the creator can drain. There are no socials, no profile and no organic attention markers, and this is one of a string of same-name copies launched today.",
+   "uncertainty": "The buyer count (about 1,950) may include real retail pulled in by volume bots. Without X data I cannot rule out outside hype around the canonical GSTOCK spilling over to this copy."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked or burned and the pool seeded by very few providers; the creator can remove about $232k of liquidity at any time",
+    "Liquidity above market cap suggests an engineered pool set up to attract buyers before a pull",
+    "Volume-bot pattern (few sellers, huge transaction counts)",
+    "49 bundler wallets holding about 21.5%",
+    "Name copy of a $31M-liquidity token; the dead-copy pattern repeats",
+    "A 2x needs about $320k market cap with no organic buyers visible"
+   ]
+  },
+  "counterargument": "About 1,950 unique buyers and a 1.47 buy/sell count ratio are substantial for a 36-minute-old coin. Top-10 holders (excluding the pool) hold only 13%, and mint and freeze authority are renounced. Deep liquidity makes the price move slowly, so a -50% stop is less likely to trigger before any pull. If retail confusing it with the canonical GSTOCK keeps flowing in, or the operator pumps the price further before extracting, it could touch $320k market cap within 6 hours; volume-farmed coins sometimes run first.",
+  "unknowns": [
+   "Who provided the LP and whether they will remove it",
+   "Whether the canonical GSTOCK has current hype this copy could ride",
+   "Real versus bot share of the ~1,950 buyers",
+   "What slinkcoinrbh.lol is",
+   "X/Telegram activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No-internet condition; judged only from the evidence packet."
+  },
+  "thesis": "A self-seeded, unlocked PumpSwap pool copying an established ticker, with wash-style volume from 63 repeat sellers and heavy bundling. This is a textbook extraction setup: the most likely path is a liquidity pull or bleed within hours, not a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 75,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5205,
+ "type": "result",
+ "duration_ms": 24282,
+ "uuid": "389a4650-034e-406d-8f63-d1f8478e00cc",
+ "ttft_stream_ms": 638,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 638,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 68259,
+ "stop_reason": "tool_use",
+ "session_id": "3606d53a-09e1-4037-b3c2-64bf26786f92",
+ "total_cost_usd": 0.30044000000000004,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13612,
+  "cache_read_input_tokens": 40935,
+  "output_tokens": 3519,
+  "output_tokens_details": {
+   "thinking_tokens": 777
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13612,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2429,
+    "cache_read_input_tokens": 15149,
+    "cache_creation_input_tokens": 1039,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1039
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3519,
+   "cacheReadInputTokens": 40935,
+   "cacheCreationInputTokens": 13612,
+   "webSearchRequests": 0,
+   "costUSD": 0.18749500000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 777,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 53825,
+   "outputTokens": 1824,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.112945,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"This is the fourth \ud83d\udcb2SATAN token in about an hour. The three earlier ones (created at ms 1790322358000, 1790322545000 and 1790323022000) all show liquidity of about $0. The most recent one, 7WCR..., went up 871% on PumpSwap and then had its liquidity drained to $0.01 while the market-cap figure stayed at $214k. That is the signature of a liquidity pull. This token copies the same setup: its PumpSwap pool was created 6 seconds after the mint, and it has no socials, no website, no DexScreener profile and 0% of its LP locked. Buyers far outnumber sellers (1125 vs 125 unique), which fits bots or farmed buy volume rather than organic interest. GMGN flags 9 bundler wallets.\",\"uncertainty\":\"I cannot see private Telegram or bot call groups. I also have not proven on-chain that the four same-ticker coins share a deployer; the packet lists this creator as having launched only 1 token, so the operator may be rotating wallets.\"},\"continuation_view\":\"strong_fade\",\"counterargument\":\"The previous \ud83d\udcb2SATAN coin went up about 9x before its liquidity was pulled. If this relaunch follows the same script, it could double from our entry before the pull, since it is only about 38 minutes old and still climbing (+15% over 15 minutes). The top holder, excluding the pool, holds just 10.5%, and the dev holds 0%. So there is no big token dump waiting to happen, only the risk that the LP is withdrawn.\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator added the PumpSwap LP directly, with 0% locked or burned; RugCheck marks this as danger\",\"The same ticker was pulled once and rotated through three times in the past hour\",\"Liquidity of about $65k is higher than the market cap of $52k, which is an unusual pool that the deployer seeded\",\"1125 unique buyers against 125 sellers suggests bot or farmed volume\",\"9 bundler wallets\"]},\"narrative\":{\"description\":\"There is no narrative. It is a generic 'SATAN' ticker with an emoji prefix, and I found no event, website or social account.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"The activity seems to come from relaunching a ticker that just pumped, likely with bot volume, and not from any outside attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only \ud83d\udcb2SATAN pair that still has liquidity. The earlier ones were abandoned or pulled.\",\"competing_tokens\":\"7WCR... (pumped 871%, liquidity now $0.01), 6Gfz..., 5nRF... (liquidity $0), and AFER...pump (dead).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether the same operator deployed all the \ud83d\udcb2SATAN coins\",\"How the relaunch is being promoted (private call groups)\",\"When the LP holder will pull\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched the contract address and found nothing. The ticker on X only turned up an unrelated 2024 account, 'Mr Beast's Cat Satan'. The packet lists no socials. I checked the earlier same-ticker coin on the DexScreener API: liquidity pulled after +871%.\"},\"thesis\":\"This looks like a serial relaunch rug. The previous \ud83d\udcb2SATAN coin on PumpSwap ran about 9x in roughly 40 minutes and then had its liquidity pulled. This one was launched about 44 minutes later with the same template: a self-seeded, unlocked PumpSwap LP, no socials, and buy counts that look like bots. It is now about 38 minutes old, which is close to when the last one was pulled. It could still double before a pull, but a liquidity pull within 6 hours is much more likely.\",\"p_runner\":12,\"p_rug\":85,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"what_is_happening\":\"This \ud83d\udcb2SATAN token is about 38 minutes old, with its pool created directly on PumpSwap. It is up 136%, with $256k of volume and bot-like buying. It appeared right after an identically named coin from about 44 minutes earlier pumped 871% and had its liquidity drained to $0.01.\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7WCR6VwHHTnhs59RuiCcJcXJ1Wja3VK7NZ4xj2XeF4HU\",\"what\":\"Earlier \ud83d\udcb2SATAN on PumpSwap: +871% over 6h, liquidity now $0.01 (pulled)\"},{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/38je9kfTx2iM69S5bApF72sV9XnXorfi4GBvsw4mL7ps\",\"what\":\"Current pair state: liquidity $65k, market cap $52k, +136%\"},{\"url\":\"https://x.com/mrbeastscatsol\",\"what\":\"The only X result for $SATAN, an unrelated 2024 account\"}]}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "This is the fourth \ud83d\udcb2SATAN token in about an hour. The three earlier ones (created at ms 1790322358000, 1790322545000 and 1790323022000) all show liquidity of about $0. The most recent one, 7WCR..., went up 871% on PumpSwap and then had its liquidity drained to $0.01 while the market-cap figure stayed at $214k. That is the signature of a liquidity pull. This token copies the same setup: its PumpSwap pool was created 6 seconds after the mint, and it has no socials, no website, no DexScreener profile and 0% of its LP locked. Buyers far outnumber sellers (1125 vs 125 unique), which fits bots or farmed buy volume rather than organic interest. GMGN flags 9 bundler wallets.",
+   "uncertainty": "I cannot see private Telegram or bot call groups. I also have not proven on-chain that the four same-ticker coins share a deployer; the packet lists this creator as having launched only 1 token, so the operator may be rotating wallets."
+  },
+  "continuation_view": "strong_fade",
+  "counterargument": "The previous \ud83d\udcb2SATAN coin went up about 9x before its liquidity was pulled. If this relaunch follows the same script, it could double from our entry before the pull, since it is only about 38 minutes old and still climbing (+15% over 15 minutes). The top holder, excluding the pool, holds just 10.5%, and the dev holds 0%. So there is no big token dump waiting to happen, only the risk that the LP is withdrawn.",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator added the PumpSwap LP directly, with 0% locked or burned; RugCheck marks this as danger",
+    "The same ticker was pulled once and rotated through three times in the past hour",
+    "Liquidity of about $65k is higher than the market cap of $52k, which is an unusual pool that the deployer seeded",
+    "1125 unique buyers against 125 sellers suggests bot or farmed volume",
+    "9 bundler wallets"
+   ]
+  },
+  "narrative": {
+   "description": "There is no narrative. It is a generic 'SATAN' ticker with an emoji prefix, and I found no event, website or social account.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "The activity seems to come from relaunching a ticker that just pumped, likely with bot volume, and not from any outside attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only \ud83d\udcb2SATAN pair that still has liquidity. The earlier ones were abandoned or pulled.",
+   "competing_tokens": "7WCR... (pumped 871%, liquidity now $0.01), 6Gfz..., 5nRF... (liquidity $0), and AFER...pump (dead).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether the same operator deployed all the \ud83d\udcb2SATAN coins",
+   "How the relaunch is being promoted (private call groups)",
+   "When the LP holder will pull"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched the contract address and found nothing. The ticker on X only turned up an unrelated 2024 account, 'Mr Beast's Cat Satan'. The packet lists no socials. I checked the earlier same-ticker coin on the DexScreener API: liquidity pulled after +871%."
+  },
+  "thesis": "This looks like a serial relaunch rug. The previous \ud83d\udcb2SATAN coin on PumpSwap ran about 9x in roughly 40 minutes and then had its liquidity pulled. This one was launched about 44 minutes later with the same template: a self-seeded, unlocked PumpSwap LP, no socials, and buy counts that look like bots. It is now about 38 minutes old, which is close to when the last one was pulled. It could still double before a pull, but a liquidity pull within 6 hours is much more likely.",
+  "p_runner": 12,
+  "p_rug": 85,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "what_is_happening": "This \ud83d\udcb2SATAN token is about 38 minutes old, with its pool created directly on PumpSwap. It is up 136%, with $256k of volume and bot-like buying. It appeared right after an identically named coin from about 44 minutes earlier pumped 871% and had its liquidity drained to $0.01.",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7WCR6VwHHTnhs59RuiCcJcXJ1Wja3VK7NZ4xj2XeF4HU",
+    "what": "Earlier \ud83d\udcb2SATAN on PumpSwap: +871% over 6h, liquidity now $0.01 (pulled)"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/38je9kfTx2iM69S5bApF72sV9XnXorfi4GBvsw4mL7ps",
+    "what": "Current pair state: liquidity $65k, market cap $52k, +136%"
+   },
+   {
+    "url": "https://x.com/mrbeastscatsol",
+    "what": "The only X result for $SATAN, an unrelated 2024 account"
+   }
+  ]
+ },
+ "ttft_ms": 4192,
+ "type": "result",
+ "duration_ms": 52419,
+ "uuid": "1283e787-0193-4f5e-80b2-2cfff8ed130a",
+ "ttft_stream_ms": 892,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 892,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

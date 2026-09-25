@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 63455,
+ "stop_reason": "tool_use",
+ "session_id": "520b6d39-4968-43b3-98ef-565e6d8b7df0",
+ "total_cost_usd": 0.30438819999999994,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15741,
+  "cache_read_input_tokens": 43641,
+  "output_tokens": 4002,
+  "output_tokens_details": {
+   "thinking_tokens": 667
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15741,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3190,
+    "cache_read_input_tokens": 15773,
+    "cache_creation_input_tokens": 2544,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2544
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4002,
+   "cacheReadInputTokens": 43641,
+   "cacheCreationInputTokens": 15741,
+   "webSearchRequests": 0,
+   "costUSD": 0.21472819999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 667,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42160,
+   "outputTokens": 1500,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08965999999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u5e01\u5b89\u4e2d\u79cb (\\\"Binance Mid-Autumn\\\") launched directly as a PumpSwap pool ~36 min before detection (not a pump.fun curve migration; migrated_unix 0), with ~150 SOL creator-supplied LP that is 0% locked/burned. Volume $470k in first hour on a $20k mcap, driven by 2,055 unique buyers vs only 53 unique sellers (\u22481,000 buyers in one 15-30 min window) \u2014 a pattern consistent with bot-farmed holder counts/volume. At least 10 identical-name tokens were launched in the preceding ~9 hours, all now at $0 liquidity, suggesting a serial launch-pump-pull operation. Price now declining (-23% m5 on DexScreener fetch).\",\"narrative\":{\"description\":\"Mid-Autumn Festival (falls ~Sept 25, 2026) + Binance branding, a generic seasonal Chinese-community meme. No evidence of any Binance/CZ official Mid-Autumn 2026 campaign found; only a 2025 CZ post soliciting Mid-Autumn memes.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Seasonal holiday timing; but spread appears to be the same name launched repeatedly by deployers rather than organic discussion.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"No socials, website, or profile; nothing distinguishes it from the ~10 prior same-name tokens.\",\"competing_tokens\":\"10+ same-name tokens launched earlier today (e.g. 9imEma..., 6bfPnf..., CAZfUH...), all with $0 liquidity now, some previously at $60k-$147k mcap.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,055 unique buyers vs 53 unique sellers in 1h; ~1,000 buyers appeared in a single 15-min window; only 2 GMGN page visits despite 2k 'holders'; 0 smart/renowned wallets; serial dead clones of same name.\",\"uncertainty\":\"Wallet funding graph not inspected; could not see private TG call groups.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked/burned, creator-provided PumpSwap pool can be pulled anytime\",\"Direct pool launch, not curve migration\",\"Serial same-name tokens all rugged to $0 liquidity\",\"Likely farmed buyer count/volume\",\"Price already rolling over (-23% m5)\"]},\"counterargument\":\"Mid-Autumn Festival is tomorrow so Chinese-community attention could genuinely build; holder distribution is wide (top10 ~7.7%) and at $20k mcap a small burst of real buying could double price before any pull.\",\"unknowns\":[\"Who supplied the LP and whether they are linked to earlier same-name deployers\",\"Any private Telegram/WeChat call-group promotion\",\"Whether any official Binance Mid-Autumn campaign exists for 2026\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Contract-address search returned nothing; name searches returned only generic Binance posts and a 2025 CZ Mid-Autumn meme article. No project socials exist per packet. DexScreener API fetched for live data.\"},\"thesis\":\"Serial-launched holiday clone with unlocked creator LP and farmed buyer counts; the ten prior same-name tokens all went to zero liquidity. Very likely rug; low odds of 2x from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":82,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2JFQiSs3fykWsBZ72jSBaXDnqN6vMqN9gMoaVy9UUrwh\",\"what\":\"Live liquidity $34.6k, mcap $19.5k, -23% m5, no socials/boosts\"},{\"url\":\"https://www.bitget.com/ja/news/detail/12560605001931\",\"what\":\"CZ 2025 Mid-Autumn greeting soliciting memes (only related narrative found)\"},{\"url\":\"https://x.com/binancezh\",\"what\":\"Binance Chinese account; no Mid-Autumn 2026 campaign found in search\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u5e01\u5b89\u4e2d\u79cb (\"Binance Mid-Autumn\") launched directly as a PumpSwap pool ~36 min before detection (not a pump.fun curve migration; migrated_unix 0), with ~150 SOL creator-supplied LP that is 0% locked/burned. Volume $470k in first hour on a $20k mcap, driven by 2,055 unique buyers vs only 53 unique sellers (\u22481,000 buyers in one 15-30 min window) \u2014 a pattern consistent with bot-farmed holder counts/volume. At least 10 identical-name tokens were launched in the preceding ~9 hours, all now at $0 liquidity, suggesting a serial launch-pump-pull operation. Price now declining (-23% m5 on DexScreener fetch).",
+  "narrative": {
+   "description": "Mid-Autumn Festival (falls ~Sept 25, 2026) + Binance branding, a generic seasonal Chinese-community meme. No evidence of any Binance/CZ official Mid-Autumn 2026 campaign found; only a 2025 CZ post soliciting Mid-Autumn memes.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Seasonal holiday timing; but spread appears to be the same name launched repeatedly by deployers rather than organic discussion."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "No socials, website, or profile; nothing distinguishes it from the ~10 prior same-name tokens.",
+   "competing_tokens": "10+ same-name tokens launched earlier today (e.g. 9imEma..., 6bfPnf..., CAZfUH...), all with $0 liquidity now, some previously at $60k-$147k mcap.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,055 unique buyers vs 53 unique sellers in 1h; ~1,000 buyers appeared in a single 15-min window; only 2 GMGN page visits despite 2k 'holders'; 0 smart/renowned wallets; serial dead clones of same name.",
+   "uncertainty": "Wallet funding graph not inspected; could not see private TG call groups."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked/burned, creator-provided PumpSwap pool can be pulled anytime",
+    "Direct pool launch, not curve migration",
+    "Serial same-name tokens all rugged to $0 liquidity",
+    "Likely farmed buyer count/volume",
+    "Price already rolling over (-23% m5)"
+   ]
+  },
+  "counterargument": "Mid-Autumn Festival is tomorrow so Chinese-community attention could genuinely build; holder distribution is wide (top10 ~7.7%) and at $20k mcap a small burst of real buying could double price before any pull.",
+  "unknowns": [
+   "Who supplied the LP and whether they are linked to earlier same-name deployers",
+   "Any private Telegram/WeChat call-group promotion",
+   "Whether any official Binance Mid-Autumn campaign exists for 2026"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Contract-address search returned nothing; name searches returned only generic Binance posts and a 2025 CZ Mid-Autumn meme article. No project socials exist per packet. DexScreener API fetched for live data."
+  },
+  "thesis": "Serial-launched holiday clone with unlocked creator LP and farmed buyer counts; the ten prior same-name tokens all went to zero liquidity. Very likely rug; low odds of 2x from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 82,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2JFQiSs3fykWsBZ72jSBaXDnqN6vMqN9gMoaVy9UUrwh",
+    "what": "Live liquidity $34.6k, mcap $19.5k, -23% m5, no socials/boosts"
+   },
+   {
+    "url": "https://www.bitget.com/ja/news/detail/12560605001931",
+    "what": "CZ 2025 Mid-Autumn greeting soliciting memes (only related narrative found)"
+   },
+   {
+    "url": "https://x.com/binancezh",
+    "what": "Binance Chinese account; no Mid-Autumn 2026 campaign found in search"
+   }
+  ]
+ },
+ "ttft_ms": 4510,
+ "type": "result",
+ "duration_ms": 53900,
+ "uuid": "5acb90d1-b377-4373-830f-a5d495a9df47",
+ "ttft_stream_ms": 1018,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 1018,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

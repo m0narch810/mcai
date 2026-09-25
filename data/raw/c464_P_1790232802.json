@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 26394,
+ "stop_reason": "tool_use",
+ "session_id": "276b4a0a-0dbb-42b8-9e67-ad018427280f",
+ "total_cost_usd": 0.1174988,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7803,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2734,
+  "output_tokens_details": {
+   "thinking_tokens": 606
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7803,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2734,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7803,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7803
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2734,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7803,
+   "webSearchRequests": 0,
+   "costUSD": 0.1174988,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 606,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Pok\u00e9mon\\\" was deployed straight to a PumpSwap pool. The pool appeared 2 seconds after the mint and migrated_unix is 0, so it never went through a pump.fun bonding curve. The creator supplied the liquidity, and that LP is 0% locked and 0% burned. In about 44 minutes it traded roughly $373k of volume against a $58k market cap (5.4x turnover), rose about 168%, and drew about 1,113 unique buyers. Buy and sell counts are now almost even (m5: 241 buys vs 228 sells). The pool holds 57.5% of supply. One wallet that GMGN tags as dev/team holds 10.55%, and the creator's own wallet shows zero balance. At least 9 other \\\"Pok\u00e9mon\\\" tokens exist from the past few days. Nearly all have liquidity of $0 to $0.37, including one showing a $1.4M market cap with $0.01 liquidity. That looks like a series of identical launches that were rugged.\",\"narrative\":{\"description\":\"This is a generic mega-IP name, Pok\u00e9mon, with no website, socials, description or DexScreener profile. Nothing in the packet points to a specific catalyst. The name is a recycled ticker that has been launched over and over in recent days.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The attention probably comes from a famous-name ticker plus a fast chart on PumpSwap drawing in bots and degens. The same name has been launched repeatedly, so there may be some off-packet Pok\u00e9mon news (a game or card release), but the packet has no evidence of one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is currently the only live 'Pok\u00e9mon' pair with real liquidity and volume. That comes from timing, not from any claim to be the canonical token.\",\"competing_tokens\":\"At least 9 same-name tokens, almost all with near-zero liquidity. One (8jwv...) shows a $1.4M mcap with $0.01 liquidity, and another (HqfY...) created about 8 minutes earlier had $53k h1 volume and now has $0 liquidity. That points to rapid launch-and-pull cycles on this name.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Holder spread looks fairly broad: 1,113 unique buyers, top 10 holders excluding the pool at 14%, a bot/degen rate of 0, and 0 fresh wallets. There is no paid promotion and no smart or KOL wallets. Against that: 6 bundler wallets, a 10.55% dev/team holding, creator-supplied unlocked LP, and a string of same-name rugs. GeckoTerminal shows only 107 unique sellers against 1,113 buyers, possibly because of window caps, while sell transactions nearly match buys. That suggests a small number of wallets doing heavy selling.\",\"uncertainty\":\"There is no X or Telegram data, so I can't tell whether real Pok\u00e9mon-related news is driving it. GMGN's zero bot rate is inconsistent with the size of the transaction counts.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator deployed straight to PumpSwap with their own LP, which is 0% locked or burned, so they can pull it at any moment\",\"RugCheck flags 'Low amount of LP Providers'\",\"A dev/team wallet holds 10.55% of supply\",\"Many same-name tokens from recent hours or days have $0 liquidity, a pattern that fits a serial launch-and-pull operator\",\"The creator wallet is closed with zero balance, and its history fields contradict each other (0 launches, yet a 'best token ATH' of $227k)\",\"The price is already up about 168% at 44 minutes, and the latest 5-minute window shows sells nearly matching buys\"]},\"counterargument\":\"Unlike most pulled clones, this pool shows real breadth: more than 1,100 buyers, low holder concentration outside the pool, and deep liquidity ($69k) relative to market cap. If there is live Pok\u00e9mon news, this could be the version the market settles on. At a $60k market cap, doubling only takes $120k, which is easy for a coin turning over $370k an hour. Also, whoever supplied the LP might keep it in place to collect fees rather than pull it.\",\"unknowns\":[\"Who owns the LP tokens, and whether the top holder is the LP provider\",\"Whether any real Pok\u00e9mon news or catalyst exists today\",\"Whether the dead same-name tokens came from the same operator\",\"Whether the 1,113 buyers are real or wash/bot wallets\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. I used only the evidence packet.\"},\"thesis\":\"This is a generic mega-IP ticker deployed straight to PumpSwap with creator-controlled, unlocked LP and a 10.55% team holding. It sits next to a string of same-name tokens whose liquidity is now $0. That setup most likely ends with the liquidity pulled. The buyer breadth is real enough to allow a brief further pump, but the expected value of the 2x/-50% bracket entered 25 minutes after detection is poor.\",\"continuation_view\":\"fade\",\"p_runner\":10,\"p_rug\":70,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Pok\u00e9mon\" was deployed straight to a PumpSwap pool. The pool appeared 2 seconds after the mint and migrated_unix is 0, so it never went through a pump.fun bonding curve. The creator supplied the liquidity, and that LP is 0% locked and 0% burned. In about 44 minutes it traded roughly $373k of volume against a $58k market cap (5.4x turnover), rose about 168%, and drew about 1,113 unique buyers. Buy and sell counts are now almost even (m5: 241 buys vs 228 sells). The pool holds 57.5% of supply. One wallet that GMGN tags as dev/team holds 10.55%, and the creator's own wallet shows zero balance. At least 9 other \"Pok\u00e9mon\" tokens exist from the past few days. Nearly all have liquidity of $0 to $0.37, including one showing a $1.4M market cap with $0.01 liquidity. That looks like a series of identical launches that were rugged.",
+  "narrative": {
+   "description": "This is a generic mega-IP name, Pok\u00e9mon, with no website, socials, description or DexScreener profile. Nothing in the packet points to a specific catalyst. The name is a recycled ticker that has been launched over and over in recent days.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The attention probably comes from a famous-name ticker plus a fast chart on PumpSwap drawing in bots and degens. The same name has been launched repeatedly, so there may be some off-packet Pok\u00e9mon news (a game or card release), but the packet has no evidence of one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is currently the only live 'Pok\u00e9mon' pair with real liquidity and volume. That comes from timing, not from any claim to be the canonical token.",
+   "competing_tokens": "At least 9 same-name tokens, almost all with near-zero liquidity. One (8jwv...) shows a $1.4M mcap with $0.01 liquidity, and another (HqfY...) created about 8 minutes earlier had $53k h1 volume and now has $0 liquidity. That points to rapid launch-and-pull cycles on this name.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Holder spread looks fairly broad: 1,113 unique buyers, top 10 holders excluding the pool at 14%, a bot/degen rate of 0, and 0 fresh wallets. There is no paid promotion and no smart or KOL wallets. Against that: 6 bundler wallets, a 10.55% dev/team holding, creator-supplied unlocked LP, and a string of same-name rugs. GeckoTerminal shows only 107 unique sellers against 1,113 buyers, possibly because of window caps, while sell transactions nearly match buys. That suggests a small number of wallets doing heavy selling.",
+   "uncertainty": "There is no X or Telegram data, so I can't tell whether real Pok\u00e9mon-related news is driving it. GMGN's zero bot rate is inconsistent with the size of the transaction counts."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator deployed straight to PumpSwap with their own LP, which is 0% locked or burned, so they can pull it at any moment",
+    "RugCheck flags 'Low amount of LP Providers'",
+    "A dev/team wallet holds 10.55% of supply",
+    "Many same-name tokens from recent hours or days have $0 liquidity, a pattern that fits a serial launch-and-pull operator",
+    "The creator wallet is closed with zero balance, and its history fields contradict each other (0 launches, yet a 'best token ATH' of $227k)",
+    "The price is already up about 168% at 44 minutes, and the latest 5-minute window shows sells nearly matching buys"
+   ]
+  },
+  "counterargument": "Unlike most pulled clones, this pool shows real breadth: more than 1,100 buyers, low holder concentration outside the pool, and deep liquidity ($69k) relative to market cap. If there is live Pok\u00e9mon news, this could be the version the market settles on. At a $60k market cap, doubling only takes $120k, which is easy for a coin turning over $370k an hour. Also, whoever supplied the LP might keep it in place to collect fees rather than pull it.",
+  "unknowns": [
+   "Who owns the LP tokens, and whether the top holder is the LP provider",
+   "Whether any real Pok\u00e9mon news or catalyst exists today",
+   "Whether the dead same-name tokens came from the same operator",
+   "Whether the 1,113 buyers are real or wash/bot wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. I used only the evidence packet."
+  },
+  "thesis": "This is a generic mega-IP ticker deployed straight to PumpSwap with creator-controlled, unlocked LP and a 10.55% team holding. It sits next to a string of same-name tokens whose liquidity is now $0. That setup most likely ends with the liquidity pulled. The buyer breadth is real enough to allow a brief further pump, but the expected value of the 2x/-50% bracket entered 25 minutes after detection is poor.",
+  "continuation_view": "fade",
+  "p_runner": 10,
+  "p_rug": 70,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6842,
+ "type": "result",
+ "duration_ms": 26439,
+ "uuid": "ec229756-3f1f-4d89-a8fe-f0a09ae9c4f7",
+ "ttft_stream_ms": 770,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 771,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

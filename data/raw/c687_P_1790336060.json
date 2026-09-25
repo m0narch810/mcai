@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24624,
+ "stop_reason": "tool_use",
+ "session_id": "026c0ada-2f75-4bca-9b42-073a2069fb58",
+ "total_cost_usd": 0.1124908,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7862,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2460,
+  "output_tokens_details": {
+   "thinking_tokens": 279
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7862,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2460,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7862,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7862
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2460,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7862,
+   "webSearchRequests": 0,
+   "costUSD": 0.1124908,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 279,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"The White Hat\\\" ($0xquit) is one of at least 11 same-name, same-ticker tokens launched within about 50 minutes of each other. They appear to riff on an X post by 0xQuit (the project website field links to x.com/0xQuit/status/2103410682368512505) and on a DevWizardxbt post. This copy launched on a Meteora virtual curve (GMGN records creation and migration at the same second) and now trades on PumpSwap. At detection it was 39 minutes old with a $120k market cap, $33k liquidity and $708k one-hour volume (21x turnover), up about 142% in the hour. Momentum has stalled: GeckoTerminal shows -3.8% over 15 minutes, and sells slightly outnumber buys in the last 5 and 15 minutes. GeckoTerminal counts 2,148 unique buyers but only 143 unique sellers over the hour. That lopsided ratio, together with 87 bundler wallets and a 78-wallet insider trade network, points to engineered or bot-driven flow rather than organic retail buying.\",\"narrative\":{\"description\":\"This is a quick meme launched off an 0xQuit / white-hat post on crypto X, probably a hack or security-researcher news moment. A 'white hat' story can briefly pull attention, but it looks like a single tweet with no lasting project behind it.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A tweet-driven meme triggered a copycat rush: deployers are firing off many clones to catch the first flood of buyers. Most of the volume across these tokens is probably bots and sniper rotation, not a growing community.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link to the story is the name and ticker. Its metadata points at the 0xQuit post, but the other copies probably do the same. Nothing marks this contract as endorsed or canonical.\",\"competing_tokens\":\"At least 10 other 0xquit / The White Hat tokens exist. The J141...pump pump.fun copy launched earlier (about 7 minutes before this pair) and sits at a $338k market cap with $667k one-hour volume. 9fGR... ($298k market cap, $2.1M one-hour volume) and xx4g... ($3.28M one-hour volume, $162k liquidity) are drawing more activity. Several copies already have $0 liquidity, i.e. they have been rugged.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There are 87 bundler wallets and a 78-wallet insider trade network. Unique buyers outnumber unique sellers about 15 to 1 (2,148 vs 143), which is typical of bundled or bot buying. One unlabeled address holds 80% of the supply, and GeckoTerminal puts the top 10 at 95%. The token image is duplicated 9 times, and the dev wallet's status is creator_close. There is no DexScreener profile and no paid boosts.\",\"uncertainty\":\"The 80% holder may be the Meteora curve or migration vault that RugCheck simply did not label. If so, real concentration is much lower: GMGN reports the top-10 holder rate as only 2.3%. The bundler count might partly reflect ordinary bot activity.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One market has 0% of its LP locked, and RugCheck flags 'Large Amount of LP Unlocked' as a danger. GMGN reports an LP burn ratio of 1.0, which conflicts with that, so the actual pull risk is unclear.\",\"An unlabeled wallet holds 80% of the supply. If that is not a pool account, the concentration is extreme.\",\"The token is fragmented across 11+ same-name clones that compete for the same attention and liquidity.\",\"The price has already risen about 142% and has stalled in the last 15 minutes. Entry comes 25 minutes after detection, probably after the peak.\",\"There are 87 bundler wallets and a 78-wallet insider network that could dump into $33k of liquidity.\"]},\"counterargument\":\"Trading is extremely heavy: $700k+ in the first hour on a $120k market cap. If 0xQuit's story goes viral and this copy wins the consolidation battle, it could reach $250k\u2013$500k within hours. It is one of the more liquid copies, with mint and freeze authority renounced, and GMGN shows low dev holdings and a low top-10 rate. The 80% holder is very likely the pool vault, and the unique-buyer count shows broad participation.\",\"unknowns\":[\"Whether the 80% holder is the pool or vault account or a real wallet\",\"What the 0xQuit tweet actually says, and whether he endorses any token\",\"Which clone, if any, the community treats as canonical\",\"The actual LP lock or burn status: RugCheck and GMGN conflict\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. This report is based only on the evidence packet.\"},\"thesis\":\"This is a non-canonical clone in a crowded copycat rush over a single tweet, with bundled and insider-heavy flow. It has already made its move and has stalled. Several sibling clones have already had their liquidity pulled. Reaching 2x before -50% from a post-peak entry is unlikely, and a rug or fade is the likely outcome.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":65,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"The White Hat\" ($0xquit) is one of at least 11 same-name, same-ticker tokens launched within about 50 minutes of each other. They appear to riff on an X post by 0xQuit (the project website field links to x.com/0xQuit/status/2103410682368512505) and on a DevWizardxbt post. This copy launched on a Meteora virtual curve (GMGN records creation and migration at the same second) and now trades on PumpSwap. At detection it was 39 minutes old with a $120k market cap, $33k liquidity and $708k one-hour volume (21x turnover), up about 142% in the hour. Momentum has stalled: GeckoTerminal shows -3.8% over 15 minutes, and sells slightly outnumber buys in the last 5 and 15 minutes. GeckoTerminal counts 2,148 unique buyers but only 143 unique sellers over the hour. That lopsided ratio, together with 87 bundler wallets and a 78-wallet insider trade network, points to engineered or bot-driven flow rather than organic retail buying.",
+  "narrative": {
+   "description": "This is a quick meme launched off an 0xQuit / white-hat post on crypto X, probably a hack or security-researcher news moment. A 'white hat' story can briefly pull attention, but it looks like a single tweet with no lasting project behind it.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A tweet-driven meme triggered a copycat rush: deployers are firing off many clones to catch the first flood of buyers. Most of the volume across these tokens is probably bots and sniper rotation, not a growing community."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link to the story is the name and ticker. Its metadata points at the 0xQuit post, but the other copies probably do the same. Nothing marks this contract as endorsed or canonical.",
+   "competing_tokens": "At least 10 other 0xquit / The White Hat tokens exist. The J141...pump pump.fun copy launched earlier (about 7 minutes before this pair) and sits at a $338k market cap with $667k one-hour volume. 9fGR... ($298k market cap, $2.1M one-hour volume) and xx4g... ($3.28M one-hour volume, $162k liquidity) are drawing more activity. Several copies already have $0 liquidity, i.e. they have been rugged.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There are 87 bundler wallets and a 78-wallet insider trade network. Unique buyers outnumber unique sellers about 15 to 1 (2,148 vs 143), which is typical of bundled or bot buying. One unlabeled address holds 80% of the supply, and GeckoTerminal puts the top 10 at 95%. The token image is duplicated 9 times, and the dev wallet's status is creator_close. There is no DexScreener profile and no paid boosts.",
+   "uncertainty": "The 80% holder may be the Meteora curve or migration vault that RugCheck simply did not label. If so, real concentration is much lower: GMGN reports the top-10 holder rate as only 2.3%. The bundler count might partly reflect ordinary bot activity."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One market has 0% of its LP locked, and RugCheck flags 'Large Amount of LP Unlocked' as a danger. GMGN reports an LP burn ratio of 1.0, which conflicts with that, so the actual pull risk is unclear.",
+    "An unlabeled wallet holds 80% of the supply. If that is not a pool account, the concentration is extreme.",
+    "The token is fragmented across 11+ same-name clones that compete for the same attention and liquidity.",
+    "The price has already risen about 142% and has stalled in the last 15 minutes. Entry comes 25 minutes after detection, probably after the peak.",
+    "There are 87 bundler wallets and a 78-wallet insider network that could dump into $33k of liquidity."
+   ]
+  },
+  "counterargument": "Trading is extremely heavy: $700k+ in the first hour on a $120k market cap. If 0xQuit's story goes viral and this copy wins the consolidation battle, it could reach $250k\u2013$500k within hours. It is one of the more liquid copies, with mint and freeze authority renounced, and GMGN shows low dev holdings and a low top-10 rate. The 80% holder is very likely the pool vault, and the unique-buyer count shows broad participation.",
+  "unknowns": [
+   "Whether the 80% holder is the pool or vault account or a real wallet",
+   "What the 0xQuit tweet actually says, and whether he endorses any token",
+   "Which clone, if any, the community treats as canonical",
+   "The actual LP lock or burn status: RugCheck and GMGN conflict"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. This report is based only on the evidence packet."
+  },
+  "thesis": "This is a non-canonical clone in a crowded copycat rush over a single tweet, with bundled and insider-heavy flow. It has already made its move and has stalled. Several sibling clones have already had their liquidity pulled. Reaching 2x before -50% from a post-peak entry is unlikely, and a rug or fade is the likely outcome.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 65,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5608,
+ "type": "result",
+ "duration_ms": 25070,
+ "uuid": "6e4c3771-2c7e-471d-aacb-d6cccc400e21",
+ "ttft_stream_ms": 1823,
+ "time_to_request_ms": 446,
+ "first_content_frame_ms": 1823,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

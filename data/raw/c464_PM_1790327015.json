@@ -1,0 +1,137 @@
+{
+ "duration_api_ms": 39783,
+ "stop_reason": "tool_use",
+ "session_id": "7f41ebb6-6ec0-4dba-9ce5-9cca46965aa4",
+ "total_cost_usd": 0.15089439999999998,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9387,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 3781,
+  "output_tokens_details": {
+   "thinking_tokens": 1369
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9387,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3781,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9387,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9387
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3781,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9387,
+   "webSearchRequests": 0,
+   "costUSD": 0.15089439999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1369,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The pool was not a pump.fun graduation. The pair was created about 2 seconds after the token was minted (created_unix 1790229994 vs pair_created_at 1790229996), migrated_unix is 0, the contract has no 'pump' suffix and deploy_platform is unknown. That means the deployer seeded the pool and controls the LP. This is the mechanism a liquidity pull needs.\",\"lp_burn_ratio was 0, with 100% of LP unlocked (RugCheck 'danger') and few LP providers. So a single actor could remove essentially all liquidity at once, which fits a pair with no liquidity by T_D.\",\"Same-name clones showed what looked like drained pools. HqfY\u2026 was created 8 minutes before this pair, still shows $53k of hourly volume, and has $0 liquidity. 8jwv\u2026 shows a $1.4M 'market cap' (computed from its last price) on $0.01 liquidity. Both are remnants typical of recent LP pulls, not slow deaths.\",\"There was no socials, website, DexScreener profile or catalyst. Nothing independent of the deployer was holding up demand.\",\"A 22\u201325 minute gap between detection and T_D. For a structure where the deployer can pull liquidity at will, this gap is long enough for the pull to happen before entry.\"],\"misleading_observations\":[\"The report called 'liquidity higher than market cap' odd. It is mostly arithmetic: when the pool holds 57.5% of supply, the token side of the pool is worth about 57.5% of market cap, and the SOL side adds about the same again. That is not independent evidence of anything. The real signal is that the deployer seeded the LP and left it unlocked.\",\"Several of the same-name tokens with ~$0 liquidity and zero volume may simply be dead or abandoned launches, or artifacts of how DexScreener reports liquidity for bonding-curve tokens, rather than LP pulls. Only the clones that had recent volume and now have zero liquidity (HqfY\u2026, 8jwv\u2026) really support the 'serial LP farm' reading.\",\"The 1,113 unique buyers vs 107 unique sellers ratio was read as bot/trap buying, and the counterargument read it as retail rotation. It proved little either way. A pull removes liquidity no matter who the buyers are, so this ratio did not matter much.\",\"The August 2026 @Pokemon hack context and the routine game news were irrelevant to a rug decided within about 25 minutes.\",\"The GMGN tag of the single 10.55% wallet as dev/sniper, and the 6 bundler wallets, mattered less than LP control. A deployer who holds the LP does not need a large token balance to drain the pool.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time argued for a runner. If anything, the evidence (a pool seeded by the deployer 2 seconds after mint, 0% LP burn, and a same-name clone drained within the previous hour) supported an even higher rug probability than 82%. It also supported flagging that the pull could come before T_D, which would make the trade unfillable rather than a 6-hour fade.\",\"The report set a 6h observation window but did not weigh the decision latency. Pulls on same-name clones apparently happened within about an hour of launch, so the relevant horizon was the next ~25 minutes.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Solana tokens whose DEX pool was created within 60 seconds of mint, with no bonding-curve migration (migrated_unix = 0) and lp_burn_ratio = 0, will be unfillable at T_D or lose at least 90% of liquidity within 6 hours at a much higher rate than tokens that graduated from a bonding curve.\",\"conditions\":\"Solana PumpSwap/Raydium pairs under 2 hours old at detection, market cap $10k\u2013$300k, measured over the experiment's T1-to-T_D latency plus 6 hours.\",\"market_structure_rationale\":\"When the deployer seeds the pool and keeps unlocked LP tokens, they can withdraw all liquidity in one transaction. Graduated curve pools have burned or locked LP, so that exit is not available.\"},{\"statement\":\"If, at T2, two or more same-name or same-ticker tokens created in the previous 3 hours had at least $20k of hourly volume but now show under $1 liquidity, the candidate's chance of being unfillable at T_D is higher than for candidates without such a cluster.\",\"conditions\":\"Only applies to same-name tokens with recent volume. Tokens with zero volume are excluded, because dead launches would confound the test. Check using the same_ticker_or_name_tokens field at T2.\",\"market_structure_rationale\":\"Recently drained pools with the same name point to an operator repeatedly launching and pulling. That operator's pull timing (under 1 hour) is likely to repeat on the next clone.\"},{\"statement\":\"Among candidates flagged high p_rug (at least 70%), the share that is unfillable at T_D rises with the gap between T1 and T_D. Unfillable outcomes should be logged as liquidity-removal events, not treated as neutral zero returns.\",\"conditions\":\"All candidates where the pipeline records 'no pair or no liquidity at T_D'. Compare against liquidity snapshots at T1 and T2.\",\"market_structure_rationale\":\"Deployer-controlled liquidity can vanish in minutes. If a 0 return from an unfillable trade is scored as neutral, the pipeline undercounts rugs and hides how well its rug calls are calibrated.\"}],\"summary\":\"The report's call (strong fade, p_rug 82%, p_runner 6%) fits the result: the pair had no liquidity at T_D, about 25 minutes after detection, so no trade was possible. The most likely cause is an LP pull, but one outcome cannot rule out a data or pair-lookup failure. The call rested on the right mechanism: a pool seeded by the deployer 2 seconds after mint, with 0% LP burn, fully unlocked LP, no migration from a bonding curve, and same-name clones with recent volume already drained. Some supporting points were weak or circular: liquidity above market cap is arithmetic when the pool holds most of the supply, dead same-name tokens don't show LP pulls, and the buyer/seller ratio, the hack context and the news added little. Nothing available at the time argued for a runner. The main miss was timing: the 6h window ignored that a pull could come before the decision, which made unfillable the most likely result. The direction (rug) was largely knowable from market structure; exact timing and data certainty were not. Overall the reasoning was good and mostly signal, not luck, though this one case cannot confirm calibration.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The pool was not a pump.fun graduation. The pair was created about 2 seconds after the token was minted (created_unix 1790229994 vs pair_created_at 1790229996), migrated_unix is 0, the contract has no 'pump' suffix and deploy_platform is unknown. That means the deployer seeded the pool and controls the LP. This is the mechanism a liquidity pull needs.",
+   "lp_burn_ratio was 0, with 100% of LP unlocked (RugCheck 'danger') and few LP providers. So a single actor could remove essentially all liquidity at once, which fits a pair with no liquidity by T_D.",
+   "Same-name clones showed what looked like drained pools. HqfY\u2026 was created 8 minutes before this pair, still shows $53k of hourly volume, and has $0 liquidity. 8jwv\u2026 shows a $1.4M 'market cap' (computed from its last price) on $0.01 liquidity. Both are remnants typical of recent LP pulls, not slow deaths.",
+   "There was no socials, website, DexScreener profile or catalyst. Nothing independent of the deployer was holding up demand.",
+   "A 22\u201325 minute gap between detection and T_D. For a structure where the deployer can pull liquidity at will, this gap is long enough for the pull to happen before entry."
+  ],
+  "misleading_observations": [
+   "The report called 'liquidity higher than market cap' odd. It is mostly arithmetic: when the pool holds 57.5% of supply, the token side of the pool is worth about 57.5% of market cap, and the SOL side adds about the same again. That is not independent evidence of anything. The real signal is that the deployer seeded the LP and left it unlocked.",
+   "Several of the same-name tokens with ~$0 liquidity and zero volume may simply be dead or abandoned launches, or artifacts of how DexScreener reports liquidity for bonding-curve tokens, rather than LP pulls. Only the clones that had recent volume and now have zero liquidity (HqfY\u2026, 8jwv\u2026) really support the 'serial LP farm' reading.",
+   "The 1,113 unique buyers vs 107 unique sellers ratio was read as bot/trap buying, and the counterargument read it as retail rotation. It proved little either way. A pull removes liquidity no matter who the buyers are, so this ratio did not matter much.",
+   "The August 2026 @Pokemon hack context and the routine game news were irrelevant to a rug decided within about 25 minutes.",
+   "The GMGN tag of the single 10.55% wallet as dev/sniper, and the 6 bundler wallets, mattered less than LP control. A deployer who holds the LP does not need a large token balance to drain the pool."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time argued for a runner. If anything, the evidence (a pool seeded by the deployer 2 seconds after mint, 0% LP burn, and a same-name clone drained within the previous hour) supported an even higher rug probability than 82%. It also supported flagging that the pull could come before T_D, which would make the trade unfillable rather than a 6-hour fade.",
+   "The report set a 6h observation window but did not weigh the decision latency. Pulls on same-name clones apparently happened within about an hour of launch, so the relevant horizon was the next ~25 minutes."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Solana tokens whose DEX pool was created within 60 seconds of mint, with no bonding-curve migration (migrated_unix = 0) and lp_burn_ratio = 0, will be unfillable at T_D or lose at least 90% of liquidity within 6 hours at a much higher rate than tokens that graduated from a bonding curve.",
+    "conditions": "Solana PumpSwap/Raydium pairs under 2 hours old at detection, market cap $10k\u2013$300k, measured over the experiment's T1-to-T_D latency plus 6 hours.",
+    "market_structure_rationale": "When the deployer seeds the pool and keeps unlocked LP tokens, they can withdraw all liquidity in one transaction. Graduated curve pools have burned or locked LP, so that exit is not available."
+   },
+   {
+    "statement": "If, at T2, two or more same-name or same-ticker tokens created in the previous 3 hours had at least $20k of hourly volume but now show under $1 liquidity, the candidate's chance of being unfillable at T_D is higher than for candidates without such a cluster.",
+    "conditions": "Only applies to same-name tokens with recent volume. Tokens with zero volume are excluded, because dead launches would confound the test. Check using the same_ticker_or_name_tokens field at T2.",
+    "market_structure_rationale": "Recently drained pools with the same name point to an operator repeatedly launching and pulling. That operator's pull timing (under 1 hour) is likely to repeat on the next clone."
+   },
+   {
+    "statement": "Among candidates flagged high p_rug (at least 70%), the share that is unfillable at T_D rises with the gap between T1 and T_D. Unfillable outcomes should be logged as liquidity-removal events, not treated as neutral zero returns.",
+    "conditions": "All candidates where the pipeline records 'no pair or no liquidity at T_D'. Compare against liquidity snapshots at T1 and T2.",
+    "market_structure_rationale": "Deployer-controlled liquidity can vanish in minutes. If a 0 return from an unfillable trade is scored as neutral, the pipeline undercounts rugs and hides how well its rug calls are calibrated."
+   }
+  ],
+  "summary": "The report's call (strong fade, p_rug 82%, p_runner 6%) fits the result: the pair had no liquidity at T_D, about 25 minutes after detection, so no trade was possible. The most likely cause is an LP pull, but one outcome cannot rule out a data or pair-lookup failure. The call rested on the right mechanism: a pool seeded by the deployer 2 seconds after mint, with 0% LP burn, fully unlocked LP, no migration from a bonding curve, and same-name clones with recent volume already drained. Some supporting points were weak or circular: liquidity above market cap is arithmetic when the pool holds most of the supply, dead same-name tokens don't show LP pulls, and the buyer/seller ratio, the hack context and the news added little. Nothing available at the time argued for a runner. The main miss was timing: the 6h window ignored that a pull could come before the decision, which made unfillable the most likely result. The direction (rug) was largely knowable from market structure; exact timing and data certainty were not. Overall the reasoning was good and mostly signal, not luck, though this one case cannot confirm calibration."
+ },
+ "ttft_ms": 15791,
+ "type": "result",
+ "duration_ms": 39829,
+ "uuid": "87c34e2c-8c04-4187-8ae9-b4872eca862f",
+ "ttft_stream_ms": 828,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 828,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

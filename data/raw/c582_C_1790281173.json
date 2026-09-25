@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 68822,
+ "stop_reason": "tool_use",
+ "session_id": "b1ce1c98-b202-48fa-aab4-5a3b9e2cf904",
+ "total_cost_usd": 0.3316549999999999,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14996,
+  "cache_read_input_tokens": 43155,
+  "output_tokens": 3474,
+  "output_tokens_details": {
+   "thinking_tokens": 507
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14996,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2590,
+    "cache_read_input_tokens": 16444,
+    "cache_creation_input_tokens": 1128,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1128
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3474,
+   "cacheReadInputTokens": 43155,
+   "cacheCreationInputTokens": 14996,
+   "webSearchRequests": 0,
+   "costUSD": 0.198111,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 507,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 63379,
+   "outputTokens": 2033,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.133544,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"FOOMS (7zJ4...) is a 35-minute-old PumpSwap pair. It was not a pump.fun migration: migrated_unix is 0, the launchpad field is empty, and the description reads \\\"Created on https://unorich.com\\\". It has done about $6.3M of volume on a roughly $185k market cap, which is 23x turnover in an hour. Price is up about 112-125% in the hour and slipped 3-6% in the last 5 minutes. GeckoTerminal shows 1,732 unique buyers but only 57 unique sellers, and those 57 made about 3,900 sells, roughly 70 each. That is the signature of volume bots and a farm, not organic trading. Liquidity ($263k) is higher than market cap, 72% of supply sits in a pool whose LP is unlocked (0% locked, burn ratio 0), and GMGN tags 49 bundler wallets. At least six same-name FOOMS tokens were launched within about 3 hours. Two of them (K3dBv..., $2.28M of h1 volume, and FoyeQ...) now show $0 liquidity, and PSuzun... is running the same volume pattern ($8.8M in h1). This looks like a serial launch-and-pull cluster built around the name \\\"fooms\\\". I found no organic social presence.\",\"narrative\":{\"description\":\"No identifiable narrative. 'Fooms' has no current cultural or news event behind it that I could find. The only other hits are unrelated: an Instagram food account, a university research group, and the AI 'foom' concept. There is no website (unorich.com failed TLS) and the X handle is just a search link.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Attention appears to be manufactured by volume bots: the buy count is inflated, a few dozen wallets do all the selling, and turnover is extreme. That puts the coin on DEX trending and screener lists, where bots and retail pick it up. I found no organic source.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"There is no story to be canonical for. This is one of at least six FOOMS clones deployed within hours of each other, apparently by the same operator pattern.\",\"competing_tokens\":\"PSuzun... ($8.8M h1 volume, $243k liquidity, created earlier, so arguably the lead clone); K3dBv... and FoyeQ... (liquidity already 0, probably pulled); EvEk..., 5gty..., CGr3... (dead or tiny).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,732 unique buyers against 57 unique sellers making about 3,900 sells (GeckoTerminal). 49 GMGN bundler wallets holding 22.6% of top-trader share. 23x hourly turnover. No socials, no DexScreener profile, no posts found. Sibling clones already at $0 liquidity.\",\"uncertainty\":\"X is poorly indexed, and private Telegram call groups could be pushing it. The wallet-level link between the clone deployers is inferred from timing and naming, not verified on-chain.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% locked and 0% burned, and liquidity exceeds market cap. The owner can pull about $260k at any time.\",\"This is a self-created PumpSwap pool, not a pump.fun graduation, so there are no curve protections.\",\"49 bundler wallets.\",\"The volume is bot-driven, so real demand is unknown.\",\"Sibling same-name tokens have already gone to $0 liquidity, a sign the operator repeats the pattern.\"]},\"counterargument\":\"Volume-bot pairs can sometimes pump another 2x before the pull. The rug has to wait until the volume has attracted enough real buyers, and 1,700+ buyers plus $260k of liquidity show real SOL is flowing in. The sibling PSuzun... reached a larger size. If the operator is still farming, entry at around $180k could see a push toward $360k first. Also, the top-10 holders spread excluding the pool is low (10.6%).\",\"unknowns\":[\"Who holds the LP tokens, and whether they belong to the same deployer as the pulled clones\",\"What unorich.com is (the site failed to load)\",\"Whether there is any private Telegram push\",\"Actual price and liquidity at entry\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The contract-address search returned nothing, and $FOOMS searches returned the unrelated FOMO. site:x.com gave only unrelated fooms accounts. unorich.com gave an SSL error. DexScreener API confirmed the live stats and showed no socials.\"},\"thesis\":\"This is a bot-farmed PumpSwap pair with unlocked LP that is larger than the market cap. It is part of a serial cluster of FOOMS clones, some already drained, and has no narrative or social footprint. A rug within 6 hours is the most likely outcome. A 2x from about $180k would need the operator to keep pumping rather than pull.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":80,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/7zJ4DCD4am9MAJuzGBz1cJ55Es96iyHAHnEEtuxETfs\",\"what\":\"Live price, liquidity and volume; no socials\"},{\"url\":\"https://unorich.com\",\"what\":\"Project site from the packet; SSL error, inaccessible\"},{\"url\":\"https://x.com/foomsies\",\"what\":\"Unrelated FOOMS research group; no token accounts found on X\"},{\"url\":\"https://coinmarketcap.com/currencies/fomosolana/\",\"what\":\"The $FOOMS search only returned the unrelated FOMO token\"}]}",
+ "structured_output": {
+  "what_is_happening": "FOOMS (7zJ4...) is a 35-minute-old PumpSwap pair. It was not a pump.fun migration: migrated_unix is 0, the launchpad field is empty, and the description reads \"Created on https://unorich.com\". It has done about $6.3M of volume on a roughly $185k market cap, which is 23x turnover in an hour. Price is up about 112-125% in the hour and slipped 3-6% in the last 5 minutes. GeckoTerminal shows 1,732 unique buyers but only 57 unique sellers, and those 57 made about 3,900 sells, roughly 70 each. That is the signature of volume bots and a farm, not organic trading. Liquidity ($263k) is higher than market cap, 72% of supply sits in a pool whose LP is unlocked (0% locked, burn ratio 0), and GMGN tags 49 bundler wallets. At least six same-name FOOMS tokens were launched within about 3 hours. Two of them (K3dBv..., $2.28M of h1 volume, and FoyeQ...) now show $0 liquidity, and PSuzun... is running the same volume pattern ($8.8M in h1). This looks like a serial launch-and-pull cluster built around the name \"fooms\". I found no organic social presence.",
+  "narrative": {
+   "description": "No identifiable narrative. 'Fooms' has no current cultural or news event behind it that I could find. The only other hits are unrelated: an Instagram food account, a university research group, and the AI 'foom' concept. There is no website (unorich.com failed TLS) and the X handle is just a search link.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Attention appears to be manufactured by volume bots: the buy count is inflated, a few dozen wallets do all the selling, and turnover is extreme. That puts the coin on DEX trending and screener lists, where bots and retail pick it up. I found no organic source."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "There is no story to be canonical for. This is one of at least six FOOMS clones deployed within hours of each other, apparently by the same operator pattern.",
+   "competing_tokens": "PSuzun... ($8.8M h1 volume, $243k liquidity, created earlier, so arguably the lead clone); K3dBv... and FoyeQ... (liquidity already 0, probably pulled); EvEk..., 5gty..., CGr3... (dead or tiny).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,732 unique buyers against 57 unique sellers making about 3,900 sells (GeckoTerminal). 49 GMGN bundler wallets holding 22.6% of top-trader share. 23x hourly turnover. No socials, no DexScreener profile, no posts found. Sibling clones already at $0 liquidity.",
+   "uncertainty": "X is poorly indexed, and private Telegram call groups could be pushing it. The wallet-level link between the clone deployers is inferred from timing and naming, not verified on-chain."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% locked and 0% burned, and liquidity exceeds market cap. The owner can pull about $260k at any time.",
+    "This is a self-created PumpSwap pool, not a pump.fun graduation, so there are no curve protections.",
+    "49 bundler wallets.",
+    "The volume is bot-driven, so real demand is unknown.",
+    "Sibling same-name tokens have already gone to $0 liquidity, a sign the operator repeats the pattern."
+   ]
+  },
+  "counterargument": "Volume-bot pairs can sometimes pump another 2x before the pull. The rug has to wait until the volume has attracted enough real buyers, and 1,700+ buyers plus $260k of liquidity show real SOL is flowing in. The sibling PSuzun... reached a larger size. If the operator is still farming, entry at around $180k could see a push toward $360k first. Also, the top-10 holders spread excluding the pool is low (10.6%).",
+  "unknowns": [
+   "Who holds the LP tokens, and whether they belong to the same deployer as the pulled clones",
+   "What unorich.com is (the site failed to load)",
+   "Whether there is any private Telegram push",
+   "Actual price and liquidity at entry"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The contract-address search returned nothing, and $FOOMS searches returned the unrelated FOMO. site:x.com gave only unrelated fooms accounts. unorich.com gave an SSL error. DexScreener API confirmed the live stats and showed no socials."
+  },
+  "thesis": "This is a bot-farmed PumpSwap pair with unlocked LP that is larger than the market cap. It is part of a serial cluster of FOOMS clones, some already drained, and has no narrative or social footprint. A rug within 6 hours is the most likely outcome. A 2x from about $180k would need the operator to keep pumping rather than pull.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 80,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/7zJ4DCD4am9MAJuzGBz1cJ55Es96iyHAHnEEtuxETfs",
+    "what": "Live price, liquidity and volume; no socials"
+   },
+   {
+    "url": "https://unorich.com",
+    "what": "Project site from the packet; SSL error, inaccessible"
+   },
+   {
+    "url": "https://x.com/foomsies",
+    "what": "Unrelated FOOMS research group; no token accounts found on X"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/fomosolana/",
+    "what": "The $FOOMS search only returned the unrelated FOMO token"
+   }
+  ]
+ },
+ "ttft_ms": 3128,
+ "type": "result",
+ "duration_ms": 51426,
+ "uuid": "dd80894e-736f-4390-be6a-e4e36f91d5c2",
+ "ttft_stream_ms": 775,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 775,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

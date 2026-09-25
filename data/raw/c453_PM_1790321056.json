@@ -1,0 +1,145 @@
+{
+ "duration_api_ms": 43700,
+ "stop_reason": "tool_use",
+ "session_id": "57791351-9298-446f-9c43-99f6f573edf2",
+ "total_cost_usd": 0.15583439999999998,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9267,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 4076,
+  "output_tokens_details": {
+   "thinking_tokens": 1266
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9267,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4076,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9267,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9267
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4076,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9267,
+   "webSearchRequests": 0,
+   "costUSD": 0.15583439999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1266,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The pool was deployed straight to PumpSwap by the creator, not graduated from the pump.fun curve (migrated_unix=0, token created about 3 s before the pair, bonding_curve=false). RugCheck showed 0% LP locked or burned and GMGN showed lp_burn_ratio=0. So the whole ~$47k of liquidity could be withdrawn by one party at any time. This is the observation that bears most directly on the outcome: no pair or liquidity about 22 minutes after T2.\",\"Liquidity (~$47k) was almost equal to market cap (~$48k), and 'Pump Fun AMM' held 50.3% of supply. That fits a creator-seeded pool where the LP holder can take back most of the real value in one transaction.\",\"Same-name siblings in the packet showed the same pattern. 5yvR5VPE\u2026 had $267k of h1 volume and $0 liquidity, and ENJaVz1t\u2026 had $38k of h1 volume and $0 liquidity. That suggests a repeating operator pattern of launch, pump volume, then remove liquidity, on the same ticker in the same 2-hour window.\",\"GeckoTerminal showed 2,058 unique buyers against 52 unique sellers over h1. The 'rest' holder bucket held only 1.67% of supply. Together these point to airdrop or bot holder inflation rather than organic demand, which usually comes before an exit.\",\"GMGN creator_token_status='creator_close'. The creator balance was 0 and the creator had no prior launches, which fits a disposable deployer wallet.\",\"No socials, no DexScreener profile, 1 GMGN page visit, and no external trigger found. Nothing organic supported price once the manufactured flow stopped.\"],\"misleading_observations\":[\"$1M of h1 volume and 22x turnover looked like strong demand, but it was mostly wash or bot flow. Turnover is not a demand signal when the pool is creator-controlled.\",\"'2,080 holders' looked broad, but the holders were dust wallets. Holder count without the distribution is misleading.\",\"Top-10 holding of about 24% (excluding the AMM) looked 'moderate', but it leaves out the biggest risk: the LP position itself.\",\"GMGN reported zero sniper, bundler, rat-trader and fresh-wallet tags and 0% bundler share. The report rightly did not trust this: GMGN's tagging did not capture this kind of coordination, and the clean flags gave false reassurance.\",\"Price was still making new highs (+8\u201320% over m5). In a pool the creator controls, momentum just before an LP pull says little about continuation.\",\"Creator ATH mcap of $54k and 0 launched tokens looked like a clean dev history, but a fresh wallet per launch makes this uninformative.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time argued for a different direction. The call was strong_fade with p_rug 72, which matches the unfillable, no-liquidity result.\",\"If anything, the dead sibling with $267k of h1 volume and $0 liquidity (5yvR5VPE\u2026) plus the direct-deploy, unlocked-LP setup could have pushed p_rug higher and the horizon shorter (minutes, not 6h). The report framed the risk as 'within 6 hours'. The actual loss of liquidity came within about 22 minutes of T2.\",\"Caveat: the outcome record only says 'no pair or no liquidity at T_D'. It does not separate an LP pull from a data or API gap, so even the confirmation of the rug call is uncertain.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Tokens with a pool created directly on PumpSwap within seconds of the mint (migrated_unix=0, bonding_curve=false) and LP burn/lock of 0% will show more than 50% loss of pool liquidity within 60 minutes of detection far more often than curve-graduated tokens of similar market cap and age.\",\"conditions\":\"Solana PumpSwap pairs, market cap $10k\u2013$300k, pair age under 3h, LP burn ratio under 5%, token creation within 10 s of pair creation. Compare against pump.fun-graduated pairs with burned LP in the same market-cap band.\",\"market_structure_rationale\":\"When LP is graduated from the curve it is burned or locked by the protocol. When the creator deploys the pool directly, the creator keeps the LP tokens and can take back the quote-side liquidity in one transaction, so exit costs nothing.\"},{\"statement\":\"When a same-name or same-ticker cluster in the packet contains at least one sibling that had over $50k of h1 volume and now has under $100 of liquidity, a new high-volume sibling with unlocked LP is more likely to lose its liquidity within 60 minutes than an otherwise matched token with no such sibling.\",\"conditions\":\"Only applies when the siblings were created within the prior 6h, and their h1 volume and liquidity figures are present in the T2 packet.\",\"market_structure_rationale\":\"Repeated launches on the same ticker, where heavy volume is followed by zero liquidity, suggest one operator or group running a repeatable extraction playbook. That makes the base rate for the next instance in the cluster higher.\"},{\"statement\":\"A unique-buyer to unique-seller ratio above 20 over h1, together with a non-top-40 holder bucket holding under 3% of supply, predicts that the token will not stay above detection price for 6h (or will lose liquidity).\",\"conditions\":\"Needs GeckoTerminal unique buyer/seller counts and holder distribution at T2. Pair age under 6h.\",\"market_structure_rationale\":\"Real demand produces both buyers and sellers, and holdings that are spread out and not trivially small. Thousands of tiny buyers and almost no sellers point to scripted distribution meant to fake holder count and trending metrics. That usually comes before the operator exits.\"},{\"statement\":\"(Methodological) Unfillable outcomes should be split into LP-removed versus data-unavailable by checking the pool reserves on-chain at T_D. Rug predictions are only scored on the LP-removed cases.\",\"conditions\":\"Every candidate whose outcome is 'no pair or no liquidity at T_D'.\",\"market_structure_rationale\":\"Without this split, a correct rug call can't be told apart from an API gap, and p_rug calibration is contaminated.\"}],\"summary\":\"The report called this a manufactured pump and a strong fade (p_runner 8, p_rug 72). The main evidence was:\\n- the creator deployed the PumpSwap pool directly, with 0% of the LP locked or burned;\\n- liquidity was about equal to market cap;\\n- 2,058 buyers against 52 sellers, with dust-sized holders;\\n- wash-style trades;\\n- no socials;\\n- a same-name cluster in which a high-volume sibling already had $0 liquidity.\\n\\nAt the decision time, about 22 minutes after collection, there was no pair or no liquidity and the trade was unfillable. That fits an LP pull. The observations that mattered were structural: who controls the LP, how the sibling tokens ended, and how fake the holder base looked. Volume, turnover, holder count, moderate top-10 concentration, GMGN's clean wallet tags and new price highs were all surface signals that pointed the wrong way. The report was right to discount them.\\n\\nNothing available at the time argued for a more bullish view. If anything, the evidence supported a shorter, minutes-scale rug horizon than the 6h the report gave.\\n\\nThis is still a single case. The outcome record does not separate an LP pull from a data gap, and the trade was never filled. So this confirms the direction of the call without showing whether p_rug was well calibrated. I'd rate the reasoning as good and the outcome as partially knowable. The direction was well supported, but the exact timing and whether the price would dump or the liquidity would be pulled were not.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The pool was deployed straight to PumpSwap by the creator, not graduated from the pump.fun curve (migrated_unix=0, token created about 3 s before the pair, bonding_curve=false). RugCheck showed 0% LP locked or burned and GMGN showed lp_burn_ratio=0. So the whole ~$47k of liquidity could be withdrawn by one party at any time. This is the observation that bears most directly on the outcome: no pair or liquidity about 22 minutes after T2.",
+   "Liquidity (~$47k) was almost equal to market cap (~$48k), and 'Pump Fun AMM' held 50.3% of supply. That fits a creator-seeded pool where the LP holder can take back most of the real value in one transaction.",
+   "Same-name siblings in the packet showed the same pattern. 5yvR5VPE\u2026 had $267k of h1 volume and $0 liquidity, and ENJaVz1t\u2026 had $38k of h1 volume and $0 liquidity. That suggests a repeating operator pattern of launch, pump volume, then remove liquidity, on the same ticker in the same 2-hour window.",
+   "GeckoTerminal showed 2,058 unique buyers against 52 unique sellers over h1. The 'rest' holder bucket held only 1.67% of supply. Together these point to airdrop or bot holder inflation rather than organic demand, which usually comes before an exit.",
+   "GMGN creator_token_status='creator_close'. The creator balance was 0 and the creator had no prior launches, which fits a disposable deployer wallet.",
+   "No socials, no DexScreener profile, 1 GMGN page visit, and no external trigger found. Nothing organic supported price once the manufactured flow stopped."
+  ],
+  "misleading_observations": [
+   "$1M of h1 volume and 22x turnover looked like strong demand, but it was mostly wash or bot flow. Turnover is not a demand signal when the pool is creator-controlled.",
+   "'2,080 holders' looked broad, but the holders were dust wallets. Holder count without the distribution is misleading.",
+   "Top-10 holding of about 24% (excluding the AMM) looked 'moderate', but it leaves out the biggest risk: the LP position itself.",
+   "GMGN reported zero sniper, bundler, rat-trader and fresh-wallet tags and 0% bundler share. The report rightly did not trust this: GMGN's tagging did not capture this kind of coordination, and the clean flags gave false reassurance.",
+   "Price was still making new highs (+8\u201320% over m5). In a pool the creator controls, momentum just before an LP pull says little about continuation.",
+   "Creator ATH mcap of $54k and 0 launched tokens looked like a clean dev history, but a fresh wallet per launch makes this uninformative."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time argued for a different direction. The call was strong_fade with p_rug 72, which matches the unfillable, no-liquidity result.",
+   "If anything, the dead sibling with $267k of h1 volume and $0 liquidity (5yvR5VPE\u2026) plus the direct-deploy, unlocked-LP setup could have pushed p_rug higher and the horizon shorter (minutes, not 6h). The report framed the risk as 'within 6 hours'. The actual loss of liquidity came within about 22 minutes of T2.",
+   "Caveat: the outcome record only says 'no pair or no liquidity at T_D'. It does not separate an LP pull from a data or API gap, so even the confirmation of the rug call is uncertain."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Tokens with a pool created directly on PumpSwap within seconds of the mint (migrated_unix=0, bonding_curve=false) and LP burn/lock of 0% will show more than 50% loss of pool liquidity within 60 minutes of detection far more often than curve-graduated tokens of similar market cap and age.",
+    "conditions": "Solana PumpSwap pairs, market cap $10k\u2013$300k, pair age under 3h, LP burn ratio under 5%, token creation within 10 s of pair creation. Compare against pump.fun-graduated pairs with burned LP in the same market-cap band.",
+    "market_structure_rationale": "When LP is graduated from the curve it is burned or locked by the protocol. When the creator deploys the pool directly, the creator keeps the LP tokens and can take back the quote-side liquidity in one transaction, so exit costs nothing."
+   },
+   {
+    "statement": "When a same-name or same-ticker cluster in the packet contains at least one sibling that had over $50k of h1 volume and now has under $100 of liquidity, a new high-volume sibling with unlocked LP is more likely to lose its liquidity within 60 minutes than an otherwise matched token with no such sibling.",
+    "conditions": "Only applies when the siblings were created within the prior 6h, and their h1 volume and liquidity figures are present in the T2 packet.",
+    "market_structure_rationale": "Repeated launches on the same ticker, where heavy volume is followed by zero liquidity, suggest one operator or group running a repeatable extraction playbook. That makes the base rate for the next instance in the cluster higher."
+   },
+   {
+    "statement": "A unique-buyer to unique-seller ratio above 20 over h1, together with a non-top-40 holder bucket holding under 3% of supply, predicts that the token will not stay above detection price for 6h (or will lose liquidity).",
+    "conditions": "Needs GeckoTerminal unique buyer/seller counts and holder distribution at T2. Pair age under 6h.",
+    "market_structure_rationale": "Real demand produces both buyers and sellers, and holdings that are spread out and not trivially small. Thousands of tiny buyers and almost no sellers point to scripted distribution meant to fake holder count and trending metrics. That usually comes before the operator exits."
+   },
+   {
+    "statement": "(Methodological) Unfillable outcomes should be split into LP-removed versus data-unavailable by checking the pool reserves on-chain at T_D. Rug predictions are only scored on the LP-removed cases.",
+    "conditions": "Every candidate whose outcome is 'no pair or no liquidity at T_D'.",
+    "market_structure_rationale": "Without this split, a correct rug call can't be told apart from an API gap, and p_rug calibration is contaminated."
+   }
+  ],
+  "summary": "The report called this a manufactured pump and a strong fade (p_runner 8, p_rug 72). The main evidence was:\n- the creator deployed the PumpSwap pool directly, with 0% of the LP locked or burned;\n- liquidity was about equal to market cap;\n- 2,058 buyers against 52 sellers, with dust-sized holders;\n- wash-style trades;\n- no socials;\n- a same-name cluster in which a high-volume sibling already had $0 liquidity.\n\nAt the decision time, about 22 minutes after collection, there was no pair or no liquidity and the trade was unfillable. That fits an LP pull. The observations that mattered were structural: who controls the LP, how the sibling tokens ended, and how fake the holder base looked. Volume, turnover, holder count, moderate top-10 concentration, GMGN's clean wallet tags and new price highs were all surface signals that pointed the wrong way. The report was right to discount them.\n\nNothing available at the time argued for a more bullish view. If anything, the evidence supported a shorter, minutes-scale rug horizon than the 6h the report gave.\n\nThis is still a single case. The outcome record does not separate an LP pull from a data gap, and the trade was never filled. So this confirms the direction of the call without showing whether p_rug was well calibrated. I'd rate the reasoning as good and the outcome as partially knowable. The direction was well supported, but the exact timing and whether the price would dump or the liquidity would be pulled were not."
+ },
+ "ttft_ms": 15284,
+ "type": "result",
+ "duration_ms": 43745,
+ "uuid": "23bb1275-f945-422c-a961-0c607f330f50",
+ "ttft_stream_ms": 915,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 915,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

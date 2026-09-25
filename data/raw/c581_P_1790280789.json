@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 27205,
+ "stop_reason": "tool_use",
+ "session_id": "2dea6467-08dd-477f-9ad8-c9fd20fa68ce",
+ "total_cost_usd": 0.11724280000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7796,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2724,
+  "output_tokens_details": {
+   "thinking_tokens": 516
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7796,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2724,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7796,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7796
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2724,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7796,
+   "webSearchRequests": 0,
+   "costUSD": 0.11724280000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 516,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"NPC (\\\"NPCs\\\") launched directly on PumpSwap about 39 minutes before detection. Its description says \\\"Created on wenpc.family\\\", and GMGN reports that the linked X account (wenpcfamily) has launched 50 tokens. The pool holds about $208k of liquidity against a $152k market cap, which is unusual. None of the LP is locked or burned, and RugCheck flags \\\"Low amount of LP Providers\\\". In 38 minutes the pool traded $6.8M, about 33 times the market cap, and price rose about 148%. The flow is very lopsided: about 1,931 unique buyers against only about 50 unique sellers, and those 50 sellers made about 4,100 sell transactions. GMGN counts 49 bundler wallets, and bundlers hold 23% of top-trader share. The packet lists 8 other \\\"NPCs\\\"-named tokens created over roughly the last 17 hours. Seven show $0 liquidity (one is a pump.fun mint, where $0 can simply mean the listed pair is unused). The eighth still has about $82k. This looks like a factory of repeated launches.\",\"narrative\":{\"description\":\"A generic 'NPC' meme, taking the ticker of established NPC (Non-Playable Coin) tokens and apparently tied to a 'wenpc.family' launch site or brand that pushes out repeated 'NPCs' tokens. The packet shows no distinct story or catalyst beyond the brand and whatever that site offers.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks machine-driven rather than organic. About 50 sellers made roughly 4,100 sells, turnover is 33 times market cap, and there are 49 bundler wallets. The 1,900+ 'buyers' could be a platform's own users or bot-split wallets. There are no paid DexScreener promotions and no DexScreener profile, and GMGN logged a single page visit, so outside attention looks close to zero.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is only the current, still-live instance in a series of 'NPCs' tokens from what looks like the same launcher. Nothing makes it canonical.\",\"competing_tokens\":\"Established NPC (Non-Playable Coin) tokens at $85M-$185M market cap, plus 8 earlier 'NPCs' clones created in the prior ~17 hours. Seven show $0 liquidity (one is a pump.fun mint, so $0 there may mean the listed pair is unused, not a rug). The eighth still has about $82k liquidity at a $605k market cap. The GMGN image-duplicate count is 10.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 50 unique sellers against about 1,931 buyers, with around 4,100 sells, is typical of a small set of wallets trading in a loop. There are 49 bundler wallets (23% of top-trader share), and volume is 33 times market cap within 38 minutes. The linked X account has launched 50 tokens. Most earlier same-name clones now show $0 liquidity, and the LP is fully unlocked with few providers.\",\"uncertainty\":\"wenpc.family might be a genuine community platform whose users really buy each launch, which would explain the broad buyer count. The unique-buyer and unique-seller counts come from GeckoTerminal and could be skewed by how it aggregates wallets.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"All LP is unlocked (0% burned) and held by few providers, so the deployer can pull the $200k+ pool at any time\",\"Liquidity above market cap is typical of a self-seeded pool built to draw volume before a pull\",\"Of 8 earlier same-name clones from the same apparent launcher, 7 show $0 liquidity\",\"Volume looks wash-traded by bundlers; a thin set of sellers means real exit depth is unclear\",\"Price is already at its all-time high, matching the creator's best-token ATH of about $157k\",\"Copycat ticker competing with large established NPC tokens\"]},\"counterargument\":\"The brand behind the launches may have a real captive audience: nearly 2,000 holders, a fairly spread-out top-10 (13.5% excluding the pool), mint and freeze authority renounced, and no sniper wallets. The deep pool means a doubling needs real buying, but $6.8M of volume shows the flow exists. One earlier 'NPCs' token apparently reached a $3.8M market cap. If this instance becomes the one the community settles on, it could double from $150k within hours.\",\"unknowns\":[\"What wenpc.family is, and whether the earlier NPCs clones were rugged or just migrated or abandoned\",\"Who holds the LP tokens\",\"Whether the 1,931 buyers are real users or wallets split out by bots\",\"Whether any X or Telegram promotion is driving the flow\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged only from the evidence packet.\"},\"thesis\":\"This looks like a serial-launch 'NPCs' token on a self-seeded PumpSwap pool with the LP unlocked. Bundler wallets appear to be generating the volume, and most earlier clones show $0 liquidity. Pulling the liquidity is the most likely outcome within 6 hours. A doubling from entry is possible but unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":10,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "NPC (\"NPCs\") launched directly on PumpSwap about 39 minutes before detection. Its description says \"Created on wenpc.family\", and GMGN reports that the linked X account (wenpcfamily) has launched 50 tokens. The pool holds about $208k of liquidity against a $152k market cap, which is unusual. None of the LP is locked or burned, and RugCheck flags \"Low amount of LP Providers\". In 38 minutes the pool traded $6.8M, about 33 times the market cap, and price rose about 148%. The flow is very lopsided: about 1,931 unique buyers against only about 50 unique sellers, and those 50 sellers made about 4,100 sell transactions. GMGN counts 49 bundler wallets, and bundlers hold 23% of top-trader share. The packet lists 8 other \"NPCs\"-named tokens created over roughly the last 17 hours. Seven show $0 liquidity (one is a pump.fun mint, where $0 can simply mean the listed pair is unused). The eighth still has about $82k. This looks like a factory of repeated launches.",
+  "narrative": {
+   "description": "A generic 'NPC' meme, taking the ticker of established NPC (Non-Playable Coin) tokens and apparently tied to a 'wenpc.family' launch site or brand that pushes out repeated 'NPCs' tokens. The packet shows no distinct story or catalyst beyond the brand and whatever that site offers.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity looks machine-driven rather than organic. About 50 sellers made roughly 4,100 sells, turnover is 33 times market cap, and there are 49 bundler wallets. The 1,900+ 'buyers' could be a platform's own users or bot-split wallets. There are no paid DexScreener promotions and no DexScreener profile, and GMGN logged a single page visit, so outside attention looks close to zero."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is only the current, still-live instance in a series of 'NPCs' tokens from what looks like the same launcher. Nothing makes it canonical.",
+   "competing_tokens": "Established NPC (Non-Playable Coin) tokens at $85M-$185M market cap, plus 8 earlier 'NPCs' clones created in the prior ~17 hours. Seven show $0 liquidity (one is a pump.fun mint, so $0 there may mean the listed pair is unused, not a rug). The eighth still has about $82k liquidity at a $605k market cap. The GMGN image-duplicate count is 10.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 50 unique sellers against about 1,931 buyers, with around 4,100 sells, is typical of a small set of wallets trading in a loop. There are 49 bundler wallets (23% of top-trader share), and volume is 33 times market cap within 38 minutes. The linked X account has launched 50 tokens. Most earlier same-name clones now show $0 liquidity, and the LP is fully unlocked with few providers.",
+   "uncertainty": "wenpc.family might be a genuine community platform whose users really buy each launch, which would explain the broad buyer count. The unique-buyer and unique-seller counts come from GeckoTerminal and could be skewed by how it aggregates wallets."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "All LP is unlocked (0% burned) and held by few providers, so the deployer can pull the $200k+ pool at any time",
+    "Liquidity above market cap is typical of a self-seeded pool built to draw volume before a pull",
+    "Of 8 earlier same-name clones from the same apparent launcher, 7 show $0 liquidity",
+    "Volume looks wash-traded by bundlers; a thin set of sellers means real exit depth is unclear",
+    "Price is already at its all-time high, matching the creator's best-token ATH of about $157k",
+    "Copycat ticker competing with large established NPC tokens"
+   ]
+  },
+  "counterargument": "The brand behind the launches may have a real captive audience: nearly 2,000 holders, a fairly spread-out top-10 (13.5% excluding the pool), mint and freeze authority renounced, and no sniper wallets. The deep pool means a doubling needs real buying, but $6.8M of volume shows the flow exists. One earlier 'NPCs' token apparently reached a $3.8M market cap. If this instance becomes the one the community settles on, it could double from $150k within hours.",
+  "unknowns": [
+   "What wenpc.family is, and whether the earlier NPCs clones were rugged or just migrated or abandoned",
+   "Who holds the LP tokens",
+   "Whether the 1,931 buyers are real users or wallets split out by bots",
+   "Whether any X or Telegram promotion is driving the flow"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged only from the evidence packet."
+  },
+  "thesis": "This looks like a serial-launch 'NPCs' token on a self-seeded PumpSwap pool with the LP unlocked. Bundler wallets appear to be generating the volume, and most earlier clones show $0 liquidity. Pulling the liquidity is the most likely outcome within 6 hours. A doubling from entry is possible but unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 10,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6687,
+ "type": "result",
+ "duration_ms": 27247,
+ "uuid": "d4120aee-1f63-4864-a80a-e346b72a190d",
+ "ttft_stream_ms": 823,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 823,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

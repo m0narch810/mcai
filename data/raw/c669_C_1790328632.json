@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 68089,
+ "stop_reason": "tool_use",
+ "session_id": "0e9ca57b-1f2c-438d-b3e9-d3b360a19ff9",
+ "total_cost_usd": 0.29733560000000003,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14599,
+  "cache_read_input_tokens": 43603,
+  "output_tokens": 3414,
+  "output_tokens_details": {
+   "thinking_tokens": 322
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14599,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2557,
+    "cache_read_input_tokens": 15911,
+    "cache_creation_input_tokens": 1264,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1264
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3414,
+   "cacheReadInputTokens": 43603,
+   "cacheCreationInputTokens": 14599,
+   "webSearchRequests": 0,
+   "costUSD": 0.1938246,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 322,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 53211,
+   "outputTokens": 2060,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.103511,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PepeBot is a pump.fun token about 42 minutes old, still on the bonding curve, at a market cap of about $15.9k. It ran up about 370% in its first hour (ATH market cap about $23.7k) on roughly $77k of volume. It has a live website (pepebot.lovable.app) and a GitHub repo (ThePepeBot/ThePepeBot). Both list this contract and describe a \\\"physical Solana robot\\\" that would take trading fees, buy PEPE and distribute it to holders. Most of it runs in simulation mode. The repo has 3 commits and 0 stars. The only linked social is an X status by @CodyBackend, which I could not read (HTTP 402). Several copycat tokens named \\\"CA ON GITHUB, DEV IS BASED\\\" appeared within about 25 minutes. That points to a small X or call-channel angle (\\\"contract is published on GitHub, the dev is legit\\\"), and snipers are copying it. GMGN reports 'creator_close' (the dev has exited, creator balance 0) and a community-takeover flag. It also tags 120 of 131 traders as bundlers (bundlers hold about 27% of the top holders), with a bot/degen rate of 32%.\",\"narrative\":{\"description\":\"The pitch is a \\\"build-in-public\\\" open-source Solana robot that runs an automated fee \u2192 PEPE buyback \u2192 holder-distribution loop. It is a generic mix of AI/robot utility and the PEPE brand, and it leans on the 'CA on GitHub, dev is based' credibility angle.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Most likely one X post by @CodyBackend, plus the 'CA on GitHub' hook getting picked up by pump.fun degens and bots. The copycat name tokens show at least some visibility. I found no wider event, news or organic discussion.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The project website and GitHub repo both publish this exact contract address.\",\"competing_tokens\":\"The 35Qq... PepeBot token shows a broken mcap and $0.03 of liquidity. Several 'CA ON GITHUB, DEV IS BASED' copycats sit at about $3.3k with zero liquidity. All of them are dead, and they are hijack attempts that confirm this token is the canonical one.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The website and GitHub repo are real, but the repo is tiny: 3 commits, 0 stars, built on lovable.app. GMGN tags 120 of 131 traders as bundlers, and the bot/degen rate is 32%. The creator has closed out, and the token carries a CTO flag. GeckoTerminal counts about 448 unique buyers, though many are probably bots. GMGN recorded only 26 page visits. There is no paid DexScreener boost.\",\"uncertainty\":\"I could not read the X post, so I can't gauge its reach or the author's credibility. I also can't tell whether the bundler wallets belong to insiders or are ordinary bundled buy bots.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"120 of 131 traders are tagged as bundlers, and bundler-held supply (about 27%) can be dumped into the curve\",\"The dev has already exited (creator_close), and the token is a CTO with no committed team\",\"Price is about 33% below its ATH less than an hour after launch. Buys and sells are roughly balanced in the last 5 minutes (47 vs 45), so momentum is cooling\",\"Market cap is tiny at about $16k. A 2x to about $32k is possible, but it needs fresh buyers the evidence does not show\"]},\"counterargument\":\"At $16k on the curve, doubling takes only about $15-20k of net buying. The 'open-source robot, CA on GitHub' story is a good fit for dev-based narrative traders. The copycats show that people were watching this name, and the volume-to-market-cap turnover is about 5x in an hour. One more boost from a KOL or the X post author could push it past its $23.7k ATH to $32k fast.\",\"unknowns\":[\"What the @CodyBackend X post says, how much engagement it has, and who the account is\",\"Whether the bundler wallets are linked to the dev\",\"Whether any Telegram call channels are pushing the token\",\"Whether the dev will keep building or has walked away (creator_close suggests they sold)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address returned nothing. The X status page returned HTTP 402. The project site and GitHub both confirm the contract. DexScreener's live data matches the packet.\"},\"thesis\":\"This is the canonical token for a thin but real build-in-public robot/PEPE project. Heavy bundler activity, a dev who has already exited and fading momentum below the ATH make a 2x within 6 hours unlikely, though not impossible at this market cap.\",\"continuation_view\":\"fade\",\"p_runner\":18,\"p_rug\":55,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://pepebot.lovable.app/\",\"what\":\"Project site listing the contract address and the robot/treasury concept, in simulation mode\"},{\"url\":\"https://github.com/ThePepeBot/ThePepeBot\",\"what\":\"GitHub repo with the contract address, 3 commits and 0 stars\"},{\"url\":\"https://x.com/CodyBackend/status/2103405387638837517\",\"what\":\"Linked X post; returned HTTP 402 and could not be read\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2Su1mp2yxnWqUagnGAbMkF76as8wi6NZs41pPXScpump\",\"what\":\"Live market data: about $15.5k market cap, 47 buys vs 45 sells in the last 5 minutes\"}]}",
+ "structured_output": {
+  "what_is_happening": "PepeBot is a pump.fun token about 42 minutes old, still on the bonding curve, at a market cap of about $15.9k. It ran up about 370% in its first hour (ATH market cap about $23.7k) on roughly $77k of volume. It has a live website (pepebot.lovable.app) and a GitHub repo (ThePepeBot/ThePepeBot). Both list this contract and describe a \"physical Solana robot\" that would take trading fees, buy PEPE and distribute it to holders. Most of it runs in simulation mode. The repo has 3 commits and 0 stars. The only linked social is an X status by @CodyBackend, which I could not read (HTTP 402). Several copycat tokens named \"CA ON GITHUB, DEV IS BASED\" appeared within about 25 minutes. That points to a small X or call-channel angle (\"contract is published on GitHub, the dev is legit\"), and snipers are copying it. GMGN reports 'creator_close' (the dev has exited, creator balance 0) and a community-takeover flag. It also tags 120 of 131 traders as bundlers (bundlers hold about 27% of the top holders), with a bot/degen rate of 32%.",
+  "narrative": {
+   "description": "The pitch is a \"build-in-public\" open-source Solana robot that runs an automated fee \u2192 PEPE buyback \u2192 holder-distribution loop. It is a generic mix of AI/robot utility and the PEPE brand, and it leans on the 'CA on GitHub, dev is based' credibility angle.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Most likely one X post by @CodyBackend, plus the 'CA on GitHub' hook getting picked up by pump.fun degens and bots. The copycat name tokens show at least some visibility. I found no wider event, news or organic discussion."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The project website and GitHub repo both publish this exact contract address.",
+   "competing_tokens": "The 35Qq... PepeBot token shows a broken mcap and $0.03 of liquidity. Several 'CA ON GITHUB, DEV IS BASED' copycats sit at about $3.3k with zero liquidity. All of them are dead, and they are hijack attempts that confirm this token is the canonical one.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The website and GitHub repo are real, but the repo is tiny: 3 commits, 0 stars, built on lovable.app. GMGN tags 120 of 131 traders as bundlers, and the bot/degen rate is 32%. The creator has closed out, and the token carries a CTO flag. GeckoTerminal counts about 448 unique buyers, though many are probably bots. GMGN recorded only 26 page visits. There is no paid DexScreener boost.",
+   "uncertainty": "I could not read the X post, so I can't gauge its reach or the author's credibility. I also can't tell whether the bundler wallets belong to insiders or are ordinary bundled buy bots."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "120 of 131 traders are tagged as bundlers, and bundler-held supply (about 27%) can be dumped into the curve",
+    "The dev has already exited (creator_close), and the token is a CTO with no committed team",
+    "Price is about 33% below its ATH less than an hour after launch. Buys and sells are roughly balanced in the last 5 minutes (47 vs 45), so momentum is cooling",
+    "Market cap is tiny at about $16k. A 2x to about $32k is possible, but it needs fresh buyers the evidence does not show"
+   ]
+  },
+  "counterargument": "At $16k on the curve, doubling takes only about $15-20k of net buying. The 'open-source robot, CA on GitHub' story is a good fit for dev-based narrative traders. The copycats show that people were watching this name, and the volume-to-market-cap turnover is about 5x in an hour. One more boost from a KOL or the X post author could push it past its $23.7k ATH to $32k fast.",
+  "unknowns": [
+   "What the @CodyBackend X post says, how much engagement it has, and who the account is",
+   "Whether the bundler wallets are linked to the dev",
+   "Whether any Telegram call channels are pushing the token",
+   "Whether the dev will keep building or has walked away (creator_close suggests they sold)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address returned nothing. The X status page returned HTTP 402. The project site and GitHub both confirm the contract. DexScreener's live data matches the packet."
+  },
+  "thesis": "This is the canonical token for a thin but real build-in-public robot/PEPE project. Heavy bundler activity, a dev who has already exited and fading momentum below the ATH make a 2x within 6 hours unlikely, though not impossible at this market cap.",
+  "continuation_view": "fade",
+  "p_runner": 18,
+  "p_rug": 55,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://pepebot.lovable.app/",
+    "what": "Project site listing the contract address and the robot/treasury concept, in simulation mode"
+   },
+   {
+    "url": "https://github.com/ThePepeBot/ThePepeBot",
+    "what": "GitHub repo with the contract address, 3 commits and 0 stars"
+   },
+   {
+    "url": "https://x.com/CodyBackend/status/2103405387638837517",
+    "what": "Linked X post; returned HTTP 402 and could not be read"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2Su1mp2yxnWqUagnGAbMkF76as8wi6NZs41pPXScpump",
+    "what": "Live market data: about $15.5k market cap, 47 buys vs 45 sells in the last 5 minutes"
+   }
+  ]
+ },
+ "ttft_ms": 1546,
+ "type": "result",
+ "duration_ms": 54297,
+ "uuid": "af8fd331-8aec-47a8-be02-82016e18b2e7",
+ "ttft_stream_ms": 864,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 864,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

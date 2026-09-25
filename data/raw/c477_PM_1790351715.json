@@ -1,0 +1,145 @@
+{
+ "duration_api_ms": 42858,
+ "stop_reason": "tool_use",
+ "session_id": "fba6f00a-fd84-4761-a290-1b1436cef0f9",
+ "total_cost_usd": 0.16187200000000002,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10168,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 4026,
+  "output_tokens_details": {
+   "thinking_tokens": 906
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10168,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4026,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 10168,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10168
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 4026,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 10168,
+   "webSearchRequests": 0,
+   "costUSD": 0.16187200000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 906,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The creator supplied all the liquidity, 0% of it was locked or burned, and it was larger than the market cap (~$161k liquidity vs ~$115k mcap, about 1.4x). One wallet could withdraw the pool whenever it chose. The outcome ('no pair or no liquidity at T_D', ~22 min after T2) fits that happening.\",\"The token was not a pump.fun curve launch. There is no 'pump' mint suffix, GMGN shows migrated_unix=0 and an empty launchpad, and the pool was deployed straight to PumpSwap. Yet its metadata points to wenpc.family, which says $NPC trades on pump.fun. The token's origin contradicts its own claimed identity, which marks it as non-canonical.\",\"Sibling 'NPCs' clones from the same few hours (a4h4, CZJN, 3Vkm, 6kgc, BCvE, GQZM, E12o) were already at $0 liquidity with multi-million 'mcap' figures. That shows a live pattern of deploying a clone, inflating it, and pulling the LP.\",\"GeckoTerminal showed 2,064 unique buyers against 55 unique sellers in h1, and 48 unique sellers across the m5 to m30 windows. Buying was spread across many wallets while selling came from a small fixed set, which fits sprayed buys and an exit controlled by a few wallets.\",\"Turnover was about 32 to 46x the market cap in one hour, and GMGN flagged 48 bundler wallets holding about 23% of top-trader share. Most of the activity looked manufactured, not organic demand.\",\"RugCheck flagged 'Copycat token' and 'Low amount of LP Providers', and GMGN counted 8 duplicates of the image.\",\"GMGN's creator_best_token_ath_mcap (~$120.9k) was essentially this token's current ATH, and the creator wallet had no launch history. That points to a fresh, disposable deployer wallet.\"],\"misleading_observations\":[\"The researcher treated 'dev_x_account_launched_token_count: 48' as a sign the dev was a serial launcher. That X account is @wenpcfamily, which the clone copied from the real project. The number most likely describes the real project's account or its ecosystem, not this deployer, so it was weak evidence about this creator. The conclusion did not depend on it.\",\"Holder breadth looked healthy: about 2,000 to 2,100 holders and ~13% top-10 concentration excluding the AMM. For a pool-seeded clone with sprayed buys, those numbers say nothing about real distribution. The AMM held ~72% of supply, and that AMM was the creator's unlocked LP.\",\"The clean security checks (mint and freeze authority renounced, honeypot=0, 0% tax) are irrelevant when the exit route is an LP withdrawal, not a token-level trap.\",\"The counterargument that liquidity above market cap means 'buys move price less, so the creator might let it run' treated deep liquidity as stabilizing. Here it was the creator's withdrawable capital, and it was the main rug risk.\",\"The raw volume and price change (+135% h1, $5.2M volume) look like momentum, but they mostly came from bundled or bot flow.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time should have reversed the conclusion. The direction (strong_fade, high rug risk) was well supported.\",\"The evidence justified a shorter expected time to rug than 'well inside 6 hours'. The sibling clones were created roughly 2 to 5 hours earlier and were already drained, so the pattern pointed to pulls within tens of minutes. That combined with the ~25-minute gap between detection and decision. p_rug of 78 was arguably conservative, and p_rug before T_D specifically deserved a separate estimate.\",\"The outcome record only says 'no pair or no liquidity at T_D'. That fits an LP pull but could also be a data or indexing gap. It is strong but not conclusive confirmation of a rug.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"When a token's metadata (website or X handle) links it to a project described as a pump.fun token, but the mint has no pump.fun curve origin (GMGN migrated_unix=0 and empty launchpad, pool created directly on PumpSwap/Raydium), and 0% of LP is locked or burned, it will be unfillable or have lost at least 80% of its liquidity within 60 minutes of detection in at least 70% of cases.\",\"conditions\":\"Solana tokens where the canonical same-name token can be identified at detection time, the candidate is not that canonical mint, the LP is supplied by a single wallet, and lp_burn_ratio=0.\",\"market_structure_rationale\":\"Pump.fun curve launches migrate with LP burned automatically. A direct pool deploy leaves the LP withdrawable by one wallet. A mint that doesn't match the claimed project, combined with withdrawable LP, gives the deployer both a reason and the means to pull liquidity once copied-attention buys arrive.\"},{\"statement\":\"If at detection the h1 unique-seller to unique-buyer ratio is below 0.05 with more than 1,000 unique buyers, and the seller count barely changes across the m5/m15/m30 windows, the token's liquidity will be removed before a typical 20 to 30 minute decision delay at a higher rate than tokens with a ratio of 0.2 or more at similar market cap and age.\",\"conditions\":\"Tokens under 2 hours old, $50k to $300k market cap, with GeckoTerminal unique buyer and seller data available.\",\"market_structure_rationale\":\"Organic trading produces sellers roughly in proportion to buyers. A large, spread-out buyer set facing a tiny fixed seller set suggests scripted buys, with exits held by a few controlled wallets. That is how wash-and-pull setups are built.\"},{\"statement\":\"When 5 or more tokens with the same name or ticker were created within the previous 6 hours and most of them already show $0 liquidity, a new non-canonical token with that name will be unfillable at T_D, or lose at least 80% of its liquidity within 1 hour, at a rate above 70%.\",\"conditions\":\"Same-name search at T2 returns 5 or more recent (<6h) pairs, and the candidate is not the canonical mint (canonical = highest liquidity and actual launchpad origin).\",\"market_structure_rationale\":\"Several drained siblings suggest one serial operator, or a crowd of copycats, running a repeatable clone-and-pull cycle with a short holding period. The previous clones' lifespans estimate the current one's.\"},{\"statement\":\"For candidates with unlocked, single-provider LP where liquidity/mcap > 1, the share that is unfillable at T_D rises as the gap between detection and decision grows (e.g. 10 vs 25 minutes).\",\"conditions\":\"A process check on the experiment pipeline itself, measured across all candidates that meet the LP condition.\",\"market_structure_rationale\":\"If rug timing is minutes, not hours, the research delay alone decides whether a trade can happen. The pipeline should record this so unfillable outcomes are not misread as model failures or successes.\"}],\"summary\":\"The report called NPC (Led1Uu\u2026) a copycat of the real 68SV\u2026pump NPCs token, backed by unlocked, creator-supplied LP that could be withdrawn. It gave p_rug=78, p_runner=5 and a strong_fade view. At the decision time, about 25 minutes after detection, there was no pair or no liquidity, so the trade could not be filled. That most likely means an LP pull, though a data gap can't be fully ruled out.\\n\\nThe call held up for structural reasons, not luck:\\n- The token claimed a pump.fun project but had no pump.fun origin.\\n- The creator supplied all the LP, none of it was locked, and it was larger than the market cap.\\n- Same-name sibling clones were already drained to $0.\\n- Unique buyers (2,064) hugely outnumbered unique sellers (55).\\n- Heavy bundler activity and turnover of 30x+ the market cap in an hour.\\n\\nSome evidence was misleading or misattributed. The '48 tokens launched by the dev X account' figure probably describes the copied real-project handle, not this deployer. Holder breadth and renounced authorities were irrelevant to an LP-pull exit, and the counterargument wrongly treated the deep, withdrawable liquidity as stabilizing.\\n\\nThe direction was knowable. The exact timing was not, although the drained siblings suggested a much faster pull than 'within 6h'. The main lesson is about timing: for this setup, rugs can happen faster than the pipeline's delay between detection and decision. Because the trade was never filled, this case offers no evidence about how good p_runner is.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The creator supplied all the liquidity, 0% of it was locked or burned, and it was larger than the market cap (~$161k liquidity vs ~$115k mcap, about 1.4x). One wallet could withdraw the pool whenever it chose. The outcome ('no pair or no liquidity at T_D', ~22 min after T2) fits that happening.",
+   "The token was not a pump.fun curve launch. There is no 'pump' mint suffix, GMGN shows migrated_unix=0 and an empty launchpad, and the pool was deployed straight to PumpSwap. Yet its metadata points to wenpc.family, which says $NPC trades on pump.fun. The token's origin contradicts its own claimed identity, which marks it as non-canonical.",
+   "Sibling 'NPCs' clones from the same few hours (a4h4, CZJN, 3Vkm, 6kgc, BCvE, GQZM, E12o) were already at $0 liquidity with multi-million 'mcap' figures. That shows a live pattern of deploying a clone, inflating it, and pulling the LP.",
+   "GeckoTerminal showed 2,064 unique buyers against 55 unique sellers in h1, and 48 unique sellers across the m5 to m30 windows. Buying was spread across many wallets while selling came from a small fixed set, which fits sprayed buys and an exit controlled by a few wallets.",
+   "Turnover was about 32 to 46x the market cap in one hour, and GMGN flagged 48 bundler wallets holding about 23% of top-trader share. Most of the activity looked manufactured, not organic demand.",
+   "RugCheck flagged 'Copycat token' and 'Low amount of LP Providers', and GMGN counted 8 duplicates of the image.",
+   "GMGN's creator_best_token_ath_mcap (~$120.9k) was essentially this token's current ATH, and the creator wallet had no launch history. That points to a fresh, disposable deployer wallet."
+  ],
+  "misleading_observations": [
+   "The researcher treated 'dev_x_account_launched_token_count: 48' as a sign the dev was a serial launcher. That X account is @wenpcfamily, which the clone copied from the real project. The number most likely describes the real project's account or its ecosystem, not this deployer, so it was weak evidence about this creator. The conclusion did not depend on it.",
+   "Holder breadth looked healthy: about 2,000 to 2,100 holders and ~13% top-10 concentration excluding the AMM. For a pool-seeded clone with sprayed buys, those numbers say nothing about real distribution. The AMM held ~72% of supply, and that AMM was the creator's unlocked LP.",
+   "The clean security checks (mint and freeze authority renounced, honeypot=0, 0% tax) are irrelevant when the exit route is an LP withdrawal, not a token-level trap.",
+   "The counterargument that liquidity above market cap means 'buys move price less, so the creator might let it run' treated deep liquidity as stabilizing. Here it was the creator's withdrawable capital, and it was the main rug risk.",
+   "The raw volume and price change (+135% h1, $5.2M volume) look like momentum, but they mostly came from bundled or bot flow."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time should have reversed the conclusion. The direction (strong_fade, high rug risk) was well supported.",
+   "The evidence justified a shorter expected time to rug than 'well inside 6 hours'. The sibling clones were created roughly 2 to 5 hours earlier and were already drained, so the pattern pointed to pulls within tens of minutes. That combined with the ~25-minute gap between detection and decision. p_rug of 78 was arguably conservative, and p_rug before T_D specifically deserved a separate estimate.",
+   "The outcome record only says 'no pair or no liquidity at T_D'. That fits an LP pull but could also be a data or indexing gap. It is strong but not conclusive confirmation of a rug."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "When a token's metadata (website or X handle) links it to a project described as a pump.fun token, but the mint has no pump.fun curve origin (GMGN migrated_unix=0 and empty launchpad, pool created directly on PumpSwap/Raydium), and 0% of LP is locked or burned, it will be unfillable or have lost at least 80% of its liquidity within 60 minutes of detection in at least 70% of cases.",
+    "conditions": "Solana tokens where the canonical same-name token can be identified at detection time, the candidate is not that canonical mint, the LP is supplied by a single wallet, and lp_burn_ratio=0.",
+    "market_structure_rationale": "Pump.fun curve launches migrate with LP burned automatically. A direct pool deploy leaves the LP withdrawable by one wallet. A mint that doesn't match the claimed project, combined with withdrawable LP, gives the deployer both a reason and the means to pull liquidity once copied-attention buys arrive."
+   },
+   {
+    "statement": "If at detection the h1 unique-seller to unique-buyer ratio is below 0.05 with more than 1,000 unique buyers, and the seller count barely changes across the m5/m15/m30 windows, the token's liquidity will be removed before a typical 20 to 30 minute decision delay at a higher rate than tokens with a ratio of 0.2 or more at similar market cap and age.",
+    "conditions": "Tokens under 2 hours old, $50k to $300k market cap, with GeckoTerminal unique buyer and seller data available.",
+    "market_structure_rationale": "Organic trading produces sellers roughly in proportion to buyers. A large, spread-out buyer set facing a tiny fixed seller set suggests scripted buys, with exits held by a few controlled wallets. That is how wash-and-pull setups are built."
+   },
+   {
+    "statement": "When 5 or more tokens with the same name or ticker were created within the previous 6 hours and most of them already show $0 liquidity, a new non-canonical token with that name will be unfillable at T_D, or lose at least 80% of its liquidity within 1 hour, at a rate above 70%.",
+    "conditions": "Same-name search at T2 returns 5 or more recent (<6h) pairs, and the candidate is not the canonical mint (canonical = highest liquidity and actual launchpad origin).",
+    "market_structure_rationale": "Several drained siblings suggest one serial operator, or a crowd of copycats, running a repeatable clone-and-pull cycle with a short holding period. The previous clones' lifespans estimate the current one's."
+   },
+   {
+    "statement": "For candidates with unlocked, single-provider LP where liquidity/mcap > 1, the share that is unfillable at T_D rises as the gap between detection and decision grows (e.g. 10 vs 25 minutes).",
+    "conditions": "A process check on the experiment pipeline itself, measured across all candidates that meet the LP condition.",
+    "market_structure_rationale": "If rug timing is minutes, not hours, the research delay alone decides whether a trade can happen. The pipeline should record this so unfillable outcomes are not misread as model failures or successes."
+   }
+  ],
+  "summary": "The report called NPC (Led1Uu\u2026) a copycat of the real 68SV\u2026pump NPCs token, backed by unlocked, creator-supplied LP that could be withdrawn. It gave p_rug=78, p_runner=5 and a strong_fade view. At the decision time, about 25 minutes after detection, there was no pair or no liquidity, so the trade could not be filled. That most likely means an LP pull, though a data gap can't be fully ruled out.\n\nThe call held up for structural reasons, not luck:\n- The token claimed a pump.fun project but had no pump.fun origin.\n- The creator supplied all the LP, none of it was locked, and it was larger than the market cap.\n- Same-name sibling clones were already drained to $0.\n- Unique buyers (2,064) hugely outnumbered unique sellers (55).\n- Heavy bundler activity and turnover of 30x+ the market cap in an hour.\n\nSome evidence was misleading or misattributed. The '48 tokens launched by the dev X account' figure probably describes the copied real-project handle, not this deployer. Holder breadth and renounced authorities were irrelevant to an LP-pull exit, and the counterargument wrongly treated the deep, withdrawable liquidity as stabilizing.\n\nThe direction was knowable. The exact timing was not, although the drained siblings suggested a much faster pull than 'within 6h'. The main lesson is about timing: for this setup, rugs can happen faster than the pipeline's delay between detection and decision. Because the trade was never filled, this case offers no evidence about how good p_runner is."
+ },
+ "ttft_ms": 11024,
+ "type": "result",
+ "duration_ms": 42907,
+ "uuid": "3b4bc10c-74fa-426a-88fe-5cc718919748",
+ "ttft_stream_ms": 751,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 751,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

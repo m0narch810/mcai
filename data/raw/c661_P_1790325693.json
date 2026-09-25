@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 21165,
+ "stop_reason": "tool_use",
+ "session_id": "7f2a7d09-f8b7-4c8d-bf77-f65a541a1c28",
+ "total_cost_usd": 0.1009028,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7161,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2161,
+  "output_tokens_details": {
+   "thinking_tokens": 344
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7161,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2161,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7161,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7161
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2161,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7161,
+   "webSearchRequests": 0,
+   "costUSD": 0.1009028,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 344,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"\ud83d\udc3bBear\\\" is a 37-minute-old token that launched straight into a PumpSwap pool. It never went through the pump.fun bonding curve (migrated_unix=0, created_unix is the same as pool creation). The creator supplied the liquidity, and none of it is locked or burned. The pool holds $65k of liquidity against a $52k market cap, so liquidity is larger than the market cap. Price is up about 115-139% in the first hour on $263k of volume, which is 4x turnover. At least six other tokens with the identical \\\"\ud83d\udc3bBear\\\" symbol and name were created in the prior ~75 minutes. All of them now show $0 liquidity, which fits a serial launch-and-pull farm.\",\"narrative\":{\"description\":\"A generic animal/'bear' meme with no website, no socials, no DexScreener profile and no description. Nothing in the packet shows an outside event or story behind it.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks manufactured rather than organic. In the last 30 minutes about 1,523 buys came from only ~103 unique buyers, and GMGN flags 24 bundler wallets. The 1,123 unique buyers against 114 sellers in the first hour fits bot-seeded dust buys. None of this suggests people are actually talking about the coin.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name 'Bear' that currently has liquidity and volume. That makes it the latest iteration, not the canonical one.\",\"competing_tokens\":\"Six earlier '\ud83d\udc3bBear' tokens were created between about 07:00 and 07:47 UTC, all with $0 liquidity now. Two still showed h1 volume ($32k and $86k), which suggests they were pulled very recently.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Six identical-name clones all ended at $0 liquidity within about 90 minutes. The LP is creator-supplied and 0% locked, and RugCheck flags 'Large Amount of LP Unlocked' as danger along with few LP providers. The creator's token status is 'creator_close'. There are 24 bundler wallets and very high transaction counts per unique trader. There are no socials, smart money, KOL wallets or organic links.\",\"uncertainty\":\"I can't confirm on-chain that the same deployer funded the clones (funded_from is null, and creator_other_tokens=0 may reflect fresh deployer wallets). The top-10 holder share outside the pool is fairly low at about 14%.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is unlocked and supplied by the creator, so it can be removed at any moment\",\"Same-name clones rugged in sequence over the past ~90 minutes\",\"Liquidity above market cap is a sign of an artificial pool setup\",\"24 bundler wallets and bot-like trade counts\",\"One wallet holds 10.55%, which may be linked to the deployer\",\"Entry is 25 minutes after detection, into a coin already up 115-139% whose momentum is flattening (m5 -1% on GeckoTerminal)\"]},\"counterargument\":\"Sometimes one clone in a serial series gets real organic flow and the deployer lets it run. Top-10 concentration outside the pool is only 14%, the token is not a honeypot and has no taxes, and it has 1,100+ holders. If real buyers keep arriving, a $52k coin doubling to about $105k within 6 hours is plausible.\",\"unknowns\":[\"Whether the same deployer launched the clone tokens\",\"Who controls the LP tokens and the 10.55% holder\",\"Any X/Telegram activity\",\"Price at the actual entry time\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged only from the packet.\"},\"thesis\":\"This looks like a serial LP-rug farm. Seven identical '\ud83d\udc3bBear' tokens appeared within about 90 minutes, and every earlier one now has zero liquidity. This one has creator-supplied, unlocked LP, bundled bot volume, and no socials. The likely outcome is that liquidity is pulled within hours, probably before a 2x from an entry that is already up more than 100%.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":80,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"\ud83d\udc3bBear\" is a 37-minute-old token that launched straight into a PumpSwap pool. It never went through the pump.fun bonding curve (migrated_unix=0, created_unix is the same as pool creation). The creator supplied the liquidity, and none of it is locked or burned. The pool holds $65k of liquidity against a $52k market cap, so liquidity is larger than the market cap. Price is up about 115-139% in the first hour on $263k of volume, which is 4x turnover. At least six other tokens with the identical \"\ud83d\udc3bBear\" symbol and name were created in the prior ~75 minutes. All of them now show $0 liquidity, which fits a serial launch-and-pull farm.",
+  "narrative": {
+   "description": "A generic animal/'bear' meme with no website, no socials, no DexScreener profile and no description. Nothing in the packet shows an outside event or story behind it.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The activity looks manufactured rather than organic. In the last 30 minutes about 1,523 buys came from only ~103 unique buyers, and GMGN flags 24 bundler wallets. The 1,123 unique buyers against 114 sellers in the first hour fits bot-seeded dust buys. None of this suggests people are actually talking about the coin."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name 'Bear' that currently has liquidity and volume. That makes it the latest iteration, not the canonical one.",
+   "competing_tokens": "Six earlier '\ud83d\udc3bBear' tokens were created between about 07:00 and 07:47 UTC, all with $0 liquidity now. Two still showed h1 volume ($32k and $86k), which suggests they were pulled very recently.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Six identical-name clones all ended at $0 liquidity within about 90 minutes. The LP is creator-supplied and 0% locked, and RugCheck flags 'Large Amount of LP Unlocked' as danger along with few LP providers. The creator's token status is 'creator_close'. There are 24 bundler wallets and very high transaction counts per unique trader. There are no socials, smart money, KOL wallets or organic links.",
+   "uncertainty": "I can't confirm on-chain that the same deployer funded the clones (funded_from is null, and creator_other_tokens=0 may reflect fresh deployer wallets). The top-10 holder share outside the pool is fairly low at about 14%."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is unlocked and supplied by the creator, so it can be removed at any moment",
+    "Same-name clones rugged in sequence over the past ~90 minutes",
+    "Liquidity above market cap is a sign of an artificial pool setup",
+    "24 bundler wallets and bot-like trade counts",
+    "One wallet holds 10.55%, which may be linked to the deployer",
+    "Entry is 25 minutes after detection, into a coin already up 115-139% whose momentum is flattening (m5 -1% on GeckoTerminal)"
+   ]
+  },
+  "counterargument": "Sometimes one clone in a serial series gets real organic flow and the deployer lets it run. Top-10 concentration outside the pool is only 14%, the token is not a honeypot and has no taxes, and it has 1,100+ holders. If real buyers keep arriving, a $52k coin doubling to about $105k within 6 hours is plausible.",
+  "unknowns": [
+   "Whether the same deployer launched the clone tokens",
+   "Who controls the LP tokens and the 10.55% holder",
+   "Any X/Telegram activity",
+   "Price at the actual entry time"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged only from the packet."
+  },
+  "thesis": "This looks like a serial LP-rug farm. Seven identical '\ud83d\udc3bBear' tokens appeared within about 90 minutes, and every earlier one now has zero liquidity. This one has creator-supplied, unlocked LP, bundled bot volume, and no socials. The likely outcome is that liquidity is pulled within hours, probably before a 2x from an entry that is already up more than 100%.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 80,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4213,
+ "type": "result",
+ "duration_ms": 21209,
+ "uuid": "34df487c-8e1d-48ce-b3b2-3bacd279bcf6",
+ "ttft_stream_ms": 644,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 644,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

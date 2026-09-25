@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 68232,
+ "stop_reason": "tool_use",
+ "session_id": "eb8772b3-877c-4154-bba6-9f43d61cc9ae",
+ "total_cost_usd": 0.2831156,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 14176,
+  "cache_read_input_tokens": 56683,
+  "output_tokens": 3906,
+  "output_tokens_details": {
+   "thinking_tokens": 862
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14176,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2416,
+    "cache_read_input_tokens": 15625,
+    "cache_creation_input_tokens": 1127,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1127
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3906,
+   "cacheReadInputTokens": 56683,
+   "cacheCreationInputTokens": 14176,
+   "webSearchRequests": 0,
+   "costUSD": 0.2029046,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 862,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 41206,
+   "outputTokens": 1801,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.080211,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is almost certainly a copycat (a \\\"ticker hijack\\\") of LESGO ($GO), the platform token of a Raydium LaunchLab launchpad. The real token is D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n, at about $5M market cap. This copy is only 45 minutes old. Its PumpSwap pool was created 4 seconds after the token itself, so it never went through the pump.fun bonding curve (migrated_unix=0). The LP is 0% locked and RugCheck flags a \\\"Large Amount of LP Unlocked\\\" danger. It has done about $1.27M in volume on about $56k of liquidity, a turnover of 22x. GeckoTerminal counts 2,057 unique buyers but only 53 unique sellers. That lopsided flow fits holder or volume bots feeding a few sellers better than it fits real retail interest. GeckoTerminal shows the real project's X handle (lesgodotfun) on this token, which looks like copied metadata. The only public $GO coverage I found is about the real token, and at least 9 other same-name LESGO clones exist.\",\"narrative\":{\"description\":\"The story belongs to the real LESGO launchpad token ($GO), which buys back and burns tokens with 60% of platform revenue and got some coverage on KuCoin on 2026-09-24. This pool borrows that attention without any link to the real project.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The real $GO is trending, and clones are catching buyers who search by name or ticker. Bot-driven volume makes the copy look active.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing links it to the real project. The only match is the copied name, ticker and X handle, and none of the $GO coverage I found mentions this contract.\",\"competing_tokens\":\"The real $GO is D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n ($5.2M market cap, Raydium pool). There is also a large USDC pair on Orca (DKGi\u2026, $8.8M market cap) and many dead clones with fake or low liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,057 unique buyers against 53 unique sellers in the first hour, 22x turnover on the liquidity, a pool created directly by the creator with unlocked LP, and a creator status of creator_close. The copied handle and name come from the real project.\",\"uncertainty\":\"GMGN tags no bundler, sniper or bot wallets. The buyers could partly be real people confused by the ticker. I could not read X.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% locked and appears to belong to the creator or a few LP providers, so liquidity can be pulled at any time\",\"The pool holds 47% of supply, so a pull would take essentially all the liquidity\",\"It is an impersonator of a $5M token\",\"Volume looks bot-inflated: few sellers against thousands of tiny buyers\",\"The m30 price change was -12%, so the price is already choppy after a 4.5x run\"]},\"counterargument\":\"Real $GO attention is live and spilling over, and a clone with 2,000+ buyers and a fast-rising price (+30% in the last 5 minutes) could run to $110k+ within minutes on bot-driven momentum before any pull. Liquidity/market cap near 1 also gives thick depth for this size.\",\"unknowns\":[\"Who owns the LP tokens and whether they can be removed\",\"Whether the lesgodotfun X account has disowned or endorsed this contract (x.com returned HTTP 402)\",\"What the 2,057 buyers really are: bots or confused retail\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"A search for the contract address returned nothing. The news and search results I found cover only the real D1YZZ $GO. Fetching x.com/lesgodotfun failed with HTTP 402.\"},\"thesis\":\"A 45-minute-old copy of the real LESGO $GO token with an unlocked, creator-seeded PumpSwap LP and bot-looking flow. It is more likely to have its liquidity pulled than to double cleanly.\",\"continuation_view\":\"strong_fade\",\"p_runner\":10,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.kucoin.com/news/insight/SOL/6ab56efb74fd460007c53b6e\",\"what\":\"KuCoin post naming D1YZZ as the $GO LESGO contract and saying it was trending on 2026-09-24\"},{\"url\":\"https://dexscreener.com/solana/chejuxvqrmpeb4ufwhz72afqptkm7aeb8giyznr7cpvh\",\"what\":\"Real GO/SOL Raydium pair at $5.26M\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/6VEAgjgMbnyNAo5WTcZAGKbDF4izF6VbfExUuewVegvq\",\"what\":\"This clone's PumpSwap pair data, with no socials listed\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/DKGiMpxwyDeN5tXBdtN55FBjwjfSLBsJG8w1wDWNWSWv\",\"what\":\"Another same-name LESGO token on Orca\"},{\"url\":\"https://x.com/lesgodotfun\",\"what\":\"Project X handle; the fetch failed with HTTP 402\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is almost certainly a copycat (a \"ticker hijack\") of LESGO ($GO), the platform token of a Raydium LaunchLab launchpad. The real token is D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n, at about $5M market cap. This copy is only 45 minutes old. Its PumpSwap pool was created 4 seconds after the token itself, so it never went through the pump.fun bonding curve (migrated_unix=0). The LP is 0% locked and RugCheck flags a \"Large Amount of LP Unlocked\" danger. It has done about $1.27M in volume on about $56k of liquidity, a turnover of 22x. GeckoTerminal counts 2,057 unique buyers but only 53 unique sellers. That lopsided flow fits holder or volume bots feeding a few sellers better than it fits real retail interest. GeckoTerminal shows the real project's X handle (lesgodotfun) on this token, which looks like copied metadata. The only public $GO coverage I found is about the real token, and at least 9 other same-name LESGO clones exist.",
+  "narrative": {
+   "description": "The story belongs to the real LESGO launchpad token ($GO), which buys back and burns tokens with 60% of platform revenue and got some coverage on KuCoin on 2026-09-24. This pool borrows that attention without any link to the real project.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The real $GO is trending, and clones are catching buyers who search by name or ticker. Bot-driven volume makes the copy look active."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing links it to the real project. The only match is the copied name, ticker and X handle, and none of the $GO coverage I found mentions this contract.",
+   "competing_tokens": "The real $GO is D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n ($5.2M market cap, Raydium pool). There is also a large USDC pair on Orca (DKGi\u2026, $8.8M market cap) and many dead clones with fake or low liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,057 unique buyers against 53 unique sellers in the first hour, 22x turnover on the liquidity, a pool created directly by the creator with unlocked LP, and a creator status of creator_close. The copied handle and name come from the real project.",
+   "uncertainty": "GMGN tags no bundler, sniper or bot wallets. The buyers could partly be real people confused by the ticker. I could not read X."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% locked and appears to belong to the creator or a few LP providers, so liquidity can be pulled at any time",
+    "The pool holds 47% of supply, so a pull would take essentially all the liquidity",
+    "It is an impersonator of a $5M token",
+    "Volume looks bot-inflated: few sellers against thousands of tiny buyers",
+    "The m30 price change was -12%, so the price is already choppy after a 4.5x run"
+   ]
+  },
+  "counterargument": "Real $GO attention is live and spilling over, and a clone with 2,000+ buyers and a fast-rising price (+30% in the last 5 minutes) could run to $110k+ within minutes on bot-driven momentum before any pull. Liquidity/market cap near 1 also gives thick depth for this size.",
+  "unknowns": [
+   "Who owns the LP tokens and whether they can be removed",
+   "Whether the lesgodotfun X account has disowned or endorsed this contract (x.com returned HTTP 402)",
+   "What the 2,057 buyers really are: bots or confused retail"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "A search for the contract address returned nothing. The news and search results I found cover only the real D1YZZ $GO. Fetching x.com/lesgodotfun failed with HTTP 402."
+  },
+  "thesis": "A 45-minute-old copy of the real LESGO $GO token with an unlocked, creator-seeded PumpSwap LP and bot-looking flow. It is more likely to have its liquidity pulled than to double cleanly.",
+  "continuation_view": "strong_fade",
+  "p_runner": 10,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.kucoin.com/news/insight/SOL/6ab56efb74fd460007c53b6e",
+    "what": "KuCoin post naming D1YZZ as the $GO LESGO contract and saying it was trending on 2026-09-24"
+   },
+   {
+    "url": "https://dexscreener.com/solana/chejuxvqrmpeb4ufwhz72afqptkm7aeb8giyznr7cpvh",
+    "what": "Real GO/SOL Raydium pair at $5.26M"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/6VEAgjgMbnyNAo5WTcZAGKbDF4izF6VbfExUuewVegvq",
+    "what": "This clone's PumpSwap pair data, with no socials listed"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/DKGiMpxwyDeN5tXBdtN55FBjwjfSLBsJG8w1wDWNWSWv",
+    "what": "Another same-name LESGO token on Orca"
+   },
+   {
+    "url": "https://x.com/lesgodotfun",
+    "what": "Project X handle; the fetch failed with HTTP 402"
+   }
+  ]
+ },
+ "ttft_ms": 5042,
+ "type": "result",
+ "duration_ms": 60981,
+ "uuid": "013915bc-6ec7-4353-8385-bf9c344e4a09",
+ "ttft_stream_ms": 940,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 941,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

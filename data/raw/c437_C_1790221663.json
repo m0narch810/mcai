@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 82037,
+ "stop_reason": "tool_use",
+ "session_id": "c62471ed-dd89-4365-9442-d774605238cc",
+ "total_cost_usd": 0.3568378,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 16262,
+  "cache_read_input_tokens": 43229,
+  "output_tokens": 3886,
+  "output_tokens_details": {
+   "thinking_tokens": 765
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16262,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2481,
+    "cache_read_input_tokens": 17059,
+    "cache_creation_input_tokens": 1779,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1779
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3886,
+   "cacheReadInputTokens": 43229,
+   "cacheCreationInputTokens": 16262,
+   "webSearchRequests": 0,
+   "costUSD": 0.21649380000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 765,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 66774,
+   "outputTokens": 2714,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.14034400000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"AMZN, \\\"A Magical Zesty Neko\\\", is a pump.fun cat meme whose ticker spells out Amazon's stock symbol (the letters are the initials of the name). It launched about 22:59 UTC and is about 4.8 hours old. It has done roughly 5x in 6h on about $1M of volume. While I was researching it kept rising, from $0.000393 at the trigger to $0.000493 on GeckoTerminal, a new all-time high near $485K market cap with about $63K liquidity. GMGN flags it as a community takeover (CTO) with an updated DexScreener profile and no paid boosts. I found no organic social discussion anywhere I could search.\",\"narrative\":{\"description\":\"A generic cute 'zesty cat' character (cape, golden arrow, emerald world), with the joke that the ticker is AMZN. The 'golden arrow' and green colours faintly echo Amazon's branding. The 'zesty cat' meme exists broadly on TikTok and YouTube, but I found no current event or catalyst.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"No external catalyst found. The flow looks driven by the chart (breaking out to a new ATH) and by pump.fun trader flow, plus a probable CTO or volume push, not by a story that is spreading.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"This is the only same-name AMZN pair with liquidity. The same-name copies (H7iK..., Chw1...) were created later and are dead at about $3K or less. It is the original of this particular joke.\",\"competing_tokens\":\"Two dead same-name copycats and an old dead 'Amazon by memestock' AMZN token, none with liquidity.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"There were 7,542 unique buyers in the last 6h but only 219 in the last hour, against 3,369 buys in that hour: about 15 buys per buyer, which looks like bot or volume-bot trading. The top 10 holders are an oddly uniform 0.31\u20130.32% each, which suggests an evenly spread wallet set or holder farming. GMGN counts 21 sniper wallets, 6 bundlers and 32 fresh wallets, with no smart money and no KOL wallets. I found no organic posts on X, Reddit or Telegram.\",\"uncertainty\":\"X is paywalled (402) and poorly indexed, so real CT activity could exist without me seeing it. The uniform top holders could also just be coincidence from a bonding-curve launch.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Uniform 0.32% top-holder wallets may be one coordinated cluster that can sell at once\",\"High buys per unique buyer in the last hour suggests volume botting\",\"Liquidity of about $63K against a ~$485K market cap; a 2x needs roughly $1M market cap\",\"Already about 5x in 6h, so late-stage sellers are sitting on large gains\"]},\"counterargument\":\"The structure is clean: LP is 100% burned, mint and freeze authority are renounced, the creator holds nothing, and holders are widely spread (about 6,400, top 10 at 3%). The price was breaking out to a new ATH as I researched, up 18% in 5 minutes. The AMZN ticker is a memorable joke. Coins with this setup at around $500K do often run to $1M+ in a few hours on momentum alone, without any visible narrative.\",\"unknowns\":[\"Actual X/CT activity and who runs the CTO\",\"Whether the uniform top holders are one entity\",\"Where exactly the price is at entry (it was rising fast)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X profile fetch returned 402 and searches for the contract, name and handle returned nothing relevant. The website is a template-style meme page with no roadmap. DexScreener and GeckoTerminal confirm the ongoing price rise.\"},\"thesis\":\"The token structure is clean and momentum is strong, but I found no narrative and no organic social presence, and there are signs of bot volume. A 2x from about $500K to $1M in 6h is possible on momentum, but this is more likely to fade or grind down after a 5x. LP is burned, so a literal liquidity pull is unlikely. The main risk is a slow death or dump.\",\"continuation_view\":\"neutral\",\"p_runner\":24,\"p_rug\":22,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://zestynekocat.site\",\"what\":\"Project site: meme page with no roadmap\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/4JsLM7iY8R87kjdgHADjxRJYG8HgoNHa2VrVxCDvpump\",\"what\":\"Live price $0.000462, +18% in 5m, $62K liquidity\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/Erx5by5Wowh4SRdBJSUz1jXCvF6Uo9P8eg5MAG9MdC5U\",\"what\":\"Price $0.000493, $485K market cap, LP locked, GT score 57\"},{\"url\":\"https://x.com/zestynekocat\",\"what\":\"Project X account; fetch returned 402\"},{\"url\":\"https://www.youtube.com/watch?v=ZKkYIBVPLVQ\",\"what\":\"Generic zesty cat meme\"}]}",
+ "structured_output": {
+  "what_is_happening": "AMZN, \"A Magical Zesty Neko\", is a pump.fun cat meme whose ticker spells out Amazon's stock symbol (the letters are the initials of the name). It launched about 22:59 UTC and is about 4.8 hours old. It has done roughly 5x in 6h on about $1M of volume. While I was researching it kept rising, from $0.000393 at the trigger to $0.000493 on GeckoTerminal, a new all-time high near $485K market cap with about $63K liquidity. GMGN flags it as a community takeover (CTO) with an updated DexScreener profile and no paid boosts. I found no organic social discussion anywhere I could search.",
+  "narrative": {
+   "description": "A generic cute 'zesty cat' character (cape, golden arrow, emerald world), with the joke that the ticker is AMZN. The 'golden arrow' and green colours faintly echo Amazon's branding. The 'zesty cat' meme exists broadly on TikTok and YouTube, but I found no current event or catalyst.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "No external catalyst found. The flow looks driven by the chart (breaking out to a new ATH) and by pump.fun trader flow, plus a probable CTO or volume push, not by a story that is spreading."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "This is the only same-name AMZN pair with liquidity. The same-name copies (H7iK..., Chw1...) were created later and are dead at about $3K or less. It is the original of this particular joke.",
+   "competing_tokens": "Two dead same-name copycats and an old dead 'Amazon by memestock' AMZN token, none with liquidity.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "There were 7,542 unique buyers in the last 6h but only 219 in the last hour, against 3,369 buys in that hour: about 15 buys per buyer, which looks like bot or volume-bot trading. The top 10 holders are an oddly uniform 0.31\u20130.32% each, which suggests an evenly spread wallet set or holder farming. GMGN counts 21 sniper wallets, 6 bundlers and 32 fresh wallets, with no smart money and no KOL wallets. I found no organic posts on X, Reddit or Telegram.",
+   "uncertainty": "X is paywalled (402) and poorly indexed, so real CT activity could exist without me seeing it. The uniform top holders could also just be coincidence from a bonding-curve launch."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Uniform 0.32% top-holder wallets may be one coordinated cluster that can sell at once",
+    "High buys per unique buyer in the last hour suggests volume botting",
+    "Liquidity of about $63K against a ~$485K market cap; a 2x needs roughly $1M market cap",
+    "Already about 5x in 6h, so late-stage sellers are sitting on large gains"
+   ]
+  },
+  "counterargument": "The structure is clean: LP is 100% burned, mint and freeze authority are renounced, the creator holds nothing, and holders are widely spread (about 6,400, top 10 at 3%). The price was breaking out to a new ATH as I researched, up 18% in 5 minutes. The AMZN ticker is a memorable joke. Coins with this setup at around $500K do often run to $1M+ in a few hours on momentum alone, without any visible narrative.",
+  "unknowns": [
+   "Actual X/CT activity and who runs the CTO",
+   "Whether the uniform top holders are one entity",
+   "Where exactly the price is at entry (it was rising fast)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X profile fetch returned 402 and searches for the contract, name and handle returned nothing relevant. The website is a template-style meme page with no roadmap. DexScreener and GeckoTerminal confirm the ongoing price rise."
+  },
+  "thesis": "The token structure is clean and momentum is strong, but I found no narrative and no organic social presence, and there are signs of bot volume. A 2x from about $500K to $1M in 6h is possible on momentum, but this is more likely to fade or grind down after a 5x. LP is burned, so a literal liquidity pull is unlikely. The main risk is a slow death or dump.",
+  "continuation_view": "neutral",
+  "p_runner": 24,
+  "p_rug": 22,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://zestynekocat.site",
+    "what": "Project site: meme page with no roadmap"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/4JsLM7iY8R87kjdgHADjxRJYG8HgoNHa2VrVxCDvpump",
+    "what": "Live price $0.000462, +18% in 5m, $62K liquidity"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/Erx5by5Wowh4SRdBJSUz1jXCvF6Uo9P8eg5MAG9MdC5U",
+    "what": "Price $0.000493, $485K market cap, LP locked, GT score 57"
+   },
+   {
+    "url": "https://x.com/zestynekocat",
+    "what": "Project X account; fetch returned 402"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ZKkYIBVPLVQ",
+    "what": "Generic zesty cat meme"
+   }
+  ]
+ },
+ "ttft_ms": 1175,
+ "type": "result",
+ "duration_ms": 52547,
+ "uuid": "7f1b2ab6-78a6-4f49-bc2a-2e462820b660",
+ "ttft_stream_ms": 644,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 644,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 63624,
+ "stop_reason": "tool_use",
+ "session_id": "8c02fd02-280f-4f8b-aade-d29ade0f2a0d",
+ "total_cost_usd": 0.29638180000000003,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13772,
+  "cache_read_input_tokens": 37924,
+  "output_tokens": 3185,
+  "output_tokens_details": {
+   "thinking_tokens": 561
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13772,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2271,
+    "cache_read_input_tokens": 13826,
+    "cache_creation_input_tokens": 2522,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2522
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3185,
+   "cacheReadInputTokens": 37924,
+   "cacheCreationInputTokens": 13772,
+   "webSearchRequests": 0,
+   "costUSD": 0.1814928,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 561,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 54859,
+   "outputTokens": 2006,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11488899999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Bob's Bear\\\" is a 40-minute-old token. Its pool was created directly on PumpSwap at 07:32 UTC. It did not start on the pump.fun bonding curve: migrated_unix=0, launchpad and deploy platform unknown. Price has roughly doubled in the last hour to about $46-48k market cap, on about $390k of 1h volume (6x turnover). The trade flow looks manufactured. GeckoTerminal shows 3,314 buys and 2,316 sells in 1h but only 113 unique sellers, and the 5m buy and sell counts are almost equal (286/277). Together that suggests bot churn or wash volume, not organic demand. 1,122 unique buyers against 113 sellers fits a wallet-spray or airdrop-style buy pattern. The pool LP is 0% locked or burned, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\", so whoever seeded the pool can withdraw it. One wallet holds 10.02%, and GMGN counts it as dev/team and sniper holdings. GMGN also flags 23 bundler wallets. The creator wallet shows balance 0 and \\\"creator_close\\\". The only project text is a Su Shi poem line (\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929). There are no socials, website or DexScreener profile, and I found no mentions anywhere.\",\"narrative\":{\"description\":\"I could not identify a narrative. \\\"Bob's Bear\\\" does not match any current event I could find. Searches only turned up the older Bobo the Bear coin, a bear-bait company, a Roblox wiki and Fat Bear Week. None of these clearly links to this token. The Chinese poem description hints at a launch aimed at Chinese-speaking traders, but it carries no story.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. The activity looks driven by volume bots and bundled buyers on a pool the deployer created, not by a social catalyst.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only token with this name in the packet. But there is no narrative for it to be canonical for, and it has no socials.\",\"competing_tokens\":\"The packet lists none. The Bobo the Bear ($BOBO) coin exists but is unrelated.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 113 unique sellers against 2,316 sells and 1,122 buyers, with near-equal buy and sell counts every 5 minutes. GMGN flags 23 bundler wallets, and one 10% wallet is counted as dev/team. The pool was created directly rather than through the pump.fun curve, and the LP is unlocked. There are no socials and I found no web mentions.\",\"uncertainty\":\"I have no X data. Some small-cap Chinese-targeted launches pump on private Telegram/WeChat groups that I cannot see.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The pool LP is 0% locked or burned, and there are few LP providers, so the deployer can pull liquidity\",\"One 10% holder is tagged as dev/team\",\"23 bundler wallets\",\"Volume looks like wash trading or bot churn (113 unique sellers)\",\"The creator has closed its position and there are no socials\"]},\"counterargument\":\"Liquidity ($63k) is larger than market cap, so it takes real money to move the price. Holders are fairly spread out apart from the 10% wallet. It already doubled within an hour, and bot-driven volume like this can sometimes push a coin another 2x to $100k+ before anyone exits. GMGN also says the creator's best previous token reached a $247k all-time-high market cap.\",\"unknowns\":[\"Who seeded the PumpSwap LP, and whether they will withdraw it\",\"Whether private Chinese-language groups are promoting the token\",\"What the 10% wallet will do\",\"Any X activity\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searches for the contract address, the name and site:x.com returned nothing relevant. DexScreener lists no socials and the packet has no website.\"},\"thesis\":\"This looks like a wash-traded launch the deployer controls, with unlocked LP, no narrative and no socials. I rate the chance of a rug or death within 6 hours as high and the chance of another 2x from entry as low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":70,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2saGqopCutBu7vpvHQV5ggCN18yT9jWAi38oidD54ACD\",\"what\":\"Current price, liquidity and transactions, and confirmation that no socials are listed\"},{\"url\":\"https://www.bobothebear.io/\",\"what\":\"Unrelated Bobo the Bear coin, the only similarly named project found\"},{\"url\":\"https://unofficialnetworks.com/2026/09/21/fat-bear-week-2026-begins-tomorrow/\",\"what\":\"Fat Bear Week 2026, a possible but unconfirmed bear theme\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Bob's Bear\" is a 40-minute-old token. Its pool was created directly on PumpSwap at 07:32 UTC. It did not start on the pump.fun bonding curve: migrated_unix=0, launchpad and deploy platform unknown. Price has roughly doubled in the last hour to about $46-48k market cap, on about $390k of 1h volume (6x turnover). The trade flow looks manufactured. GeckoTerminal shows 3,314 buys and 2,316 sells in 1h but only 113 unique sellers, and the 5m buy and sell counts are almost equal (286/277). Together that suggests bot churn or wash volume, not organic demand. 1,122 unique buyers against 113 sellers fits a wallet-spray or airdrop-style buy pattern. The pool LP is 0% locked or burned, and RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\", so whoever seeded the pool can withdraw it. One wallet holds 10.02%, and GMGN counts it as dev/team and sniper holdings. GMGN also flags 23 bundler wallets. The creator wallet shows balance 0 and \"creator_close\". The only project text is a Su Shi poem line (\u660e\u6708\u51e0\u65f6\u6709\uff0c\u628a\u9152\u95ee\u9752\u5929). There are no socials, website or DexScreener profile, and I found no mentions anywhere.",
+  "narrative": {
+   "description": "I could not identify a narrative. \"Bob's Bear\" does not match any current event I could find. Searches only turned up the older Bobo the Bear coin, a bear-bait company, a Roblox wiki and Fat Bear Week. None of these clearly links to this token. The Chinese poem description hints at a launch aimed at Chinese-speaking traders, but it carries no story.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. The activity looks driven by volume bots and bundled buyers on a pool the deployer created, not by a social catalyst."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only token with this name in the packet. But there is no narrative for it to be canonical for, and it has no socials.",
+   "competing_tokens": "The packet lists none. The Bobo the Bear ($BOBO) coin exists but is unrelated.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 113 unique sellers against 2,316 sells and 1,122 buyers, with near-equal buy and sell counts every 5 minutes. GMGN flags 23 bundler wallets, and one 10% wallet is counted as dev/team. The pool was created directly rather than through the pump.fun curve, and the LP is unlocked. There are no socials and I found no web mentions.",
+   "uncertainty": "I have no X data. Some small-cap Chinese-targeted launches pump on private Telegram/WeChat groups that I cannot see."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The pool LP is 0% locked or burned, and there are few LP providers, so the deployer can pull liquidity",
+    "One 10% holder is tagged as dev/team",
+    "23 bundler wallets",
+    "Volume looks like wash trading or bot churn (113 unique sellers)",
+    "The creator has closed its position and there are no socials"
+   ]
+  },
+  "counterargument": "Liquidity ($63k) is larger than market cap, so it takes real money to move the price. Holders are fairly spread out apart from the 10% wallet. It already doubled within an hour, and bot-driven volume like this can sometimes push a coin another 2x to $100k+ before anyone exits. GMGN also says the creator's best previous token reached a $247k all-time-high market cap.",
+  "unknowns": [
+   "Who seeded the PumpSwap LP, and whether they will withdraw it",
+   "Whether private Chinese-language groups are promoting the token",
+   "What the 10% wallet will do",
+   "Any X activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searches for the contract address, the name and site:x.com returned nothing relevant. DexScreener lists no socials and the packet has no website."
+  },
+  "thesis": "This looks like a wash-traded launch the deployer controls, with unlocked LP, no narrative and no socials. I rate the chance of a rug or death within 6 hours as high and the chance of another 2x from entry as low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 70,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2saGqopCutBu7vpvHQV5ggCN18yT9jWAi38oidD54ACD",
+    "what": "Current price, liquidity and transactions, and confirmation that no socials are listed"
+   },
+   {
+    "url": "https://www.bobothebear.io/",
+    "what": "Unrelated Bobo the Bear coin, the only similarly named project found"
+   },
+   {
+    "url": "https://unofficialnetworks.com/2026/09/21/fat-bear-week-2026-begins-tomorrow/",
+    "what": "Fat Bear Week 2026, a possible but unconfirmed bear theme"
+   }
+  ]
+ },
+ "ttft_ms": 4410,
+ "type": "result",
+ "duration_ms": 50333,
+ "uuid": "45f4a2bc-3194-47d9-81d4-622255cf2cba",
+ "ttft_stream_ms": 929,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 929,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

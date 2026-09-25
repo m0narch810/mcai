@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24771,
+ "stop_reason": "tool_use",
+ "session_id": "d69869cd-c89f-4bd5-b862-8c154d13e8bf",
+ "total_cost_usd": 0.1120508,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7717,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2496,
+  "output_tokens_details": {
+   "thinking_tokens": 447
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7717,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2496,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7717,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7717
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2496,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7717,
+   "webSearchRequests": 0,
+   "costUSD": 0.1120508,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 447,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This BRAIN / \\\"Buttbrain\\\" token was launched straight onto a PumpSwap pool about 35 minutes before detection. It did not graduate from the pump.fun bonding curve: the mint does not end in \\\"pump\\\", migrated_unix is 0 and launchpad is empty. About 90% of the supply sits in the AMM pool. The LP is 0% locked or burned, and RugCheck flags it as \\\"Large Amount of LP Unlocked\\\" with few LP providers. Volume is about $6.1M against a $98k market cap, a 35x hourly turnover. GeckoTerminal counts 843 unique buyers but only 36 unique sellers, and those 36 made about 2,974 sell transactions. That pattern points to a small set of bot or insider wallets repeatedly selling into buyer flow, not organic two-sided trading. GMGN tags 104 bundler wallets. The creator already has creator_close status, and the linked dev X account has launched 240 tokens. At least 9 other BRAIN/Buttbrain tokens exist. The largest, 3znS...pump, came out about 21 minutes earlier and sits at a $436k market cap, so this contract is a copycat riding a narrative that someone else started.\",\"narrative\":{\"description\":\"\\\"Buttbrain\\\" is a meme name that seems to be spreading in the moment: many deployers launched copies within about an hour, which suggests some viral post or trigger. Nothing in the packet says what that trigger is. This contract has no DexScreener profile and no description. It does have an X handle (buttbrainer) and a website, but those may simply have been copied from the original.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A burst of deploys under the same name suggests an outside trigger, but most of the attention goes to the first and largest pump.fun copy, 3znS...pump, not to this PumpSwap clone.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It shares the name and ticker, and it has the deepest liquidity and highest volume among the clones. That volume looks bot-generated, given only 36 unique sellers.\",\"competing_tokens\":\"3znS...pump (created earlier, $436k market cap, $2.2M 1h volume) is the likely canonical token. There are also 5AhL... ($350k), 2XWo... ($176k), DU5Q..., and several more pump.fun and AMM clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"843 unique buyers against 36 unique sellers who made about 3,000 sell transactions. 104 bundler wallets. A $6M/35x turnover on a $98k market cap. The pool was launched directly with unlocked LP from a creator who already shows creator_close. The linked dev X account has launched 240 tokens.\",\"uncertainty\":\"The buyers may be real retail who mistook this contract for the canonical BRAIN. Top-10 concentration is low at 7.6%, so a holder dump is not the main risk. The LP pull is.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 100% unlocked on a self-created PumpSwap pool, so the creator can pull about $87k+ of SOL at any time\",\"About 90% of the supply is in the pool: the LP owner effectively controls the float\",\"36 sellers doing repeated extraction sells against retail buys\",\"A serial deployer's X account (240 launches) and a creator already showing creator_close\",\"Copycat of an earlier, larger canonical token\"]},\"counterargument\":\"Liquidity is deep ($175k) relative to the market cap, and the holder base is broad and not concentrated: 865 holders, top-10 at 7.6%, no snipers. Buy flow is also still strong, up 48% in an hour with buys ahead of sells. If the Buttbrain meme goes viral, confused buyers searching for the ticker could land on the most liquid pool, and this one could go from $98k to $200k within hours. Doubling from a sub-$100k market cap is common in a hot meme cycle.\",\"unknowns\":[\"Who holds the LP tokens, and whether the creator funded the pool\",\"What triggered the Buttbrain narrative, and whether the X handle and website belong to this contract or the canonical one\",\"Whether the 36 sellers are the deployer's own wallets\",\"Market cap and liquidity at the entry point 25 minutes after the rule was met\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; judged only on the evidence packet.\"},\"thesis\":\"This is a copycat BRAIN token on a PumpSwap pool the creator set up, with unlocked LP. Its huge volume comes from a few seller wallets extracting from retail buyers. It is much more likely to have its liquidity pulled or bleed out than to double while the earlier canonical Buttbrain token draws the real attention.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":70,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This BRAIN / \"Buttbrain\" token was launched straight onto a PumpSwap pool about 35 minutes before detection. It did not graduate from the pump.fun bonding curve: the mint does not end in \"pump\", migrated_unix is 0 and launchpad is empty. About 90% of the supply sits in the AMM pool. The LP is 0% locked or burned, and RugCheck flags it as \"Large Amount of LP Unlocked\" with few LP providers. Volume is about $6.1M against a $98k market cap, a 35x hourly turnover. GeckoTerminal counts 843 unique buyers but only 36 unique sellers, and those 36 made about 2,974 sell transactions. That pattern points to a small set of bot or insider wallets repeatedly selling into buyer flow, not organic two-sided trading. GMGN tags 104 bundler wallets. The creator already has creator_close status, and the linked dev X account has launched 240 tokens. At least 9 other BRAIN/Buttbrain tokens exist. The largest, 3znS...pump, came out about 21 minutes earlier and sits at a $436k market cap, so this contract is a copycat riding a narrative that someone else started.",
+  "narrative": {
+   "description": "\"Buttbrain\" is a meme name that seems to be spreading in the moment: many deployers launched copies within about an hour, which suggests some viral post or trigger. Nothing in the packet says what that trigger is. This contract has no DexScreener profile and no description. It does have an X handle (buttbrainer) and a website, but those may simply have been copied from the original.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A burst of deploys under the same name suggests an outside trigger, but most of the attention goes to the first and largest pump.fun copy, 3znS...pump, not to this PumpSwap clone."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It shares the name and ticker, and it has the deepest liquidity and highest volume among the clones. That volume looks bot-generated, given only 36 unique sellers.",
+   "competing_tokens": "3znS...pump (created earlier, $436k market cap, $2.2M 1h volume) is the likely canonical token. There are also 5AhL... ($350k), 2XWo... ($176k), DU5Q..., and several more pump.fun and AMM clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "843 unique buyers against 36 unique sellers who made about 3,000 sell transactions. 104 bundler wallets. A $6M/35x turnover on a $98k market cap. The pool was launched directly with unlocked LP from a creator who already shows creator_close. The linked dev X account has launched 240 tokens.",
+   "uncertainty": "The buyers may be real retail who mistook this contract for the canonical BRAIN. Top-10 concentration is low at 7.6%, so a holder dump is not the main risk. The LP pull is."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 100% unlocked on a self-created PumpSwap pool, so the creator can pull about $87k+ of SOL at any time",
+    "About 90% of the supply is in the pool: the LP owner effectively controls the float",
+    "36 sellers doing repeated extraction sells against retail buys",
+    "A serial deployer's X account (240 launches) and a creator already showing creator_close",
+    "Copycat of an earlier, larger canonical token"
+   ]
+  },
+  "counterargument": "Liquidity is deep ($175k) relative to the market cap, and the holder base is broad and not concentrated: 865 holders, top-10 at 7.6%, no snipers. Buy flow is also still strong, up 48% in an hour with buys ahead of sells. If the Buttbrain meme goes viral, confused buyers searching for the ticker could land on the most liquid pool, and this one could go from $98k to $200k within hours. Doubling from a sub-$100k market cap is common in a hot meme cycle.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether the creator funded the pool",
+   "What triggered the Buttbrain narrative, and whether the X handle and website belong to this contract or the canonical one",
+   "Whether the 36 sellers are the deployer's own wallets",
+   "Market cap and liquidity at the entry point 25 minutes after the rule was met"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; judged only on the evidence packet."
+  },
+  "thesis": "This is a copycat BRAIN token on a PumpSwap pool the creator set up, with unlocked LP. Its huge volume comes from a few seller wallets extracting from retail buyers. It is much more likely to have its liquidity pulled or bleed out than to double while the earlier canonical Buttbrain token draws the real attention.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 70,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5338,
+ "type": "result",
+ "duration_ms": 24816,
+ "uuid": "5cbae9f2-346d-4d49-94c4-8a567a52f25b",
+ "ttft_stream_ms": 711,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 711,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

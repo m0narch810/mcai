@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 24729,
+ "stop_reason": "tool_use",
+ "session_id": "517f1e12-b1f2-4eb8-ba89-ae7cdb1cd019",
+ "total_cost_usd": 0.11594280000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7966,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2591,
+  "output_tokens_details": {
+   "thinking_tokens": 619
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7966,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2591,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7966,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7966
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2591,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7966,
+   "webSearchRequests": 0,
+   "costUSD": 0.11594280000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 619,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 38-minute-old token named \\\"Alpenglow\\\" (probably a reference to Solana's Alpenglow consensus upgrade). It was not launched on the pump.fun bonding curve: launchpad is blank, migrated_unix is 0, and a PumpSwap pool was created about 3 seconds after the mint. In about 40 minutes it went up ~450-2800% (depending on the source) to a $288k market cap on $51k of liquidity, with $1.28M in volume (25x turnover). One unlabeled wallet holds 81.26% of supply. LP is 0% locked or burned. 88% of trading comes from bot/degen wallets, GMGN flags 40 bundler wallets, and 2,070 unique buyers face only 63 unique sellers. At least 10 other tokens use the same name, and several of them already have near-zero liquidity (rugged).\",\"narrative\":{\"description\":\"Name-play on Solana's 'Alpenglow' consensus upgrade, a real ecosystem topic that can pull in Solana-native speculators if there is news (for example an activation or announcement). Its only links are a GeckoTerminal Twitter field pointing to a third-party user's post (ynmontyy/status/...) and a Telegram handle 'stonkfunxyz', which looks like a launchpad or platform channel rather than a project community. There is no website and no DexScreener profile.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Probably a news-driven name rush: many same-name deploys within about an hour suggest some Alpenglow news event. This token's volume looks driven by bots and bundlers, not organic buyers.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is one of the earlier deploys in the recent cluster and currently has the most real trading activity among the smaller clones. Nothing in the packet makes it canonical: no official links and no profile.\",\"competing_tokens\":\"At least 9 recent same-name tokens. Two show about $1.4M and $1.0M in liquidity with tiny volume (likely fake or self-seeded liquidity). Several have around $12-20 left in liquidity after $600k-800k in hourly volume (already rugged). An older ALPENGLOW from 2025 is dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The 81% single-holder wallet is not flagged as a pool. LP is 100% unlocked and was deployed directly to PumpSwap, not through the bonding curve. GMGN flags 40 bundler wallets and an 88% bot/degen rate. Only 63 unique sellers produced 2,080 sells, which fits wash or bot churn. Sibling clones with the same setup have already been drained to about $12 of liquidity.\",\"uncertainty\":\"The 81% wallet could be a launchpad vault or pool account that RugCheck failed to label (for example a stonk.fun-style mechanism). If so, the concentration is less dangerous than it looks.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 81.26% of supply against only $51k of liquidity, enough to drain the pool instantly\",\"LP is 0% locked or burned; the creator can pull liquidity\",\"Several same-name clones deployed the same way already rugged within the hour\",\"Heavy bot and bundler share; the buyer count is likely inflated\",\"Price is already close to its all-time high after a 5-28x run, so the entry comes after the move\"]},\"counterargument\":\"Alpenglow is a real Solana narrative, and this token has the most live activity among the surviving small clones (2,000+ holders, $1.28M volume). If the 81% wallet is actually a launchpad or pool vault and the news cycle keeps going, attention could settle on it as the 'main' small-cap Alpenglow, and a move from $288k to $600k within 6 hours is plausible in a news-driven rush.\",\"unknowns\":[\"What the 81.26% wallet is (dev-controlled, or a launchpad/pool vault)\",\"Whether there is live Alpenglow news driving the rush\",\"Who controls the LP and whether it will be removed\",\"What stonk.fun is and how it handles supply and LP\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This looks like a clone in a same-name rush on a real Solana topic, built like a rug: one wallet holds 81% of supply, LP is unlocked, it was deployed directly to PumpSwap, it is bundled and bot-heavy, and sibling clones have already been drained. A 2x from $288k before a -50% move or a liquidity pull is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 38-minute-old token named \"Alpenglow\" (probably a reference to Solana's Alpenglow consensus upgrade). It was not launched on the pump.fun bonding curve: launchpad is blank, migrated_unix is 0, and a PumpSwap pool was created about 3 seconds after the mint. In about 40 minutes it went up ~450-2800% (depending on the source) to a $288k market cap on $51k of liquidity, with $1.28M in volume (25x turnover). One unlabeled wallet holds 81.26% of supply. LP is 0% locked or burned. 88% of trading comes from bot/degen wallets, GMGN flags 40 bundler wallets, and 2,070 unique buyers face only 63 unique sellers. At least 10 other tokens use the same name, and several of them already have near-zero liquidity (rugged).",
+  "narrative": {
+   "description": "Name-play on Solana's 'Alpenglow' consensus upgrade, a real ecosystem topic that can pull in Solana-native speculators if there is news (for example an activation or announcement). Its only links are a GeckoTerminal Twitter field pointing to a third-party user's post (ynmontyy/status/...) and a Telegram handle 'stonkfunxyz', which looks like a launchpad or platform channel rather than a project community. There is no website and no DexScreener profile.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Probably a news-driven name rush: many same-name deploys within about an hour suggest some Alpenglow news event. This token's volume looks driven by bots and bundlers, not organic buyers."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is one of the earlier deploys in the recent cluster and currently has the most real trading activity among the smaller clones. Nothing in the packet makes it canonical: no official links and no profile.",
+   "competing_tokens": "At least 9 recent same-name tokens. Two show about $1.4M and $1.0M in liquidity with tiny volume (likely fake or self-seeded liquidity). Several have around $12-20 left in liquidity after $600k-800k in hourly volume (already rugged). An older ALPENGLOW from 2025 is dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The 81% single-holder wallet is not flagged as a pool. LP is 100% unlocked and was deployed directly to PumpSwap, not through the bonding curve. GMGN flags 40 bundler wallets and an 88% bot/degen rate. Only 63 unique sellers produced 2,080 sells, which fits wash or bot churn. Sibling clones with the same setup have already been drained to about $12 of liquidity.",
+   "uncertainty": "The 81% wallet could be a launchpad vault or pool account that RugCheck failed to label (for example a stonk.fun-style mechanism). If so, the concentration is less dangerous than it looks."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 81.26% of supply against only $51k of liquidity, enough to drain the pool instantly",
+    "LP is 0% locked or burned; the creator can pull liquidity",
+    "Several same-name clones deployed the same way already rugged within the hour",
+    "Heavy bot and bundler share; the buyer count is likely inflated",
+    "Price is already close to its all-time high after a 5-28x run, so the entry comes after the move"
+   ]
+  },
+  "counterargument": "Alpenglow is a real Solana narrative, and this token has the most live activity among the surviving small clones (2,000+ holders, $1.28M volume). If the 81% wallet is actually a launchpad or pool vault and the news cycle keeps going, attention could settle on it as the 'main' small-cap Alpenglow, and a move from $288k to $600k within 6 hours is plausible in a news-driven rush.",
+  "unknowns": [
+   "What the 81.26% wallet is (dev-controlled, or a launchpad/pool vault)",
+   "Whether there is live Alpenglow news driving the rush",
+   "Who controls the LP and whether it will be removed",
+   "What stonk.fun is and how it handles supply and LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This looks like a clone in a same-name rush on a real Solana topic, built like a rug: one wallet holds 81% of supply, LP is unlocked, it was deployed directly to PumpSwap, it is bundled and bot-heavy, and sibling clones have already been drained. A 2x from $288k before a -50% move or a liquidity pull is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8115,
+ "type": "result",
+ "duration_ms": 24771,
+ "uuid": "4649871a-0a6d-49db-92cc-a7850a1c3e36",
+ "ttft_stream_ms": 1248,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1248,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

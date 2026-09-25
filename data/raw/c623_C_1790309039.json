@@ -1,0 +1,190 @@
+{
+ "duration_api_ms": 90381,
+ "stop_reason": "tool_use",
+ "session_id": "db849e16-c1bc-4aee-82b8-bd0d2581a39f",
+ "total_cost_usd": 0.44887560000000004,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 18838,
+  "cache_read_input_tokens": 60438,
+  "output_tokens": 4962,
+  "output_tokens_details": {
+   "thinking_tokens": 1246
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18838,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3414,
+    "cache_read_input_tokens": 19597,
+    "cache_creation_input_tokens": 1817,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1817
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4962,
+   "cacheReadInputTokens": 60438,
+   "cacheCreationInputTokens": 18838,
+   "webSearchRequests": 0,
+   "costUSD": 0.26207159999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1246,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 92214,
+   "outputTokens": 2918,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 8,
+   "costUSD": 0.186804,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u767d\u5934\u9e70 (\\\"bald eagle\\\" in Chinese) is a Chinese-named Solana meme launched about 40 minutes before detection, at 03:23 UTC on 2026-09-25. It refers to a real news event from a few hours earlier: at the White House state dinner on 2026-09-24, Trump gave Xi Jinping a three-foot bald eagle statue. Major outlets covered it (Washington Examiner, Benzinga, Yahoo, Tribune). The token is up about 637% in an hour, with about $680k of volume at a $138k market cap. It is the largest of five same-name tokens launched in the last two hours; the nearest rival is at $57k. Detection happened at about noon Beijing time, so Chinese crypto traders are active. The pool is a PumpSwap pool created seconds after the token was minted, with no pump.fun bonding-curve migration recorded, and RugCheck flags its LP as 0% locked with few LP providers. That means whoever seeded the roughly $104k of liquidity can likely pull it.\",\"narrative\":{\"description\":\"A Chinese-language meme on Trump's bald eagle statue gift to Xi at the 2026-09-24 state dinner. The event is real, very recent (hours old) and widely covered. It fits the Chinese-community meme style: Chinese-character tickers on current US-China political moments.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A fresh, widely covered US-China diplomatic moment reached Asian daytime trading hours. Several same-name tokens launched within two hours shows a scramble to cash in on the name. I could not see any X posts (X blocked fetches with HTTP 402), so the actual social traction is unverified.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has by far the most liquidity and volume of the same-name tokens: $138k market cap and $104k liquidity, against $57k and zero liquidity for the next one. The market has chosen it as the leader for now. The GeckoTerminal social link points to an X status by digua1992_, which I could not read.\",\"competing_tokens\":\"Four other \u767d\u5934\u9e70 tokens, launched between about 01:05 and 02:57 UTC. That includes 3ytLJd\u2026 (earlier, $57k market cap, $327k 1h volume) and three dead ones ($27k, $12k, $5k).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN shows no bundlers, no snipers, 0 bot/degen share, a low fresh-wallet share, and top 10 holders at about 23.5% (excluding the AMM). No paid DexScreener boosts or ads. On the other side, GeckoTerminal counts 2,059 unique buyers in 1h but only 57 unique sellers. It also shows a burst of about 1,070 new unique buyers in the 15-30 minute window, falling to about 50 in the last 15 minutes. That pattern could mean an organized buy wave or many small wallets. GMGN page visits are only 2.\",\"uncertainty\":\"I could not verify any organic X or Chinese-community posts. The 57 unique sellers is either an anomaly or a sign of heavily distributed buying.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The PumpSwap pool was seeded directly at token creation, not through a pump.fun curve migration. The LP is 0% burned or locked and few LP providers are flagged, so the seeder can remove the ~$104k of liquidity at any time.\",\"Creator token status is 'creator_close' and creator balance is 0. The dev has exited their token position but may still hold the LP.\",\"Doubling from $138k needs sustained heavy buying against deep liquidity (liquidity is about 75% of market cap).\",\"Unique-buyer inflow fell sharply in the last 15 minutes (50 buyers vs about 1,070 in the 15-30 minute window).\",\"Competing same-name tokens split attention.\"]},\"counterargument\":\"The catalyst is real, hours old and heavily covered, and it lands during Asian daytime, when Chinese meme traders pile into Chinese-ticker coins about US-China moments. This token is the clear leader of its name group, and GMGN shows clean holder metrics: no bundlers or snipers and a low top-10 share. Chinese political memes have run from $100k to multi-millions in hours, and deep liquidity makes a quick rug less attractive than letting it run. The last 5 minutes were still +28%.\",\"unknowns\":[\"Who seeded the LP, and whether they still hold the LP tokens\",\"What the digua1992_ X post says and how much engagement it has\",\"Whether Chinese KOLs or call channels are pushing it\",\"Why unique sellers are so low compared with buyers\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Fetching x.com returned HTTP 402. Searches for the contract address found nothing. News confirms the Trump-Xi bald eagle gift on 2026-09-24. The only Telegram hit was an unrelated leak channel. The project has no website or socials beyond the GeckoTerminal X status link. I did not search Discord.\"},\"thesis\":\"A real, fresh narrative, and this token leads its name group. But the structure is dangerous: the dev-seeded PumpSwap LP is unlocked, the creator has closed their position, and new-buyer inflow is slowing sharply after a 7x run. Doubling from $138k against $104k of liquidity is possible if Chinese traders pile in, but a pull of the liquidity or a fade is more likely.\",\"continuation_view\":\"fade\",\"p_runner\":26,\"p_rug\":45,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.washingtonexaminer.com/news/white-house/4742332/trump-xi-bald-eagle-statue-gift-state-dinner/\",\"what\":\"Trump gives Xi a bald eagle statue at the state dinner (the catalyst)\"},{\"url\":\"https://www.latestly.com/us/why-did-donald-trump-gift-xi-jinping-a-3-foot-bald-eagle-statue-heres-what-it-symbolises-7619501.html\",\"what\":\"Date and details of the statue gift, 2026-09-24\"},{\"url\":\"https://www.tribuneindia.com/news/usa-news/trump-gifts-xi-jinping-bald-eagle-statue-at-white-house-state-dinner-says-us-china-ties-have-never-gotten-along-better\",\"what\":\"Further coverage of the gift\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2TsQFwDuKnGYrxDYSnXNYQVJaFDLv8vjgkTS83noE9tJ\",\"what\":\"Live market data: $138.6k market cap, $104k liquidity, +29% in 5 minutes\"},{\"url\":\"https://x.com/digua1992_/status/2103149267477237971\",\"what\":\"X post linked from GeckoTerminal (fetch blocked with HTTP 402)\"},{\"url\":\"https://t.me/vississ_leak/38\",\"what\":\"The only Telegram hit for the name, unrelated\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u767d\u5934\u9e70 (\"bald eagle\" in Chinese) is a Chinese-named Solana meme launched about 40 minutes before detection, at 03:23 UTC on 2026-09-25. It refers to a real news event from a few hours earlier: at the White House state dinner on 2026-09-24, Trump gave Xi Jinping a three-foot bald eagle statue. Major outlets covered it (Washington Examiner, Benzinga, Yahoo, Tribune). The token is up about 637% in an hour, with about $680k of volume at a $138k market cap. It is the largest of five same-name tokens launched in the last two hours; the nearest rival is at $57k. Detection happened at about noon Beijing time, so Chinese crypto traders are active. The pool is a PumpSwap pool created seconds after the token was minted, with no pump.fun bonding-curve migration recorded, and RugCheck flags its LP as 0% locked with few LP providers. That means whoever seeded the roughly $104k of liquidity can likely pull it.",
+  "narrative": {
+   "description": "A Chinese-language meme on Trump's bald eagle statue gift to Xi at the 2026-09-24 state dinner. The event is real, very recent (hours old) and widely covered. It fits the Chinese-community meme style: Chinese-character tickers on current US-China political moments.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A fresh, widely covered US-China diplomatic moment reached Asian daytime trading hours. Several same-name tokens launched within two hours shows a scramble to cash in on the name. I could not see any X posts (X blocked fetches with HTTP 402), so the actual social traction is unverified."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has by far the most liquidity and volume of the same-name tokens: $138k market cap and $104k liquidity, against $57k and zero liquidity for the next one. The market has chosen it as the leader for now. The GeckoTerminal social link points to an X status by digua1992_, which I could not read.",
+   "competing_tokens": "Four other \u767d\u5934\u9e70 tokens, launched between about 01:05 and 02:57 UTC. That includes 3ytLJd\u2026 (earlier, $57k market cap, $327k 1h volume) and three dead ones ($27k, $12k, $5k).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN shows no bundlers, no snipers, 0 bot/degen share, a low fresh-wallet share, and top 10 holders at about 23.5% (excluding the AMM). No paid DexScreener boosts or ads. On the other side, GeckoTerminal counts 2,059 unique buyers in 1h but only 57 unique sellers. It also shows a burst of about 1,070 new unique buyers in the 15-30 minute window, falling to about 50 in the last 15 minutes. That pattern could mean an organized buy wave or many small wallets. GMGN page visits are only 2.",
+   "uncertainty": "I could not verify any organic X or Chinese-community posts. The 57 unique sellers is either an anomaly or a sign of heavily distributed buying."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The PumpSwap pool was seeded directly at token creation, not through a pump.fun curve migration. The LP is 0% burned or locked and few LP providers are flagged, so the seeder can remove the ~$104k of liquidity at any time.",
+    "Creator token status is 'creator_close' and creator balance is 0. The dev has exited their token position but may still hold the LP.",
+    "Doubling from $138k needs sustained heavy buying against deep liquidity (liquidity is about 75% of market cap).",
+    "Unique-buyer inflow fell sharply in the last 15 minutes (50 buyers vs about 1,070 in the 15-30 minute window).",
+    "Competing same-name tokens split attention."
+   ]
+  },
+  "counterargument": "The catalyst is real, hours old and heavily covered, and it lands during Asian daytime, when Chinese meme traders pile into Chinese-ticker coins about US-China moments. This token is the clear leader of its name group, and GMGN shows clean holder metrics: no bundlers or snipers and a low top-10 share. Chinese political memes have run from $100k to multi-millions in hours, and deep liquidity makes a quick rug less attractive than letting it run. The last 5 minutes were still +28%.",
+  "unknowns": [
+   "Who seeded the LP, and whether they still hold the LP tokens",
+   "What the digua1992_ X post says and how much engagement it has",
+   "Whether Chinese KOLs or call channels are pushing it",
+   "Why unique sellers are so low compared with buyers"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Fetching x.com returned HTTP 402. Searches for the contract address found nothing. News confirms the Trump-Xi bald eagle gift on 2026-09-24. The only Telegram hit was an unrelated leak channel. The project has no website or socials beyond the GeckoTerminal X status link. I did not search Discord."
+  },
+  "thesis": "A real, fresh narrative, and this token leads its name group. But the structure is dangerous: the dev-seeded PumpSwap LP is unlocked, the creator has closed their position, and new-buyer inflow is slowing sharply after a 7x run. Doubling from $138k against $104k of liquidity is possible if Chinese traders pile in, but a pull of the liquidity or a fade is more likely.",
+  "continuation_view": "fade",
+  "p_runner": 26,
+  "p_rug": 45,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.washingtonexaminer.com/news/white-house/4742332/trump-xi-bald-eagle-statue-gift-state-dinner/",
+    "what": "Trump gives Xi a bald eagle statue at the state dinner (the catalyst)"
+   },
+   {
+    "url": "https://www.latestly.com/us/why-did-donald-trump-gift-xi-jinping-a-3-foot-bald-eagle-statue-heres-what-it-symbolises-7619501.html",
+    "what": "Date and details of the statue gift, 2026-09-24"
+   },
+   {
+    "url": "https://www.tribuneindia.com/news/usa-news/trump-gifts-xi-jinping-bald-eagle-statue-at-white-house-state-dinner-says-us-china-ties-have-never-gotten-along-better",
+    "what": "Further coverage of the gift"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2TsQFwDuKnGYrxDYSnXNYQVJaFDLv8vjgkTS83noE9tJ",
+    "what": "Live market data: $138.6k market cap, $104k liquidity, +29% in 5 minutes"
+   },
+   {
+    "url": "https://x.com/digua1992_/status/2103149267477237971",
+    "what": "X post linked from GeckoTerminal (fetch blocked with HTTP 402)"
+   },
+   {
+    "url": "https://t.me/vississ_leak/38",
+    "what": "The only Telegram hit for the name, unrelated"
+   }
+  ]
+ },
+ "ttft_ms": 1676,
+ "type": "result",
+ "duration_ms": 66252,
+ "uuid": "ae0f7632-6509-4055-b4d6-13f97bf79117",
+ "ttft_stream_ms": 870,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 870,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,139 @@
+{
+ "duration_api_ms": 39896,
+ "stop_reason": "tool_use",
+ "session_id": "c5f8ff62-d7d7-45fe-b763-c2bace395f80",
+ "total_cost_usd": 0.15980640000000002,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10271,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 3873,
+  "output_tokens_details": {
+   "thinking_tokens": 995
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10271,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3873,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 10271,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10271
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3873,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 10271,
+   "webSearchRequests": 0,
+   "costUSD": 0.15980640000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 995,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"LP was 0% locked or burned (RugCheck 'Large Amount of LP Unlocked' at danger level, GMGN lp_burn_ratio 0.0) and RugCheck reported only a few LP providers. That means the deployer could remove the ~$198k pool whenever they chose. Liquidity went to ~0 about 85 minutes after the decision, which is the removal this pointed to.\",\"The token was not a pump.fun graduate. The mint had no 'pump' suffix, migrated_unix was 0, and the PumpSwap pool was created about 30 seconds after the token was minted (created_unix 1790237645 vs pair 1790237675). That points to a pool the deployer seeded and controls, not one funded by the bonding curve.\",\"Liquidity ($198k) was larger than market cap ($135k), and the 'Pump Fun AMM' account held about 73% of supply. So most of the supply and all of the quote-side value sat in one pool whose LP tokens were unlocked. This is the setup where a single LP withdrawal takes out almost all value.\",\"The sell side was very concentrated: 55 unique sellers made ~3,459 sells (about 63 each), against 2,246 unique buyers. That fits a small set of controlled wallets churning volume while retail buys. The 27x hourly turnover on a $135k cap also fits wash activity more than organic demand.\",\"GMGN tagged 48 bundler wallets holding about 22% of top-trader share, which suggests coordinated launch wallets.\",\"The report put p_rug at 72 and p_runner at 7 with a strong_fade view. The outcome matched: the +50% level was never touched, 6h max favorable excursion was +1.5%, and max adverse excursion was -99.96%.\"],\"misleading_observations\":[\"Low top-10 holder concentration (~12%, RugCheck, excluding the AMM) looked like a healthy distribution. But the excluded pool held 73% of supply and its LP was unlocked, so the deployer effectively controlled most of the supply. GeckoTerminal's 85% top-10 figure, which includes the pool, was closer to the real control picture.\",\"Mint and freeze authority were renounced and there was no honeypot or tax. These are true but irrelevant to how this token failed: an LP pull needs neither authority.\",\"2,246 unique buyers (cited in the counterargument) looked like real participation. Buyer count says nothing about who can remove liquidity, and those buyers were exit liquidity.\",\"Narrative quality (the Trump 'SI' rename was real and widely covered) and canonical-vs-clone status were probably not what drove this outcome. A deployer-controlled LP can be pulled whatever the narrative. The clone analysis was sound but secondary.\",\"The 'momentum flattening' reading (+8.7% over 15 minutes) was weak evidence. A rug happening 85 minutes later is not really explained by short-term price momentum.\",\"creator_launched_token_count = 0 and 'creator_hold' look like a clean dev, but a fresh deployer wallet has no track record either way, so this is uninformative, not reassuring.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time argued for a bullish conclusion. If anything, the structural evidence supported a higher p_rug than 72. The pool was seeded by the deployer about 30 seconds after the mint, the LP was 0% locked with few providers, liquidity was larger than market cap, and the pool held 73% of supply. Together these left the deployer with a free exit option that nothing restrained. The counterargument (the dev may farm fees longer) bore only on timing, not direction, over a 6h window.\",\"The report called the creator's LP control an 'unknown'. The packet already suggested it: few LP providers, the pool created about 30 seconds after the mint, and no migration. The report could have treated deployer LP control as likely, not open.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"Solana tokens whose AMM pool was created by the deployer (not a bonding-curve migration, pool created within about 5 minutes of the mint) with LP locked or burned below 10% and liquidity/market cap at or above 1.0 will see liquidity fall by 90% or more within 6 hours of detection far more often than other tokens in the universe (e.g., at least 60% of cases).\",\"conditions\":\"Applies to tokens in the $10k-$300k band on PumpSwap or Raydium where migrated_unix = 0 or the mint lacks a launchpad signature, RugCheck/GMGN report LP burn/lock below 10%, and pair age is under 2 hours at detection. Does not apply to pump.fun-migrated pools, where the protocol burns the LP.\",\"market_structure_rationale\":\"The deployer holds the LP tokens for a pool that contains most of the supply and all of the quote-side value. Removing the LP captures that value in one transaction at no cost, and nothing restrains it. Liquidity at or above market cap means the dev seeded far more quote than organic buying would support, which makes the pull payoff large.\"},{\"statement\":\"When unique_sellers / unique_buyers is below 0.05 and sells per unique seller exceed 30 in the first hour, the token will fail to touch +50% within 6 hours in most cases and will show max adverse excursion of -50% or worse more often than the base rate.\",\"conditions\":\"Use GeckoTerminal unique buyer/seller counts at T2, for pairs younger than 3 hours with at least 1,000 total transactions in h1. Test separately for pools with locked or burned LP and pools without, to isolate the effect from LP control.\",\"market_structure_rationale\":\"Real retail flow produces many distinct sellers taking profit. A tiny set of wallets making thousands of sells means the sell side, and probably the volume, is bot-controlled. Price and turnover then reflect the operator, not demand, and holders are exit liquidity.\"},{\"statement\":\"Holder-concentration metrics that exclude AMM accounts should be adjusted to treat the pool as controlled by the deployer whenever LP is unlocked. After that adjustment, effective concentration above 60% predicts liquidity collapse better than the raw top-10 figure does.\",\"conditions\":\"Tokens where the excluded pool account holds 50% or more of supply and LP lock/burn is below 10%. Compare predictive power (e.g., AUC for a 6h liquidity collapse) of the raw vs adjusted concentration on future candidates.\",\"market_structure_rationale\":\"An unlocked LP gives its holder claim to the pool's token and quote reserves. Excluding the pool therefore hides the single largest controllable position and makes a low-concentration reading misleading.\"}],\"summary\":\"The report called strong_fade with p_rug 72 and p_runner 7. The pool's liquidity then went to ~0 about 85 minutes after the decision time, the +50% level was never touched, and the position lost 100%. The call was right, and it rested mostly on the right evidence:\\n- the pool was seeded by hand by the deployer about 30 seconds after the mint, with no pump.fun migration;\\n- LP was 0% locked or burned and RugCheck reported only a few LP providers;\\n- liquidity was larger than market cap, and the pool held 73% of supply;\\n- the sell side was concentrated in bots (55 unique sellers made ~3,459 sells), and GMGN tagged 48 bundler wallets.\\n\\nSeveral reassuring-looking points were misleading or irrelevant: the ~12% top-10 concentration (which excluded a pool the deployer controlled), the renounced mint and freeze authority, and the 2,246 unique buyers. The narrative and clone analysis was accurate but secondary to how the token failed.\\n\\nGiven the evidence, the direction was largely knowable in advance and p_rug could reasonably have been higher. The timing (85 minutes vs later in the 6h window) depended on the deployer's choice and was not knowable. This is one case: it supports the LP-control hypotheses but does not validate them. They should be tested prospectively across many deployer-seeded pools with unlocked LP.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "LP was 0% locked or burned (RugCheck 'Large Amount of LP Unlocked' at danger level, GMGN lp_burn_ratio 0.0) and RugCheck reported only a few LP providers. That means the deployer could remove the ~$198k pool whenever they chose. Liquidity went to ~0 about 85 minutes after the decision, which is the removal this pointed to.",
+   "The token was not a pump.fun graduate. The mint had no 'pump' suffix, migrated_unix was 0, and the PumpSwap pool was created about 30 seconds after the token was minted (created_unix 1790237645 vs pair 1790237675). That points to a pool the deployer seeded and controls, not one funded by the bonding curve.",
+   "Liquidity ($198k) was larger than market cap ($135k), and the 'Pump Fun AMM' account held about 73% of supply. So most of the supply and all of the quote-side value sat in one pool whose LP tokens were unlocked. This is the setup where a single LP withdrawal takes out almost all value.",
+   "The sell side was very concentrated: 55 unique sellers made ~3,459 sells (about 63 each), against 2,246 unique buyers. That fits a small set of controlled wallets churning volume while retail buys. The 27x hourly turnover on a $135k cap also fits wash activity more than organic demand.",
+   "GMGN tagged 48 bundler wallets holding about 22% of top-trader share, which suggests coordinated launch wallets.",
+   "The report put p_rug at 72 and p_runner at 7 with a strong_fade view. The outcome matched: the +50% level was never touched, 6h max favorable excursion was +1.5%, and max adverse excursion was -99.96%."
+  ],
+  "misleading_observations": [
+   "Low top-10 holder concentration (~12%, RugCheck, excluding the AMM) looked like a healthy distribution. But the excluded pool held 73% of supply and its LP was unlocked, so the deployer effectively controlled most of the supply. GeckoTerminal's 85% top-10 figure, which includes the pool, was closer to the real control picture.",
+   "Mint and freeze authority were renounced and there was no honeypot or tax. These are true but irrelevant to how this token failed: an LP pull needs neither authority.",
+   "2,246 unique buyers (cited in the counterargument) looked like real participation. Buyer count says nothing about who can remove liquidity, and those buyers were exit liquidity.",
+   "Narrative quality (the Trump 'SI' rename was real and widely covered) and canonical-vs-clone status were probably not what drove this outcome. A deployer-controlled LP can be pulled whatever the narrative. The clone analysis was sound but secondary.",
+   "The 'momentum flattening' reading (+8.7% over 15 minutes) was weak evidence. A rug happening 85 minutes later is not really explained by short-term price momentum.",
+   "creator_launched_token_count = 0 and 'creator_hold' look like a clean dev, but a fresh deployer wallet has no track record either way, so this is uninformative, not reassuring."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time argued for a bullish conclusion. If anything, the structural evidence supported a higher p_rug than 72. The pool was seeded by the deployer about 30 seconds after the mint, the LP was 0% locked with few providers, liquidity was larger than market cap, and the pool held 73% of supply. Together these left the deployer with a free exit option that nothing restrained. The counterargument (the dev may farm fees longer) bore only on timing, not direction, over a 6h window.",
+   "The report called the creator's LP control an 'unknown'. The packet already suggested it: few LP providers, the pool created about 30 seconds after the mint, and no migration. The report could have treated deployer LP control as likely, not open."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "Solana tokens whose AMM pool was created by the deployer (not a bonding-curve migration, pool created within about 5 minutes of the mint) with LP locked or burned below 10% and liquidity/market cap at or above 1.0 will see liquidity fall by 90% or more within 6 hours of detection far more often than other tokens in the universe (e.g., at least 60% of cases).",
+    "conditions": "Applies to tokens in the $10k-$300k band on PumpSwap or Raydium where migrated_unix = 0 or the mint lacks a launchpad signature, RugCheck/GMGN report LP burn/lock below 10%, and pair age is under 2 hours at detection. Does not apply to pump.fun-migrated pools, where the protocol burns the LP.",
+    "market_structure_rationale": "The deployer holds the LP tokens for a pool that contains most of the supply and all of the quote-side value. Removing the LP captures that value in one transaction at no cost, and nothing restrains it. Liquidity at or above market cap means the dev seeded far more quote than organic buying would support, which makes the pull payoff large."
+   },
+   {
+    "statement": "When unique_sellers / unique_buyers is below 0.05 and sells per unique seller exceed 30 in the first hour, the token will fail to touch +50% within 6 hours in most cases and will show max adverse excursion of -50% or worse more often than the base rate.",
+    "conditions": "Use GeckoTerminal unique buyer/seller counts at T2, for pairs younger than 3 hours with at least 1,000 total transactions in h1. Test separately for pools with locked or burned LP and pools without, to isolate the effect from LP control.",
+    "market_structure_rationale": "Real retail flow produces many distinct sellers taking profit. A tiny set of wallets making thousands of sells means the sell side, and probably the volume, is bot-controlled. Price and turnover then reflect the operator, not demand, and holders are exit liquidity."
+   },
+   {
+    "statement": "Holder-concentration metrics that exclude AMM accounts should be adjusted to treat the pool as controlled by the deployer whenever LP is unlocked. After that adjustment, effective concentration above 60% predicts liquidity collapse better than the raw top-10 figure does.",
+    "conditions": "Tokens where the excluded pool account holds 50% or more of supply and LP lock/burn is below 10%. Compare predictive power (e.g., AUC for a 6h liquidity collapse) of the raw vs adjusted concentration on future candidates.",
+    "market_structure_rationale": "An unlocked LP gives its holder claim to the pool's token and quote reserves. Excluding the pool therefore hides the single largest controllable position and makes a low-concentration reading misleading."
+   }
+  ],
+  "summary": "The report called strong_fade with p_rug 72 and p_runner 7. The pool's liquidity then went to ~0 about 85 minutes after the decision time, the +50% level was never touched, and the position lost 100%. The call was right, and it rested mostly on the right evidence:\n- the pool was seeded by hand by the deployer about 30 seconds after the mint, with no pump.fun migration;\n- LP was 0% locked or burned and RugCheck reported only a few LP providers;\n- liquidity was larger than market cap, and the pool held 73% of supply;\n- the sell side was concentrated in bots (55 unique sellers made ~3,459 sells), and GMGN tagged 48 bundler wallets.\n\nSeveral reassuring-looking points were misleading or irrelevant: the ~12% top-10 concentration (which excluded a pool the deployer controlled), the renounced mint and freeze authority, and the 2,246 unique buyers. The narrative and clone analysis was accurate but secondary to how the token failed.\n\nGiven the evidence, the direction was largely knowable in advance and p_rug could reasonably have been higher. The timing (85 minutes vs later in the 6h window) depended on the deployer's choice and was not knowable. This is one case: it supports the LP-control hypotheses but does not validate them. They should be tested prospectively across many deployer-seeded pools with unlocked LP."
+ },
+ "ttft_ms": 11815,
+ "type": "result",
+ "duration_ms": 39940,
+ "uuid": "27c29eec-be0c-4489-aa25-4bb91045187a",
+ "ttft_stream_ms": 745,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 745,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

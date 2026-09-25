@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 49718,
+ "stop_reason": "tool_use",
+ "session_id": "dba2622e-1137-4cf9-bd86-2fcb53043b33",
+ "total_cost_usd": 0.2502942,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13586,
+  "cache_read_input_tokens": 29141,
+  "output_tokens": 3096,
+  "output_tokens_details": {
+   "thinking_tokens": 799
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13586,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2105,
+    "cache_read_input_tokens": 14674,
+    "cache_creation_input_tokens": 1676,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1676
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3096,
+   "cacheReadInputTokens": 29141,
+   "cacheCreationInputTokens": 13586,
+   "webSearchRequests": 0,
+   "costUSD": 0.1764602,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 799,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 37059,
+   "outputTokens": 1355,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.07383400000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"TALIS is a Solana token created 12 minutes ago. It was not launched on the pump.fun bonding curve: its PumpSwap pool was created about 41s after the token was deployed. The pool holds $207k of liquidity against a $145k market cap, 100% of the LP is unlocked, and the deployer seeded it by hand. The token's metadata points to talis.markets, @usetalis and t.me/talismarkets. The talis.markets site describes a tokenized-stock protocol on Robinhood Chain and gives its official TALIS contract as an EVM 0x address on that chain, so this Solana mint looks like a hijack of the brand. Before this one, at least 10 other same-name TALIS tokens were deployed on Solana; all of them are dead. Volume is about $2M in 12 minutes, and the price is up about 100%. There are 554 unique buyers but only 61 sellers. GMGN flags 49 bundler wallets holding about 25%.\",\"narrative\":{\"description\":\"Brand hijack of Talis (talis.markets), a tokenized-stock income/upside protocol whose TALIS token is on Robinhood Chain. A separate, older Talis Protocol on Injective adds name confusion.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Most likely traders confused the brand name with the official token, helped along by a hand-seeded large pool and bundled volume. I found no organic Solana discussion.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The metadata copies the real project's links. The official site lists the TALIS contract on Robinhood Chain, not Solana, and I found no confirmation that this Solana mint is official.\",\"competing_tokens\":\"10+ earlier Solana TALIS tokens (all dead, zero liquidity), the official Robinhood Chain TALIS, and Talis Protocol TALIS on Injective.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"49 bundler wallets hold about 25%. The ratio of 554 unique buyers to 61 sellers is lopsided. The pool was seeded by hand with 100% of the LP unlocked. $2M of volume came in within 12 minutes of launch on a $145k market cap. I found no posts about the contract anywhere.\",\"uncertainty\":\"X was inaccessible (402), so I could not check whether @usetalis announced a Solana launch.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked on a pool the deployer seeded by hand, so it can be pulled instantly\",\"49 bundler wallets hold about 25%\",\"Brand hijack: the official token is on another chain\",\"Deploy platform is not pump.fun\"]},\"counterargument\":\"The team might really have launched a Solana token. Deep liquidity plus heavy real buying (554 buyers) could carry the price to 2x quickly if @usetalis confirms it. The pool is deep relative to market cap, and GMGN shows no snipers and a low bot rate.\",\"unknowns\":[\"Whether @usetalis or the Telegram posted this contract address\",\"The identity of the LP owner\",\"Whether the bundlers are the deployer\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"I ran out of time. The site shows the TALIS contract on Robinhood Chain, not Solana. Web search for the contract address returned nothing. x.com returned 402.\"},\"thesis\":\"This looks like a brand hijack of a Robinhood Chain project, sitting in a hand-seeded pool with all of its LP unlocked and heavy bundling. That is a classic setup for pulling liquidity. The upside is unlikely unless the project endorses the token.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":55,\"survival_score\":20,\"attention_score\":55,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://talis.markets/\",\"what\":\"Official site: TALIS token on Robinhood Chain with a 0x contract\"},{\"url\":\"https://www.coingecko.com/en/coins/talis-protocol\",\"what\":\"Separate Injective Talis Protocol TALIS token\"},{\"url\":\"https://x.com/usetalis\",\"what\":\"Project X account (inaccessible, 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "TALIS is a Solana token created 12 minutes ago. It was not launched on the pump.fun bonding curve: its PumpSwap pool was created about 41s after the token was deployed. The pool holds $207k of liquidity against a $145k market cap, 100% of the LP is unlocked, and the deployer seeded it by hand. The token's metadata points to talis.markets, @usetalis and t.me/talismarkets. The talis.markets site describes a tokenized-stock protocol on Robinhood Chain and gives its official TALIS contract as an EVM 0x address on that chain, so this Solana mint looks like a hijack of the brand. Before this one, at least 10 other same-name TALIS tokens were deployed on Solana; all of them are dead. Volume is about $2M in 12 minutes, and the price is up about 100%. There are 554 unique buyers but only 61 sellers. GMGN flags 49 bundler wallets holding about 25%.",
+  "narrative": {
+   "description": "Brand hijack of Talis (talis.markets), a tokenized-stock income/upside protocol whose TALIS token is on Robinhood Chain. A separate, older Talis Protocol on Injective adds name confusion.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Most likely traders confused the brand name with the official token, helped along by a hand-seeded large pool and bundled volume. I found no organic Solana discussion."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The metadata copies the real project's links. The official site lists the TALIS contract on Robinhood Chain, not Solana, and I found no confirmation that this Solana mint is official.",
+   "competing_tokens": "10+ earlier Solana TALIS tokens (all dead, zero liquidity), the official Robinhood Chain TALIS, and Talis Protocol TALIS on Injective.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "49 bundler wallets hold about 25%. The ratio of 554 unique buyers to 61 sellers is lopsided. The pool was seeded by hand with 100% of the LP unlocked. $2M of volume came in within 12 minutes of launch on a $145k market cap. I found no posts about the contract anywhere.",
+   "uncertainty": "X was inaccessible (402), so I could not check whether @usetalis announced a Solana launch."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked on a pool the deployer seeded by hand, so it can be pulled instantly",
+    "49 bundler wallets hold about 25%",
+    "Brand hijack: the official token is on another chain",
+    "Deploy platform is not pump.fun"
+   ]
+  },
+  "counterargument": "The team might really have launched a Solana token. Deep liquidity plus heavy real buying (554 buyers) could carry the price to 2x quickly if @usetalis confirms it. The pool is deep relative to market cap, and GMGN shows no snipers and a low bot rate.",
+  "unknowns": [
+   "Whether @usetalis or the Telegram posted this contract address",
+   "The identity of the LP owner",
+   "Whether the bundlers are the deployer"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "I ran out of time. The site shows the TALIS contract on Robinhood Chain, not Solana. Web search for the contract address returned nothing. x.com returned 402."
+  },
+  "thesis": "This looks like a brand hijack of a Robinhood Chain project, sitting in a hand-seeded pool with all of its LP unlocked and heavy bundling. That is a classic setup for pulling liquidity. The upside is unlikely unless the project endorses the token.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 55,
+  "survival_score": 20,
+  "attention_score": 55,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://talis.markets/",
+    "what": "Official site: TALIS token on Robinhood Chain with a 0x contract"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/talis-protocol",
+    "what": "Separate Injective Talis Protocol TALIS token"
+   },
+   {
+    "url": "https://x.com/usetalis",
+    "what": "Project X account (inaccessible, 402)"
+   }
+  ]
+ },
+ "ttft_ms": 3961,
+ "type": "result",
+ "duration_ms": 39645,
+ "uuid": "6d90c703-d865-4fdb-9516-0ffd7870dadc",
+ "ttft_stream_ms": 641,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 642,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

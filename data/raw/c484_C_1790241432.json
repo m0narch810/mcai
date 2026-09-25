@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 88422,
+ "stop_reason": "tool_use",
+ "session_id": "70ee7fe2-a740-40db-8869-d04adeff54dc",
+ "total_cost_usd": 0.40239700000000006,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 18309,
+  "cache_read_input_tokens": 61890,
+  "output_tokens": 4224,
+  "output_tokens_details": {
+   "thinking_tokens": 774
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18309,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2380,
+    "cache_read_input_tokens": 17951,
+    "cache_creation_input_tokens": 2934,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2934
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4224,
+   "cacheReadInputTokens": 61890,
+   "cacheCreationInputTokens": 18309,
+   "webSearchRequests": 0,
+   "costUSD": 0.24336999999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 774,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 73592,
+   "outputTokens": 3087,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.159027,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"desks.fun is a real early-access site for launching AI trading desks that trade Hyperliquid perps (X: @desksdotfun). The site shows no contract address and says the token is optional, with no dev buy. At least 11 tokens named DESKS / desks.fun have launched on Solana in the last ~1.5 hours. This one (6WMv...) is not a pump.fun curve coin: its address has no 'pump' suffix, migrated_unix is 0, and the PumpSwap pool was created directly, 3 seconds after the token was minted. That means the deployer supplied the LP and still holds it; RugCheck reports 0% of LP locked. The trading pattern looks bot-driven. GeckoTerminal counts 2,080 unique buyers but only 74 unique sellers making 2,514 sells. GMGN tags 68 bundler wallets, and 52% of top traders are bundlers. At least 7 sibling clones already show about $0 liquidity, including FTJm..., which traded $2M in one hour and now shows 0 trades in the last 5 minutes. Another live clone, EUxb..., has the same shape: +400% over 1h and -27% over 5m. This one is already -22% over 5m, off its all-time high.\",\"narrative\":{\"description\":\"desks.fun, an AI-agent trading-desk launchpad on Hyperliquid, fits the AI-agent/Hyperliquid theme. The product seems real but tiny. Web search found no coverage and nothing indexed from the X account.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The attention looks manufactured, not organic. A fresh site name is being used as a ticker by a series of self-created PumpSwap pools with volume bots, likely because the X account posted about launching or tokens. I found no organic discussion.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing links this contract to desks.fun. The site gives no contract address, the packet lists no socials, there is no DexScreener profile, and GMGN shows no project links. The deployer has no launch history.\",\"competing_tokens\":\"At least 10 other DESKS/desks.fun tokens, most with liquidity pulled (FTJm, 2TKp, U7VQ, 8vh2, 6DSS, AB8h, 2CNE, 9271). EUxb and 3uJh are still live with the same bot pattern.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,080 unique buyers against 74 unique sellers. 68 bundler wallets, and 52% of top traders are bundlers. A creator-seeded PumpSwap pool with 0% LP locked. Identical sibling clones that were drained within about an hour. No smart-money or KOL wallets.\",\"uncertainty\":\"The X account could not be read (HTTP 402), so I cannot rule out that the project endorsed this contract.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator holds unlocked LP (0% burned or locked) and can pull liquidity at any time\",\"Siblings from the same clone pattern already had their liquidity pulled\",\"Bot or bundler volume is 23x market cap per hour\",\"Momentum has already turned (-22% over 5m)\"]},\"counterargument\":\"desks.fun is a real product in a hot niche (AI agents on Hyperliquid). If the team or community picks this contract as the canonical one, 2,000+ holders and $55k of liquidity could support a fast 2x from about $60k market cap. Top-10 concentration is also low, at 16%.\",\"unknowns\":[\"What @desksdotfun has posted and whether it named a contract address\",\"Who the LP owner is and when they will pull\",\"Whether any of the clones is team-endorsed\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"desks.fun loaded and shows no contract address. X returned 402. Web searches for the contract address, $DESKS and desksdotfun found nothing relevant. I checked the sibling clones on the DexScreener API.\"},\"thesis\":\"This looks like a factory of ticker-hijack clones. Each one uses a creator-owned PumpSwap pool with unlocked LP, pumps on bot and bundler volume, and has its liquidity pulled within about an hour. Several siblings already show that outcome. This one is 48 minutes old and already fading, so the chance of liquidity being pulled is high and the chance of a 2x is very low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":82,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://desks.fun\",\"what\":\"Project site: AI trading desk launchpad, no contract address, 'Optional token \u00b7 No dev buy', links @desksdotfun\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/6WMvapJevnurrRDHiqr82QhTxgvygYuyX684CT2GdqaT\",\"what\":\"This token: about $61k market cap, $53k liquidity, -22% over 5m, no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/FTJmEXYmJMf5Dn6ifyJ26PV1D4bLqH5PWds7yhU2Y6hn\",\"what\":\"Sibling clone: $2M volume in 1h, now $0 liquidity and 0 trades in the last 5m\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/EUxb3ndijkKFLpoa3GR5QgFpsVkBvT6aubAVnrk9Qn5S\",\"what\":\"Live sibling clone with the same pump-then-fade pattern\"},{\"url\":\"https://x.com/desksdotfun\",\"what\":\"Project X account; returned 402, not readable\"}]}",
+ "structured_output": {
+  "what_is_happening": "desks.fun is a real early-access site for launching AI trading desks that trade Hyperliquid perps (X: @desksdotfun). The site shows no contract address and says the token is optional, with no dev buy. At least 11 tokens named DESKS / desks.fun have launched on Solana in the last ~1.5 hours. This one (6WMv...) is not a pump.fun curve coin: its address has no 'pump' suffix, migrated_unix is 0, and the PumpSwap pool was created directly, 3 seconds after the token was minted. That means the deployer supplied the LP and still holds it; RugCheck reports 0% of LP locked. The trading pattern looks bot-driven. GeckoTerminal counts 2,080 unique buyers but only 74 unique sellers making 2,514 sells. GMGN tags 68 bundler wallets, and 52% of top traders are bundlers. At least 7 sibling clones already show about $0 liquidity, including FTJm..., which traded $2M in one hour and now shows 0 trades in the last 5 minutes. Another live clone, EUxb..., has the same shape: +400% over 1h and -27% over 5m. This one is already -22% over 5m, off its all-time high.",
+  "narrative": {
+   "description": "desks.fun, an AI-agent trading-desk launchpad on Hyperliquid, fits the AI-agent/Hyperliquid theme. The product seems real but tiny. Web search found no coverage and nothing indexed from the X account.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The attention looks manufactured, not organic. A fresh site name is being used as a ticker by a series of self-created PumpSwap pools with volume bots, likely because the X account posted about launching or tokens. I found no organic discussion."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing links this contract to desks.fun. The site gives no contract address, the packet lists no socials, there is no DexScreener profile, and GMGN shows no project links. The deployer has no launch history.",
+   "competing_tokens": "At least 10 other DESKS/desks.fun tokens, most with liquidity pulled (FTJm, 2TKp, U7VQ, 8vh2, 6DSS, AB8h, 2CNE, 9271). EUxb and 3uJh are still live with the same bot pattern.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,080 unique buyers against 74 unique sellers. 68 bundler wallets, and 52% of top traders are bundlers. A creator-seeded PumpSwap pool with 0% LP locked. Identical sibling clones that were drained within about an hour. No smart-money or KOL wallets.",
+   "uncertainty": "The X account could not be read (HTTP 402), so I cannot rule out that the project endorsed this contract."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator holds unlocked LP (0% burned or locked) and can pull liquidity at any time",
+    "Siblings from the same clone pattern already had their liquidity pulled",
+    "Bot or bundler volume is 23x market cap per hour",
+    "Momentum has already turned (-22% over 5m)"
+   ]
+  },
+  "counterargument": "desks.fun is a real product in a hot niche (AI agents on Hyperliquid). If the team or community picks this contract as the canonical one, 2,000+ holders and $55k of liquidity could support a fast 2x from about $60k market cap. Top-10 concentration is also low, at 16%.",
+  "unknowns": [
+   "What @desksdotfun has posted and whether it named a contract address",
+   "Who the LP owner is and when they will pull",
+   "Whether any of the clones is team-endorsed"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "desks.fun loaded and shows no contract address. X returned 402. Web searches for the contract address, $DESKS and desksdotfun found nothing relevant. I checked the sibling clones on the DexScreener API."
+  },
+  "thesis": "This looks like a factory of ticker-hijack clones. Each one uses a creator-owned PumpSwap pool with unlocked LP, pumps on bot and bundler volume, and has its liquidity pulled within about an hour. Several siblings already show that outcome. This one is 48 minutes old and already fading, so the chance of liquidity being pulled is high and the chance of a 2x is very low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 82,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://desks.fun",
+    "what": "Project site: AI trading desk launchpad, no contract address, 'Optional token \u00b7 No dev buy', links @desksdotfun"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/6WMvapJevnurrRDHiqr82QhTxgvygYuyX684CT2GdqaT",
+    "what": "This token: about $61k market cap, $53k liquidity, -22% over 5m, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/FTJmEXYmJMf5Dn6ifyJ26PV1D4bLqH5PWds7yhU2Y6hn",
+    "what": "Sibling clone: $2M volume in 1h, now $0 liquidity and 0 trades in the last 5m"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/EUxb3ndijkKFLpoa3GR5QgFpsVkBvT6aubAVnrk9Qn5S",
+    "what": "Live sibling clone with the same pump-then-fade pattern"
+   },
+   {
+    "url": "https://x.com/desksdotfun",
+    "what": "Project X account; returned 402, not readable"
+   }
+  ]
+ },
+ "ttft_ms": 3028,
+ "type": "result",
+ "duration_ms": 60206,
+ "uuid": "187e58ca-3ebd-4b03-ac99-d3528ba90066",
+ "ttft_stream_ms": 897,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 898,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

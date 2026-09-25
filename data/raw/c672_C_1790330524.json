@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 105089,
+ "stop_reason": "tool_use",
+ "session_id": "c73c3606-b0fe-49b8-9620-4e1e88830a6a",
+ "total_cost_usd": 0.40350519999999995,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 18535,
+  "cache_read_input_tokens": 79261,
+  "output_tokens": 5583,
+  "output_tokens_details": {
+   "thinking_tokens": 1681
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18535,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2697,
+    "cache_read_input_tokens": 19483,
+    "cache_creation_input_tokens": 1628,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1628
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 5583,
+   "cacheReadInputTokens": 79261,
+   "cacheCreationInputTokens": 18535,
+   "webSearchRequests": 0,
+   "costUSD": 0.2758402,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1681,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 62125,
+   "outputTokens": 3108,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.127665,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Shillpad\\\" (8Xm4\u2026) is trading on a PumpSwap pair created at 09:23 UTC. In about 40 minutes it did roughly $1M of volume and went up about 4x to a peak near $400k+ mcap. By 10:0x UTC it had fallen back to about $210k (DexScreener pair API). It is named after shillpad.fun, a new Solana launchpad that sends creator fees to a locked \\\"Pot\\\" and pays the X accounts that shill a coin hardest every 6 hours. However, the Shillpad website's only contract address is 6Cw4kWUaZHmh71E3YRiHFRvLA28EiYp4Px2GkUrXfvWM, not this token. That other token had about $713k of 24h volume and has since crashed about 73% to a $12.7k mcap. At least 10 other same-name tokens were launched between 08:25 and 09:23 UTC, which points to a same-name launch frenzy.\",\"narrative\":{\"description\":\"A new 'get paid to shill' launchpad (shillpad.fun) that pays X Money to the accounts that push a ticker hardest. The concept is novel and self-promoting on crypto Twitter. Several similar sites exist (shillpumpfun.com, coinshill.fun, shillrz.fun, shillz.app).\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The launchpad itself rewards shilling, and traders are rotating through many same-name tokens in search of 'the real' platform coin. I found no organic news, Reddit or Telegram coverage.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"GeckoTerminal/GMGN link this token's socials to a @Shillpaddotfun status post and to shillpad.fun. Anyone can set those metadata links on a Meteora launch. The official website shows a different CA (6Cw4\u2026). I could not read the linked X status (HTTP 402), so I could not check whether the project endorsed 8Xm4.\",\"competing_tokens\":\"6Cw4kWU\u2026 is the CA on the official site: PumpSwap, $12.7k mcap, $8.8k liquidity, $713k 24h volume, -73% over 24h. There are also 9+ other dead Shillpad clones created 08:25-09:10 UTC, one showing a stale $7.2M mcap with zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal shows 2,084 unique buyers against only 86 unique sellers, with 1,531 buyers arriving within a single 15-30 minute window. That pattern fits bot/bundled buying or a wallet spray more than organic retail. GMGN flags 28 bundler wallets and 8 snipers. There is no DexScreener profile and there are no boosts. It trades beside a dozen same-name clones launched within the same hour.\",\"uncertainty\":\"I had no X data. The linked Shillpad X status could not be fetched, so I can't rule out that the project endorsed this CA.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"A single non-pool-labeled address (FhVo\u2026) holds 80.05% of supply according to RugCheck. It may be the Meteora DBC vault, which has a near-zero price quote; either way it is a large supply overhang or arbitrage risk.\",\"RugCheck flags 'Large Amount of LP Unlocked' as danger, with 0% locked on one of the top markets.\",\"Liquidity is about $37-42k against roughly $1M of hourly volume. Turnover of about 25x points to churn, which reverses fast.\",\"Mcap already fell from about $287k to about $210k during the research window. It needs about $420k+ from entry to double.\",\"The creator's token status is 'creator_close', and this is their second launch.\"]},\"counterargument\":\"If the Shillpad team moved its official coin to 8Xm4 (GeckoTerminal links it to a specific @Shillpaddotfun status post, and the website CA may be stale), then this is the canonical platform token of a new, viral-by-design launchpad. It has 2,000+ holders and $1M of volume in its first hour. A reclaim of the ~$420k high and a push to a 2x from about $210k is plausible within 6 hours.\",\"unknowns\":[\"What the linked X status says, and whether it names 8Xm4 as official\",\"Who controls the FhVo\u2026 address holding 80%\",\"Whether the website CA (6Cw4) is current or stale\",\"Real X engagement volume\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The site shillpad.fun lists CA 6Cw4\u2026, not this token. The /docs page returns 404. The X status fetch returned 402. A CA search found nothing indexed.\"},\"thesis\":\"This is most likely a non-canonical or hijacked 'Shillpad' coin: the official site lists a different CA. It shows bot-like buyer patterns, an 80% single-holder overhang and unlocked LP, and it is already about 25% off the level at detection. Doubling from entry is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":60,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.shillpad.fun/\",\"what\":\"Launchpad description; lists official CA 6Cw4kWU\u2026\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/6Cw4kWUaZHmh71E3YRiHFRvLA28EiYp4Px2GkUrXfvWM\",\"what\":\"Site-listed CA: $12.7k mcap, $713k 24h volume, -73%\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/8Xm4qW2F9QtygSnMigaz8qJww3eRLq8hsrpafvqfcezv\",\"what\":\"This token's pairs (PumpSwap, Meteora DYN2, Meteora DBC)\"},{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/8orDQN4M5ACwBhibGDjyuHXgPScnexKyukPnrsTYovrv\",\"what\":\"Mcap down to ~$210k during research\"},{\"url\":\"https://x.com/Shillpaddotfun/status/2103399884271333551\",\"what\":\"Linked X status; inaccessible (402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Shillpad\" (8Xm4\u2026) is trading on a PumpSwap pair created at 09:23 UTC. In about 40 minutes it did roughly $1M of volume and went up about 4x to a peak near $400k+ mcap. By 10:0x UTC it had fallen back to about $210k (DexScreener pair API). It is named after shillpad.fun, a new Solana launchpad that sends creator fees to a locked \"Pot\" and pays the X accounts that shill a coin hardest every 6 hours. However, the Shillpad website's only contract address is 6Cw4kWUaZHmh71E3YRiHFRvLA28EiYp4Px2GkUrXfvWM, not this token. That other token had about $713k of 24h volume and has since crashed about 73% to a $12.7k mcap. At least 10 other same-name tokens were launched between 08:25 and 09:23 UTC, which points to a same-name launch frenzy.",
+  "narrative": {
+   "description": "A new 'get paid to shill' launchpad (shillpad.fun) that pays X Money to the accounts that push a ticker hardest. The concept is novel and self-promoting on crypto Twitter. Several similar sites exist (shillpumpfun.com, coinshill.fun, shillrz.fun, shillz.app).",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The launchpad itself rewards shilling, and traders are rotating through many same-name tokens in search of 'the real' platform coin. I found no organic news, Reddit or Telegram coverage."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "GeckoTerminal/GMGN link this token's socials to a @Shillpaddotfun status post and to shillpad.fun. Anyone can set those metadata links on a Meteora launch. The official website shows a different CA (6Cw4\u2026). I could not read the linked X status (HTTP 402), so I could not check whether the project endorsed 8Xm4.",
+   "competing_tokens": "6Cw4kWU\u2026 is the CA on the official site: PumpSwap, $12.7k mcap, $8.8k liquidity, $713k 24h volume, -73% over 24h. There are also 9+ other dead Shillpad clones created 08:25-09:10 UTC, one showing a stale $7.2M mcap with zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal shows 2,084 unique buyers against only 86 unique sellers, with 1,531 buyers arriving within a single 15-30 minute window. That pattern fits bot/bundled buying or a wallet spray more than organic retail. GMGN flags 28 bundler wallets and 8 snipers. There is no DexScreener profile and there are no boosts. It trades beside a dozen same-name clones launched within the same hour.",
+   "uncertainty": "I had no X data. The linked Shillpad X status could not be fetched, so I can't rule out that the project endorsed this CA."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "A single non-pool-labeled address (FhVo\u2026) holds 80.05% of supply according to RugCheck. It may be the Meteora DBC vault, which has a near-zero price quote; either way it is a large supply overhang or arbitrage risk.",
+    "RugCheck flags 'Large Amount of LP Unlocked' as danger, with 0% locked on one of the top markets.",
+    "Liquidity is about $37-42k against roughly $1M of hourly volume. Turnover of about 25x points to churn, which reverses fast.",
+    "Mcap already fell from about $287k to about $210k during the research window. It needs about $420k+ from entry to double.",
+    "The creator's token status is 'creator_close', and this is their second launch."
+   ]
+  },
+  "counterargument": "If the Shillpad team moved its official coin to 8Xm4 (GeckoTerminal links it to a specific @Shillpaddotfun status post, and the website CA may be stale), then this is the canonical platform token of a new, viral-by-design launchpad. It has 2,000+ holders and $1M of volume in its first hour. A reclaim of the ~$420k high and a push to a 2x from about $210k is plausible within 6 hours.",
+  "unknowns": [
+   "What the linked X status says, and whether it names 8Xm4 as official",
+   "Who controls the FhVo\u2026 address holding 80%",
+   "Whether the website CA (6Cw4) is current or stale",
+   "Real X engagement volume"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The site shillpad.fun lists CA 6Cw4\u2026, not this token. The /docs page returns 404. The X status fetch returned 402. A CA search found nothing indexed."
+  },
+  "thesis": "This is most likely a non-canonical or hijacked 'Shillpad' coin: the official site lists a different CA. It shows bot-like buyer patterns, an 80% single-holder overhang and unlocked LP, and it is already about 25% off the level at detection. Doubling from entry is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 60,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.shillpad.fun/",
+    "what": "Launchpad description; lists official CA 6Cw4kWU\u2026"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/6Cw4kWUaZHmh71E3YRiHFRvLA28EiYp4Px2GkUrXfvWM",
+    "what": "Site-listed CA: $12.7k mcap, $713k 24h volume, -73%"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/8Xm4qW2F9QtygSnMigaz8qJww3eRLq8hsrpafvqfcezv",
+    "what": "This token's pairs (PumpSwap, Meteora DYN2, Meteora DBC)"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/8orDQN4M5ACwBhibGDjyuHXgPScnexKyukPnrsTYovrv",
+    "what": "Mcap down to ~$210k during research"
+   },
+   {
+    "url": "https://x.com/Shillpaddotfun/status/2103399884271333551",
+    "what": "Linked X status; inaccessible (402)"
+   }
+  ]
+ },
+ "ttft_ms": 3832,
+ "type": "result",
+ "duration_ms": 83472,
+ "uuid": "d842b1aa-894b-4dd9-8d4d-c14512adaabf",
+ "ttft_stream_ms": 877,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 877,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

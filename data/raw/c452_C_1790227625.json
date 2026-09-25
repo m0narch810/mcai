@@ -1,0 +1,183 @@
+{
+ "duration_api_ms": 69951,
+ "stop_reason": "tool_use",
+ "session_id": "fac2bac1-2262-4485-85e7-914231a5f50b",
+ "total_cost_usd": 0.3550218,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 16986,
+  "cache_read_input_tokens": 42499,
+  "output_tokens": 3657,
+  "output_tokens_details": {
+   "thinking_tokens": 603
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16986,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2651,
+    "cache_read_input_tokens": 16188,
+    "cache_creation_input_tokens": 3374,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3374
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3657,
+   "cacheReadInputTokens": 42499,
+   "cacheCreationInputTokens": 16986,
+   "webSearchRequests": 0,
+   "costUSD": 0.21755980000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 603,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 65332,
+   "outputTokens": 2426,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.137462,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Solana copy token using the name and ticker \\\"Ethernity Chain\\\" (ERN). The real Ethernity Chain was an Ethereum NFT/L2 project that rebranded to Epic Chain (EPIC) in March 2025. About 10 same-name ERN tokens launched within minutes of each other around 04:47 UTC. That looks like a reaction to one X post (the GeckoTerminal handle points to x.com/Be_A_Goldfish1/status/2102982170390229202, which I could not open: HTTP 402). This pair was not launched through a pump.fun curve. It is a PumpSwap pool created directly, with unlocked LP and few LP providers. In about 40 minutes it traded $1.1M of volume on roughly $44k of liquidity, rose about 330% and has come back from its ATH of about $65k to about $42k. The trading pattern looks artificial: GeckoTerminal shows 2,072 unique buyers against only 74 unique sellers in the hour, and 576 of those buyers appeared in a 30-minute window. GMGN tags 56 wallets as bundlers, holding 41.6% of the top-trader share. There are 41 linked insider wallets. No smart-money or KOL wallets are present.\",\"narrative\":{\"description\":\"The token reuses the name of a dead or rebranded 2021-era NFT token (Ethernity Chain became Epic Chain). Many copies launched at once, apparently after a single X post. I found no current news about Ethernity or Epic Chain that would explain it.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most likely one tweet from @Be_A_Goldfish1 set off a rush of copy launches, with bot or bundled buying on top. I could not confirm what the tweet says. I found no organic discussion on the web, Reddit or news.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most volume and liquidity of about 10 ERN clones launched within minutes of each other. Another clone (E53j...) was created 73 seconds earlier. This one is only the de facto leader by liquidity.\",\"competing_tokens\":\"E53j4aY7... (earlier, now dead liquidity), GdZbo... ($167k of volume in the hour), BvooB..., BuXvY... and several others. All are clones. None has an official link to the real project, which lives on Ethereum as EPIC.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The buyer and seller counts are extremely lopsided: 2,072 unique buyers against 74 unique sellers, while the buy and sell transaction counts are nearly equal. That points to a few wallets selling into many small, bot-like buys. GMGN shows 56 bundler wallets holding a 41.6% top-trader share and a 34% bot/degen rate. RugCheck finds a 41-wallet insider trade network. There are no smart or renowned wallets, no socials, no website and no DexScreener profile.\",\"uncertainty\":\"I could not read the source X post or any Telegram content. There may be a real call behind this that I could not see.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The PumpSwap LP is 0% burned or locked, and there are few LP providers, so whoever created the pool can pull liquidity at any time\",\"Liquidity (~$44k) is larger than market cap (~$42k), an unusual self-seeded pool\",\"Bundlers hold 41.6%, plus a 41-wallet insider network\",\"Only 74 sellers compared with 2,072 buyers points to farmed buyers or wash trading\",\"Many clone tokens are splitting the attention\",\"Price is already about 35% below ATH and down 7-21% over the last 5 minutes\"]},\"counterargument\":\"$1.1M of volume in 40 minutes and more than 2,000 holders is very high activity for a $40k coin. If the source tweet is from an influential account and this pair becomes the accepted ERN, a quick return to ATH and then a 2x (about $85k) is possible. The creator has already closed their position and holds 0%, and mint and freeze authority are renounced.\",\"unknowns\":[\"What the Be_A_Goldfish1 tweet says, and how far it reached\",\"Who controls the PumpSwap LP\",\"Whether the unique-buyer counts come from fake wallet farming\",\"Why so many ERN clones launched at the same moment\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The X status fetch returned 402. Searching the contract address found nothing. News results only covered the 2025 rebrand of the original ERN to EPIC. DexScreener API checked live.\"},\"thesis\":\"This is a clone of a dead project's ticker in a directly created PumpSwap pool with unlocked LP. It shows heavy bundler and insider structure and signs of fake buyers, and has no visible organic narrative. It is already fading from its ATH. The most likely outcome is an LP pull or a bleed-out, not a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":9,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://coinmarketcap.com/currencies/ethernity-chain/\",\"what\":\"The original ERN is an Ethereum token, rebranded to Epic Chain\"},{\"url\":\"https://x.com/cryptocom/status/1900599731341947092\",\"what\":\"The ERN to EPIC token swap was completed in 2025\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/4RquHZNy5R3vtFW5wAFZcPvzorfuz46ha626kjEDqPn6\",\"what\":\"Live price: ~$42k market cap, -21% over 5 minutes\"},{\"url\":\"https://x.com/Be_A_Goldfish1/status/2102982170390229202\",\"what\":\"The linked X post (could not be opened, HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Solana copy token using the name and ticker \"Ethernity Chain\" (ERN). The real Ethernity Chain was an Ethereum NFT/L2 project that rebranded to Epic Chain (EPIC) in March 2025. About 10 same-name ERN tokens launched within minutes of each other around 04:47 UTC. That looks like a reaction to one X post (the GeckoTerminal handle points to x.com/Be_A_Goldfish1/status/2102982170390229202, which I could not open: HTTP 402). This pair was not launched through a pump.fun curve. It is a PumpSwap pool created directly, with unlocked LP and few LP providers. In about 40 minutes it traded $1.1M of volume on roughly $44k of liquidity, rose about 330% and has come back from its ATH of about $65k to about $42k. The trading pattern looks artificial: GeckoTerminal shows 2,072 unique buyers against only 74 unique sellers in the hour, and 576 of those buyers appeared in a 30-minute window. GMGN tags 56 wallets as bundlers, holding 41.6% of the top-trader share. There are 41 linked insider wallets. No smart-money or KOL wallets are present.",
+  "narrative": {
+   "description": "The token reuses the name of a dead or rebranded 2021-era NFT token (Ethernity Chain became Epic Chain). Many copies launched at once, apparently after a single X post. I found no current news about Ethernity or Epic Chain that would explain it.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most likely one tweet from @Be_A_Goldfish1 set off a rush of copy launches, with bot or bundled buying on top. I could not confirm what the tweet says. I found no organic discussion on the web, Reddit or news."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most volume and liquidity of about 10 ERN clones launched within minutes of each other. Another clone (E53j...) was created 73 seconds earlier. This one is only the de facto leader by liquidity.",
+   "competing_tokens": "E53j4aY7... (earlier, now dead liquidity), GdZbo... ($167k of volume in the hour), BvooB..., BuXvY... and several others. All are clones. None has an official link to the real project, which lives on Ethereum as EPIC.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The buyer and seller counts are extremely lopsided: 2,072 unique buyers against 74 unique sellers, while the buy and sell transaction counts are nearly equal. That points to a few wallets selling into many small, bot-like buys. GMGN shows 56 bundler wallets holding a 41.6% top-trader share and a 34% bot/degen rate. RugCheck finds a 41-wallet insider trade network. There are no smart or renowned wallets, no socials, no website and no DexScreener profile.",
+   "uncertainty": "I could not read the source X post or any Telegram content. There may be a real call behind this that I could not see."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The PumpSwap LP is 0% burned or locked, and there are few LP providers, so whoever created the pool can pull liquidity at any time",
+    "Liquidity (~$44k) is larger than market cap (~$42k), an unusual self-seeded pool",
+    "Bundlers hold 41.6%, plus a 41-wallet insider network",
+    "Only 74 sellers compared with 2,072 buyers points to farmed buyers or wash trading",
+    "Many clone tokens are splitting the attention",
+    "Price is already about 35% below ATH and down 7-21% over the last 5 minutes"
+   ]
+  },
+  "counterargument": "$1.1M of volume in 40 minutes and more than 2,000 holders is very high activity for a $40k coin. If the source tweet is from an influential account and this pair becomes the accepted ERN, a quick return to ATH and then a 2x (about $85k) is possible. The creator has already closed their position and holds 0%, and mint and freeze authority are renounced.",
+  "unknowns": [
+   "What the Be_A_Goldfish1 tweet says, and how far it reached",
+   "Who controls the PumpSwap LP",
+   "Whether the unique-buyer counts come from fake wallet farming",
+   "Why so many ERN clones launched at the same moment"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The X status fetch returned 402. Searching the contract address found nothing. News results only covered the 2025 rebrand of the original ERN to EPIC. DexScreener API checked live."
+  },
+  "thesis": "This is a clone of a dead project's ticker in a directly created PumpSwap pool with unlocked LP. It shows heavy bundler and insider structure and signs of fake buyers, and has no visible organic narrative. It is already fading from its ATH. The most likely outcome is an LP pull or a bleed-out, not a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 9,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://coinmarketcap.com/currencies/ethernity-chain/",
+    "what": "The original ERN is an Ethereum token, rebranded to Epic Chain"
+   },
+   {
+    "url": "https://x.com/cryptocom/status/1900599731341947092",
+    "what": "The ERN to EPIC token swap was completed in 2025"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/4RquHZNy5R3vtFW5wAFZcPvzorfuz46ha626kjEDqPn6",
+    "what": "Live price: ~$42k market cap, -21% over 5 minutes"
+   },
+   {
+    "url": "https://x.com/Be_A_Goldfish1/status/2102982170390229202",
+    "what": "The linked X post (could not be opened, HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 2618,
+ "type": "result",
+ "duration_ms": 51334,
+ "uuid": "5ecec161-3565-4d9c-bd9a-5fa5b677d306",
+ "ttft_stream_ms": 682,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 682,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

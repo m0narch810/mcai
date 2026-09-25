@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 31486,
+ "stop_reason": "tool_use",
+ "session_id": "a15d1f27-68d1-4414-9026-c6480da76746",
+ "total_cost_usd": 0.12495880000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7743,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 3131,
+  "output_tokens_details": {
+   "thinking_tokens": 787
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7743,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3131,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7743,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7743
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3131,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7743,
+   "webSearchRequests": 0,
+   "costUSD": 0.12495880000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 787,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"\ud83d\udc3bBear\\\" is a PumpSwap pool about 40 minutes old. It was not a pump.fun graduation: migrated_unix is 0 and the launchpad and deploy platform are unknown. The pool was seeded directly with about $61k of liquidity against a $45k market cap, and none of that LP is burned or locked. RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\". The price is up about 80-100% since the pool opened and has turned over roughly $294k (about 4.8x liquidity) in one hour. The flow looks manufactured:\\n- About 1,114 unique buyers against only 107 unique sellers over the hour.\\n- About 1,000 of those buyers arrived in the first 30 minutes. Only about 100 arrived in the last 30 minutes.\\n- Aside from the largest holder, the top holders each hold an almost identical 0.29-0.35%.\\n- GMGN tags 26 bundler wallets.\\n\\nThe packet also shows at least 10 other tokens with the same name and emoji ticker, launched over roughly the previous 3 hours. All of them now have $0 liquidity, including one about 34 minutes older that did $105k of hourly volume. This looks like a serial rug farm launching and pulling copies of the same token.\",\"narrative\":{\"description\":\"A generic emoji-and-animal name ('Bear') with no website, no socials, no description and no DexScreener profile. There is no identifiable story, meme or event behind it.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Nothing suggests organic spread. The activity is best explained by a buyer-wallet swarm, possibly a volume bot or wallets funded as part of a bundle, plus bundlers pushing a freshly seeded pool. Unique-buyer growth stalled after the first 30 minutes.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is currently the only copy of \ud83d\udc3bBear with live liquidity and the highest volume, so it is the active instance of the copies.\",\"competing_tokens\":\"At least 10 same-name, same-ticker tokens launched about 10 to 170 minutes earlier, all now at $0 liquidity. That includes vtJt\u2026ADw, which had $105k of hourly volume and was created about 34 minutes before this pair. The pattern fits repeated launch-and-pull by one actor.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Evidence of coordination:\\n- 1,114 unique buyers against 107 unique sellers in an hour.\\n- About 1,000 of the buyers arrived in the first 30 minutes (only 101 unique buyers over the last 30 minutes).\\n- Top holders 2-10 sit at an almost uniform 0.29-0.35%.\\n- GMGN tags 26 bundlers.\\n- The pool was self-seeded with unlocked LP larger than the market cap.\\n- The creator has closed out ('creator_close') and holds 0.\\n- More than 10 same-name copies are already dead at $0 liquidity.\\n- There are zero smart, renowned or KOL wallets and zero socials.\",\"uncertainty\":\"Across the sampled copies, a GMGN bot/degen rate of 0 and a fresh-wallet rate of 0 slightly weaken the bot-swarm reading. The 10.55% top holder is unlabeled and could be something other than the dev. I cannot see funding links between wallets.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is burned or locked, and there are few LP providers, so whoever seeded the pool can pull the liquidity at any moment.\",\"Liquidity is larger than the market cap on a directly seeded PumpSwap pool, a common rug-farm setup.\",\"More than 10 same-name copies launched in the last 3 hours all now have $0 liquidity.\",\"One unlabeled wallet holds 10.55%.\",\"New buyer inflow collapsed after the first 30 minutes, while buys and sells are now roughly balanced.\",\"26 bundler wallets.\"]},\"counterargument\":\"Some things argue against a rug:\\n- Mint and freeze authorities are renounced, there is no tax, and the honeypot check is clean.\\n- Excluding the pool, holders are widely spread (top 10 at 13%), and there are more than 1,100 holders.\\n- The price is at its all-time high and still rising (+8% over 5 minutes), with $30k+ traded every 5 minutes.\\n- If this copy is the 'winner' that people rotate into after the dead ones, momentum traders could carry it from $45k to $90k within hours. That is only a 2x at a very small market cap, where such moves are routine.\\n- The creator's best earlier token reached a $208k all-time high, so the operator has pushed coins past 2x before.\",\"unknowns\":[\"Who controls the LP tokens, and whether the creator's 'close' status means the LP was already moved.\",\"The identity of the 10.55% holder.\",\"Whether the dead copies were rugged by the same deployer or simply abandoned.\",\"What the price will be at entry, 25 minutes after detection.\",\"Any off-chain promotion in Telegram call groups.\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This was the no-internet condition. The judgment rests only on the evidence packet.\"},\"thesis\":\"This is most likely the latest instance of a repeated rug farm: at least 10 dead \ud83d\udc3bBear copies came before it. It sits on a self-seeded, fully unlocked PumpSwap pool. Its buyers look bundled or swarmed and their inflow has already stalled. There is no narrative or social presence. The likeliest outcome is that liquidity is pulled within hours. A 2x from entry is possible only if the operator keeps pumping before pulling.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"\ud83d\udc3bBear\" is a PumpSwap pool about 40 minutes old. It was not a pump.fun graduation: migrated_unix is 0 and the launchpad and deploy platform are unknown. The pool was seeded directly with about $61k of liquidity against a $45k market cap, and none of that LP is burned or locked. RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\". The price is up about 80-100% since the pool opened and has turned over roughly $294k (about 4.8x liquidity) in one hour. The flow looks manufactured:\n- About 1,114 unique buyers against only 107 unique sellers over the hour.\n- About 1,000 of those buyers arrived in the first 30 minutes. Only about 100 arrived in the last 30 minutes.\n- Aside from the largest holder, the top holders each hold an almost identical 0.29-0.35%.\n- GMGN tags 26 bundler wallets.\n\nThe packet also shows at least 10 other tokens with the same name and emoji ticker, launched over roughly the previous 3 hours. All of them now have $0 liquidity, including one about 34 minutes older that did $105k of hourly volume. This looks like a serial rug farm launching and pulling copies of the same token.",
+  "narrative": {
+   "description": "A generic emoji-and-animal name ('Bear') with no website, no socials, no description and no DexScreener profile. There is no identifiable story, meme or event behind it.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Nothing suggests organic spread. The activity is best explained by a buyer-wallet swarm, possibly a volume bot or wallets funded as part of a bundle, plus bundlers pushing a freshly seeded pool. Unique-buyer growth stalled after the first 30 minutes."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is currently the only copy of \ud83d\udc3bBear with live liquidity and the highest volume, so it is the active instance of the copies.",
+   "competing_tokens": "At least 10 same-name, same-ticker tokens launched about 10 to 170 minutes earlier, all now at $0 liquidity. That includes vtJt\u2026ADw, which had $105k of hourly volume and was created about 34 minutes before this pair. The pattern fits repeated launch-and-pull by one actor.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Evidence of coordination:\n- 1,114 unique buyers against 107 unique sellers in an hour.\n- About 1,000 of the buyers arrived in the first 30 minutes (only 101 unique buyers over the last 30 minutes).\n- Top holders 2-10 sit at an almost uniform 0.29-0.35%.\n- GMGN tags 26 bundlers.\n- The pool was self-seeded with unlocked LP larger than the market cap.\n- The creator has closed out ('creator_close') and holds 0.\n- More than 10 same-name copies are already dead at $0 liquidity.\n- There are zero smart, renowned or KOL wallets and zero socials.",
+   "uncertainty": "Across the sampled copies, a GMGN bot/degen rate of 0 and a fresh-wallet rate of 0 slightly weaken the bot-swarm reading. The 10.55% top holder is unlabeled and could be something other than the dev. I cannot see funding links between wallets."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is burned or locked, and there are few LP providers, so whoever seeded the pool can pull the liquidity at any moment.",
+    "Liquidity is larger than the market cap on a directly seeded PumpSwap pool, a common rug-farm setup.",
+    "More than 10 same-name copies launched in the last 3 hours all now have $0 liquidity.",
+    "One unlabeled wallet holds 10.55%.",
+    "New buyer inflow collapsed after the first 30 minutes, while buys and sells are now roughly balanced.",
+    "26 bundler wallets."
+   ]
+  },
+  "counterargument": "Some things argue against a rug:\n- Mint and freeze authorities are renounced, there is no tax, and the honeypot check is clean.\n- Excluding the pool, holders are widely spread (top 10 at 13%), and there are more than 1,100 holders.\n- The price is at its all-time high and still rising (+8% over 5 minutes), with $30k+ traded every 5 minutes.\n- If this copy is the 'winner' that people rotate into after the dead ones, momentum traders could carry it from $45k to $90k within hours. That is only a 2x at a very small market cap, where such moves are routine.\n- The creator's best earlier token reached a $208k all-time high, so the operator has pushed coins past 2x before.",
+  "unknowns": [
+   "Who controls the LP tokens, and whether the creator's 'close' status means the LP was already moved.",
+   "The identity of the 10.55% holder.",
+   "Whether the dead copies were rugged by the same deployer or simply abandoned.",
+   "What the price will be at entry, 25 minutes after detection.",
+   "Any off-chain promotion in Telegram call groups."
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This was the no-internet condition. The judgment rests only on the evidence packet."
+  },
+  "thesis": "This is most likely the latest instance of a repeated rug farm: at least 10 dead \ud83d\udc3bBear copies came before it. It sits on a self-seeded, fully unlocked PumpSwap pool. Its buyers look bundled or swarmed and their inflow has already stalled. There is no narrative or social presence. The likeliest outcome is that liquidity is pulled within hours. A 2x from entry is possible only if the operator keeps pumping before pulling.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 9415,
+ "type": "result",
+ "duration_ms": 31536,
+ "uuid": "2c9dc4b3-2590-45ae-9f37-8caa774ff390",
+ "ttft_stream_ms": 906,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 906,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

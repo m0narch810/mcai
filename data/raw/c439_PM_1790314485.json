@@ -1,0 +1,139 @@
+{
+ "duration_api_ms": 40529,
+ "stop_reason": "tool_use",
+ "session_id": "af786645-1b67-4992-b45e-8bf5e8682e37",
+ "total_cost_usd": 0.159404,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10512,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 3765,
+  "output_tokens_details": {
+   "thinking_tokens": 1033
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10512,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3765,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 10512,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10512
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3765,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 10512,
+   "webSearchRequests": 0,
+   "costUSD": 0.159404,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1033,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"The main liquidity was in a PumpSwap pair, even though GMGN lists the launchpad as meteora_virtual_curve. GMGN also shows created_unix and migrated_unix as the same second, and the pair was created about 41s later. This looks like a hand-made pool rather than a canonical migration pool, which usually means whoever created it holds the LP.\",\"RugCheck flagged 'Large Amount of LP Unlocked' at danger level and 'Low amount of LP Providers'. One of the top markets showed 0.0% LP locked. This was the most direct structural route to the result: the pair or its liquidity was gone about 22 minutes after the T2 snapshot showed $30.7k.\",\"GMGN reported the creator token status as 'creator_close', meaning the creator had already exited or closed their position.\",\"Only 99 unique sellers against 2,098 unique buyers in h1, alongside a -57% move in 5 minutes. Sell pressure came from a small group of wallets selling against a broad buyer base, which fits insiders or a small group distributing.\",\"Liquidity was thin relative to activity: about $30k of liquidity against about $1.3M of volume in one hour (h1 turnover 43x). A pool that thin is cheap to drain or pull.\",\"At least 10 same-name clones launched within about 45 minutes, and larger ones (zNNX\u2026 at $1.4M mcap / $96k liq, FBcU\u2026 at $1.0M) were absorbing attention. That left little reason for anyone outside to support this pool.\"],\"misleading_observations\":[\"The counterargument's rebound case (back toward the $400k ATH on a sympathy pump) put weight on a past price that is irrelevant once LP control is in doubt.\",\"GMGN's top10_holder_rate of 3.5% and lp_burn_ratio 1.0 contradict RugCheck's unlocked-LP danger flag and its 80% wallet. The report rightly did not trust these, but it also did not resolve the conflict. Most likely GMGN measured a different pool (the Meteora curve), not the PumpSwap pair that was actually trading.\",\"The 80% FhVo\u2026 wallet was framed mainly as whale overhang. It is more likely a pool or vault account. The real risk was who controlled the LP, not holder concentration.\",\"The report read the 2,098-buyer vs 99-seller asymmetry as bot or airdrop-style buying. The more useful reading was concentrated selling. The bot reading was speculation and did not affect the result.\",\"The 'coordinated' authenticity label and the narrative analysis (Rufo's California fraud reporting) had little bearing on a pool that disappeared within 22 minutes.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing available at the time pointed toward a runner. p_runner 5 and strong_fade were consistent with the evidence.\",\"The evidence arguably supported an even higher short-horizon rug or pool-disappearance probability than 68%. Several signals pointed the same way: unlocked LP on a non-canonical PumpSwap pool, 'creator_close', a 57% dump in 5 minutes, and a small seller set. The report also did not call out the launchpad/DEX mismatch (Meteora curve versus PumpSwap main pair) as evidence that one party controlled the LP.\",\"This outcome cannot confirm that 68% was calibrated. 'No pair or no liquidity at T_D' could be a real LP pull or a pair-lookup or data failure. The outcome record does not say which.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"When a token's highest-liquidity pair is on a DEX that does not match its launchpad's canonical migration target, and RugCheck flags that pair's LP as unlocked (danger), the pair will lose most of its liquidity or disappear within 60 minutes of detection far more often than for tokens whose main pool is the canonical migration pool.\",\"conditions\":\"Tokens under 2h old, liquidity under $100k at T2. Measure at T2 using: the GMGN launchpad field versus the dex of the pair; whether the pair creation timestamp matches the migration timestamp; RugCheck lp_locked_pct per market. Outcome: pair liquidity at T_D and T+60m.\",\"market_structure_rationale\":\"A canonical migration burns or locks LP by protocol design. A pool created by hand is funded by one wallet, which keeps the LP tokens and can withdraw them at any time. Thin pools with very high turnover are the ones worth pulling.\"},{\"statement\":\"When h1 unique sellers are under 10% of h1 unique buyers and m5 price change is below -40%, the token will fail +100% before -50% in more than 90% of cases.\",\"conditions\":\"Tokens under 2h old that have already made a peak at least 2x above the current price. Use GeckoTerminal unique buyer and seller counts at T2.\",\"market_structure_rationale\":\"A sharp drop driven by a small number of sellers means large early or insider bags are unwinding into a spread-out retail buyer base. Retail buyers who were just hit by the drop rarely put in fresh money to push the price past the prior peak.\"},{\"statement\":\"Within a cluster of same-name tokens launched within 60 minutes of each other, a token that is not the leader by liquidity at T2 (liquidity under 50% of the cluster leader's) will have a pool-disappearance or -50% outcome rate within 6h above 70%.\",\"conditions\":\"Clusters of 5 or more same-name/same-ticker tokens in the packet's same_ticker list, with each token's liquidity and creation time observed at T2.\",\"market_structure_rationale\":\"Attention and arbitrage flow go to the most liquid token. Deployers of losing clones have every reason to pull LP or dump early, because the leader's liquidity is drawing buyers away from their pool.\"}],\"summary\":\"The report called this a fade: p_runner 5, p_rug 68. At decision time (04:30), about 22 minutes after the T2 snapshot showed about $30.7k of liquidity, the token had no pair or no liquidity. So the trade was unfillable, not a win or a loss. The p_runner call can't be scored, but the result fits the report's main structural warning: unlocked LP on a thin, probably hand-made PumpSwap pool.\\n\\n**What pointed to the result:**\\n- RugCheck's danger flag for unlocked LP, with one market at 0% locked.\\n- A mismatch between the Meteora virtual-curve launchpad and the PumpSwap main pair.\\n- 'creator_close' creator status.\\n- A 57% drop in 5 minutes driven by only 99 unique sellers.\\n- Crowding from larger same-name clones.\\n\\n**What didn't matter or misled:**\\n- The narrative analysis.\\n- The bot-buyer reading of the buyer/seller asymmetry.\\n- Treating the 80% wallet as a whale.\\n- The rebound-toward-ATH counterargument.\\n- GMGN's pool-level metrics (burned LP, low top-10 rate), which contradicted RugCheck and most likely describe a different pool.\\n\\n**Verdict:** The reasoning was sound. If anything, 68% understates the short-horizon rug risk given how many signals pointed the same way.\\n\\n**Why only partly knowable:** The evidence pointed strongly toward LP removal, but the exact timing couldn't be predicted. The outcome record also doesn't say whether this was a real LP pull or a data or pair-lookup failure.\\n\\n**Method note:** Unfillable cases should be logged as rug or disappearance events for calibrating p_rug. Treating them as 'no trade' hides the outcome p_rug is supposed to predict.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "The main liquidity was in a PumpSwap pair, even though GMGN lists the launchpad as meteora_virtual_curve. GMGN also shows created_unix and migrated_unix as the same second, and the pair was created about 41s later. This looks like a hand-made pool rather than a canonical migration pool, which usually means whoever created it holds the LP.",
+   "RugCheck flagged 'Large Amount of LP Unlocked' at danger level and 'Low amount of LP Providers'. One of the top markets showed 0.0% LP locked. This was the most direct structural route to the result: the pair or its liquidity was gone about 22 minutes after the T2 snapshot showed $30.7k.",
+   "GMGN reported the creator token status as 'creator_close', meaning the creator had already exited or closed their position.",
+   "Only 99 unique sellers against 2,098 unique buyers in h1, alongside a -57% move in 5 minutes. Sell pressure came from a small group of wallets selling against a broad buyer base, which fits insiders or a small group distributing.",
+   "Liquidity was thin relative to activity: about $30k of liquidity against about $1.3M of volume in one hour (h1 turnover 43x). A pool that thin is cheap to drain or pull.",
+   "At least 10 same-name clones launched within about 45 minutes, and larger ones (zNNX\u2026 at $1.4M mcap / $96k liq, FBcU\u2026 at $1.0M) were absorbing attention. That left little reason for anyone outside to support this pool."
+  ],
+  "misleading_observations": [
+   "The counterargument's rebound case (back toward the $400k ATH on a sympathy pump) put weight on a past price that is irrelevant once LP control is in doubt.",
+   "GMGN's top10_holder_rate of 3.5% and lp_burn_ratio 1.0 contradict RugCheck's unlocked-LP danger flag and its 80% wallet. The report rightly did not trust these, but it also did not resolve the conflict. Most likely GMGN measured a different pool (the Meteora curve), not the PumpSwap pair that was actually trading.",
+   "The 80% FhVo\u2026 wallet was framed mainly as whale overhang. It is more likely a pool or vault account. The real risk was who controlled the LP, not holder concentration.",
+   "The report read the 2,098-buyer vs 99-seller asymmetry as bot or airdrop-style buying. The more useful reading was concentrated selling. The bot reading was speculation and did not affect the result.",
+   "The 'coordinated' authenticity label and the narrative analysis (Rufo's California fraud reporting) had little bearing on a pool that disappeared within 22 minutes."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing available at the time pointed toward a runner. p_runner 5 and strong_fade were consistent with the evidence.",
+   "The evidence arguably supported an even higher short-horizon rug or pool-disappearance probability than 68%. Several signals pointed the same way: unlocked LP on a non-canonical PumpSwap pool, 'creator_close', a 57% dump in 5 minutes, and a small seller set. The report also did not call out the launchpad/DEX mismatch (Meteora curve versus PumpSwap main pair) as evidence that one party controlled the LP.",
+   "This outcome cannot confirm that 68% was calibrated. 'No pair or no liquidity at T_D' could be a real LP pull or a pair-lookup or data failure. The outcome record does not say which."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "When a token's highest-liquidity pair is on a DEX that does not match its launchpad's canonical migration target, and RugCheck flags that pair's LP as unlocked (danger), the pair will lose most of its liquidity or disappear within 60 minutes of detection far more often than for tokens whose main pool is the canonical migration pool.",
+    "conditions": "Tokens under 2h old, liquidity under $100k at T2. Measure at T2 using: the GMGN launchpad field versus the dex of the pair; whether the pair creation timestamp matches the migration timestamp; RugCheck lp_locked_pct per market. Outcome: pair liquidity at T_D and T+60m.",
+    "market_structure_rationale": "A canonical migration burns or locks LP by protocol design. A pool created by hand is funded by one wallet, which keeps the LP tokens and can withdraw them at any time. Thin pools with very high turnover are the ones worth pulling."
+   },
+   {
+    "statement": "When h1 unique sellers are under 10% of h1 unique buyers and m5 price change is below -40%, the token will fail +100% before -50% in more than 90% of cases.",
+    "conditions": "Tokens under 2h old that have already made a peak at least 2x above the current price. Use GeckoTerminal unique buyer and seller counts at T2.",
+    "market_structure_rationale": "A sharp drop driven by a small number of sellers means large early or insider bags are unwinding into a spread-out retail buyer base. Retail buyers who were just hit by the drop rarely put in fresh money to push the price past the prior peak."
+   },
+   {
+    "statement": "Within a cluster of same-name tokens launched within 60 minutes of each other, a token that is not the leader by liquidity at T2 (liquidity under 50% of the cluster leader's) will have a pool-disappearance or -50% outcome rate within 6h above 70%.",
+    "conditions": "Clusters of 5 or more same-name/same-ticker tokens in the packet's same_ticker list, with each token's liquidity and creation time observed at T2.",
+    "market_structure_rationale": "Attention and arbitrage flow go to the most liquid token. Deployers of losing clones have every reason to pull LP or dump early, because the leader's liquidity is drawing buyers away from their pool."
+   }
+  ],
+  "summary": "The report called this a fade: p_runner 5, p_rug 68. At decision time (04:30), about 22 minutes after the T2 snapshot showed about $30.7k of liquidity, the token had no pair or no liquidity. So the trade was unfillable, not a win or a loss. The p_runner call can't be scored, but the result fits the report's main structural warning: unlocked LP on a thin, probably hand-made PumpSwap pool.\n\n**What pointed to the result:**\n- RugCheck's danger flag for unlocked LP, with one market at 0% locked.\n- A mismatch between the Meteora virtual-curve launchpad and the PumpSwap main pair.\n- 'creator_close' creator status.\n- A 57% drop in 5 minutes driven by only 99 unique sellers.\n- Crowding from larger same-name clones.\n\n**What didn't matter or misled:**\n- The narrative analysis.\n- The bot-buyer reading of the buyer/seller asymmetry.\n- Treating the 80% wallet as a whale.\n- The rebound-toward-ATH counterargument.\n- GMGN's pool-level metrics (burned LP, low top-10 rate), which contradicted RugCheck and most likely describe a different pool.\n\n**Verdict:** The reasoning was sound. If anything, 68% understates the short-horizon rug risk given how many signals pointed the same way.\n\n**Why only partly knowable:** The evidence pointed strongly toward LP removal, but the exact timing couldn't be predicted. The outcome record also doesn't say whether this was a real LP pull or a data or pair-lookup failure.\n\n**Method note:** Unfillable cases should be logged as rug or disappearance events for calibrating p_rug. Treating them as 'no trade' hides the outcome p_rug is supposed to predict."
+ },
+ "ttft_ms": 13341,
+ "type": "result",
+ "duration_ms": 40568,
+ "uuid": "3278bdea-d635-44b8-81fe-540a40f6d8f2",
+ "ttft_stream_ms": 1288,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1288,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

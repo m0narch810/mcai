@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 65971,
+ "stop_reason": "tool_use",
+ "session_id": "4dcef43c-e6c3-4a82-87df-1809e14e19d6",
+ "total_cost_usd": 0.2917498,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14277,
+  "cache_read_input_tokens": 42214,
+  "output_tokens": 3844,
+  "output_tokens_details": {
+   "thinking_tokens": 977
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14277,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2255,
+    "cache_read_input_tokens": 15755,
+    "cache_creation_input_tokens": 1098,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1098
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3844,
+   "cacheReadInputTokens": 42214,
+   "cacheCreationInputTokens": 14277,
+   "webSearchRequests": 0,
+   "costUSD": 0.19957080000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 977,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 43134,
+   "outputTokens": 1809,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.092179,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"\ud83d\udc3bBear\\\" (CH9b\u2026) is a 37-minute-old PumpSwap pool. It was created directly on PumpSwap: GMGN shows migrated_unix=0 and the pool was created 3 seconds after the mint, so it never migrated from a pump.fun bonding curve. The pool holds about 279 SOL and 62% of supply ($65k liquidity against a $52k mcap), and the LP is unlocked (lp_burn_ratio 0, and RugCheck flags 'Large Amount of LP Unlocked'). Price is up 139% in the hour on $266k volume. GeckoTerminal counts 1,123 unique buyers but only 114 unique sellers, which looks like bot-driven small buys. The packet lists six other tokens with the identical '\ud83d\udc3bBear' symbol and name, all created in the previous ~75 minutes, and all now show $0 liquidity. One of them (9ps7\u2026, also on PumpSwap) had 1,788 buys and is now drained to ~0 liquidity per DexScreener. This looks like a serial LP-pull farm: a pool is launched with dev-owned LP, bot buys paint the chart, then the SOL is pulled. I found no organic narrative, socials, website or discussion.\",\"narrative\":{\"description\":\"Generic bear emoji/name. I found no current event, meme or community tied to this token. The name has been reused on at least six other tokens in the last ~75 minutes, all of them now dead.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"Volume appears to be manufactured (1,123 buyers vs 114 sellers, no socials, one GMGN page visit). I found no evidence of organic attention.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"It is simply the latest instance in a sequence of identical '\ud83d\udc3bBear' launches. Nothing makes it canonical.\",\"competing_tokens\":\"Six same-name, same-symbol tokens (6KTX\u2026, C45f\u2026, 9ps7\u2026, DjW4\u2026, J3BH\u2026, 4znS\u2026) created between 07:00 and 07:47 UTC, all at $0 liquidity now. 9ps7\u2026 is confirmed drained on DexScreener after ~1.8k buys.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Repeated identical launches that all went to zero liquidity. Pool created directly with dev-owned, unlocked LP (not a pump.fun migration). Buyer/seller asymmetry of 1,123 vs 114. GMGN tags 24 bundler wallets, and one wallet holds 10.55%. No socials, no DexScreener profile, gmgn_page_visits=1, and the creator status is 'creator_close'.\",\"uncertainty\":\"I could not verify on-chain who owns the LP tokens, or whether the same deployer is behind the sibling tokens (their creators were not listed).\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 100% unlocked and owned by the pool creator, so about 279 SOL can be pulled at any moment\",\"Six same-name siblings already at $0 liquidity in the past 75 minutes\",\"24 bundler wallets, and a single holder with 10.55%\",\"Likely bot-inflated buy counts\"]},\"counterargument\":\"Liquidity is large relative to mcap, so a genuine 2x only needs about $50k more in net buys. The +139% hour and a 267/241 buy/sell split in the last 5 minutes show active trading. If the operator lets it run to farm more buyers before pulling, price could spike 2x within the window. Also, the sibling liquidity readings of $0 could partly reflect migrations or indexing quirks rather than pulls.\",\"unknowns\":[\"Who holds the LP tokens, and whether they have already been partly removed\",\"Whether the sibling tokens share this deployer or funding source\",\"Any private Telegram call-group activity\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searching the contract returned only irrelevant results. The X search found only unrelated older $BEAR tokens. DexScreener API checked for this token and for sibling 9ps7\u2026 (drained). No project site or socials exist in the packet or on DexScreener.\"},\"thesis\":\"This looks like a serial PumpSwap LP-pull farm. The name is reused on six other tokens that are already dead, the dev owns the unlocked LP, the buying looks bot-driven, and there is no narrative. Rug is very likely within 6 hours, and a clean 2x before it is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":88,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/CH9bLLTwkXqGJt4V4r46EfrWhLDDzFGqoegwLpTcEUMM\",\"what\":\"Pool data: 279 SOL and 620M tokens in the PumpSwap pool, no socials, +139% in 1h\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/9ps7a3y62xqzUhh1iFPJ2kmgrLEVWxBhsApVGLkkyrQg\",\"what\":\"Same-name sibling on PumpSwap drained to ~$0 liquidity after 1,788 buys\"},{\"url\":\"https://x.com/Solanavipcall/status/2052800903250673799\",\"what\":\"Unrelated older $Bear call. Shows the ticker is reused and promoted by call channels\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"\ud83d\udc3bBear\" (CH9b\u2026) is a 37-minute-old PumpSwap pool. It was created directly on PumpSwap: GMGN shows migrated_unix=0 and the pool was created 3 seconds after the mint, so it never migrated from a pump.fun bonding curve. The pool holds about 279 SOL and 62% of supply ($65k liquidity against a $52k mcap), and the LP is unlocked (lp_burn_ratio 0, and RugCheck flags 'Large Amount of LP Unlocked'). Price is up 139% in the hour on $266k volume. GeckoTerminal counts 1,123 unique buyers but only 114 unique sellers, which looks like bot-driven small buys. The packet lists six other tokens with the identical '\ud83d\udc3bBear' symbol and name, all created in the previous ~75 minutes, and all now show $0 liquidity. One of them (9ps7\u2026, also on PumpSwap) had 1,788 buys and is now drained to ~0 liquidity per DexScreener. This looks like a serial LP-pull farm: a pool is launched with dev-owned LP, bot buys paint the chart, then the SOL is pulled. I found no organic narrative, socials, website or discussion.",
+  "narrative": {
+   "description": "Generic bear emoji/name. I found no current event, meme or community tied to this token. The name has been reused on at least six other tokens in the last ~75 minutes, all of them now dead.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "Volume appears to be manufactured (1,123 buyers vs 114 sellers, no socials, one GMGN page visit). I found no evidence of organic attention."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "It is simply the latest instance in a sequence of identical '\ud83d\udc3bBear' launches. Nothing makes it canonical.",
+   "competing_tokens": "Six same-name, same-symbol tokens (6KTX\u2026, C45f\u2026, 9ps7\u2026, DjW4\u2026, J3BH\u2026, 4znS\u2026) created between 07:00 and 07:47 UTC, all at $0 liquidity now. 9ps7\u2026 is confirmed drained on DexScreener after ~1.8k buys.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Repeated identical launches that all went to zero liquidity. Pool created directly with dev-owned, unlocked LP (not a pump.fun migration). Buyer/seller asymmetry of 1,123 vs 114. GMGN tags 24 bundler wallets, and one wallet holds 10.55%. No socials, no DexScreener profile, gmgn_page_visits=1, and the creator status is 'creator_close'.",
+   "uncertainty": "I could not verify on-chain who owns the LP tokens, or whether the same deployer is behind the sibling tokens (their creators were not listed)."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 100% unlocked and owned by the pool creator, so about 279 SOL can be pulled at any moment",
+    "Six same-name siblings already at $0 liquidity in the past 75 minutes",
+    "24 bundler wallets, and a single holder with 10.55%",
+    "Likely bot-inflated buy counts"
+   ]
+  },
+  "counterargument": "Liquidity is large relative to mcap, so a genuine 2x only needs about $50k more in net buys. The +139% hour and a 267/241 buy/sell split in the last 5 minutes show active trading. If the operator lets it run to farm more buyers before pulling, price could spike 2x within the window. Also, the sibling liquidity readings of $0 could partly reflect migrations or indexing quirks rather than pulls.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether they have already been partly removed",
+   "Whether the sibling tokens share this deployer or funding source",
+   "Any private Telegram call-group activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searching the contract returned only irrelevant results. The X search found only unrelated older $BEAR tokens. DexScreener API checked for this token and for sibling 9ps7\u2026 (drained). No project site or socials exist in the packet or on DexScreener."
+  },
+  "thesis": "This looks like a serial PumpSwap LP-pull farm. The name is reused on six other tokens that are already dead, the dev owns the unlocked LP, the buying looks bot-driven, and there is no narrative. Rug is very likely within 6 hours, and a clean 2x before it is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 88,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/CH9bLLTwkXqGJt4V4r46EfrWhLDDzFGqoegwLpTcEUMM",
+    "what": "Pool data: 279 SOL and 620M tokens in the PumpSwap pool, no socials, +139% in 1h"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/9ps7a3y62xqzUhh1iFPJ2kmgrLEVWxBhsApVGLkkyrQg",
+    "what": "Same-name sibling on PumpSwap drained to ~$0 liquidity after 1,788 buys"
+   },
+   {
+    "url": "https://x.com/Solanavipcall/status/2052800903250673799",
+    "what": "Unrelated older $Bear call. Shows the ticker is reused and promoted by call channels"
+   }
+  ]
+ },
+ "ttft_ms": 3413,
+ "type": "result",
+ "duration_ms": 55131,
+ "uuid": "7f0f6ed2-0afd-4dca-9688-155a5d3772db",
+ "ttft_stream_ms": 782,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 782,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

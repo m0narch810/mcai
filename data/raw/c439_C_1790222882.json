@@ -1,0 +1,187 @@
+{
+ "duration_api_ms": 86929,
+ "stop_reason": "tool_use",
+ "session_id": "3f178b47-2dda-4d33-9fe9-33703c859e68",
+ "total_cost_usd": 0.4071846,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 18454,
+  "cache_read_input_tokens": 62553,
+  "output_tokens": 4406,
+  "output_tokens_details": {
+   "thinking_tokens": 836
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18454,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2772,
+    "cache_read_input_tokens": 18226,
+    "cache_creation_input_tokens": 2804,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2804
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4406,
+   "cacheReadInputTokens": 62553,
+   "cacheCreationInputTokens": 18454,
+   "webSearchRequests": 0,
+   "costUSD": 0.24830260000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 836,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 75927,
+   "outputTokens": 2591,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.158882,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A cluster of at least 10 \\\"Christopher Rufo\\\" / $Rufo tokens launched on Solana within about 45 minutes of each other (see the packet's same_ticker list). The trigger is probably a Rufo post or story on X that I could not see. Rufo is currently publishing on California health-care and welfare billing fraud (https://en.wikipedia.org/wiki/Christopher_Rufo, https://www.theblaze.com/tag/christopher-rufo), and one of the clones is named \\\"California's Shadow Welfare\\\". This token (DB913\u2026) is one of the clones. It launched on a Meteora virtual curve and migrated at creation, and its main liquidity sits on a PumpSwap pair. It peaked about 36 minutes after launch (ATH $0.000398, roughly $400k mcap) and then fell about 57% in 5 minutes to about $98k (https://api.dexscreener.com/latest/dex/tokens/DB913SjQ2JXvChFv5RoHJpDCbW2YXu82gRDYZYfaWoq1). Meanwhile the leading same-name token, zNNX\u2026, launched 26 seconds later, is at about $1.13M mcap with $86k liquidity and is still rising (https://api.dexscreener.com/latest/dex/tokens/zNNXka85hxrK6uPyFYEVSWnmh8wqSAcHT2LfGCMz53A).\",\"narrative\":{\"description\":\"The story is Christopher Rufo, the conservative activist, who is currently in the news cycle with California welfare and billing-fraud reporting. The specific trigger event (probably an X post) was not found.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Rapid clone launches suggest bots or snipers reacting to a Rufo-related X moment. Rufo is a political commentator with no known link to crypto, so the narrative is a short-lived name-meme.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is one of about 10 identical 'Christopher Rufo' tickers. It has no socials or website of its own. The X link points to someone else's status on a renamed account (Bootstrapdev1, formerly Pumpliquititty), and the website is a usepaid.app referral link.\",\"competing_tokens\":\"zNNX\u2026 ($1.13M mcap, $86k liq, still rising) is clearly the one people mean. FBcU\u2026 is at about $1.0M. 6TcF\u2026 and 3r58\u2026 are smaller clones with high volume. The rest are dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal shows 2,098 unique buyers against only 99 unique sellers in h1, and 723 unique buyers in the 30-minute window against 76 in 15 minutes. That burst of tiny buyers fits bot or airdrop-style volume. GMGN flags 51 bundler wallets. The project X account has a rename history (Pumpliquititty \u2192 Bootstrapdev1). There are no organic social mentions of this contract.\",\"uncertainty\":\"No X data was available, and I could not see any private Telegram call channels.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"RugCheck shows one unlabeled wallet (FhVo\u2026) holding 80% of supply. It might be a pool vault, but I could not verify that; if it is a real holder, the overhang is enormous.\",\"RugCheck flags 'Large Amount of LP Unlocked' (danger) and few LP providers.\",\"Price fell 57% in the last 5 minutes after a 36-minute peak, and sells now outnumber buys.\",\"Liquidity of about $30k sits against about $1.3M of volume in one hour, so turnover is extreme.\",\"The creator's token status is 'creator_close'.\",\"A dominant same-name competitor is 11x larger and is absorbing the flow.\"]},\"counterargument\":\"Rufo clones are all moving, so if the underlying story escalates, a sympathy pump could send even a secondary clone from its post-dump low back toward its $400k ATH. That would be more than a 2x from $100k. GMGN's top10 rate of 3.5% suggests the 80% wallet may actually be a pool account rather than a whale. With 2,000 holders and high volume, a volatile rebound is not impossible.\",\"unknowns\":[\"What exactly triggered the Rufo token wave (an X post?)\",\"Whether the FhVo\u2026 wallet holding 80% is a pool vault or a real holder\",\"Whether anyone controls the unlocked PumpSwap LP\",\"Whether any call channels are pushing this specific contract\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"The contract-address search returned nothing. X status fetch returned HTTP 402. The usepaid.app link failed with an SSL error. News only confirms that Rufo is active on California fraud reporting; I found no crypto link. Discord was not searched: the packet lists no Discord link and none turned up in other searches.\"},\"thesis\":\"This is a non-canonical clone in a crowded name-meme cluster. It has already peaked about 4x above the current price and is dumping 57% in 5 minutes. A far larger same-name token is taking the attention. Structure looks bot- and bundler-driven, with unlocked LP and an unverified 80% holder. Doubling from here before halving is unlikely; a fade, a death, or an LP pull is likely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/DB913SjQ2JXvChFv5RoHJpDCbW2YXu82gRDYZYfaWoq1\",\"what\":\"This token's pairs: price -58% in 5 minutes, $30k liquidity, no socials\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/zNNXka85hxrK6uPyFYEVSWnmh8wqSAcHT2LfGCMz53A\",\"what\":\"Dominant competing Rufo token at $1.13M mcap, still rising\"},{\"url\":\"https://en.wikipedia.org/wiki/Christopher_Rufo\",\"what\":\"Who Christopher Rufo is and his recent reporting\"},{\"url\":\"https://www.theblaze.com/tag/christopher-rufo\",\"what\":\"Rufo's current news activity\"},{\"url\":\"https://x.com/Bootstrapdev1/status/2102954655818895768\",\"what\":\"Linked X status; the fetch returned HTTP 402\"}]}",
+ "structured_output": {
+  "what_is_happening": "A cluster of at least 10 \"Christopher Rufo\" / $Rufo tokens launched on Solana within about 45 minutes of each other (see the packet's same_ticker list). The trigger is probably a Rufo post or story on X that I could not see. Rufo is currently publishing on California health-care and welfare billing fraud (https://en.wikipedia.org/wiki/Christopher_Rufo, https://www.theblaze.com/tag/christopher-rufo), and one of the clones is named \"California's Shadow Welfare\". This token (DB913\u2026) is one of the clones. It launched on a Meteora virtual curve and migrated at creation, and its main liquidity sits on a PumpSwap pair. It peaked about 36 minutes after launch (ATH $0.000398, roughly $400k mcap) and then fell about 57% in 5 minutes to about $98k (https://api.dexscreener.com/latest/dex/tokens/DB913SjQ2JXvChFv5RoHJpDCbW2YXu82gRDYZYfaWoq1). Meanwhile the leading same-name token, zNNX\u2026, launched 26 seconds later, is at about $1.13M mcap with $86k liquidity and is still rising (https://api.dexscreener.com/latest/dex/tokens/zNNXka85hxrK6uPyFYEVSWnmh8wqSAcHT2LfGCMz53A).",
+  "narrative": {
+   "description": "The story is Christopher Rufo, the conservative activist, who is currently in the news cycle with California welfare and billing-fraud reporting. The specific trigger event (probably an X post) was not found.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Rapid clone launches suggest bots or snipers reacting to a Rufo-related X moment. Rufo is a political commentator with no known link to crypto, so the narrative is a short-lived name-meme."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is one of about 10 identical 'Christopher Rufo' tickers. It has no socials or website of its own. The X link points to someone else's status on a renamed account (Bootstrapdev1, formerly Pumpliquititty), and the website is a usepaid.app referral link.",
+   "competing_tokens": "zNNX\u2026 ($1.13M mcap, $86k liq, still rising) is clearly the one people mean. FBcU\u2026 is at about $1.0M. 6TcF\u2026 and 3r58\u2026 are smaller clones with high volume. The rest are dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal shows 2,098 unique buyers against only 99 unique sellers in h1, and 723 unique buyers in the 30-minute window against 76 in 15 minutes. That burst of tiny buyers fits bot or airdrop-style volume. GMGN flags 51 bundler wallets. The project X account has a rename history (Pumpliquititty \u2192 Bootstrapdev1). There are no organic social mentions of this contract.",
+   "uncertainty": "No X data was available, and I could not see any private Telegram call channels."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "RugCheck shows one unlabeled wallet (FhVo\u2026) holding 80% of supply. It might be a pool vault, but I could not verify that; if it is a real holder, the overhang is enormous.",
+    "RugCheck flags 'Large Amount of LP Unlocked' (danger) and few LP providers.",
+    "Price fell 57% in the last 5 minutes after a 36-minute peak, and sells now outnumber buys.",
+    "Liquidity of about $30k sits against about $1.3M of volume in one hour, so turnover is extreme.",
+    "The creator's token status is 'creator_close'.",
+    "A dominant same-name competitor is 11x larger and is absorbing the flow."
+   ]
+  },
+  "counterargument": "Rufo clones are all moving, so if the underlying story escalates, a sympathy pump could send even a secondary clone from its post-dump low back toward its $400k ATH. That would be more than a 2x from $100k. GMGN's top10 rate of 3.5% suggests the 80% wallet may actually be a pool account rather than a whale. With 2,000 holders and high volume, a volatile rebound is not impossible.",
+  "unknowns": [
+   "What exactly triggered the Rufo token wave (an X post?)",
+   "Whether the FhVo\u2026 wallet holding 80% is a pool vault or a real holder",
+   "Whether anyone controls the unlocked PumpSwap LP",
+   "Whether any call channels are pushing this specific contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "The contract-address search returned nothing. X status fetch returned HTTP 402. The usepaid.app link failed with an SSL error. News only confirms that Rufo is active on California fraud reporting; I found no crypto link. Discord was not searched: the packet lists no Discord link and none turned up in other searches."
+  },
+  "thesis": "This is a non-canonical clone in a crowded name-meme cluster. It has already peaked about 4x above the current price and is dumping 57% in 5 minutes. A far larger same-name token is taking the attention. Structure looks bot- and bundler-driven, with unlocked LP and an unverified 80% holder. Doubling from here before halving is unlikely; a fade, a death, or an LP pull is likely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/DB913SjQ2JXvChFv5RoHJpDCbW2YXu82gRDYZYfaWoq1",
+    "what": "This token's pairs: price -58% in 5 minutes, $30k liquidity, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/zNNXka85hxrK6uPyFYEVSWnmh8wqSAcHT2LfGCMz53A",
+    "what": "Dominant competing Rufo token at $1.13M mcap, still rising"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Christopher_Rufo",
+    "what": "Who Christopher Rufo is and his recent reporting"
+   },
+   {
+    "url": "https://www.theblaze.com/tag/christopher-rufo",
+    "what": "Rufo's current news activity"
+   },
+   {
+    "url": "https://x.com/Bootstrapdev1/status/2102954655818895768",
+    "what": "Linked X status; the fetch returned HTTP 402"
+   }
+  ]
+ },
+ "ttft_ms": 2778,
+ "type": "result",
+ "duration_ms": 62509,
+ "uuid": "7f474f64-3051-4c85-b5b7-d02654cc438b",
+ "ttft_stream_ms": 913,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 913,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

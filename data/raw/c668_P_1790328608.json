@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 29656,
+ "stop_reason": "tool_use",
+ "session_id": "fa75e298-5524-4dcd-9667-6165fbd89ad1",
+ "total_cost_usd": 0.12157480000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7825,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2929,
+  "output_tokens_details": {
+   "thinking_tokens": 649
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7825,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2929,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7825,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7825
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2929,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7825,
+   "webSearchRequests": 0,
+   "costUSD": 0.12157480000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 649,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 37-minute-old token named \\\"TikTok US\\\" ($TIKTOK) trades in a PumpSwap pool the deployer seeded directly (migrated_unix=0, no launchpad, bonding_curve=false). It is a copy of a template: 10 earlier \\\"TikTok US\\\" tokens appear in the packet, all with ~$0.05 liquidity. The image has 5,136 duplicates, and the linked X handle @tiktok_us is tied to 6,766 launched tokens. The description falsely says \\\"Created on tiktok.com\\\". In its first hour: $3.6M volume on a $96k market cap (25x turnover), price +100% and near its all-time high, 1,633 unique buyers against only 62 unique sellers, 49 bundler wallets, and bundlers holding 20% of top-trader share. Liquidity ($144k) is larger than the market cap, and 0% of the LP is locked or burned.\",\"narrative\":{\"description\":\"Name-only use of TikTok US / TikTok divestiture headlines. There is no website or socials other than borrowed tiktok.com and @tiktok_us links, which look impersonated or farmed. It is a generic template relaunched thousands of times.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks made by bots, not spread by people: thousands of buy transactions from many wallets with almost no distinct sellers, typical of volume-bot or bundled-buyer setups meant to reach trending lists. There is no evidence of real news or community driving it.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the current live copy of a repeatedly deployed 'TikTok US' template. Its only claim to the name is that it is the one being pumped right now.\",\"competing_tokens\":\"At least 10 earlier TIKTOK / 'TikTok US' tokens with identical names and dead liquidity (paper market caps of $2M-$191M on about $0.05 liquidity). This points to a factory that repeats the same launch-and-pull cycle.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"62 unique sellers against 1,633 unique buyers and 6.4k transactions. 49 bundler wallets, with bundlers at 20% of top-trader share. $3.6M volume on a $96k market cap in 37 minutes. Image duplicated 5,136 times, and the X account is linked to 6,766 token launches. No smart-money or KOL wallets, and only 5 GMGN page visits despite millions in volume, so almost nobody is actually watching.\",\"uncertainty\":\"GMGN labels could be wrong. Without X data I can't rule out real retail FOMO from a TikTok-related headline.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of LP locked or burned on a deployer-seeded PumpSwap pool; the $144k can be pulled at any moment\",\"Serial deployer template with a record of dead same-name pools\",\"Liquidity larger than market cap, so doubling needs heavy real buying\",\"Volume looks wash- or bot-driven; there are few real sellers, so exits depend on the pool staying in place\",\"Only 5 GMGN page visits despite millions in volume, so almost nobody is watching\",\"Creator's best previous all-time-high market cap was only about $107k\"]},\"counterargument\":\"The price has already doubled with thousands of buy transactions and many unique buyers. The top-10 holders (excluding the pool) hold only 12.7%, the dev holds almost nothing, and mint and freeze authority are renounced. If the bot volume puts it on DexScreener or GMGN trending lists and a real TikTok headline is circulating, real buyers could push it from about $96k past $193k within hours. Deep liquidity also means a slower, more orderly climb instead of an instant crash.\",\"unknowns\":[\"Who controls the LP tokens and when they will pull\",\"Whether there is a real TikTok US news catalyst today\",\"Whether the buyers are real retail or bot wallets\",\"Price at the 25-minute entry point\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the evidence packet only.\"},\"thesis\":\"This is a serial-deployer 'TikTok US' template with unlocked LP, bot- or bundler-inflated volume and a very lopsided buyer/seller count. The earlier copies in the packet all have dead pools. A liquidity pull within 6 hours is more likely than a further 2x from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":65,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 37-minute-old token named \"TikTok US\" ($TIKTOK) trades in a PumpSwap pool the deployer seeded directly (migrated_unix=0, no launchpad, bonding_curve=false). It is a copy of a template: 10 earlier \"TikTok US\" tokens appear in the packet, all with ~$0.05 liquidity. The image has 5,136 duplicates, and the linked X handle @tiktok_us is tied to 6,766 launched tokens. The description falsely says \"Created on tiktok.com\". In its first hour: $3.6M volume on a $96k market cap (25x turnover), price +100% and near its all-time high, 1,633 unique buyers against only 62 unique sellers, 49 bundler wallets, and bundlers holding 20% of top-trader share. Liquidity ($144k) is larger than the market cap, and 0% of the LP is locked or burned.",
+  "narrative": {
+   "description": "Name-only use of TikTok US / TikTok divestiture headlines. There is no website or socials other than borrowed tiktok.com and @tiktok_us links, which look impersonated or farmed. It is a generic template relaunched thousands of times.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity looks made by bots, not spread by people: thousands of buy transactions from many wallets with almost no distinct sellers, typical of volume-bot or bundled-buyer setups meant to reach trending lists. There is no evidence of real news or community driving it."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the current live copy of a repeatedly deployed 'TikTok US' template. Its only claim to the name is that it is the one being pumped right now.",
+   "competing_tokens": "At least 10 earlier TIKTOK / 'TikTok US' tokens with identical names and dead liquidity (paper market caps of $2M-$191M on about $0.05 liquidity). This points to a factory that repeats the same launch-and-pull cycle.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "62 unique sellers against 1,633 unique buyers and 6.4k transactions. 49 bundler wallets, with bundlers at 20% of top-trader share. $3.6M volume on a $96k market cap in 37 minutes. Image duplicated 5,136 times, and the X account is linked to 6,766 token launches. No smart-money or KOL wallets, and only 5 GMGN page visits despite millions in volume, so almost nobody is actually watching.",
+   "uncertainty": "GMGN labels could be wrong. Without X data I can't rule out real retail FOMO from a TikTok-related headline."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of LP locked or burned on a deployer-seeded PumpSwap pool; the $144k can be pulled at any moment",
+    "Serial deployer template with a record of dead same-name pools",
+    "Liquidity larger than market cap, so doubling needs heavy real buying",
+    "Volume looks wash- or bot-driven; there are few real sellers, so exits depend on the pool staying in place",
+    "Only 5 GMGN page visits despite millions in volume, so almost nobody is watching",
+    "Creator's best previous all-time-high market cap was only about $107k"
+   ]
+  },
+  "counterargument": "The price has already doubled with thousands of buy transactions and many unique buyers. The top-10 holders (excluding the pool) hold only 12.7%, the dev holds almost nothing, and mint and freeze authority are renounced. If the bot volume puts it on DexScreener or GMGN trending lists and a real TikTok headline is circulating, real buyers could push it from about $96k past $193k within hours. Deep liquidity also means a slower, more orderly climb instead of an instant crash.",
+  "unknowns": [
+   "Who controls the LP tokens and when they will pull",
+   "Whether there is a real TikTok US news catalyst today",
+   "Whether the buyers are real retail or bot wallets",
+   "Price at the 25-minute entry point"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the evidence packet only."
+  },
+  "thesis": "This is a serial-deployer 'TikTok US' template with unlocked LP, bot- or bundler-inflated volume and a very lopsided buyer/seller count. The earlier copies in the packet all have dead pools. A liquidity pull within 6 hours is more likely than a further 2x from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 65,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7869,
+ "type": "result",
+ "duration_ms": 29705,
+ "uuid": "19069e84-ff96-4e43-bdce-334505aed6d3",
+ "ttft_stream_ms": 860,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 860,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

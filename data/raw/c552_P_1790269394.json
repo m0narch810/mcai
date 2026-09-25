@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 24012,
+ "stop_reason": "tool_use",
+ "session_id": "21505d54-cc76-411e-a9c4-e79fef5a1cbd",
+ "total_cost_usd": 0.1089148,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7515,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2420,
+  "output_tokens_details": {
+   "thinking_tokens": 473
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7515,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2420,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7515,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7515
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2420,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7515,
+   "webSearchRequests": 0,
+   "costUSD": 0.1089148,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 473,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A panda news meme ('Ping Ping and Fu Shuang', tweeted by a China news account) has set off a cluster of same-ticker PEACEPANDA launches. This one, 'Ping Ping and Fuhuan' (misspelled compared with the others), went through a Meteora virtual curve that was created and migrated in the same second, onto PumpSwap. It rose about 400% in its first 37 minutes on roughly $1.25M of volume (turnover of about 25x liquidity). By detection it was already in a clear dump: down 33\u201343% in 5 minutes, down 48% over 30 minutes, and about 60% below its all-time high. New-buyer inflow has collapsed: 507 unique buyers over 30 minutes but only 45\u201350 in the last 5\u201315 minutes. Only 74 unique sellers account for about 3,000 sells, so a small group is distributing into retail.\",\"narrative\":{\"description\":\"A cute-animal / China panda news meme: pandas Ping Ping and Fu Shuang, linked to a chinanow24 X post. Panda memes can draw attention, but this one is a single news tweet with no project socials, no DexScreener profile and a hastily made netlify site.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"A news-driven ticker rush. At least 8 copycat tokens launched within about 70 minutes, which points to deployer farming of a headline rather than organic community formation.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most liquidity ($45k) of the PEACEPANDA cluster and the highest market cap. Most copycats are already drained to under $50 liquidity.\",\"competing_tokens\":\"There are 7 other PEACEPANDA tokens, all named 'Ping Ping and Fu Shuang' and several launched earlier. One (ECBa...) did $1.5M of volume in the last hour and now has $17 liquidity, which is a textbook rug pattern in this same cluster.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 43 bundler wallets and RugCheck finds a 20-wallet insider trade network. Buyers are highly asymmetric: 1,877 unique buyers against 74 unique sellers. Many small buys sold into by a few wallets suggests bot or airdrop-style buy flow with concentrated distribution. The creator status is 'creator_close', and a same-named token in the cluster was rugged after $1.5M of volume. No paid boosts.\",\"uncertainty\":\"The 80% unlabeled top holder may be a Meteora pool or locker account rather than a wallet, since GMGN's top10 rate is only 6.6%. Bundlers may just be ordinary launch snipers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"RugCheck flags a large amount of unlocked LP ('danger'), and one top market shows 0% LP locked\",\"One unlabeled account holds 80% of supply (possibly a pool, but unverified)\",\"A 20-wallet insider network and 43 bundlers\",\"Price is already about 60% below ATH, with steep 5- and 30-minute declines\",\"New buyer inflow has collapsed (about 45 unique buyers in the last 5 minutes)\",\"Clones in the same cluster have already been drained to near-zero liquidity\"]},\"counterargument\":\"It is the leading PEACEPANDA survivor, with $45k liquidity and around 1,900 holders. GMGN reports LP burn ratio 1.0 and top10 at just 6.6%. If the panda story picks up wider CT or Chinese-community attention, this could be the consolidation winner and bounce hard from a 60% drawdown. Doubling from about $230k back to the $565k ATH is not implausible for a news meme that keeps its volume.\",\"unknowns\":[\"What the 80% top-holder account actually is\",\"Whether the LP is actually burned (GMGN) or unlocked (RugCheck)\",\"How big the panda news story is beyond a single tweet\",\"Price at the 25-minute entry point\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses only the packet.\"},\"thesis\":\"This is a copycat launch in a farmed news-ticker cluster, detected after its pump peaked and while distribution was underway: buyer inflow has collapsed, a few sellers are dumping, bundlers and an insider network are present, and the LP-unlocked flag conflicts with GMGN's data. The more likely paths are further bleeding or a liquidity pull, not a 2x from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":55,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A panda news meme ('Ping Ping and Fu Shuang', tweeted by a China news account) has set off a cluster of same-ticker PEACEPANDA launches. This one, 'Ping Ping and Fuhuan' (misspelled compared with the others), went through a Meteora virtual curve that was created and migrated in the same second, onto PumpSwap. It rose about 400% in its first 37 minutes on roughly $1.25M of volume (turnover of about 25x liquidity). By detection it was already in a clear dump: down 33\u201343% in 5 minutes, down 48% over 30 minutes, and about 60% below its all-time high. New-buyer inflow has collapsed: 507 unique buyers over 30 minutes but only 45\u201350 in the last 5\u201315 minutes. Only 74 unique sellers account for about 3,000 sells, so a small group is distributing into retail.",
+  "narrative": {
+   "description": "A cute-animal / China panda news meme: pandas Ping Ping and Fu Shuang, linked to a chinanow24 X post. Panda memes can draw attention, but this one is a single news tweet with no project socials, no DexScreener profile and a hastily made netlify site.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "A news-driven ticker rush. At least 8 copycat tokens launched within about 70 minutes, which points to deployer farming of a headline rather than organic community formation."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most liquidity ($45k) of the PEACEPANDA cluster and the highest market cap. Most copycats are already drained to under $50 liquidity.",
+   "competing_tokens": "There are 7 other PEACEPANDA tokens, all named 'Ping Ping and Fu Shuang' and several launched earlier. One (ECBa...) did $1.5M of volume in the last hour and now has $17 liquidity, which is a textbook rug pattern in this same cluster.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 43 bundler wallets and RugCheck finds a 20-wallet insider trade network. Buyers are highly asymmetric: 1,877 unique buyers against 74 unique sellers. Many small buys sold into by a few wallets suggests bot or airdrop-style buy flow with concentrated distribution. The creator status is 'creator_close', and a same-named token in the cluster was rugged after $1.5M of volume. No paid boosts.",
+   "uncertainty": "The 80% unlabeled top holder may be a Meteora pool or locker account rather than a wallet, since GMGN's top10 rate is only 6.6%. Bundlers may just be ordinary launch snipers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "RugCheck flags a large amount of unlocked LP ('danger'), and one top market shows 0% LP locked",
+    "One unlabeled account holds 80% of supply (possibly a pool, but unverified)",
+    "A 20-wallet insider network and 43 bundlers",
+    "Price is already about 60% below ATH, with steep 5- and 30-minute declines",
+    "New buyer inflow has collapsed (about 45 unique buyers in the last 5 minutes)",
+    "Clones in the same cluster have already been drained to near-zero liquidity"
+   ]
+  },
+  "counterargument": "It is the leading PEACEPANDA survivor, with $45k liquidity and around 1,900 holders. GMGN reports LP burn ratio 1.0 and top10 at just 6.6%. If the panda story picks up wider CT or Chinese-community attention, this could be the consolidation winner and bounce hard from a 60% drawdown. Doubling from about $230k back to the $565k ATH is not implausible for a news meme that keeps its volume.",
+  "unknowns": [
+   "What the 80% top-holder account actually is",
+   "Whether the LP is actually burned (GMGN) or unlocked (RugCheck)",
+   "How big the panda news story is beyond a single tweet",
+   "Price at the 25-minute entry point"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses only the packet."
+  },
+  "thesis": "This is a copycat launch in a farmed news-ticker cluster, detected after its pump peaked and while distribution was underway: buyer inflow has collapsed, a few sellers are dumping, bundlers and an insider network are present, and the LP-unlocked flag conflicts with GMGN's data. The more likely paths are further bleeding or a liquidity pull, not a 2x from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 55,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5724,
+ "type": "result",
+ "duration_ms": 24060,
+ "uuid": "84a9c3f7-ca23-4322-9766-71366ccecc0c",
+ "ttft_stream_ms": 740,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 740,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

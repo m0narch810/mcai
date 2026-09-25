@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 43397,
+ "stop_reason": "tool_use",
+ "session_id": "8d1d81d2-0931-4929-8bb3-03e535216a84",
+ "total_cost_usd": 0.22322979999999998,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12461,
+  "cache_read_input_tokens": 27174,
+  "output_tokens": 2656,
+  "output_tokens_details": {
+   "thinking_tokens": 244
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12461,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2251,
+    "cache_read_input_tokens": 13677,
+    "cache_creation_input_tokens": 1360,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1360
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2656,
+   "cacheReadInputTokens": 27174,
+   "cacheCreationInputTokens": 12461,
+   "webSearchRequests": 0,
+   "costUSD": 0.15826679999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 244,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 28403,
+   "outputTokens": 1312,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06496299999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is not a memecoin. It is Backpack Securities' tokenized Alibaba share (BABA) on Solana. The token trades at $111.65, which matches the Alibaba ADR price of about $110.80 (https://www.benzinga.com/markets/tech/26/09/61942069/alibaba-takes-on-amazon-google-with-aggressive-overseas-cloud-expansion). The packet shows the creator was funded from 'Backpack 2', GeckoTerminal lists the Twitter handle as 'Backpack', and the description is Backpack's RWA wording. The rule fired on a volume spike during US market hours (17:15 UTC is 1:15pm ET). Price moved only about \u00b10.5% over every window. This looks like normal stock arbitrage and repricing flow, perhaps after Alibaba's news about expanding its cloud business overseas. It is not speculative memecoin attention. The 'market cap' is simply the on-chain supply times the share price. Backpack uses a supply model where tokens are created and redeemed against real shares (https://cryptobriefing.com/backpack-tokenized-equities-dynamic-supply/).\",\"narrative\":{\"description\":\"Tokenized stocks on Solana (Backpack Securities) as a real-world asset (RWA). The story is real and growing: Backpack has about 73% of Solana's DEX volume in tokenized stocks (https://www.kucoin.com/news/flash/backpack-gains-73-of-solana-tokenized-stock-dex-volume-despite-5-supply-share). But the token's price is tied to Alibaba's share price, so no story can make it double.\",\"stage\":\"unclear\",\"potential\":\"none\",\"why_spreading\":\"Volume comes from stock-market hours and arbitrage between the token and the real share, not from social spread. Alibaba ADR fell about 3% premarket on Sept 23 and has news about expanding its cloud business, but that moves the price by single-digit percentages.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"This is Backpack's official tokenized BABA. The price matches the ADR and the funding wallet is Backpack's. The same-ticker tokens on pump.fun are dead memecoins with about $0 liquidity.\",\"competing_tokens\":\"Several pump.fun BABA/Alibaba memecoins, all under $25k market cap with no volume. They are unrelated.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"No promotion flags and no paid DexScreener boosts. The price follows Alibaba's share price. Trading activity fits arbitrage and market-hours flow.\",\"uncertainty\":\"I could not see which wallets drove this particular volume spike.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The price is pegged to the ADR (about $110). A 2x in 6 hours would require Alibaba stock to double or the peg to break\",\"Mint and freeze authority are on by design (regulated security). Backpack can create, redeem or freeze tokens\",\"The top holder at 46% is probably the issuer or custody inventory\"]},\"counterargument\":\"A depeg could happen: thin $12k liquidity plus a fat-finger buy could spike the pool price for a moment. But arbitrageurs who can create new tokens would close the gap within minutes, and even a brief spike would need about +100% in one print. A rug is also very unlikely: the issuer is a regulated brokerage, and dynamic supply means the pool won't be abandoned. The one small risk is that Backpack moves liquidity to another pool, so this pair looks 'dead'.\",\"unknowns\":[\"Whether this exact pool will keep its liquidity, or Backpack will move it to another venue\",\"Exact identity of the 46% holder\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"A contract-address search returned nothing. News confirms that Backpack Securities tokenized stocks exist and that the Alibaba ADR price (about $110.80) matches the token price. I did not search Reddit, Telegram or Discord, because the token is clearly a stock tracker, so social memecoin coverage doesn't matter.\"},\"thesis\":\"This is Backpack's tokenized Alibaba stock, priced one-to-one against the ADR. The volume spike is stock-hours and arbitrage flow. It can't do a 2x in 6 hours and it is not a rug candidate.\",\"continuation_view\":\"neutral\",\"p_runner\":1,\"p_rug\":3,\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.benzinga.com/markets/tech/26/09/61942069/alibaba-takes-on-amazon-google-with-aggressive-overseas-cloud-expansion\",\"what\":\"Alibaba ADR about $110.80, cloud expansion news\"},{\"url\":\"https://cryptobriefing.com/backpack-tokenized-equities-dynamic-supply/\",\"what\":\"Backpack's dynamic-supply model for tokenized equities\"},{\"url\":\"https://www.kucoin.com/news/flash/backpack-gains-73-of-solana-tokenized-stock-dex-volume-despite-5-supply-share\",\"what\":\"Backpack's share of Solana tokenized-stock DEX volume\"},{\"url\":\"https://www.theblock.co/post/403328/backpack-launches-securities-platform-blending-traditional-and-tokenized-stock-trading\",\"what\":\"Launch of Backpack Securities\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is not a memecoin. It is Backpack Securities' tokenized Alibaba share (BABA) on Solana. The token trades at $111.65, which matches the Alibaba ADR price of about $110.80 (https://www.benzinga.com/markets/tech/26/09/61942069/alibaba-takes-on-amazon-google-with-aggressive-overseas-cloud-expansion). The packet shows the creator was funded from 'Backpack 2', GeckoTerminal lists the Twitter handle as 'Backpack', and the description is Backpack's RWA wording. The rule fired on a volume spike during US market hours (17:15 UTC is 1:15pm ET). Price moved only about \u00b10.5% over every window. This looks like normal stock arbitrage and repricing flow, perhaps after Alibaba's news about expanding its cloud business overseas. It is not speculative memecoin attention. The 'market cap' is simply the on-chain supply times the share price. Backpack uses a supply model where tokens are created and redeemed against real shares (https://cryptobriefing.com/backpack-tokenized-equities-dynamic-supply/).",
+  "narrative": {
+   "description": "Tokenized stocks on Solana (Backpack Securities) as a real-world asset (RWA). The story is real and growing: Backpack has about 73% of Solana's DEX volume in tokenized stocks (https://www.kucoin.com/news/flash/backpack-gains-73-of-solana-tokenized-stock-dex-volume-despite-5-supply-share). But the token's price is tied to Alibaba's share price, so no story can make it double.",
+   "stage": "unclear",
+   "potential": "none",
+   "why_spreading": "Volume comes from stock-market hours and arbitrage between the token and the real share, not from social spread. Alibaba ADR fell about 3% premarket on Sept 23 and has news about expanding its cloud business, but that moves the price by single-digit percentages."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "This is Backpack's official tokenized BABA. The price matches the ADR and the funding wallet is Backpack's. The same-ticker tokens on pump.fun are dead memecoins with about $0 liquidity.",
+   "competing_tokens": "Several pump.fun BABA/Alibaba memecoins, all under $25k market cap with no volume. They are unrelated.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "No promotion flags and no paid DexScreener boosts. The price follows Alibaba's share price. Trading activity fits arbitrage and market-hours flow.",
+   "uncertainty": "I could not see which wallets drove this particular volume spike."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The price is pegged to the ADR (about $110). A 2x in 6 hours would require Alibaba stock to double or the peg to break",
+    "Mint and freeze authority are on by design (regulated security). Backpack can create, redeem or freeze tokens",
+    "The top holder at 46% is probably the issuer or custody inventory"
+   ]
+  },
+  "counterargument": "A depeg could happen: thin $12k liquidity plus a fat-finger buy could spike the pool price for a moment. But arbitrageurs who can create new tokens would close the gap within minutes, and even a brief spike would need about +100% in one print. A rug is also very unlikely: the issuer is a regulated brokerage, and dynamic supply means the pool won't be abandoned. The one small risk is that Backpack moves liquidity to another pool, so this pair looks 'dead'.",
+  "unknowns": [
+   "Whether this exact pool will keep its liquidity, or Backpack will move it to another venue",
+   "Exact identity of the 46% holder"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "A contract-address search returned nothing. News confirms that Backpack Securities tokenized stocks exist and that the Alibaba ADR price (about $110.80) matches the token price. I did not search Reddit, Telegram or Discord, because the token is clearly a stock tracker, so social memecoin coverage doesn't matter."
+  },
+  "thesis": "This is Backpack's tokenized Alibaba stock, priced one-to-one against the ADR. The volume spike is stock-hours and arbitrage flow. It can't do a 2x in 6 hours and it is not a rug candidate.",
+  "continuation_view": "neutral",
+  "p_runner": 1,
+  "p_rug": 3,
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.benzinga.com/markets/tech/26/09/61942069/alibaba-takes-on-amazon-google-with-aggressive-overseas-cloud-expansion",
+    "what": "Alibaba ADR about $110.80, cloud expansion news"
+   },
+   {
+    "url": "https://cryptobriefing.com/backpack-tokenized-equities-dynamic-supply/",
+    "what": "Backpack's dynamic-supply model for tokenized equities"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/backpack-gains-73-of-solana-tokenized-stock-dex-volume-despite-5-supply-share",
+    "what": "Backpack's share of Solana tokenized-stock DEX volume"
+   },
+   {
+    "url": "https://www.theblock.co/post/403328/backpack-launches-securities-platform-blending-traditional-and-tokenized-stock-trading",
+    "what": "Launch of Backpack Securities"
+   }
+  ]
+ },
+ "ttft_ms": 2201,
+ "type": "result",
+ "duration_ms": 37831,
+ "uuid": "69de1938-63bd-49ba-af4c-a5a4b2a2da06",
+ "ttft_stream_ms": 829,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 829,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

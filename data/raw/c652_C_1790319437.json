@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 65498,
+ "stop_reason": "tool_use",
+ "session_id": "8b212acd-9163-4c56-b67b-0929145b23ff",
+ "total_cost_usd": 0.31140260000000003,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14721,
+  "cache_read_input_tokens": 39203,
+  "output_tokens": 3717,
+  "output_tokens_details": {
+   "thinking_tokens": 793
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14721,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2644,
+    "cache_read_input_tokens": 14684,
+    "cache_creation_input_tokens": 2613,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2613
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3717,
+   "cacheReadInputTokens": 39203,
+   "cacheCreationInputTokens": 14721,
+   "webSearchRequests": 0,
+   "costUSD": 0.1999806,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 793,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 52102,
+   "outputTokens": 1864,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11142200000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u5bcc\u8d35 (\\\"fugui\\\", Chinese for \\\"wealth and rank\\\") is a Chinese-language meme token. It did not come off the pump.fun curve. Its PumpSwap pool was created about 40 seconds after the token was minted (GMGN migrated_unix=0, created_unix only 40s before pair creation), so the deployer seeded the pool directly. RugCheck says that LP is 0% locked/burned and has \\\"few LP providers.\\\" In about 40 minutes it traded ~$7.1M of volume on a ~$160k market cap (31x turnover in one hour) and rose ~130%. Price has been flat for the last 30 minutes. GeckoTerminal counts ~1,906 unique buyers but only 57 unique sellers, and those 57 made 4,224 sells. GMGN flags 50 bundler wallets, which fits the seller count closely. The pattern looks like a small set of bundled wallets selling steadily into retail and bot buy flow while the dev keeps a removable LP of ~$228k, which is larger than the market cap itself. Socially, I found only a Telegram 'CTO' channel with 96 members, an X handle @fugui_cto that I could not verify, and a Douyin link as the 'created on' source. I found no search-indexed discussion anywhere.\",\"narrative\":{\"description\":\"A generic Chinese auspicious-word meme (\u5bcc\u8d35 = wealth/fortune), part of the Chinese-meme wave that started in 2025-26 (\u5e01\u5b89\u4eba\u751f, \u6211\u8e0f\u9a6c\u6765\u4e86, etc.). The description points to a Douyin video as the origin, but I could not identify a specific viral event.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The volume looks mechanically driven: 50 bundler wallets, 57 unique sellers against 1,906 buyers, and 31x hourly turnover. I found no evidence of organic social spread. The 'CTO' branding at launch is itself a promotional device.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The packet shows no other same-name tokens, and this token links a Telegram and X handle. But the name is a generic Chinese word with no specific referent, and the links point to no verifiable event.\",\"competing_tokens\":\"None in the packet. Generic Chinese-word tickers are often redeployed many times.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 57 unique sellers made 4,224 sells, set against 1,906 unique buyers (GeckoTerminal). GMGN tags 50 bundler wallets, and the top bundler traders hold 21.9%. The pool was self-created with 0% of LP burned. Volume is 31x market cap in one hour. The Telegram has 96 members. I found no web or X indexing.\",\"uncertainty\":\"The 1,906 unique buyers could include real Chinese-community retail arriving from Douyin or WeChat groups that I cannot see. X is poorly indexed by search engines.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Dev-created PumpSwap pool with 0% LP locked/burned: ~$228k of liquidity is removable at any time\",\"Liquidity exceeds market cap, so about 70% of supply sits in a pool the dev controls\",\"50 bundler wallets make up almost all of the 57 unique sellers, pointing to steady distribution into buyers\",\"Wash-like 31x hourly turnover\",\"Momentum has stalled: price is flat over 30 minutes after a +130% move\"]},\"counterargument\":\"Chinese memes can go viral through Douyin/WeChat channels that web search can't see, and ~1,900 unique buyers in 40 minutes is real breadth. A deep ~$228k pool makes a large buy absorbable, and a Chinese-community pump could take it from $160k to $320k quickly. The dev may choose to farm fees or volume instead of pulling LP right away.\",\"unknowns\":[\"Whether the X account @fugui_cto exists and has real engagement\",\"What the Douyin video is and how many views it has\",\"Whether the LP owner is the creator wallet and whether they plan to withdraw\",\"What share of the 1,906 buyers are bots\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"Contract search returned nothing relevant. $\u5bcc\u8d35 on site:x.com returned nothing relevant. The Telegram channel t.me/fuguiCTO has 96 members and no posts were visible. I did not fetch the Douyin link (no web page). DexScreener API confirms the pair data and shows no socials.\"},\"thesis\":\"This looks like a bundler-driven volume scheme on a dev-seeded, unlocked PumpSwap pool. The liquidity can be pulled, the sell side is concentrated in ~50 bundled wallets, and I found no organic narrative. The chance of doubling before a -50% move or a rug is low, and the rug risk is high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://t.me/s/fuguiCTO\",\"what\":\"Telegram \u5bcc\u8d35|CTO channel, 96 members\"},{\"url\":\"https://api.dexscreener.com/latest/dex/pairs/solana/G6k5vxYbfzejNFgbW6YyGAjXckAgMkfMwHPyBzw8HhMa\",\"what\":\"Live pair data: ~$155k mcap, $222k liquidity, $7.27M h1 volume, no socials\"},{\"url\":\"https://bingx.com/en/learn/article/top-chinese-meme-coins-to-watch-full-list\",\"what\":\"Background on the Chinese meme coin wave\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u5bcc\u8d35 (\"fugui\", Chinese for \"wealth and rank\") is a Chinese-language meme token. It did not come off the pump.fun curve. Its PumpSwap pool was created about 40 seconds after the token was minted (GMGN migrated_unix=0, created_unix only 40s before pair creation), so the deployer seeded the pool directly. RugCheck says that LP is 0% locked/burned and has \"few LP providers.\" In about 40 minutes it traded ~$7.1M of volume on a ~$160k market cap (31x turnover in one hour) and rose ~130%. Price has been flat for the last 30 minutes. GeckoTerminal counts ~1,906 unique buyers but only 57 unique sellers, and those 57 made 4,224 sells. GMGN flags 50 bundler wallets, which fits the seller count closely. The pattern looks like a small set of bundled wallets selling steadily into retail and bot buy flow while the dev keeps a removable LP of ~$228k, which is larger than the market cap itself. Socially, I found only a Telegram 'CTO' channel with 96 members, an X handle @fugui_cto that I could not verify, and a Douyin link as the 'created on' source. I found no search-indexed discussion anywhere.",
+  "narrative": {
+   "description": "A generic Chinese auspicious-word meme (\u5bcc\u8d35 = wealth/fortune), part of the Chinese-meme wave that started in 2025-26 (\u5e01\u5b89\u4eba\u751f, \u6211\u8e0f\u9a6c\u6765\u4e86, etc.). The description points to a Douyin video as the origin, but I could not identify a specific viral event.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The volume looks mechanically driven: 50 bundler wallets, 57 unique sellers against 1,906 buyers, and 31x hourly turnover. I found no evidence of organic social spread. The 'CTO' branding at launch is itself a promotional device."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The packet shows no other same-name tokens, and this token links a Telegram and X handle. But the name is a generic Chinese word with no specific referent, and the links point to no verifiable event.",
+   "competing_tokens": "None in the packet. Generic Chinese-word tickers are often redeployed many times.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 57 unique sellers made 4,224 sells, set against 1,906 unique buyers (GeckoTerminal). GMGN tags 50 bundler wallets, and the top bundler traders hold 21.9%. The pool was self-created with 0% of LP burned. Volume is 31x market cap in one hour. The Telegram has 96 members. I found no web or X indexing.",
+   "uncertainty": "The 1,906 unique buyers could include real Chinese-community retail arriving from Douyin or WeChat groups that I cannot see. X is poorly indexed by search engines."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Dev-created PumpSwap pool with 0% LP locked/burned: ~$228k of liquidity is removable at any time",
+    "Liquidity exceeds market cap, so about 70% of supply sits in a pool the dev controls",
+    "50 bundler wallets make up almost all of the 57 unique sellers, pointing to steady distribution into buyers",
+    "Wash-like 31x hourly turnover",
+    "Momentum has stalled: price is flat over 30 minutes after a +130% move"
+   ]
+  },
+  "counterargument": "Chinese memes can go viral through Douyin/WeChat channels that web search can't see, and ~1,900 unique buyers in 40 minutes is real breadth. A deep ~$228k pool makes a large buy absorbable, and a Chinese-community pump could take it from $160k to $320k quickly. The dev may choose to farm fees or volume instead of pulling LP right away.",
+  "unknowns": [
+   "Whether the X account @fugui_cto exists and has real engagement",
+   "What the Douyin video is and how many views it has",
+   "Whether the LP owner is the creator wallet and whether they plan to withdraw",
+   "What share of the 1,906 buyers are bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "Contract search returned nothing relevant. $\u5bcc\u8d35 on site:x.com returned nothing relevant. The Telegram channel t.me/fuguiCTO has 96 members and no posts were visible. I did not fetch the Douyin link (no web page). DexScreener API confirms the pair data and shows no socials."
+  },
+  "thesis": "This looks like a bundler-driven volume scheme on a dev-seeded, unlocked PumpSwap pool. The liquidity can be pulled, the sell side is concentrated in ~50 bundled wallets, and I found no organic narrative. The chance of doubling before a -50% move or a rug is low, and the rug risk is high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://t.me/s/fuguiCTO",
+    "what": "Telegram \u5bcc\u8d35|CTO channel, 96 members"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/pairs/solana/G6k5vxYbfzejNFgbW6YyGAjXckAgMkfMwHPyBzw8HhMa",
+    "what": "Live pair data: ~$155k mcap, $222k liquidity, $7.27M h1 volume, no socials"
+   },
+   {
+    "url": "https://bingx.com/en/learn/article/top-chinese-meme-coins-to-watch-full-list",
+    "what": "Background on the Chinese meme coin wave"
+   }
+  ]
+ },
+ "ttft_ms": 4523,
+ "type": "result",
+ "duration_ms": 52049,
+ "uuid": "b47496ae-d449-4a17-95b0-89868ee7ac81",
+ "ttft_stream_ms": 804,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 804,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 25454,
+ "stop_reason": "tool_use",
+ "session_id": "169092f5-e85e-43a2-b601-cf007a7f3d34",
+ "total_cost_usd": 0.1173508,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8052,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2627,
+  "output_tokens_details": {
+   "thinking_tokens": 530
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8052,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2627,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 8052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8052
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2627,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 8052,
+   "webSearchRequests": 0,
+   "costUSD": 0.1173508,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 530,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u5e01\u5b89\u4e2d\u79cb ('Binance Mid-Autumn') is a Chinese-language meme timed to the Mid-Autumn Festival, which is around 25 Sept 2026. The pair was created directly on PumpSwap 3 seconds after the token was minted. It never went through a bonding curve (migrated_unix=0, no launchpad). It is about 36 minutes old, with a $20k market cap and $35.5k of liquidity. That is more liquidity than market cap, and all of it is unlocked and held by a few LP providers (RugCheck flags this as 'danger').\\n\\nAbout $474k of volume came in within the first hour, 13x turnover. The buyer counts look manufactured: about 1,000 unique buyers show up only in the 15\u201330 minute window (m30 = 1,028 against m15 = 50), and the total is 2,055 unique buyers against only 53 unique sellers. Many wallets making one tiny buy each suggests holder-count and volume farming, not organic demand. Price has already slipped about 9% over the last 15 minutes, and buys and sells are now balanced.\\n\\nThe packet lists 10 other tokens with the identical name, all launched in the previous ~9 hours, and every one of them now shows $0 liquidity. That fits a serial launch-and-pull pattern around this theme.\",\"narrative\":{\"description\":\"A seasonal Chinese meme that pairs Binance with the Mid-Autumn Festival. It fits the recurring Chinese-language/Binance meme wave on Solana and the festival is tomorrow, so the timing is real. But it is a generic holiday name with no project socials, site or description.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The holiday is tomorrow, and Chinese Binance-themed memes attract speculative flow. The spread looks bot-driven (one ~1k-buyer burst, very few sellers), not community-driven. There are no socials or DexScreener profile.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the most recent same-name launch that still has liquidity. Nothing makes it the canonical one.\",\"competing_tokens\":\"At least 10 identically named tokens were created in the prior ~9 hours. All now have $0 liquidity and zero h1 volume, which strongly suggests repeated rugs on the same theme.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There are 2,055 unique buyers against 53 unique sellers, and ~1,000 of the buyers arrived within one 15-minute window. That pattern is typical of scripted multi-wallet micro-buys that inflate holder count and volume. Top-10 holders excluding the pool own only 7.66%, which fits dust-sized farmed buys. GMGN also flags 6 bundler wallets. The pool was created directly (not via the curve), the LP is unlocked, and the creator has closed out. Ten dead same-name clones point to a serial operator.\",\"uncertainty\":\"GMGN reports a 0 bot/degen rate and 0 snipers, and there is no insider network. Some of the buying could be real retail chasing the holiday theme. Without X data, organic interest cannot be confirmed or ruled out.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"$35k of LP is 0% locked/burned, with few LP providers, so the owner can remove liquidity at any time\",\"Liquidity is larger than market cap, which is unusual and consistent with a deployer-seeded pool that can be pulled\",\"10 prior same-name tokens are all at $0 liquidity, a serial rug pattern\",\"The buyer/seller asymmetry points to farmed volume\",\"Price is already fading from its high (ATH 2.99e-5 vs 2.04e-5 now, about -32%)\"]},\"counterargument\":\"The festival is literally tomorrow, and Chinese Binance-themed memes have produced real runners. Supply is very dispersed (top holders under 2.3% each), with no dev holdings and no snipers. A $20k market cap only needs about $20k more net buying to double. If the LP provider is not malicious, holiday FOMO in Chinese communities could push it past $40k within hours.\",\"unknowns\":[\"Who holds the LP tokens, and whether they are the creator\",\"Whether the 10 dead clones share a deployer or funder with this token\",\"Whether any real Chinese KOL or community is pushing it\",\"Whether the ~1k-buyer burst was an airdrop or bot farm or real retail\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment is based only on the evidence packet.\"},\"thesis\":\"This is a coordinated, seasonal clone launch on a directly seeded PumpSwap pool with fully unlocked LP. Ten identical same-name tokens from the past 9 hours have all gone to zero liquidity. The buyer/seller pattern looks farmed. The most likely outcome is that the LP is pulled or the coin bleeds out within 6 hours. A double from a 25-minute-later entry is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\u5e01\u5b89\u4e2d\u79cb ('Binance Mid-Autumn') is a Chinese-language meme timed to the Mid-Autumn Festival, which is around 25 Sept 2026. The pair was created directly on PumpSwap 3 seconds after the token was minted. It never went through a bonding curve (migrated_unix=0, no launchpad). It is about 36 minutes old, with a $20k market cap and $35.5k of liquidity. That is more liquidity than market cap, and all of it is unlocked and held by a few LP providers (RugCheck flags this as 'danger').\n\nAbout $474k of volume came in within the first hour, 13x turnover. The buyer counts look manufactured: about 1,000 unique buyers show up only in the 15\u201330 minute window (m30 = 1,028 against m15 = 50), and the total is 2,055 unique buyers against only 53 unique sellers. Many wallets making one tiny buy each suggests holder-count and volume farming, not organic demand. Price has already slipped about 9% over the last 15 minutes, and buys and sells are now balanced.\n\nThe packet lists 10 other tokens with the identical name, all launched in the previous ~9 hours, and every one of them now shows $0 liquidity. That fits a serial launch-and-pull pattern around this theme.",
+  "narrative": {
+   "description": "A seasonal Chinese meme that pairs Binance with the Mid-Autumn Festival. It fits the recurring Chinese-language/Binance meme wave on Solana and the festival is tomorrow, so the timing is real. But it is a generic holiday name with no project socials, site or description.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The holiday is tomorrow, and Chinese Binance-themed memes attract speculative flow. The spread looks bot-driven (one ~1k-buyer burst, very few sellers), not community-driven. There are no socials or DexScreener profile."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the most recent same-name launch that still has liquidity. Nothing makes it the canonical one.",
+   "competing_tokens": "At least 10 identically named tokens were created in the prior ~9 hours. All now have $0 liquidity and zero h1 volume, which strongly suggests repeated rugs on the same theme.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There are 2,055 unique buyers against 53 unique sellers, and ~1,000 of the buyers arrived within one 15-minute window. That pattern is typical of scripted multi-wallet micro-buys that inflate holder count and volume. Top-10 holders excluding the pool own only 7.66%, which fits dust-sized farmed buys. GMGN also flags 6 bundler wallets. The pool was created directly (not via the curve), the LP is unlocked, and the creator has closed out. Ten dead same-name clones point to a serial operator.",
+   "uncertainty": "GMGN reports a 0 bot/degen rate and 0 snipers, and there is no insider network. Some of the buying could be real retail chasing the holiday theme. Without X data, organic interest cannot be confirmed or ruled out."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "$35k of LP is 0% locked/burned, with few LP providers, so the owner can remove liquidity at any time",
+    "Liquidity is larger than market cap, which is unusual and consistent with a deployer-seeded pool that can be pulled",
+    "10 prior same-name tokens are all at $0 liquidity, a serial rug pattern",
+    "The buyer/seller asymmetry points to farmed volume",
+    "Price is already fading from its high (ATH 2.99e-5 vs 2.04e-5 now, about -32%)"
+   ]
+  },
+  "counterargument": "The festival is literally tomorrow, and Chinese Binance-themed memes have produced real runners. Supply is very dispersed (top holders under 2.3% each), with no dev holdings and no snipers. A $20k market cap only needs about $20k more net buying to double. If the LP provider is not malicious, holiday FOMO in Chinese communities could push it past $40k within hours.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether they are the creator",
+   "Whether the 10 dead clones share a deployer or funder with this token",
+   "Whether any real Chinese KOL or community is pushing it",
+   "Whether the ~1k-buyer burst was an airdrop or bot farm or real retail"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment is based only on the evidence packet."
+  },
+  "thesis": "This is a coordinated, seasonal clone launch on a directly seeded PumpSwap pool with fully unlocked LP. Ten identical same-name tokens from the past 9 hours have all gone to zero liquidity. The buyer/seller pattern looks farmed. The most likely outcome is that the LP is pulled or the coin bleeds out within 6 hours. A double from a 25-minute-later entry is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6438,
+ "type": "result",
+ "duration_ms": 25503,
+ "uuid": "4058941c-8557-42a6-aeea-ef3d1192f249",
+ "ttft_stream_ms": 769,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 769,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

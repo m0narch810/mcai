@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 25502,
+ "stop_reason": "tool_use",
+ "session_id": "a7d6472b-bade-4e5a-a1bc-32d585a85c22",
+ "total_cost_usd": 0.1154428,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7906,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2590,
+  "output_tokens_details": {
+   "thinking_tokens": 649
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7906,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2590,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7906,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7906
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2590,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7906,
+   "webSearchRequests": 0,
+   "costUSD": 0.1154428,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 649,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GO/LESGO (HRid...) is a 40-minute-old PumpSwap pool. It was not migrated from the pump.fun curve (migrated_unix 0, no launchpad). Its $368k of liquidity is larger than its $235k market cap, and 100% of the LP is unlocked with few LP providers. It traded $7.9M in the first hour, about 22x its market cap, and the price is up about 75%. GeckoTerminal counts 2,188 unique buyers but only 59 unique sellers, and those 59 sellers made about 4,700 sells. That is the signature of a volume or wash bot, not organic two-sided trading. GMGN flags 50 bundler wallets holding about 16% of trader share. The project description links to a different contract (D1YZ...) as the real LESGO token, and the image is duplicated 25 times. At least 10 other GO/LESGO tokens exist, and several of the older ones now show about $560 of liquidity against claimed market caps of $1.5M. That pattern is typical of clone pools that were pulled.\",\"narrative\":{\"description\":\"Lesgo.fun, a launchpad on Raydium LaunchLab with a 60% revenue buyback-and-burn, has a platform token called GO. That story belongs to the canonical D1YZ... token, which this pool's own description links to. This coin rides the name and does not appear to be the project's token.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The real Lesgo launch seems to be drawing attention, and copycat GO tokens are being spun up to catch buyers searching the ticker. This pool's activity looks bot-driven, not like real narrative spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name and ticker, and a copied description that points to D1YZ... as the real token. The pool was created manually on PumpSwap, not through the Lesgo/LaunchLab flow.\",\"competing_tokens\":\"D1YZ... (canonical per the description, $8.9M market cap), plus pump.fun variants 7SVA...pump ($70M claimed) and BFBy...pump ($9.1M). There are many dead clones with about $560 of liquidity, and FCvq... claims a $5.2B market cap with no volume.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"59 unique sellers made about 4,700 sells, against 2,188 buyers. 1h turnover is about 22x market cap. There are 50 bundler wallets. The LP is fully unlocked and exceeds market cap. The image is duplicated 25 times. Several same-name clones sit at dust liquidity, a pattern consistent with serial pulls.\",\"uncertainty\":\"The 2,188 buyers could include some real ticker-searchers drawn in by the Lesgo launch. There is no X data to confirm or rule that out.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and held by a single or a few providers, so it can be pulled instantly\",\"Liquidity larger than market cap, which looks like a deployer-seeded bait pool\",\"Wash or bot volume from about 59 seller wallets\",\"Clone of the canonical token, with many same-name rugged clones\",\"50 bundler wallets\"]},\"counterargument\":\"Deep liquidity at $368k, a top-10 holding of only 9%, renounced authorities and more than 2,200 holders could let ticker confusion from the real Lesgo launch pull real buyers into this pool. The price is already up 75% in an hour, and doubling from about $235k to $470k is a modest move in absolute terms if the bots keep buying. The deployer may be farming fees or volume instead of planning a rug.\",\"unknowns\":[\"Who holds the LP tokens, and whether they are the deployer\",\"Whether the Lesgo team recognizes any GO token other than D1YZ...\",\"The real composition of the 2,188 buyers\",\"Whether a volume bot is running on a timer\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The analysis uses only the evidence packet.\"},\"thesis\":\"This looks like a clone GO/LESGO pool on PumpSwap riding the real Lesgo launch. Its fully unlocked LP is larger than its market cap, and 59 seller wallets produce about 4,700 sells, which points to bot-made volume. Same-name clones nearby already show dust liquidity. The most likely outcome is an LP pull within hours. A double from the entry point is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GO/LESGO (HRid...) is a 40-minute-old PumpSwap pool. It was not migrated from the pump.fun curve (migrated_unix 0, no launchpad). Its $368k of liquidity is larger than its $235k market cap, and 100% of the LP is unlocked with few LP providers. It traded $7.9M in the first hour, about 22x its market cap, and the price is up about 75%. GeckoTerminal counts 2,188 unique buyers but only 59 unique sellers, and those 59 sellers made about 4,700 sells. That is the signature of a volume or wash bot, not organic two-sided trading. GMGN flags 50 bundler wallets holding about 16% of trader share. The project description links to a different contract (D1YZ...) as the real LESGO token, and the image is duplicated 25 times. At least 10 other GO/LESGO tokens exist, and several of the older ones now show about $560 of liquidity against claimed market caps of $1.5M. That pattern is typical of clone pools that were pulled.",
+  "narrative": {
+   "description": "Lesgo.fun, a launchpad on Raydium LaunchLab with a 60% revenue buyback-and-burn, has a platform token called GO. That story belongs to the canonical D1YZ... token, which this pool's own description links to. This coin rides the name and does not appear to be the project's token.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The real Lesgo launch seems to be drawing attention, and copycat GO tokens are being spun up to catch buyers searching the ticker. This pool's activity looks bot-driven, not like real narrative spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name and ticker, and a copied description that points to D1YZ... as the real token. The pool was created manually on PumpSwap, not through the Lesgo/LaunchLab flow.",
+   "competing_tokens": "D1YZ... (canonical per the description, $8.9M market cap), plus pump.fun variants 7SVA...pump ($70M claimed) and BFBy...pump ($9.1M). There are many dead clones with about $560 of liquidity, and FCvq... claims a $5.2B market cap with no volume.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "59 unique sellers made about 4,700 sells, against 2,188 buyers. 1h turnover is about 22x market cap. There are 50 bundler wallets. The LP is fully unlocked and exceeds market cap. The image is duplicated 25 times. Several same-name clones sit at dust liquidity, a pattern consistent with serial pulls.",
+   "uncertainty": "The 2,188 buyers could include some real ticker-searchers drawn in by the Lesgo launch. There is no X data to confirm or rule that out."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and held by a single or a few providers, so it can be pulled instantly",
+    "Liquidity larger than market cap, which looks like a deployer-seeded bait pool",
+    "Wash or bot volume from about 59 seller wallets",
+    "Clone of the canonical token, with many same-name rugged clones",
+    "50 bundler wallets"
+   ]
+  },
+  "counterargument": "Deep liquidity at $368k, a top-10 holding of only 9%, renounced authorities and more than 2,200 holders could let ticker confusion from the real Lesgo launch pull real buyers into this pool. The price is already up 75% in an hour, and doubling from about $235k to $470k is a modest move in absolute terms if the bots keep buying. The deployer may be farming fees or volume instead of planning a rug.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether they are the deployer",
+   "Whether the Lesgo team recognizes any GO token other than D1YZ...",
+   "The real composition of the 2,188 buyers",
+   "Whether a volume bot is running on a timer"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The analysis uses only the evidence packet."
+  },
+  "thesis": "This looks like a clone GO/LESGO pool on PumpSwap riding the real Lesgo launch. Its fully unlocked LP is larger than its market cap, and 59 seller wallets produce about 4,700 sells, which points to bot-made volume. Same-name clones nearby already show dust liquidity. The most likely outcome is an LP pull within hours. A double from the entry point is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7654,
+ "type": "result",
+ "duration_ms": 25547,
+ "uuid": "53caa9c1-1023-4ab4-b3eb-e756886eafde",
+ "ttft_stream_ms": 887,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 888,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

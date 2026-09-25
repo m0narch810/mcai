@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 46347,
+ "stop_reason": "tool_use",
+ "session_id": "be47b6fb-a44e-4552-9d04-272d57eb65eb",
+ "total_cost_usd": 0.22063080000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12383,
+  "cache_read_input_tokens": 28004,
+  "output_tokens": 3114,
+  "output_tokens_details": {
+   "thinking_tokens": 628
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12383,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2537,
+    "cache_read_input_tokens": 13537,
+    "cache_creation_input_tokens": 1610,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1610
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3114,
+   "cacheReadInputTokens": 28004,
+   "cacheCreationInputTokens": 12383,
+   "webSearchRequests": 0,
+   "costUSD": 0.16696880000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 628,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 27277,
+   "outputTokens": 1277,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.053662,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"About 12 minutes ago a TALIS token was launched directly into a PumpSwap pool. It did not come from the pump.fun curve (migrated_unix 0, launchpad null). Its metadata borrows the branding of Talis (talis.markets, @usetalis, t.me/talismarkets). The pool was seeded with roughly $207k of liquidity, which is more than the $145k market cap, and 100% of the LP is unlocked with few LP providers. It traded about $2M in the first ~12 minutes and rose about 100%, with 554 unique buyers against 61 sellers. The real Talis project says its TALIS token lives on Robinhood Chain (an EVM contract, 0xd5D2\u2026), not Solana. Search results also mention a statement that Talis has no token at the trading platform. The packet lists at least 10 other Solana 'TALIS' tokens deployed in the past ~2 hours, all with fake market caps and no liquidity. That pattern points to a wave of impersonation launches riding a real project's name.\",\"narrative\":{\"description\":\"Impersonation of Talis, a real protocol that splits Robinhood Chain stock tokens into structured positions and whose official TALIS token is on Robinhood Chain. It is possible that some news or launch on Robinhood Chain is drawing attention to the name.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The Talis name is probably getting attention from its Robinhood Chain token or launch, and Solana deployers are racing to copy the ticker. This particular copy got traction because it has deep seeded liquidity and linked the official socials in its metadata. I found no organic Solana-side endorsement.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It links the official talis.markets, @usetalis and t.me/talismarkets in its metadata. It has the only live liquidity among the Solana TALIS clones. But the project's own site places the TALIS token on Robinhood Chain.\",\"competing_tokens\":\"At least 10 other Solana TALIS/Talis tokens from the last ~2 hours with zero liquidity and absurd fake market caps (for example 4oRnyx\u2026, 4Hgzun\u2026, CX82n2\u2026). The canonical TALIS is on Robinhood Chain. GMGN shows 39 tokens linked to the same X account.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"GMGN counts 49 bundler wallets holding about 25% of top-trader share. Liquidity was seeded directly on PumpSwap and is 100% unlocked with few LP providers. A burst of copycat same-ticker deploys came first. There is no DexScreener profile or paid boost, and no smart or KOL wallets.\",\"uncertainty\":\"I could not read X (402 error) or Telegram. It is possible Talis actually deployed on Solana, but I found no evidence of it.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and was seeded by one or a few providers, so the deployer can pull about $200k of liquidity at any time\",\"Liquidity is larger than market cap, the classic seeded-LP setup for a rug\",\"49 bundler wallets hold about 25% share\",\"It is an impersonation of a project whose token lives on another chain\",\"Heavy same-ticker spam\"]},\"counterargument\":\"If Talis did deploy a Solana version, or the market treats this as the 'real' Solana TALIS, the deep liquidity plus $2M of volume in 12 minutes and 554 unique buyers could carry it from $145k to $300k+ quickly. Real-project name trades on Solana sometimes run hard before anyone checks.\",\"unknowns\":[\"Whether Talis officially endorsed or deployed this Solana token\",\"Who holds the LP tokens\",\"Content on X and Telegram\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"talis.markets says TALIS is on Robinhood Chain. A web search surfaced a statement that the Talis trading platform has no token. x.com returned 402. Time was limited, so I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"This looks like a Solana impersonation of a real project whose token is on another chain. The LP was seeded and is fully unlocked, with heavy bundling, and many copycat tickers appeared first. Pulling that liquidity is a strong risk. The +100% target needs a market cap of about $300k from a pool that is already deep, which is less likely than a rug or a fade.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":45,\"survival_score\":22,\"attention_score\":60,\"manipulation_risk\":75,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://talis.markets/\",\"what\":\"Official site: TALIS token is on Robinhood Chain (0xd5D2\u2026)\"},{\"url\":\"https://talis.trade/\",\"what\":\"Talis trading platform; search summary said Talis Markets has no token\"},{\"url\":\"https://www.coingecko.com/en/coins/talis-protocol\",\"what\":\"Unrelated Talis Protocol TALIS on Injective\"}]}",
+ "structured_output": {
+  "what_is_happening": "About 12 minutes ago a TALIS token was launched directly into a PumpSwap pool. It did not come from the pump.fun curve (migrated_unix 0, launchpad null). Its metadata borrows the branding of Talis (talis.markets, @usetalis, t.me/talismarkets). The pool was seeded with roughly $207k of liquidity, which is more than the $145k market cap, and 100% of the LP is unlocked with few LP providers. It traded about $2M in the first ~12 minutes and rose about 100%, with 554 unique buyers against 61 sellers. The real Talis project says its TALIS token lives on Robinhood Chain (an EVM contract, 0xd5D2\u2026), not Solana. Search results also mention a statement that Talis has no token at the trading platform. The packet lists at least 10 other Solana 'TALIS' tokens deployed in the past ~2 hours, all with fake market caps and no liquidity. That pattern points to a wave of impersonation launches riding a real project's name.",
+  "narrative": {
+   "description": "Impersonation of Talis, a real protocol that splits Robinhood Chain stock tokens into structured positions and whose official TALIS token is on Robinhood Chain. It is possible that some news or launch on Robinhood Chain is drawing attention to the name.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The Talis name is probably getting attention from its Robinhood Chain token or launch, and Solana deployers are racing to copy the ticker. This particular copy got traction because it has deep seeded liquidity and linked the official socials in its metadata. I found no organic Solana-side endorsement."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It links the official talis.markets, @usetalis and t.me/talismarkets in its metadata. It has the only live liquidity among the Solana TALIS clones. But the project's own site places the TALIS token on Robinhood Chain.",
+   "competing_tokens": "At least 10 other Solana TALIS/Talis tokens from the last ~2 hours with zero liquidity and absurd fake market caps (for example 4oRnyx\u2026, 4Hgzun\u2026, CX82n2\u2026). The canonical TALIS is on Robinhood Chain. GMGN shows 39 tokens linked to the same X account.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "GMGN counts 49 bundler wallets holding about 25% of top-trader share. Liquidity was seeded directly on PumpSwap and is 100% unlocked with few LP providers. A burst of copycat same-ticker deploys came first. There is no DexScreener profile or paid boost, and no smart or KOL wallets.",
+   "uncertainty": "I could not read X (402 error) or Telegram. It is possible Talis actually deployed on Solana, but I found no evidence of it."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and was seeded by one or a few providers, so the deployer can pull about $200k of liquidity at any time",
+    "Liquidity is larger than market cap, the classic seeded-LP setup for a rug",
+    "49 bundler wallets hold about 25% share",
+    "It is an impersonation of a project whose token lives on another chain",
+    "Heavy same-ticker spam"
+   ]
+  },
+  "counterargument": "If Talis did deploy a Solana version, or the market treats this as the 'real' Solana TALIS, the deep liquidity plus $2M of volume in 12 minutes and 554 unique buyers could carry it from $145k to $300k+ quickly. Real-project name trades on Solana sometimes run hard before anyone checks.",
+  "unknowns": [
+   "Whether Talis officially endorsed or deployed this Solana token",
+   "Who holds the LP tokens",
+   "Content on X and Telegram"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "talis.markets says TALIS is on Robinhood Chain. A web search surfaced a statement that the Talis trading platform has no token. x.com returned 402. Time was limited, so I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "This looks like a Solana impersonation of a real project whose token is on another chain. The LP was seeded and is fully unlocked, with heavy bundling, and many copycat tickers appeared first. Pulling that liquidity is a strong risk. The +100% target needs a market cap of about $300k from a pool that is already deep, which is less likely than a rug or a fade.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 45,
+  "survival_score": 22,
+  "attention_score": 60,
+  "manipulation_risk": 75,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://talis.markets/",
+    "what": "Official site: TALIS token is on Robinhood Chain (0xd5D2\u2026)"
+   },
+   {
+    "url": "https://talis.trade/",
+    "what": "Talis trading platform; search summary said Talis Markets has no token"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/talis-protocol",
+    "what": "Unrelated Talis Protocol TALIS on Injective"
+   }
+  ]
+ },
+ "ttft_ms": 1902,
+ "type": "result",
+ "duration_ms": 41071,
+ "uuid": "a27fe786-c42b-4416-80a9-38e6820d0324",
+ "ttft_stream_ms": 657,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 657,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

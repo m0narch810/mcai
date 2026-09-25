@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 92589,
+ "stop_reason": "tool_use",
+ "session_id": "52bcde51-69b2-4234-8a90-6ba181df5e65",
+ "total_cost_usd": 0.40012400000000004,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 17832,
+  "cache_read_input_tokens": 80890,
+  "output_tokens": 4180,
+  "output_tokens_details": {
+   "thinking_tokens": 639
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17832,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2392,
+    "cache_read_input_tokens": 19140,
+    "cache_creation_input_tokens": 1268,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1268
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 4180,
+   "cacheReadInputTokens": 80890,
+   "cacheCreationInputTokens": 17832,
+   "webSearchRequests": 0,
+   "costUSD": 0.24248199999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 639,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 73742,
+   "outputTokens": 2780,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.15764199999999998,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BROKE (\\\"Broke By Broke\\\") is a generic pump.fun meme coin about being broke, with a brick/crack theme. On GMGN its creation time and migration time are the same second, and the PumpSwap pool opened at 12:35 UTC. It was about 36 minutes old at detection. Its first-hour flow looks very unusual: about 5.5k buys against 670 sells, from about 4.6k unique buyers. Average buy size is only about $75, and the top 10 holders sit at almost exactly 0.33% each, which looks like even, farmed distribution. By 13:15 UTC the price had fallen from about $0.000217 at detection to about $0.000153 (FDV about $170k, pump.fun reported $159k). That is a drop of roughly 25\u201330%, even though buys still outnumbered sells about 7 to 1 over the last 5 minutes (796 vs 115). Price falling while hundreds of tiny buys keep arriving usually means bot or wash buying to fake holder counts while a few larger wallets sell. I found no organic discussion anywhere: the pump.fun reply count is 0, GMGN shows 11 page visits, and searches of X, Reddit and Telegram returned nothing.\",\"narrative\":{\"description\":\"A generic 'chronically underfunded / broke' self-deprecating meme with a brick-wall crack motif. It is not tied to any current event, person or viral moment I could find. The website is a template with the usual four-phase roadmap (Raydium liquidity, merch, CEX listings).\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"No organic reason found. The activity looks driven by a flood of micro-buys (likely bots or a holder-farming service), not by a cultural catalyst.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The website and the X handle @brokebybroke both point to this contract. But 'BROKE' is a heavily reused ticker with no single meme behind it, so the contract has no special claim to it.\",\"competing_tokens\":\"At least 10 other BROKE tokens exist (BrokeCoin, Broke Cat, $BROKE again, Brokies and others). All are small or dormant, so none is pulling attention away right now, but none gives this one any narrative pull either.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 4,600 unique buyers in about 40 minutes, averaging about $75 per buy, with 7\u20138 buys per sell. Top-10 holders are almost identical at 0.32\u20130.34% each. The price dropped about 25\u201330% during continued heavy buy counts. The pump.fun reply count is 0 and GMGN page visits are 11, which is inconsistent with 4.6k real buyers. GMGN flags a community takeover (CTO) and a DexScreener profile update despite the coin being under an hour old. The creator has already closed their position.\",\"uncertainty\":\"I couldn't view X directly (402 error), and search engines index X poorly. The buy pattern could partly reflect a real trending-feed rush, but the lack of any page visits or replies argues against that.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The buy-count pattern looks bot-generated or farmed, so the demand may not be real\",\"Price is already falling from the detection level. A 2x from entry would need about $300k+ market cap from roughly $160k\",\"About $39k in liquidity against sellers exiting\",\"Creator has exited; 6 bundlers and 19 snipers flagged\",\"No organic social presence found\"]},\"counterargument\":\"Holders really are spread out (the top 10 excluding the AMM hold 3.3%), the LP is burned, mint and freeze authorities are renounced, and the dev holds nothing. So a classic LP rug is impossible. If the micro-buy flood is a trending-bot campaign, it could put the coin on pump.fun/GMGN trending lists and pull in real buyers. The coin already did 2\u20133x within 15-minute windows. A buy at a dip near $150k could reach $300k on one more wave.\",\"unknowns\":[\"Actual X activity of @brokebybroke and any KOL calls\",\"Whether the micro-buyers are a paid holder/volume bot\",\"Who is doing the selling (wallet-level flow)\",\"Any private Telegram coordination\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X profile returned a 402 error. Searches for the contract address and handle found nothing. The website confirms the contract address. The GeckoTerminal API and pump.fun API gave post-detection state: price down about 25\u201330% from detection, still heavy micro-buys, 0 replies. DexScreener returned a 403.\"},\"thesis\":\"No narrative and no organic discussion found. The flow looks like farmed micro-buys while the price bleeds, which is a typical fade. Burned LP means an outright LP pull is unlikely, but the pair dying or bleeding past -50% is likely. A 2x from about $160k is improbable.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":45,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://brokebybroke.lol\",\"what\":\"Project site: confirms the contract address, generic meme narrative and template roadmap\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/4rK1ng2gRaC7TUKhqXnUr52RSozDarqX7seG9HzTFXue\",\"what\":\"Post-detection pool state: price $0.000153, FDV about $170k, 5m -11%, buy/sell counts\"},{\"url\":\"https://frontend-api-v3.pump.fun/coins/BjTykKGejK3y5ixdCkZYLE8yKmwPmYLvB3PkpRL3pump\",\"what\":\"pump.fun: reply_count 0, complete true, market cap about $159k\"},{\"url\":\"https://x.com/brokebybroke\",\"what\":\"Project X account (inaccessible, 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "BROKE (\"Broke By Broke\") is a generic pump.fun meme coin about being broke, with a brick/crack theme. On GMGN its creation time and migration time are the same second, and the PumpSwap pool opened at 12:35 UTC. It was about 36 minutes old at detection. Its first-hour flow looks very unusual: about 5.5k buys against 670 sells, from about 4.6k unique buyers. Average buy size is only about $75, and the top 10 holders sit at almost exactly 0.33% each, which looks like even, farmed distribution. By 13:15 UTC the price had fallen from about $0.000217 at detection to about $0.000153 (FDV about $170k, pump.fun reported $159k). That is a drop of roughly 25\u201330%, even though buys still outnumbered sells about 7 to 1 over the last 5 minutes (796 vs 115). Price falling while hundreds of tiny buys keep arriving usually means bot or wash buying to fake holder counts while a few larger wallets sell. I found no organic discussion anywhere: the pump.fun reply count is 0, GMGN shows 11 page visits, and searches of X, Reddit and Telegram returned nothing.",
+  "narrative": {
+   "description": "A generic 'chronically underfunded / broke' self-deprecating meme with a brick-wall crack motif. It is not tied to any current event, person or viral moment I could find. The website is a template with the usual four-phase roadmap (Raydium liquidity, merch, CEX listings).",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "No organic reason found. The activity looks driven by a flood of micro-buys (likely bots or a holder-farming service), not by a cultural catalyst."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The website and the X handle @brokebybroke both point to this contract. But 'BROKE' is a heavily reused ticker with no single meme behind it, so the contract has no special claim to it.",
+   "competing_tokens": "At least 10 other BROKE tokens exist (BrokeCoin, Broke Cat, $BROKE again, Brokies and others). All are small or dormant, so none is pulling attention away right now, but none gives this one any narrative pull either.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 4,600 unique buyers in about 40 minutes, averaging about $75 per buy, with 7\u20138 buys per sell. Top-10 holders are almost identical at 0.32\u20130.34% each. The price dropped about 25\u201330% during continued heavy buy counts. The pump.fun reply count is 0 and GMGN page visits are 11, which is inconsistent with 4.6k real buyers. GMGN flags a community takeover (CTO) and a DexScreener profile update despite the coin being under an hour old. The creator has already closed their position.",
+   "uncertainty": "I couldn't view X directly (402 error), and search engines index X poorly. The buy pattern could partly reflect a real trending-feed rush, but the lack of any page visits or replies argues against that."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The buy-count pattern looks bot-generated or farmed, so the demand may not be real",
+    "Price is already falling from the detection level. A 2x from entry would need about $300k+ market cap from roughly $160k",
+    "About $39k in liquidity against sellers exiting",
+    "Creator has exited; 6 bundlers and 19 snipers flagged",
+    "No organic social presence found"
+   ]
+  },
+  "counterargument": "Holders really are spread out (the top 10 excluding the AMM hold 3.3%), the LP is burned, mint and freeze authorities are renounced, and the dev holds nothing. So a classic LP rug is impossible. If the micro-buy flood is a trending-bot campaign, it could put the coin on pump.fun/GMGN trending lists and pull in real buyers. The coin already did 2\u20133x within 15-minute windows. A buy at a dip near $150k could reach $300k on one more wave.",
+  "unknowns": [
+   "Actual X activity of @brokebybroke and any KOL calls",
+   "Whether the micro-buyers are a paid holder/volume bot",
+   "Who is doing the selling (wallet-level flow)",
+   "Any private Telegram coordination"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X profile returned a 402 error. Searches for the contract address and handle found nothing. The website confirms the contract address. The GeckoTerminal API and pump.fun API gave post-detection state: price down about 25\u201330% from detection, still heavy micro-buys, 0 replies. DexScreener returned a 403."
+  },
+  "thesis": "No narrative and no organic discussion found. The flow looks like farmed micro-buys while the price bleeds, which is a typical fade. Burned LP means an outright LP pull is unlikely, but the pair dying or bleeding past -50% is likely. A 2x from about $160k is improbable.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 45,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://brokebybroke.lol",
+    "what": "Project site: confirms the contract address, generic meme narrative and template roadmap"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/4rK1ng2gRaC7TUKhqXnUr52RSozDarqX7seG9HzTFXue",
+    "what": "Post-detection pool state: price $0.000153, FDV about $170k, 5m -11%, buy/sell counts"
+   },
+   {
+    "url": "https://frontend-api-v3.pump.fun/coins/BjTykKGejK3y5ixdCkZYLE8yKmwPmYLvB3PkpRL3pump",
+    "what": "pump.fun: reply_count 0, complete true, market cap about $159k"
+   },
+   {
+    "url": "https://x.com/brokebybroke",
+    "what": "Project X account (inaccessible, 402)"
+   }
+  ]
+ },
+ "ttft_ms": 3809,
+ "type": "result",
+ "duration_ms": 69515,
+ "uuid": "b2d2e7f3-b9ba-4e7e-ae88-deffd5e58ff8",
+ "ttft_stream_ms": 867,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 867,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

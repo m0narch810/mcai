@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 74059,
+ "stop_reason": "tool_use",
+ "session_id": "3c4adbd4-f7c6-48d0-bbc8-2212a1e491f8",
+ "total_cost_usd": 0.3760288,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16040,
+  "cache_read_input_tokens": 59164,
+  "output_tokens": 3746,
+  "output_tokens_details": {
+   "thinking_tokens": 590
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16040,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2462,
+    "cache_read_input_tokens": 16730,
+    "cache_creation_input_tokens": 1886,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1886
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3746,
+   "cacheReadInputTokens": 59164,
+   "cacheCreationInputTokens": 16040,
+   "webSearchRequests": 0,
+   "costUSD": 0.2151128,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 590,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 100476,
+   "outputTokens": 2088,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.160916,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u6d4e\u516c (Ji Gong, the \\\"Crazy Monk\\\" of Chinese folklore) is a token with no socials, website or DexScreener profile. Its pool on PumpSwap was created at 04:46 UTC. GMGN shows migrated_unix=0, and the token was created 3 seconds before the pair, so it looks like it was deployed straight to PumpSwap with an LP the creator controls, not graduated from the pump.fun curve. RugCheck lists 0% LP locked or burned and rates that 'danger'. The token went up about 380% in its first hour on about $1M of volume, roughly 22x its market cap. GeckoTerminal shows 2,058 unique buyers but only 52 unique sellers over the hour, and about 2,000 of those buyers arrived in one 15-30 minute window. Since then it has been only about 50 buyers and 50 sellers per 5-15 minutes. The ~2,000 non-top-40 holders together hold just 1.67% of supply, which fits dust-sized fake-holder distribution. Recent GeckoTerminal trades show recurring wallets (including top-10 holder 6iji4...) buying and selling within seconds in uniform 1-7 SOL sizes, which looks like wash trading. At least 10 other \u6d4e\u516c tokens were launched in the prior ~2 hours, and nearly all are already dead with near-zero liquidity. I found no external event, post or news driving the name.\",\"narrative\":{\"description\":\"Ji Gong, a Chinese folk-deity monk, used as a Chinese-character meme ticker, part of the ongoing Chinese-meme trend. I found no current trigger (news, KOL post or viral moment).\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic spread. More than 10 same-name launches in 2 hours suggest a small ticker cluster, perhaps from a private Chinese-community call, but I could not find the source. The volume looks mostly bot or wash driven.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name \u6d4e\u516c token that still has meaningful liquidity. It is not the first one: the earliest were at 1790218624000 ms, about 1.8 hours earlier, and that one is now dead.\",\"competing_tokens\":\"At least 10 other \u6d4e\u516c tokens appear in the packet, e.g. KX8XBP78... and 5yvR5VPE... (the latter had $267k of h1 volume and now has $0 liquidity). Nearly all are rugged or dead, which is itself a signal about this ticker cluster.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,058 unique buyers against 52 unique sellers, with buyers arriving in one burst. About 2,000 holders share 1.67% of supply. In recent trades, recurring wallets both buy and sell within seconds in uniform sizes. GMGN reports zero smart or KOL wallets and 1 page visit. There are no socials and no web mentions.\",\"uncertainty\":\"I could not access GMGN pages or X directly. A private Telegram call could exist and not be visible to me.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked or burned; the pool appears to be deployer-created on PumpSwap, so the creator can pull it\",\"Wash trading by a small set of wallets inflates volume\",\"Fake-holder distribution (dust wallets)\",\"Sibling same-name tokens have almost all rugged within hours\",\"Only about $47k of liquidity\"]},\"counterargument\":\"Holder concentration outside the pool is moderate (top 10 about 24%). GMGN flags no snipers, bundlers or rat traders, and the creator holds 0%. Chinese-meme clusters sometimes pick one survivor and send it much higher, and this one is the survivor so far, still making new highs with price up about 11% over the last 5 minutes. Doubling from about $49k to about $100k market cap needs only modest new money.\",\"unknowns\":[\"Who holds or controls the LP tokens\",\"Whether a private Chinese Telegram or WeChat call is behind the cluster\",\"X posts (X is not indexed)\",\"Whether the 2,000-buyer burst was an airdrop or bot distribution\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched the contract address, the Chinese name plus 'meme' and 'site:x.com', and Telegram/Reddit, with no hits. GMGN returned 403. I checked DexScreener's API and GeckoTerminal's trades API.\"},\"thesis\":\"This looks like a manufactured pump. The LP is unlocked and the pool was apparently deployed by the creator. There are about 2,000 dust holders against 52 sellers, visible wash trading, no socials and no external narrative, and it sits in a cluster of same-name tokens that have mostly rugged. The most likely outcome is an LP pull or a bleed-out within 6 hours.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/6YZFZjYamiPFZufXycWNW95LaqFB6ZVjcxaL2xERdcNC\",\"what\":\"Live price, liquidity and txns; no socials\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/B7zpDwEh9PCDb784DfG9jPM5hJujYvEuyS5MYZT4HhBq/trades\",\"what\":\"Recent trades: uniform sizes, recurring wallets buying and selling\"},{\"url\":\"https://en.wikipedia.org/wiki/Ji_Gong\",\"what\":\"Background on the Ji Gong folk figure\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u6d4e\u516c (Ji Gong, the \"Crazy Monk\" of Chinese folklore) is a token with no socials, website or DexScreener profile. Its pool on PumpSwap was created at 04:46 UTC. GMGN shows migrated_unix=0, and the token was created 3 seconds before the pair, so it looks like it was deployed straight to PumpSwap with an LP the creator controls, not graduated from the pump.fun curve. RugCheck lists 0% LP locked or burned and rates that 'danger'. The token went up about 380% in its first hour on about $1M of volume, roughly 22x its market cap. GeckoTerminal shows 2,058 unique buyers but only 52 unique sellers over the hour, and about 2,000 of those buyers arrived in one 15-30 minute window. Since then it has been only about 50 buyers and 50 sellers per 5-15 minutes. The ~2,000 non-top-40 holders together hold just 1.67% of supply, which fits dust-sized fake-holder distribution. Recent GeckoTerminal trades show recurring wallets (including top-10 holder 6iji4...) buying and selling within seconds in uniform 1-7 SOL sizes, which looks like wash trading. At least 10 other \u6d4e\u516c tokens were launched in the prior ~2 hours, and nearly all are already dead with near-zero liquidity. I found no external event, post or news driving the name.",
+  "narrative": {
+   "description": "Ji Gong, a Chinese folk-deity monk, used as a Chinese-character meme ticker, part of the ongoing Chinese-meme trend. I found no current trigger (news, KOL post or viral moment).",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no organic spread. More than 10 same-name launches in 2 hours suggest a small ticker cluster, perhaps from a private Chinese-community call, but I could not find the source. The volume looks mostly bot or wash driven."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name \u6d4e\u516c token that still has meaningful liquidity. It is not the first one: the earliest were at 1790218624000 ms, about 1.8 hours earlier, and that one is now dead.",
+   "competing_tokens": "At least 10 other \u6d4e\u516c tokens appear in the packet, e.g. KX8XBP78... and 5yvR5VPE... (the latter had $267k of h1 volume and now has $0 liquidity). Nearly all are rugged or dead, which is itself a signal about this ticker cluster.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,058 unique buyers against 52 unique sellers, with buyers arriving in one burst. About 2,000 holders share 1.67% of supply. In recent trades, recurring wallets both buy and sell within seconds in uniform sizes. GMGN reports zero smart or KOL wallets and 1 page visit. There are no socials and no web mentions.",
+   "uncertainty": "I could not access GMGN pages or X directly. A private Telegram call could exist and not be visible to me."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked or burned; the pool appears to be deployer-created on PumpSwap, so the creator can pull it",
+    "Wash trading by a small set of wallets inflates volume",
+    "Fake-holder distribution (dust wallets)",
+    "Sibling same-name tokens have almost all rugged within hours",
+    "Only about $47k of liquidity"
+   ]
+  },
+  "counterargument": "Holder concentration outside the pool is moderate (top 10 about 24%). GMGN flags no snipers, bundlers or rat traders, and the creator holds 0%. Chinese-meme clusters sometimes pick one survivor and send it much higher, and this one is the survivor so far, still making new highs with price up about 11% over the last 5 minutes. Doubling from about $49k to about $100k market cap needs only modest new money.",
+  "unknowns": [
+   "Who holds or controls the LP tokens",
+   "Whether a private Chinese Telegram or WeChat call is behind the cluster",
+   "X posts (X is not indexed)",
+   "Whether the 2,000-buyer burst was an airdrop or bot distribution"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched the contract address, the Chinese name plus 'meme' and 'site:x.com', and Telegram/Reddit, with no hits. GMGN returned 403. I checked DexScreener's API and GeckoTerminal's trades API."
+  },
+  "thesis": "This looks like a manufactured pump. The LP is unlocked and the pool was apparently deployed by the creator. There are about 2,000 dust holders against 52 sellers, visible wash trading, no socials and no external narrative, and it sits in a cluster of same-name tokens that have mostly rugged. The most likely outcome is an LP pull or a bleed-out within 6 hours.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/6YZFZjYamiPFZufXycWNW95LaqFB6ZVjcxaL2xERdcNC",
+    "what": "Live price, liquidity and txns; no socials"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/B7zpDwEh9PCDb784DfG9jPM5hJujYvEuyS5MYZT4HhBq/trades",
+    "what": "Recent trades: uniform sizes, recurring wallets buying and selling"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Ji_Gong",
+    "what": "Background on the Ji Gong folk figure"
+   }
+  ]
+ },
+ "ttft_ms": 5463,
+ "type": "result",
+ "duration_ms": 60519,
+ "uuid": "dbd14589-35e6-42f8-b988-b5a5b58fa18d",
+ "ttft_stream_ms": 1630,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1630,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

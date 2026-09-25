@@ -1,0 +1,140 @@
+{
+ "duration_api_ms": 37052,
+ "stop_reason": "tool_use",
+ "session_id": "c4a878d7-8140-4833-8075-df7ce0f5be3f",
+ "total_cost_usd": 0.1441984,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9285,
+  "cache_read_input_tokens": 852,
+  "output_tokens": 3487,
+  "output_tokens_details": {
+   "thinking_tokens": 918
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9285,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3487,
+    "cache_read_input_tokens": 852,
+    "cache_creation_input_tokens": 9285,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9285
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3487,
+   "cacheReadInputTokens": 852,
+   "cacheCreationInputTokens": 9285,
+   "webSearchRequests": 0,
+   "costUSD": 0.1441984,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 918,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"predictive_observations\":[\"One unlabeled wallet (FhVo\u2026) held 80.05% of supply outside the pool. GeckoTerminal's top-10 figure of 95% agrees. With only about $54k of liquidity, that wallet could empty the pool in one sell.\",\"RugCheck marked the PumpSwap LP as largely unlocked (a 'danger' risk), with 'Low amount of LP Providers'. The report correctly treated liquidity removal as the main path to failure.\",\"Same-name sibling HFNnKv\u2026 was deployed about 90 seconds before this pair. It had $0.9M of h1 volume but only $20 of liquidity. That pattern matches a pool that had already been drained within the hour. The report noticed it but framed it as 'test deploys' rather than as a live example of the same operator pulling liquidity.\",\"About 8 more same-name MORX contracts sat at $1 market cap with about $1 of liquidity. This points to one operator running serial launch-and-abandon cycles under the same branding.\",\"Creation and migration happened in the same second (created_unix == migrated_unix), and GMGN flagged 152 bundler wallets. The bonding curve was filled in one block, which fits a bundled self-launch where the deployer ends up holding most of the supply.\",\"Unique buyers collapsed: 2,210 over h1 but only 186 over m30, against more than 15k transactions in that window. Distinct wallets recycling volume (wash or bot churn) point to no organic bid to absorb an exit.\",\"The creator had 7 prior launches, the website had no contract address, and the GitHub org was one day old. This is weak on its own but consistent with a disposable project.\"],\"misleading_observations\":[\"GMGN reported lp_burn_ratio 1.0, a top10_holder_rate of 5.5% and a creator_hold_rate of 0.06%. All three contradict RugCheck and GeckoTerminal. The report rightly relied on the more cautious sources, but a less careful reader could have taken GMGN's figures as a clean bill of health.\",\"2,210 unique h1 buyers and 2,229 holders look like broad distribution. Most were probably created in the bundled launch burst.\",\"The polished moorix.app site, with tokenomics, buybacks and staking, plus a GitHub org, give surface credibility that says nothing about who controls the supply or the LP.\",\"The creator's best token reached a $1.7M ATH (cited in the counterargument). A past high tells you little about this launch when the current structure is 80% single-wallet supply and unlocked LP.\",\"The $3.6M volume and 67x turnover look like strong demand but are mostly wash or bot churn.\"],\"evidence_that_should_have_changed_conclusion\":[\"Nothing in the packet argued for a runner outcome. The strong_fade call with p_rug 78 was directionally supported.\",\"The sibling HFNnKv\u2026 (about $0.9M volume, $20 liquidity, created seconds earlier) arguably justified an even higher p_rug and an explicitly short time-to-rug, measured in minutes rather than '6h'. The report treated the timing as uncertain within the 6h window.\",\"Caveat: the recorded outcome is 'no pair or no liquidity at T_D: unfillable'. This fits a liquidity pull within about 22 minutes of T2, but it could also be a data or API failure. It does not cleanly confirm a rug, so it cannot be scored as a verified correct p_rug call.\"],\"outcome_knowable\":\"partially_knowable\",\"reasoning_quality\":\"good\",\"hypotheses_proposed\":[{\"statement\":\"If a same-name or same-symbol sibling contract was created within \u00b12h of the candidate and shows h1 volume \u2265 $100k with liquidity < $500, the candidate will have near-zero liquidity (unfillable, or a >90% liquidity drop) by T_D or within 60 minutes more often than matched candidates without such a sibling.\",\"conditions\":\"Pair age < 3h, market cap under $500k, sibling data taken from the T2 same_ticker_or_name_tokens field only. Compare against candidates with similar age, market cap and liquidity but no high-volume drained sibling.\",\"market_structure_rationale\":\"A same-branded contract that traded heavy volume and now has almost no liquidity is direct evidence that the deployer (or a copycat operator) already ran a pump-and-pull cycle under this name. Serial operators reuse the same playbook within hours.\"},{\"statement\":\"When a single unlabeled non-pool wallet holds \u226550% of supply and RugCheck reports unlocked LP, the chance that liquidity is gone by T_D (about 20-25 minutes after T2) is materially higher than the base rate, even when GMGN reports a low top-10 holder rate or an LP burn ratio of 1.0.\",\"conditions\":\"Solana tokens under 2h old. Top-holder data from RugCheck at T2. Treat RugCheck/GMGN disagreement on concentration as its own flag.\",\"market_structure_rationale\":\"A holder with that much supply can drain a thin pool in one sell, and unlocked LP lets the owner withdraw directly. A disagreement between data sources usually means one source is excluding or mislabeling the controlling account.\"},{\"statement\":\"Tokens whose launchpad creation and migration timestamps fall within \u22645 seconds of each other, combined with \u2265100 GMGN bundler wallets, have a higher rate of liquidity pulls within 1h than tokens that migrated organically after \u226510 minutes on the curve.\",\"conditions\":\"Launchpad tokens with GMGN created_unix and migrated_unix available at T2. Market cap under $500k.\",\"market_structure_rationale\":\"Filling the bonding curve instantly requires the deployer (or bundled wallets it controls) to buy the whole curve. That concentrates supply and control in the operator's hands before any organic buyer arrives.\"}],\"summary\":\"The frozen report called MORX a strong fade (p_runner 6, p_rug 78). The recorded outcome is that the trade could not be filled: there was no pair or no liquidity at decision time, about 22 minutes after the evidence was collected. That is consistent with a rapid liquidity pull, but the outcome record does not confirm a rug. A data failure would produce the same entry, so this case cannot be counted as a verified hit.\\n\\nThe report's reasoning was sound and weighted the right structural facts:\\n- one unlabeled wallet held 80% of supply\\n- RugCheck flagged the LP as unlocked\\n- a single-block bundled launch (152 bundler wallets, creation and migration in the same second)\\n- unique buyers collapsing while transaction counts stayed huge (wash trading)\\n- serial same-name clones\\n\\nIt also correctly discounted GMGN's contradictory 'clean' metrics, the polished website and the inflated volume.\\n\\nThe one underused signal was the sibling contract HFNnKv\u2026, deployed seconds earlier with $0.9M of volume and $20 of liquidity. It was the clearest sign that this operator was already pulling liquidity under the MORX name. It should have pushed the report toward an even higher p_rug with a timeline of minutes, not hours. The direction was knowable at the time; the exact timing and whether a trade could be filled were not.\"}",
+ "structured_output": {
+  "predictive_observations": [
+   "One unlabeled wallet (FhVo\u2026) held 80.05% of supply outside the pool. GeckoTerminal's top-10 figure of 95% agrees. With only about $54k of liquidity, that wallet could empty the pool in one sell.",
+   "RugCheck marked the PumpSwap LP as largely unlocked (a 'danger' risk), with 'Low amount of LP Providers'. The report correctly treated liquidity removal as the main path to failure.",
+   "Same-name sibling HFNnKv\u2026 was deployed about 90 seconds before this pair. It had $0.9M of h1 volume but only $20 of liquidity. That pattern matches a pool that had already been drained within the hour. The report noticed it but framed it as 'test deploys' rather than as a live example of the same operator pulling liquidity.",
+   "About 8 more same-name MORX contracts sat at $1 market cap with about $1 of liquidity. This points to one operator running serial launch-and-abandon cycles under the same branding.",
+   "Creation and migration happened in the same second (created_unix == migrated_unix), and GMGN flagged 152 bundler wallets. The bonding curve was filled in one block, which fits a bundled self-launch where the deployer ends up holding most of the supply.",
+   "Unique buyers collapsed: 2,210 over h1 but only 186 over m30, against more than 15k transactions in that window. Distinct wallets recycling volume (wash or bot churn) point to no organic bid to absorb an exit.",
+   "The creator had 7 prior launches, the website had no contract address, and the GitHub org was one day old. This is weak on its own but consistent with a disposable project."
+  ],
+  "misleading_observations": [
+   "GMGN reported lp_burn_ratio 1.0, a top10_holder_rate of 5.5% and a creator_hold_rate of 0.06%. All three contradict RugCheck and GeckoTerminal. The report rightly relied on the more cautious sources, but a less careful reader could have taken GMGN's figures as a clean bill of health.",
+   "2,210 unique h1 buyers and 2,229 holders look like broad distribution. Most were probably created in the bundled launch burst.",
+   "The polished moorix.app site, with tokenomics, buybacks and staking, plus a GitHub org, give surface credibility that says nothing about who controls the supply or the LP.",
+   "The creator's best token reached a $1.7M ATH (cited in the counterargument). A past high tells you little about this launch when the current structure is 80% single-wallet supply and unlocked LP.",
+   "The $3.6M volume and 67x turnover look like strong demand but are mostly wash or bot churn."
+  ],
+  "evidence_that_should_have_changed_conclusion": [
+   "Nothing in the packet argued for a runner outcome. The strong_fade call with p_rug 78 was directionally supported.",
+   "The sibling HFNnKv\u2026 (about $0.9M volume, $20 liquidity, created seconds earlier) arguably justified an even higher p_rug and an explicitly short time-to-rug, measured in minutes rather than '6h'. The report treated the timing as uncertain within the 6h window.",
+   "Caveat: the recorded outcome is 'no pair or no liquidity at T_D: unfillable'. This fits a liquidity pull within about 22 minutes of T2, but it could also be a data or API failure. It does not cleanly confirm a rug, so it cannot be scored as a verified correct p_rug call."
+  ],
+  "outcome_knowable": "partially_knowable",
+  "reasoning_quality": "good",
+  "hypotheses_proposed": [
+   {
+    "statement": "If a same-name or same-symbol sibling contract was created within \u00b12h of the candidate and shows h1 volume \u2265 $100k with liquidity < $500, the candidate will have near-zero liquidity (unfillable, or a >90% liquidity drop) by T_D or within 60 minutes more often than matched candidates without such a sibling.",
+    "conditions": "Pair age < 3h, market cap under $500k, sibling data taken from the T2 same_ticker_or_name_tokens field only. Compare against candidates with similar age, market cap and liquidity but no high-volume drained sibling.",
+    "market_structure_rationale": "A same-branded contract that traded heavy volume and now has almost no liquidity is direct evidence that the deployer (or a copycat operator) already ran a pump-and-pull cycle under this name. Serial operators reuse the same playbook within hours."
+   },
+   {
+    "statement": "When a single unlabeled non-pool wallet holds \u226550% of supply and RugCheck reports unlocked LP, the chance that liquidity is gone by T_D (about 20-25 minutes after T2) is materially higher than the base rate, even when GMGN reports a low top-10 holder rate or an LP burn ratio of 1.0.",
+    "conditions": "Solana tokens under 2h old. Top-holder data from RugCheck at T2. Treat RugCheck/GMGN disagreement on concentration as its own flag.",
+    "market_structure_rationale": "A holder with that much supply can drain a thin pool in one sell, and unlocked LP lets the owner withdraw directly. A disagreement between data sources usually means one source is excluding or mislabeling the controlling account."
+   },
+   {
+    "statement": "Tokens whose launchpad creation and migration timestamps fall within \u22645 seconds of each other, combined with \u2265100 GMGN bundler wallets, have a higher rate of liquidity pulls within 1h than tokens that migrated organically after \u226510 minutes on the curve.",
+    "conditions": "Launchpad tokens with GMGN created_unix and migrated_unix available at T2. Market cap under $500k.",
+    "market_structure_rationale": "Filling the bonding curve instantly requires the deployer (or bundled wallets it controls) to buy the whole curve. That concentrates supply and control in the operator's hands before any organic buyer arrives."
+   }
+  ],
+  "summary": "The frozen report called MORX a strong fade (p_runner 6, p_rug 78). The recorded outcome is that the trade could not be filled: there was no pair or no liquidity at decision time, about 22 minutes after the evidence was collected. That is consistent with a rapid liquidity pull, but the outcome record does not confirm a rug. A data failure would produce the same entry, so this case cannot be counted as a verified hit.\n\nThe report's reasoning was sound and weighted the right structural facts:\n- one unlabeled wallet held 80% of supply\n- RugCheck flagged the LP as unlocked\n- a single-block bundled launch (152 bundler wallets, creation and migration in the same second)\n- unique buyers collapsing while transaction counts stayed huge (wash trading)\n- serial same-name clones\n\nIt also correctly discounted GMGN's contradictory 'clean' metrics, the polished website and the inflated volume.\n\nThe one underused signal was the sibling contract HFNnKv\u2026, deployed seconds earlier with $0.9M of volume and $20 of liquidity. It was the clearest sign that this operator was already pulling liquidity under the MORX name. It should have pushed the report toward an even higher p_rug with a timeline of minutes, not hours. The direction was knowable at the time; the exact timing and whether a trade could be filled were not."
+ },
+ "ttft_ms": 11344,
+ "type": "result",
+ "duration_ms": 37103,
+ "uuid": "ab4e25ce-96b9-4b0f-9805-b63902ddce22",
+ "ttft_stream_ms": 933,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 933,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

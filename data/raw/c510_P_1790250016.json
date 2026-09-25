@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 24578,
+ "stop_reason": "tool_use",
+ "session_id": "be8a621c-aec8-49c8-a631-3aea5788a99a",
+ "total_cost_usd": 0.11228280000000002,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7766,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2488,
+  "output_tokens_details": {
+   "thinking_tokens": 426
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7766,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2488,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7766,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7766
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2488,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7766,
+   "webSearchRequests": 0,
+   "costUSD": 0.11228280000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 426,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GENGO (\\\"gengo.world\\\") is a 36-minute-old pool that was created directly on PumpSwap (the token was created 3 seconds before the pair, never migrated, and was never on the pump.fun curve). The creator seeded the liquidity themselves, and 0% of it is locked or burned. Liquidity (~$38.7k) is larger than the market cap (~$34k), and volume was about $700k in one hour, which is 18x turnover. The price rose ~250% in that hour. The packet shows about 10 other tokens with the same name and ticker launched in the same ~50-minute window. Most now have $0 liquidity, and one (3T7b...) is running at the same time with nearly identical volume (~$687k per hour) and liquidity (~$33k). This matches a repeat-deploy farm: the operator seeds a pool, bots inflate volume and buy counts, then the liquidity gets pulled.\",\"narrative\":{\"description\":\"'gengo.world' looks like a website or project name, but the token lists no website, socials, description, or DexScreener profile. No story that anyone could follow is visible. The name has been deployed repeatedly, most likely by the same operator or by copycats.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks machine-made, not organic. There are 2,059 unique buyers but only 50 unique sellers. Recent buy counts are high while unique buyers per 5 minutes stay low (about 33). A clone launched at the same time shows almost the same volume profile. That points to bot volume and holder farming, not real attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is one of about 11 identical 'gengo.world' GENGO deployments and happens to be the one that met the rule. Nothing in the packet marks it as the official one.\",\"competing_tokens\":\"3T7bjridArVsD8fjZyF9faXK2ivXerX7ZsEnC4W5Dmho has ~$33k liquidity and ~$687k per-hour volume, the same shape as this coin. About 8 other clones have $0 or near-$0 liquidity, a sign they were already pulled or died, including C4Q14... (created ~9 minutes before this one) and GtzaZ... (had $206k in hourly volume, now $0 liquidity).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 31 bundler wallets, which account for 42% of top-trader activity, and RugCheck finds a 25-wallet insider trading network. Only 50 unique sellers stand against 2,059 buyers, a sign of many small bot-seeded buys. The creator seeded the liquidity themselves and none of it is locked. The creator's status is 'creator_close'. A series of same-name clones has dead liquidity, and one clone running at the same time looks almost identical. There is no promotion and no socials.\",\"uncertainty\":\"I cannot confirm that the clones share a deployer. The spread-out holder base (top 10 hold 28.8% excluding the pool) could mean some real retail is buying. Without X data I can't rule out an actual gengo.world project.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the liquidity is locked or burned, and a single provider supplied it, so the operator can pull it at any time\",\"The same-name clones already show $0 liquidity, which suggests repeated pulls\",\"Bundlers and an insider network dominate trading\",\"Volume of 18x the market cap in one hour looks like wash trading\",\"Liquidity above market cap points to an artificially seeded pool\",\"A 2x from entry needs roughly $70k+ market cap with no real buyers underneath\"]},\"counterargument\":\"Holders are fairly spread out: no single wallet holds more than 4.3%, and mint and freeze authority are both renounced. The creator holds 0%. Buy-side pressure is heavy and the price is near its all-time high. Operators sometimes let a farm coin run to $100k+ before exiting, and the best token this creator has made before peaked near $98k market cap. So a quick 2x from about $34k before the pull is possible.\",\"unknowns\":[\"Whether the creator or the LP provider controls the clone deployments\",\"Whether a real gengo.world project exists off-chain\",\"How much of the 2,059 holder count is airdropped or bot wallets\",\"The price at the 25-minute entry\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; this uses only the evidence packet.\"},\"thesis\":\"This looks like a coordinated repeat-deploy LP farm, not an emerging runner. The liquidity was self-seeded and is unlocked, bundlers are heavy, the unique-seller count is implausibly low, and many identical clones have dead liquidity. The most likely outcome within 6 hours is a liquidity pull or a sharp decline. A 2x from entry is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GENGO (\"gengo.world\") is a 36-minute-old pool that was created directly on PumpSwap (the token was created 3 seconds before the pair, never migrated, and was never on the pump.fun curve). The creator seeded the liquidity themselves, and 0% of it is locked or burned. Liquidity (~$38.7k) is larger than the market cap (~$34k), and volume was about $700k in one hour, which is 18x turnover. The price rose ~250% in that hour. The packet shows about 10 other tokens with the same name and ticker launched in the same ~50-minute window. Most now have $0 liquidity, and one (3T7b...) is running at the same time with nearly identical volume (~$687k per hour) and liquidity (~$33k). This matches a repeat-deploy farm: the operator seeds a pool, bots inflate volume and buy counts, then the liquidity gets pulled.",
+  "narrative": {
+   "description": "'gengo.world' looks like a website or project name, but the token lists no website, socials, description, or DexScreener profile. No story that anyone could follow is visible. The name has been deployed repeatedly, most likely by the same operator or by copycats.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity looks machine-made, not organic. There are 2,059 unique buyers but only 50 unique sellers. Recent buy counts are high while unique buyers per 5 minutes stay low (about 33). A clone launched at the same time shows almost the same volume profile. That points to bot volume and holder farming, not real attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is one of about 11 identical 'gengo.world' GENGO deployments and happens to be the one that met the rule. Nothing in the packet marks it as the official one.",
+   "competing_tokens": "3T7bjridArVsD8fjZyF9faXK2ivXerX7ZsEnC4W5Dmho has ~$33k liquidity and ~$687k per-hour volume, the same shape as this coin. About 8 other clones have $0 or near-$0 liquidity, a sign they were already pulled or died, including C4Q14... (created ~9 minutes before this one) and GtzaZ... (had $206k in hourly volume, now $0 liquidity).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 31 bundler wallets, which account for 42% of top-trader activity, and RugCheck finds a 25-wallet insider trading network. Only 50 unique sellers stand against 2,059 buyers, a sign of many small bot-seeded buys. The creator seeded the liquidity themselves and none of it is locked. The creator's status is 'creator_close'. A series of same-name clones has dead liquidity, and one clone running at the same time looks almost identical. There is no promotion and no socials.",
+   "uncertainty": "I cannot confirm that the clones share a deployer. The spread-out holder base (top 10 hold 28.8% excluding the pool) could mean some real retail is buying. Without X data I can't rule out an actual gengo.world project."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the liquidity is locked or burned, and a single provider supplied it, so the operator can pull it at any time",
+    "The same-name clones already show $0 liquidity, which suggests repeated pulls",
+    "Bundlers and an insider network dominate trading",
+    "Volume of 18x the market cap in one hour looks like wash trading",
+    "Liquidity above market cap points to an artificially seeded pool",
+    "A 2x from entry needs roughly $70k+ market cap with no real buyers underneath"
+   ]
+  },
+  "counterargument": "Holders are fairly spread out: no single wallet holds more than 4.3%, and mint and freeze authority are both renounced. The creator holds 0%. Buy-side pressure is heavy and the price is near its all-time high. Operators sometimes let a farm coin run to $100k+ before exiting, and the best token this creator has made before peaked near $98k market cap. So a quick 2x from about $34k before the pull is possible.",
+  "unknowns": [
+   "Whether the creator or the LP provider controls the clone deployments",
+   "Whether a real gengo.world project exists off-chain",
+   "How much of the 2,059 holder count is airdropped or bot wallets",
+   "The price at the 25-minute entry"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; this uses only the evidence packet."
+  },
+  "thesis": "This looks like a coordinated repeat-deploy LP farm, not an emerging runner. The liquidity was self-seeded and is unlocked, bundlers are heavy, the unique-seller count is implausibly low, and many identical clones have dead liquidity. The most likely outcome within 6 hours is a liquidity pull or a sharp decline. A 2x from entry is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5458,
+ "type": "result",
+ "duration_ms": 24622,
+ "uuid": "2206dc8f-3caf-4cb5-aed2-985e3674beda",
+ "ttft_stream_ms": 772,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 772,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

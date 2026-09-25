@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 102137,
+ "stop_reason": "tool_use",
+ "session_id": "c5da336d-30fc-4e15-9988-0e8a738aa220",
+ "total_cost_usd": 0.41532100000000005,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 18997,
+  "cache_read_input_tokens": 97950,
+  "output_tokens": 5051,
+  "output_tokens_details": {
+   "thinking_tokens": 985
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18997,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2769,
+    "cache_read_input_tokens": 20375,
+    "cache_creation_input_tokens": 1198,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1198
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 5051,
+   "cacheReadInputTokens": 97950,
+   "cacheCreationInputTokens": 18997,
+   "webSearchRequests": 0,
+   "costUSD": 0.272642,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 985,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 67409,
+   "outputTokens": 3054,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.14267899999999997,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PROM (GPxp\u2026bA6) is about 37 minutes old and trades on PumpSwap at about $108k market cap with $24k liquidity. GMGN tags its launchpad as a Meteora virtual curve that was created and migrated in the same second, so it never had a normal bonding-curve phase. It is one of at least 7 'PROM' tokens deployed within roughly 30 minutes (packet timestamps 12:24\u201312:50 UTC). GMGN counts 7 duplicates of the image. Several of these copies have more money in them than this one (UWiW, EFW3, 8xhS, 7MsR, each around $220\u2013290k market cap), and one clone did $4.1M in volume in an hour. They all reference PromX (promx.fun, @usePromX), a site that pays people to post on X about coins launched through it, with the payouts funded from pump.fun creator fees. The trading looks automated. DexScreener counts 6,101 buys but only 4,022 sells, and GeckoTerminal counts 2,089 unique buyers against only 81 unique sellers. Over the last 5 minutes, 39 buyers made 545 buys and 37 sellers made 532 sells, so a small group is trading in circles. Price has drifted down 5\u20136% over the last 15\u201330 minutes. RugCheck reports that one unlabeled wallet (FhVo\u2026) holds 80.05% of supply and that the LP on the main market is unlocked.\",\"narrative\":{\"description\":\"PromX: a platform that pays holders in SOL for posting about coins launched through it, with rewards taken from creator fees. The PROM ticker is presumably meant to be the platform's own token, but the site lists only other coins ($PCAT, $PDOG, $ELON, $Blep, $Promiseland) and names no official PROM contract.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The platform's X account (@usePromX) posted something, and a swarm of copycat and sniper deployers launched PROM tokens within minutes of each other. The 'post to earn' idea can bring some paid shilling, but I found no organic discussion anywhere: web search found nothing on the platform, the contract address, Reddit or Telegram.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"DexScreener shows no profile or socials for this contract. The only link to PromX comes from GeckoTerminal/GMGN metadata, and any deployer can copy that. A DexScreener summary I fetched suggested EFW3 carries the promx.fun and @usePromX links, but that output was garbled and I could not confirm it. This token was not first: EFW3 launched about 7 minutes earlier and 8xhS about 6 minutes earlier. It is also not the largest by market cap or volume.\",\"competing_tokens\":\"At least 7 PROM tokens appeared at nearly the same moment. EFW3 (the earliest, about $1.2M hourly volume) and 8xhS ($4.1M hourly volume) are ahead, and UWiW and 7MsR sit at $250\u2013290k market cap. Separately, Prometeus PROM (an Ethereum token, about $67M) owns the ticker in general.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The ratio of 2,089 unique buyers to 81 unique sellers, plus around 1,000 transactions every 5 minutes from about 40 wallets, points to bot volume. GMGN flags 32 bundler wallets, 7 duplicate images and only 5 GMGN page visits, which means almost no real human attention. There are no promotional flags and no DexScreener profile. The deployer (3 launches, status 'creator_close') runs a clone-swarm pattern.\",\"uncertainty\":\"I could not read X (it returned 402). The official PromX post may point to a contract, and I could not check which one.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80.05% of supply (RugCheck), while the pool holds about 11%\",\"The LP on the main market is unlocked ('Large Amount of LP Unlocked', rated danger)\",\"Liquidity is thin at $24k while hourly volume is $550k, driven by wash trading\",\"The creator has closed out ('creator_close') and has 3 prior launches\",\"Several same-ticker clones with more money in them are competing for the same attention\",\"32 bundler wallets\"]},\"counterargument\":\"PromX may be a real product with real momentum, and the whole cluster of PROM tokens is seeing more than $8M in combined hourly volume. If @usePromX's post, which I could not read, points to this exact contract, it could reprice toward the $250k level of the leading clones, which is about 2.3x. The 80% wallet could be a lock or vesting account that GMGN excludes from its figures, since GMGN puts the top-10 share at only 7.5%.\",\"unknowns\":[\"What the @usePromX status post says and which contract it names\",\"Who controls wallet FhVo\u2026 (80%)\",\"Whether PromX actually runs this token's fee pool\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"X returned 402. A search for the contract address found nothing. promx.fun describes the post-to-earn platform but names no PROM contract. Solscan returned 403.\"},\"thesis\":\"This looks like a non-canonical clone in a swarm of PROM tokens launched off a PromX post. Volume is bot-driven, one wallet holds 80% of supply, the LP is unlocked and the creator has exited. Several clones launched earlier or hold more money, so the odds of this particular contract doubling are low and the odds of it being rugged or dying are high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.promx.fun/\",\"what\":\"PromX site: a post-to-earn platform with no PROM contract listed\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/GPxpQb7oaZByFyEsfjKaPS5fKHnmWGXtDtHr1XUX4bA6\",\"what\":\"Pairs for this token: PumpSwap is the main pair, the Meteora pairs are dust, no socials\"},{\"url\":\"https://api.dexscreener.com/tokens/v1/solana/EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9,8xhSYeD6CwWZgUBnvSvfSBmEGipYX1eA2KpN2Y619nK9,UWiWLeZCVJM8mGug6TujNJWiVe9Td97SfeDJBRJFwTv,FReonXF7MSMM2oho2RF2xAdhcy45HsQf1UURxnCpmF5n,7MsRE1uaSjdLGDfxmMegiwSX4au83sMVbsUN39jiCRoz\",\"what\":\"Competing PROM clones; EFW3 reportedly links promx.fun and @usePromX\"},{\"url\":\"https://x.com/usePromX/status/2103095000846467218\",\"what\":\"Project X post (returned 402, inaccessible)\"}]}",
+ "structured_output": {
+  "what_is_happening": "PROM (GPxp\u2026bA6) is about 37 minutes old and trades on PumpSwap at about $108k market cap with $24k liquidity. GMGN tags its launchpad as a Meteora virtual curve that was created and migrated in the same second, so it never had a normal bonding-curve phase. It is one of at least 7 'PROM' tokens deployed within roughly 30 minutes (packet timestamps 12:24\u201312:50 UTC). GMGN counts 7 duplicates of the image. Several of these copies have more money in them than this one (UWiW, EFW3, 8xhS, 7MsR, each around $220\u2013290k market cap), and one clone did $4.1M in volume in an hour. They all reference PromX (promx.fun, @usePromX), a site that pays people to post on X about coins launched through it, with the payouts funded from pump.fun creator fees. The trading looks automated. DexScreener counts 6,101 buys but only 4,022 sells, and GeckoTerminal counts 2,089 unique buyers against only 81 unique sellers. Over the last 5 minutes, 39 buyers made 545 buys and 37 sellers made 532 sells, so a small group is trading in circles. Price has drifted down 5\u20136% over the last 15\u201330 minutes. RugCheck reports that one unlabeled wallet (FhVo\u2026) holds 80.05% of supply and that the LP on the main market is unlocked.",
+  "narrative": {
+   "description": "PromX: a platform that pays holders in SOL for posting about coins launched through it, with rewards taken from creator fees. The PROM ticker is presumably meant to be the platform's own token, but the site lists only other coins ($PCAT, $PDOG, $ELON, $Blep, $Promiseland) and names no official PROM contract.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The platform's X account (@usePromX) posted something, and a swarm of copycat and sniper deployers launched PROM tokens within minutes of each other. The 'post to earn' idea can bring some paid shilling, but I found no organic discussion anywhere: web search found nothing on the platform, the contract address, Reddit or Telegram."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "DexScreener shows no profile or socials for this contract. The only link to PromX comes from GeckoTerminal/GMGN metadata, and any deployer can copy that. A DexScreener summary I fetched suggested EFW3 carries the promx.fun and @usePromX links, but that output was garbled and I could not confirm it. This token was not first: EFW3 launched about 7 minutes earlier and 8xhS about 6 minutes earlier. It is also not the largest by market cap or volume.",
+   "competing_tokens": "At least 7 PROM tokens appeared at nearly the same moment. EFW3 (the earliest, about $1.2M hourly volume) and 8xhS ($4.1M hourly volume) are ahead, and UWiW and 7MsR sit at $250\u2013290k market cap. Separately, Prometeus PROM (an Ethereum token, about $67M) owns the ticker in general.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The ratio of 2,089 unique buyers to 81 unique sellers, plus around 1,000 transactions every 5 minutes from about 40 wallets, points to bot volume. GMGN flags 32 bundler wallets, 7 duplicate images and only 5 GMGN page visits, which means almost no real human attention. There are no promotional flags and no DexScreener profile. The deployer (3 launches, status 'creator_close') runs a clone-swarm pattern.",
+   "uncertainty": "I could not read X (it returned 402). The official PromX post may point to a contract, and I could not check which one."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80.05% of supply (RugCheck), while the pool holds about 11%",
+    "The LP on the main market is unlocked ('Large Amount of LP Unlocked', rated danger)",
+    "Liquidity is thin at $24k while hourly volume is $550k, driven by wash trading",
+    "The creator has closed out ('creator_close') and has 3 prior launches",
+    "Several same-ticker clones with more money in them are competing for the same attention",
+    "32 bundler wallets"
+   ]
+  },
+  "counterargument": "PromX may be a real product with real momentum, and the whole cluster of PROM tokens is seeing more than $8M in combined hourly volume. If @usePromX's post, which I could not read, points to this exact contract, it could reprice toward the $250k level of the leading clones, which is about 2.3x. The 80% wallet could be a lock or vesting account that GMGN excludes from its figures, since GMGN puts the top-10 share at only 7.5%.",
+  "unknowns": [
+   "What the @usePromX status post says and which contract it names",
+   "Who controls wallet FhVo\u2026 (80%)",
+   "Whether PromX actually runs this token's fee pool"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "X returned 402. A search for the contract address found nothing. promx.fun describes the post-to-earn platform but names no PROM contract. Solscan returned 403."
+  },
+  "thesis": "This looks like a non-canonical clone in a swarm of PROM tokens launched off a PromX post. Volume is bot-driven, one wallet holds 80% of supply, the LP is unlocked and the creator has exited. Several clones launched earlier or hold more money, so the odds of this particular contract doubling are low and the odds of it being rugged or dying are high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.promx.fun/",
+    "what": "PromX site: a post-to-earn platform with no PROM contract listed"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/GPxpQb7oaZByFyEsfjKaPS5fKHnmWGXtDtHr1XUX4bA6",
+    "what": "Pairs for this token: PumpSwap is the main pair, the Meteora pairs are dust, no socials"
+   },
+   {
+    "url": "https://api.dexscreener.com/tokens/v1/solana/EFW3VwqYPzoc58reVMy2GxEjv78xQ765pQy1JMdBVoB9,8xhSYeD6CwWZgUBnvSvfSBmEGipYX1eA2KpN2Y619nK9,UWiWLeZCVJM8mGug6TujNJWiVe9Td97SfeDJBRJFwTv,FReonXF7MSMM2oho2RF2xAdhcy45HsQf1UURxnCpmF5n,7MsRE1uaSjdLGDfxmMegiwSX4au83sMVbsUN39jiCRoz",
+    "what": "Competing PROM clones; EFW3 reportedly links promx.fun and @usePromX"
+   },
+   {
+    "url": "https://x.com/usePromX/status/2103095000846467218",
+    "what": "Project X post (returned 402, inaccessible)"
+   }
+  ]
+ },
+ "ttft_ms": 3112,
+ "type": "result",
+ "duration_ms": 86037,
+ "uuid": "06b8915c-1abc-4a55-a353-d2cc0b575715",
+ "ttft_stream_ms": 715,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 715,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

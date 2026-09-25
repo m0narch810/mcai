@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 27160,
+ "stop_reason": "tool_use",
+ "session_id": "557a8827-fc80-4533-9e02-b9801ae83cf7",
+ "total_cost_usd": 0.1146228,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7681,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2639,
+  "output_tokens_details": {
+   "thinking_tokens": 685
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7681,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2639,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7681,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7681
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2639,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7681,
+   "webSearchRequests": 0,
+   "costUSD": 0.1146228,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 685,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named 'company' is trading in a PumpSwap pool that is about 36 minutes old. It is not a pump.fun curve coin: there is no pump suffix and migrated_unix is 0. The price is up about 320% on the hour, with $1.9M of volume against roughly $46k of liquidity (41x turnover). At least 7 other tokens named 'company' opened pools within about 70 minutes of each other, most with similar ~$43-47k starting liquidity. Three of them already show zero liquidity after heavy volume (92iX had $644k h1 volume, now $0 liquidity), and a fourth (ForVg) is down to $15 after $357k. This looks like a template or launchpad-style serial deployment, and the linked socials (yourcompanyfun on X, stonkfunxyz on Telegram) point to a platform rather than a project. GMGN flags 100 bundler wallets holding 28% of the top-trader share. There are 2,111 unique buyers but only 108 unique sellers, and about 1,800 of those buyers arrived in the first 30 minutes. That pattern looks like bot distribution or wash activity rather than organic demand. The LP is 0% locked/burned, the creator wallet is closed, and RugCheck flags unlocked LP with only a few LP providers.\",\"narrative\":{\"description\":\"The generic word 'company', probably tied to a 'your company'/stonk.fun-style launch platform meme. There is no distinct story, and there are many identical clones.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Activity looks like a batch of bot-driven serial launches. Several same-name pools were deployed within about an hour, and several have already been drained. That points to a farming pattern, not organic narrative spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is currently the highest-volume live 'company' pool among recent clones, but nothing marks it as the canonical one.\",\"competing_tokens\":\"Six or more same-name tokens launched within about 70 minutes. 6sEf... (earlier, $208k mcap, $1.0M h1 volume) is the stronger competitor. 92iX, ForVg and GcGC are drained to about $0 liquidity, and 5a4A and GUrk are newer clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 100 bundler wallets holding 28% of the top-trader share. Unique buyers (2,111) against unique sellers (108) is very lopsided, and 6.7k buys vs 3.9k sells implies repeated bot sells. Turnover is 41x liquidity within an hour. Identical clones launched in a batch, and several were drained right after volume spikes. No DexScreener profile and no paid boosts.\",\"uncertainty\":\"The clones could be an open launchpad where retail users deploy with a fixed template, and some real retail demand could exist. Without X data I cannot see whether a real meme is driving it.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% locked/burned. A single or small set of LP providers can pull liquidity at any time\",\"Same-name sibling pools have already been drained to $0 liquidity within the hour\",\"The share held by bundler wallets is high\",\"Liquidity is not a pump.fun curve, so a rug is a real LP pull rather than a dump into a curve\",\"The creator wallet is closed\",\"Buyer momentum is fading: only 72 unique buyers in the last 5 minutes vs about 1,800 in the first 30 minutes, and the price is below its ATH\"]},\"counterargument\":\"Real flow could be present: 2,100+ holders, top-10 holders at only about 11% excluding the pool, mint and freeze authority renounced, and no dev holdings. If this is the version of 'company' the crowd picks as the winner, the $41k mcap leaves room to double quickly, just as the 6sEf sibling reached $208k.\",\"unknowns\":[\"Who controls the LP tokens and whether they have pulled liquidity on sibling pools\",\"What 'company' refers to and whether a real meme or platform launch is behind it\",\"Whether the unique-buyer count reflects real users or bot-funded wallets\",\"How the price action develops in the 25 minutes before entry\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. The judgment uses only the packet.\"},\"thesis\":\"This looks like one of a batch of serial 'company' clone pools with unlocked LP, heavy bundler activity and wash-like turnover. Several siblings have already been drained. A drained LP is more likely than a clean doubling from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named 'company' is trading in a PumpSwap pool that is about 36 minutes old. It is not a pump.fun curve coin: there is no pump suffix and migrated_unix is 0. The price is up about 320% on the hour, with $1.9M of volume against roughly $46k of liquidity (41x turnover). At least 7 other tokens named 'company' opened pools within about 70 minutes of each other, most with similar ~$43-47k starting liquidity. Three of them already show zero liquidity after heavy volume (92iX had $644k h1 volume, now $0 liquidity), and a fourth (ForVg) is down to $15 after $357k. This looks like a template or launchpad-style serial deployment, and the linked socials (yourcompanyfun on X, stonkfunxyz on Telegram) point to a platform rather than a project. GMGN flags 100 bundler wallets holding 28% of the top-trader share. There are 2,111 unique buyers but only 108 unique sellers, and about 1,800 of those buyers arrived in the first 30 minutes. That pattern looks like bot distribution or wash activity rather than organic demand. The LP is 0% locked/burned, the creator wallet is closed, and RugCheck flags unlocked LP with only a few LP providers.",
+  "narrative": {
+   "description": "The generic word 'company', probably tied to a 'your company'/stonk.fun-style launch platform meme. There is no distinct story, and there are many identical clones.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Activity looks like a batch of bot-driven serial launches. Several same-name pools were deployed within about an hour, and several have already been drained. That points to a farming pattern, not organic narrative spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is currently the highest-volume live 'company' pool among recent clones, but nothing marks it as the canonical one.",
+   "competing_tokens": "Six or more same-name tokens launched within about 70 minutes. 6sEf... (earlier, $208k mcap, $1.0M h1 volume) is the stronger competitor. 92iX, ForVg and GcGC are drained to about $0 liquidity, and 5a4A and GUrk are newer clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 100 bundler wallets holding 28% of the top-trader share. Unique buyers (2,111) against unique sellers (108) is very lopsided, and 6.7k buys vs 3.9k sells implies repeated bot sells. Turnover is 41x liquidity within an hour. Identical clones launched in a batch, and several were drained right after volume spikes. No DexScreener profile and no paid boosts.",
+   "uncertainty": "The clones could be an open launchpad where retail users deploy with a fixed template, and some real retail demand could exist. Without X data I cannot see whether a real meme is driving it."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% locked/burned. A single or small set of LP providers can pull liquidity at any time",
+    "Same-name sibling pools have already been drained to $0 liquidity within the hour",
+    "The share held by bundler wallets is high",
+    "Liquidity is not a pump.fun curve, so a rug is a real LP pull rather than a dump into a curve",
+    "The creator wallet is closed",
+    "Buyer momentum is fading: only 72 unique buyers in the last 5 minutes vs about 1,800 in the first 30 minutes, and the price is below its ATH"
+   ]
+  },
+  "counterargument": "Real flow could be present: 2,100+ holders, top-10 holders at only about 11% excluding the pool, mint and freeze authority renounced, and no dev holdings. If this is the version of 'company' the crowd picks as the winner, the $41k mcap leaves room to double quickly, just as the 6sEf sibling reached $208k.",
+  "unknowns": [
+   "Who controls the LP tokens and whether they have pulled liquidity on sibling pools",
+   "What 'company' refers to and whether a real meme or platform launch is behind it",
+   "Whether the unique-buyer count reflects real users or bot-funded wallets",
+   "How the price action develops in the 25 minutes before entry"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. The judgment uses only the packet."
+  },
+  "thesis": "This looks like one of a batch of serial 'company' clone pools with unlocked LP, heavy bundler activity and wash-like turnover. Several siblings have already been drained. A drained LP is more likely than a clean doubling from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": []
+ },
+ "ttft_ms": 8293,
+ "type": "result",
+ "duration_ms": 27216,
+ "uuid": "75e64f13-ffdc-4bf8-93e1-0e4db3bb6194",
+ "ttft_stream_ms": 840,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 840,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

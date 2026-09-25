@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 26038,
+ "stop_reason": "tool_use",
+ "session_id": "e1308dc2-c582-4c94-b7e9-1c693246e9b2",
+ "total_cost_usd": 0.1188748,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7805,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2802,
+  "output_tokens_details": {
+   "thinking_tokens": 711
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7805,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2802,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7805,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7805
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2802,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7805,
+   "webSearchRequests": 0,
+   "costUSD": 0.1188748,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 711,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u6d4e\u516c (Ji Gong, the Chinese folk-legend monk) is a Chinese-name meme token. It launched straight onto a PumpSwap pool, not through a pump.fun bonding curve: the mint was created 2 seconds before the pair, migrated_unix is 0 and the launchpad field is empty. The pool was created about 35 minutes before detection. In that time the price rose about 600% to roughly $74k market cap, on about $1M of volume against $57k of liquidity (17x hourly turnover). The trading pattern looks manufactured:\\n- About 1,917 unique buyers but only 50 unique sellers across 1,064 sells.\\n- About 1,320 unique buyers arrived in a single 15-to-30-minute-ago window. In the last 15 minutes only about 49 buyers and 49 sellers traded, with buys and sells almost exactly 1:1.\\n- GeckoTerminal shows the 'rest' of about 1,880 holders together hold only 2.3% of supply, which suggests dust or bot wallets inflating the holder count.\\n- The creator holds 18.26% (GMGN flags this as rat-trader share) and appears to be the main LP provider. The LP is 0% burned or locked, and RugCheck gives a 'Large Amount of LP Unlocked' danger warning plus a 'Low amount of LP Providers' warning.\\n- The same ticker was launched at least 10 other times in the prior ~5 hours. All are now dead with zero liquidity.\",\"narrative\":{\"description\":\"A Chinese-character meme about Ji Gong, the folk monk-deity. It fits the recurring Chinese-name meme wave on Solana. The packet has no website, socials, description or DexScreener profile.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Cannot confirm any organic spread. The name was launched many times within hours, so something probably triggered interest in the name. But this pool's buyer pattern (one burst of about 1,300 dust-sized buyers and only 50 sellers) looks like bot or wash activity rather than real attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only \u6d4e\u516c pair with live liquidity and volume right now, which makes it the survivor of a launch spam for this name.\",\"competing_tokens\":\"At least 10 same-name tokens were created 1-5 hours earlier, all now at zero liquidity. That includes one with a nonsensical $1.76B market cap reading, created about 57 minutes before this one.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"- 1,917 unique buyers against 50 unique sellers, with sells concentrated in a few wallets.\\n- A burst of about 1,320 new buyers in one window, then activity collapsed to about 49 wallets.\\n- About 1,880 holders together hold 2.3% of supply.\\n- The creator self-seeded an unlocked LP and holds 18%.\\n- Zero smart, renowned or KOL wallets, zero degen calls, and only 2 GMGN page visits despite $1M of volume.\",\"uncertainty\":\"No X or Telegram data. A real Chinese-community push could look partly similar, but the very low GMGN page visits argue against real attention.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Creator-provided LP is unlocked (0% burned); the creator can remove about $57k of liquidity at any time\",\"Creator holds 18.26% of supply, flagged as rat-trader share\",\"Only a few LP providers\",\"Holder count likely inflated by dust or bot wallets\",\"Volume at 17x liquidity looks like wash trading\",\"Not a pump.fun curve coin, so there is no curve protection against liquidity removal\",\"Many same-name clones have already died\"]},\"counterargument\":\"Mint and freeze authority are renounced, there is no tax, and the honeypot check is clean. The price is near its all-time high and still going up (+10-18% in the last 5 minutes). Chinese-name memes sometimes get real Asian-community buying, and this pool is clearly winning the name war over all its clones. The creator has a clean history (0 prior launches) and has not sold yet. If the creator is running a real pump rather than a rug, market cap could go from about $74k to $150k+ within 6 hours on thin real float.\",\"unknowns\":[\"Whether the creator's LP will be pulled, and when\",\"Whether any real X or Chinese-community attention exists\",\"Who the 50 sellers are\",\"The price 25 minutes after detection (entry)\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this judgment uses only the evidence packet.\"},\"thesis\":\"This looks like a self-seeded PumpSwap pool with unlocked creator LP, an 18% creator bag, a manufactured-looking buyer count (bot dust wallets, only 50 sellers) and no organic signals. That is a classic setup for a liquidity pull or a creator dump. Doubling from entry before a -50% move or a rug is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\u6d4e\u516c (Ji Gong, the Chinese folk-legend monk) is a Chinese-name meme token. It launched straight onto a PumpSwap pool, not through a pump.fun bonding curve: the mint was created 2 seconds before the pair, migrated_unix is 0 and the launchpad field is empty. The pool was created about 35 minutes before detection. In that time the price rose about 600% to roughly $74k market cap, on about $1M of volume against $57k of liquidity (17x hourly turnover). The trading pattern looks manufactured:\n- About 1,917 unique buyers but only 50 unique sellers across 1,064 sells.\n- About 1,320 unique buyers arrived in a single 15-to-30-minute-ago window. In the last 15 minutes only about 49 buyers and 49 sellers traded, with buys and sells almost exactly 1:1.\n- GeckoTerminal shows the 'rest' of about 1,880 holders together hold only 2.3% of supply, which suggests dust or bot wallets inflating the holder count.\n- The creator holds 18.26% (GMGN flags this as rat-trader share) and appears to be the main LP provider. The LP is 0% burned or locked, and RugCheck gives a 'Large Amount of LP Unlocked' danger warning plus a 'Low amount of LP Providers' warning.\n- The same ticker was launched at least 10 other times in the prior ~5 hours. All are now dead with zero liquidity.",
+  "narrative": {
+   "description": "A Chinese-character meme about Ji Gong, the folk monk-deity. It fits the recurring Chinese-name meme wave on Solana. The packet has no website, socials, description or DexScreener profile.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Cannot confirm any organic spread. The name was launched many times within hours, so something probably triggered interest in the name. But this pool's buyer pattern (one burst of about 1,300 dust-sized buyers and only 50 sellers) looks like bot or wash activity rather than real attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only \u6d4e\u516c pair with live liquidity and volume right now, which makes it the survivor of a launch spam for this name.",
+   "competing_tokens": "At least 10 same-name tokens were created 1-5 hours earlier, all now at zero liquidity. That includes one with a nonsensical $1.76B market cap reading, created about 57 minutes before this one.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "- 1,917 unique buyers against 50 unique sellers, with sells concentrated in a few wallets.\n- A burst of about 1,320 new buyers in one window, then activity collapsed to about 49 wallets.\n- About 1,880 holders together hold 2.3% of supply.\n- The creator self-seeded an unlocked LP and holds 18%.\n- Zero smart, renowned or KOL wallets, zero degen calls, and only 2 GMGN page visits despite $1M of volume.",
+   "uncertainty": "No X or Telegram data. A real Chinese-community push could look partly similar, but the very low GMGN page visits argue against real attention."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Creator-provided LP is unlocked (0% burned); the creator can remove about $57k of liquidity at any time",
+    "Creator holds 18.26% of supply, flagged as rat-trader share",
+    "Only a few LP providers",
+    "Holder count likely inflated by dust or bot wallets",
+    "Volume at 17x liquidity looks like wash trading",
+    "Not a pump.fun curve coin, so there is no curve protection against liquidity removal",
+    "Many same-name clones have already died"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced, there is no tax, and the honeypot check is clean. The price is near its all-time high and still going up (+10-18% in the last 5 minutes). Chinese-name memes sometimes get real Asian-community buying, and this pool is clearly winning the name war over all its clones. The creator has a clean history (0 prior launches) and has not sold yet. If the creator is running a real pump rather than a rug, market cap could go from about $74k to $150k+ within 6 hours on thin real float.",
+  "unknowns": [
+   "Whether the creator's LP will be pulled, and when",
+   "Whether any real X or Chinese-community attention exists",
+   "Who the 50 sellers are",
+   "The price 25 minutes after detection (entry)"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this judgment uses only the evidence packet."
+  },
+  "thesis": "This looks like a self-seeded PumpSwap pool with unlocked creator LP, an 18% creator bag, a manufactured-looking buyer count (bot dust wallets, only 50 sellers) and no organic signals. That is a classic setup for a liquidity pull or a creator dump. Doubling from entry before a -50% move or a rug is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7880,
+ "type": "result",
+ "duration_ms": 26082,
+ "uuid": "fad9e540-dd2d-4f6d-96d3-f883d70aec55",
+ "ttft_stream_ms": 823,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 824,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

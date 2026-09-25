@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 85014,
+ "stop_reason": "tool_use",
+ "session_id": "0052fdf3-e320-44fa-a1fb-9a2779b32587",
+ "total_cost_usd": 0.385672,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 17750,
+  "cache_read_input_tokens": 79055,
+  "output_tokens": 4312,
+  "output_tokens_details": {
+   "thinking_tokens": 757
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17750,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2864,
+    "cache_read_input_tokens": 19075,
+    "cache_creation_input_tokens": 1251,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1251
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 4312,
+   "cacheReadInputTokens": 79055,
+   "cacheCreationInputTokens": 17750,
+   "webSearchRequests": 0,
+   "costUSD": 0.244099,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 757,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 66778,
+   "outputTokens": 2959,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.14157299999999998,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"CI \\\"Chinese Intelligence\\\" is a pump.fun coin that was created and moved to PumpSwap in the same second (created_unix = migrated_unix, 14:38:19Z). That suggests the dev or a bundle filled the whole bonding curve at launch. After 40 minutes it sat at about $235k market cap with $42k liquidity. The 1h figures are 2,905 buys against 514 sells, and 1,947 unique buyers against 156 sellers. That is roughly $110 per buy, and volume has been a steady ~$40k in every 5-minute candle. The price has swung between about $0.00016 and $0.00025 and is now close to its all-time high (~$259k market cap). The 5-minute candle timestamps as the fetch tool reported them are wrong (it showed 2025-01-24). Outside the market data I found almost no attention: 0 pump.fun replies, only 11 GMGN page visits, no web, X or Reddit hits, and a generic template website.\",\"narrative\":{\"description\":\"A generic 'Chinese-themed internet culture + cybernetic AI' meme. It doesn't tie to any specific event or viral post I could find. At most there is loose adjacency to the September 2026 'becoming Chinese' soft-power meme trend.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic trigger. The flow looks mechanical: a very high buy count, very few sellers, uniform 5-minute volume, and zero pump.fun replies.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the only 'Chinese Intelligence' token with real volume. Its site and pump.fun metadata list this contract address.\",\"competing_tokens\":\"The other same-ticker CI tokens (Compute Inu, ClimbingInu, Cloud Inu, Chipotle Intelligence) are all dead with under $8k market cap and have different names.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,947 buyers vs 156 sellers in the first hour, ~$110 average buys, flat ~$40k/5-minute volume, and a curve completed at the moment of creation. Against 1,800+ holders there are only 11 GMGN page visits and 0 pump.fun replies. The dev/bundler holding is 7.87%. The dev's X account has launched 3 tokens, and the GMGN community-takeover flag is set.\",\"uncertainty\":\"I can't see X (x.com returned HTTP 402) or Telegram, so there could be real call-group or KOL activity I couldn't observe. GMGN's bot/degen rate is low (0.2%), which cuts against the pure-bot reading.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Buyer flow looks like wash or micro-buy bots, so it may reverse sharply when they stop\",\"$42k liquidity against a $235k market cap\",\"Dev/bundler cluster holds about 7.9%\",\"Price is at its high after about +290% in 40 minutes; the -50% stop is about $118k market cap and sits inside the earlier trading range\",\"GeckoTerminal says the top 10 hold 34.6% (this may include the pool)\"]},\"counterargument\":\"Holders are widely spread (top 10 about 10.6% excluding the pool), the LP is burned, mint and freeze are renounced, and the price is holding its high with steady buying. If the flow comes from a real Chinese-language call group I can't see, the coin could reach $480k fairly easily, since its volume is already more than 8x its liquidity per hour.\",\"unknowns\":[\"Contents of the X account @cionsol and its follower count\",\"Any Telegram or call-group activity\",\"Who funded the creator\",\"Whether the buyers are real wallets or bot-generated\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"x.com returned HTTP 402 and DexScreener returned 403. pump.fun and GeckoTerminal API data were fetched.\"},\"thesis\":\"A newly migrated coin with no traceable narrative and no social footprint. Its buyer and seller numbers look synthetic, so a double from the high is unlikely and a fade or dump is more likely.\",\"continuation_view\":\"fade\",\"p_runner\":12,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://chineseintelligence.site/\",\"what\":\"Template site listing the contract address; no team\"},{\"url\":\"https://frontend-api-v3.pump.fun/coins/4GNxP8SdJP3ejirb45tvFscARQubPWseC3PELxAUpump\",\"what\":\"0 replies, curve complete, ATH ~$258k\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/9ZrkghbzAcrqHqTvjf9EDNpHdYrDdVmYnQhe5e259UCa\",\"what\":\"Buyer/seller counts, liquidity, volume\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/9ZrkghbzAcrqHqTvjf9EDNpHdYrDdVmYnQhe5e259UCa/ohlcv/minute?aggregate=5&limit=12\",\"what\":\"Flat ~$40k volume per 5-minute candle and the price range\"},{\"url\":\"https://thehill.com/homenews/ap/ap-international/ap-the-becoming-chinese-meme-shows-chinas-soft-power-moment-is-here/\",\"what\":\"Background on the 'becoming Chinese' meme trend\"}]}",
+ "structured_output": {
+  "what_is_happening": "CI \"Chinese Intelligence\" is a pump.fun coin that was created and moved to PumpSwap in the same second (created_unix = migrated_unix, 14:38:19Z). That suggests the dev or a bundle filled the whole bonding curve at launch. After 40 minutes it sat at about $235k market cap with $42k liquidity. The 1h figures are 2,905 buys against 514 sells, and 1,947 unique buyers against 156 sellers. That is roughly $110 per buy, and volume has been a steady ~$40k in every 5-minute candle. The price has swung between about $0.00016 and $0.00025 and is now close to its all-time high (~$259k market cap). The 5-minute candle timestamps as the fetch tool reported them are wrong (it showed 2025-01-24). Outside the market data I found almost no attention: 0 pump.fun replies, only 11 GMGN page visits, no web, X or Reddit hits, and a generic template website.",
+  "narrative": {
+   "description": "A generic 'Chinese-themed internet culture + cybernetic AI' meme. It doesn't tie to any specific event or viral post I could find. At most there is loose adjacency to the September 2026 'becoming Chinese' soft-power meme trend.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no organic trigger. The flow looks mechanical: a very high buy count, very few sellers, uniform 5-minute volume, and zero pump.fun replies."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the only 'Chinese Intelligence' token with real volume. Its site and pump.fun metadata list this contract address.",
+   "competing_tokens": "The other same-ticker CI tokens (Compute Inu, ClimbingInu, Cloud Inu, Chipotle Intelligence) are all dead with under $8k market cap and have different names.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,947 buyers vs 156 sellers in the first hour, ~$110 average buys, flat ~$40k/5-minute volume, and a curve completed at the moment of creation. Against 1,800+ holders there are only 11 GMGN page visits and 0 pump.fun replies. The dev/bundler holding is 7.87%. The dev's X account has launched 3 tokens, and the GMGN community-takeover flag is set.",
+   "uncertainty": "I can't see X (x.com returned HTTP 402) or Telegram, so there could be real call-group or KOL activity I couldn't observe. GMGN's bot/degen rate is low (0.2%), which cuts against the pure-bot reading."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Buyer flow looks like wash or micro-buy bots, so it may reverse sharply when they stop",
+    "$42k liquidity against a $235k market cap",
+    "Dev/bundler cluster holds about 7.9%",
+    "Price is at its high after about +290% in 40 minutes; the -50% stop is about $118k market cap and sits inside the earlier trading range",
+    "GeckoTerminal says the top 10 hold 34.6% (this may include the pool)"
+   ]
+  },
+  "counterargument": "Holders are widely spread (top 10 about 10.6% excluding the pool), the LP is burned, mint and freeze are renounced, and the price is holding its high with steady buying. If the flow comes from a real Chinese-language call group I can't see, the coin could reach $480k fairly easily, since its volume is already more than 8x its liquidity per hour.",
+  "unknowns": [
+   "Contents of the X account @cionsol and its follower count",
+   "Any Telegram or call-group activity",
+   "Who funded the creator",
+   "Whether the buyers are real wallets or bot-generated"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "x.com returned HTTP 402 and DexScreener returned 403. pump.fun and GeckoTerminal API data were fetched."
+  },
+  "thesis": "A newly migrated coin with no traceable narrative and no social footprint. Its buyer and seller numbers look synthetic, so a double from the high is unlikely and a fade or dump is more likely.",
+  "continuation_view": "fade",
+  "p_runner": 12,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://chineseintelligence.site/",
+    "what": "Template site listing the contract address; no team"
+   },
+   {
+    "url": "https://frontend-api-v3.pump.fun/coins/4GNxP8SdJP3ejirb45tvFscARQubPWseC3PELxAUpump",
+    "what": "0 replies, curve complete, ATH ~$258k"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/9ZrkghbzAcrqHqTvjf9EDNpHdYrDdVmYnQhe5e259UCa",
+    "what": "Buyer/seller counts, liquidity, volume"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/9ZrkghbzAcrqHqTvjf9EDNpHdYrDdVmYnQhe5e259UCa/ohlcv/minute?aggregate=5&limit=12",
+    "what": "Flat ~$40k volume per 5-minute candle and the price range"
+   },
+   {
+    "url": "https://thehill.com/homenews/ap/ap-international/ap-the-becoming-chinese-meme-shows-chinas-soft-power-moment-is-here/",
+    "what": "Background on the 'becoming Chinese' meme trend"
+   }
+  ]
+ },
+ "ttft_ms": 1385,
+ "type": "result",
+ "duration_ms": 66098,
+ "uuid": "4afa8b92-1831-4038-8628-2b2b17589612",
+ "ttft_stream_ms": 806,
+ "time_to_request_ms": 36,
+ "first_content_frame_ms": 806,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

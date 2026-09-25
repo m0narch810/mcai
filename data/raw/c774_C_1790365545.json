@@ -1,0 +1,190 @@
+{
+ "duration_api_ms": 57881,
+ "stop_reason": "tool_use",
+ "session_id": "f027ffba-ef0c-4ea9-bd8d-fcea7125ebea",
+ "total_cost_usd": 0.2778344,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14337,
+  "cache_read_input_tokens": 45487,
+  "output_tokens": 3708,
+  "output_tokens_details": {
+   "thinking_tokens": 901
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14337,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2694,
+    "cache_read_input_tokens": 16750,
+    "cache_creation_input_tokens": 351,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 351
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3708,
+   "cacheReadInputTokens": 45487,
+   "cacheCreationInputTokens": 14337,
+   "webSearchRequests": 0,
+   "costUSD": 0.19798539999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 901,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42614,
+   "outputTokens": 1447,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.079849,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 13-minute-old Solana $ROBIN \\\"Robin the Frog\\\" token (launchpad meteora_virtual_curve per GMGN; created and migrated in the same second, now on a PumpSwap pair) is up about 388% to roughly $283k market cap. It has done about $2.85M of volume against about $56k of liquidity, with 694 unique buyers but only 52 unique sellers. The packet's GeckoTerminal handle @robincoinrh is the X account of the established Robin the Frog token on Robinhood Chain (an Arbitrum L2, EVM). That token has a separate contract (0x11B7...EB59), is listed on CMC and CoinGecko, and peaked above $25M. Its website lists no Solana contract. The Telegram handle in the packet (robincoinrbh) differs by one letter from the official one (robincoinrh). A different Solana ROBIN on pump.fun (spCP...pump), about 33 hours old, sits at about a $10M market cap. So this looks like one of many copies that borrow the established brand. I could not confirm or rule out an official Solana deployment or bridge.\",\"narrative\":{\"description\":\"Robin the Frog (Kermit's nephew, Muppet Robin Hood) as the frog mascot for Robinhood Chain. The narrative is real and current: the Robinhood Chain token reached a $25M+ peak and got newswire coverage, and search results show a 'Solana vs Robinhood Chain memecoin' trending item on X.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Robinhood Chain memes are a live theme, and a known ~$8\u201310M brand invites cross-chain copies. Flow here is probably driven by the ticker and by trackers, not by a verified announcement.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It uses the name, description and X handle of the Robinhood Chain ROBIN, but the official site lists only the EVM contract and warns users not to trust a ticker alone. I found no web evidence tying this Solana contract to the project.\",\"competing_tokens\":\"spCPNA...pump (Solana ROBIN, about $10M market cap, $293k liquidity, 33 hours old) is the dominant Solana version. The official token is 0x11B7... on Robinhood Chain. There are at least 8 other dead ROBIN copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"694 unique buyers against 52 unique sellers, with 1,429 sell transactions, means a small set of wallets is selling repeatedly (bot or farm behaviour). Volume is 10x the market cap within 13 minutes. GMGN flags 20 bundler wallets. There are no paid DexScreener boosts and no smart-money or KOL wallets. The Telegram handle is a one-letter lookalike of the official one.\",\"uncertainty\":\"I could not read X (HTTP 402), and web search found no mention of this contract address. The project may have announced a Solana version on X that I cannot see.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck reports the LP as 100% unlocked, which conflicts with GMGN's lp_burn_ratio of 1.0\",\"One unlabeled wallet holds 80% of supply (possibly a curve or pool vault; not verified)\",\"20 bundler wallets\",\"Only about $56k of liquidity against about $2.8M of churn\",\"A $10M same-name Solana token soaks up the canonical demand\"]},\"counterargument\":\"If @robincoinrh or the Arrow cross-chain launcher announced this as the official Solana deployment, 694 buyers in 13 minutes is real demand. A brand already worth about $8\u201310M could send a $283k token up several times from here, especially while the m5 momentum is still +40%.\",\"unknowns\":[\"Whether the official X account posted this contract address\",\"Who owns the 80% holder wallet\",\"The true LP lock status\",\"Whether the fast volume is wash trading\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Time-limited. The contract-address search returned nothing relevant. Fetching X returned HTTP 402. News coverage is about the Robinhood Chain token only.\"},\"thesis\":\"This looks like a Solana copy riding the Robinhood Chain Robin the Frog brand, with bot-like sell patterns, bundlers and ambiguous LP status. Momentum is strong, so a quick 2x is possible. But without evidence that the project endorses it, and with a $10M Solana rival already established, the odds are below average and the rug risk is elevated.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":38,\"survival_score\":35,\"attention_score\":70,\"manipulation_risk\":70,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://therobincoin.xyz/\",\"what\":\"Official site: the only contract listed is on Robinhood Chain; socials are @robincoinrh and t.me/robincoinrh\"},{\"url\":\"https://www.globenewswire.com/news-release/2026/09/07/3357089/0/en/robin-the-frog-robin-surpasses-25m-market-cap-as-a-new-frog-narrative-emerges-on-robinhood-chain.html\",\"what\":\"Press release: the Robinhood Chain ROBIN passed $25M\"},{\"url\":\"https://coinmarketcap.com/currencies/robin-the-frog/\",\"what\":\"Established ROBIN listing\"},{\"url\":\"https://x.com/i/trending/2096952944050446681\",\"what\":\"X trending item: Solana vs Robinhood Chain memecoin\"},{\"url\":\"https://www.launcharrow.xyz/\",\"what\":\"Arrow: a tool for launching Robinhood EVM tokens from a Solana wallet\"}]}",
+ "structured_output": {
+  "what_is_happening": "A 13-minute-old Solana $ROBIN \"Robin the Frog\" token (launchpad meteora_virtual_curve per GMGN; created and migrated in the same second, now on a PumpSwap pair) is up about 388% to roughly $283k market cap. It has done about $2.85M of volume against about $56k of liquidity, with 694 unique buyers but only 52 unique sellers. The packet's GeckoTerminal handle @robincoinrh is the X account of the established Robin the Frog token on Robinhood Chain (an Arbitrum L2, EVM). That token has a separate contract (0x11B7...EB59), is listed on CMC and CoinGecko, and peaked above $25M. Its website lists no Solana contract. The Telegram handle in the packet (robincoinrbh) differs by one letter from the official one (robincoinrh). A different Solana ROBIN on pump.fun (spCP...pump), about 33 hours old, sits at about a $10M market cap. So this looks like one of many copies that borrow the established brand. I could not confirm or rule out an official Solana deployment or bridge.",
+  "narrative": {
+   "description": "Robin the Frog (Kermit's nephew, Muppet Robin Hood) as the frog mascot for Robinhood Chain. The narrative is real and current: the Robinhood Chain token reached a $25M+ peak and got newswire coverage, and search results show a 'Solana vs Robinhood Chain memecoin' trending item on X.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Robinhood Chain memes are a live theme, and a known ~$8\u201310M brand invites cross-chain copies. Flow here is probably driven by the ticker and by trackers, not by a verified announcement."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It uses the name, description and X handle of the Robinhood Chain ROBIN, but the official site lists only the EVM contract and warns users not to trust a ticker alone. I found no web evidence tying this Solana contract to the project.",
+   "competing_tokens": "spCPNA...pump (Solana ROBIN, about $10M market cap, $293k liquidity, 33 hours old) is the dominant Solana version. The official token is 0x11B7... on Robinhood Chain. There are at least 8 other dead ROBIN copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "694 unique buyers against 52 unique sellers, with 1,429 sell transactions, means a small set of wallets is selling repeatedly (bot or farm behaviour). Volume is 10x the market cap within 13 minutes. GMGN flags 20 bundler wallets. There are no paid DexScreener boosts and no smart-money or KOL wallets. The Telegram handle is a one-letter lookalike of the official one.",
+   "uncertainty": "I could not read X (HTTP 402), and web search found no mention of this contract address. The project may have announced a Solana version on X that I cannot see."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck reports the LP as 100% unlocked, which conflicts with GMGN's lp_burn_ratio of 1.0",
+    "One unlabeled wallet holds 80% of supply (possibly a curve or pool vault; not verified)",
+    "20 bundler wallets",
+    "Only about $56k of liquidity against about $2.8M of churn",
+    "A $10M same-name Solana token soaks up the canonical demand"
+   ]
+  },
+  "counterargument": "If @robincoinrh or the Arrow cross-chain launcher announced this as the official Solana deployment, 694 buyers in 13 minutes is real demand. A brand already worth about $8\u201310M could send a $283k token up several times from here, especially while the m5 momentum is still +40%.",
+  "unknowns": [
+   "Whether the official X account posted this contract address",
+   "Who owns the 80% holder wallet",
+   "The true LP lock status",
+   "Whether the fast volume is wash trading"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Time-limited. The contract-address search returned nothing relevant. Fetching X returned HTTP 402. News coverage is about the Robinhood Chain token only."
+  },
+  "thesis": "This looks like a Solana copy riding the Robinhood Chain Robin the Frog brand, with bot-like sell patterns, bundlers and ambiguous LP status. Momentum is strong, so a quick 2x is possible. But without evidence that the project endorses it, and with a $10M Solana rival already established, the odds are below average and the rug risk is elevated.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 38,
+  "survival_score": 35,
+  "attention_score": 70,
+  "manipulation_risk": 70,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://therobincoin.xyz/",
+    "what": "Official site: the only contract listed is on Robinhood Chain; socials are @robincoinrh and t.me/robincoinrh"
+   },
+   {
+    "url": "https://www.globenewswire.com/news-release/2026/09/07/3357089/0/en/robin-the-frog-robin-surpasses-25m-market-cap-as-a-new-frog-narrative-emerges-on-robinhood-chain.html",
+    "what": "Press release: the Robinhood Chain ROBIN passed $25M"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/robin-the-frog/",
+    "what": "Established ROBIN listing"
+   },
+   {
+    "url": "https://x.com/i/trending/2096952944050446681",
+    "what": "X trending item: Solana vs Robinhood Chain memecoin"
+   },
+   {
+    "url": "https://www.launcharrow.xyz/",
+    "what": "Arrow: a tool for launching Robinhood EVM tokens from a Solana wallet"
+   }
+  ]
+ },
+ "ttft_ms": 4652,
+ "type": "result",
+ "duration_ms": 47875,
+ "uuid": "7046903e-de17-4145-b792-fa7fcc95dcce",
+ "ttft_stream_ms": 754,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 754,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

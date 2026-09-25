@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 67033,
+ "stop_reason": "tool_use",
+ "session_id": "dfc12b45-cbae-46ae-a0db-0280895ca128",
+ "total_cost_usd": 0.3138088,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 15112,
+  "cache_read_input_tokens": 59019,
+  "output_tokens": 3847,
+  "output_tokens_details": {
+   "thinking_tokens": 821
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15112,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2558,
+    "cache_read_input_tokens": 16686,
+    "cache_creation_input_tokens": 1002,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1002
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3847,
+   "cacheReadInputTokens": 59019,
+   "cacheCreationInputTokens": 15112,
+   "webSearchRequests": 0,
+   "costUSD": 0.2096798,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 821,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 54939,
+   "outputTokens": 1838,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.104129,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Ak6a\u2026 is a copy of LESGO (GO), the platform token of the lesgo.fun launchpad. The real GO is D1YZZ\u2026, which has about $1.33M in market cap and Raydium and Meteora pools, and its DexScreener profile links to lesgo.fun and @lesgodotfun. This copy pastes the real token's description word for word, including the line \\\"Created on lesgo.fun/token/D1YZZ\u2026\\\". It is not a pump.fun graduate. The token was created, and 34 seconds later a PumpSwap pool was opened directly: migrated_unix is 0, and pool liquidity (about $218k) is larger than the market cap (about $150k). The creator holds the LP and none of it is locked (RugCheck marks this \\\"danger\\\", with few LP providers). About $5.6M traded in 36 minutes. GeckoTerminal shows 2,064 unique buyers but only 57 unique sellers making about 3,539 sells, and GMGN counts 51 bundler wallets holding about 23%. That pattern looks like bot or wash volume meant to get the coin onto screeners. The packet also lists other LESGO/GO copies launched in the last few hours. AgeU5\u2026 was created about 20 minutes before this one, traded $1.04M in its first hour, and now has $0 liquidity. The two \\\"\u20267777\\\" copies also show $0 liquidity. This looks like a serial copycat operation that pulls liquidity.\",\"narrative\":{\"description\":\"Lesgo is a real launchpad whose revenue buys back and burns GO. The real GO rose about 2,700% in 24 hours, and copycat tickers are feeding off that attention.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The real GO token is pumping hard (+2,695% in 24h, $2.5M volume), so copies with the same name catch buyers searching for GO/LESGO, plus sniper bots.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None. The description itself names D1YZZ\u2026 as the real token. The project's X account and website point to D1YZZ\u2026, and no search result links this contract to Lesgo.\",\"competing_tokens\":\"D1YZZ\u2026 is the real GO ($1.33M mcap, $106k liquidity on Raydium). Copies: AgeU5\u2026 (liquidity already pulled after $1M volume), 3KPm\u20267777 and 6MQ9\u20267777 (liquidity 0), CKe2\u2026, 4CsRc\u2026\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Pool created directly by the creator with 0% of the LP locked. 51 bundler wallets hold 23%. 2,064 buyers against only 57 sellers who made about 3,500 sells, which points to wash volume. The description was copied from the real token. A copy from about 20 minutes earlier (AgeU5\u2026) already had its liquidity pulled after $1M of volume.\",\"uncertainty\":\"I could not see on-chain LP ownership or the connection between wallets directly. The buyer count may include real users who bought the wrong token by mistake.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator holds the LP, none of it is locked, and it can be pulled at any time\",\"Liquidity is larger than market cap, so the creator seeded the pool and can take the SOL back out\",\"Bundler wallets hold 23%\",\"Volume looks washed: 57 unique sellers against 3.5k sells\",\"The same pattern of copies having their liquidity pulled is already in the packet (AgeU5\u2026, the 7777 copies)\"]},\"counterargument\":\"Buyer breadth looks real: about 2,100 holders, top 10 holding only about 12% outside the pool, and the real GO's story is hot. A copy with $218k of liquidity could keep drawing mistaken buyers and double before the creator pulls the LP. The creator's previous best token peaked at about $159k market cap, which is close to where this one is now. Unlike the other copies, this creator may be willing to let it run.\",\"unknowns\":[\"Who owns the LP tokens, and when they might pull\",\"Whether the creator is behind the earlier copies (AgeU5\u2026, the 7777 copies)\",\"Any X posts mentioning this contract\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The lesgo.fun site lists no contract address. DexScreener shows the real D1YZZ\u2026 linked to lesgo.fun and @lesgodotfun. No search hits for this contract.\"},\"thesis\":\"A copy of a hot launchpad token that is not the real one. The creator holds unlocked LP, volume looks washed and bundled, and a near-identical copy from 20 minutes earlier already had its liquidity pulled. A liquidity pull is much more likely than a doubling.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":85,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n\",\"what\":\"Real GO: $1.33M mcap, links to lesgo.fun and @lesgodotfun, +2,695% in 24h\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/Ak6aSR5M7vMxZnVBR4hwXAzmqm6TjEUZUrAAMnChRSJ\",\"what\":\"This copy: $152k mcap, $219k liquidity, no socials\"},{\"url\":\"https://www.lesgo.fun/\",\"what\":\"Project site; no contract address listed\"}]}",
+ "structured_output": {
+  "what_is_happening": "Ak6a\u2026 is a copy of LESGO (GO), the platform token of the lesgo.fun launchpad. The real GO is D1YZZ\u2026, which has about $1.33M in market cap and Raydium and Meteora pools, and its DexScreener profile links to lesgo.fun and @lesgodotfun. This copy pastes the real token's description word for word, including the line \"Created on lesgo.fun/token/D1YZZ\u2026\". It is not a pump.fun graduate. The token was created, and 34 seconds later a PumpSwap pool was opened directly: migrated_unix is 0, and pool liquidity (about $218k) is larger than the market cap (about $150k). The creator holds the LP and none of it is locked (RugCheck marks this \"danger\", with few LP providers). About $5.6M traded in 36 minutes. GeckoTerminal shows 2,064 unique buyers but only 57 unique sellers making about 3,539 sells, and GMGN counts 51 bundler wallets holding about 23%. That pattern looks like bot or wash volume meant to get the coin onto screeners. The packet also lists other LESGO/GO copies launched in the last few hours. AgeU5\u2026 was created about 20 minutes before this one, traded $1.04M in its first hour, and now has $0 liquidity. The two \"\u20267777\" copies also show $0 liquidity. This looks like a serial copycat operation that pulls liquidity.",
+  "narrative": {
+   "description": "Lesgo is a real launchpad whose revenue buys back and burns GO. The real GO rose about 2,700% in 24 hours, and copycat tickers are feeding off that attention.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The real GO token is pumping hard (+2,695% in 24h, $2.5M volume), so copies with the same name catch buyers searching for GO/LESGO, plus sniper bots."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None. The description itself names D1YZZ\u2026 as the real token. The project's X account and website point to D1YZZ\u2026, and no search result links this contract to Lesgo.",
+   "competing_tokens": "D1YZZ\u2026 is the real GO ($1.33M mcap, $106k liquidity on Raydium). Copies: AgeU5\u2026 (liquidity already pulled after $1M volume), 3KPm\u20267777 and 6MQ9\u20267777 (liquidity 0), CKe2\u2026, 4CsRc\u2026",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Pool created directly by the creator with 0% of the LP locked. 51 bundler wallets hold 23%. 2,064 buyers against only 57 sellers who made about 3,500 sells, which points to wash volume. The description was copied from the real token. A copy from about 20 minutes earlier (AgeU5\u2026) already had its liquidity pulled after $1M of volume.",
+   "uncertainty": "I could not see on-chain LP ownership or the connection between wallets directly. The buyer count may include real users who bought the wrong token by mistake."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator holds the LP, none of it is locked, and it can be pulled at any time",
+    "Liquidity is larger than market cap, so the creator seeded the pool and can take the SOL back out",
+    "Bundler wallets hold 23%",
+    "Volume looks washed: 57 unique sellers against 3.5k sells",
+    "The same pattern of copies having their liquidity pulled is already in the packet (AgeU5\u2026, the 7777 copies)"
+   ]
+  },
+  "counterargument": "Buyer breadth looks real: about 2,100 holders, top 10 holding only about 12% outside the pool, and the real GO's story is hot. A copy with $218k of liquidity could keep drawing mistaken buyers and double before the creator pulls the LP. The creator's previous best token peaked at about $159k market cap, which is close to where this one is now. Unlike the other copies, this creator may be willing to let it run.",
+  "unknowns": [
+   "Who owns the LP tokens, and when they might pull",
+   "Whether the creator is behind the earlier copies (AgeU5\u2026, the 7777 copies)",
+   "Any X posts mentioning this contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The lesgo.fun site lists no contract address. DexScreener shows the real D1YZZ\u2026 linked to lesgo.fun and @lesgodotfun. No search hits for this contract."
+  },
+  "thesis": "A copy of a hot launchpad token that is not the real one. The creator holds unlocked LP, volume looks washed and bundled, and a near-identical copy from 20 minutes earlier already had its liquidity pulled. A liquidity pull is much more likely than a doubling.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 85,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n",
+    "what": "Real GO: $1.33M mcap, links to lesgo.fun and @lesgodotfun, +2,695% in 24h"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/Ak6aSR5M7vMxZnVBR4hwXAzmqm6TjEUZUrAAMnChRSJ",
+    "what": "This copy: $152k mcap, $219k liquidity, no socials"
+   },
+   {
+    "url": "https://www.lesgo.fun/",
+    "what": "Project site; no contract address listed"
+   }
+  ]
+ },
+ "ttft_ms": 4878,
+ "type": "result",
+ "duration_ms": 57240,
+ "uuid": "6e421b38-583a-4496-9d0c-6cc2bd8dc641",
+ "ttft_stream_ms": 1119,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1119,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

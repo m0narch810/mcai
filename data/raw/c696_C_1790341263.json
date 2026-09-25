@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 112527,
+ "stop_reason": "tool_use",
+ "session_id": "d6e3a508-2fc1-41a4-9686-515f28e6edd0",
+ "total_cost_usd": 0.5017334000000001,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 20597,
+  "cache_read_input_tokens": 104932,
+  "output_tokens": 6480,
+  "output_tokens_details": {
+   "thinking_tokens": 664
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 20597,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2332,
+    "cache_read_input_tokens": 22007,
+    "cache_creation_input_tokens": 1166,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1166
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 6480,
+   "cacheReadInputTokens": 104932,
+   "cacheCreationInputTokens": 20597,
+   "webSearchRequests": 0,
+   "costUSD": 0.3154184,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 664,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 91280,
+   "outputTokens": 3007,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 8,
+   "costUSD": 0.186315,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u73a9\u5e01\u5f52\u8d75 ('the coins go back to Zhao') is an old Chinese crypto joke about all money ending up with CZ/Binance. Someone launched a Solana token with that name. Its PumpSwap pool was created about 3 seconds after the token itself (created_unix 1790334965, pair 1790334968), GMGN shows migrated_unix=0 and no launchpad, and the LP is 0% burned or locked. So this was a direct launch into a pool the creator most likely owns, not a pump.fun graduate. The creator still holds about 19% of supply. Over roughly 1h40m, price rose about 5x to a peak near $83k mcap, on $2M of volume against about $60k of liquidity. In the last hour GeckoTerminal shows only 52 unique buyers and 52 unique sellers producing about 1,600 buys and 1,600 sells, with buys exactly matching sells. That is bot or wash cycling, not new demand. By T2, DexScreener showed price already down to about $62k mcap, from $79k at detection. I found no socials, website, DexScreener profile, or X, Telegram or Reddit discussion of this contract. At least 10 other tokens with the same name were launched in the past day and all are dead.\",\"narrative\":{\"description\":\"A decade-old Chinese internet pun about CZ (Changpeng Zhao) ending up with everyone's money. The Chinese crypto community knows it well, but I found no fresh event today, such as a CZ post, that would bring it back into play.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic trigger. The obvious possibility is a recent CZ or Binance mention driving Chinese-name meme launches, since there were about 10 same-name clones in about 7 hours. But searches turned up nothing current, only the old origin articles.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the only same-name pair with real liquidity. The other ~10 clones have $0 liquidity and no volume. But it has no socials, no website and no community link, so its claim to be the canonical one rests only on having survived longest.\",\"competing_tokens\":\"At least 10 same-name tokens (e.g. GLFyrr28..., 77GDWdiB..., 8uhpHzuQ...) launched over the past ~7 hours. All are dead, with $0 liquidity.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"In the last hour, 52 unique buyers and 52 unique sellers made about 3,200 trades, with buys and sells almost exactly equal (1,591 vs 1,590). Hourly turnover is 19x liquidity. The pool was created by the dev directly on PumpSwap, the LP is unlocked, and the creator holds 19%. I found no social footprint, and gmgn_page_visits=1. Unique buyers over 6h is about 2,063, but only 56 unique sellers, which fits bot or airdrop-style tiny buys.\",\"uncertainty\":\"Private Chinese Telegram or WeChat groups could be pushing this, and I can't see them. The GeckoTerminal unique-wallet counts may be undercounting.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% burned or locked, and the pool was apparently seeded by the creator (the pair was created 3 seconds after the mint), so the creator can pull liquidity\",\"The creator holds 18.99% of supply unsold\",\"Volume looks like wash trading by about 52 wallets\",\"Price was already falling from $79k to $62k mcap between detection and T2\",\"10+ same-name clones show a serial launch-and-abandon pattern\"]},\"counterargument\":\"Chinese-name memes can run hard on CZ-related humor, and this is the one surviving pair out of about 10 attempts, so buyers who want the name will end up here. More than 2,000 holders, zero sniper or bundler share of any size, renounced mint and freeze authority, and no taxes might mean it is a real community pickup. A doubling from about $60k to $120k mcap is a small absolute move.\",\"unknowns\":[\"Whether CZ or a Chinese KOL mentioned the phrase today\",\"Who actually owns the LP tokens\",\"Chinese Telegram or WeChat activity\",\"Whether the 2,063 six-hour buyers are real people or airdrop or bot dust\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The phrase itself is well documented as an old CZ joke, but I found nothing linked to this contract. I fetched the DexScreener API at T2: price down to about $62k mcap.\"},\"thesis\":\"A creator-seeded PumpSwap pool with unlocked LP, a 19% creator bag, and volume that looks wash-traded by about 52 wallets. No social footprint, the name is contested by 10 dead clones, and price is already fading from its peak. Rug or bleed is much more likely than a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":70,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/9gqrtDLHmwY8kzU2iKjb2uRZZuoUTafJuTRXApy7Vci7\",\"what\":\"Live pair data at T2: $62k mcap, no socials\"},{\"url\":\"https://www.binance.com/en/square/post/1444769\",\"what\":\"Meaning of \u73a9\u5e01\u5f52\u8d75 as a CZ joke\"},{\"url\":\"https://chinadigitaltimes.net/chinese/424411.html\",\"what\":\"Origin of the phrase\"},{\"url\":\"https://x.com/zhaohoushan?lang=en\",\"what\":\"An unrelated 2021 X account named \u73a9\u5e01\u5f52\u8d75\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u73a9\u5e01\u5f52\u8d75 ('the coins go back to Zhao') is an old Chinese crypto joke about all money ending up with CZ/Binance. Someone launched a Solana token with that name. Its PumpSwap pool was created about 3 seconds after the token itself (created_unix 1790334965, pair 1790334968), GMGN shows migrated_unix=0 and no launchpad, and the LP is 0% burned or locked. So this was a direct launch into a pool the creator most likely owns, not a pump.fun graduate. The creator still holds about 19% of supply. Over roughly 1h40m, price rose about 5x to a peak near $83k mcap, on $2M of volume against about $60k of liquidity. In the last hour GeckoTerminal shows only 52 unique buyers and 52 unique sellers producing about 1,600 buys and 1,600 sells, with buys exactly matching sells. That is bot or wash cycling, not new demand. By T2, DexScreener showed price already down to about $62k mcap, from $79k at detection. I found no socials, website, DexScreener profile, or X, Telegram or Reddit discussion of this contract. At least 10 other tokens with the same name were launched in the past day and all are dead.",
+  "narrative": {
+   "description": "A decade-old Chinese internet pun about CZ (Changpeng Zhao) ending up with everyone's money. The Chinese crypto community knows it well, but I found no fresh event today, such as a CZ post, that would bring it back into play.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "I found no organic trigger. The obvious possibility is a recent CZ or Binance mention driving Chinese-name meme launches, since there were about 10 same-name clones in about 7 hours. But searches turned up nothing current, only the old origin articles."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the only same-name pair with real liquidity. The other ~10 clones have $0 liquidity and no volume. But it has no socials, no website and no community link, so its claim to be the canonical one rests only on having survived longest.",
+   "competing_tokens": "At least 10 same-name tokens (e.g. GLFyrr28..., 77GDWdiB..., 8uhpHzuQ...) launched over the past ~7 hours. All are dead, with $0 liquidity.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "In the last hour, 52 unique buyers and 52 unique sellers made about 3,200 trades, with buys and sells almost exactly equal (1,591 vs 1,590). Hourly turnover is 19x liquidity. The pool was created by the dev directly on PumpSwap, the LP is unlocked, and the creator holds 19%. I found no social footprint, and gmgn_page_visits=1. Unique buyers over 6h is about 2,063, but only 56 unique sellers, which fits bot or airdrop-style tiny buys.",
+   "uncertainty": "Private Chinese Telegram or WeChat groups could be pushing this, and I can't see them. The GeckoTerminal unique-wallet counts may be undercounting."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% burned or locked, and the pool was apparently seeded by the creator (the pair was created 3 seconds after the mint), so the creator can pull liquidity",
+    "The creator holds 18.99% of supply unsold",
+    "Volume looks like wash trading by about 52 wallets",
+    "Price was already falling from $79k to $62k mcap between detection and T2",
+    "10+ same-name clones show a serial launch-and-abandon pattern"
+   ]
+  },
+  "counterargument": "Chinese-name memes can run hard on CZ-related humor, and this is the one surviving pair out of about 10 attempts, so buyers who want the name will end up here. More than 2,000 holders, zero sniper or bundler share of any size, renounced mint and freeze authority, and no taxes might mean it is a real community pickup. A doubling from about $60k to $120k mcap is a small absolute move.",
+  "unknowns": [
+   "Whether CZ or a Chinese KOL mentioned the phrase today",
+   "Who actually owns the LP tokens",
+   "Chinese Telegram or WeChat activity",
+   "Whether the 2,063 six-hour buyers are real people or airdrop or bot dust"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The phrase itself is well documented as an old CZ joke, but I found nothing linked to this contract. I fetched the DexScreener API at T2: price down to about $62k mcap."
+  },
+  "thesis": "A creator-seeded PumpSwap pool with unlocked LP, a 19% creator bag, and volume that looks wash-traded by about 52 wallets. No social footprint, the name is contested by 10 dead clones, and price is already fading from its peak. Rug or bleed is much more likely than a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 70,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/9gqrtDLHmwY8kzU2iKjb2uRZZuoUTafJuTRXApy7Vci7",
+    "what": "Live pair data at T2: $62k mcap, no socials"
+   },
+   {
+    "url": "https://www.binance.com/en/square/post/1444769",
+    "what": "Meaning of \u73a9\u5e01\u5f52\u8d75 as a CZ joke"
+   },
+   {
+    "url": "https://chinadigitaltimes.net/chinese/424411.html",
+    "what": "Origin of the phrase"
+   },
+   {
+    "url": "https://x.com/zhaohoushan?lang=en",
+    "what": "An unrelated 2021 X account named \u73a9\u5e01\u5f52\u8d75"
+   }
+  ]
+ },
+ "ttft_ms": 4881,
+ "type": "result",
+ "duration_ms": 93462,
+ "uuid": "c105aac1-b441-4137-820a-4f99d8d040c8",
+ "ttft_stream_ms": 1510,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1510,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

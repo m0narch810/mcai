@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 23639,
+ "stop_reason": "tool_use",
+ "session_id": "2cbf2afc-4de8-41c8-8c69-89ab803da742",
+ "total_cost_usd": 0.1112508,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7832,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2410,
+  "output_tokens_details": {
+   "thinking_tokens": 516
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7832,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2410,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7832,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7832
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2410,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7832,
+   "webSearchRequests": 0,
+   "costUSD": 0.1112508,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 516,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"COLLECT/GoCollect is a 36-minute-old PumpSwap pool. The mint is not a pump.fun \\\"pump\\\" address, and the deploy platform is unknown. It is one of more than 10 same-name GoCollect tokens. The pool has turned over $6.2M in volume on a ~$150k market cap (27x turnover in one hour). There are 5,788 buys from 1,860 unique buyers, but 3,829 sells come from only 54 unique sellers. Liquidity ($218k) is larger than the market cap, 72% of supply sits in the pool, 0% of the LP is burned or locked, and RugCheck flags \\\"Low amount of LP Providers\\\". GMGN tags 49 bundler wallets, which hold about 22% of top-trader share. A same-name pump.fun token (2MFq...pump) created about 31 minutes after this one is at a $22.9M market cap. That token is most likely the canonical one.\",\"narrative\":{\"description\":\"GoCollect: a walk-to-a-crate, open-it, keep-the-graded-card app, 'Powered by @Collector_Crypt', with an X handle (@gocollectfun) and a website. The collectibles/RWA card story is real and seems to have traction, given the $22.9M same-name token.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A real-looking project with an ecosystem link (Collector Crypt) and a hot main token is drawing many copycat deployments. This pool's attention is likely spillover and confusion, not interest in this particular contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name and ticker only. Nothing in the packet ties this contract to the project. The project's attention is concentrated in 2MFq...pump ($22.9M market cap).\",\"competing_tokens\":\"More than 10 GoCollect/COLLECT clones. 2MFq...pump ($22.9M, the likely official one), nDZk...pump ($1.65M), 14Gi... ($1.5M, dead volume), and several with zero liquidity, which are already rugged clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 54 unique sellers produced 3,829 sells, against 1,860 buyers. Turnover is 27x market cap in an hour. There are 49 bundler wallets. Liquidity exceeds market cap, with a single LP provider and unlocked LP. Many earlier same-name clones already show $0 liquidity. Together these point to wash or bot volume that makes the chart look active before the LP is pulled.\",\"uncertainty\":\"The buyer count could include real traders who confused this token with the official one. Whether the dev is linked to the real project is unknown, and so is whether 'Created on gocollect.fun' means the site acts as a launchpad.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% LP burned or locked, single or few LP providers, so $218k of liquidity can be pulled at any moment\",\"Same-name clones in the packet already show $0 liquidity, which fits a serial clone-rug pattern\",\"54 unique sellers behind ~3.8k sells points to wash trading\",\"49 bundler wallets\",\"Not the canonical token; the real one is at $22.9M\"]},\"counterargument\":\"The narrative is real and the main token is hot at $22.9M. If this contract really is tied to gocollect.fun (the description says 'Created on gocollect.fun'), confused or overflow buyers could keep coming in, and 1,860 unique buyers is a lot. Top-10 holders own only 12% outside the pool. A deep pool of $218k could also be a legitimate team-seeded market, in which case it could double from $150k.\",\"unknowns\":[\"Whether this contract is linked to the official gocollect.fun project\",\"Who provided the LP, and whether they plan to remove it\",\"How much of the buyer count is real people rather than bots\",\"Whether gocollect.fun is itself a launchpad that makes clones\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; I used only the evidence packet.\"},\"thesis\":\"This is a non-canonical GoCollect clone on a manually seeded PumpSwap pool with unlocked LP. The volume looks washed (54 sellers against about 3.8k sells), 49 bundlers are present, and several sibling clones already sit at zero liquidity. The most likely outcome is an LP pull or a steady bleed, not a double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "COLLECT/GoCollect is a 36-minute-old PumpSwap pool. The mint is not a pump.fun \"pump\" address, and the deploy platform is unknown. It is one of more than 10 same-name GoCollect tokens. The pool has turned over $6.2M in volume on a ~$150k market cap (27x turnover in one hour). There are 5,788 buys from 1,860 unique buyers, but 3,829 sells come from only 54 unique sellers. Liquidity ($218k) is larger than the market cap, 72% of supply sits in the pool, 0% of the LP is burned or locked, and RugCheck flags \"Low amount of LP Providers\". GMGN tags 49 bundler wallets, which hold about 22% of top-trader share. A same-name pump.fun token (2MFq...pump) created about 31 minutes after this one is at a $22.9M market cap. That token is most likely the canonical one.",
+  "narrative": {
+   "description": "GoCollect: a walk-to-a-crate, open-it, keep-the-graded-card app, 'Powered by @Collector_Crypt', with an X handle (@gocollectfun) and a website. The collectibles/RWA card story is real and seems to have traction, given the $22.9M same-name token.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A real-looking project with an ecosystem link (Collector Crypt) and a hot main token is drawing many copycat deployments. This pool's attention is likely spillover and confusion, not interest in this particular contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name and ticker only. Nothing in the packet ties this contract to the project. The project's attention is concentrated in 2MFq...pump ($22.9M market cap).",
+   "competing_tokens": "More than 10 GoCollect/COLLECT clones. 2MFq...pump ($22.9M, the likely official one), nDZk...pump ($1.65M), 14Gi... ($1.5M, dead volume), and several with zero liquidity, which are already rugged clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 54 unique sellers produced 3,829 sells, against 1,860 buyers. Turnover is 27x market cap in an hour. There are 49 bundler wallets. Liquidity exceeds market cap, with a single LP provider and unlocked LP. Many earlier same-name clones already show $0 liquidity. Together these point to wash or bot volume that makes the chart look active before the LP is pulled.",
+   "uncertainty": "The buyer count could include real traders who confused this token with the official one. Whether the dev is linked to the real project is unknown, and so is whether 'Created on gocollect.fun' means the site acts as a launchpad."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% LP burned or locked, single or few LP providers, so $218k of liquidity can be pulled at any moment",
+    "Same-name clones in the packet already show $0 liquidity, which fits a serial clone-rug pattern",
+    "54 unique sellers behind ~3.8k sells points to wash trading",
+    "49 bundler wallets",
+    "Not the canonical token; the real one is at $22.9M"
+   ]
+  },
+  "counterargument": "The narrative is real and the main token is hot at $22.9M. If this contract really is tied to gocollect.fun (the description says 'Created on gocollect.fun'), confused or overflow buyers could keep coming in, and 1,860 unique buyers is a lot. Top-10 holders own only 12% outside the pool. A deep pool of $218k could also be a legitimate team-seeded market, in which case it could double from $150k.",
+  "unknowns": [
+   "Whether this contract is linked to the official gocollect.fun project",
+   "Who provided the LP, and whether they plan to remove it",
+   "How much of the buyer count is real people rather than bots",
+   "Whether gocollect.fun is itself a launchpad that makes clones"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; I used only the evidence packet."
+  },
+  "thesis": "This is a non-canonical GoCollect clone on a manually seeded PumpSwap pool with unlocked LP. The volume looks washed (54 sellers against about 3.8k sells), 49 bundlers are present, and several sibling clones already sit at zero liquidity. The most likely outcome is an LP pull or a steady bleed, not a double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6318,
+ "type": "result",
+ "duration_ms": 23686,
+ "uuid": "f0da1de5-4958-44fa-93ec-2488ab5f8f65",
+ "ttft_stream_ms": 856,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 856,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

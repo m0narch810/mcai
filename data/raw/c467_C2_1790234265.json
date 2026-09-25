@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 71260,
+ "stop_reason": "tool_use",
+ "session_id": "bc8abff9-c163-497a-abc2-0bae0eb6a0ec",
+ "total_cost_usd": 0.31011960000000005,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15229,
+  "cache_read_input_tokens": 43808,
+  "output_tokens": 4036,
+  "output_tokens_details": {
+   "thinking_tokens": 839
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15229,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2618,
+    "cache_read_input_tokens": 16334,
+    "cache_creation_input_tokens": 1471,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1471
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4036,
+   "cacheReadInputTokens": 43808,
+   "cacheCreationInputTokens": 15229,
+   "webSearchRequests": 0,
+   "costUSD": 0.2113456,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 839,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 47954,
+   "outputTokens": 2164,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.098774,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Shartcoin\\\" is a real and current narrative. YokaiCapital's KIDS launchpad (kids.fun) ran the official Shartcoin launch, pitched as joining the Fartcoin and Buttcoin communities. KIDS says 2,500 SOL was committed, and holders of those two coins can claim a share. The official token is UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids: about $2.38M market cap, $690k liquidity on Raydium CPMM, +801% and $4.75M volume in 24h, with kids.fun as its website. This token (5xSY\u2026ceji) is a different, non-pump.fun mint. Its PumpSwap pool was created about 93 minutes before detection. It has no website or socials, only a GeckoTerminal twitter field that points at a YokaiCapital post. It is one of about 10 same-name tokens, several of them launched today, including another decoy (C8GH\u2026) with $1M liquidity and zero volume. Its structure is odd. Liquidity ($34k) is larger than market cap ($26k), so the deployer probably put up most of the pool, and RugCheck says the LP is unlocked with only a few LP providers. Volume was about $500k in the last hour, roughly 15x liquidity, with buys and sells almost equal. That looks like bot or wash churn around a coin that borrows the real Shartcoin's attention.\",\"narrative\":{\"description\":\"Shartcoin is a Fartcoin/Buttcoin spinoff meme with an official launch on YokaiCapital's KIDS launchpad. The official token is up about 8x today and is at roughly $2.4M market cap.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A launchpad event with 2,500 SOL committed, claims for Fartcoin and Buttcoin holders, and a strong 24h price move on the official token. Copycats pick up spillover from people searching the ticker.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the shared name and ticker, plus a GeckoTerminal twitter field that seems to be copied from a YokaiCapital post. The official token's DexScreener listing links kids.fun and is a different mint (UpBB\u2026kids).\",\"competing_tokens\":\"UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids is the canonical one ($2.38M market cap, $690k liquidity, kids.fun). C8GH\u2026 is a decoy with $1M liquidity, zero volume, and was created about 4 minutes before this pair. There are also several dead 'shart' tokens from earlier dates.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Liquidity is larger than market cap and the LP is unlocked (RugCheck: 'Large Amount of LP Unlocked', 'Low amount of LP Providers'). Hourly volume is about 15x liquidity with a near 1:1 buy/sell split. The mint is not a pump.fun mint and the pool was seeded directly. No project links, and no search results for the contract address. The decoy clones launched within minutes of each other suggest an organized copycat farm.\",\"uncertainty\":\"GMGN shows no bundlers or snipers and about 1,950 holders, so some of the buyers may be real retail who confused it with the official token.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Unlocked LP that the deployer controls can be pulled at any moment\",\"Copycat of a live canonical token, so aggregators and the community steer buyers to the real mint\",\"Wash-like turnover of about 15x liquidity per hour\",\"GeckoTerminal shows price down 6.8% over 1h, a different picture from DexScreener, which shows a pump\"]},\"counterargument\":\"Copycats of a hot ticker sometimes double from low market caps just because confused retail buyers keep coming. This one already did +163% in 6h, has about 1,950 holders, no bundlers, a top-10 share of only 18%, and the official Shartcoin narrative is still hot. Going from $26k to $52k only needs about $26k of net inflow.\",\"unknowns\":[\"Who supplied the LP and whether they will pull it\",\"What the YokaiCapital post that GeckoTerminal links actually says (x.com returned HTTP 402)\",\"How much of the volume is real\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"A search for the contract address found nothing. The x.com fetch returned HTTP 402. Web search turned up the KIDS launchpad and YokaiCapital context. DexScreener API confirms the canonical mint links kids.fun. Reddit, Telegram and Discord were not searched.\"},\"thesis\":\"This is a ticker-hijack copycat of the official KIDS-launched Shartcoin, with unlocked, deployer-seeded LP and wash-like volume. It is far more likely to be pulled or fade than to double.\",\"continuation_view\":\"strong_fade\",\"p_runner\":9,\"p_rug\":68,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids\",\"what\":\"Canonical Shartcoin: $2.38M market cap, $690k liquidity, kids.fun website, +801% in 24h\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/5xSYXdYWR8bBMU2jviiioedv8Jpc1847hhPUKx1qceji\",\"what\":\"This token: $26k market cap, $34k liquidity, no socials\"},{\"url\":\"https://github.com/YokaiCapital/kids-launchpad\",\"what\":\"KIDS launchpad; Shartcoin joins the Fartcoin and Buttcoin communities\"},{\"url\":\"https://x.com/kidsdotfun\",\"what\":\"KIDS post: 2,500 SOL committed to the Shartcoin launch (from search snippet)\"},{\"url\":\"https://www.kucoin.com/news/flash/trader-yokaicapital-accuses-solana-meme-projects-and-kols-of-bundled-trading-and-fraud\",\"what\":\"Background on YokaiCapital\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Shartcoin\" is a real and current narrative. YokaiCapital's KIDS launchpad (kids.fun) ran the official Shartcoin launch, pitched as joining the Fartcoin and Buttcoin communities. KIDS says 2,500 SOL was committed, and holders of those two coins can claim a share. The official token is UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids: about $2.38M market cap, $690k liquidity on Raydium CPMM, +801% and $4.75M volume in 24h, with kids.fun as its website. This token (5xSY\u2026ceji) is a different, non-pump.fun mint. Its PumpSwap pool was created about 93 minutes before detection. It has no website or socials, only a GeckoTerminal twitter field that points at a YokaiCapital post. It is one of about 10 same-name tokens, several of them launched today, including another decoy (C8GH\u2026) with $1M liquidity and zero volume. Its structure is odd. Liquidity ($34k) is larger than market cap ($26k), so the deployer probably put up most of the pool, and RugCheck says the LP is unlocked with only a few LP providers. Volume was about $500k in the last hour, roughly 15x liquidity, with buys and sells almost equal. That looks like bot or wash churn around a coin that borrows the real Shartcoin's attention.",
+  "narrative": {
+   "description": "Shartcoin is a Fartcoin/Buttcoin spinoff meme with an official launch on YokaiCapital's KIDS launchpad. The official token is up about 8x today and is at roughly $2.4M market cap.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A launchpad event with 2,500 SOL committed, claims for Fartcoin and Buttcoin holders, and a strong 24h price move on the official token. Copycats pick up spillover from people searching the ticker."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the shared name and ticker, plus a GeckoTerminal twitter field that seems to be copied from a YokaiCapital post. The official token's DexScreener listing links kids.fun and is a different mint (UpBB\u2026kids).",
+   "competing_tokens": "UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids is the canonical one ($2.38M market cap, $690k liquidity, kids.fun). C8GH\u2026 is a decoy with $1M liquidity, zero volume, and was created about 4 minutes before this pair. There are also several dead 'shart' tokens from earlier dates.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Liquidity is larger than market cap and the LP is unlocked (RugCheck: 'Large Amount of LP Unlocked', 'Low amount of LP Providers'). Hourly volume is about 15x liquidity with a near 1:1 buy/sell split. The mint is not a pump.fun mint and the pool was seeded directly. No project links, and no search results for the contract address. The decoy clones launched within minutes of each other suggest an organized copycat farm.",
+   "uncertainty": "GMGN shows no bundlers or snipers and about 1,950 holders, so some of the buyers may be real retail who confused it with the official token."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Unlocked LP that the deployer controls can be pulled at any moment",
+    "Copycat of a live canonical token, so aggregators and the community steer buyers to the real mint",
+    "Wash-like turnover of about 15x liquidity per hour",
+    "GeckoTerminal shows price down 6.8% over 1h, a different picture from DexScreener, which shows a pump"
+   ]
+  },
+  "counterargument": "Copycats of a hot ticker sometimes double from low market caps just because confused retail buyers keep coming. This one already did +163% in 6h, has about 1,950 holders, no bundlers, a top-10 share of only 18%, and the official Shartcoin narrative is still hot. Going from $26k to $52k only needs about $26k of net inflow.",
+  "unknowns": [
+   "Who supplied the LP and whether they will pull it",
+   "What the YokaiCapital post that GeckoTerminal links actually says (x.com returned HTTP 402)",
+   "How much of the volume is real"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "A search for the contract address found nothing. The x.com fetch returned HTTP 402. Web search turned up the KIDS launchpad and YokaiCapital context. DexScreener API confirms the canonical mint links kids.fun. Reddit, Telegram and Discord were not searched."
+  },
+  "thesis": "This is a ticker-hijack copycat of the official KIDS-launched Shartcoin, with unlocked, deployer-seeded LP and wash-like volume. It is far more likely to be pulled or fade than to double.",
+  "continuation_view": "strong_fade",
+  "p_runner": 9,
+  "p_rug": 68,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids",
+    "what": "Canonical Shartcoin: $2.38M market cap, $690k liquidity, kids.fun website, +801% in 24h"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/5xSYXdYWR8bBMU2jviiioedv8Jpc1847hhPUKx1qceji",
+    "what": "This token: $26k market cap, $34k liquidity, no socials"
+   },
+   {
+    "url": "https://github.com/YokaiCapital/kids-launchpad",
+    "what": "KIDS launchpad; Shartcoin joins the Fartcoin and Buttcoin communities"
+   },
+   {
+    "url": "https://x.com/kidsdotfun",
+    "what": "KIDS post: 2,500 SOL committed to the Shartcoin launch (from search snippet)"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/trader-yokaicapital-accuses-solana-meme-projects-and-kols-of-bundled-trading-and-fraud",
+    "what": "Background on YokaiCapital"
+   }
+  ]
+ },
+ "ttft_ms": 5703,
+ "type": "result",
+ "duration_ms": 56100,
+ "uuid": "1d3a2d78-9740-4cad-a928-db513f73031f",
+ "ttft_stream_ms": 960,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 960,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

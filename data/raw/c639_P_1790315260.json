@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 22737,
+ "stop_reason": "tool_use",
+ "session_id": "87287c60-4d74-4145-a68d-243461d13dbd",
+ "total_cost_usd": 0.1103108,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7812,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2371,
+  "output_tokens_details": {
+   "thinking_tokens": 375
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7812,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2371,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7812,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7812
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2371,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7812,
+   "webSearchRequests": 0,
+   "costUSD": 0.1103108,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 375,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Pok\u00e9mon\\\" launched 38 minutes before detection, on a PumpSwap pool the dev appears to have created directly. It is not a pump.fun token that graduated from the bonding curve: the contract has no 'pump' suffix, migrated_unix is 0, and the launchpad is null or unknown. Its LP is 0% locked or burned, and RugCheck warns of few LP providers. Liquidity ($51.7k) is higher than market cap ($42.7k), which is unusual and fits a dev-seeded pool. In the last hour it traded $400k (7.9x turnover), up about 170%. The trading pattern looks odd: about 1,113 unique buyers against only about 105 unique sellers, and those ~105 sellers made about 2,300 sell transactions. That points to a few wallets or bots selling over and over into many small buys, or to volume-bot activity. GMGN flags 27 bundler wallets. At least 9 other tokens named \\\"Pok\u00e9mon\\\" were created in the past ~1-3 days, and all of them now have about $0 liquidity. The project description is a Chinese classical poem line. It has no socials, website or DexScreener profile.\",\"narrative\":{\"description\":\"A generic Pok\u00e9mon IP name with no specific catalyst in the packet, no socials and a Chinese poem as its description. Pok\u00e9mon is a recurring meme theme, but this name is being launched again and again as a throwaway.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The attention looks manufactured, not organic. The activity is heavy on transaction count with few sellers, there are bundlers, and there is no link to any post or event. Any real Pok\u00e9mon news catalyst is unknown to me without web access.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only Pok\u00e9mon-named token in the packet that has live liquidity and volume right now. That makes it the current iteration, not a canonical token.\",\"competing_tokens\":\"At least 9 same-name tokens (Pok\u00e9mon/GO/EMERALD/Pika/TCG). Most were created in the prior 1-3 days, and nearly all now have $0 liquidity with stranded market caps. This looks like a serial rug-farm name.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 105 unique sellers produced 2,305 sells while 1,113 buyers produced 3,373 buys. There are 27 bundler wallets and 1 rat-trader wallet. The pool was dev-seeded with unlocked LP. It has no socials or profile, and GMGN recorded 1 page visit. The same name was recently launched repeatedly, and those tokens were all drained.\",\"uncertainty\":\"Wallet counts from GeckoTerminal can undercount. The large number of buyers could include some real retail flow drawn in by trending lists.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 0% locked or burned on a dev-created PumpSwap pool, so the dev can remove liquidity at any time\",\"Few LP providers\",\"Liquidity is higher than market cap, which suggests a seeded pool meant to be pulled\",\"27 bundlers\",\"Repeated same-name tokens that were rugged to $0 liquidity\",\"A small set of wallets doing the selling, which suggests extraction\",\"The creator's 'launched 0 tokens' conflicts with a best-token ATH of $247k, so dev history is unreliable\"]},\"counterargument\":\"The top-10 holding outside the pool is low (8.5%), mint and freeze authority are renounced, there is no tax, and about 1,100 holders arrived within 40 minutes. If this is a real Pok\u00e9mon catalyst (a game or TCG announcement) and this token has become the surviving version, $42k is a very low market cap. A move to $85k+ inside 6 hours is common for trending microcaps, and the heavy buy-side flow shows real demand.\",\"unknowns\":[\"Whether a real Pok\u00e9mon news catalyst exists today\",\"Who holds the LP tokens and whether they are the creator\",\"Whether the earlier same-name tokens share this creator or its funding source\",\"Whether the ~105 sellers are one cluster\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The analysis uses only the packet.\"},\"thesis\":\"This looks like a rug-farm pattern. The same Pok\u00e9mon name has been relaunched many times, earlier copies were drained to $0, and this one has a dev-seeded PumpSwap pool with unlocked LP, bundlers and a small group of wallets doing all the selling. The more likely outcome within 6 hours is that the LP is pulled or the pair dies, not a 2x from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":75,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Pok\u00e9mon\" launched 38 minutes before detection, on a PumpSwap pool the dev appears to have created directly. It is not a pump.fun token that graduated from the bonding curve: the contract has no 'pump' suffix, migrated_unix is 0, and the launchpad is null or unknown. Its LP is 0% locked or burned, and RugCheck warns of few LP providers. Liquidity ($51.7k) is higher than market cap ($42.7k), which is unusual and fits a dev-seeded pool. In the last hour it traded $400k (7.9x turnover), up about 170%. The trading pattern looks odd: about 1,113 unique buyers against only about 105 unique sellers, and those ~105 sellers made about 2,300 sell transactions. That points to a few wallets or bots selling over and over into many small buys, or to volume-bot activity. GMGN flags 27 bundler wallets. At least 9 other tokens named \"Pok\u00e9mon\" were created in the past ~1-3 days, and all of them now have about $0 liquidity. The project description is a Chinese classical poem line. It has no socials, website or DexScreener profile.",
+  "narrative": {
+   "description": "A generic Pok\u00e9mon IP name with no specific catalyst in the packet, no socials and a Chinese poem as its description. Pok\u00e9mon is a recurring meme theme, but this name is being launched again and again as a throwaway.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The attention looks manufactured, not organic. The activity is heavy on transaction count with few sellers, there are bundlers, and there is no link to any post or event. Any real Pok\u00e9mon news catalyst is unknown to me without web access."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only Pok\u00e9mon-named token in the packet that has live liquidity and volume right now. That makes it the current iteration, not a canonical token.",
+   "competing_tokens": "At least 9 same-name tokens (Pok\u00e9mon/GO/EMERALD/Pika/TCG). Most were created in the prior 1-3 days, and nearly all now have $0 liquidity with stranded market caps. This looks like a serial rug-farm name.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 105 unique sellers produced 2,305 sells while 1,113 buyers produced 3,373 buys. There are 27 bundler wallets and 1 rat-trader wallet. The pool was dev-seeded with unlocked LP. It has no socials or profile, and GMGN recorded 1 page visit. The same name was recently launched repeatedly, and those tokens were all drained.",
+   "uncertainty": "Wallet counts from GeckoTerminal can undercount. The large number of buyers could include some real retail flow drawn in by trending lists."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 0% locked or burned on a dev-created PumpSwap pool, so the dev can remove liquidity at any time",
+    "Few LP providers",
+    "Liquidity is higher than market cap, which suggests a seeded pool meant to be pulled",
+    "27 bundlers",
+    "Repeated same-name tokens that were rugged to $0 liquidity",
+    "A small set of wallets doing the selling, which suggests extraction",
+    "The creator's 'launched 0 tokens' conflicts with a best-token ATH of $247k, so dev history is unreliable"
+   ]
+  },
+  "counterargument": "The top-10 holding outside the pool is low (8.5%), mint and freeze authority are renounced, there is no tax, and about 1,100 holders arrived within 40 minutes. If this is a real Pok\u00e9mon catalyst (a game or TCG announcement) and this token has become the surviving version, $42k is a very low market cap. A move to $85k+ inside 6 hours is common for trending microcaps, and the heavy buy-side flow shows real demand.",
+  "unknowns": [
+   "Whether a real Pok\u00e9mon news catalyst exists today",
+   "Who holds the LP tokens and whether they are the creator",
+   "Whether the earlier same-name tokens share this creator or its funding source",
+   "Whether the ~105 sellers are one cluster"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The analysis uses only the packet."
+  },
+  "thesis": "This looks like a rug-farm pattern. The same Pok\u00e9mon name has been relaunched many times, earlier copies were drained to $0, and this one has a dev-seeded PumpSwap pool with unlocked LP, bundlers and a small group of wallets doing all the selling. The more likely outcome within 6 hours is that the LP is pulled or the pair dies, not a 2x from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 75,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4489,
+ "type": "result",
+ "duration_ms": 22779,
+ "uuid": "72c40c0f-a479-4f20-9309-9ef3c000c4a7",
+ "ttft_stream_ms": 751,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 751,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

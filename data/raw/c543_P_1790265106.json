@@ -1,0 +1,150 @@
+{
+ "duration_api_ms": 24117,
+ "stop_reason": "tool_use",
+ "session_id": "60b2b1b0-d60e-4711-9154-06ed5fcaa23d",
+ "total_cost_usd": 0.11485880000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7898,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2564,
+  "output_tokens_details": {
+   "thinking_tokens": 513
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7898,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2564,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7898,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7898
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2564,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7898,
+   "webSearchRequests": 0,
+   "costUSD": 0.11485880000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 513,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GO \\\"LESGO\\\" (Ly17\u2026) is a 36-minute-old PumpSwap pair. It was not a pump.fun curve migration: migrated_unix is 0 and launchpad is blank. Liquidity ($320k) is higher than market cap ($200k), so someone seeded the pool directly with a lot of capital. None of that LP is locked, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" as danger. Volume is $5.5M in one hour, 17x the market cap. GeckoTerminal counts 1,441 unique buyers but only 60 unique sellers, and those 60 sellers made about 3,428 sell transactions. That is a small set of wallets cycling volume, not organic two-way trading. GMGN tags 50 bundler wallets holding about 17% of top-trader share. The token's own description links to a different contract (D1YZ\u2026) as the one \\\"created on lesgo.fun\\\", so that one is most likely the real platform token. Meanwhile at least 5 other \\\"LESGO/GO\\\" clones from the last few hours now sit at $0 liquidity, including one that showed a $4.25M market cap. That fits a serial scammer who seeds liquidity, fakes demand, and pulls the pool.\",\"narrative\":{\"description\":\"The story borrows the Lesgo launchpad's platform token: a Raydium LaunchLab launchpad with a 60% revenue buyback and burn. That real project may have genuine attention, but this contract is not the one its own description points to.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The real LESGO token (D1YZ\u2026, about $900k market cap) is getting attention. Copycats are riding the name, and bot volume plus buyer counts may be pulling in retail buyers who think they are buying the platform token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The name and ticker match, and the GeckoTerminal X handle is lesgodotfun. But the description's own lesgo.fun link names D1YZZg9\u2026, not this mint, so the metadata looks copied.\",\"competing_tokens\":\"D1YZZg9\u2026 (probably canonical, $899k market cap, $88k liquidity, still trading). Clones 3KPm\u20267777, Ak6a\u2026, AgeU\u2026, and 6MQ9\u20267777 are all at $0 liquidity, meaning they were rugged within hours today. There are also several dead pump.fun 'lesgo' copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There are 1,441 unique buyers but only 60 unique sellers, and those sellers made about 3,400 sell transactions. Turnover is 17x. There are 50 bundler wallets. The pool was seeded directly with more liquidity than the market cap and none of the LP is locked. The same-name clones launched in recent hours have all gone to zero liquidity. GMGN shows 3 page visits, so there is essentially no real outside attention.\",\"uncertainty\":\"The buyer count could include some real retail who mistook this for the platform token. It is also possible the Lesgo team itself deployed this pool, but the description link argues against that.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of the LP is locked or burned, and one party supplied $320k of it and can withdraw it at any time.\",\"The clone pattern suggests the same operator repeats the playbook: this ticker already has multiple $0-liquidity clones from today.\",\"The volume looks wash-traded: 60 sellers cycling thousands of sells.\",\"Bundlers hold about 17% of top-trader share.\",\"The pool was not a pump.fun migration, so there is no curve protection.\"]},\"counterargument\":\"Holder spread looks clean: top-10 hold 8.7%, there are no insider flags, and mint and freeze authority are renounced. Buyers are still arriving fast (144 unique in the last 5 minutes), and the real Lesgo platform is getting attention. If this pool is actually a team-seeded or second official pool, the deep liquidity could support a run from $200k to $400k+. The earlier clones reached high market caps before dying, so a quick doubling before a pull is possible.\",\"unknowns\":[\"Whether the Lesgo team officially recognizes this mint\",\"Who supplied the $320k in LP and whether the same wallet funded the earlier clones\",\"The peak price the earlier clones reached before liquidity was pulled\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment rests only on the evidence packet.\"},\"thesis\":\"This is very likely a copycat of the Lesgo platform token, with self-seeded unlocked liquidity and wash-traded volume. Several identical clones from today are already at zero liquidity. The most probable outcome within 6 hours is an LP pull. Doubling from the entry 25 minutes after detection would need the operator to keep pumping, and the earlier clones show pulls happen fast.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GO \"LESGO\" (Ly17\u2026) is a 36-minute-old PumpSwap pair. It was not a pump.fun curve migration: migrated_unix is 0 and launchpad is blank. Liquidity ($320k) is higher than market cap ($200k), so someone seeded the pool directly with a lot of capital. None of that LP is locked, and RugCheck flags \"Large Amount of LP Unlocked\" as danger. Volume is $5.5M in one hour, 17x the market cap. GeckoTerminal counts 1,441 unique buyers but only 60 unique sellers, and those 60 sellers made about 3,428 sell transactions. That is a small set of wallets cycling volume, not organic two-way trading. GMGN tags 50 bundler wallets holding about 17% of top-trader share. The token's own description links to a different contract (D1YZ\u2026) as the one \"created on lesgo.fun\", so that one is most likely the real platform token. Meanwhile at least 5 other \"LESGO/GO\" clones from the last few hours now sit at $0 liquidity, including one that showed a $4.25M market cap. That fits a serial scammer who seeds liquidity, fakes demand, and pulls the pool.",
+  "narrative": {
+   "description": "The story borrows the Lesgo launchpad's platform token: a Raydium LaunchLab launchpad with a 60% revenue buyback and burn. That real project may have genuine attention, but this contract is not the one its own description points to.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The real LESGO token (D1YZ\u2026, about $900k market cap) is getting attention. Copycats are riding the name, and bot volume plus buyer counts may be pulling in retail buyers who think they are buying the platform token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The name and ticker match, and the GeckoTerminal X handle is lesgodotfun. But the description's own lesgo.fun link names D1YZZg9\u2026, not this mint, so the metadata looks copied.",
+   "competing_tokens": "D1YZZg9\u2026 (probably canonical, $899k market cap, $88k liquidity, still trading). Clones 3KPm\u20267777, Ak6a\u2026, AgeU\u2026, and 6MQ9\u20267777 are all at $0 liquidity, meaning they were rugged within hours today. There are also several dead pump.fun 'lesgo' copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There are 1,441 unique buyers but only 60 unique sellers, and those sellers made about 3,400 sell transactions. Turnover is 17x. There are 50 bundler wallets. The pool was seeded directly with more liquidity than the market cap and none of the LP is locked. The same-name clones launched in recent hours have all gone to zero liquidity. GMGN shows 3 page visits, so there is essentially no real outside attention.",
+   "uncertainty": "The buyer count could include some real retail who mistook this for the platform token. It is also possible the Lesgo team itself deployed this pool, but the description link argues against that."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of the LP is locked or burned, and one party supplied $320k of it and can withdraw it at any time.",
+    "The clone pattern suggests the same operator repeats the playbook: this ticker already has multiple $0-liquidity clones from today.",
+    "The volume looks wash-traded: 60 sellers cycling thousands of sells.",
+    "Bundlers hold about 17% of top-trader share.",
+    "The pool was not a pump.fun migration, so there is no curve protection."
+   ]
+  },
+  "counterargument": "Holder spread looks clean: top-10 hold 8.7%, there are no insider flags, and mint and freeze authority are renounced. Buyers are still arriving fast (144 unique in the last 5 minutes), and the real Lesgo platform is getting attention. If this pool is actually a team-seeded or second official pool, the deep liquidity could support a run from $200k to $400k+. The earlier clones reached high market caps before dying, so a quick doubling before a pull is possible.",
+  "unknowns": [
+   "Whether the Lesgo team officially recognizes this mint",
+   "Who supplied the $320k in LP and whether the same wallet funded the earlier clones",
+   "The peak price the earlier clones reached before liquidity was pulled"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment rests only on the evidence packet."
+  },
+  "thesis": "This is very likely a copycat of the Lesgo platform token, with self-seeded unlocked liquidity and wash-traded volume. Several identical clones from today are already at zero liquidity. The most probable outcome within 6 hours is an LP pull. Doubling from the entry 25 minutes after detection would need the operator to keep pumping, and the earlier clones show pulls happen fast.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5596,
+ "type": "result",
+ "duration_ms": 24160,
+ "uuid": "bba57acc-a1e2-4722-854c-f246402f5962",
+ "ttft_stream_ms": 735,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 735,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 61245,
+ "stop_reason": "tool_use",
+ "session_id": "5e0654f5-aedd-49f5-964b-ecea0f81dfc7",
+ "total_cost_usd": 0.2815992,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13884,
+  "cache_read_input_tokens": 40901,
+  "output_tokens": 3215,
+  "output_tokens_details": {
+   "thinking_tokens": 314
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13884,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2357,
+    "cache_read_input_tokens": 14814,
+    "cache_creation_input_tokens": 1646,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1646
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3215,
+   "cacheReadInputTokens": 40901,
+   "cacheCreationInputTokens": 13884,
+   "webSearchRequests": 0,
+   "costUSD": 0.1835842,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 314,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 48200,
+   "outputTokens": 1963,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09801499999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PINF is a pump.fun coin that migrated to PumpSwap about 40 minutes before detection. Within the hour it traded about $2.8M in volume, roughly 62x its market cap, and peaked near a $465k market cap. At detection it had fallen to about $200-220k, down about 55% from that peak, with the last 5 minutes at -30% to -44% and sellers slightly outnumbering buyers. I found no outside cause for the attention. The website pinf.fun has abstract lore: pink \\\"watching eyes\\\", \\\"always one candle before the crowd\\\", and a roadmap that ends with \\\"No promises\\\". The Telegram channel has 5 subscribers. The X account could not be read. The pump looks like churn from launch-day bots and traders rather than a story people are sharing.\",\"narrative\":{\"description\":\"The whole story is abstract 'watching eyes / signal before the crowd' lore on a pink theme, with the tagline 'Call the pinf'. I found no cultural, news or internet event behind 'PINF'.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic reason. The volume looks like pump.fun migration momentum trading: GMGN tags 236 bundler wallets and 418 fresh wallets, the Telegram has 5 subscribers, and web search found no mentions.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This contract matches the project site and socials in its DexScreener profile, so it is the project's own token. There is no outside narrative for it to be the canonical token of.\",\"competing_tokens\":\"There are several dead same-ticker copies with about $3k market cap and no liquidity, plus CZYr... PINF (about $63k listed market cap, $0 liquidity), and Q4wkz...pump PINF on Solflare. None of them has real activity. This contract holds all the volume.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 236 bundler wallets, 418 fresh wallets (30% fresh-wallet rate) and 26 snipers. Turnover was about 62x market cap in one hour. The community is tiny (Telegram has 5 subscribers) and I found no posts about the token anywhere I could search. On the other side: holders are spread out (top 10 hold 13.9%, the dev holds 0.22%), there are about 2,000 unique buyers, and there are no paid DexScreener boosts.\",\"uncertainty\":\"I could not read X (it returned HTTP 402), so there may be KOL or community posts I did not see.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price is already down about 55% from its roughly $465k peak and still falling fast in the latest 5 minutes\",\"$44k of liquidity against about $2.8M of hourly volume means heavy churn\",\"The large bundler and fresh-wallet share suggests the early wallets are selling into the price\",\"A 2x from about $200k needs a new all-time high near $400k+ after the momentum has already broken\"]},\"counterargument\":\"The LP is burned (lp_burn_ratio 1.0), so the liquidity itself cannot be pulled. Holders are spread out, the dev holds almost nothing and was funded from Bybit, and about 2,000 unique buyers show a real crowd. PumpSwap coins that reach $465k in their first hour sometimes pull back, hold a base and then make a second leg to new highs, especially if an X account I could not see is gaining traction. A second leg from a deeper pullback could reach 2x.\",\"unknowns\":[\"What the X account shows: follower count and whether KOLs are posting (the page could not be read)\",\"Whether the 5-minute dump has stopped by the time the position is bought\",\"What the bundler wallets currently hold\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address returned nothing. Searching the ticker only turned up an unrelated PINO token and another PINF contract. The X profile returned HTTP 402. The Telegram channel has 5 subscribers. I also checked the DexScreener API for live price and volume.\"},\"thesis\":\"This is a migration pump with no narrative that has already peaked and is dumping hard (-55% from its high). Doubling needs a new high on attention that looks mechanical and bundled. The burned LP rules out a liquidity pull, but the coin can still bleed out and die.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":45,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://pinf.fun/\",\"what\":\"Project site: eyes lore, roadmap ending with 'No promises'\"},{\"url\":\"https://t.me/PINF_sol\",\"what\":\"Telegram channel with 5 subscribers\"},{\"url\":\"https://x.com/PINF_SOL\",\"what\":\"X account, not readable (HTTP 402)\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/MLdXKXUGXoYSDx5pcDWMrCdLP2AyxzxaQd3QvFMpump\",\"what\":\"Live price about $213k market cap, 5-minute change -29.6%, $44.7k liquidity\"},{\"url\":\"https://www.solflare.com/prices/pinf/Q4wkzwbXtxy9MTeLPwBFsB8C5ugd6XoJf5juYYGpump/\",\"what\":\"Another PINF contract with the same ticker\"}]}",
+ "structured_output": {
+  "what_is_happening": "PINF is a pump.fun coin that migrated to PumpSwap about 40 minutes before detection. Within the hour it traded about $2.8M in volume, roughly 62x its market cap, and peaked near a $465k market cap. At detection it had fallen to about $200-220k, down about 55% from that peak, with the last 5 minutes at -30% to -44% and sellers slightly outnumbering buyers. I found no outside cause for the attention. The website pinf.fun has abstract lore: pink \"watching eyes\", \"always one candle before the crowd\", and a roadmap that ends with \"No promises\". The Telegram channel has 5 subscribers. The X account could not be read. The pump looks like churn from launch-day bots and traders rather than a story people are sharing.",
+  "narrative": {
+   "description": "The whole story is abstract 'watching eyes / signal before the crowd' lore on a pink theme, with the tagline 'Call the pinf'. I found no cultural, news or internet event behind 'PINF'.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic reason. The volume looks like pump.fun migration momentum trading: GMGN tags 236 bundler wallets and 418 fresh wallets, the Telegram has 5 subscribers, and web search found no mentions."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This contract matches the project site and socials in its DexScreener profile, so it is the project's own token. There is no outside narrative for it to be the canonical token of.",
+   "competing_tokens": "There are several dead same-ticker copies with about $3k market cap and no liquidity, plus CZYr... PINF (about $63k listed market cap, $0 liquidity), and Q4wkz...pump PINF on Solflare. None of them has real activity. This contract holds all the volume.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 236 bundler wallets, 418 fresh wallets (30% fresh-wallet rate) and 26 snipers. Turnover was about 62x market cap in one hour. The community is tiny (Telegram has 5 subscribers) and I found no posts about the token anywhere I could search. On the other side: holders are spread out (top 10 hold 13.9%, the dev holds 0.22%), there are about 2,000 unique buyers, and there are no paid DexScreener boosts.",
+   "uncertainty": "I could not read X (it returned HTTP 402), so there may be KOL or community posts I did not see."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price is already down about 55% from its roughly $465k peak and still falling fast in the latest 5 minutes",
+    "$44k of liquidity against about $2.8M of hourly volume means heavy churn",
+    "The large bundler and fresh-wallet share suggests the early wallets are selling into the price",
+    "A 2x from about $200k needs a new all-time high near $400k+ after the momentum has already broken"
+   ]
+  },
+  "counterargument": "The LP is burned (lp_burn_ratio 1.0), so the liquidity itself cannot be pulled. Holders are spread out, the dev holds almost nothing and was funded from Bybit, and about 2,000 unique buyers show a real crowd. PumpSwap coins that reach $465k in their first hour sometimes pull back, hold a base and then make a second leg to new highs, especially if an X account I could not see is gaining traction. A second leg from a deeper pullback could reach 2x.",
+  "unknowns": [
+   "What the X account shows: follower count and whether KOLs are posting (the page could not be read)",
+   "Whether the 5-minute dump has stopped by the time the position is bought",
+   "What the bundler wallets currently hold"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address returned nothing. Searching the ticker only turned up an unrelated PINO token and another PINF contract. The X profile returned HTTP 402. The Telegram channel has 5 subscribers. I also checked the DexScreener API for live price and volume."
+  },
+  "thesis": "This is a migration pump with no narrative that has already peaked and is dumping hard (-55% from its high). Doubling needs a new high on attention that looks mechanical and bundled. The burned LP rules out a liquidity pull, but the coin can still bleed out and die.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 45,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://pinf.fun/",
+    "what": "Project site: eyes lore, roadmap ending with 'No promises'"
+   },
+   {
+    "url": "https://t.me/PINF_sol",
+    "what": "Telegram channel with 5 subscribers"
+   },
+   {
+    "url": "https://x.com/PINF_SOL",
+    "what": "X account, not readable (HTTP 402)"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/MLdXKXUGXoYSDx5pcDWMrCdLP2AyxzxaQd3QvFMpump",
+    "what": "Live price about $213k market cap, 5-minute change -29.6%, $44.7k liquidity"
+   },
+   {
+    "url": "https://www.solflare.com/prices/pinf/Q4wkzwbXtxy9MTeLPwBFsB8C5ugd6XoJf5juYYGpump/",
+    "what": "Another PINF contract with the same ticker"
+   }
+  ]
+ },
+ "ttft_ms": 1499,
+ "type": "result",
+ "duration_ms": 46342,
+ "uuid": "234419c2-20f0-4170-9922-d373d8644b68",
+ "ttft_stream_ms": 874,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 874,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

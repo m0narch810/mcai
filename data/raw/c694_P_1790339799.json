@@ -1,0 +1,152 @@
+{
+ "duration_api_ms": 19806,
+ "stop_reason": "tool_use",
+ "session_id": "46471ad1-29e4-4b80-ae2e-0345559bc4df",
+ "total_cost_usd": 0.1023708,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7727,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2008,
+  "output_tokens_details": {
+   "thinking_tokens": 193
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7727,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2008,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7727,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7727
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2008,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7727,
+   "webSearchRequests": 0,
+   "costUSD": 0.1023708,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 193,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token 50 minutes old whose name and symbol both read \\\"Unknown\\\", which usually means missing or placeholder metadata. It trades on a Meteora pool with about $9.7k liquidity at a $20k market cap. The mint address ends in \\\"pump\\\", but there is no launchpad or migration record, so it did not graduate from pump.fun. In the last hour it traded $36k and rose 56%, on 174 buys against 101 sells and 133 unique buyers. RugCheck finds a 52-wallet transfer-linked insider network. Nine of the top 10 holders each hold a near-identical ~1.38%. The LP is 0% locked or burned, and the creator's token account is already closed. The packet also lists many other \\\"UNKNOWN\\\" tokens created in the last day with a templated ~$28k liquidity and ~$31k market cap, which looks like a factory or farm pattern.\",\"narrative\":{\"description\":\"There is no narrative. No name, no ticker meaning, no website, no socials, no description and no DexScreener profile. The activity pattern is small, steady buying on thin liquidity, which fits wallet-farm or insider-driven volume more than real discovery.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"Nothing suggests organic spread. The buying is most likely driven by the linked insider wallets and bots trading a fresh pool.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"There is nothing to connect to. 'Unknown' is a placeholder name shared by dozens of tokens.\",\"competing_tokens\":\"Many 'UNKNOWN' tokens, including several created today with near-identical ~$28k liquidity and ~$31k market cap, plus one active today (8cFY...) with $60k of volume in the last hour. This looks like serial template deployments.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The 52-wallet transfer insider network and the ~1.38% holdings spread evenly across top holders both point to supply distributed from one source. The LP is unlocked with few providers, and the creator account is closed. The name is templated and repeats across many same-day tokens. There are no socials and no promotion, and GMGN shows zero smart-money or KOL interest.\",\"uncertainty\":\"GMGN reports no bundlers, snipers or fresh wallets, and a 0% bot/degen rate. The 133 unique buyers could include some real traders.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of LP locked or burned, and few LP providers, so liquidity can be pulled at any time\",\"52-wallet transfer-linked insider network holding evenly split supply\",\"Placeholder name and metadata with no socials\",\"Serial same-name deployments suggest a factory rug operation\",\"Thin ~$9.7k liquidity\",\"Momentum is slowing: only 2 unique buyers in the last 5 minutes versus 30 in the last 30 minutes\"]},\"counterargument\":\"Buyer breadth is decent: 133 unique buyers against 42 sellers, with buys outnumbering sells. GMGN finds no snipers, bundlers or dev holdings, and mint and freeze authority are renounced. At a $20k market cap, doubling only takes about $20k more and a couple of aggressive buyers on a thin pool. The price is sitting near its all-time high, so momentum could carry it through $40k before the insiders exit.\",\"unknowns\":[\"Who controls the Meteora LP position\",\"Whether the 52-wallet network is the deployer's farm\",\"Why the metadata shows 'Unknown' (a missing metadata fetch, or deliberate)\",\"What happened to the sibling 'UNKNOWN' deployments\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment uses only the evidence packet.\"},\"thesis\":\"This is a no-narrative placeholder token. The LP is unlocked and pullable, a 52-wallet insider network holds evenly distributed supply, and the setup matches a batch of templated same-name deployments. Its early price rise is most likely engineered and ends in an LP pull or a dump. Doubling from the entry 25 minutes later is unlikely, and a rug is more likely than not.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":72,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token 50 minutes old whose name and symbol both read \"Unknown\", which usually means missing or placeholder metadata. It trades on a Meteora pool with about $9.7k liquidity at a $20k market cap. The mint address ends in \"pump\", but there is no launchpad or migration record, so it did not graduate from pump.fun. In the last hour it traded $36k and rose 56%, on 174 buys against 101 sells and 133 unique buyers. RugCheck finds a 52-wallet transfer-linked insider network. Nine of the top 10 holders each hold a near-identical ~1.38%. The LP is 0% locked or burned, and the creator's token account is already closed. The packet also lists many other \"UNKNOWN\" tokens created in the last day with a templated ~$28k liquidity and ~$31k market cap, which looks like a factory or farm pattern.",
+  "narrative": {
+   "description": "There is no narrative. No name, no ticker meaning, no website, no socials, no description and no DexScreener profile. The activity pattern is small, steady buying on thin liquidity, which fits wallet-farm or insider-driven volume more than real discovery.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "Nothing suggests organic spread. The buying is most likely driven by the linked insider wallets and bots trading a fresh pool."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "There is nothing to connect to. 'Unknown' is a placeholder name shared by dozens of tokens.",
+   "competing_tokens": "Many 'UNKNOWN' tokens, including several created today with near-identical ~$28k liquidity and ~$31k market cap, plus one active today (8cFY...) with $60k of volume in the last hour. This looks like serial template deployments.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The 52-wallet transfer insider network and the ~1.38% holdings spread evenly across top holders both point to supply distributed from one source. The LP is unlocked with few providers, and the creator account is closed. The name is templated and repeats across many same-day tokens. There are no socials and no promotion, and GMGN shows zero smart-money or KOL interest.",
+   "uncertainty": "GMGN reports no bundlers, snipers or fresh wallets, and a 0% bot/degen rate. The 133 unique buyers could include some real traders."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of LP locked or burned, and few LP providers, so liquidity can be pulled at any time",
+    "52-wallet transfer-linked insider network holding evenly split supply",
+    "Placeholder name and metadata with no socials",
+    "Serial same-name deployments suggest a factory rug operation",
+    "Thin ~$9.7k liquidity",
+    "Momentum is slowing: only 2 unique buyers in the last 5 minutes versus 30 in the last 30 minutes"
+   ]
+  },
+  "counterargument": "Buyer breadth is decent: 133 unique buyers against 42 sellers, with buys outnumbering sells. GMGN finds no snipers, bundlers or dev holdings, and mint and freeze authority are renounced. At a $20k market cap, doubling only takes about $20k more and a couple of aggressive buyers on a thin pool. The price is sitting near its all-time high, so momentum could carry it through $40k before the insiders exit.",
+  "unknowns": [
+   "Who controls the Meteora LP position",
+   "Whether the 52-wallet network is the deployer's farm",
+   "Why the metadata shows 'Unknown' (a missing metadata fetch, or deliberate)",
+   "What happened to the sibling 'UNKNOWN' deployments"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment uses only the evidence packet."
+  },
+  "thesis": "This is a no-narrative placeholder token. The LP is unlocked and pullable, a 52-wallet insider network holds evenly distributed supply, and the setup matches a batch of templated same-name deployments. Its early price rise is most likely engineered and ends in an LP pull or a dump. Doubling from the entry 25 minutes later is unlikely, and a rug is more likely than not.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 72,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 2909,
+ "type": "result",
+ "duration_ms": 19850,
+ "uuid": "d2d3de46-be76-48d4-a538-40b97d7818b1",
+ "ttft_stream_ms": 838,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 838,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

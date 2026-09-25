@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 30514,
+ "stop_reason": "tool_use",
+ "session_id": "40de742c-f69a-488d-a117-91dd82cf0409",
+ "total_cost_usd": 0.10440680000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6414,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2635,
+  "output_tokens_details": {
+   "thinking_tokens": 511
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6414,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2635,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 6414,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6414
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2635,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 6414,
+   "webSearchRequests": 0,
+   "costUSD": 0.10440680000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 511,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u5bcc\u8d35 (\\\"fugui\\\", Chinese for wealth and rank) is a Chinese-language meme token. Its pumpswap pool was created about 40 seconds after the mint and did not come from a bonding-curve graduation (migrated_unix=0, launchpad empty). In the pool's first ~37 minutes the token went up about 135% to roughly $160k mcap. Pool liquidity is $228k, which is more than the market cap. The pool holds 70.7% of supply, and 0% of the LP is burned or locked. Reported volume is $7.1M, which is 31 times the market cap in an hour, spread over about 10.5k trades. GeckoTerminal counts 1,906 unique buyers but only 57 unique sellers, and the seller count has been nearly frozen at 48 for the last 15 minutes while they made 1,348 sells. GMGN flags 50 bundler wallets holding about 22%. The price has been flat (about +6%) for the last 30 minutes after the first spike. There is a douyin link as the 'website' and 'CTO'-named X and Telegram handles, but no DexScreener profile and no paid boosts.\",\"narrative\":{\"description\":\"A generic Chinese auspicious-word meme (\u5bcc\u8d35 = wealth and honor), part of the recurring wave of Chinese-character tickers on Solana, with a Douyin video as its origin. The handles call it a 'CTO' (community takeover), but GMGN reports community_takeover=false. That label looks like branding, not a real handover.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The only visible sign of spread is on-chain activity, and that activity looks mostly artificial: a tiny set of seller wallets making thousands of sells, and volume 31 times mcap. There is no organic social data, KOL wallets or smart money. Chinese-character memes can draw CN-community buyers, and 1,900 unique buyers is not nothing. But nothing shows a story attached beyond the auspicious name.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"No same-name competitors appear in the packet, and the image is not a duplicate. But '\u5bcc\u8d35' is a generic phrase with no unique event behind it, so any attention is easy to redirect to copies.\",\"competing_tokens\":\"None in the packet. Generic Chinese auspicious-word tickers get relaunched often.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"57 unique sellers against 4,224 sells, with the seller set nearly unchanged (48) for 15 minutes while it made about 1,350 sells, looks like a wash or market-making bot farm. Hourly turnover is 31x mcap. There are 50 bundler wallets holding about 22%. The pool was seeded directly with liquidity larger than the market cap, and none of that LP is burned or locked. The 'CTO' naming contradicts GMGN's community_takeover=false.\",\"uncertainty\":\"The 1,906 unique buyers could include real retail, perhaps CN traders. The unique-seller counts from GeckoTerminal may be undercounted or aggregated. Holder concentration outside the pool is fairly low (top10 about 13%).\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"0% of LP burned or locked on a pumpswap pool the creator seeded directly; RugCheck flags the unlocked LP as a danger and says there are few LP providers\",\"Liquidity ($228k) is larger than mcap: the setup can be emptied at any moment\",\"Volume looks like wash trading from a small seller set, so the demand signal is inflated\",\"50 bundler wallets hold about 22% of supply\",\"Price has stalled for 30 minutes after a +135% first leg; doubling from a ~$160k entry needs about $330k+ mcap\"]},\"counterargument\":\"Chinese meme tickers have produced sudden runners on Solana, and this one has deep liquidity, 1,900+ buyers, renounced authorities, no taxes and low top-10 concentration outside the pool. If the dev is running a pumpswap launch that aims for volume and fee farming rather than a quick LP pull, real CN-community buying could carry it to $300k+ within hours. The flat 30 minutes may be consolidation rather than distribution.\",\"unknowns\":[\"Whether the creator controls the LP position and plans to withdraw it\",\"Whether the volume is mainly wash trading or partly real\",\"Activity on the X and Telegram 'fugui_cto' accounts and any CN-community traction\",\"What the Douyin video is and how popular it is\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment rests only on the packet.\"},\"thesis\":\"This looks like an engineered pumpswap launch. The creator seeded more liquidity than the market cap, left all of it unlocked, and ran bot-driven volume through a small seller set to draw in retail buyers. The price stalled after the first leg. Unlocked LP plus bundlers plus wash-like flow makes a rug or bleed-out much more likely than a clean 2x from the entry.\",\"continuation_view\":\"fade\",\"p_runner\":10,\"p_rug\":62,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\u5bcc\u8d35 (\"fugui\", Chinese for wealth and rank) is a Chinese-language meme token. Its pumpswap pool was created about 40 seconds after the mint and did not come from a bonding-curve graduation (migrated_unix=0, launchpad empty). In the pool's first ~37 minutes the token went up about 135% to roughly $160k mcap. Pool liquidity is $228k, which is more than the market cap. The pool holds 70.7% of supply, and 0% of the LP is burned or locked. Reported volume is $7.1M, which is 31 times the market cap in an hour, spread over about 10.5k trades. GeckoTerminal counts 1,906 unique buyers but only 57 unique sellers, and the seller count has been nearly frozen at 48 for the last 15 minutes while they made 1,348 sells. GMGN flags 50 bundler wallets holding about 22%. The price has been flat (about +6%) for the last 30 minutes after the first spike. There is a douyin link as the 'website' and 'CTO'-named X and Telegram handles, but no DexScreener profile and no paid boosts.",
+  "narrative": {
+   "description": "A generic Chinese auspicious-word meme (\u5bcc\u8d35 = wealth and honor), part of the recurring wave of Chinese-character tickers on Solana, with a Douyin video as its origin. The handles call it a 'CTO' (community takeover), but GMGN reports community_takeover=false. That label looks like branding, not a real handover.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The only visible sign of spread is on-chain activity, and that activity looks mostly artificial: a tiny set of seller wallets making thousands of sells, and volume 31 times mcap. There is no organic social data, KOL wallets or smart money. Chinese-character memes can draw CN-community buyers, and 1,900 unique buyers is not nothing. But nothing shows a story attached beyond the auspicious name."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "No same-name competitors appear in the packet, and the image is not a duplicate. But '\u5bcc\u8d35' is a generic phrase with no unique event behind it, so any attention is easy to redirect to copies.",
+   "competing_tokens": "None in the packet. Generic Chinese auspicious-word tickers get relaunched often.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "57 unique sellers against 4,224 sells, with the seller set nearly unchanged (48) for 15 minutes while it made about 1,350 sells, looks like a wash or market-making bot farm. Hourly turnover is 31x mcap. There are 50 bundler wallets holding about 22%. The pool was seeded directly with liquidity larger than the market cap, and none of that LP is burned or locked. The 'CTO' naming contradicts GMGN's community_takeover=false.",
+   "uncertainty": "The 1,906 unique buyers could include real retail, perhaps CN traders. The unique-seller counts from GeckoTerminal may be undercounted or aggregated. Holder concentration outside the pool is fairly low (top10 about 13%)."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "0% of LP burned or locked on a pumpswap pool the creator seeded directly; RugCheck flags the unlocked LP as a danger and says there are few LP providers",
+    "Liquidity ($228k) is larger than mcap: the setup can be emptied at any moment",
+    "Volume looks like wash trading from a small seller set, so the demand signal is inflated",
+    "50 bundler wallets hold about 22% of supply",
+    "Price has stalled for 30 minutes after a +135% first leg; doubling from a ~$160k entry needs about $330k+ mcap"
+   ]
+  },
+  "counterargument": "Chinese meme tickers have produced sudden runners on Solana, and this one has deep liquidity, 1,900+ buyers, renounced authorities, no taxes and low top-10 concentration outside the pool. If the dev is running a pumpswap launch that aims for volume and fee farming rather than a quick LP pull, real CN-community buying could carry it to $300k+ within hours. The flat 30 minutes may be consolidation rather than distribution.",
+  "unknowns": [
+   "Whether the creator controls the LP position and plans to withdraw it",
+   "Whether the volume is mainly wash trading or partly real",
+   "Activity on the X and Telegram 'fugui_cto' accounts and any CN-community traction",
+   "What the Douyin video is and how popular it is"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment rests only on the packet."
+  },
+  "thesis": "This looks like an engineered pumpswap launch. The creator seeded more liquidity than the market cap, left all of it unlocked, and ran bot-driven volume through a small seller set to draw in retail buyers. The price stalled after the first leg. Unlocked LP plus bundlers plus wash-like flow makes a rug or bleed-out much more likely than a clean 2x from the entry.",
+  "continuation_view": "fade",
+  "p_runner": 10,
+  "p_rug": 62,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7897,
+ "type": "result",
+ "duration_ms": 30558,
+ "uuid": "eb968f47-71ad-4b00-a8df-012bc0cb2f81",
+ "ttft_stream_ms": 1326,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 1326,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

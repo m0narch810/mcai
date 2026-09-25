@@ -1,0 +1,188 @@
+{
+ "duration_api_ms": 99727,
+ "stop_reason": "tool_use",
+ "session_id": "8eedc03b-eae4-4115-ba61-283e890d2c32",
+ "total_cost_usd": 0.364689,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 17960,
+  "cache_read_input_tokens": 60665,
+  "output_tokens": 4808,
+  "output_tokens_details": {
+   "thinking_tokens": 1337
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17960,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3056,
+    "cache_read_input_tokens": 17846,
+    "cache_creation_input_tokens": 2690,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2690
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4808,
+   "cacheReadInputTokens": 60665,
+   "cacheCreationInputTokens": 17960,
+   "webSearchRequests": 0,
+   "costUSD": 0.252013,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1337,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 50391,
+   "outputTokens": 4457,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.11267600000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"FUNKOS is named after funkos.fun, a real but very small product (\\\"pump.fun, but for AI agents\\\": AI agents launch and trade pump.fun coins). I found no official token on the site, in its skill file or in the GitHub repo. This contract was deployed through uxento and migrated to PumpSwap at 14:31 UTC. The 1-minute GeckoTerminal candles show a bot pattern, not organic trading: a steady staircase of about $1.4-1.6k volume per minute pushing price up about 4% per minute, cut twice by large single-candle dumps. The first dump, at about 14:45, took price from 1.21e-3 to 2.5e-4. The price then laddered back to 7.85e-4, and a second dump pair at 15:07-15:09 took it to 6.7e-5, below the post-launch level. The detection trigger (m5 -90%) was that final dump. In the last candles price is flat at about 7.7e-5. The near-identical unique buyer and seller counts (about 2,570 and 2,546) and RugCheck's \\\"high holder correlation\\\" warning fit a many-wallet volume and ladder bot.\",\"narrative\":{\"description\":\"AI agents launching and trading pump.fun coins (funkos.fun), a timely sub-theme next to pump.fun's own AI agent features (Mayhem Mode, tokenized agents). The product exists: a live website, a skill.md file and a GitHub repo with 0 stars. It is tiny and does not endorse any token.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The attention looks manufactured. About 10+ same-name FUNKOS tokens were launched over the prior ~10 hours, most now at zero liquidity. That is the typical pattern of trench bots copying a new dev tool's launch. The volume on this pair is a mechanical per-minute bot ladder, not organic buying.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It uses the project's name, description and X handle (funkosfun) in its metadata. But the project does not name any official CA, and GMGN says the linked X account is attached to 95 token launches, so the metadata is easy to copy.\",\"competing_tokens\":\"At least 10 other FUNKOS/funkos tokens were created earlier today. Most are dead with 0 liquidity, including HbgD... which shows a stale $13.5M mcap. BDKC...funk is still live with about $30k liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal 1-minute candles show a constant ~$1.5k/min staircase rising about 4% per minute, ended by giant dump candles ($28.6k, $21.8k and $14k volume). Unique buyers and sellers are almost equal. RugCheck warns of high holder correlation. The top holders each hold an identical 0.04%. GMGN puts the top entrapment-trader share at 0.77. There are no smart or renowned wallets and no calls.\",\"uncertainty\":\"I could not see X posts (x.com returned 402). The ladder bot could restart for a third cycle, which would lift price quickly.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The operator has dumped twice. The price is now about 94% below ATH and near launch levels, which suggests the operator has exited.\",\"The volume is bot-generated. If the ladder stops, the pair goes dead.\",\"Many same-name copycats split whatever real attention exists.\",\"The LP is burned, so a classic pull is unlikely, but a 'died' outcome through volume collapse is likely.\"]},\"counterargument\":\"The ladder bot has already run two cycles: 6.7e-4 to 1.2e-3 in about 14 minutes, then 2.5e-4 to 7.85e-4 in about 21 minutes. If it starts a third cycle from about 7.7e-5, a 2x would take only about 18 minutes at the same pace, well before a -50% stop. Liquidity ($23k) is still healthy and the LP is burned. The funkos.fun product is real and fits the AI-agents-on-pump.fun theme.\",\"unknowns\":[\"Whether the ladder bot restarts\",\"Whether @funkosfun endorsed any CA (X was inaccessible)\",\"The identity of the dumping wallets and how much supply they still hold\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"funkos.fun, skill.md and the GitHub repo name no token. The contract search returned nothing. x.com returned HTTP 402. The candle data came from the GeckoTerminal API, and a live check on DexScreener confirmed the metrics.\"},\"thesis\":\"This is a copycat token on a real but tiny AI-agent product, pumped by a mechanical ladder bot and dumped twice. The price now sits near launch level after the operator's exit dump. A 2x needs the bot to restart, and I have no evidence it will. The more likely outcome is that volume fades and the pair dies.\",\"continuation_view\":\"strong_fade\",\"p_runner\":14,\"p_rug\":50,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://funkos.fun/\",\"what\":\"Project site: pump.fun but for AI agents; no token mentioned\"},{\"url\":\"https://funkos.fun/skill.md\",\"what\":\"Skill file names no official token\"},{\"url\":\"https://github.com/gronkr/funkos\",\"what\":\"Repo with 0 stars; no CA\"},{\"url\":\"https://api.geckoterminal.com/api/v2/networks/solana/pools/BJGRT8WDpneEizsYjVE7zA4Ax5xAE2kbKV2LHo6wTNpT/ohlcv/minute?aggregate=1&limit=45\",\"what\":\"1-minute candles showing the bot staircase and the dumps\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/51uhRWkdPLXmFfaumLvhcu8Xae8jRe3LXQuKyhPXpump\",\"what\":\"Current metrics\"},{\"url\":\"https://x.com/funkosfun\",\"what\":\"Project X account (returned HTTP 402, not readable)\"}]}",
+ "structured_output": {
+  "what_is_happening": "FUNKOS is named after funkos.fun, a real but very small product (\"pump.fun, but for AI agents\": AI agents launch and trade pump.fun coins). I found no official token on the site, in its skill file or in the GitHub repo. This contract was deployed through uxento and migrated to PumpSwap at 14:31 UTC. The 1-minute GeckoTerminal candles show a bot pattern, not organic trading: a steady staircase of about $1.4-1.6k volume per minute pushing price up about 4% per minute, cut twice by large single-candle dumps. The first dump, at about 14:45, took price from 1.21e-3 to 2.5e-4. The price then laddered back to 7.85e-4, and a second dump pair at 15:07-15:09 took it to 6.7e-5, below the post-launch level. The detection trigger (m5 -90%) was that final dump. In the last candles price is flat at about 7.7e-5. The near-identical unique buyer and seller counts (about 2,570 and 2,546) and RugCheck's \"high holder correlation\" warning fit a many-wallet volume and ladder bot.",
+  "narrative": {
+   "description": "AI agents launching and trading pump.fun coins (funkos.fun), a timely sub-theme next to pump.fun's own AI agent features (Mayhem Mode, tokenized agents). The product exists: a live website, a skill.md file and a GitHub repo with 0 stars. It is tiny and does not endorse any token.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The attention looks manufactured. About 10+ same-name FUNKOS tokens were launched over the prior ~10 hours, most now at zero liquidity. That is the typical pattern of trench bots copying a new dev tool's launch. The volume on this pair is a mechanical per-minute bot ladder, not organic buying."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It uses the project's name, description and X handle (funkosfun) in its metadata. But the project does not name any official CA, and GMGN says the linked X account is attached to 95 token launches, so the metadata is easy to copy.",
+   "competing_tokens": "At least 10 other FUNKOS/funkos tokens were created earlier today. Most are dead with 0 liquidity, including HbgD... which shows a stale $13.5M mcap. BDKC...funk is still live with about $30k liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal 1-minute candles show a constant ~$1.5k/min staircase rising about 4% per minute, ended by giant dump candles ($28.6k, $21.8k and $14k volume). Unique buyers and sellers are almost equal. RugCheck warns of high holder correlation. The top holders each hold an identical 0.04%. GMGN puts the top entrapment-trader share at 0.77. There are no smart or renowned wallets and no calls.",
+   "uncertainty": "I could not see X posts (x.com returned 402). The ladder bot could restart for a third cycle, which would lift price quickly."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The operator has dumped twice. The price is now about 94% below ATH and near launch levels, which suggests the operator has exited.",
+    "The volume is bot-generated. If the ladder stops, the pair goes dead.",
+    "Many same-name copycats split whatever real attention exists.",
+    "The LP is burned, so a classic pull is unlikely, but a 'died' outcome through volume collapse is likely."
+   ]
+  },
+  "counterargument": "The ladder bot has already run two cycles: 6.7e-4 to 1.2e-3 in about 14 minutes, then 2.5e-4 to 7.85e-4 in about 21 minutes. If it starts a third cycle from about 7.7e-5, a 2x would take only about 18 minutes at the same pace, well before a -50% stop. Liquidity ($23k) is still healthy and the LP is burned. The funkos.fun product is real and fits the AI-agents-on-pump.fun theme.",
+  "unknowns": [
+   "Whether the ladder bot restarts",
+   "Whether @funkosfun endorsed any CA (X was inaccessible)",
+   "The identity of the dumping wallets and how much supply they still hold"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "funkos.fun, skill.md and the GitHub repo name no token. The contract search returned nothing. x.com returned HTTP 402. The candle data came from the GeckoTerminal API, and a live check on DexScreener confirmed the metrics."
+  },
+  "thesis": "This is a copycat token on a real but tiny AI-agent product, pumped by a mechanical ladder bot and dumped twice. The price now sits near launch level after the operator's exit dump. A 2x needs the bot to restart, and I have no evidence it will. The more likely outcome is that volume fades and the pair dies.",
+  "continuation_view": "strong_fade",
+  "p_runner": 14,
+  "p_rug": 50,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://funkos.fun/",
+    "what": "Project site: pump.fun but for AI agents; no token mentioned"
+   },
+   {
+    "url": "https://funkos.fun/skill.md",
+    "what": "Skill file names no official token"
+   },
+   {
+    "url": "https://github.com/gronkr/funkos",
+    "what": "Repo with 0 stars; no CA"
+   },
+   {
+    "url": "https://api.geckoterminal.com/api/v2/networks/solana/pools/BJGRT8WDpneEizsYjVE7zA4Ax5xAE2kbKV2LHo6wTNpT/ohlcv/minute?aggregate=1&limit=45",
+    "what": "1-minute candles showing the bot staircase and the dumps"
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/51uhRWkdPLXmFfaumLvhcu8Xae8jRe3LXQuKyhPXpump",
+    "what": "Current metrics"
+   },
+   {
+    "url": "https://x.com/funkosfun",
+    "what": "Project X account (returned HTTP 402, not readable)"
+   }
+  ]
+ },
+ "ttft_ms": 2706,
+ "type": "result",
+ "duration_ms": 81205,
+ "uuid": "bdf48419-bc0d-4101-b60b-e9c72da3d8ba",
+ "ttft_stream_ms": 709,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 709,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

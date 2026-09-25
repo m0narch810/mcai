@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 27535,
+ "stop_reason": "tool_use",
+ "session_id": "a35f7906-d053-411b-bc50-827fe50eaba2",
+ "total_cost_usd": 0.1144188,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7818,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2574,
+  "output_tokens_details": {
+   "thinking_tokens": 586
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7818,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2574,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 7818,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7818
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2574,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 7818,
+   "webSearchRequests": 0,
+   "costUSD": 0.1144188,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 586,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"UNPEG (pump.fun, migrated to PumpSwap about 43 minutes before detection) is a coin launched on a project that looks like a real one: unpeg.io, @unpegdotio, described as \\\"Fully funded contracts on LST discount duration\\\". At detection it had $121k market cap, $352k volume in the first hour, +157% on the hour, and roughly 1.7k unique buyers against 1.5k unique sellers. The packet shows at least 10 same-ticker tokens appearing within about 30 minutes. One of them, B5H7..., reports $210k liquidity and $3.86M of volume in the last hour, about 10x this coin's. So this is a scramble over which UNPEG ticker wins, and this one is not clearly the leader. The dev has already closed out (creator_close), the coin is flagged as a community takeover, and the DexScreener profile was updated with the project's links.\",\"narrative\":{\"description\":\"A DeFi project with a real-sounding product (LST discount duration contracts), website and X handle, and apparently a new launch or reveal. Traders are rushing to front-run a 'real project' token. That story is stronger than the average meme, but the attention is spread across many copycat tickers.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A 'real project token' tends to draw a burst of copycat launches. More than 10 UNPEG tickers in 30 minutes shows an outside trigger, most likely a post from @unpegdotio or a KOL about a token or launch. dev_x_account_launched_token_count=21 means many people are deploying tokens that reference this X account.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"It uses the correct website and X links, has an updated DexScreener profile and a community-takeover flag, and seems to be the earliest pump.fun UNPEG (created around 09:10 UTC). It also has 29 smart wallets and 3 KOL wallets among its traders.\",\"competing_tokens\":\"B5H7... has $210k liquidity and $3.86M volume in the last hour: far more activity, so probably the market's favourite or possibly an official launch. 33QE... has $229k market cap and $744k volume in the last hour. Several dead clones with zero liquidity are already rugged.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Good signs: about 1.7k unique buyers in the hour with a balanced buyer/seller count, top-10 holders at only 19.8%, no insiders among the top holders, LP burned, mint and freeze authority renounced, and no paid boosts or ads. Bad signs: 329 of the traders are tagged as bundlers, bot/degen share is 47%, top_entrapment_trader_pct is 9.5%, graph analysis finds 9 insiders in transfer networks, and 595 of the traders are fresh wallets.\",\"uncertainty\":\"I can't see whether the project itself backs any of these tickers. Without X data I can't tell what set off the rush.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"A competing UNPEG has about 10x the volume and could pull all the flow its way\",\"High bundler and bot activity; a sudden sell-off is likely\",\"Only about $32k of liquidity against $131k market cap, so the price is fragile\",\"Dev already out; this is a community takeover with no dev support\",\"Sits near its all-time high after +179%, so entering after the 25-minute delay means buying high\"]},\"counterargument\":\"The coin is carrying the real project's links, is the earliest pump.fun token and has a community-takeover profile. If the unpeg.io team or a large account names this contract address, it could easily go from $130k to $500k+, and momentum is still rising (5-minute volume is on pace with the hourly rate, and price was up 46% over 5 minutes). With 29 smart wallets and 3 KOL wallets in it, a doubling within 6 hours is plausible.\",\"unknowns\":[\"Which UNPEG, if any, the project endorses\",\"What triggered the rush (a project post or a KOL)\",\"Why B5H7 shows liquidity larger than its market cap, and whether it is on another launchpad\",\"The price at entry after the 25-minute delay\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this report uses only the evidence packet.\"},\"thesis\":\"This is a real-project ticker rush with moderate narrative pull, but the token is split across many competing UNPEGs and one of them clearly has more flow. The entry comes after a +179% hourly move with heavy bundler and bot activity. A double from entry is possible if this contract wins the community-takeover race. More likely, flow moves to the dominant competitor, or this coin fades or dies as the frenzy passes.\",\"continuation_view\":\"fade\",\"p_runner\":24,\"p_rug\":40,\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "UNPEG (pump.fun, migrated to PumpSwap about 43 minutes before detection) is a coin launched on a project that looks like a real one: unpeg.io, @unpegdotio, described as \"Fully funded contracts on LST discount duration\". At detection it had $121k market cap, $352k volume in the first hour, +157% on the hour, and roughly 1.7k unique buyers against 1.5k unique sellers. The packet shows at least 10 same-ticker tokens appearing within about 30 minutes. One of them, B5H7..., reports $210k liquidity and $3.86M of volume in the last hour, about 10x this coin's. So this is a scramble over which UNPEG ticker wins, and this one is not clearly the leader. The dev has already closed out (creator_close), the coin is flagged as a community takeover, and the DexScreener profile was updated with the project's links.",
+  "narrative": {
+   "description": "A DeFi project with a real-sounding product (LST discount duration contracts), website and X handle, and apparently a new launch or reveal. Traders are rushing to front-run a 'real project' token. That story is stronger than the average meme, but the attention is spread across many copycat tickers.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A 'real project token' tends to draw a burst of copycat launches. More than 10 UNPEG tickers in 30 minutes shows an outside trigger, most likely a post from @unpegdotio or a KOL about a token or launch. dev_x_account_launched_token_count=21 means many people are deploying tokens that reference this X account."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "It uses the correct website and X links, has an updated DexScreener profile and a community-takeover flag, and seems to be the earliest pump.fun UNPEG (created around 09:10 UTC). It also has 29 smart wallets and 3 KOL wallets among its traders.",
+   "competing_tokens": "B5H7... has $210k liquidity and $3.86M volume in the last hour: far more activity, so probably the market's favourite or possibly an official launch. 33QE... has $229k market cap and $744k volume in the last hour. Several dead clones with zero liquidity are already rugged.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Good signs: about 1.7k unique buyers in the hour with a balanced buyer/seller count, top-10 holders at only 19.8%, no insiders among the top holders, LP burned, mint and freeze authority renounced, and no paid boosts or ads. Bad signs: 329 of the traders are tagged as bundlers, bot/degen share is 47%, top_entrapment_trader_pct is 9.5%, graph analysis finds 9 insiders in transfer networks, and 595 of the traders are fresh wallets.",
+   "uncertainty": "I can't see whether the project itself backs any of these tickers. Without X data I can't tell what set off the rush."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "A competing UNPEG has about 10x the volume and could pull all the flow its way",
+    "High bundler and bot activity; a sudden sell-off is likely",
+    "Only about $32k of liquidity against $131k market cap, so the price is fragile",
+    "Dev already out; this is a community takeover with no dev support",
+    "Sits near its all-time high after +179%, so entering after the 25-minute delay means buying high"
+   ]
+  },
+  "counterargument": "The coin is carrying the real project's links, is the earliest pump.fun token and has a community-takeover profile. If the unpeg.io team or a large account names this contract address, it could easily go from $130k to $500k+, and momentum is still rising (5-minute volume is on pace with the hourly rate, and price was up 46% over 5 minutes). With 29 smart wallets and 3 KOL wallets in it, a doubling within 6 hours is plausible.",
+  "unknowns": [
+   "Which UNPEG, if any, the project endorses",
+   "What triggered the rush (a project post or a KOL)",
+   "Why B5H7 shows liquidity larger than its market cap, and whether it is on another launchpad",
+   "The price at entry after the 25-minute delay"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this report uses only the evidence packet."
+  },
+  "thesis": "This is a real-project ticker rush with moderate narrative pull, but the token is split across many competing UNPEGs and one of them clearly has more flow. The entry comes after a +179% hourly move with heavy bundler and bot activity. A double from entry is possible if this contract wins the community-takeover race. More likely, flow moves to the dominant competitor, or this coin fades or dies as the frenzy passes.",
+  "continuation_view": "fade",
+  "p_runner": 24,
+  "p_rug": 40,
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8022,
+ "type": "result",
+ "duration_ms": 27581,
+ "uuid": "318cccab-892b-4dcf-8a29-17389310deef",
+ "ttft_stream_ms": 766,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 766,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

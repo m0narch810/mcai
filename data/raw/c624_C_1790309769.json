@@ -1,0 +1,173 @@
+{
+ "duration_api_ms": 58148,
+ "stop_reason": "tool_use",
+ "session_id": "04cc1aee-d5ff-44aa-80da-fcf964660173",
+ "total_cost_usd": 0.2746188,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13920,
+  "cache_read_input_tokens": 42249,
+  "output_tokens": 3188,
+  "output_tokens_details": {
+   "thinking_tokens": 545
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13920,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2183,
+    "cache_read_input_tokens": 14995,
+    "cache_creation_input_tokens": 1501,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1501
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3188,
+   "cacheReadInputTokens": 42249,
+   "cacheCreationInputTokens": 13920,
+   "webSearchRequests": 0,
+   "costUSD": 0.1836018,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 545,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42927,
+   "outputTokens": 1618,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09101700000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"No organic social presence found: no X, Reddit or Telegram hits for the contract or the name, and no socials or website in the packet (https://api.dexscreener.com/latest/dex/tokens/66kXpKjMJDHnUHZqKkcMHwMo1sKGhf2aa3EBoPCi1rYc). Trading looks like bots: in the last 5 minutes there were ~316 buys and ~311 sells from ~99 unique buyers and ~95 unique sellers, so the same wallets are cycling buys and sells. The 1-hour figure of 1116 unique buyers against only 109 sellers fits a scripted wallet spray. GMGN flags 21 bundler wallets. The packet lists 10 earlier 'Penguin Cat' tokens with the symbol 'Hybrid cat', launched over the past ~23h, all now at $0 or $0.01 liquidity. That points to a repeated launch-and-pull operation.\",\"uncertainty\":\"I can't prove the dead clones share an operator with this deployer. GMGN shows the creator with 0 prior launches, but fresh deployer wallets are cheap to make.\"},\"continuation_view\":\"strong_fade\",\"counterargument\":\"The volume is large relative to the market cap ($280k in 1h on $50k), the price has already doubled once, the top 10 wallets hold only 13.6% outside the pool, and GMGN shows the creator holding 0% with no honeypot or taxes. If the Mid-Autumn Festival theme catches with Chinese-speaking degens and the LP stays in, a $50k cap can easily reach $100k+ on momentum. Some of the earlier clones also appear to have printed $1-2M market caps (possibly stale values) before dying, so for a short window this format has produced spikes.\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Pool created directly on PumpSwap (no pump.fun curve migration). Liquidity ($63k) is larger than the market cap ($50k), and LP tokens are 0% burned or locked. RugCheck flags 'Large Amount of LP Unlocked' as danger.\",\"The LP provider can remove about 64% of supply plus the SOL side at any time\",\"21 bundler wallets. One holder has 10.55%.\",\"Volume looks like wash or bot cycling (5m buyer and seller counts nearly equal, ~100 each)\",\"10 same-symbol predecessors all rugged to zero liquidity within the past day\"]},\"narrative\":{\"description\":\"A 'Hybrid cat' / penguin-cat meme with the description '\u4e2d\u79cb\u5feb\u4e50' ('Happy Mid-Autumn Festival'), a Chinese holiday that falls around now. I found no specific viral event behind it, only generic cat-penguin TikTok and AI content.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I could not find any outside attention. The flow looks self-generated: a seeded LP plus bot volume, part of a serial clone series.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is only the latest of many deployments with the same symbol and name. None of them has been dead long enough to call canonical.\",\"competing_tokens\":\"At least 10 'Penguin Cat' / 'Hybrid cat' tokens appeared in the last ~23h, all with near-zero liquidity (e.g. 29vmDky..., D7EBU2..., 3mSz9q...).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Who holds the LP tokens, and whether the LP holder is tied to the earlier clone deployers\",\"Whether any Chinese-language Telegram or WeChat groups are pushing it\",\"Whether the 1116 unique buyers are real or scripted\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched the contract address, the name, and site: filters for X, Reddit and Telegram, and found nothing relevant. DexScreener lists no socials.\"},\"thesis\":\"This looks like a serial LP-seeded clone launched straight onto PumpSwap. The LP is unlocked, the volume looks bot-driven, there is no social presence, and 10 identical predecessors have already had their liquidity pulled. The chance of a rug within 6h is high and the chance of a clean 2x is low.\",\"p_runner\":6,\"p_rug\":78,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"what_is_happening\":\"A token called 'Hybrid cat' was created 40 minutes ago directly on PumpSwap with a large creator-seeded, unlocked LP. It has done $280k of volume, mostly back-and-forth trades by a small set of wallets, and the price is up ~124%. Ten earlier copies with the same name had their liquidity pulled within the past day.\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/66kXpKjMJDHnUHZqKkcMHwMo1sKGhf2aa3EBoPCi1rYc\",\"what\":\"Live market data: $50k mcap, $64k liquidity, 274/265 buys/sells in 5m, no socials\"},{\"url\":\"https://www.tiktok.com/discover/cat-penguin-mix\",\"what\":\"Generic cat-penguin content only, no specific catalyst\"}]}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "No organic social presence found: no X, Reddit or Telegram hits for the contract or the name, and no socials or website in the packet (https://api.dexscreener.com/latest/dex/tokens/66kXpKjMJDHnUHZqKkcMHwMo1sKGhf2aa3EBoPCi1rYc). Trading looks like bots: in the last 5 minutes there were ~316 buys and ~311 sells from ~99 unique buyers and ~95 unique sellers, so the same wallets are cycling buys and sells. The 1-hour figure of 1116 unique buyers against only 109 sellers fits a scripted wallet spray. GMGN flags 21 bundler wallets. The packet lists 10 earlier 'Penguin Cat' tokens with the symbol 'Hybrid cat', launched over the past ~23h, all now at $0 or $0.01 liquidity. That points to a repeated launch-and-pull operation.",
+   "uncertainty": "I can't prove the dead clones share an operator with this deployer. GMGN shows the creator with 0 prior launches, but fresh deployer wallets are cheap to make."
+  },
+  "continuation_view": "strong_fade",
+  "counterargument": "The volume is large relative to the market cap ($280k in 1h on $50k), the price has already doubled once, the top 10 wallets hold only 13.6% outside the pool, and GMGN shows the creator holding 0% with no honeypot or taxes. If the Mid-Autumn Festival theme catches with Chinese-speaking degens and the LP stays in, a $50k cap can easily reach $100k+ on momentum. Some of the earlier clones also appear to have printed $1-2M market caps (possibly stale values) before dying, so for a short window this format has produced spikes.",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Pool created directly on PumpSwap (no pump.fun curve migration). Liquidity ($63k) is larger than the market cap ($50k), and LP tokens are 0% burned or locked. RugCheck flags 'Large Amount of LP Unlocked' as danger.",
+    "The LP provider can remove about 64% of supply plus the SOL side at any time",
+    "21 bundler wallets. One holder has 10.55%.",
+    "Volume looks like wash or bot cycling (5m buyer and seller counts nearly equal, ~100 each)",
+    "10 same-symbol predecessors all rugged to zero liquidity within the past day"
+   ]
+  },
+  "narrative": {
+   "description": "A 'Hybrid cat' / penguin-cat meme with the description '\u4e2d\u79cb\u5feb\u4e50' ('Happy Mid-Autumn Festival'), a Chinese holiday that falls around now. I found no specific viral event behind it, only generic cat-penguin TikTok and AI content.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I could not find any outside attention. The flow looks self-generated: a seeded LP plus bot volume, part of a serial clone series."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is only the latest of many deployments with the same symbol and name. None of them has been dead long enough to call canonical.",
+   "competing_tokens": "At least 10 'Penguin Cat' / 'Hybrid cat' tokens appeared in the last ~23h, all with near-zero liquidity (e.g. 29vmDky..., D7EBU2..., 3mSz9q...).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Who holds the LP tokens, and whether the LP holder is tied to the earlier clone deployers",
+   "Whether any Chinese-language Telegram or WeChat groups are pushing it",
+   "Whether the 1116 unique buyers are real or scripted"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched the contract address, the name, and site: filters for X, Reddit and Telegram, and found nothing relevant. DexScreener lists no socials."
+  },
+  "thesis": "This looks like a serial LP-seeded clone launched straight onto PumpSwap. The LP is unlocked, the volume looks bot-driven, there is no social presence, and 10 identical predecessors have already had their liquidity pulled. The chance of a rug within 6h is high and the chance of a clean 2x is low.",
+  "p_runner": 6,
+  "p_rug": 78,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "what_is_happening": "A token called 'Hybrid cat' was created 40 minutes ago directly on PumpSwap with a large creator-seeded, unlocked LP. It has done $280k of volume, mostly back-and-forth trades by a small set of wallets, and the price is up ~124%. Ten earlier copies with the same name had their liquidity pulled within the past day.",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/66kXpKjMJDHnUHZqKkcMHwMo1sKGhf2aa3EBoPCi1rYc",
+    "what": "Live market data: $50k mcap, $64k liquidity, 274/265 buys/sells in 5m, no socials"
+   },
+   {
+    "url": "https://www.tiktok.com/discover/cat-penguin-mix",
+    "what": "Generic cat-penguin content only, no specific catalyst"
+   }
+  ]
+ },
+ "ttft_ms": 3336,
+ "type": "result",
+ "duration_ms": 49497,
+ "uuid": "4551c419-d8f0-43b5-aecd-d3c16e7210a3",
+ "ttft_stream_ms": 734,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 735,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

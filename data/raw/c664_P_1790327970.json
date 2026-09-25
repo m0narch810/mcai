@@ -1,0 +1,151 @@
+{
+ "duration_api_ms": 25598,
+ "stop_reason": "tool_use",
+ "session_id": "5fadccaf-a638-49cf-bd00-430f6ccc2915",
+ "total_cost_usd": 0.10453080000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6882,
+  "cache_read_input_tokens": 1934,
+  "output_tokens": 2454,
+  "output_tokens_details": {
+   "thinking_tokens": 387
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6882,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2454,
+    "cache_read_input_tokens": 1934,
+    "cache_creation_input_tokens": 6882,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6882
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2454,
+   "cacheReadInputTokens": 1934,
+   "cacheCreationInputTokens": 6882,
+   "webSearchRequests": 0,
+   "costUSD": 0.10453080000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 387,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"\ud83d\udcb2SATAN\\\" had its PumpSwap pool created at the same moment as the token itself (created_unix 1790325667, pair 6 seconds later, launchpad null, migrated_unix 0). So it did not graduate from the pump.fun curve; someone seeded the pool directly. In 35 minutes it traded $254k, rose 134% to a $52k market cap, and drew 3.2k buys against 2.2k sells. None of the LP is locked or burned, and RugCheck flags \\\"Large Amount of LP Unlocked\\\" and \\\"Low amount of LP Providers\\\". The packet lists three other tokens with the same emoji ticker \\\"\ud83d\udcb2SATAN\\\", created 36 to 55 minutes earlier. All three now have liquidity at $0 to $0.01. One of them had a $214k market cap and $141k of volume in the past hour before its liquidity went. This matches a serial pull-the-LP farm: launch, run up volume, remove liquidity, relaunch under the same ticker.\",\"narrative\":{\"description\":\"Generic 'SATAN' edgy meme with no website, socials, description or DexScreener profile. There is no story beyond the name and the price action.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Attention looks manufactured. There were 1,125 unique buyers but only 125 unique sellers, and flow was high-count with small tickets. That pattern fits volume/holder bots or sniping bots chasing trending lists, not organic community spread. There are no KOL, smart-money or call-channel signals either.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This token is only the latest pool in a series of same-ticker launches. It is the one with live liquidity right now, but that is a feature of the rug cycle, not a sign it is the real one.\",\"competing_tokens\":\"Three earlier tokens used the identical ticker '\ud83d\udcb2SATAN' (7WCR\u2026, 6Gfz\u2026, 5nRF\u2026), created 36 to 55 minutes before this pair, and all now have about $0 liquidity. 7WCR reached a $214k market cap before being drained. There is also an older, dead pump.fun 'Satan' token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The same emoji ticker was relaunched repeatedly within an hour, and each earlier pool now has zero liquidity. The pool was created directly on PumpSwap with 0% of the LP locked or burned and few LP providers. Buyers outnumber sellers about 9 to 1 by unique wallet (1,125 vs 125). GMGN flags 9 bundler wallets and 1 rat trader, and one unlabeled wallet holds 10.55%. The creator's status is 'creator_close', and its best-token ATH ($177k) is close to where the sibling token was drained. There are no socials and no organic signals.\",\"uncertainty\":\"I cannot confirm that the earlier same-ticker tokens share this deployer. Without that link, they could be copycats that died on their own.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"No LP is locked or burned (0%), so whoever supplied liquidity can remove it at any moment\",\"Liquidity ($65k) is larger than market cap ($52k), which suggests the pool was seeded as bait\",\"Earlier same-ticker pools were drained after about 30 to 50 minutes, and this pair is already 35 minutes old at detection and about 60 minutes old at entry\",\"One wallet holds 10.55% and 9 bundler wallets are present\",\"The very lopsided unique buyer-to-seller ratio suggests bot-driven demand\"]},\"counterargument\":\"Some structural signs look clean: mint and freeze authority are renounced, there are no taxes, the dev holds 0%, the top 10 holders own only about 14% outside the pool, GMGN finds 0% fresh wallets, and there are more than 1,100 holders. Its sibling reached $214k, so the same operator may push this one past $104k (2x from about $52k) before pulling. Momentum is still positive (+15% over 15 minutes). If the operator's pattern is to pump to around $150\u2013200k first, a 2x fill before the pull is possible.\",\"unknowns\":[\"Whether the deployer or LP provider is the same entity as the drained same-ticker tokens\",\"Who holds the LP tokens\",\"The identity of the 10.55% holder\",\"The price level at entry 25 minutes after detection\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No-internet condition; judged only on the packet.\"},\"thesis\":\"This looks like a serial PumpSwap LP-pull farm. The same emoji ticker has been relaunched several times in the past hour, the earlier pools were drained to zero liquidity, the LP is unlocked, and demand looks bot-driven. It is most likely to be pulled soon after entry, and a 2x before a pull or a 50% drop is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":82,\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"\ud83d\udcb2SATAN\" had its PumpSwap pool created at the same moment as the token itself (created_unix 1790325667, pair 6 seconds later, launchpad null, migrated_unix 0). So it did not graduate from the pump.fun curve; someone seeded the pool directly. In 35 minutes it traded $254k, rose 134% to a $52k market cap, and drew 3.2k buys against 2.2k sells. None of the LP is locked or burned, and RugCheck flags \"Large Amount of LP Unlocked\" and \"Low amount of LP Providers\". The packet lists three other tokens with the same emoji ticker \"\ud83d\udcb2SATAN\", created 36 to 55 minutes earlier. All three now have liquidity at $0 to $0.01. One of them had a $214k market cap and $141k of volume in the past hour before its liquidity went. This matches a serial pull-the-LP farm: launch, run up volume, remove liquidity, relaunch under the same ticker.",
+  "narrative": {
+   "description": "Generic 'SATAN' edgy meme with no website, socials, description or DexScreener profile. There is no story beyond the name and the price action.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Attention looks manufactured. There were 1,125 unique buyers but only 125 unique sellers, and flow was high-count with small tickets. That pattern fits volume/holder bots or sniping bots chasing trending lists, not organic community spread. There are no KOL, smart-money or call-channel signals either."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This token is only the latest pool in a series of same-ticker launches. It is the one with live liquidity right now, but that is a feature of the rug cycle, not a sign it is the real one.",
+   "competing_tokens": "Three earlier tokens used the identical ticker '\ud83d\udcb2SATAN' (7WCR\u2026, 6Gfz\u2026, 5nRF\u2026), created 36 to 55 minutes before this pair, and all now have about $0 liquidity. 7WCR reached a $214k market cap before being drained. There is also an older, dead pump.fun 'Satan' token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The same emoji ticker was relaunched repeatedly within an hour, and each earlier pool now has zero liquidity. The pool was created directly on PumpSwap with 0% of the LP locked or burned and few LP providers. Buyers outnumber sellers about 9 to 1 by unique wallet (1,125 vs 125). GMGN flags 9 bundler wallets and 1 rat trader, and one unlabeled wallet holds 10.55%. The creator's status is 'creator_close', and its best-token ATH ($177k) is close to where the sibling token was drained. There are no socials and no organic signals.",
+   "uncertainty": "I cannot confirm that the earlier same-ticker tokens share this deployer. Without that link, they could be copycats that died on their own."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "No LP is locked or burned (0%), so whoever supplied liquidity can remove it at any moment",
+    "Liquidity ($65k) is larger than market cap ($52k), which suggests the pool was seeded as bait",
+    "Earlier same-ticker pools were drained after about 30 to 50 minutes, and this pair is already 35 minutes old at detection and about 60 minutes old at entry",
+    "One wallet holds 10.55% and 9 bundler wallets are present",
+    "The very lopsided unique buyer-to-seller ratio suggests bot-driven demand"
+   ]
+  },
+  "counterargument": "Some structural signs look clean: mint and freeze authority are renounced, there are no taxes, the dev holds 0%, the top 10 holders own only about 14% outside the pool, GMGN finds 0% fresh wallets, and there are more than 1,100 holders. Its sibling reached $214k, so the same operator may push this one past $104k (2x from about $52k) before pulling. Momentum is still positive (+15% over 15 minutes). If the operator's pattern is to pump to around $150\u2013200k first, a 2x fill before the pull is possible.",
+  "unknowns": [
+   "Whether the deployer or LP provider is the same entity as the drained same-ticker tokens",
+   "Who holds the LP tokens",
+   "The identity of the 10.55% holder",
+   "The price level at entry 25 minutes after detection"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No-internet condition; judged only on the packet."
+  },
+  "thesis": "This looks like a serial PumpSwap LP-pull farm. The same emoji ticker has been relaunched several times in the past hour, the earlier pools were drained to zero liquidity, the LP is unlocked, and demand looks bot-driven. It is most likely to be pulled soon after entry, and a 2x before a pull or a 50% drop is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 82,
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": []
+ },
+ "ttft_ms": 5828,
+ "type": "result",
+ "duration_ms": 25672,
+ "uuid": "53b7191b-d620-4685-b55c-6da53e59768d",
+ "ttft_stream_ms": 1363,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1363,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,173 @@
+{
+ "duration_api_ms": 50823,
+ "stop_reason": "tool_use",
+ "session_id": "a2079fcf-63b8-403b-a443-6bbf00143e83",
+ "total_cost_usd": 0.26481200000000005,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13647,
+  "cache_read_input_tokens": 42225,
+  "output_tokens": 3090,
+  "output_tokens_details": {
+   "thinking_tokens": 540
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13647,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2110,
+    "cache_read_input_tokens": 15091,
+    "cache_creation_input_tokens": 1132,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1132
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3090,
+   "cacheReadInputTokens": 42225,
+   "cacheCreationInputTokens": 13647,
+   "webSearchRequests": 0,
+   "costUSD": 0.179453,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 540,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 38574,
+   "outputTokens": 1357,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08535899999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u6d4e\u516c (Ji Gong, the Chinese folk-hero monk) is a 35-minute-old token. Its pool was created directly on PumpSwap: migrated_unix is 0 and no launchpad is listed, so the creator appears to have supplied liquidity that is not locked (0% LP burned). The price is up about 530-630% in one hour on about $1M of volume, against about $57k of liquidity. The trading pattern looks manufactured. In the last 5 minutes buys and sells were exactly equal (141/141 on DexScreener, 136/136 on a later fetch), with 48 unique buyers and 49 unique sellers. That suggests a small set of wallets recycling volume. GeckoTerminal counts 1,917 unique buyers but only 50 unique sellers. About 1,300 of those buyers appeared 15-30 minutes ago and only 49 in the last 15 minutes, which looks like a burst of bot micro-buys to inflate the holder count. The creator holds 18.26% (GMGN rat-trader share is also 18.26%). At least 10 other \u6d4e\u516c tokens were launched in the past few hours and all now show roughly zero liquidity. By my later fetch the price had already slipped from $7.4e-5 to $6.4e-5.\",\"narrative\":{\"description\":\"A generic Chinese folk/religious figure (\u6d4e\u516c, Ji Gong). I found no current news or event behind it, and no posts. It fits the recurring pattern of farming Chinese-character tickers.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I found no organic reason. The activity looks bot-driven: symmetric buys and sells, a burst of buyers, and only 50 sellers.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only \u6d4e\u516c pair with live liquidity and volume right now. That makes it the active one by default, not the canonical one.\",\"competing_tokens\":\"At least 10 other \u6d4e\u516c tokens were launched in the preceding ~5 hours (e.g. KX8XBP78..., HdHNRy..., 4yoZif..., which shows a fake $1.75B mcap). All are dead with about $0 liquidity, which suggests a serial launch-and-pull farm.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Buys and sells in the last 5 minutes are exactly equal (141/141 and 136/136) with about 49 buyers and 49 sellers. There are 1,917 unique buyers against 50 unique sellers, and about 1,300 of those buyers arrived in a single 15-minute window. There are no socials, no website and no DexScreener profile, and GMGN shows only 2 page visits. Web searches for the contract address and the name found nothing.\",\"uncertainty\":\"I cannot see X posts or private Chinese Telegram groups, where a real call might exist.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator-provided PumpSwap liquidity is 0% locked or burned and can be pulled at any time\",\"The creator holds 18.26% of supply\",\"Liquidity is about 78% of mcap, so the pool itself is the creator's exit\",\"The pattern of 10+ dead same-name clones points to a serial rug farm\",\"Volume looks like wash trading\"]},\"counterargument\":\"Chinese-ticker memes sometimes do catch real CN-community flows, and 1,900 holders with $1M of volume could reflect a real Chinese Telegram call I can't see. Mint and freeze authorities are renounced, and a doubling from $64k to $130k needs only modest real inflows.\",\"unknowns\":[\"Whether a private Chinese Telegram or WeChat group is calling it\",\"Whether the creator of the dead \u6d4e\u516c clones is the same entity\",\"Real buyer count versus bot micro-buys\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched the contract address, the name and site:x.com, and found no relevant hits. The packet lists no socials or website. The DexScreener API was fetched live.\"},\"thesis\":\"This looks like a wash-traded, creator-liquidity PumpSwap launch in a series of 10+ dead \u6d4e\u516c clones. Liquidity is unlocked, the creator holds 18%, the buyer counts look bot-inflated and I found no organic narrative. The most likely outcome is a liquidity pull or a bleed, not a doubling.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":80,\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/DhEX2Todq3Fvof1fGh8xH33f4aWQoveLYhL7EtPvsdq7\",\"what\":\"Live pair data: price down to $6.4e-5, 136/136 m5 buys/sells, no socials\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/5PbFfgvaziYEMAjyReKrRBiZTSEsPFtuMj9oKuuxNUT8\",\"what\":\"Packet GeckoTerminal data: 1917 unique buyers vs 50 sellers\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u6d4e\u516c (Ji Gong, the Chinese folk-hero monk) is a 35-minute-old token. Its pool was created directly on PumpSwap: migrated_unix is 0 and no launchpad is listed, so the creator appears to have supplied liquidity that is not locked (0% LP burned). The price is up about 530-630% in one hour on about $1M of volume, against about $57k of liquidity. The trading pattern looks manufactured. In the last 5 minutes buys and sells were exactly equal (141/141 on DexScreener, 136/136 on a later fetch), with 48 unique buyers and 49 unique sellers. That suggests a small set of wallets recycling volume. GeckoTerminal counts 1,917 unique buyers but only 50 unique sellers. About 1,300 of those buyers appeared 15-30 minutes ago and only 49 in the last 15 minutes, which looks like a burst of bot micro-buys to inflate the holder count. The creator holds 18.26% (GMGN rat-trader share is also 18.26%). At least 10 other \u6d4e\u516c tokens were launched in the past few hours and all now show roughly zero liquidity. By my later fetch the price had already slipped from $7.4e-5 to $6.4e-5.",
+  "narrative": {
+   "description": "A generic Chinese folk/religious figure (\u6d4e\u516c, Ji Gong). I found no current news or event behind it, and no posts. It fits the recurring pattern of farming Chinese-character tickers.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I found no organic reason. The activity looks bot-driven: symmetric buys and sells, a burst of buyers, and only 50 sellers."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only \u6d4e\u516c pair with live liquidity and volume right now. That makes it the active one by default, not the canonical one.",
+   "competing_tokens": "At least 10 other \u6d4e\u516c tokens were launched in the preceding ~5 hours (e.g. KX8XBP78..., HdHNRy..., 4yoZif..., which shows a fake $1.75B mcap). All are dead with about $0 liquidity, which suggests a serial launch-and-pull farm.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Buys and sells in the last 5 minutes are exactly equal (141/141 and 136/136) with about 49 buyers and 49 sellers. There are 1,917 unique buyers against 50 unique sellers, and about 1,300 of those buyers arrived in a single 15-minute window. There are no socials, no website and no DexScreener profile, and GMGN shows only 2 page visits. Web searches for the contract address and the name found nothing.",
+   "uncertainty": "I cannot see X posts or private Chinese Telegram groups, where a real call might exist."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator-provided PumpSwap liquidity is 0% locked or burned and can be pulled at any time",
+    "The creator holds 18.26% of supply",
+    "Liquidity is about 78% of mcap, so the pool itself is the creator's exit",
+    "The pattern of 10+ dead same-name clones points to a serial rug farm",
+    "Volume looks like wash trading"
+   ]
+  },
+  "counterargument": "Chinese-ticker memes sometimes do catch real CN-community flows, and 1,900 holders with $1M of volume could reflect a real Chinese Telegram call I can't see. Mint and freeze authorities are renounced, and a doubling from $64k to $130k needs only modest real inflows.",
+  "unknowns": [
+   "Whether a private Chinese Telegram or WeChat group is calling it",
+   "Whether the creator of the dead \u6d4e\u516c clones is the same entity",
+   "Real buyer count versus bot micro-buys"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched the contract address, the name and site:x.com, and found no relevant hits. The packet lists no socials or website. The DexScreener API was fetched live."
+  },
+  "thesis": "This looks like a wash-traded, creator-liquidity PumpSwap launch in a series of 10+ dead \u6d4e\u516c clones. Liquidity is unlocked, the creator holds 18%, the buyer counts look bot-inflated and I found no organic narrative. The most likely outcome is a liquidity pull or a bleed, not a doubling.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 80,
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/DhEX2Todq3Fvof1fGh8xH33f4aWQoveLYhL7EtPvsdq7",
+    "what": "Live pair data: price down to $6.4e-5, 136/136 m5 buys/sells, no socials"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/5PbFfgvaziYEMAjyReKrRBiZTSEsPFtuMj9oKuuxNUT8",
+    "what": "Packet GeckoTerminal data: 1917 unique buyers vs 50 sellers"
+   }
+  ]
+ },
+ "ttft_ms": 5042,
+ "type": "result",
+ "duration_ms": 43088,
+ "uuid": "9dd8193e-decf-4879-b450-d46cb160fcb1",
+ "ttft_stream_ms": 890,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 890,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

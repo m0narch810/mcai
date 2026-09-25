@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 67790,
+ "stop_reason": "tool_use",
+ "session_id": "6b84fa0e-d150-4bb3-9ef8-15f71a6bba7e",
+ "total_cost_usd": 0.3255964,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 15665,
+  "cache_read_input_tokens": 57667,
+  "output_tokens": 5116,
+  "output_tokens_details": {
+   "thinking_tokens": 474
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15665,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2152,
+    "cache_read_input_tokens": 16192,
+    "cache_creation_input_tokens": 2049,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2049
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 5116,
+   "cacheReadInputTokens": 57667,
+   "cacheCreationInputTokens": 15665,
+   "webSearchRequests": 0,
+   "costUSD": 0.2392134,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 474,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 39838,
+   "outputTokens": 1309,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08638299999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 36 unique sellers made about 2,974 sells in 1h, against 843 unique buyers (GeckoTerminal). That is roughly 80+ sells per seller, the signature of bots churning volume. $6.1M of volume on a $98k mcap is 35x turnover. GMGN flags 104 bundler wallets. The creator status is 'creator_close'. There are no organic mentions of this contract address anywhere. Attention to the Buttbrain narrative is real, but it belongs to the pump.fun token 3znS...pump.\",\"uncertainty\":\"I couldn't search X directly. Part of the churn could come from confused buyers who mistook this for the real token.\"},\"continuation_view\":\"strong_fade\",\"counterargument\":\"843 unique buyers is a lot, and the price is up about 48% in 1h. Confused buyers searching 'Buttbrain' might pick this pair because its liquidity is the deepest of all BRAIN pairs, so it may look like the real one. If the canonical token keeps running toward $1M+, spillover could carry this pair to 2x before any pull. It is also possible that the $175k LP is simply an unusually well-funded launch rather than a rug setup.\",\"observation_window\":\"6h\",\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 0% locked/burned, with few LP providers: the deployer can pull the $175k at any time\",\"Liquidity is larger than market cap: the creator seeded it directly on PumpSwap, the classic setup for an LP pull\",\"90.3% of supply sits in the pool, controlled by the single LP provider\",\"104 bundler wallets; 36 sellers generating about 3,000 sells (wash trading)\",\"Creator closed their position; the dev's X-linked account shows 240 launched tokens\"]},\"narrative\":{\"description\":\"Buttbrain AI is an 'autonomous token deployer that learns from every launch'. It is an AI launch tool on pump.fun with a real site (buttbrain.app) and X handle @buttbrainer. Its official token is 3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump, reported at about $455k mcap.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The AI-agent/launch-tool angle is a live meta, and the real token is pumping, which has spawned 10+ same-name copycats in 1 hour.\"},\"p_rug\":82,\"p_runner\":4,\"research_confidence\":\"high\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"The project site names a different contract address (3znS...pump). A KuCoin/pump.fun snippet describes the real Buttbrain token. Searching the exact contract address found no mentions. site:x.com search did not surface @buttbrainer.\"},\"sources\":[{\"url\":\"https://buttbrain.app/\",\"what\":\"Official site; lists CA 3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump and @buttbrainer, and describes the AI token deployer\"},{\"url\":\"https://www.kucoin.com/news/insight/SOL/6aab9be67d10fa0007ce1958\",\"what\":\"Search snippet describing Buttbrain as an autonomous token deployer; the official token around $455k mcap\"},{\"url\":\"https://pump.fun/\",\"what\":\"Launchpad where the canonical Buttbrain token lives\"}],\"thesis\":\"This is a ticker hijack of Buttbrain AI, not the real token. The official site names 3znS...pump as the contract. This one is a non-pump.fun token that the creator put straight onto PumpSwap, seeded with $175k of unlocked liquidity (more than its own mcap). Volume comes from bots: 36 sellers against 843 buyers, $6M on a $98k cap. The most likely outcome is an LP pull once enough confused buyers have come in. A double would need a large amount of new money into a deliberately fake copy.\",\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Same name and ticker as Buttbrain AI, but the project's official site lists a different contract (3znS...pump). This contract has no official link, even though GMGN attaches the @buttbrainer handle and the site to it.\",\"competing_tokens\":\"3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump is the canonical token (mcap $436k, created first). At least 9 other BRAIN/Buttbrain copies exist, including 5AhL..., 2XWo... and DU5Q...\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether the LP provider is the creator wallet (very likely, but not confirmed on-chain)\",\"What was said on X in real time\",\"Whether the canonical token's momentum keeps spilling over to copycats\"],\"what_is_happening\":\"Buttbrain AI, an AI pump.fun token-launcher, has a canonical token (3znS...pump) that is running. Within an hour a swarm of same-name copycats appeared. This one (88XB...) was created outside pump.fun, directly on PumpSwap, with about $175k of unlocked creator-seeded LP. Its trading pattern is bot-heavy: very few sellers, bundlers, and extreme turnover.\"}",
+ "structured_output": {
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 36 unique sellers made about 2,974 sells in 1h, against 843 unique buyers (GeckoTerminal). That is roughly 80+ sells per seller, the signature of bots churning volume. $6.1M of volume on a $98k mcap is 35x turnover. GMGN flags 104 bundler wallets. The creator status is 'creator_close'. There are no organic mentions of this contract address anywhere. Attention to the Buttbrain narrative is real, but it belongs to the pump.fun token 3znS...pump.",
+   "uncertainty": "I couldn't search X directly. Part of the churn could come from confused buyers who mistook this for the real token."
+  },
+  "continuation_view": "strong_fade",
+  "counterargument": "843 unique buyers is a lot, and the price is up about 48% in 1h. Confused buyers searching 'Buttbrain' might pick this pair because its liquidity is the deepest of all BRAIN pairs, so it may look like the real one. If the canonical token keeps running toward $1M+, spillover could carry this pair to 2x before any pull. It is also possible that the $175k LP is simply an unusually well-funded launch rather than a rug setup.",
+  "observation_window": "6h",
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 0% locked/burned, with few LP providers: the deployer can pull the $175k at any time",
+    "Liquidity is larger than market cap: the creator seeded it directly on PumpSwap, the classic setup for an LP pull",
+    "90.3% of supply sits in the pool, controlled by the single LP provider",
+    "104 bundler wallets; 36 sellers generating about 3,000 sells (wash trading)",
+    "Creator closed their position; the dev's X-linked account shows 240 launched tokens"
+   ]
+  },
+  "narrative": {
+   "description": "Buttbrain AI is an 'autonomous token deployer that learns from every launch'. It is an AI launch tool on pump.fun with a real site (buttbrain.app) and X handle @buttbrainer. Its official token is 3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump, reported at about $455k mcap.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The AI-agent/launch-tool angle is a live meta, and the real token is pumping, which has spawned 10+ same-name copycats in 1 hour."
+  },
+  "p_rug": 82,
+  "p_runner": 4,
+  "research_confidence": "high",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "The project site names a different contract address (3znS...pump). A KuCoin/pump.fun snippet describes the real Buttbrain token. Searching the exact contract address found no mentions. site:x.com search did not surface @buttbrainer."
+  },
+  "sources": [
+   {
+    "url": "https://buttbrain.app/",
+    "what": "Official site; lists CA 3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump and @buttbrainer, and describes the AI token deployer"
+   },
+   {
+    "url": "https://www.kucoin.com/news/insight/SOL/6aab9be67d10fa0007ce1958",
+    "what": "Search snippet describing Buttbrain as an autonomous token deployer; the official token around $455k mcap"
+   },
+   {
+    "url": "https://pump.fun/",
+    "what": "Launchpad where the canonical Buttbrain token lives"
+   }
+  ],
+  "thesis": "This is a ticker hijack of Buttbrain AI, not the real token. The official site names 3znS...pump as the contract. This one is a non-pump.fun token that the creator put straight onto PumpSwap, seeded with $175k of unlocked liquidity (more than its own mcap). Volume comes from bots: 36 sellers against 843 buyers, $6M on a $98k cap. The most likely outcome is an LP pull once enough confused buyers have come in. A double would need a large amount of new money into a deliberately fake copy.",
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Same name and ticker as Buttbrain AI, but the project's official site lists a different contract (3znS...pump). This contract has no official link, even though GMGN attaches the @buttbrainer handle and the site to it.",
+   "competing_tokens": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump is the canonical token (mcap $436k, created first). At least 9 other BRAIN/Buttbrain copies exist, including 5AhL..., 2XWo... and DU5Q...",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether the LP provider is the creator wallet (very likely, but not confirmed on-chain)",
+   "What was said on X in real time",
+   "Whether the canonical token's momentum keeps spilling over to copycats"
+  ],
+  "what_is_happening": "Buttbrain AI, an AI pump.fun token-launcher, has a canonical token (3znS...pump) that is running. Within an hour a swarm of same-name copycats appeared. This one (88XB...) was created outside pump.fun, directly on PumpSwap, with about $175k of unlocked creator-seeded LP. Its trading pattern is bot-heavy: very few sellers, bundlers, and extreme turnover."
+ },
+ "ttft_ms": 4465,
+ "type": "result",
+ "duration_ms": 60032,
+ "uuid": "574afda4-c3b9-4e1a-b5d3-392e48ad79f9",
+ "ttft_stream_ms": 776,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 776,
+ "queued_turn_count": 0,
+ "result_index": 0
+}
