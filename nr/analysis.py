@@ -7,7 +7,7 @@ import statistics as st
 from collections import Counter, defaultdict
 from datetime import timedelta
 
-from . import baselines, db
+from . import baselines, db, notify
 from .config import DATA_DIR, PREREG, PREREG_VERSION
 
 MIN_N = 20
@@ -123,11 +123,10 @@ def _bracket_section(done, ctrl) -> list[str]:
     rows = [c for c in done if c["outcome"].get("bracket")]
     if not rows:
         return []
-    thr = PREREG["trade_p_runner_min"]
     hit = lambda c: c["outcome"]["bracket"]["result"] == "target"
     net = lambda c: c["outcome"]["bracket"]["net"]
     filled = [c for c in rows if c["outcome"]["bracket"]["result"] != "unfilled"]
-    L = ["## 1b. v3 trading test: buy at T_D, +100% target, -50% stop, else 6h (PRIMARY)"]
+    L = ["## 1b. Trading test: buy at T_D, +100% target, -50% stop, else 6h (PRIMARY)"]
     res = Counter(c["outcome"]["bracket"]["result"] for c in rows)
     L.append(f"  All candidates: {dict(res)}  (unfilled = no pair/liquidity at T_D, no trade)")
     cf = [c for c in ctrl if c in filled]
@@ -154,9 +153,14 @@ def _bracket_section(done, ctrl) -> list[str]:
         L.append(f"  Arm {arm}: n={len(sc)}  distinct p_runner values {len(set(vals))}  "
                  f"AUC(p_runner, target hit) {_fmt(a)} [{_fmt(ci[0]) if ci else 'n/a'}, "
                  f"{_fmt(ci[1]) if ci else 'n/a'}]")
-        take = [c for c, v in sc if v >= thr]
-        skip = [c for c, v in sc if v < thr]
-        for lab, grp in ((f"TAKEN (p_runner >= {thr})", take), ("skipped", skip)):
+        # Each report is judged by the rule it was frozen under.
+        rep_of = lambda c: json.loads(c["reports"][arm]["report_json"])
+        took = lambda c: notify.is_trade(rep_of(c))
+        lab_take = ("TAKEN (rank gate)" if "_gate" in rep_of(sc[0][0])
+                    else f"TAKEN (p_runner >= {notify.LEGACY_P_RUNNER_MIN})")
+        take = [c for c, _ in sc if took(c)]
+        skip = [c for c, _ in sc if not took(c)]
+        for lab, grp in ((lab_take, take), ("skipped", skip)):
             if grp:
                 L.append(f"    {lab:<22} n={len(grp):3d}  target-hit {sum(map(hit, grp)) / len(grp):.2f}  "
                          f"mean net {st.mean(map(net, grp)):+.3f}  median {st.median(map(net, grp)):+.3f}  "
@@ -171,9 +175,44 @@ def _bracket_section(done, ctrl) -> list[str]:
         if rg:
             L.append(f"    AUC(p_rug, liquidity collapse within 24h) "
                      f"{_fmt(auc([v for _, v in rg], [bool(c['outcome'].get('liquidity_collapse')) for c, _ in rg]))}")
+    L += _ladder_lines(filled, ctrl)
     if len(filled) < MIN_N:
         L.append(f"  n < {MIN_N}: pipeline check only, do not read the numbers.")
     L.append("")
+    return L
+
+
+def _ladder_lines(filled, ctrl) -> list[str]:
+    """v5 right-tail view: share of coins reaching each target before -50%
+    within 24h, plus the 6h net distribution, for gate groups vs control."""
+    rows = [c for c in filled if c["outcome"].get("ladder")]
+    if not rows:
+        return []
+    keys = list(rows[0]["outcome"]["ladder"])
+    gate = lambda c: ((json.loads(c["reports"]["C"]["report_json"]).get("_gate") or {})
+                      .get("take") if (c.get("reports") or {}).get("C", {}).get("ok") else None)
+    groups = [("control (not researched)", [c for c in rows if c in ctrl]),
+              ("C gate TAKEN", [c for c in rows if gate(c) is True]),
+              ("C gate skipped", [c for c in rows if gate(c) is False])]
+    L = [f"  Right tail: target hit before {PREREG['ladder_stop']:+.0%} within "
+         f"{PREREG['ladder_max_minutes'] // 60}h, and 6h net percentiles"]
+    for lab, g in groups:
+        if not g:
+            continue
+        hits = "  ".join(f"{k} {sum(c['outcome']['ladder'][k]['result'] == 'target' for c in g) / len(g):.2f}"
+                         for k in keys)
+        r = sorted(c["outcome"]["returns"][PH] for c in g)
+        q = lambda f: r[min(len(r) - 1, int(f * len(r)))]
+        L.append(f"    {lab:<26} n={len(g):3d}  {hits}   6h p50 {q(.5):+.2f} p75 {q(.75):+.2f} "
+                 f"p90 {q(.9):+.2f}")
+    # RugCheck baseline: does their normalised risk score already predict rugs?
+    rc = [(c["packet"].get("structure", {}).get("rugcheck_score_normalised"),
+           bool(c["outcome"].get("liquidity_collapse"))) for c in filled if c.get("packet")]
+    rc = [(s, y) for s, y in rc if s is not None]
+    if rc:
+        L.append(f"  RugCheck baseline: AUC(score_normalised, liquidity collapse 24h) "
+                 f"{_fmt(auc([s for s, _ in rc], [y for _, y in rc]))} (n={len(rc)}); "
+                 f"compare with Claude's p_rug AUC above")
     return L
 
 
@@ -325,7 +364,8 @@ def report(version: str | None = None) -> str:
         cc = (c.get("reports") or {}).get("C")
         if cc and cc["ok"] and not cc["late"]:
             age_h = json.loads(c["trigger_json"]).get("pair_age_min", 0) / 60
-            bucket = "<6h" if age_h < 6 else "6h-3d" if age_h < 72 else ">3d"
+            bucket = ("<30m" if age_h < 0.5 else "30m-6h" if age_h < 6
+                      else "6h-3d" if age_h < 72 else ">3d")
             v = json.loads(cc["report_json"])["continuation_view"]
             by[(bucket, v)].append(c["outcome"]["returns"][PH])
     for key in sorted(by):

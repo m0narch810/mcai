@@ -10,6 +10,8 @@ FEASIBILITY = ["poor", "weak", "adequate", "good"]
 AUTHENTICITY = ["coordinated", "strong_promotional", "insufficient_visibility",
                 "unknown", "mixed", "independent_spread"]
 CONFIDENCE = ["low", "medium", "high"]
+# v5: conditional on surviving 24h, the most likely peak multiple from entry.
+TAIL_CLASS = ["A_dead_or_chop", "B_up_to_2x", "C_2x_to_5x", "D_5x_plus"]
 
 _str = {"type": "string"}
 _strs = {"type": "array", "items": _str}
@@ -21,6 +23,7 @@ REPORT = {
     "required": ["what_is_happening", "narrative", "token_connection", "authenticity",
                  "market_feasibility", "counterargument", "unknowns", "source_coverage",
                  "thesis", "continuation_view", "p_runner", "p_rug",
+                 "survival_score", "attention_score", "manipulation_risk", "tail_class",
                  "research_confidence", "observation_window", "sources"],
     "properties": {
         "what_is_happening": _str,
@@ -75,6 +78,13 @@ REPORT = {
         "p_runner": _pct,
         # % chance liquidity is pulled or the pair dies within 6h.
         "p_rug": _pct,
+        # v5 decomposition (descriptive; the gate still ranks p_runner):
+        # survival = safety/structure, attention = organic demand and its
+        # acceleration, manipulation = wash/bundle/promo share of that demand.
+        "survival_score": _pct,
+        "attention_score": _pct,
+        "manipulation_risk": _pct,
+        "tail_class": {"type": "string", "enum": TAIL_CLASS},
         "research_confidence": {"type": "string", "enum": CONFIDENCE},
         "observation_window": {"type": "string", "enum": ["1h", "6h", "24h"]},
         "sources": {"type": "array", "items": {

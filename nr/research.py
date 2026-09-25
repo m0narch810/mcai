@@ -74,8 +74,15 @@ def session_share() -> float:
     return max(0.0, last[1] - base)
 
 
+def weekly_util() -> float | None:
+    r = db.conn().execute("SELECT util_7d FROM ratelimit ORDER BY rowid DESC LIMIT 1").fetchone()
+    return r[0] if r and r[0] is not None else None
+
+
 def session_ok() -> bool:
-    return session_share() < RUNTIME["session_share_cap"]
+    week = weekly_util()
+    return (session_share() < RUNTIME["session_share_cap"]
+            and (week is None or week < RUNTIME.get("weekly_util_cap", 1.0)))
 
 
 def pause_reason() -> str | None:
@@ -90,6 +97,9 @@ def pause_reason() -> str | None:
         return f"5h budget (${spent(5):.2f} / ${RUNTIME['window5h_budget_usd']:.0f} in 5h)"
     if spent(1) + need > hourly:
         return f"hourly pace (${spent(1):.2f} / ${hourly:.2f} in 1h)"
+    week = weekly_util()
+    if week is not None and week >= RUNTIME.get("weekly_util_cap", 1.0):
+        return f"Claude weekly usage ({week:.0%} / {RUNTIME['weekly_util_cap']:.0%} cap)"
     if not session_ok():
         return (f"Claude session share ({session_share():.0%} / "
                 f"{RUNTIME['session_share_cap']:.0%} cap)")
@@ -195,6 +205,12 @@ def freeze(cid: int, arm: str, t3: str, t_decision: str, res: dict):
     body = {"candidate_id": cid, "arm": arm, "t3": t3, "t4": t4, "late": late,
             "ok": int(res["ok"]), "report": res.get("obj") if res["ok"] else None,
             "error": res.get("error")}
+    if (res["ok"] and arm in ("C", "P") and res["obj"].get("p_runner") is not None
+            and PREREG.get("trade_rank_quantile") is not None):
+        # The rank gate is decided here, from strictly earlier reports, and
+        # frozen with the report so nothing downstream can recompute it later.
+        res["obj"]["_gate"] = rank_gate(arm, res["obj"].get("p_runner"), t4, bool(late))
+        body["report"] = res["obj"]
     h = db.sha(body)
     db.conn().execute(
         "INSERT INTO reports (candidate_id, arm, t3_started, t4_frozen, late, ok,"
@@ -215,6 +231,23 @@ def freeze(cid: int, arm: str, t3: str, t_decision: str, res: dict):
         from . import notify
         c = dict(db.conn().execute("SELECT * FROM candidates WHERE id=?", (cid,)).fetchone())
         notify.report_frozen(c, arm, res["obj"], bool(late), res.get("cost") or 0.0)
+
+
+def rank_gate(arm: str, score, t4: str, late: bool) -> dict:
+    """v5 trade gate: take the position iff score >= the trade_rank_quantile
+    of this arm's last trade_rank_window on-time p_runner values frozen before
+    t4. Scores only - no outcome can reach the gate. Nearest-rank quantile."""
+    n = PREREG["trade_rank_window"]
+    prior = [r[0] for r in db.conn().execute(
+        "SELECT json_extract(report_json,'$.p_runner') FROM reports WHERE arm=? AND ok=1 "
+        "AND late=0 AND t4_frozen<? AND json_extract(report_json,'$.p_runner') IS NOT NULL "
+        "ORDER BY t4_frozen DESC LIMIT ?", (arm, t4, n))]
+    if score is None or late or not prior:
+        return {"take": False, "threshold": None, "n_prior": len(prior)}
+    srt = sorted(prior)
+    k = min(len(srt) - 1, max(0, int(-(-PREREG["trade_rank_quantile"] * len(srt) // 1)) - 1))
+    thr = srt[k]
+    return {"take": score >= thr, "threshold": thr, "n_prior": len(prior)}
 
 
 def skeptic_triggered(report: dict) -> bool:
@@ -245,8 +278,8 @@ def research_candidate(c: dict):
     pj = json.dumps(packet, indent=1)
     now_s = db.iso(db.now_utc())
     limit = min(PREREG["research_timeout_minutes"] * 60, _remaining_s(td))
-    if limit < 120:
-        db.log("warn", f"#{cid} under 2 min left before decision; research skipped")
+    if limit < 90:
+        db.log("warn", f"#{cid} under 90s left before decision; research skipped")
         return
     per_run = RUNTIME["per_run_budget_usd"]
     if not budget_ok():

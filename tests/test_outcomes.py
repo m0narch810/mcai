@@ -132,5 +132,40 @@ class Null(unittest.TestCase):
         self.assertTrue(0.42 <= frac <= 0.56, frac)
 
 
+class RugSpike(unittest.TestCase):
+    """Dust trades after an LP pull print absurd highs; they are not fills."""
+    def test_si_rug_spike_is_not_a_target(self):
+        # real #497 bars: $392 of volume printed x2,000,000 against a $170k pool
+        bars = [(T, 1.151e-4, 1.172e-4, 1.140e-4, 1.151e-4, 7728.0),
+                (T + 60, 1.151e-4, 2.675e+2, 1.142e-4, 9.481e-1, 392.0),
+                (T + 180, 9.481e-1, 9.570e+3, 9.481e-1, 3.350e+0, 45.0)]
+        res = o.bracket(bars, T + 1, 1.138e-4, 1.0, -0.5, 360, lambda ts: 171_265.0)[0]
+        self.assertNotEqual(res, "target")
+
+    def test_genuine_climb_still_fills(self):
+        # A real breakout climbs over several bars on real volume (Avery went
+        # +100% in 14 one-minute bars on ~$3k/min into an ~$18k pool).
+        p, bars = 2.929e-5, []
+        for m in range(6):
+            bars.append((T + 60 * m, p, p * 1.2, p * 0.98, p * 1.18, 2500.0))
+            p *= 1.18
+        res = o.bracket(bars, T + 1, 2.929e-5, 1.0, -0.5, 360, lambda ts: 18_000.0)[0]
+        self.assertEqual(res, "target")
+
+    def test_zero_volume_or_unknown_liquidity_never_fills(self):
+        self.assertFalse(o._reachable(1.0, 0.0, 50_000, 1.5))
+        self.assertFalse(o._reachable(1.0, 1e6, None, 1.5))
+        self.assertFalse(o._reachable(1.0, 1e6, 0.0, 1.5))
+
+    def test_cpmm_bound_with_slack(self):
+        # $1k into a $40k pool: strict CPMM bound (1.05)^2; with 10x slack (1.5)^2
+        self.assertTrue(o._reachable(1.0, 1_000, 40_000, 2.2))
+        self.assertFalse(o._reachable(1.0, 1_000, 40_000, 2.3))
+
+    def test_dalguddi_real_curve_minute_passes(self):
+        # real #509 bar: +19% on $487 into a ~$10.8k curve (strict bound 1.188x)
+        self.assertTrue(o._reachable(8.242e-6, 487, 10_801.72, 9.838e-6))
+
+
 if __name__ == "__main__":
     unittest.main()

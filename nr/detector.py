@@ -35,6 +35,7 @@ def evaluate_rule(pair: dict, now_ms: int) -> tuple[bool, dict]:
     h6_hourly = (vol.get("h6") or 0) / min(6.0, window_h)
     t = {
         "mcap_usd": mcap, "liquidity_usd": liq, "pair_age_min": round(age_min, 1),
+        "bonding_curve": bool((pair.get("liquidity") or {}).get("curve")),
         "vol_m5": vol.get("m5"), "vol_h1": h1, "vol_h6": vol.get("h6"),
         "h1_turnover": round(turnover, 3),
         "m5_rate_vs_h1_rate": round(m5_vs_h1, 3),
@@ -66,13 +67,15 @@ def recently_seen(token: str, since_iso: str) -> bool:
     return r is not None
 
 
-def detect_once(budget_ok) -> list[int]:
+def detect_once(budget_ok, full: bool = True) -> list[int]:
     """One discovery cycle. Returns ids of newly created candidates.
     budget_ok() -> bool says whether research capacity exists right now."""
+    mints = sources.discover_tokens(full)
+    pairs_by_mint = sources.dex_pairs(sorted(mints), P["quote_tokens"])
+    # T1 is when the numbers that met the rule were read, not when the cycle
+    # began: through v5 it was stamped before discovery, ~2 min too early.
     now = db.now_utc()
     now_ms = int(now.timestamp() * 1000)
-    mints = sources.discover_tokens()
-    pairs_by_mint = sources.dex_pairs(sorted(mints), P["quote_tokens"])
     since = db.iso(now - timedelta(hours=P["dedup_hours"]))
     created = []
     funnel = Counter({"nominated": len(mints), "with_pairs": len(pairs_by_mint)})

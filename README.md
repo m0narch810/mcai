@@ -136,6 +136,52 @@ v3 (`5e07836521a5`) changes the question, not the coins (same universe rule):
   trade, net 0) instead of -100%: you cannot buy into an empty pool.
 - Reading rules were written before any v3 outcome: `data/v3_prereg.md`.
 
+## v4: early coins only
+
+v4 (`e16de5aac8ee`) keeps the v3 question and trade and changes the coins:
+- **$10k-$300k market cap** (was $30k-$30M). The trade is a 2x, and the net
+  buying a 2x needs scales with market cap: a $50k coin doubles on ~$50k of
+  flow, a $5M coin needs ~$5M. Young, small coins are where a burst of
+  attention can plausibly double the price. Reasoning only: v1-v3 outcomes
+  were not sliced by mcap to choose the band.
+- **pump.fun bonding-curve coins are in scope.** DexScreener reports no
+  liquidity for a curve, and `best_pair` dropped every pair without it, so
+  through v3 the earliest coins were invisible. The curve is a constant-product
+  pool on virtual reserves (30 SOL x 1.073B tokens at launch, complete at ~115
+  virtual SOL), so its depth follows from its price alone:
+  `vSOL = sqrt(K * priceNative)`, liquidity = `2 * vSOL * SOL_USD`. The
+  existing CPMM fill model then matches the exact curve fill to within 1%
+  (unit-tested). Fee 1.25% per side (0.95% protocol + 0.30% creator), charged
+  on the whole round trip even when the exit is on PumpSwap.
+- **Graduation is followed.** A curve coin is quoted, snapshotted and charted
+  at the token level: price bars are the curve's until the PumpSwap pool's
+  first bar, then the pool's. Without this every runner would look like it
+  stopped trading at the moment it made it.
+- Discovery adds GeckoTerminal's pump.fun pool list; the general feeds rank
+  across all of Solana, where a $30k curve coin almost never appears.
+- Meteora DBC and other launchpad curves stay out: per-launch curve parameters,
+  no public depth, so no honest fill model.
+- Reading rules: `data/v4_prereg.md`.
+
+## v5: rank gate, faster entry, decomposed scores
+
+v4 almost never alerted: its gate was a fixed level (p_runner >= 35) that an
+honest forecaster rarely reaches when ~1 in 8 coins hits the target, even
+though its ranking was informative. v5 changes how coins are picked and how
+fast, not the trade being scored:
+- **Rank gate:** trade when p_runner is in the top quarter of the arm's last
+  100 on-time scores (strictly earlier, frozen with the report as `_gate`).
+- **Faster and earlier:** entry at T1+4m (was 25), research timeout 3m,
+  coins eligible from 10 min old (was 35). T1 is stamped when the rule's
+  numbers are read; detection runs on its own thread every 30s with priority
+  on GeckoTerminal (early-coin feeds every cycle, all feeds every 5 min).
+- **More scores:** survival, attention, manipulation risk, tail class A-D
+  (descriptive), and a +50/+100/+300% before -50% ladder over 24h.
+- **RugCheck's weighted risk score** is now in the packet and is reported as
+  a baseline against Claude's p_rug.
+- Budget raised to $60/day with a weekly-usage cap of 85%.
+- Reading rules: `data/v5_prereg.md`.
+
 ## Known limitations (Phase 1)
 - **No X post data** (no paid X API). Claude reaches X only through web
   search, which indexes it poorly; GMGN supplies the project X account's

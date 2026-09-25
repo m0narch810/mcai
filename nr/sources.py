@@ -3,10 +3,13 @@ Every call is rate-limited per host and retried on 429/5xx."""
 import threading
 import time
 import warnings
+from contextlib import contextmanager
 
 import certifi
 import requests
 from urllib3.exceptions import InsecureRequestWarning
+
+from .config import PREREG
 
 # An unverified HTTPS request must never pass silently: turn urllib3's
 # warning into an exception so the call fails and gets logged instead.
@@ -21,6 +24,27 @@ _locks: dict[str, threading.Lock] = {h: threading.Lock() for h in _MIN_GAP}
 _session = requests.Session()
 _session.headers.update(_UA)
 _session.verify = certifi.where()
+
+# GeckoTerminal's ~30 calls/min are shared by detection and by outcome/chart
+# fetches. Detection is latency-critical, so while a detection cycle runs,
+# GeckoTerminal calls from any other thread wait (capped, so nothing starves).
+GT_HOST = "api.geckoterminal.com"
+_tl = threading.local()
+_detect_busy = threading.Event()
+BG_MAX_WAIT_S = 90
+
+
+def mark_foreground_thread():
+    _tl.fg = True
+
+
+@contextmanager
+def detection_cycle():
+    _detect_busy.set()
+    try:
+        yield
+    finally:
+        _detect_busy.clear()
 
 
 def tls_selfcheck() -> str | None:
@@ -38,6 +62,10 @@ def tls_selfcheck() -> str | None:
 
 def get(url: str, params=None, tries: int = 4):
     host = url.split("/")[2]
+    if host == GT_HOST and not getattr(_tl, "fg", False):
+        t0 = time.monotonic()
+        while _detect_busy.is_set() and time.monotonic() - t0 < BG_MAX_WAIT_S:
+            time.sleep(0.25)
     lock = _locks.setdefault(host, threading.Lock())
     for attempt in range(tries):
         with lock:
@@ -73,19 +101,25 @@ def _f(x):
 
 
 # ---------------------------------------------------------------- discovery
-def discover_tokens() -> set[str]:
+def discover_tokens(full: bool = True) -> set[str]:
     """Token mints worth checking against the candidate rule this cycle.
-    Discovery sources only nominate; the rule itself decides."""
+    Discovery sources only nominate; the rule itself decides.
+
+    full=False runs only the early-coin feeds (5m trending, new pools,
+    pump.fun, DexScreener lists), ~5 GeckoTerminal calls; the slow feeds for
+    re-accelerating older tokens run on full cycles."""
     mints: set[str] = set()
     # Trending over several windows so older tokens that are re-accelerating
     # are nominated, not just fresh launches.
-    for duration, pages in (("5m", (1, 2, 3)), ("1h", (1, 2)), ("6h", (1, 2))):
+    windows = ((("5m", (1, 2, 3)), ("1h", (1, 2)), ("6h", (1, 2))) if full
+               else (("5m", (1, 2)),))
+    for duration, pages in windows:
         for page in pages:
             d = get("https://api.geckoterminal.com/api/v2/networks/solana/trending_pools",
                     {"page": page, "duration": duration})
             for p in (d or {}).get("data", []):
                 mints.add(p["relationships"]["base_token"]["data"]["id"].split("_", 1)[1])
-    for page in (1, 2):
+    for page in (1, 2) if full else ():
         d = get("https://api.geckoterminal.com/api/v2/networks/solana/pools",
                 {"page": page, "sort": "h24_volume_usd_desc"})
         for p in (d or {}).get("data", []):
@@ -96,6 +130,13 @@ def discover_tokens() -> set[str]:
     for page in (1, 2):
         d = get("https://api.geckoterminal.com/api/v2/networks/solana/new_pools",
                 {"page": page})
+        for p in (d or {}).get("data", []):
+            mints.add(p["relationships"]["base_token"]["data"]["id"].split("_", 1)[1])
+    # v4: pump.fun bonding-curve pools. The feeds above rank by volume or
+    # trend across all of Solana, where a $30k curve coin almost never shows.
+    for page in (1, 2, 3) if full else (1,):
+        d = get("https://api.geckoterminal.com/api/v2/networks/solana/dexes/pump-fun/pools",
+                {"page": page, "sort": "h24_volume_usd_desc"})
         for p in (d or {}).get("data", []):
             mints.add(p["relationships"]["base_token"]["data"]["id"].split("_", 1)[1])
     for url in ("https://api.dexscreener.com/token-boosts/latest/v1",
@@ -120,17 +161,62 @@ def dex_pairs(mints: list[str], quote_tokens: list[str] | None = None) -> dict[s
     if quote_tokens:
         for mint in mints:
             if best_pair(out.get(mint, []), quote_tokens) is None:
-                full = get(f"https://api.dexscreener.com/token-pairs/v1/solana/{mint}")
+                full = token_pairs(mint)
                 if full:
                     out[mint] = full
     return out
 
 
 def best_pair(pairs: list[dict], quote_tokens: list[str]) -> dict | None:
-    """Deepest pair quoted in SOL/USDC."""
+    """Deepest pair quoted in SOL/USDC. A live pump.fun bonding curve counts,
+    at its curve-equivalent depth (DexScreener reports no liquidity for it)."""
+    graduated = any(p.get("dexId") in GRADUATION_DEX for p in pairs)
+    pairs = [with_curve_liquidity(p, graduated) for p in pairs]
     ok = [p for p in pairs if p.get("quoteToken", {}).get("address") in quote_tokens
           and (p.get("liquidity") or {}).get("usd")]
     return max(ok, key=lambda p: p["liquidity"]["usd"]) if ok else None
+
+
+# ---------------------------------------------------------------- bonding curve
+# pump.fun's bonding curve is a constant-product pool on VIRTUAL reserves:
+# 30 SOL x 1,073,000,191 tokens at launch. It completes (and the token moves
+# to a PumpSwap pool) when 793.1M tokens are sold, i.e. at ~115 virtual SOL.
+# From the SOL price of the token alone, virtual SOL = sqrt(K * price), and a
+# CPMM with that SOL side trades exactly like a pool of 2 * vSOL * SOL_USD
+# liquidity, so the ordinary impact model in outcomes._round_trip applies.
+# While on the curve the LP cannot be pulled; a dev dump still shows in price.
+PUMP_CURVE_K = 30 * 1_073_000_191
+PUMP_CURVE_COMPLETE_VSOL = 114.0     # just under 115: a frozen, finished curve is not live
+CURVE_DEX = set(PREREG["bonding_curves"])  # curve math above is pump.fun's
+GRADUATION_DEX = {"pumpswap", "pump_fun_amm"}
+
+
+def curve_vsol(pair: dict) -> float | None:
+    native = _f(pair.get("priceNative"))
+    if pair.get("dexId") not in CURVE_DEX or not native or native <= 0:
+        return None
+    return (PUMP_CURVE_K * native) ** 0.5
+
+
+def with_curve_liquidity(pair: dict, graduated: bool = False) -> dict:
+    """Copy of pair with liquidity.usd filled in for a live pump.fun curve.
+    A curve whose token already has a PumpSwap pool, or whose price is at the
+    completion level, is finished: it keeps no liquidity and is never chosen."""
+    if pair.get("dexId") not in CURVE_DEX or (pair.get("liquidity") or {}).get("usd"):
+        return pair
+    vsol, usd, native = curve_vsol(pair), _f(pair.get("priceUsd")), _f(pair.get("priceNative"))
+    if graduated or not vsol or not usd or vsol >= PUMP_CURVE_COMPLETE_VSOL:
+        return pair
+    sol_usd = usd / native
+    return dict(pair, liquidity={"usd": round(2 * vsol * sol_usd, 2), "curve": True,
+                                 "virtual_sol": round(vsol, 2)})
+
+
+def token_pairs(mint: str) -> list[dict] | None:
+    """All Solana pairs of a token. None = lookup failed (not evidence of
+    anything); [] = DexScreener knows no pair for it."""
+    d = get(f"https://api.dexscreener.com/token-pairs/v1/solana/{mint}")
+    return d if isinstance(d, list) else None
 
 
 def pair_now(pair_address: str) -> dict | None:
@@ -204,8 +290,13 @@ def structure_summary(rc: dict | None) -> dict:
         "launchpad": (rc.get("launchpad") or {}).get("name"),
         "deploy_platform": rc.get("deployPlatform"),
         "rugged_flag": rc.get("rugged"),
-        "risks": [{"name": r.get("name"), "level": r.get("level"),
-                   "description": r.get("description")} for r in rc.get("risks") or []],
+        # RugCheck's own methodology: every risk carries a weight, the report
+        # score is their sum, score_normalised rescales it (higher = riskier).
+        "rugcheck_score": rc.get("score"),
+        "rugcheck_score_normalised": rc.get("score_normalised"),
+        "risks": [{"name": r.get("name"), "level": r.get("level"), "value": r.get("value"),
+                   "weight": r.get("score"), "description": r.get("description")}
+                  for r in rc.get("risks") or []],
         "transfer_fee_pct": (rc.get("transferFee") or {}).get("pct"),
     }
 

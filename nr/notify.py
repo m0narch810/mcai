@@ -17,15 +17,21 @@ _last_error_sent = 0.0
 
 GREEN, RED, GREY, BLUE, AMBER = 0x2ECC71, 0xE74C3C, 0x95A5A6, 0x3498DB, 0xF1C40F
 BULLISH = ("continue", "strong_continue")
+# v3/v4 fixed gate (1/3 break-even plus a margin). v5 reports carry a frozen
+# rank gate instead; this only interprets reports written under v3/v4.
+LEGACY_P_RUNNER_MIN = 35
 
 
 def is_trade(rep: dict | None) -> bool:
-    """Would this report open the position? v3: p_runner at or above the
-    pre-registered threshold. Older reports: a continue call."""
+    """Would this report open the position? v5: the rank gate frozen with the
+    report. v3/v4: p_runner at or above the fixed threshold. Older: a
+    continue call."""
     if not rep:
         return False
+    if rep.get("_gate") is not None:
+        return bool(rep["_gate"]["take"])
     if rep.get("p_runner") is not None:
-        return rep["p_runner"] >= PREREG.get("trade_p_runner_min", 101)
+        return rep["p_runner"] >= LEGACY_P_RUNNER_MIN
     return rep.get("continuation_view") in BULLISH
 
 
@@ -33,7 +39,13 @@ def _label(rep: dict) -> str:
     v = rep["continuation_view"].replace("_", " ")
     if rep.get("p_runner") is None:
         return v
-    return f"{rep['p_runner']}% runner / {rep.get('p_rug', '?')}% rug ({v})"
+    s = f"{rep['p_runner']}% runner / {rep.get('p_rug', '?')}% rug"
+    if rep.get("tail_class"):
+        s += f" · tail {rep['tail_class']}"
+    g = rep.get("_gate") or {}
+    if g.get("threshold") is not None:
+        s += f" · bar {g['threshold']}"
+    return f"{s} ({v})"
 
 
 def _all() -> bool:
@@ -260,6 +272,28 @@ def outcome(c: dict, out: dict, rep: dict | None):
          ], url=_dex(c["token"]))
 
 
+def bracket_hit(c: dict, b: dict, rep: dict, mfe: float | None):
+    """Posted the moment a taken trade's take-profit or stop fills, instead
+    of leaving the result silent until the 6h message."""
+    tp, sl = PREREG["bracket_target"], PREREG["bracket_stop"]
+    net = b["net"]
+    if b["result"] == "target":
+        title = f"🎯 TAKE PROFIT #{c['id']} {c.get('symbol')}: {tp:+.0%} hit, net {net:+.1%}"
+        color = GREEN
+    else:
+        title = f"🛑 STOP #{c['id']} {c.get('symbol')}: {sl:+.0%} hit, net {net:+.1%}"
+        color = RED
+    desc = (f"Filled {b['exit_min']:.0f} min after entry. Claude said **{_label(rep)}**. "
+            "Net of fees, impact and slippage on the $250 paper position.")
+    if b["result"] == "stop" and net <= -0.99:
+        desc += " Liquidity was pulled or the price gapped through the stop: position worth ~0."
+    send(title, desc, color, [
+        ("Exit price", f"${b['exit_ref']:.8g}" if b.get("exit_ref") else "n/a", True),
+        ("Max up so far", f"{mfe:+.0%}" if mfe is not None else "n/a", True),
+        _links(c),
+    ], url=_dex(c["token"]))
+
+
 def interim(c: dict, out: dict, rep: dict):
     """Primary-horizon (6h) result, posted as soon as it is known."""
     r = out.get("returns", {}).get("360")
@@ -294,7 +328,7 @@ def interim(c: dict, out: dict, rep: dict):
         verdict = "❌ call looks wrong"
     send(f"⏱️ #{c['id']} {c.get('symbol')}: 6h result {r:+.1%}",
          f"Claude said **{view.replace('_', ' ')}**, so {verdict}. Net of costs, $250 paper "
-         f"position entered 25 min after detection.", GREEN if r > 0 else RED, [
+         f"position entered {PREREG['decision_delay_minutes']} min after detection.", GREEN if r > 0 else RED, [
              ("1h", "n/a" if r1 is None else f"{r1:+.1%}", True),
              ("6h", f"{r:+.1%}", True),
              ("Max up 6h", pct("mfe_6h"), True),

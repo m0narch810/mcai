@@ -49,9 +49,9 @@ def _research_job(c):
         db.log("error", f"research #{c['id']}: {e!r}\n{traceback.format_exc(limit=4)}")
 
 
-def step_detect(pool: ThreadPoolExecutor):
+def step_detect(pool: ThreadPoolExecutor, full: bool = True):
     for cid in detector.detect_once(
-            lambda: research.budget_ok() and research.session_ok()) or []:
+            lambda: research.budget_ok() and research.session_ok(), full) or []:
         c = _rows("SELECT * FROM candidates WHERE id=?", cid)[0]
         if _safe(packet.collect, c) is None:
             continue
@@ -142,6 +142,45 @@ def step_interim():
                        f" bracket={b.get('result')} {b.get('net')}")
 
 
+BRACKET_WATCH_S = 180
+_last_watch = 0.0
+
+
+def step_bracket_watch():
+    """Post a taken trade's take-profit or stop as soon as it fills. Uses the
+    same evaluate()/bracket() code that scores the trade, on closed 1-min bars
+    only (a still-forming bar could yet print both levels, which is a loss),
+    so the live message cannot disagree with the final result."""
+    global _last_watch
+    if not PREREG.get("bracket_max_minutes") or time.monotonic() - _last_watch < BRACKET_WATCH_S:
+        return
+    _last_watch = time.monotonic()
+    db.conn().execute("CREATE TABLE IF NOT EXISTS bracket_sent (candidate_id INTEGER PRIMARY KEY)")
+    now = db.now_utc()
+    lo = db.iso(now - timedelta(minutes=PREREG["bracket_max_minutes"]))
+    due = _rows("SELECT c.*, r.report_json FROM candidates c "
+                "JOIN entries e ON e.candidate_id=c.id AND e.ok=1 "
+                "JOIN reports r ON r.candidate_id=c.id AND r.arm='C' AND r.ok=1 AND r.late=0 "
+                "LEFT JOIN bracket_sent s ON s.candidate_id=c.id "
+                "WHERE s.candidate_id IS NULL AND c.t_decision BETWEEN ? AND ? "
+                "AND c.prereg_version=?", lo, db.iso(now), PREREG_VERSION)
+    for c in due:
+        rep = json.loads(c["report_json"])
+        if not notify.is_trade(rep):
+            continue
+        # Whole minutes since fill, minus the bar still forming.
+        mins = int((now - db.parse_iso(c["t_decision"])).total_seconds() // 60) - 1
+        if mins < 1:
+            continue
+        out = outcomes.evaluate(c, max_minutes=mins)
+        b = out.get("bracket") or {}
+        if b.get("result") in ("target", "stop"):
+            db.conn().execute("INSERT OR IGNORE INTO bracket_sent VALUES (?)", (c["id"],))
+            notify.bracket_hit(c, b, rep, out.get("mfe_6h"))
+            db.log("info", f"bracket #{c['id']} {c.get('symbol')} {b['result']} "
+                           f"after {b['exit_min']}m net={b['net']}")
+
+
 def step_quiet():
     """During a dry spell, say so. Silence used to mean either 'the rule did
     not fire' or 'the process is dead', with no way to tell them apart."""
@@ -213,12 +252,10 @@ def step_digest():
         "Late/failed (24h)": q("SELECT COUNT(*) FROM reports WHERE (late=1 OR ok=0) AND t4_frozen>=?", since),
         "Researched since last yes": q(
             "SELECT COUNT(*) FROM reports WHERE arm='C' AND ok=1 AND id > COALESCE((SELECT MAX(id) "
-            "FROM reports WHERE arm='C' AND ok=1 AND (json_extract(report_json,'$.continuation_view') "
-            "IN ('continue','strong_continue') OR json_extract(report_json,'$.p_runner') >= ?)), 0)",
-            PREREG.get("trade_p_runner_min", 101)),
-        "Trades taken (24h, p_runner >= threshold)": q(
+            "FROM reports WHERE arm='C' AND ok=1 AND json_extract(report_json,'$._gate.take')=1), 0)"),
+        "Trades taken (24h, rank gate)": q(
             "SELECT COUNT(*) FROM reports WHERE arm='C' AND ok=1 AND late=0 AND t4_frozen>=? "
-            "AND json_extract(report_json,'$.p_runner') >= ?", since, PREREG.get("trade_p_runner_min", 101)),
+            "AND json_extract(report_json,'$._gate.take')=1", since),
         "Outcomes total": q("SELECT COUNT(*) FROM outcomes"),
         "Median 6h, researched": med(rets["selected"]),
         "Median 6h, control": med(rets["control"]),
@@ -257,6 +294,27 @@ def _entry_loop():
         time.sleep(15)
 
 
+def _detect_loop(pool: ThreadPoolExecutor):
+    """Detection (and packet building) run on their own clock with priority
+    on GeckoTerminal, so outcome scoring and chart fetches in the main loop
+    can never delay a new candidate. Slow discovery feeds run every
+    detect_full_every_s; the early-coin feeds every cycle."""
+    from . import sources
+    sources.mark_foreground_thread()
+    last_full = -1e9
+    while True:
+        t0 = time.monotonic()
+        full = t0 - last_full >= RUNTIME["detect_full_every_s"]
+        try:
+            with sources.detection_cycle():
+                _safe(step_detect, pool, full)
+            if full:
+                last_full = t0
+        except BaseException:
+            pass    # this thread must not die; errors are logged by _safe
+        time.sleep(max(3, RUNTIME["detect_poll_seconds"] - (time.monotonic() - t0)))
+
+
 def run_forever():
     import signal
     # Never die from a stray Ctrl+C / Ctrl+Break aimed at another console.
@@ -276,6 +334,7 @@ def run_forever():
     pool = ThreadPoolExecutor(max_workers=RUNTIME["max_concurrent_research"])
     pm_pool = ThreadPoolExecutor(max_workers=1)
     threading.Thread(target=_entry_loop, daemon=True, name="entries").start()
+    threading.Thread(target=_detect_loop, args=(pool,), daemon=True, name="detect").start()
     # Resume research interrupted by a restart, while it can still finish
     # before T_D (research_candidate itself refuses if too little time is left).
     for c in _rows("SELECT c.* FROM candidates c JOIN packets p ON p.candidate_id=c.id "
@@ -288,10 +347,10 @@ def run_forever():
     while True:
         t0 = time.monotonic()
         _safe(db.beat)
-        _safe(step_detect, pool)
         _safe(step_liquidity)
         _safe(step_outcomes)
         _safe(step_interim)
+        _safe(step_bracket_watch)
         _safe(step_postmortems, pm_pool)
         _safe(step_quiet)
         _safe(lambda: notify.research_paused(research.pause_reason()))

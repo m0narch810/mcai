@@ -18,18 +18,31 @@ PROMPT_DIR = Path(__file__).resolve().parent / "prompts"
 
 PREREG = {
     # ---- Candidate universe (Solana only, Phase 1) --------------------------
-    # Microcap territory where "narrative" plausibly drives price; above $30M
-    # the move is usually flows/listings, below $30k it is pure launch noise.
-    "mcap_min_usd": 30_000,
-    "mcap_max_usd": 30_000_000,
+    # v4: early coins only. The trade is a 2x; doubling a $50k coin takes
+    # ~$50k of net buying, doubling a $5M coin takes ~$5M, so the same burst
+    # of attention moves a small, young coin much further. Above $300k the
+    # 2x needs flows this universe rarely has. The floor is the bottom of
+    # "tens of thousands": below $10k a pump.fun coin is minutes from launch
+    # and its first hour of bars (pre_entry_sigma_minutes) does not exist.
+    # Chosen from that reasoning; v1-v3 outcomes were NOT sliced by mcap to
+    # pick these numbers (v3 had ~10 bracket results in total).
+    "mcap_min_usd": 10_000,
+    "mcap_max_usd": 300_000,
+    # v4: pump.fun coins still on their bonding curve are in scope, at their
+    # curve-equivalent depth (nr/sources.py). Before v4 DexScreener's missing
+    # curve liquidity silently excluded every one of them, i.e. the earliest
+    # coins were invisible. Other launchpad curves (Meteora DBC, etc.) have
+    # per-launch curve parameters and no public depth, so they stay out.
+    "bonding_curves": ["pumpfun"],
     # A $250 clip must be tradeable: at $8k liquidity CPMM impact is ~6%/side.
     "liquidity_min_usd": 8_000,
-    # Enough history that the paper entry at T1+25m has >=60 min of 1-min bars
-    # behind it (pre_entry_sigma_minutes), and no more. The v1 floor of 120
-    # minutes excluded the window in which Solana attention moves actually
-    # happen; see "Universe rule v2" below. No maximum age: revivals of older
-    # tokens are in scope, and results are split by age bucket instead.
-    "pair_age_min_minutes": 35,
+    # v5: 10 minutes (was 35). The 35 existed only so the T1+25m entry had 60
+    # min of bars for the descriptive sigma null. v4 flagged coins already up
+    # ~+150% on the hour, i.e. after the move the user wants to catch. 10 min
+    # is the least history at which RugCheck/GMGN holder data is populated and
+    # the first dev/sniper dump has usually happened. No maximum age: revivals
+    # are in scope, and results are split by age bucket instead.
+    "pair_age_min_minutes": 10,
     # ---- Universe rule v2 ------------------------------------------------
     # "Unusual activity" is measured against the MARKET, not against the
     # token's own volume since launch.
@@ -64,10 +77,14 @@ PREREG = {
     # Every candidate, researched or not, gets its paper entry at
     # T_D = T1 + decision_delay. All arms (A/B/P/C) share this entry time, so
     # arm differences reflect information, not latency.
-    "decision_delay_minutes": 25,
+    # v5.1: 4 (v4: 25, v5: 10). Measured: the "3 min packet" was mostly a
+    # ~2.5 min discovery cycle stamped as T1 before it ran. With T1 stamped
+    # at read time, detection on its own thread and ~5 GeckoTerminal calls
+    # per fast cycle, packets take ~30s and research froze in ~66s (median).
+    "decision_delay_minutes": 4,
     # Research must be frozen before T_D; a later report is flagged LATE and
     # excluded from the primary analysis.
-    "research_timeout_minutes": 20,
+    "research_timeout_minutes": 3,
 
     # ---- Research allocation ----------------------------------------------------
     # Candidates are thinned at random (not by quality) so researched and
@@ -81,7 +98,9 @@ PREREG = {
     # ---- Paper execution ----------------------------------------------------------
     "position_usd": 250.0,
     # Swap fee by DEX id; unknown DEX -> 1%.
-    "dex_fee": {"pumpswap": 0.0025, "pump_fun_amm": 0.0025, "raydium": 0.0025,
+    # pump.fun curve: 0.95% protocol + 0.30% creator. Charged for the whole
+    # round trip even when the exit happens on PumpSwap after graduation.
+    "dex_fee": {"pumpfun": 0.0125, "pumpswap": 0.0025, "pump_fun_amm": 0.0025, "raydium": 0.0025,
                 "raydium-cpmm": 0.0025, "raydium-clmm": 0.0025,
                 "orca": 0.003, "meteora": 0.01, "meteoradbc": 0.01},
     "dex_fee_default": 0.01,
@@ -106,7 +125,8 @@ PREREG = {
     # are reported but never used as the primary outcome.
     "pct_targets": [0.5, 1.0, 2.0],
     "pct_stops": [-0.2, -0.3, -0.5],
-    "pre_entry_sigma_minutes": 60,
+    # v5: 20 (was 60) - a 10-min-old coin entered at T1+10 has 20 min of bars.
+    "pre_entry_sigma_minutes": 20,
 
     # ---- v3: the trade being forecast ------------------------------------------
     # v2 asked "will attention persist over 6h" and scored a 6h hold. In this
@@ -122,9 +142,25 @@ PREREG = {
     "bracket_target": 1.0,
     "bracket_stop": -0.5,
     "bracket_max_minutes": 360,
-    # Trade iff Claude's p_runner >= this. Break-even hit rate for +100% vs
-    # -50% is 1/3; 35 adds a margin for costs. Derived from the payoff only.
-    "trade_p_runner_min": 35,
+    # v5: trade by RANK, not by level. v4 required p_runner >= 35 and Claude
+    # (honestly, with a ~12% base rate) cleared it once in 39 coins, while its
+    # ranking was informative (AUC ~0.75). The gate is now: p_runner at or
+    # above the trade_rank_quantile of the same arm's previous
+    # trade_rank_window on-time reports (scores only, never outcomes, all
+    # strictly earlier -> causal). 0.75 = top quarter, chosen for alert
+    # frequency (~1-2/hour at v4 volumes), not from any P&L. Whether the top
+    # quarter clears the 1/3 break-even is exactly what v5 tests. The window
+    # spans versions so the gate works from the first v5 coin; v4 scores roll
+    # out after 100 v5 reports.
+    "trade_rank_quantile": 0.75,
+    "trade_rank_window": 100,
+    # v5 descriptive ladder (ChatGPT review: measure the right tail instead of
+    # one binary): for each target, did it fill before the -50% stop within
+    # 24h, on the same sequential engine as the bracket. Reported by gate
+    # group vs control; never used to pick a threshold.
+    "ladder_targets": [0.5, 1.0, 3.0],
+    "ladder_stop": -0.5,
+    "ladder_max_minutes": 1440,
     # A pool with no liquidity (or no pair) at T_D cannot be bought. v2
     # scored those as -100%; v3 records them as unfilled (net 0, no trade)
     # and reports how many there were.
@@ -152,17 +188,27 @@ _PROMPTS = {p.name: p.read_text(encoding="utf-8")
 # ---- Operational (may change without a new version, except claude_model) -------------
 RUNTIME = {
     "poll_seconds": 60,
+    # Detection has its own thread: a fast cycle (early-coin feeds) every
+    # detect_poll_seconds, all feeds every detect_full_every_s. GeckoTerminal
+    # (~27 calls/min at our gap) is the limit: ~5 calls per fast cycle.
+    "detect_poll_seconds": 30,
+    "detect_full_every_s": 300,
     "claude_model": "opus",
     # Usage caps, metered by the cost the CLI reports (Max-plan equivalent $).
     # Sized for the v2 universe rule, which nominates several times more
     # candidates per day than v1 did. session_share_cap, not these, is what
     # actually protects your own Claude quota.
-    "daily_budget_usd": 40.0,
-    "window5h_budget_usd": 15.0,
+    # v5: raised from 40/15. On 2026-09-25 the $40 cap, not the Claude quota
+    # (5h session at 7%), excluded 41 of 116 drawn coins as `no_budget`.
+    "daily_budget_usd": 60.0,
+    "window5h_budget_usd": 22.0,
+    # Stop new research above this 7-day Claude utilization, so the bot never
+    # eats the user's weekly limit.
+    "weekly_util_cap": 0.85,
     # Stop taking new coins (and post-mortems) once usage of the current 5h
     # Claude session limit has risen this much since the bot's first run in
     # that window. Counts all usage in the window, your own chats included.
-    "session_share_cap": 0.25,
+    "session_share_cap": 0.35,
     # Hours per day the machine is actually up (school-day duty cycle), used
     # only to pace spending across the session so the budget is not gone by
     # 8pm. hourly cap = daily / active_hours * burst_multiple.
@@ -171,7 +217,7 @@ RUNTIME = {
     "per_run_budget_usd": 3.0,          # hard cap passed to each claude -p run
     # Budget reserved before starting a candidate (C + P + possible skeptic
     # typically cost ~$1.10 in total; this leaves headroom).
-    "reserve_per_candidate_usd": 1.5,
+    "reserve_per_candidate_usd": 0.8,
     "max_concurrent_research": 2,
     "liquidity_snapshot_minutes": 20,
     # Post-mortems run only from leftover daily budget.

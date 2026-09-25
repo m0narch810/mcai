@@ -123,7 +123,8 @@ class Pipeline(unittest.TestCase):
         txt = analysis.report()
         print(txt[:2500])
         self.assertIn("Null sanity", txt)
-        self.assertIn("v3 trading test", txt)
+        self.assertIn("Trading test", txt)
+        self.assertIn("Right tail", txt)
 
 
 if __name__ == "__main__":

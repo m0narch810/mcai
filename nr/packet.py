@@ -53,6 +53,14 @@ def build(candidate: dict) -> dict:
     pair = sources.pair_now(pool)
     if not pair:
         limitations.append("DexScreener pair lookup failed at T2")
+    elif pair.get("dexId") in sources.CURVE_DEX:
+        pair = sources.with_curve_liquidity(pair)
+        limitations.append(
+            "Token is on the pump.fun bonding curve: liquidity_usd is the curve's equivalent "
+            "pool depth (from its virtual reserves), not LP that can be pulled. At ~115 virtual "
+            "SOL the curve completes and the token migrates to a PumpSwap pool"
+            + (f"; it is at {pair['liquidity']['virtual_sol']} virtual SOL now"
+               if (pair.get("liquidity") or {}).get("curve") else ""))
     gt = sources.gt_pool(pool)
     if not gt:
         limitations.append("GeckoTerminal pool stats (unique buyers/sellers) unavailable")

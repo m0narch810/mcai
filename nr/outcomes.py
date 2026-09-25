@@ -22,8 +22,21 @@ P = PREREG
 
 
 # ------------------------------------------------------------------ entry
+def is_curve(c: dict) -> bool:
+    return (c.get("dex_id") or "") in sources.CURVE_DEX
+
+
+def _quote(c: dict) -> dict | None:
+    """Live quote for the position. A bonding-curve coin is quoted at the
+    token level: if it graduated since detection, the holder's tokens now
+    trade on the PumpSwap pool, and the finished curve has no liquidity."""
+    if is_curve(c):
+        return sources.best_pair(sources.token_pairs(c["token"]) or [], P["quote_tokens"])
+    return sources.pair_now(c["pair_address"])
+
+
 def take_entry(c: dict):
-    q = sources.pair_now(c["pair_address"])
+    q = _quote(c)
     now = db.iso(db.now_utc())
     if not q:
         db.conn().execute("INSERT INTO entries VALUES (?,?,?,?,?,?,?,?)",
@@ -34,7 +47,7 @@ def take_entry(c: dict):
     liq = (q.get("liquidity") or {}).get("usd")
     mcap = q.get("marketCap") or q.get("fdv")
     slim = {k: q.get(k) for k in ("priceUsd", "liquidity", "marketCap", "fdv", "volume",
-                                  "txns", "priceChange")}
+                                  "txns", "priceChange", "dexId", "pairAddress")}
     db.conn().execute("INSERT INTO entries VALUES (?,?,?,?,?,?,?,?)",
                       (c["id"], now, price, liq, mcap, json.dumps(slim), 1, None))
     db.ledger("entry", {"candidate_id": c["id"], "t5": now, "price": price, "liq": liq})
@@ -52,6 +65,19 @@ def take_entry(c: dict):
 def snapshot_liquidity(cands: list[dict]):
     """One liquidity/price observation for each open candidate (batched)."""
     now = db.iso(db.now_utc())
+    for c in [c for c in cands if is_curve(c)]:
+        pairs = sources.token_pairs(c["token"])
+        if pairs is None:
+            continue   # API failure is not evidence the pair vanished
+        p = sources.best_pair(pairs, P["quote_tokens"])
+        if pairs and not p:
+            continue   # finished curve, PumpSwap pool not indexed yet: no reading
+        db.conn().execute(
+            "INSERT OR IGNORE INTO liquidity_obs VALUES (?,?,?,?,?,?)",
+            (c["id"], now, sources.f(p.get("priceUsd")) if p else None,
+             (p.get("liquidity") or {}).get("usd") if p else None,
+             (p.get("marketCap") or p.get("fdv")) if p else None, int(p is not None)))
+    cands = [c for c in cands if not is_curve(c)]
     by_pair = {c["pair_address"]: c for c in cands}
     pairs = list(by_pair)
     for i in range(0, len(pairs), 30):
@@ -83,10 +109,22 @@ def fetch_bars(c: dict, cache: bool = True) -> list[tuple]:
         return [tuple(r) for r in rows]
     td = int(db.parse_iso(c["t_decision"]).timestamp())
     start = td - 120 * 60
-    before = td + (max(P["horizons_minutes"]) + 60) * 60
+    end = td + (max(P["horizons_minutes"]) + 60) * 60
+    bars = _pool_bars(c["pair_address"], start, end)
+    if is_curve(c):
+        bars = _stitch_graduation(c, bars, start, end)
+    out = [tuple([int(b[0])] + [float(x) for x in b[1:6]])
+           for ts, b in sorted(bars.items()) if start <= ts < td + 1500 * 60]
+    if cache:
+        db.conn().executemany("INSERT OR IGNORE INTO ohlcv VALUES (?,?,?,?,?,?,?)",
+                              [(cid,) + b for b in out])
+    return out
+
+
+def _pool_bars(pool: str, start: int, before: int) -> dict[int, list]:
     bars: dict[int, list] = {}
     for _ in range(4):
-        chunk = sources.ohlcv_minutes(c["pair_address"], before)
+        chunk = sources.ohlcv_minutes(pool, before)
         if not chunk:
             break
         for b in chunk:
@@ -95,12 +133,26 @@ def fetch_bars(c: dict, cache: bool = True) -> list[tuple]:
         if earliest <= start or len(chunk) < 900:
             break
         before = earliest
-    out = [tuple([int(b[0])] + [float(x) for x in b[1:6]])
-           for ts, b in sorted(bars.items()) if start <= ts < td + 1500 * 60]
-    if cache:
-        db.conn().executemany("INSERT OR IGNORE INTO ohlcv VALUES (?,?,?,?,?,?,?)",
-                              [(cid,) + b for b in out])
-    return out
+    return bars
+
+
+def _stitch_graduation(c: dict, curve_bars: dict, start: int, end: int) -> dict:
+    """A curve coin that graduates keeps trading, on its PumpSwap pool. Both
+    series are USD per token, so the price path is the curve's bars up to the
+    PumpSwap pool's first bar and the pool's bars from then on. Without this
+    every runner would look like it stopped trading the minute it made it."""
+    grads = [p for p in (sources.token_pairs(c["token"]) or [])
+             if p.get("dexId") in sources.GRADUATION_DEX]
+    if not grads:
+        return curve_bars
+    pool = max(grads, key=lambda p: (p.get("liquidity") or {}).get("usd") or 0)
+    after = _pool_bars(pool["pairAddress"], start, end)
+    if not after:
+        return curve_bars
+    cut = min(after)
+    merged = {ts: b for ts, b in curve_bars.items() if ts < cut}
+    merged.update(after)
+    return merged
 
 
 def _last_close_at(bars, ts):
@@ -162,7 +214,27 @@ def _race(up_t, dn_t):
     return "up" if up_t < dn_t else "down"
 
 
-def bracket(bars, t_fill, entry_ref, target, stop, max_minutes):
+def _reachable(base, vol_usd, liq_usd, level) -> bool:
+    """Could this bar's volume have carried price from base to level? Buying
+    Q (USD) into a CPMM whose quote side is L/2 multiplies the price by at
+    most (1 + Q/(L/2))^2, and a bar's gross volume bounds the net buying. A
+    pool whose LP was just pulled prints dust trades at absurd prices (seen:
+    x2,000,000 on $392 against a $170k pool); those are not fills. Unknown
+    liquidity cannot be verified, so it is not a fill either.
+
+    The volume gets 10x headroom: bar volume and snapshot liquidity (every
+    ~20 min) are both approximate, and a strict bound rejected a genuine +19%
+    minute on a pump.fun curve. The check is for prints that are impossible
+    by orders of magnitude, not for second-guessing ordinary candles."""
+    if not liq_usd or liq_usd <= 0 or not vol_usd or vol_usd <= 0:
+        return False
+    return level <= base * (1 + REACH_SLACK * vol_usd / (liq_usd / 2)) ** 2
+
+
+REACH_SLACK = 10
+
+
+def bracket(bars, t_fill, entry_ref, target, stop, max_minutes, liq_before=None):
     """The v3 trade: take profit at entry*(1+target), stop at entry*(1+stop),
     else exit at the last close before t_fill + max_minutes.
 
@@ -172,17 +244,32 @@ def bracket(bars, t_fill, entry_ref, target, stop, max_minutes):
     there. The target is a resting limit and fills only if price traded
     THROUGH it (high > level), at the level. The stop is a market order once
     touched, filled at the worse of the level, the bar's open (a gap through)
-    and its close - never better than the level."""
+    and its close - never better than the level.
+
+    liq_before(ts) -> pool liquidity (USD) last observed at or before ts. When
+    given, the target also needs the bar's volume to be able to reach it
+    (_reachable); tests of pure sequencing leave it out."""
     up = entry_ref * (1 + target)
     dn = entry_ref * (1 + stop)
     end = t_fill + max_minutes * 60
-    for ts, o, h, l, c, _ in bars:
+    prev_c = entry_ref
+    for ts, o, h, l, c, v in bars:
         if ts + 60 <= t_fill or ts >= end:
             continue
         if l <= dn:
             return "stop", ts + 60, min(dn, o, c)
-        if not (ts <= t_fill < ts + 60) and h > up:
+        base = min(o, prev_c)
+        liq = liq_before(ts) if liq_before else None
+        if not (ts <= t_fill < ts + 60) and h > up and (
+                liq_before is None or _reachable(base, v, liq, up)):
             return "target", ts + 60, up
+        # An implausible close (a dust print into an emptied pool) must not
+        # become the next bar's starting point, or the spike's second bar
+        # would "open" above the target and fill it.
+        if liq_before is None or c <= base or _reachable(base, v, liq, c):
+            prev_c = c
+        else:
+            prev_c = base
     return "time", end, _last_close_at(bars, end)
 
 
@@ -280,10 +367,27 @@ def evaluate(c: dict, max_minutes: int | None = None) -> dict:
                          "gross_return": round(px / entry_ref - 1, 4) if px else None}
     out["returns"], out["exits"] = returns, exits
 
+    # With max_minutes below the bracket window (the live TP/SL watcher), only
+    # a level hit is final; "time" just means neither level has filled yet.
     bmax = P.get("bracket_max_minutes")
-    if bmax and (max_minutes is None or max_minutes >= bmax):
+    res = None
+
+    def liq_before(ts):
+        last = e["liquidity_usd"]
+        for ob in obs:
+            if db.parse_iso(ob["t"]).timestamp() > ts:
+                break
+            last = ob["liquidity_usd"] if ob["present"] else 0.0
+        return last
+
+    if bmax:
+        window = bmax if max_minutes is None else min(bmax, max_minutes)
         res, ts, px = bracket(bars, t_fill, entry_ref, P["bracket_target"],
-                              P["bracket_stop"], bmax)
+                              P["bracket_stop"], window, liq_before)
+        if res == "time" and window < bmax:
+            out["bracket"] = {"result": "open"}
+            res = None
+    if res:
         lo = liq_at(db.iso(db.parse_iso(c["t_decision"]) + timedelta(seconds=ts - t_fill)))
         liq_out = lo["liquidity_usd"] if lo and lo["present"] else None
         if px is None and liq_out:
@@ -292,6 +396,14 @@ def evaluate(c: dict, max_minutes: int | None = None) -> dict:
                           "exit_ref": px, "exit_liquidity": liq_out,
                           "net": round(_round_trip(entry_ref, px, e["liquidity_usd"],
                                                    liq_out, fee), 4)}
+
+    if P.get("ladder_targets") and max_minutes is None:
+        # Right-tail ladder: same sequential engine, one race per target.
+        out["ladder"] = {}
+        for tgt in P["ladder_targets"]:
+            r, ts, _ = bracket(bars, t_fill, entry_ref, tgt, P["ladder_stop"],
+                               P["ladder_max_minutes"], liq_before)
+            out["ladder"][f"{tgt:+.0%}"] = {"result": r, "min": round((ts - t_fill) / 60, 1)}
 
     liqs = [o["liquidity_usd"] for o in obs if o["present"] and o["liquidity_usd"]]
     out["min_liquidity_24h"] = min(liqs) if liqs else None

@@ -61,15 +61,26 @@ class EntryNotify(unittest.TestCase):
             outcomes.take_entry(make(cid, view, late, sk))
         self.assertEqual(sent, [(1, "continue", True), (2, "strong_continue", False)])
 
-    def test_v3_p_runner_threshold_decides_not_the_label(self):
-        # A fade label with a high p_runner is a trade; a continue label with a
-        # low p_runner is not. The threshold is the pre-registered break-even.
+    def test_v5_rank_gate_decides_not_the_label(self):
+        # The gate is the top quarter of this arm's EARLIER on-time scores. A
+        # fade label with a top-quarter p_runner is a trade; a continue label
+        # below the bar is not; a late report never is.
         del sent[:]
-        thr = PREREG["trade_p_runner_min"]
-        for cid, view, p in [(11, "fade", thr), (12, "continue", thr - 1), (13, "strong_fade", 90)]:
+        q = PREREG["trade_rank_quantile"]
+        for i, p in enumerate(range(1, 9)):          # prior scores 1..8
+            make(20 + i, "fade", p_runner=p)
+        bar = sorted(range(1, 9))[max(0, -(-int(q * 100) * 8 // 100) - 1)]
+        for cid, view, p in [(31, "fade", bar), (32, "continue", bar - 1)]:
             outcomes.take_entry(make(cid, view, p_runner=p))
-        self.assertEqual([s[0] for s in sent], [11, 13])
+        outcomes.take_entry(make(33, "fade", late=True, p_runner=99))
+        self.assertEqual([s[0] for s in sent], [31])
+        gate = json.loads(db.conn().execute(
+            "SELECT report_json FROM reports WHERE candidate_id=31 AND arm='C'").fetchone()[0])["_gate"]
+        self.assertEqual((gate["threshold"], gate["n_prior"]), (bar, 8))
 
+    def test_first_report_has_no_history_and_is_not_taken(self):
+        from nr.research import rank_gate
+        self.assertFalse(rank_gate("P", 50, "0000", False)["take"])
 
 if __name__ == "__main__":
     unittest.main()
