@@ -246,7 +246,9 @@ def entry(c: dict, rep: dict, skeptic: dict | None, price: float | None,
                        f"{skeptic['strongest_bear_case']}", False))
     fields.append(_links(c))
     tp, sl = PREREG.get("bracket_target"), PREREG.get("bracket_stop")
-    plan = (f"$250 paper position: take profit {tp:+.0%}, stop {sl:+.0%}, else sell at 6h."
+    mm = PREREG.get("bracket_max_minutes") or 360
+    hold = f"{mm} min" if mm < 60 else f"{mm // 60}h"
+    plan = (f"$250 paper position: take profit {tp:+.0%}, stop {sl:+.0%}, else sell at market after {hold}."
             if tp is not None else "$250 paper position, main measure = 6h result.")
     send(f"🟢 ENTRY #{c['id']} {c.get('symbol')}: Claude says {_label(rep)}",
          rep["thesis"] + "\n\n" + plan,
@@ -273,20 +275,26 @@ def outcome(c: dict, out: dict, rep: dict | None):
 
 
 def bracket_hit(c: dict, b: dict, rep: dict, mfe: float | None):
-    """Posted the moment a taken trade's take-profit or stop fills, instead
-    of leaving the result silent until the 6h message."""
+    """Posted the moment a taken trade closes: take profit, stop, or the
+    time limit."""
     tp, sl = PREREG["bracket_target"], PREREG["bracket_stop"]
-    net = b["net"]
+    net, mins = b["net"], b.get("exit_min") or 0
     if b["result"] == "target":
-        title = f"🎯 TAKE PROFIT #{c['id']} {c.get('symbol')}: {tp:+.0%} hit, net {net:+.1%}"
+        title = f"🎯 TAKE PROFIT #{c['id']} {c.get('symbol')}: sold at {tp:+.0%} after {mins:.0f} min · net {net:+.1%}"
         color = GREEN
-    else:
-        title = f"🛑 STOP #{c['id']} {c.get('symbol')}: {sl:+.0%} hit, net {net:+.1%}"
+    elif b["result"] == "stop":
+        title = f"🛑 STOPPED OUT #{c['id']} {c.get('symbol')}: sold after {mins:.0f} min · net {net:+.1%}"
         color = RED
-    desc = (f"Filled {b['exit_min']:.0f} min after entry. Claude said **{_label(rep)}**. "
-            "Net of fees, impact and slippage on the $250 paper position.")
+    else:
+        title = (f"⏱️ TIME LIMIT #{c['id']} {c.get('symbol')}: sold at market after "
+                 f"{PREREG['bracket_max_minutes']} min · net {net:+.1%}")
+        color = GREEN if net > 0 else RED if net < 0 else GREY
+    desc = (f"Claude said **{_label(rep)}**. Net of fees, impact and slippage on the "
+            f"${PREREG['position_usd']:.0f} paper position.")
     if b["result"] == "stop" and net <= -0.99:
         desc += " Liquidity was pulled or the price gapped through the stop: position worth ~0."
+    elif b["result"] == "stop" and net < sl - 0.1:
+        desc += f" Price gapped past the {sl:+.0%} stop, so the sell filled lower."
     send(title, desc, color, [
         ("Exit price", f"${b['exit_ref']:.8g}" if b.get("exit_ref") else "n/a", True),
         ("Max up so far", f"{mfe:+.0%}" if mfe is not None else "n/a", True),

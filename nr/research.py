@@ -271,6 +271,9 @@ def research_candidate(c: dict):
     from concurrent.futures import ThreadPoolExecutor
 
     cid, td = c["id"], c["t_decision"]
+    from . import rugguard
+    if rugguard.excluded(cid):
+        return
     packet = load_packet(cid)
     if packet is None:
         db.log("warn", f"#{cid} no packet; research skipped")
@@ -285,7 +288,9 @@ def research_candidate(c: dict):
     if not budget_ok():
         db.log("warn", f"#{cid} budget exhausted by the time research started; skipped")
         return
-    arms = {"C": ("research", WEB_TOOLS, per_run), "P": ("packet_only", "", 0.75)}
+    arms = {"C": ("research", WEB_TOOLS, per_run)}
+    if PREREG.get("packet_only_arm", True):
+        arms["P"] = ("packet_only", "", 0.75)
     rerun_reserve = 2 * RUNTIME["reserve_per_candidate_usd"]
     if c["rerun_draw"] < PREREG["consistency_rerun_prob"] and budget_ok(rerun_reserve):
         arms["C2"] = ("research", WEB_TOOLS, per_run)

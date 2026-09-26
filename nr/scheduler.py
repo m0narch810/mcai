@@ -7,7 +7,7 @@ import traceback
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
 
-from . import db, detector, notify, outcomes, packet, research
+from . import db, detector, notify, outcomes, packet, research, rugguard
 from .config import PREREG, PREREG_VERSION, RUNTIME
 
 MISSED_ENTRY_GRACE_S = 180
@@ -53,7 +53,14 @@ def step_detect(pool: ThreadPoolExecutor, full: bool = True):
     for cid in detector.detect_once(
             lambda: research.budget_ok() and research.session_ok(), full) or []:
         c = _rows("SELECT * FROM candidates WHERE id=?", cid)[0]
-        if _safe(packet.collect, c) is None:
+        p = _safe(packet.collect, c)
+        if p is None:
+            continue
+        # v6 rug guard: removable-LP coins are recorded and never researched
+        # (so never traded); every candidate still gets its paper entry.
+        if _safe(rugguard.exclude_if_removable, c["id"], p):
+            db.log("info", f"#{c['id']} {c.get('symbol')} excluded by rug guard: "
+                           f"{p['rug_guard']['reason']}")
             continue
         if c["research_status"] == "selected":
             pool.submit(_research_job, c)
@@ -114,8 +121,8 @@ def step_outcomes():
         db.log("info", f"outcome #{c['id']} {c.get('symbol')} net24h={out['returns'].get(str(H_MAX))}")
         rep = db.conn().execute("SELECT report_json FROM reports WHERE candidate_id=? "
                                 "AND arm='C' AND ok=1", (c["id"],)).fetchone()
-        if rep:   # controls are summarised in the daily digest instead
-            notify.outcome(c, out, json.loads(rep[0]))
+        if rep and PREREG.get("bracket_max_minutes", H_MAX) >= PRIMARY:
+            notify.outcome(c, out, json.loads(rep[0]))   # controls: daily digest
 
 
 PRIMARY = PREREG["primary_horizon_minutes"]
@@ -123,7 +130,11 @@ PRIMARY = PREREG["primary_horizon_minutes"]
 
 def step_interim():
     """Post the primary-horizon (6h) result for researched candidates as soon
-    as it has fully elapsed. Display only: nothing is stored or cached."""
+    as it has fully elapsed. Display only: nothing is stored or cached.
+    Skipped when the trade itself closes earlier (v6: 30 min) - the bracket
+    watcher already posted its result."""
+    if PREREG.get("bracket_max_minutes", PRIMARY) < PRIMARY:
+        return
     db.conn().execute("CREATE TABLE IF NOT EXISTS interim_sent (candidate_id INTEGER PRIMARY KEY)")
     lo = db.iso(db.now_utc() - timedelta(minutes=H_MAX))
     hi = db.iso(db.now_utc() - timedelta(minutes=PRIMARY + 10))
@@ -157,7 +168,7 @@ def step_bracket_watch():
     _last_watch = time.monotonic()
     db.conn().execute("CREATE TABLE IF NOT EXISTS bracket_sent (candidate_id INTEGER PRIMARY KEY)")
     now = db.now_utc()
-    lo = db.iso(now - timedelta(minutes=PREREG["bracket_max_minutes"]))
+    lo = db.iso(now - timedelta(minutes=PREREG["bracket_max_minutes"] + 20))
     due = _rows("SELECT c.*, r.report_json FROM candidates c "
                 "JOIN entries e ON e.candidate_id=c.id AND e.ok=1 "
                 "JOIN reports r ON r.candidate_id=c.id AND r.arm='C' AND r.ok=1 AND r.late=0 "
@@ -174,7 +185,8 @@ def step_bracket_watch():
             continue
         out = outcomes.evaluate(c, max_minutes=mins)
         b = out.get("bracket") or {}
-        if b.get("result") in ("target", "stop"):
+        done_by_time = b.get("result") == "time" and mins >= PREREG["bracket_max_minutes"]
+        if b.get("result") in ("target", "stop") or done_by_time:
             db.conn().execute("INSERT OR IGNORE INTO bracket_sent VALUES (?)", (c["id"],))
             notify.bracket_hit(c, b, rep, out.get("mfe_6h"))
             db.log("info", f"bracket #{c['id']} {c.get('symbol')} {b['result']} "
@@ -340,6 +352,7 @@ def run_forever():
     for c in _rows("SELECT c.* FROM candidates c JOIN packets p ON p.candidate_id=c.id "
                    "LEFT JOIN reports r ON r.candidate_id=c.id AND r.arm='C' "
                    "WHERE c.research_status='selected' AND r.id IS NULL AND c.t_decision>? "
+                   "AND c.id NOT IN (SELECT candidate_id FROM exclusions) "
                    "AND c.prereg_version=?",
                    db.iso(db.now_utc() + timedelta(minutes=3)), PREREG_VERSION):
         db.log("info", f"resuming interrupted research for #{c['id']}")

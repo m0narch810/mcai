@@ -11,10 +11,13 @@ The current time is {now_utc} (UTC). In this condition you have NO internet acce
 {packet}
 ```
 
-## The trade you are forecasting
-A $250 paper position is bought 4 minutes after the coin met the rule. It has a take-profit at **+100%** (2x the entry price), a stop at **-50%**, and otherwise is sold 6 hours after entry. Whichever level price reaches first decides the trade. If the liquidity is pulled, the position is worth nothing: a rug is not a filled stop.
+## Already filtered for you
+Coins whose pool liquidity the deployer can pull never reach you: only pump.fun curve coins and pools with locked or burned LP are researched (`rug_guard` in the packet). So an LP pull is rare here; the remaining ways to lose are dev/insider/bundle dumps into the pool, and attention simply fading. `derived.buys_per_unique_buyer_h1` flags churned volume: a few buys per wallet is organic, a high ratio is the same wallets cycling.
 
-- `p_runner` (integer 0-100): your probability that this trade hits +100% before -50% within 6 hours. This is the score coins are RANKED by. The position is taken when your `p_runner` is in the top quarter of your recent coins, so what matters most is ordering: a coin with a better shot than a typical coin in this pool must get a higher number than that typical coin, even if both are well under 50. Don't bunch coins on the same few values; use the resolution you have.
+## The trade you are forecasting
+A $250 paper position is bought 4 minutes after the coin met the rule. It has a take-profit at **+100%** (2x the entry price), a stop at **-50%**, and otherwise is sold at market **30 minutes** after entry. Whichever level price reaches first decides the trade. If the liquidity is pulled, the position is worth nothing: a rug is not a filled stop.
+
+- `p_runner` (integer 0-100): your probability that this trade hits +100% before -50% within 30 minutes of entry. This is the score coins are RANKED by. The position is taken when your `p_runner` is in the top quarter of your recent coins, so what matters most is ordering: a coin with a better shot than a typical coin in this pool must get a higher number than that typical coin, even if both are well under 50. Don't bunch coins on the same few values; use the resolution you have.
 - `p_rug` (integer 0-100): your probability that liquidity is pulled or the pair dies within 6 hours. A coin still on the pump.fun curve cannot have its liquidity pulled; for it, a rug means the dev or insiders dump it into the curve.
 
 Also score these separately. Each measures one thing, so don't let one leak into another:

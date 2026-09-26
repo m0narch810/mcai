@@ -145,6 +145,17 @@ def build(candidate: dict) -> dict:
                        "t_decision": candidate["t_decision"]},
         "prereg_version": candidate["prereg_version"],
     }
+    # v6 derived fields, computed from the numbers above (nothing new fetched).
+    from . import rugguard
+    packet["rug_guard"] = rugguard.assess(packet["trigger_at_detection"], structure, wallets)
+    gtw = packet["market"]["geckoterminal"] or {}
+    buys = (gtw.get("buys") or {}).get("h1")
+    ub = (gtw.get("unique_buyers") or {}).get("h1")
+    packet["derived"] = {
+        "buys_per_unique_buyer_h1": round(buys / ub, 2) if buys and ub else None,
+        "note": ("Organic flow is a few buys per wallet; a high ratio means the same "
+                 "wallets are churning (bots / wash volume)."),
+    }
     return packet
 
 

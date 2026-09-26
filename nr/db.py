@@ -123,9 +123,18 @@ CREATE TABLE IF NOT EXISTS events (
     level           TEXT NOT NULL,
     msg             TEXT NOT NULL
 );
+
+-- v6 rug guard: candidates whose pool liquidity the deployer can remove.
+-- Selected ones are not researched (never traded); all still get a paper
+-- entry so the guard itself can be audited.
+CREATE TABLE IF NOT EXISTS exclusions (
+    candidate_id    INTEGER PRIMARY KEY REFERENCES candidates(id),
+    t               TEXT NOT NULL,
+    reason          TEXT NOT NULL
+);
 """
 
-FROZEN_TABLES = ["candidates", "packets", "reports", "entries", "liquidity_obs"]
+FROZEN_TABLES = ["candidates", "packets", "reports", "entries", "liquidity_obs", "exclusions"]
 
 
 def _freeze_triggers():

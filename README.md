@@ -182,6 +182,22 @@ fast, not the trade being scored:
 - Budget raised to $60/day with a weekly-usage cap of 85%.
 - Reading rules: `data/v5_prereg.md`.
 
+## v6: rug guard, 30-minute trade, shadow books
+
+v5.1's trades lost ~14% each. Offline studies (v5.1 halves + v4 holdout, engine
+reproducing stored brackets 91/91) found one dominant loss mechanism and one
+consistent exit improvement:
+- **Rug guard:** coins whose pool liquidity the deployer can pull rugged
+  72-79% of the time vs 11-21% otherwise. v6 trades only pump.fun curve coins
+  or pools with LP locked/burned >= 90%; unverifiable = excluded. Excluded
+  coins are still paper-entered so the guard can be audited.
+- **30-minute hold:** same -50% / +100% bracket, sold at market after 30 min.
+  The only exit change that helped in every dataset.
+- **Shadow books:** the old 6h exit, a 100/175/250 trim ladder, a no-stop
+  +200% target, and a top-10% gate are paper-traded on the same coins and
+  shown side by side in the Discord stats post.
+- Reading rules: `data/v6_prereg.md`.
+
 ## Known limitations (Phase 1)
 - **No X post data** (no paid X API). Claude reaches X only through web
   search, which indexes it poorly; GMGN supplies the project X account's

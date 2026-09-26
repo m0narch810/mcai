@@ -93,7 +93,12 @@ PREREG = {
     "research_sample_prob": 0.6,
     # Fraction of researched candidates that get a second, independent C run
     # started at the same moment (self-consistency measurement only).
-    "consistency_rerun_prob": 0.10,
+    # v6: 0 (was 0.10) - budget goes to researching more coins instead.
+    "consistency_rerun_prob": 0.0,
+    # v6: the packet-only arm P is off. It answered its question (P ranked
+    # about as well as C in v4/v5.1) and cost ~25% of each coin's research;
+    # the weekly Claude quota, not the daily cap, is what limits trades.
+    "packet_only_arm": False,
 
     # ---- Paper execution ----------------------------------------------------------
     "position_usd": 250.0,
@@ -141,7 +146,13 @@ PREREG = {
     # filled stop. These levels were fixed from the payoff, not the data.
     "bracket_target": 1.0,
     "bracket_stop": -0.5,
-    "bracket_max_minutes": 360,
+    # v6: 30 (was 360). The only exit change that improved EV in every set
+    # tested (v5.1 halves A/B and the v4 holdout; 3,840-rule search on
+    # 2026-09-26): SL-50/TP+100 held 30m vs 6h went A -0.335->-0.294,
+    # B -0.149->-0.086, v4 -0.543->-0.262. These coins decay; a trade that
+    # hasn't doubled in 30 minutes mostly doesn't. Chosen by consistency
+    # across sets, not by the best single-set number.
+    "bracket_max_minutes": 30,
     # v5: trade by RANK, not by level. v4 required p_runner >= 35 and Claude
     # (honestly, with a ~12% base rate) cleared it once in 39 coins, while its
     # ranking was informative (AUC ~0.75). The gate is now: p_runner at or
@@ -154,6 +165,24 @@ PREREG = {
     # out after 100 v5 reports.
     "trade_rank_quantile": 0.75,
     "trade_rank_window": 100,
+    # v6 rug guard (nr/rugguard.py): a coin is traded only if its pool
+    # liquidity cannot be pulled - still on the pump.fun curve, or top-market
+    # LP locked >= 90% (RugCheck) or burned >= 90% (GMGN). Unverifiable =
+    # removable. Coins with removable LP rugged 72-79% of the time in v4/v5.1
+    # vs 11-21% otherwise, same direction in every set. Mechanism first: an
+    # LP pull is what zeroes a position, and no stop can prevent it.
+    "rug_guard": {"lp_locked_min_pct": 90, "lp_burn_min": 0.9},
+    # v6 shadow books (nr/books.py): alternative rules paper-traded on the
+    # same gate-taken coins, scored after each coin's 6h window. Written
+    # down before any v6 coin; they compete on forward data only.
+    "shadow_books": {
+        "v5 exit (6h hold)": {"stop": -0.5, "levels": [[1.0, 1.0]], "max_min": 360},
+        "trim ladder 100/175/250": {"stop": -0.5, "levels": [[1.0, 0.3333], [1.75, 0.3333], [2.5, 0.3334]],
+                                    "stale_min": 30, "be": True, "max_min": 360},
+        "no stop, TP+200%, 30m": {"stop": None, "levels": [[2.0, 1.0]], "max_min": 30},
+        "top 10% gate only": {"stop": -0.5, "levels": [[1.0, 1.0]], "max_min": 30,
+                              "gate_quantile": 0.9},
+    },
     # v5 descriptive ladder (ChatGPT review: measure the right tail instead of
     # one binary): for each target, did it fill before the -50% stop within
     # 24h, on the same sequential engine as the bracket. Reported by gate
@@ -193,15 +222,24 @@ RUNTIME = {
     # (~27 calls/min at our gap) is the limit: ~5 calls per fast cycle.
     "detect_poll_seconds": 30,
     "detect_full_every_s": 300,
-    "claude_model": "opus",
+    # v6: sonnet (was opus). User's call on 2026-09-26: the weekly Claude
+    # quota was the binding limit on how many coins get researched, and
+    # Sonnet costs a fraction of Opus per coin. Part of PREREG_VERSION.
+    "claude_model": "sonnet",
     # Usage caps, metered by the cost the CLI reports (Max-plan equivalent $).
     # Sized for the v2 universe rule, which nominates several times more
     # candidates per day than v1 did. session_share_cap, not these, is what
     # actually protects your own Claude quota.
     # v5: raised from 40/15. On 2026-09-25 the $40 cap, not the Claude quota
     # (5h session at 7%), excluded 41 of 116 drawn coins as `no_budget`.
-    "daily_budget_usd": 60.0,
-    "window5h_budget_usd": 22.0,
+    # v5.1: raised again from 60/22. Faster detection nominates ~35 coins/h
+    # (v4: ~8), and the $22/5h cap paused research after ~3h while the real
+    # 5h session sat at 11%. The dollar caps are now ceilings only; the
+    # session-share and weekly-utilization caps are what protect the quota.
+    # v6: 150/50 ceilings; with Sonnet at a fraction of Opus's cost these
+    # rarely bind. The session-share and weekly caps protect the quota.
+    "daily_budget_usd": 150.0,
+    "window5h_budget_usd": 50.0,
     # Stop new research above this 7-day Claude utilization, so the bot never
     # eats the user's weekly limit.
     "weekly_util_cap": 0.85,
@@ -217,7 +255,7 @@ RUNTIME = {
     "per_run_budget_usd": 3.0,          # hard cap passed to each claude -p run
     # Budget reserved before starting a candidate (C + P + possible skeptic
     # typically cost ~$1.10 in total; this leaves headroom).
-    "reserve_per_candidate_usd": 0.8,
+    "reserve_per_candidate_usd": 0.4,
     "max_concurrent_research": 2,
     "liquidity_snapshot_minutes": 20,
     # Post-mortems run only from leftover daily budget.
