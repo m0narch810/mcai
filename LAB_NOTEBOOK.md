@@ -16,6 +16,22 @@ in data it wasn't chosen on.
 
 ---
 
+## v6.2 — Sonnet research timeouts (2026-09-26, `f4834f8532a6`)
+
+**Problem.** In 3 hours, v6.1 produced only 15 reports and was still in
+warm-up, so it took no trades. There were two causes:
+- Sonnet research runs 112-170s, where Opus ran about 66s. 9 of 24 runs hit
+  the 180s timeout, which biases the sample toward coins with little online
+  presence.
+- The 5h session-share cap paused research for a while. That cap counts all
+  Claude usage, including the analysis conversation.
+
+**Fix.** Cap each report at 4 web calls, allow 4 min of research, enter at
+T1+5m, and run 4 research jobs concurrently.
+
+**Lesson.** A model change moves latency as well as the score scale.
+Measure both before going live.
+
 ## v6.1 — gate calibration fix (2026-09-26, `c0af45e2691e`)
 
 **Problem.** In its first hour, v6 went 0W/3L for -$335. Checking it turned

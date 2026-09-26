@@ -81,10 +81,14 @@ PREREG = {
     # ~2.5 min discovery cycle stamped as T1 before it ran. With T1 stamped
     # at read time, detection on its own thread and ~5 GeckoTerminal calls
     # per fast cycle, packets take ~30s and research froze in ~66s (median).
-    "decision_delay_minutes": 4,
+    # v6.2: 5 (was 4) and research timeout 4 (was 3). Sonnet with web search
+    # took 112-170s per report (median ~145s; Opus ~66s) and 9 of 24 runs hit
+    # the 180s timeout - a biased sample, since coins with more to find online
+    # time out more. The prompt now also caps web calls at 4.
+    "decision_delay_minutes": 5,
     # Research must be frozen before T_D; a later report is flagged LATE and
     # excluded from the primary analysis.
-    "research_timeout_minutes": 3,
+    "research_timeout_minutes": 4,
 
     # ---- Research allocation ----------------------------------------------------
     # Candidates are thinned at random (not by quality) so researched and
@@ -268,7 +272,7 @@ RUNTIME = {
     # Budget reserved before starting a candidate (C + P + possible skeptic
     # typically cost ~$1.10 in total; this leaves headroom).
     "reserve_per_candidate_usd": 0.4,
-    "max_concurrent_research": 2,
+    "max_concurrent_research": 4,
     "liquidity_snapshot_minutes": 20,
     # Post-mortems run only from leftover daily budget.
     "postmortem_enabled": True,

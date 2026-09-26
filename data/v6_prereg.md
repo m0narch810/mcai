@@ -1,7 +1,7 @@
 # v6 pre-registration: reading rules
 
 Written 2026-09-26 (UTC), BEFORE any v6 candidate existed.
-PREREG_VERSION c0af45e2691e (v6.1). Supersedes v5.1 (19ce3af93839); not pooled with it.
+PREREG_VERSION f4834f8532a6 (v6.2). Supersedes v5.1 (19ce3af93839); not pooled with it.
 Earlier v6 hashes (36786a85860c, fb8be881079c) ran ~15 min on Opus with no
 researched coin (budget-paused) and are archived.
 
@@ -29,6 +29,13 @@ was trading ~60% of researched coins, the regime that lost -19%/trade in
 v5.1. v6.1 ranks only against same-version reports and trades nothing until
 20 exist. Research share 0.6 -> 0.8 so the warm-up fills faster. v6's 3
 trades (0W/3L) are archived with it; they were not gated as designed.
+
+## v6.2 fix (2026-09-26 18:10 UTC)
+v6.1 (c0af45e2691e) produced 15 reports in 3h: Sonnet research took
+112-170s (median ~145s vs Opus ~66s) and 9 of 24 runs hit the 180s timeout,
+a biased sample (coins with more online presence time out more). v6.2: at
+most 4 web calls per report, research timeout 4 min, entry at T1+5m,
+4 concurrent research runs. No v6.1 trade had been taken (warm-up).
 
 ## What changed
 1. **Rug guard** (nr/rugguard.py): trade only curve coins or pools with top-
