@@ -280,12 +280,36 @@ RUNTIME = {
     # (entry + 6h result), plus digest/errors/restarts. "all": every event.
     "discord_mode": "entries",
     # In "entries" mode, also post a one-line verdict for every researched
-    # candidate, including the fades. Without this, a night in which Claude
-    # faded everything is indistinguishable from a night the bot was dead.
-    "discord_verdict_lines": True,
+    # candidate, including the fades. Off since 2026-09-26 (user: the lines
+    # buried the real trade posts); the 10-minute stats post and the quiet
+    # heartbeat now show the bot is alive.
+    "discord_verdict_lines": False,
     # Post a "still alive, nothing qualified" note at most this often (hours)
     # when no candidate has been detected for that long.
     "quiet_heartbeat_hours": 3,
+}
+
+# Shadow books added after a version started. Kept out of PREREG so the
+# version hash (and the rank gate's same-version warm-up) is unchanged; books
+# are scored after the fact and never affect a live trade. Each is compared
+# only on coins taken after its `since` timestamp, so later evidence is forward.
+LATE_BOOKS = {
+    # 2026-09-26, user's runner rule (inspired by #1593 ASTEROID, which ran
+    # to +232% after the +100% exit): trims of 1/3 at +100/+175/+250%, and
+    # the first trim lifts the stop to +50%. Two holds, because the exit
+    # study found hold length is the dominant lever.
+    "trim + lock +50%, 30m": {"stop": -0.5, "levels": [[1.0, 0.3333], [1.75, 0.3333], [2.5, 0.3334]],
+                              "lock": 0.5, "max_min": 30, "since": "2026-09-26T19:50:00Z"},
+    "trim + lock +50%, 2h": {"stop": -0.5, "levels": [[1.0, 0.3333], [1.75, 0.3333], [2.5, 0.3334]],
+                             "lock": 0.5, "max_min": 120, "since": "2026-09-26T19:50:00Z"},
+    # 2026-09-26 (after ASTEROID ran to ~+700% at ~55m, long after the 30m
+    # exit): sell 2/3 at +100%, let the last 1/3 ride on the -50% stop for
+    # up to 2h; coins that never reach +100% still exit at 30m. On v5.1 it
+    # was the only trim rule to beat the current one on both the 30 taken
+    # trades (+12.6% vs -1.2% EV) and all 116 researched (-9.8% vs -17.8%),
+    # but the gain rests on two or three monster runners per ~30 trades.
+    "moonbag 1/3 rides 2h": {"stop": -0.5, "levels": [[1.0, 0.6667]], "stale_min": 30,
+                             "max_min": 120, "since": "2026-09-26T20:10:00Z"},
 }
 
 # The research model is part of the experiment too.

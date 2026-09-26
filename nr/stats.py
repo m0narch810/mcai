@@ -95,20 +95,20 @@ def _score(c: dict, cache: dict, budget: list) -> dict:
         res = _closed(c, b)
         # The exit is valued at the pool liquidity observed around it. Until a
         # snapshot exists at or after the exit, that value is a placeholder
-        # (a missing snapshot reads as an empty pool, i.e. -100%), so the
-        # result is shown but not kept; the next call re-scores it.
+        # (a missing snapshot reads as an empty pool, i.e. -100%), so it is
+        # neither shown nor kept: the trade reads as "confirming" until then.
         if _liq_seen_after(c["id"], res["exit_ts"]):
             cache["trades"][key] = dict(res, liq_ok=True)
-        else:
-            cache["trades"].pop(key, None)
-        return res
+            return res
+        cache["trades"].pop(key, None)
+        return {"state": "confirming", "result": b["result"], "minutes": mins}
     return {"state": "open", "minutes": mins, "mfe": out.get("mfe_6h")}
 
 
 def _books(c: dict, cache: dict, budget: list) -> dict | None:
     key = str(c["id"])
     got = cache.setdefault("books", {}).get(key)
-    if got is not None:
+    if got is not None and (not got or all(n in got for n in books.all_books())):
         return got
     td = db.parse_iso(c["t_decision"]).timestamp()
     if (db.now_utc().timestamp() - td) / 60 < BOOK_AFTER_MIN or not _liq_seen_after(c["id"], td + 360 * 60):
@@ -151,7 +151,7 @@ def compute(version: str | None = None) -> dict:
         bbudget = [MAX_NEW_BOOKS]
         book_rows = [b for b in (_books(c, cache, bbudget) for c in taken) if b]
         _save_cache(cache)
-    names = [PRIMARY_BOOK] + list(PREREG.get("shadow_books", {}))
+    names = [PRIMARY_BOOK] + list(books.all_books())
     book_nets = {n: [r[n] for r in book_rows if r.get(n) is not None] for n in names}
     q = lambda sql, *a: db.conn().execute(sql, a).fetchone()[0]
     start = q("SELECT MIN(t1_detected) FROM candidates WHERE prereg_version=?", version)
@@ -168,7 +168,7 @@ def compute(version: str | None = None) -> dict:
         "taken": len(taken),
         "closed": closed,
         "open": [dict(s, symbol=c.get("symbol"), id=c["id"]) for c, s in scored
-                 if s["state"] in ("open", "scoring")],
+                 if s["state"] in ("open", "scoring", "confirming")],
         "unfilled": sum(s["state"] == "unfilled" for _, s in scored),
         "excluded": q("SELECT COUNT(*) FROM exclusions x JOIN candidates c ON c.id=x.candidate_id "
                       "WHERE c.prereg_version=?", version),

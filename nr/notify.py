@@ -1,5 +1,9 @@
 """Discord updates via webhook. Put the webhook URL in data/discord_webhook.txt
-(or the NR_DISCORD_WEBHOOK env var). Sending is fire-and-forget on a background
+(or the NR_DISCORD_WEBHOOK env var). Optional side channels get a copy of
+closed-trade cards with an @everyone ping: data/discord_webhook_tp.txt (trades
+that made money) and data/discord_webhook_stops.txt (trades that lost), or
+NR_DISCORD_WEBHOOK_TP / NR_DISCORD_WEBHOOK_STOPS. data/discord_webhook_entries.txt
+(NR_DISCORD_WEBHOOK_ENTRIES) gets a copy of each ENTRY card, without a ping. Sending is fire-and-forget on a background
 thread: a Discord outage can never stall or crash the experiment."""
 import json
 import os
@@ -11,11 +15,12 @@ import requests
 
 from .config import DATA_DIR, PREREG, RUNTIME
 
-_q: "queue.Queue[dict]" = queue.Queue(maxsize=200)
+_q: "queue.Queue[tuple[str | None, dict]]" = queue.Queue(maxsize=200)
 _started = False
 _last_error_sent = 0.0
 
 GREEN, RED, GREY, BLUE, AMBER = 0x2ECC71, 0xE74C3C, 0x95A5A6, 0x3498DB, 0xF1C40F
+PING_CHANNELS = ("tp", "stops")
 BULLISH = ("continue", "strong_continue")
 # v3/v4 fixed gate (1/3 break-even plus a margin). v5 reports carry a frozen
 # rank gate instead; this only interprets reports written under v3/v4.
@@ -45,7 +50,9 @@ def _label(rep: dict) -> str:
     g = rep.get("_gate") or {}
     if g.get("threshold") is not None:
         s += f" · bar {g['threshold']}"
-    return f"{s} ({v})"
+    # The trade is decided by p_runner's rank, not by the word view; printing
+    # "(fade)" on an ENTRY card read as "this trade lost".
+    return s if g.get("take") else f"{s} ({v})"
 
 
 def _all() -> bool:
@@ -56,9 +63,11 @@ VIEW_COLOR = {"strong_continue": GREEN, "continue": GREEN, "neutral": GREY,
               "fade": AMBER, "strong_fade": RED}
 
 
-def _url() -> str | None:
-    u = os.environ.get("NR_DISCORD_WEBHOOK")
-    f = DATA_DIR / "discord_webhook.txt"
+def _url(channel: str | None = None) -> str | None:
+    """Webhook for the main channel, or for a side channel ("tp", "stops")."""
+    sfx = f"_{channel}" if channel else ""
+    u = os.environ.get("NR_DISCORD_WEBHOOK" + sfx.upper())
+    f = DATA_DIR / f"discord_webhook{sfx}.txt"
     if not u and f.exists():
         u = f.read_text(encoding="utf-8").strip()
     return u if u and u.startswith("https://") else None
@@ -66,9 +75,9 @@ def _url() -> str | None:
 
 def _worker():
     while True:
-        payload = _q.get()
+        channel, payload = _q.get()
         last_exc = None
-        url = _url()
+        url = _url(channel)
         if not url:
             continue
         for attempt in range(4):
@@ -103,9 +112,13 @@ def enabled() -> bool:
 
 
 def send(title: str, desc: str = "", color: int = BLUE, fields: list | None = None,
-         url: str | None = None):
+         url: str | None = None, also: str | None = None):
+    """Post an embed to the main channel, plus a copy to side channel `also`
+    ("tp" / "stops" with an @everyone ping, "entries" without) when that
+    webhook is configured."""
     global _started
-    if not enabled():
+    targets = [ch for ch in [None] + ([also] if also else []) if _url(ch)]
+    if not targets:
         return
     if not _started:
         threading.Thread(target=_worker, daemon=True, name="discord").start()
@@ -119,10 +132,14 @@ def send(title: str, desc: str = "", color: int = BLUE, fields: list | None = No
                            for n, v, i in fields][:25]
     if url:
         embed["url"] = url
-    try:
-        _q.put_nowait({"username": "Narrative Researcher", "embeds": [embed]})
-    except queue.Full:
-        pass
+    for ch in targets:
+        payload = {"username": "Narrative Researcher", "embeds": [embed]}
+        if ch in PING_CHANNELS:
+            payload |= {"content": "@everyone", "allowed_mentions": {"parse": ["everyone"]}}
+        try:
+            _q.put_nowait((ch, payload))
+        except queue.Full:
+            pass
 
 
 def send_sync(title: str, desc: str) -> tuple[bool, str]:
@@ -228,12 +245,20 @@ def research_paused(reason: str | None):
         send("▶️ Research resumed", f"Was capped by {was}.", GREEN)
 
 
+def _mc(x: float | None) -> str:
+    """Market cap the way traders quote it: $67.6k, $1.24M."""
+    if not x:
+        return "n/a"
+    return f"${x / 1e6:.2f}M" if x >= 1e6 else f"${x / 1e3:.1f}k"
+
+
 def entry(c: dict, rep: dict, skeptic: dict | None, price: float | None,
           liq: float | None, mcap: float | None):
-    """One message per token Claude would take: verdict + paper entry."""
+    """One message per token Claude would take: verdict + paper entry.
+    Levels are quoted as market caps (supply is fixed, so mcap scales with
+    price); the fill itself is priced off the next bar, so they are ~."""
     fields = [
-        ("Entry price", f"${price:.8g}" if price else "n/a", True),
-        ("Market cap", f"${mcap:,.0f}" if mcap else "n/a", True),
+        ("Entry mcap", _mc(mcap), True),
         ("Liquidity", f"${liq:,.0f}" if liq else "n/a", True),
         ("Narrative", rep["narrative"]["potential"], True),
         ("Token link", rep["token_connection"]["assessment"], True),
@@ -248,11 +273,12 @@ def entry(c: dict, rep: dict, skeptic: dict | None, price: float | None,
     tp, sl = PREREG.get("bracket_target"), PREREG.get("bracket_stop")
     mm = PREREG.get("bracket_max_minutes") or 360
     hold = f"{mm} min" if mm < 60 else f"{mm // 60}h"
-    plan = (f"$250 paper position: take profit {tp:+.0%}, stop {sl:+.0%}, else sell at market after {hold}."
+    plan = (f"$250 paper position: take profit {tp:+.0%} (~{_mc(mcap and mcap * (1 + tp))} mcap), "
+            f"stop {sl:+.0%} (~{_mc(mcap and mcap * (1 + sl))}), else sell at market after {hold}."
             if tp is not None else "$250 paper position, main measure = 6h result.")
     send(f"🟢 ENTRY #{c['id']} {c.get('symbol')}: Claude says {_label(rep)}",
          rep["thesis"] + "\n\n" + plan,
-         GREEN, fields, url=_dex(c["token"]))
+         GREEN, fields, url=_dex(c["token"]), also="entries" if is_trade(rep) else None)
 
 
 def outcome(c: dict, out: dict, rep: dict | None):
@@ -274,10 +300,17 @@ def outcome(c: dict, out: dict, rep: dict | None):
          ], url=_dex(c["token"]))
 
 
-def bracket_hit(c: dict, b: dict, rep: dict, mfe: float | None):
+def bracket_hit(c: dict, b: dict, rep: dict, mfe: float | None, out: dict | None = None):
     """Posted the moment a taken trade closes: take profit, stop, or the
-    time limit."""
+    time limit. Winners are copied to the TP channel, losers and flat exits
+    to the stops channel. Prices are shown as market caps: mcap per unit of
+    price is fixed by the entry quote (supply does not change)."""
     tp, sl = PREREG["bracket_target"], PREREG["bracket_stop"]
+    out = out or {}
+    k = (out["entry_mcap"] / out["entry_quote"]
+         if out.get("entry_mcap") and out.get("entry_quote") else None)
+    mc = lambda px: _mc(k * px) if k and px else "n/a"
+    entry_ref = out.get("entry_ref")
     net, mins = b["net"], b.get("exit_min") or 0
     if b["result"] == "target":
         title = f"🎯 TAKE PROFIT #{c['id']} {c.get('symbol')}: sold at {tp:+.0%} after {mins:.0f} min · net {net:+.1%}"
@@ -296,10 +329,12 @@ def bracket_hit(c: dict, b: dict, rep: dict, mfe: float | None):
     elif b["result"] == "stop" and net < sl - 0.1:
         desc += f" Price gapped past the {sl:+.0%} stop, so the sell filled lower."
     send(title, desc, color, [
-        ("Exit price", f"${b['exit_ref']:.8g}" if b.get("exit_ref") else "n/a", True),
-        ("Max up so far", f"{mfe:+.0%}" if mfe is not None else "n/a", True),
+        ("Entry mcap", mc(entry_ref), True),
+        ("Exit mcap", mc(b.get("exit_ref")), True),
+        ("Peak so far", "n/a" if mfe is None else
+         f"{mc(entry_ref and entry_ref * (1 + mfe))} ({mfe:+.0%})", True),
         _links(c),
-    ], url=_dex(c["token"]))
+    ], url=_dex(c["token"]), also="tp" if net > 0 else "stops")
 
 
 def interim(c: dict, out: dict, rep: dict):

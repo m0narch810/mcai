@@ -90,6 +90,9 @@ def build_embed() -> discord.Embed:
         for o in d["open"][:10]:
             if o["state"] == "scoring":
                 lines.append(f"{o['symbol']}: scoring…")
+            elif o["state"] == "confirming":
+                name = {"target": "take profit", "stop": "stop"}.get(o.get("result"), "time limit")
+                lines.append(f"{o['symbol']}: sold ({name}), confirming exit liquidity…")
             else:
                 mfe = f", max up {o['mfe']:+.0%}" if o.get("mfe") is not None else ""
                 m = o.get("minutes", 0)

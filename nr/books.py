@@ -18,6 +18,7 @@ Extra rules, all decided on closed information only:
   stale_min - if the first take-profit hasn't filled by then, sell all at
               that minute's close (the coin isn't the runner);
   be        - after the first trim the stop moves up to the entry price;
+  lock      - after the first trim the stop moves up to entry x (1 + lock);
   trail     - after the first trim, stop = (1 - trail) x highest CLOSE."""
 import bisect
 import json
@@ -69,7 +70,7 @@ def _lq_exit(t, ts):
 
 
 def sim(t, stop, levels, stale_min=None, be=False, trail=None, max_min=360,
-        size_frac_of_liq=None) -> float:
+        size_frac_of_liq=None, lock=None) -> float:
     """Net return on the position. size_frac_of_liq caps the position at that
     fraction of entry liquidity (CPMM impact per side = size / (liq/2))."""
     fee, entry, t_fill = t["fee"], t["entry"], t["t_fill"]
@@ -114,8 +115,10 @@ def sim(t, stop, levels, stale_min=None, be=False, trail=None, max_min=360,
                 remaining -= f
                 if not trimmed:
                     trimmed = True
-                    if be:
-                        stop_lvl = entry if stop_lvl is None else max(stop_lvl, entry)
+                    floor = max(0.0 if be else -1.0, -1.0 if lock is None else lock)
+                    if floor > -1.0:
+                        lk = entry * (1 + floor)
+                        stop_lvl = lk if stop_lvl is None else max(stop_lvl, lk)
             if remaining <= 1e-9:
                 return proceeds / Sx - 1
         ok_close = c <= base or outcomes._reachable(base, v, lq, c)
@@ -147,7 +150,10 @@ def run_books(c: dict, rep: dict, t4: str, t: dict) -> dict:
     """Net return per shadow book for one gate-taken coin (None = the book's
     gate skipped it)."""
     out = {}
-    for name, b in P["shadow_books"].items():
+    for name, b in all_books().items():
+        if b.get("since") and c["t_decision"] < b["since"]:
+            out[name] = None    # taken before the book existed: not forward
+            continue
         if b.get("gate_quantile"):
             thr = rank_threshold("C", t4, b["gate_quantile"], P["trade_rank_window"])
             if thr is None or rep.get("p_runner", -1) < thr:
@@ -155,8 +161,16 @@ def run_books(c: dict, rep: dict, t4: str, t: dict) -> dict:
                 continue
         out[name] = round(sim(t, b.get("stop"), [tuple(x) for x in b["levels"]],
                               b.get("stale_min"), b.get("be", False), b.get("trail"),
-                              b.get("max_min", 360), b.get("size_frac_of_liq")), 4)
+                              b.get("max_min", 360), b.get("size_frac_of_liq"),
+                              b.get("lock")), 4)
     return out
+
+
+def all_books() -> dict:
+    """Pre-registered books plus ones added mid-version (outside the prereg
+    hash, so adding one does not restart the version or its gate warm-up)."""
+    from .config import LATE_BOOKS
+    return {**P["shadow_books"], **LATE_BOOKS}
 
 
 def primary_params() -> dict:

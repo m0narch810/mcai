@@ -61,6 +61,19 @@ class Books(unittest.TestCase):
         without = books.sim(t, -0.5, [(1.0, 0.5), (3.0, 0.5)], be=False, max_min=30)
         self.assertGreater(with_be, without)
 
+    def test_lock_stop_after_first_trim(self):
+        # half sold at +100%, then a bar dips through +50% and closes +45%:
+        # the lock sells the rest there (worse of level/open/close) instead
+        # of riding the fade to +-0% at the time limit.
+        path = [(1, 1.1, 1.0, 1.05), (1.05, 2.1, 1.0, 2.0), (2.0, 2.0, 1.6, 1.7),
+                (1.7, 1.7, 1.4, 1.45)] + [(1.0, 1.0, 1.0, 1.0)] * 10
+        t = trade(path)
+        lv = [(1.0, 0.5), (3.0, 0.5)]
+        locked = books.sim(t, -0.5, lv, lock=0.5, max_min=30)
+        half = lambda px: outcomes._round_trip(1.0, px, LIQ, LIQ, 0.0025)
+        self.assertGreater(locked, books.sim(t, -0.5, lv, max_min=30))
+        self.assertAlmostEqual(locked, (half(2.0) + half(1.45)) / 2, delta=0.01)
+
     def test_empty_pool_at_exit_is_worth_zero(self):
         t = trade([(1, 1.2, 0.9, 1.1)] * 40)
         t["obs"] = [(T0 + 60, 0.0)]

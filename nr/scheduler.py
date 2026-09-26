@@ -187,8 +187,20 @@ def step_bracket_watch():
         b = out.get("bracket") or {}
         done_by_time = b.get("result") == "time" and mins >= PREREG["bracket_max_minutes"]
         if b.get("result") in ("target", "stop") or done_by_time:
+            # The exit is valued at pool liquidity around it. With no reading
+            # at/after the exit yet, a missing reading prices it as an empty
+            # pool (-100%): take one now and re-score; if the API fails, wait.
+            exit_iso = db.iso(db.parse_iso(c["t_decision"]) + timedelta(minutes=b["exit_min"]))
+            seen = lambda: db.conn().execute("SELECT 1 FROM liquidity_obs WHERE candidate_id=? "
+                                             "AND t>=?", (c["id"], exit_iso)).fetchone()
+            if not seen():
+                outcomes.snapshot_liquidity([c])
+                out = outcomes.evaluate(c, max_minutes=mins)
+                b = out.get("bracket") or {}
+                if b.get("result") not in ("target", "stop", "time") or not seen():
+                    continue
             db.conn().execute("INSERT OR IGNORE INTO bracket_sent VALUES (?)", (c["id"],))
-            notify.bracket_hit(c, b, rep, out.get("mfe_6h"))
+            notify.bracket_hit(c, b, rep, out.get("mfe_6h"), out)
             db.log("info", f"bracket #{c['id']} {c.get('symbol')} {b['result']} "
                            f"after {b['exit_min']}m net={b['net']}")
 
@@ -340,9 +352,9 @@ def run_forever():
         db.log("error", f"TLS self-check failed: {tls_err}. Refusing to run.")
         raise SystemExit(2)
     db.log("info", f"starting: prereg={PREREG_VERSION} budget=${RUNTIME['daily_budget_usd']}/day")
-    notify.send("▶️ Experiment loop started", f"prereg `{PREREG_VERSION}` · budget "
-                f"${RUNTIME['daily_budget_usd']:.0f}/day. If you see this unexpectedly, "
-                "the loop restarted after a crash or reboot.", notify.GREY)
+    # No Discord card on start: restarts are routine and the card buried the
+    # trade posts. Liveness is the 10-minute stats post; crashes still ping
+    # via notify.error.
     pool = ThreadPoolExecutor(max_workers=RUNTIME["max_concurrent_research"])
     pm_pool = ThreadPoolExecutor(max_workers=1)
     threading.Thread(target=_entry_loop, daemon=True, name="entries").start()
