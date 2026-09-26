@@ -90,7 +90,10 @@ PREREG = {
     # Candidates are thinned at random (not by quality) so researched and
     # unresearched candidates interleave across the day. The unresearched
     # remainder is the randomized control / null pool.
-    "research_sample_prob": 0.6,
+    # v6.1: 0.8 (was 0.6). The rug guard removes ~1/3 of coins before
+    # research, and the gate needs 20 same-version reports to warm up; 20% of
+    # coins remain the untraded random control, ~7/hour at current volume.
+    "research_sample_prob": 0.8,
     # Fraction of researched candidates that get a second, independent C run
     # started at the same moment (self-consistency measurement only).
     # v6: 0 (was 0.10) - budget goes to researching more coins instead.
@@ -165,6 +168,9 @@ PREREG = {
     # out after 100 v5 reports.
     "trade_rank_quantile": 0.75,
     "trade_rank_window": 100,
+    # v6.1: the window only holds this version's reports (see
+    # research.rank_gate), and nothing is traded until it has this many.
+    "trade_rank_min_prior": 20,
     # v6 rug guard (nr/rugguard.py): a coin is traded only if its pool
     # liquidity cannot be pulled - still on the pump.fun curve, or top-market
     # LP locked >= 90% (RugCheck) or burned >= 90% (GMGN). Unverifiable =
@@ -182,6 +188,12 @@ PREREG = {
         "no stop, TP+200%, 30m": {"stop": None, "levels": [[2.0, 1.0]], "max_min": 30},
         "top 10% gate only": {"stop": -0.5, "levels": [[1.0, 1.0]], "max_min": 30,
                               "gate_quantile": 0.9},
+        # v6.1: primary rule, position capped at 1.25% of entry liquidity
+        # (impact <= 2.5% per side). In a $9k pool a $250 round trip costs
+        # ~15% before any price move, so a 30-min time exit is structurally
+        # negative there. EV is per dollar risked; $ figures are smaller.
+        "primary, sized to pool": {"stop": -0.5, "levels": [[1.0, 1.0]], "max_min": 30,
+                                   "size_frac_of_liq": 0.0125},
     },
     # v5 descriptive ladder (ChatGPT review: measure the right tail instead of
     # one binary): for each target, did it fill before the -50% stop within

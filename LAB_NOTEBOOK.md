@@ -16,6 +16,30 @@ in data it wasn't chosen on.
 
 ---
 
+## v6.1 — gate calibration fix (2026-09-26, `c0af45e2691e`)
+
+**Problem.** In its first hour, v6 went 0W/3L for -$335. Checking it turned
+up a bug caused by the model switch. The gate ranked Sonnet's scores against
+a window of Opus reports: Sonnet's median is 14, while Opus's was 8 with a
+p75 of 12. So 3 of 5 reports cleared the top-quarter bar, meaning v6 traded
+about 60% of researched coins. That is the regime that lost 19% per trade
+in v5.1.
+
+**Fix.** Rank only against reports from the same version (same model and
+prompts). Trade nothing until 20 such reports exist. Research share raised
+from 0.6 to 0.8.
+
+**Also noted, not yet acted on.** Thin pools make a 30-minute time exit
+structurally negative. Beagle had $9k of liquidity and a round trip costs
+about 15% in fees plus impact. So it lost 28% on a price move of only
+about -18%. The candidate fix is sizing the position to the pool (keep
+impact at or below ~2.5% per side). It is now a shadow book ("primary,
+sized to pool") so live data can show whether it helps before it becomes
+the primary rule.
+
+**Lesson.** Any change of model or prompt changes the score distribution. A
+rank gate must never mix scores across versions.
+
 ## v6 — rug guard, 30-minute trade, shadow books (2026-09-26, `92825cca71a4`)
 
 **Hypothesis.** The losses come mostly from LP pulls and from holding decaying

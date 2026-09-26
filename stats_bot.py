@@ -103,8 +103,10 @@ def build_embed() -> discord.Embed:
                 lines.append(f"**{name}**: no trades")
                 continue
             w = sum(x > 0 for x in nets)
+            money = ("smaller size, compare EV" if "sized" in name
+                     else _usd(sum(nets) * stats.POSITION))
             lines.append(f"**{name}**: {len(nets)} · {w}W/{len(nets) - w}L · EV {sum(nets) / len(nets):+.1%} · "
-                         f"{_usd(sum(nets) * stats.POSITION)}")
+                         f"{money}")
         add(f"Strategy comparison (same {d['books_n']} coins, scored after 6h)", "\n".join(lines)[:1024], False)
     add("Funnel", f"{d['candidates']} coins flagged · {d.get('excluded', 0)} blocked by rug guard · "
                   f"{d['researched']} researched · {d['no_budget']} skipped for budget", False)

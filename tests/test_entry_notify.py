@@ -26,11 +26,12 @@ def _fake_quote(pair):
     return {"priceUsd": "0.001", "liquidity": {"usd": 50000}, "marketCap": 400000}
 
 
-def make(cid, view, late=False, skeptic=False, p_runner=None):
+def make(cid, view, late=False, skeptic=False, p_runner=None, version=None):
     c = db.conn()
     c.execute("INSERT INTO candidates (id,prereg_version,token,symbol,pair_address,t1_detected,t_decision,"
               "trigger_json,research_draw,research_status,rerun_draw) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-              (cid, "v", f"TOK{cid}", f"S{cid}", f"PAIR{cid}", "2026-01-01T00:00:00.000000Z",
+              (cid, version or config.PREREG_VERSION, f"TOK{cid}", f"S{cid}", f"PAIR{cid}",
+               "2026-01-01T00:00:00.000000Z",
                "2026-01-01T00:25:00.000000Z", "{}", 0.1, "selected", 0.9))
     td = "2000-01-01T00:00:00.000000Z" if late else "9999-01-01T00:00:00.000000Z"
     research.freeze(cid, "C", "2026-01-01T00:01:00.000000Z", td,
@@ -61,22 +62,28 @@ class EntryNotify(unittest.TestCase):
             outcomes.take_entry(make(cid, view, late, sk))
         self.assertEqual(sent, [(1, "continue", True), (2, "strong_continue", False)])
 
-    def test_v5_rank_gate_decides_not_the_label(self):
-        # The gate is the top quarter of this arm's EARLIER on-time scores. A
-        # fade label with a top-quarter p_runner is a trade; a continue label
-        # below the bar is not; a late report never is.
+    def test_rank_gate_decides_not_the_label(self):
+        # The gate is the top quarter of this arm's EARLIER on-time scores from
+        # the SAME version. Other versions' scores are ignored, nothing trades
+        # during warm-up, and then a fade label with a top-quarter p_runner is
+        # a trade while a continue label below the bar is not; late never is.
         del sent[:]
-        q = PREREG["trade_rank_quantile"]
-        for i, p in enumerate(range(1, 9)):          # prior scores 1..8
-            make(20 + i, "fade", p_runner=p)
-        bar = sorted(range(1, 9))[max(0, -(-int(q * 100) * 8 // 100) - 1)]
-        for cid, view, p in [(31, "fade", bar), (32, "continue", bar - 1)]:
+        q, need = PREREG["trade_rank_quantile"], PREREG["trade_rank_min_prior"]
+        for i in range(30):                                   # another model's scale
+            make(200 + i, "fade", p_runner=90, version="other")
+        for i in range(need - 1):                             # warm-up: need-1 priors
+            make(300 + i, "fade", p_runner=1 + i % 8)
+        outcomes.take_entry(make(399, "fade", p_runner=99))
+        self.assertEqual(sent, [])                            # one short of warm-up
+        prior = [1 + i % 8 for i in range(need - 1)] + [99]
+        bar = sorted(prior)[max(0, -(-int(q * 100) * len(prior) // 100) - 1)]
+        for cid, view, p in [(401, "fade", bar), (402, "continue", bar - 1)]:
             outcomes.take_entry(make(cid, view, p_runner=p))
-        outcomes.take_entry(make(33, "fade", late=True, p_runner=99))
-        self.assertEqual([s[0] for s in sent], [31])
+        outcomes.take_entry(make(403, "fade", late=True, p_runner=99))
+        self.assertEqual([x[0] for x in sent], [401])
         gate = json.loads(db.conn().execute(
-            "SELECT report_json FROM reports WHERE candidate_id=31 AND arm='C'").fetchone()[0])["_gate"]
-        self.assertEqual((gate["threshold"], gate["n_prior"]), (bar, 8))
+            "SELECT report_json FROM reports WHERE candidate_id=401 AND arm='C'").fetchone()[0])["_gate"]
+        self.assertEqual((gate["threshold"], gate["n_prior"]), (bar, need))
 
     def test_first_report_has_no_history_and_is_not_taken(self):
         from nr.research import rank_gate

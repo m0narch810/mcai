@@ -234,15 +234,24 @@ def freeze(cid: int, arm: str, t3: str, t_decision: str, res: dict):
 
 
 def rank_gate(arm: str, score, t4: str, late: bool) -> dict:
-    """v5 trade gate: take the position iff score >= the trade_rank_quantile
-    of this arm's last trade_rank_window on-time p_runner values frozen before
-    t4. Scores only - no outcome can reach the gate. Nearest-rank quantile."""
+    """Trade gate: take the position iff score >= the trade_rank_quantile of
+    this arm's last trade_rank_window on-time p_runner values frozen before
+    t4. Scores only - no outcome can reach the gate. Nearest-rank quantile.
+
+    v6.1: only reports from the SAME version (same model + prompts) count.
+    Until then the window spanned versions, and after the Opus->Sonnet
+    switch Sonnet's scores (median 14) were ranked against Opus's (median 8,
+    p75 12): 3 of the first 5 Sonnet reports cleared the "top quarter" bar.
+    Below trade_rank_min_prior same-version reports there is no trade."""
+    from .config import PREREG_VERSION
     n = PREREG["trade_rank_window"]
     prior = [r[0] for r in db.conn().execute(
-        "SELECT json_extract(report_json,'$.p_runner') FROM reports WHERE arm=? AND ok=1 "
-        "AND late=0 AND t4_frozen<? AND json_extract(report_json,'$.p_runner') IS NOT NULL "
-        "ORDER BY t4_frozen DESC LIMIT ?", (arm, t4, n))]
-    if score is None or late or not prior:
+        "SELECT json_extract(r.report_json,'$.p_runner') FROM reports r "
+        "JOIN candidates c ON c.id=r.candidate_id AND c.prereg_version=? "
+        "WHERE r.arm=? AND r.ok=1 AND r.late=0 AND r.t4_frozen<? "
+        "AND json_extract(r.report_json,'$.p_runner') IS NOT NULL "
+        "ORDER BY r.t4_frozen DESC LIMIT ?", (PREREG_VERSION, arm, t4, n))]
+    if score is None or late or len(prior) < PREREG.get("trade_rank_min_prior", 1):
         return {"take": False, "threshold": None, "n_prior": len(prior)}
     srt = sorted(prior)
     k = min(len(srt) - 1, max(0, int(-(-PREREG["trade_rank_quantile"] * len(srt) // 1)) - 1))

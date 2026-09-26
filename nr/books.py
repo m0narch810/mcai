@@ -68,10 +68,14 @@ def _lq_exit(t, ts):
     return min(t["obs_l"][i], t["obs_l"][i + 1])
 
 
-def sim(t, stop, levels, stale_min=None, be=False, trail=None, max_min=360) -> float:
+def sim(t, stop, levels, stale_min=None, be=False, trail=None, max_min=360,
+        size_frac_of_liq=None) -> float:
+    """Net return on the position. size_frac_of_liq caps the position at that
+    fraction of entry liquidity (CPMM impact per side = size / (liq/2))."""
     fee, entry, t_fill = t["fee"], t["entry"], t["t_fill"]
-    p_entry = entry * (1 + fee + S / (t["liq_in"] / 2) + P["slippage_buffer"])
-    tokens = (S - P["tx_cost_usd"]) / p_entry
+    Sx = S if size_frac_of_liq is None else min(S, size_frac_of_liq * t["liq_in"])
+    p_entry = entry * (1 + fee + Sx / (t["liq_in"] / 2) + P["slippage_buffer"])
+    tokens = (Sx - P["tx_cost_usd"]) / p_entry
     remaining, proceeds = 1.0, 0.0
     stop_lvl = None if stop is None else entry * (1 + stop)
     pending = sorted((entry * (1 + r), f) for r, f in levels)
@@ -92,14 +96,14 @@ def sim(t, stop, levels, stale_min=None, be=False, trail=None, max_min=360) -> f
             break
         if stale_end is not None and not trimmed and ts >= stale_end:
             sell(remaining, outcomes._last_close_at(t["bars"], stale_end), stale_end)
-            return proceeds / S - 1
+            return proceeds / Sx - 1
         eff = stop_lvl
         if trimmed and trail is not None:
             tl = hi_close * (1 - trail)
             eff = tl if eff is None else max(eff, tl)
         if eff is not None and l <= eff:
             sell(remaining, min(eff, o, c), ts + 60)
-            return proceeds / S - 1
+            return proceeds / Sx - 1
         base = min(o, prev_c)
         lq = _lq_before(t, ts)
         if not (ts <= t_fill < ts + 60):
@@ -113,24 +117,27 @@ def sim(t, stop, levels, stale_min=None, be=False, trail=None, max_min=360) -> f
                     if be:
                         stop_lvl = entry if stop_lvl is None else max(stop_lvl, entry)
             if remaining <= 1e-9:
-                return proceeds / S - 1
+                return proceeds / Sx - 1
         ok_close = c <= base or outcomes._reachable(base, v, lq, c)
         prev_c = c if ok_close else base
         if ok_close and not (ts <= t_fill < ts + 60):
             hi_close = max(hi_close, c)
     last = min(stale_end, end) if (stale_end is not None and not trimmed) else end
     sell(remaining, outcomes._last_close_at(t["bars"], last), last)
-    return proceeds / S - 1
+    return proceeds / Sx - 1
 
 
 def rank_threshold(arm: str, t4: str, q: float, n: int) -> float | None:
     """Nearest-rank q-quantile of this arm's last n on-time p_runner values
     frozen before t4 (the same causal construction as the primary gate)."""
+    from .config import PREREG_VERSION
     prior = sorted(r[0] for r in db.conn().execute(
-        "SELECT json_extract(report_json,'$.p_runner') FROM reports WHERE arm=? AND ok=1 "
-        "AND late=0 AND t4_frozen<? AND json_extract(report_json,'$.p_runner') IS NOT NULL "
-        "ORDER BY t4_frozen DESC LIMIT ?", (arm, t4, n)))
-    if not prior:
+        "SELECT json_extract(r.report_json,'$.p_runner') FROM reports r "
+        "JOIN candidates c ON c.id=r.candidate_id AND c.prereg_version=? "
+        "WHERE r.arm=? AND r.ok=1 AND r.late=0 AND r.t4_frozen<? "
+        "AND json_extract(r.report_json,'$.p_runner') IS NOT NULL "
+        "ORDER BY r.t4_frozen DESC LIMIT ?", (PREREG_VERSION, arm, t4, n)))
+    if len(prior) < P.get("trade_rank_min_prior", 1):
         return None
     k = min(len(prior) - 1, max(0, int(-(-q * len(prior) // 1)) - 1))
     return prior[k]
@@ -148,7 +155,7 @@ def run_books(c: dict, rep: dict, t4: str, t: dict) -> dict:
                 continue
         out[name] = round(sim(t, b.get("stop"), [tuple(x) for x in b["levels"]],
                               b.get("stale_min"), b.get("be", False), b.get("trail"),
-                              b.get("max_min", 360)), 4)
+                              b.get("max_min", 360), b.get("size_frac_of_liq")), 4)
     return out
 
 

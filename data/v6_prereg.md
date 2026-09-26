@@ -1,7 +1,7 @@
 # v6 pre-registration: reading rules
 
 Written 2026-09-26 (UTC), BEFORE any v6 candidate existed.
-PREREG_VERSION 92825cca71a4. Supersedes v5.1 (19ce3af93839); not pooled with it.
+PREREG_VERSION c0af45e2691e (v6.1). Supersedes v5.1 (19ce3af93839); not pooled with it.
 Earlier v6 hashes (36786a85860c, fb8be881079c) ran ~15 min on Opus with no
 researched coin (budget-paused) and are archived.
 
@@ -21,6 +21,15 @@ holdout H), all with an engine that reproduces the stored v4 brackets 91/91:
 - Claude's rank matters: all researched -19%/trade, top half -3%, top
   quarter ~0% (n=30), before the rug guard.
 
+## v6.1 fix (2026-09-26, ~1h after v6 started)
+v6 (92825cca71a4) ranked Sonnet's p_runner against a window of mostly Opus
+reports from v5.1. Sonnet scores higher (median 14 vs Opus 8; Opus p75 12),
+so 3 of the first 5 Sonnet reports cleared the "top quarter" bar - the gate
+was trading ~60% of researched coins, the regime that lost -19%/trade in
+v5.1. v6.1 ranks only against same-version reports and trades nothing until
+20 exist. Research share 0.6 -> 0.8 so the warm-up fills faster. v6's 3
+trades (0W/3L) are archived with it; they were not gated as designed.
+
 ## What changed
 1. **Rug guard** (nr/rugguard.py): trade only curve coins or pools with top-
    market LP locked >= 90% (RugCheck) or burned >= 90% (GMGN); unverifiable =
@@ -30,7 +39,9 @@ holdout H), all with an engine that reproduces the stored v4 brackets 91/91:
 3. **Shadow books** (nr/books.py), paper-traded on the same gate-taken coins,
    scored after each coin's 6h window, written before any v6 coin:
    "v5 exit (6h hold)", "trim ladder 100/175/250" (+BE, stale 30m),
-   "no stop, TP+200%, 30m", "top 10% gate only".
+   "no stop, TP+200%, 30m", "top 10% gate only", and (v6.1) "primary, sized to
+   pool" - the primary rule with the position capped at 1.25% of entry
+   liquidity (impact <= 2.5%/side).
 4. Research: arm C only (packet-only arm P and the 10% C2 reruns are off;
    budget goes to more coins).
 5. Research model: Sonnet (was Opus), the user's call to fit the weekly
