@@ -1,0 +1,192 @@
+{
+ "duration_api_ms": 168488,
+ "stop_reason": "tool_use",
+ "session_id": "0020212c-7097-4287-a378-a786ff9b6565",
+ "total_cost_usd": 0.29489540000000003,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 21059,
+  "cache_read_input_tokens": 68957,
+  "output_tokens": 12824,
+  "output_tokens_details": {
+   "thinking_tokens": 5556
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21059,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3614,
+    "cache_read_input_tokens": 18472,
+    "cache_creation_input_tokens": 6076,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6076
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 10,
+   "outputTokens": 12824,
+   "cacheReadInputTokens": 68957,
+   "cacheCreationInputTokens": 21059,
+   "webSearchRequests": 0,
+   "costUSD": 0.22628739999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5556,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32733,
+   "outputTokens": 1175,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.068608,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pumpswap/pump.fun-origin token called \\\"Joe McCann\\\" ($Joe, contract EiJWJ8c6...dGW8n) went from near-zero to ~$20k mcap in under 14 minutes, with $404k h1 volume (~20x turnover of mcap) and price +47% in the hour before detection. Momentum flattened in the final 5 minutes before detection (DexScreener m5 price change -0.17%, though GeckoTerminal shows +7%, sources disagree). The name references Joe McCann, a real, moderately well-known crypto fund manager (Asymmetric Financial) whose fianc\u00e9e died in Tanzania in April 2026; police ruled it suicide in June 2026 (fortune.com, tmz.com). I found no September 2026 news development that would explain a fresh catalyst right now \u2014 the underlying story is 3+ months stale. The packet lists NINE other tokens with the identical name \\\"Joe McCann\\\" (plus \\\"Joe Lonsdale\\\" variants) almost all created within the same 1-2 minute window (pair_created_at_ms clustered ~1790448979000-1790449103000), a synchronized swarm/clone launch pattern typical of bot-driven mass token generation off a trending name. This contract currently has by far the highest h1 volume among the clones ($404,889 vs next-best $106,259), so it is momentarily \\\"winning\\\" the swarm, but that lead is not structurally durable \u2014 attention could shift to another clone at any time. GeckoTerminal's twitter_handle field points to a status at Joe McCann's own X account, but I could not access the content (X/Twitter returned 402 Payment Required), so I cannot confirm he posted anything today or that this is tied to a live event.\",\"narrative\":{\"description\":\"Meme/dark-humor token named after a real crypto fund manager (Joe McCann) whose fianc\u00e9e's death in Tanzania was major crypto-Twitter news in April-June 2026. No fresh September 2026 news event was found to explain why this launched right now; the underlying story appears stale by three-plus months.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Cannot confirm genuine organic spreading. There is real trading volume and buyer count (748 unique buyers/h1 per GeckoTerminal), but this coincides with 9 near-simultaneous same-name clone launches, suggesting bot/sniper activity racing across clones for whichever pumps hardest, rather than a community rallying around one canonical story or fresh news hook. No project socials, website, or Telegram were found in the packet or via search.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Among at least 9 tokens sharing the exact name 'Joe McCann' launched within roughly the same 1-2 minute window, this contract currently has the highest hourly volume ($404,889) and among the higher market caps, making it the momentary volume leader of the swarm. That is the only reason to prefer it over the clones.\",\"competing_tokens\":\"At least 8 other 'Joe' / 'Joe McCann' / 'Joe Lonsdale' tokens in the packet's same_ticker_or_name_tokens list, created within ~1-2 minutes of this one, ranging $2.3k-$66k mcap; one clone (H5J8j1vP3v4...) has a higher mcap ($66,391) but far lower h1 volume ($3,357).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"41 bundler wallets flagged by GMGN, zero smart-money/renowned/whale wallets, creator/single wallet holding 74.82% of supply, and near-simultaneous launch of 9 identically-named tokens (pair_created_at_ms all within ~2 minutes of each other) strongly suggest scripted/bot-driven mass deployment rather than one project organically catching fire.\",\"uncertainty\":\"I could not access X/Twitter directly (paywalled) or find any live discussion thread, call channel, or KOL post mentioning this specific contract, so I cannot rule out that some of the volume is genuine degen speculation rather than pure bot churn. buys_per_unique_buyer_h1 of 2.08 is only moderately elevated, not extreme wash-trading territory.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Single wallet (the creator) holds 74.82% of total supply \u2014 RugCheck flags this as 'danger' level single-holder ownership\",\"Top 10 holders control 90.48% of supply \u2014 RugCheck flags 'danger' level top10 concentration\",\"41 bundler wallets identified by GMGN, consistent with coordinated distribution among a small insider cluster\",\"RugCheck normalized score 60 (moderate-high risk) despite mint/freeze renounced and 100% LP lock\",\"Zero smart-money, renowned, or whale wallets present \u2014 no sophisticated capital has entered\",\"Swarm of 9 same-name clones fragments and dilutes any attention this token attracts\"]},\"counterargument\":\"The token is only 14 minutes old with $404k in hourly volume against a $20k market cap \u2014 a 20x turnover ratio and 748 unique buyers vs only 80 unique sellers (GeckoTerminal) indicate real, one-sided buying pressure that is unusually strong even for a fresh pump.fun-style launch, and it is already the clear volume leader among 9 same-name clones. LP is 100% locked and mint/freeze authorities are renounced, removing the classical LP-pull rug vector entirely. If Joe McCann himself amplifies this (unconfirmed, but the GeckoTerminal packet links to a status on his own account) or if crypto-Twitter's dark-humor culture picks the story back up, this could see a fast multi-x spike before the 74.82%-holder overhang has a chance to matter within a 30-minute window \u2014 the trade horizon is short enough that structural concentration risk may not have time to manifest.\",\"unknowns\":[\"Whether Joe McCann or anyone connected to him posted anything today that would explain the timing of this specific launch cluster\",\"Content of the GeckoTerminal-linked tweet at joemccann's X account (blocked by 402 Payment Required)\",\"Whether any of the 9 clone tokens is being promoted in a specific Telegram/Discord call channel\",\"Whether the creator wallet has any history of prior launches/rugs beyond what GMGN captured (creator_launched_token_count reported as 0, but this could reflect wallet age rather than clean history)\",\"Whether the flattening of m5 momentum right at the detection window is the start of a top or just consolidation before a second leg\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Web search surfaced substantial background on the real Joe McCann and the Tanzania story (April-June 2026) but nothing dated September 2026 tying it to today's token launch. Direct X/Twitter fetch of the GeckoTerminal-linked status returned HTTP 402 (paywalled), so I could not read the specific post. No project website or socials were found in the packet (project_websites and project_socials both empty) or via search. Reddit/Telegram/Discord were not attempted due to the 4-call budget being spent on X-adjacent and news searches, which were judged higher priority per instructions.\"},\"thesis\":\"This is a swarm-launched meme/dark-humor token riding a three-month-old, non-current news story about a real crypto fund manager, with no confirmed fresh catalyst today. It has real short-term volume and is the current leader among at least 9 near-simultaneous same-name clones, but extreme single-wallet concentration (74.82%), a fragmented/hijackable narrative, and no smart-money or organic social confirmation make it a below-average, not above-average, candidate to run cleanly to +100% before -50% in the next 30 minutes. It ranks near or slightly above the pool's base rate rather than clearly above it.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":34,\"survival_score\":36,\"attention_score\":54,\"manipulation_risk\":70,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://fortune.com/2026/04/16/joe-mccann-crypto-fund-manager-tanzania-fiance-influencer-ashly-robinson/\",\"what\":\"Background on Joe McCann and April 2026 Tanzania fianc\u00e9e death story\"},{\"url\":\"https://www.tmz.com/2026/06/04/joe-mccann-responds-police-clear-him-ashlee-jenae-death/\",\"what\":\"June 2026 update: police cleared McCann, ruled suicide\"},{\"url\":\"https://www.tradingview.com/news/99Bitcoins:be184b3d9094b:0-who-is-joe-mccann-asymmetric-crypto-founder-faces-murder-charges-in-tanzania/\",\"what\":\"Background on Joe McCann as Asymmetric Financial founder and the murder-charge reporting\"},{\"url\":\"https://www.theblock.co/profile/293308/joe-mccann\",\"what\":\"Profile confirming Joe McCann's real identity as a crypto fund manager\"},{\"url\":\"https://x.com/joemccann/status/2103919778545152129\",\"what\":\"GeckoTerminal-linked tweet on Joe McCann's own X account; content inaccessible (HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pumpswap/pump.fun-origin token called \"Joe McCann\" ($Joe, contract EiJWJ8c6...dGW8n) went from near-zero to ~$20k mcap in under 14 minutes, with $404k h1 volume (~20x turnover of mcap) and price +47% in the hour before detection. Momentum flattened in the final 5 minutes before detection (DexScreener m5 price change -0.17%, though GeckoTerminal shows +7%, sources disagree). The name references Joe McCann, a real, moderately well-known crypto fund manager (Asymmetric Financial) whose fianc\u00e9e died in Tanzania in April 2026; police ruled it suicide in June 2026 (fortune.com, tmz.com). I found no September 2026 news development that would explain a fresh catalyst right now \u2014 the underlying story is 3+ months stale. The packet lists NINE other tokens with the identical name \"Joe McCann\" (plus \"Joe Lonsdale\" variants) almost all created within the same 1-2 minute window (pair_created_at_ms clustered ~1790448979000-1790449103000), a synchronized swarm/clone launch pattern typical of bot-driven mass token generation off a trending name. This contract currently has by far the highest h1 volume among the clones ($404,889 vs next-best $106,259), so it is momentarily \"winning\" the swarm, but that lead is not structurally durable \u2014 attention could shift to another clone at any time. GeckoTerminal's twitter_handle field points to a status at Joe McCann's own X account, but I could not access the content (X/Twitter returned 402 Payment Required), so I cannot confirm he posted anything today or that this is tied to a live event.",
+  "narrative": {
+   "description": "Meme/dark-humor token named after a real crypto fund manager (Joe McCann) whose fianc\u00e9e's death in Tanzania was major crypto-Twitter news in April-June 2026. No fresh September 2026 news event was found to explain why this launched right now; the underlying story appears stale by three-plus months.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Cannot confirm genuine organic spreading. There is real trading volume and buyer count (748 unique buyers/h1 per GeckoTerminal), but this coincides with 9 near-simultaneous same-name clone launches, suggesting bot/sniper activity racing across clones for whichever pumps hardest, rather than a community rallying around one canonical story or fresh news hook. No project socials, website, or Telegram were found in the packet or via search."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Among at least 9 tokens sharing the exact name 'Joe McCann' launched within roughly the same 1-2 minute window, this contract currently has the highest hourly volume ($404,889) and among the higher market caps, making it the momentary volume leader of the swarm. That is the only reason to prefer it over the clones.",
+   "competing_tokens": "At least 8 other 'Joe' / 'Joe McCann' / 'Joe Lonsdale' tokens in the packet's same_ticker_or_name_tokens list, created within ~1-2 minutes of this one, ranging $2.3k-$66k mcap; one clone (H5J8j1vP3v4...) has a higher mcap ($66,391) but far lower h1 volume ($3,357).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "41 bundler wallets flagged by GMGN, zero smart-money/renowned/whale wallets, creator/single wallet holding 74.82% of supply, and near-simultaneous launch of 9 identically-named tokens (pair_created_at_ms all within ~2 minutes of each other) strongly suggest scripted/bot-driven mass deployment rather than one project organically catching fire.",
+   "uncertainty": "I could not access X/Twitter directly (paywalled) or find any live discussion thread, call channel, or KOL post mentioning this specific contract, so I cannot rule out that some of the volume is genuine degen speculation rather than pure bot churn. buys_per_unique_buyer_h1 of 2.08 is only moderately elevated, not extreme wash-trading territory."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Single wallet (the creator) holds 74.82% of total supply \u2014 RugCheck flags this as 'danger' level single-holder ownership",
+    "Top 10 holders control 90.48% of supply \u2014 RugCheck flags 'danger' level top10 concentration",
+    "41 bundler wallets identified by GMGN, consistent with coordinated distribution among a small insider cluster",
+    "RugCheck normalized score 60 (moderate-high risk) despite mint/freeze renounced and 100% LP lock",
+    "Zero smart-money, renowned, or whale wallets present \u2014 no sophisticated capital has entered",
+    "Swarm of 9 same-name clones fragments and dilutes any attention this token attracts"
+   ]
+  },
+  "counterargument": "The token is only 14 minutes old with $404k in hourly volume against a $20k market cap \u2014 a 20x turnover ratio and 748 unique buyers vs only 80 unique sellers (GeckoTerminal) indicate real, one-sided buying pressure that is unusually strong even for a fresh pump.fun-style launch, and it is already the clear volume leader among 9 same-name clones. LP is 100% locked and mint/freeze authorities are renounced, removing the classical LP-pull rug vector entirely. If Joe McCann himself amplifies this (unconfirmed, but the GeckoTerminal packet links to a status on his own account) or if crypto-Twitter's dark-humor culture picks the story back up, this could see a fast multi-x spike before the 74.82%-holder overhang has a chance to matter within a 30-minute window \u2014 the trade horizon is short enough that structural concentration risk may not have time to manifest.",
+  "unknowns": [
+   "Whether Joe McCann or anyone connected to him posted anything today that would explain the timing of this specific launch cluster",
+   "Content of the GeckoTerminal-linked tweet at joemccann's X account (blocked by 402 Payment Required)",
+   "Whether any of the 9 clone tokens is being promoted in a specific Telegram/Discord call channel",
+   "Whether the creator wallet has any history of prior launches/rugs beyond what GMGN captured (creator_launched_token_count reported as 0, but this could reflect wallet age rather than clean history)",
+   "Whether the flattening of m5 momentum right at the detection window is the start of a top or just consolidation before a second leg"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Web search surfaced substantial background on the real Joe McCann and the Tanzania story (April-June 2026) but nothing dated September 2026 tying it to today's token launch. Direct X/Twitter fetch of the GeckoTerminal-linked status returned HTTP 402 (paywalled), so I could not read the specific post. No project website or socials were found in the packet (project_websites and project_socials both empty) or via search. Reddit/Telegram/Discord were not attempted due to the 4-call budget being spent on X-adjacent and news searches, which were judged higher priority per instructions."
+  },
+  "thesis": "This is a swarm-launched meme/dark-humor token riding a three-month-old, non-current news story about a real crypto fund manager, with no confirmed fresh catalyst today. It has real short-term volume and is the current leader among at least 9 near-simultaneous same-name clones, but extreme single-wallet concentration (74.82%), a fragmented/hijackable narrative, and no smart-money or organic social confirmation make it a below-average, not above-average, candidate to run cleanly to +100% before -50% in the next 30 minutes. It ranks near or slightly above the pool's base rate rather than clearly above it.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 34,
+  "survival_score": 36,
+  "attention_score": 54,
+  "manipulation_risk": 70,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://fortune.com/2026/04/16/joe-mccann-crypto-fund-manager-tanzania-fiance-influencer-ashly-robinson/",
+    "what": "Background on Joe McCann and April 2026 Tanzania fianc\u00e9e death story"
+   },
+   {
+    "url": "https://www.tmz.com/2026/06/04/joe-mccann-responds-police-clear-him-ashlee-jenae-death/",
+    "what": "June 2026 update: police cleared McCann, ruled suicide"
+   },
+   {
+    "url": "https://www.tradingview.com/news/99Bitcoins:be184b3d9094b:0-who-is-joe-mccann-asymmetric-crypto-founder-faces-murder-charges-in-tanzania/",
+    "what": "Background on Joe McCann as Asymmetric Financial founder and the murder-charge reporting"
+   },
+   {
+    "url": "https://www.theblock.co/profile/293308/joe-mccann",
+    "what": "Profile confirming Joe McCann's real identity as a crypto fund manager"
+   },
+   {
+    "url": "https://x.com/joemccann/status/2103919778545152129",
+    "what": "GeckoTerminal-linked tweet on Joe McCann's own X account; content inaccessible (HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 3886,
+ "type": "result",
+ "duration_ms": 161483,
+ "uuid": "1013f5e1-4269-4b8c-8296-82701daa2319",
+ "ttft_stream_ms": 866,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 866,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

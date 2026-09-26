@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 211659,
+ "stop_reason": "tool_use",
+ "session_id": "45756d5d-efd0-4e4f-858c-f2a405cc0f33",
+ "total_cost_usd": 0.32258980000000004,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 22550,
+  "cache_read_input_tokens": 34429,
+  "output_tokens": 15830,
+  "output_tokens_details": {
+   "thinking_tokens": 7646
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 22550,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4063,
+    "cache_read_input_tokens": 17979,
+    "cache_creation_input_tokens": 8060,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8060
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 15830,
+   "cacheReadInputTokens": 34429,
+   "cacheCreationInputTokens": 22550,
+   "webSearchRequests": 0,
+   "costUSD": 0.2553978,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 7646,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30897,
+   "outputTokens": 1259,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067192,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-migrated token called SPLIT (contract 29vTBty...Cvt, pool on PumpSwap) hit the detection rule 12.8 min after pool creation, having already pumped +142% in the trailing hour on ~$153k volume against a ~$100k mcap (h1 turnover ~6.5x, 1204 buys vs 495 sells). Critically, the packet's same_ticker_or_name_tokens list shows at least 9-10 other tokens named \\\"SPLIT\\\"/\\\"Split\\\"/\\\"UseSplit\\\" launched within roughly the same ~40-minute window (plus two much earlier, now-dead \\\"UseSplit\\\" tokens from ~8h prior sitting at $4k-$14k mcap with $0 liquidity). This is a live ticker-clone swarm: many creators raced to deploy the same name at once. Our token is mid-pack by volume among the swarm - the apparent leaders are Ek8GUR6q...(h1 vol $4.17M, mcap $159k) and DRKGY...pump (h1 vol $2.3M, mcap $305k, earliest timestamp in the burst). Web research found usesplit.pro is a live, real website describing a Solana \\\"split token fees through X\\\" protocol with a $SPLIT token, capital flow and buybacks mentioned - so there is a genuine underlying reference, but no X/social evidence was found confirming which contract the community has actually rallied around, and our contract is not the volume leader of the swarm.\",\"narrative\":{\"description\":\"UseSplit (usesplit.pro) is a live, real product page for a Solana-based platform that lets users split token fees via X, referencing a $SPLIT token tied to capital flow and buybacks. This gives the ticker genuine underlying substance rather than being a pure meme-from-nothing. However, the actual on-chain spike is a swarm of ~10 identically-named token deployments within roughly a 40-minute window, which looks much more like a ticker-clone gold rush than organic single-token discovery.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"Likely trigger: some announcement or activity from the real UseSplit project drove people to search '$SPLIT' on pump.fun/DexScreener, and bots/opportunists raced to deploy same-named contracts to intercept that buy pressure. Two much-older 'UseSplit' tokens (8h prior) that fizzled at $4k-$14k mcap suggest the project reference existed earlier without traction; the new burst of clones is the actual attention event, but it's fragmented demand, not concentrated organic belief in one contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Our contract is one of at least 9 tokens sharing the exact name 'SPLIT'/'Split' launched within the same ~40-minute burst. It is not the earliest (DRKGY...pump precedes it) and not the volume/mcap leader (Ek8GUR6q has 27x our h1 volume; DtVnUE has 15x our mcap). It caught a real +142% h1 move and decent turnover, so it is not dead, but the flow driving that move is plausibly spillover/confused buyers from the broader swarm rather than deliberate selection of this specific contract.\",\"competing_tokens\":\"At least 9 other same-named tokens in the packet: Ek8GUR6q (h1 vol $4.17M, mcap $159k) and DRKGY...pump (h1 vol $2.3M, mcap $305k, earliest in the burst) appear to be capturing the bulk of swarm attention; DtVnUE has the highest mcap ($1.56M). Two earlier 'UseSplit' tokens from ~8h prior are effectively dead ($0 liquidity, sub-$15k mcap).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Positive: buys_per_unique_buyer_h1 is only 1.54 (not heavy same-wallet churn), buy/sell ratio strongly buy-dominant (1204:495 h1, 439:162 in the last 5 min), unique buyers accelerating (268 in the most recent 5-min slice alone per GeckoTerminal), GMGN shows low fresh-wallet rate (4 wallets) and moderate bot/degen rate (8.5%), no smart-money or KOL wallets flagged either way, no paid DexScreener boosts/ads detected, dev has launched 17 tokens with a best ATH mcap of $3.9M (not a first-time scammer profile, but a serial launcher). Negative: the existence of ~10 simultaneous same-name clones is itself a strong marker of manufactured/opportunistic activity rather than one community rallying around one token; single top holder controls 80.05% of non-pool supply (extreme concentration); RugCheck flags 'Large Amount of LP Unlocked' (99.99%, danger level) which contradicts the packet's own rug_guard determination that LP is 100% burned - this internal contradiction could not be resolved with the tools available.\",\"uncertainty\":\"Could not find any X/Twitter posts, Reddit, Telegram or Discord discussion specifically naming this contract or confirming which SPLIT clone the community actually favors; searches for the raw contract address and for '$SPLIT' returned no token-specific results, likely due to search-engine indexing limits on X rather than proof no discussion exists. Could not resolve the LP-lock contradiction (RugCheck 'unlocked' warning vs GMGN lp_burn_ratio 1.0 vs rug_guard 'LP 100% burned').\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Single wallet holds 80.05% of supply outside the AMM/locker exclusion - even with LP burned, this wallet can dump directly into the pool at will and crater price without needing to 'pull liquidity'\",\"Liquidity ($22.5k) is thin relative to market cap (~$100k, ~22% ratio), so a $250 trade and any real selling pressure will move price sharply in both directions\",\"Attention and volume are fragmented across ~10 identically-named clone tokens, so demand that could have concentrated in one contract is split, and buyers may migrate to the two much larger-volume clones (Ek8GUR6q, DRKGY) at any time, starving this pool of continued flow\",\"Internal contradiction between RugCheck's 'Large Amount of LP Unlocked' danger flag and the packet's rug_guard/GMGN burn data, meaning true LP safety could not be independently confirmed by this researcher\",\"Price has already run +142% in the hour before entry; the trade needs another 2x from an already-elevated level within 30 minutes\"]},\"counterargument\":\"The counter-case: the +142% h1 move, buy-dominant flow (1155:479 h1 buys/sells), and accelerating unique buyers (268 in the last 5 minutes alone) show this specific pool is genuinely receiving fresh capital right now, not just idle listing. Low buys-per-unique-buyer (1.54) and low fresh-wallet count argue against simple wash trading. If the real UseSplit project (usesplit.pro) is having a genuine catalyst moment, momentum-chasing bots and pump.fun snipers often pile into whichever clone is pumping fastest at the moment they look, regardless of 'canonical' status, and this one was moving fast enough to trip the detection rule on its own volume and price action. In a 30-minute window, absolute ticker legitimacy may matter less than short-term order flow, and the buy pressure here is real and visible, not merely inferred.\",\"unknowns\":[\"Which of the ~10 same-named tokens (if any) X/Twitter, Telegram or Discord communities are actually discussing or calling out as 'the real one'\",\"What triggered the ~40-minute burst of simultaneous SPLIT launches (an X post, a product update, a KOL call) - not found in the time budget available\",\"Identity and intent of the wallet holding 80.05% of supply - insider, bot, or arbitrage/market-maker address\",\"Why RugCheck flags 99.99% LP unlocked while GMGN reports lp_burn_ratio 1.0 and the packet's own rug_guard says LP is 100% burned\",\"Whether usesplit.pro or its team has any real, current connection to this specific contract versus the other clones\",\"Whether volume is migrating toward or away from this pool versus the two larger-volume SPLIT clones in the minutes since detection\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"searched_found\",\"notes\":\"Budget was 4 tool calls total. Used: (1) search for 'Use_Split'/'usesplit.pro', (2) search for '$SPLIT solana pump.fun viral', (3) fetch of usesplit.pro itself (succeeded, real live product page), (4) search for the raw contract address. None of the general-web searches surfaced X/Twitter posts, Reddit threads, Telegram or Discord content specific to this contract or ticker moment - consistent with poor search-engine indexing of X and with this being a very fresh (minutes-old) event, not proof that no discussion exists.\"},\"thesis\":\"SPLIT has a real underlying reference (a live fee-splitting Solana product at usesplit.pro) and is showing genuine, buy-dominant, accelerating short-term flow, but it is one of roughly ten identically-named tokens launched in the same ~40-minute burst and is not the volume or market-cap leader of that swarm. Combined with an extreme single-wallet concentration (80% of supply) and an unresolved LP-lock data contradiction, this token has some real momentum but sits behind more dominant same-name competitors for durable attention, and carries outsized dump risk that is structurally separate from a classic LP-pull rug. Rank it above a dead/no-activity coin but below a coin with comparable momentum and a clean, singular narrative claim.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":40,\"survival_score\":45,\"attention_score\":57,\"manipulation_risk\":58,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://usesplit.pro/\",\"what\":\"Live project website describing a Solana-based platform for splitting token fees via X, referencing a $SPLIT token, capital flow and buybacks\"},{\"url\":\"https://docs.solsplitter.com/faq.html\",\"what\":\"Unrelated 'SolSplitter' expense-splitting project also using a $SPLIT-style token name, illustrating ticker ambiguity in search results\"},{\"url\":\"https://solsplits.xyz/\",\"what\":\"Another unrelated 'SolSplits' project explicitly warning that any token claiming affiliation with them is a scam, further illustrating ticker/name collision risk in this space\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-migrated token called SPLIT (contract 29vTBty...Cvt, pool on PumpSwap) hit the detection rule 12.8 min after pool creation, having already pumped +142% in the trailing hour on ~$153k volume against a ~$100k mcap (h1 turnover ~6.5x, 1204 buys vs 495 sells). Critically, the packet's same_ticker_or_name_tokens list shows at least 9-10 other tokens named \"SPLIT\"/\"Split\"/\"UseSplit\" launched within roughly the same ~40-minute window (plus two much earlier, now-dead \"UseSplit\" tokens from ~8h prior sitting at $4k-$14k mcap with $0 liquidity). This is a live ticker-clone swarm: many creators raced to deploy the same name at once. Our token is mid-pack by volume among the swarm - the apparent leaders are Ek8GUR6q...(h1 vol $4.17M, mcap $159k) and DRKGY...pump (h1 vol $2.3M, mcap $305k, earliest timestamp in the burst). Web research found usesplit.pro is a live, real website describing a Solana \"split token fees through X\" protocol with a $SPLIT token, capital flow and buybacks mentioned - so there is a genuine underlying reference, but no X/social evidence was found confirming which contract the community has actually rallied around, and our contract is not the volume leader of the swarm.",
+  "narrative": {
+   "description": "UseSplit (usesplit.pro) is a live, real product page for a Solana-based platform that lets users split token fees via X, referencing a $SPLIT token tied to capital flow and buybacks. This gives the ticker genuine underlying substance rather than being a pure meme-from-nothing. However, the actual on-chain spike is a swarm of ~10 identically-named token deployments within roughly a 40-minute window, which looks much more like a ticker-clone gold rush than organic single-token discovery.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "Likely trigger: some announcement or activity from the real UseSplit project drove people to search '$SPLIT' on pump.fun/DexScreener, and bots/opportunists raced to deploy same-named contracts to intercept that buy pressure. Two much-older 'UseSplit' tokens (8h prior) that fizzled at $4k-$14k mcap suggest the project reference existed earlier without traction; the new burst of clones is the actual attention event, but it's fragmented demand, not concentrated organic belief in one contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Our contract is one of at least 9 tokens sharing the exact name 'SPLIT'/'Split' launched within the same ~40-minute burst. It is not the earliest (DRKGY...pump precedes it) and not the volume/mcap leader (Ek8GUR6q has 27x our h1 volume; DtVnUE has 15x our mcap). It caught a real +142% h1 move and decent turnover, so it is not dead, but the flow driving that move is plausibly spillover/confused buyers from the broader swarm rather than deliberate selection of this specific contract.",
+   "competing_tokens": "At least 9 other same-named tokens in the packet: Ek8GUR6q (h1 vol $4.17M, mcap $159k) and DRKGY...pump (h1 vol $2.3M, mcap $305k, earliest in the burst) appear to be capturing the bulk of swarm attention; DtVnUE has the highest mcap ($1.56M). Two earlier 'UseSplit' tokens from ~8h prior are effectively dead ($0 liquidity, sub-$15k mcap).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Positive: buys_per_unique_buyer_h1 is only 1.54 (not heavy same-wallet churn), buy/sell ratio strongly buy-dominant (1204:495 h1, 439:162 in the last 5 min), unique buyers accelerating (268 in the most recent 5-min slice alone per GeckoTerminal), GMGN shows low fresh-wallet rate (4 wallets) and moderate bot/degen rate (8.5%), no smart-money or KOL wallets flagged either way, no paid DexScreener boosts/ads detected, dev has launched 17 tokens with a best ATH mcap of $3.9M (not a first-time scammer profile, but a serial launcher). Negative: the existence of ~10 simultaneous same-name clones is itself a strong marker of manufactured/opportunistic activity rather than one community rallying around one token; single top holder controls 80.05% of non-pool supply (extreme concentration); RugCheck flags 'Large Amount of LP Unlocked' (99.99%, danger level) which contradicts the packet's own rug_guard determination that LP is 100% burned - this internal contradiction could not be resolved with the tools available.",
+   "uncertainty": "Could not find any X/Twitter posts, Reddit, Telegram or Discord discussion specifically naming this contract or confirming which SPLIT clone the community actually favors; searches for the raw contract address and for '$SPLIT' returned no token-specific results, likely due to search-engine indexing limits on X rather than proof no discussion exists. Could not resolve the LP-lock contradiction (RugCheck 'unlocked' warning vs GMGN lp_burn_ratio 1.0 vs rug_guard 'LP 100% burned')."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Single wallet holds 80.05% of supply outside the AMM/locker exclusion - even with LP burned, this wallet can dump directly into the pool at will and crater price without needing to 'pull liquidity'",
+    "Liquidity ($22.5k) is thin relative to market cap (~$100k, ~22% ratio), so a $250 trade and any real selling pressure will move price sharply in both directions",
+    "Attention and volume are fragmented across ~10 identically-named clone tokens, so demand that could have concentrated in one contract is split, and buyers may migrate to the two much larger-volume clones (Ek8GUR6q, DRKGY) at any time, starving this pool of continued flow",
+    "Internal contradiction between RugCheck's 'Large Amount of LP Unlocked' danger flag and the packet's rug_guard/GMGN burn data, meaning true LP safety could not be independently confirmed by this researcher",
+    "Price has already run +142% in the hour before entry; the trade needs another 2x from an already-elevated level within 30 minutes"
+   ]
+  },
+  "counterargument": "The counter-case: the +142% h1 move, buy-dominant flow (1155:479 h1 buys/sells), and accelerating unique buyers (268 in the last 5 minutes alone) show this specific pool is genuinely receiving fresh capital right now, not just idle listing. Low buys-per-unique-buyer (1.54) and low fresh-wallet count argue against simple wash trading. If the real UseSplit project (usesplit.pro) is having a genuine catalyst moment, momentum-chasing bots and pump.fun snipers often pile into whichever clone is pumping fastest at the moment they look, regardless of 'canonical' status, and this one was moving fast enough to trip the detection rule on its own volume and price action. In a 30-minute window, absolute ticker legitimacy may matter less than short-term order flow, and the buy pressure here is real and visible, not merely inferred.",
+  "unknowns": [
+   "Which of the ~10 same-named tokens (if any) X/Twitter, Telegram or Discord communities are actually discussing or calling out as 'the real one'",
+   "What triggered the ~40-minute burst of simultaneous SPLIT launches (an X post, a product update, a KOL call) - not found in the time budget available",
+   "Identity and intent of the wallet holding 80.05% of supply - insider, bot, or arbitrage/market-maker address",
+   "Why RugCheck flags 99.99% LP unlocked while GMGN reports lp_burn_ratio 1.0 and the packet's own rug_guard says LP is 100% burned",
+   "Whether usesplit.pro or its team has any real, current connection to this specific contract versus the other clones",
+   "Whether volume is migrating toward or away from this pool versus the two larger-volume SPLIT clones in the minutes since detection"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "searched_found",
+   "notes": "Budget was 4 tool calls total. Used: (1) search for 'Use_Split'/'usesplit.pro', (2) search for '$SPLIT solana pump.fun viral', (3) fetch of usesplit.pro itself (succeeded, real live product page), (4) search for the raw contract address. None of the general-web searches surfaced X/Twitter posts, Reddit threads, Telegram or Discord content specific to this contract or ticker moment - consistent with poor search-engine indexing of X and with this being a very fresh (minutes-old) event, not proof that no discussion exists."
+  },
+  "thesis": "SPLIT has a real underlying reference (a live fee-splitting Solana product at usesplit.pro) and is showing genuine, buy-dominant, accelerating short-term flow, but it is one of roughly ten identically-named tokens launched in the same ~40-minute burst and is not the volume or market-cap leader of that swarm. Combined with an extreme single-wallet concentration (80% of supply) and an unresolved LP-lock data contradiction, this token has some real momentum but sits behind more dominant same-name competitors for durable attention, and carries outsized dump risk that is structurally separate from a classic LP-pull rug. Rank it above a dead/no-activity coin but below a coin with comparable momentum and a clean, singular narrative claim.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 40,
+  "survival_score": 45,
+  "attention_score": 57,
+  "manipulation_risk": 58,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://usesplit.pro/",
+    "what": "Live project website describing a Solana-based platform for splitting token fees via X, referencing a $SPLIT token, capital flow and buybacks"
+   },
+   {
+    "url": "https://docs.solsplitter.com/faq.html",
+    "what": "Unrelated 'SolSplitter' expense-splitting project also using a $SPLIT-style token name, illustrating ticker ambiguity in search results"
+   },
+   {
+    "url": "https://solsplits.xyz/",
+    "what": "Another unrelated 'SolSplits' project explicitly warning that any token claiming affiliation with them is a scam, further illustrating ticker/name collision risk in this space"
+   }
+  ]
+ },
+ "ttft_ms": 12727,
+ "type": "result",
+ "duration_ms": 197059,
+ "uuid": "d4040827-95ff-46dd-99c0-8088113b45e6",
+ "ttft_stream_ms": 1194,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 1195,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

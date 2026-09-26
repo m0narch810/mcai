@@ -1,0 +1,189 @@
+{
+ "duration_api_ms": 167879,
+ "stop_reason": "tool_use",
+ "session_id": "e4ca0922-e50d-43a6-9c50-d9745b0b0d4b",
+ "total_cost_usd": 0.28495420000000005,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 22664,
+  "cache_read_input_tokens": 48386,
+  "output_tokens": 14619,
+  "output_tokens_details": {
+   "thinking_tokens": 6430
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 22664,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3906,
+    "cache_read_input_tokens": 16302,
+    "cache_creation_input_tokens": 9851,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9851
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 14619,
+   "cacheReadInputTokens": 48386,
+   "cacheCreationInputTokens": 22664,
+   "webSearchRequests": 0,
+   "costUSD": 0.2465392,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 6430,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 16065,
+   "outputTokens": 470,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.038415000000000005,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":57,\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GeckoTerminal shows 803 unique buyers vs 81 unique sellers in the first hour with a low buys-per-unique-buyer ratio (1.47), which the packet notes is consistent with organic (non-churned) buying rather than a handful of wallets wash-trading. h1 turnover is very high (5.8x) relative to a $105k mcap, and buy/sell tx count is roughly 2.6:1 in favor of buyers. However, this coin is one of at least 10 near-simultaneous 'Geiger'/'Geiger Capital' launches (packet's same_ticker_or_name_tokens, pair_created_at_ms all within ~1 hour of each other), which is the signature of a ticker-swarm/parasite race rather than a single coordinated community rallying around one asset. No X posts, news, Telegram/Discord discussion, or confirmation that the real Geiger Capital X persona is involved could be found or fetched in the time available.\",\"uncertainty\":\"Could not access the actual X post referenced in the packet's social field (HTTP 402) or the project website link (SSL error), so I cannot confirm whether the real Geiger Capital account promoted, disavowed, or is unaware of this token. Could not search X directly for the contract address or $GEIGER cashtag due to the 4-call budget being exhausted on higher-priority checks.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The core bull case I'm dismissing: this token is currently the clear volume/mcap leader of the entire 'Geiger' ticker swarm (mcap ~$105k and $130k h1 volume vs. the next-largest competitor's $52k mcap, and everything else near-dead with ~$0 liquidity). In fast ticker races, capital often consolidates hard into whichever token is 'winning' at the moment retail notices, and that self-reinforcing FOMO (real distinct buyers, not just bots per the unique-buyer data) can produce a fast overshoot well past +100% before anyone checks holder concentration. If Geiger Capital (a real, moderately followed finance/macro X persona) or any mid-tier account posts the contract in the next 30 minutes, a swarm-leader token like this is exactly the one that would catch the resulting bid. My bearish lean could simply be wrong about timing: the -50%/+100% race is decided by the next 30 minutes of flow, not by structural quality.\",\"manipulation_risk\":70,\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Single wallet holds 80.05% of non-pool supply (top_holders[0]), which is an extreme overhang regardless of the 'not insider-labeled' tag; a partial dump from this wallet into a $22,968 liquidity pool would crater price even with LP burned\",\"top10_holder_pct 87.43% (excluding AMM/locker) is very high concentration for a coin only ~12-70 minutes old\",\"12 sniper wallets and 11 bundler wallets present among holders, consistent with coordinated early accumulation at launch\",\"Price already ran +134% to +147% in the hour before detection (dexscreener/geckoterminal), so the 'easy' first leg is likely already spent before this entry\",\"At least 9 other near-identical 'Geiger'/'Geiger Capital' tokens exist, most already down to ~$0 liquidity, showing how fast attention in this exact cluster has already died elsewhere\",\"RugCheck flags 'Large Amount of LP Unlocked' at the raw LP-token level (99.99%) even though the packet's own rug_guard override says LP is 100% burned -- a structural inconsistency I could not resolve with the tools available\"]},\"narrative\":{\"description\":\"A cluster of near-simultaneous Solana tokens named 'Geiger'/'Geiger Capital' launched within roughly the same hour, apparently referencing the real X finance/macro commentator known first as @Stephen_Geiger and later as @Geiger_Capital. This specific token (9SVBJ58...) is currently the largest by market cap and volume among at least 10 same-name/ticker competitors, most of which are already dead (near-$0 liquidity).\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Volume and buyer count are real and high relative to market cap (h1 turnover 5.8x, 803 unique buyers vs 81 sellers per GeckoTerminal), suggesting genuine retail/bot participation in a ticker race rather than pure wash trading. But I found no evidence this connects to any live news event, and no confirmation the real Geiger Capital persona is aware of or promoting any of these tokens -- the attention looks self-contained within crypto-degen ticker-sniping circles rather than spreading from an external, growing story.\"},\"observation_window\":\"1h\",\"p_rug\":42,\"p_runner\":14,\"research_confidence\":\"low\",\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"inaccessible\",\"notes\":\"Web search confirmed @Geiger_Capital (formerly @Stephen_Geiger) is a real, pre-existing X account/persona, corroborating the packet's rename history, but general web search cannot index live X posts about this specific contract or $GEIGER cashtag (search engines index X poorly, as warned). Direct fetch of the specific X status URL in the packet's social field returned HTTP 402 (paywalled/blocked). Direct fetch of the project's listed website (usepaid.app) failed with an SSL error. All 4 allotted search/fetch calls were used; Reddit, Telegram, Discord, and news were not attempted due to the budget cap.\"},\"sources\":[{\"url\":\"https://x.com/Geiger_Capital\",\"what\":\"Confirms the current handle of the 'Geiger Capital' X persona exists and is active (a real finance/macro commentator account), used as context for whether the token references a real figure\"},{\"url\":\"https://twitter.com/Stephen_Geiger/status/1719438527669125214\",\"what\":\"Historical tweet from 2023 under the account's older handle @Stephen_Geiger, corroborating the packet's project_x_rename_history (stephen_geiger -> Geiger_Capital)\"},{\"url\":\"https://x.com/Geiger_Capital/status/2103844821152772248\",\"what\":\"The specific post referenced in the packet's social.geckoterminal_twitter_handle field; attempted fetch returned HTTP 402 Payment Required, content could not be verified\"},{\"url\":\"https://usepaid.app/t/wnfr6twq\",\"what\":\"Project website link listed in gmgn project_links; attempted fetch failed with an SSL/connection error, content could not be verified\"}],\"survival_score\":35,\"tail_class\":\"A_dead_or_chop\",\"thesis\":\"GEIGER is the current volume/mcap leader of a same-hour swarm of copycat tokens referencing the real 'Geiger Capital' X finance persona, with genuinely broad buyer participation (803 unique buyers, low churn ratio) but an extreme single-wallet supply overhang (80% of non-pool supply) and a price that has already run +134-147% before this entry -- both of which argue against a further +100% move in the next 30 minutes even though short-term momentum and turnover are real. No evidence was found (or was accessible) that the real Geiger Capital account is promoting this specific contract, and most sibling tokens in the same-name cluster are already dead, suggesting the swarm's overall attention is transient.\",\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"Of at least 10 tokens sharing the 'Geiger'/'Geiger Capital' name or ticker launched within about an hour of each other, this one currently has the highest market cap (~$105k) and highest h1 volume (~$130k), making it the current de facto leader of the cluster by market size -- but 'currently winning' in a ticker swarm is not the same as being canonical, and leadership in these races can flip quickly.\",\"competing_tokens\":\"At least 9 other same-name/ticker tokens exist per the packet (e.g. DD5beYp... with $37k liquidity/$52k mcap is the closest competitor; the rest are largely dead with ~$0 liquidity), indicating this is a contested ticker rather than a single obvious canonical launch\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether the real Geiger Capital / Stephen Geiger X account has posted about, endorsed, or disavowed any of these tokens -- could not verify due to failed fetch (HTTP 402) and X's poor search indexability\",\"What the project website (usepaid.app/t/wnfr6twq) actually contains -- fetch failed with an SSL error\",\"Whether the 80.05% top holder is the deployer/creator wallet, a bundler cluster, or a legitimate early buyer -- RugCheck did not label it 'insider'\",\"Any Telegram, Discord, Reddit, or news coverage of this token or the underlying event/persona -- not attempted due to the 4-call research budget\",\"Why RugCheck's raw risk flag says 99.99% of LP tokens are unlocked while the packet's rug_guard override states LP is 100% burned -- this discrepancy was not resolved\",\"Whether the creator's other 16 launched tokens (one reaching $3.9M ATH mcap) include any known rugs\"],\"what_is_happening\":\"A ~12-70 minute old Solana token called 'Geiger Capital' ($GEIGER, contract 9SVBJ58...) has run +134-147% in its first hour on ~$130k of volume against a ~$100-105k market cap, with heavy buy-side pressure (1157 buys vs 447 sells in h1) and broad unique-buyer participation (803 buyers vs 81 sellers per GeckoTerminal). It is one of at least 10 near-identically named/tickered tokens launched within roughly the same hour, apparently all referencing the real X finance/macro commentator persona 'Geiger Capital' (formerly @Stephen_Geiger). This specific token is currently the largest of that cluster by market cap and volume, while most of the sibling tokens are already down to near-zero liquidity. A single wallet holds 80.05% of the non-pool supply. LP is reported burned (rug_guard: not removable), mint/freeze authorities are renounced, and no honeypot/tax flags were found.\"}",
+ "structured_output": {
+  "attention_score": 57,
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GeckoTerminal shows 803 unique buyers vs 81 unique sellers in the first hour with a low buys-per-unique-buyer ratio (1.47), which the packet notes is consistent with organic (non-churned) buying rather than a handful of wallets wash-trading. h1 turnover is very high (5.8x) relative to a $105k mcap, and buy/sell tx count is roughly 2.6:1 in favor of buyers. However, this coin is one of at least 10 near-simultaneous 'Geiger'/'Geiger Capital' launches (packet's same_ticker_or_name_tokens, pair_created_at_ms all within ~1 hour of each other), which is the signature of a ticker-swarm/parasite race rather than a single coordinated community rallying around one asset. No X posts, news, Telegram/Discord discussion, or confirmation that the real Geiger Capital X persona is involved could be found or fetched in the time available.",
+   "uncertainty": "Could not access the actual X post referenced in the packet's social field (HTTP 402) or the project website link (SSL error), so I cannot confirm whether the real Geiger Capital account promoted, disavowed, or is unaware of this token. Could not search X directly for the contract address or $GEIGER cashtag due to the 4-call budget being exhausted on higher-priority checks."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The core bull case I'm dismissing: this token is currently the clear volume/mcap leader of the entire 'Geiger' ticker swarm (mcap ~$105k and $130k h1 volume vs. the next-largest competitor's $52k mcap, and everything else near-dead with ~$0 liquidity). In fast ticker races, capital often consolidates hard into whichever token is 'winning' at the moment retail notices, and that self-reinforcing FOMO (real distinct buyers, not just bots per the unique-buyer data) can produce a fast overshoot well past +100% before anyone checks holder concentration. If Geiger Capital (a real, moderately followed finance/macro X persona) or any mid-tier account posts the contract in the next 30 minutes, a swarm-leader token like this is exactly the one that would catch the resulting bid. My bearish lean could simply be wrong about timing: the -50%/+100% race is decided by the next 30 minutes of flow, not by structural quality.",
+  "manipulation_risk": 70,
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Single wallet holds 80.05% of non-pool supply (top_holders[0]), which is an extreme overhang regardless of the 'not insider-labeled' tag; a partial dump from this wallet into a $22,968 liquidity pool would crater price even with LP burned",
+    "top10_holder_pct 87.43% (excluding AMM/locker) is very high concentration for a coin only ~12-70 minutes old",
+    "12 sniper wallets and 11 bundler wallets present among holders, consistent with coordinated early accumulation at launch",
+    "Price already ran +134% to +147% in the hour before detection (dexscreener/geckoterminal), so the 'easy' first leg is likely already spent before this entry",
+    "At least 9 other near-identical 'Geiger'/'Geiger Capital' tokens exist, most already down to ~$0 liquidity, showing how fast attention in this exact cluster has already died elsewhere",
+    "RugCheck flags 'Large Amount of LP Unlocked' at the raw LP-token level (99.99%) even though the packet's own rug_guard override says LP is 100% burned -- a structural inconsistency I could not resolve with the tools available"
+   ]
+  },
+  "narrative": {
+   "description": "A cluster of near-simultaneous Solana tokens named 'Geiger'/'Geiger Capital' launched within roughly the same hour, apparently referencing the real X finance/macro commentator known first as @Stephen_Geiger and later as @Geiger_Capital. This specific token (9SVBJ58...) is currently the largest by market cap and volume among at least 10 same-name/ticker competitors, most of which are already dead (near-$0 liquidity).",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Volume and buyer count are real and high relative to market cap (h1 turnover 5.8x, 803 unique buyers vs 81 sellers per GeckoTerminal), suggesting genuine retail/bot participation in a ticker race rather than pure wash trading. But I found no evidence this connects to any live news event, and no confirmation the real Geiger Capital persona is aware of or promoting any of these tokens -- the attention looks self-contained within crypto-degen ticker-sniping circles rather than spreading from an external, growing story."
+  },
+  "observation_window": "1h",
+  "p_rug": 42,
+  "p_runner": 14,
+  "research_confidence": "low",
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "inaccessible",
+   "notes": "Web search confirmed @Geiger_Capital (formerly @Stephen_Geiger) is a real, pre-existing X account/persona, corroborating the packet's rename history, but general web search cannot index live X posts about this specific contract or $GEIGER cashtag (search engines index X poorly, as warned). Direct fetch of the specific X status URL in the packet's social field returned HTTP 402 (paywalled/blocked). Direct fetch of the project's listed website (usepaid.app) failed with an SSL error. All 4 allotted search/fetch calls were used; Reddit, Telegram, Discord, and news were not attempted due to the budget cap."
+  },
+  "sources": [
+   {
+    "url": "https://x.com/Geiger_Capital",
+    "what": "Confirms the current handle of the 'Geiger Capital' X persona exists and is active (a real finance/macro commentator account), used as context for whether the token references a real figure"
+   },
+   {
+    "url": "https://twitter.com/Stephen_Geiger/status/1719438527669125214",
+    "what": "Historical tweet from 2023 under the account's older handle @Stephen_Geiger, corroborating the packet's project_x_rename_history (stephen_geiger -> Geiger_Capital)"
+   },
+   {
+    "url": "https://x.com/Geiger_Capital/status/2103844821152772248",
+    "what": "The specific post referenced in the packet's social.geckoterminal_twitter_handle field; attempted fetch returned HTTP 402 Payment Required, content could not be verified"
+   },
+   {
+    "url": "https://usepaid.app/t/wnfr6twq",
+    "what": "Project website link listed in gmgn project_links; attempted fetch failed with an SSL/connection error, content could not be verified"
+   }
+  ],
+  "survival_score": 35,
+  "tail_class": "A_dead_or_chop",
+  "thesis": "GEIGER is the current volume/mcap leader of a same-hour swarm of copycat tokens referencing the real 'Geiger Capital' X finance persona, with genuinely broad buyer participation (803 unique buyers, low churn ratio) but an extreme single-wallet supply overhang (80% of non-pool supply) and a price that has already run +134-147% before this entry -- both of which argue against a further +100% move in the next 30 minutes even though short-term momentum and turnover are real. No evidence was found (or was accessible) that the real Geiger Capital account is promoting this specific contract, and most sibling tokens in the same-name cluster are already dead, suggesting the swarm's overall attention is transient.",
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "Of at least 10 tokens sharing the 'Geiger'/'Geiger Capital' name or ticker launched within about an hour of each other, this one currently has the highest market cap (~$105k) and highest h1 volume (~$130k), making it the current de facto leader of the cluster by market size -- but 'currently winning' in a ticker swarm is not the same as being canonical, and leadership in these races can flip quickly.",
+   "competing_tokens": "At least 9 other same-name/ticker tokens exist per the packet (e.g. DD5beYp... with $37k liquidity/$52k mcap is the closest competitor; the rest are largely dead with ~$0 liquidity), indicating this is a contested ticker rather than a single obvious canonical launch",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether the real Geiger Capital / Stephen Geiger X account has posted about, endorsed, or disavowed any of these tokens -- could not verify due to failed fetch (HTTP 402) and X's poor search indexability",
+   "What the project website (usepaid.app/t/wnfr6twq) actually contains -- fetch failed with an SSL error",
+   "Whether the 80.05% top holder is the deployer/creator wallet, a bundler cluster, or a legitimate early buyer -- RugCheck did not label it 'insider'",
+   "Any Telegram, Discord, Reddit, or news coverage of this token or the underlying event/persona -- not attempted due to the 4-call research budget",
+   "Why RugCheck's raw risk flag says 99.99% of LP tokens are unlocked while the packet's rug_guard override states LP is 100% burned -- this discrepancy was not resolved",
+   "Whether the creator's other 16 launched tokens (one reaching $3.9M ATH mcap) include any known rugs"
+  ],
+  "what_is_happening": "A ~12-70 minute old Solana token called 'Geiger Capital' ($GEIGER, contract 9SVBJ58...) has run +134-147% in its first hour on ~$130k of volume against a ~$100-105k market cap, with heavy buy-side pressure (1157 buys vs 447 sells in h1) and broad unique-buyer participation (803 buyers vs 81 sellers per GeckoTerminal). It is one of at least 10 near-identically named/tickered tokens launched within roughly the same hour, apparently all referencing the real X finance/macro commentator persona 'Geiger Capital' (formerly @Stephen_Geiger). This specific token is currently the largest of that cluster by market cap and volume, while most of the sibling tokens are already down to near-zero liquidity. A single wallet holds 80.05% of the non-pool supply. LP is reported burned (rug_guard: not removable), mint/freeze authorities are renounced, and no honeypot/tax flags were found."
+ },
+ "ttft_ms": 5603,
+ "type": "result",
+ "duration_ms": 164071,
+ "uuid": "970dd42f-4a36-44a7-acd2-596e2bbcdcc3",
+ "ttft_stream_ms": 1034,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 1034,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

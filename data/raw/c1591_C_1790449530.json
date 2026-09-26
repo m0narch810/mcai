@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 162332,
+ "stop_reason": "tool_use",
+ "session_id": "4df4ca76-ca4a-4130-8339-3e1098ac725b",
+ "total_cost_usd": 0.31679860000000004,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 21143,
+  "cache_read_input_tokens": 48838,
+  "output_tokens": 13937,
+  "output_tokens_details": {
+   "thinking_tokens": 6600
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21143,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4066,
+    "cache_read_input_tokens": 17410,
+    "cache_creation_input_tokens": 7222,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7222
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 13937,
+   "cacheReadInputTokens": 48838,
+   "cacheCreationInputTokens": 21143,
+   "webSearchRequests": 0,
+   "costUSD": 0.23372560000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 6600,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 37818,
+   "outputTokens": 1051,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08307300000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-graduated Solana token \\\"iAnonPatriot\\\" ($iAnonPat, mcap ~$130-140k) whose pool was created 2026-09-26T18:51:50Z (~13 min before detection) has spiked +152-171% since launch on very high turnover (h1 volume $335-360k vs $34k liquidity, turnover ~9.6x). It is one of at least 8 near-simultaneously launched tokens sharing the exact name \\\"iAnonPatriot,\\\" all created within a ~6-minute window (pair_created_at_ms 1790448330000-1790448709000); this contract has by far the most liquidity ($33.7k vs $0 for the others) and appears to be the clone that volume consolidated onto, though it was actually the last of the cluster to be created, not the first. A single non-pool wallet holds 80.05% of supply (top10 = 81.65%), GMGN flags 72 bundler wallets and creator status \\\"creator_close.\\\" The project's own X account (per GMGN) is a recycled/renamed handle (Zyrexx888 \u2192 Kiroquant88 \u2192 Kirodev7), and that same account previously tweeted (June 2026) pushing a \\\"save Solana\\\" meme-coin trend narrative, consistent with a serial memecoin promoter rather than a first-time community project.\",\"narrative\":{\"description\":\"The token name/ticker directly references a real, sizeable X account: @iAnonPatriot (\\\"American AF \ud83c\uddfa\ud83c\uddf8\\\"), a patriotic-content account with meaningful reach \u2014 one of its posts drew a reply from Elon Musk. This is a \\\"named after a known X persona\\\" memecoin, a recognizable Solana pattern where a personality's fame is borrowed for a token launch, sometimes without the personality's knowledge.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"Attention is concentrated because multiple deployers raced to mint the identical name (a ticker/clone war around 18:51-18:58 UTC), and this contract won the liquidity/volume race, drawing bundler-seeded buy pressure plus retail FOMO chasing an already-pumped chart. No evidence was found that the real @iAnonPatriot account has acknowledged, promoted, or is even aware of the token \u2014 so the narrative substrate (a famous name) exists, but the actual organic trigger (endorsement, viral post, news hook) is unconfirmed. Recent 5-minute price action is decelerating/mixed (DexScreener +5.3% vs GeckoTerminal -6.7% for m5), suggesting the initial pump may already be stalling at the moment of entry.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"The ticker/name is a direct reference to the real X account @iAnonPatriot, but this specific contract is one of 8 simultaneously-launched clones of the same name; it is not the earliest-created (it's the last in the cluster by pair_created_at_ms) yet it captured the most liquidity and volume, likely via bundler/insider seeding (72 bundler wallets, single wallet holding 80% of supply) rather than organic consensus.\",\"competing_tokens\":\"7 other tokens named iAnonPatriot/iAnon minted within the same ~6-minute window, all with $0 recorded liquidity and much smaller market caps ($3.3k-$18.1k) versus this one's ~$130-140k \u2014 but their nonzero hourly volumes ($3.4k-$125.8k) show trading interest didn't fully collapse to zero attention on them either, meaning the 'true' community token is genuinely ambiguous.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"72 bundler wallets and only 1 sniper/6 fresh wallets among holders, an 80.05% single-wallet concentration outside the AMM, creator status flagged 'creator_close' by GMGN, a project X account with three prior name changes (recycled account, a GMGN-flagged red flag pattern), and a cluster of 8 near-identical name/ticker launches within minutes of each other pointing to a coordinated ticker-race rather than spontaneous organic community formation.\",\"uncertainty\":\"Could not access X/Twitter post-level data (not collected in this version) to see actual call/promotion activity, so the degree of coordinated shilling vs. genuine retail chasing an already-green chart is inferred from wallet structure alone, not confirmed via visible promotion posts.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Single wallet holds 80.05% of total supply outside the AMM/locker \u2014 an enormous dump overhang that could crater price at any moment regardless of LP lock status\",\"Liquidity ($33.7k) is thin relative to market cap ($130-140k) and to the h1 volume ($335-360k, ~9.6x turnover), implying large price impact in both directions and volume levels consistent with wash/bundler churn\",\"Conflicting structural data: rug_guard reports 'LP 100% burned' while RugCheck's own risk list flags 'Large Amount of LP Unlocked \u2014 99.99%' as a danger-level risk, and lp_locked_pct_top_markets shows one pool at 0% locked \u2014 this contradiction was not resolved with available budget\",\"72 bundler wallets and creator_close status suggest launch mechanics were insider-assisted rather than a clean fair launch\",\"8 simultaneous same-name clones fragment and confuse any organic community narrative, and the 'winning' clone was not the first created, undermining any claim to canonical status\"]},\"counterargument\":\"If ticker-war consolidation is read positively rather than negatively, this contract's dominance (all liquidity and most volume vs. seven $0-liquidity siblings) could reflect a real-time community coordination event: traders/bots converging on the 'winning' pool the same way they would in any competitive pump.fun launch, and once consolidation happens, momentum can self-reinforce for longer than the structure alone would suggest. Mint/freeze authority renounced, LP nominally burned per rug_guard, buys_per_unique_buyer of 1.59 is not extreme (arguably more organic than a typical wash-heavy churn signature), and 1,455 unique buyers with only 119 unique sellers in the same window is a genuinely lopsided buy/sell imbalance that a pure bundler operation would be less likely to fully manufacture. If the real @iAnonPatriot account (with Elon-adjacent reach) ever notices or is tagged, a short violent continuation is plausible even from this base.\",\"unknowns\":[\"No confirmation the real @iAnonPatriot X account is aware of, endorses, or is connected in any way to this token\",\"Cannot explain the contradiction between rug_guard's 'LP 100% burned' claim and RugCheck's 'Large Amount of LP Unlocked 99.99%' danger flag with the research budget available\",\"Whether the 80%-holding wallet is the creator, a bundler aggregation address, or a genuine early buyer is not verifiable from the packet or search results\",\"No Telegram, Discord, Reddit, or news coverage was checked (budget exhausted) \u2014 cannot rule out organic discussion existing outside X search results\",\"Why this particular clone (created last in the cluster) won the liquidity race over the other 7 \u2014 could be paid promotion, bot routing, or bundler capital deployment, none confirmed\",\"Whether the price deceleration visible in the m5 window (GeckoTerminal -6.7%) at the moment of entry is noise or the start of a reversal\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Found the real, apparently legitimate @iAnonPatriot X account ('American AF', large following, an Elon Musk reply) via web search \u2014 this is the account the token name/ticker borrows from, with no evidence of its involvement in the token. Also found the project's linked X account (Kirodev7) has a prior tweet from June 2026 pushing a different meme-coin trend narrative, supporting the 'serial memecoin promoter' read of the recycled-account rename history in the packet. Contract address itself returned zero indexed hits anywhere. Budget (4 searches) was exhausted on these two lines of inquiry; Telegram/Discord/Reddit/news/project-site were not attempted.\"},\"thesis\":\"This is a bundler/insider-heavy pump.fun clone-war winner riding the borrowed name of a real, sizeable X personality with no confirmed connection to that personality. The chart is already extended (+150%+ in ~13-20 minutes) with signs of stalling at the moment of entry, sitting on top of an 80%-concentrated single wallet and 72 bundler wallets \u2014 structurally this looks primed for a dump-driven reversal more than a durable continuation, even though the underlying narrative hook (a real, Elon-adjacent X account's name) gives it more attention-pulling potential than a typical anonymous meme launch.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":40,\"survival_score\":35,\"attention_score\":55,\"manipulation_risk\":76,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/iAnonPatriot\",\"what\":\"The real, apparently legitimate X account the token's name/ticker is borrowed from ('American AF', large following)\"},{\"url\":\"https://x.com/elonmusk/status/1965684458931274239\",\"what\":\"Elon Musk reply to @iAnonPatriot, evidence the real account has meaningful reach\"},{\"url\":\"https://x.com/Kirodev7/status/2069799799390708162\",\"what\":\"June 2026 tweet from the project's linked X account (per GMGN) pushing a different meme-coin trend, supporting a serial-promoter pattern behind the recycled/renamed account\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-graduated Solana token \"iAnonPatriot\" ($iAnonPat, mcap ~$130-140k) whose pool was created 2026-09-26T18:51:50Z (~13 min before detection) has spiked +152-171% since launch on very high turnover (h1 volume $335-360k vs $34k liquidity, turnover ~9.6x). It is one of at least 8 near-simultaneously launched tokens sharing the exact name \"iAnonPatriot,\" all created within a ~6-minute window (pair_created_at_ms 1790448330000-1790448709000); this contract has by far the most liquidity ($33.7k vs $0 for the others) and appears to be the clone that volume consolidated onto, though it was actually the last of the cluster to be created, not the first. A single non-pool wallet holds 80.05% of supply (top10 = 81.65%), GMGN flags 72 bundler wallets and creator status \"creator_close.\" The project's own X account (per GMGN) is a recycled/renamed handle (Zyrexx888 \u2192 Kiroquant88 \u2192 Kirodev7), and that same account previously tweeted (June 2026) pushing a \"save Solana\" meme-coin trend narrative, consistent with a serial memecoin promoter rather than a first-time community project.",
+  "narrative": {
+   "description": "The token name/ticker directly references a real, sizeable X account: @iAnonPatriot (\"American AF \ud83c\uddfa\ud83c\uddf8\"), a patriotic-content account with meaningful reach \u2014 one of its posts drew a reply from Elon Musk. This is a \"named after a known X persona\" memecoin, a recognizable Solana pattern where a personality's fame is borrowed for a token launch, sometimes without the personality's knowledge.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "Attention is concentrated because multiple deployers raced to mint the identical name (a ticker/clone war around 18:51-18:58 UTC), and this contract won the liquidity/volume race, drawing bundler-seeded buy pressure plus retail FOMO chasing an already-pumped chart. No evidence was found that the real @iAnonPatriot account has acknowledged, promoted, or is even aware of the token \u2014 so the narrative substrate (a famous name) exists, but the actual organic trigger (endorsement, viral post, news hook) is unconfirmed. Recent 5-minute price action is decelerating/mixed (DexScreener +5.3% vs GeckoTerminal -6.7% for m5), suggesting the initial pump may already be stalling at the moment of entry."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "The ticker/name is a direct reference to the real X account @iAnonPatriot, but this specific contract is one of 8 simultaneously-launched clones of the same name; it is not the earliest-created (it's the last in the cluster by pair_created_at_ms) yet it captured the most liquidity and volume, likely via bundler/insider seeding (72 bundler wallets, single wallet holding 80% of supply) rather than organic consensus.",
+   "competing_tokens": "7 other tokens named iAnonPatriot/iAnon minted within the same ~6-minute window, all with $0 recorded liquidity and much smaller market caps ($3.3k-$18.1k) versus this one's ~$130-140k \u2014 but their nonzero hourly volumes ($3.4k-$125.8k) show trading interest didn't fully collapse to zero attention on them either, meaning the 'true' community token is genuinely ambiguous.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "72 bundler wallets and only 1 sniper/6 fresh wallets among holders, an 80.05% single-wallet concentration outside the AMM, creator status flagged 'creator_close' by GMGN, a project X account with three prior name changes (recycled account, a GMGN-flagged red flag pattern), and a cluster of 8 near-identical name/ticker launches within minutes of each other pointing to a coordinated ticker-race rather than spontaneous organic community formation.",
+   "uncertainty": "Could not access X/Twitter post-level data (not collected in this version) to see actual call/promotion activity, so the degree of coordinated shilling vs. genuine retail chasing an already-green chart is inferred from wallet structure alone, not confirmed via visible promotion posts."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Single wallet holds 80.05% of total supply outside the AMM/locker \u2014 an enormous dump overhang that could crater price at any moment regardless of LP lock status",
+    "Liquidity ($33.7k) is thin relative to market cap ($130-140k) and to the h1 volume ($335-360k, ~9.6x turnover), implying large price impact in both directions and volume levels consistent with wash/bundler churn",
+    "Conflicting structural data: rug_guard reports 'LP 100% burned' while RugCheck's own risk list flags 'Large Amount of LP Unlocked \u2014 99.99%' as a danger-level risk, and lp_locked_pct_top_markets shows one pool at 0% locked \u2014 this contradiction was not resolved with available budget",
+    "72 bundler wallets and creator_close status suggest launch mechanics were insider-assisted rather than a clean fair launch",
+    "8 simultaneous same-name clones fragment and confuse any organic community narrative, and the 'winning' clone was not the first created, undermining any claim to canonical status"
+   ]
+  },
+  "counterargument": "If ticker-war consolidation is read positively rather than negatively, this contract's dominance (all liquidity and most volume vs. seven $0-liquidity siblings) could reflect a real-time community coordination event: traders/bots converging on the 'winning' pool the same way they would in any competitive pump.fun launch, and once consolidation happens, momentum can self-reinforce for longer than the structure alone would suggest. Mint/freeze authority renounced, LP nominally burned per rug_guard, buys_per_unique_buyer of 1.59 is not extreme (arguably more organic than a typical wash-heavy churn signature), and 1,455 unique buyers with only 119 unique sellers in the same window is a genuinely lopsided buy/sell imbalance that a pure bundler operation would be less likely to fully manufacture. If the real @iAnonPatriot account (with Elon-adjacent reach) ever notices or is tagged, a short violent continuation is plausible even from this base.",
+  "unknowns": [
+   "No confirmation the real @iAnonPatriot X account is aware of, endorses, or is connected in any way to this token",
+   "Cannot explain the contradiction between rug_guard's 'LP 100% burned' claim and RugCheck's 'Large Amount of LP Unlocked 99.99%' danger flag with the research budget available",
+   "Whether the 80%-holding wallet is the creator, a bundler aggregation address, or a genuine early buyer is not verifiable from the packet or search results",
+   "No Telegram, Discord, Reddit, or news coverage was checked (budget exhausted) \u2014 cannot rule out organic discussion existing outside X search results",
+   "Why this particular clone (created last in the cluster) won the liquidity race over the other 7 \u2014 could be paid promotion, bot routing, or bundler capital deployment, none confirmed",
+   "Whether the price deceleration visible in the m5 window (GeckoTerminal -6.7%) at the moment of entry is noise or the start of a reversal"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Found the real, apparently legitimate @iAnonPatriot X account ('American AF', large following, an Elon Musk reply) via web search \u2014 this is the account the token name/ticker borrows from, with no evidence of its involvement in the token. Also found the project's linked X account (Kirodev7) has a prior tweet from June 2026 pushing a different meme-coin trend narrative, supporting the 'serial memecoin promoter' read of the recycled-account rename history in the packet. Contract address itself returned zero indexed hits anywhere. Budget (4 searches) was exhausted on these two lines of inquiry; Telegram/Discord/Reddit/news/project-site were not attempted."
+  },
+  "thesis": "This is a bundler/insider-heavy pump.fun clone-war winner riding the borrowed name of a real, sizeable X personality with no confirmed connection to that personality. The chart is already extended (+150%+ in ~13-20 minutes) with signs of stalling at the moment of entry, sitting on top of an 80%-concentrated single wallet and 72 bundler wallets \u2014 structurally this looks primed for a dump-driven reversal more than a durable continuation, even though the underlying narrative hook (a real, Elon-adjacent X account's name) gives it more attention-pulling potential than a typical anonymous meme launch.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 40,
+  "survival_score": 35,
+  "attention_score": 55,
+  "manipulation_risk": 76,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/iAnonPatriot",
+    "what": "The real, apparently legitimate X account the token's name/ticker is borrowed from ('American AF', large following)"
+   },
+   {
+    "url": "https://x.com/elonmusk/status/1965684458931274239",
+    "what": "Elon Musk reply to @iAnonPatriot, evidence the real account has meaningful reach"
+   },
+   {
+    "url": "https://x.com/Kirodev7/status/2069799799390708162",
+    "what": "June 2026 tweet from the project's linked X account (per GMGN) pushing a different meme-coin trend, supporting a serial-promoter pattern behind the recycled/renamed account"
+   }
+  ]
+ },
+ "ttft_ms": 1926,
+ "type": "result",
+ "duration_ms": 153050,
+ "uuid": "5eca025d-294b-44ad-b459-35d3b87bfa4c",
+ "ttft_stream_ms": 802,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 803,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

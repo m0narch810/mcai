@@ -1,0 +1,191 @@
+{
+ "duration_api_ms": 167071,
+ "stop_reason": "tool_use",
+ "session_id": "d0743702-0a0b-41d7-a8c0-0e6fb6299a34",
+ "total_cost_usd": 0.2965708,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 19255,
+  "cache_read_input_tokens": 48014,
+  "output_tokens": 12260,
+  "output_tokens_details": {
+   "thinking_tokens": 4766
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19255,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3350,
+    "cache_read_input_tokens": 17130,
+    "cache_creation_input_tokens": 5614,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5614
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 12260,
+   "cacheReadInputTokens": 48014,
+   "cacheCreationInputTokens": 19255,
+   "webSearchRequests": 0,
+   "costUSD": 0.2092388,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 4766,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 40682,
+   "outputTokens": 1330,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08733199999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 10-minute-old pump.fun bonding-curve token (\\\"Moonify\\\" / \\\"Sailor Moonification\\\", mcap ~$14.3k) is riding the real, currently-viral \\\"Sailor Moon AI filter\\\" trend (Glam AI app turning selfies/pets into Sailor Moon characters, spreading on TikTok \u2014 confirmed via search). On-chain it shows fast early buyer growth (119 unique buyers in the first 5 min, 384 within its ~10-min life per GeckoTerminal) and buy-dominant flow (597 buys vs 495 sells h1), with turnover ~4.3x mcap in h1. However, price is barely above its initial print despite huge percentage swings (m5 +173%), consistent with fast round-tripping/whipsaw typical of bot-heavy curve tokens. No dedicated project X account was found \u2014 the packet's only \\\"social\\\" link is an X Community page, not a project account, and dev promotion flags show community_takeover: true. The creator has launched 200 prior tokens (serial pump.fun deployer) and holds 0% currently; bundler wallets are unusually high (144, ~35% of top-trader activity attributed to bundling). No news, Reddit, Telegram, or Discord presence was found for this specific token.\",\"narrative\":{\"description\":\"Token markets itself off a real, currently-trending TikTok/AI-filter phenomenon (Glam AI's Sailor Moon transformation filter, applied to people, babies, and pets) rather than an invented meme.\",\"stage\":\"unclear\",\"potential\":\"moderate\",\"why_spreading\":\"The underlying cultural trend (Sailor Moon AI selfie/pet filter via Glam AI) is genuinely viral on TikTok right now per multiple independent posts found in search, giving the token a real cultural hook \u2014 but that's evidence the mainstream trend is spreading, not that this specific token's own promotion is spreading; no dedicated X account, news coverage, or community channel for the token itself was found.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The packet's own same_ticker_or_name_tokens check is empty, so no exact ticker/name duplicate was flagged. But web search surfaced several other Sailor-Moon-themed Solana tokens (MOON, SMOON, MOONS, Sailor Moon Inu) that are not the same ticker but compete for the same thematic attention, and this specific coin has no dedicated X account, website, or press coverage tying it to the viral filter trend beyond its own pump.fun description text.\",\"competing_tokens\":\"Multiple unrelated Sailor-Moon-themed tokens found in search (MOON on Solana ~$1.5K-$116K vol, SMOON ~$31K mcap, Sailor Moon Inu) \u2014 same theme, different tickers/names, diluting rather than hijacking this exact token.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"On-chain buy/unique-buyer ratio (~1.58 in h1) is not obviously churned, and buys modestly exceed sells. But community_takeover:true, 144 bundler wallets, 35% top-bundler-trader share, 48% bot/degen rate, and a serial 200-token deployer are all consistent with a manufactured launch rather than confirmed organic spread.\",\"uncertainty\":\"Search engines index X/Telegram/Discord poorly; a real dedicated project account or call-channel push could exist and simply wasn't found in the time/query budget available (x_twitter, telegram, discord all returned no token-specific hits).\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Still on pump.fun bonding curve \u2014 'liquidity' is virtual reserves, not real LP, and curve is only ~61/115 SOL toward migration\",\"144 bundler wallets and 35% top-bundler-trader share suggest coordinated early accumulation that could dump into the curve\",\"Creator has launched 200 prior tokens (spam-factory deployer pattern), lowering per-token conviction/care\",\"top10 holder concentration 24.4% (ex-AMM) plus dev_team_hold_rate 27% is moderate, not extreme, but adds overhang\",\"Crowded competing-theme field (other Sailor Moon coins) could split attention rather than concentrate it on this token\"]},\"counterargument\":\"The strongest case against my skepticism: the cultural hook here is unusually real and current (a genuinely trending TikTok AI filter, not a manufactured meme), the token is buy-dominant with fast unique-buyer growth in its first minutes, mint/freeze are renounced, RugCheck score is minimal, tax is 0%, and the creator has a documented past hit (ATH mcap ~$20M on a prior launch) \u2014 so this deployer has done this before successfully. If a single influential account picks up the filter+token connection in the next hour, the combination of low mcap, real trend, and clean structure could produce a fast multi-x move before the crowded competing-theme problem matters at all.\",\"unknowns\":[\"Whether the token has any dedicated, growing X/Telegram community distinct from the passive X Community link\",\"Whether the 144 bundler wallets are still holding or have already begun distributing into the curve\",\"Whether the broader Sailor Moon AI filter trend is still accelerating or already past its TikTok peak as of today\",\"Which (if any) of the competing Sailor-Moon-themed tokens the community actually considers canonical\",\"Real-time buy/sell pressure in the 5 minutes immediately preceding entry (packet is a T2 snapshot)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"News/general web search confirmed the underlying Sailor Moon AI filter (Glam AI) is a real, currently viral TikTok trend, independent of this token. Multiple X-query variants for the contract address, $Moonify, and 'Sailor Moonification' returned no token-specific posts, but search engines index X poorly so this is 'nothing found,' not 'nothing exists.' Telegram/Discord not attempted \u2014 packet shows no telegram handle and no discord link was available to check within the 4-search budget. project_websites is empty in the packet and confirmed by search: no dedicated site found, only an X Community link.\"},\"thesis\":\"Real, currently-viral cultural trend (Sailor Moon AI filter) gives this token a genuine external hook, and early on-chain buy pressure is real-looking rather than obviously wash-traded \u2014 but the token itself has no confirmed dedicated organic following, sits in a crowded field of similarly-themed coins, was bundled at launch by a 200-token serial deployer, and has already shown a large percentage round-trip on very little net mcap gain, suggesting much of the easy move already happened before this entry. Rank as marginally above an average early-curve coin on narrative grounds, but below average on token-specific conviction and structural cleanliness.\",\"continuation_view\":\"fade\",\"p_runner\":16,\"p_rug\":42,\"survival_score\":48,\"attention_score\":54,\"manipulation_risk\":64,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.geckoterminal.com/solana/pools/5Di38UfcfYiyKhuRC546bK7JFZ5wbAEKeXPdu1Vb9ShA\",\"what\":\"A different, unrelated 'Sailor Moon' (MOON) Solana pool showing the theme is used by multiple competing tokens\"},{\"url\":\"https://phantom.com/tokens/solana/7sXsa85VCcDr8eYzos5nJ4JVp8MWg5yAXzbncfEvpump\",\"what\":\"Another competing Sailor Moon-themed pump.fun token (MOON), confirming a crowded thematic field\"},{\"url\":\"https://phantom.com/tokens/solana/CTTgoDmHXuMHpAhj8SvN6aZhVkNJ91fEC2WkW1aAZmY1\",\"what\":\"Competing SMOON token, ~$31K mcap, same theme different ticker\"},{\"url\":\"https://www.tiktok.com/@elisa.glamai/video/7514804645064133910\",\"what\":\"Evidence the Sailor Moon AI filter (Glam AI) trend is real and currently viral on TikTok\"},{\"url\":\"https://www.tiktok.com/discover/the-sailor-moon-trend\",\"what\":\"Broader TikTok discovery page showing the Sailor Moon AI transformation trend is active\"}]}",
+ "structured_output": {
+  "what_is_happening": "A 10-minute-old pump.fun bonding-curve token (\"Moonify\" / \"Sailor Moonification\", mcap ~$14.3k) is riding the real, currently-viral \"Sailor Moon AI filter\" trend (Glam AI app turning selfies/pets into Sailor Moon characters, spreading on TikTok \u2014 confirmed via search). On-chain it shows fast early buyer growth (119 unique buyers in the first 5 min, 384 within its ~10-min life per GeckoTerminal) and buy-dominant flow (597 buys vs 495 sells h1), with turnover ~4.3x mcap in h1. However, price is barely above its initial print despite huge percentage swings (m5 +173%), consistent with fast round-tripping/whipsaw typical of bot-heavy curve tokens. No dedicated project X account was found \u2014 the packet's only \"social\" link is an X Community page, not a project account, and dev promotion flags show community_takeover: true. The creator has launched 200 prior tokens (serial pump.fun deployer) and holds 0% currently; bundler wallets are unusually high (144, ~35% of top-trader activity attributed to bundling). No news, Reddit, Telegram, or Discord presence was found for this specific token.",
+  "narrative": {
+   "description": "Token markets itself off a real, currently-trending TikTok/AI-filter phenomenon (Glam AI's Sailor Moon transformation filter, applied to people, babies, and pets) rather than an invented meme.",
+   "stage": "unclear",
+   "potential": "moderate",
+   "why_spreading": "The underlying cultural trend (Sailor Moon AI selfie/pet filter via Glam AI) is genuinely viral on TikTok right now per multiple independent posts found in search, giving the token a real cultural hook \u2014 but that's evidence the mainstream trend is spreading, not that this specific token's own promotion is spreading; no dedicated X account, news coverage, or community channel for the token itself was found."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The packet's own same_ticker_or_name_tokens check is empty, so no exact ticker/name duplicate was flagged. But web search surfaced several other Sailor-Moon-themed Solana tokens (MOON, SMOON, MOONS, Sailor Moon Inu) that are not the same ticker but compete for the same thematic attention, and this specific coin has no dedicated X account, website, or press coverage tying it to the viral filter trend beyond its own pump.fun description text.",
+   "competing_tokens": "Multiple unrelated Sailor-Moon-themed tokens found in search (MOON on Solana ~$1.5K-$116K vol, SMOON ~$31K mcap, Sailor Moon Inu) \u2014 same theme, different tickers/names, diluting rather than hijacking this exact token.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "On-chain buy/unique-buyer ratio (~1.58 in h1) is not obviously churned, and buys modestly exceed sells. But community_takeover:true, 144 bundler wallets, 35% top-bundler-trader share, 48% bot/degen rate, and a serial 200-token deployer are all consistent with a manufactured launch rather than confirmed organic spread.",
+   "uncertainty": "Search engines index X/Telegram/Discord poorly; a real dedicated project account or call-channel push could exist and simply wasn't found in the time/query budget available (x_twitter, telegram, discord all returned no token-specific hits)."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Still on pump.fun bonding curve \u2014 'liquidity' is virtual reserves, not real LP, and curve is only ~61/115 SOL toward migration",
+    "144 bundler wallets and 35% top-bundler-trader share suggest coordinated early accumulation that could dump into the curve",
+    "Creator has launched 200 prior tokens (spam-factory deployer pattern), lowering per-token conviction/care",
+    "top10 holder concentration 24.4% (ex-AMM) plus dev_team_hold_rate 27% is moderate, not extreme, but adds overhang",
+    "Crowded competing-theme field (other Sailor Moon coins) could split attention rather than concentrate it on this token"
+   ]
+  },
+  "counterargument": "The strongest case against my skepticism: the cultural hook here is unusually real and current (a genuinely trending TikTok AI filter, not a manufactured meme), the token is buy-dominant with fast unique-buyer growth in its first minutes, mint/freeze are renounced, RugCheck score is minimal, tax is 0%, and the creator has a documented past hit (ATH mcap ~$20M on a prior launch) \u2014 so this deployer has done this before successfully. If a single influential account picks up the filter+token connection in the next hour, the combination of low mcap, real trend, and clean structure could produce a fast multi-x move before the crowded competing-theme problem matters at all.",
+  "unknowns": [
+   "Whether the token has any dedicated, growing X/Telegram community distinct from the passive X Community link",
+   "Whether the 144 bundler wallets are still holding or have already begun distributing into the curve",
+   "Whether the broader Sailor Moon AI filter trend is still accelerating or already past its TikTok peak as of today",
+   "Which (if any) of the competing Sailor-Moon-themed tokens the community actually considers canonical",
+   "Real-time buy/sell pressure in the 5 minutes immediately preceding entry (packet is a T2 snapshot)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "News/general web search confirmed the underlying Sailor Moon AI filter (Glam AI) is a real, currently viral TikTok trend, independent of this token. Multiple X-query variants for the contract address, $Moonify, and 'Sailor Moonification' returned no token-specific posts, but search engines index X poorly so this is 'nothing found,' not 'nothing exists.' Telegram/Discord not attempted \u2014 packet shows no telegram handle and no discord link was available to check within the 4-search budget. project_websites is empty in the packet and confirmed by search: no dedicated site found, only an X Community link."
+  },
+  "thesis": "Real, currently-viral cultural trend (Sailor Moon AI filter) gives this token a genuine external hook, and early on-chain buy pressure is real-looking rather than obviously wash-traded \u2014 but the token itself has no confirmed dedicated organic following, sits in a crowded field of similarly-themed coins, was bundled at launch by a 200-token serial deployer, and has already shown a large percentage round-trip on very little net mcap gain, suggesting much of the easy move already happened before this entry. Rank as marginally above an average early-curve coin on narrative grounds, but below average on token-specific conviction and structural cleanliness.",
+  "continuation_view": "fade",
+  "p_runner": 16,
+  "p_rug": 42,
+  "survival_score": 48,
+  "attention_score": 54,
+  "manipulation_risk": 64,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/5Di38UfcfYiyKhuRC546bK7JFZ5wbAEKeXPdu1Vb9ShA",
+    "what": "A different, unrelated 'Sailor Moon' (MOON) Solana pool showing the theme is used by multiple competing tokens"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/7sXsa85VCcDr8eYzos5nJ4JVp8MWg5yAXzbncfEvpump",
+    "what": "Another competing Sailor Moon-themed pump.fun token (MOON), confirming a crowded thematic field"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/CTTgoDmHXuMHpAhj8SvN6aZhVkNJ91fEC2WkW1aAZmY1",
+    "what": "Competing SMOON token, ~$31K mcap, same theme different ticker"
+   },
+   {
+    "url": "https://www.tiktok.com/@elisa.glamai/video/7514804645064133910",
+    "what": "Evidence the Sailor Moon AI filter (Glam AI) trend is real and currently viral on TikTok"
+   },
+   {
+    "url": "https://www.tiktok.com/discover/the-sailor-moon-trend",
+    "what": "Broader TikTok discovery page showing the Sailor Moon AI transformation trend is active"
+   }
+  ]
+ },
+ "ttft_ms": 2124,
+ "type": "result",
+ "duration_ms": 156932,
+ "uuid": "e4991d59-dbb3-43cb-94b7-ec8aad3ecd19",
+ "ttft_stream_ms": 877,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 877,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

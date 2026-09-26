@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 228293,
+ "stop_reason": "tool_use",
+ "session_id": "590c0173-4c8d-4aca-9b6c-821aa0d64fdf",
+ "total_cost_usd": 0.4134188,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 24196,
+  "cache_read_input_tokens": 100574,
+  "output_tokens": 20857,
+  "output_tokens_details": {
+   "thinking_tokens": 7405
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 24196,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3810,
+    "cache_read_input_tokens": 26363,
+    "cache_creation_input_tokens": 1322,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1322
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 12,
+   "outputTokens": 20857,
+   "cacheReadInputTokens": 100574,
+   "cacheCreationInputTokens": 24196,
+   "webSearchRequests": 0,
+   "costUSD": 0.32549279999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 7405,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42256,
+   "outputTokens": 1134,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08792599999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-launched token (\\\"Sitting Dog\\\", ticker FLETCHER) migrated to PumpSwap roughly 10-15 minutes before detection and has already run +88% to +101% in that window on ~$170k-180k of volume against a ~$92k-98k market cap (h1 turnover ~6x). It sits alongside at least 9 other tokens sharing the same name/ticker family (Sitting Dog / SDOG / FLETCHER), several launched within minutes of each other, apparently via the same deploy tool (\\\"uxento\\\" per the project description), including one much larger token (SDOG, ~$1.15M mcap, $333k h1 volume) that predates this one. GMGN wallet data shows very high bundler (51.7% of holders), fresh-wallet (48.7%) and bot/degen (64.5%) composition, plus a flagged 6-wallet insider transfer network, alongside a recycled/renamed project X account and a \\\"community_takeover\\\" flag.\",\"narrative\":{\"description\":\"Token is named 'Sitting Dog' with ticker FLETCHER; no identifiable cultural event, meme origin, or news hook was found connecting to this specific launch. Project links are a single X status URL and a TikTok handle, not a developed account or community.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"No organic narrative was found; the price/volume burst looks driven by bot/bundler/sniper activity around a freshly migrated pool rather than a spreading story. The 'Sitting Dog' name/ticker appears templated across at least 10 near-simultaneous clone launches, suggesting an automated launch-tool pattern rather than a single viral idea.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"FLETCHER/Sitting Dog is one of at least 10 same-name/ticker tokens launched within a roughly 4-hour window, several within minutes of each other, most likely via an automated deploy tool ('uxento'). This pair has real liquidity ($26-27k) and volume unlike most zero-liquidity clones, but it is neither the first nor the largest instance.\",\"competing_tokens\":\"SDOG 'Sitting Dog' (yFcTuQJCMsd1Asya15GZ7h4KGdxsujRLcUiTWWXpump) is far larger: ~$1.15M mcap and $333k h1 volume, created earlier (pair_created_at_ms 1790239191000 vs this token's 1790447880000). At least 8 other zero/low-liquidity 'Sitting Dog'/FLETCHER/SDOG clones exist, created within minutes of this one and of each other.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN: bundler_wallets 237/458 holders (51.7%), fresh_wallets 223/458 (48.7%), bot_degen_rate 64.5%, top_bundler_trader_pct 32.5%, an insider transfer network of 6 wallets flagged, smart_money_signal_count 0, degen_call_count 0, and the project's X account has a rename history (incomekevin -> IAMCALLED_KEVIN) with a 'community_takeover' flag, indicating a recycled account rather than a fresh dedicated project presence. No dexscreener paid ads/boosts were active though.\",\"uncertainty\":\"Web search (contract address, ticker, project handle) returned no relevant results at all, so I cannot confirm or rule out any organic off-chain discussion; absence of evidence is not evidence of absence given search engines index X poorly.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Price already up 88-101% in the ~10-15 min before entry, meaning the easy first leg is likely behind, not ahead, of the entry point\",\"51.7% of holders tagged as bundler wallets and 48.7% as fresh wallets, consistent with a coordinated launch buy that can distribute/dump into retail strength\",\"6-wallet insider transfer network flagged by structure data\",\"At least 9 competing same-name tokens including one 10x larger, fragmenting attention and buy pressure across near-identical assets\",\"Liquidity ($26-27k) is thin relative to the volume being pushed through it (h1 turnover ~6x mcap), so slippage on any exit could be severe\",\"top10_holder_pct 24.26% (ex-AMM/locker) plus GMGN top10_holder_rate 24.26% is moderate but combined with bundler share raises real effective concentration\"]},\"counterargument\":\"The structural/security data is genuinely clean by RugCheck's own narrow read: mint and freeze authorities renounced, LP 100% locked/burned, zero buy/sell tax, no honeypot flag, and rugcheck_score_normalised of 1 (very low). Real volume is also unusually large for the market cap (six times turnover in an hour, 900+ unique buyers/sellers by GeckoTerminal's count), and buys_per_unique_buyer_h1 of 1.89 is on the low/organic-looking end of that ratio, meaning this isn't simply a handful of wallets wash-trading a static float -- a genuinely wide base of distinct wallets is transacting. On pump.fun-style launches, bundler/sniper/fresh-wallet heavy composition is close to the norm for the first minutes after migration, not a special red flag unique to this coin, and dev holds 0% (creator_balance 0, creator_hold_rate 0.0), removing one dump vector. If FLETCHER (not SDOG) is simply the version currently being routed to by trackers/scanners at this exact moment, momentum chasers could push it further within the 30-minute window regardless of \\\"canonical\\\" status, since pump.fun trader behavior often follows whichever chart is moving on their screen, not brand history.\",\"unknowns\":[\"Whether any real off-platform (X/Reddit/Telegram/Discord/TikTok) organic discussion of this specific token or contract exists -- searches found nothing, but X is poorly indexed by web search\",\"What the 6-wallet insider transfer network's actual token_pct is -- the packet value (60180361562723) is not a usable percentage, likely a raw/unit formatting issue\",\"Why structure.creator and gmgn.dev.creator_address are two different addresses -- unclear if this reflects pump.fun bonding-curve creator vs. a different on-chain role, or a data inconsistency\",\"Whether the larger SDOG token or this FLETCHER token is the one actual traders/scanners are currently routing volume toward as 'the' Sitting Dog play\",\"Content of the TikTok link (@zaxa557) and the single X status link, neither of which was fetched due to search budget\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Used all 4 allotted searches on: (1) exact contract address, (2) ticker+name combo, (3) project X handle 'IAMCALLED_KEVIN', (4) generic 'sitting dog' meme origin. None returned any result connected to this token, contract, or project account. Packet shows project_websites: [] (empty) and only a single X status URL + TikTok handle as socials; neither was fetched given budget exhaustion.\"},\"thesis\":\"FLETCHER/Sitting Dog shows real, unusually large trading volume for its size, but every other signal points to a manufactured launch-tool coin rather than a spreading narrative: it is one of ~10 same-named clones (including a 10x-larger competitor that predates it), over half its holders are bundler/fresh wallets with an insider network flagged, the project's X account is a renamed/recycled 'community takeover' account, and zero organic external discussion could be found despite targeted searches. The price has already run +100% in the ~10-15 minutes before entry, meaning this trade would be buying an already-extended, bot-heavy pump into a 30-minute window, with real risk of bundler distribution rather than continued upside. Rank this below coins with a verifiable organic story and a canonical, uncontested token identity.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":32,\"survival_score\":52,\"attention_score\":50,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://knowyourmeme.com/photos/1129587-dogs\",\"what\":\"General 'sitting dog' meme background search -- no connection found to this specific token or launch\"},{\"url\":\"https://dexscreener.com/solana/pumpswap\",\"what\":\"General PumpSwap DEX listing context; did not surface this specific pair in search results\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-launched token (\"Sitting Dog\", ticker FLETCHER) migrated to PumpSwap roughly 10-15 minutes before detection and has already run +88% to +101% in that window on ~$170k-180k of volume against a ~$92k-98k market cap (h1 turnover ~6x). It sits alongside at least 9 other tokens sharing the same name/ticker family (Sitting Dog / SDOG / FLETCHER), several launched within minutes of each other, apparently via the same deploy tool (\"uxento\" per the project description), including one much larger token (SDOG, ~$1.15M mcap, $333k h1 volume) that predates this one. GMGN wallet data shows very high bundler (51.7% of holders), fresh-wallet (48.7%) and bot/degen (64.5%) composition, plus a flagged 6-wallet insider transfer network, alongside a recycled/renamed project X account and a \"community_takeover\" flag.",
+  "narrative": {
+   "description": "Token is named 'Sitting Dog' with ticker FLETCHER; no identifiable cultural event, meme origin, or news hook was found connecting to this specific launch. Project links are a single X status URL and a TikTok handle, not a developed account or community.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "No organic narrative was found; the price/volume burst looks driven by bot/bundler/sniper activity around a freshly migrated pool rather than a spreading story. The 'Sitting Dog' name/ticker appears templated across at least 10 near-simultaneous clone launches, suggesting an automated launch-tool pattern rather than a single viral idea."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "FLETCHER/Sitting Dog is one of at least 10 same-name/ticker tokens launched within a roughly 4-hour window, several within minutes of each other, most likely via an automated deploy tool ('uxento'). This pair has real liquidity ($26-27k) and volume unlike most zero-liquidity clones, but it is neither the first nor the largest instance.",
+   "competing_tokens": "SDOG 'Sitting Dog' (yFcTuQJCMsd1Asya15GZ7h4KGdxsujRLcUiTWWXpump) is far larger: ~$1.15M mcap and $333k h1 volume, created earlier (pair_created_at_ms 1790239191000 vs this token's 1790447880000). At least 8 other zero/low-liquidity 'Sitting Dog'/FLETCHER/SDOG clones exist, created within minutes of this one and of each other.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN: bundler_wallets 237/458 holders (51.7%), fresh_wallets 223/458 (48.7%), bot_degen_rate 64.5%, top_bundler_trader_pct 32.5%, an insider transfer network of 6 wallets flagged, smart_money_signal_count 0, degen_call_count 0, and the project's X account has a rename history (incomekevin -> IAMCALLED_KEVIN) with a 'community_takeover' flag, indicating a recycled account rather than a fresh dedicated project presence. No dexscreener paid ads/boosts were active though.",
+   "uncertainty": "Web search (contract address, ticker, project handle) returned no relevant results at all, so I cannot confirm or rule out any organic off-chain discussion; absence of evidence is not evidence of absence given search engines index X poorly."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Price already up 88-101% in the ~10-15 min before entry, meaning the easy first leg is likely behind, not ahead, of the entry point",
+    "51.7% of holders tagged as bundler wallets and 48.7% as fresh wallets, consistent with a coordinated launch buy that can distribute/dump into retail strength",
+    "6-wallet insider transfer network flagged by structure data",
+    "At least 9 competing same-name tokens including one 10x larger, fragmenting attention and buy pressure across near-identical assets",
+    "Liquidity ($26-27k) is thin relative to the volume being pushed through it (h1 turnover ~6x mcap), so slippage on any exit could be severe",
+    "top10_holder_pct 24.26% (ex-AMM/locker) plus GMGN top10_holder_rate 24.26% is moderate but combined with bundler share raises real effective concentration"
+   ]
+  },
+  "counterargument": "The structural/security data is genuinely clean by RugCheck's own narrow read: mint and freeze authorities renounced, LP 100% locked/burned, zero buy/sell tax, no honeypot flag, and rugcheck_score_normalised of 1 (very low). Real volume is also unusually large for the market cap (six times turnover in an hour, 900+ unique buyers/sellers by GeckoTerminal's count), and buys_per_unique_buyer_h1 of 1.89 is on the low/organic-looking end of that ratio, meaning this isn't simply a handful of wallets wash-trading a static float -- a genuinely wide base of distinct wallets is transacting. On pump.fun-style launches, bundler/sniper/fresh-wallet heavy composition is close to the norm for the first minutes after migration, not a special red flag unique to this coin, and dev holds 0% (creator_balance 0, creator_hold_rate 0.0), removing one dump vector. If FLETCHER (not SDOG) is simply the version currently being routed to by trackers/scanners at this exact moment, momentum chasers could push it further within the 30-minute window regardless of \"canonical\" status, since pump.fun trader behavior often follows whichever chart is moving on their screen, not brand history.",
+  "unknowns": [
+   "Whether any real off-platform (X/Reddit/Telegram/Discord/TikTok) organic discussion of this specific token or contract exists -- searches found nothing, but X is poorly indexed by web search",
+   "What the 6-wallet insider transfer network's actual token_pct is -- the packet value (60180361562723) is not a usable percentage, likely a raw/unit formatting issue",
+   "Why structure.creator and gmgn.dev.creator_address are two different addresses -- unclear if this reflects pump.fun bonding-curve creator vs. a different on-chain role, or a data inconsistency",
+   "Whether the larger SDOG token or this FLETCHER token is the one actual traders/scanners are currently routing volume toward as 'the' Sitting Dog play",
+   "Content of the TikTok link (@zaxa557) and the single X status link, neither of which was fetched due to search budget"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Used all 4 allotted searches on: (1) exact contract address, (2) ticker+name combo, (3) project X handle 'IAMCALLED_KEVIN', (4) generic 'sitting dog' meme origin. None returned any result connected to this token, contract, or project account. Packet shows project_websites: [] (empty) and only a single X status URL + TikTok handle as socials; neither was fetched given budget exhaustion."
+  },
+  "thesis": "FLETCHER/Sitting Dog shows real, unusually large trading volume for its size, but every other signal points to a manufactured launch-tool coin rather than a spreading narrative: it is one of ~10 same-named clones (including a 10x-larger competitor that predates it), over half its holders are bundler/fresh wallets with an insider network flagged, the project's X account is a renamed/recycled 'community takeover' account, and zero organic external discussion could be found despite targeted searches. The price has already run +100% in the ~10-15 minutes before entry, meaning this trade would be buying an already-extended, bot-heavy pump into a 30-minute window, with real risk of bundler distribution rather than continued upside. Rank this below coins with a verifiable organic story and a canonical, uncontested token identity.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 32,
+  "survival_score": 52,
+  "attention_score": 50,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://knowyourmeme.com/photos/1129587-dogs",
+    "what": "General 'sitting dog' meme background search -- no connection found to this specific token or launch"
+   },
+   {
+    "url": "https://dexscreener.com/solana/pumpswap",
+    "what": "General PumpSwap DEX listing context; did not surface this specific pair in search results"
+   }
+  ]
+ },
+ "ttft_ms": 1490,
+ "type": "result",
+ "duration_ms": 220759,
+ "uuid": "0defc720-0d83-48ec-a026-26bb3dcda8ca",
+ "ttft_stream_ms": 608,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 609,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

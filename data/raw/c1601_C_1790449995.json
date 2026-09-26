@@ -1,0 +1,191 @@
+{
+ "duration_api_ms": 162456,
+ "stop_reason": "tool_use",
+ "session_id": "68fc3c33-dca5-4919-bc42-2c60b1cf302c",
+ "total_cost_usd": 0.27738939999999995,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 19688,
+  "cache_read_input_tokens": 49112,
+  "output_tokens": 12306,
+  "output_tokens_details": {
+   "thinking_tokens": 5230
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19688,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3585,
+    "cache_read_input_tokens": 17074,
+    "cache_creation_input_tokens": 6103,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6103
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 12306,
+   "cacheReadInputTokens": 49112,
+   "cacheCreationInputTokens": 19688,
+   "webSearchRequests": 0,
+   "costUSD": 0.21165039999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5230,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 31304,
+   "outputTokens": 887,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06573899999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun bonding-curve token named \\\"AlphaAI\\\" (contract Fh5KWt...DRgo, ~$19k mcap) spiked +315% over the last hour on $172k volume, then dumped -49% in the five minutes just before detection. It is one of at least 10 simultaneously-launched clone tokens sharing the exact name \\\"AlphaAI,\\\" created within roughly a 7-minute window, evidently triggered by a real tweet from Kevin Xu (@imkevinxu/@kevinxu), a known fintech/AI founder, teasing \\\"new app, your ai money friend. launching soon. @alpha_ai.\\\" The packet's project_description (\\\"Fees to @kevinxu via UsePaid\\\") confirms this token uses the permissionless UsePaid protocol to route pump.fun creator fees to Kevin Xu's X handle \u2014 a fee-tribute mechanic anyone can attach without his consent or involvement, not an official launch by him.\",\"narrative\":{\"description\":\"A real founder (Kevin Xu) teased a real upcoming app called 'Alpha AI' on X. This triggered a swarm of copycat pump.fun tokens all named 'AlphaAI' that tag his X handle via UsePaid to route him fees, hoping to ride the association.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The trigger event (a real founder's product teaser) has genuine reach, but the on-chain 'spread' is a land-grab: multiple bots/humans raced to deploy identically-named tokens within minutes of each other and traders rotated capital among the clones. That is degen ticker-sniping, not organic community discussion of this specific contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"By creation timestamp this contract is the earliest of the ~7-minute clone cluster, but earliest has not meant winner: three other AlphaAI clones already sit at $107k, $94k and $67k market cap, 3-5x this token's ~$19k, meaning the market has already voted money toward other contracts. This token's own price is down -49% in the 5 minutes pre-detection after its +315% h1 spike, consistent with attention rotating away from it toward the larger clones.\",\"competing_tokens\":\"At least 9 other pump.fun tokens named/tickered AlphaAI created within the same ~7-minute window (and two older unrelated AlphaAI launches from hours earlier), with market caps ranging $3.4k to $107k; three clones are materially larger than this one.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"Fee routing to Kevin Xu's X handle via UsePaid is a paid/promotional fee mechanic, not evidence of his endorsement. GMGN shows 316 bundler-wallet tags and 27.7% of top-trader volume flagged as bundler activity, 9 insiders detected via wallet-graph clustering, bot/degen rate 32.5%, and no project website/socials of its own (dexscreener_profile_present=false, project_websites=[]).\",\"uncertainty\":\"Could not fetch x.com directly or verify the exact tweet ID GMGN references (kevinxu/status/2103922778315641029) against the teaser tweet found via search (imkevinxu/status/1976738860353958254) \u2014 these may be different posts, and I could not confirm which, if either, actually names or links this specific contract address.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Mint/freeze authority renounced and rugcheck_score_normalised=1 (low) are reassuring, but this is a pump.fun curve token: 'LP locked 100%' is not meaningful pulled-liquidity protection here, only that there's no external LP to pull.\",\"Top10 holders 28.27% (ex-pool) plus a detected 9-wallet insider network is moderate concentration for a $19k mcap.\",\"316 bundler wallet tags and 27.7% top_bundler_trader_pct indicate a meaningful share of trading volume is coordinated/same-entity rather than organic dispersion.\",\"Liquidity is thin in absolute terms (~$17-19k); a $250 buy 5 minutes post-detection is entering after a -49% five-minute dump, i.e., possibly already mid-selloff rather than mid-pump.\",\"Attention and capital are fragmented across ~10 identically named tokens, so even if the Kevin Xu narrative keeps growing, this specific contract must compete with three larger, better-capitalized clones for continued inflows.\"]},\"counterargument\":\"This token was created first among the clone cluster and carries genuinely elevated absolute volume (h1 turnover ~10x mcap, 1082 unique buyers in the last hour per GeckoTerminal) \u2014 if Kevin Xu's real app launch news continues to circulate or he mentions/boosts the ecosystem further, a first-mover pump.fun contract can still catch a second wave of buyers who search out the 'original,' and its still-modest $19k cap leaves more room percentage-wise to double than the already-$100k+ clones. The -49% five-minute dump could also just be bonding-curve noise/volatility rather than a directional exit, and it is not down as an LP-pulled rug (rug_guard confirms no removable LP on the curve).\",\"unknowns\":[\"Whether the tweet(s) referenced (imkevinxu/status/1976738860353958254 and geckoterminal's kevinxu/status/2103922778315641029) actually mention or link this specific contract, or any contract at all\",\"Which, if any, of the 10 AlphaAI clones the community/KOLs are actually rallying around as 'the' token \u2014 no Telegram/Discord/Reddit coverage was attempted given the budget\",\"Whether Kevin Xu or the Alpha AI team has issued any warning about fake/unofficial tokens (common when a founder teases a launch and clones appear)\",\"The creator address's true history beyond the single creator_other_tokens=0 field \u2014 deploy_platform is 'unknown' and creator_launched_token_count=167013 is uninterpretable as a per-wallet track record\",\"Whether the -49% m5 move reverses or continues within the next 5-30 minutes\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"inaccessible\",\"notes\":\"WebSearch surfaced Kevin Xu's real X presence and a teaser tweet about 'Alpha AI' launching soon, plus his general founder background (ChatWithAlpha / ~$35k-to-$8M social trading story). Direct search for the contract address string returned nothing relevant. A WebFetch attempt on the packet's usepaid.app project link failed with an SSL/TLS error (inaccessible). No searches were run for Reddit, Telegram, Discord, or dedicated news given the 4-call budget; these are recorded as not_attempted, not as evidence of absence.\"},\"thesis\":\"This is a real-founder-triggered pump.fun ticker swarm: genuine narrative energy (Kevin Xu's real 'Alpha AI' app teaser) is being monetized by ~10 unofficial clone tokens racing for the same name via a permissionless fee-routing gimmick (UsePaid), not an endorsed launch. This specific contract was first-created in the cluster but is currently the second-smallest of the six 'live' clones by market cap, and it just posted a sharp -49% five-minute reversal after its +315% hourly spike \u2014 evidence that capital is already rotating toward the three larger clones ($107k/$94k/$67k) rather than concentrating here. Structural security checks (renounced authorities, low rugcheck score) are fine, but bundler/insider wallet activity is elevated and the token has no independent socials of its own. Net: a plausible but crowded, fragmenting, already-decelerating narrative play with below-average odds of hitting +100% before -50% in the next 30 minutes.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":32,\"survival_score\":46,\"attention_score\":42,\"manipulation_risk\":64,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://x.com/imkevinxu/status/1976738860353958254\",\"what\":\"Kevin Xu teaser tweet: 'new app, your ai money friend. launching soon. @alpha_ai' \u2014 likely trigger for the AlphaAI pump.fun clone swarm\"},{\"url\":\"https://x.com/kevinxu\",\"what\":\"Kevin Xu's main X profile, confirming he is a real, active founder (Alpha AI / ChatWithAlpha)\"},{\"url\":\"https://www.buzzsprout.com/2449146/episodes/17897809-turning-35k-into-8m-social-trading-with-founder-ceo-of-alpha-ai-kevin-xu\",\"what\":\"Podcast confirming Kevin Xu as real Founder/CEO of Alpha AI, background context\"},{\"url\":\"https://www.fondo.com/blog/sgp-24\",\"what\":\"Podcast episode listing referencing Kevin Xu and his AI companion app\"},{\"url\":\"https://usepaid.app/t/tw3p6h7f\",\"what\":\"Packet-listed project link for this token's fee-routing page; WebFetch failed (SSL error), so content could not be verified directly\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun bonding-curve token named \"AlphaAI\" (contract Fh5KWt...DRgo, ~$19k mcap) spiked +315% over the last hour on $172k volume, then dumped -49% in the five minutes just before detection. It is one of at least 10 simultaneously-launched clone tokens sharing the exact name \"AlphaAI,\" created within roughly a 7-minute window, evidently triggered by a real tweet from Kevin Xu (@imkevinxu/@kevinxu), a known fintech/AI founder, teasing \"new app, your ai money friend. launching soon. @alpha_ai.\" The packet's project_description (\"Fees to @kevinxu via UsePaid\") confirms this token uses the permissionless UsePaid protocol to route pump.fun creator fees to Kevin Xu's X handle \u2014 a fee-tribute mechanic anyone can attach without his consent or involvement, not an official launch by him.",
+  "narrative": {
+   "description": "A real founder (Kevin Xu) teased a real upcoming app called 'Alpha AI' on X. This triggered a swarm of copycat pump.fun tokens all named 'AlphaAI' that tag his X handle via UsePaid to route him fees, hoping to ride the association.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The trigger event (a real founder's product teaser) has genuine reach, but the on-chain 'spread' is a land-grab: multiple bots/humans raced to deploy identically-named tokens within minutes of each other and traders rotated capital among the clones. That is degen ticker-sniping, not organic community discussion of this specific contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "By creation timestamp this contract is the earliest of the ~7-minute clone cluster, but earliest has not meant winner: three other AlphaAI clones already sit at $107k, $94k and $67k market cap, 3-5x this token's ~$19k, meaning the market has already voted money toward other contracts. This token's own price is down -49% in the 5 minutes pre-detection after its +315% h1 spike, consistent with attention rotating away from it toward the larger clones.",
+   "competing_tokens": "At least 9 other pump.fun tokens named/tickered AlphaAI created within the same ~7-minute window (and two older unrelated AlphaAI launches from hours earlier), with market caps ranging $3.4k to $107k; three clones are materially larger than this one.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "Fee routing to Kevin Xu's X handle via UsePaid is a paid/promotional fee mechanic, not evidence of his endorsement. GMGN shows 316 bundler-wallet tags and 27.7% of top-trader volume flagged as bundler activity, 9 insiders detected via wallet-graph clustering, bot/degen rate 32.5%, and no project website/socials of its own (dexscreener_profile_present=false, project_websites=[]).",
+   "uncertainty": "Could not fetch x.com directly or verify the exact tweet ID GMGN references (kevinxu/status/2103922778315641029) against the teaser tweet found via search (imkevinxu/status/1976738860353958254) \u2014 these may be different posts, and I could not confirm which, if either, actually names or links this specific contract address."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Mint/freeze authority renounced and rugcheck_score_normalised=1 (low) are reassuring, but this is a pump.fun curve token: 'LP locked 100%' is not meaningful pulled-liquidity protection here, only that there's no external LP to pull.",
+    "Top10 holders 28.27% (ex-pool) plus a detected 9-wallet insider network is moderate concentration for a $19k mcap.",
+    "316 bundler wallet tags and 27.7% top_bundler_trader_pct indicate a meaningful share of trading volume is coordinated/same-entity rather than organic dispersion.",
+    "Liquidity is thin in absolute terms (~$17-19k); a $250 buy 5 minutes post-detection is entering after a -49% five-minute dump, i.e., possibly already mid-selloff rather than mid-pump.",
+    "Attention and capital are fragmented across ~10 identically named tokens, so even if the Kevin Xu narrative keeps growing, this specific contract must compete with three larger, better-capitalized clones for continued inflows."
+   ]
+  },
+  "counterargument": "This token was created first among the clone cluster and carries genuinely elevated absolute volume (h1 turnover ~10x mcap, 1082 unique buyers in the last hour per GeckoTerminal) \u2014 if Kevin Xu's real app launch news continues to circulate or he mentions/boosts the ecosystem further, a first-mover pump.fun contract can still catch a second wave of buyers who search out the 'original,' and its still-modest $19k cap leaves more room percentage-wise to double than the already-$100k+ clones. The -49% five-minute dump could also just be bonding-curve noise/volatility rather than a directional exit, and it is not down as an LP-pulled rug (rug_guard confirms no removable LP on the curve).",
+  "unknowns": [
+   "Whether the tweet(s) referenced (imkevinxu/status/1976738860353958254 and geckoterminal's kevinxu/status/2103922778315641029) actually mention or link this specific contract, or any contract at all",
+   "Which, if any, of the 10 AlphaAI clones the community/KOLs are actually rallying around as 'the' token \u2014 no Telegram/Discord/Reddit coverage was attempted given the budget",
+   "Whether Kevin Xu or the Alpha AI team has issued any warning about fake/unofficial tokens (common when a founder teases a launch and clones appear)",
+   "The creator address's true history beyond the single creator_other_tokens=0 field \u2014 deploy_platform is 'unknown' and creator_launched_token_count=167013 is uninterpretable as a per-wallet track record",
+   "Whether the -49% m5 move reverses or continues within the next 5-30 minutes"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "inaccessible",
+   "notes": "WebSearch surfaced Kevin Xu's real X presence and a teaser tweet about 'Alpha AI' launching soon, plus his general founder background (ChatWithAlpha / ~$35k-to-$8M social trading story). Direct search for the contract address string returned nothing relevant. A WebFetch attempt on the packet's usepaid.app project link failed with an SSL/TLS error (inaccessible). No searches were run for Reddit, Telegram, Discord, or dedicated news given the 4-call budget; these are recorded as not_attempted, not as evidence of absence."
+  },
+  "thesis": "This is a real-founder-triggered pump.fun ticker swarm: genuine narrative energy (Kevin Xu's real 'Alpha AI' app teaser) is being monetized by ~10 unofficial clone tokens racing for the same name via a permissionless fee-routing gimmick (UsePaid), not an endorsed launch. This specific contract was first-created in the cluster but is currently the second-smallest of the six 'live' clones by market cap, and it just posted a sharp -49% five-minute reversal after its +315% hourly spike \u2014 evidence that capital is already rotating toward the three larger clones ($107k/$94k/$67k) rather than concentrating here. Structural security checks (renounced authorities, low rugcheck score) are fine, but bundler/insider wallet activity is elevated and the token has no independent socials of its own. Net: a plausible but crowded, fragmenting, already-decelerating narrative play with below-average odds of hitting +100% before -50% in the next 30 minutes.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 32,
+  "survival_score": 46,
+  "attention_score": 42,
+  "manipulation_risk": 64,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://x.com/imkevinxu/status/1976738860353958254",
+    "what": "Kevin Xu teaser tweet: 'new app, your ai money friend. launching soon. @alpha_ai' \u2014 likely trigger for the AlphaAI pump.fun clone swarm"
+   },
+   {
+    "url": "https://x.com/kevinxu",
+    "what": "Kevin Xu's main X profile, confirming he is a real, active founder (Alpha AI / ChatWithAlpha)"
+   },
+   {
+    "url": "https://www.buzzsprout.com/2449146/episodes/17897809-turning-35k-into-8m-social-trading-with-founder-ceo-of-alpha-ai-kevin-xu",
+    "what": "Podcast confirming Kevin Xu as real Founder/CEO of Alpha AI, background context"
+   },
+   {
+    "url": "https://www.fondo.com/blog/sgp-24",
+    "what": "Podcast episode listing referencing Kevin Xu and his AI companion app"
+   },
+   {
+    "url": "https://usepaid.app/t/tw3p6h7f",
+    "what": "Packet-listed project link for this token's fee-routing page; WebFetch failed (SSL error), so content could not be verified directly"
+   }
+  ]
+ },
+ "ttft_ms": 3967,
+ "type": "result",
+ "duration_ms": 158182,
+ "uuid": "babe943c-e0ff-4071-8f61-454db52c8d17",
+ "ttft_stream_ms": 1223,
+ "time_to_request_ms": 53,
+ "first_content_frame_ms": 1223,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

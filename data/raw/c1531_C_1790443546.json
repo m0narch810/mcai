@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 163770,
+ "stop_reason": "tool_use",
+ "session_id": "ff5e1a44-6d93-4a8d-91c7-fcd3956f6144",
+ "total_cost_usd": 0.3811022,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 23432,
+  "cache_read_input_tokens": 75381,
+  "output_tokens": 10290,
+  "output_tokens_details": {
+   "thinking_tokens": 3031
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 23432,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3351,
+    "cache_read_input_tokens": 22806,
+    "cache_creation_input_tokens": 4115,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4115
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 10,
+   "outputTokens": 10290,
+   "cacheReadInputTokens": 75381,
+   "cacheCreationInputTokens": 23432,
+   "webSearchRequests": 0,
+   "costUSD": 0.21172419999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 3031,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 77348,
+   "outputTokens": 2406,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 8,
+   "costUSD": 0.16937800000000003,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Solana token named \u6c99\u8036\u306e\u5504 (\\\"Saya no Uta\\\", referencing Gen Urobuchi's 2003 Nitroplus horror visual novel) spiked roughly 816% in the ~17 minutes before detection (GeckoTerminal m30 price_change +816%), then reversed sharply: -43.5% in the 5 minutes right at detection, still -3.24% by the time market data was pulled a minute later. It is one of at least six near-identical \\\"\u6c99\u8036\u306e\u5504\\\" tokens deployed within about 16 minutes of each other on pump.fun; this contract was the earliest-deployed and by far the largest by market cap/liquidity ($368k mcap / $59k liq vs. the next-largest competitor at $258k mcap but only $5.5k liquidity). Volume and buyer counts are enormous for the coin's age (1,092 unique buyers in the last 5 minutes; 2,176 in the first hour on a pool ~17 minutes old), but wallet composition is heavily bot/insider driven: 469 bundler wallets (34% of holders), 40 snipers, 425 fresh wallets, and a buys-per-unique-buyer ratio of 3.25 (repeated churn, not one-and-done organic buying).\",\"narrative\":{\"description\":\"The ticker/name references a well-known 2003 Japanese horror visual novel (Saya no Uta / The Song of Saya) with a real but currently dormant fandom. The only 2026 news tied to the IP is a stage-play/reading-drama adaptation in Tokyo, scheduled for June 4-14, 2026 (per Automaton West, Siliconera, Noisy Pixel) \u2014 already in the past relative to now (Sept 26, 2026), not a live catalyst.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"No organic discussion of this token was found on X, Reddit, or Telegram despite multiple query forms (contract address, $\u6c99\u8036, name, site:x.com). The IP itself has no current news hook. The large volume/buyer numbers look driven by bundlers, snipers and fresh wallets rather than genuine fandom rediscovery or a real-world event.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"Of six near-simultaneous '\u6c99\u8036\u306e\u5504' launches (all created within ~16 minutes of each other per pair_created_at_ms), this contract was deployed first and has by far the largest liquidity ($59k vs $16.9k, $5.5k, or $0 for the others) and highest peak market cap, making it the de facto 'main' pool that absorbed the bulk of bot/sniper flow \u2014 but 'largest of a bundler-driven multi-launch' is not the same as an organically chosen canonical token.\",\"competing_tokens\":\"Five other tokens with identical symbol and name were created within the same ~16-minute window (e.g. 8Zj6CZ...$258k mcap/$5.5k liq, EwUm1u...$57k mcap, Hg2U8p...$18.5k mcap/$72k h1 vol). This pattern \u2014 many identical clones launched almost simultaneously \u2014 is typical of coordinated/bundled multi-deploy scripts rather than a single community rallying around one contract.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"gmgn_wallets_and_dev shows 469 bundler wallets (34% of 1,361 holders), top_bundler_trader_pct 0.3056, 40 sniper wallets, 425 fresh wallets, and buys_per_unique_buyer_h1 of 3.25 indicating repeat-buy churn rather than broad organic uptake. The project's own 'twitter' link in the packet is literally an x.com search-query URL, not a followed account, and web search found zero X/Reddit/Telegram posts discussing this contract, ticker, or name in a crypto context.\",\"uncertainty\":\"Private Telegram (t.me/sayanouta_sol) content could not be read; a real but small/insular community there is possible. X search-indexing is poor, so some organic posts could exist but not be surfaced within the time available.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Price already spiked ~816% and was actively reversing (-43.5% in 5 min) at the moment of detection \u2014 entry 4 minutes later is likely chasing a top, not an early move.\",\"34% of holders are bundler wallets and 40 are flagged snipers \u2014 classic insider-dump overhang once the initial pump exhausts.\",\"Six simultaneous same-name clones fragment attention and liquidity across pools, so even if the narrative had legs, demand is split.\",\"LP is 100% locked (rug_guard: not removable), which removes the classic LP-pull vector but does not prevent bundler/insider wallets from simply selling into the pool.\"]},\"counterargument\":\"The token has objectively enormous, fast-growing raw metrics (2,176 unique buyers, $2.3M volume in an hour on a 17-minute-old pool) that dwarf typical entries in this size band, LP is fully locked so a hard rug is structurally blocked, mint/freeze are renounced, and rugcheck_score is minimal (1). If even a fraction of the bundler-driven volume converts into a fresh momentum leg (a common pump.fun pattern where an initial bot-driven spike attracts real momentum/copy-trading), the sheer size of buyer flow could produce another leg up within the 30-minute window regardless of the fact that no organic narrative was found \u2014 some pump.fun runners are pure volume/momentum plays with no external story at all.\",\"unknowns\":[\"Whether any of the private Telegram (t.me/sayanouta_sol) activity reflects a real, engaged community versus bots.\",\"Whether X posts exist that simply weren't surfaced by search indexing (X is poorly indexed by web search).\",\"Which of the six clone tokens, if any, later becomes the one an audience settles on as 'the' Saya token.\",\"Whether the -43.5% five-minute reversal at detection continues into further decline or stabilizes/bounces before the entry point 4 minutes later.\",\"Identity/history of the creator wallet beyond this one launch (creator_other_tokens=0 in structure, but creator_launched_token_count=1 and dev_x_account_launched_token_count=2 in gmgn \u2014 minor inconsistency, underlying dev history is thin either way).\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"News search found only the unrelated, already-passed June 2026 Saya no Uta stage-play news for the source IP \u2014 nothing about this token. Project site (madeact.com) redirected to sayasolana.live, which failed to resolve (DNS error) within the time available. X searches (contract address, $\u6c99\u8036 CJK string, site:x.com, name) returned only unrelated results about the original visual novel IP, not the token. Reddit and Discord were not explicitly queried due to time constraints after the higher-priority X/news/site checks turned up nothing actionable.\"},\"thesis\":\"This is the largest of six pump.fun clones of an old (2003) horror-VN-themed meme, already having spiked ~816% and visibly reversing at the moment of detection, with holder composition dominated by bundlers/snipers/fresh wallets and zero organic social discussion found anywhere. It reads as a bot/insider-driven volume spike riding a stale IP reference rather than a fresh, spreading narrative \u2014 entry 4 minutes post-detection is likely buying into the top of an already-exhausted pump.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":38,\"survival_score\":55,\"attention_score\":65,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://automaton-media.com/en/news/saya-no-uta-to-receive-stage-play-adaptation-in-japan/\",\"what\":\"Confirms the only current 2026 Saya no Uta news is a June 2026 stage play, already past, not a live catalyst\"},{\"url\":\"https://www.siliconera.com/saya-no-uta-performance-announced/\",\"what\":\"Corroborates the stage play as the only recent news tied to the IP\"},{\"url\":\"https://noisypixel.net/saya-no-uta-stage-play-japan-2026/\",\"what\":\"Further corroboration of the stage-play news, no token/crypto connection\"},{\"url\":\"https://en.wikipedia.org/wiki/Saya_no_Uta:_The_Song_of_Saya\",\"what\":\"Background on the source visual novel IP being referenced by the token name\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Solana token named \u6c99\u8036\u306e\u5504 (\"Saya no Uta\", referencing Gen Urobuchi's 2003 Nitroplus horror visual novel) spiked roughly 816% in the ~17 minutes before detection (GeckoTerminal m30 price_change +816%), then reversed sharply: -43.5% in the 5 minutes right at detection, still -3.24% by the time market data was pulled a minute later. It is one of at least six near-identical \"\u6c99\u8036\u306e\u5504\" tokens deployed within about 16 minutes of each other on pump.fun; this contract was the earliest-deployed and by far the largest by market cap/liquidity ($368k mcap / $59k liq vs. the next-largest competitor at $258k mcap but only $5.5k liquidity). Volume and buyer counts are enormous for the coin's age (1,092 unique buyers in the last 5 minutes; 2,176 in the first hour on a pool ~17 minutes old), but wallet composition is heavily bot/insider driven: 469 bundler wallets (34% of holders), 40 snipers, 425 fresh wallets, and a buys-per-unique-buyer ratio of 3.25 (repeated churn, not one-and-done organic buying).",
+  "narrative": {
+   "description": "The ticker/name references a well-known 2003 Japanese horror visual novel (Saya no Uta / The Song of Saya) with a real but currently dormant fandom. The only 2026 news tied to the IP is a stage-play/reading-drama adaptation in Tokyo, scheduled for June 4-14, 2026 (per Automaton West, Siliconera, Noisy Pixel) \u2014 already in the past relative to now (Sept 26, 2026), not a live catalyst.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "No organic discussion of this token was found on X, Reddit, or Telegram despite multiple query forms (contract address, $\u6c99\u8036, name, site:x.com). The IP itself has no current news hook. The large volume/buyer numbers look driven by bundlers, snipers and fresh wallets rather than genuine fandom rediscovery or a real-world event."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "Of six near-simultaneous '\u6c99\u8036\u306e\u5504' launches (all created within ~16 minutes of each other per pair_created_at_ms), this contract was deployed first and has by far the largest liquidity ($59k vs $16.9k, $5.5k, or $0 for the others) and highest peak market cap, making it the de facto 'main' pool that absorbed the bulk of bot/sniper flow \u2014 but 'largest of a bundler-driven multi-launch' is not the same as an organically chosen canonical token.",
+   "competing_tokens": "Five other tokens with identical symbol and name were created within the same ~16-minute window (e.g. 8Zj6CZ...$258k mcap/$5.5k liq, EwUm1u...$57k mcap, Hg2U8p...$18.5k mcap/$72k h1 vol). This pattern \u2014 many identical clones launched almost simultaneously \u2014 is typical of coordinated/bundled multi-deploy scripts rather than a single community rallying around one contract.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "gmgn_wallets_and_dev shows 469 bundler wallets (34% of 1,361 holders), top_bundler_trader_pct 0.3056, 40 sniper wallets, 425 fresh wallets, and buys_per_unique_buyer_h1 of 3.25 indicating repeat-buy churn rather than broad organic uptake. The project's own 'twitter' link in the packet is literally an x.com search-query URL, not a followed account, and web search found zero X/Reddit/Telegram posts discussing this contract, ticker, or name in a crypto context.",
+   "uncertainty": "Private Telegram (t.me/sayanouta_sol) content could not be read; a real but small/insular community there is possible. X search-indexing is poor, so some organic posts could exist but not be surfaced within the time available."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Price already spiked ~816% and was actively reversing (-43.5% in 5 min) at the moment of detection \u2014 entry 4 minutes later is likely chasing a top, not an early move.",
+    "34% of holders are bundler wallets and 40 are flagged snipers \u2014 classic insider-dump overhang once the initial pump exhausts.",
+    "Six simultaneous same-name clones fragment attention and liquidity across pools, so even if the narrative had legs, demand is split.",
+    "LP is 100% locked (rug_guard: not removable), which removes the classic LP-pull vector but does not prevent bundler/insider wallets from simply selling into the pool."
+   ]
+  },
+  "counterargument": "The token has objectively enormous, fast-growing raw metrics (2,176 unique buyers, $2.3M volume in an hour on a 17-minute-old pool) that dwarf typical entries in this size band, LP is fully locked so a hard rug is structurally blocked, mint/freeze are renounced, and rugcheck_score is minimal (1). If even a fraction of the bundler-driven volume converts into a fresh momentum leg (a common pump.fun pattern where an initial bot-driven spike attracts real momentum/copy-trading), the sheer size of buyer flow could produce another leg up within the 30-minute window regardless of the fact that no organic narrative was found \u2014 some pump.fun runners are pure volume/momentum plays with no external story at all.",
+  "unknowns": [
+   "Whether any of the private Telegram (t.me/sayanouta_sol) activity reflects a real, engaged community versus bots.",
+   "Whether X posts exist that simply weren't surfaced by search indexing (X is poorly indexed by web search).",
+   "Which of the six clone tokens, if any, later becomes the one an audience settles on as 'the' Saya token.",
+   "Whether the -43.5% five-minute reversal at detection continues into further decline or stabilizes/bounces before the entry point 4 minutes later.",
+   "Identity/history of the creator wallet beyond this one launch (creator_other_tokens=0 in structure, but creator_launched_token_count=1 and dev_x_account_launched_token_count=2 in gmgn \u2014 minor inconsistency, underlying dev history is thin either way)."
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "News search found only the unrelated, already-passed June 2026 Saya no Uta stage-play news for the source IP \u2014 nothing about this token. Project site (madeact.com) redirected to sayasolana.live, which failed to resolve (DNS error) within the time available. X searches (contract address, $\u6c99\u8036 CJK string, site:x.com, name) returned only unrelated results about the original visual novel IP, not the token. Reddit and Discord were not explicitly queried due to time constraints after the higher-priority X/news/site checks turned up nothing actionable."
+  },
+  "thesis": "This is the largest of six pump.fun clones of an old (2003) horror-VN-themed meme, already having spiked ~816% and visibly reversing at the moment of detection, with holder composition dominated by bundlers/snipers/fresh wallets and zero organic social discussion found anywhere. It reads as a bot/insider-driven volume spike riding a stale IP reference rather than a fresh, spreading narrative \u2014 entry 4 minutes post-detection is likely buying into the top of an already-exhausted pump.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 38,
+  "survival_score": 55,
+  "attention_score": 65,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://automaton-media.com/en/news/saya-no-uta-to-receive-stage-play-adaptation-in-japan/",
+    "what": "Confirms the only current 2026 Saya no Uta news is a June 2026 stage play, already past, not a live catalyst"
+   },
+   {
+    "url": "https://www.siliconera.com/saya-no-uta-performance-announced/",
+    "what": "Corroborates the stage play as the only recent news tied to the IP"
+   },
+   {
+    "url": "https://noisypixel.net/saya-no-uta-stage-play-japan-2026/",
+    "what": "Further corroboration of the stage-play news, no token/crypto connection"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Saya_no_Uta:_The_Song_of_Saya",
+    "what": "Background on the source visual novel IP being referenced by the token name"
+   }
+  ]
+ },
+ "ttft_ms": 1551,
+ "type": "result",
+ "duration_ms": 137604,
+ "uuid": "26a5ae7b-52aa-48bf-98bc-a5d4d671c883",
+ "ttft_stream_ms": 970,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 970,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

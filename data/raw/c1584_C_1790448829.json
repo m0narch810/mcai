@@ -1,0 +1,188 @@
+{
+ "duration_api_ms": 232902,
+ "stop_reason": "tool_use",
+ "session_id": "97999b1a-767a-4b93-bd98-6c0efb8ae04d",
+ "total_cost_usd": 0.4134786,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 25926,
+  "cache_read_input_tokens": 50783,
+  "output_tokens": 17292,
+  "output_tokens_details": {
+   "thinking_tokens": 10140
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 25926,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3697,
+    "cache_read_input_tokens": 18650,
+    "cache_creation_input_tokens": 10765,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 10765
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 17292,
+   "cacheReadInputTokens": 50783,
+   "cacheCreationInputTokens": 25926,
+   "webSearchRequests": 0,
+   "costUSD": 0.28679659999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 10140,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 70547,
+   "outputTokens": 1227,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.12668200000000002,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"Fork\\\" ($FORK, contract 7Rm3JrPqX6QYtcebk1Kb9R45XU9QEk6jDkvDWu2JjfT8) migrated to a PumpSwap pool roughly 13 minutes before detection and shows extreme early volume: $608k-$640k in h1 volume against a $73k-$104k market cap (h1 turnover ~30x), price already up ~38-94% in the hour before detection (different data feeds disagree on the exact figure), 1695 unique buyers vs only 110 unique sellers in the last hour, and buys outnumbering sells roughly 1.7:1 (3306 vs 1946). It is one of at least 10 tokens sharing the exact name/ticker \\\"Fork\\\"/\\\"FORK\\\" deployed within a ~35-minute window the same day, several with meaningful independent volume (one clone shows $837k h1 volume at similar mcap, another $579k). No X/Twitter, Reddit, Telegram, Discord or news content specific to this contract, ticker, or the project's stated handles (X: @useforkcash, site: usefork.cash) could be found or confirmed in the time available.\",\"narrative\":{\"description\":\"No identifiable cultural/news event was found behind the 'Fork' name or story. The project's own website (usefork.cash) returned no usable content on fetch (effectively empty/unreadable), and its listed X handle (useforkcash) produced zero search hits anywhere. What does exist is a swarm of roughly 10 near-simultaneous 'Fork'-named pump.fun launches within about 35 minutes of each other, consistent with either a joke/meme template being cloned by opportunistic deployers, or a coordinated multi-wallet spray by one operator (the creator's linked X account has reportedly launched 23 tokens historically per GMGN, though this specific creator wallet shows only 2).\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The raw on-chain numbers (1695 unique buyers, ~30x hourly turnover on a <20-minute-old pool, strong buy/sell imbalance) look like real, fast-forming demand. But no independent confirmation exists that this reflects a genuinely spreading story rather than bots/snipers rotating capital through a cluster of identically-named contracts competing for the same fleeting attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Among roughly 10 same-name 'Fork' tokens active right now, this one is competitive on volume (roughly 3rd-highest of the cluster) but it is not the first-launched of the current swarm (an earlier 'Fork' clone predates it by ~24 minutes with even higher h1 volume), and there is also a much older, unrelated 'A Fork in the Road' (FORK) token from late 2024 with a $1.09M mcap sitting dormant. There is no evidence this specific contract is the one the market has settled on as canonical; capital and attention appear actively split across several live contracts sharing the identical name.\",\"competing_tokens\":\"At least 9 other Solana tokens named 'Fork'/'FORK' appear in the packet, several launched within the same ~35-minute window and two with higher or comparable h1 volume; a separate older 'A Fork in the Road' token also exists but is currently inactive (h1 volume ~$488).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Buys-per-unique-buyer of 1.95 is low, arguing against simple wash-trading by a handful of wallets, and GMGN wallet tags show relatively few flagged bundlers (76), snipers (9) and fresh wallets (8) out of ~1700 holders, which is not an overwhelming bot footprint. Set against that: the near-simultaneous launch of ~10 identically-named clones is a classic swarm/spray pattern, price had already run 38-94% before entry would even occur, and zero organic social discussion (X, Reddit, Telegram, news) could be found for this contract or its stated handles despite direct searches.\",\"uncertainty\":\"X/Twitter is poorly indexed by general web search per the task's own caveat, so 'not found' does not mean 'does not exist' -- it is quite possible real Crypto-Twitter activity exists that this search pass simply could not surface.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"A single wallet (FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM) holds 80.05% of the RugCheck-counted (non-AMM/locker) supply; it is unclear whether this is a benign Meteora virtual-curve vault/pool address mislabeled as a holder, or a real wallet capable of a catastrophic dump -- this is unresolved and material.\",\"RugCheck flags 'Large Amount of LP Unlocked' at 99.99% (danger) while the packet's own rug_guard says LP is 100% burned and GMGN reports lp_burn_ratio 1.0 -- these sources directly contradict each other on the single most important rug-risk fact.\",\"An insider trading network of 12 wallets was detected by the graph analysis (token_pct field garbled/unreliable), though none appear inside the top-10 holder list.\",\"Liquidity is thin in absolute terms (~$20-24k) relative to the $600k+ hourly volume, so large orders can move price sharply in either direction.\",\"Total supply/attention is fragmented across ~10 simultaneous same-name launches, capping any single contract's addressable demand.\"]},\"counterargument\":\"The raw flow metrics are genuinely unusual for a pool this young: 1695 distinct buyers and ~30x hourly turnover within 20 minutes of pool creation is rare even among hyperactive pump.fun migrations, and the low buys-per-buyer ratio argues against simple wash trading. If even a fraction of that buyer base is real and this contract is (or becomes) the one the community converges on among the Fork clones, the existing momentum alone could carry price through +100% inside a 30-minute window purely on volatility, regardless of whether a coherent narrative ever surfaces -- narrative-free pump.fun spikes running 2-5x on volume alone are common, and my inability to find social confirmation may simply reflect X's poor search indexing rather than an actual absence of discussion.\",\"unknowns\":[\"Why 'Fork' as a name/ticker is trending right now (no confirmed cultural, news, or crypto-twitter event was found)\",\"Whether the 80.05% top holder is a Meteora curve/pool vault (benign) or a real wallet able to dump on the market (severe risk) -- could not be resolved with available data\",\"Which, if any, of the ~10 same-name Fork tokens the market will converge on as 'the' Fork\",\"Whether real X/Twitter discussion of this specific contract exists but was simply not surfaced by general web search\",\"The actual current LP-lock status given the direct contradiction between RugCheck (99.99% unlocked, danger) and the packet's rug_guard/GMGN (100% burned)\",\"Whether the creator's other wallet(s)/tokens (23 total launched by the linked X account) have a history of rugging or of running long\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Direct searches for the contract address and for '$FORK useforkcash twitter' returned only unrelated same-ticker projects (an Ethereum FlokiFork/@ForkCoin_ETH, and a separate 'Forkcash' project/@Forkcash) -- nothing tied to this Solana contract, its holders, or its stated handle. A further search for a 'Fork ... second chance' Solana narrative surfaced only generic 2026 meme-coin guide articles and an unrelated 'Fork Chain' CoinGecko listing, no specific event. usefork.cash was fetched but returned essentially no readable content (a single word), so the project's own stated positioning could not be verified beyond the bare handle/URL in the packet. Reddit, Telegram and Discord were not separately searched given the 4-call budget; this is recorded as not_attempted, not as evidence of absence.\"},\"thesis\":\"FORK shows the strongest pure-flow signature in this batch -- extreme turnover, a fast-growing distinct buyer base, and a low per-wallet buy count arguing against simple wash trading -- but it sits inside a swarm of ~10 identically-named clones with no confirmable external narrative, a materially contradictory LP-lock picture, and an unresolved 80% single-holder concentration. The edge is real but thin and fragile: rank above a typical early coin on raw demand, but well below any token with confirmed organic, cross-platform narrative spread and a clean structural picture.\",\"continuation_view\":\"fade\",\"p_runner\":20,\"p_rug\":33,\"survival_score\":52,\"attention_score\":54,\"manipulation_risk\":67,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://x.com/forkcoin_eth\",\"what\":\"Unrelated Ethereum 'FlokiFork' FORK project X account -- confirms ticker collision, not this token\"},{\"url\":\"https://x.com/Forkcash\",\"what\":\"Unrelated 'ForkCash' project X account -- another ticker/name collision, not this token\"},{\"url\":\"https://usefork.cash/\",\"what\":\"Project website listed in the packet's GMGN data; fetched but returned no usable content\"},{\"url\":\"https://www.coingecko.com/en/coins/fork-chain\",\"what\":\"Unrelated 'Fork Chain' listing surfaced during narrative search -- confirms no specific event found for this token\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"Fork\" ($FORK, contract 7Rm3JrPqX6QYtcebk1Kb9R45XU9QEk6jDkvDWu2JjfT8) migrated to a PumpSwap pool roughly 13 minutes before detection and shows extreme early volume: $608k-$640k in h1 volume against a $73k-$104k market cap (h1 turnover ~30x), price already up ~38-94% in the hour before detection (different data feeds disagree on the exact figure), 1695 unique buyers vs only 110 unique sellers in the last hour, and buys outnumbering sells roughly 1.7:1 (3306 vs 1946). It is one of at least 10 tokens sharing the exact name/ticker \"Fork\"/\"FORK\" deployed within a ~35-minute window the same day, several with meaningful independent volume (one clone shows $837k h1 volume at similar mcap, another $579k). No X/Twitter, Reddit, Telegram, Discord or news content specific to this contract, ticker, or the project's stated handles (X: @useforkcash, site: usefork.cash) could be found or confirmed in the time available.",
+  "narrative": {
+   "description": "No identifiable cultural/news event was found behind the 'Fork' name or story. The project's own website (usefork.cash) returned no usable content on fetch (effectively empty/unreadable), and its listed X handle (useforkcash) produced zero search hits anywhere. What does exist is a swarm of roughly 10 near-simultaneous 'Fork'-named pump.fun launches within about 35 minutes of each other, consistent with either a joke/meme template being cloned by opportunistic deployers, or a coordinated multi-wallet spray by one operator (the creator's linked X account has reportedly launched 23 tokens historically per GMGN, though this specific creator wallet shows only 2).",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The raw on-chain numbers (1695 unique buyers, ~30x hourly turnover on a <20-minute-old pool, strong buy/sell imbalance) look like real, fast-forming demand. But no independent confirmation exists that this reflects a genuinely spreading story rather than bots/snipers rotating capital through a cluster of identically-named contracts competing for the same fleeting attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Among roughly 10 same-name 'Fork' tokens active right now, this one is competitive on volume (roughly 3rd-highest of the cluster) but it is not the first-launched of the current swarm (an earlier 'Fork' clone predates it by ~24 minutes with even higher h1 volume), and there is also a much older, unrelated 'A Fork in the Road' (FORK) token from late 2024 with a $1.09M mcap sitting dormant. There is no evidence this specific contract is the one the market has settled on as canonical; capital and attention appear actively split across several live contracts sharing the identical name.",
+   "competing_tokens": "At least 9 other Solana tokens named 'Fork'/'FORK' appear in the packet, several launched within the same ~35-minute window and two with higher or comparable h1 volume; a separate older 'A Fork in the Road' token also exists but is currently inactive (h1 volume ~$488).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Buys-per-unique-buyer of 1.95 is low, arguing against simple wash-trading by a handful of wallets, and GMGN wallet tags show relatively few flagged bundlers (76), snipers (9) and fresh wallets (8) out of ~1700 holders, which is not an overwhelming bot footprint. Set against that: the near-simultaneous launch of ~10 identically-named clones is a classic swarm/spray pattern, price had already run 38-94% before entry would even occur, and zero organic social discussion (X, Reddit, Telegram, news) could be found for this contract or its stated handles despite direct searches.",
+   "uncertainty": "X/Twitter is poorly indexed by general web search per the task's own caveat, so 'not found' does not mean 'does not exist' -- it is quite possible real Crypto-Twitter activity exists that this search pass simply could not surface."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "A single wallet (FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM) holds 80.05% of the RugCheck-counted (non-AMM/locker) supply; it is unclear whether this is a benign Meteora virtual-curve vault/pool address mislabeled as a holder, or a real wallet capable of a catastrophic dump -- this is unresolved and material.",
+    "RugCheck flags 'Large Amount of LP Unlocked' at 99.99% (danger) while the packet's own rug_guard says LP is 100% burned and GMGN reports lp_burn_ratio 1.0 -- these sources directly contradict each other on the single most important rug-risk fact.",
+    "An insider trading network of 12 wallets was detected by the graph analysis (token_pct field garbled/unreliable), though none appear inside the top-10 holder list.",
+    "Liquidity is thin in absolute terms (~$20-24k) relative to the $600k+ hourly volume, so large orders can move price sharply in either direction.",
+    "Total supply/attention is fragmented across ~10 simultaneous same-name launches, capping any single contract's addressable demand."
+   ]
+  },
+  "counterargument": "The raw flow metrics are genuinely unusual for a pool this young: 1695 distinct buyers and ~30x hourly turnover within 20 minutes of pool creation is rare even among hyperactive pump.fun migrations, and the low buys-per-buyer ratio argues against simple wash trading. If even a fraction of that buyer base is real and this contract is (or becomes) the one the community converges on among the Fork clones, the existing momentum alone could carry price through +100% inside a 30-minute window purely on volatility, regardless of whether a coherent narrative ever surfaces -- narrative-free pump.fun spikes running 2-5x on volume alone are common, and my inability to find social confirmation may simply reflect X's poor search indexing rather than an actual absence of discussion.",
+  "unknowns": [
+   "Why 'Fork' as a name/ticker is trending right now (no confirmed cultural, news, or crypto-twitter event was found)",
+   "Whether the 80.05% top holder is a Meteora curve/pool vault (benign) or a real wallet able to dump on the market (severe risk) -- could not be resolved with available data",
+   "Which, if any, of the ~10 same-name Fork tokens the market will converge on as 'the' Fork",
+   "Whether real X/Twitter discussion of this specific contract exists but was simply not surfaced by general web search",
+   "The actual current LP-lock status given the direct contradiction between RugCheck (99.99% unlocked, danger) and the packet's rug_guard/GMGN (100% burned)",
+   "Whether the creator's other wallet(s)/tokens (23 total launched by the linked X account) have a history of rugging or of running long"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Direct searches for the contract address and for '$FORK useforkcash twitter' returned only unrelated same-ticker projects (an Ethereum FlokiFork/@ForkCoin_ETH, and a separate 'Forkcash' project/@Forkcash) -- nothing tied to this Solana contract, its holders, or its stated handle. A further search for a 'Fork ... second chance' Solana narrative surfaced only generic 2026 meme-coin guide articles and an unrelated 'Fork Chain' CoinGecko listing, no specific event. usefork.cash was fetched but returned essentially no readable content (a single word), so the project's own stated positioning could not be verified beyond the bare handle/URL in the packet. Reddit, Telegram and Discord were not separately searched given the 4-call budget; this is recorded as not_attempted, not as evidence of absence."
+  },
+  "thesis": "FORK shows the strongest pure-flow signature in this batch -- extreme turnover, a fast-growing distinct buyer base, and a low per-wallet buy count arguing against simple wash trading -- but it sits inside a swarm of ~10 identically-named clones with no confirmable external narrative, a materially contradictory LP-lock picture, and an unresolved 80% single-holder concentration. The edge is real but thin and fragile: rank above a typical early coin on raw demand, but well below any token with confirmed organic, cross-platform narrative spread and a clean structural picture.",
+  "continuation_view": "fade",
+  "p_runner": 20,
+  "p_rug": 33,
+  "survival_score": 52,
+  "attention_score": 54,
+  "manipulation_risk": 67,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://x.com/forkcoin_eth",
+    "what": "Unrelated Ethereum 'FlokiFork' FORK project X account -- confirms ticker collision, not this token"
+   },
+   {
+    "url": "https://x.com/Forkcash",
+    "what": "Unrelated 'ForkCash' project X account -- another ticker/name collision, not this token"
+   },
+   {
+    "url": "https://usefork.cash/",
+    "what": "Project website listed in the packet's GMGN data; fetched but returned no usable content"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/fork-chain",
+    "what": "Unrelated 'Fork Chain' listing surfaced during narrative search -- confirms no specific event found for this token"
+   }
+  ]
+ },
+ "ttft_ms": 4444,
+ "type": "result",
+ "duration_ms": 225022,
+ "uuid": "44853bc4-1b95-4b4c-9181-7ee5ac94f38c",
+ "ttft_stream_ms": 1111,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1111,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

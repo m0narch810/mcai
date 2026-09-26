@@ -1,0 +1,193 @@
+{
+ "duration_api_ms": 135793,
+ "stop_reason": "tool_use",
+ "session_id": "0cf9a642-2dd7-49fa-8a14-ecc73d880a17",
+ "total_cost_usd": 0.24555159999999998,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 14633,
+  "cache_read_input_tokens": 16493,
+  "output_tokens": 9176,
+  "output_tokens_details": {
+   "thinking_tokens": 4691
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14633,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 8463,
+    "cache_read_input_tokens": 13004,
+    "cache_creation_input_tokens": 5118,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5118
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 4,
+   "outputTokens": 9176,
+   "cacheReadInputTokens": 16493,
+   "cacheCreationInputTokens": 14633,
+   "webSearchRequests": 0,
+   "costUSD": 0.1535986,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 4691,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 44793,
+   "outputTokens": 1432,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09195300000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":42,\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"428 unique buyers and 383 unique sellers accumulated within the first ~19-40 minutes (GeckoTerminal), which is a genuinely broad participant count for a coin this young, and buys_per_unique_buyer_h1 (1.91) is not extreme churn. But GMGN shows 166 bundler-tagged wallet interactions and top_bundler_trader_pct of 31.13%, fresh_wallet-heavy holder base (74/92), and a 39.32% bot/degen rate, and the price already spiked +122-136% and then reversed -54% to -59% in the 5 minutes before/at detection \u2014 consistent with a fast bundler-driven pump that is already unwinding rather than organic, broadening demand.\",\"uncertainty\":\"Could not find any actual X/Twitter posts, Reddit threads, Telegram or Discord discussion despite searching the raw contract address and the linked project account name; absence of hits is not proof of absence given X's poor search indexing, but it means I have zero confirmed organic social evidence, only on-chain wallet shape.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The coin is only 19-40 minutes old with 428 unique buyers already \u2014 an unusually broad and fast participant count for a sub-$15k pump.fun curve coin \u2014 and it has zero RugCheck risk flags, renounced mint/freeze, 0% tax, no honeypot, and a creator with no other tokens and zero balance (no dev holding to dump). Bonding-curve coins are structurally cheap to move, so the -54% m5 print could just be normal curve noise on a $10k cap rather than a completed pump-and-dump, and the next wave of curve buyers chasing the \\\"Musk\\\" ticker (an evergreen, repeatedly-launched meme name) could easily re-spike price within the 30-minute window regardless of any external catalyst.\",\"manipulation_risk\":68,\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Still on pump.fun bonding curve at only ~54/115 virtual SOL \u2014 has not migrated, so depth is thin and price is highly reflexive to any single large sell\",\"31.13% of top traders are GMGN-tagged bundler wallets, and bundler-wallet interaction count (166) exceeds the token's total holder count (92), indicating heavy coordinated bundling activity around this launch\",\"74 of 92 GMGN-classified holders are 'fresh wallets' and bot/degen rate is 39.32%, typical of sniper/bundle farms rather than broad-based demand\",\"Price already ran +122-136% on h1 and reversed -54.4% to -58.96% in the last 5 minutes at/before detection \u2014 momentum was fading into the entry point\",\"Holder-concentration figures conflict between sources: RugCheck-style top10 excluding pool/locker = 23.92%, but raw GeckoTerminal top10 = 71.65% of the (smaller, 71-holder) counted set \u2014 unclear which better reflects real overhang\",\"structure.creator (GxqnXmdhuGY2z3MJbPud4GsSGRQmGZq3oU6hCKhB2mS5) and GMGN dev.creator_address (bwamJzztZsepfkteWRChggmXuiiCQvpLqPietdNfSXa, credited with 167,001 prior launches) disagree, so creator history could not be reliably attributed to one entity\"]},\"narrative\":{\"description\":\"A pump.fun coin named 'Musk' whose on-chain description reads 'Fees to @alexgibneyfilm via UsePaid.' UsePaid/X Money is a real, currently-discussed Solana protocol that routes a token's creator fees to any specified X account in dollars (80% to the named account, 20% buy-and-burn of $PAID); it does not require the named account's consent. A Gateway Pundit piece from this month describes a viral trend of people 'DDoS-ing' random X accounts with money via this exact mechanism. Alex Gibney is an unrelated documentary filmmaker with no apparent connection to Elon Musk or this token, suggesting the fee-routing target may be arbitrary/joke rather than a real campaign.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"No confirmed catalyst tying this specific launch to current Musk news was found (searched for Sept 2026 Musk headlines; nothing plausibly links to this token). The likelier driver of the burst of activity is (a) pump.fun new-pair sniping/bundling bots that hit any fresh curve, and (b) generic recurring interest in the evergreen 'Musk' ticker, which has been relaunched at least 10 times per the packet with none sustaining volume. The UsePaid fee-routing gimmick is a real, currently-trending mechanism, but this token is not shown to be a notable or widely-discussed instance of it.\"},\"observation_window\":\"1h\",\"p_rug\":38,\"p_runner\":9,\"research_confidence\":\"low\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Searched the raw contract address directly (no hits at all, only unrelated Bitcoin-address-shop noise). Searched 'muskonomy twitter Musk pump.fun' \u2014 found only that the x.com/muskonomy handle exists (indexed) but no post content. Searched UsePaid/alexgibneyfilm mechanism \u2014 found real background on the UsePaid/X Money protocol and a related viral 'DDoS with money' trend article, but nothing tying alexgibneyfilm specifically to this token or to Musk. Searched general Elon Musk news for Sept 26 2026 \u2014 found no event plausibly catalyzing this launch. Budget (4 searches) exhausted before Reddit/Telegram/Discord could be checked.\"},\"survival_score\":54,\"tail_class\":\"A_dead_or_chop\",\"thesis\":\"This is a 19-40 minute old pump.fun 'Musk' coin whose price had already spiked +122-136% and then reversed -54% to -59% by the time it was detected, sitting on top of a wallet base with heavy bundler (31% of top traders) and fresh-wallet/bot signatures. No organic X, Reddit, Telegram, Discord, or news discussion could be found despite direct searches on the contract and the linked account; the only real external finding was that its fee-routing gimmick (UsePaid/X Money, sending fees to an unrelated documentary filmmaker's account) maps to a real but tangential viral trend, not a Musk-specific catalyst. Structurally it is clean (renounced, no tax, no honeypot, RugCheck score 1) but that only supports 24h survivability, not a 30-minute 2x. The ticker 'Musk' has been relaunched at least ten times per the packet with every prior instance now dead or dormant, so being 'the current hot one' carries no durable canonical status. Net: rank this below a typical coin in the pool given the pre-entry reversal and manipulation-heavy wallet shape, while acknowledging thin liquidity means large swings either direction remain mechanically possible.\",\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the newest of many recurring 'Musk'/'MUSK' pump.fun launches and currently the only one with live volume, but nothing found ties it to a specific current Musk news event or to a distinguishing community; its main distinguishing feature (UsePaid fee routing to @alexgibneyfilm) appears unrelated to the Musk theme itself.\",\"competing_tokens\":\"At least 9 other MUSK/Musk-named tokens exist per the packet, including 'TheMuskToken' with a stale $303M mcap and $0.53 h1 volume (dead), 'OFFICIAL MUSK' (x2, both near-zero volume), and several others all with zero or negligible current volume \u2014 none active, so this token is not displacing a live competitor, just the latest in a long dead lineage.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"No confirmed catalyst (news, viral post, or KOL call) explaining why this specific coin got 800+ h1 transactions in its first ~20-40 minutes\",\"Whether the -54% to -59% m5 price move at detection reflects a completed bundler dump or normal curve noise on a $10k cap\",\"True identity and history of the creator \u2014 structure.creator and GMGN dev.creator_address disagree, so prior-rug history could not be attributed with confidence\",\"Whether @alexgibneyfilm has any actual involvement, awareness, or connection to this launch, or is simply an arbitrary fee-routing target\",\"Any Reddit/Telegram/Discord discussion \u2014 not attempted due to search budget exhaustion\",\"Whether the coin migrates off the bonding curve (currently ~54/115 virtual SOL) in the near term, which would materially change its liquidity/rug profile\"],\"what_is_happening\":\"A pump.fun-native token named 'Musk' (contract BQahS5TG312TYD7QysE8AbLpxARcf6uNcv6xs4mrNjr3) launched roughly 19-40 minutes before detection, spiked +122% to +136% in its first hour, then reversed -54% to -59% in the 5 minutes surrounding detection, on ~$100k of h1 volume against a ~$10-11k market cap. Wallet composition shows heavy bundler and fresh-wallet presence (GMGN: 166 bundler-tagged interactions, 74/92 fresh wallets, 39.32% bot/degen rate) alongside a genuinely large unique-participant count (428 buyers, 383 sellers per GeckoTerminal) for its age. No project website, socials, or external discussion were found; the only on-chain description is a UsePaid fee-routing note sending creator fees to an unrelated documentary filmmaker's X account, and the linked project X handle shows a prior rename (muskonomyx \u2192 muskonomy), a recycled-account flag.\",\"sources\":[{\"url\":\"https://x.com/muskonomy\",\"what\":\"Indexed existence of the linked project X account; no post content retrievable via search\"},{\"url\":\"https://usepaid.app/\",\"what\":\"UsePaid protocol homepage \u2014 explains the fee-routing-via-X-Money mechanism referenced in the token's on-chain description\"},{\"url\":\"https://www.bitrue.com/blog/what-is-usepaid\",\"what\":\"Explainer confirming UsePaid's 80/20 fee split mechanism and that it requires no consent from the named X account\"},{\"url\":\"https://www.thegatewaypundit.com/2026/09/x-users-being-ddosd-money-tens-thousands-dollars/\",\"what\":\"Article describing the viral trend of routing token fees to random/unrelated X accounts via UsePaid/X Money, the likely context for this token's fee-routing gimmick\"},{\"url\":\"https://www.coinbase.com/price/usepaid-solana-4fbigyvbkjgzybxuts8q8c1yhtjkbez8dsbxwjetpaid-token\",\"what\":\"Background/price context on the $PAID token underlying UsePaid\"}]}",
+ "structured_output": {
+  "attention_score": 42,
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "428 unique buyers and 383 unique sellers accumulated within the first ~19-40 minutes (GeckoTerminal), which is a genuinely broad participant count for a coin this young, and buys_per_unique_buyer_h1 (1.91) is not extreme churn. But GMGN shows 166 bundler-tagged wallet interactions and top_bundler_trader_pct of 31.13%, fresh_wallet-heavy holder base (74/92), and a 39.32% bot/degen rate, and the price already spiked +122-136% and then reversed -54% to -59% in the 5 minutes before/at detection \u2014 consistent with a fast bundler-driven pump that is already unwinding rather than organic, broadening demand.",
+   "uncertainty": "Could not find any actual X/Twitter posts, Reddit threads, Telegram or Discord discussion despite searching the raw contract address and the linked project account name; absence of hits is not proof of absence given X's poor search indexing, but it means I have zero confirmed organic social evidence, only on-chain wallet shape."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The coin is only 19-40 minutes old with 428 unique buyers already \u2014 an unusually broad and fast participant count for a sub-$15k pump.fun curve coin \u2014 and it has zero RugCheck risk flags, renounced mint/freeze, 0% tax, no honeypot, and a creator with no other tokens and zero balance (no dev holding to dump). Bonding-curve coins are structurally cheap to move, so the -54% m5 print could just be normal curve noise on a $10k cap rather than a completed pump-and-dump, and the next wave of curve buyers chasing the \"Musk\" ticker (an evergreen, repeatedly-launched meme name) could easily re-spike price within the 30-minute window regardless of any external catalyst.",
+  "manipulation_risk": 68,
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Still on pump.fun bonding curve at only ~54/115 virtual SOL \u2014 has not migrated, so depth is thin and price is highly reflexive to any single large sell",
+    "31.13% of top traders are GMGN-tagged bundler wallets, and bundler-wallet interaction count (166) exceeds the token's total holder count (92), indicating heavy coordinated bundling activity around this launch",
+    "74 of 92 GMGN-classified holders are 'fresh wallets' and bot/degen rate is 39.32%, typical of sniper/bundle farms rather than broad-based demand",
+    "Price already ran +122-136% on h1 and reversed -54.4% to -58.96% in the last 5 minutes at/before detection \u2014 momentum was fading into the entry point",
+    "Holder-concentration figures conflict between sources: RugCheck-style top10 excluding pool/locker = 23.92%, but raw GeckoTerminal top10 = 71.65% of the (smaller, 71-holder) counted set \u2014 unclear which better reflects real overhang",
+    "structure.creator (GxqnXmdhuGY2z3MJbPud4GsSGRQmGZq3oU6hCKhB2mS5) and GMGN dev.creator_address (bwamJzztZsepfkteWRChggmXuiiCQvpLqPietdNfSXa, credited with 167,001 prior launches) disagree, so creator history could not be reliably attributed to one entity"
+   ]
+  },
+  "narrative": {
+   "description": "A pump.fun coin named 'Musk' whose on-chain description reads 'Fees to @alexgibneyfilm via UsePaid.' UsePaid/X Money is a real, currently-discussed Solana protocol that routes a token's creator fees to any specified X account in dollars (80% to the named account, 20% buy-and-burn of $PAID); it does not require the named account's consent. A Gateway Pundit piece from this month describes a viral trend of people 'DDoS-ing' random X accounts with money via this exact mechanism. Alex Gibney is an unrelated documentary filmmaker with no apparent connection to Elon Musk or this token, suggesting the fee-routing target may be arbitrary/joke rather than a real campaign.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "No confirmed catalyst tying this specific launch to current Musk news was found (searched for Sept 2026 Musk headlines; nothing plausibly links to this token). The likelier driver of the burst of activity is (a) pump.fun new-pair sniping/bundling bots that hit any fresh curve, and (b) generic recurring interest in the evergreen 'Musk' ticker, which has been relaunched at least 10 times per the packet with none sustaining volume. The UsePaid fee-routing gimmick is a real, currently-trending mechanism, but this token is not shown to be a notable or widely-discussed instance of it."
+  },
+  "observation_window": "1h",
+  "p_rug": 38,
+  "p_runner": 9,
+  "research_confidence": "low",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Searched the raw contract address directly (no hits at all, only unrelated Bitcoin-address-shop noise). Searched 'muskonomy twitter Musk pump.fun' \u2014 found only that the x.com/muskonomy handle exists (indexed) but no post content. Searched UsePaid/alexgibneyfilm mechanism \u2014 found real background on the UsePaid/X Money protocol and a related viral 'DDoS with money' trend article, but nothing tying alexgibneyfilm specifically to this token or to Musk. Searched general Elon Musk news for Sept 26 2026 \u2014 found no event plausibly catalyzing this launch. Budget (4 searches) exhausted before Reddit/Telegram/Discord could be checked."
+  },
+  "survival_score": 54,
+  "tail_class": "A_dead_or_chop",
+  "thesis": "This is a 19-40 minute old pump.fun 'Musk' coin whose price had already spiked +122-136% and then reversed -54% to -59% by the time it was detected, sitting on top of a wallet base with heavy bundler (31% of top traders) and fresh-wallet/bot signatures. No organic X, Reddit, Telegram, Discord, or news discussion could be found despite direct searches on the contract and the linked account; the only real external finding was that its fee-routing gimmick (UsePaid/X Money, sending fees to an unrelated documentary filmmaker's account) maps to a real but tangential viral trend, not a Musk-specific catalyst. Structurally it is clean (renounced, no tax, no honeypot, RugCheck score 1) but that only supports 24h survivability, not a 30-minute 2x. The ticker 'Musk' has been relaunched at least ten times per the packet with every prior instance now dead or dormant, so being 'the current hot one' carries no durable canonical status. Net: rank this below a typical coin in the pool given the pre-entry reversal and manipulation-heavy wallet shape, while acknowledging thin liquidity means large swings either direction remain mechanically possible.",
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the newest of many recurring 'Musk'/'MUSK' pump.fun launches and currently the only one with live volume, but nothing found ties it to a specific current Musk news event or to a distinguishing community; its main distinguishing feature (UsePaid fee routing to @alexgibneyfilm) appears unrelated to the Musk theme itself.",
+   "competing_tokens": "At least 9 other MUSK/Musk-named tokens exist per the packet, including 'TheMuskToken' with a stale $303M mcap and $0.53 h1 volume (dead), 'OFFICIAL MUSK' (x2, both near-zero volume), and several others all with zero or negligible current volume \u2014 none active, so this token is not displacing a live competitor, just the latest in a long dead lineage.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "No confirmed catalyst (news, viral post, or KOL call) explaining why this specific coin got 800+ h1 transactions in its first ~20-40 minutes",
+   "Whether the -54% to -59% m5 price move at detection reflects a completed bundler dump or normal curve noise on a $10k cap",
+   "True identity and history of the creator \u2014 structure.creator and GMGN dev.creator_address disagree, so prior-rug history could not be attributed with confidence",
+   "Whether @alexgibneyfilm has any actual involvement, awareness, or connection to this launch, or is simply an arbitrary fee-routing target",
+   "Any Reddit/Telegram/Discord discussion \u2014 not attempted due to search budget exhaustion",
+   "Whether the coin migrates off the bonding curve (currently ~54/115 virtual SOL) in the near term, which would materially change its liquidity/rug profile"
+  ],
+  "what_is_happening": "A pump.fun-native token named 'Musk' (contract BQahS5TG312TYD7QysE8AbLpxARcf6uNcv6xs4mrNjr3) launched roughly 19-40 minutes before detection, spiked +122% to +136% in its first hour, then reversed -54% to -59% in the 5 minutes surrounding detection, on ~$100k of h1 volume against a ~$10-11k market cap. Wallet composition shows heavy bundler and fresh-wallet presence (GMGN: 166 bundler-tagged interactions, 74/92 fresh wallets, 39.32% bot/degen rate) alongside a genuinely large unique-participant count (428 buyers, 383 sellers per GeckoTerminal) for its age. No project website, socials, or external discussion were found; the only on-chain description is a UsePaid fee-routing note sending creator fees to an unrelated documentary filmmaker's X account, and the linked project X handle shows a prior rename (muskonomyx \u2192 muskonomy), a recycled-account flag.",
+  "sources": [
+   {
+    "url": "https://x.com/muskonomy",
+    "what": "Indexed existence of the linked project X account; no post content retrievable via search"
+   },
+   {
+    "url": "https://usepaid.app/",
+    "what": "UsePaid protocol homepage \u2014 explains the fee-routing-via-X-Money mechanism referenced in the token's on-chain description"
+   },
+   {
+    "url": "https://www.bitrue.com/blog/what-is-usepaid",
+    "what": "Explainer confirming UsePaid's 80/20 fee split mechanism and that it requires no consent from the named X account"
+   },
+   {
+    "url": "https://www.thegatewaypundit.com/2026/09/x-users-being-ddosd-money-tens-thousands-dollars/",
+    "what": "Article describing the viral trend of routing token fees to random/unrelated X accounts via UsePaid/X Money, the likely context for this token's fee-routing gimmick"
+   },
+   {
+    "url": "https://www.coinbase.com/price/usepaid-solana-4fbigyvbkjgzybxuts8q8c1yhtjkbez8dsbxwjetpaid-token",
+    "what": "Background/price context on the $PAID token underlying UsePaid"
+   }
+  ]
+ },
+ "ttft_ms": 7927,
+ "type": "result",
+ "duration_ms": 119599,
+ "uuid": "ff93f354-5b7d-4332-80b7-694b94c9a540",
+ "ttft_stream_ms": 1094,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 1094,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

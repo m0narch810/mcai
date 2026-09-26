@@ -1,0 +1,192 @@
+{
+ "duration_api_ms": 157421,
+ "stop_reason": "tool_use",
+ "session_id": "197494c9-a994-427d-9d05-989084585a64",
+ "total_cost_usd": 0.3392166,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 22484,
+  "cache_read_input_tokens": 56778,
+  "output_tokens": 12703,
+  "output_tokens_details": {
+   "thinking_tokens": 5376
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 22484,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3755,
+    "cache_read_input_tokens": 22413,
+    "cache_creation_input_tokens": 3560,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3560
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 12703,
+   "cacheReadInputTokens": 56778,
+   "cacheCreationInputTokens": 22484,
+   "webSearchRequests": 0,
+   "costUSD": 0.22833759999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5376,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 52344,
+   "outputTokens": 1707,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.110879,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A brand-new PumpSwap pool for \\\"DELREY\\\" (contract 58rtBLTV...) launched ~15:09 UTC and by detection (15:29 UTC, pair age 20 min) had spiked to $227k mcap on $181k of 5-minute volume \u2014 an extremely violent, likely bot/bundle-driven pump. Two data sources captured almost simultaneously give contradictory price readings: GeckoTerminal shows +9.7% (m5)/+89% (m30), while DexScreener shows -74.95% (m5)/-57.18% (h1) for what appears to be the same pair/window. Combined with structure.total_market_liquidity_usd reading $0.71 and token.liquidity_usd: 0 (vs. ~$67k liquidity reported at the trigger moment), the most plausible read is that the pump had already begun violently reversing/draining within seconds of the report being compiled. A single non-creator wallet holds 80% of supply; the creator holds another 14.7% \u2014 94.7% of supply in two hands. This is at least the 10th same-name \\\"DelRey\\\" token launched on Solana over the past ~6 weeks (most tiny, sub-$55k mcap), riffing on Maye Musk's real dog \\\"DelRey\\\" (a real pet, mentioned in her new September memoir), with trading fees redirected via a \\\"UsePaid\\\" fee-share gimmick to her real, unaffiliated, non-consenting X handle @mayemusk \u2014 not an endorsement of the token.\",\"narrative\":{\"description\":\"Meme token named after Maye Musk's (Elon Musk's mother) real dog 'DelRey,' referencing an existing, low-intensity but real cultural fact mentioned in her new memoir. No fresh news event, viral post, or controversy from today specifically drives this pump \u2014 it's a recurring, unoriginal meme template that has been relaunched at least 10 times over the past ~6 weeks with no prior breakout success.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"No organic driver found beyond a repeatedly-cloned ticker; the buy/sell imbalance and bundler wallet presence (20 bundler wallets) look mechanical rather than narrative-driven virality. No news, no fresh Maye Musk post referencing the coin, and no X/Reddit/Telegram discussion of this specific contract or ticker was found via search. The volume looks like a fast bot-driven pump that DexScreener's near-simultaneous reading suggests is already reversing.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Of 10 same-name/ticker DELREY tokens tracked, this is currently the largest by mcap and volume, but that alone doesn't make it canonical \u2014 there is no official project account, website, or community; geckoterminal_twitter_handle points to the real (unaffiliated) @mayemusk account, and project_websites/socials are empty in the packet.\",\"competing_tokens\":\"At least 9 other DELREY/Adorable DelRey/DelReyCoin tokens exist, created between roughly early-Aug and today, mostly under $55k mcap with thin volume \u2014 none previously broke out, suggesting this template gets relaunched repeatedly without durable success.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"h1 buys 3671 vs sells 761 with buys_per_unique_buyer_h1=2.86 (moderate churn), 20 bundler wallets flagged, 0 smart-money/renowned wallets, 0 smart_money_signal_count, 0 degen_call_count, and a single wallet controlling 80% of supply alongside the creator's 14.7% \u2014 classic structure of a scripted/bundled launch rather than organic community discovery. No X/Reddit/Telegram/Discord chatter about this specific contract or ticker was found.\",\"uncertainty\":\"Search engines index X poorly and private Telegram/Discord content is invisible to this research, so genuine but low-visibility organic discussion cannot be ruled out; the conflicting GeckoTerminal vs DexScreener price-change readings also make it hard to be fully certain about the real-time price trajectory.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Single non-creator wallet holds 80% of supply; creator holds another 14.7% \u2014 94.7% in two wallets, an extreme dump overhang that LP-lock/burn cannot protect against\",\"structure.total_market_liquidity_usd reported at $0.71 and token.liquidity_usd at 0, despite ~$67k liquidity at the trigger 20 minutes earlier \u2014 consistent with liquidity having already been drained via selling into the pool\",\"DexScreener price-change figures (-74.95% m5, -57.18% h1) captured essentially concurrently with GeckoTerminal's positive figures, suggesting the pump may already be reversing violently before entry\",\"20 bundler wallets and a dev/X account associated with 415 prior token launches (serial factory deployer), with this creator's historical best token ATH mcap ($236,537) almost exactly matching this token's peak mcap at detection \u2014 suggesting this may be near the ceiling this dev/factory typically achieves\",\"At least 9 competing same-name tokens exist with no prior breakout, indicating structurally weak, repeatedly-failed demand for this exact meme\"]},\"counterargument\":\"The raw numbers at the trigger moment (3671 buys vs 761 sells in the hour, 1310 unique buyers in 30 minutes, +87% h1 price change, 9x m5-vs-h1 volume acceleration) do show a real, fast-forming crowd of distinct wallets buying, which is the same kind of explosive early signature that precedes genuine pump.fun-style runners; RugCheck found no insider network and mint/freeze are renounced with LP fully burned, so a classic LP-pull rug is structurally impossible here. If the DexScreener -75% reading is stale/cached data rather than a live crash, and the $0.71 liquidity figure is a data artifact, this could simply be a fast, still-early meme catching genuine early virality on a real (if recycled) cultural hook, in which case the 80%-holder risk may not materialize within the 30-minute trade window and the coin could still tag +100% on residual momentum before any dump lands.\",\"unknowns\":[\"Whether the DexScreener -74.95%/-57.18% price-change readings reflect a real ongoing crash or stale/mismatched data relative to the GeckoTerminal positive readings\",\"Whether the $0.71 total_market_liquidity_usd figure is real (liquidity already drained) or a data-collection artifact\",\"Whether the 80%-holder wallet is a single dumping entity, a locked/vesting contract, or otherwise constrained from selling\",\"Whether Maye Musk or her team have any awareness of, or reaction to, this token\",\"Any private Telegram/Discord community activity invisible to this research\",\"Whether any of the 9 other same-name DELREY tokens have prior pump/dump history that would predict this one's path\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Web search found general background on Maye Musk's real dog DelRey and her new memoir (news_found), but no posts, threads, or discussion specific to this contract, ticker, or token launch on X, Reddit, Telegram, or Discord. project_websites/project_socials were empty in the packet; no dedicated project site for this specific token instance was found (a similarly-named delreysol.xyz site exists for a different, older DelRey token). DexScreener pair page fetch was blocked (403).\"},\"thesis\":\"This is a fast, bundle-heavy pump on a repeatedly-recycled meme ticker (10th+ DelRey clone in 6 weeks) with no fresh catalyst, extreme two-wallet concentration (94.7%), and internally conflicting evidence that the price may already be crashing by the time of entry. No organic social discussion was found anywhere. Structural rug via LP-pull is blocked, but an insider/whale dump or simple attention fade is highly plausible within the 30-minute and 6-hour windows. Rank this well below a typical top-quartile candidate.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":42,\"survival_score\":32,\"attention_score\":48,\"manipulation_risk\":76,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://x.com/mayemusk/status/2069953309851496506\",\"what\":\"Maye Musk's own post confirming her real dog DelRey, referenced in her new September memoir \u2014 the real-world basis for the meme, with no mention of a token\"},{\"url\":\"https://dexscreener.com/solana/2tgttvu87mtbvkrdjjeoaetcgus3ketv6uzxdymkcyni\",\"what\":\"A separate, earlier 'Maye Musk's Delrey' token pair on PumpSwap, illustrating the repeated-clone pattern of this ticker/name\"},{\"url\":\"https://www.geckoterminal.com/solana/pools/HJ9UrG7bvuUJvMsyVsEuvzZr9dBeMJezYWN4rtwXefnK\",\"what\":\"Another distinct 'DelRey/SOL - Maye Musk's Dog' pool on Raydium, further confirming multiple competing same-name tokens\"},{\"url\":\"https://delreysol.xyz/\",\"what\":\"A dedicated project site found for a different/older DelRey token, not confirmed to be this specific contract\"},{\"url\":\"https://fortune.com/2026/09/21/elon-musk-mom-maye-sleeping-texas-visit-spacex/\",\"what\":\"Recent (Sept 21, 2026) news coverage of Maye Musk, showing she is currently in the news cycle generally, though not specifically about the dog or a token\"}]}",
+ "structured_output": {
+  "what_is_happening": "A brand-new PumpSwap pool for \"DELREY\" (contract 58rtBLTV...) launched ~15:09 UTC and by detection (15:29 UTC, pair age 20 min) had spiked to $227k mcap on $181k of 5-minute volume \u2014 an extremely violent, likely bot/bundle-driven pump. Two data sources captured almost simultaneously give contradictory price readings: GeckoTerminal shows +9.7% (m5)/+89% (m30), while DexScreener shows -74.95% (m5)/-57.18% (h1) for what appears to be the same pair/window. Combined with structure.total_market_liquidity_usd reading $0.71 and token.liquidity_usd: 0 (vs. ~$67k liquidity reported at the trigger moment), the most plausible read is that the pump had already begun violently reversing/draining within seconds of the report being compiled. A single non-creator wallet holds 80% of supply; the creator holds another 14.7% \u2014 94.7% of supply in two hands. This is at least the 10th same-name \"DelRey\" token launched on Solana over the past ~6 weeks (most tiny, sub-$55k mcap), riffing on Maye Musk's real dog \"DelRey\" (a real pet, mentioned in her new September memoir), with trading fees redirected via a \"UsePaid\" fee-share gimmick to her real, unaffiliated, non-consenting X handle @mayemusk \u2014 not an endorsement of the token.",
+  "narrative": {
+   "description": "Meme token named after Maye Musk's (Elon Musk's mother) real dog 'DelRey,' referencing an existing, low-intensity but real cultural fact mentioned in her new memoir. No fresh news event, viral post, or controversy from today specifically drives this pump \u2014 it's a recurring, unoriginal meme template that has been relaunched at least 10 times over the past ~6 weeks with no prior breakout success.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "No organic driver found beyond a repeatedly-cloned ticker; the buy/sell imbalance and bundler wallet presence (20 bundler wallets) look mechanical rather than narrative-driven virality. No news, no fresh Maye Musk post referencing the coin, and no X/Reddit/Telegram discussion of this specific contract or ticker was found via search. The volume looks like a fast bot-driven pump that DexScreener's near-simultaneous reading suggests is already reversing."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Of 10 same-name/ticker DELREY tokens tracked, this is currently the largest by mcap and volume, but that alone doesn't make it canonical \u2014 there is no official project account, website, or community; geckoterminal_twitter_handle points to the real (unaffiliated) @mayemusk account, and project_websites/socials are empty in the packet.",
+   "competing_tokens": "At least 9 other DELREY/Adorable DelRey/DelReyCoin tokens exist, created between roughly early-Aug and today, mostly under $55k mcap with thin volume \u2014 none previously broke out, suggesting this template gets relaunched repeatedly without durable success.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "h1 buys 3671 vs sells 761 with buys_per_unique_buyer_h1=2.86 (moderate churn), 20 bundler wallets flagged, 0 smart-money/renowned wallets, 0 smart_money_signal_count, 0 degen_call_count, and a single wallet controlling 80% of supply alongside the creator's 14.7% \u2014 classic structure of a scripted/bundled launch rather than organic community discovery. No X/Reddit/Telegram/Discord chatter about this specific contract or ticker was found.",
+   "uncertainty": "Search engines index X poorly and private Telegram/Discord content is invisible to this research, so genuine but low-visibility organic discussion cannot be ruled out; the conflicting GeckoTerminal vs DexScreener price-change readings also make it hard to be fully certain about the real-time price trajectory."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Single non-creator wallet holds 80% of supply; creator holds another 14.7% \u2014 94.7% in two wallets, an extreme dump overhang that LP-lock/burn cannot protect against",
+    "structure.total_market_liquidity_usd reported at $0.71 and token.liquidity_usd at 0, despite ~$67k liquidity at the trigger 20 minutes earlier \u2014 consistent with liquidity having already been drained via selling into the pool",
+    "DexScreener price-change figures (-74.95% m5, -57.18% h1) captured essentially concurrently with GeckoTerminal's positive figures, suggesting the pump may already be reversing violently before entry",
+    "20 bundler wallets and a dev/X account associated with 415 prior token launches (serial factory deployer), with this creator's historical best token ATH mcap ($236,537) almost exactly matching this token's peak mcap at detection \u2014 suggesting this may be near the ceiling this dev/factory typically achieves",
+    "At least 9 competing same-name tokens exist with no prior breakout, indicating structurally weak, repeatedly-failed demand for this exact meme"
+   ]
+  },
+  "counterargument": "The raw numbers at the trigger moment (3671 buys vs 761 sells in the hour, 1310 unique buyers in 30 minutes, +87% h1 price change, 9x m5-vs-h1 volume acceleration) do show a real, fast-forming crowd of distinct wallets buying, which is the same kind of explosive early signature that precedes genuine pump.fun-style runners; RugCheck found no insider network and mint/freeze are renounced with LP fully burned, so a classic LP-pull rug is structurally impossible here. If the DexScreener -75% reading is stale/cached data rather than a live crash, and the $0.71 liquidity figure is a data artifact, this could simply be a fast, still-early meme catching genuine early virality on a real (if recycled) cultural hook, in which case the 80%-holder risk may not materialize within the 30-minute trade window and the coin could still tag +100% on residual momentum before any dump lands.",
+  "unknowns": [
+   "Whether the DexScreener -74.95%/-57.18% price-change readings reflect a real ongoing crash or stale/mismatched data relative to the GeckoTerminal positive readings",
+   "Whether the $0.71 total_market_liquidity_usd figure is real (liquidity already drained) or a data-collection artifact",
+   "Whether the 80%-holder wallet is a single dumping entity, a locked/vesting contract, or otherwise constrained from selling",
+   "Whether Maye Musk or her team have any awareness of, or reaction to, this token",
+   "Any private Telegram/Discord community activity invisible to this research",
+   "Whether any of the 9 other same-name DELREY tokens have prior pump/dump history that would predict this one's path"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Web search found general background on Maye Musk's real dog DelRey and her new memoir (news_found), but no posts, threads, or discussion specific to this contract, ticker, or token launch on X, Reddit, Telegram, or Discord. project_websites/project_socials were empty in the packet; no dedicated project site for this specific token instance was found (a similarly-named delreysol.xyz site exists for a different, older DelRey token). DexScreener pair page fetch was blocked (403)."
+  },
+  "thesis": "This is a fast, bundle-heavy pump on a repeatedly-recycled meme ticker (10th+ DelRey clone in 6 weeks) with no fresh catalyst, extreme two-wallet concentration (94.7%), and internally conflicting evidence that the price may already be crashing by the time of entry. No organic social discussion was found anywhere. Structural rug via LP-pull is blocked, but an insider/whale dump or simple attention fade is highly plausible within the 30-minute and 6-hour windows. Rank this well below a typical top-quartile candidate.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 42,
+  "survival_score": 32,
+  "attention_score": 48,
+  "manipulation_risk": 76,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://x.com/mayemusk/status/2069953309851496506",
+    "what": "Maye Musk's own post confirming her real dog DelRey, referenced in her new September memoir \u2014 the real-world basis for the meme, with no mention of a token"
+   },
+   {
+    "url": "https://dexscreener.com/solana/2tgttvu87mtbvkrdjjeoaetcgus3ketv6uzxdymkcyni",
+    "what": "A separate, earlier 'Maye Musk's Delrey' token pair on PumpSwap, illustrating the repeated-clone pattern of this ticker/name"
+   },
+   {
+    "url": "https://www.geckoterminal.com/solana/pools/HJ9UrG7bvuUJvMsyVsEuvzZr9dBeMJezYWN4rtwXefnK",
+    "what": "Another distinct 'DelRey/SOL - Maye Musk's Dog' pool on Raydium, further confirming multiple competing same-name tokens"
+   },
+   {
+    "url": "https://delreysol.xyz/",
+    "what": "A dedicated project site found for a different/older DelRey token, not confirmed to be this specific contract"
+   },
+   {
+    "url": "https://fortune.com/2026/09/21/elon-musk-mom-maye-sleeping-texas-visit-spacex/",
+    "what": "Recent (Sept 21, 2026) news coverage of Maye Musk, showing she is currently in the news cycle generally, though not specifically about the dog or a token"
+   }
+  ]
+ },
+ "ttft_ms": 2542,
+ "type": "result",
+ "duration_ms": 142497,
+ "uuid": "a094cb1d-9fbe-4a4d-96eb-1f8cc321422e",
+ "ttft_stream_ms": 568,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 568,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

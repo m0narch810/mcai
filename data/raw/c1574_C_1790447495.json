@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 95221,
+ "stop_reason": "tool_use",
+ "session_id": "78e5ffda-4986-40b5-b367-cac324277ff6",
+ "total_cost_usd": 0.1908796,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13185,
+  "cache_read_input_tokens": 31243,
+  "output_tokens": 6570,
+  "output_tokens_details": {
+   "thinking_tokens": 2855
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13185,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5961,
+    "cache_read_input_tokens": 15060,
+    "cache_creation_input_tokens": 1614,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1614
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 6570,
+   "cacheReadInputTokens": 31243,
+   "cacheCreationInputTokens": 13185,
+   "webSearchRequests": 0,
+   "costUSD": 0.12470060000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 2855,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32334,
+   "outputTokens": 769,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.066179,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":40,\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"The only social link in the packet is a single X status URL (x.com/easy7sniperr/status/2103902612852822378) which returned HTTP 402 (paid/inaccessible) on fetch. Web search for the raw contract address returned zero relevant hits. Web search for the ticker/name combos ($CMAC, 'That's My Baby' pump.fun) returned zero relevant hits (only unrelated Solana meme-coin generic pages and an unrelated SOLBABY birth-coin story). No Reddit, Telegram, Discord or news coverage found via search.\",\"uncertainty\":\"X indexes poorly in search and the one linked post is behind a paywall/rate-limit wall, so 'nothing found' here is a coverage gap, not proof of silence. It's possible the post has real engagement that isn't visible to search or WebFetch.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The token is genuinely early (48 min old, still on the curve, sub-$11k mcap at detection) with real turnover (h1 turnover 1.58x, buyers growing 10\u219261\u219281\u2192133 across m5/m15/m30/h1) and a low buys-per-buyer ratio (1.35) that looks more organic than churned. Structurally it is clean by RugCheck (score 1, mint/freeze renounced, no honeypot, LP burn 1.0, creator balance 0, no flagged insiders). If any real narrative behind the name does exist on X (which I could not access), a fresh curve coin at this size can re-accelerate fast on small dollar inflows, and the base-rate 1-in-8 runner odds for later-caught coins may understate the odds for coins caught this early per the project's own prior finding that earlier coins skew more favorable.\",\"manipulation_risk\":64,\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Still on the pump.fun bonding curve (not migrated): total real liquidity is only ~$12k equivalent, thin depth for a 30-min hold to survive slippage on exit\",\"GMGN flags 76 bundler-tagged wallets against only 37 total holders \u2014 bundling activity likely dominates the trade count, inflating apparent participation\",\"Top10 holders (ex-pool) hold 27.83% \u2014 moderate concentration that could unwind quickly if a few wallets exit\",\"Price already up 203% in the hour before detection but decelerating into entry (m5 price change -2.15% DexScreener / -8.9% GeckoTerminal, m5 sells 78 vs buys 67) \u2014 momentum may already be cooling right as the position opens\",\"At least 5 other pump.fun tokens with the identical name 'That's My Baby' were launched within the same ~10-minute window, all now dead at ~$1 mcap and <$1.21 liquidity \u2014 this is copy/spam-launch behavior typical of sniper/bundle culture, not a single organic community rallying around one coin\"]},\"narrative\":{\"description\":\"Token name 'That's My Baby' with ticker CMAC; multiple same-name and same-ticker tokens exist simultaneously (both 'Crip Mac' and 'That's My Baby' variants), suggesting a possible tie to the internet/battle-rap personality Crip Mac, but I found no source confirming this connection or any live event driving it.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Cannot establish why attention is flowing in: no X posts, news, Reddit or Telegram content were found discussing the contract, ticker, or name. Volume and buyer counts in the packet show real on-chain activity, but I have no independent confirmation this reflects a spreading story versus bundled/bot trading on a freshly spammed pump.fun launch.\"},\"observation_window\":\"1h\",\"p_rug\":38,\"p_runner\":11,\"research_confidence\":\"low\",\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"4 search/fetch budget used: (1) raw contract address search \u2014 no hits; (2) name+ticker search \u2014 no hits, only generic Solana meme-coin pages; (3) WebFetch of the one X link in the packet \u2014 HTTP 402, inaccessible; (4) 'Crip Mac meme coin' search \u2014 no hits connecting Crip Mac (real TikTok/battle-rap personality) to this token. No project website listed in packet. Telegram/Discord not attempted due to budget exhaustion.\"},\"survival_score\":42,\"tail_class\":\"B_up_to_2x\",\"thesis\":\"CMAC / 'That's My Baby' is an unmigrated pump.fun curve token that already ran +203% in the hour before detection and is showing early signs of deceleration and rising sell pressure right at the entry point (m5 price change negative, sells>buys in the last 5 minutes). Structurally it is clean on paper (renounced authorities, no honeypot, RugCheck score 1) but GMGN shows heavy bundler-wallet tagging (76 bundler tags vs 37 holders) and at least five identically-named copycat launches within the same 10-minute window, all now dead \u2014 a pattern consistent with spam/sniper-style launching rather than one coin organically capturing a real story. No X, news, Reddit, or Telegram discussion could be found or accessed to confirm any real narrative driving demand; the sole social link in the packet was paywalled. Given the likely-already-faded pump and unconfirmed organic narrative, I rank this below a typical coin in the pool despite genuinely early, real-looking transaction flow.\",\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"Among 7 same-name/same-ticker tokens in the packet, this is the only one with meaningful liquidity ($11,979) and real market cap ($9-10k); the other 4 'That's My Baby' clones (launched within ~10 min of this one) are dead at ~$1 mcap, and the 3 separate 'Crip Mac' tokens are unrelated smaller launches. So this is the de facto 'winning' instance of the name by liquidity, but I found no external source confirming why this specific name/ticker matters or which, if any, community actually intends it as canonical.\",\"competing_tokens\":\"5 other 'That's My Baby' (CMAC) tokens from the same launch window (all dead, ~$1 mcap), plus 3 separate 'Crip Mac' (Cmac/CMAC) tokens unrelated in mcap/volume.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether the single linked X post (or any others) actually discusses this contract, and what it says \u2014 inaccessible (HTTP 402)\",\"What event, meme, or person 'That's My Baby' actually references, and whether it's connected to Crip Mac or something else entirely\",\"Whether the 76 GMGN-tagged bundler wallets are actively still holding or have already exited\",\"Telegram/Discord community existence or size \u2014 not attempted due to search budget\",\"Why 5 identical-name tokens were launched within the same 10 minutes and whether the same deployer/bundle crew is behind this one too\",\"Whether the m5 deceleration is a brief pullback before continuation or the start of the top\"],\"what_is_happening\":\"A pump.fun bonding-curve token (CMAC / 'That's My Baby', ~$10.5k mcap at detection, 48 minutes old) has run +203% in the hour before detection on ~$20k of volume, then shown a sharp deceleration in the final 5 minutes before entry (price down 2-9% depending on source, sells outnumbering buys 78 vs 67 in m5). GMGN shows a high count of bundler-tagged wallets (76) relative to total holders (37), and the exact same token name was launched at least 5 times within a 10-minute window by what appears to be spam/sniper activity, with all other copies now dead at ~$1 market cap. No external social, news, or forum discussion could be found or accessed to explain the demand.\",\"sources\":[{\"url\":\"https://x.com/easy7sniperr/status/2103902612852822378\",\"what\":\"Sole social link in the evidence packet for this token; WebFetch returned HTTP 402, could not verify content\"},{\"url\":\"https://www.tiktok.com/@eekedits/video/7267222971134053674\",\"what\":\"Confirms 'Crip Mac' is a real battle-rap/internet personality with #cmac tag usage, but no connection found to this token\"},{\"url\":\"https://decrypt.co/323719/dad-livestreams-baby-solana-pump-meme-coin\",\"what\":\"Unrelated pump.fun baby-themed coin story (SOLBABY) surfaced in search for 'That's My Baby' + pump.fun, confirming no direct match found for this token's narrative\"}]}",
+ "structured_output": {
+  "attention_score": 40,
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "The only social link in the packet is a single X status URL (x.com/easy7sniperr/status/2103902612852822378) which returned HTTP 402 (paid/inaccessible) on fetch. Web search for the raw contract address returned zero relevant hits. Web search for the ticker/name combos ($CMAC, 'That's My Baby' pump.fun) returned zero relevant hits (only unrelated Solana meme-coin generic pages and an unrelated SOLBABY birth-coin story). No Reddit, Telegram, Discord or news coverage found via search.",
+   "uncertainty": "X indexes poorly in search and the one linked post is behind a paywall/rate-limit wall, so 'nothing found' here is a coverage gap, not proof of silence. It's possible the post has real engagement that isn't visible to search or WebFetch."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The token is genuinely early (48 min old, still on the curve, sub-$11k mcap at detection) with real turnover (h1 turnover 1.58x, buyers growing 10\u219261\u219281\u2192133 across m5/m15/m30/h1) and a low buys-per-buyer ratio (1.35) that looks more organic than churned. Structurally it is clean by RugCheck (score 1, mint/freeze renounced, no honeypot, LP burn 1.0, creator balance 0, no flagged insiders). If any real narrative behind the name does exist on X (which I could not access), a fresh curve coin at this size can re-accelerate fast on small dollar inflows, and the base-rate 1-in-8 runner odds for later-caught coins may understate the odds for coins caught this early per the project's own prior finding that earlier coins skew more favorable.",
+  "manipulation_risk": 64,
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Still on the pump.fun bonding curve (not migrated): total real liquidity is only ~$12k equivalent, thin depth for a 30-min hold to survive slippage on exit",
+    "GMGN flags 76 bundler-tagged wallets against only 37 total holders \u2014 bundling activity likely dominates the trade count, inflating apparent participation",
+    "Top10 holders (ex-pool) hold 27.83% \u2014 moderate concentration that could unwind quickly if a few wallets exit",
+    "Price already up 203% in the hour before detection but decelerating into entry (m5 price change -2.15% DexScreener / -8.9% GeckoTerminal, m5 sells 78 vs buys 67) \u2014 momentum may already be cooling right as the position opens",
+    "At least 5 other pump.fun tokens with the identical name 'That's My Baby' were launched within the same ~10-minute window, all now dead at ~$1 mcap and <$1.21 liquidity \u2014 this is copy/spam-launch behavior typical of sniper/bundle culture, not a single organic community rallying around one coin"
+   ]
+  },
+  "narrative": {
+   "description": "Token name 'That's My Baby' with ticker CMAC; multiple same-name and same-ticker tokens exist simultaneously (both 'Crip Mac' and 'That's My Baby' variants), suggesting a possible tie to the internet/battle-rap personality Crip Mac, but I found no source confirming this connection or any live event driving it.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Cannot establish why attention is flowing in: no X posts, news, Reddit or Telegram content were found discussing the contract, ticker, or name. Volume and buyer counts in the packet show real on-chain activity, but I have no independent confirmation this reflects a spreading story versus bundled/bot trading on a freshly spammed pump.fun launch."
+  },
+  "observation_window": "1h",
+  "p_rug": 38,
+  "p_runner": 11,
+  "research_confidence": "low",
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "4 search/fetch budget used: (1) raw contract address search \u2014 no hits; (2) name+ticker search \u2014 no hits, only generic Solana meme-coin pages; (3) WebFetch of the one X link in the packet \u2014 HTTP 402, inaccessible; (4) 'Crip Mac meme coin' search \u2014 no hits connecting Crip Mac (real TikTok/battle-rap personality) to this token. No project website listed in packet. Telegram/Discord not attempted due to budget exhaustion."
+  },
+  "survival_score": 42,
+  "tail_class": "B_up_to_2x",
+  "thesis": "CMAC / 'That's My Baby' is an unmigrated pump.fun curve token that already ran +203% in the hour before detection and is showing early signs of deceleration and rising sell pressure right at the entry point (m5 price change negative, sells>buys in the last 5 minutes). Structurally it is clean on paper (renounced authorities, no honeypot, RugCheck score 1) but GMGN shows heavy bundler-wallet tagging (76 bundler tags vs 37 holders) and at least five identically-named copycat launches within the same 10-minute window, all now dead \u2014 a pattern consistent with spam/sniper-style launching rather than one coin organically capturing a real story. No X, news, Reddit, or Telegram discussion could be found or accessed to confirm any real narrative driving demand; the sole social link in the packet was paywalled. Given the likely-already-faded pump and unconfirmed organic narrative, I rank this below a typical coin in the pool despite genuinely early, real-looking transaction flow.",
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "Among 7 same-name/same-ticker tokens in the packet, this is the only one with meaningful liquidity ($11,979) and real market cap ($9-10k); the other 4 'That's My Baby' clones (launched within ~10 min of this one) are dead at ~$1 mcap, and the 3 separate 'Crip Mac' tokens are unrelated smaller launches. So this is the de facto 'winning' instance of the name by liquidity, but I found no external source confirming why this specific name/ticker matters or which, if any, community actually intends it as canonical.",
+   "competing_tokens": "5 other 'That's My Baby' (CMAC) tokens from the same launch window (all dead, ~$1 mcap), plus 3 separate 'Crip Mac' (Cmac/CMAC) tokens unrelated in mcap/volume.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether the single linked X post (or any others) actually discusses this contract, and what it says \u2014 inaccessible (HTTP 402)",
+   "What event, meme, or person 'That's My Baby' actually references, and whether it's connected to Crip Mac or something else entirely",
+   "Whether the 76 GMGN-tagged bundler wallets are actively still holding or have already exited",
+   "Telegram/Discord community existence or size \u2014 not attempted due to search budget",
+   "Why 5 identical-name tokens were launched within the same 10 minutes and whether the same deployer/bundle crew is behind this one too",
+   "Whether the m5 deceleration is a brief pullback before continuation or the start of the top"
+  ],
+  "what_is_happening": "A pump.fun bonding-curve token (CMAC / 'That's My Baby', ~$10.5k mcap at detection, 48 minutes old) has run +203% in the hour before detection on ~$20k of volume, then shown a sharp deceleration in the final 5 minutes before entry (price down 2-9% depending on source, sells outnumbering buys 78 vs 67 in m5). GMGN shows a high count of bundler-tagged wallets (76) relative to total holders (37), and the exact same token name was launched at least 5 times within a 10-minute window by what appears to be spam/sniper activity, with all other copies now dead at ~$1 market cap. No external social, news, or forum discussion could be found or accessed to explain the demand.",
+  "sources": [
+   {
+    "url": "https://x.com/easy7sniperr/status/2103902612852822378",
+    "what": "Sole social link in the evidence packet for this token; WebFetch returned HTTP 402, could not verify content"
+   },
+   {
+    "url": "https://www.tiktok.com/@eekedits/video/7267222971134053674",
+    "what": "Confirms 'Crip Mac' is a real battle-rap/internet personality with #cmac tag usage, but no connection found to this token"
+   },
+   {
+    "url": "https://decrypt.co/323719/dad-livestreams-baby-solana-pump-meme-coin",
+    "what": "Unrelated pump.fun baby-themed coin story (SOLBABY) surfaced in search for 'That's My Baby' + pump.fun, confirming no direct match found for this token's narrative"
+   }
+  ]
+ },
+ "ttft_ms": 2552,
+ "type": "result",
+ "duration_ms": 91079,
+ "uuid": "d7d3edc8-e4e5-4c89-9a9b-2b5a39cb6c39",
+ "ttft_stream_ms": 1399,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1399,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

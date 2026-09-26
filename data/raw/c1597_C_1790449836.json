@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 139379,
+ "stop_reason": "tool_use",
+ "session_id": "f92be7ec-011c-43ff-9827-738cee2acfd2",
+ "total_cost_usd": 0.2482126,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 15796,
+  "cache_read_input_tokens": 32763,
+  "output_tokens": 8969,
+  "output_tokens_details": {
+   "thinking_tokens": 5370
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15796,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 8061,
+    "cache_read_input_tokens": 16205,
+    "cache_creation_input_tokens": 3080,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3080
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 8969,
+   "cacheReadInputTokens": 32763,
+   "cacheCreationInputTokens": 15796,
+   "webSearchRequests": 0,
+   "costUSD": 0.15943859999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5370,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 41994,
+   "outputTokens": 1356,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08877399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":47,\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"No X/Twitter posts, no news, no Reddit/Telegram/Discord content, and no project website/socials were found for this specific contract, ticker search, or the token's own claimed handle 'Ondo' (packet: project_websites=[], project_socials=[], dexscreener_profile_present=false). Four web searches (raw contract address, ticker+pump.fun scam context, site:x.com combos, and 'Ondo Finance...pump.fun launch') returned nothing tied to this token \u2014 only generic pump.fun material and confirmation that the real ONDO is an unrelated multi-billion-dollar RWA project (crypto.news). The GMGN packet shows the deployer's X account has launched 29 tokens under rotating brand names (rename history OndoFinance->Ondo) and reused a duplicated template image 80 times, which is a signature of a serial name-riding launcher rather than an organic community forming around this specific coin.\",\"uncertainty\":\"Search engines index X/Telegram/Discord poorly and in real time, so a burst of genuine chatter in the last 16 minutes could exist and simply not be indexed yet. I could not access pump.fun/DexScreener comment sections directly.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The unique-buyer count (927 in the first hour, only 53 sellers) and $2.5M hourly volume against a ~$200k cap show real, broad-based buying pressure that is not just 2-3 wallets churning (buys-per-unique-buyer is only 2.2x, not extreme). Brand recognition from the real, well-known Ondo Finance name is a genuine attention magnet on pump.fun regardless of official affiliation, and copycat-brand tokens have run hard before purely on name recall. If the current -20%/-28% five-minute dip is just a shakeout after the initial +250% spike rather than true distribution, a name-driven crowd could re-enter and push a second leg within the 30-minute window, and my p_runner may be underrating that possibility.\",\"manipulation_risk\":78,\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"A single wallet (FhVo3mqL...) holds ~80% of non-pooled supply per RugCheck top-holder data \u2014 an overhang far larger than the whole liquidity pool\",\"Top10 holders control ~85% of non-pooled supply; only ~$47k total market liquidity against a ~$200k market cap\",\"Conflicting LP-lock signals: RugCheck risk list flags 'Large Amount of LP Unlocked (100%, danger)' while the packet's own rug_guard filter labels LP as fully burned/non-removable \u2014 not reconciled\",\"Deployer/X-account is a serial launcher (29 prior token launches from the same account, 80 duplicate uses of the same image template), with no launch reaching more than ~$267k ATH mcap historically\",\"Price already spiked +221\u2013254% in the hour before detection and was down -21% to -29% in the five minutes at trigger \u2014 entry follows a blow-off top, not a fresh breakout\",\"20 bundler wallets and 4 fresh wallets among holders, consistent with coordinated early accumulation ahead of retail flow\"]},\"narrative\":{\"description\":\"A pump.fun/PumpSwap token named 'Ondo Finance' launched ~16 minutes before detection, riding the name and ticker of the real, well-known Ondo Finance RWA project (a multi-billion-dollar Ethereum-based protocol, confirmed unrelated via crypto.news). It is one of at least ten same-named/same-ticker Solana tokens listed in the packet, most launched within the same recent window, indicating a wave of copycat drops rather than one coordinated community effort.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Likely pure brand-name recognition sniping on pump.fun (bots/scanners picking up the 'Ondo' name) rather than any real news catalyst \u2014 no news, X posts, or community pages were found tying this launch to an actual Ondo Finance announcement or cultural event. The steep reversal already visible in the 5-minute price change at the moment of detection suggests the initial name-recognition pop has already been sold into.\"},\"observation_window\":\"1h\",\"p_rug\":37,\"p_runner\":7,\"research_confidence\":\"low\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"Used all 4 allotted searches on: (1) raw contract address, (2) generic Ondo/pump.fun scam context, (3) site:x.com contract/ticker combo, (4) 'Ondo Finance' pump.fun launch news. None surfaced any post, article, or page specific to this token. Packet itself shows project_websites=[] and project_socials=[], so there is no first-party site/social to fetch. Did not attempt Reddit/Telegram/Discord directly due to budget exhaustion \u2014 recorded as not_attempted, not as absence of discussion.\"},\"survival_score\":32,\"tail_class\":\"A_dead_or_chop\",\"thesis\":\"This is a same-day copycat 'Ondo Finance' pump.fun launch from a serial name-recycling deployer account (29 prior launches, duplicated template image), with no verifiable organic social presence found anywhere, a single wallet controlling ~80% of non-pooled supply, and a price chart already reversing sharply (-21% to -29% in 5 minutes) immediately after a +221\u2013254% spike at the moment of detection. The large volume and buyer count reflect real but shallow, likely bot/scanner-driven name-recognition flow rather than a spreading cultural narrative, and the entry point sits right after a blow-off top rather than ahead of one \u2014 a structurally poor setup for hitting +100% before -50% in the next 30 minutes.\",\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This token has the highest market cap/liquidity among a cluster of same-day 'Ondo'-named Solana launches, and its GMGN dev-links field auto-populates the real ondo.finance website/Twitter handle purely by name match, not verified affiliation. No official Ondo Finance communication endorsing or referencing this contract was found.\",\"competing_tokens\":\"At least 9 other same-ticker/same-name 'Ondo' tokens exist in the packet, several launched within the same recent window (pair_created_at_ms clustered close together), plus the real ONDO token itself which trades at a market cap of hundreds of millions and is unrelated to any of these Solana pump.fun clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether any real-world Ondo Finance news or announcement in the last 24h triggered this specific wave of copycat launches\",\"Whether the 80%-holding wallet is the creator/insider under a different address or an unrelated early sniper\",\"Why RugCheck flags 100% LP unlocked while the packet's rug_guard filter classifies LP as burned/non-removable \u2014 which signal is current\",\"Any Telegram/Discord/Reddit chatter that search engines have not yet indexed given the token is only ~16 minutes old\",\"Whether the -21%/-29% five-minute drop at detection is early insider distribution or a normal post-spike shakeout\"],\"what_is_happening\":\"A pump.fun-launched Solana token named 'Ondo Finance' (ticker ONDO), migrated to PumpSwap ~16 minutes before detection, spiked +221% to +254% in its first hour on very high volume ($2.5M vs ~$200k market cap) before reversing -21% to -29% in the five minutes immediately preceding detection. It shares its name/ticker with the real, unrelated multi-billion-dollar Ondo Finance RWA project and with at least nine other same-named Solana tokens launched around the same time. No project socials, website, news coverage, or X/Twitter discussion specific to this contract could be found in four targeted searches. On-chain structure shows renounced mint/freeze authority and 951 holders, but a single wallet controls ~80% of non-pooled supply and the deployer's X account has a history of launching 29 tokens with a duplicated template image, consistent with a serial brand-riding launcher rather than an organic project.\\\"\",\"sources\":[{\"url\":\"https://crypto.news/price-prediction/ondo/\",\"what\":\"Confirms the real ONDO/Ondo Finance is an established institutional RWA tokenization project, unrelated to this Solana pump.fun launch\"},{\"url\":\"https://en.wikipedia.org/wiki/Pump.fun\",\"what\":\"Background on the pump.fun launch platform this token was created on\"}]}",
+ "structured_output": {
+  "attention_score": 47,
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "No X/Twitter posts, no news, no Reddit/Telegram/Discord content, and no project website/socials were found for this specific contract, ticker search, or the token's own claimed handle 'Ondo' (packet: project_websites=[], project_socials=[], dexscreener_profile_present=false). Four web searches (raw contract address, ticker+pump.fun scam context, site:x.com combos, and 'Ondo Finance...pump.fun launch') returned nothing tied to this token \u2014 only generic pump.fun material and confirmation that the real ONDO is an unrelated multi-billion-dollar RWA project (crypto.news). The GMGN packet shows the deployer's X account has launched 29 tokens under rotating brand names (rename history OndoFinance->Ondo) and reused a duplicated template image 80 times, which is a signature of a serial name-riding launcher rather than an organic community forming around this specific coin.",
+   "uncertainty": "Search engines index X/Telegram/Discord poorly and in real time, so a burst of genuine chatter in the last 16 minutes could exist and simply not be indexed yet. I could not access pump.fun/DexScreener comment sections directly."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The unique-buyer count (927 in the first hour, only 53 sellers) and $2.5M hourly volume against a ~$200k cap show real, broad-based buying pressure that is not just 2-3 wallets churning (buys-per-unique-buyer is only 2.2x, not extreme). Brand recognition from the real, well-known Ondo Finance name is a genuine attention magnet on pump.fun regardless of official affiliation, and copycat-brand tokens have run hard before purely on name recall. If the current -20%/-28% five-minute dip is just a shakeout after the initial +250% spike rather than true distribution, a name-driven crowd could re-enter and push a second leg within the 30-minute window, and my p_runner may be underrating that possibility.",
+  "manipulation_risk": 78,
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "A single wallet (FhVo3mqL...) holds ~80% of non-pooled supply per RugCheck top-holder data \u2014 an overhang far larger than the whole liquidity pool",
+    "Top10 holders control ~85% of non-pooled supply; only ~$47k total market liquidity against a ~$200k market cap",
+    "Conflicting LP-lock signals: RugCheck risk list flags 'Large Amount of LP Unlocked (100%, danger)' while the packet's own rug_guard filter labels LP as fully burned/non-removable \u2014 not reconciled",
+    "Deployer/X-account is a serial launcher (29 prior token launches from the same account, 80 duplicate uses of the same image template), with no launch reaching more than ~$267k ATH mcap historically",
+    "Price already spiked +221\u2013254% in the hour before detection and was down -21% to -29% in the five minutes at trigger \u2014 entry follows a blow-off top, not a fresh breakout",
+    "20 bundler wallets and 4 fresh wallets among holders, consistent with coordinated early accumulation ahead of retail flow"
+   ]
+  },
+  "narrative": {
+   "description": "A pump.fun/PumpSwap token named 'Ondo Finance' launched ~16 minutes before detection, riding the name and ticker of the real, well-known Ondo Finance RWA project (a multi-billion-dollar Ethereum-based protocol, confirmed unrelated via crypto.news). It is one of at least ten same-named/same-ticker Solana tokens listed in the packet, most launched within the same recent window, indicating a wave of copycat drops rather than one coordinated community effort.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Likely pure brand-name recognition sniping on pump.fun (bots/scanners picking up the 'Ondo' name) rather than any real news catalyst \u2014 no news, X posts, or community pages were found tying this launch to an actual Ondo Finance announcement or cultural event. The steep reversal already visible in the 5-minute price change at the moment of detection suggests the initial name-recognition pop has already been sold into."
+  },
+  "observation_window": "1h",
+  "p_rug": 37,
+  "p_runner": 7,
+  "research_confidence": "low",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "Used all 4 allotted searches on: (1) raw contract address, (2) generic Ondo/pump.fun scam context, (3) site:x.com contract/ticker combo, (4) 'Ondo Finance' pump.fun launch news. None surfaced any post, article, or page specific to this token. Packet itself shows project_websites=[] and project_socials=[], so there is no first-party site/social to fetch. Did not attempt Reddit/Telegram/Discord directly due to budget exhaustion \u2014 recorded as not_attempted, not as absence of discussion."
+  },
+  "survival_score": 32,
+  "tail_class": "A_dead_or_chop",
+  "thesis": "This is a same-day copycat 'Ondo Finance' pump.fun launch from a serial name-recycling deployer account (29 prior launches, duplicated template image), with no verifiable organic social presence found anywhere, a single wallet controlling ~80% of non-pooled supply, and a price chart already reversing sharply (-21% to -29% in 5 minutes) immediately after a +221\u2013254% spike at the moment of detection. The large volume and buyer count reflect real but shallow, likely bot/scanner-driven name-recognition flow rather than a spreading cultural narrative, and the entry point sits right after a blow-off top rather than ahead of one \u2014 a structurally poor setup for hitting +100% before -50% in the next 30 minutes.",
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This token has the highest market cap/liquidity among a cluster of same-day 'Ondo'-named Solana launches, and its GMGN dev-links field auto-populates the real ondo.finance website/Twitter handle purely by name match, not verified affiliation. No official Ondo Finance communication endorsing or referencing this contract was found.",
+   "competing_tokens": "At least 9 other same-ticker/same-name 'Ondo' tokens exist in the packet, several launched within the same recent window (pair_created_at_ms clustered close together), plus the real ONDO token itself which trades at a market cap of hundreds of millions and is unrelated to any of these Solana pump.fun clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether any real-world Ondo Finance news or announcement in the last 24h triggered this specific wave of copycat launches",
+   "Whether the 80%-holding wallet is the creator/insider under a different address or an unrelated early sniper",
+   "Why RugCheck flags 100% LP unlocked while the packet's rug_guard filter classifies LP as burned/non-removable \u2014 which signal is current",
+   "Any Telegram/Discord/Reddit chatter that search engines have not yet indexed given the token is only ~16 minutes old",
+   "Whether the -21%/-29% five-minute drop at detection is early insider distribution or a normal post-spike shakeout"
+  ],
+  "what_is_happening": "A pump.fun-launched Solana token named 'Ondo Finance' (ticker ONDO), migrated to PumpSwap ~16 minutes before detection, spiked +221% to +254% in its first hour on very high volume ($2.5M vs ~$200k market cap) before reversing -21% to -29% in the five minutes immediately preceding detection. It shares its name/ticker with the real, unrelated multi-billion-dollar Ondo Finance RWA project and with at least nine other same-named Solana tokens launched around the same time. No project socials, website, news coverage, or X/Twitter discussion specific to this contract could be found in four targeted searches. On-chain structure shows renounced mint/freeze authority and 951 holders, but a single wallet controls ~80% of non-pooled supply and the deployer's X account has a history of launching 29 tokens with a duplicated template image, consistent with a serial brand-riding launcher rather than an organic project.\"",
+  "sources": [
+   {
+    "url": "https://crypto.news/price-prediction/ondo/",
+    "what": "Confirms the real ONDO/Ondo Finance is an established institutional RWA tokenization project, unrelated to this Solana pump.fun launch"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pump.fun",
+    "what": "Background on the pump.fun launch platform this token was created on"
+   }
+  ]
+ },
+ "ttft_ms": 5881,
+ "type": "result",
+ "duration_ms": 128944,
+ "uuid": "8e1430af-90e3-4ebd-a735-6f0d7848c0e8",
+ "ttft_stream_ms": 2574,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 2574,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

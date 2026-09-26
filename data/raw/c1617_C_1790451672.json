@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 187804,
+ "stop_reason": "tool_use",
+ "session_id": "2069c9f0-1fd1-4736-a777-557c46803f8b",
+ "total_cost_usd": 0.2951838,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 20078,
+  "cache_read_input_tokens": 48099,
+  "output_tokens": 13689,
+  "output_tokens_details": {
+   "thinking_tokens": 5889
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 20078,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3772,
+    "cache_read_input_tokens": 16858,
+    "cache_creation_input_tokens": 6709,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6709
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 13689,
+   "cacheReadInputTokens": 48099,
+   "cacheCreationInputTokens": 20078,
+   "webSearchRequests": 0,
+   "costUSD": 0.2268378,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5889,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32731,
+   "outputTokens": 1123,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06834599999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"SPLIT (contract DRKGYsGALqr5p2aTcGLK9zqiPB5wk7JV78bJv4mPpump) is a pump.fun coin that migrated from its bonding curve to a PumpSwap AMM pool at 19:31:01Z, ~10 minutes before the detection rule fired at 19:41Z. In that ~10-minute post-migration window it did ~$460-480k of volume against a market cap running from the low tens of thousands up to $140-171k, with price up ~180-270% from the migration point (dexscreener/geckoterminal h1=h6=h24 figures are identical because the pool is only ~10 minutes old, so all \\\"hourly\\\" stats are really the same ~10-minute window). The project's own site, usesplit.pro (reached via GMGN's linked project_links, not found via search engine indexing), describes a Solana protocol that \\\"splits token fees through X Money\\\" with a $SPLIT token and buybacks, tied to X's (Twitter's) creator-monetization/payments push. GMGN links this exact contract to that website and the @Use_Split X handle, with no rename history for that account. However, the packet lists 9 other tokens sharing the exact name/ticker \\\"SPLIT,\\\" most created within seconds to a couple minutes of each other (~1790451061000-1790451574000 ms), a classic sniper/bot-swarm clone pattern around a trending pump.fun graduation. This token is the earliest-created and highest-liquidity/mcap of that cluster, the strongest evidence it is the \\\"winning\\\" instance, but I could not independently confirm on X/search that community attention has coalesced around this specific contract rather than a sibling clone.\",\"narrative\":{\"description\":\"A Solana protocol claiming to split token/creator fees using X's (Twitter's) payments/monetization rails (\\\"X Money\\\"), with a $SPLIT token tied to buybacks. This taps a real, currently-live theme (X's rollout of payment/monetization features) but I found no independent evidence (news, X posts, Reddit) that this specific project or token is part of any actual discussion of that theme beyond its own marketing copy on usesplit.pro.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The observed volume spike ($460-480k in ~10 minutes) coincides exactly with the bonding-curve-to-AMM migration, which on pump.fun mechanically attracts sniper/bundler bots regardless of narrative quality. I found no organic external discussion (X, Reddit, news) driving this; the only narrative content is the project's self-description. A separate, unrelated legitimate project (SolSplits.xyz, a fee-splitting standard) explicitly states it has no token and that any token claiming affiliation is a scam, which adds naming confusion around the whole 'Split' concept space this token sits in.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"Among 10 tokens named/ticker'd SPLIT launched within minutes of each other, this contract is the earliest-created and has the highest liquidity ($37k) and market cap ($171k) of the cluster, and is the one GMGN's own metadata links to the usesplit.pro website and @Use_Split X account. That is the best available evidence it is the 'real' one, but search engines surfaced zero independent X/Reddit/news posts naming this contract or confirming which clone the community actually rallies behind.\",\"competing_tokens\":\"9 other SPLIT-named tokens found in the packet with mcaps from ~$3.7k to $184k and liquidity up to ~$30k, several created within 1-2 minutes of this one and one pair (58TPWfK...) with even higher mcap ($184k) than this token \u2014 genuine ambiguity about which is canonical.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"No X/Reddit/Telegram/news posts about this contract, ticker, or usesplit.pro were found via web search (search engines index X poorly and the site itself is not well indexed). GMGN wallet data shows 666 bundler wallets (44% of 1503 holders), 601 fresh wallets (40%), 37 sniper wallets, and a 52% bot/degen rate, with buys-per-unique-buyer of 1.96 \u2014 consistent with a bot/sniper swarm hitting a fresh migration rather than broad organic discovery.\",\"uncertainty\":\"I cannot distinguish 'no organic attention exists' from 'organic attention exists on X but is invisible to my tools.' The high holder count (2883) and unique buyer count (2139 in ~10 min) is large in absolute terms even if bot-heavy, so some real money is clearly flowing, just of unclear composition.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Liquidity ($37k) is thin relative to the volume already transacted ($460k+), meaning slippage on any exit attempt by a bundler cluster could move price sharply.\",\"666 bundler wallets and 37 sniper wallets represent a large latent sell-side overhang that could dump into any pump.\",\"Price has already run +180-270% before this report's entry point, i.e., the trade is entering after most of the visible move, not before it.\",\"9 near-identical clone tokens exist, so attention and liquidity could fragment or rotate to a sibling contract at any time.\",\"Dev/creator's X account has launched 15 tokens historically with a prior best ATH mcap of only ~$204k, suggesting a ceiling pattern rather than a breakout pattern for this dev's launches.\"]},\"counterargument\":\"My central worry is that the entry is happening after an already-completed, bot-driven pump (the 180-270% move happened in the 10 minutes before detection, mechanically tied to the bonding-curve migration, not to any narrative catalyst I can verify). A reasonable counter-view is that pump.fun migration volume of this size ($460k+ in minutes) genuinely does correlate with some subset of these coins continuing to run further as the migration liquidity unlock draws in momentum/copy-trading bots that chase already-pumping charts, and structurally this token is about as clean as they come (mint/freeze renounced, LP 100% locked, rugcheck score 1, zero dev holdings, no flagged risks) \u2014 so if any coin in this batch runs, clean structure plus already-proven liquidity absorption could make this one of the better-positioned candidates in the pool, even without a verified external narrative.\",\"unknowns\":[\"Whether any organic X/Twitter discussion of this specific contract or ticker exists (search engines don't index X well; not directly checked via X's own search)\",\"Which of the 10 same-named SPLIT tokens, if any, the community/KOLs are actually rallying around\",\"Whether usesplit.pro is a live, functioning product or just marketing copy with no real usage\",\"Whether the dev's other 14 previously-launched tokens (per GMGN) rugged, faded, or succeeded\",\"Real-time order flow / whether bundler wallets have already started distributing at the time of entry\",\"Any Telegram/Discord community activity (not accessible in this pass)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"searched_found\",\"notes\":\"Used all 4 allotted searches/fetches on: (1) contract+ticker on general web search (nothing), (2) usesplit.pro domain search (nothing directly, but surfaced an unrelated legitimate 'SolSplits.xyz' project disclaiming any token), (3) direct fetch of usesplit.pro (found: describes X Money fee-splitting protocol and $SPLIT token, no CA listed), (4) site:x.com search for $SPLIT pump.fun (nothing specific found, only generic pump.fun/Solana content). No Reddit, Telegram, Discord, or news-specific searches were attempted given budget.\"},\"thesis\":\"SPLIT is a freshly-migrated pump.fun graduate with clean on-chain structure (renounced authorities, 100% locked LP, zero dev holdings, no RugCheck flags) and a plausible-sounding but externally unverified narrative (X Money fee-splitting). The volume and price move that triggered detection occurred entirely within the ~10 minutes since AMM migration and is heavily populated by bundler/sniper/fresh wallets (bot/degen rate 52%), the signature of a migration-sniping swarm rather than confirmed organic demand. Nine near-identical same-name clones exist, adding real uncertainty about whether this is the contract attention will concentrate on. Because the entry happens after the visible pump already occurred, and because heavy bundler/sniper representation creates real overhang risk, I rate this below-average for hitting +100% before -50% in the next 30 minutes relative to a typical coin in this detection pool, while granting that clean structure and large absolute liquidity absorption keep it from being a bottom-tier candidate.\",\"continuation_view\":\"fade\",\"p_runner\":12,\"p_rug\":33,\"survival_score\":57,\"attention_score\":55,\"manipulation_risk\":76,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://usesplit.pro/\",\"what\":\"Project's own site: describes a Solana protocol splitting token/creator fees via X Money, references $SPLIT token and buybacks, no contract address listed\"},{\"url\":\"https://solsplits.xyz/\",\"what\":\"Unrelated legitimate 'SolSplits' fee-splitting standard explicitly stating it has no token and any token claiming affiliation is a scam \u2014 relevant naming-confusion context\"},{\"url\":\"https://coinswitch.co/web3/split-3x6i2gye9MNX2wLs5xPuKvgNhydgzV1Yx5mf6XSVpump\",\"what\":\"Indexed listing for a different SPLIT-ticker contract on Solana, evidence of the broader same-name token proliferation\"}]}",
+ "structured_output": {
+  "what_is_happening": "SPLIT (contract DRKGYsGALqr5p2aTcGLK9zqiPB5wk7JV78bJv4mPpump) is a pump.fun coin that migrated from its bonding curve to a PumpSwap AMM pool at 19:31:01Z, ~10 minutes before the detection rule fired at 19:41Z. In that ~10-minute post-migration window it did ~$460-480k of volume against a market cap running from the low tens of thousands up to $140-171k, with price up ~180-270% from the migration point (dexscreener/geckoterminal h1=h6=h24 figures are identical because the pool is only ~10 minutes old, so all \"hourly\" stats are really the same ~10-minute window). The project's own site, usesplit.pro (reached via GMGN's linked project_links, not found via search engine indexing), describes a Solana protocol that \"splits token fees through X Money\" with a $SPLIT token and buybacks, tied to X's (Twitter's) creator-monetization/payments push. GMGN links this exact contract to that website and the @Use_Split X handle, with no rename history for that account. However, the packet lists 9 other tokens sharing the exact name/ticker \"SPLIT,\" most created within seconds to a couple minutes of each other (~1790451061000-1790451574000 ms), a classic sniper/bot-swarm clone pattern around a trending pump.fun graduation. This token is the earliest-created and highest-liquidity/mcap of that cluster, the strongest evidence it is the \"winning\" instance, but I could not independently confirm on X/search that community attention has coalesced around this specific contract rather than a sibling clone.",
+  "narrative": {
+   "description": "A Solana protocol claiming to split token/creator fees using X's (Twitter's) payments/monetization rails (\"X Money\"), with a $SPLIT token tied to buybacks. This taps a real, currently-live theme (X's rollout of payment/monetization features) but I found no independent evidence (news, X posts, Reddit) that this specific project or token is part of any actual discussion of that theme beyond its own marketing copy on usesplit.pro.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The observed volume spike ($460-480k in ~10 minutes) coincides exactly with the bonding-curve-to-AMM migration, which on pump.fun mechanically attracts sniper/bundler bots regardless of narrative quality. I found no organic external discussion (X, Reddit, news) driving this; the only narrative content is the project's self-description. A separate, unrelated legitimate project (SolSplits.xyz, a fee-splitting standard) explicitly states it has no token and that any token claiming affiliation is a scam, which adds naming confusion around the whole 'Split' concept space this token sits in."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "Among 10 tokens named/ticker'd SPLIT launched within minutes of each other, this contract is the earliest-created and has the highest liquidity ($37k) and market cap ($171k) of the cluster, and is the one GMGN's own metadata links to the usesplit.pro website and @Use_Split X account. That is the best available evidence it is the 'real' one, but search engines surfaced zero independent X/Reddit/news posts naming this contract or confirming which clone the community actually rallies behind.",
+   "competing_tokens": "9 other SPLIT-named tokens found in the packet with mcaps from ~$3.7k to $184k and liquidity up to ~$30k, several created within 1-2 minutes of this one and one pair (58TPWfK...) with even higher mcap ($184k) than this token \u2014 genuine ambiguity about which is canonical.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "No X/Reddit/Telegram/news posts about this contract, ticker, or usesplit.pro were found via web search (search engines index X poorly and the site itself is not well indexed). GMGN wallet data shows 666 bundler wallets (44% of 1503 holders), 601 fresh wallets (40%), 37 sniper wallets, and a 52% bot/degen rate, with buys-per-unique-buyer of 1.96 \u2014 consistent with a bot/sniper swarm hitting a fresh migration rather than broad organic discovery.",
+   "uncertainty": "I cannot distinguish 'no organic attention exists' from 'organic attention exists on X but is invisible to my tools.' The high holder count (2883) and unique buyer count (2139 in ~10 min) is large in absolute terms even if bot-heavy, so some real money is clearly flowing, just of unclear composition."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Liquidity ($37k) is thin relative to the volume already transacted ($460k+), meaning slippage on any exit attempt by a bundler cluster could move price sharply.",
+    "666 bundler wallets and 37 sniper wallets represent a large latent sell-side overhang that could dump into any pump.",
+    "Price has already run +180-270% before this report's entry point, i.e., the trade is entering after most of the visible move, not before it.",
+    "9 near-identical clone tokens exist, so attention and liquidity could fragment or rotate to a sibling contract at any time.",
+    "Dev/creator's X account has launched 15 tokens historically with a prior best ATH mcap of only ~$204k, suggesting a ceiling pattern rather than a breakout pattern for this dev's launches."
+   ]
+  },
+  "counterargument": "My central worry is that the entry is happening after an already-completed, bot-driven pump (the 180-270% move happened in the 10 minutes before detection, mechanically tied to the bonding-curve migration, not to any narrative catalyst I can verify). A reasonable counter-view is that pump.fun migration volume of this size ($460k+ in minutes) genuinely does correlate with some subset of these coins continuing to run further as the migration liquidity unlock draws in momentum/copy-trading bots that chase already-pumping charts, and structurally this token is about as clean as they come (mint/freeze renounced, LP 100% locked, rugcheck score 1, zero dev holdings, no flagged risks) \u2014 so if any coin in this batch runs, clean structure plus already-proven liquidity absorption could make this one of the better-positioned candidates in the pool, even without a verified external narrative.",
+  "unknowns": [
+   "Whether any organic X/Twitter discussion of this specific contract or ticker exists (search engines don't index X well; not directly checked via X's own search)",
+   "Which of the 10 same-named SPLIT tokens, if any, the community/KOLs are actually rallying around",
+   "Whether usesplit.pro is a live, functioning product or just marketing copy with no real usage",
+   "Whether the dev's other 14 previously-launched tokens (per GMGN) rugged, faded, or succeeded",
+   "Real-time order flow / whether bundler wallets have already started distributing at the time of entry",
+   "Any Telegram/Discord community activity (not accessible in this pass)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "searched_found",
+   "notes": "Used all 4 allotted searches/fetches on: (1) contract+ticker on general web search (nothing), (2) usesplit.pro domain search (nothing directly, but surfaced an unrelated legitimate 'SolSplits.xyz' project disclaiming any token), (3) direct fetch of usesplit.pro (found: describes X Money fee-splitting protocol and $SPLIT token, no CA listed), (4) site:x.com search for $SPLIT pump.fun (nothing specific found, only generic pump.fun/Solana content). No Reddit, Telegram, Discord, or news-specific searches were attempted given budget."
+  },
+  "thesis": "SPLIT is a freshly-migrated pump.fun graduate with clean on-chain structure (renounced authorities, 100% locked LP, zero dev holdings, no RugCheck flags) and a plausible-sounding but externally unverified narrative (X Money fee-splitting). The volume and price move that triggered detection occurred entirely within the ~10 minutes since AMM migration and is heavily populated by bundler/sniper/fresh wallets (bot/degen rate 52%), the signature of a migration-sniping swarm rather than confirmed organic demand. Nine near-identical same-name clones exist, adding real uncertainty about whether this is the contract attention will concentrate on. Because the entry happens after the visible pump already occurred, and because heavy bundler/sniper representation creates real overhang risk, I rate this below-average for hitting +100% before -50% in the next 30 minutes relative to a typical coin in this detection pool, while granting that clean structure and large absolute liquidity absorption keep it from being a bottom-tier candidate.",
+  "continuation_view": "fade",
+  "p_runner": 12,
+  "p_rug": 33,
+  "survival_score": 57,
+  "attention_score": 55,
+  "manipulation_risk": 76,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://usesplit.pro/",
+    "what": "Project's own site: describes a Solana protocol splitting token/creator fees via X Money, references $SPLIT token and buybacks, no contract address listed"
+   },
+   {
+    "url": "https://solsplits.xyz/",
+    "what": "Unrelated legitimate 'SolSplits' fee-splitting standard explicitly stating it has no token and any token claiming affiliation is a scam \u2014 relevant naming-confusion context"
+   },
+   {
+    "url": "https://coinswitch.co/web3/split-3x6i2gye9MNX2wLs5xPuKvgNhydgzV1Yx5mf6XSVpump",
+    "what": "Indexed listing for a different SPLIT-ticker contract on Solana, evidence of the broader same-name token proliferation"
+   }
+  ]
+ },
+ "ttft_ms": 2779,
+ "type": "result",
+ "duration_ms": 178805,
+ "uuid": "1a1869cf-a624-46bd-b19b-3a4e8db539d7",
+ "ttft_stream_ms": 1435,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 1435,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

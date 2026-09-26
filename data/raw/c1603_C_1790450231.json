@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 186594,
+ "stop_reason": "tool_use",
+ "session_id": "f066a9e7-281e-497d-97fd-31283c6571c2",
+ "total_cost_usd": 0.3157324,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 21106,
+  "cache_read_input_tokens": 53742,
+  "output_tokens": 13046,
+  "output_tokens_details": {
+   "thinking_tokens": 5893
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21106,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3573,
+    "cache_read_input_tokens": 19787,
+    "cache_creation_input_tokens": 4808,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4808
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 13046,
+   "cacheReadInputTokens": 53742,
+   "cacheCreationInputTokens": 21106,
+   "webSearchRequests": 0,
+   "costUSD": 0.22564839999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5893,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 43039,
+   "outputTokens": 1409,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.090084,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"the xdog\\\" (XDOG) is a pump.fun-launched token that migrated to PumpSwap roughly 12-20 minutes before detection, already up +141-163% on h1 before the scan caught it. At the moment of detection, GeckoTerminal's own m5 figure shows a sharp reversal (-24.76%) in the last five minutes, suggesting the pump may already be rolling over right as an entry would be taken. Volume is large relative to market cap (h1 turnover ~2.9x) and the unique-buyer count is large for the pool's age (500+ unique buyers in under 20 minutes), but GMGN's wallet classification shows this flow is dominated by bots/bundlers/snipers/fresh wallets (72% bot-degen rate, 236 bundler wallets, 20 snipers, 303 fresh wallets out of 517 classified holders), with zero smart-money or KOL signal. No organic social discussion of the contract, ticker, or project name was found anywhere on the open web. The only \\\"social\\\" link in the packet is a garbage/non-functional Twitter-handle string and a generic auto-generated description (\\\"Fees to @calebjenkins via UsePaid\\\") pointing to UsePaid, a fee-routing tool, not a community page. At least nine other tokens share the exact name/ticker \\\"xdog\\\"/\\\"XDOG\\\", launched within seconds to minutes of this one; one of them has more than double this token's h1 volume at a similar market cap, meaning it is genuinely unclear which pool the crowd is trading. The GMGN dev-side creator address has launched 11,274 tokens in total, consistent with a mass token-factory/bot-deploy account rather than a bespoke project.\",\"narrative\":{\"description\":\"No identifiable cultural reference, meme lineage, or news hook was found for \\\"xdog\\\"/\\\"the xdog\\\" beyond a generic dog-meme name, one of many thousands spun up on pump.fun daily. No connection to a real current event, viral post, or established meme lineage (unlike e.g. WIF or BONK) was found via web search.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"No evidence of genuine narrative spread. The large buyer/volume counts look consistent with pump.fun bot/sniper/bundler activity around a freshly-migrated curve token rather than organic community discovery; no distinct accounts, communities, or media were found discussing it.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This exact contract is one of at least ten pools sharing the name/ticker \\\"xdog\\\"/\\\"XDOG\\\" created within seconds to minutes of each other. This pool did migrate off the bonding curve to PumpSwap with locked LP, giving it more structural legitimacy than the smaller zero-liquidity clones, but a same-named competitor pool has more than 2x this token's h1 volume at a similar market cap, so it is not clearly the one the market has settled on.\",\"competing_tokens\":\"At least 9 other 'xdog'/'XDOG' tokens listed in the packet, created within the same ~15-minute window; one (2GptZmDrxtv1kRWCKyPvraVyhxcP7ii3Z5dEgZ9Yq2bi) has ~$223k h1 volume vs this token's ~$91k at similar mcap and liquidity.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN wallet tags show 72.3% bot/degen rate, 236 bundler wallets and 20 sniper wallets among 517 classified holders, plus a flagged 5-wallet insider transfer network \u2014 patterns typical of coordinated bot/bundle activity around a fresh pump.fun migration rather than organic buying. No paid DexScreener promotion flags are set, and no KOL/smart-money signal was detected (smart_money_signal_count: 0, degen_call_count: 0), so this doesn't look like a promoted shill campaign \u2014 it looks like bot-driven churn around a factory-deployed token.\",\"uncertainty\":\"Cannot see private Telegram/Discord call channels or X posts (no X API in this version); web search found zero discussion of the contract, ticker, or name, but absence of evidence is not evidence of absence for closed channels.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Only ~$30-35k total liquidity against a ~$120-126k market cap \u2014 a 2x target would require meaningful net new buying pressure into thin liquidity\",\"5-wallet insider network flagged by RugCheck's graph analysis\",\"Top10 holders ~20.7% (ex-pool/locker), plus GeckoTerminal shows top10 at ~33% by its own count\",\"236 bundler + 20 sniper wallets can exit quickly once momentum stalls\",\"At least one competing same-name pool is pulling comparable or greater volume, splitting attention/liquidity across the 'xdog' name\"]},\"counterargument\":\"The structural checklist is actually clean: mint and freeze authorities renounced, LP 100% locked, no honeypot, 0% buy/sell tax, and RugCheck's own normalized score is the lowest-risk value (1). Net buying pressure in the last hour was still positive (875 buys vs 700 sells) and the token had already reached an ATH of $0.0001706 versus a current price of $0.0001261, meaning there is a known recent high to reclaim \u2014 a further leg up is not the same as an unprecedented move. Large young-pool volume and holder counts, even if bot-heavy, still move price mechanically: pump.fun migrations regularly re-pump on continued bot/sniper rotation even without any organic narrative, and the -24.76% GeckoTerminal m5 print could be a single large print or timing artifact rather than a real trend reversal, especially since DexScreener's own m5 change shows only +0.22% over what should be a similar window.\",\"unknowns\":[\"Which of the ~10 same-named 'xdog' pools, if any, is the one real communities have converged on, if any\",\"Whether the -24.76% GeckoTerminal 5-minute move is a real reversal or a data/timing artifact given DexScreener shows a flat 0.22% for a similar window\",\"Contents of any private Telegram/Discord/X call channels promoting this specific contract\",\"Whether 'calebjenkins' (the UsePaid fee recipient) is a real, followed individual or a throwaway handle\",\"Identity and rug history of the actual deployer wallet(s) beyond the raw launched-token count\",\"Whether the flagged 5-wallet insider network has already sold or still holds its position\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Used all 4 allotted searches: (1) exact contract address \u2014 no relevant hits; (2) '$xdog the xdog' \u2014 only returned an unrelated $DOG (Bitcoin Runes-adjacent) ticker-clash story, confirming zero indexed content for this specific token; (3) UsePaid.app \u2014 found it is a generic fee-routing tool for token creator fees via X Money, not a project community page; (4) 'xdog' narrative meaning \u2014 no results specific to this token, only generic Solana dog-meme lists. Reddit/Telegram/Discord were not separately searched given the 4-call budget was spent confirming zero X/web footprint and the launcher-tool nature of the project link.\"},\"thesis\":\"This is a pump.fun migration token with no discoverable organic narrative, a garbage/non-functional social presence, a fee-routing (not community) project link, and heavy bot/bundler/sniper/fresh-wallet composition (72% bot-degen rate) rather than smart money or spreading community interest. It is also one of at least ten near-simultaneous same-name clones, with a competing pool pulling more volume at a similar market cap \u2014 real ambiguity about which token the flow is actually chasing. The token had already run +141-163% on the hour before detection and shows a sharp GeckoTerminal 5-minute reversal right at the entry point, suggesting the easy move may be behind it. Structurally it is clean (renounced mint/freeze, 100% locked LP, low RugCheck score), which supports moderate 24h survival, but that says nothing about whether attention continues to flow in. Net: below-average odds of a fresh +100% move in the next 30 minutes, moderate risk of the pool bleeding out via insider/bundler exits even without a literal LP pull.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":32,\"survival_score\":55,\"attention_score\":42,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://usepaid.app/payments\",\"what\":\"UsePaid is a fee-routing tool letting a token's creator fees be sent to any X handle \u2014 confirms the project link is a monetization utility, not a community/project page\"},{\"url\":\"https://x.com/i/trending/2043160145924927947\",\"what\":\"Search for '$xdog'/'the xdog' returned only an unrelated $DOG ticker-clash story, confirming no indexed organic discussion of this specific token exists\"},{\"url\":\"https://dexscreener.com/solana/pumpswap\",\"what\":\"General PumpSwap DEX Screener context for the venue this pair trades on\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"the xdog\" (XDOG) is a pump.fun-launched token that migrated to PumpSwap roughly 12-20 minutes before detection, already up +141-163% on h1 before the scan caught it. At the moment of detection, GeckoTerminal's own m5 figure shows a sharp reversal (-24.76%) in the last five minutes, suggesting the pump may already be rolling over right as an entry would be taken. Volume is large relative to market cap (h1 turnover ~2.9x) and the unique-buyer count is large for the pool's age (500+ unique buyers in under 20 minutes), but GMGN's wallet classification shows this flow is dominated by bots/bundlers/snipers/fresh wallets (72% bot-degen rate, 236 bundler wallets, 20 snipers, 303 fresh wallets out of 517 classified holders), with zero smart-money or KOL signal. No organic social discussion of the contract, ticker, or project name was found anywhere on the open web. The only \"social\" link in the packet is a garbage/non-functional Twitter-handle string and a generic auto-generated description (\"Fees to @calebjenkins via UsePaid\") pointing to UsePaid, a fee-routing tool, not a community page. At least nine other tokens share the exact name/ticker \"xdog\"/\"XDOG\", launched within seconds to minutes of this one; one of them has more than double this token's h1 volume at a similar market cap, meaning it is genuinely unclear which pool the crowd is trading. The GMGN dev-side creator address has launched 11,274 tokens in total, consistent with a mass token-factory/bot-deploy account rather than a bespoke project.",
+  "narrative": {
+   "description": "No identifiable cultural reference, meme lineage, or news hook was found for \"xdog\"/\"the xdog\" beyond a generic dog-meme name, one of many thousands spun up on pump.fun daily. No connection to a real current event, viral post, or established meme lineage (unlike e.g. WIF or BONK) was found via web search.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "No evidence of genuine narrative spread. The large buyer/volume counts look consistent with pump.fun bot/sniper/bundler activity around a freshly-migrated curve token rather than organic community discovery; no distinct accounts, communities, or media were found discussing it."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This exact contract is one of at least ten pools sharing the name/ticker \"xdog\"/\"XDOG\" created within seconds to minutes of each other. This pool did migrate off the bonding curve to PumpSwap with locked LP, giving it more structural legitimacy than the smaller zero-liquidity clones, but a same-named competitor pool has more than 2x this token's h1 volume at a similar market cap, so it is not clearly the one the market has settled on.",
+   "competing_tokens": "At least 9 other 'xdog'/'XDOG' tokens listed in the packet, created within the same ~15-minute window; one (2GptZmDrxtv1kRWCKyPvraVyhxcP7ii3Z5dEgZ9Yq2bi) has ~$223k h1 volume vs this token's ~$91k at similar mcap and liquidity.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN wallet tags show 72.3% bot/degen rate, 236 bundler wallets and 20 sniper wallets among 517 classified holders, plus a flagged 5-wallet insider transfer network \u2014 patterns typical of coordinated bot/bundle activity around a fresh pump.fun migration rather than organic buying. No paid DexScreener promotion flags are set, and no KOL/smart-money signal was detected (smart_money_signal_count: 0, degen_call_count: 0), so this doesn't look like a promoted shill campaign \u2014 it looks like bot-driven churn around a factory-deployed token.",
+   "uncertainty": "Cannot see private Telegram/Discord call channels or X posts (no X API in this version); web search found zero discussion of the contract, ticker, or name, but absence of evidence is not evidence of absence for closed channels."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Only ~$30-35k total liquidity against a ~$120-126k market cap \u2014 a 2x target would require meaningful net new buying pressure into thin liquidity",
+    "5-wallet insider network flagged by RugCheck's graph analysis",
+    "Top10 holders ~20.7% (ex-pool/locker), plus GeckoTerminal shows top10 at ~33% by its own count",
+    "236 bundler + 20 sniper wallets can exit quickly once momentum stalls",
+    "At least one competing same-name pool is pulling comparable or greater volume, splitting attention/liquidity across the 'xdog' name"
+   ]
+  },
+  "counterargument": "The structural checklist is actually clean: mint and freeze authorities renounced, LP 100% locked, no honeypot, 0% buy/sell tax, and RugCheck's own normalized score is the lowest-risk value (1). Net buying pressure in the last hour was still positive (875 buys vs 700 sells) and the token had already reached an ATH of $0.0001706 versus a current price of $0.0001261, meaning there is a known recent high to reclaim \u2014 a further leg up is not the same as an unprecedented move. Large young-pool volume and holder counts, even if bot-heavy, still move price mechanically: pump.fun migrations regularly re-pump on continued bot/sniper rotation even without any organic narrative, and the -24.76% GeckoTerminal m5 print could be a single large print or timing artifact rather than a real trend reversal, especially since DexScreener's own m5 change shows only +0.22% over what should be a similar window.",
+  "unknowns": [
+   "Which of the ~10 same-named 'xdog' pools, if any, is the one real communities have converged on, if any",
+   "Whether the -24.76% GeckoTerminal 5-minute move is a real reversal or a data/timing artifact given DexScreener shows a flat 0.22% for a similar window",
+   "Contents of any private Telegram/Discord/X call channels promoting this specific contract",
+   "Whether 'calebjenkins' (the UsePaid fee recipient) is a real, followed individual or a throwaway handle",
+   "Identity and rug history of the actual deployer wallet(s) beyond the raw launched-token count",
+   "Whether the flagged 5-wallet insider network has already sold or still holds its position"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Used all 4 allotted searches: (1) exact contract address \u2014 no relevant hits; (2) '$xdog the xdog' \u2014 only returned an unrelated $DOG (Bitcoin Runes-adjacent) ticker-clash story, confirming zero indexed content for this specific token; (3) UsePaid.app \u2014 found it is a generic fee-routing tool for token creator fees via X Money, not a project community page; (4) 'xdog' narrative meaning \u2014 no results specific to this token, only generic Solana dog-meme lists. Reddit/Telegram/Discord were not separately searched given the 4-call budget was spent confirming zero X/web footprint and the launcher-tool nature of the project link."
+  },
+  "thesis": "This is a pump.fun migration token with no discoverable organic narrative, a garbage/non-functional social presence, a fee-routing (not community) project link, and heavy bot/bundler/sniper/fresh-wallet composition (72% bot-degen rate) rather than smart money or spreading community interest. It is also one of at least ten near-simultaneous same-name clones, with a competing pool pulling more volume at a similar market cap \u2014 real ambiguity about which token the flow is actually chasing. The token had already run +141-163% on the hour before detection and shows a sharp GeckoTerminal 5-minute reversal right at the entry point, suggesting the easy move may be behind it. Structurally it is clean (renounced mint/freeze, 100% locked LP, low RugCheck score), which supports moderate 24h survival, but that says nothing about whether attention continues to flow in. Net: below-average odds of a fresh +100% move in the next 30 minutes, moderate risk of the pool bleeding out via insider/bundler exits even without a literal LP pull.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 32,
+  "survival_score": 55,
+  "attention_score": 42,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://usepaid.app/payments",
+    "what": "UsePaid is a fee-routing tool letting a token's creator fees be sent to any X handle \u2014 confirms the project link is a monetization utility, not a community/project page"
+   },
+   {
+    "url": "https://x.com/i/trending/2043160145924927947",
+    "what": "Search for '$xdog'/'the xdog' returned only an unrelated $DOG ticker-clash story, confirming no indexed organic discussion of this specific token exists"
+   },
+   {
+    "url": "https://dexscreener.com/solana/pumpswap",
+    "what": "General PumpSwap DEX Screener context for the venue this pair trades on"
+   }
+  ]
+ },
+ "ttft_ms": 31925,
+ "type": "result",
+ "duration_ms": 176376,
+ "uuid": "6bdc05cb-e52b-4df4-9aff-1440b9b91e45",
+ "ttft_stream_ms": 1180,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 1181,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

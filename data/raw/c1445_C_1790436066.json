@@ -1,0 +1,195 @@
+{
+ "duration_api_ms": 174675,
+ "stop_reason": "tool_use",
+ "session_id": "d8f9dc7a-da5e-4fdf-9348-1f71fa06f793",
+ "total_cost_usd": 0.3484414,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 21611,
+  "cache_read_input_tokens": 54387,
+  "output_tokens": 11460,
+  "output_tokens_details": {
+   "thinking_tokens": 3622
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21611,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3803,
+    "cache_read_input_tokens": 20624,
+    "cache_creation_input_tokens": 4476,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4476
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 11460,
+   "cacheReadInputTokens": 54387,
+   "cacheCreationInputTokens": 21611,
+   "webSearchRequests": 0,
+   "costUSD": 0.21193740000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 3622,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 65134,
+   "outputTokens": 2274,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.13650400000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-launched meme token \\\"privacy/acc\\\" (ticker PRIVACY) migrated to PumpSwap ~15 min after creation with a burst of ~$163k h1 volume on a ~$63-68k mcap (turnover ~7.6x/hr). Its on-chain social link/description (\\\"Fees to @mert via UsePaid\\\") shows the creator routed the token's creator fees to X user \\\"mert\\\" (widely known as Mert Mumtaz, Helius CEO, a prominent Solana KOL) via the UsePaid fee-forwarding tool - a common tactic to bait a KOL's attention, not evidence of endorsement. The packet lists 10 other tokens sharing the name \\\"privacy/acc\\\" / \\\"PRIVACY\\\" / \\\"Privacy Pad\\\" created within minutes to hours of this one, nearly all with near-zero liquidity except this pair - this is the \\\"winning\\\" pool of a clone swarm, and an even earlier same-name token (GxbLP...) exists with far less liquidity, so this isn't clearly the first mover, just the current biggest. Price ran up ~26-37% over the trailing hour but the most recent 5 minutes show a sharp -27% to -40% reversal right at detection, i.e. the pump may already be rolling over as entry occurs.\",\"narrative\":{\"description\":\"\\\"privacy/acc\\\" rides two real trends at once: (1) the genuine, currently-active \\\"privacy on Solana\\\" narrative (Privacy Cash/$UMBRA, GhostWareOS, Solana's official Privacy Hack, recent 60% pump in a legitimate Solana privacy coin per BeInCrypto/Yahoo) and (2) the \\\"/acc\\\" (accelerationism) meme-suffix format common in crypto-Twitter meme culture. The token itself has no product, roadmap, or distinct community presence beyond a fee-routing gimmick aimed at a KOL.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Apparent attention looks volume/bot-driven: very high h1 turnover and buy/sell counts on a 14-minute-old pair, plus a swarm of near-identical clones competing for the same name/ticker. No organic tweets, Reddit threads, Telegram/Discord discussion, or news coverage of this specific contract or the exact token were located; the only 'social' artifact is a fee-forwarding link, which is promotion mechanics, not discussion.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Among ~10 same-name/ticker 'privacy/acc'-style tokens created within a similar timeframe, this one has by far the most liquidity ($22k) and volume ($163k h1) and is the only one that migrated off the pump.fun curve to a live PumpSwap pool - so it is the de facto current leader of the swarm. But an earlier-created same-name token (GxbLP..., created ~44 min prior) exists, and several other clones (3sH7z..., Ak41K..., 9At5N...) were created within seconds of this one, so 'canonical' status is more a function of which pool won the initial liquidity race than any unique branding or first-mover claim.\",\"competing_tokens\":\"At least 9 other tokens sharing 'PRIVACY'/'privacy/acc'/'Privacy Pad'/'P/ACC' names, created between ~40 min earlier and ~20 seconds after this pair; all have near-zero liquidity and volume by comparison.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"Wallet composition skews heavily toward manufactured flow: bot/degen rate 42.8%, 138 bundler wallets, 16 sniper wallets, fresh wallets ~52% of holders, buys-per-unique-buyer ratio 2.02 (moderate churn). The project's only 'social' link is a fee-forwarding tribute to a KOL (@mert) via UsePaid rather than any owned website, Telegram, or X account with content. A swarm of near-identical clone tokens launched around the same time is consistent with bots/scripts racing a trending phrase rather than one community rallying around a single token.\",\"uncertainty\":\"X/Twitter search engines do not index posts well and a direct fetch of the linked tweet (x.com/mert/status/1981166058787787142) returned HTTP 402 (paywalled), so I cannot confirm what that tweet says or whether Mert has acknowledged/reacted to the fee-forward. Private Telegram/Discord content is invisible to this research. Absence of organic discussion found is not proof none exists.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Recent 5-minute price reversal (-27% to -40%) right at detection suggests the initial pump is already fading just as entry would occur\",\"138 bundler wallets and 16 snipers among holders create dump overhang risk even though top10 (ex-AMM/locker) is a moderate 23.3%\",\"52% of holders are 'fresh wallets' (newly created) - typical of bot/sniper participation rather than durable holders\",\"Dev/creator account has launched 158 tokens via its X account historically - a serial token-launch pattern, not a dedicated single-project team\",\"10-token clone swarm for the same name fragments and dilutes any attention this narrative generates\"]},\"counterargument\":\"My read leans bearish/neutral on this specific pool, but the strongest case against that: liquidity is real and unusually good for a 14-minute-old token ($22k, LP locked/burned, mint+freeze renounced, RugCheck score effectively minimal risk), unique buyers (965) and buys (1,951) in the first hour are large in absolute terms, and the token did win the liquidity race among ~10 identical-name competitors, meaning whatever attention exists concentrated here rather than dispersing. If the underlying 'Solana privacy' narrative is genuinely heating up (it is, per recent legitimate privacy-token rallies), speculative capital rotating into privacy-themed tickers could re-ignite this specific pool on renewed narrative flow even after a short-term dip, especially since it is now the most liquid/visible pool bearing the name.\",\"unknowns\":[\"What the linked tweet (mert/status/1981166058787787142) actually says and whether Mert has any real connection to or awareness of this token\",\"Whether any organic X/Twitter discussion of the contract or ticker exists that search engines simply failed to surface\",\"Whether the creator or its X account (158 tokens launched) has a history of successful runners vs. rugs/abandonments\",\"Which, if any, of the 10 same-name clones will be perceived by the community as 'the' privacy/acc token going forward\",\"Whether the -40% m5 reversal is noise within a still-net-positive hour or the start of a sustained decline\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"X/Twitter search surfaced only general 'Solana privacy' ecosystem content (Privacy Cash, Umbra, GhostWareOS, Solana Privacy Hack) and the Mert Mumtaz/Helius background context, but nothing specific to this contract, ticker, or the linked tweet (fetch of that tweet returned HTTP 402). No project website beyond the UsePaid fee-routing link and no dedicated Telegram/Discord handle were present in the packet to search. News search found only unrelated legitimate privacy-token coverage (Yahoo/BeInCrypto), confirming the broader narrative is real but not connected to this token specifically.\"},\"thesis\":\"This is a fast, bot-heavy clone-swarm meme token surfing a real 'Solana privacy' narrative and a KOL-fee-forwarding gimmick rather than any documented organic community. It is the largest of ~10 identical-name pools but not the original, and its price already shows a sharp reversal right at the entry window, suggesting the initial pump may be exhausting just as the trade would open. Structural rug risk from LP pulling is low (LP locked, authorities renounced), but bundler/sniper/fresh-wallet overhang and clone dilution make a sustained 2x within 30 minutes unlikely, while a slow bleed or stagnation is more probable than a hard rug given the locked liquidity.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":28,\"survival_score\":55,\"attention_score\":58,\"manipulation_risk\":72,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://beincrypto.com/solana-privacy-coin-rally-ghostware/\",\"what\":\"Confirms a real, currently active 'Solana privacy coin' narrative (unrelated token) rallying ~60%, establishing the broader theme this token is riding\"},{\"url\":\"https://finance.yahoo.com/news/solana-privacy-coin-jumps-60-094319765.html\",\"what\":\"Same privacy-narrative rally coverage, corroborating the theme is real and current\"},{\"url\":\"https://solanacompass.com/tokens/FT34f6Lf7cZjj752gimgf6kixQXp2o6kgU8y3KSypump\",\"what\":\"Shows a separate '$Priv/Acc' token tracked on Solana Compass, evidence of the same meme name/format appearing elsewhere, supporting the clone-swarm read\"},{\"url\":\"https://usepaid.app/\",\"what\":\"UsePaid tool description: routes a token's creator fees to a specified X handle - explains the 'Fees to @mert via UsePaid' mechanism in the packet\"},{\"url\":\"https://iq.wiki/wiki/mert-mumtaz\",\"what\":\"Background on Mert Mumtaz (Helius CEO), the KOL this token's fees are routed to, establishing his identity/prominence in Solana\"},{\"url\":\"https://x.com/mert/status/1981166058787787142\",\"what\":\"The tweet linked as the project's 'social' handle in the packet; fetch failed with HTTP 402 (paywalled), so content could not be verified\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-launched meme token \"privacy/acc\" (ticker PRIVACY) migrated to PumpSwap ~15 min after creation with a burst of ~$163k h1 volume on a ~$63-68k mcap (turnover ~7.6x/hr). Its on-chain social link/description (\"Fees to @mert via UsePaid\") shows the creator routed the token's creator fees to X user \"mert\" (widely known as Mert Mumtaz, Helius CEO, a prominent Solana KOL) via the UsePaid fee-forwarding tool - a common tactic to bait a KOL's attention, not evidence of endorsement. The packet lists 10 other tokens sharing the name \"privacy/acc\" / \"PRIVACY\" / \"Privacy Pad\" created within minutes to hours of this one, nearly all with near-zero liquidity except this pair - this is the \"winning\" pool of a clone swarm, and an even earlier same-name token (GxbLP...) exists with far less liquidity, so this isn't clearly the first mover, just the current biggest. Price ran up ~26-37% over the trailing hour but the most recent 5 minutes show a sharp -27% to -40% reversal right at detection, i.e. the pump may already be rolling over as entry occurs.",
+  "narrative": {
+   "description": "\"privacy/acc\" rides two real trends at once: (1) the genuine, currently-active \"privacy on Solana\" narrative (Privacy Cash/$UMBRA, GhostWareOS, Solana's official Privacy Hack, recent 60% pump in a legitimate Solana privacy coin per BeInCrypto/Yahoo) and (2) the \"/acc\" (accelerationism) meme-suffix format common in crypto-Twitter meme culture. The token itself has no product, roadmap, or distinct community presence beyond a fee-routing gimmick aimed at a KOL.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Apparent attention looks volume/bot-driven: very high h1 turnover and buy/sell counts on a 14-minute-old pair, plus a swarm of near-identical clones competing for the same name/ticker. No organic tweets, Reddit threads, Telegram/Discord discussion, or news coverage of this specific contract or the exact token were located; the only 'social' artifact is a fee-forwarding link, which is promotion mechanics, not discussion."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Among ~10 same-name/ticker 'privacy/acc'-style tokens created within a similar timeframe, this one has by far the most liquidity ($22k) and volume ($163k h1) and is the only one that migrated off the pump.fun curve to a live PumpSwap pool - so it is the de facto current leader of the swarm. But an earlier-created same-name token (GxbLP..., created ~44 min prior) exists, and several other clones (3sH7z..., Ak41K..., 9At5N...) were created within seconds of this one, so 'canonical' status is more a function of which pool won the initial liquidity race than any unique branding or first-mover claim.",
+   "competing_tokens": "At least 9 other tokens sharing 'PRIVACY'/'privacy/acc'/'Privacy Pad'/'P/ACC' names, created between ~40 min earlier and ~20 seconds after this pair; all have near-zero liquidity and volume by comparison.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "Wallet composition skews heavily toward manufactured flow: bot/degen rate 42.8%, 138 bundler wallets, 16 sniper wallets, fresh wallets ~52% of holders, buys-per-unique-buyer ratio 2.02 (moderate churn). The project's only 'social' link is a fee-forwarding tribute to a KOL (@mert) via UsePaid rather than any owned website, Telegram, or X account with content. A swarm of near-identical clone tokens launched around the same time is consistent with bots/scripts racing a trending phrase rather than one community rallying around a single token.",
+   "uncertainty": "X/Twitter search engines do not index posts well and a direct fetch of the linked tweet (x.com/mert/status/1981166058787787142) returned HTTP 402 (paywalled), so I cannot confirm what that tweet says or whether Mert has acknowledged/reacted to the fee-forward. Private Telegram/Discord content is invisible to this research. Absence of organic discussion found is not proof none exists."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Recent 5-minute price reversal (-27% to -40%) right at detection suggests the initial pump is already fading just as entry would occur",
+    "138 bundler wallets and 16 snipers among holders create dump overhang risk even though top10 (ex-AMM/locker) is a moderate 23.3%",
+    "52% of holders are 'fresh wallets' (newly created) - typical of bot/sniper participation rather than durable holders",
+    "Dev/creator account has launched 158 tokens via its X account historically - a serial token-launch pattern, not a dedicated single-project team",
+    "10-token clone swarm for the same name fragments and dilutes any attention this narrative generates"
+   ]
+  },
+  "counterargument": "My read leans bearish/neutral on this specific pool, but the strongest case against that: liquidity is real and unusually good for a 14-minute-old token ($22k, LP locked/burned, mint+freeze renounced, RugCheck score effectively minimal risk), unique buyers (965) and buys (1,951) in the first hour are large in absolute terms, and the token did win the liquidity race among ~10 identical-name competitors, meaning whatever attention exists concentrated here rather than dispersing. If the underlying 'Solana privacy' narrative is genuinely heating up (it is, per recent legitimate privacy-token rallies), speculative capital rotating into privacy-themed tickers could re-ignite this specific pool on renewed narrative flow even after a short-term dip, especially since it is now the most liquid/visible pool bearing the name.",
+  "unknowns": [
+   "What the linked tweet (mert/status/1981166058787787142) actually says and whether Mert has any real connection to or awareness of this token",
+   "Whether any organic X/Twitter discussion of the contract or ticker exists that search engines simply failed to surface",
+   "Whether the creator or its X account (158 tokens launched) has a history of successful runners vs. rugs/abandonments",
+   "Which, if any, of the 10 same-name clones will be perceived by the community as 'the' privacy/acc token going forward",
+   "Whether the -40% m5 reversal is noise within a still-net-positive hour or the start of a sustained decline"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "X/Twitter search surfaced only general 'Solana privacy' ecosystem content (Privacy Cash, Umbra, GhostWareOS, Solana Privacy Hack) and the Mert Mumtaz/Helius background context, but nothing specific to this contract, ticker, or the linked tweet (fetch of that tweet returned HTTP 402). No project website beyond the UsePaid fee-routing link and no dedicated Telegram/Discord handle were present in the packet to search. News search found only unrelated legitimate privacy-token coverage (Yahoo/BeInCrypto), confirming the broader narrative is real but not connected to this token specifically."
+  },
+  "thesis": "This is a fast, bot-heavy clone-swarm meme token surfing a real 'Solana privacy' narrative and a KOL-fee-forwarding gimmick rather than any documented organic community. It is the largest of ~10 identical-name pools but not the original, and its price already shows a sharp reversal right at the entry window, suggesting the initial pump may be exhausting just as the trade would open. Structural rug risk from LP pulling is low (LP locked, authorities renounced), but bundler/sniper/fresh-wallet overhang and clone dilution make a sustained 2x within 30 minutes unlikely, while a slow bleed or stagnation is more probable than a hard rug given the locked liquidity.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 28,
+  "survival_score": 55,
+  "attention_score": 58,
+  "manipulation_risk": 72,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://beincrypto.com/solana-privacy-coin-rally-ghostware/",
+    "what": "Confirms a real, currently active 'Solana privacy coin' narrative (unrelated token) rallying ~60%, establishing the broader theme this token is riding"
+   },
+   {
+    "url": "https://finance.yahoo.com/news/solana-privacy-coin-jumps-60-094319765.html",
+    "what": "Same privacy-narrative rally coverage, corroborating the theme is real and current"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/FT34f6Lf7cZjj752gimgf6kixQXp2o6kgU8y3KSypump",
+    "what": "Shows a separate '$Priv/Acc' token tracked on Solana Compass, evidence of the same meme name/format appearing elsewhere, supporting the clone-swarm read"
+   },
+   {
+    "url": "https://usepaid.app/",
+    "what": "UsePaid tool description: routes a token's creator fees to a specified X handle - explains the 'Fees to @mert via UsePaid' mechanism in the packet"
+   },
+   {
+    "url": "https://iq.wiki/wiki/mert-mumtaz",
+    "what": "Background on Mert Mumtaz (Helius CEO), the KOL this token's fees are routed to, establishing his identity/prominence in Solana"
+   },
+   {
+    "url": "https://x.com/mert/status/1981166058787787142",
+    "what": "The tweet linked as the project's 'social' handle in the packet; fetch failed with HTTP 402 (paywalled), so content could not be verified"
+   }
+  ]
+ },
+ "ttft_ms": 4109,
+ "type": "result",
+ "duration_ms": 152475,
+ "uuid": "d31f1295-d063-42a2-a3d0-15e735536a28",
+ "ttft_stream_ms": 1766,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 1767,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

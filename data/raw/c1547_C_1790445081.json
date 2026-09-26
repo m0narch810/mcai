@@ -1,0 +1,192 @@
+{
+ "duration_api_ms": 141129,
+ "stop_reason": "tool_use",
+ "session_id": "ec4fe038-c7b9-44bb-b713-925f0c5a4b76",
+ "total_cost_usd": 0.27872719999999995,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 17207,
+  "cache_read_input_tokens": 32316,
+  "output_tokens": 9117,
+  "output_tokens_details": {
+   "thinking_tokens": 5238
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17207,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 6920,
+    "cache_read_input_tokens": 16056,
+    "cache_creation_input_tokens": 4640,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4640
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 9117,
+   "cacheReadInputTokens": 32316,
+   "cacheCreationInputTokens": 17207,
+   "webSearchRequests": 0,
+   "costUSD": 0.16647320000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5238,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 53694,
+   "outputTokens": 1712,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11225399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun bonding-curve token symbol/name \\\"BOME\\\" (contract 8KwjrdrVjSnYBBj7Ph57qodQ4P9qJLanVqTZvz8xyLB) launched ~21 minutes ago and pumped from ~$3k to a peak mcap near $10.5-14k (price +136-158% on GeckoTerminal/DexScreener h1 figures) driven by a burst of ~900 buy txns in the first hour, then reversed sharply in the last 5-15 minutes before detection (GeckoTerminal m5 -33.9%, DexScreener m5 -50.5%). RugCheck explicitly flags it as a \\\"Copycat token... using a verified token's symbol,\\\" pointing at the real Book of Meme contract (ukHH6c7...), which has $72M mcap and has traded since March 2024. The packet lists 7 other dead/near-zero-liquidity BOME impostors, showing this ticker is a recurring hijack target. This specific launch's on-chain description claims \\\"Fees to @darkfarms1\\\" and links to bomebookofmemes.com (the real BOME's website/handle), but the deployer wallet has launched 8 tokens before with a best-ever ATH mcap of only $18k \u2014 inconsistent with being the actual Darkfarms (creator of a $72M-peak coin). 60% of the 166 holders are GMGN-tagged bundler wallets, and no organic X/news/Reddit discussion of this specific contract or launch was found.\\\"\",\"narrative\":{\"description\":\"Riding the coattails of the well-known 2024 'Book of Meme' (BOME) brand created by artist Darkfarms, by reusing its name, ticker and even linking to the original project's real website/handle in its metadata.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Initial pump.fun buy pressure (900+ buys/h1) looks like a bundled/bot-driven sweep at launch rather than organic discovery; no external news, X posts, or community threads about this specific contract were found. The underlying 'BOME' brand has real cultural cachet, but that cachet belongs to a different, already-established $72M token, not this one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This contract is a brand-new (21-min-old) pump.fun launch that reuses the exact name/ticker of the famous Book of Meme coin and even references the real project's website and creator handle in its on-chain metadata, likely to bait search traffic and confused buyers. RugCheck flags it directly as a copycat of a verified token.\",\"competing_tokens\":\"The canonical BOME/Book of Meme (ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82) has $72M mcap, $18.5M liquidity and has traded continuously since March 2024 \u2014 clearly the token people mean by 'BOME'. At least 7 other zero/near-zero-liquidity BOME clones also exist in the packet, confirming this ticker is repeatedly hijacked.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN classifies 100 of 166 holders (60%) as bundler wallets and 97 as fresh wallets, with h1 turnover at 4.44x market cap \u2014 consistent with a coordinated multi-wallet buy sweep at launch rather than organic discovery. Price already spiked +136-158% then reversed hard (-33.9% to -50.5% in the last 5 minutes) right before the entry window, the classic shape of insiders/bundlers distributing into their own pump. gmgn_page_visits is only 16, and no independent X, Reddit, Telegram or news coverage of this specific contract was found.\",\"uncertainty\":\"X/Twitter search coverage is weak by design (no API, search-engine indexing of X is poor), so a small pocket of real organic chatter on X could exist and simply not be visible to this search method.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Ticker-hijack of a verified $72M token flagged by RugCheck itself\",\"60% of holders are bundler wallets, 97 fresh wallets \u2014 high dump overhang from launch-coordinated addresses\",\"Price already reversed -33% to -50% in the 5 minutes before entry, suggesting the pump has already peaked and is fading, not building\",\"Still far below pump.fun migration threshold (~44.68/115 virtual SOL, ~39% there) with reversing momentum, so it may never migrate to a real AMM pool\",\"Deployer has launched 8 prior tokens with a best-ever ATH mcap of only $18k \u2014 a low-success serial launcher, not a proven brand operator\",\"Extremely thin absolute liquidity ($10-13k) means even modest sell pressure moves price a lot\"]},\"counterargument\":\"\\\"BOME/Book of Meme is a genuinely famous, high-recognition meme brand, and pump.fun tickers referencing famous names sometimes attract fast, large speculative inflows purely because searchers type the ticker and buy the first live pump.fun result regardless of legitimacy \u2014 the h1 buy count (880-917) and unique buyer count (503) are objectively large for a coin this size and could keep spiking again on brand-recognition alone even after this reversal, especially if a bundler-driven relaunch attempt captures renewed attention. The mint/freeze authorities are renounced and there's no honeypot/tax, so nothing structurally prevents a second leg up within the 30-minute window if a fresh wave of buyers (confused searchers or opportunistic snipers chasing the reversal) steps back in.\\\"\",\"unknowns\":[\"Whether the real Darkfarms/BOME team has any actual connection to or knowledge of this launch, or whether the fee-attribution to '@darkfarms1' is unauthorized\",\"Whether any organic X activity exists that standard web search simply can't surface (X is poorly indexed)\",\"Whether the sharp m5 price reversal is bundler-wallet profit-taking or a temporary pullback before another leg\",\"Whether this coin will reach the pump.fun migration threshold at all given current negative momentum\",\"Identity/reputation of the creator wallet (6naYu7Nac...) or dev wallet (9Ew94yyW...) beyond GMGN's aggregate stats\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"X/Twitter searches (contract address, Darkfarms1, ticker-hijack framing) returned only historical 2024 Book of Meme material and general pump.fun mechanics, nothing specific to this new contract or launch. 'project_site' found bomebookofmemes.com but that confirms only the ORIGINAL Book of Meme project's identity/site, not any endorsement of this new pump.fun token. Reddit/Telegram/Discord were not separately queried given the 2-minute budget; GeckoTerminal reports no Telegram handle for this token at all.\"},\"thesis\":\"This is a pump.fun ticker-hijack of the well-known 'Book of Meme' brand, launched by a low-success serial deployer (8 prior tokens, best ATH $18k) and pumped by a heavily bundled wallet cohort (60% of holders tagged as bundlers) rather than organic demand. Price had already spiked +136-158% and was sharply reversing (-33% to -50% in the final 5 minutes) right before the entry window opens, the classic signature of insiders distributing into their own pump. No independent news, X, Reddit or Telegram discussion of this specific contract was found. Structurally it is clean (renounced authorities, no tax/honeypot, curve can't be LP-pulled), but the combination of ticker-hijack framing, bundler concentration, and already-fading momentum makes a fresh +100% leg within 30 minutes unlikely; more probable outcomes are continued chop/fade or a slow bleed as bundlers exit.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":40,\"survival_score\":32,\"attention_score\":37,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://x.com/Darkfarms1/status/1768823130359767550\",\"what\":\"Darkfarms1's historical X account tied to the original Book of Meme launch (March 2024)\"},{\"url\":\"https://bomebookofmemes.com/\",\"what\":\"Original Book of Meme project's official website (same URL referenced in this new token's social links)\"},{\"url\":\"https://x.com/bomebookofmemes\",\"what\":\"Original Book of Meme project's official X account (@Bomebookofmemes, distinct from personal @Darkfarms1)\"},{\"url\":\"https://nftnow.com/features/darkfarms-book-of-meme-bome-memecoin-feature/\",\"what\":\"Background on Darkfarms and the original BOME project's rise, establishing the legitimate brand this new token appears to reference\"},{\"url\":\"https://www.kucoin.com/announcement/en-book-of-meme-bome-gets-listed-on-kucoin\",\"what\":\"Confirms the original BOME token's exchange listing status and legitimacy as the canonical token\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun bonding-curve token symbol/name \"BOME\" (contract 8KwjrdrVjSnYBBj7Ph57qodQ4P9qJLanVqTZvz8xyLB) launched ~21 minutes ago and pumped from ~$3k to a peak mcap near $10.5-14k (price +136-158% on GeckoTerminal/DexScreener h1 figures) driven by a burst of ~900 buy txns in the first hour, then reversed sharply in the last 5-15 minutes before detection (GeckoTerminal m5 -33.9%, DexScreener m5 -50.5%). RugCheck explicitly flags it as a \"Copycat token... using a verified token's symbol,\" pointing at the real Book of Meme contract (ukHH6c7...), which has $72M mcap and has traded since March 2024. The packet lists 7 other dead/near-zero-liquidity BOME impostors, showing this ticker is a recurring hijack target. This specific launch's on-chain description claims \"Fees to @darkfarms1\" and links to bomebookofmemes.com (the real BOME's website/handle), but the deployer wallet has launched 8 tokens before with a best-ever ATH mcap of only $18k \u2014 inconsistent with being the actual Darkfarms (creator of a $72M-peak coin). 60% of the 166 holders are GMGN-tagged bundler wallets, and no organic X/news/Reddit discussion of this specific contract or launch was found.\"",
+  "narrative": {
+   "description": "Riding the coattails of the well-known 2024 'Book of Meme' (BOME) brand created by artist Darkfarms, by reusing its name, ticker and even linking to the original project's real website/handle in its metadata.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Initial pump.fun buy pressure (900+ buys/h1) looks like a bundled/bot-driven sweep at launch rather than organic discovery; no external news, X posts, or community threads about this specific contract were found. The underlying 'BOME' brand has real cultural cachet, but that cachet belongs to a different, already-established $72M token, not this one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This contract is a brand-new (21-min-old) pump.fun launch that reuses the exact name/ticker of the famous Book of Meme coin and even references the real project's website and creator handle in its on-chain metadata, likely to bait search traffic and confused buyers. RugCheck flags it directly as a copycat of a verified token.",
+   "competing_tokens": "The canonical BOME/Book of Meme (ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82) has $72M mcap, $18.5M liquidity and has traded continuously since March 2024 \u2014 clearly the token people mean by 'BOME'. At least 7 other zero/near-zero-liquidity BOME clones also exist in the packet, confirming this ticker is repeatedly hijacked.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN classifies 100 of 166 holders (60%) as bundler wallets and 97 as fresh wallets, with h1 turnover at 4.44x market cap \u2014 consistent with a coordinated multi-wallet buy sweep at launch rather than organic discovery. Price already spiked +136-158% then reversed hard (-33.9% to -50.5% in the last 5 minutes) right before the entry window, the classic shape of insiders/bundlers distributing into their own pump. gmgn_page_visits is only 16, and no independent X, Reddit, Telegram or news coverage of this specific contract was found.",
+   "uncertainty": "X/Twitter search coverage is weak by design (no API, search-engine indexing of X is poor), so a small pocket of real organic chatter on X could exist and simply not be visible to this search method."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Ticker-hijack of a verified $72M token flagged by RugCheck itself",
+    "60% of holders are bundler wallets, 97 fresh wallets \u2014 high dump overhang from launch-coordinated addresses",
+    "Price already reversed -33% to -50% in the 5 minutes before entry, suggesting the pump has already peaked and is fading, not building",
+    "Still far below pump.fun migration threshold (~44.68/115 virtual SOL, ~39% there) with reversing momentum, so it may never migrate to a real AMM pool",
+    "Deployer has launched 8 prior tokens with a best-ever ATH mcap of only $18k \u2014 a low-success serial launcher, not a proven brand operator",
+    "Extremely thin absolute liquidity ($10-13k) means even modest sell pressure moves price a lot"
+   ]
+  },
+  "counterargument": "\"BOME/Book of Meme is a genuinely famous, high-recognition meme brand, and pump.fun tickers referencing famous names sometimes attract fast, large speculative inflows purely because searchers type the ticker and buy the first live pump.fun result regardless of legitimacy \u2014 the h1 buy count (880-917) and unique buyer count (503) are objectively large for a coin this size and could keep spiking again on brand-recognition alone even after this reversal, especially if a bundler-driven relaunch attempt captures renewed attention. The mint/freeze authorities are renounced and there's no honeypot/tax, so nothing structurally prevents a second leg up within the 30-minute window if a fresh wave of buyers (confused searchers or opportunistic snipers chasing the reversal) steps back in.\"",
+  "unknowns": [
+   "Whether the real Darkfarms/BOME team has any actual connection to or knowledge of this launch, or whether the fee-attribution to '@darkfarms1' is unauthorized",
+   "Whether any organic X activity exists that standard web search simply can't surface (X is poorly indexed)",
+   "Whether the sharp m5 price reversal is bundler-wallet profit-taking or a temporary pullback before another leg",
+   "Whether this coin will reach the pump.fun migration threshold at all given current negative momentum",
+   "Identity/reputation of the creator wallet (6naYu7Nac...) or dev wallet (9Ew94yyW...) beyond GMGN's aggregate stats"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "X/Twitter searches (contract address, Darkfarms1, ticker-hijack framing) returned only historical 2024 Book of Meme material and general pump.fun mechanics, nothing specific to this new contract or launch. 'project_site' found bomebookofmemes.com but that confirms only the ORIGINAL Book of Meme project's identity/site, not any endorsement of this new pump.fun token. Reddit/Telegram/Discord were not separately queried given the 2-minute budget; GeckoTerminal reports no Telegram handle for this token at all."
+  },
+  "thesis": "This is a pump.fun ticker-hijack of the well-known 'Book of Meme' brand, launched by a low-success serial deployer (8 prior tokens, best ATH $18k) and pumped by a heavily bundled wallet cohort (60% of holders tagged as bundlers) rather than organic demand. Price had already spiked +136-158% and was sharply reversing (-33% to -50% in the final 5 minutes) right before the entry window opens, the classic signature of insiders distributing into their own pump. No independent news, X, Reddit or Telegram discussion of this specific contract was found. Structurally it is clean (renounced authorities, no tax/honeypot, curve can't be LP-pulled), but the combination of ticker-hijack framing, bundler concentration, and already-fading momentum makes a fresh +100% leg within 30 minutes unlikely; more probable outcomes are continued chop/fade or a slow bleed as bundlers exit.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 40,
+  "survival_score": 32,
+  "attention_score": 37,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://x.com/Darkfarms1/status/1768823130359767550",
+    "what": "Darkfarms1's historical X account tied to the original Book of Meme launch (March 2024)"
+   },
+   {
+    "url": "https://bomebookofmemes.com/",
+    "what": "Original Book of Meme project's official website (same URL referenced in this new token's social links)"
+   },
+   {
+    "url": "https://x.com/bomebookofmemes",
+    "what": "Original Book of Meme project's official X account (@Bomebookofmemes, distinct from personal @Darkfarms1)"
+   },
+   {
+    "url": "https://nftnow.com/features/darkfarms-book-of-meme-bome-memecoin-feature/",
+    "what": "Background on Darkfarms and the original BOME project's rise, establishing the legitimate brand this new token appears to reference"
+   },
+   {
+    "url": "https://www.kucoin.com/announcement/en-book-of-meme-bome-gets-listed-on-kucoin",
+    "what": "Confirms the original BOME token's exchange listing status and legitimacy as the canonical token"
+   }
+  ]
+ },
+ "ttft_ms": 3071,
+ "type": "result",
+ "duration_ms": 126239,
+ "uuid": "cf98e980-c8b5-43f2-b08f-164d0a27b9e8",
+ "ttft_stream_ms": 1353,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 1353,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

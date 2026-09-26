@@ -1,0 +1,191 @@
+{
+ "duration_api_ms": 98827,
+ "stop_reason": "tool_use",
+ "session_id": "a4c2b63a-bc5f-48d4-916d-095ced34a756",
+ "total_cost_usd": 0.1935348,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13101,
+  "cache_read_input_tokens": 30919,
+  "output_tokens": 6478,
+  "output_tokens_details": {
+   "thinking_tokens": 2856
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13101,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5844,
+    "cache_read_input_tokens": 14558,
+    "cache_creation_input_tokens": 2032,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2032
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 6478,
+   "cacheReadInputTokens": 30919,
+   "cacheCreationInputTokens": 13101,
+   "webSearchRequests": 0,
+   "costUSD": 0.12337980000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 2856,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 34175,
+   "outputTokens": 1196,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.070155,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":52,\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"gmgn_wallets_and_dev shows 302 bundler_wallets and 91 sniper_wallets out of 599 total holders (over half the holder base is bundlers), fresh_wallet share only 10.68% but bot_degen_rate is 62%. creator_hold_rate and dev_team_hold_rate are both 0 (creator already has essentially no balance left, creator_balance:1). Price already reversed -33% in the 5 minutes before detection after a +95% h1 spike, consistent with an insider/bundle distribution wave that has already crested. No organic discussion was found anywhere on the open web for this specific contract, ticker, or project X handle.\",\"uncertainty\":\"No X/Twitter API access; could not see actual post volume, only search-engine indexing, which is known to miss most X content. Could not access Telegram/Discord. It is possible there is a live community that simply doesn't surface in search.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The raw numbers (h1 turnover 11.98x mcap, ~$320k volume against an $80-95k cap, 2969 buys vs 2610 sells, LP fully locked, mint/freeze renounced, rugcheck_score near the safest end) are objectively strong by this pool's usual standards, and pump.fun graduations with this much genuine turnover do occasionally keep running on pure momentum/bot-chase dynamics even without any discoverable narrative \u2014 attention on these boards can be reflexive (chasing the volume/chart itself) rather than story-driven, and a 30-minute window is short enough that a already-in-progress bundler unwind could still produce a sharp secondary spike before it dies.\",\"manipulation_risk\":78,\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Bundler wallets are 302 of 599 holders (~50%) and sniper wallets are 91 more \u2014 an unusually large insider/bundle footprint for this pool\",\"Creator has already fully exited (creator_balance:1, creator_hold_rate 0.0), removing any dev-alignment signal\",\"Price already down -33% in the 5 minutes before detection after a +95% h1 run \u2014 momentum may already be rolling over at entry\",\"Nine-plus other tokens named/ticker'd \\\"Fork\\\" launched within the same ~10-minute window (pair_created_at_ms clustered around 1790446600-1790447200), suggesting a templated multi-deploy rather than one project with organic conviction\",\"Total liquidity is only ~$24.5-27k against a ~$80-96k mcap, thin for the volume passing through it\"]},\"narrative\":{\"description\":\"Token named \\\"Fork\\\" with project site usefork.cash and X handle @useforkcash. The on-chain \\\"project_description\\\" field is literally the single character \\\"a\\\" \u2014 no articulated story, meme, or hook was provided anywhere I could find. My own fetch of usefork.cash returned no usable content beyond the word \\\"Fork.\\\" Web search for the project's X handle, the contract address, and the ticker turned up only unrelated legacy accounts (old ForkCash, a 2017-era Twitter handle, an unrelated 2025 pump.fun ICO narrative called \\\"a fork in the road\\\" for PUMP token sales) \u2014 none reference this token.\",\"stage\":\"unclear\",\"potential\":\"none\",\"why_spreading\":\"No discoverable narrative reason for attention; the word \\\"Fork\\\" is generic and at least 9 other same-name/ticker tokens launched within the same ~10-minute window, consistent with a low-effort templated multi-deploy rather than a story catching on. Whatever volume exists appears driven by bundler/sniper/bot mechanics (see authenticity), not a spreading idea.\"},\"observation_window\":\"1h\",\"p_rug\":33,\"p_runner\":7,\"research_confidence\":\"medium\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"project_site fetch returned essentially no content (just the word 'Fork'), consistent with packet's placeholder description field ('a'). X searches for the contract, ticker, and project handle 'useforkcash' returned only unrelated legacy/irrelevant accounts. All 4 allotted search/fetch calls were used; Reddit, Telegram, Discord were not attempted due to budget.\"},\"survival_score\":44,\"tail_class\":\"A_dead_or_chop\",\"thesis\":\"FORK (contract GDT8...ForK) shows real trading volume (~$320k against ~$80-95k mcap) and clean base structure (mint/freeze renounced, LP 100% locked, low rugcheck score), but every discoverable social/narrative signal is either absent or a red flag: the project description field is a single placeholder character, the website returns no content, no X presence was findable, the creator has already fully exited, over half the holder base is classified as bundler wallets, and price had already reversed -33% in the 5 minutes before detection following its +95% pump. At least 9 other tokens share the name/ticker \\\"Fork,\\\" launched within the same ~10-minute window, pointing to a templated multi-deploy rather than one project with a spreading story. This profile matches a bundled pump-and-dump that has likely already crested rather than an early-stage runner.\",\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the highest-liquidity/volume instance among a cluster of near-simultaneous 'Fork'-named launches on 2026-09-26, but nothing distinguishes it as canonical besides being the one the detector's rule happened to catch \u2014 no discoverable community has coalesced around this specific contract over the others.\",\"competing_tokens\":\"9 other same-ticker/name 'Fork' tokens listed in packet, most created within the same ~10-minute window (pair_created_at_ms ~1790446600-1790447200); one much older 'A Fork in the Road' token from late 2025 has a far larger mcap (~$1.09M) and could be the entity anyone searching 'Fork' actually finds first.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether any real Telegram/Discord community exists for this specific contract (not checked, budget exhausted)\",\"Whether the X handle @useforkcash actually exists and has any posts (search engines did not surface it either way)\",\"Whether the -33% five-minute price drop at detection is the start of a full unwind or a brief pullback within continued upward momentum\",\"Identity/history of the creator wallet 3fKxJ...u1yR beyond 'creator_launched_token_count: 1' and 'creator_best_token_ath_mcap: 160850' \u2014 no way to independently verify via search in the time budget\",\"Whether the cluster of near-identical 'Fork' launches is coordinated by one actor across all the sibling tokens, or independent copycats\"],\"what_is_happening\":\"A pump.fun-graduated Solana token called \\\"Fork\\\" (FORK) hit the detector 10.5 minutes after its pair was created, having already spiked +95% in the first hour on ~$320k volume against an ~$80-96k market cap, then dropped -33% in the 5 minutes immediately before detection. Holder composition is dominated by bundler (302) and sniper (91) wallets out of 599 total holders; the creator holds essentially nothing (already exited). No narrative, project description, or discoverable social presence exists beyond a placeholder site and an unlocatable X handle. At least 9 other tokens share the exact same name/ticker, launched within the same ~10-minute window, indicating a low-effort multi-deploy rather than a story-driven token.\",\"sources\":[{\"url\":\"https://usefork.cash/\",\"what\":\"Project website; fetched but contains no substantive content beyond the word 'Fork'\"},{\"url\":\"https://x.com/whattheforkcoin\",\"what\":\"Unrelated legacy 'Fork'-named token account found via search, not connected to this contract\"},{\"url\":\"https://x.com/forkinsol\",\"what\":\"Unrelated legacy 'Fork'-named token account found via search, not connected to this contract\"},{\"url\":\"https://x.com/Forkcash\",\"what\":\"Unrelated 2017-era 'ForkCash' account found via search for 'useforkcash', not the project's handle\"},{\"url\":\"https://blockworks.com/news/pump-ico-dex-blockworks-research\",\"what\":\"Confirms the only web-indexed 'fork in the road' crypto narrative refers to the 2025 PUMP token ICO, unrelated to this FORK token\"}]}",
+ "structured_output": {
+  "attention_score": 52,
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "gmgn_wallets_and_dev shows 302 bundler_wallets and 91 sniper_wallets out of 599 total holders (over half the holder base is bundlers), fresh_wallet share only 10.68% but bot_degen_rate is 62%. creator_hold_rate and dev_team_hold_rate are both 0 (creator already has essentially no balance left, creator_balance:1). Price already reversed -33% in the 5 minutes before detection after a +95% h1 spike, consistent with an insider/bundle distribution wave that has already crested. No organic discussion was found anywhere on the open web for this specific contract, ticker, or project X handle.",
+   "uncertainty": "No X/Twitter API access; could not see actual post volume, only search-engine indexing, which is known to miss most X content. Could not access Telegram/Discord. It is possible there is a live community that simply doesn't surface in search."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The raw numbers (h1 turnover 11.98x mcap, ~$320k volume against an $80-95k cap, 2969 buys vs 2610 sells, LP fully locked, mint/freeze renounced, rugcheck_score near the safest end) are objectively strong by this pool's usual standards, and pump.fun graduations with this much genuine turnover do occasionally keep running on pure momentum/bot-chase dynamics even without any discoverable narrative \u2014 attention on these boards can be reflexive (chasing the volume/chart itself) rather than story-driven, and a 30-minute window is short enough that a already-in-progress bundler unwind could still produce a sharp secondary spike before it dies.",
+  "manipulation_risk": 78,
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Bundler wallets are 302 of 599 holders (~50%) and sniper wallets are 91 more \u2014 an unusually large insider/bundle footprint for this pool",
+    "Creator has already fully exited (creator_balance:1, creator_hold_rate 0.0), removing any dev-alignment signal",
+    "Price already down -33% in the 5 minutes before detection after a +95% h1 run \u2014 momentum may already be rolling over at entry",
+    "Nine-plus other tokens named/ticker'd \"Fork\" launched within the same ~10-minute window (pair_created_at_ms clustered around 1790446600-1790447200), suggesting a templated multi-deploy rather than one project with organic conviction",
+    "Total liquidity is only ~$24.5-27k against a ~$80-96k mcap, thin for the volume passing through it"
+   ]
+  },
+  "narrative": {
+   "description": "Token named \"Fork\" with project site usefork.cash and X handle @useforkcash. The on-chain \"project_description\" field is literally the single character \"a\" \u2014 no articulated story, meme, or hook was provided anywhere I could find. My own fetch of usefork.cash returned no usable content beyond the word \"Fork.\" Web search for the project's X handle, the contract address, and the ticker turned up only unrelated legacy accounts (old ForkCash, a 2017-era Twitter handle, an unrelated 2025 pump.fun ICO narrative called \"a fork in the road\" for PUMP token sales) \u2014 none reference this token.",
+   "stage": "unclear",
+   "potential": "none",
+   "why_spreading": "No discoverable narrative reason for attention; the word \"Fork\" is generic and at least 9 other same-name/ticker tokens launched within the same ~10-minute window, consistent with a low-effort templated multi-deploy rather than a story catching on. Whatever volume exists appears driven by bundler/sniper/bot mechanics (see authenticity), not a spreading idea."
+  },
+  "observation_window": "1h",
+  "p_rug": 33,
+  "p_runner": 7,
+  "research_confidence": "medium",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "project_site fetch returned essentially no content (just the word 'Fork'), consistent with packet's placeholder description field ('a'). X searches for the contract, ticker, and project handle 'useforkcash' returned only unrelated legacy/irrelevant accounts. All 4 allotted search/fetch calls were used; Reddit, Telegram, Discord were not attempted due to budget."
+  },
+  "survival_score": 44,
+  "tail_class": "A_dead_or_chop",
+  "thesis": "FORK (contract GDT8...ForK) shows real trading volume (~$320k against ~$80-95k mcap) and clean base structure (mint/freeze renounced, LP 100% locked, low rugcheck score), but every discoverable social/narrative signal is either absent or a red flag: the project description field is a single placeholder character, the website returns no content, no X presence was findable, the creator has already fully exited, over half the holder base is classified as bundler wallets, and price had already reversed -33% in the 5 minutes before detection following its +95% pump. At least 9 other tokens share the name/ticker \"Fork,\" launched within the same ~10-minute window, pointing to a templated multi-deploy rather than one project with a spreading story. This profile matches a bundled pump-and-dump that has likely already crested rather than an early-stage runner.",
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the highest-liquidity/volume instance among a cluster of near-simultaneous 'Fork'-named launches on 2026-09-26, but nothing distinguishes it as canonical besides being the one the detector's rule happened to catch \u2014 no discoverable community has coalesced around this specific contract over the others.",
+   "competing_tokens": "9 other same-ticker/name 'Fork' tokens listed in packet, most created within the same ~10-minute window (pair_created_at_ms ~1790446600-1790447200); one much older 'A Fork in the Road' token from late 2025 has a far larger mcap (~$1.09M) and could be the entity anyone searching 'Fork' actually finds first.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether any real Telegram/Discord community exists for this specific contract (not checked, budget exhausted)",
+   "Whether the X handle @useforkcash actually exists and has any posts (search engines did not surface it either way)",
+   "Whether the -33% five-minute price drop at detection is the start of a full unwind or a brief pullback within continued upward momentum",
+   "Identity/history of the creator wallet 3fKxJ...u1yR beyond 'creator_launched_token_count: 1' and 'creator_best_token_ath_mcap: 160850' \u2014 no way to independently verify via search in the time budget",
+   "Whether the cluster of near-identical 'Fork' launches is coordinated by one actor across all the sibling tokens, or independent copycats"
+  ],
+  "what_is_happening": "A pump.fun-graduated Solana token called \"Fork\" (FORK) hit the detector 10.5 minutes after its pair was created, having already spiked +95% in the first hour on ~$320k volume against an ~$80-96k market cap, then dropped -33% in the 5 minutes immediately before detection. Holder composition is dominated by bundler (302) and sniper (91) wallets out of 599 total holders; the creator holds essentially nothing (already exited). No narrative, project description, or discoverable social presence exists beyond a placeholder site and an unlocatable X handle. At least 9 other tokens share the exact same name/ticker, launched within the same ~10-minute window, indicating a low-effort multi-deploy rather than a story-driven token.",
+  "sources": [
+   {
+    "url": "https://usefork.cash/",
+    "what": "Project website; fetched but contains no substantive content beyond the word 'Fork'"
+   },
+   {
+    "url": "https://x.com/whattheforkcoin",
+    "what": "Unrelated legacy 'Fork'-named token account found via search, not connected to this contract"
+   },
+   {
+    "url": "https://x.com/forkinsol",
+    "what": "Unrelated legacy 'Fork'-named token account found via search, not connected to this contract"
+   },
+   {
+    "url": "https://x.com/Forkcash",
+    "what": "Unrelated 2017-era 'ForkCash' account found via search for 'useforkcash', not the project's handle"
+   },
+   {
+    "url": "https://blockworks.com/news/pump-ico-dex-blockworks-research",
+    "what": "Confirms the only web-indexed 'fork in the road' crypto narrative refers to the 2025 PUMP token ICO, unrelated to this FORK token"
+   }
+  ]
+ },
+ "ttft_ms": 2212,
+ "type": "result",
+ "duration_ms": 92642,
+ "uuid": "2a8f8f51-552d-4d72-893b-03dff191d664",
+ "ttft_stream_ms": 1014,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 1014,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

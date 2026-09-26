@@ -1,0 +1,195 @@
+{
+ "duration_api_ms": 171269,
+ "stop_reason": "tool_use",
+ "session_id": "1f827505-bf3d-4192-baed-2d4a3159da23",
+ "total_cost_usd": 0.2724866,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 18015,
+  "cache_read_input_tokens": 47398,
+  "output_tokens": 11596,
+  "output_tokens_details": {
+   "thinking_tokens": 3961
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18015,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3817,
+    "cache_read_input_tokens": 17673,
+    "cache_creation_input_tokens": 3831,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3831
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 11596,
+   "cacheReadInputTokens": 47398,
+   "cacheCreationInputTokens": 18015,
+   "webSearchRequests": 0,
+   "costUSD": 0.1975156,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 3961,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 37026,
+   "outputTokens": 1589,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.07497100000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-graduated token (PumpSwap pool, created ~2026-09-15) called ASTEROID has just gone parabolic: +294% in the last hour, +1945% in 24h, on ~$76-80k h1 volume against a $77k market cap and only $24.6k pool liquidity. Trigger-time h1 buys/sells (276/327) and 24h unique buyers (538) show broad participation, not just a handful of wallets. The token's on-chain fee routing (\\\"Fees to @rebeccaperrotto via UsePaid\\\") ties it to the real Liv Perrotto / SpaceX \\\"Asteroid\\\" mascot tribute story, but it is one of at least four separate ASTEROID-ticker tokens live right now, and it is NOT the token the official memorial site (asteroid.charity) points to \u2014 that site exclusively promotes a token on Bags.fm, a different fee-routing platform. This looks like a copycat/parallel launch piggy-backing on a real charity narrative and a real X handle, not the community-recognized \\\"official\\\" coin.\",\"narrative\":{\"description\":\"The underlying story is real and emotionally powerful: Liv Perrotto, a teenage cancer patient, designed the \\\"Asteroid\\\" plush zero-gravity indicator that flew on Polaris Dawn (Sept 2024); she passed away in early 2026; Elon Musk/SpaceX then named Asteroid the official SpaceX mascot in April 2026, and her mother Rebecca Perrotto has publicly thanked Musk on X. This produced a large, media-covered memecoin run (~$28M mcap) around April 2026.\",\"stage\":\"unclear\",\"potential\":\"moderate\",\"why_spreading\":\"The emotional/Elon hook is genuinely shareable and has driven large pumps before, but I found no evidence of a fresh news catalyst dated near 2026-09-26 that explains why THIS specific token is spiking today. The pump could be an independent pump.fun rediscovery/copy of an old narrative rather than a new event, and the huge h1 volume relative to a tiny $24.6k pool is consistent with a short, self-contained squeeze rather than broad external attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Fees route to the real @rebeccaperrotto X handle via 'UsePaid', so it isn't a pure impersonation of a fake person, but the official memorial site (asteroid.charity) directs supporters exclusively to a Bags.fm-based token, not this one. This token is one of at least four live ASTEROID-ticker contracts found (this one, a $9.5M-mcap 'Asteroid The Space Shiba Inu', an $18M-mcap ASTEROID, and a ~$197K ASTEROID/SOL pair) plus a listed near-zero-liquidity clone. No project-specific website/socials exist (packet: project_websites=[], project_socials=[], dexscreener_profile_present=false), so there is no independent identity beyond the shared fee-recipient handle.\",\"competing_tokens\":\"At least 3 other ASTEROID-named tokens in the packet (mcap $18.2M, $899K-9.5M live, $26.5K) plus a distinct ~$197K ASTEROID/SOL PumpSwap pair found via search; the charity site's promoted token is on Bags.fm and does not match this contract.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"24h unique buyers (538) and buys/unique-buyer ratio of 1.62 argue against pure wash trading \u2014 many distinct wallets are participating. LP is 100% locked, mint/freeze renounced, RugCheck score near-zero risk, no paid DexScreener boosts/ads detected. But GMGN flags bot_degen_rate 0.60, 355 bundler wallets and 22 sniper wallets among traders, and no smart-money or organic KOL signal (smart_money_signal_count=0, degen_call_count=0). No X/Twitter posts about this specific contract, ticker, or pair were found in my searches.\",\"uncertainty\":\"X indexes poorly in search and I could not directly browse x.com; a real-time X conversation about this exact contract may exist that my searches simply didn't surface. I also could not fetch UsePaid or GMGN pages directly.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Pool liquidity is only $24.6k against a $77k mcap \u2014 a large single sell can move price sharply in either direction\",\"Top10 holders (ex-AMM/locker) hold 29.45%, plus GMGN flags 2 insider transfer-networks and 8 graph-detected insiders\",\"355 bundler wallets and 22 sniper wallets among traders is consistent with coordinated early accumulation that can dump into strength\",\"Price is already extended +294% in 1h / +1945% in 24h before entry, raising reversion risk on a 30-minute window\",\"Multiple competing same-ticker tokens fragment any narrative-driven demand rather than concentrating it in this contract\"]},\"counterargument\":\"The story itself is real, unusually emotionally resonant (dying teen, Elon Musk, SpaceX), and has proven capable of producing genuine ~$28M-mcap runs before (April 2026), so attention on the Asteroid theme is not fabricated \u2014 it's a real, recurring meme with a track record of large multi-week rallies. The current token has broad participation (538 unique 24h buyers, low buys-per-buyer ratio), fully locked/burned LP, renounced authorities, and a clean RugCheck score, which removes the LP-pull rug path entirely. If any fresh spark (an Elon reply, a viral repost, a new Rebecca Perrotto post) is currently circulating that my limited, X-poor search simply failed to surface, this specific contract could be the one currently catching that wave, and the extreme h1 volume/price move is exactly what an early-innings viral catch looks like from the outside.\",\"unknowns\":[\"Whether any real, fresh (last 24h) X/social catalyst is driving this specific contract's spike \u2014 I found none, but X is poorly indexed by search engines\",\"Whether the UsePaid fee recipient (@rebeccaperrotto) has ever acknowledged, promoted, or is even aware of this specific token, versus the Bags.fm one the charity site endorses\",\"The true intent/size of the insider transfer-networks GMGN/RugCheck detected (raw token amounts given, not clear % of supply)\",\"Whether the other 3-4 ASTEROID tokens are currently pumping in parallel (diluting or amplifying combined attention) or are dead\",\"Creator's other token history/track record (packet shows creator_other_tokens=0 for the structure.creator field, but GMGN's separate creator_address shows creator_launched_token_count=167011, an apparent mismatch I could not reconcile)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Contract address and $ASTEROID+UsePaid searches returned no posts referencing this specific pair; only the broader Asteroid/Liv Perrotto/Elon Musk news narrative and the asteroid.charity memorial page (which points to a different, Bags.fm-based token) were found. No dedicated project site/socials exist for this specific contract per the packet itself. Budget (4 searches) was spent on: (1) raw contract string, (2) ticker+fee-recipient handle, (3) charity/official site fetch, (4) fee-recipient+UsePaid+new-launch search.\"},\"thesis\":\"Real, proven-viral charity/Elon-Musk narrative, but this specific contract is an unendorsed, non-canonical copy among 4+ competing ASTEROID tickers, already extended +294% in the hour before entry on very thin ($24.6k) liquidity with meaningful bundler/sniper/insider presence \u2014 attention is real but its attribution to THIS token specifically, and its staying power over the next 30 minutes, is unverified and likely overextended.\",\"continuation_view\":\"fade\",\"p_runner\":15,\"p_rug\":30,\"survival_score\":58,\"attention_score\":55,\"manipulation_risk\":62,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://asteroid.charity/\",\"what\":\"Official memorial page for Liv Perrotto; promotes a $ASTEROID token exclusively on Bags.fm (different platform/contract than the one in this packet)\"},{\"url\":\"https://x.com/rebeccaperrotto/status/1865742384354525207\",\"what\":\"Rebecca Perrotto's real X account posting about Asteroid plush toys / St. Jude, confirming the handle is a real person, not a fabricated persona\"},{\"url\":\"https://www.cryptotimes.io/2026/04/17/elon-musks-will-answer-shortly-sends-asteroid-memecoin-parabolic/\",\"what\":\"News coverage of a prior (April 2026) $ASTEROID memecoin parabolic move tied to Elon Musk, showing the narrative has real precedent for large rallies\"},{\"url\":\"https://teslanorth.com/2026/04/21/spacex-names-asteroid-official-mascot-following-final-request-from-young-fan/\",\"what\":\"News confirming SpaceX named Asteroid its official mascot per Liv Perrotto's final request\"},{\"url\":\"https://dexscreener.com/solana/egdxcupymwnuvsjwivuta2xtctpmpvuc6aipduu8jakz\",\"what\":\"A separate, much larger ($9.53M) 'Asteroid The Space Shiba Inu' token, one of the competing same-ticker tokens\"},{\"url\":\"https://dexscreener.com/solana/91tdwygdurpekg8jcwcfzjn7agflgb9zb711fhpygr2j\",\"what\":\"Yet another distinct ASTEROID/SOL PumpSwap pair (~$197K mcap) found via search, further evidence of ticker fragmentation\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-graduated token (PumpSwap pool, created ~2026-09-15) called ASTEROID has just gone parabolic: +294% in the last hour, +1945% in 24h, on ~$76-80k h1 volume against a $77k market cap and only $24.6k pool liquidity. Trigger-time h1 buys/sells (276/327) and 24h unique buyers (538) show broad participation, not just a handful of wallets. The token's on-chain fee routing (\"Fees to @rebeccaperrotto via UsePaid\") ties it to the real Liv Perrotto / SpaceX \"Asteroid\" mascot tribute story, but it is one of at least four separate ASTEROID-ticker tokens live right now, and it is NOT the token the official memorial site (asteroid.charity) points to \u2014 that site exclusively promotes a token on Bags.fm, a different fee-routing platform. This looks like a copycat/parallel launch piggy-backing on a real charity narrative and a real X handle, not the community-recognized \"official\" coin.",
+  "narrative": {
+   "description": "The underlying story is real and emotionally powerful: Liv Perrotto, a teenage cancer patient, designed the \"Asteroid\" plush zero-gravity indicator that flew on Polaris Dawn (Sept 2024); she passed away in early 2026; Elon Musk/SpaceX then named Asteroid the official SpaceX mascot in April 2026, and her mother Rebecca Perrotto has publicly thanked Musk on X. This produced a large, media-covered memecoin run (~$28M mcap) around April 2026.",
+   "stage": "unclear",
+   "potential": "moderate",
+   "why_spreading": "The emotional/Elon hook is genuinely shareable and has driven large pumps before, but I found no evidence of a fresh news catalyst dated near 2026-09-26 that explains why THIS specific token is spiking today. The pump could be an independent pump.fun rediscovery/copy of an old narrative rather than a new event, and the huge h1 volume relative to a tiny $24.6k pool is consistent with a short, self-contained squeeze rather than broad external attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Fees route to the real @rebeccaperrotto X handle via 'UsePaid', so it isn't a pure impersonation of a fake person, but the official memorial site (asteroid.charity) directs supporters exclusively to a Bags.fm-based token, not this one. This token is one of at least four live ASTEROID-ticker contracts found (this one, a $9.5M-mcap 'Asteroid The Space Shiba Inu', an $18M-mcap ASTEROID, and a ~$197K ASTEROID/SOL pair) plus a listed near-zero-liquidity clone. No project-specific website/socials exist (packet: project_websites=[], project_socials=[], dexscreener_profile_present=false), so there is no independent identity beyond the shared fee-recipient handle.",
+   "competing_tokens": "At least 3 other ASTEROID-named tokens in the packet (mcap $18.2M, $899K-9.5M live, $26.5K) plus a distinct ~$197K ASTEROID/SOL PumpSwap pair found via search; the charity site's promoted token is on Bags.fm and does not match this contract.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "24h unique buyers (538) and buys/unique-buyer ratio of 1.62 argue against pure wash trading \u2014 many distinct wallets are participating. LP is 100% locked, mint/freeze renounced, RugCheck score near-zero risk, no paid DexScreener boosts/ads detected. But GMGN flags bot_degen_rate 0.60, 355 bundler wallets and 22 sniper wallets among traders, and no smart-money or organic KOL signal (smart_money_signal_count=0, degen_call_count=0). No X/Twitter posts about this specific contract, ticker, or pair were found in my searches.",
+   "uncertainty": "X indexes poorly in search and I could not directly browse x.com; a real-time X conversation about this exact contract may exist that my searches simply didn't surface. I also could not fetch UsePaid or GMGN pages directly."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Pool liquidity is only $24.6k against a $77k mcap \u2014 a large single sell can move price sharply in either direction",
+    "Top10 holders (ex-AMM/locker) hold 29.45%, plus GMGN flags 2 insider transfer-networks and 8 graph-detected insiders",
+    "355 bundler wallets and 22 sniper wallets among traders is consistent with coordinated early accumulation that can dump into strength",
+    "Price is already extended +294% in 1h / +1945% in 24h before entry, raising reversion risk on a 30-minute window",
+    "Multiple competing same-ticker tokens fragment any narrative-driven demand rather than concentrating it in this contract"
+   ]
+  },
+  "counterargument": "The story itself is real, unusually emotionally resonant (dying teen, Elon Musk, SpaceX), and has proven capable of producing genuine ~$28M-mcap runs before (April 2026), so attention on the Asteroid theme is not fabricated \u2014 it's a real, recurring meme with a track record of large multi-week rallies. The current token has broad participation (538 unique 24h buyers, low buys-per-buyer ratio), fully locked/burned LP, renounced authorities, and a clean RugCheck score, which removes the LP-pull rug path entirely. If any fresh spark (an Elon reply, a viral repost, a new Rebecca Perrotto post) is currently circulating that my limited, X-poor search simply failed to surface, this specific contract could be the one currently catching that wave, and the extreme h1 volume/price move is exactly what an early-innings viral catch looks like from the outside.",
+  "unknowns": [
+   "Whether any real, fresh (last 24h) X/social catalyst is driving this specific contract's spike \u2014 I found none, but X is poorly indexed by search engines",
+   "Whether the UsePaid fee recipient (@rebeccaperrotto) has ever acknowledged, promoted, or is even aware of this specific token, versus the Bags.fm one the charity site endorses",
+   "The true intent/size of the insider transfer-networks GMGN/RugCheck detected (raw token amounts given, not clear % of supply)",
+   "Whether the other 3-4 ASTEROID tokens are currently pumping in parallel (diluting or amplifying combined attention) or are dead",
+   "Creator's other token history/track record (packet shows creator_other_tokens=0 for the structure.creator field, but GMGN's separate creator_address shows creator_launched_token_count=167011, an apparent mismatch I could not reconcile)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Contract address and $ASTEROID+UsePaid searches returned no posts referencing this specific pair; only the broader Asteroid/Liv Perrotto/Elon Musk news narrative and the asteroid.charity memorial page (which points to a different, Bags.fm-based token) were found. No dedicated project site/socials exist for this specific contract per the packet itself. Budget (4 searches) was spent on: (1) raw contract string, (2) ticker+fee-recipient handle, (3) charity/official site fetch, (4) fee-recipient+UsePaid+new-launch search."
+  },
+  "thesis": "Real, proven-viral charity/Elon-Musk narrative, but this specific contract is an unendorsed, non-canonical copy among 4+ competing ASTEROID tickers, already extended +294% in the hour before entry on very thin ($24.6k) liquidity with meaningful bundler/sniper/insider presence \u2014 attention is real but its attribution to THIS token specifically, and its staying power over the next 30 minutes, is unverified and likely overextended.",
+  "continuation_view": "fade",
+  "p_runner": 15,
+  "p_rug": 30,
+  "survival_score": 58,
+  "attention_score": 55,
+  "manipulation_risk": 62,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://asteroid.charity/",
+    "what": "Official memorial page for Liv Perrotto; promotes a $ASTEROID token exclusively on Bags.fm (different platform/contract than the one in this packet)"
+   },
+   {
+    "url": "https://x.com/rebeccaperrotto/status/1865742384354525207",
+    "what": "Rebecca Perrotto's real X account posting about Asteroid plush toys / St. Jude, confirming the handle is a real person, not a fabricated persona"
+   },
+   {
+    "url": "https://www.cryptotimes.io/2026/04/17/elon-musks-will-answer-shortly-sends-asteroid-memecoin-parabolic/",
+    "what": "News coverage of a prior (April 2026) $ASTEROID memecoin parabolic move tied to Elon Musk, showing the narrative has real precedent for large rallies"
+   },
+   {
+    "url": "https://teslanorth.com/2026/04/21/spacex-names-asteroid-official-mascot-following-final-request-from-young-fan/",
+    "what": "News confirming SpaceX named Asteroid its official mascot per Liv Perrotto's final request"
+   },
+   {
+    "url": "https://dexscreener.com/solana/egdxcupymwnuvsjwivuta2xtctpmpvuc6aipduu8jakz",
+    "what": "A separate, much larger ($9.53M) 'Asteroid The Space Shiba Inu' token, one of the competing same-ticker tokens"
+   },
+   {
+    "url": "https://dexscreener.com/solana/91tdwygdurpekg8jcwcfzjn7agflgb9zb711fhpygr2j",
+    "what": "Yet another distinct ASTEROID/SOL PumpSwap pair (~$197K mcap) found via search, further evidence of ticker fragmentation"
+   }
+  ]
+ },
+ "ttft_ms": 3659,
+ "type": "result",
+ "duration_ms": 163435,
+ "uuid": "67290f8d-e430-4ab9-9920-27bdd3a719a7",
+ "ttft_stream_ms": 1770,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 1770,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

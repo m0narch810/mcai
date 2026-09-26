@@ -1,0 +1,196 @@
+{
+ "duration_api_ms": 173925,
+ "stop_reason": "tool_use",
+ "session_id": "99a6e0dc-959e-47a5-825c-84d501f85b5c",
+ "total_cost_usd": 0.3075156,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 23109,
+  "cache_read_input_tokens": 49428,
+  "output_tokens": 13957,
+  "output_tokens_details": {
+   "thinking_tokens": 5860
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 23109,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3860,
+    "cache_read_input_tokens": 17320,
+    "cache_creation_input_tokens": 9278,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9278
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 13957,
+   "cacheReadInputTokens": 49428,
+   "cacheCreationInputTokens": 23109,
+   "webSearchRequests": 0,
+   "costUSD": 0.24190760000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 5860,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30228,
+   "outputTokens": 1076,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.065608,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":57,\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"On-chain tape looks organic-ish: 1253 unique buyers vs only 134 unique sellers in the first ~10-15 min (geckoterminal), buys_per_unique_buyer_h1 of 1.88 (low churn per packet's own heuristic), and no paid DexScreener boosts/ads/trending-bar detected. But 86 bundler wallets and 12 sniper wallets are present at 10 minutes of age, a single unidentified wallet holds 80.05% of supply, the project's X account (genkimura_) has been renamed three times (genkimura97 -> justaskgen -> genkimura_, a recycled-account red flag per the packet's own note), and the listed project website attentionexperiment.fun returns HTTP 404 right now. At least 9 other tokens named/ticker'd ATTENTION launched within seconds of this one, indicating a ticker-race/clone war rather than one coordinated organic community picking a single canonical token.\",\"uncertainty\":\"No direct X/Twitter posts about this specific contract or ticker were found in the two searches I could run before budget ran out; absence of evidence is not evidence of absence given how poorly search engines index X. Could not determine who actually controls the 80% wallet or whether genkimura_ is a real, currently active identity tied to this specific launch.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The single strongest case against my skepticism: the tape itself is unusually bullish for a 10-minute-old coin \u2014 1253 unique buyers vs 134 unique sellers, 2287:1378 buy:sell transaction ratio, h1 turnover of 17.6x market cap, and a still-accelerating 5-minute pace (6.5x the hourly rate) at the moment of detection. That is a much stronger organic-looking demand signal than a typical newly-graduated pump.fun coin, and it rides a real, currently-live Solana narrative (Zora's \\\"Attention Markets,\\\" Attention Mine hitting top-20 protocol revenue) that crypto media is actively covering in 2026. If this specific token is the one that early buyers converge on as \\\"the\\\" ATTENTION play (it already has by far the highest liquidity/mcap of the ~10 same-name clones in the packet), the momentum could compound quickly in the next 30 minutes even from an already-extended price, and the LP-burned/mint-and-freeze-renounced structure removes the classic instant-rug vector.\",\"manipulation_risk\":58,\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Single non-creator wallet (FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM) holds 80.05% of supply, not flagged as locker/AMM or insider by RugCheck, an extreme concentration that dwarfs typical top10 risk\",\"Only $29-30k total liquidity against a $133-138k market cap; thin book relative to the $500k+ h1 volume already transacted\",\"RugCheck flags 'Large Amount of LP Unlocked' at danger level (99.99%) even though the packet's own rug_guard separately reports the LP as 100% burned/non-removable -- the two structural signals are not fully reconciled from what I can see\",\"86 bundler wallets and 12 sniper wallets active at 10 minutes of age, typical of coordinated launch buying\",\"At least 9 competing same-name ATTENTION tokens launched within seconds, fragmenting any real narrative demand across clones\"]},\"narrative\":{\"description\":\"Token is named 'Attention' and launched amid a genuinely active Solana meta around tokenizing attention: Zora's 'Attention Markets' (Coindesk, Feb 2026) and 'Attention Mine' (an agentic attention-mining protocol that reportedly hit top-20 Solana protocols by revenue) are real, currently-discussed projects. Separately, at least 9 other pump.fun-style tokens named or ticker'd ATTENTION launched within seconds of this one, per the packet's same_ticker_or_name_tokens list, indicating the meta is hot enough to spawn an immediate ticker race.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The broader 'tokenize attention' narrative is real and has recent legitimate coverage (Zora, Attention Mine), which can pull speculative flow into anything named ATTENTION on Solana right now. However, this specific token has no verifiable link to those established projects -- its own website (attentionexperiment.fun) 404s, and its X account (genkimura_) has a recycled-username history rather than a clear identity tied to the meta.\"},\"observation_window\":\"6h\",\"p_rug\":42,\"p_runner\":21,\"research_confidence\":\"low\",\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Direct search for the contract address returned nothing relevant. Search for the project site/ticker surfaced only the broader 'attention' narrative on Solana (Zora Attention Markets, Attention Mine, attentiontech.fun, attention.meme) -- none of which is confirmed to be this specific token. The packet's listed project website (attentionexperiment.fun) returned HTTP 404 on fetch. The project's X handle (genkimura_) resolves to a content creator account with a 3-name rename history; no post connecting that account to this specific launch was found. Budget of 4 searches/fetches was fully used; Reddit, Telegram, Discord, and a direct site:x.com contract search were not attempted.\"},\"survival_score\":44,\"tail_class\":\"B_up_to_2x\",\"thesis\":\"This token is riding a real but generic Solana narrative (tokenized 'attention') with unusually strong on-chain buy-dominance for its age, but it is one of at least ten same-named clones launched within seconds of each other, its listed website 404s, its X account has a recycled-username history, and one unidentified wallet controls 80% of supply. The buy pressure is the strongest reason to rank it above a typical entry in this pool; the concentration, clone fragmentation, and already-extended +279% h1 move are the strongest reasons to expect the next 30 minutes to disappoint more often than not.\",\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"This is the largest-liquidity, largest-mcap version among at least 10 tokens sharing the ATTENTION name/ticker that launched within seconds of each other, so on volume/mcap it currently looks like the 'winning' clone -- but nothing in the research confirms it is tied to the actual known Attention-narrative projects (Zora Attention Markets, Attention Mine) rather than being an opportunistic ticker-race entrant.\",\"competing_tokens\":\"At least 9 other ATTENTION-named tokens listed in the packet, ranging from $3.4k to $67.9k mcap, mostly with $0 liquidity, all created within roughly the same minute -- classic ticker-race pattern rather than one canonical community token.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether any real organic X/Twitter conversation exists about this specific contract -- not reachable in the search budget available\",\"Who controls the 80.05% single wallet (FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM) and its intentions\",\"Whether genkimura_ (the linked X account) is actually behind this launch or just a coincidentally-linked handle from GMGN data\",\"Why the project website 404s -- newly broken, never built, or wrong link in packet\",\"Whether any of the other 9 same-name ATTENTION clones will pull attention/liquidity away from this one in the next few hours\",\"Reconciliation between rug_guard's 'LP 100% burned' claim and RugCheck's 'Large Amount of LP Unlocked (99.99%)' danger flag\"],\"what_is_happening\":\"A Solana token named 'Attention' (contract 6d1Ab...Vkjr6), already migrated off the pump.fun curve onto PumpSwap, is 10-15 minutes old with a $133-138k market cap, $29-30k liquidity, and had already run +279% in its first hour before detection, with volume ($526-539k h1) far exceeding its market cap. It rides a broader, real 'tokenize attention' meta active on Solana in 2026 (Zora Attention Markets, Attention Mine), but is one of at least 10 differently-liquid tokens sharing the ATTENTION name launched within the same minute -- a ticker race rather than a single coordinated launch. Buy pressure is unusually lopsided (1253 unique buyers vs 134 unique sellers per GeckoTerminal), LP is reported burned and mint/freeze authorities renounced, but one unidentified wallet holds 80% of supply and the project's own listed website is currently dead (404).\",\"sources\":[{\"url\":\"https://www.coindesk.com/tech/2026/02/18/zora-moves-onto-solana-with-attention-markets-for-trading-internet-trends\",\"what\":\"Confirms Zora's 'Attention Markets' on Solana is a real, recently-covered narrative around tokenizing internet trends\"},{\"url\":\"https://genfinity.io/2026/09/23/attention-mine-district-xyz-ai-agent-token-solana-interview/\",\"what\":\"Confirms Attention Mine is an active Solana project in the same broad narrative space, reported to have reached top-20 Solana protocols by revenue\"},{\"url\":\"https://attentiontech.fun/\",\"what\":\"A separate 'Attention' rotating-index project on Solana, distinct from this token, showing the name/ticker is contested across multiple unrelated projects\"},{\"url\":\"https://attention.meme/\",\"what\":\"Another separate 'attention' branded project (ad-burn market), further evidence of ticker/name overlap\"},{\"url\":\"https://attentionexperiment.fun/\",\"what\":\"The project website listed in the packet's gmgn data for this token; returned HTTP 404 at time of research\"},{\"url\":\"https://x.com/genkimura_\",\"what\":\"The X account linked to this token per GMGN data; resolves to a content creator account, no confirmed post tying it to this specific token launch found\"}]}",
+ "structured_output": {
+  "attention_score": 57,
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "On-chain tape looks organic-ish: 1253 unique buyers vs only 134 unique sellers in the first ~10-15 min (geckoterminal), buys_per_unique_buyer_h1 of 1.88 (low churn per packet's own heuristic), and no paid DexScreener boosts/ads/trending-bar detected. But 86 bundler wallets and 12 sniper wallets are present at 10 minutes of age, a single unidentified wallet holds 80.05% of supply, the project's X account (genkimura_) has been renamed three times (genkimura97 -> justaskgen -> genkimura_, a recycled-account red flag per the packet's own note), and the listed project website attentionexperiment.fun returns HTTP 404 right now. At least 9 other tokens named/ticker'd ATTENTION launched within seconds of this one, indicating a ticker-race/clone war rather than one coordinated organic community picking a single canonical token.",
+   "uncertainty": "No direct X/Twitter posts about this specific contract or ticker were found in the two searches I could run before budget ran out; absence of evidence is not evidence of absence given how poorly search engines index X. Could not determine who actually controls the 80% wallet or whether genkimura_ is a real, currently active identity tied to this specific launch."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The single strongest case against my skepticism: the tape itself is unusually bullish for a 10-minute-old coin \u2014 1253 unique buyers vs 134 unique sellers, 2287:1378 buy:sell transaction ratio, h1 turnover of 17.6x market cap, and a still-accelerating 5-minute pace (6.5x the hourly rate) at the moment of detection. That is a much stronger organic-looking demand signal than a typical newly-graduated pump.fun coin, and it rides a real, currently-live Solana narrative (Zora's \"Attention Markets,\" Attention Mine hitting top-20 protocol revenue) that crypto media is actively covering in 2026. If this specific token is the one that early buyers converge on as \"the\" ATTENTION play (it already has by far the highest liquidity/mcap of the ~10 same-name clones in the packet), the momentum could compound quickly in the next 30 minutes even from an already-extended price, and the LP-burned/mint-and-freeze-renounced structure removes the classic instant-rug vector.",
+  "manipulation_risk": 58,
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Single non-creator wallet (FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM) holds 80.05% of supply, not flagged as locker/AMM or insider by RugCheck, an extreme concentration that dwarfs typical top10 risk",
+    "Only $29-30k total liquidity against a $133-138k market cap; thin book relative to the $500k+ h1 volume already transacted",
+    "RugCheck flags 'Large Amount of LP Unlocked' at danger level (99.99%) even though the packet's own rug_guard separately reports the LP as 100% burned/non-removable -- the two structural signals are not fully reconciled from what I can see",
+    "86 bundler wallets and 12 sniper wallets active at 10 minutes of age, typical of coordinated launch buying",
+    "At least 9 competing same-name ATTENTION tokens launched within seconds, fragmenting any real narrative demand across clones"
+   ]
+  },
+  "narrative": {
+   "description": "Token is named 'Attention' and launched amid a genuinely active Solana meta around tokenizing attention: Zora's 'Attention Markets' (Coindesk, Feb 2026) and 'Attention Mine' (an agentic attention-mining protocol that reportedly hit top-20 Solana protocols by revenue) are real, currently-discussed projects. Separately, at least 9 other pump.fun-style tokens named or ticker'd ATTENTION launched within seconds of this one, per the packet's same_ticker_or_name_tokens list, indicating the meta is hot enough to spawn an immediate ticker race.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The broader 'tokenize attention' narrative is real and has recent legitimate coverage (Zora, Attention Mine), which can pull speculative flow into anything named ATTENTION on Solana right now. However, this specific token has no verifiable link to those established projects -- its own website (attentionexperiment.fun) 404s, and its X account (genkimura_) has a recycled-username history rather than a clear identity tied to the meta."
+  },
+  "observation_window": "6h",
+  "p_rug": 42,
+  "p_runner": 21,
+  "research_confidence": "low",
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Direct search for the contract address returned nothing relevant. Search for the project site/ticker surfaced only the broader 'attention' narrative on Solana (Zora Attention Markets, Attention Mine, attentiontech.fun, attention.meme) -- none of which is confirmed to be this specific token. The packet's listed project website (attentionexperiment.fun) returned HTTP 404 on fetch. The project's X handle (genkimura_) resolves to a content creator account with a 3-name rename history; no post connecting that account to this specific launch was found. Budget of 4 searches/fetches was fully used; Reddit, Telegram, Discord, and a direct site:x.com contract search were not attempted."
+  },
+  "survival_score": 44,
+  "tail_class": "B_up_to_2x",
+  "thesis": "This token is riding a real but generic Solana narrative (tokenized 'attention') with unusually strong on-chain buy-dominance for its age, but it is one of at least ten same-named clones launched within seconds of each other, its listed website 404s, its X account has a recycled-username history, and one unidentified wallet controls 80% of supply. The buy pressure is the strongest reason to rank it above a typical entry in this pool; the concentration, clone fragmentation, and already-extended +279% h1 move are the strongest reasons to expect the next 30 minutes to disappoint more often than not.",
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "This is the largest-liquidity, largest-mcap version among at least 10 tokens sharing the ATTENTION name/ticker that launched within seconds of each other, so on volume/mcap it currently looks like the 'winning' clone -- but nothing in the research confirms it is tied to the actual known Attention-narrative projects (Zora Attention Markets, Attention Mine) rather than being an opportunistic ticker-race entrant.",
+   "competing_tokens": "At least 9 other ATTENTION-named tokens listed in the packet, ranging from $3.4k to $67.9k mcap, mostly with $0 liquidity, all created within roughly the same minute -- classic ticker-race pattern rather than one canonical community token.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether any real organic X/Twitter conversation exists about this specific contract -- not reachable in the search budget available",
+   "Who controls the 80.05% single wallet (FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM) and its intentions",
+   "Whether genkimura_ (the linked X account) is actually behind this launch or just a coincidentally-linked handle from GMGN data",
+   "Why the project website 404s -- newly broken, never built, or wrong link in packet",
+   "Whether any of the other 9 same-name ATTENTION clones will pull attention/liquidity away from this one in the next few hours",
+   "Reconciliation between rug_guard's 'LP 100% burned' claim and RugCheck's 'Large Amount of LP Unlocked (99.99%)' danger flag"
+  ],
+  "what_is_happening": "A Solana token named 'Attention' (contract 6d1Ab...Vkjr6), already migrated off the pump.fun curve onto PumpSwap, is 10-15 minutes old with a $133-138k market cap, $29-30k liquidity, and had already run +279% in its first hour before detection, with volume ($526-539k h1) far exceeding its market cap. It rides a broader, real 'tokenize attention' meta active on Solana in 2026 (Zora Attention Markets, Attention Mine), but is one of at least 10 differently-liquid tokens sharing the ATTENTION name launched within the same minute -- a ticker race rather than a single coordinated launch. Buy pressure is unusually lopsided (1253 unique buyers vs 134 unique sellers per GeckoTerminal), LP is reported burned and mint/freeze authorities renounced, but one unidentified wallet holds 80% of supply and the project's own listed website is currently dead (404).",
+  "sources": [
+   {
+    "url": "https://www.coindesk.com/tech/2026/02/18/zora-moves-onto-solana-with-attention-markets-for-trading-internet-trends",
+    "what": "Confirms Zora's 'Attention Markets' on Solana is a real, recently-covered narrative around tokenizing internet trends"
+   },
+   {
+    "url": "https://genfinity.io/2026/09/23/attention-mine-district-xyz-ai-agent-token-solana-interview/",
+    "what": "Confirms Attention Mine is an active Solana project in the same broad narrative space, reported to have reached top-20 Solana protocols by revenue"
+   },
+   {
+    "url": "https://attentiontech.fun/",
+    "what": "A separate 'Attention' rotating-index project on Solana, distinct from this token, showing the name/ticker is contested across multiple unrelated projects"
+   },
+   {
+    "url": "https://attention.meme/",
+    "what": "Another separate 'attention' branded project (ad-burn market), further evidence of ticker/name overlap"
+   },
+   {
+    "url": "https://attentionexperiment.fun/",
+    "what": "The project website listed in the packet's gmgn data for this token; returned HTTP 404 at time of research"
+   },
+   {
+    "url": "https://x.com/genkimura_",
+    "what": "The X account linked to this token per GMGN data; resolves to a content creator account, no confirmed post tying it to this specific token launch found"
+   }
+  ]
+ },
+ "ttft_ms": 2630,
+ "type": "result",
+ "duration_ms": 168737,
+ "uuid": "a315e7fd-a313-4eae-826a-47985411fcb6",
+ "ttft_stream_ms": 1282,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 1282,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

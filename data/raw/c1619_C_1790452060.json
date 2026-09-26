@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 218988,
+ "stop_reason": "tool_use",
+ "session_id": "1ae490ef-70f3-471d-a25a-9a59da060ef6",
+ "total_cost_usd": 0.35726260000000004,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 25420,
+  "cache_read_input_tokens": 77553,
+  "output_tokens": 17146,
+  "output_tokens_details": {
+   "thinking_tokens": 7241
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 25420,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3322,
+    "cache_read_input_tokens": 25412,
+    "cache_creation_input_tokens": 3497,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3497
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 10,
+   "outputTokens": 17146,
+   "cacheReadInputTokens": 77553,
+   "cacheCreationInputTokens": 25420,
+   "webSearchRequests": 0,
+   "costUSD": 0.2886706,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 7241,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32002,
+   "outputTokens": 1318,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.068592,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Solana pool for a token called SPLIT (contract 58TPWf...Dfjk) trades on PumpSwap, ~13 min old at detection, already up +174% to +215% in its first hour on ~$412-414k volume against a $146-168k market cap (h1 turnover ~13.75x). Unique buyers reached 1,342 vs 99 sellers in the first hour with a low buys-per-unique-buyer ratio (1.51), suggesting broad organic-looking participation rather than a few wallets churning. However, the name \\\"Split\\\"/\\\"SPLIT\\\"/\\\"UseSplit\\\" was deployed as at least 10 near-simultaneous pools within roughly 20 minutes of each other (per the packet's same_ticker_or_name_tokens list); one competitor (mcap $365k, h1 vol $1.02M) is currently larger than this one. Structurally: mint/freeze renounced, LP burned (rug_guard: LP pull not possible), but a single untagged wallet holds 80.05% of float (top10 = 85.46%) \u2014 a large overhang independent of LP-pull risk.\",\"narrative\":{\"description\":\"The project's own site (usesplit.pro) describes a real, live product: 'Split token fees through X Money,' with payments, analytics, 'Capital Flow' mechanics, a $SPLIT token tied to buybacks, and a dedicated /launch page. A separate web search surfaced a differently-worded description ('SolSplitter,' an expense-splitting app with Kamino/Jito yield) that does not cleanly match the direct site fetch, so my understanding of exactly what 'Split' is and does remains only partially confirmed.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"A live utility site with an 'X Money' (X/Twitter payments) tie-in gives a plausible narrative hook, since X Payments has been a genuine ongoing 2025-2026 story. But I found zero actual X/Twitter posts, threads, or community discussion mentioning this specific contract or ticker in web search (X is poorly indexed by search engines, so absence is not proof of absence). Budget ran out before I could check Telegram, Discord, Reddit, or news.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"This token is one of at least 10 pools sharing the 'Split'/'SPLIT'/'UseSplit' name/ticker launched within about 20 minutes of each other, per the packet's competitor list. GMGN links this specific pool to project socials (twitter_username Use_Split, website usesplit.pro), which favors it being 'the' project-linked pool, but I could not independently verify via X that Use_Split has endorsed or announced this exact contract address.\",\"competing_tokens\":\"At least 9 other same-named tokens exist, one of which (mcap $365,632, h1 volume $1,017,523) has more market cap and volume than this one right now, meaning this is not clearly the dominant pool by market attention.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"No paid-promotion flags fired (dexscreener_paid_ad, boost_paid, trending_bar_paid, community_takeover all false per GMGN). Buyer breadth is wide (1,342 unique buyers, low buys-per-buyer ratio of 1.51) and bundler/sniper/fresh-wallet counts are a small minority of the 1,356 holders (56 bundlers, 7 snipers, 4 fresh). This looks more organic than a typical bot-pumped shell.\",\"uncertainty\":\"The near-simultaneous launch of ~10 identically-named tokens is a classic pattern for either (a) bots racing to front-run a real project's brand recognition the moment it became visible, or (b) a legitimate but chaotic community/fair-launch event. I cannot distinguish which from available data, and the extreme 80% single-wallet concentration is unexplained (not tagged as creator, insider, or locker).\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Single untagged wallet holds 80.05% of float outside the pool/locker \u2014 can crash price with one large sell regardless of LP-burn protection\",\"Top10 holders control 85.46% of float\",\"RugCheck flags 'Large Amount of LP Unlocked' (danger, weight 10998) even though GMGN reports lp_burn_ratio 1.0 and rug_guard says LP pull is not possible \u2014 these two signals are in tension and could not be resolved in the time available\",\"Total pool liquidity (~$28k) is thin relative to a $146-168k market cap, typical for this size but limits how much size can transact without heavy slippage\",\"Attention/liquidity is fragmented across ~10 same-named pools, some larger than this one, which could pull incremental buyers elsewhere\"]},\"counterargument\":\"The strongest case against a cautious rating: buyer breadth (1,342 unique buyers in under an hour, buys:sells ~2.5:1, low per-wallet churn), a renounced/burned-LP structure, and no paid-promotion flags together look like a genuinely fast-spreading pump.fun-style token riding an early, still-accelerating wave \u2014 exactly the profile that occasionally becomes a large multi-x runner in this market-cap band, and entering 5 minutes after detection could still catch real continuation before the crowd fully arrives. My weak rating is driven heavily by the concentration and ticker-fragmentation risks, which are real but do not guarantee failure \u2014 plenty of concentrated, multi-clone token launches still run hard on momentum alone within a 30-minute window before any whale acts.\",\"unknowns\":[\"Whether Use_Split's actual X account has posted about or confirmed this specific contract address as canonical\",\"What the 80.05% holder wallet is (insider, early sniper, or something else) and whether it is likely to sell soon\",\"Whether the larger competing SPLIT pool ($365k mcap, $1.02M h1 volume) is drawing attention away from this one or is itself the one people mean\",\"Reddit, Telegram, Discord, and news coverage \u2014 none searched due to budget\",\"The actual resolution of the RugCheck 'LP unlocked' flag vs the reported LP-burn ratio of 1.0\",\"Whether the dev's X account (20 tokens launched) has a pattern of successful vs failed prior launches beyond the single best-ATH figure given ($279,055)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"searched_found\",\"notes\":\"Used all 4 allotted search/fetch calls on: (1) contract address search, (2) $SPLIT/Use_Split product search, (3) direct fetch of usesplit.pro, (4) Use_Split twitter/launch search. None surfaced actual X posts about this contract or ticker; the project site itself was reached and described a live payments/fee-splitting product, though a separate search result gave an inconsistent description of a similarly-named but possibly different app, leaving some ambiguity about the exact narrative.\"},\"thesis\":\"SPLIT shows genuinely broad early buyer participation and clean authority/LP structure, which argues for real organic interest rather than a pure bot pump, but it is entering 5 minutes after an already-realized +174-215% first-hour move, sits behind a larger same-named competitor in both market cap and volume, and carries an extreme 80% single-wallet concentration that is a standing overhang independent of LP-pull risk. I rate it modestly above the pool median on p_runner for its buyer breadth and clean renounce/burn structure, but well short of high confidence given the post-pump entry timing, ticker fragmentation, and whale overhang, and I lean toward the broader attention fading rather than compounding over the next few hours.\",\"continuation_view\":\"fade\",\"p_runner\":16,\"p_rug\":27,\"survival_score\":48,\"attention_score\":60,\"manipulation_risk\":45,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://usesplit.pro/\",\"what\":\"Project's own website; describes a live payments/fee-splitting product tied to 'X Money' with a $SPLIT token, buybacks, and a /launch page\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Solana pool for a token called SPLIT (contract 58TPWf...Dfjk) trades on PumpSwap, ~13 min old at detection, already up +174% to +215% in its first hour on ~$412-414k volume against a $146-168k market cap (h1 turnover ~13.75x). Unique buyers reached 1,342 vs 99 sellers in the first hour with a low buys-per-unique-buyer ratio (1.51), suggesting broad organic-looking participation rather than a few wallets churning. However, the name \"Split\"/\"SPLIT\"/\"UseSplit\" was deployed as at least 10 near-simultaneous pools within roughly 20 minutes of each other (per the packet's same_ticker_or_name_tokens list); one competitor (mcap $365k, h1 vol $1.02M) is currently larger than this one. Structurally: mint/freeze renounced, LP burned (rug_guard: LP pull not possible), but a single untagged wallet holds 80.05% of float (top10 = 85.46%) \u2014 a large overhang independent of LP-pull risk.",
+  "narrative": {
+   "description": "The project's own site (usesplit.pro) describes a real, live product: 'Split token fees through X Money,' with payments, analytics, 'Capital Flow' mechanics, a $SPLIT token tied to buybacks, and a dedicated /launch page. A separate web search surfaced a differently-worded description ('SolSplitter,' an expense-splitting app with Kamino/Jito yield) that does not cleanly match the direct site fetch, so my understanding of exactly what 'Split' is and does remains only partially confirmed.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "A live utility site with an 'X Money' (X/Twitter payments) tie-in gives a plausible narrative hook, since X Payments has been a genuine ongoing 2025-2026 story. But I found zero actual X/Twitter posts, threads, or community discussion mentioning this specific contract or ticker in web search (X is poorly indexed by search engines, so absence is not proof of absence). Budget ran out before I could check Telegram, Discord, Reddit, or news."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "This token is one of at least 10 pools sharing the 'Split'/'SPLIT'/'UseSplit' name/ticker launched within about 20 minutes of each other, per the packet's competitor list. GMGN links this specific pool to project socials (twitter_username Use_Split, website usesplit.pro), which favors it being 'the' project-linked pool, but I could not independently verify via X that Use_Split has endorsed or announced this exact contract address.",
+   "competing_tokens": "At least 9 other same-named tokens exist, one of which (mcap $365,632, h1 volume $1,017,523) has more market cap and volume than this one right now, meaning this is not clearly the dominant pool by market attention.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "No paid-promotion flags fired (dexscreener_paid_ad, boost_paid, trending_bar_paid, community_takeover all false per GMGN). Buyer breadth is wide (1,342 unique buyers, low buys-per-buyer ratio of 1.51) and bundler/sniper/fresh-wallet counts are a small minority of the 1,356 holders (56 bundlers, 7 snipers, 4 fresh). This looks more organic than a typical bot-pumped shell.",
+   "uncertainty": "The near-simultaneous launch of ~10 identically-named tokens is a classic pattern for either (a) bots racing to front-run a real project's brand recognition the moment it became visible, or (b) a legitimate but chaotic community/fair-launch event. I cannot distinguish which from available data, and the extreme 80% single-wallet concentration is unexplained (not tagged as creator, insider, or locker)."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Single untagged wallet holds 80.05% of float outside the pool/locker \u2014 can crash price with one large sell regardless of LP-burn protection",
+    "Top10 holders control 85.46% of float",
+    "RugCheck flags 'Large Amount of LP Unlocked' (danger, weight 10998) even though GMGN reports lp_burn_ratio 1.0 and rug_guard says LP pull is not possible \u2014 these two signals are in tension and could not be resolved in the time available",
+    "Total pool liquidity (~$28k) is thin relative to a $146-168k market cap, typical for this size but limits how much size can transact without heavy slippage",
+    "Attention/liquidity is fragmented across ~10 same-named pools, some larger than this one, which could pull incremental buyers elsewhere"
+   ]
+  },
+  "counterargument": "The strongest case against a cautious rating: buyer breadth (1,342 unique buyers in under an hour, buys:sells ~2.5:1, low per-wallet churn), a renounced/burned-LP structure, and no paid-promotion flags together look like a genuinely fast-spreading pump.fun-style token riding an early, still-accelerating wave \u2014 exactly the profile that occasionally becomes a large multi-x runner in this market-cap band, and entering 5 minutes after detection could still catch real continuation before the crowd fully arrives. My weak rating is driven heavily by the concentration and ticker-fragmentation risks, which are real but do not guarantee failure \u2014 plenty of concentrated, multi-clone token launches still run hard on momentum alone within a 30-minute window before any whale acts.",
+  "unknowns": [
+   "Whether Use_Split's actual X account has posted about or confirmed this specific contract address as canonical",
+   "What the 80.05% holder wallet is (insider, early sniper, or something else) and whether it is likely to sell soon",
+   "Whether the larger competing SPLIT pool ($365k mcap, $1.02M h1 volume) is drawing attention away from this one or is itself the one people mean",
+   "Reddit, Telegram, Discord, and news coverage \u2014 none searched due to budget",
+   "The actual resolution of the RugCheck 'LP unlocked' flag vs the reported LP-burn ratio of 1.0",
+   "Whether the dev's X account (20 tokens launched) has a pattern of successful vs failed prior launches beyond the single best-ATH figure given ($279,055)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "searched_found",
+   "notes": "Used all 4 allotted search/fetch calls on: (1) contract address search, (2) $SPLIT/Use_Split product search, (3) direct fetch of usesplit.pro, (4) Use_Split twitter/launch search. None surfaced actual X posts about this contract or ticker; the project site itself was reached and described a live payments/fee-splitting product, though a separate search result gave an inconsistent description of a similarly-named but possibly different app, leaving some ambiguity about the exact narrative."
+  },
+  "thesis": "SPLIT shows genuinely broad early buyer participation and clean authority/LP structure, which argues for real organic interest rather than a pure bot pump, but it is entering 5 minutes after an already-realized +174-215% first-hour move, sits behind a larger same-named competitor in both market cap and volume, and carries an extreme 80% single-wallet concentration that is a standing overhang independent of LP-pull risk. I rate it modestly above the pool median on p_runner for its buyer breadth and clean renounce/burn structure, but well short of high confidence given the post-pump entry timing, ticker fragmentation, and whale overhang, and I lean toward the broader attention fading rather than compounding over the next few hours.",
+  "continuation_view": "fade",
+  "p_runner": 16,
+  "p_rug": 27,
+  "survival_score": 48,
+  "attention_score": 60,
+  "manipulation_risk": 45,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://usesplit.pro/",
+    "what": "Project's own website; describes a live payments/fee-splitting product tied to 'X Money' with a $SPLIT token, buybacks, and a /launch page"
+   }
+  ]
+ },
+ "ttft_ms": 6624,
+ "type": "result",
+ "duration_ms": 208977,
+ "uuid": "fab35b78-58f6-4040-aeff-66cde99532a9",
+ "ttft_stream_ms": 1427,
+ "time_to_request_ms": 61,
+ "first_content_frame_ms": 1427,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

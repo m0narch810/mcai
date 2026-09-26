@@ -1,0 +1,183 @@
+{
+ "duration_api_ms": 178188,
+ "stop_reason": "tool_use",
+ "session_id": "9d54bdac-d1fb-47e7-b465-562f8a507ffb",
+ "total_cost_usd": 0.3957818,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 22906,
+  "cache_read_input_tokens": 70124,
+  "output_tokens": 11375,
+  "output_tokens_details": {
+   "thinking_tokens": 4712
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 22906,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3026,
+    "cache_read_input_tokens": 20801,
+    "cache_creation_input_tokens": 5594,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5594
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 10,
+   "outputTokens": 11375,
+   "cacheReadInputTokens": 70124,
+   "cacheCreationInputTokens": 22906,
+   "webSearchRequests": 0,
+   "costUSD": 0.21941880000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 4712,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 84673,
+   "outputTokens": 2338,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 8,
+   "costUSD": 0.176363,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"SENTU (\\\"Sent To You\\\"), a pump.fun-launched Solana token that migrated to PumpSwap ~16 minutes before detection, spiked +196% to +233% in its first hour on ~$326-400k of volume against a $150-171k market cap (h1 turnover ~11x mcap). Buy pressure in the tape is buy-heavy (1280-1309 buys vs 922-939 sells), but nearly all unique buyers (405 of 429 total) arrived in the last 5 minutes relative to the snapshot \u2014 this looks like one concentrated burst of activity rather than sustained, broadening demand. A single wallet (not the listed creator address) holds 80.05% of non-pool supply against only ~$36-39k of pool liquidity. No external cultural narrative, news, Reddit, or meaningful X/Telegram activity was found anywhere despite multiple targeted searches.\",\"narrative\":{\"description\":\"\\\"Sent To You\\\" has no discoverable backstory, meme reference, or trending cultural/news event behind it. The project website (sentu.fun) returned essentially no content beyond the name/tagline. The linked X post URL could not be fetched (HTTP 402 paywall/rate-limit) so engagement is unknown. The public Telegram channel (@UseSentu) exists but has only 11 subscribers. No Reddit threads, no news coverage, and no site:x.com hits were found for the ticker, name, or contract address.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The token is 'spreading' only in the on-chain volume/price sense that triggered detection, not through any identifiable narrative, meme, or off-chain event. The buyer-growth pattern (buyers concentrated almost entirely in the last ~5 minutes) is consistent with a single coordinated burst of buying (bundlers/snipers) rather than organic narrative diffusion across separate communities.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the only SENTU/'Sent To You' pair with real liquidity and volume, so it is the de facto canonical one purely by elimination, not because of an established external narrative. No evidence was found that any real-world event, brand, or meme called 'Sent To You' exists that this ticker is capturing.\",\"competing_tokens\":\"One other token with identical symbol/name (3FyRNuT8hq8DWyLVFk1pPp9gicFHjrsqyv7KHfTBWPCG) exists, created ~5 minutes earlier per pair_created_at_ms, but has only $0.81 liquidity and no meaningful trading \u2014 effectively dead/abandoned.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"GMGN flags 100 bundler wallets and 6 sniper wallets among traders, with buys_per_unique_buyer_h1 of 2.37 (mild churn). Top10 holders (ex-pool) control 82.41% of supply, with one single wallet holding 80.05% \u2014 a level of concentration far beyond what organic, broad-based demand would produce. Telegram has just 11 subscribers; no X, Reddit, or news presence was found at all.\",\"uncertainty\":\"Cannot see actual X/Twitter engagement (post URL paywalled), cannot see private Telegram/Discord content, and cannot identify who the 80%-holding wallet is or its intent.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Single wallet holds 80.05% of non-pool supply against only ~$36-39k pool liquidity \u2014 a modest sell from this wallet could crater price well past -50%\",\"100 bundler wallets and 6 sniper wallets flagged by GMGN, typical of coordinated launch buying rather than organic distribution\",\"RugCheck flags 'Large Amount of LP Unlocked' (99.99%) as danger-level, though the experiment's own rug_guard mechanism separately reports LP is 100% burned for the pumpswap pool actually used \u2014 these two signals conflict and could not be independently reconciled\",\"Only 16-17 minutes of trading history exists; all price/volume statistics are from a single short burst window, not a track record\",\"Zero smart-money or renowned wallets among holders/buyers\"]},\"counterargument\":\"The buy/sell ratio is genuinely lopsided toward buys (1280-1309 buys vs 922-939 sells, roughly 58% buy share), mint/freeze authority are renounced, sell tax is 0%, no honeypot flags, and LP for the active pumpswap pool is reported burned (not pullable) by the experiment's own rug_guard check \u2014 so the classic 'LP rug' vector is closed off. Momentum-driven pump.fun migrations sometimes continue extending on fresh retail FOMO for 20-40 minutes past the initial burst before insiders begin distributing, so a further leg up before any dump is plausible, and the lack of external narrative doesn't preclude a purely on-chain momentum continuation within the 30-minute window.\",\"unknowns\":[\"Identity and intent of the wallet holding 80.05% of supply (bundler-related, migration remnant, or a whale accumulator)\",\"Actual content/engagement of the linked X post (fetch blocked with HTTP 402)\",\"Whether the RugCheck 'LP unlocked 99.99%' warning or the rug_guard 'LP 100% burned' determination is the operative truth for this specific pumpswap pool\",\"Whether any private Telegram/Discord promotion or call-channel activity is driving the burst (invisible to this research)\",\"Total token supply and thus what fraction of circulating tokens outside the AMM the top wallet truly controls in dollar terms\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"X search only surfaced the raw status URL from the packet, which returned HTTP 402 on fetch; no independent posts, replies, or engagement data could be retrieved. Project website (sentu.fun) loaded but had negligible substantive content. Telegram channel found via direct fetch, showing only 11 subscribers. No Discord link was provided in the packet and none was found via search in the time available.\"},\"thesis\":\"SENTU is an extremely young (~16 min) pump.fun migrant showing a large, buy-skewed volume burst with no discoverable external narrative, negligible social footprint (11-member Telegram, inaccessible/likely tiny X presence), and severe supply concentration (one wallet at 80% of non-pool supply, 100 flagged bundler wallets). The price action looks like a coordinated/bundled launch burst rather than organic, spreading attention. Given already-parabolic +196-233% pre-entry move plus concentration risk, the near-term path is more likely a fast fade or dump-driven crash than a clean continuation to +100% from here, though buy-heavy order flow keeps some continuation chance alive slightly above the base rate for this cohort.\",\"continuation_view\":\"fade\",\"p_runner\":15,\"p_rug\":32,\"survival_score\":50,\"attention_score\":48,\"manipulation_risk\":72,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://sentu.fun/\",\"what\":\"Project website \u2014 minimal content, name/tagline only, no narrative documented\"},{\"url\":\"https://telegram.me/UseSentu\",\"what\":\"Public Telegram channel \u2014 11 subscribers, no description or visible activity\"},{\"url\":\"https://x.com/UseSentu/status/2103851192644431912\",\"what\":\"Linked X/Twitter post from packet \u2014 fetch blocked (HTTP 402), engagement unknown\"}]}",
+ "structured_output": {
+  "what_is_happening": "SENTU (\"Sent To You\"), a pump.fun-launched Solana token that migrated to PumpSwap ~16 minutes before detection, spiked +196% to +233% in its first hour on ~$326-400k of volume against a $150-171k market cap (h1 turnover ~11x mcap). Buy pressure in the tape is buy-heavy (1280-1309 buys vs 922-939 sells), but nearly all unique buyers (405 of 429 total) arrived in the last 5 minutes relative to the snapshot \u2014 this looks like one concentrated burst of activity rather than sustained, broadening demand. A single wallet (not the listed creator address) holds 80.05% of non-pool supply against only ~$36-39k of pool liquidity. No external cultural narrative, news, Reddit, or meaningful X/Telegram activity was found anywhere despite multiple targeted searches.",
+  "narrative": {
+   "description": "\"Sent To You\" has no discoverable backstory, meme reference, or trending cultural/news event behind it. The project website (sentu.fun) returned essentially no content beyond the name/tagline. The linked X post URL could not be fetched (HTTP 402 paywall/rate-limit) so engagement is unknown. The public Telegram channel (@UseSentu) exists but has only 11 subscribers. No Reddit threads, no news coverage, and no site:x.com hits were found for the ticker, name, or contract address.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The token is 'spreading' only in the on-chain volume/price sense that triggered detection, not through any identifiable narrative, meme, or off-chain event. The buyer-growth pattern (buyers concentrated almost entirely in the last ~5 minutes) is consistent with a single coordinated burst of buying (bundlers/snipers) rather than organic narrative diffusion across separate communities."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the only SENTU/'Sent To You' pair with real liquidity and volume, so it is the de facto canonical one purely by elimination, not because of an established external narrative. No evidence was found that any real-world event, brand, or meme called 'Sent To You' exists that this ticker is capturing.",
+   "competing_tokens": "One other token with identical symbol/name (3FyRNuT8hq8DWyLVFk1pPp9gicFHjrsqyv7KHfTBWPCG) exists, created ~5 minutes earlier per pair_created_at_ms, but has only $0.81 liquidity and no meaningful trading \u2014 effectively dead/abandoned.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "GMGN flags 100 bundler wallets and 6 sniper wallets among traders, with buys_per_unique_buyer_h1 of 2.37 (mild churn). Top10 holders (ex-pool) control 82.41% of supply, with one single wallet holding 80.05% \u2014 a level of concentration far beyond what organic, broad-based demand would produce. Telegram has just 11 subscribers; no X, Reddit, or news presence was found at all.",
+   "uncertainty": "Cannot see actual X/Twitter engagement (post URL paywalled), cannot see private Telegram/Discord content, and cannot identify who the 80%-holding wallet is or its intent."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Single wallet holds 80.05% of non-pool supply against only ~$36-39k pool liquidity \u2014 a modest sell from this wallet could crater price well past -50%",
+    "100 bundler wallets and 6 sniper wallets flagged by GMGN, typical of coordinated launch buying rather than organic distribution",
+    "RugCheck flags 'Large Amount of LP Unlocked' (99.99%) as danger-level, though the experiment's own rug_guard mechanism separately reports LP is 100% burned for the pumpswap pool actually used \u2014 these two signals conflict and could not be independently reconciled",
+    "Only 16-17 minutes of trading history exists; all price/volume statistics are from a single short burst window, not a track record",
+    "Zero smart-money or renowned wallets among holders/buyers"
+   ]
+  },
+  "counterargument": "The buy/sell ratio is genuinely lopsided toward buys (1280-1309 buys vs 922-939 sells, roughly 58% buy share), mint/freeze authority are renounced, sell tax is 0%, no honeypot flags, and LP for the active pumpswap pool is reported burned (not pullable) by the experiment's own rug_guard check \u2014 so the classic 'LP rug' vector is closed off. Momentum-driven pump.fun migrations sometimes continue extending on fresh retail FOMO for 20-40 minutes past the initial burst before insiders begin distributing, so a further leg up before any dump is plausible, and the lack of external narrative doesn't preclude a purely on-chain momentum continuation within the 30-minute window.",
+  "unknowns": [
+   "Identity and intent of the wallet holding 80.05% of supply (bundler-related, migration remnant, or a whale accumulator)",
+   "Actual content/engagement of the linked X post (fetch blocked with HTTP 402)",
+   "Whether the RugCheck 'LP unlocked 99.99%' warning or the rug_guard 'LP 100% burned' determination is the operative truth for this specific pumpswap pool",
+   "Whether any private Telegram/Discord promotion or call-channel activity is driving the burst (invisible to this research)",
+   "Total token supply and thus what fraction of circulating tokens outside the AMM the top wallet truly controls in dollar terms"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "X search only surfaced the raw status URL from the packet, which returned HTTP 402 on fetch; no independent posts, replies, or engagement data could be retrieved. Project website (sentu.fun) loaded but had negligible substantive content. Telegram channel found via direct fetch, showing only 11 subscribers. No Discord link was provided in the packet and none was found via search in the time available."
+  },
+  "thesis": "SENTU is an extremely young (~16 min) pump.fun migrant showing a large, buy-skewed volume burst with no discoverable external narrative, negligible social footprint (11-member Telegram, inaccessible/likely tiny X presence), and severe supply concentration (one wallet at 80% of non-pool supply, 100 flagged bundler wallets). The price action looks like a coordinated/bundled launch burst rather than organic, spreading attention. Given already-parabolic +196-233% pre-entry move plus concentration risk, the near-term path is more likely a fast fade or dump-driven crash than a clean continuation to +100% from here, though buy-heavy order flow keeps some continuation chance alive slightly above the base rate for this cohort.",
+  "continuation_view": "fade",
+  "p_runner": 15,
+  "p_rug": 32,
+  "survival_score": 50,
+  "attention_score": 48,
+  "manipulation_risk": 72,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://sentu.fun/",
+    "what": "Project website \u2014 minimal content, name/tagline only, no narrative documented"
+   },
+   {
+    "url": "https://telegram.me/UseSentu",
+    "what": "Public Telegram channel \u2014 11 subscribers, no description or visible activity"
+   },
+   {
+    "url": "https://x.com/UseSentu/status/2103851192644431912",
+    "what": "Linked X/Twitter post from packet \u2014 fetch blocked (HTTP 402), engagement unknown"
+   }
+  ]
+ },
+ "ttft_ms": 1567,
+ "type": "result",
+ "duration_ms": 154152,
+ "uuid": "3c0f0dc5-7fd4-447a-b1da-06da9e27a931",
+ "ttft_stream_ms": 728,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 728,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,195 @@
+{
+ "duration_api_ms": 191318,
+ "stop_reason": "tool_use",
+ "session_id": "06e123c2-d001-4551-83fc-c14f7daaa2eb",
+ "total_cost_usd": 0.4337856,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 23933,
+  "cache_read_input_tokens": 73358,
+  "output_tokens": 11693,
+  "output_tokens_details": {
+   "thinking_tokens": 3851
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 23933,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3491,
+    "cache_read_input_tokens": 23142,
+    "cache_creation_input_tokens": 4280,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4280
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 10,
+   "outputTokens": 11693,
+   "cacheReadInputTokens": 73358,
+   "cacheCreationInputTokens": 23933,
+   "webSearchRequests": 0,
+   "costUSD": 0.22735360000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 3851,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 99507,
+   "outputTokens": 3385,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 9,
+   "costUSD": 0.206432,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-launched Solana token \\\"e/cat\\\" (contract j7HvTm...pump) migrated to a PumpSwap pool about 11 minutes before detection and saw a fast burst of buying: roughly 1,200+ unique buyers, 1400+ buys vs ~180 sells in the first hour, price up 57-67% from pool creation. Turnover was extreme (h1 volume ~ equal to market cap). By the moment of detection, the 5-minute price change had already turned negative (-17.36%), suggesting the initial spike was cresting/rolling over right as the rule fired. The token's branding ties it to Beff Jezos/e-acc imagery, and this week there is a real, verified viral event: Beff Jezos's \\\"DDOS'd with money\\\" X-Money donation trend (Sept 2026), which powered a different, separately-named token \\\"e/acc\\\" past $17M market cap. \\\"e/cat\\\" is a cat-branded, theme-adjacent spinoff riding that same wave, not the token that news coverage or the KuCoin/ChainCatcher writeups actually name.\",\"narrative\":{\"description\":\"The real, currently-trending narrative is Beff Jezos's \\\"DDOS'd with money\\\" X-Money viral moment (this week) which drove a token literally named \\\"e/acc\\\" to $17M+ market cap per KuCoin/ChainCatcher. \\\"e/cat\\\" borrows e/acc/Beff Jezos aesthetic (cat wearing a hat, auto-generated description mentioning Beff Jezos) without being the token any article or verifiable post names.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The underlying meme (e/acc, Beff Jezos, X-Money donations) is genuinely hot right now, which plausibly explains a burst of pump.fun buyers hunting any cat/e-acc-branded token within minutes of migration. But I found zero confirmed X, Reddit, news or Telegram content naming this specific contract or ticker; the only 'spread' I can verify is on-chain (buyer count), not social discussion.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"No X post, news article, Reddit thread, or Telegram message found ties Beff Jezos or the e/acc trend specifically to this contract. The project's own website (ecatsol.xyz) fails to resolve (DNS error) and its Telegram channel has only 5 subscribers despite ~1,500 on-chain holders and $85k+ hourly volume -- a strong mismatch between claimed social presence and trading activity. The packet's own project_description reads like an automated image caption, not a verified fact about Beff Jezos endorsing this token.\",\"competing_tokens\":\"The packet's same_ticker_or_name_tokens list is empty, but web search surfaced a separately-branded, much larger token called \\\"e/acc\\\" (not e/cat) that is the one actually cited in news coverage of the current Beff Jezos trend -- effectively the canonical vehicle for this narrative, with e/cat as an unconnected cat-themed lookalike.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"On-chain: 1524 holders, 1406 buys vs 179 sells in h1, buys-per-unique-buyer ~1.01 (not obviously wash-traded), fresh/sniper/bundler wallet counts modest (14/14/7 of 1524). Off-chain: Telegram has only 5 subscribers, no working project website, no X posts, no Reddit threads, and no news coverage found for this specific contract or ticker despite an extensive multi-query search.\",\"uncertainty\":\"X/Twitter is poorly indexed by search engines and no X API was available in this version, so genuine posts about this exact contract may exist but be invisible to me; the on-chain buyer count (1200+ within ~10 minutes) is unusually large for a coin with essentially no discoverable social footprint, which is itself a flag that the buying is largely bot/sniper/trending-page driven rather than organic community spread.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price already up 57-67% from pool creation before entry, with the most recent 5-minute window already down -17%, indicating the pump may be rolling over right as the trade would open\",\"Extremely high h1 turnover (volume ~ mcap) typical of pump.fun sniper/bot rotation rather than durable demand\",\"Total liquidity is thin (~$23-24k) relative to the volume passing through it, so slippage on a further 2x move or a large exit could be severe\",\"No smart-money or renowned wallets present; wallet mix is ordinary pump.fun degen/sniper flow\",\"Structural positives: mint/freeze renounced, LP 100% locked, top10 (ex-pool) only 9.8%, RugCheck score 1 (low), creator holds 0% and has only launched this one token\"]},\"counterargument\":\"The bear case (weak token connection, likely spinoff, cresting price) could be wrong if this cat-branded version is actually the specific asset Beff Jezos's own circle is pushing in private/Discord channels invisible to my search, or if pump.fun's trending algorithm alone (independent of any narrative) is enough to keep feeding new buyers for the next 30 minutes regardless of the \\\"canonical\\\" e/acc token's existence -- the sheer buyer count (1200+ in ~10 minutes) and clean structural profile (renounced, locked LP, low concentration) are genuinely rare and could support a further squeeze even without verifiable social proof.\",\"unknowns\":[\"Whether Beff Jezos or anyone in his circle has actually posted about this specific contract/ticker anywhere on X\",\"Why the project website (ecatsol.xyz) fails to resolve at this moment\",\"What is driving the reported ~1200 unique buyers in ~10 minutes if there is no discoverable social discussion -- pump.fun trending page, bot rings, or private call channels\",\"Whether the m5 price reversal (-17.36%) at detection continues into a deeper drawdown or is just noise\",\"Whether any of the 14 sniper / 7 bundler wallets are coordinated and poised to dump into the next 30 minutes\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"News search found real coverage of the Beff Jezos 'DDOS'd with money' trend and a separate 'e/acc' token, but nothing specific to 'e/cat' or this contract. Telegram channel for e/cat found but shows only 5 subscribers and no visible message history. Project website ecatsol.xyz failed DNS resolution. Discord not attempted due to time budget; no Discord link was present in the packet anyway.\"},\"thesis\":\"e/cat is riding the coattails of a real, currently viral Beff Jezos / e-acc narrative (the 'DDOS'd with money' X-Money trend), but every check I could run points to it being a secondary, unverified spinoff rather than the token the narrative actually points to -- the canonical beneficiary appears to be a separately-named 'e/acc' token already at $17M+ mcap. e/cat's own social footprint (5-member Telegram, dead website, zero findable X/Reddit/news mentions) is essentially nonexistent despite heavy on-chain volume, and the price had already run 57-67% and turned negative in the most recent 5 minutes right as the entry window opens. Structurally it is clean (renounced, LP locked, low concentration), which caps rug risk but does nothing to guarantee a further 2x from an already-extended, now-reversing price.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":28,\"survival_score\":55,\"attention_score\":50,\"manipulation_risk\":66,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://www.thegatewaypundit.com/2026/09/x-users-being-ddosd-money-tens-thousands-dollars/\",\"what\":\"Confirms the real, currently-viral Beff Jezos 'DDOS'd with money' X-Money trend this week\"},{\"url\":\"https://www.kucoin.com/news/flash/solana-meme-coin-e-acc-market-cap-surpasses-1-7m-in-24-hours\",\"what\":\"Reports a separately-named 'e/acc' Solana meme token (not e/cat) surging on this narrative, market cap figures cited in article\"},{\"url\":\"https://www.chaincatcher.com/en/article/2292369\",\"what\":\"Additional coverage of the 'e/acc' meme coin market value tied to the same trend\"},{\"url\":\"https://t.me/ecat_solcoin\",\"what\":\"e/cat's own Telegram channel, found to have only 5 subscribers and no visible message history\"},{\"url\":\"https://ecatsol.xyz/\",\"what\":\"Project website listed in packet; failed to resolve (DNS error) at time of research\"},{\"url\":\"https://x.com/beffjezos\",\"what\":\"Beff Jezos's X account, checked for any post referencing e/cat; none found via search\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-launched Solana token \"e/cat\" (contract j7HvTm...pump) migrated to a PumpSwap pool about 11 minutes before detection and saw a fast burst of buying: roughly 1,200+ unique buyers, 1400+ buys vs ~180 sells in the first hour, price up 57-67% from pool creation. Turnover was extreme (h1 volume ~ equal to market cap). By the moment of detection, the 5-minute price change had already turned negative (-17.36%), suggesting the initial spike was cresting/rolling over right as the rule fired. The token's branding ties it to Beff Jezos/e-acc imagery, and this week there is a real, verified viral event: Beff Jezos's \"DDOS'd with money\" X-Money donation trend (Sept 2026), which powered a different, separately-named token \"e/acc\" past $17M market cap. \"e/cat\" is a cat-branded, theme-adjacent spinoff riding that same wave, not the token that news coverage or the KuCoin/ChainCatcher writeups actually name.",
+  "narrative": {
+   "description": "The real, currently-trending narrative is Beff Jezos's \"DDOS'd with money\" X-Money viral moment (this week) which drove a token literally named \"e/acc\" to $17M+ market cap per KuCoin/ChainCatcher. \"e/cat\" borrows e/acc/Beff Jezos aesthetic (cat wearing a hat, auto-generated description mentioning Beff Jezos) without being the token any article or verifiable post names.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The underlying meme (e/acc, Beff Jezos, X-Money donations) is genuinely hot right now, which plausibly explains a burst of pump.fun buyers hunting any cat/e-acc-branded token within minutes of migration. But I found zero confirmed X, Reddit, news or Telegram content naming this specific contract or ticker; the only 'spread' I can verify is on-chain (buyer count), not social discussion."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "No X post, news article, Reddit thread, or Telegram message found ties Beff Jezos or the e/acc trend specifically to this contract. The project's own website (ecatsol.xyz) fails to resolve (DNS error) and its Telegram channel has only 5 subscribers despite ~1,500 on-chain holders and $85k+ hourly volume -- a strong mismatch between claimed social presence and trading activity. The packet's own project_description reads like an automated image caption, not a verified fact about Beff Jezos endorsing this token.",
+   "competing_tokens": "The packet's same_ticker_or_name_tokens list is empty, but web search surfaced a separately-branded, much larger token called \"e/acc\" (not e/cat) that is the one actually cited in news coverage of the current Beff Jezos trend -- effectively the canonical vehicle for this narrative, with e/cat as an unconnected cat-themed lookalike.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "On-chain: 1524 holders, 1406 buys vs 179 sells in h1, buys-per-unique-buyer ~1.01 (not obviously wash-traded), fresh/sniper/bundler wallet counts modest (14/14/7 of 1524). Off-chain: Telegram has only 5 subscribers, no working project website, no X posts, no Reddit threads, and no news coverage found for this specific contract or ticker despite an extensive multi-query search.",
+   "uncertainty": "X/Twitter is poorly indexed by search engines and no X API was available in this version, so genuine posts about this exact contract may exist but be invisible to me; the on-chain buyer count (1200+ within ~10 minutes) is unusually large for a coin with essentially no discoverable social footprint, which is itself a flag that the buying is largely bot/sniper/trending-page driven rather than organic community spread."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price already up 57-67% from pool creation before entry, with the most recent 5-minute window already down -17%, indicating the pump may be rolling over right as the trade would open",
+    "Extremely high h1 turnover (volume ~ mcap) typical of pump.fun sniper/bot rotation rather than durable demand",
+    "Total liquidity is thin (~$23-24k) relative to the volume passing through it, so slippage on a further 2x move or a large exit could be severe",
+    "No smart-money or renowned wallets present; wallet mix is ordinary pump.fun degen/sniper flow",
+    "Structural positives: mint/freeze renounced, LP 100% locked, top10 (ex-pool) only 9.8%, RugCheck score 1 (low), creator holds 0% and has only launched this one token"
+   ]
+  },
+  "counterargument": "The bear case (weak token connection, likely spinoff, cresting price) could be wrong if this cat-branded version is actually the specific asset Beff Jezos's own circle is pushing in private/Discord channels invisible to my search, or if pump.fun's trending algorithm alone (independent of any narrative) is enough to keep feeding new buyers for the next 30 minutes regardless of the \"canonical\" e/acc token's existence -- the sheer buyer count (1200+ in ~10 minutes) and clean structural profile (renounced, locked LP, low concentration) are genuinely rare and could support a further squeeze even without verifiable social proof.",
+  "unknowns": [
+   "Whether Beff Jezos or anyone in his circle has actually posted about this specific contract/ticker anywhere on X",
+   "Why the project website (ecatsol.xyz) fails to resolve at this moment",
+   "What is driving the reported ~1200 unique buyers in ~10 minutes if there is no discoverable social discussion -- pump.fun trending page, bot rings, or private call channels",
+   "Whether the m5 price reversal (-17.36%) at detection continues into a deeper drawdown or is just noise",
+   "Whether any of the 14 sniper / 7 bundler wallets are coordinated and poised to dump into the next 30 minutes"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "News search found real coverage of the Beff Jezos 'DDOS'd with money' trend and a separate 'e/acc' token, but nothing specific to 'e/cat' or this contract. Telegram channel for e/cat found but shows only 5 subscribers and no visible message history. Project website ecatsol.xyz failed DNS resolution. Discord not attempted due to time budget; no Discord link was present in the packet anyway."
+  },
+  "thesis": "e/cat is riding the coattails of a real, currently viral Beff Jezos / e-acc narrative (the 'DDOS'd with money' X-Money trend), but every check I could run points to it being a secondary, unverified spinoff rather than the token the narrative actually points to -- the canonical beneficiary appears to be a separately-named 'e/acc' token already at $17M+ mcap. e/cat's own social footprint (5-member Telegram, dead website, zero findable X/Reddit/news mentions) is essentially nonexistent despite heavy on-chain volume, and the price had already run 57-67% and turned negative in the most recent 5 minutes right as the entry window opens. Structurally it is clean (renounced, LP locked, low concentration), which caps rug risk but does nothing to guarantee a further 2x from an already-extended, now-reversing price.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 28,
+  "survival_score": 55,
+  "attention_score": 50,
+  "manipulation_risk": 66,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://www.thegatewaypundit.com/2026/09/x-users-being-ddosd-money-tens-thousands-dollars/",
+    "what": "Confirms the real, currently-viral Beff Jezos 'DDOS'd with money' X-Money trend this week"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/solana-meme-coin-e-acc-market-cap-surpasses-1-7m-in-24-hours",
+    "what": "Reports a separately-named 'e/acc' Solana meme token (not e/cat) surging on this narrative, market cap figures cited in article"
+   },
+   {
+    "url": "https://www.chaincatcher.com/en/article/2292369",
+    "what": "Additional coverage of the 'e/acc' meme coin market value tied to the same trend"
+   },
+   {
+    "url": "https://t.me/ecat_solcoin",
+    "what": "e/cat's own Telegram channel, found to have only 5 subscribers and no visible message history"
+   },
+   {
+    "url": "https://ecatsol.xyz/",
+    "what": "Project website listed in packet; failed to resolve (DNS error) at time of research"
+   },
+   {
+    "url": "https://x.com/beffjezos",
+    "what": "Beff Jezos's X account, checked for any post referencing e/cat; none found via search"
+   }
+  ]
+ },
+ "ttft_ms": 3559,
+ "type": "result",
+ "duration_ms": 154975,
+ "uuid": "af8f0da5-720f-4b31-ba5c-2672d52bfe3b",
+ "ttft_stream_ms": 1105,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1105,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

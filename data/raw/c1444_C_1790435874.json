@@ -1,0 +1,196 @@
+{
+ "duration_api_ms": 139163,
+ "stop_reason": "tool_use",
+ "session_id": "871a30ed-f48b-4958-a967-4e58c6e8c88b",
+ "total_cost_usd": 0.3410422000000001,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 18745,
+  "cache_read_input_tokens": 53481,
+  "output_tokens": 9597,
+  "output_tokens_details": {
+   "thinking_tokens": 4950
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18745,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 7517,
+    "cache_read_input_tokens": 20471,
+    "cache_creation_input_tokens": 1763,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1763
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 9597,
+   "cacheReadInputTokens": 53481,
+   "cacheCreationInputTokens": 18745,
+   "webSearchRequests": 0,
+   "costUSD": 0.18166220000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 4950,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 77625,
+   "outputTokens": 2351,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 7,
+   "costUSD": 0.15937999999999997,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":52,\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The underlying UsePaid/#PAID narrative is real: former X product lead Nikita Bier publicly praised the UsePaid mechanic (routing meme-coin creator fees to X users via X Money) on ~Sep 17 2026 (x.com/nikitabier/status/2100421095551565882; KuCoin flash news), and a canonical PAID token on a different contract (98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump) reportedly traded at $21-36M market cap. But the specific contract in this packet is NOT that token: it is one of at least 7 near-identical '#PAID' pools created within ~5 minutes of each other (pair_created_at_ms 1790435249000-1790435549000 in same_ticker_or_name_tokens), i.e. a ticker-squatting swarm riding the viral name. GMGN shows 176/217 holders (81%) tagged as bundler wallets and 161/217 (74%) fresh wallets - a bot/insider-heavy initial distribution, not organic discovery. The linked X account (TrenchDame) was renamed from 'StienwandtDamon' (project_x_rename_history) and is flagged community_takeover=true, both recycled-account red flags.\",\"uncertainty\":\"Could not fetch X/Twitter directly (search engines index X poorly) so I couldn't see live reply/quote activity on the TrenchDame post or confirm who @chrismessina is in this context; could not confirm whether any of the 7 sibling '#PAID' tokens is being treated by traders as the 'real' successor pool.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The underlying UsePaid narrative is genuinely trending (Nikita Bier endorsement, real product, real fee-to-cash mechanic) and this token is only 10 minutes old with huge relative volume ($100k h1 vs $17.6k mcap, 764 unique buyers) - if momentum traders are indiscriminately buying every fresh '#PAID' pool while the narrative is hot, this contract could catch a fast speculative pop purely from narrative-chasing bots before anyone distinguishes canonical from copycat, especially since it is mid-pack (not smallest) among the sibling launches and has clean bonding-curve structure (renounced mint/freeze, no rugcheck risks, no removable LP).\",\"manipulation_risk\":72,\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Pump.fun bonding curve liquidity is virtual reserves, not real LP - migrates at 115 virtual SOL, currently 68.46 virtual SOL, so depth is thin relative to the volume already transacted\",\"81% of holders are GMGN-tagged bundler wallets and 74% fresh wallets - classic coordinated/bot initial distribution that can dump in unison\",\"top10 holders (ex-pool) hold 16.54%, moderate but not extreme concentration\",\"at least 7 near-simultaneous competing '#PAID' pools split attention and liquidity, diluting any single pool's chance of becoming the focal point\",\"m5 price already down -13% to -67% (DexScreener vs GeckoTerminal disagree on magnitude but agree on direction) suggesting the initial pop is already fading within the first 10-15 minutes\"]},\"narrative\":{\"description\":\"UsePaid is a real, currently-discussed Solana mechanic that routes meme-coin creator fees to a tagged X account via X Money (80% cash to the X user, 20% buy-and-burn of PAID). It got a public nod from ex-X product lead Nikita Bier around Sep 17 2026, and a separate canonical PAID contract reportedly ran to $21-36M market cap. This specific token is a same-ticker relaunch/copy created minutes ago as part of a swarm of near-identical '#PAID' pump.fun pools, with its description tagging '@chrismessina' as the fee recipient - likely someone testing/piggybacking the UsePaid mechanic on a new X handle rather than continuing the original viral pool.\",\"stage\":\"fading\",\"potential\":\"moderate\",\"why_spreading\":\"Real external validation (Bier) and a proven large comparable (the $21-36M PAID pool) create genuine reflexive buying pressure on anything ticker-matching '#PAID', pulling in bots and fast-money traders scanning for the name - but this specific pool is a copy, not the validated one, so the underlying story doesn't uniquely belong to it.\"},\"observation_window\":\"1h\",\"p_rug\":34,\"p_runner\":13,\"research_confidence\":\"medium\",\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"Found strong news coverage (KuCoin flash news, Coindesk, Invezz) of the underlying UsePaid narrative and Nikita Bier's endorsement, and located the canonical much-larger PAID contract via search. Could not fetch x.com/TrenchDame post directly or usepaid.app token page (SSL/fetch errors) in the time available. Reddit/Telegram/Discord not attempted due to the 2-minute time budget after the higher-value narrative/contract findings; DexScreener pair page returned 403.\"},\"survival_score\":62,\"tail_class\":\"B_up_to_2x\",\"thesis\":\"This token piggybacks a real, externally-validated narrative (UsePaid/X Money fee-routing, endorsed by Nikita Bier, with a canonical PAID pool that reached $21-36M) but is itself one of at least seven near-simultaneous copycat '#PAID' pools, not the canonical one - a textbook ticker-squat swarm. Structure is clean for a bonding-curve token (renounced authorities, no rugcheck flags, no pullable LP), but wallet composition is heavily bundler/fresh-wallet dominated (81%/74%), the linked X account is a recycled, community-takeover-flagged handle, and price momentum was already reversing in the most recent 5-minute window at detection time. Genuine narrative energy exists, but it's diffused across competing pools and this one shows no distinguishing claim to be the 'real' one, so the probability this exact contract is the one that runs is low relative to the swarm and to the pool average.\",\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Shares the '#PAID' name/ticker and the UsePaid fee-routing mechanic with a much larger, already-viral canonical pool, but was deployed minutes ago as one of several near-identical copies with no evidence it is the community-recognized successor.\",\"competing_tokens\":\"same_ticker_or_name_tokens lists 7 sibling '#PAID' pools created within ~5 minutes of this one (mcaps $3.3k-$55.5k), plus a separate canonical contract 98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump reported at $21-36M market cap - this token is mid-pack among the fresh copies and far smaller than the canonical.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether the real, endorsed UsePaid narrative is still actively growing on Sep 26 or has already peaked/cooled since the Sep 17 Bier comment\",\"Who @chrismessina is in this context and why this specific pool tags him as fee recipient\",\"Live reply/quote activity on the linked TrenchDame X post (could not fetch X directly)\",\"Whether any of the 7 sibling '#PAID' pools is emerging as the crowd-favorite 'real' one right now\",\"Telegram/Discord chatter, not checked due to time constraints\",\"Why GMGN's creator_address differs from RugCheck's structure.creator field for this same token\"],\"what_is_happening\":\"A 10-minute-old pump.fun bonding-curve token named '#PAID' ($17.6k mcap) is seeing extreme volume ($100k h1 vs $17.6k mcap) and a huge reported price move (+264% h1), tagging its creator fees to '@chrismessina' via the UsePaid mechanic. Web research shows the '#PAID'/UsePaid narrative is genuinely real and recently viral (Nikita Bier public endorsement ~Sep 17 2026; a separate canonical PAID contract reached $21-36M market cap), but this specific contract is one of at least seven near-simultaneous copycat '#PAID' pools launched within minutes of each other - a ticker-squat swarm, not the canonical pool. GMGN flags heavy bundler (81%) and fresh-wallet (74%) concentration among holders, and the linked X account is a renamed/recycled, community-takeover-flagged handle. Price was already reversing in the most recent 5-minute window at detection.\",\"sources\":[{\"url\":\"https://x.com/nikitabier/status/2100421095551565882\",\"what\":\"Nikita Bier's public comment on UsePaid/X Money mechanic, source of the real narrative\"},{\"url\":\"https://www.kucoin.com/news/flash/nikita-bier-comments-on-solana-project-usepaid-suggests-adding-exit-option\",\"what\":\"News coverage of Bier's UsePaid comment\"},{\"url\":\"https://www.kucoin.com/news/flash/solana-ecosystem-token-paid-market-cap-surpasses-36m-briefly\",\"what\":\"Coverage of the canonical, much larger PAID token (different contract) reaching $36M mcap\"},{\"url\":\"https://www.coindesk.com/tech/2026/04/14/crypto-has-had-a-rough-year-x-s-nikita-bier-hints-as-x-money-launch-nears\",\"what\":\"Background on Nikita Bier / X Money context\"},{\"url\":\"https://usepaid.app/\",\"what\":\"UsePaid project site explaining the fee-routing mechanic\"},{\"url\":\"https://x.com/TrenchDame\",\"what\":\"X account linked in this token's social field, shows rename history/recycled account\"}]}",
+ "structured_output": {
+  "attention_score": 52,
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The underlying UsePaid/#PAID narrative is real: former X product lead Nikita Bier publicly praised the UsePaid mechanic (routing meme-coin creator fees to X users via X Money) on ~Sep 17 2026 (x.com/nikitabier/status/2100421095551565882; KuCoin flash news), and a canonical PAID token on a different contract (98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump) reportedly traded at $21-36M market cap. But the specific contract in this packet is NOT that token: it is one of at least 7 near-identical '#PAID' pools created within ~5 minutes of each other (pair_created_at_ms 1790435249000-1790435549000 in same_ticker_or_name_tokens), i.e. a ticker-squatting swarm riding the viral name. GMGN shows 176/217 holders (81%) tagged as bundler wallets and 161/217 (74%) fresh wallets - a bot/insider-heavy initial distribution, not organic discovery. The linked X account (TrenchDame) was renamed from 'StienwandtDamon' (project_x_rename_history) and is flagged community_takeover=true, both recycled-account red flags.",
+   "uncertainty": "Could not fetch X/Twitter directly (search engines index X poorly) so I couldn't see live reply/quote activity on the TrenchDame post or confirm who @chrismessina is in this context; could not confirm whether any of the 7 sibling '#PAID' tokens is being treated by traders as the 'real' successor pool."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The underlying UsePaid narrative is genuinely trending (Nikita Bier endorsement, real product, real fee-to-cash mechanic) and this token is only 10 minutes old with huge relative volume ($100k h1 vs $17.6k mcap, 764 unique buyers) - if momentum traders are indiscriminately buying every fresh '#PAID' pool while the narrative is hot, this contract could catch a fast speculative pop purely from narrative-chasing bots before anyone distinguishes canonical from copycat, especially since it is mid-pack (not smallest) among the sibling launches and has clean bonding-curve structure (renounced mint/freeze, no rugcheck risks, no removable LP).",
+  "manipulation_risk": 72,
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Pump.fun bonding curve liquidity is virtual reserves, not real LP - migrates at 115 virtual SOL, currently 68.46 virtual SOL, so depth is thin relative to the volume already transacted",
+    "81% of holders are GMGN-tagged bundler wallets and 74% fresh wallets - classic coordinated/bot initial distribution that can dump in unison",
+    "top10 holders (ex-pool) hold 16.54%, moderate but not extreme concentration",
+    "at least 7 near-simultaneous competing '#PAID' pools split attention and liquidity, diluting any single pool's chance of becoming the focal point",
+    "m5 price already down -13% to -67% (DexScreener vs GeckoTerminal disagree on magnitude but agree on direction) suggesting the initial pop is already fading within the first 10-15 minutes"
+   ]
+  },
+  "narrative": {
+   "description": "UsePaid is a real, currently-discussed Solana mechanic that routes meme-coin creator fees to a tagged X account via X Money (80% cash to the X user, 20% buy-and-burn of PAID). It got a public nod from ex-X product lead Nikita Bier around Sep 17 2026, and a separate canonical PAID contract reportedly ran to $21-36M market cap. This specific token is a same-ticker relaunch/copy created minutes ago as part of a swarm of near-identical '#PAID' pump.fun pools, with its description tagging '@chrismessina' as the fee recipient - likely someone testing/piggybacking the UsePaid mechanic on a new X handle rather than continuing the original viral pool.",
+   "stage": "fading",
+   "potential": "moderate",
+   "why_spreading": "Real external validation (Bier) and a proven large comparable (the $21-36M PAID pool) create genuine reflexive buying pressure on anything ticker-matching '#PAID', pulling in bots and fast-money traders scanning for the name - but this specific pool is a copy, not the validated one, so the underlying story doesn't uniquely belong to it."
+  },
+  "observation_window": "1h",
+  "p_rug": 34,
+  "p_runner": 13,
+  "research_confidence": "medium",
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "Found strong news coverage (KuCoin flash news, Coindesk, Invezz) of the underlying UsePaid narrative and Nikita Bier's endorsement, and located the canonical much-larger PAID contract via search. Could not fetch x.com/TrenchDame post directly or usepaid.app token page (SSL/fetch errors) in the time available. Reddit/Telegram/Discord not attempted due to the 2-minute time budget after the higher-value narrative/contract findings; DexScreener pair page returned 403."
+  },
+  "survival_score": 62,
+  "tail_class": "B_up_to_2x",
+  "thesis": "This token piggybacks a real, externally-validated narrative (UsePaid/X Money fee-routing, endorsed by Nikita Bier, with a canonical PAID pool that reached $21-36M) but is itself one of at least seven near-simultaneous copycat '#PAID' pools, not the canonical one - a textbook ticker-squat swarm. Structure is clean for a bonding-curve token (renounced authorities, no rugcheck flags, no pullable LP), but wallet composition is heavily bundler/fresh-wallet dominated (81%/74%), the linked X account is a recycled, community-takeover-flagged handle, and price momentum was already reversing in the most recent 5-minute window at detection time. Genuine narrative energy exists, but it's diffused across competing pools and this one shows no distinguishing claim to be the 'real' one, so the probability this exact contract is the one that runs is low relative to the swarm and to the pool average.",
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Shares the '#PAID' name/ticker and the UsePaid fee-routing mechanic with a much larger, already-viral canonical pool, but was deployed minutes ago as one of several near-identical copies with no evidence it is the community-recognized successor.",
+   "competing_tokens": "same_ticker_or_name_tokens lists 7 sibling '#PAID' pools created within ~5 minutes of this one (mcaps $3.3k-$55.5k), plus a separate canonical contract 98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump reported at $21-36M market cap - this token is mid-pack among the fresh copies and far smaller than the canonical.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether the real, endorsed UsePaid narrative is still actively growing on Sep 26 or has already peaked/cooled since the Sep 17 Bier comment",
+   "Who @chrismessina is in this context and why this specific pool tags him as fee recipient",
+   "Live reply/quote activity on the linked TrenchDame X post (could not fetch X directly)",
+   "Whether any of the 7 sibling '#PAID' pools is emerging as the crowd-favorite 'real' one right now",
+   "Telegram/Discord chatter, not checked due to time constraints",
+   "Why GMGN's creator_address differs from RugCheck's structure.creator field for this same token"
+  ],
+  "what_is_happening": "A 10-minute-old pump.fun bonding-curve token named '#PAID' ($17.6k mcap) is seeing extreme volume ($100k h1 vs $17.6k mcap) and a huge reported price move (+264% h1), tagging its creator fees to '@chrismessina' via the UsePaid mechanic. Web research shows the '#PAID'/UsePaid narrative is genuinely real and recently viral (Nikita Bier public endorsement ~Sep 17 2026; a separate canonical PAID contract reached $21-36M market cap), but this specific contract is one of at least seven near-simultaneous copycat '#PAID' pools launched within minutes of each other - a ticker-squat swarm, not the canonical pool. GMGN flags heavy bundler (81%) and fresh-wallet (74%) concentration among holders, and the linked X account is a renamed/recycled, community-takeover-flagged handle. Price was already reversing in the most recent 5-minute window at detection.",
+  "sources": [
+   {
+    "url": "https://x.com/nikitabier/status/2100421095551565882",
+    "what": "Nikita Bier's public comment on UsePaid/X Money mechanic, source of the real narrative"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/nikita-bier-comments-on-solana-project-usepaid-suggests-adding-exit-option",
+    "what": "News coverage of Bier's UsePaid comment"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/solana-ecosystem-token-paid-market-cap-surpasses-36m-briefly",
+    "what": "Coverage of the canonical, much larger PAID token (different contract) reaching $36M mcap"
+   },
+   {
+    "url": "https://www.coindesk.com/tech/2026/04/14/crypto-has-had-a-rough-year-x-s-nikita-bier-hints-as-x-money-launch-nears",
+    "what": "Background on Nikita Bier / X Money context"
+   },
+   {
+    "url": "https://usepaid.app/",
+    "what": "UsePaid project site explaining the fee-routing mechanic"
+   },
+   {
+    "url": "https://x.com/TrenchDame",
+    "what": "X account linked in this token's social field, shows rename history/recycled account"
+   }
+  ]
+ },
+ "ttft_ms": 1160,
+ "type": "result",
+ "duration_ms": 118302,
+ "uuid": "32980e84-7228-42f2-b92b-fa52f61a13e6",
+ "ttft_stream_ms": 602,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 602,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

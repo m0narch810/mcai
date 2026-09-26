@@ -1,0 +1,179 @@
+{
+ "duration_api_ms": 130738,
+ "stop_reason": "tool_use",
+ "session_id": "c6a8dfe1-0bd3-4899-aad2-061e3ea199d3",
+ "total_cost_usd": 0.2881908,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 18312,
+  "cache_read_input_tokens": 47424,
+  "output_tokens": 10279,
+  "output_tokens_details": {
+   "thinking_tokens": 3523
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18312,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3168,
+    "cache_read_input_tokens": 17263,
+    "cache_creation_input_tokens": 4538,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4538
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 10279,
+   "cacheReadInputTokens": 47424,
+   "cacheCreationInputTokens": 18312,
+   "webSearchRequests": 0,
+   "costUSD": 0.18553879999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 3523,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 45812,
+   "outputTokens": 1368,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.102652,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Solana token \\\"Zyrox\\\" (ZYROX) migrated off the pump.fun bonding curve to PumpSwap roughly 14 minutes before detection and has already spiked ~228-254% in its first hour on ~$1.9-2.0M of volume against a ~$200-215k market cap. Buy/sell imbalance is heavy (1808 buys vs 774-833 sells; 584 unique buyers vs only 31 unique sellers), so detection caught it mid-pump, not at the start. No web-searchable narrative, news, or organic social discussion was found anywhere. The single most important structural fact: one non-AMM wallet holds 80% of total supply (not flagged as \\\"insider\\\" by RugCheck, but the concentration is extreme), on top of the AMM pool holding ~11.9% \u2014 leaving well under 1% of supply spread across the other ~636 holders.\",\"narrative\":{\"description\":\"No identifiable cultural/news event, meme, or story tied to \\\"Zyrox\\\" was found. The name and ticker returned no relevant hits on X, Reddit, news, or general web search; the project has no website, no listed socials besides an unpopulated/unverifiable Twitter handle (Zyrox0x), and no project description in the packet.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The price action itself (a fast, large pump.fun-style spike with heavy buy pressure and 584 unique buyers in the first ~30 min) is the only visible signal \u2014 this looks like pure momentum/volume-chasing trading rather than a narrative with external hooks. No evidence the move is amplified by an identifiable meme, news event, or influencer push; could also reflect bot/bundler-assisted early buying given 10 bundler wallets flagged.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"No external narrative exists to connect to \u2014 the token's own price/volume spike is the only signal. Nothing (event, brand, meme) explains why buyers chose this name specifically; it reads as a generic pump.fun launch that caught volume.\",\"competing_tokens\":\"One same-name/ticker token exists (4xTK6qAkDF9bjGBLggAv1arv4bAK4GYFgBvcwAGNQiJk) but has $0.07 liquidity and $2,416 mcap \u2014 effectively dead, no hijack contest in practice.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"584 unique buyers vs 31 unique sellers in the first ~30 min and buys-per-unique-buyer of only 2.95 suggest broad participation rather than a handful of wallets wash-trading; fresh_wallet_rate and bot_degen_rate are both near zero per GMGN. However, zero smart-money/renowned wallets, zero degen calls, no dexscreener profile/boosts, and no discoverable X/Reddit/Telegram chatter mean there is no confirmed organic amplification \u2014 the buying could be reflexive momentum-bot/sniper activity around a fast-moving chart rather than narrative-driven demand.\",\"uncertainty\":\"Cannot see actual X posts (no API access) or private Telegram/Discord, so 'no discussion found' is a coverage gap, not proof none exists. The identity and intent of the 80%-holder wallet is unknown.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Single non-AMM wallet holds 80% of total supply \u2014 any partial sell could crater price; this dwarfs typical whale risk\",\"Top10 (ex-AMM/locker) hold 87.27%, AMM pool holds another 11.93%, leaving <1% spread across ~636 holders \u2014 almost no float\",\"RugCheck itself flags 'Large Amount of LP Unlocked... allowing the owner to remove liquidity at any point' (danger level) even though the packet's rug_guard classifies this pool's LP as burned \u2014 some conflicting signal across the two LP pools (0% and 64.19% locked)\",\"Creator has launched 37 tokens before (serial deployer / token-factory pattern), and the project X account has been renamed 6 times (recycled account, a known red flag per GMGN notes)\",\"Price already up 228-254% before entry \u2014 the initial momentum burst that typically drives pump.fun runners may already be substantially spent\"]},\"counterargument\":\"Broad buyer participation (584 unique buyers, low buys-per-buyer ratio, near-zero bot/fresh-wallet rates) is a real, measurable signal that this is not simple wash trading, and pump.fun coins routinely keep running well past a 250% first-hour move when volume keeps accelerating \u2014 the m5-vs-h1 rate ratio of 6.24x shows buying was still accelerating at the moment of detection, not decelerating. If the 80% wallet is a long-term holder or migration artifact rather than an active seller, the float-thinness that looks like a risk could equally mean limited sell-side supply to absorb, letting price move further on continued inflows. Absence of a discoverable narrative doesn't preclude one existing in private Telegram/Discord or un-indexed X activity that is actually driving the buying we can see in the data.\",\"unknowns\":[\"Identity, cost basis, and intent of the wallet holding 80% of supply \u2014 is it a passive holder, the migration/curve account, or an insider primed to dump?\",\"Whether any real narrative, KOL push, or coordinated call exists in un-indexed X posts or private Telegram/Discord channels\",\"Why the two LP pools show conflicting lock status (0% vs 64.19% locked) despite rug_guard calling LP burned\",\"Whether the creator's prior 37 token launches include rugs or fades (only best ATH mcap of ~$1.1M is known, not the outcome distribution)\",\"Whether buying is being driven by trading bots reacting to volume/momentum signals rather than any human-readable thesis\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Web search engines index X/Twitter poorly and multiple query forms (contract address, $ZYROX, name, project handle Zyrox0x) returned no relevant posts about this specific token \u2014 consistent with either genuinely low X presence or simply poor indexing; cannot distinguish. DexScreener token page returned HTTP 403 on fetch. No project website or socials were listed in the packet beyond an unverified Twitter handle and a generic-sounding Telegram link ('SolanaInsiderTerminal') that reads like a call-channel name, not a project community, so it was not pursued as organic evidence.\"},\"thesis\":\"Zyrox shows real, broad-based buy pressure (many unique buyers, low churn ratio) but zero discoverable narrative or organic social presence, an extremely concentrated supply (one wallet at 80%, <1% free float outside top10+pool), a serial 37-token deployer with a recycled/renamed X account, and entry occurring only after a ~228-254% first-hour move has already happened. This is a high-variance, structurally fragile momentum trade with no story to sustain attention beyond the chart itself \u2014 rank it below coins with an identifiable external narrative or cleaner holder distribution, but above coins showing wash-trading or dead volume, since the buyer breadth here is at least real.\",\"continuation_view\":\"fade\",\"p_runner\":15,\"p_rug\":38,\"survival_score\":38,\"attention_score\":50,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://x.com/zyroxx_\",\"what\":\"Unrelated small personal X account surfaced by search for 'Zyrox0x twitter', not the project's account (10 followers, joined 2015) \u2014 indicates no substantive project presence found via search\"},{\"url\":\"https://dexscreener.com/solana/AWuidZJrjp3nBVf3b5kpHBFvCL3wgFuSnjwcPbTUMs1M\",\"what\":\"Attempted fetch of the token's DexScreener pair page; returned HTTP 403, could not verify boosts/comments directly\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Solana token \"Zyrox\" (ZYROX) migrated off the pump.fun bonding curve to PumpSwap roughly 14 minutes before detection and has already spiked ~228-254% in its first hour on ~$1.9-2.0M of volume against a ~$200-215k market cap. Buy/sell imbalance is heavy (1808 buys vs 774-833 sells; 584 unique buyers vs only 31 unique sellers), so detection caught it mid-pump, not at the start. No web-searchable narrative, news, or organic social discussion was found anywhere. The single most important structural fact: one non-AMM wallet holds 80% of total supply (not flagged as \"insider\" by RugCheck, but the concentration is extreme), on top of the AMM pool holding ~11.9% \u2014 leaving well under 1% of supply spread across the other ~636 holders.",
+  "narrative": {
+   "description": "No identifiable cultural/news event, meme, or story tied to \"Zyrox\" was found. The name and ticker returned no relevant hits on X, Reddit, news, or general web search; the project has no website, no listed socials besides an unpopulated/unverifiable Twitter handle (Zyrox0x), and no project description in the packet.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The price action itself (a fast, large pump.fun-style spike with heavy buy pressure and 584 unique buyers in the first ~30 min) is the only visible signal \u2014 this looks like pure momentum/volume-chasing trading rather than a narrative with external hooks. No evidence the move is amplified by an identifiable meme, news event, or influencer push; could also reflect bot/bundler-assisted early buying given 10 bundler wallets flagged."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "No external narrative exists to connect to \u2014 the token's own price/volume spike is the only signal. Nothing (event, brand, meme) explains why buyers chose this name specifically; it reads as a generic pump.fun launch that caught volume.",
+   "competing_tokens": "One same-name/ticker token exists (4xTK6qAkDF9bjGBLggAv1arv4bAK4GYFgBvcwAGNQiJk) but has $0.07 liquidity and $2,416 mcap \u2014 effectively dead, no hijack contest in practice.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "584 unique buyers vs 31 unique sellers in the first ~30 min and buys-per-unique-buyer of only 2.95 suggest broad participation rather than a handful of wallets wash-trading; fresh_wallet_rate and bot_degen_rate are both near zero per GMGN. However, zero smart-money/renowned wallets, zero degen calls, no dexscreener profile/boosts, and no discoverable X/Reddit/Telegram chatter mean there is no confirmed organic amplification \u2014 the buying could be reflexive momentum-bot/sniper activity around a fast-moving chart rather than narrative-driven demand.",
+   "uncertainty": "Cannot see actual X posts (no API access) or private Telegram/Discord, so 'no discussion found' is a coverage gap, not proof none exists. The identity and intent of the 80%-holder wallet is unknown."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Single non-AMM wallet holds 80% of total supply \u2014 any partial sell could crater price; this dwarfs typical whale risk",
+    "Top10 (ex-AMM/locker) hold 87.27%, AMM pool holds another 11.93%, leaving <1% spread across ~636 holders \u2014 almost no float",
+    "RugCheck itself flags 'Large Amount of LP Unlocked... allowing the owner to remove liquidity at any point' (danger level) even though the packet's rug_guard classifies this pool's LP as burned \u2014 some conflicting signal across the two LP pools (0% and 64.19% locked)",
+    "Creator has launched 37 tokens before (serial deployer / token-factory pattern), and the project X account has been renamed 6 times (recycled account, a known red flag per GMGN notes)",
+    "Price already up 228-254% before entry \u2014 the initial momentum burst that typically drives pump.fun runners may already be substantially spent"
+   ]
+  },
+  "counterargument": "Broad buyer participation (584 unique buyers, low buys-per-buyer ratio, near-zero bot/fresh-wallet rates) is a real, measurable signal that this is not simple wash trading, and pump.fun coins routinely keep running well past a 250% first-hour move when volume keeps accelerating \u2014 the m5-vs-h1 rate ratio of 6.24x shows buying was still accelerating at the moment of detection, not decelerating. If the 80% wallet is a long-term holder or migration artifact rather than an active seller, the float-thinness that looks like a risk could equally mean limited sell-side supply to absorb, letting price move further on continued inflows. Absence of a discoverable narrative doesn't preclude one existing in private Telegram/Discord or un-indexed X activity that is actually driving the buying we can see in the data.",
+  "unknowns": [
+   "Identity, cost basis, and intent of the wallet holding 80% of supply \u2014 is it a passive holder, the migration/curve account, or an insider primed to dump?",
+   "Whether any real narrative, KOL push, or coordinated call exists in un-indexed X posts or private Telegram/Discord channels",
+   "Why the two LP pools show conflicting lock status (0% vs 64.19% locked) despite rug_guard calling LP burned",
+   "Whether the creator's prior 37 token launches include rugs or fades (only best ATH mcap of ~$1.1M is known, not the outcome distribution)",
+   "Whether buying is being driven by trading bots reacting to volume/momentum signals rather than any human-readable thesis"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Web search engines index X/Twitter poorly and multiple query forms (contract address, $ZYROX, name, project handle Zyrox0x) returned no relevant posts about this specific token \u2014 consistent with either genuinely low X presence or simply poor indexing; cannot distinguish. DexScreener token page returned HTTP 403 on fetch. No project website or socials were listed in the packet beyond an unverified Twitter handle and a generic-sounding Telegram link ('SolanaInsiderTerminal') that reads like a call-channel name, not a project community, so it was not pursued as organic evidence."
+  },
+  "thesis": "Zyrox shows real, broad-based buy pressure (many unique buyers, low churn ratio) but zero discoverable narrative or organic social presence, an extremely concentrated supply (one wallet at 80%, <1% free float outside top10+pool), a serial 37-token deployer with a recycled/renamed X account, and entry occurring only after a ~228-254% first-hour move has already happened. This is a high-variance, structurally fragile momentum trade with no story to sustain attention beyond the chart itself \u2014 rank it below coins with an identifiable external narrative or cleaner holder distribution, but above coins showing wash-trading or dead volume, since the buyer breadth here is at least real.",
+  "continuation_view": "fade",
+  "p_runner": 15,
+  "p_rug": 38,
+  "survival_score": 38,
+  "attention_score": 50,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://x.com/zyroxx_",
+    "what": "Unrelated small personal X account surfaced by search for 'Zyrox0x twitter', not the project's account (10 followers, joined 2015) \u2014 indicates no substantive project presence found via search"
+   },
+   {
+    "url": "https://dexscreener.com/solana/AWuidZJrjp3nBVf3b5kpHBFvCL3wgFuSnjwcPbTUMs1M",
+    "what": "Attempted fetch of the token's DexScreener pair page; returned HTTP 403, could not verify boosts/comments directly"
+   }
+  ]
+ },
+ "ttft_ms": 947,
+ "type": "result",
+ "duration_ms": 117228,
+ "uuid": "e9436057-4fdf-482e-8e5f-0db0104e3d66",
+ "ttft_stream_ms": 588,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 588,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

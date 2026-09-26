@@ -1,0 +1,179 @@
+{
+ "duration_api_ms": 95194,
+ "stop_reason": "tool_use",
+ "session_id": "b6b787d1-305a-4226-91d4-98f37e6ade7f",
+ "total_cost_usd": 0.15864299999999998,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11241,
+  "cache_read_input_tokens": 28860,
+  "output_tokens": 6415,
+  "output_tokens_details": {
+   "thinking_tokens": 2884
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11241,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5963,
+    "cache_read_input_tokens": 13801,
+    "cache_creation_input_tokens": 929,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 929
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 6415,
+   "cacheReadInputTokens": 28860,
+   "cacheCreationInputTokens": 11241,
+   "webSearchRequests": 0,
+   "costUSD": 0.11489799999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 2884,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 19455,
+   "outputTokens": 858,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043745000000000006,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun bonding-curve token (\\\"Perpses\\\", ticker not explicitly given as $PERPSES but named Perpses) at ~$12.6k mcap, ~10 minutes old, already up +252% in the first hour with $21.8k volume traded against that tiny mcap (h1 turnover 1.55x). In the last 5 minutes price growth has slowed to +12.5% (from a much faster average rate), a deceleration signal. GMGN shows 32 of 59 tracked holders tagged as \\\"bundler_wallets\\\" (54%) and also 32 \\\"fresh_wallets\\\"/\\\"top_wallets\\\" \u2014 heavy overlap consistent with a coordinated bundled launch rather than organic buyer diversity. The creator has already fully exited (creator_balance 0, dev_team_hold_rate 0.03, creator_hold_rate 0) and their only prior token topped out at a similarly tiny ATH mcap (~$13.8k), suggesting a low-conviction, serial-launch dev. RugCheck-style structural signals are clean (mint/freeze renounced, no risks flagged, LP effectively 100% \\\"locked\\\" because it's still curve-based). The project has a real, built-out website describing a real-estate perpetual-futures trading product, which is more substantive than a typical one-line meme site, but I found zero independent web mentions of the project, ticker, or contract anywhere (Reddit, news, X via search engines) and could not access the project's own X account (paywalled/blocked). No competing same-name/ticker tokens exist in the packet, so this is the only \\\"Perpses\\\" on Solana.\\\"\",\"narrative\":{\"description\":\"PerpsEs pitches itself as a Solana-based platform for trading perpetual futures on real-estate price indices (Case-Shiller, national housing indices) and REIT stocks, no-KYC, USDC margin, up to 5x leverage \u2014 a niche DeFi-utility narrative rather than a meme/cultural moment.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"No evidence of external spread was found: no news coverage, no Reddit/Telegram/Discord hits, no indexed X posts about the project, ticker or contract. The site itself is unusually developed for a $12.6k-mcap curve coin, which could reflect genuine product ambition, but with zero found organic discussion the apparent volume looks driven by on-chain trading activity (largely bundler/fresh wallets) rather than a narrative catching on with new audiences.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"No competing tickers/names were listed in the packet (same_ticker_or_name_tokens is empty) and the project's own website and GMGN-linked X handle (PerpsesLabs) match this contract, so it is the sole/canonical token for this name currently. But 'canonical' here just means there's no rival claiming the name \u2014 it doesn't establish that any real audience is asking for it.\",\"competing_tokens\":\"none found in packet or search\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"promotion.community_takeover flag is true and dexscreener_profile_updated is true, yet no paid DexScreener ad/boost/trending-bar is flagged. GMGN shows 32/59 holders as bundler_wallets and equally 32 as fresh_wallets/top_wallets \u2014 heavy structural overlap typical of a coordinated multi-wallet launch/sniping pattern, even though buys_per_unique_buyer_h1 (1.14) looks organic on its face and bot_degen_rate is only 18%.\",\"uncertainty\":\"Could not access the project X account (HTTP 402) or find any indexed posts about the contract/ticker, so I cannot say whether any of the volume reflects real external attention versus purely on-chain bundler/bot cycling. 'No discussion found' here is largely an access limitation, not proof of silence.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Still on the pump.fun curve at only ~50% of the ~115 SOL needed to migrate to a real PumpSwap pool \u2014 most curve coins this small never migrate and simply fade\",\"54% of tracked holders are GMGN-tagged bundler wallets, a strong overhang/coordinated-dump risk even though creator's own balance is already zero\",\"Total curve-equivalent liquidity is only ~$14k, thin relative to the $21.8k already traded in the first hour, meaning further price moves are highly volatility-prone in both directions\",\"Creator's only previous token topped out near the same tiny mcap this one already exceeded, suggesting a low track record for sustained runs\"]},\"counterargument\":\"The bearish read could be wrong: the token already shows unusually strong volume/mcap turnover (1.55x in h1) and 217 unique buyers within ~10 minutes, which is a real, fast-forming crowd by pump.fun standards regardless of whether I could find external chatter \u2014 search engines index X and Telegram poorly and my budget was capped at 4 calls, so genuine organic buzz could exist that I simply couldn't surface. The clean structural profile (renounced mint/freeze, zero flagged risks, no insider top-holder flags, a genuinely built product website rather than a copy-paste meme page) is also better than most coins hitting this rule, and pump.fun curve coins with this kind of early turnover sometimes do run hard purely on curve momentum and FOMO before any narrative solidifies, meaning the deceleration I flagged in the last 5 minutes could just be a brief pause rather than the top.\",\"unknowns\":[\"Whether any real, non-bundled community is discussing Perpses on X/Telegram/Discord (X account was paywalled, no independent posts found)\",\"Whether the 32 bundler wallets are still holding or already distributing into the pump\",\"Reddit/Telegram/Discord presence \u2014 not attempted due to the 4-call research budget\",\"News coverage of the real-estate-perp-futures niche or this project specifically \u2014 not attempted\",\"Whether the project's real-estate-futures product is live/functional beyond the marketing page, or vaporware\",\"Full creator wallet history / prior rug pattern beyond the single prior token noted\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"searched_found\",\"notes\":\"Budget capped at 4 web calls per instructions. Used: (1) contract-address search - nothing found, (2) ticker/name search - nothing found (only generic Solana perps content), (3) project website fetch - succeeded, revealed real-estate perps concept, (4) project X account fetch - blocked with HTTP 402. Reddit, Telegram, Discord, and news were not attempted given the budget was exhausted after these four calls.\"},\"thesis\":\"This is a 10-minute-old pump.fun curve coin that has already run +252% in its first hour on thin ($14k) liquidity, with over half its tracked holders flagged as bundler wallets and no findable independent (X/news/Reddit) discussion of the project despite having an unusually developed website for a real-estate perpetual-futures product. The clean renounced-authority structure and absence of a rival ticker are mild positives, but the combination of already-spent price momentum (decelerating in the last 5 minutes), heavy bundler concentration, a dev with a weak prior track record, and zero verifiable organic attention outside on-chain activity argues for a below-average chance of a further 2x before a 50% drawdown in the next 30 minutes, and a meaningfully elevated risk that the pump simply fades or gets dumped into by insiders within hours.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":55,\"survival_score\":33,\"attention_score\":46,\"manipulation_risk\":68,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://www.perpes.site/\",\"what\":\"Project website describing PerpsEs as a no-KYC Solana platform for trading perpetual futures on real-estate price indices and REIT stocks, with fee schedule; no team/roadmap info\"},{\"url\":\"https://x.com/PerpsesLabs\",\"what\":\"Project's X/Twitter account - fetch blocked with HTTP 402, could not verify follower count, post activity, or engagement\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun bonding-curve token (\"Perpses\", ticker not explicitly given as $PERPSES but named Perpses) at ~$12.6k mcap, ~10 minutes old, already up +252% in the first hour with $21.8k volume traded against that tiny mcap (h1 turnover 1.55x). In the last 5 minutes price growth has slowed to +12.5% (from a much faster average rate), a deceleration signal. GMGN shows 32 of 59 tracked holders tagged as \"bundler_wallets\" (54%) and also 32 \"fresh_wallets\"/\"top_wallets\" \u2014 heavy overlap consistent with a coordinated bundled launch rather than organic buyer diversity. The creator has already fully exited (creator_balance 0, dev_team_hold_rate 0.03, creator_hold_rate 0) and their only prior token topped out at a similarly tiny ATH mcap (~$13.8k), suggesting a low-conviction, serial-launch dev. RugCheck-style structural signals are clean (mint/freeze renounced, no risks flagged, LP effectively 100% \"locked\" because it's still curve-based). The project has a real, built-out website describing a real-estate perpetual-futures trading product, which is more substantive than a typical one-line meme site, but I found zero independent web mentions of the project, ticker, or contract anywhere (Reddit, news, X via search engines) and could not access the project's own X account (paywalled/blocked). No competing same-name/ticker tokens exist in the packet, so this is the only \"Perpses\" on Solana.\"",
+  "narrative": {
+   "description": "PerpsEs pitches itself as a Solana-based platform for trading perpetual futures on real-estate price indices (Case-Shiller, national housing indices) and REIT stocks, no-KYC, USDC margin, up to 5x leverage \u2014 a niche DeFi-utility narrative rather than a meme/cultural moment.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "No evidence of external spread was found: no news coverage, no Reddit/Telegram/Discord hits, no indexed X posts about the project, ticker or contract. The site itself is unusually developed for a $12.6k-mcap curve coin, which could reflect genuine product ambition, but with zero found organic discussion the apparent volume looks driven by on-chain trading activity (largely bundler/fresh wallets) rather than a narrative catching on with new audiences."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "No competing tickers/names were listed in the packet (same_ticker_or_name_tokens is empty) and the project's own website and GMGN-linked X handle (PerpsesLabs) match this contract, so it is the sole/canonical token for this name currently. But 'canonical' here just means there's no rival claiming the name \u2014 it doesn't establish that any real audience is asking for it.",
+   "competing_tokens": "none found in packet or search",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "promotion.community_takeover flag is true and dexscreener_profile_updated is true, yet no paid DexScreener ad/boost/trending-bar is flagged. GMGN shows 32/59 holders as bundler_wallets and equally 32 as fresh_wallets/top_wallets \u2014 heavy structural overlap typical of a coordinated multi-wallet launch/sniping pattern, even though buys_per_unique_buyer_h1 (1.14) looks organic on its face and bot_degen_rate is only 18%.",
+   "uncertainty": "Could not access the project X account (HTTP 402) or find any indexed posts about the contract/ticker, so I cannot say whether any of the volume reflects real external attention versus purely on-chain bundler/bot cycling. 'No discussion found' here is largely an access limitation, not proof of silence."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Still on the pump.fun curve at only ~50% of the ~115 SOL needed to migrate to a real PumpSwap pool \u2014 most curve coins this small never migrate and simply fade",
+    "54% of tracked holders are GMGN-tagged bundler wallets, a strong overhang/coordinated-dump risk even though creator's own balance is already zero",
+    "Total curve-equivalent liquidity is only ~$14k, thin relative to the $21.8k already traded in the first hour, meaning further price moves are highly volatility-prone in both directions",
+    "Creator's only previous token topped out near the same tiny mcap this one already exceeded, suggesting a low track record for sustained runs"
+   ]
+  },
+  "counterargument": "The bearish read could be wrong: the token already shows unusually strong volume/mcap turnover (1.55x in h1) and 217 unique buyers within ~10 minutes, which is a real, fast-forming crowd by pump.fun standards regardless of whether I could find external chatter \u2014 search engines index X and Telegram poorly and my budget was capped at 4 calls, so genuine organic buzz could exist that I simply couldn't surface. The clean structural profile (renounced mint/freeze, zero flagged risks, no insider top-holder flags, a genuinely built product website rather than a copy-paste meme page) is also better than most coins hitting this rule, and pump.fun curve coins with this kind of early turnover sometimes do run hard purely on curve momentum and FOMO before any narrative solidifies, meaning the deceleration I flagged in the last 5 minutes could just be a brief pause rather than the top.",
+  "unknowns": [
+   "Whether any real, non-bundled community is discussing Perpses on X/Telegram/Discord (X account was paywalled, no independent posts found)",
+   "Whether the 32 bundler wallets are still holding or already distributing into the pump",
+   "Reddit/Telegram/Discord presence \u2014 not attempted due to the 4-call research budget",
+   "News coverage of the real-estate-perp-futures niche or this project specifically \u2014 not attempted",
+   "Whether the project's real-estate-futures product is live/functional beyond the marketing page, or vaporware",
+   "Full creator wallet history / prior rug pattern beyond the single prior token noted"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "searched_found",
+   "notes": "Budget capped at 4 web calls per instructions. Used: (1) contract-address search - nothing found, (2) ticker/name search - nothing found (only generic Solana perps content), (3) project website fetch - succeeded, revealed real-estate perps concept, (4) project X account fetch - blocked with HTTP 402. Reddit, Telegram, Discord, and news were not attempted given the budget was exhausted after these four calls."
+  },
+  "thesis": "This is a 10-minute-old pump.fun curve coin that has already run +252% in its first hour on thin ($14k) liquidity, with over half its tracked holders flagged as bundler wallets and no findable independent (X/news/Reddit) discussion of the project despite having an unusually developed website for a real-estate perpetual-futures product. The clean renounced-authority structure and absence of a rival ticker are mild positives, but the combination of already-spent price momentum (decelerating in the last 5 minutes), heavy bundler concentration, a dev with a weak prior track record, and zero verifiable organic attention outside on-chain activity argues for a below-average chance of a further 2x before a 50% drawdown in the next 30 minutes, and a meaningfully elevated risk that the pump simply fades or gets dumped into by insiders within hours.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 55,
+  "survival_score": 33,
+  "attention_score": 46,
+  "manipulation_risk": 68,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://www.perpes.site/",
+    "what": "Project website describing PerpsEs as a no-KYC Solana platform for trading perpetual futures on real-estate price indices and REIT stocks, with fee schedule; no team/roadmap info"
+   },
+   {
+    "url": "https://x.com/PerpsesLabs",
+    "what": "Project's X/Twitter account - fetch blocked with HTTP 402, could not verify follower count, post activity, or engagement"
+   }
+  ]
+ },
+ "ttft_ms": 2251,
+ "type": "result",
+ "duration_ms": 90204,
+ "uuid": "2e0a6451-ac76-4473-9100-ffdf5e7de3ae",
+ "ttft_stream_ms": 1481,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 1481,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

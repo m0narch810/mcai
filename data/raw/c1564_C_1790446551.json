@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 174520,
+ "stop_reason": "tool_use",
+ "session_id": "c601511c-4cdb-4908-b1f7-a96efa122c08",
+ "total_cost_usd": 0.294515,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 18209,
+  "cache_read_input_tokens": 31440,
+  "output_tokens": 12709,
+  "output_tokens_details": {
+   "thinking_tokens": 4584
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18209,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3684,
+    "cache_read_input_tokens": 16264,
+    "cache_creation_input_tokens": 5434,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5434
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 12709,
+   "cacheReadInputTokens": 31440,
+   "cacheCreationInputTokens": 18209,
+   "webSearchRequests": 0,
+   "costUSD": 0.20622600000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 4584,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 41464,
+   "outputTokens": 1365,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08828899999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-graduated Solana token \\\"BNPaid\\\" (contract GJGAmWnm8Xbzv7iGYvDELYA79A7fdriPa7LYgVBxMuif) shows an extremely fast, high-volume run: pool created ~2026-09-26T18:05:16Z, and by detection (~18:15Z, ~10 minutes old) it had gone from fresh launch to $104k-119k market cap on ~$184-188k of h1 volume, price up 148-203% in the last hour, with 2,400+ buys vs ~500-510 sells. A near-identical token with the exact same name/symbol \\\"BNPaid\\\" (contract EojhUeHpQSRmpoQ8uFy9fRYgjquuGfE6TEEm6ub18Q7a) launched ~5 minutes earlier; it has lower current mcap ($16k) but higher cumulative h1 volume ($362k), meaning it already pumped harder and has since faded/dumped. No external discussion of either token, the project website (bnbpaid.tech), or the X handle (USEbNpaid) was found via web search in the time available.\",\"narrative\":{\"description\":\"The name \\\"BNPaid\\\" and domain \\\"bnbpaid.tech\\\" read as wordplay on \\\"BNB\\\" (Binance Coin) + \\\"paid,\\\" likely a joke referencing the crypto-culture trope of projects/influencers being \\\"paid\\\" for promotion or exchange listings. I found no article, meme thread, or cultural event this maps to.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"No identifiable external narrative is driving this; the only visible \\\"story\\\" is the token's own price chart (a fast pump.fun-style pump), which is self-referential momentum rather than an exogenous catalyst. Volume/buy counts in the packet are large, but zero corroborating social chatter (X, Reddit, Telegram, news) was found to explain demand beyond on-chain momentum-chasing.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"Two tokens share the identical name/symbol \\\"BNPaid,\\\" launched ~5 minutes apart. This one (GJGAm...) currently has the higher market cap ($104-119k vs $16k) suggesting it is the one 'winning' right now, but the other token racked up more cumulative volume ($362k vs $184k h1) before fading, meaning it pumped harder first. With no social posts found for either, I cannot determine which the market actually regards as canonical, or whether this is a coincidental clone/copy-launch (common on pump.fun when a name/joke catches on and multiple deployers fork it in the same minute).\",\"competing_tokens\":\"EojhUeHpQSRmpoQ8uFy9fRYgjquuGfE6TEEm6ub18Q7a: same name/symbol 'BNPaid', pair created ~5 min earlier, mcap now $16,150 (down from a bigger run implied by $362,070 h1 volume), similar liquidity (~$26.5k). This looks like the 'first mover' that already spiked and faded.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"unknown\",\"evidence\":\"Wallet data shows low bot_degen_rate (4.64%), 0 smart/renowned wallets, only 2 bundler and 5 fresh wallets flagged, and buys_per_unique_buyer_h1 of 1.14 (close to organic, not heavy same-wallet churn). This argues against obvious wash-trading bots. However, top-10 holder concentration is 85.17% (one wallet alone at 80.05%, not flagged as insider by RugCheck), which is a huge single-wallet overhang that could dump at any time. No X/Twitter, Reddit, Telegram, or news posts about this token or its competing twin were found despite multiple search attempts.\",\"uncertainty\":\"Cannot confirm whether the buying is organic retail/degen-trader momentum-chasing on pump.fun trending lists (plausible given the low bot rate and buyer-per-buy ratio) or coordinated/insider-driven volume designed to pump into the 80% holder's exit; X-native discussion (which search engines index poorly) could not be checked with the remaining budget.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Extreme concentration: a single wallet holds ~80% of supply (top10 = 85.17% ex-AMM/locker), a severe dump overhang not neutralized by mint/freeze renouncement\",\"Thin liquidity ($26-28k) against $104-119k mcap and ~$184k h1 volume implies a turnover ratio of ~6.6x in one hour \u2014 any large sell could move price violently in either direction\",\"Contradictory LP signals: RugCheck risk list flags 'Large Amount of LP Unlocked' at danger level (99.99% value) while the packet's own rug_guard field asserts LP is 100% burned/not removable \u2014 the two pools show 0% and 79.25% locked respectively, so the risk is not fully resolved\",\"Price has already moved +148% to +203% in the hour before detection, meaning much of the initial momentum may already be spent by entry time\",\"A duplicate same-name token exists, suggesting either a copy/clone launch or split attention between two pools, diluting any single narrative\"]},\"counterargument\":\"My p_runner is on the low-to-moderate side mainly because of zero corroborating social/narrative discovery and extreme holder concentration. The strongest case against that pessimism: raw on-chain flow here is genuinely unusual even for this cohort \u2014 2,400+ buys vs ~500 sells, over 2,100 unique buyers within an hour, and a low buys-per-buyer ratio (1.14) indicating broad, not churned, participation; bot_degen_rate is low and no smart-money exit signals are present. Pump.fun-graduate coins in this exact profile (fast buyer growth, low churn, renounced mint/freeze, burned LP) are precisely the type that occasionally produces the 1-in-8 base-rate runners, and momentum this strong immediately pre-entry has sometimes continued for another leg before any single whale chooses to sell. If the 80% holder is patient (e.g., it is the bonding-curve migration remainder rather than an active seller), the concentration risk may be overstated for a 30-minute window.\",\"unknowns\":[\"Whether the 80.05% top holder is a passive migration/LP-related wallet or an active seller poised to dump\",\"Which of the two identical-name 'BNPaid' tokens the community (if any) considers canonical, or whether both are disposable clones\",\"Any live X/Twitter discussion of the contract or ticker \u2014 X is poorly indexed by search engines and could not be directly verified within the 4-search budget\",\"Content of the project website bnbpaid.tech (not fetched \u2014 budget spent on searches)\",\"Whether 'BNPaid' references any real, currently unfolding crypto-culture joke or event I could not surface\",\"Reason for the contradictory RugCheck 'LP unlocked' danger flag vs. the packet's 'LP 100% burned' rug_guard conclusion\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"Used all 4 allotted searches on: (1) 'BNPaid solana token' general, (2) the raw contract address, (3) the project website/twitter handle, (4) the possible cultural narrative ('BNB paid' / Binance meme coin news). None surfaced any post, thread, or article specifically about this token or its X handle 'USEbNpaid'. Did not have budget left to fetch bnbpaid.tech directly, pump.fun page, or dedicated Reddit/Telegram/Discord searches \u2014 recorded as not_attempted rather than assumed empty.\"},\"thesis\":\"BNPaid shows strong raw on-chain momentum (rapid unique-buyer growth, low wash-trading signature) but has no discoverable external narrative, no organic social footprint, and is competing with an identical-name token that already spiked and faded \u2014 a pattern consistent with disposable pump.fun ticker clones. Combined with 80% single-wallet concentration against thin ($26-28k) liquidity and a price that already ran 148-203% before entry, the setup favors either a quick continuation exhaustion or a whale-driven reversal more than a fresh 2x leg. Rank near the middle-to-lower end of this cohort: better raw flow quality than a typical wash-traded shell, but materially worse structural/narrative footing than a coin with visible organic spread.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":30,\"survival_score\":38,\"attention_score\":52,\"manipulation_risk\":62,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/bnb_technology?lang=en\",\"what\":\"Unrelated BNB Technology X account surfaced in search, not connected to this token \u2014 used to confirm no direct hit for 'USEbNpaid'\"},{\"url\":\"https://bscscan.com/token/0xc0131615d020484024d0602d79a57d0179e86e38\",\"what\":\"An unrelated BSC token also named 'BNB PAID' (different chain, different contract) \u2014 confirms name collision risk / ticker is generic and reused across chains\"},{\"url\":\"https://cryptonews.com/cryptocurrency/best-bnb-meme-coins/\",\"what\":\"General BNB-chain meme coin roundup for Sept 2026 (BOB, Binance Life, stock-meme coins) \u2014 none reference 'BNPaid', used to check for a real cultural narrative this token might be riding\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-graduated Solana token \"BNPaid\" (contract GJGAmWnm8Xbzv7iGYvDELYA79A7fdriPa7LYgVBxMuif) shows an extremely fast, high-volume run: pool created ~2026-09-26T18:05:16Z, and by detection (~18:15Z, ~10 minutes old) it had gone from fresh launch to $104k-119k market cap on ~$184-188k of h1 volume, price up 148-203% in the last hour, with 2,400+ buys vs ~500-510 sells. A near-identical token with the exact same name/symbol \"BNPaid\" (contract EojhUeHpQSRmpoQ8uFy9fRYgjquuGfE6TEEm6ub18Q7a) launched ~5 minutes earlier; it has lower current mcap ($16k) but higher cumulative h1 volume ($362k), meaning it already pumped harder and has since faded/dumped. No external discussion of either token, the project website (bnbpaid.tech), or the X handle (USEbNpaid) was found via web search in the time available.",
+  "narrative": {
+   "description": "The name \"BNPaid\" and domain \"bnbpaid.tech\" read as wordplay on \"BNB\" (Binance Coin) + \"paid,\" likely a joke referencing the crypto-culture trope of projects/influencers being \"paid\" for promotion or exchange listings. I found no article, meme thread, or cultural event this maps to.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "No identifiable external narrative is driving this; the only visible \"story\" is the token's own price chart (a fast pump.fun-style pump), which is self-referential momentum rather than an exogenous catalyst. Volume/buy counts in the packet are large, but zero corroborating social chatter (X, Reddit, Telegram, news) was found to explain demand beyond on-chain momentum-chasing."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "Two tokens share the identical name/symbol \"BNPaid,\" launched ~5 minutes apart. This one (GJGAm...) currently has the higher market cap ($104-119k vs $16k) suggesting it is the one 'winning' right now, but the other token racked up more cumulative volume ($362k vs $184k h1) before fading, meaning it pumped harder first. With no social posts found for either, I cannot determine which the market actually regards as canonical, or whether this is a coincidental clone/copy-launch (common on pump.fun when a name/joke catches on and multiple deployers fork it in the same minute).",
+   "competing_tokens": "EojhUeHpQSRmpoQ8uFy9fRYgjquuGfE6TEEm6ub18Q7a: same name/symbol 'BNPaid', pair created ~5 min earlier, mcap now $16,150 (down from a bigger run implied by $362,070 h1 volume), similar liquidity (~$26.5k). This looks like the 'first mover' that already spiked and faded.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "unknown",
+   "evidence": "Wallet data shows low bot_degen_rate (4.64%), 0 smart/renowned wallets, only 2 bundler and 5 fresh wallets flagged, and buys_per_unique_buyer_h1 of 1.14 (close to organic, not heavy same-wallet churn). This argues against obvious wash-trading bots. However, top-10 holder concentration is 85.17% (one wallet alone at 80.05%, not flagged as insider by RugCheck), which is a huge single-wallet overhang that could dump at any time. No X/Twitter, Reddit, Telegram, or news posts about this token or its competing twin were found despite multiple search attempts.",
+   "uncertainty": "Cannot confirm whether the buying is organic retail/degen-trader momentum-chasing on pump.fun trending lists (plausible given the low bot rate and buyer-per-buy ratio) or coordinated/insider-driven volume designed to pump into the 80% holder's exit; X-native discussion (which search engines index poorly) could not be checked with the remaining budget."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Extreme concentration: a single wallet holds ~80% of supply (top10 = 85.17% ex-AMM/locker), a severe dump overhang not neutralized by mint/freeze renouncement",
+    "Thin liquidity ($26-28k) against $104-119k mcap and ~$184k h1 volume implies a turnover ratio of ~6.6x in one hour \u2014 any large sell could move price violently in either direction",
+    "Contradictory LP signals: RugCheck risk list flags 'Large Amount of LP Unlocked' at danger level (99.99% value) while the packet's own rug_guard field asserts LP is 100% burned/not removable \u2014 the two pools show 0% and 79.25% locked respectively, so the risk is not fully resolved",
+    "Price has already moved +148% to +203% in the hour before detection, meaning much of the initial momentum may already be spent by entry time",
+    "A duplicate same-name token exists, suggesting either a copy/clone launch or split attention between two pools, diluting any single narrative"
+   ]
+  },
+  "counterargument": "My p_runner is on the low-to-moderate side mainly because of zero corroborating social/narrative discovery and extreme holder concentration. The strongest case against that pessimism: raw on-chain flow here is genuinely unusual even for this cohort \u2014 2,400+ buys vs ~500 sells, over 2,100 unique buyers within an hour, and a low buys-per-buyer ratio (1.14) indicating broad, not churned, participation; bot_degen_rate is low and no smart-money exit signals are present. Pump.fun-graduate coins in this exact profile (fast buyer growth, low churn, renounced mint/freeze, burned LP) are precisely the type that occasionally produces the 1-in-8 base-rate runners, and momentum this strong immediately pre-entry has sometimes continued for another leg before any single whale chooses to sell. If the 80% holder is patient (e.g., it is the bonding-curve migration remainder rather than an active seller), the concentration risk may be overstated for a 30-minute window.",
+  "unknowns": [
+   "Whether the 80.05% top holder is a passive migration/LP-related wallet or an active seller poised to dump",
+   "Which of the two identical-name 'BNPaid' tokens the community (if any) considers canonical, or whether both are disposable clones",
+   "Any live X/Twitter discussion of the contract or ticker \u2014 X is poorly indexed by search engines and could not be directly verified within the 4-search budget",
+   "Content of the project website bnbpaid.tech (not fetched \u2014 budget spent on searches)",
+   "Whether 'BNPaid' references any real, currently unfolding crypto-culture joke or event I could not surface",
+   "Reason for the contradictory RugCheck 'LP unlocked' danger flag vs. the packet's 'LP 100% burned' rug_guard conclusion"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "Used all 4 allotted searches on: (1) 'BNPaid solana token' general, (2) the raw contract address, (3) the project website/twitter handle, (4) the possible cultural narrative ('BNB paid' / Binance meme coin news). None surfaced any post, thread, or article specifically about this token or its X handle 'USEbNpaid'. Did not have budget left to fetch bnbpaid.tech directly, pump.fun page, or dedicated Reddit/Telegram/Discord searches \u2014 recorded as not_attempted rather than assumed empty."
+  },
+  "thesis": "BNPaid shows strong raw on-chain momentum (rapid unique-buyer growth, low wash-trading signature) but has no discoverable external narrative, no organic social footprint, and is competing with an identical-name token that already spiked and faded \u2014 a pattern consistent with disposable pump.fun ticker clones. Combined with 80% single-wallet concentration against thin ($26-28k) liquidity and a price that already ran 148-203% before entry, the setup favors either a quick continuation exhaustion or a whale-driven reversal more than a fresh 2x leg. Rank near the middle-to-lower end of this cohort: better raw flow quality than a typical wash-traded shell, but materially worse structural/narrative footing than a coin with visible organic spread.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 30,
+  "survival_score": 38,
+  "attention_score": 52,
+  "manipulation_risk": 62,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/bnb_technology?lang=en",
+    "what": "Unrelated BNB Technology X account surfaced in search, not connected to this token \u2014 used to confirm no direct hit for 'USEbNpaid'"
+   },
+   {
+    "url": "https://bscscan.com/token/0xc0131615d020484024d0602d79a57d0179e86e38",
+    "what": "An unrelated BSC token also named 'BNB PAID' (different chain, different contract) \u2014 confirms name collision risk / ticker is generic and reused across chains"
+   },
+   {
+    "url": "https://cryptonews.com/cryptocurrency/best-bnb-meme-coins/",
+    "what": "General BNB-chain meme coin roundup for Sept 2026 (BOB, Binance Life, stock-meme coins) \u2014 none reference 'BNPaid', used to check for a real cultural narrative this token might be riding"
+   }
+  ]
+ },
+ "ttft_ms": 5224,
+ "type": "result",
+ "duration_ms": 159905,
+ "uuid": "e85a14a2-c868-4aec-997b-5fa200320afa",
+ "ttft_stream_ms": 1017,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 1018,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,189 @@
+{
+ "duration_api_ms": 124199,
+ "stop_reason": "tool_use",
+ "session_id": "4b1fb490-4a6f-4755-8bcf-0efdf01f5d6e",
+ "total_cost_usd": 0.18519940000000001,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11762,
+  "cache_read_input_tokens": 29297,
+  "output_tokens": 8761,
+  "output_tokens_details": {
+   "thinking_tokens": 4444
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11762,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 7585,
+    "cache_read_input_tokens": 14075,
+    "cache_creation_input_tokens": 1176,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1176
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 6,
+   "outputTokens": 8761,
+   "cacheReadInputTokens": 29297,
+   "cacheCreationInputTokens": 11762,
+   "webSearchRequests": 0,
+   "costUSD": 0.1405294,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 4444,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 19825,
+   "outputTokens": 969,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.04467,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":38,\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN wallet data shows 108 of 124 holders (87%) tagged as bundler_wallets, top_bundler_trader_pct 47.26%, and 70/124 fresh wallets \u2014 consistent with a single-launch bundle rather than organic dispersed buying. 0 smart_money, 0 renowned, 0 sniper wallets found, which is unusual for organic pump.fun momentum. RugCheck independently flags 'Copycat token' (using a verified token's symbol). The project's X account (botxspace) has a rename history stretching back to 2023 (BotXErc20 -> botxsol -> botxspace), i.e. a recycled account, not a fresh, purpose-built one. dexscreener_paid_boosts/ads are flagged false in the packet, so no paid DEX promotion detected specifically.\",\"uncertainty\":\"Could not view the live X account (x.com/botxspace returned HTTP 402) or search X directly for $BOTX/contract-address posts due to search engines indexing X poorly and budget limits, so I cannot confirm or rule out organic tweet spread beyond the project's own account.\"},\"continuation_view\":\"fade\",\"counterargument\":\"The bot-launcher premise (tag @botxspace on X with a ticker to auto-launch a token via UsePaid, per botx.space) is a real, understandable mechanic that could recur every time someone uses the service, giving this specific token repeat visibility if the account is actively used for launches. Volume/mcap turnover (h1 turnover 2.47) and buys_per_unique_buyer of 1.52 are not extreme churn ratios, so some of the 360 'unique buyers' (GeckoTerminal) could be real degen/bot traffic rather than pure wash. Mint/freeze renounced, 0% tax, no honeypot, and no removable LP mean the structural rug vector is closed; the token could keep trading even if this specific analysis of insider risk is overstated, and a fast, greedy crowd could still push it to +100% in the 30-minute window before any insider dump materializes.\",\"manipulation_risk\":76,\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"87% of holders (108/124) are GMGN-tagged bundler wallets from the same launch, a strong overhang for coordinated dumping\",\"Top10 holders (ex-pool) hold 27.26%; GeckoTerminal's own unfiltered top10 shows 55.5%\",\"Price already up ~929-942% in the ~22 minutes before entry, so much of the curve's easy upside within this narrow window may be already spent\",\"Curve is close to migration (97.76/115 virtual SOL) which could trigger a distinct liquidity/behavior regime change during the 30-min hold\",\"RugCheck 'Copycat token' warning against a verified token's symbol adds reputational/legitimacy risk that can trigger sudden sentiment reversal\",\"0 smart-money/renowned wallets and 0 snipers is atypical for a genuinely hot organic pump.fun launch\"]},\"narrative\":{\"description\":\"BotX (botx.space) presents itself not as a themed memecoin but as an X-native 'tag-to-launch' token-creation service: users tag @botxspace with a ticker and a recipient handle, the bot launches the token via UsePaid, and fees route to the tagged recipient in X Money. This BOTX token appears to be that service's own token launched on pump.fun.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The 'X bot that launches tokens for you' mechanic is a real, recognizable micro-narrative in the Solana/X meme ecosystem (similar in spirit to other auto-launch bots), which could generate periodic attention each time it's used to spin up new tokens. However, I found no evidence this specific launch is currently being amplified beyond its own account/website; the observed price spike (+929% h1) looks driven by wallet activity structured as bundles rather than by any documented external narrative event, article, or KOL wave.\"},\"observation_window\":\"1h\",\"p_runner\":9,\"p_rug\":42,\"research_confidence\":\"medium\",\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Web search for the exact contract address and $BOTX returned no results for this token; it surfaced an unrelated older ERC20 project called 'BOTXCOIN' (CoinDesk, @botxofficial on X) confirming ticker collision. Direct fetch of x.com/botxspace failed with HTTP 402 (paywalled/blocked), so I could not read the project's own recent posts or follower/engagement counts. botx.space fetched successfully and describes a tag-to-launch bot service with no team, roadmap, or contract address disclosed. No telegram handle was provided in the packet (geckoterminal_telegram_handle null) and Discord/Reddit were not searched due to the 4-call budget being spent on X search and the two most decision-relevant fetches (project site, project X account).\"},\"survival_score\":48,\"tail_class\":\"A_dead_or_chop\",\"thesis\":\"BotX is a pump.fun-stage token tied to an X 'tag-to-launch' bot service (botx.space/@botxspace) that already spiked ~930% in its first ~20 minutes before this entry. The wallet composition (87% bundler-tagged, 0 smart money, 0 snipers) points to a coordinated/bundled distribution rather than broad organic demand, and RugCheck independently flags it as a copycat of a verified token's symbol while the project's X account is a multi-year recycled handle (BotXErc20 -> botxsol -> botxspace). No external X, news, Reddit, or Telegram chatter about this specific token or contract was found within the research budget, and a direct check of the project's own X account was blocked (HTTP 402). Structurally the token is clean on paper (renounced mint/freeze, no tax, no honeypot, no removable LP), but the concentration of bundled wallets sitting on an already-large paper gain is the dominant risk for the 30-minute trade window: buying now means buying into a coin that has already made most of its move, with an insider-heavy holder base positioned to sell into any further strength.\",\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This SPL/pump.fun token is presumably the token that powers or represents the botx.space tag-to-launch service, based on matching website, X handle, and creator, but the packet's own RugCheck data flags it as a 'Copycat token' using a verified token's symbol, and independent web search surfaced a wholly unrelated, pre-existing 'BOTXCOIN' ERC20 project with its own team and X account (@botxofficial). The project's X handle itself was renamed from 'BotXErc20' (2023) through 'botxsol' to 'botxspace', suggesting the account/brand has been repurposed multiple times rather than being a fresh, purpose-built launch for this narrative.\",\"competing_tokens\":\"packet's same_ticker_or_name_tokens list is empty, but RugCheck flags a specific verified token (Xsi8P9r7ZWDBBnBj9JTfnKWqyKNV19X2CQPWQsGdjnS) sharing the BOTX symbol, and web search separately surfaced an older Ethereum-based BOTXCOIN project (coindesk.com/price/botx, @botxofficial) \u2014 at least two other entities have used the BOTX name/ticker before this token.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"unknowns\":[\"Whether the botx.space tag-to-launch mechanic has any actual current usage/adoption (e.g., recent launches via the bot) or is dormant/inactive\",\"Content and engagement level of the @botxspace X account itself (fetch blocked with HTTP 402)\",\"Whether the verified token RugCheck flags as sharing the BOTX symbol has any real community or is itself another minor project\",\"Identity or history of the creator wallet (1QaB4yqcrJWKGuLNp1zWjVkZyqCtgZbkvpe5N5hP4TR) beyond this one token and its $47.9k best-ATH prior launch\",\"Whether the 233 total_holders (structure) vs 124 holder_count (GMGN) discrepancy reflects wallets excluded from GMGN's bundler/fresh/etc. tagging, which would change the true bundle share\",\"Any Telegram/Discord community activity, which was not attempted within budget\"],\"what_is_happening\":\"A pump.fun-stage Solana token called BotX (BOTX) tied to botx.space, a service that lets X users tag @botxspace with a ticker to auto-launch a token via UsePaid, spiked roughly 930-940% in the ~20 minutes before this snapshot, reaching a $36k market cap on $23.7k of curve liquidity with heavy transaction counts (548 buys / 392 sells in the reporting window). GMGN wallet analysis shows the holder base is dominated by bundler-tagged wallets (108/124, ~87%) with no smart-money or sniper wallets detected, and RugCheck flags the token as a 'Copycat token' reusing a verified token's symbol. The project's X account has a multi-year rename history, indicating a recycled handle rather than a fresh one built for this specific narrative.\",\"sources\":[{\"url\":\"https://botx.space/\",\"what\":\"Project's own website: describes BotX as a tag-to-launch X bot service (tag @botxspace + ticker + recipient handle, launches via UsePaid, fees paid in X Money); no team, roadmap, or contract address disclosed; disclaimer 'Not affiliated with X Corp. or UsePaid.'\"},{\"url\":\"https://www.coindesk.com/price/botx\",\"what\":\"CoinDesk price page for an unrelated, pre-existing ERC20 project called BOTXCOIN with its own team (CEO Indra Kesuma), confirming the BOTX ticker/name has prior, unrelated usage.\"},{\"url\":\"https://x.com/botxofficial\",\"what\":\"Separate X account (@botxofficial) tied to the older BOTXCOIN ERC20 project, distinct from this token's @botxspace account, further evidence of ticker/name collision.\"},{\"url\":\"https://x.com/botxspace\",\"what\":\"Attempted fetch of the project's own X account returned HTTP 402 (blocked/paywalled); could not verify recent posts, followers, or engagement.\"}]}",
+ "structured_output": {
+  "attention_score": 38,
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN wallet data shows 108 of 124 holders (87%) tagged as bundler_wallets, top_bundler_trader_pct 47.26%, and 70/124 fresh wallets \u2014 consistent with a single-launch bundle rather than organic dispersed buying. 0 smart_money, 0 renowned, 0 sniper wallets found, which is unusual for organic pump.fun momentum. RugCheck independently flags 'Copycat token' (using a verified token's symbol). The project's X account (botxspace) has a rename history stretching back to 2023 (BotXErc20 -> botxsol -> botxspace), i.e. a recycled account, not a fresh, purpose-built one. dexscreener_paid_boosts/ads are flagged false in the packet, so no paid DEX promotion detected specifically.",
+   "uncertainty": "Could not view the live X account (x.com/botxspace returned HTTP 402) or search X directly for $BOTX/contract-address posts due to search engines indexing X poorly and budget limits, so I cannot confirm or rule out organic tweet spread beyond the project's own account."
+  },
+  "continuation_view": "fade",
+  "counterargument": "The bot-launcher premise (tag @botxspace on X with a ticker to auto-launch a token via UsePaid, per botx.space) is a real, understandable mechanic that could recur every time someone uses the service, giving this specific token repeat visibility if the account is actively used for launches. Volume/mcap turnover (h1 turnover 2.47) and buys_per_unique_buyer of 1.52 are not extreme churn ratios, so some of the 360 'unique buyers' (GeckoTerminal) could be real degen/bot traffic rather than pure wash. Mint/freeze renounced, 0% tax, no honeypot, and no removable LP mean the structural rug vector is closed; the token could keep trading even if this specific analysis of insider risk is overstated, and a fast, greedy crowd could still push it to +100% in the 30-minute window before any insider dump materializes.",
+  "manipulation_risk": 76,
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "87% of holders (108/124) are GMGN-tagged bundler wallets from the same launch, a strong overhang for coordinated dumping",
+    "Top10 holders (ex-pool) hold 27.26%; GeckoTerminal's own unfiltered top10 shows 55.5%",
+    "Price already up ~929-942% in the ~22 minutes before entry, so much of the curve's easy upside within this narrow window may be already spent",
+    "Curve is close to migration (97.76/115 virtual SOL) which could trigger a distinct liquidity/behavior regime change during the 30-min hold",
+    "RugCheck 'Copycat token' warning against a verified token's symbol adds reputational/legitimacy risk that can trigger sudden sentiment reversal",
+    "0 smart-money/renowned wallets and 0 snipers is atypical for a genuinely hot organic pump.fun launch"
+   ]
+  },
+  "narrative": {
+   "description": "BotX (botx.space) presents itself not as a themed memecoin but as an X-native 'tag-to-launch' token-creation service: users tag @botxspace with a ticker and a recipient handle, the bot launches the token via UsePaid, and fees route to the tagged recipient in X Money. This BOTX token appears to be that service's own token launched on pump.fun.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The 'X bot that launches tokens for you' mechanic is a real, recognizable micro-narrative in the Solana/X meme ecosystem (similar in spirit to other auto-launch bots), which could generate periodic attention each time it's used to spin up new tokens. However, I found no evidence this specific launch is currently being amplified beyond its own account/website; the observed price spike (+929% h1) looks driven by wallet activity structured as bundles rather than by any documented external narrative event, article, or KOL wave."
+  },
+  "observation_window": "1h",
+  "p_runner": 9,
+  "p_rug": 42,
+  "research_confidence": "medium",
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Web search for the exact contract address and $BOTX returned no results for this token; it surfaced an unrelated older ERC20 project called 'BOTXCOIN' (CoinDesk, @botxofficial on X) confirming ticker collision. Direct fetch of x.com/botxspace failed with HTTP 402 (paywalled/blocked), so I could not read the project's own recent posts or follower/engagement counts. botx.space fetched successfully and describes a tag-to-launch bot service with no team, roadmap, or contract address disclosed. No telegram handle was provided in the packet (geckoterminal_telegram_handle null) and Discord/Reddit were not searched due to the 4-call budget being spent on X search and the two most decision-relevant fetches (project site, project X account)."
+  },
+  "survival_score": 48,
+  "tail_class": "A_dead_or_chop",
+  "thesis": "BotX is a pump.fun-stage token tied to an X 'tag-to-launch' bot service (botx.space/@botxspace) that already spiked ~930% in its first ~20 minutes before this entry. The wallet composition (87% bundler-tagged, 0 smart money, 0 snipers) points to a coordinated/bundled distribution rather than broad organic demand, and RugCheck independently flags it as a copycat of a verified token's symbol while the project's X account is a multi-year recycled handle (BotXErc20 -> botxsol -> botxspace). No external X, news, Reddit, or Telegram chatter about this specific token or contract was found within the research budget, and a direct check of the project's own X account was blocked (HTTP 402). Structurally the token is clean on paper (renounced mint/freeze, no tax, no honeypot, no removable LP), but the concentration of bundled wallets sitting on an already-large paper gain is the dominant risk for the 30-minute trade window: buying now means buying into a coin that has already made most of its move, with an insider-heavy holder base positioned to sell into any further strength.",
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This SPL/pump.fun token is presumably the token that powers or represents the botx.space tag-to-launch service, based on matching website, X handle, and creator, but the packet's own RugCheck data flags it as a 'Copycat token' using a verified token's symbol, and independent web search surfaced a wholly unrelated, pre-existing 'BOTXCOIN' ERC20 project with its own team and X account (@botxofficial). The project's X handle itself was renamed from 'BotXErc20' (2023) through 'botxsol' to 'botxspace', suggesting the account/brand has been repurposed multiple times rather than being a fresh, purpose-built launch for this narrative.",
+   "competing_tokens": "packet's same_ticker_or_name_tokens list is empty, but RugCheck flags a specific verified token (Xsi8P9r7ZWDBBnBj9JTfnKWqyKNV19X2CQPWQsGdjnS) sharing the BOTX symbol, and web search separately surfaced an older Ethereum-based BOTXCOIN project (coindesk.com/price/botx, @botxofficial) \u2014 at least two other entities have used the BOTX name/ticker before this token.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "unknowns": [
+   "Whether the botx.space tag-to-launch mechanic has any actual current usage/adoption (e.g., recent launches via the bot) or is dormant/inactive",
+   "Content and engagement level of the @botxspace X account itself (fetch blocked with HTTP 402)",
+   "Whether the verified token RugCheck flags as sharing the BOTX symbol has any real community or is itself another minor project",
+   "Identity or history of the creator wallet (1QaB4yqcrJWKGuLNp1zWjVkZyqCtgZbkvpe5N5hP4TR) beyond this one token and its $47.9k best-ATH prior launch",
+   "Whether the 233 total_holders (structure) vs 124 holder_count (GMGN) discrepancy reflects wallets excluded from GMGN's bundler/fresh/etc. tagging, which would change the true bundle share",
+   "Any Telegram/Discord community activity, which was not attempted within budget"
+  ],
+  "what_is_happening": "A pump.fun-stage Solana token called BotX (BOTX) tied to botx.space, a service that lets X users tag @botxspace with a ticker to auto-launch a token via UsePaid, spiked roughly 930-940% in the ~20 minutes before this snapshot, reaching a $36k market cap on $23.7k of curve liquidity with heavy transaction counts (548 buys / 392 sells in the reporting window). GMGN wallet analysis shows the holder base is dominated by bundler-tagged wallets (108/124, ~87%) with no smart-money or sniper wallets detected, and RugCheck flags the token as a 'Copycat token' reusing a verified token's symbol. The project's X account has a multi-year rename history, indicating a recycled handle rather than a fresh one built for this specific narrative.",
+  "sources": [
+   {
+    "url": "https://botx.space/",
+    "what": "Project's own website: describes BotX as a tag-to-launch X bot service (tag @botxspace + ticker + recipient handle, launches via UsePaid, fees paid in X Money); no team, roadmap, or contract address disclosed; disclaimer 'Not affiliated with X Corp. or UsePaid.'"
+   },
+   {
+    "url": "https://www.coindesk.com/price/botx",
+    "what": "CoinDesk price page for an unrelated, pre-existing ERC20 project called BOTXCOIN with its own team (CEO Indra Kesuma), confirming the BOTX ticker/name has prior, unrelated usage."
+   },
+   {
+    "url": "https://x.com/botxofficial",
+    "what": "Separate X account (@botxofficial) tied to the older BOTXCOIN ERC20 project, distinct from this token's @botxspace account, further evidence of ticker/name collision."
+   },
+   {
+    "url": "https://x.com/botxspace",
+    "what": "Attempted fetch of the project's own X account returned HTTP 402 (blocked/paywalled); could not verify recent posts, followers, or engagement."
+   }
+  ]
+ },
+ "ttft_ms": 7723,
+ "type": "result",
+ "duration_ms": 118242,
+ "uuid": "bf55dc85-18f3-4473-b032-ffc50682eba4",
+ "ttft_stream_ms": 1217,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1217,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

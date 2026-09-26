@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 131373,
+ "stop_reason": "tool_use",
+ "session_id": "e312a08a-fd9c-47f7-9324-00ee3ffb104e",
+ "total_cost_usd": 0.296307,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 18851,
+  "cache_read_input_tokens": 48290,
+  "output_tokens": 10186,
+  "output_tokens_details": {
+   "thinking_tokens": 3563
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18851,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3160,
+    "cache_read_input_tokens": 17770,
+    "cache_creation_input_tokens": 4570,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4570
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 10186,
+   "cacheReadInputTokens": 48290,
+   "cacheCreationInputTokens": 18851,
+   "webSearchRequests": 0,
+   "costUSD": 0.186938,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 3563,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 50174,
+   "outputTokens": 1839,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.109369,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-launched Solana token \\\"OnlyX\\\" ($ONLYX, contract 2GMow...Spump) migrated to a PumpSwap AMM pool ~16 minutes before detection and has already run +86% in its first hour, with very large buy pressure (2,989 buys vs 585 sells h1; ~2,906 unique buyers vs 362 unique sellers). Liquidity is thin ($33.5k) relative to market cap (~$146-158k), giving high turnover (5.2x h1) and volatility. Structurally it looks clean: mint/freeze renounced, LP 100% locked, low top10 concentration (9%, excluding AMM/locker), no RugCheck risks, creator balance 0, no prior tokens by this creator. No confirmed organic discussion was found on X, Reddit, Telegram, Discord, or news outlets in the time available; the only content found is the project's own website, which frames the coin around a generic \\\"narratives begin here / timeline\\\" meme concept with no concrete real-world hook.\",\"narrative\":{\"description\":\"OnlyX brands itself around \\\"the place where crypto narratives begin\\\" / \\\"Posted first. Understood later\\\" \u2014 a self-referential meme about crypto attention/timelines rather than a reference to any specific real-world event, person, or trend. It is generic crypto-culture branding, not tied to a verifiable news event.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"On-chain metrics (very high buy count, ~2,900 unique buyers, low buys-per-buyer ratio of 1.08 suggesting largely distinct wallets rather than churn) show real, broad-based on-chain buying pressure in the first ~16 minutes post-migration. But I found no corroborating external discussion (no X posts findable via search, no Reddit/Telegram/news threads), so I cannot confirm whether this is genuine cross-platform narrative spread or a self-contained pump.fun/bot-assisted launch burst that hasn't (yet) escaped its origin.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"This is the currently active, liquid OnlyX/ONLYX token with real volume and a working pool. A prior token with the same name/ticker (2GrwX...pump) exists but is effectively dead ($2.7k mcap, $3.1k liquidity, 0 volume h1, created ~9.6 days earlier), so there is no live competition for attention right now.\",\"competing_tokens\":\"One earlier-launched ONLYX token (2GrwXsCxRP5SBqKczB8QDdK88iAfxRJ2cST93fXcpump) exists but is dormant/dead with near-zero liquidity and volume \u2014 not a live competitor.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"GMGN wallet tags show relatively low insider/bot fractions for a token this size: 17 sniper wallets, 10 bundler wallets, 17 fresh wallets out of 2,567 holders; top10 holder concentration only 9% (ex-AMM/locker); 0 smart-money or renowned wallets; buys-per-unique-buyer of 1.08 (not churn-like). No paid DexScreener boost/ad/trending-bar flags. This argues against a small-wallet-cluster wash-trading operation.\",\"uncertainty\":\"No X/Twitter, Reddit, Telegram, or Discord posts about this token were found via web search in the time available (X is poorly indexed by search engines and the profile fetch returned a paywall error), so I cannot confirm or rule out coordinated promotion, KOL shilling, or call-channel activity happening on platforms I could not access. dexscreener_profile 'community_takeover: true' flag is also unexplained and worth noting as a minor anomaly.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Liquidity ($33.5k) is thin relative to market cap (~$146-158k); turnover 5.17x in h1 means large price swings on modest flow\",\"Price has already risen +86% in the hour before detection, so the entry (4 min after detection) is chasing a move already in progress, raising reversion risk within the 30-min hold\",\"17 sniper + 10 bundler wallets present, even if concentration is currently low, they can coordinate exit\",\"Token is only ~16-20 minutes old at entry with a very short trading history to judge sustainability\"]},\"counterargument\":\"The strongest case against a bullish read: this looks like a classic early pump.fun migration spike \u2014 a burst of buys immediately after graduation to the AMM, driven by snipers/bots front-running the migration, that has already produced an +86% move before my detection. Search engines found zero external discussion (no X, Reddit, Telegram, news), so there is no confirmed evidence the attention extends beyond the token's own trading activity. If the burst is mechanical (migration-triggered sniping) rather narrative-driven, the most likely outcome is a fast fade/reversion once early buyers take profit, which would hit the -50% stop rather than +100% within 30 minutes despite structurally clean tokenomics.\",\"unknowns\":[\"Whether there is genuine organic discussion of $ONLYX on X/Twitter that search engines simply failed to surface\",\"Whether the 'community_takeover: true' DexScreener flag indicates a rebrand/relaunch history not visible in the packet\",\"Whether the ~2,900 unique buyers in the first ~16-20 minutes reflects genuine broad retail interest or coordinated/bot-assisted wallet generation\",\"Whether the dev/creator (0% balance, first token) has any off-chain reputation or history not captured by GMGN\",\"Whether the price has already peaked by the time of entry (4 minutes after detection) given the strong deceleration in the h1-vs-h6 volume acceleration ratio (0.272)\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"X/Twitter search only returned unrelated accounts with similar names (OnlyMemes, OnlyUpMeme, etc.), not the actual $ONLYX project account or posts about it; direct fetch of x.com/OnlyXMeme returned HTTP 402 (paywalled/blocked), so genuine X activity could not be verified either way. Project website (onlyxcoin.lol) was fetched successfully and gave narrative framing but no contract-specific community links. Telegram/Discord were not directly searched due to time constraints (no telegram handle was even provided in the packet: geckoterminal_telegram_handle is null).\"},\"thesis\":\"OnlyX shows genuinely strong on-chain buy pressure (high unique-buyer count, low churn ratio, clean structural profile: renounced authorities, 100% locked LP, low concentration, no RugCheck flags) but has already moved +86% before this decision point and has zero confirmed external/organic narrative traction on X, Reddit, Telegram, or news. The thin liquidity relative to market cap and the \\\"buying into an already-hot pump.fun migration\\\" pattern make this a coin where the momentum could either extend (if real demand keeps arriving) or snap back hard (if the burst was migration-triggered sniping). Structure favors survival past the trade window; the entry timing and total lack of externally-verifiable narrative spread argue against a high probability of a clean +100% before -50% within 30 minutes.\",\"continuation_view\":\"neutral\",\"p_runner\":17,\"p_rug\":22,\"survival_score\":70,\"attention_score\":52,\"manipulation_risk\":48,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://www.onlyxcoin.lol\",\"what\":\"Project website: narrative framing (\\\"Posted first. Understood later\\\", crypto-timeline meme concept), disclaimer of independence from X Corp\"},{\"url\":\"https://x.com/OnlyXMeme\",\"what\":\"Attempted fetch of project's X account; returned HTTP 402, could not verify content directly\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-launched Solana token \"OnlyX\" ($ONLYX, contract 2GMow...Spump) migrated to a PumpSwap AMM pool ~16 minutes before detection and has already run +86% in its first hour, with very large buy pressure (2,989 buys vs 585 sells h1; ~2,906 unique buyers vs 362 unique sellers). Liquidity is thin ($33.5k) relative to market cap (~$146-158k), giving high turnover (5.2x h1) and volatility. Structurally it looks clean: mint/freeze renounced, LP 100% locked, low top10 concentration (9%, excluding AMM/locker), no RugCheck risks, creator balance 0, no prior tokens by this creator. No confirmed organic discussion was found on X, Reddit, Telegram, Discord, or news outlets in the time available; the only content found is the project's own website, which frames the coin around a generic \"narratives begin here / timeline\" meme concept with no concrete real-world hook.",
+  "narrative": {
+   "description": "OnlyX brands itself around \"the place where crypto narratives begin\" / \"Posted first. Understood later\" \u2014 a self-referential meme about crypto attention/timelines rather than a reference to any specific real-world event, person, or trend. It is generic crypto-culture branding, not tied to a verifiable news event.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "On-chain metrics (very high buy count, ~2,900 unique buyers, low buys-per-buyer ratio of 1.08 suggesting largely distinct wallets rather than churn) show real, broad-based on-chain buying pressure in the first ~16 minutes post-migration. But I found no corroborating external discussion (no X posts findable via search, no Reddit/Telegram/news threads), so I cannot confirm whether this is genuine cross-platform narrative spread or a self-contained pump.fun/bot-assisted launch burst that hasn't (yet) escaped its origin."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "This is the currently active, liquid OnlyX/ONLYX token with real volume and a working pool. A prior token with the same name/ticker (2GrwX...pump) exists but is effectively dead ($2.7k mcap, $3.1k liquidity, 0 volume h1, created ~9.6 days earlier), so there is no live competition for attention right now.",
+   "competing_tokens": "One earlier-launched ONLYX token (2GrwXsCxRP5SBqKczB8QDdK88iAfxRJ2cST93fXcpump) exists but is dormant/dead with near-zero liquidity and volume \u2014 not a live competitor.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "GMGN wallet tags show relatively low insider/bot fractions for a token this size: 17 sniper wallets, 10 bundler wallets, 17 fresh wallets out of 2,567 holders; top10 holder concentration only 9% (ex-AMM/locker); 0 smart-money or renowned wallets; buys-per-unique-buyer of 1.08 (not churn-like). No paid DexScreener boost/ad/trending-bar flags. This argues against a small-wallet-cluster wash-trading operation.",
+   "uncertainty": "No X/Twitter, Reddit, Telegram, or Discord posts about this token were found via web search in the time available (X is poorly indexed by search engines and the profile fetch returned a paywall error), so I cannot confirm or rule out coordinated promotion, KOL shilling, or call-channel activity happening on platforms I could not access. dexscreener_profile 'community_takeover: true' flag is also unexplained and worth noting as a minor anomaly."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Liquidity ($33.5k) is thin relative to market cap (~$146-158k); turnover 5.17x in h1 means large price swings on modest flow",
+    "Price has already risen +86% in the hour before detection, so the entry (4 min after detection) is chasing a move already in progress, raising reversion risk within the 30-min hold",
+    "17 sniper + 10 bundler wallets present, even if concentration is currently low, they can coordinate exit",
+    "Token is only ~16-20 minutes old at entry with a very short trading history to judge sustainability"
+   ]
+  },
+  "counterargument": "The strongest case against a bullish read: this looks like a classic early pump.fun migration spike \u2014 a burst of buys immediately after graduation to the AMM, driven by snipers/bots front-running the migration, that has already produced an +86% move before my detection. Search engines found zero external discussion (no X, Reddit, Telegram, news), so there is no confirmed evidence the attention extends beyond the token's own trading activity. If the burst is mechanical (migration-triggered sniping) rather narrative-driven, the most likely outcome is a fast fade/reversion once early buyers take profit, which would hit the -50% stop rather than +100% within 30 minutes despite structurally clean tokenomics.",
+  "unknowns": [
+   "Whether there is genuine organic discussion of $ONLYX on X/Twitter that search engines simply failed to surface",
+   "Whether the 'community_takeover: true' DexScreener flag indicates a rebrand/relaunch history not visible in the packet",
+   "Whether the ~2,900 unique buyers in the first ~16-20 minutes reflects genuine broad retail interest or coordinated/bot-assisted wallet generation",
+   "Whether the dev/creator (0% balance, first token) has any off-chain reputation or history not captured by GMGN",
+   "Whether the price has already peaked by the time of entry (4 minutes after detection) given the strong deceleration in the h1-vs-h6 volume acceleration ratio (0.272)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "X/Twitter search only returned unrelated accounts with similar names (OnlyMemes, OnlyUpMeme, etc.), not the actual $ONLYX project account or posts about it; direct fetch of x.com/OnlyXMeme returned HTTP 402 (paywalled/blocked), so genuine X activity could not be verified either way. Project website (onlyxcoin.lol) was fetched successfully and gave narrative framing but no contract-specific community links. Telegram/Discord were not directly searched due to time constraints (no telegram handle was even provided in the packet: geckoterminal_telegram_handle is null)."
+  },
+  "thesis": "OnlyX shows genuinely strong on-chain buy pressure (high unique-buyer count, low churn ratio, clean structural profile: renounced authorities, 100% locked LP, low concentration, no RugCheck flags) but has already moved +86% before this decision point and has zero confirmed external/organic narrative traction on X, Reddit, Telegram, or news. The thin liquidity relative to market cap and the \"buying into an already-hot pump.fun migration\" pattern make this a coin where the momentum could either extend (if real demand keeps arriving) or snap back hard (if the burst was migration-triggered sniping). Structure favors survival past the trade window; the entry timing and total lack of externally-verifiable narrative spread argue against a high probability of a clean +100% before -50% within 30 minutes.",
+  "continuation_view": "neutral",
+  "p_runner": 17,
+  "p_rug": 22,
+  "survival_score": 70,
+  "attention_score": 52,
+  "manipulation_risk": 48,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://www.onlyxcoin.lol",
+    "what": "Project website: narrative framing (\"Posted first. Understood later\", crypto-timeline meme concept), disclaimer of independence from X Corp"
+   },
+   {
+    "url": "https://x.com/OnlyXMeme",
+    "what": "Attempted fetch of project's X account; returned HTTP 402, could not verify content directly"
+   }
+  ]
+ },
+ "ttft_ms": 1568,
+ "type": "result",
+ "duration_ms": 110610,
+ "uuid": "42226754-874d-4f3b-839d-ee6a523f2cb2",
+ "ttft_stream_ms": 1121,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 1121,
+ "queued_turn_count": 0,
+ "result_index": 0
+}
