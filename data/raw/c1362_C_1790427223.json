@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 37989,
+ "stop_reason": "tool_use",
+ "session_id": "66682faf-5d5b-45eb-8a80-632f07b20047",
+ "total_cost_usd": 0.19923680000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11649,
+  "cache_read_input_tokens": 28069,
+  "output_tokens": 2763,
+  "output_tokens_details": {
+   "thinking_tokens": 281
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11649,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2280,
+    "cache_read_input_tokens": 13457,
+    "cache_creation_input_tokens": 956,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 956
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2763,
+   "cacheReadInputTokens": 28069,
+   "cacheCreationInputTokens": 11649,
+   "webSearchRequests": 0,
+   "costUSD": 0.1540898,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 281,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22052,
+   "outputTokens": 619,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045147,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DEBT (84MW\u2026) is a Meteora virtual-curve token that migrated to PumpSwap the moment it was created, about 11 minutes before detection. It is one of at least 5 \\\"DEBT\\\"/\\\"DEBT COIN\\\" clones launched on Solana in the last ~2 hours, all apparently riding an Eric Bolling X post (the packet's twitter link is ericbolling/status/2103816977047531911, which I could not fetch: HTTP 402). Its listed \\\"website\\\" is a usepaid.app page for a different DEBT token (FYM6\u2026), which suggests metadata was copy-pasted from a rival. Older clones are larger: BLPK\u2026 at $838k, FYM6\u2026 at $359k with $4.2M h1 volume, and 4Ptj\u2026 with $1.8M h1 volume. The trigger was a 5-minute volume burst ($157k) and +270% in the first hour. The flow is odd: 1,629 unique buyers against only 74 unique sellers, and GMGN tags 41 bundler wallets.\",\"narrative\":{\"description\":\"A national-debt / Eric Bolling themed meme. An existing DebtCoin project (debtcoin.us) pitches paying down the US debt. Today's wave of clones seems to be sparked by an Eric Bolling X post whose content I could not see.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A political commentator's post that reads as related to a ticker set off a clone swarm. Several DEBT tokens are doing millions in hourly volume, so the theme has real short-term flow.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing marks this token as canonical. It is a late clone (created ~12:42Z, after FYM6 at ~12:02Z, 4Ptj and BLPK), and its metadata points to another token's page.\",\"competing_tokens\":\"BLPKe93\u2026 (DEBT COIN, $838k), FYM6PhwA\u2026 (DEBT COIN, $359k, $4.2M h1 vol), 4Ptj3s9\u2026 ($148k, $1.8M h1 vol), tZNEqT2\u2026 ($86k), plus the older vLieQF\u2026 DebtCoin and several dead copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"1,629 unique buyers but only 74 unique sellers, and 41 bundler wallets, which looks like distributed bot buying or bundled wallets. There are no smart or renowned wallets, no paid DexScreener promotion, and no socials of its own.\",\"uncertainty\":\"I could not see X posts. The buyer/seller split could be ordinary swarm FOMO spread across clones.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked (danger), which conflicts with GMGN's lp_burn_ratio of 1.0\",\"One unlabeled holder has 80% of supply (possibly the Meteora pool, but unverified)\",\"41 bundler wallets\",\"Liquidity of only $32k against a $205k market cap\",\"Larger same-ticker clones pull the flow away from this one\"]},\"counterargument\":\"The DEBT swarm is hot, with millions in hourly volume across clones, and this token is among the youngest. Clone swarms often rotate money into lower-cap copies, so a move from $205k to $410k is plausible if the theme keeps growing. The mint is renounced, the creator holds nothing, and GMGN shows the LP as burned.\",\"unknowns\":[\"What the Eric Bolling post says\",\"Whether the 80% holder is the pool or a whale\",\"The real LP lock status, since RugCheck and GMGN disagree\",\"Any X discussion of this specific contract\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Short on time. The X status fetch returned 402, and a site:x.com search for the contract found nothing. The project's 'website' is a usepaid.app page for a different DEBT token. A general search found only debtcoin.us and older DEBT pairs.\"},\"thesis\":\"This is a late, non-canonical clone in a same-ticker swarm around a DEBT/Bolling theme. Its metadata points at a rival token, it has bundler-heavy flow and a suspicious buyer/seller split, and its structure is concentrated. Short-term attention is real, but it goes mainly to the bigger clones. The chance of a 2x before -50% is below average.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":40,\"survival_score\":30,\"attention_score\":55,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://debtcoin.us/\",\"what\":\"Existing DebtCoin project (national-debt theme)\"},{\"url\":\"https://x.com/ericbolling/status/2103816977047531911\",\"what\":\"Linked Bolling post; fetch failed with HTTP 402\"},{\"url\":\"https://usepaid.app/token/FYM6PhwAS3QwTBwvgLj8JYeMgpNfKsWtW3hGxPM9eFkt\",\"what\":\"Website in this token's metadata; it points to a rival DEBT token\"},{\"url\":\"https://en.wikipedia.org/wiki/Eric_Bolling\",\"what\":\"Background on Eric Bolling\"}]}",
+ "structured_output": {
+  "what_is_happening": "DEBT (84MW\u2026) is a Meteora virtual-curve token that migrated to PumpSwap the moment it was created, about 11 minutes before detection. It is one of at least 5 \"DEBT\"/\"DEBT COIN\" clones launched on Solana in the last ~2 hours, all apparently riding an Eric Bolling X post (the packet's twitter link is ericbolling/status/2103816977047531911, which I could not fetch: HTTP 402). Its listed \"website\" is a usepaid.app page for a different DEBT token (FYM6\u2026), which suggests metadata was copy-pasted from a rival. Older clones are larger: BLPK\u2026 at $838k, FYM6\u2026 at $359k with $4.2M h1 volume, and 4Ptj\u2026 with $1.8M h1 volume. The trigger was a 5-minute volume burst ($157k) and +270% in the first hour. The flow is odd: 1,629 unique buyers against only 74 unique sellers, and GMGN tags 41 bundler wallets.",
+  "narrative": {
+   "description": "A national-debt / Eric Bolling themed meme. An existing DebtCoin project (debtcoin.us) pitches paying down the US debt. Today's wave of clones seems to be sparked by an Eric Bolling X post whose content I could not see.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A political commentator's post that reads as related to a ticker set off a clone swarm. Several DEBT tokens are doing millions in hourly volume, so the theme has real short-term flow."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing marks this token as canonical. It is a late clone (created ~12:42Z, after FYM6 at ~12:02Z, 4Ptj and BLPK), and its metadata points to another token's page.",
+   "competing_tokens": "BLPKe93\u2026 (DEBT COIN, $838k), FYM6PhwA\u2026 (DEBT COIN, $359k, $4.2M h1 vol), 4Ptj3s9\u2026 ($148k, $1.8M h1 vol), tZNEqT2\u2026 ($86k), plus the older vLieQF\u2026 DebtCoin and several dead copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "1,629 unique buyers but only 74 unique sellers, and 41 bundler wallets, which looks like distributed bot buying or bundled wallets. There are no smart or renowned wallets, no paid DexScreener promotion, and no socials of its own.",
+   "uncertainty": "I could not see X posts. The buyer/seller split could be ordinary swarm FOMO spread across clones."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked (danger), which conflicts with GMGN's lp_burn_ratio of 1.0",
+    "One unlabeled holder has 80% of supply (possibly the Meteora pool, but unverified)",
+    "41 bundler wallets",
+    "Liquidity of only $32k against a $205k market cap",
+    "Larger same-ticker clones pull the flow away from this one"
+   ]
+  },
+  "counterargument": "The DEBT swarm is hot, with millions in hourly volume across clones, and this token is among the youngest. Clone swarms often rotate money into lower-cap copies, so a move from $205k to $410k is plausible if the theme keeps growing. The mint is renounced, the creator holds nothing, and GMGN shows the LP as burned.",
+  "unknowns": [
+   "What the Eric Bolling post says",
+   "Whether the 80% holder is the pool or a whale",
+   "The real LP lock status, since RugCheck and GMGN disagree",
+   "Any X discussion of this specific contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Short on time. The X status fetch returned 402, and a site:x.com search for the contract found nothing. The project's 'website' is a usepaid.app page for a different DEBT token. A general search found only debtcoin.us and older DEBT pairs."
+  },
+  "thesis": "This is a late, non-canonical clone in a same-ticker swarm around a DEBT/Bolling theme. Its metadata points at a rival token, it has bundler-heavy flow and a suspicious buyer/seller split, and its structure is concentrated. Short-term attention is real, but it goes mainly to the bigger clones. The chance of a 2x before -50% is below average.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 40,
+  "survival_score": 30,
+  "attention_score": 55,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://debtcoin.us/",
+    "what": "Existing DebtCoin project (national-debt theme)"
+   },
+   {
+    "url": "https://x.com/ericbolling/status/2103816977047531911",
+    "what": "Linked Bolling post; fetch failed with HTTP 402"
+   },
+   {
+    "url": "https://usepaid.app/token/FYM6PhwAS3QwTBwvgLj8JYeMgpNfKsWtW3hGxPM9eFkt",
+    "what": "Website in this token's metadata; it points to a rival DEBT token"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Eric_Bolling",
+    "what": "Background on Eric Bolling"
+   }
+  ]
+ },
+ "ttft_ms": 2906,
+ "type": "result",
+ "duration_ms": 37391,
+ "uuid": "5828adc1-e554-43e9-bf55-35c6dea35309",
+ "ttft_stream_ms": 616,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 616,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

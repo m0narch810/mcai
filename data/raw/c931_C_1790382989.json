@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 41230,
+ "stop_reason": "tool_use",
+ "session_id": "dc3de131-d2b7-4618-8da2-9be56e5f462f",
+ "total_cost_usd": 0.19659539999999998,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 11827,
+  "cache_read_input_tokens": 41902,
+  "output_tokens": 2687,
+  "output_tokens_details": {
+   "thinking_tokens": 345
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11827,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2011,
+    "cache_read_input_tokens": 14011,
+    "cache_creation_input_tokens": 580,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 580
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 2687,
+   "cacheReadInputTokens": 41902,
+   "cacheCreationInputTokens": 11827,
+   "webSearchRequests": 0,
+   "costUSD": 0.15676840000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 345,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 24837,
+   "outputTokens": 998,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.039827,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This Cream is one of more than 10 \\\"Cream\\\" tokens launched on Solana within about 12 minutes of each other. Every one of them is reacting to the same X post by Cremieux (@cremieuxrecueil, status 2103640416046445002). This token started on a Meteora virtual curve, moved at once to PumpSwap, and went up about 160% in its first 11 minutes. Just after detection it was around $127k market cap and had lost about 10% from its high. Two other copies are clearly ahead: Do4VN at about $263k market cap and $1M of volume in the last hour, and 66Rv at $340-530k market cap. The earliest copy, CMuv, links the same tweet and has done $1.27M of volume.\",\"narrative\":{\"description\":\"Tokens named after a tweet by a well-known X account (Cremieux). I could not read the post itself (X returned 402), so what it actually says is unknown.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Launch bots and snipers copy the name of any fresh tweet that could become a meme, which is why so many copies appeared at once. I found no sign that anyone outside those snipers is paying attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It links the same tweet, but it is neither the first copy nor the leading one. It is mid-pack by both launch time and market cap.\",\"competing_tokens\":\"CMuv (earliest, $1.27M volume in the last hour, links the same tweet), Do4VN ($263k market cap, $1M hourly volume, leading on momentum), 66Rv ($340-530k market cap, highest), DAFB ($224k), Fxkb, 6riG, AyDF, and others.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Many copies were launched at once. GMGN tags 69 wallets as bundlers. 348 of the unique buyers came in the last 5 minutes, which is a sniper-style burst. There are no smart-money or KOL wallets.\",\"uncertainty\":\"I could not see the tweet or any X reaction to it.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of the LP as unlocked on the market it checked. GMGN reports its LP as fully burned, so the two sources conflict.\",\"One wallet holds 80% of supply. It may be a pool account, but that is not confirmed.\",\"69 bundler wallets\",\"Liquidity is split across more than 10 same-name copies\",\"Price already slipping from its high at entry\"]},\"counterargument\":\"If the Cremieux post goes viral, even a lower-ranked copy can double in a 10-copy race. Market caps here are small ($127k), turnover is high, and there are 482 unique buyers.\",\"unknowns\":[\"What the tweet says and how far it has spread\",\"Who holds the 80% wallet\",\"Who controls the unlocked LP\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"Time was short. I did one web search, which found nothing relevant. The tweet fetch returned 402. I checked DexScreener for both the token and the competing copies.\"},\"thesis\":\"A ticker war over a single tweet, and this token is a copy that is neither first nor leading. Attention and liquidity are going to Do4VN, 66Rv and CMuv. With an unlocked LP, bundled buying and a price already falling from its high, this coin's odds of doubling are low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":35,\"survival_score\":30,\"attention_score\":45,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/search?q=Cream\",\"what\":\"Competing Cream copies. CMuv links the Cremieux tweet; Do4VN and 66Rv lead.\"},{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/DdGEjyBWzJp1VbPVYNMiwSURdaKk97GUVpWkJd8177ia\",\"what\":\"This token's current market cap ($127k) and price action\"},{\"url\":\"https://x.com/cremieuxrecueil/status/2103640416046445002\",\"what\":\"The source tweet. Could not be read (402).\"}]}",
+ "structured_output": {
+  "what_is_happening": "This Cream is one of more than 10 \"Cream\" tokens launched on Solana within about 12 minutes of each other. Every one of them is reacting to the same X post by Cremieux (@cremieuxrecueil, status 2103640416046445002). This token started on a Meteora virtual curve, moved at once to PumpSwap, and went up about 160% in its first 11 minutes. Just after detection it was around $127k market cap and had lost about 10% from its high. Two other copies are clearly ahead: Do4VN at about $263k market cap and $1M of volume in the last hour, and 66Rv at $340-530k market cap. The earliest copy, CMuv, links the same tweet and has done $1.27M of volume.",
+  "narrative": {
+   "description": "Tokens named after a tweet by a well-known X account (Cremieux). I could not read the post itself (X returned 402), so what it actually says is unknown.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Launch bots and snipers copy the name of any fresh tweet that could become a meme, which is why so many copies appeared at once. I found no sign that anyone outside those snipers is paying attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It links the same tweet, but it is neither the first copy nor the leading one. It is mid-pack by both launch time and market cap.",
+   "competing_tokens": "CMuv (earliest, $1.27M volume in the last hour, links the same tweet), Do4VN ($263k market cap, $1M hourly volume, leading on momentum), 66Rv ($340-530k market cap, highest), DAFB ($224k), Fxkb, 6riG, AyDF, and others.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Many copies were launched at once. GMGN tags 69 wallets as bundlers. 348 of the unique buyers came in the last 5 minutes, which is a sniper-style burst. There are no smart-money or KOL wallets.",
+   "uncertainty": "I could not see the tweet or any X reaction to it."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of the LP as unlocked on the market it checked. GMGN reports its LP as fully burned, so the two sources conflict.",
+    "One wallet holds 80% of supply. It may be a pool account, but that is not confirmed.",
+    "69 bundler wallets",
+    "Liquidity is split across more than 10 same-name copies",
+    "Price already slipping from its high at entry"
+   ]
+  },
+  "counterargument": "If the Cremieux post goes viral, even a lower-ranked copy can double in a 10-copy race. Market caps here are small ($127k), turnover is high, and there are 482 unique buyers.",
+  "unknowns": [
+   "What the tweet says and how far it has spread",
+   "Who holds the 80% wallet",
+   "Who controls the unlocked LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "Time was short. I did one web search, which found nothing relevant. The tweet fetch returned 402. I checked DexScreener for both the token and the competing copies."
+  },
+  "thesis": "A ticker war over a single tweet, and this token is a copy that is neither first nor leading. Attention and liquidity are going to Do4VN, 66Rv and CMuv. With an unlocked LP, bundled buying and a price already falling from its high, this coin's odds of doubling are low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 35,
+  "survival_score": 30,
+  "attention_score": 45,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/search?q=Cream",
+    "what": "Competing Cream copies. CMuv links the Cremieux tweet; Do4VN and 66Rv lead."
+   },
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/DdGEjyBWzJp1VbPVYNMiwSURdaKk97GUVpWkJd8177ia",
+    "what": "This token's current market cap ($127k) and price action"
+   },
+   {
+    "url": "https://x.com/cremieuxrecueil/status/2103640416046445002",
+    "what": "The source tweet. Could not be read (402)."
+   }
+  ]
+ },
+ "ttft_ms": 2545,
+ "type": "result",
+ "duration_ms": 41077,
+ "uuid": "5318d14c-a908-4fbb-a350-d41d12f252ca",
+ "ttft_stream_ms": 649,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 650,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

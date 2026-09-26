@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 19182,
+ "stop_reason": "tool_use",
+ "session_id": "0891d365-dd64-48c2-a0e5-5f6c337e82e6",
+ "total_cost_usd": 0.1069644,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8159,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2063,
+  "output_tokens_details": {
+   "thinking_tokens": 251
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8159,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2063,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8159,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8159
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2063,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8159,
+   "webSearchRequests": 0,
+   "costUSD": 0.1069644,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 251,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 12-minute-old \\\"merci\\\" token, created directly on PumpSwap without going through the pump.fun bonding curve (the address has no pump suffix and migrated_unix is 0), triggered on heavy volume: $355k in the first hour at about $25k market cap, +140% price. It is one of at least 11 \\\"merci\\\" tokens launched within about 25 minutes. The most likely canonical one (9NPmn...pump) came about 24 minutes earlier and sits near $246k market cap. This coin is a late clone with 100% of its LP unlocked. It shows 38 bundler wallets holding about 31% of top-trader share, and 1,821 unique buyers against only 59 unique sellers, a pattern typical of bot or airdrop-style manufactured activity.\",\"narrative\":{\"description\":\"'merci' is a meme or cult ticker (GeckoTerminal links to a tweet from the X account mercicult). The cluster of clones means a real attention spike exists around the name, but it is centred on the earlier pump.fun token.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Something drove a launch wave of 'merci' tokens in about 25 minutes (probably a viral post). Clone deployers are farming the ticker search traffic.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Only the shared name and ticker, plus a GeckoTerminal link to a mercicult tweet. That link could just as easily be pasted onto clones.\",\"competing_tokens\":\"At least 10 same-name tokens. 9NPmn...pump is the earliest (about 24 minutes before this one), at $246k market cap with $929k 1h volume. HE3sA1 is at $185k and 9UpKD at $241k. This coin ranks near the bottom by market cap.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,821 unique buyers against 59 unique sellers within 12 minutes, 38 bundler wallets holding about 31% of top-trader share, and a 21% bot/degen rate. Liquidity ($33k) is larger than market cap ($25k), which fits a self-seeded pool that the creator controls. There is no DexScreener profile and no socials.\",\"uncertainty\":\"The buyer count could partly reflect real ticker-search spillover from the viral canonical token. GMGN wallet tags are imperfect.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked on a creator-seeded PumpSwap pool, so the creator can pull it at any time\",\"Late clone of a trending ticker, the classic setup for a pull-the-LP rug\",\"38 bundler wallets holding about 31% of top-trader share\",\"Buyer/seller asymmetry that looks like bots\",\"GeckoTerminal top-10 at about 80% including the pool\"]},\"counterargument\":\"Clones of a viral ticker sometimes catch overflow flows and run 2-3x when the canonical token gets too expensive. $25k is a low market cap, and 1,800+ buyers is a lot of breadth. Mint and freeze authority are renounced, top-10 holders excluding the pool are only 16%, and the dev holds almost nothing.\",\"unknowns\":[\"Whether the creator will pull the unlocked LP\",\"Whether the buyer counts are real people or airdrop/bot wallets\",\"What the source of the merci narrative is and how long it lasts\",\"Whether the canonical token keeps pumping and spills over\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; the judgment is based only on the packet.\"},\"thesis\":\"This looks like a late, non-canonical clone of a trending ticker. The LP is unlocked and controlled by the creator, and the buy-side activity looks bundled or bot-driven. The most likely outcome is an LP pull or a bleed-out, not a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":60,\"survival_score\":18,\"attention_score\":45,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 12-minute-old \"merci\" token, created directly on PumpSwap without going through the pump.fun bonding curve (the address has no pump suffix and migrated_unix is 0), triggered on heavy volume: $355k in the first hour at about $25k market cap, +140% price. It is one of at least 11 \"merci\" tokens launched within about 25 minutes. The most likely canonical one (9NPmn...pump) came about 24 minutes earlier and sits near $246k market cap. This coin is a late clone with 100% of its LP unlocked. It shows 38 bundler wallets holding about 31% of top-trader share, and 1,821 unique buyers against only 59 unique sellers, a pattern typical of bot or airdrop-style manufactured activity.",
+  "narrative": {
+   "description": "'merci' is a meme or cult ticker (GeckoTerminal links to a tweet from the X account mercicult). The cluster of clones means a real attention spike exists around the name, but it is centred on the earlier pump.fun token.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Something drove a launch wave of 'merci' tokens in about 25 minutes (probably a viral post). Clone deployers are farming the ticker search traffic."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Only the shared name and ticker, plus a GeckoTerminal link to a mercicult tweet. That link could just as easily be pasted onto clones.",
+   "competing_tokens": "At least 10 same-name tokens. 9NPmn...pump is the earliest (about 24 minutes before this one), at $246k market cap with $929k 1h volume. HE3sA1 is at $185k and 9UpKD at $241k. This coin ranks near the bottom by market cap.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,821 unique buyers against 59 unique sellers within 12 minutes, 38 bundler wallets holding about 31% of top-trader share, and a 21% bot/degen rate. Liquidity ($33k) is larger than market cap ($25k), which fits a self-seeded pool that the creator controls. There is no DexScreener profile and no socials.",
+   "uncertainty": "The buyer count could partly reflect real ticker-search spillover from the viral canonical token. GMGN wallet tags are imperfect."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked on a creator-seeded PumpSwap pool, so the creator can pull it at any time",
+    "Late clone of a trending ticker, the classic setup for a pull-the-LP rug",
+    "38 bundler wallets holding about 31% of top-trader share",
+    "Buyer/seller asymmetry that looks like bots",
+    "GeckoTerminal top-10 at about 80% including the pool"
+   ]
+  },
+  "counterargument": "Clones of a viral ticker sometimes catch overflow flows and run 2-3x when the canonical token gets too expensive. $25k is a low market cap, and 1,800+ buyers is a lot of breadth. Mint and freeze authority are renounced, top-10 holders excluding the pool are only 16%, and the dev holds almost nothing.",
+  "unknowns": [
+   "Whether the creator will pull the unlocked LP",
+   "Whether the buyer counts are real people or airdrop/bot wallets",
+   "What the source of the merci narrative is and how long it lasts",
+   "Whether the canonical token keeps pumping and spills over"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; the judgment is based only on the packet."
+  },
+  "thesis": "This looks like a late, non-canonical clone of a trending ticker. The LP is unlocked and controlled by the creator, and the buy-side activity looks bundled or bot-driven. The most likely outcome is an LP pull or a bleed-out, not a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 60,
+  "survival_score": 18,
+  "attention_score": 45,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3223,
+ "type": "result",
+ "duration_ms": 19234,
+ "uuid": "def39fc3-ab53-4ddc-985d-c6f85f970ee3",
+ "ttft_stream_ms": 732,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 732,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

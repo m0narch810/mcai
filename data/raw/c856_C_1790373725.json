@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 49926,
+ "stop_reason": "tool_use",
+ "session_id": "b2296a62-f68f-4d24-b18c-7f137a860ef4",
+ "total_cost_usd": 0.2327192,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12603,
+  "cache_read_input_tokens": 27446,
+  "output_tokens": 2924,
+  "output_tokens_details": {
+   "thinking_tokens": 484
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12603,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2301,
+    "cache_read_input_tokens": 13209,
+    "cache_creation_input_tokens": 2158,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2158
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2924,
+   "cacheReadInputTokens": 27446,
+   "cacheCreationInputTokens": 12603,
+   "webSearchRequests": 0,
+   "costUSD": 0.1648172,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 484,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 31322,
+   "outputTokens": 1316,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06790199999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"The Colony\\\" is an ant-themed Solana project in which autonomous AI-agent ants each hold a wallet (thecolony.lol, X account thecolonylol). It is being copied over and over today. This token (DZTz\u2026ZabS) is NOT a pump.fun mint: the address has no \\\"pump\\\" suffix, migrated_unix is 0, and the pair was created about 5 seconds after the mint. The creator set up the PumpSwap pool directly and holds 100% of the LP, unlocked. RugCheck marks this \\\"danger\\\". The creator's token status is \\\"creator_close\\\" and the creator's balance is 0. The packet lists at least 7 other \\\"The Colony\\\"/COLONY tokens created within the last ~5 hours. Two of them had real volume and now show ~$0 liquidity: 7Wo9\u2026 (mcap $937k, liquidity $0.01, $28.7k h1 volume) and JCkF\u2026 ($195k h1 volume, $0 liquidity). That pattern points to repeated LP pulls on the same meme. The pump.fun-native Gh6k\u2026pump is still alive with $15k liquidity and $107k h1 volume. This token's own flow: 1,111 unique buyers against only 105 sellers in 13 minutes, top-10 holders ~4%, 30 bundler wallets, 0 smart or KOL wallets.\",\"narrative\":{\"description\":\"AI-agent ant colony, 'one queen, thousands of ants', where autonomous agents forage and trade on Solana. It rides the AI-agent meme with a live 3D simulation site.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The original project has a working site showing a treasury (80 SOL) and a game mechanic. The AI-agent angle is current, and the copycat wave shows traders are chasing the name.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It uses the same name and description and links to the same thecolony.lol site and thecolonylol X post. But its non-pump.fun mint and its dev-seeded, unlocked LP set it apart. Nothing on the site or in search ties this contract address to the project.\",\"competing_tokens\":\"There are at least 7 same-name tokens. Gh6k\u2026pump (pump.fun-native, $15k liquidity, $107k h1 volume) is still active. 7Wo9\u2026 and JCkF\u2026 show high recent volume and ~0 liquidity, which looks like they were rugged.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"This looks like a copy-paste launch from an LP-pull farm. It uses the same metadata and image (image_duplicate_count 6), the dev created the pool with 100% unlocked LP, and at least two sibling tokens under the same name already dropped to zero liquidity today. 30 bundler wallets. The buyer/seller ratio of 1,111 to 105 in 13 minutes is extreme and fits bot-driven or trapped buying.\",\"uncertainty\":\"I could not see X posts or on-chain LP ownership directly. The siblings' zero-liquidity status comes from the packet, and I could not confirm they share a creator.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked and was seeded by the creator, who can pull the ~$26k SOL side at any time\",\"Non-pump.fun mint with a custom PumpSwap pool: the standard pump.fun LP burn does not apply\",\"Same-name siblings with high volume already sit at ~0 liquidity\",\"30 bundler wallets\",\"Heavy ticker confusion across 7+ clones\"]},\"counterargument\":\"Holders are spread widely (top-10 ~4%, 1,111 buyers), and a real AI-agent narrative is drawing heavy volume right now. If this clone happens to be the one traders settle on, or the dev leaves the LP alone, a $33k mcap could double quickly on narrative flow.\",\"unknowns\":[\"Whether the creator shares a wallet with the rugged siblings\",\"Whether thecolonylol endorses any contract address\",\"X discussion volume\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Time-limited. The site thecolony.lol lists $COLONY but no contract address. A separate site, theantcolony.world, describes 500 AI ants. The contract address returned no search hits.\"},\"thesis\":\"A name clone of a trending AI-ant project, with a dev-seeded, fully unlocked LP, launched while same-name siblings have already been drained. Rug risk dominates the chance of a doubling.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":65,\"survival_score\":15,\"attention_score\":55,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://thecolony.lol/\",\"what\":\"Project site, $COLONY 'The Living Colony', no contract address\"},{\"url\":\"https://www.theantcolony.world/\",\"what\":\"Description of 500 autonomous AI ants on Solana\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"The Colony\" is an ant-themed Solana project in which autonomous AI-agent ants each hold a wallet (thecolony.lol, X account thecolonylol). It is being copied over and over today. This token (DZTz\u2026ZabS) is NOT a pump.fun mint: the address has no \"pump\" suffix, migrated_unix is 0, and the pair was created about 5 seconds after the mint. The creator set up the PumpSwap pool directly and holds 100% of the LP, unlocked. RugCheck marks this \"danger\". The creator's token status is \"creator_close\" and the creator's balance is 0. The packet lists at least 7 other \"The Colony\"/COLONY tokens created within the last ~5 hours. Two of them had real volume and now show ~$0 liquidity: 7Wo9\u2026 (mcap $937k, liquidity $0.01, $28.7k h1 volume) and JCkF\u2026 ($195k h1 volume, $0 liquidity). That pattern points to repeated LP pulls on the same meme. The pump.fun-native Gh6k\u2026pump is still alive with $15k liquidity and $107k h1 volume. This token's own flow: 1,111 unique buyers against only 105 sellers in 13 minutes, top-10 holders ~4%, 30 bundler wallets, 0 smart or KOL wallets.",
+  "narrative": {
+   "description": "AI-agent ant colony, 'one queen, thousands of ants', where autonomous agents forage and trade on Solana. It rides the AI-agent meme with a live 3D simulation site.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The original project has a working site showing a treasury (80 SOL) and a game mechanic. The AI-agent angle is current, and the copycat wave shows traders are chasing the name."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It uses the same name and description and links to the same thecolony.lol site and thecolonylol X post. But its non-pump.fun mint and its dev-seeded, unlocked LP set it apart. Nothing on the site or in search ties this contract address to the project.",
+   "competing_tokens": "There are at least 7 same-name tokens. Gh6k\u2026pump (pump.fun-native, $15k liquidity, $107k h1 volume) is still active. 7Wo9\u2026 and JCkF\u2026 show high recent volume and ~0 liquidity, which looks like they were rugged.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "This looks like a copy-paste launch from an LP-pull farm. It uses the same metadata and image (image_duplicate_count 6), the dev created the pool with 100% unlocked LP, and at least two sibling tokens under the same name already dropped to zero liquidity today. 30 bundler wallets. The buyer/seller ratio of 1,111 to 105 in 13 minutes is extreme and fits bot-driven or trapped buying.",
+   "uncertainty": "I could not see X posts or on-chain LP ownership directly. The siblings' zero-liquidity status comes from the packet, and I could not confirm they share a creator."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked and was seeded by the creator, who can pull the ~$26k SOL side at any time",
+    "Non-pump.fun mint with a custom PumpSwap pool: the standard pump.fun LP burn does not apply",
+    "Same-name siblings with high volume already sit at ~0 liquidity",
+    "30 bundler wallets",
+    "Heavy ticker confusion across 7+ clones"
+   ]
+  },
+  "counterargument": "Holders are spread widely (top-10 ~4%, 1,111 buyers), and a real AI-agent narrative is drawing heavy volume right now. If this clone happens to be the one traders settle on, or the dev leaves the LP alone, a $33k mcap could double quickly on narrative flow.",
+  "unknowns": [
+   "Whether the creator shares a wallet with the rugged siblings",
+   "Whether thecolonylol endorses any contract address",
+   "X discussion volume"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Time-limited. The site thecolony.lol lists $COLONY but no contract address. A separate site, theantcolony.world, describes 500 AI ants. The contract address returned no search hits."
+  },
+  "thesis": "A name clone of a trending AI-ant project, with a dev-seeded, fully unlocked LP, launched while same-name siblings have already been drained. Rug risk dominates the chance of a doubling.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 65,
+  "survival_score": 15,
+  "attention_score": 55,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://thecolony.lol/",
+    "what": "Project site, $COLONY 'The Living Colony', no contract address"
+   },
+   {
+    "url": "https://www.theantcolony.world/",
+    "what": "Description of 500 autonomous AI ants on Solana"
+   }
+  ]
+ },
+ "ttft_ms": 3463,
+ "type": "result",
+ "duration_ms": 41759,
+ "uuid": "e86950f7-5bd1-4ad0-8534-5fae7a301a3f",
+ "ttft_stream_ms": 626,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 626,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

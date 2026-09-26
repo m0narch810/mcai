@@ -1,0 +1,183 @@
+{
+ "duration_api_ms": 51902,
+ "stop_reason": "tool_use",
+ "session_id": "c7168c0f-ba78-40ec-8053-c976d9ee727c",
+ "total_cost_usd": 0.2452824,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13237,
+  "cache_read_input_tokens": 29022,
+  "output_tokens": 3010,
+  "output_tokens_details": {
+   "thinking_tokens": 518
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13237,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2266,
+    "cache_read_input_tokens": 14455,
+    "cache_creation_input_tokens": 1546,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1546
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3010,
+   "cacheReadInputTokens": 29022,
+   "cacheCreationInputTokens": 13237,
+   "webSearchRequests": 0,
+   "costUSD": 0.1719244,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 518,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 36288,
+   "outputTokens": 1414,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.073358,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DD58\u20261Eg8 (\\\"PAY.\\\", ticker PAY) is 12 minutes old at about $259k mcap. It rose about 404% in its first 10 minutes and is now 25% down over the last 5 minutes. In that time it traded about $800k of volume from roughly 900 unique buyers. Its metadata links to usepay.money and a post by the X account @UsePayMoney. That project (\\\"PAY\\\", which lets you send SOL to an X identity with no wallet address) lists a DIFFERENT official contract on its own website: BmP71\u2026NPAY, a vanity address ending in \\\"PAY\\\". So DD58 looks like a copycat or ticker hijack of a real micro-project's launch, and it briefly took more of the money than the official token did. The PAY ticker also has at least 10 other clones, all launched within minutes of each other.\",\"narrative\":{\"description\":\"A small Solana tool, PAY (usepay.money), that sends SOL to X handles and launches coins for X identities. It sits next to the wider 'X Money / creator fees to X handles' theme (UsePaid/$PAID).\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The project's own token launch this hour set off a PAY ticker frenzy, with many clones deployed within minutes. The X Money payments theme helps a little, but I found no news or organic discussion.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It links to the project's site and X post, but the project's own website names BmP71ELowgA534tLn6EWfivamA4f4mcv85LPmEGPNPAY as the contract, not DD58.\",\"competing_tokens\":\"BmP71\u2026NPAY is the one the website names as official (~$26k mcap, $666k of volume in the last hour). There are about 9 other PAY/PAYTHISPOST clones, most with zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"About 900 unique buyers against 136 unique sellers suggests real retail flow. But GMGN tags 99 wallets as bundlers, the creator has already closed its position (4 prior launches, best ATH about $511k), and there is no DexScreener profile and no boosts. The money most likely comes from confused buyers chasing the PAY launch.\",\"uncertainty\":\"I could not read X (the fetch returned HTTP 402), so I can't see whether the project or KOLs pointed people to DD58 or warned against it.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked, which conflicts with GMGN's lp_burn_ratio of 1.0\",\"One unlabeled account holds 80% of supply (possibly a Meteora pool, but unconfirmed)\",\"99 bundler wallets\",\"Creator has exited\",\"The official project names a different contract, which invites a public 'fake CA' callout\",\"Price is fading after the initial spike\"]},\"counterargument\":\"DD58 has 10x the official token's mcap and far more buyers, so the market may have picked it as the de facto PAY. If the project stays silent or adopts it, $48k of liquidity with heavy retail flow could run back to the $450k ATH and beyond during the X Money payments hype.\",\"unknowns\":[\"What the @UsePayMoney X post actually says (X was inaccessible)\",\"Whether the 80% holder is a pool or a single wallet\",\"Whether the LP is really unlocked\",\"Whether the project will publicly disown DD58\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Given the 2-minute limit, I searched the contract and project name on the web. The project site names a different contract. The X fetch returned HTTP 402.\"},\"thesis\":\"A likely ticker hijack of a real micro-project, whose official contract (BmP71\u2026NPAY) is listed on its own website. The initial pump is already fading, the creator has exited, there are many bundlers and the LP may be unlocked. The chance of reaching 2x from a ~$259k entry before a 50% drop is low.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":40,\"survival_score\":30,\"attention_score\":55,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://usepay.money/\",\"what\":\"Project site naming BmP71ELowgA534tLn6EWfivamA4f4mcv85LPmEGPNPAY as the PAY contract\"},{\"url\":\"https://x.com/UsePayMoney/status/2103787569943060839\",\"what\":\"The X post linked in the token metadata (fetch failed with HTTP 402)\"},{\"url\":\"https://www.bitrue.com/blog/what-is-usepaid\",\"what\":\"Background on the related X Money fee-routing theme (UsePaid/$PAID)\"}]}",
+ "structured_output": {
+  "what_is_happening": "DD58\u20261Eg8 (\"PAY.\", ticker PAY) is 12 minutes old at about $259k mcap. It rose about 404% in its first 10 minutes and is now 25% down over the last 5 minutes. In that time it traded about $800k of volume from roughly 900 unique buyers. Its metadata links to usepay.money and a post by the X account @UsePayMoney. That project (\"PAY\", which lets you send SOL to an X identity with no wallet address) lists a DIFFERENT official contract on its own website: BmP71\u2026NPAY, a vanity address ending in \"PAY\". So DD58 looks like a copycat or ticker hijack of a real micro-project's launch, and it briefly took more of the money than the official token did. The PAY ticker also has at least 10 other clones, all launched within minutes of each other.",
+  "narrative": {
+   "description": "A small Solana tool, PAY (usepay.money), that sends SOL to X handles and launches coins for X identities. It sits next to the wider 'X Money / creator fees to X handles' theme (UsePaid/$PAID).",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The project's own token launch this hour set off a PAY ticker frenzy, with many clones deployed within minutes. The X Money payments theme helps a little, but I found no news or organic discussion."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It links to the project's site and X post, but the project's own website names BmP71ELowgA534tLn6EWfivamA4f4mcv85LPmEGPNPAY as the contract, not DD58.",
+   "competing_tokens": "BmP71\u2026NPAY is the one the website names as official (~$26k mcap, $666k of volume in the last hour). There are about 9 other PAY/PAYTHISPOST clones, most with zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "About 900 unique buyers against 136 unique sellers suggests real retail flow. But GMGN tags 99 wallets as bundlers, the creator has already closed its position (4 prior launches, best ATH about $511k), and there is no DexScreener profile and no boosts. The money most likely comes from confused buyers chasing the PAY launch.",
+   "uncertainty": "I could not read X (the fetch returned HTTP 402), so I can't see whether the project or KOLs pointed people to DD58 or warned against it."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked, which conflicts with GMGN's lp_burn_ratio of 1.0",
+    "One unlabeled account holds 80% of supply (possibly a Meteora pool, but unconfirmed)",
+    "99 bundler wallets",
+    "Creator has exited",
+    "The official project names a different contract, which invites a public 'fake CA' callout",
+    "Price is fading after the initial spike"
+   ]
+  },
+  "counterargument": "DD58 has 10x the official token's mcap and far more buyers, so the market may have picked it as the de facto PAY. If the project stays silent or adopts it, $48k of liquidity with heavy retail flow could run back to the $450k ATH and beyond during the X Money payments hype.",
+  "unknowns": [
+   "What the @UsePayMoney X post actually says (X was inaccessible)",
+   "Whether the 80% holder is a pool or a single wallet",
+   "Whether the LP is really unlocked",
+   "Whether the project will publicly disown DD58"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Given the 2-minute limit, I searched the contract and project name on the web. The project site names a different contract. The X fetch returned HTTP 402."
+  },
+  "thesis": "A likely ticker hijack of a real micro-project, whose official contract (BmP71\u2026NPAY) is listed on its own website. The initial pump is already fading, the creator has exited, there are many bundlers and the LP may be unlocked. The chance of reaching 2x from a ~$259k entry before a 50% drop is low.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 40,
+  "survival_score": 30,
+  "attention_score": 55,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://usepay.money/",
+    "what": "Project site naming BmP71ELowgA534tLn6EWfivamA4f4mcv85LPmEGPNPAY as the PAY contract"
+   },
+   {
+    "url": "https://x.com/UsePayMoney/status/2103787569943060839",
+    "what": "The X post linked in the token metadata (fetch failed with HTTP 402)"
+   },
+   {
+    "url": "https://www.bitrue.com/blog/what-is-usepaid",
+    "what": "Background on the related X Money fee-routing theme (UsePaid/$PAID)"
+   }
+  ]
+ },
+ "ttft_ms": 2710,
+ "type": "result",
+ "duration_ms": 43154,
+ "uuid": "446c262c-da7f-488d-95ba-8a848c68ab01",
+ "ttft_stream_ms": 827,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 827,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

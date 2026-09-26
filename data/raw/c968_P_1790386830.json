@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 23204,
+ "stop_reason": "tool_use",
+ "session_id": "b65744ab-eac5-4d14-8476-df34050b4c31",
+ "total_cost_usd": 0.1127044,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8359,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2270,
+  "output_tokens_details": {
+   "thinking_tokens": 352
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8359,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2270,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8359,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8359
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2270,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8359,
+   "webSearchRequests": 0,
+   "costUSD": 0.1127044,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 352,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun token called \\\"Theranos\\\" launched through UsePaid, with creator fees set to go to the @ElizabethHolmes X account. Its X link points to a specific ElizabethHolmes status, so it is probably a reaction to a post by her. It migrated to PumpSwap 6 seconds after it was created, which means it was bundled straight through the bonding curve. In about 12 minutes it traded roughly $840k (26x its market cap per hour) across about 10.7k transactions and 2,274 unique buyers. It peaked around $370k market cap and is now about $130k, 65% below that high. At least 10 other \\\"Theranos\\\" tokens launched within minutes of each other. This one has the most volume and holders.\",\"narrative\":{\"description\":\"A celebrity or news hook: something Elizabeth Holmes posted on X (a status ID is linked), turned into a coin whose creator fees go to her through UsePaid. Coins that pay fees to a celebrity can rerun if the celebrity notices, claims the fees, or posts about the coin.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The post is fresh and the name is well known, so many copycat deployers rushed out same-name coins at once. Whether it spreads further depends on Holmes or large accounts engaging, which the packet cannot show.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It was among the earliest pairs (created 01:28:20, before most rivals), has the highest volume ($840k vs at most about $635k for the next), the most holders, and is the one linked to the Holmes status and fee routing through UsePaid.\",\"competing_tokens\":\"There are at least 10 same-name tokens. ELHQ... has $635k h1 volume and $48k liquidity. 4QoP... is at $209k market cap but has thin liquidity. 2WQb... and Ac1e... each show about $300k volume. Attention is split across them.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"2,274 unique buyers and 1,687 unique sellers point to broad participation. But GMGN counts 842 bundler wallets, gives top bundlers 51.7% of trader activity and puts the bot/degen rate at 78%. The instant migration shows a bundled launch. The deployer has launched 601 tokens (a serial farmer) and has already closed out its position. No paid boosts. Buys and sells are nearly equal, which looks like heavy churn.\",\"uncertainty\":\"I cannot see whether Holmes herself has engaged, or how big the original post was.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The deployer has launched 601 tokens and has already exited\",\"Bundled launch that migrated instantly; bundlers make up 51% of top traders\",\"Already 65% below its high, so the first wave has been distributed\",\"Many same-name competitors split the attention\",\"Liquidity of $32k against $130k market cap is fine, and the LP is burned (pump migration), so a classic LP pull is unlikely\"]},\"counterargument\":\"It is the volume leader for a fresh story with a household name, the LP is burned, mint and freeze authority are renounced, and top-10 holders own only 16%. Because the fees route to Holmes, she could post or claim them, which would easily send it back past its $370k high, well over 2x from entry. The 5-minute buy count is still ahead of sells (778 vs 625).\",\"unknowns\":[\"What Holmes's post says and how much reach it has\",\"Whether Holmes knows about the fee routing or will acknowledge it\",\"Whether the bundler wallets are still holding supply\",\"Which competitor, if any, becomes the accepted Theranos coin\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; the judgment rests only on the packet.\"},\"thesis\":\"A fresh celebrity-post coin that currently leads its same-name rivals and has real breadth. But it was launched by a serial deployer with a bundled start, and it has already fallen 65% from its high. A 2x from about $130k needs a second catalyst, most likely Holmes engaging. It is somewhat above an average coin in this pool, but most likely it bleeds and chops as the attention from this post fades.\",\"continuation_view\":\"fade\",\"p_runner\":17,\"p_rug\":22,\"survival_score\":45,\"attention_score\":78,\"manipulation_risk\":68,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun token called \"Theranos\" launched through UsePaid, with creator fees set to go to the @ElizabethHolmes X account. Its X link points to a specific ElizabethHolmes status, so it is probably a reaction to a post by her. It migrated to PumpSwap 6 seconds after it was created, which means it was bundled straight through the bonding curve. In about 12 minutes it traded roughly $840k (26x its market cap per hour) across about 10.7k transactions and 2,274 unique buyers. It peaked around $370k market cap and is now about $130k, 65% below that high. At least 10 other \"Theranos\" tokens launched within minutes of each other. This one has the most volume and holders.",
+  "narrative": {
+   "description": "A celebrity or news hook: something Elizabeth Holmes posted on X (a status ID is linked), turned into a coin whose creator fees go to her through UsePaid. Coins that pay fees to a celebrity can rerun if the celebrity notices, claims the fees, or posts about the coin.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The post is fresh and the name is well known, so many copycat deployers rushed out same-name coins at once. Whether it spreads further depends on Holmes or large accounts engaging, which the packet cannot show."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It was among the earliest pairs (created 01:28:20, before most rivals), has the highest volume ($840k vs at most about $635k for the next), the most holders, and is the one linked to the Holmes status and fee routing through UsePaid.",
+   "competing_tokens": "There are at least 10 same-name tokens. ELHQ... has $635k h1 volume and $48k liquidity. 4QoP... is at $209k market cap but has thin liquidity. 2WQb... and Ac1e... each show about $300k volume. Attention is split across them.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "2,274 unique buyers and 1,687 unique sellers point to broad participation. But GMGN counts 842 bundler wallets, gives top bundlers 51.7% of trader activity and puts the bot/degen rate at 78%. The instant migration shows a bundled launch. The deployer has launched 601 tokens (a serial farmer) and has already closed out its position. No paid boosts. Buys and sells are nearly equal, which looks like heavy churn.",
+   "uncertainty": "I cannot see whether Holmes herself has engaged, or how big the original post was."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The deployer has launched 601 tokens and has already exited",
+    "Bundled launch that migrated instantly; bundlers make up 51% of top traders",
+    "Already 65% below its high, so the first wave has been distributed",
+    "Many same-name competitors split the attention",
+    "Liquidity of $32k against $130k market cap is fine, and the LP is burned (pump migration), so a classic LP pull is unlikely"
+   ]
+  },
+  "counterargument": "It is the volume leader for a fresh story with a household name, the LP is burned, mint and freeze authority are renounced, and top-10 holders own only 16%. Because the fees route to Holmes, she could post or claim them, which would easily send it back past its $370k high, well over 2x from entry. The 5-minute buy count is still ahead of sells (778 vs 625).",
+  "unknowns": [
+   "What Holmes's post says and how much reach it has",
+   "Whether Holmes knows about the fee routing or will acknowledge it",
+   "Whether the bundler wallets are still holding supply",
+   "Which competitor, if any, becomes the accepted Theranos coin"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; the judgment rests only on the packet."
+  },
+  "thesis": "A fresh celebrity-post coin that currently leads its same-name rivals and has real breadth. But it was launched by a serial deployer with a bundled start, and it has already fallen 65% from its high. A 2x from about $130k needs a second catalyst, most likely Holmes engaging. It is somewhat above an average coin in this pool, but most likely it bleeds and chops as the attention from this post fades.",
+  "continuation_view": "fade",
+  "p_runner": 17,
+  "p_rug": 22,
+  "survival_score": 45,
+  "attention_score": 78,
+  "manipulation_risk": 68,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5156,
+ "type": "result",
+ "duration_ms": 23262,
+ "uuid": "ada6d421-1fb7-4c06-a844-42fdc3c3cc5f",
+ "ttft_stream_ms": 989,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 989,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

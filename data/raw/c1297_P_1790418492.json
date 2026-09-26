@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 22521,
+ "stop_reason": "tool_use",
+ "session_id": "94b87a43-6e35-45c9-97e6-6777aab87f72",
+ "total_cost_usd": 0.1137604,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8411,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2302,
+  "output_tokens_details": {
+   "thinking_tokens": 446
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8411,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2302,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8411,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8411
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2302,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8411,
+   "webSearchRequests": 0,
+   "costUSD": 0.1137604,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 446,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a copycat 'm/ep' (Memetically-Engineered Product) token. It was launched straight onto a PumpSwap pool with a non-pump mint address, a deploy platform the packet lists as unknown, and liquidity that is 100% unlocked and supplied by a creator. It is about 13 minutes old at a $31k market cap, against $36k of liquidity. It is up about 200% on roughly $216k of volume. At least 10 other tokens use the same ticker and name. The most-traded one is a pump.fun mint (6mEf...pump) at $84k market cap, launched about 14 minutes before this one. The link attached to this token points to a tweet from CookedSupermann, which suggests some viral tweet or meme is setting off a race to launch copies.\",\"narrative\":{\"description\":\"The name 'Memetically-Engineered Product' (m/ep) looks like it comes from a viral X post or meme. Several deployers launching copies within minutes of each other shows the phrase has real attention right now.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Some tweet set off a race to launch copies of the same ticker. Attention is split across more than 10 copies, and this one is not the leader.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the shared name and ticker plus a generic tweet URL. There is no website, no socials, and no DexScreener profile.\",\"competing_tokens\":\"6mEf...pump is the pump.fun leader: $84k market cap, $319k 1h volume, created earlier. 7mDU... is another manual pool with $318k volume. Plus many dead or rugged copies (5ARS, CZea, FSff, 2fhh with about $0 liquidity), which shows the same kind of launch is already being rugged.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal counts 2,036 unique buyers against only 58 unique sellers in the first 15 minutes, which looks like bot or micro-buy farming. GMGN flags 40 bundler wallets holding about 31.7% of trader volume and a 32% bot/degen rate. The creator provided liquidity through a manual pool with 100% unlocked LP, and the creator's own token status reads 'creator_close'. The other copies with near-zero liquidity look like the same pool-pull pattern.\",\"uncertainty\":\"Some of the buyers could be real retail joining a meme that is actually trending. Without X data I can't confirm how big the source tweet is.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and the pool was seeded manually by the creator, so the liquidity can be pulled at any time\",\"Several same-name tokens already show about $0 liquidity, which fits a repeated rug template\",\"40 bundler wallets holding about 32% of trader volume\",\"A lopsided buyer/seller count suggests fake breadth\",\"Not the canonical token: the pump.fun copy leads\"]},\"counterargument\":\"The meme is clearly hot: several copies each have more than $300k of 1h volume. This token has deep liquidity relative to its market cap, 2,000+ holders, a top 10 holding only about 16%, and mint and freeze authority renounced. If traders spill over from the leader, a $31k coin could 2x fast. The +50% move in the last 5 minutes shows momentum right now.\",\"unknowns\":[\"How far the source tweet has spread\",\"Whether the creator will pull the unlocked LP\",\"Whether the 2,036 buyers are real\",\"How the pump.fun leader moves next\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This report uses only the evidence packet.\"},\"thesis\":\"A non-canonical copy of the same ticker, with creator-controlled unlocked LP and bot-inflated buyer counts, in a copy race where similar tokens have already been drained. The most likely outcomes are a liquidity pull or a fade. A 2x before -50% is unlikely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":62,\"survival_score\":15,\"attention_score\":55,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is a copycat 'm/ep' (Memetically-Engineered Product) token. It was launched straight onto a PumpSwap pool with a non-pump mint address, a deploy platform the packet lists as unknown, and liquidity that is 100% unlocked and supplied by a creator. It is about 13 minutes old at a $31k market cap, against $36k of liquidity. It is up about 200% on roughly $216k of volume. At least 10 other tokens use the same ticker and name. The most-traded one is a pump.fun mint (6mEf...pump) at $84k market cap, launched about 14 minutes before this one. The link attached to this token points to a tweet from CookedSupermann, which suggests some viral tweet or meme is setting off a race to launch copies.",
+  "narrative": {
+   "description": "The name 'Memetically-Engineered Product' (m/ep) looks like it comes from a viral X post or meme. Several deployers launching copies within minutes of each other shows the phrase has real attention right now.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Some tweet set off a race to launch copies of the same ticker. Attention is split across more than 10 copies, and this one is not the leader."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the shared name and ticker plus a generic tweet URL. There is no website, no socials, and no DexScreener profile.",
+   "competing_tokens": "6mEf...pump is the pump.fun leader: $84k market cap, $319k 1h volume, created earlier. 7mDU... is another manual pool with $318k volume. Plus many dead or rugged copies (5ARS, CZea, FSff, 2fhh with about $0 liquidity), which shows the same kind of launch is already being rugged.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal counts 2,036 unique buyers against only 58 unique sellers in the first 15 minutes, which looks like bot or micro-buy farming. GMGN flags 40 bundler wallets holding about 31.7% of trader volume and a 32% bot/degen rate. The creator provided liquidity through a manual pool with 100% unlocked LP, and the creator's own token status reads 'creator_close'. The other copies with near-zero liquidity look like the same pool-pull pattern.",
+   "uncertainty": "Some of the buyers could be real retail joining a meme that is actually trending. Without X data I can't confirm how big the source tweet is."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and the pool was seeded manually by the creator, so the liquidity can be pulled at any time",
+    "Several same-name tokens already show about $0 liquidity, which fits a repeated rug template",
+    "40 bundler wallets holding about 32% of trader volume",
+    "A lopsided buyer/seller count suggests fake breadth",
+    "Not the canonical token: the pump.fun copy leads"
+   ]
+  },
+  "counterargument": "The meme is clearly hot: several copies each have more than $300k of 1h volume. This token has deep liquidity relative to its market cap, 2,000+ holders, a top 10 holding only about 16%, and mint and freeze authority renounced. If traders spill over from the leader, a $31k coin could 2x fast. The +50% move in the last 5 minutes shows momentum right now.",
+  "unknowns": [
+   "How far the source tweet has spread",
+   "Whether the creator will pull the unlocked LP",
+   "Whether the 2,036 buyers are real",
+   "How the pump.fun leader moves next"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This report uses only the evidence packet."
+  },
+  "thesis": "A non-canonical copy of the same ticker, with creator-controlled unlocked LP and bot-inflated buyer counts, in a copy race where similar tokens have already been drained. The most likely outcomes are a liquidity pull or a fade. A 2x before -50% is unlikely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 62,
+  "survival_score": 15,
+  "attention_score": 55,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5652,
+ "type": "result",
+ "duration_ms": 22568,
+ "uuid": "07e60ca8-4664-49e5-9ec5-0453e0de03e7",
+ "ttft_stream_ms": 687,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 687,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

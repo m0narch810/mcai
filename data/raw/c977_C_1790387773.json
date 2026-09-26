@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 36323,
+ "stop_reason": "tool_use",
+ "session_id": "e5d1ac66-65d4-4786-8bd3-1794e0edc199",
+ "total_cost_usd": 0.2019196,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12097,
+  "cache_read_input_tokens": 28333,
+  "output_tokens": 2705,
+  "output_tokens_details": {
+   "thinking_tokens": 393
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12097,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2263,
+    "cache_read_input_tokens": 13596,
+    "cache_creation_input_tokens": 1265,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1265
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2705,
+   "cacheReadInputTokens": 28333,
+   "cacheCreationInputTokens": 12097,
+   "webSearchRequests": 0,
+   "costUSD": 0.1565666,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 393,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21953,
+   "outputTokens": 680,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045353000000000004,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is one of at least 11 \\\"Degens Dollars On Solana\\\" ($DDOS) tokens launched within minutes of each other. They all appear to react to a Polymarket X post (the packet's GeckoTerminal link points to Polymarket/status/2103653913823961467), which I could not read (HTTP 402). This contract is a Meteora pair created at 01:44Z. It has about $22k market cap, about $30k of reported liquidity, and $535k of volume in 12 minutes. A pump.fun version (zpTj...pump) created 85 seconds later is already at about $115k market cap and looks like the one people mean. Several other copies look almost identical: about $20k market cap, about $29k liquidity and heavy volume. That pattern suggests a clone factory.\",\"narrative\":{\"description\":\"The name seems to play on a Polymarket tweet (possibly a joke about 'DDOS' / degens). I could not see what the tweet says.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A Polymarket post from a major account set off a race of copycat launches. Attention is spread across many clones, and the pump.fun version is leading.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It was the earliest non-pump Meteora deployment (01:44:10Z), but it trades at 1/5 of the pump.fun version's market cap and has no socials or profile.\",\"competing_tokens\":\"zpTj1yA68UauZqdz5276qrpTV7ALkeoLp9LLa7Bpump ($115k mcap, $357k h1 volume) is the clear leader. FDT6, H3RU, E2t6 and 9zMg are near-identical Meteora clones at about $20k mcap with about $29k liquidity. 6hHJ, an earlier 'Degen Dollars' version, already has zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 38 bundler wallets, and top bundler traders hold 31%. There are 1,462 unique buyers but only 58 unique sellers across 4,000+ transactions, which looks like bots. Several sibling clones share the same liquidity-above-market-cap and heavy-volume shape. The creator holds 68.68% of supply, and the LP is 100% unlocked.\",\"uncertainty\":\"I could not read the Polymarket tweet itself, and X search returned nothing about the token.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator holds 68.68% of supply (likely a one-sided Meteora position) and can remove it at will\",\"LP is 100% unlocked, and lp_burn_ratio is 0\",\"RugCheck's total market liquidity is only about $9.9, which conflicts with DexScreener's $30k\",\"Top 10 holders own 89.6%, and there are 38 bundler wallets\",\"At least 10 clones compete for the same attention\"]},\"counterargument\":\"Early clone wars sometimes let one side pool 2-5x on spillover when the leader runs. This one was deployed earliest and has high raw buyer counts (668 unique buyers in the last 5 minutes). If the Polymarket tweet goes viral, buyers who can't tell the copies apart may pile into any $DDOS.\",\"unknowns\":[\"What the Polymarket tweet says\",\"Whether the creator's 68.68% is pool liquidity or a free wallet balance\",\"Which contract, if any, the community has agreed on\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Two web searches found nothing specific. The Polymarket tweet fetch was blocked (HTTP 402). The token has no project site or socials. Time-limited.\"},\"thesis\":\"This is a non-canonical Meteora clone in a copycat race. The creator controls 68.68% of supply, the LP is unlocked, and the trading shows bot and bundler patterns. The pump.fun version is leading. There is a high chance of a liquidity pull and a low chance of a clean 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":68,\"survival_score\":12,\"attention_score\":45,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/Polymarket/status/2103653913823961467\",\"what\":\"Polymarket post linked in GeckoTerminal metadata (fetch returned HTTP 402)\"},{\"url\":\"https://www.kucoin.com/news/community/SOL/6ab4764e74fd460007c51bff\",\"what\":\"Search result mentioning a deleted Polymarket tweet; I did not confirm any connection\"},{\"url\":\"https://dexscreener.com/solana/BTmqvj2FwLhr3vKnn9K9UUEiCdTcLEBmF3DNkQnbAmrM\",\"what\":\"Pair page (packet data)\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is one of at least 11 \"Degens Dollars On Solana\" ($DDOS) tokens launched within minutes of each other. They all appear to react to a Polymarket X post (the packet's GeckoTerminal link points to Polymarket/status/2103653913823961467), which I could not read (HTTP 402). This contract is a Meteora pair created at 01:44Z. It has about $22k market cap, about $30k of reported liquidity, and $535k of volume in 12 minutes. A pump.fun version (zpTj...pump) created 85 seconds later is already at about $115k market cap and looks like the one people mean. Several other copies look almost identical: about $20k market cap, about $29k liquidity and heavy volume. That pattern suggests a clone factory.",
+  "narrative": {
+   "description": "The name seems to play on a Polymarket tweet (possibly a joke about 'DDOS' / degens). I could not see what the tweet says.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A Polymarket post from a major account set off a race of copycat launches. Attention is spread across many clones, and the pump.fun version is leading."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It was the earliest non-pump Meteora deployment (01:44:10Z), but it trades at 1/5 of the pump.fun version's market cap and has no socials or profile.",
+   "competing_tokens": "zpTj1yA68UauZqdz5276qrpTV7ALkeoLp9LLa7Bpump ($115k mcap, $357k h1 volume) is the clear leader. FDT6, H3RU, E2t6 and 9zMg are near-identical Meteora clones at about $20k mcap with about $29k liquidity. 6hHJ, an earlier 'Degen Dollars' version, already has zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 38 bundler wallets, and top bundler traders hold 31%. There are 1,462 unique buyers but only 58 unique sellers across 4,000+ transactions, which looks like bots. Several sibling clones share the same liquidity-above-market-cap and heavy-volume shape. The creator holds 68.68% of supply, and the LP is 100% unlocked.",
+   "uncertainty": "I could not read the Polymarket tweet itself, and X search returned nothing about the token."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator holds 68.68% of supply (likely a one-sided Meteora position) and can remove it at will",
+    "LP is 100% unlocked, and lp_burn_ratio is 0",
+    "RugCheck's total market liquidity is only about $9.9, which conflicts with DexScreener's $30k",
+    "Top 10 holders own 89.6%, and there are 38 bundler wallets",
+    "At least 10 clones compete for the same attention"
+   ]
+  },
+  "counterargument": "Early clone wars sometimes let one side pool 2-5x on spillover when the leader runs. This one was deployed earliest and has high raw buyer counts (668 unique buyers in the last 5 minutes). If the Polymarket tweet goes viral, buyers who can't tell the copies apart may pile into any $DDOS.",
+  "unknowns": [
+   "What the Polymarket tweet says",
+   "Whether the creator's 68.68% is pool liquidity or a free wallet balance",
+   "Which contract, if any, the community has agreed on"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Two web searches found nothing specific. The Polymarket tweet fetch was blocked (HTTP 402). The token has no project site or socials. Time-limited."
+  },
+  "thesis": "This is a non-canonical Meteora clone in a copycat race. The creator controls 68.68% of supply, the LP is unlocked, and the trading shows bot and bundler patterns. The pump.fun version is leading. There is a high chance of a liquidity pull and a low chance of a clean 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 68,
+  "survival_score": 12,
+  "attention_score": 45,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/Polymarket/status/2103653913823961467",
+    "what": "Polymarket post linked in GeckoTerminal metadata (fetch returned HTTP 402)"
+   },
+   {
+    "url": "https://www.kucoin.com/news/community/SOL/6ab4764e74fd460007c51bff",
+    "what": "Search result mentioning a deleted Polymarket tweet; I did not confirm any connection"
+   },
+   {
+    "url": "https://dexscreener.com/solana/BTmqvj2FwLhr3vKnn9K9UUEiCdTcLEBmF3DNkQnbAmrM",
+    "what": "Pair page (packet data)"
+   }
+  ]
+ },
+ "ttft_ms": 2593,
+ "type": "result",
+ "duration_ms": 36366,
+ "uuid": "56669eec-391a-4034-99ea-e1e9f4e13178",
+ "ttft_stream_ms": 753,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 753,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

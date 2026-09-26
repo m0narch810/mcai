@@ -1,0 +1,157 @@
+{
+ "duration_api_ms": 23682,
+ "stop_reason": "tool_use",
+ "session_id": "63e088c3-55d0-4a1f-ba00-6ba61585dc74",
+ "total_cost_usd": 0.11859639999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8848,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2369,
+  "output_tokens_details": {
+   "thinking_tokens": 308
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8848,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2369,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8848,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8848
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2369,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8848,
+   "webSearchRequests": 0,
+   "costUSD": 0.11859639999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 308,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is DEBT COIN, one of at least 10 same-name copies launched within about 25 minutes. It was created at 12:20 UTC via a Meteora virtual curve and migrated in the same second, so it trades on PumpSwap. It is about 13 minutes old at a $102k market cap with $25k liquidity. The linked socials are a jumble of scraped URLs: an Eric Bolling status, an X account formerly named ElizabethHolmes, usepaid.app links to other DEBT contracts, and america.gov. That points to a narrative about US national debt or politics that a news or tweet event set off, with deployers spamming clones. The copy leading on volume is FYM6... at $841k with $2.7M hourly volume. This token is a late copy with a small market cap.\",\"narrative\":{\"description\":\"A US national debt / political meme ('DEBT COIN'), apparently tied to tweets from Eric Bolling and others and an america.gov link. The theme has broad meme appeal, but many clones are splitting the attention.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The narrative seems to come from a live news or X event, and deployers are rushing to launch copies. The leading copy's $2.7M hourly volume shows real attention on the theme, but most of it is going to other contracts.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None beyond the matching name and ticker. It launched after the leading copies (FYM6 at 12:02, 4Ptj at 12:05) and sits well below them by market cap and volume. Its links even point to the FYM6 contract.\",\"competing_tokens\":\"FYM6...eFkt ($841k market cap, $91k liquidity, $2.7M hourly volume, earliest and likely canonical), 4Ptj... ($362k), BKgi... ($250k), BLPK..., FP1X... and several more. There is also an older vLie... DebtCoin from 2025.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There were 2,322 buys against 353 sells and 2,117 unique buyers against 114 sellers in about 15 minutes. That volume works out to about $25 per buy, a pattern typical of bot micro-buys that inflate holder counts. GeckoTerminal counts only 253 holders, with 99.97% in the top 10. One unlabelled wallet holds 80%. GMGN flags 10 bundler wallets, the image is duplicated 7 times, and GMGN shows only 3 page visits. The last 5 minutes (m5) look balanced (71 buys/71 sells, 42 buyers/40 sellers), so the early buy wave has stopped.\",\"uncertainty\":\"The 80% holder could be a pool or curve account that RugCheck failed to label, since the Meteora curve migrated in the same second. The micro-buys could also be airdrop or volume-bot services rather than a sign of a rug.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"RugCheck flags 99.99% of the LP as unlocked (danger), which conflicts with GMGN's lp_burn_ratio of 1.0\",\"A single unlabelled wallet holds 80% of supply\",\"GeckoTerminal puts the top 10 at 99.97%\",\"10 bundler wallets\",\"Creator already closed out (creator_close)\",\"Many same-name clones are splitting liquidity\",\"The socials field is scraped junk that includes a recycled X account formerly named ElizabethHolmes\"]},\"counterargument\":\"The debt narrative looks live and strong: the leading copy did $2.7M volume in an hour, and clone rotations sometimes lift the cheaper copies as latecomers look for 'the next one'. At $100k this token could double on narrative spillover alone. The 80% holder may just be pool or curve inventory, and mint and freeze authority are both renounced.\",\"unknowns\":[\"Who the 80% holder FhVo... is: an unlabelled pool/curve account or an insider\",\"Whether the LP is really unlocked, since RugCheck and GMGN disagree\",\"What the triggering news or tweet actually was\",\"Whether the leading FYM6 copy will keep pulling in attention\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses the packet only.\"},\"thesis\":\"This is a late, non-canonical clone in a crowded narrative. It shows bot-like micro-buy breadth, extreme holder concentration, an unlocked-LP warning, and a creator who has already exited. The broad narrative may run, but the leading copy is FYM6, not this token. Expect it to fade or be pulled.\",\"continuation_view\":\"fade\",\"p_runner\":5,\"p_rug\":45,\"survival_score\":22,\"attention_score\":35,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is DEBT COIN, one of at least 10 same-name copies launched within about 25 minutes. It was created at 12:20 UTC via a Meteora virtual curve and migrated in the same second, so it trades on PumpSwap. It is about 13 minutes old at a $102k market cap with $25k liquidity. The linked socials are a jumble of scraped URLs: an Eric Bolling status, an X account formerly named ElizabethHolmes, usepaid.app links to other DEBT contracts, and america.gov. That points to a narrative about US national debt or politics that a news or tweet event set off, with deployers spamming clones. The copy leading on volume is FYM6... at $841k with $2.7M hourly volume. This token is a late copy with a small market cap.",
+  "narrative": {
+   "description": "A US national debt / political meme ('DEBT COIN'), apparently tied to tweets from Eric Bolling and others and an america.gov link. The theme has broad meme appeal, but many clones are splitting the attention.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The narrative seems to come from a live news or X event, and deployers are rushing to launch copies. The leading copy's $2.7M hourly volume shows real attention on the theme, but most of it is going to other contracts."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None beyond the matching name and ticker. It launched after the leading copies (FYM6 at 12:02, 4Ptj at 12:05) and sits well below them by market cap and volume. Its links even point to the FYM6 contract.",
+   "competing_tokens": "FYM6...eFkt ($841k market cap, $91k liquidity, $2.7M hourly volume, earliest and likely canonical), 4Ptj... ($362k), BKgi... ($250k), BLPK..., FP1X... and several more. There is also an older vLie... DebtCoin from 2025.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There were 2,322 buys against 353 sells and 2,117 unique buyers against 114 sellers in about 15 minutes. That volume works out to about $25 per buy, a pattern typical of bot micro-buys that inflate holder counts. GeckoTerminal counts only 253 holders, with 99.97% in the top 10. One unlabelled wallet holds 80%. GMGN flags 10 bundler wallets, the image is duplicated 7 times, and GMGN shows only 3 page visits. The last 5 minutes (m5) look balanced (71 buys/71 sells, 42 buyers/40 sellers), so the early buy wave has stopped.",
+   "uncertainty": "The 80% holder could be a pool or curve account that RugCheck failed to label, since the Meteora curve migrated in the same second. The micro-buys could also be airdrop or volume-bot services rather than a sign of a rug."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "RugCheck flags 99.99% of the LP as unlocked (danger), which conflicts with GMGN's lp_burn_ratio of 1.0",
+    "A single unlabelled wallet holds 80% of supply",
+    "GeckoTerminal puts the top 10 at 99.97%",
+    "10 bundler wallets",
+    "Creator already closed out (creator_close)",
+    "Many same-name clones are splitting liquidity",
+    "The socials field is scraped junk that includes a recycled X account formerly named ElizabethHolmes"
+   ]
+  },
+  "counterargument": "The debt narrative looks live and strong: the leading copy did $2.7M volume in an hour, and clone rotations sometimes lift the cheaper copies as latecomers look for 'the next one'. At $100k this token could double on narrative spillover alone. The 80% holder may just be pool or curve inventory, and mint and freeze authority are both renounced.",
+  "unknowns": [
+   "Who the 80% holder FhVo... is: an unlabelled pool/curve account or an insider",
+   "Whether the LP is really unlocked, since RugCheck and GMGN disagree",
+   "What the triggering news or tweet actually was",
+   "Whether the leading FYM6 copy will keep pulling in attention"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses the packet only."
+  },
+  "thesis": "This is a late, non-canonical clone in a crowded narrative. It shows bot-like micro-buy breadth, extreme holder concentration, an unlocked-LP warning, and a creator who has already exited. The broad narrative may run, but the leading copy is FYM6, not this token. Expect it to fade or be pulled.",
+  "continuation_view": "fade",
+  "p_runner": 5,
+  "p_rug": 45,
+  "survival_score": 22,
+  "attention_score": 35,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4573,
+ "type": "result",
+ "duration_ms": 23727,
+ "uuid": "5a37dc6a-92af-4d98-93ba-819077932243",
+ "ttft_stream_ms": 867,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 867,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

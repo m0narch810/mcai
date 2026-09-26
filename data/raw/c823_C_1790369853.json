@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 39125,
+ "stop_reason": "tool_use",
+ "session_id": "f93fba11-7f15-435d-b10a-1c9343e7aed4",
+ "total_cost_usd": 0.21521140000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11714,
+  "cache_read_input_tokens": 26652,
+  "output_tokens": 2740,
+  "output_tokens_details": {
+   "thinking_tokens": 214
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11714,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2228,
+    "cache_read_input_tokens": 13167,
+    "cache_creation_input_tokens": 1311,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1311
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2740,
+   "cacheReadInputTokens": 26652,
+   "cacheCreationInputTokens": 11714,
+   "webSearchRequests": 0,
+   "costUSD": 0.15386640000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 214,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 27680,
+   "outputTokens": 733,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.061345,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a pump.fun coin about 20 minutes old, trading at roughly a $12k market cap. It was launched off a single X post (x.com/Threell/status/2103584690430947485) using UsePaid's \\\"fees to @georgewuai\\\" setup. The price is up about 190-210% in the last hour on about $22k of volume, from 160 unique buyers and 109 unique sellers. GeckoTerminal shows the last 5 minutes at about -9%, so the first spike is already cooling. At least two copycat \\\"Sylvester Stallone Memes\\\" tokens launched at about the same time. One of them, STALLONE, did about $15.5k of volume in its first hour. That looks like a launch-sniping race over one tweet, not a real cultural event. The creator has launched 115 tokens.\",\"narrative\":{\"description\":\"A generic Sylvester Stallone memes theme, tied to one X post by Threell. The fees go to @georgewuai through UsePaid, a creator-fee launch tool. I found no news or current event about Stallone that would drive attention.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Most likely pump.fun bots and snipers reacting to a tweet-triggered launch, with several near-identical deploys competing at once. I saw no sign of the story spreading on its own.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most volume and liquidity of the three same-name deploys, and its DexScreener profile links to the source tweet and the UsePaid page.\",\"competing_tokens\":\"STALLONE (2putM7...) launched 44 seconds earlier, at $7k mcap with $15.5k volume in its first hour. An earlier SYLVESTER (6bMCDN...) is at $3.5k mcap.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN tags 64 bundler wallets, which is more than its 61-holder count. Top bundler traders hold 25%, and the bot/degen rate is 34%. There is 1 smart wallet and 1 renowned wallet, and no paid DexScreener boosts. The creator is a serial launcher with 115 tokens; their best one peaked at about $236k ATH. Buyer breadth is fair: 160 unique buyers.\",\"uncertainty\":\"I could not see X posts; the tweet returned 402. I could not tell whether the tweet's author or @georgewuai has a real audience.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The creator is a serial launcher with 115 tokens\",\"A lot of bundler activity (64 bundler-tagged wallets)\",\"Copycat deploys split the attention\",\"The price has already roughly tripled, and the last 5 minutes are negative on GeckoTerminal\",\"The bonding curve is thin at a $12k market cap, so a few sellers can push it down 50%\"]},\"counterargument\":\"At a $12k market cap, a 2x only takes a few thousand dollars of buying. Structure is clean: authorities renounced, dev holds 0.18%, top 10 hold 24.5%, and there are 160 unique buyers. If the tweet's author or the fee recipient has a real following, the coin could keep climbing toward bonding-curve completion.\",\"unknowns\":[\"What the Threell tweet actually says and how big its reach is\",\"Who @georgewuai is\",\"Whether any KOL or call channel is pushing it\",\"What the creator's past tokens did (rug history)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Time was limited. The contract search returned nothing relevant. The name search only returned generic Stallone meme pages. The X post returned 402, and usepaid.app failed with an SSL error. I did not run Reddit, Telegram or Discord searches.\"},\"thesis\":\"A tweet-launched Stallone meme coin from a dev who has launched 115 tokens. It has heavy bundler activity, copycats splitting the attention, and I found no event behind the theme. It has already pumped about 3x in 20 minutes and is starting to cool, so it is probably at or below the pool's base rate for a 2x.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":30,\"survival_score\":35,\"attention_score\":35,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/Threell/status/2103584690430947485\",\"what\":\"Source tweet from the project socials (fetch returned 402)\"},{\"url\":\"https://usepaid.app/token/FLtrSM8pA795k85d6swFcvUMWoDETp53T4tbPMGS1hPQ\",\"what\":\"Project website (fetch failed with SSL error)\"},{\"url\":\"https://tenor.com/search/stallone-meme-gifs\",\"what\":\"Name search returned only generic Stallone meme pages, no coin or event\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is a pump.fun coin about 20 minutes old, trading at roughly a $12k market cap. It was launched off a single X post (x.com/Threell/status/2103584690430947485) using UsePaid's \"fees to @georgewuai\" setup. The price is up about 190-210% in the last hour on about $22k of volume, from 160 unique buyers and 109 unique sellers. GeckoTerminal shows the last 5 minutes at about -9%, so the first spike is already cooling. At least two copycat \"Sylvester Stallone Memes\" tokens launched at about the same time. One of them, STALLONE, did about $15.5k of volume in its first hour. That looks like a launch-sniping race over one tweet, not a real cultural event. The creator has launched 115 tokens.",
+  "narrative": {
+   "description": "A generic Sylvester Stallone memes theme, tied to one X post by Threell. The fees go to @georgewuai through UsePaid, a creator-fee launch tool. I found no news or current event about Stallone that would drive attention.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Most likely pump.fun bots and snipers reacting to a tweet-triggered launch, with several near-identical deploys competing at once. I saw no sign of the story spreading on its own."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most volume and liquidity of the three same-name deploys, and its DexScreener profile links to the source tweet and the UsePaid page.",
+   "competing_tokens": "STALLONE (2putM7...) launched 44 seconds earlier, at $7k mcap with $15.5k volume in its first hour. An earlier SYLVESTER (6bMCDN...) is at $3.5k mcap.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN tags 64 bundler wallets, which is more than its 61-holder count. Top bundler traders hold 25%, and the bot/degen rate is 34%. There is 1 smart wallet and 1 renowned wallet, and no paid DexScreener boosts. The creator is a serial launcher with 115 tokens; their best one peaked at about $236k ATH. Buyer breadth is fair: 160 unique buyers.",
+   "uncertainty": "I could not see X posts; the tweet returned 402. I could not tell whether the tweet's author or @georgewuai has a real audience."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The creator is a serial launcher with 115 tokens",
+    "A lot of bundler activity (64 bundler-tagged wallets)",
+    "Copycat deploys split the attention",
+    "The price has already roughly tripled, and the last 5 minutes are negative on GeckoTerminal",
+    "The bonding curve is thin at a $12k market cap, so a few sellers can push it down 50%"
+   ]
+  },
+  "counterargument": "At a $12k market cap, a 2x only takes a few thousand dollars of buying. Structure is clean: authorities renounced, dev holds 0.18%, top 10 hold 24.5%, and there are 160 unique buyers. If the tweet's author or the fee recipient has a real following, the coin could keep climbing toward bonding-curve completion.",
+  "unknowns": [
+   "What the Threell tweet actually says and how big its reach is",
+   "Who @georgewuai is",
+   "Whether any KOL or call channel is pushing it",
+   "What the creator's past tokens did (rug history)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Time was limited. The contract search returned nothing relevant. The name search only returned generic Stallone meme pages. The X post returned 402, and usepaid.app failed with an SSL error. I did not run Reddit, Telegram or Discord searches."
+  },
+  "thesis": "A tweet-launched Stallone meme coin from a dev who has launched 115 tokens. It has heavy bundler activity, copycats splitting the attention, and I found no event behind the theme. It has already pumped about 3x in 20 minutes and is starting to cool, so it is probably at or below the pool's base rate for a 2x.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 30,
+  "survival_score": 35,
+  "attention_score": 35,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/Threell/status/2103584690430947485",
+    "what": "Source tweet from the project socials (fetch returned 402)"
+   },
+   {
+    "url": "https://usepaid.app/token/FLtrSM8pA795k85d6swFcvUMWoDETp53T4tbPMGS1hPQ",
+    "what": "Project website (fetch failed with SSL error)"
+   },
+   {
+    "url": "https://tenor.com/search/stallone-meme-gifs",
+    "what": "Name search returned only generic Stallone meme pages, no coin or event"
+   }
+  ]
+ },
+ "ttft_ms": 1344,
+ "type": "result",
+ "duration_ms": 35243,
+ "uuid": "905b0a16-6a3e-4e28-b1a9-3e8c4d9f99e6",
+ "ttft_stream_ms": 723,
+ "time_to_request_ms": 53,
+ "first_content_frame_ms": 723,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

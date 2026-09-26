@@ -1,0 +1,173 @@
+{
+ "duration_api_ms": 42379,
+ "stop_reason": "tool_use",
+ "session_id": "ed7c5a84-29db-4faa-a751-92c3acfa9477",
+ "total_cost_usd": 0.2278408,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 12761,
+  "cache_read_input_tokens": 42664,
+  "output_tokens": 2515,
+  "output_tokens_details": {
+   "thinking_tokens": 468
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12761,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1963,
+    "cache_read_input_tokens": 14301,
+    "cache_creation_input_tokens": 1224,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1224
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 2515,
+   "cacheReadInputTokens": 42664,
+   "cacheCreationInputTokens": 12761,
+   "webSearchRequests": 0,
+   "costUSD": 0.1609528,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 468,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32573,
+   "outputTokens": 863,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.066888,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Leaf\\\" is one of at least 10 pump.fun coins with the same name, all launched within a few minutes of each other around 04:05 UTC. They seem to be riding the Leaf launchpad (leafdot.fun, @Leafdotfun_). That platform launches pump.fun coins paired with tokenized stocks and splits creator fees 45% to an X creator, 45% to stock holders and 10% to the launchpad. This coin's GeckoTerminal social link points to a Leafdotfun_ status post. The coin graduated to PumpSwap within about 13 minutes. It now sits around $20.8k mcap, about 24% below its ATH. Flow is extremely one-sided: 1,804 unique buyers against only 53 sellers.\",\"narrative\":{\"description\":\"The Leaf launchpad ('creator fees to X, stock to holders') seems to be launching now or getting attention, and a swarm of coins named 'Leaf' was deployed to front-run or copy it.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Most likely a launchpad announcement tweet set off a copycat rush of launches. I found no organic discussion of this particular contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is a social field pointing to a Leafdotfun_ tweet, which any deployer can set. The site lists no official contract.\",\"competing_tokens\":\"At least 9 other 'Leaf' coins were launched in the same few minutes. EKXP724f... was created earlier than this one and has more volume (about $426k in the last hour, $39.6k mcap). A1dBwt... is at $225k mcap. Several others already have near-zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 39 bundler wallets holding 21.8% of top traders. There is a 44-wallet insider trade network. The creator has closed their position. The 1,804 buyers vs 53 sellers split looks like bot or bundled flow. No smart-money or KOL wallets are present.\",\"uncertainty\":\"The buyer/seller asymmetry could partly be early, real launchpad hype. I have no X data.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"LP is 100% unlocked (RugCheck danger)\",\"39 bundlers and a 44-wallet insider network\",\"Price already about 24% below ATH and fading on the 5-minute chart\",\"Many same-name copies splitting demand\",\"Deployer has closed their position\"]},\"counterargument\":\"If the Leaf launchpad itself is getting real attention, one of the early 'Leaf' coins could become the one everyone uses. At $20k mcap with 1,800 buyers, a 2x only needs about $40k mcap, and heavy buy-side flow could carry it there.\",\"unknowns\":[\"Which Leaf coin, if any, the launchpad endorses\",\"The content of the Leafdotfun_ tweet\",\"Whether the buyers are bots\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Time-limited. Searching the contract address found nothing. The leafdot.fun site describes the platform but lists no contract address.\"},\"thesis\":\"This is a non-canonical copy in a same-name swarm tied to a launchpad buzz. It has bundled, insider-heavy structure and unlocked LP, and it is already fading from its ATH. Its odds of running are below a typical coin in this pool.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":40,\"survival_score\":25,\"attention_score\":45,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://leafdot.fun/\",\"what\":\"Leaf launchpad description, no contract address listed\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Leaf\" is one of at least 10 pump.fun coins with the same name, all launched within a few minutes of each other around 04:05 UTC. They seem to be riding the Leaf launchpad (leafdot.fun, @Leafdotfun_). That platform launches pump.fun coins paired with tokenized stocks and splits creator fees 45% to an X creator, 45% to stock holders and 10% to the launchpad. This coin's GeckoTerminal social link points to a Leafdotfun_ status post. The coin graduated to PumpSwap within about 13 minutes. It now sits around $20.8k mcap, about 24% below its ATH. Flow is extremely one-sided: 1,804 unique buyers against only 53 sellers.",
+  "narrative": {
+   "description": "The Leaf launchpad ('creator fees to X, stock to holders') seems to be launching now or getting attention, and a swarm of coins named 'Leaf' was deployed to front-run or copy it.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Most likely a launchpad announcement tweet set off a copycat rush of launches. I found no organic discussion of this particular contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is a social field pointing to a Leafdotfun_ tweet, which any deployer can set. The site lists no official contract.",
+   "competing_tokens": "At least 9 other 'Leaf' coins were launched in the same few minutes. EKXP724f... was created earlier than this one and has more volume (about $426k in the last hour, $39.6k mcap). A1dBwt... is at $225k mcap. Several others already have near-zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 39 bundler wallets holding 21.8% of top traders. There is a 44-wallet insider trade network. The creator has closed their position. The 1,804 buyers vs 53 sellers split looks like bot or bundled flow. No smart-money or KOL wallets are present.",
+   "uncertainty": "The buyer/seller asymmetry could partly be early, real launchpad hype. I have no X data."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "LP is 100% unlocked (RugCheck danger)",
+    "39 bundlers and a 44-wallet insider network",
+    "Price already about 24% below ATH and fading on the 5-minute chart",
+    "Many same-name copies splitting demand",
+    "Deployer has closed their position"
+   ]
+  },
+  "counterargument": "If the Leaf launchpad itself is getting real attention, one of the early 'Leaf' coins could become the one everyone uses. At $20k mcap with 1,800 buyers, a 2x only needs about $40k mcap, and heavy buy-side flow could carry it there.",
+  "unknowns": [
+   "Which Leaf coin, if any, the launchpad endorses",
+   "The content of the Leafdotfun_ tweet",
+   "Whether the buyers are bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Time-limited. Searching the contract address found nothing. The leafdot.fun site describes the platform but lists no contract address."
+  },
+  "thesis": "This is a non-canonical copy in a same-name swarm tied to a launchpad buzz. It has bundled, insider-heavy structure and unlocked LP, and it is already fading from its ATH. Its odds of running are below a typical coin in this pool.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 40,
+  "survival_score": 25,
+  "attention_score": 45,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://leafdot.fun/",
+    "what": "Leaf launchpad description, no contract address listed"
+   }
+  ]
+ },
+ "ttft_ms": 1860,
+ "type": "result",
+ "duration_ms": 38858,
+ "uuid": "6709a255-19ae-45e4-a6f4-14524c7308b1",
+ "ttft_stream_ms": 1110,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 1110,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

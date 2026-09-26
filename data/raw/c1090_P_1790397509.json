@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 24127,
+ "stop_reason": "tool_use",
+ "session_id": "07799f82-8570-4156-97e9-a9eab9fdfa38",
+ "total_cost_usd": 0.1129324,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8115,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2379,
+  "output_tokens_details": {
+   "thinking_tokens": 349
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8115,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2379,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8115,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8115
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2379,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8115,
+   "webSearchRequests": 0,
+   "costUSD": 0.1129324,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 349,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"LaunchCat is a 15-minute-old token. It was not launched on the pump.fun bonding curve: there is no 'pump' suffix, migrated_unix is 0, and deploy_platform is unknown. Instead its PumpSwap pool was created directly, about 3 seconds after the mint. Liquidity (~$30k) is larger than market cap (~$22k), and 100% of the LP is unlocked with few LP providers, so the creator can most likely pull the pool. Price has roughly doubled in the first hour on ~$77k volume. The packet shows ~1,038 unique buyers against only ~105 unique sellers, 951 of those buyers in the last 15 minutes, and GMGN tags 1,000 of 1,070 holders as fresh wallets, plus 33 bundlers. The GeckoTerminal 'twitter' field points to a single tweet from a personal account. Same-name tokens were launched within seconds of it (a pump.fun LaunchCat 156s earlier, another 4s later with $35k h1 volume that is already at ~$0 liquidity), so a tweet likely set off a race of copycat launches.\",\"narrative\":{\"description\":\"A tweet-sparked name ('LaunchCat') that set off several copycat deploys at once. There is no website, no socials and no DexScreener profile. The story rests on one referenced tweet whose content we cannot see.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Launch sniping off a tweet. The buyer burst looks mostly like fresh wallets, not organic community discovery.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name pair with meaningful liquidity and volume right now. Several competitors launched within minutes of it and have already died or been drained.\",\"competing_tokens\":\"9E1W...pump (pump.fun, launched 156s earlier, h1 vol $25k, now ~$3.6k mcap and zero liquidity); nycs... (launched 4s later, $35k h1 vol, liquidity already $1.44, i.e. rugged); several older dead LaunchCat tickers.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,000 of 1,070 holders are fresh wallets. The buyer-to-seller ratio is about 10:1 (1,038 vs 105), with 951 buyers packed into 15 minutes. Top-10 holders are very flat at ~0.46% each, which looks like distributed farming. There are 33 bundler wallets, and a near-identical sister deploy was rugged within the first hour.\",\"uncertainty\":\"The fresh-wallet count may partly reflect retail newcomers during a busy period. GMGN's fresh_wallet_rate of 0.30 conflicts with the 1,000-of-1,070 count.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked in a raw PumpSwap pool the dev can remove at any time\",\"Liquidity larger than market cap suggests the dev seeded the pool and can pull it\",\"Mass fresh-wallet buying looks manufactured\",\"The sister deploy launched the same minute has already been drained\",\"Dev history is inconsistent (0 launches listed, yet a best token ATH of $179k)\"]},\"counterargument\":\"Buying is broad and still speeding up: 273 unique buyers in the last 5 minutes, a 2.4:1 buy/sell transaction ratio, and top-10 concentration of only 7%. Mint and freeze authority are renounced and there is no tax. If the source tweet is from a notable account, this pool could become the accepted LaunchCat. From a $22k market cap, a doubling needs only modest inflows, and deep liquidity relative to market cap cushions slippage.\",\"unknowns\":[\"Who owns the tweet and what it says\",\"Whether the creator holds the LP tokens\",\"Whether the fresh wallets are one bot cluster\",\"Where the creator's funds came from\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. Judged from the packet only.\"},\"thesis\":\"This looks like a dev-seeded PumpSwap pool with fully unlocked LP, pumped by a farm of fresh wallets during a copycat race over a tweet-based name. A same-minute sibling has already been rugged. This coin has already done about 2x, so the upside from entry is doubtful, and the chance of the LP being pulled is high. Rank it low.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":50,\"survival_score\":22,\"attention_score\":58,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "LaunchCat is a 15-minute-old token. It was not launched on the pump.fun bonding curve: there is no 'pump' suffix, migrated_unix is 0, and deploy_platform is unknown. Instead its PumpSwap pool was created directly, about 3 seconds after the mint. Liquidity (~$30k) is larger than market cap (~$22k), and 100% of the LP is unlocked with few LP providers, so the creator can most likely pull the pool. Price has roughly doubled in the first hour on ~$77k volume. The packet shows ~1,038 unique buyers against only ~105 unique sellers, 951 of those buyers in the last 15 minutes, and GMGN tags 1,000 of 1,070 holders as fresh wallets, plus 33 bundlers. The GeckoTerminal 'twitter' field points to a single tweet from a personal account. Same-name tokens were launched within seconds of it (a pump.fun LaunchCat 156s earlier, another 4s later with $35k h1 volume that is already at ~$0 liquidity), so a tweet likely set off a race of copycat launches.",
+  "narrative": {
+   "description": "A tweet-sparked name ('LaunchCat') that set off several copycat deploys at once. There is no website, no socials and no DexScreener profile. The story rests on one referenced tweet whose content we cannot see.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Launch sniping off a tweet. The buyer burst looks mostly like fresh wallets, not organic community discovery."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name pair with meaningful liquidity and volume right now. Several competitors launched within minutes of it and have already died or been drained.",
+   "competing_tokens": "9E1W...pump (pump.fun, launched 156s earlier, h1 vol $25k, now ~$3.6k mcap and zero liquidity); nycs... (launched 4s later, $35k h1 vol, liquidity already $1.44, i.e. rugged); several older dead LaunchCat tickers.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,000 of 1,070 holders are fresh wallets. The buyer-to-seller ratio is about 10:1 (1,038 vs 105), with 951 buyers packed into 15 minutes. Top-10 holders are very flat at ~0.46% each, which looks like distributed farming. There are 33 bundler wallets, and a near-identical sister deploy was rugged within the first hour.",
+   "uncertainty": "The fresh-wallet count may partly reflect retail newcomers during a busy period. GMGN's fresh_wallet_rate of 0.30 conflicts with the 1,000-of-1,070 count."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked in a raw PumpSwap pool the dev can remove at any time",
+    "Liquidity larger than market cap suggests the dev seeded the pool and can pull it",
+    "Mass fresh-wallet buying looks manufactured",
+    "The sister deploy launched the same minute has already been drained",
+    "Dev history is inconsistent (0 launches listed, yet a best token ATH of $179k)"
+   ]
+  },
+  "counterargument": "Buying is broad and still speeding up: 273 unique buyers in the last 5 minutes, a 2.4:1 buy/sell transaction ratio, and top-10 concentration of only 7%. Mint and freeze authority are renounced and there is no tax. If the source tweet is from a notable account, this pool could become the accepted LaunchCat. From a $22k market cap, a doubling needs only modest inflows, and deep liquidity relative to market cap cushions slippage.",
+  "unknowns": [
+   "Who owns the tweet and what it says",
+   "Whether the creator holds the LP tokens",
+   "Whether the fresh wallets are one bot cluster",
+   "Where the creator's funds came from"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. Judged from the packet only."
+  },
+  "thesis": "This looks like a dev-seeded PumpSwap pool with fully unlocked LP, pumped by a farm of fresh wallets during a copycat race over a tweet-based name. A same-minute sibling has already been rugged. This coin has already done about 2x, so the upside from entry is doubtful, and the chance of the LP being pulled is high. Rank it low.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 58,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5369,
+ "type": "result",
+ "duration_ms": 24175,
+ "uuid": "75dae18a-3b50-47cf-bc9e-d07ef372d5dd",
+ "ttft_stream_ms": 1901,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 1901,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

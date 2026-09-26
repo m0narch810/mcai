@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 20929,
+ "stop_reason": "tool_use",
+ "session_id": "9d211df0-5d75-45c6-95c1-0901f9faad3a",
+ "total_cost_usd": 0.0977564,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6873,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2117,
+  "output_tokens_details": {
+   "thinking_tokens": 298
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6873,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2117,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6873,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6873
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2117,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6873,
+   "webSearchRequests": 0,
+   "costUSD": 0.0977564,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 298,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Elon Mask\\\" is a pump.fun coin, apparently a mask or face joke on Elon Musk (\\\"Behind every launch is a face\\\"). It was created at 07:19 UTC and left the bonding curve for PumpSwap about 2 minutes later. That is an extremely fast bond, which usually means bundled or coordinated early buying. Within about 14 minutes it traded roughly $490-508k of volume against a $75k market cap, with about 1,258 unique buyers and 948 unique sellers. It peaked near $109k and was falling at detection: -23% over 5 minutes on DexScreener. The LP is burned (100%), mint and freeze authority are renounced, and the top 10 wallets hold only about 14%. GMGN flags 128 bundler wallets holding about 16%, and 432 of 729 wallets are fresh.\",\"narrative\":{\"description\":\"A generic Elon Musk wordplay meme ('Elon Mask'). It has an X handle and a website but no DexScreener profile and no paid boosts. Elon-derivative names are extremely common and short-lived, unless tied to a real Elon post, which the packet does not show.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The spread looks driven by bundled launch buying, a fast bond and bot-heavy early trading rather than an outside catalyst. There is no evidence of an Elon tweet or news hook.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the only live pair with the name. The earlier 'Elon Mask' token is dead (BLOCKED, $0 liquidity).\",\"competing_tokens\":\"2j5zSY...pump 'Elon Mask', dead at a $3k market cap. Many other Elon-themed coins probably exist.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"It bonded 2 minutes after creation. There are 128 bundler wallets (top bundler share 16%), 60% of wallets are fresh, and 25 are snipers. Against that, it has 1,258 unique buyers, a spread-out top 10 (14%), a dev holding about 0.1% who is funded from Binance with one prior launch, no paid promotion and 5 smart wallets.\",\"uncertainty\":\"No X data, so I can't tell whether any real Elon-related catalyst or KOL push exists.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Bundlers hold about 16% and could dump into $24k of liquidity\",\"About 60% fresh wallets suggests manufactured breadth\",\"Price is already about 31% below its ATH, with sharp 5-minute selling\",\"20x hourly turnover means heavy churn and bot volume\"]},\"counterargument\":\"It has real breadth for a 14-minute-old coin: more than 1,250 unique buyers, a low top-10 concentration, burned LP, a clean dev and no paid ads. A broadly recognisable Elon joke can pull in a second wave, and a dip from $109k to $75k at entry leaves room for a 2x back to $150k if new buyers keep coming in.\",\"unknowns\":[\"Whether Elon or a large account posted anything related\",\"The bundlers' exit behaviour\",\"Whether the 5-minute drop continues past the entry at T+4 minutes\",\"The X account's following\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgement uses only the packet.\"},\"thesis\":\"This looks like a bundled fast-bond Elon derivative whose first wave is already cooling. The structure is cleaner than usual (burned LP, spread-out holders, clean dev) and the buyer count is high, so there is some chance of a second leg. More likely, though, it bleeds as the bundlers and fresh wallets exit. The chance of a 2x is slightly above the pool's base rate, not a strong setup.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":22,\"survival_score\":55,\"attention_score\":68,\"manipulation_risk\":65,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"Elon Mask\" is a pump.fun coin, apparently a mask or face joke on Elon Musk (\"Behind every launch is a face\"). It was created at 07:19 UTC and left the bonding curve for PumpSwap about 2 minutes later. That is an extremely fast bond, which usually means bundled or coordinated early buying. Within about 14 minutes it traded roughly $490-508k of volume against a $75k market cap, with about 1,258 unique buyers and 948 unique sellers. It peaked near $109k and was falling at detection: -23% over 5 minutes on DexScreener. The LP is burned (100%), mint and freeze authority are renounced, and the top 10 wallets hold only about 14%. GMGN flags 128 bundler wallets holding about 16%, and 432 of 729 wallets are fresh.",
+  "narrative": {
+   "description": "A generic Elon Musk wordplay meme ('Elon Mask'). It has an X handle and a website but no DexScreener profile and no paid boosts. Elon-derivative names are extremely common and short-lived, unless tied to a real Elon post, which the packet does not show.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The spread looks driven by bundled launch buying, a fast bond and bot-heavy early trading rather than an outside catalyst. There is no evidence of an Elon tweet or news hook."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the only live pair with the name. The earlier 'Elon Mask' token is dead (BLOCKED, $0 liquidity).",
+   "competing_tokens": "2j5zSY...pump 'Elon Mask', dead at a $3k market cap. Many other Elon-themed coins probably exist.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "It bonded 2 minutes after creation. There are 128 bundler wallets (top bundler share 16%), 60% of wallets are fresh, and 25 are snipers. Against that, it has 1,258 unique buyers, a spread-out top 10 (14%), a dev holding about 0.1% who is funded from Binance with one prior launch, no paid promotion and 5 smart wallets.",
+   "uncertainty": "No X data, so I can't tell whether any real Elon-related catalyst or KOL push exists."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Bundlers hold about 16% and could dump into $24k of liquidity",
+    "About 60% fresh wallets suggests manufactured breadth",
+    "Price is already about 31% below its ATH, with sharp 5-minute selling",
+    "20x hourly turnover means heavy churn and bot volume"
+   ]
+  },
+  "counterargument": "It has real breadth for a 14-minute-old coin: more than 1,250 unique buyers, a low top-10 concentration, burned LP, a clean dev and no paid ads. A broadly recognisable Elon joke can pull in a second wave, and a dip from $109k to $75k at entry leaves room for a 2x back to $150k if new buyers keep coming in.",
+  "unknowns": [
+   "Whether Elon or a large account posted anything related",
+   "The bundlers' exit behaviour",
+   "Whether the 5-minute drop continues past the entry at T+4 minutes",
+   "The X account's following"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgement uses only the packet."
+  },
+  "thesis": "This looks like a bundled fast-bond Elon derivative whose first wave is already cooling. The structure is cleaner than usual (burned LP, spread-out holders, clean dev) and the buyer count is high, so there is some chance of a second leg. More likely, though, it bleeds as the bundlers and fresh wallets exit. The chance of a 2x is slightly above the pool's base rate, not a strong setup.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 22,
+  "survival_score": 55,
+  "attention_score": 68,
+  "manipulation_risk": 65,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3887,
+ "type": "result",
+ "duration_ms": 20972,
+ "uuid": "f805585f-ebfb-4c91-9f72-a5e308d5768d",
+ "ttft_stream_ms": 615,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 616,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

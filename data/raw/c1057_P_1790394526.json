@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 22964,
+ "stop_reason": "tool_use",
+ "session_id": "5a69df2c-b5ba-47be-84cb-6fc1d0ea3a71",
+ "total_cost_usd": 0.1170524,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8665,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2365,
+  "output_tokens_details": {
+   "thinking_tokens": 434
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8665,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2365,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8665,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8665
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2365,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8665,
+   "webSearchRequests": 0,
+   "costUSD": 0.1170524,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 434,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a copycat 'SteveWillDoIt' token, 16 minutes old, trading on a PumpSwap pool. It was not launched on the pump.fun curve (deploy platform unknown, migrated_unix 0). Its description points to a different contract (3pVv9\u2026, STEVEWILLDOIT, about $459k market cap, created about 70 minutes earlier) on usepaid.app. The pool holds $198k of liquidity against a $129k market cap, so someone manually seeded it with a large amount of SOL, and 100% of the LP is unlocked. It traded $1.6M in about 16 minutes (roughly 12x its market cap), with 565 unique buyers but only 53 unique sellers making about 1,060 sells. GMGN flags 50 bundler wallets holding 22.5% of top trader share.\",\"narrative\":{\"description\":\"This is a wave of SteveWillDoIt (the influencer Steve Deleonardis) meme launches. At least 9 same-name tokens appeared in the last ~80 minutes, most of them already dead or at zero liquidity. The narrative is a short-lived event spin-off, and this token is a derivative of it.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Some celebrity or influencer moment is spawning many copies at once. Attention is split across clones, and the leading one (3pVv9) holds most of the canonical claim.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the 'STEVE' ticker and the SteveWillDoIt name, and it borrows the usepaid.app link of another token (3pVv9) instead of having its own identity.\",\"competing_tokens\":\"3pVv9\u2026 STEVEWILLDOIT ($459k market cap, $1.3M hourly volume, the earliest and the one linked in this token's own description); 53FYa\u2026 Chinese-ticker version ($506k market cap, zero liquidity); several dead STEVEWILLD/STEVE clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Volume is about 12x market cap within 16 minutes. Only 53 unique sellers made about 1,062 sells, which looks like bot or wash cycling. GMGN flags 50 bundler wallets. The liquidity was manually seeded above market cap and is fully unlocked. The linked X account has 4 prior renames (recycled). The link points to a different token's page.\",\"uncertainty\":\"There are 565 unique buyers, and some of that breadth may be real traders chasing the Steve theme. Without X data I can't confirm whether any organic interest exists.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and there are few LP providers, so the deployer can pull roughly $200k of liquidity at any time\",\"Liquidity above market cap means the pool was seeded by the deployer, a classic setup for a liquidity pull\",\"50 bundler wallets and a low count of unique sellers suggest wash volume\",\"This is a copycat that is not canonical, among many clones\",\"The project's X account is recycled, with 4 renames\"]},\"counterargument\":\"Mint and freeze authority are renounced. Top-10 holders excluding the AMM hold only about 12.6%, the dev holds almost nothing, and nearly 600 holders arrived in 15 minutes. If the SteveWillDoIt moment keeps going viral and traders rotate off the pricier 3pVv9 onto a cheaper 'STEVE' ticker, a thin $129k market cap could double quickly. The deep liquidity also means small sellers have less price impact.\",\"unknowns\":[\"Who seeded the LP, and whether they will withdraw it\",\"What the Steve event is and how long it lasts\",\"Whether the buyers are real or bot wallets\",\"Whether X has picked up this specific contract\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This is a manually seeded, unlocked-LP clone of a trending influencer meme, with heavy bundling and signs of wash trading. The most likely outcome is a liquidity pull or a bleed-out after early extraction. The chance of a 2x from entry is low relative to the pool.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":50,\"survival_score\":22,\"attention_score\":60,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is a copycat 'SteveWillDoIt' token, 16 minutes old, trading on a PumpSwap pool. It was not launched on the pump.fun curve (deploy platform unknown, migrated_unix 0). Its description points to a different contract (3pVv9\u2026, STEVEWILLDOIT, about $459k market cap, created about 70 minutes earlier) on usepaid.app. The pool holds $198k of liquidity against a $129k market cap, so someone manually seeded it with a large amount of SOL, and 100% of the LP is unlocked. It traded $1.6M in about 16 minutes (roughly 12x its market cap), with 565 unique buyers but only 53 unique sellers making about 1,060 sells. GMGN flags 50 bundler wallets holding 22.5% of top trader share.",
+  "narrative": {
+   "description": "This is a wave of SteveWillDoIt (the influencer Steve Deleonardis) meme launches. At least 9 same-name tokens appeared in the last ~80 minutes, most of them already dead or at zero liquidity. The narrative is a short-lived event spin-off, and this token is a derivative of it.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Some celebrity or influencer moment is spawning many copies at once. Attention is split across clones, and the leading one (3pVv9) holds most of the canonical claim."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the 'STEVE' ticker and the SteveWillDoIt name, and it borrows the usepaid.app link of another token (3pVv9) instead of having its own identity.",
+   "competing_tokens": "3pVv9\u2026 STEVEWILLDOIT ($459k market cap, $1.3M hourly volume, the earliest and the one linked in this token's own description); 53FYa\u2026 Chinese-ticker version ($506k market cap, zero liquidity); several dead STEVEWILLD/STEVE clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Volume is about 12x market cap within 16 minutes. Only 53 unique sellers made about 1,062 sells, which looks like bot or wash cycling. GMGN flags 50 bundler wallets. The liquidity was manually seeded above market cap and is fully unlocked. The linked X account has 4 prior renames (recycled). The link points to a different token's page.",
+   "uncertainty": "There are 565 unique buyers, and some of that breadth may be real traders chasing the Steve theme. Without X data I can't confirm whether any organic interest exists."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and there are few LP providers, so the deployer can pull roughly $200k of liquidity at any time",
+    "Liquidity above market cap means the pool was seeded by the deployer, a classic setup for a liquidity pull",
+    "50 bundler wallets and a low count of unique sellers suggest wash volume",
+    "This is a copycat that is not canonical, among many clones",
+    "The project's X account is recycled, with 4 renames"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced. Top-10 holders excluding the AMM hold only about 12.6%, the dev holds almost nothing, and nearly 600 holders arrived in 15 minutes. If the SteveWillDoIt moment keeps going viral and traders rotate off the pricier 3pVv9 onto a cheaper 'STEVE' ticker, a thin $129k market cap could double quickly. The deep liquidity also means small sellers have less price impact.",
+  "unknowns": [
+   "Who seeded the LP, and whether they will withdraw it",
+   "What the Steve event is and how long it lasts",
+   "Whether the buyers are real or bot wallets",
+   "Whether X has picked up this specific contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This is a manually seeded, unlocked-LP clone of a trending influencer meme, with heavy bundling and signs of wash trading. The most likely outcome is a liquidity pull or a bleed-out after early extraction. The chance of a 2x from entry is low relative to the pool.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 60,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5598,
+ "type": "result",
+ "duration_ms": 23016,
+ "uuid": "ae0457f8-278f-4632-b993-5215d1ed848e",
+ "ttft_stream_ms": 694,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 694,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 46788,
+ "stop_reason": "tool_use",
+ "session_id": "5c5e0d6f-efe1-46b8-9dc0-61fe8cd95313",
+ "total_cost_usd": 0.2538538,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13676,
+  "cache_read_input_tokens": 29169,
+  "output_tokens": 2617,
+  "output_tokens_details": {
+   "thinking_tokens": 287
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13676,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2134,
+    "cache_read_input_tokens": 14529,
+    "cache_creation_input_tokens": 1911,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1911
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2617,
+   "cacheReadInputTokens": 29169,
+   "cacheCreationInputTokens": 13676,
+   "webSearchRequests": 0,
+   "costUSD": 0.1676058,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 287,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 39653,
+   "outputTokens": 1319,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.086248,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"bub\\\" is a pump.fun coin, about 12 minutes old and still on its bonding curve, at a market cap near $21k. Between about 07:53 and 08:02 UTC, at least 7 other coins named \\\"bub\\\" were launched (listed in the packet). That burst suggests they all reacted to the same trigger, most likely an X post by @LeonNubs, which is the coin's only social link. This coin won that race: it has about $34k of volume, 334 unique buyers and a +440% move, while the copies sit near $3.4k market cap. The dev has already sold everything (creator_close, 0% held), and GMGN already flags the coin as a \\\"community takeover\\\". I could not read the post itself (x.com returned HTTP 402) and web search found no discussion anywhere.\",\"narrative\":{\"description\":\"Probably a meme built on one post by @LeonNubs, likely an art or character called \\\"bub\\\". The account has been renamed 6 times (AnakinsDungeon \u2192 Idrawcircless \u2192 AlyciaTheArtist \u2192 Mrfrogey \u2192 WogThFwog \u2192 LeonNubs). I could not confirm what the post says. There is no link to Lil BUB (the famous cat) or to Leon Bub (a different cat account).\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Launch race after one X post. Several copycat coins launched within minutes; this one got the most volume first.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"This is the only coin in the recent \\\"bub\\\" cluster with real volume and holders, and its DexScreener profile links to the source post.\",\"competing_tokens\":\"7+ same-minute \\\"bub\\\" copies (5kbiJ..., 4aZXk..., 96u6V..., 3JwmS..., F3yP5..., ASHd8...), all near $3.4k market cap. There are also older, unrelated tokens: Lil BUB and AQUA Mascot BUB.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN counts 66 bundler wallets and 82 fresh wallets among 113 holders. Top bundler traders hold 26.7% and bot/degen traders make up 37%. The linked X account has been renamed 6 times, which marks a recycled account. There were no paid DexScreener boosts. There is 1 smart wallet and 2 renowned (KOL) wallets. The 334 unique buyers versus 238 unique sellers is decent breadth.\",\"uncertainty\":\"I could not see the X post or how far it spread.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Heavy bundler/fresh-wallet share that could be dumped into the curve\",\"Dev has already exited; the takeover label came very early\",\"Top-10 holders own about 27%, spread across many wallets that are probably linked\",\"Copycat coins with the same ticker split attention\"]},\"counterargument\":\"It clearly won the launch race: hundreds of unique buyers within 12 minutes and strong 5-minute momentum (m5 rate about 4x the h1 rate). At $21k, a 2x only needs about $42k while it is still on the curve. If the source post gets engagement, a curve fill toward $70k+ is plausible.\",\"unknowns\":[\"Content and reach of the @LeonNubs post\",\"Whether the bundled wallets belong to one operator\",\"Whether KOL wallets are buying or selling\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The X post fetch returned HTTP 402. Searches for the contract address and the name returned nothing relevant.\"},\"thesis\":\"A typical launch-race meme: it won the race, but it is heavily bundled, tied to a recycled X account, and the dev has already sold out. Momentum at a very small market cap gives it a slightly better-than-average chance of hitting 2x, but the bundle overhang makes a dump likely.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":30,\"survival_score\":40,\"attention_score\":48,\"manipulation_risk\":68,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/LeonNubs/status/2103754601476530378\",\"what\":\"Project's linked X post (fetch returned 402)\"},{\"url\":\"https://www.coingecko.com/en/coins/lil-bub-on-sol\",\"what\":\"Unrelated older Lil BUB token\"},{\"url\":\"https://x.com/leonbub?lang=en\",\"what\":\"Unrelated LeonBub cat account\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"bub\" is a pump.fun coin, about 12 minutes old and still on its bonding curve, at a market cap near $21k. Between about 07:53 and 08:02 UTC, at least 7 other coins named \"bub\" were launched (listed in the packet). That burst suggests they all reacted to the same trigger, most likely an X post by @LeonNubs, which is the coin's only social link. This coin won that race: it has about $34k of volume, 334 unique buyers and a +440% move, while the copies sit near $3.4k market cap. The dev has already sold everything (creator_close, 0% held), and GMGN already flags the coin as a \"community takeover\". I could not read the post itself (x.com returned HTTP 402) and web search found no discussion anywhere.",
+  "narrative": {
+   "description": "Probably a meme built on one post by @LeonNubs, likely an art or character called \"bub\". The account has been renamed 6 times (AnakinsDungeon \u2192 Idrawcircless \u2192 AlyciaTheArtist \u2192 Mrfrogey \u2192 WogThFwog \u2192 LeonNubs). I could not confirm what the post says. There is no link to Lil BUB (the famous cat) or to Leon Bub (a different cat account).",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Launch race after one X post. Several copycat coins launched within minutes; this one got the most volume first."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "This is the only coin in the recent \"bub\" cluster with real volume and holders, and its DexScreener profile links to the source post.",
+   "competing_tokens": "7+ same-minute \"bub\" copies (5kbiJ..., 4aZXk..., 96u6V..., 3JwmS..., F3yP5..., ASHd8...), all near $3.4k market cap. There are also older, unrelated tokens: Lil BUB and AQUA Mascot BUB.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN counts 66 bundler wallets and 82 fresh wallets among 113 holders. Top bundler traders hold 26.7% and bot/degen traders make up 37%. The linked X account has been renamed 6 times, which marks a recycled account. There were no paid DexScreener boosts. There is 1 smart wallet and 2 renowned (KOL) wallets. The 334 unique buyers versus 238 unique sellers is decent breadth.",
+   "uncertainty": "I could not see the X post or how far it spread."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Heavy bundler/fresh-wallet share that could be dumped into the curve",
+    "Dev has already exited; the takeover label came very early",
+    "Top-10 holders own about 27%, spread across many wallets that are probably linked",
+    "Copycat coins with the same ticker split attention"
+   ]
+  },
+  "counterargument": "It clearly won the launch race: hundreds of unique buyers within 12 minutes and strong 5-minute momentum (m5 rate about 4x the h1 rate). At $21k, a 2x only needs about $42k while it is still on the curve. If the source post gets engagement, a curve fill toward $70k+ is plausible.",
+  "unknowns": [
+   "Content and reach of the @LeonNubs post",
+   "Whether the bundled wallets belong to one operator",
+   "Whether KOL wallets are buying or selling"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The X post fetch returned HTTP 402. Searches for the contract address and the name returned nothing relevant."
+  },
+  "thesis": "A typical launch-race meme: it won the race, but it is heavily bundled, tied to a recycled X account, and the dev has already sold out. Momentum at a very small market cap gives it a slightly better-than-average chance of hitting 2x, but the bundle overhang makes a dump likely.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 30,
+  "survival_score": 40,
+  "attention_score": 48,
+  "manipulation_risk": 68,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/LeonNubs/status/2103754601476530378",
+    "what": "Project's linked X post (fetch returned 402)"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/lil-bub-on-sol",
+    "what": "Unrelated older Lil BUB token"
+   },
+   {
+    "url": "https://x.com/leonbub?lang=en",
+    "what": "Unrelated LeonBub cat account"
+   }
+  ]
+ },
+ "ttft_ms": 1515,
+ "type": "result",
+ "duration_ms": 38198,
+ "uuid": "510a5ffc-12ef-45ef-b25b-ea10caec8f6e",
+ "ttft_stream_ms": 926,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 926,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

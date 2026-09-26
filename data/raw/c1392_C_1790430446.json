@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 46658,
+ "stop_reason": "tool_use",
+ "session_id": "3c4969d9-2bc9-4a38-9409-c8985285bd08",
+ "total_cost_usd": 0.24055180000000004,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13527,
+  "cache_read_input_tokens": 29844,
+  "output_tokens": 2989,
+  "output_tokens_details": {
+   "thinking_tokens": 356
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13527,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2556,
+    "cache_read_input_tokens": 15098,
+    "cache_creation_input_tokens": 1193,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1193
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2989,
+   "cacheReadInputTokens": 29844,
+   "cacheCreationInputTokens": 13527,
+   "webSearchRequests": 0,
+   "costUSD": 0.1739888,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 356,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30438,
+   "outputTokens": 1225,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06656300000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Debt Cat (DCAT) is a pump.fun token with a generic striped-cat meme. Its pool was created at 13:29Z, and GMGN's created and migrated timestamps are identical, so it moved to PumpSwap straight away. In about 30 minutes it drew roughly 3,500 unique buyers but only about 180 sellers, around $258k of volume and a peak market cap near $215k. At T2 it sat at about $119k, down about 45% from its peak over 30 minutes, with a small +11% bounce in the last 5 minutes. The top 10 non-pool holders each hold an almost identical ~0.37%. I found no external event behind the name and no organic social discussion.\",\"narrative\":{\"description\":\"A generic cat meme ('the striped cat on Solana') with a 'debt' name. I found no current news or viral event tied to 'Debt Cat'. An old Imgflip 'Debt Cat' meme template exists, but nothing shows it is trending.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Nothing found on the web explains the inflow. The flow is thousands of small buys with very few sells, a pattern that looks more like bot or sybil distribution (or a volume/holder bot) than organic discovery.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"The project website debtcat.lol links to this exact contract and the X handle @debtcatsolcoin. This coin has almost all of the Debt Cat volume.\",\"competing_tokens\":\"A second 'Debt Cat' DCAT (24Zu..., created about 7 minutes later, no liquidity) is a copycat. 'Doxxed Cat' DCAT ($1.5M market cap) uses the same ticker but is a different project. Many dead DCAT tickers exist.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"About 3,500 unique buyers against about 180 sellers in 30 minutes, at 1.09 buys per wallet and an average buy of roughly $68. The top 10 holders each hold an almost identical ~0.37%, which is typical of scripted or sybil wallet distribution. GMGN tags 6 bundlers, 8 snipers and 22 fresh wallets, but reports low bundler and sniper holding rates. There are no paid DexScreener boosts and no DexScreener profile. The dev's X account has launched 4 tokens, and the creator has closed out their position (creator_close). Only 6 GMGN page visits despite 3,400 holders: huge on-chain activity with little visible attention.\",\"uncertainty\":\"I could not read X. The uniform wallets could be a buy-bot or holder-bot service rather than real demand. They could also be a real call-channel audience buying in similar sizes.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price already down about 45% from its ~$215k market-cap peak within 30 minutes\",\"Uniform ~0.37% holder wallets suggest sybil or bot-seeded holders that may sell together\",\"Creator has already exited; the dev's X account has launched 4 tokens\",\"$30k liquidity at $119k market cap, so a 2x needs heavy net buying\",\"Buy/sell ratio of 10:1 with price still falling suggests inflated buy counts or large hidden sells\"]},\"counterargument\":\"Thousands of unique buyers is a very large count for a 30-minute-old coin, and the LP is locked. Top-10 concentration is tiny, so there is no whale overhang. The m5 bounce shows a dip is being bought. If a real community or a call channel is behind it, re-taking the $215k ATH and pushing past $240k (2x from about $120k) within 30 minutes is plausible.\",\"unknowns\":[\"X/Twitter activity of @debtcatsolcoin and any KOL calls\",\"Whether the 3.5k buyers are real or bot-generated\",\"Who sold into the 45% drawdown despite the reported low sell count\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The X profile fetch returned HTTP 402. Searches for the contract address and for 'Debt Cat' returned nothing about this token. The website is a template-style meme page with a roadmap. Reddit, Telegram and Discord were not searched because of the time limit.\"},\"thesis\":\"A generic cat meme with no discoverable catalyst. Its buyer counts are huge but look manufactured (uniform holder sizes, very few visible page visits), and the price is already about 45% below its first-30-minute peak. Locked LP limits outright rug risk, but a 2x within 30 minutes needs fresh real demand I could not find. Below-average runner odds.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":35,\"survival_score\":55,\"attention_score\":45,\"manipulation_risk\":72,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://debtcat.lol\",\"what\":\"Project site; links this contract and @debtcatsolcoin; generic cat meme with a roadmap\"},{\"url\":\"https://x.com/debtcatsolcoin\",\"what\":\"Project X account; fetch returned HTTP 402\"},{\"url\":\"https://imgflip.com/memegenerator/425744784/Debt-Cat-with-Caption\",\"what\":\"An old 'Debt Cat' meme template exists; no evidence it is trending\"}]}",
+ "structured_output": {
+  "what_is_happening": "Debt Cat (DCAT) is a pump.fun token with a generic striped-cat meme. Its pool was created at 13:29Z, and GMGN's created and migrated timestamps are identical, so it moved to PumpSwap straight away. In about 30 minutes it drew roughly 3,500 unique buyers but only about 180 sellers, around $258k of volume and a peak market cap near $215k. At T2 it sat at about $119k, down about 45% from its peak over 30 minutes, with a small +11% bounce in the last 5 minutes. The top 10 non-pool holders each hold an almost identical ~0.37%. I found no external event behind the name and no organic social discussion.",
+  "narrative": {
+   "description": "A generic cat meme ('the striped cat on Solana') with a 'debt' name. I found no current news or viral event tied to 'Debt Cat'. An old Imgflip 'Debt Cat' meme template exists, but nothing shows it is trending.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Nothing found on the web explains the inflow. The flow is thousands of small buys with very few sells, a pattern that looks more like bot or sybil distribution (or a volume/holder bot) than organic discovery."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "The project website debtcat.lol links to this exact contract and the X handle @debtcatsolcoin. This coin has almost all of the Debt Cat volume.",
+   "competing_tokens": "A second 'Debt Cat' DCAT (24Zu..., created about 7 minutes later, no liquidity) is a copycat. 'Doxxed Cat' DCAT ($1.5M market cap) uses the same ticker but is a different project. Many dead DCAT tickers exist.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "About 3,500 unique buyers against about 180 sellers in 30 minutes, at 1.09 buys per wallet and an average buy of roughly $68. The top 10 holders each hold an almost identical ~0.37%, which is typical of scripted or sybil wallet distribution. GMGN tags 6 bundlers, 8 snipers and 22 fresh wallets, but reports low bundler and sniper holding rates. There are no paid DexScreener boosts and no DexScreener profile. The dev's X account has launched 4 tokens, and the creator has closed out their position (creator_close). Only 6 GMGN page visits despite 3,400 holders: huge on-chain activity with little visible attention.",
+   "uncertainty": "I could not read X. The uniform wallets could be a buy-bot or holder-bot service rather than real demand. They could also be a real call-channel audience buying in similar sizes."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price already down about 45% from its ~$215k market-cap peak within 30 minutes",
+    "Uniform ~0.37% holder wallets suggest sybil or bot-seeded holders that may sell together",
+    "Creator has already exited; the dev's X account has launched 4 tokens",
+    "$30k liquidity at $119k market cap, so a 2x needs heavy net buying",
+    "Buy/sell ratio of 10:1 with price still falling suggests inflated buy counts or large hidden sells"
+   ]
+  },
+  "counterargument": "Thousands of unique buyers is a very large count for a 30-minute-old coin, and the LP is locked. Top-10 concentration is tiny, so there is no whale overhang. The m5 bounce shows a dip is being bought. If a real community or a call channel is behind it, re-taking the $215k ATH and pushing past $240k (2x from about $120k) within 30 minutes is plausible.",
+  "unknowns": [
+   "X/Twitter activity of @debtcatsolcoin and any KOL calls",
+   "Whether the 3.5k buyers are real or bot-generated",
+   "Who sold into the 45% drawdown despite the reported low sell count"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The X profile fetch returned HTTP 402. Searches for the contract address and for 'Debt Cat' returned nothing about this token. The website is a template-style meme page with a roadmap. Reddit, Telegram and Discord were not searched because of the time limit."
+  },
+  "thesis": "A generic cat meme with no discoverable catalyst. Its buyer counts are huge but look manufactured (uniform holder sizes, very few visible page visits), and the price is already about 45% below its first-30-minute peak. Locked LP limits outright rug risk, but a 2x within 30 minutes needs fresh real demand I could not find. Below-average runner odds.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 35,
+  "survival_score": 55,
+  "attention_score": 45,
+  "manipulation_risk": 72,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://debtcat.lol",
+    "what": "Project site; links this contract and @debtcatsolcoin; generic cat meme with a roadmap"
+   },
+   {
+    "url": "https://x.com/debtcatsolcoin",
+    "what": "Project X account; fetch returned HTTP 402"
+   },
+   {
+    "url": "https://imgflip.com/memegenerator/425744784/Debt-Cat-with-Caption",
+    "what": "An old 'Debt Cat' meme template exists; no evidence it is trending"
+   }
+  ]
+ },
+ "ttft_ms": 1356,
+ "type": "result",
+ "duration_ms": 37942,
+ "uuid": "a968830b-967c-4462-89a5-b6a468dda411",
+ "ttft_stream_ms": 827,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 827,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

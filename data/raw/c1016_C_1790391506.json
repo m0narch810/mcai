@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 55037,
+ "stop_reason": "tool_use",
+ "session_id": "92d6c66e-43c8-4a61-8b9a-31dd850cf640",
+ "total_cost_usd": 0.2542494,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13510,
+  "cache_read_input_tokens": 29162,
+  "output_tokens": 2795,
+  "output_tokens_details": {
+   "thinking_tokens": 358
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13510,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2294,
+    "cache_read_input_tokens": 14884,
+    "cache_creation_input_tokens": 1390,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1390
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2795,
+   "cacheReadInputTokens": 29162,
+   "cacheCreationInputTokens": 13510,
+   "webSearchRequests": 0,
+   "costUSD": 0.16983640000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 358,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 38068,
+   "outputTokens": 1269,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08441299999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Toely is a 12-minute-old token on a Meteora pool the dev created directly (not on a pump.fun curve). It went from about $10k to about $37k market cap (+250% in its first hour) on roughly $335k of volume. The name looks like a play on \\\"toly\\\" (Anatoly Yakovenko, Solana co-founder), and GeckoTerminal lists the X handle as \\\"toly\\\". About 10 same-name tokens were launched within minutes of each other (pair creation times between 1790385771 and 1790390808), which points to a trigger event, probably a post by or about toly. I could not find that post. This copy is the one that got the liquidity and the volume.\",\"narrative\":{\"description\":\"A meme on the Solana founder 'toly', spelled 'toely'. It is probably a reaction to a recent post by toly or about him, but I could not confirm this.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"Many same-name copies launched at the same moment, which suggests a real trigger that snipers and launchers jumped on. Toly memes have a large Solana audience. I found no organic posts.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has by far the most liquidity ($39k) and volume of the Toely copies. The other copies are all under $6k market cap. It was not first, though: a pump.fun copy launched about 1.5 minutes earlier.\",\"competing_tokens\":\"H3WMnR7...pump launched earlier ($5k mcap, $93k volume in the last hour). About 8 others are dead or tiny.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN tags 80 wallets as bundlers, and the top bundler traders account for 45% of trading. There are 660 unique buyers against only 92 sellers, over 2,300 buys, and 17.8% bot/degen traders. No paid boosts and no KOL or smart-money wallets. The dev seeded a Meteora pool with 100% of the LP unlocked, and GMGN says the creator has closed out ('creator_close').\",\"uncertainty\":\"No X data was available. I could not find the trigger post and could not check whether the buyers are organic.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"100% of the LP is unlocked on a dev-created Meteora pool, so the dev can pull liquidity at any time\",\"Liquidity (about $39k) is larger than market cap, so the dev's seeded SOL is an obvious target to pull\",\"Heavy bundler activity: 80 bundler wallets, 45% of top trader activity\",\"The price is already up +250% and was at its all-time high at the time of detection\"]},\"counterargument\":\"Toly memes can run fast on Solana. This copy won the liquidity race among many copies. Holders are spread out (top 10 hold 14.6%), there is no dev holding, and mint and freeze authority are renounced. The creator's best token reached $1.1M at its peak. At $37k market cap, a double to $75k only needs the trigger to keep circulating.\",\"unknowns\":[\"The trigger post, and whether toly himself posted it\",\"Whether the dev will pull the unlocked LP\",\"How much of the buying is organic and how much is from bundlers\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Searching the contract address returned nothing, and the X search only turned up the Japanese stock ticker TOELY. DexScreener lists no socials. The minimum coverage was not met: I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"A Toly-themed meme that won the liquidity race among many copies at the same moment, but it sits on a dev-controlled pool with unlocked LP and heavy bundler activity, after a 3.5x run. It has a real shot at doubling from $37k, but the risk of the dev pulling the LP is high.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":42,\"survival_score\":28,\"attention_score\":62,\"manipulation_risk\":65,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/4jJKWQTgSyovsNjtw3jQqSby1Wr34r5tFuVmLuwLeoBt\",\"what\":\"Live price, liquidity and volume, and the Meteora DEV pool; no socials listed\"},{\"url\":\"https://x.com/toly\",\"what\":\"toly, the Solana co-founder and likely subject of the name\"},{\"url\":\"https://x.com/AsiaStock/status/2062996268889059768\",\"what\":\"$TOELY on X is also a Japanese stock ticker, so the ticker search results are noisy\"}]}",
+ "structured_output": {
+  "what_is_happening": "Toely is a 12-minute-old token on a Meteora pool the dev created directly (not on a pump.fun curve). It went from about $10k to about $37k market cap (+250% in its first hour) on roughly $335k of volume. The name looks like a play on \"toly\" (Anatoly Yakovenko, Solana co-founder), and GeckoTerminal lists the X handle as \"toly\". About 10 same-name tokens were launched within minutes of each other (pair creation times between 1790385771 and 1790390808), which points to a trigger event, probably a post by or about toly. I could not find that post. This copy is the one that got the liquidity and the volume.",
+  "narrative": {
+   "description": "A meme on the Solana founder 'toly', spelled 'toely'. It is probably a reaction to a recent post by toly or about him, but I could not confirm this.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "Many same-name copies launched at the same moment, which suggests a real trigger that snipers and launchers jumped on. Toly memes have a large Solana audience. I found no organic posts."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has by far the most liquidity ($39k) and volume of the Toely copies. The other copies are all under $6k market cap. It was not first, though: a pump.fun copy launched about 1.5 minutes earlier.",
+   "competing_tokens": "H3WMnR7...pump launched earlier ($5k mcap, $93k volume in the last hour). About 8 others are dead or tiny.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN tags 80 wallets as bundlers, and the top bundler traders account for 45% of trading. There are 660 unique buyers against only 92 sellers, over 2,300 buys, and 17.8% bot/degen traders. No paid boosts and no KOL or smart-money wallets. The dev seeded a Meteora pool with 100% of the LP unlocked, and GMGN says the creator has closed out ('creator_close').",
+   "uncertainty": "No X data was available. I could not find the trigger post and could not check whether the buyers are organic."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "100% of the LP is unlocked on a dev-created Meteora pool, so the dev can pull liquidity at any time",
+    "Liquidity (about $39k) is larger than market cap, so the dev's seeded SOL is an obvious target to pull",
+    "Heavy bundler activity: 80 bundler wallets, 45% of top trader activity",
+    "The price is already up +250% and was at its all-time high at the time of detection"
+   ]
+  },
+  "counterargument": "Toly memes can run fast on Solana. This copy won the liquidity race among many copies. Holders are spread out (top 10 hold 14.6%), there is no dev holding, and mint and freeze authority are renounced. The creator's best token reached $1.1M at its peak. At $37k market cap, a double to $75k only needs the trigger to keep circulating.",
+  "unknowns": [
+   "The trigger post, and whether toly himself posted it",
+   "Whether the dev will pull the unlocked LP",
+   "How much of the buying is organic and how much is from bundlers"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Searching the contract address returned nothing, and the X search only turned up the Japanese stock ticker TOELY. DexScreener lists no socials. The minimum coverage was not met: I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "A Toly-themed meme that won the liquidity race among many copies at the same moment, but it sits on a dev-controlled pool with unlocked LP and heavy bundler activity, after a 3.5x run. It has a real shot at doubling from $37k, but the risk of the dev pulling the LP is high.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 42,
+  "survival_score": 28,
+  "attention_score": 62,
+  "manipulation_risk": 65,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/4jJKWQTgSyovsNjtw3jQqSby1Wr34r5tFuVmLuwLeoBt",
+    "what": "Live price, liquidity and volume, and the Meteora DEV pool; no socials listed"
+   },
+   {
+    "url": "https://x.com/toly",
+    "what": "toly, the Solana co-founder and likely subject of the name"
+   },
+   {
+    "url": "https://x.com/AsiaStock/status/2062996268889059768",
+    "what": "$TOELY on X is also a Japanese stock ticker, so the ticker search results are noisy"
+   }
+  ]
+ },
+ "ttft_ms": 1390,
+ "type": "result",
+ "duration_ms": 38758,
+ "uuid": "00c1a2f9-93e7-49d0-a614-58db594b403d",
+ "ttft_stream_ms": 710,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 710,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

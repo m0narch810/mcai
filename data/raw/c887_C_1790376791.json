@@ -1,0 +1,187 @@
+{
+ "duration_api_ms": 50546,
+ "stop_reason": "tool_use",
+ "session_id": "17ecad3e-acd3-41e5-996d-d1f0b5857814",
+ "total_cost_usd": 0.270735,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 14329,
+  "cache_read_input_tokens": 29060,
+  "output_tokens": 3045,
+  "output_tokens_details": {
+   "thinking_tokens": 407
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14329,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2609,
+    "cache_read_input_tokens": 14531,
+    "cache_creation_input_tokens": 2562,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2562
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3045,
+   "cacheReadInputTokens": 29060,
+   "cacheCreationInputTokens": 14329,
+   "webSearchRequests": 0,
+   "costUSD": 0.181368,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 407,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 43692,
+   "outputTokens": 1135,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.089367,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Phantom Cat\\\" (PCAT) was launched on the Meteora virtual curve and migrated immediately. It now trades on a PumpSwap pair that is about 15 minutes old. It rose about 330-377% in its first hour on roughly $760k of volume against a $247k market cap, with 1,270 unique buyers and 133 sellers. The token's only social link is an X post by @fadedentry, an account with about 6.4k followers that posts viral narratives alongside contract addresses (an alpha/caller style). The post itself returned HTTP 402 and I could not read it, so I could not identify the underlying Phantom-and-cat event. The price has already fallen about 46% from its ATH of $0.000458. GeckoTerminal shows -43% over the last 5 minutes while DexScreener shows +21%, so the price is swinging hard. At least five other \\\"Phantom Cat\\\" PCAT tokens were launched in the same 6-minute window. This one leads them by liquidity.\",\"narrative\":{\"description\":\"The name suggests a Phantom-wallet-related cat meme, maybe a Phantom post or mascot, but I could not verify any such event. Searches found only Phantom's Sui/Monad support shutdown news and nothing about a cat.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"It appears to have been pushed by one narrative/caller X account (@fadedentry) plus trenches bots. Several copycat PCAT tokens launched at once suggest a short-lived trigger on X that I cannot see.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has by far the most liquidity ($47k) and market cap among the same-name clones, and it is the one linked to the @fadedentry post.\",\"competing_tokens\":\"At least five other 'Phantom Cat' PCAT tokens were created between 22:32 and 22:36 UTC. Two of them (6swV\u2026 and 5Cjs\u2026) had $100k-200k of hourly volume and are now at near-zero liquidity, which looks like dead clones. This one was created at 22:38, after several of them.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"The only linked social is a caller-style X account that posts contract addresses. GMGN tags 97 bundler wallets (about 10% of top-trader share), and the dev's X account has launched 9 tokens. There are no smart or renowned wallets and no paid DexScreener boosts. The buy count is high relative to page visits (79 GMGN visits).\",\"uncertainty\":\"I could not read the X post or see how far it spread, and search engines index X poorly.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked on one market, though GMGN reports an LP burn ratio of 1.0. The two sources conflict.\",\"One unlabelled holder has 80% of supply. It is probably a Meteora pool or vault account, since GMGN puts the top-10 holder rate at 3%, but I could not verify that.\",\"97 bundler wallets\",\"The price is already 46% below its ATH and swinging hard, with conflicting 5-minute readings\",\"Liquidity is $47k against $760k of first-hour volume, so turnover is extreme\",\"The dev's X account has launched 9 tokens\"]},\"counterargument\":\"The volume is real: 1,270 unique buyers against only 133 sellers in 15 minutes, and liquidity has held around $47k. The token has become the clear winner among its clones, and a narrative account is backing it. If the underlying Phantom-cat moment is a real official post, the coin could revisit its $458k ATH and go beyond, which is roughly a 2x from entry.\",\"unknowns\":[\"What the @fadedentry post says and how much engagement it has\",\"Whether Phantom or another official account actually posted a cat\",\"Who the 80% top holder account belongs to\",\"Why the LP-lock readings conflict\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"A search for the contract address returned nothing relevant. A name/ticker search returned only an old dead PCAT. The X post fetch returned 402. The @fadedentry profile showed up in search results. Time was short, so I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"This is a hype-driven launch within a cluster of clones, backed by one caller account and bundled wallets. It has already made its main move and fallen 46% from its high, and the narrative is unverified. Doubling from a $247k entry needs a new spike of attention. A fade or chop is more likely, so p_runner is below the pool base rate.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":30,\"survival_score\":42,\"attention_score\":62,\"manipulation_risk\":68,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/fadedentry\",\"what\":\"Caller/narrative account linked as the token's social\"},{\"url\":\"https://x.com/fadedentry/status/2032796433158414720\",\"what\":\"Example of the account posting contract addresses for viral-trend coins\"},{\"url\":\"https://www.okx.com/en-us/price/phantom-cat-pcat\",\"what\":\"An older, dead Phantom Cat PCAT\"},{\"url\":\"https://solanacompass.com/news/phantom-wallet-ends-sui-support-on-september-24-2026\",\"what\":\"The only current Phantom news found (Sui support ending), no cat event\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Phantom Cat\" (PCAT) was launched on the Meteora virtual curve and migrated immediately. It now trades on a PumpSwap pair that is about 15 minutes old. It rose about 330-377% in its first hour on roughly $760k of volume against a $247k market cap, with 1,270 unique buyers and 133 sellers. The token's only social link is an X post by @fadedentry, an account with about 6.4k followers that posts viral narratives alongside contract addresses (an alpha/caller style). The post itself returned HTTP 402 and I could not read it, so I could not identify the underlying Phantom-and-cat event. The price has already fallen about 46% from its ATH of $0.000458. GeckoTerminal shows -43% over the last 5 minutes while DexScreener shows +21%, so the price is swinging hard. At least five other \"Phantom Cat\" PCAT tokens were launched in the same 6-minute window. This one leads them by liquidity.",
+  "narrative": {
+   "description": "The name suggests a Phantom-wallet-related cat meme, maybe a Phantom post or mascot, but I could not verify any such event. Searches found only Phantom's Sui/Monad support shutdown news and nothing about a cat.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "It appears to have been pushed by one narrative/caller X account (@fadedentry) plus trenches bots. Several copycat PCAT tokens launched at once suggest a short-lived trigger on X that I cannot see."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has by far the most liquidity ($47k) and market cap among the same-name clones, and it is the one linked to the @fadedentry post.",
+   "competing_tokens": "At least five other 'Phantom Cat' PCAT tokens were created between 22:32 and 22:36 UTC. Two of them (6swV\u2026 and 5Cjs\u2026) had $100k-200k of hourly volume and are now at near-zero liquidity, which looks like dead clones. This one was created at 22:38, after several of them.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "The only linked social is a caller-style X account that posts contract addresses. GMGN tags 97 bundler wallets (about 10% of top-trader share), and the dev's X account has launched 9 tokens. There are no smart or renowned wallets and no paid DexScreener boosts. The buy count is high relative to page visits (79 GMGN visits).",
+   "uncertainty": "I could not read the X post or see how far it spread, and search engines index X poorly."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked on one market, though GMGN reports an LP burn ratio of 1.0. The two sources conflict.",
+    "One unlabelled holder has 80% of supply. It is probably a Meteora pool or vault account, since GMGN puts the top-10 holder rate at 3%, but I could not verify that.",
+    "97 bundler wallets",
+    "The price is already 46% below its ATH and swinging hard, with conflicting 5-minute readings",
+    "Liquidity is $47k against $760k of first-hour volume, so turnover is extreme",
+    "The dev's X account has launched 9 tokens"
+   ]
+  },
+  "counterargument": "The volume is real: 1,270 unique buyers against only 133 sellers in 15 minutes, and liquidity has held around $47k. The token has become the clear winner among its clones, and a narrative account is backing it. If the underlying Phantom-cat moment is a real official post, the coin could revisit its $458k ATH and go beyond, which is roughly a 2x from entry.",
+  "unknowns": [
+   "What the @fadedentry post says and how much engagement it has",
+   "Whether Phantom or another official account actually posted a cat",
+   "Who the 80% top holder account belongs to",
+   "Why the LP-lock readings conflict"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "A search for the contract address returned nothing relevant. A name/ticker search returned only an old dead PCAT. The X post fetch returned 402. The @fadedentry profile showed up in search results. Time was short, so I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "This is a hype-driven launch within a cluster of clones, backed by one caller account and bundled wallets. It has already made its main move and fallen 46% from its high, and the narrative is unverified. Doubling from a $247k entry needs a new spike of attention. A fade or chop is more likely, so p_runner is below the pool base rate.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 30,
+  "survival_score": 42,
+  "attention_score": 62,
+  "manipulation_risk": 68,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/fadedentry",
+    "what": "Caller/narrative account linked as the token's social"
+   },
+   {
+    "url": "https://x.com/fadedentry/status/2032796433158414720",
+    "what": "Example of the account posting contract addresses for viral-trend coins"
+   },
+   {
+    "url": "https://www.okx.com/en-us/price/phantom-cat-pcat",
+    "what": "An older, dead Phantom Cat PCAT"
+   },
+   {
+    "url": "https://solanacompass.com/news/phantom-wallet-ends-sui-support-on-september-24-2026",
+    "what": "The only current Phantom news found (Sui support ending), no cat event"
+   }
+  ]
+ },
+ "ttft_ms": 1372,
+ "type": "result",
+ "duration_ms": 41994,
+ "uuid": "53484ec4-b39e-4449-915e-af4940cc1cca",
+ "ttft_stream_ms": 1099,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 1099,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

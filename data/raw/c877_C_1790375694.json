@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 35407,
+ "stop_reason": "tool_use",
+ "session_id": "9e30f29e-cc81-4ede-968e-22ed2ba1034b",
+ "total_cost_usd": 0.1917186,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11482,
+  "cache_read_input_tokens": 27983,
+  "output_tokens": 2594,
+  "output_tokens_details": {
+   "thinking_tokens": 390
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11482,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2113,
+    "cache_read_input_tokens": 13253,
+    "cache_creation_input_tokens": 993,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 993
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2594,
+   "cacheReadInputTokens": 27983,
+   "cacheCreationInputTokens": 11482,
+   "webSearchRequests": 0,
+   "costUSD": 0.1493566,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 390,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 19772,
+   "outputTokens": 518,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.042362,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Beff Jezos (@beffjezos), the founder of e/acc, seems to have posted something (status 2103593870189858971) that set off a rush of copycat \\\"Effective Accelerationism / e/acc\\\" tokens on Solana within about an hour. This token was launched about 12 minutes before detection. It is one of more than 10 same-name clones and came near the end of the wave. It spiked about +400% and was already down 23-41% over the last 5 minutes at detection. Its metadata \\\"website\\\" field points to a usepaid.app page for a different competing token (CbcyNo...). That suggests the metadata was copied.\",\"narrative\":{\"description\":\"A tweet from Beff Jezos, the well-known e/acc founder, that the ticker plays on. The narrative can attract attention but is spread across many clones.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"A post from a big-name founder sets off a race to launch the ticker. I could not fetch the post itself (X returned 402), so I don't know whether it endorses any token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None beyond the name. It launched late (about 22:22Z), after several clones that were already bigger or had more volume (7dVW..., 13vV..., 3m7B..., Cbcy..., Dsec...). It copies another token's link in its metadata.\",\"competing_tokens\":\"At least 10 same-name tokens. They include CbcyNo7m ($696k mcap, earliest of the wave), DseCuJ ($758k), 7dVWLA and 13vVSQ (each over $15M in 1h volume), and an older 2024 token, GqmEdRD...pump.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal counts 2,083 unique buyers against only 77 unique sellers, and 2,600 buys against 581 sells. That is a strong sign of bot or dust-buy wallet inflation. One unlabeled holder has 80% of supply. GMGN finds 7 bundlers and 9 snipers, and a network of 49 connected insider wallets. The creator has launched 11 tokens and closed out its own position. I found no web or X mentions of the contract.\",\"uncertainty\":\"The 80% holder may be a pool or curve vault that RugCheck did not label. X content was not accessible.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"99.99% of LP unlocked (RugCheck danger)\",\"One unlabeled wallet holds 80% of supply\",\"49-wallet insider trade network\",\"Serial deployer with 11 launches that has closed its position\",\"More than 10 clones competing for the same flow\",\"Already dumping (-27% over 5 minutes)\"]},\"counterargument\":\"The e/acc founder is a big name and the wave has heavy volume (several clones did $5-16M in an hour). Clone rotations sometimes send late clones up 2x on spillover. Also, the 80% holder could just be a pool vault, in which case concentration is much lower than it looks.\",\"unknowns\":[\"What the Beff Jezos post says and whether it names a contract\",\"What the 80% top holder actually is\",\"Whether the buyer count is inflated by bots\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Fetching the X status returned 402. The contract search found no results. The project site link is a usepaid.app page for another clone. Time limits meant I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"A late, non-canonical clone in a crowded ticker rush, with a pattern that looks like bot-buyer inflation, an unexplained 80% holder, unlocked LP, and a serial deployer. Price is already fading from its spike. The chance of doubling is low and the rug risk is high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":55,\"survival_score\":15,\"attention_score\":35,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/beffjezos\",\"what\":\"The Beff Jezos e/acc account the ticker references\"},{\"url\":\"https://x.com/beffjezos/status/2103593870189858971\",\"what\":\"Status linked in the token metadata (fetch returned 402)\"},{\"url\":\"https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU\",\"what\":\"Metadata website field, which points to a different clone\"}]}",
+ "structured_output": {
+  "what_is_happening": "Beff Jezos (@beffjezos), the founder of e/acc, seems to have posted something (status 2103593870189858971) that set off a rush of copycat \"Effective Accelerationism / e/acc\" tokens on Solana within about an hour. This token was launched about 12 minutes before detection. It is one of more than 10 same-name clones and came near the end of the wave. It spiked about +400% and was already down 23-41% over the last 5 minutes at detection. Its metadata \"website\" field points to a usepaid.app page for a different competing token (CbcyNo...). That suggests the metadata was copied.",
+  "narrative": {
+   "description": "A tweet from Beff Jezos, the well-known e/acc founder, that the ticker plays on. The narrative can attract attention but is spread across many clones.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "A post from a big-name founder sets off a race to launch the ticker. I could not fetch the post itself (X returned 402), so I don't know whether it endorses any token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None beyond the name. It launched late (about 22:22Z), after several clones that were already bigger or had more volume (7dVW..., 13vV..., 3m7B..., Cbcy..., Dsec...). It copies another token's link in its metadata.",
+   "competing_tokens": "At least 10 same-name tokens. They include CbcyNo7m ($696k mcap, earliest of the wave), DseCuJ ($758k), 7dVWLA and 13vVSQ (each over $15M in 1h volume), and an older 2024 token, GqmEdRD...pump.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal counts 2,083 unique buyers against only 77 unique sellers, and 2,600 buys against 581 sells. That is a strong sign of bot or dust-buy wallet inflation. One unlabeled holder has 80% of supply. GMGN finds 7 bundlers and 9 snipers, and a network of 49 connected insider wallets. The creator has launched 11 tokens and closed out its own position. I found no web or X mentions of the contract.",
+   "uncertainty": "The 80% holder may be a pool or curve vault that RugCheck did not label. X content was not accessible."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "99.99% of LP unlocked (RugCheck danger)",
+    "One unlabeled wallet holds 80% of supply",
+    "49-wallet insider trade network",
+    "Serial deployer with 11 launches that has closed its position",
+    "More than 10 clones competing for the same flow",
+    "Already dumping (-27% over 5 minutes)"
+   ]
+  },
+  "counterargument": "The e/acc founder is a big name and the wave has heavy volume (several clones did $5-16M in an hour). Clone rotations sometimes send late clones up 2x on spillover. Also, the 80% holder could just be a pool vault, in which case concentration is much lower than it looks.",
+  "unknowns": [
+   "What the Beff Jezos post says and whether it names a contract",
+   "What the 80% top holder actually is",
+   "Whether the buyer count is inflated by bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Fetching the X status returned 402. The contract search found no results. The project site link is a usepaid.app page for another clone. Time limits meant I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "A late, non-canonical clone in a crowded ticker rush, with a pattern that looks like bot-buyer inflation, an unexplained 80% holder, unlocked LP, and a serial deployer. Price is already fading from its spike. The chance of doubling is low and the rug risk is high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 55,
+  "survival_score": 15,
+  "attention_score": 35,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/beffjezos",
+    "what": "The Beff Jezos e/acc account the ticker references"
+   },
+   {
+    "url": "https://x.com/beffjezos/status/2103593870189858971",
+    "what": "Status linked in the token metadata (fetch returned 402)"
+   },
+   {
+    "url": "https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU",
+    "what": "Metadata website field, which points to a different clone"
+   }
+  ]
+ },
+ "ttft_ms": 2623,
+ "type": "result",
+ "duration_ms": 34846,
+ "uuid": "15c26c80-c32c-4dc8-9b52-3eeda1d60a39",
+ "ttft_stream_ms": 962,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 962,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,182 @@
+{
+ "duration_api_ms": 53149,
+ "stop_reason": "tool_use",
+ "session_id": "262c2314-5260-4e6b-98d1-5d39b836fc96",
+ "total_cost_usd": 0.2656286,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13341,
+  "cache_read_input_tokens": 27763,
+  "output_tokens": 3164,
+  "output_tokens_details": {
+   "thinking_tokens": 463
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13341,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2561,
+    "cache_read_input_tokens": 13798,
+    "cache_creation_input_tokens": 2307,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2307
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3164,
+   "cacheReadInputTokens": 27763,
+   "cacheCreationInputTokens": 13341,
+   "webSearchRequests": 0,
+   "costUSD": 0.1755846,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 463,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42609,
+   "outputTokens": 1487,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09004399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"I found some evidence of a real project but nothing that shows organic spread. GIFT (BArKYT\u2026) launched through Raydium's launchpad at about 21:55 UTC and moved to a Raydium CPMM pool (a Raydium pool type) at 21:58. About 15 minutes after launch it was up roughly 200%, with about $100k of volume at a ~$150k market cap. It links to gift.fun and the X account @giftstreamers. The site's only statement is \\\"fees become gifted subs on Twitch\\\", so the pitch is a creator-fee token that pays for Twitch gift subs. Copycat GIFT tokens appeared within minutes: HYwPug, already drained to $3.68 liquidity, and CX52, which lists odd $390k liquidity but almost no volume. Copycats point to attention, but also to a sniper/bot-heavy environment. GMGN tags 149 of 249 traders as bundlers and puts the bot/degen share at 81%. Price already peaked at about $245k market cap and has pulled back roughly 37%.\",\"narrative\":{\"description\":\"A token whose trading fees become Twitch gifted subs. It combines streamer culture and creator fees, which gives it a hook with streamers and their viewers.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"Probably the fresh launch plus the streamer/Twitch hook, pushed by bot and bundler flow. I found no indexed X posts, streamer endorsement or news. The pool is 15 minutes old.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the earliest of the three GIFT tokens launched in this burst (pair created at 1790373518 vs 1790373603 and 1790373872). It is also the one with the gift.fun site and @giftstreamers X account attached, and the site states the fee-to-subs mechanism.\",\"competing_tokens\":\"HYwPug (GIFT, liquidity $3.68, $163k volume in 1h, already drained). CX52 (GIFT, $390k liquidity that looks suspicious, $1.9k volume in 1h). Several dead pump.fun Gift/Gift.fun tokens from the past days, one named Gift.fun, which suggests earlier failed attempts at the same idea.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"GMGN: 149 bundler-tagged wallets, top bundler trader share 68%, bot/degen rate 81%, 127 fresh wallets, 25 snipers. It also shows 20 smart wallets and 3 renowned (KOL) wallets. No paid DexScreener boosts. 386 unique buyers vs 303 sellers on GeckoTerminal. Searches found no posts on X.\",\"uncertainty\":\"X is poorly indexed, so a streamer or KOL may be pushing it where I couldn't see. The dev's X account has launched 5 tokens before, a mild red flag for serial launching.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"High bundler/bot share, so the volume may be manufactured\",\"Dev X account has launched 5 prior tokens; earlier Gift.fun pump.fun tokens died\",\"Already ~37% off its ATH of about $245k after a 3x\",\"Fee config can be changed by the owner (normal for a Raydium launchpad CPMM pool, and fees fund the mechanism)\",\"Copycat tokens split attention and confuse buyers\"]},\"counterargument\":\"Bull case: mint and freeze authority are renounced, LP is 100% burned, top-10 holders own only 14%, and the dev holds 3.4%. The website states a clear mechanism, and 3 KOL plus 20 smart wallets are in. If a known Twitch streamer picks it up, a streamer-fee meta could easily take it from $150k to over $500k. Bear case: most of the flow is bundled bots, the dev account is a serial launcher, and the peak may already be in.\",\"unknowns\":[\"Whether any real Twitch streamer is involved or has endorsed it\",\"What @giftstreamers has posted and how many followers it has\",\"Who the dev's 5 earlier tokens were and how they did\",\"Whether the bundler wallets are the team's\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Tight time budget. I searched for the contract address and the ticker on X with no relevant hits. The gift.fun site says 'fees become gifted subs on Twitch'. I did not do separate Reddit, Telegram or Discord searches.\"},\"thesis\":\"This is the first GIFT token and the one tied to the project site. It has a streamer/Twitch fee hook and clean structure: burned LP, renounced mint and freeze, low concentration. Against that, demand is heavily bundled and bot-driven, the dev account has launched 5 prior tokens, and price has already pulled back from its peak. Its odds of running are slightly above the pool's typical coin.\",\"continuation_view\":\"neutral\",\"p_runner\":15,\"p_rug\":15,\"survival_score\":60,\"attention_score\":60,\"manipulation_risk\":68,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://gift.fun/\",\"what\":\"Project site: 'fees become gifted subs on Twitch'\"},{\"url\":\"https://x.com/giftstreamers\",\"what\":\"Project X account listed in the packet (not fetched)\"},{\"url\":\"https://dexscreener.com/solana/Dtb73EpG1G1Zo83oqtHNBbMW62b8nGLZvmPfZHXUTrAX\",\"what\":\"Pair page; market data from the packet\"}]}",
+ "structured_output": {
+  "what_is_happening": "I found some evidence of a real project but nothing that shows organic spread. GIFT (BArKYT\u2026) launched through Raydium's launchpad at about 21:55 UTC and moved to a Raydium CPMM pool (a Raydium pool type) at 21:58. About 15 minutes after launch it was up roughly 200%, with about $100k of volume at a ~$150k market cap. It links to gift.fun and the X account @giftstreamers. The site's only statement is \"fees become gifted subs on Twitch\", so the pitch is a creator-fee token that pays for Twitch gift subs. Copycat GIFT tokens appeared within minutes: HYwPug, already drained to $3.68 liquidity, and CX52, which lists odd $390k liquidity but almost no volume. Copycats point to attention, but also to a sniper/bot-heavy environment. GMGN tags 149 of 249 traders as bundlers and puts the bot/degen share at 81%. Price already peaked at about $245k market cap and has pulled back roughly 37%.",
+  "narrative": {
+   "description": "A token whose trading fees become Twitch gifted subs. It combines streamer culture and creator fees, which gives it a hook with streamers and their viewers.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "Probably the fresh launch plus the streamer/Twitch hook, pushed by bot and bundler flow. I found no indexed X posts, streamer endorsement or news. The pool is 15 minutes old."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the earliest of the three GIFT tokens launched in this burst (pair created at 1790373518 vs 1790373603 and 1790373872). It is also the one with the gift.fun site and @giftstreamers X account attached, and the site states the fee-to-subs mechanism.",
+   "competing_tokens": "HYwPug (GIFT, liquidity $3.68, $163k volume in 1h, already drained). CX52 (GIFT, $390k liquidity that looks suspicious, $1.9k volume in 1h). Several dead pump.fun Gift/Gift.fun tokens from the past days, one named Gift.fun, which suggests earlier failed attempts at the same idea.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "GMGN: 149 bundler-tagged wallets, top bundler trader share 68%, bot/degen rate 81%, 127 fresh wallets, 25 snipers. It also shows 20 smart wallets and 3 renowned (KOL) wallets. No paid DexScreener boosts. 386 unique buyers vs 303 sellers on GeckoTerminal. Searches found no posts on X.",
+   "uncertainty": "X is poorly indexed, so a streamer or KOL may be pushing it where I couldn't see. The dev's X account has launched 5 tokens before, a mild red flag for serial launching."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "High bundler/bot share, so the volume may be manufactured",
+    "Dev X account has launched 5 prior tokens; earlier Gift.fun pump.fun tokens died",
+    "Already ~37% off its ATH of about $245k after a 3x",
+    "Fee config can be changed by the owner (normal for a Raydium launchpad CPMM pool, and fees fund the mechanism)",
+    "Copycat tokens split attention and confuse buyers"
+   ]
+  },
+  "counterargument": "Bull case: mint and freeze authority are renounced, LP is 100% burned, top-10 holders own only 14%, and the dev holds 3.4%. The website states a clear mechanism, and 3 KOL plus 20 smart wallets are in. If a known Twitch streamer picks it up, a streamer-fee meta could easily take it from $150k to over $500k. Bear case: most of the flow is bundled bots, the dev account is a serial launcher, and the peak may already be in.",
+  "unknowns": [
+   "Whether any real Twitch streamer is involved or has endorsed it",
+   "What @giftstreamers has posted and how many followers it has",
+   "Who the dev's 5 earlier tokens were and how they did",
+   "Whether the bundler wallets are the team's"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Tight time budget. I searched for the contract address and the ticker on X with no relevant hits. The gift.fun site says 'fees become gifted subs on Twitch'. I did not do separate Reddit, Telegram or Discord searches."
+  },
+  "thesis": "This is the first GIFT token and the one tied to the project site. It has a streamer/Twitch fee hook and clean structure: burned LP, renounced mint and freeze, low concentration. Against that, demand is heavily bundled and bot-driven, the dev account has launched 5 prior tokens, and price has already pulled back from its peak. Its odds of running are slightly above the pool's typical coin.",
+  "continuation_view": "neutral",
+  "p_runner": 15,
+  "p_rug": 15,
+  "survival_score": 60,
+  "attention_score": 60,
+  "manipulation_risk": 68,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://gift.fun/",
+    "what": "Project site: 'fees become gifted subs on Twitch'"
+   },
+   {
+    "url": "https://x.com/giftstreamers",
+    "what": "Project X account listed in the packet (not fetched)"
+   },
+   {
+    "url": "https://dexscreener.com/solana/Dtb73EpG1G1Zo83oqtHNBbMW62b8nGLZvmPfZHXUTrAX",
+    "what": "Pair page; market data from the packet"
+   }
+  ]
+ },
+ "ttft_ms": 1264,
+ "type": "result",
+ "duration_ms": 40480,
+ "uuid": "add9ea21-e4cd-4a3e-b13d-c2e6dd619f1e",
+ "ttft_stream_ms": 699,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 699,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

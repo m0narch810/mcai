@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 42035,
+ "stop_reason": "tool_use",
+ "session_id": "9a95a1f6-a4d9-4c18-9cb7-85061e2f6d72",
+ "total_cost_usd": 0.2312844,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12308,
+  "cache_read_input_tokens": 26447,
+  "output_tokens": 2641,
+  "output_tokens_details": {
+   "thinking_tokens": 386
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12308,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2014,
+    "cache_read_input_tokens": 13388,
+    "cache_creation_input_tokens": 1684,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1684
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2641,
+   "cacheReadInputTokens": 26447,
+   "cacheCreationInputTokens": 12308,
+   "webSearchRequests": 0,
+   "costUSD": 0.1565974,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 386,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 38612,
+   "outputTokens": 1215,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.074687,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 10-day-old pump.fun coin (\\\"t\\\" / $T) that had gone quiet came back to life in the last hour. Price is up about 500% over 6h, with $27k of volume in 1h against a ~$27k market cap and about 269 unique buyers in the hour. The description is \\\"Fees to @elonmusk\\\": the pump.fun creator fees are pointed at Elon's X handle, which pump.fun shows as the creator link (https://pump.fun/coin/GW4dLRzU8Xh5bsXfeFL3pq6JwZiha1BWKdhtF9x4paid). The revival comes with a community-takeover flag, 10 active paid DexScreener boosts and a usepaid.app link. There is no real event behind it.\",\"narrative\":{\"description\":\"A generic 'creator fees go to Elon' gimmick on a one-letter ticker. I found no Elon tweet or current event that it references.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"It looks driven by paid boosts and a CTO push, not by any outside catalyst. I found no organic posts.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link to Elon is the fee-recipient gimmick. The packet lists no other same-ticker tokens, but generic Elon-fee coins are common.\",\"competing_tokens\":\"None in the packet. Many generic Elon-themed coins exist.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"10 paid DexScreener boosts, a CTO flag, and GMGN tags 138 wallets as bundlers against 202 holders. Smart-money and degen-call signal counts are both 0. Searching the contract returned nothing.\",\"uncertainty\":\"X is poorly indexed, so organic posts in the X community may exist that I could not see.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"High bundler wallet count\",\"Creator has launched 23 tokens (serial deployer), though its creator balance is 0\",\"A 4-wallet insider transfer network\",\"Paid boosts can fade quickly\",\"Still on the curve at ~74% (85 of 115 virtual SOL); graduating to PumpSwap often brings a sell-off\"]},\"counterargument\":\"The buying is broad (269 unique buyers in 1h, buys outnumbering sells about 1.9:1, m5 +25%) and the curve is about 74% filled. A push to graduation would take the market cap to roughly $60-70k, which is more than 2x from entry, and boosted coins that revive often do make that run.\",\"unknowns\":[\"Content of the X community posts\",\"Who is behind the CTO and the boosts\",\"Whether the bundler wallets will dump into the curve\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The contract search returned no hits. The usepaid.app page failed with an SSL error. The pump.fun page loaded but showed little. Time was short, so Reddit, Telegram and Discord were not searched.\"},\"thesis\":\"This is a promotion-driven revival of an old curve coin with a weak Elon-fee gimmick and a heavily bundled holder base. Momentum and closeness to graduation give it a real but below-average chance to hit 2x before -50%.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":20,\"survival_score\":50,\"attention_score\":52,\"manipulation_risk\":72,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://pump.fun/coin/GW4dLRzU8Xh5bsXfeFL3pq6JwZiha1BWKdhtF9x4paid\",\"what\":\"Token page: launched 10 days ago, creator links to x.com/elonmusk, website is usepaid.app\"},{\"url\":\"https://crypto.news/pump-fun-revamps-creator-fees-as-solana-memecoin-launches-near-30000-daily/\",\"what\":\"Background on pump.fun creator fees\"}]}",
+ "structured_output": {
+  "what_is_happening": "A 10-day-old pump.fun coin (\"t\" / $T) that had gone quiet came back to life in the last hour. Price is up about 500% over 6h, with $27k of volume in 1h against a ~$27k market cap and about 269 unique buyers in the hour. The description is \"Fees to @elonmusk\": the pump.fun creator fees are pointed at Elon's X handle, which pump.fun shows as the creator link (https://pump.fun/coin/GW4dLRzU8Xh5bsXfeFL3pq6JwZiha1BWKdhtF9x4paid). The revival comes with a community-takeover flag, 10 active paid DexScreener boosts and a usepaid.app link. There is no real event behind it.",
+  "narrative": {
+   "description": "A generic 'creator fees go to Elon' gimmick on a one-letter ticker. I found no Elon tweet or current event that it references.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "It looks driven by paid boosts and a CTO push, not by any outside catalyst. I found no organic posts."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link to Elon is the fee-recipient gimmick. The packet lists no other same-ticker tokens, but generic Elon-fee coins are common.",
+   "competing_tokens": "None in the packet. Many generic Elon-themed coins exist.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "10 paid DexScreener boosts, a CTO flag, and GMGN tags 138 wallets as bundlers against 202 holders. Smart-money and degen-call signal counts are both 0. Searching the contract returned nothing.",
+   "uncertainty": "X is poorly indexed, so organic posts in the X community may exist that I could not see."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "High bundler wallet count",
+    "Creator has launched 23 tokens (serial deployer), though its creator balance is 0",
+    "A 4-wallet insider transfer network",
+    "Paid boosts can fade quickly",
+    "Still on the curve at ~74% (85 of 115 virtual SOL); graduating to PumpSwap often brings a sell-off"
+   ]
+  },
+  "counterargument": "The buying is broad (269 unique buyers in 1h, buys outnumbering sells about 1.9:1, m5 +25%) and the curve is about 74% filled. A push to graduation would take the market cap to roughly $60-70k, which is more than 2x from entry, and boosted coins that revive often do make that run.",
+  "unknowns": [
+   "Content of the X community posts",
+   "Who is behind the CTO and the boosts",
+   "Whether the bundler wallets will dump into the curve"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The contract search returned no hits. The usepaid.app page failed with an SSL error. The pump.fun page loaded but showed little. Time was short, so Reddit, Telegram and Discord were not searched."
+  },
+  "thesis": "This is a promotion-driven revival of an old curve coin with a weak Elon-fee gimmick and a heavily bundled holder base. Momentum and closeness to graduation give it a real but below-average chance to hit 2x before -50%.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 20,
+  "survival_score": 50,
+  "attention_score": 52,
+  "manipulation_risk": 72,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://pump.fun/coin/GW4dLRzU8Xh5bsXfeFL3pq6JwZiha1BWKdhtF9x4paid",
+    "what": "Token page: launched 10 days ago, creator links to x.com/elonmusk, website is usepaid.app"
+   },
+   {
+    "url": "https://crypto.news/pump-fun-revamps-creator-fees-as-solana-memecoin-launches-near-30000-daily/",
+    "what": "Background on pump.fun creator fees"
+   }
+  ]
+ },
+ "ttft_ms": 1547,
+ "type": "result",
+ "duration_ms": 34060,
+ "uuid": "f8ef0f95-6579-46ee-8335-4974bb7840d4",
+ "ttft_stream_ms": 641,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 641,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

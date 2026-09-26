@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 28975,
+ "stop_reason": "tool_use",
+ "session_id": "de360d2e-8343-4486-bac6-57a97bb6a26c",
+ "total_cost_usd": 0.161732,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 10948,
+  "cache_read_input_tokens": 14740,
+  "output_tokens": 2444,
+  "output_tokens_details": {
+   "thinking_tokens": 291
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10948,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2073,
+    "cache_read_input_tokens": 11976,
+    "cache_creation_input_tokens": 1736,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1736
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2444,
+   "cacheReadInputTokens": 14740,
+   "cacheCreationInputTokens": 10948,
+   "webSearchRequests": 0,
+   "costUSD": 0.139428,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 291,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 10709,
+   "outputTokens": 319,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.022303999999999997,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Beff Jezos (@beffjezos, Guillaume Verdon, founder of e/acc) apparently posted about \\\"Kardashev Research\\\" (status 2103746282699534606, which I couldn't open because X returned HTTP 402). At least 10 Solana tokens with the same name launched within about 45 minutes. This one (4vbt\u2026, Meteora virtual curve that migrated straight to PumpSwap) pumped about 410-470% in its first 20 minutes, then fell 40-46% in the last 5 minutes. In that 5-minute window buys and sells were almost equal (248 vs 235). The earlier clone 5wW9\u2026 has higher volume (about $1.08M per hour) and more liquidity. Even this token's own website link in GMGN points to 5wW9\u2026's usepaid.app page.\",\"narrative\":{\"description\":\"A post by Beff Jezos / e/acc about 'Kardashev Research'. It could be a new venture or research lab tied to his known 'climb the Kardashev gradient' ideas. The Kardashev theme is a long-running part of his branding.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"A famous tech-world account posted, and memecoin deployers race to mint the name. Beff Jezos has a large audience, but there is no sign he endorsed any token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name as the post, and it happened to catch a volume wave. Nothing ties it to Beff Jezos, and its own metadata links to a competing contract.\",\"competing_tokens\":\"5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp launched earlier and has more volume and liquidity, so it is the likely leader. 2z8d\u2026 ($138k mcap, $351k volume per hour) plus several dead clones (HZ9u\u2026, JqHK\u2026) that already lost their liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Beff Jezos is a real, large account (x.com/beffjezos). The token side is a clone swarm: 20 bundler wallets, 11 snipers, and an image reused 5 times. The website field points to the rival contract.\",\"uncertainty\":\"I couldn't read the tweet itself, so I don't know whether he mentioned any token or contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Liquidity is about $38k against a $284k mcap, and RugCheck flags 99.99% of LP as unlocked (GMGN reports the LP as burned, which contradicts it)\",\"One unlabeled wallet holds 80%. It may be a curve or vault account, but that's unclear\",\"Price fell about 45% in 5 minutes after the ATH, with buy/sell pressure now balanced\",\"Clone swarm: attention is split, and the earlier rival 5wW9 leads\",\"Two clones with the same name have already lost their liquidity\"]},\"counterargument\":\"If Beff Jezos's post keeps spreading and this clone ends up second-largest, a new wave of buyers could send a $250k coin back to its $540k ATH, which is roughly 2x from entry after the dump. The 2,100 unique buyers against only 98 sellers suggests broad retail entry that hasn't sold yet.\",\"unknowns\":[\"What the tweet says, and whether it names a contract\",\"Who controls the 80% wallet\",\"Whether 5wW9 has already taken the attention\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Time-limited. The tweet fetch returned 402. A web search confirmed Beff Jezos's Kardashev branding but found no news about 'Kardashev Research'.\"},\"thesis\":\"A real catalyst from a large account, but this is a non-canonical clone in a crowded swarm. It is already dumping after its peak, and its own metadata points to a rival contract. The chance of a 2x before a -50% is low.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":35,\"survival_score\":35,\"attention_score\":60,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/beffjezos/status/1683219576379817984\",\"what\":\"Beff Jezos's Kardashev gradient theme\"},{\"url\":\"https://x.com/beffjezos\",\"what\":\"Beff Jezos X account\"},{\"url\":\"https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp\",\"what\":\"Website field points to the rival contract\"}]}",
+ "structured_output": {
+  "what_is_happening": "Beff Jezos (@beffjezos, Guillaume Verdon, founder of e/acc) apparently posted about \"Kardashev Research\" (status 2103746282699534606, which I couldn't open because X returned HTTP 402). At least 10 Solana tokens with the same name launched within about 45 minutes. This one (4vbt\u2026, Meteora virtual curve that migrated straight to PumpSwap) pumped about 410-470% in its first 20 minutes, then fell 40-46% in the last 5 minutes. In that 5-minute window buys and sells were almost equal (248 vs 235). The earlier clone 5wW9\u2026 has higher volume (about $1.08M per hour) and more liquidity. Even this token's own website link in GMGN points to 5wW9\u2026's usepaid.app page.",
+  "narrative": {
+   "description": "A post by Beff Jezos / e/acc about 'Kardashev Research'. It could be a new venture or research lab tied to his known 'climb the Kardashev gradient' ideas. The Kardashev theme is a long-running part of his branding.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "A famous tech-world account posted, and memecoin deployers race to mint the name. Beff Jezos has a large audience, but there is no sign he endorsed any token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name as the post, and it happened to catch a volume wave. Nothing ties it to Beff Jezos, and its own metadata links to a competing contract.",
+   "competing_tokens": "5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp launched earlier and has more volume and liquidity, so it is the likely leader. 2z8d\u2026 ($138k mcap, $351k volume per hour) plus several dead clones (HZ9u\u2026, JqHK\u2026) that already lost their liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Beff Jezos is a real, large account (x.com/beffjezos). The token side is a clone swarm: 20 bundler wallets, 11 snipers, and an image reused 5 times. The website field points to the rival contract.",
+   "uncertainty": "I couldn't read the tweet itself, so I don't know whether he mentioned any token or contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Liquidity is about $38k against a $284k mcap, and RugCheck flags 99.99% of LP as unlocked (GMGN reports the LP as burned, which contradicts it)",
+    "One unlabeled wallet holds 80%. It may be a curve or vault account, but that's unclear",
+    "Price fell about 45% in 5 minutes after the ATH, with buy/sell pressure now balanced",
+    "Clone swarm: attention is split, and the earlier rival 5wW9 leads",
+    "Two clones with the same name have already lost their liquidity"
+   ]
+  },
+  "counterargument": "If Beff Jezos's post keeps spreading and this clone ends up second-largest, a new wave of buyers could send a $250k coin back to its $540k ATH, which is roughly 2x from entry after the dump. The 2,100 unique buyers against only 98 sellers suggests broad retail entry that hasn't sold yet.",
+  "unknowns": [
+   "What the tweet says, and whether it names a contract",
+   "Who controls the 80% wallet",
+   "Whether 5wW9 has already taken the attention"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Time-limited. The tweet fetch returned 402. A web search confirmed Beff Jezos's Kardashev branding but found no news about 'Kardashev Research'."
+  },
+  "thesis": "A real catalyst from a large account, but this is a non-canonical clone in a crowded swarm. It is already dumping after its peak, and its own metadata points to a rival contract. The chance of a 2x before a -50% is low.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 35,
+  "survival_score": 35,
+  "attention_score": 60,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/beffjezos/status/1683219576379817984",
+    "what": "Beff Jezos's Kardashev gradient theme"
+   },
+   {
+    "url": "https://x.com/beffjezos",
+    "what": "Beff Jezos X account"
+   },
+   {
+    "url": "https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp",
+    "what": "Website field points to the rival contract"
+   }
+  ]
+ },
+ "ttft_ms": 2938,
+ "type": "result",
+ "duration_ms": 28342,
+ "uuid": "f9ac6eec-15f9-4fe4-99bf-686d8c34368c",
+ "ttft_stream_ms": 869,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 869,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

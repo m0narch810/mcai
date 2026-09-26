@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 40535,
+ "stop_reason": "tool_use",
+ "session_id": "52f62f85-83e7-4744-8b9d-16cd73ed4fed",
+ "total_cost_usd": 0.168468,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 9527,
+  "cache_read_input_tokens": 12380,
+  "output_tokens": 4488,
+  "output_tokens_details": {
+   "thinking_tokens": 250
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9527,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1931,
+    "cache_read_input_tokens": 10258,
+    "cache_creation_input_tokens": 1391,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1391
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 4488,
+   "cacheReadInputTokens": 12380,
+   "cacheCreationInputTokens": 9527,
+   "webSearchRequests": 0,
+   "costUSD": 0.168468,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 250,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A wave of BEEPLE-ticker tokens appeared, apparently set off by a post from Beeple on X. GeckoTerminal's Twitter field points to beeple/status/2103695634804945012. This one is a non-canonical clone on a Meteora pool that the deployer seeded. It is about 12 minutes old and rose about 150-177% to roughly $28k market cap on heavy, bundler-rich volume. Another BEEPLE token created about 8 minutes earlier (DMZ\u2026) leads at about $238k market cap with $816k of hourly volume.\",\"narrative\":{\"description\":\"A celebrity or artist tweet coin: it trades on a Beeple post, with no project site, socials or DexScreener profile.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Beeple is a well-known crypto and NFT figure, so any post from him spawns many same-ticker deploys on Solana within minutes. At least 10 BEEPLE tokens appear in the packet.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its only link to the story is the name and a GeckoTerminal link to the tweet. It was not the first deploy and is not the volume or market-cap leader.\",\"competing_tokens\":\"The leader is DMZtsWeDaPRGU4ziXxcEMuPbXh1BmDm5iR9LirT8ZoHG: created about 8 minutes earlier, $238k market cap, $816k hourly volume, $44.6k liquidity. A similar clone is 2sRFHWB9\u2026 ($20k market cap, $294k hourly volume). There are also several dead pump.fun and other clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The pool had about 1,975 unique buyers but only 88 unique sellers, and 2,928 buys against 1,285 sells. That is a very lopsided ratio. GMGN tags 69 bundler wallets, and bundlers are the top traders by volume share at 37%. Volume was about $530k on a roughly $28k market cap, a turnover of more than 13x in under 15 minutes, which usually means bots or wash trading. There are no paid boosts. The token seems to ride on a real Beeple post, but part of the flow looks manufactured.\",\"uncertainty\":\"No X data is available, so I can't check whether the Beeple post exists or what it says. Some of the buyers may be real spillover from the leading token.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"100% of the LP is unlocked on a Meteora pool created by the deployer, so liquidity can be pulled at any time\",\"Few LP providers\",\"Creator token status is 'creator_close', meaning the creator has exited or closed its position\",\"69 bundler wallets holding a 37% top-trader share, a dump risk\",\"Liquidity is larger than market cap, consistent with a deployer-seeded pool that can be removed\"]},\"counterargument\":\"If the Beeple post keeps spreading, clones sometimes catch overflow from buyers looking for a cheaper entry than the leader. This token has about 2,000 holders, renounced mint and freeze authority, a low top-10 share (about 21%) and nearly $34k of liquidity against a $28k market cap. A move from $28k to $56k would take little new money. The creator's best previous token reached about $1.1M market cap.\",\"unknowns\":[\"Whether the Beeple post is real and what it says\",\"Whether the deployer will pull the unlocked LP\",\"How much of the volume comes from bots or bundlers\",\"Whether flow keeps concentrating on the DMZ leader\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; I used only the evidence packet.\"},\"thesis\":\"This is a late, non-canonical BEEPLE clone on a Meteora pool with 100% of its LP unlocked. It shows heavy bundler activity, and the creator position is closed. The leading same-ticker token is about 8x larger and will likely soak up most of the flow. After an early spike driven by bots, the most likely outcomes are a fade or a pulled pool. A 2x from entry is possible, but less likely than for a typical coin in this pool.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":42,\"survival_score\":28,\"attention_score\":60,\"manipulation_risk\":72,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A wave of BEEPLE-ticker tokens appeared, apparently set off by a post from Beeple on X. GeckoTerminal's Twitter field points to beeple/status/2103695634804945012. This one is a non-canonical clone on a Meteora pool that the deployer seeded. It is about 12 minutes old and rose about 150-177% to roughly $28k market cap on heavy, bundler-rich volume. Another BEEPLE token created about 8 minutes earlier (DMZ\u2026) leads at about $238k market cap with $816k of hourly volume.",
+  "narrative": {
+   "description": "A celebrity or artist tweet coin: it trades on a Beeple post, with no project site, socials or DexScreener profile.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Beeple is a well-known crypto and NFT figure, so any post from him spawns many same-ticker deploys on Solana within minutes. At least 10 BEEPLE tokens appear in the packet."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its only link to the story is the name and a GeckoTerminal link to the tweet. It was not the first deploy and is not the volume or market-cap leader.",
+   "competing_tokens": "The leader is DMZtsWeDaPRGU4ziXxcEMuPbXh1BmDm5iR9LirT8ZoHG: created about 8 minutes earlier, $238k market cap, $816k hourly volume, $44.6k liquidity. A similar clone is 2sRFHWB9\u2026 ($20k market cap, $294k hourly volume). There are also several dead pump.fun and other clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The pool had about 1,975 unique buyers but only 88 unique sellers, and 2,928 buys against 1,285 sells. That is a very lopsided ratio. GMGN tags 69 bundler wallets, and bundlers are the top traders by volume share at 37%. Volume was about $530k on a roughly $28k market cap, a turnover of more than 13x in under 15 minutes, which usually means bots or wash trading. There are no paid boosts. The token seems to ride on a real Beeple post, but part of the flow looks manufactured.",
+   "uncertainty": "No X data is available, so I can't check whether the Beeple post exists or what it says. Some of the buyers may be real spillover from the leading token."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "100% of the LP is unlocked on a Meteora pool created by the deployer, so liquidity can be pulled at any time",
+    "Few LP providers",
+    "Creator token status is 'creator_close', meaning the creator has exited or closed its position",
+    "69 bundler wallets holding a 37% top-trader share, a dump risk",
+    "Liquidity is larger than market cap, consistent with a deployer-seeded pool that can be removed"
+   ]
+  },
+  "counterargument": "If the Beeple post keeps spreading, clones sometimes catch overflow from buyers looking for a cheaper entry than the leader. This token has about 2,000 holders, renounced mint and freeze authority, a low top-10 share (about 21%) and nearly $34k of liquidity against a $28k market cap. A move from $28k to $56k would take little new money. The creator's best previous token reached about $1.1M market cap.",
+  "unknowns": [
+   "Whether the Beeple post is real and what it says",
+   "Whether the deployer will pull the unlocked LP",
+   "How much of the volume comes from bots or bundlers",
+   "Whether flow keeps concentrating on the DMZ leader"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; I used only the evidence packet."
+  },
+  "thesis": "This is a late, non-canonical BEEPLE clone on a Meteora pool with 100% of its LP unlocked. It shows heavy bundler activity, and the creator position is closed. The leading same-ticker token is about 8x larger and will likely soak up most of the flow. After an early spike driven by bots, the most likely outcomes are a fade or a pulled pool. A 2x from entry is possible, but less likely than for a typical coin in this pool.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 42,
+  "survival_score": 28,
+  "attention_score": 60,
+  "manipulation_risk": 72,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4968,
+ "type": "result",
+ "duration_ms": 40596,
+ "uuid": "dc6f44e4-886a-4a77-8afb-84aac3728750",
+ "ttft_stream_ms": 851,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 851,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

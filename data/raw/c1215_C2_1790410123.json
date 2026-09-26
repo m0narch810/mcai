@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 38480,
+ "stop_reason": "tool_use",
+ "session_id": "0771ca49-c5f7-47ba-a8cc-7a388452dd25",
+ "total_cost_usd": 0.1923536,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 10814,
+  "cache_read_input_tokens": 13648,
+  "output_tokens": 2976,
+  "output_tokens_details": {
+   "thinking_tokens": 613
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10814,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2460,
+    "cache_read_input_tokens": 10884,
+    "cache_creation_input_tokens": 2694,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2694
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2976,
+   "cacheReadInputTokens": 13648,
+   "cacheCreationInputTokens": 10814,
+   "webSearchRequests": 0,
+   "costUSD": 0.1487776,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 613,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20531,
+   "outputTokens": 609,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043576,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"About 2 hours ago someone launched \\\"\ud83d\udcb2SATAN\\\" straight into a PumpSwap pool. It did not come from the pump.fun curve (the contract doesn't end in \\\"pump\\\" and the launchpad field is empty). The price is up about 437% in 6 hours and about 100% in the last hour, with around $400k of volume in that hour against a $122k market cap. The creator still holds 41.89% of the supply and one other wallet holds 10.55%. GMGN tags 100 wallets as bundlers. The packet lists three other tokens with the same \\\"\ud83d\udcb2SATAN\\\" ticker, all created in the past day or so, and all now have zero liquidity (mcaps shown $65k\u2013$214k). The creator's \\\"best token ATH\\\" of $211.7k is close to the $214k shown for the first dead copy. That suggests the same operator keeps relaunching this template and then pulling liquidity. I found no social presence and no story behind it.\",\"narrative\":{\"description\":\"A generic 'SATAN' edgy meme with an emoji ticker. I found no current event, no project socials, no website and no DexScreener profile.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The only visible cause is on-chain trading: bundled and bot-looking volume (8.1k buys but only 129 unique sellers in 6h) pushing the price chart up. I found no evidence of organic social spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only live \ud83d\udcb2SATAN pair. The earlier identical-ticker tokens are dead (0 liquidity), so this looks like the latest copy in a series of relaunches, not an original.\",\"competing_tokens\":\"7WCR6V... (liq $0.01, mcap $214k), F6jP4c... (liq $0), 9Hjrn... (liq $0), 3nV8x...pump 'Satan' ($3.5k). All created in the prior ~22h and now dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 100 bundler wallets, with top bundler traders holding 45.3%. The creator holds 41.89% without having sold. Unique buyers in 6h (1,134) are far above unique sellers (129), which fits buys being spread across many wallets. The same ticker was launched at least three times in the past day, and each copy now has zero liquidity. I found nothing from the contract or ticker on web search.\",\"uncertainty\":\"I only had a very short search window, and X is poorly indexed. It's also possible that a different deployer is copying the ticker rather than the same operator relaunching it.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Creator holds 41.89% and can dump it into a pool of about $103k\",\"Second wallet holds 10.55%; top 10 hold about 57%\",\"100 bundler wallets; GMGN puts the 'entrapment' trader share at 42%\",\"RugCheck reports near-zero LP market liquidity and lp_burn_ratio is 0, so LP control is unclear\",\"Pattern of dead same-ticker copies in the past 24h\"]},\"counterargument\":\"Momentum is strong: +100% in the last hour and still rising over 5 minutes, with thousands of transactions and liquidity close to the market cap. That makes a spike to $250k+ mechanically possible if the operator keeps pumping before exiting. The first copy of this template apparently reached about $214k. If the operator runs this copy past that level before pulling, a +100% move from entry could fill before the rug.\",\"unknowns\":[\"Whether the creator of the earlier SATAN copies is the same wallet\",\"Who controls the LP tokens and whether they are really locked\",\"Any X or Telegram call-channel activity\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Under the 2-minute limit I ran only two web searches: the contract address and the ticker/name. Neither returned anything relevant. The packet lists no project links or socials.\"},\"thesis\":\"This looks like a serially relaunched, bundled, creator-heavy rug template. The creator still holds 42%, and three earlier copies of the same ticker are already dead. The momentum looks manufactured and there is no narrative. Taking profit at 2x before a pull is unlikely; a rug within hours is likely.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":62,\"survival_score\":12,\"attention_score\":35,\"manipulation_risk\":90,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://dexscreener.com/solana/4sC7c8AYpTjfmb1v4ZppNmZkpVBbt3YkRYJXTcsd6o1a\",\"what\":\"Pair market data (from packet)\"},{\"url\":\"https://rugcheck.xyz/tokens/8Ub4exi6NJVu45stvSj1Z5jPMSrr1pzGmVWRSiZdvhX3\",\"what\":\"Holder concentration: creator 41.89%, RugCheck risk flags (from packet)\"},{\"url\":\"https://gmgn.ai/sol/token/8Ub4exi6NJVu45stvSj1Z5jPMSrr1pzGmVWRSiZdvhX3\",\"what\":\"Bundler wallet count and creator hold rate (from packet)\"}]}",
+ "structured_output": {
+  "what_is_happening": "About 2 hours ago someone launched \"\ud83d\udcb2SATAN\" straight into a PumpSwap pool. It did not come from the pump.fun curve (the contract doesn't end in \"pump\" and the launchpad field is empty). The price is up about 437% in 6 hours and about 100% in the last hour, with around $400k of volume in that hour against a $122k market cap. The creator still holds 41.89% of the supply and one other wallet holds 10.55%. GMGN tags 100 wallets as bundlers. The packet lists three other tokens with the same \"\ud83d\udcb2SATAN\" ticker, all created in the past day or so, and all now have zero liquidity (mcaps shown $65k\u2013$214k). The creator's \"best token ATH\" of $211.7k is close to the $214k shown for the first dead copy. That suggests the same operator keeps relaunching this template and then pulling liquidity. I found no social presence and no story behind it.",
+  "narrative": {
+   "description": "A generic 'SATAN' edgy meme with an emoji ticker. I found no current event, no project socials, no website and no DexScreener profile.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The only visible cause is on-chain trading: bundled and bot-looking volume (8.1k buys but only 129 unique sellers in 6h) pushing the price chart up. I found no evidence of organic social spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only live \ud83d\udcb2SATAN pair. The earlier identical-ticker tokens are dead (0 liquidity), so this looks like the latest copy in a series of relaunches, not an original.",
+   "competing_tokens": "7WCR6V... (liq $0.01, mcap $214k), F6jP4c... (liq $0), 9Hjrn... (liq $0), 3nV8x...pump 'Satan' ($3.5k). All created in the prior ~22h and now dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 100 bundler wallets, with top bundler traders holding 45.3%. The creator holds 41.89% without having sold. Unique buyers in 6h (1,134) are far above unique sellers (129), which fits buys being spread across many wallets. The same ticker was launched at least three times in the past day, and each copy now has zero liquidity. I found nothing from the contract or ticker on web search.",
+   "uncertainty": "I only had a very short search window, and X is poorly indexed. It's also possible that a different deployer is copying the ticker rather than the same operator relaunching it."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Creator holds 41.89% and can dump it into a pool of about $103k",
+    "Second wallet holds 10.55%; top 10 hold about 57%",
+    "100 bundler wallets; GMGN puts the 'entrapment' trader share at 42%",
+    "RugCheck reports near-zero LP market liquidity and lp_burn_ratio is 0, so LP control is unclear",
+    "Pattern of dead same-ticker copies in the past 24h"
+   ]
+  },
+  "counterargument": "Momentum is strong: +100% in the last hour and still rising over 5 minutes, with thousands of transactions and liquidity close to the market cap. That makes a spike to $250k+ mechanically possible if the operator keeps pumping before exiting. The first copy of this template apparently reached about $214k. If the operator runs this copy past that level before pulling, a +100% move from entry could fill before the rug.",
+  "unknowns": [
+   "Whether the creator of the earlier SATAN copies is the same wallet",
+   "Who controls the LP tokens and whether they are really locked",
+   "Any X or Telegram call-channel activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Under the 2-minute limit I ran only two web searches: the contract address and the ticker/name. Neither returned anything relevant. The packet lists no project links or socials."
+  },
+  "thesis": "This looks like a serially relaunched, bundled, creator-heavy rug template. The creator still holds 42%, and three earlier copies of the same ticker are already dead. The momentum looks manufactured and there is no narrative. Taking profit at 2x before a pull is unlikely; a rug within hours is likely.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 62,
+  "survival_score": 12,
+  "attention_score": 35,
+  "manipulation_risk": 90,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://dexscreener.com/solana/4sC7c8AYpTjfmb1v4ZppNmZkpVBbt3YkRYJXTcsd6o1a",
+    "what": "Pair market data (from packet)"
+   },
+   {
+    "url": "https://rugcheck.xyz/tokens/8Ub4exi6NJVu45stvSj1Z5jPMSrr1pzGmVWRSiZdvhX3",
+    "what": "Holder concentration: creator 41.89%, RugCheck risk flags (from packet)"
+   },
+   {
+    "url": "https://gmgn.ai/sol/token/8Ub4exi6NJVu45stvSj1Z5jPMSrr1pzGmVWRSiZdvhX3",
+    "what": "Bundler wallet count and creator hold rate (from packet)"
+   }
+  ]
+ },
+ "ttft_ms": 4348,
+ "type": "result",
+ "duration_ms": 34196,
+ "uuid": "515024dd-eb33-4aed-b032-67c878806469",
+ "ttft_stream_ms": 700,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 701,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 45907,
+ "stop_reason": "tool_use",
+ "session_id": "ff261b9b-0e7c-40e4-b38e-9759d14ec279",
+ "total_cost_usd": 0.22077799999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11628,
+  "cache_read_input_tokens": 26470,
+  "output_tokens": 2750,
+  "output_tokens_details": {
+   "thinking_tokens": 369
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11628,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2211,
+    "cache_read_input_tokens": 12880,
+    "cache_creation_input_tokens": 1512,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1512
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2750,
+   "cacheReadInputTokens": 26470,
+   "cacheCreationInputTokens": 11628,
+   "webSearchRequests": 0,
+   "costUSD": 0.153342,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 369,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32371,
+   "outputTokens": 1013,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067436,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Christopher Rufo\\\" is a pump.fun token launched about 46 hours ago (migrated to PumpSwap Sept 24). Its creator fees go to @christopherrufo through UsePaid, a service that pays pump.fun creator fees out to an X account. It was launched on Rufo's Sept 24 Fox News segment about California's \\\"shadow welfare\\\" system. Its all-time-high price (3.8e-4) is about 10x today's price, so it peaked near $380k and then bled out to about $17k. In the last 5 minutes it jumped about 94-102% on $77k volume, against a $33k market cap, with 149 unique buyers. I could not find what set off this revival. It may be a Rufo post or reply about the fees, a KOL call, or a coordinated bot pump.\",\"narrative\":{\"description\":\"A token named after a conservative activist, launched during a Fox News news cycle, with creator fees routed to his real X account through UsePaid. Launches like this can pump again if the person acknowledges the fees or the token.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Unknown. Something set off a burst of about 150 unique buyers in 5 minutes. Possible causes are Rufo engaging with it, a caller, or bot volume. I could not see X to check.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the only Rufo-named token with real liquidity and volume, and it is the one routing fees to Rufo's real handle through UsePaid.\",\"competing_tokens\":\"Several other Rufo/RUFO tokens launched within minutes of each other on Sept 24. All have zero liquidity, so they are effectively dead.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN flags 521 bundler wallets and a 66% bot/degen rate, and the deployer address has launched 166,678 tokens (a factory or UsePaid-style launcher). On the other side, 149 unique buyers in 5 minutes is real breadth, and there are no paid DexScreener boosts.\",\"uncertainty\":\"I could not see X, so I could not tell whether Rufo or a KOL set off the move.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Thin $16.7k liquidity against $77k of volume in 5 minutes, so it is volatile both ways\",\"Entry comes after a +100% move in 5 minutes; this is a revival pump of a coin that already fell about 90% from its ATH\",\"Many bag holders near the ATH will sell into any rally\",\"Heavy bot/bundler presence\"]},\"counterargument\":\"If Rufo himself noticed the fees and posted about them, this has a real celebrity catalyst on a coin that already reached about $380k once. A return toward the old high would be more than a 10x from here, and the 149 unique buyers in 5 minutes suggest real news rather than pure bots.\",\"unknowns\":[\"What set off the pump\",\"Whether Rufo has acknowledged the token\",\"The content of the Bootstrapdev1 post (it returned HTTP 402)\",\"Whether the volume is bot-driven\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"The X post fetch returned HTTP 402 and the UsePaid page failed with an SSL error. News confirms Rufo's Sept 24 Fox segment. Searching the contract address returned nothing. Reddit, Telegram and Discord were not searched because of the time limit.\"},\"thesis\":\"This is a revival pump of a celebrity fee-routing token with no visible catalyst. There are real buyers, but also heavy bot and bundler activity, and entry comes right after a 2x candle. Upside exists because the coin has already been 10x higher, but a fade after a 5-minute spike is the typical outcome. I rate it about average for this pool.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":15,\"survival_score\":60,\"attention_score\":58,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.foxnews.com/video/6405592321112\",\"what\":\"Rufo's Sept 24 Fox News segment on California's shadow welfare system\"},{\"url\":\"https://usepaid.app/\",\"what\":\"UsePaid routes token creator fees to X accounts\"},{\"url\":\"https://phemex.com/academy/what-is-paid-memecoin\",\"what\":\"Explainer on the UsePaid mechanism\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Christopher Rufo\" is a pump.fun token launched about 46 hours ago (migrated to PumpSwap Sept 24). Its creator fees go to @christopherrufo through UsePaid, a service that pays pump.fun creator fees out to an X account. It was launched on Rufo's Sept 24 Fox News segment about California's \"shadow welfare\" system. Its all-time-high price (3.8e-4) is about 10x today's price, so it peaked near $380k and then bled out to about $17k. In the last 5 minutes it jumped about 94-102% on $77k volume, against a $33k market cap, with 149 unique buyers. I could not find what set off this revival. It may be a Rufo post or reply about the fees, a KOL call, or a coordinated bot pump.",
+  "narrative": {
+   "description": "A token named after a conservative activist, launched during a Fox News news cycle, with creator fees routed to his real X account through UsePaid. Launches like this can pump again if the person acknowledges the fees or the token.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Unknown. Something set off a burst of about 150 unique buyers in 5 minutes. Possible causes are Rufo engaging with it, a caller, or bot volume. I could not see X to check."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the only Rufo-named token with real liquidity and volume, and it is the one routing fees to Rufo's real handle through UsePaid.",
+   "competing_tokens": "Several other Rufo/RUFO tokens launched within minutes of each other on Sept 24. All have zero liquidity, so they are effectively dead.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN flags 521 bundler wallets and a 66% bot/degen rate, and the deployer address has launched 166,678 tokens (a factory or UsePaid-style launcher). On the other side, 149 unique buyers in 5 minutes is real breadth, and there are no paid DexScreener boosts.",
+   "uncertainty": "I could not see X, so I could not tell whether Rufo or a KOL set off the move."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Thin $16.7k liquidity against $77k of volume in 5 minutes, so it is volatile both ways",
+    "Entry comes after a +100% move in 5 minutes; this is a revival pump of a coin that already fell about 90% from its ATH",
+    "Many bag holders near the ATH will sell into any rally",
+    "Heavy bot/bundler presence"
+   ]
+  },
+  "counterargument": "If Rufo himself noticed the fees and posted about them, this has a real celebrity catalyst on a coin that already reached about $380k once. A return toward the old high would be more than a 10x from here, and the 149 unique buyers in 5 minutes suggest real news rather than pure bots.",
+  "unknowns": [
+   "What set off the pump",
+   "Whether Rufo has acknowledged the token",
+   "The content of the Bootstrapdev1 post (it returned HTTP 402)",
+   "Whether the volume is bot-driven"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "The X post fetch returned HTTP 402 and the UsePaid page failed with an SSL error. News confirms Rufo's Sept 24 Fox segment. Searching the contract address returned nothing. Reddit, Telegram and Discord were not searched because of the time limit."
+  },
+  "thesis": "This is a revival pump of a celebrity fee-routing token with no visible catalyst. There are real buyers, but also heavy bot and bundler activity, and entry comes right after a 2x candle. Upside exists because the coin has already been 10x higher, but a fade after a 5-minute spike is the typical outcome. I rate it about average for this pool.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 15,
+  "survival_score": 60,
+  "attention_score": 58,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.foxnews.com/video/6405592321112",
+    "what": "Rufo's Sept 24 Fox News segment on California's shadow welfare system"
+   },
+   {
+    "url": "https://usepaid.app/",
+    "what": "UsePaid routes token creator fees to X accounts"
+   },
+   {
+    "url": "https://phemex.com/academy/what-is-paid-memecoin",
+    "what": "Explainer on the UsePaid mechanism"
+   }
+  ]
+ },
+ "ttft_ms": 1921,
+ "type": "result",
+ "duration_ms": 40447,
+ "uuid": "2e376e93-36d5-42c2-97f5-4a9228f1b8f2",
+ "ttft_stream_ms": 1447,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 1447,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

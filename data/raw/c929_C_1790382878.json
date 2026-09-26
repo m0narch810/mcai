@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 36151,
+ "stop_reason": "tool_use",
+ "session_id": "0c7a6264-955f-4186-b61e-462680274e6f",
+ "total_cost_usd": 0.19445700000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11674,
+  "cache_read_input_tokens": 27705,
+  "output_tokens": 2573,
+  "output_tokens_details": {
+   "thinking_tokens": 350
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11674,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2045,
+    "cache_read_input_tokens": 13258,
+    "cache_creation_input_tokens": 1180,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1180
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2573,
+   "cacheReadInputTokens": 27705,
+   "cacheCreationInputTokens": 11674,
+   "webSearchRequests": 0,
+   "costUSD": 0.15041700000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 350,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20890,
+   "outputTokens": 630,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.044039999999999996,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun coin called \\\"Cream\\\", 13 minutes old. It points to a post by the large X account @cremieuxrecueil (Cr\u00e9mieux), and its trading fees go to that account through UsePaid. It left the bonding curve 4 seconds after creation, went up 431\u2013618%, and did about $880k of volume in its first 12 minutes against a $247k market cap. At least 10 copycat \\\"Cream\\\" tokens were launched within minutes. One of them (66Rv) is at a higher market cap of $447k.\",\"narrative\":{\"description\":\"A fee-sharing tribute token for Cr\u00e9mieux (@cremieuxrecueil), a well-known X writer on genetics and demographics, tied to one of his posts. I could not read the post itself (X returned 402), so I can't say what it says about 'Cream'. Search shows only his X profile and an older piece about ice cream.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A large-account post plus a fee-to-creator mechanic set off a burst of copycat launches. I could not confirm any engagement from Cr\u00e9mieux himself.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"Its links point to the Cr\u00e9mieux post and it has the highest volume among the copies. It is also among the earliest launches that still have liquidity.\",\"competing_tokens\":\"About 10 other 'Cream' tokens. 66RvsdY\u2026 is at $447k market cap, and CMuvWQ\u2026 launched earlier but has collapsed to $38k. Among the live copies, attention is split with DAFBG\u2026, FxKBW\u2026 and DdGEj\u2026.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN classifies 639 of 1001 holders as bundlers and puts the bot/degen rate at 81%. The top 70 snipers hold 44%. There are also 2,098 unique buyers and 86 smart wallets. The creator has launched 15,545 tokens, so this is a serial launcher.\",\"uncertainty\":\"I could not read the X post or see how widely it spread. I don't know whether Cr\u00e9mieux acknowledged the token.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Serial deployer with 15,545 tokens launched\",\"Heavy bundler and sniper share (top-70 sniper hold rate 44%)\",\"Attention split across 10+ same-name copies\",\"Already up 4\u20136x in 12 minutes, so the entry comes after the spike\",\"LP is 100% burned, so a direct pull of the pool is unlikely\"]},\"counterargument\":\"A big X account with fee-sharing can pull in real followers. If Cr\u00e9mieux quote-tweets or claims fees, the leading copy could go to $1M+ and this token has the most volume. Holders are well spread (top 10 at 17%) and the LP is burned.\",\"unknowns\":[\"Content of the Cr\u00e9mieux post\",\"Whether Cr\u00e9mieux endorses a particular copy\",\"How much of the volume is real rather than bundler/bot volume\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Time-limited. The X status fetch returned 402 and the UsePaid page failed with an SSL error. General web search found nothing specific to this token.\"},\"thesis\":\"A tribute token for a large account, with the most volume of any copy but not the highest market cap. Bundlers, snipers and a serial deployer dominate, and it is entering after a 5x spike while 10 copies split the attention. Doubling from $247k within 6 hours is possible but below average odds for this pool.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":22,\"survival_score\":50,\"attention_score\":72,\"manipulation_risk\":72,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/cremieuxrecueil/status/2103640416046445002\",\"what\":\"Linked post (fetch returned 402)\"},{\"url\":\"https://x.com/cremieuxrecueil\",\"what\":\"Cr\u00e9mieux X account\"},{\"url\":\"https://usepaid.app/token/Do4VN39zVA66MFEKUTfE2TDjAMuZ4yNHmyJHWwYhVvi9\",\"what\":\"UsePaid fee page (fetch failed)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun coin called \"Cream\", 13 minutes old. It points to a post by the large X account @cremieuxrecueil (Cr\u00e9mieux), and its trading fees go to that account through UsePaid. It left the bonding curve 4 seconds after creation, went up 431\u2013618%, and did about $880k of volume in its first 12 minutes against a $247k market cap. At least 10 copycat \"Cream\" tokens were launched within minutes. One of them (66Rv) is at a higher market cap of $447k.",
+  "narrative": {
+   "description": "A fee-sharing tribute token for Cr\u00e9mieux (@cremieuxrecueil), a well-known X writer on genetics and demographics, tied to one of his posts. I could not read the post itself (X returned 402), so I can't say what it says about 'Cream'. Search shows only his X profile and an older piece about ice cream.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A large-account post plus a fee-to-creator mechanic set off a burst of copycat launches. I could not confirm any engagement from Cr\u00e9mieux himself."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "Its links point to the Cr\u00e9mieux post and it has the highest volume among the copies. It is also among the earliest launches that still have liquidity.",
+   "competing_tokens": "About 10 other 'Cream' tokens. 66RvsdY\u2026 is at $447k market cap, and CMuvWQ\u2026 launched earlier but has collapsed to $38k. Among the live copies, attention is split with DAFBG\u2026, FxKBW\u2026 and DdGEj\u2026.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN classifies 639 of 1001 holders as bundlers and puts the bot/degen rate at 81%. The top 70 snipers hold 44%. There are also 2,098 unique buyers and 86 smart wallets. The creator has launched 15,545 tokens, so this is a serial launcher.",
+   "uncertainty": "I could not read the X post or see how widely it spread. I don't know whether Cr\u00e9mieux acknowledged the token."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Serial deployer with 15,545 tokens launched",
+    "Heavy bundler and sniper share (top-70 sniper hold rate 44%)",
+    "Attention split across 10+ same-name copies",
+    "Already up 4\u20136x in 12 minutes, so the entry comes after the spike",
+    "LP is 100% burned, so a direct pull of the pool is unlikely"
+   ]
+  },
+  "counterargument": "A big X account with fee-sharing can pull in real followers. If Cr\u00e9mieux quote-tweets or claims fees, the leading copy could go to $1M+ and this token has the most volume. Holders are well spread (top 10 at 17%) and the LP is burned.",
+  "unknowns": [
+   "Content of the Cr\u00e9mieux post",
+   "Whether Cr\u00e9mieux endorses a particular copy",
+   "How much of the volume is real rather than bundler/bot volume"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Time-limited. The X status fetch returned 402 and the UsePaid page failed with an SSL error. General web search found nothing specific to this token."
+  },
+  "thesis": "A tribute token for a large account, with the most volume of any copy but not the highest market cap. Bundlers, snipers and a serial deployer dominate, and it is entering after a 5x spike while 10 copies split the attention. Doubling from $247k within 6 hours is possible but below average odds for this pool.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 22,
+  "survival_score": 50,
+  "attention_score": 72,
+  "manipulation_risk": 72,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/cremieuxrecueil/status/2103640416046445002",
+    "what": "Linked post (fetch returned 402)"
+   },
+   {
+    "url": "https://x.com/cremieuxrecueil",
+    "what": "Cr\u00e9mieux X account"
+   },
+   {
+    "url": "https://usepaid.app/token/Do4VN39zVA66MFEKUTfE2TDjAMuZ4yNHmyJHWwYhVvi9",
+    "what": "UsePaid fee page (fetch failed)"
+   }
+  ]
+ },
+ "ttft_ms": 2411,
+ "type": "result",
+ "duration_ms": 36199,
+ "uuid": "114cdccc-bfae-4315-a678-e7b8fb15c89c",
+ "ttft_stream_ms": 644,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 644,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

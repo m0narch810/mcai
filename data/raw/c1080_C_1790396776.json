@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 36060,
+ "stop_reason": "tool_use",
+ "session_id": "294c67e0-9cac-49b8-9978-bbfdcd19610c",
+ "total_cost_usd": 0.19730380000000003,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11861,
+  "cache_read_input_tokens": 27769,
+  "output_tokens": 2576,
+  "output_tokens_details": {
+   "thinking_tokens": 404
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11861,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2238,
+    "cache_read_input_tokens": 13335,
+    "cache_creation_input_tokens": 1290,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1290
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2576,
+   "cacheReadInputTokens": 27769,
+   "cacheCreationInputTokens": 11861,
+   "webSearchRequests": 0,
+   "costUSD": 0.1519858,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 404,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21503,
+   "outputTokens": 763,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045318000000000004,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BEEPLE (2sRF\u2026) is one of at least 10 same-name \\\"BEEPLE\\\" tokens launched within about 15 minutes of each other. They seem to be reacting to a Beeple X post (GeckoTerminal links beeple/status/2103695634804945012; I got a 403 when fetching it). This pair was created directly on PumpSwap, not graduated from pump.fun (migrated_unix=0, launchpad empty). The LP is 100% unlocked and liquidity ($31k) is larger than market cap ($22k). Price is up 113% in 11 minutes on $262k of volume, with 687 unique buyers and 108 sellers. The name leader is DMZt\u2026 at a $290k market cap and $801k of hourly volume. 4So8\u2026 is also larger, at $452k of hourly volume.\",\"narrative\":{\"description\":\"Beeple, the well-known NFT artist, posted something on X. This came weeks after he got involved in Hunter Biden's $LAPTOP memecoin, and it set off a same-name ticker swarm on Solana.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Beeple is a celebrity with a big following in crypto, and snipers mass-deploy tokens named after his posts. I could not read the post, so I don't know whether it actually endorses a token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name only. It was not first (DMZt\u2026 launched about 9 minutes earlier) and it has much less market cap and volume than the leader.\",\"competing_tokens\":\"DMZt\u2026 ($290k mcap, $801k h1 vol, leader), 4So8\u2026 ($26k mcap, $452k h1 vol), GG91\u2026, 4Jqn\u2026 and several dead copies\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"There are 687 unique buyers against 108 sellers, which suggests broad retail interest. But GMGN flags 74 bundler wallets, and the pool was a direct PumpSwap deploy whose creator holds all the LP. The swarm pattern of many copies is typical sniper and deployer farming.\",\"uncertainty\":\"I could not read the Beeple post itself or see any X discussion of this specific contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"100% of the LP is unlocked and was seeded by the creator, who can pull it at any time\",\"Liquidity is larger than market cap, which fits an artificial direct-pool setup\",\"74 bundler wallets\",\"It is a secondary copy that competes with a much larger leader for the same attention\",\"GMGN status is creator_close\"]},\"counterargument\":\"Market cap is only $22k while the leader sits near $290k, so there is room to catch up. Buyers are accelerating (383 unique in the last 5 minutes), buys outnumber sells 2:1, the top 10 holders own just 14%, and mint and freeze authority are renounced. A second-place copy of a celebrity coin can easily double as spillover money arrives.\",\"unknowns\":[\"What the Beeple post says and whether it names a contract\",\"Who controls the LP and whether they will pull it\",\"Whether the leader token will soak up all the flow\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I was very short on time. The X status fetch returned 403. News search turned up Beeple's recent involvement with $LAPTOP but nothing about a BEEPLE token. The project has no website or socials.\"},\"thesis\":\"This is a non-canonical copy in a celebrity-tweet swarm, with fully unlocked, creator-owned LP and bundler activity. It has short-term momentum, but the rug risk is high and it has no claim to being the real token.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":50,\"survival_score\":22,\"attention_score\":58,\"manipulation_risk\":68,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/beeple/status/2103695634804945012\",\"what\":\"Beeple post linked in the GeckoTerminal metadata (403, could not read)\"},{\"url\":\"https://www.forbes.com/sites/alisondurkee/2026/09/07/hunter-biden-launching-laptop-memecoin-amid-praise-for-crypto/\",\"what\":\"Beeple's recent memecoin involvement ($LAPTOP)\"},{\"url\":\"https://www.coingabbar.com/en/laptop-coin-prediction-based-burn-removes-1-of-total-supply\",\"what\":\"Beeple mentions moving memecoins\"}]}",
+ "structured_output": {
+  "what_is_happening": "BEEPLE (2sRF\u2026) is one of at least 10 same-name \"BEEPLE\" tokens launched within about 15 minutes of each other. They seem to be reacting to a Beeple X post (GeckoTerminal links beeple/status/2103695634804945012; I got a 403 when fetching it). This pair was created directly on PumpSwap, not graduated from pump.fun (migrated_unix=0, launchpad empty). The LP is 100% unlocked and liquidity ($31k) is larger than market cap ($22k). Price is up 113% in 11 minutes on $262k of volume, with 687 unique buyers and 108 sellers. The name leader is DMZt\u2026 at a $290k market cap and $801k of hourly volume. 4So8\u2026 is also larger, at $452k of hourly volume.",
+  "narrative": {
+   "description": "Beeple, the well-known NFT artist, posted something on X. This came weeks after he got involved in Hunter Biden's $LAPTOP memecoin, and it set off a same-name ticker swarm on Solana.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Beeple is a celebrity with a big following in crypto, and snipers mass-deploy tokens named after his posts. I could not read the post, so I don't know whether it actually endorses a token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name only. It was not first (DMZt\u2026 launched about 9 minutes earlier) and it has much less market cap and volume than the leader.",
+   "competing_tokens": "DMZt\u2026 ($290k mcap, $801k h1 vol, leader), 4So8\u2026 ($26k mcap, $452k h1 vol), GG91\u2026, 4Jqn\u2026 and several dead copies",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "There are 687 unique buyers against 108 sellers, which suggests broad retail interest. But GMGN flags 74 bundler wallets, and the pool was a direct PumpSwap deploy whose creator holds all the LP. The swarm pattern of many copies is typical sniper and deployer farming.",
+   "uncertainty": "I could not read the Beeple post itself or see any X discussion of this specific contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "100% of the LP is unlocked and was seeded by the creator, who can pull it at any time",
+    "Liquidity is larger than market cap, which fits an artificial direct-pool setup",
+    "74 bundler wallets",
+    "It is a secondary copy that competes with a much larger leader for the same attention",
+    "GMGN status is creator_close"
+   ]
+  },
+  "counterargument": "Market cap is only $22k while the leader sits near $290k, so there is room to catch up. Buyers are accelerating (383 unique in the last 5 minutes), buys outnumber sells 2:1, the top 10 holders own just 14%, and mint and freeze authority are renounced. A second-place copy of a celebrity coin can easily double as spillover money arrives.",
+  "unknowns": [
+   "What the Beeple post says and whether it names a contract",
+   "Who controls the LP and whether they will pull it",
+   "Whether the leader token will soak up all the flow"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I was very short on time. The X status fetch returned 403. News search turned up Beeple's recent involvement with $LAPTOP but nothing about a BEEPLE token. The project has no website or socials."
+  },
+  "thesis": "This is a non-canonical copy in a celebrity-tweet swarm, with fully unlocked, creator-owned LP and bundler activity. It has short-term momentum, but the rug risk is high and it has no claim to being the real token.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 58,
+  "manipulation_risk": 68,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/beeple/status/2103695634804945012",
+    "what": "Beeple post linked in the GeckoTerminal metadata (403, could not read)"
+   },
+   {
+    "url": "https://www.forbes.com/sites/alisondurkee/2026/09/07/hunter-biden-launching-laptop-memecoin-amid-praise-for-crypto/",
+    "what": "Beeple's recent memecoin involvement ($LAPTOP)"
+   },
+   {
+    "url": "https://www.coingabbar.com/en/laptop-coin-prediction-based-burn-removes-1-of-total-supply",
+    "what": "Beeple mentions moving memecoins"
+   }
+  ]
+ },
+ "ttft_ms": 2332,
+ "type": "result",
+ "duration_ms": 35207,
+ "uuid": "9cdfefb2-e66c-4782-8007-066bc1c4ebd5",
+ "ttft_stream_ms": 1059,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 1059,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

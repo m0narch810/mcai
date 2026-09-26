@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 24902,
+ "stop_reason": "tool_use",
+ "session_id": "c4f05cd5-6a51-4466-a79d-ecb7f8005310",
+ "total_cost_usd": 0.1199844,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8619,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2530,
+  "output_tokens_details": {
+   "thinking_tokens": 467
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8619,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2530,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8619,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8619
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2530,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8619,
+   "webSearchRequests": 0,
+   "costUSD": 0.1199844,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 467,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a token launched directly on PumpSwap, not through the pump.fun curve. Its name is \\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\", roughly \\\"the 51 Chigua (Chinese gossip site) official first-launch meme\\\". It is 14 minutes old and worth about $30k. In its first 15 minutes it had heavy buying: about 1,177 unique buyers against 52 sellers, $260k volume and a +100\u2013156% price move. The packet lists at least 10 earlier tokens with the exact same name and ticker, all created in the past roughly 19 hours. Every one now shows about $0 liquidity with absurd leftover market caps, which is what a pulled pool looks like. The most recent (4PRYX..., about 2 hours old) did $392k of hourly volume and still went to zero liquidity. This coin has the same setup: the creator put in the liquidity alone and none of it is locked (100% unlocked, a RugCheck danger flag), the creator holds 19% of supply, and there is no website, socials or DexScreener profile, only an X handle, \\\"gua51x\\\".\",\"narrative\":{\"description\":\"A Chinese-language meme tied to 51\u5403\u74dc\u7f51, a well-known Chinese gossip/scandal website, and claiming to be its 'official first launch'. The appeal is aimed at Chinese-speaking retail traders.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The 'official' claim draws Chinese-speaking retail traders, which fits the lopsided buyer/seller counts. But the same name has been relaunched 10+ times in a day and each copy died. This looks like a repeated scam template, not a story that is building.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only live pool under this name right now, with about $37k liquidity. Nothing on-chain or in the packet ties it to the real 51\u5403\u74dc\u7f51 site; the only link is an unverified X handle.\",\"competing_tokens\":\"At least 10 tokens with the same name and ticker 51X from the past ~19 hours, all with about $0 liquidity (pulled). The latest, 4PRYX..., did $392k of hourly volume before dying.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The same name was relaunched serially and every earlier copy's liquidity was pulled. The creator seeded unlocked liquidity alone and keeps 19% of supply. Buyers outnumber sellers about 23 to 1, which fits a pool being filled before the liquidity is pulled. No website, socials or DexScreener profile.\",\"uncertainty\":\"The GMGN creator wallet shows no other launches, so the copies may come from different deployers or from copycats. The 1,177 buyers may be real Chinese retail. Bot/degen rate is 0 and there are no bundler or sniper wallets.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and the creator can remove it at any time\",\"Creator holds 18.99% of supply (GMGN also flags this wallet as a rat trader)\",\"10+ earlier copies of this exact name all ended with liquidity pulled\",\"Only a few liquidity providers, so the pool is controlled by one party\",\"No socials or site, so there is no community base\"]},\"counterargument\":\"The buying is broad: about 1,177 unique buyers, 0% bot rate, no bundlers or snipers. It launched outside the pump.fun curve with $37k of liquidity, more than its market cap. If the creator is a legitimate team, or chooses to farm fees and push the price up before exiting, going from $32k to $64k only takes a modest amount of further buying from Chinese-speaking traders. The earlier copies may have been clones made by others, which would make this one the \\\"real\\\" launch.\",\"unknowns\":[\"Whether this creator is behind the earlier same-name copies\",\"Whether the X handle gua51x is really connected to 51\u5403\u74dc\u7f51\",\"Who is buying (a Chinese community or recycled wallets)\",\"Whether the creator will remove liquidity or sell the 19% into buyers\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged only from the evidence packet.\"},\"thesis\":\"This looks like a repeated liquidity-pull scam. One party holds the pool with no lock, the creator keeps 19% of supply, and 10+ identical-name tokens were all pulled within the past day. Heavy one-sided buying is the usual fill-up before the pull. A take-profit at 2x is possible but much less likely than losing the whole position to a liquidity pull.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":70,\"survival_score\":12,\"attention_score\":62,\"manipulation_risk\":78,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is a token launched directly on PumpSwap, not through the pump.fun curve. Its name is \"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\", roughly \"the 51 Chigua (Chinese gossip site) official first-launch meme\". It is 14 minutes old and worth about $30k. In its first 15 minutes it had heavy buying: about 1,177 unique buyers against 52 sellers, $260k volume and a +100\u2013156% price move. The packet lists at least 10 earlier tokens with the exact same name and ticker, all created in the past roughly 19 hours. Every one now shows about $0 liquidity with absurd leftover market caps, which is what a pulled pool looks like. The most recent (4PRYX..., about 2 hours old) did $392k of hourly volume and still went to zero liquidity. This coin has the same setup: the creator put in the liquidity alone and none of it is locked (100% unlocked, a RugCheck danger flag), the creator holds 19% of supply, and there is no website, socials or DexScreener profile, only an X handle, \"gua51x\".",
+  "narrative": {
+   "description": "A Chinese-language meme tied to 51\u5403\u74dc\u7f51, a well-known Chinese gossip/scandal website, and claiming to be its 'official first launch'. The appeal is aimed at Chinese-speaking retail traders.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The 'official' claim draws Chinese-speaking retail traders, which fits the lopsided buyer/seller counts. But the same name has been relaunched 10+ times in a day and each copy died. This looks like a repeated scam template, not a story that is building."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only live pool under this name right now, with about $37k liquidity. Nothing on-chain or in the packet ties it to the real 51\u5403\u74dc\u7f51 site; the only link is an unverified X handle.",
+   "competing_tokens": "At least 10 tokens with the same name and ticker 51X from the past ~19 hours, all with about $0 liquidity (pulled). The latest, 4PRYX..., did $392k of hourly volume before dying.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The same name was relaunched serially and every earlier copy's liquidity was pulled. The creator seeded unlocked liquidity alone and keeps 19% of supply. Buyers outnumber sellers about 23 to 1, which fits a pool being filled before the liquidity is pulled. No website, socials or DexScreener profile.",
+   "uncertainty": "The GMGN creator wallet shows no other launches, so the copies may come from different deployers or from copycats. The 1,177 buyers may be real Chinese retail. Bot/degen rate is 0 and there are no bundler or sniper wallets."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and the creator can remove it at any time",
+    "Creator holds 18.99% of supply (GMGN also flags this wallet as a rat trader)",
+    "10+ earlier copies of this exact name all ended with liquidity pulled",
+    "Only a few liquidity providers, so the pool is controlled by one party",
+    "No socials or site, so there is no community base"
+   ]
+  },
+  "counterargument": "The buying is broad: about 1,177 unique buyers, 0% bot rate, no bundlers or snipers. It launched outside the pump.fun curve with $37k of liquidity, more than its market cap. If the creator is a legitimate team, or chooses to farm fees and push the price up before exiting, going from $32k to $64k only takes a modest amount of further buying from Chinese-speaking traders. The earlier copies may have been clones made by others, which would make this one the \"real\" launch.",
+  "unknowns": [
+   "Whether this creator is behind the earlier same-name copies",
+   "Whether the X handle gua51x is really connected to 51\u5403\u74dc\u7f51",
+   "Who is buying (a Chinese community or recycled wallets)",
+   "Whether the creator will remove liquidity or sell the 19% into buyers"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged only from the evidence packet."
+  },
+  "thesis": "This looks like a repeated liquidity-pull scam. One party holds the pool with no lock, the creator keeps 19% of supply, and 10+ identical-name tokens were all pulled within the past day. Heavy one-sided buying is the usual fill-up before the pull. A take-profit at 2x is possible but much less likely than losing the whole position to a liquidity pull.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 70,
+  "survival_score": 12,
+  "attention_score": 62,
+  "manipulation_risk": 78,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": []
+ },
+ "ttft_ms": 5770,
+ "type": "result",
+ "duration_ms": 24949,
+ "uuid": "68e214c2-6cb2-46b7-bd67-0d736cad1b34",
+ "ttft_stream_ms": 714,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 714,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

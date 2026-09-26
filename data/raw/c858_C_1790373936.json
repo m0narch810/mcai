@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 41279,
+ "stop_reason": "tool_use",
+ "session_id": "2ce15344-29ff-48a2-a4dd-6e992e0e71fa",
+ "total_cost_usd": 0.23489800000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13227,
+  "cache_read_input_tokens": 28535,
+  "output_tokens": 2596,
+  "output_tokens_details": {
+   "thinking_tokens": 410
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13227,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1995,
+    "cache_read_input_tokens": 14073,
+    "cache_creation_input_tokens": 1918,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1918
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2596,
+   "cacheReadInputTokens": 28535,
+   "cacheCreationInputTokens": 13227,
+   "webSearchRequests": 0,
+   "costUSD": 0.163467,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 410,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 36316,
+   "outputTokens": 1023,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.071431,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a copycat of the \\\"American Reserved Oil Supply\\\" (AROS) meme coin, which is currently popular on Solana. It was deployed straight onto a PumpSwap pool, without the pump.fun \\\"pump\\\" address suffix, about 19 minutes before detection. The creator has closed out, 100% of the LP is unlocked, and there are no socials or website. The packet lists at least 9 other AROS tokens. The main ones sit at $360M\u2013$900M market cap (packet figures). Two recent copies with the same non-pump deploy pattern were made within about 2 hours of this one, and both now show $0 liquidity. One of them (DcMYcV...) still shows $245k of 1h volume, which is the same pump-then-pull pattern this coin shows now. The buy flow here is lopsided: 1,620 unique buyers against 99 sellers and $315k of volume on a $27k market cap. That looks like buyers mistaking this for the real AROS, or bot flow, while the deployer can pull the LP at any time.\",\"narrative\":{\"description\":\"AROS / American Reserved Oil Supply, a meme coin themed on the US strategic oil reserve. The canonical tokens are already at hundreds of millions in market cap, according to the packet and aggregator pages.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"A large, active parent narrative draws buyers who search for the ticker and land on copies. The attention belongs to the parent token, not this contract.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"None. It is a same-name clone launched hours after the main AROS tokens, with no socials and no profile.\",\"competing_tokens\":\"57LVTC...pump ($901M), QcakAH...pump ($860M, same full name), 2DznHs...pump ($711M) and others. Recent non-pump clones DcMYcV... and Jt8i14... already show $0 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Clone deployed directly to PumpSwap with 100% of the LP unlocked and a single LP provider. The creator has closed out. Sibling clones of the same pattern were rugged within the last 2 hours. Buyers outnumber sellers about 16:1. Nothing about this contract turned up in web search.\",\"uncertainty\":\"I could not check X directly. The buyers may be real people who were misled rather than bots, but either way the deployer controls the exit.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and controlled by the deployer (RugCheck danger rating)\",\"Sibling clones of the same pattern already sit at $0 liquidity\",\"Ticker hijack of a much larger canonical token\",\"8 bundler wallets flagged; the creator closed out\"]},\"counterargument\":\"Liquidity ($42k) is higher than the market cap, and buying is heavy and broad: 1,620 unique buyers with a +40% move over the last 5 minutes. The top 10 holders own only about 11%. If the deployer lets it run instead of pulling, clone confusion alone could briefly push it to 2x from a $27k base.\",\"unknowns\":[\"Direct X mentions of this contract\",\"Who the deployer is and whether it is linked to the rugged sibling clones\",\"Whether the buy flow comes from bots or from misled buyers\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-limited. Searching the contract address returned nothing relevant. Searching the name found only the canonical AROS pages (aros.help, OKX, top1markets). The packet lists no socials for this contract.\"},\"thesis\":\"This is a clone with unlocked LP riding a large existing narrative, and sibling clones of the same pattern were rugged within the last 2 hours. A liquidity pull within 6 hours is the most likely outcome. Low p_runner.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":72,\"survival_score\":12,\"attention_score\":55,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://aros.help/\",\"what\":\"Website of the canonical AROS token\"},{\"url\":\"https://www.top1markets.com/insights/crypto/what-is-american-reserved-oil-supply-aros-crypto-legit-or-scam-f28\",\"what\":\"Warns about multiple AROS contract addresses\"},{\"url\":\"https://www.okx.com/en-us/price/american-reserved-oil-supply-aros\",\"what\":\"Price page for the canonical AROS token\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is a copycat of the \"American Reserved Oil Supply\" (AROS) meme coin, which is currently popular on Solana. It was deployed straight onto a PumpSwap pool, without the pump.fun \"pump\" address suffix, about 19 minutes before detection. The creator has closed out, 100% of the LP is unlocked, and there are no socials or website. The packet lists at least 9 other AROS tokens. The main ones sit at $360M\u2013$900M market cap (packet figures). Two recent copies with the same non-pump deploy pattern were made within about 2 hours of this one, and both now show $0 liquidity. One of them (DcMYcV...) still shows $245k of 1h volume, which is the same pump-then-pull pattern this coin shows now. The buy flow here is lopsided: 1,620 unique buyers against 99 sellers and $315k of volume on a $27k market cap. That looks like buyers mistaking this for the real AROS, or bot flow, while the deployer can pull the LP at any time.",
+  "narrative": {
+   "description": "AROS / American Reserved Oil Supply, a meme coin themed on the US strategic oil reserve. The canonical tokens are already at hundreds of millions in market cap, according to the packet and aggregator pages.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "A large, active parent narrative draws buyers who search for the ticker and land on copies. The attention belongs to the parent token, not this contract."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "None. It is a same-name clone launched hours after the main AROS tokens, with no socials and no profile.",
+   "competing_tokens": "57LVTC...pump ($901M), QcakAH...pump ($860M, same full name), 2DznHs...pump ($711M) and others. Recent non-pump clones DcMYcV... and Jt8i14... already show $0 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Clone deployed directly to PumpSwap with 100% of the LP unlocked and a single LP provider. The creator has closed out. Sibling clones of the same pattern were rugged within the last 2 hours. Buyers outnumber sellers about 16:1. Nothing about this contract turned up in web search.",
+   "uncertainty": "I could not check X directly. The buyers may be real people who were misled rather than bots, but either way the deployer controls the exit."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and controlled by the deployer (RugCheck danger rating)",
+    "Sibling clones of the same pattern already sit at $0 liquidity",
+    "Ticker hijack of a much larger canonical token",
+    "8 bundler wallets flagged; the creator closed out"
+   ]
+  },
+  "counterargument": "Liquidity ($42k) is higher than the market cap, and buying is heavy and broad: 1,620 unique buyers with a +40% move over the last 5 minutes. The top 10 holders own only about 11%. If the deployer lets it run instead of pulling, clone confusion alone could briefly push it to 2x from a $27k base.",
+  "unknowns": [
+   "Direct X mentions of this contract",
+   "Who the deployer is and whether it is linked to the rugged sibling clones",
+   "Whether the buy flow comes from bots or from misled buyers"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-limited. Searching the contract address returned nothing relevant. Searching the name found only the canonical AROS pages (aros.help, OKX, top1markets). The packet lists no socials for this contract."
+  },
+  "thesis": "This is a clone with unlocked LP riding a large existing narrative, and sibling clones of the same pattern were rugged within the last 2 hours. A liquidity pull within 6 hours is the most likely outcome. Low p_runner.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 72,
+  "survival_score": 12,
+  "attention_score": 55,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://aros.help/",
+    "what": "Website of the canonical AROS token"
+   },
+   {
+    "url": "https://www.top1markets.com/insights/crypto/what-is-american-reserved-oil-supply-aros-crypto-legit-or-scam-f28",
+    "what": "Warns about multiple AROS contract addresses"
+   },
+   {
+    "url": "https://www.okx.com/en-us/price/american-reserved-oil-supply-aros",
+    "what": "Price page for the canonical AROS token"
+   }
+  ]
+ },
+ "ttft_ms": 2131,
+ "type": "result",
+ "duration_ms": 35530,
+ "uuid": "80895949-9a06-4321-8d02-4a1737d2ef9e",
+ "ttft_stream_ms": 698,
+ "time_to_request_ms": 59,
+ "first_content_frame_ms": 699,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

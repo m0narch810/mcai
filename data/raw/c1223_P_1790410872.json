@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 24208,
+ "stop_reason": "tool_use",
+ "session_id": "86e706a3-21d2-4742-ae0b-b666fd3715bf",
+ "total_cost_usd": 0.1243666,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 9212,
+  "cache_read_input_tokens": 12573,
+  "output_tokens": 2407,
+  "output_tokens_details": {
+   "thinking_tokens": 243
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9212,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1777,
+    "cache_read_input_tokens": 10451,
+    "cache_creation_input_tokens": 883,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 883
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2407,
+   "cacheReadInputTokens": 12573,
+   "cacheCreationInputTokens": 9212,
+   "webSearchRequests": 0,
+   "costUSD": 0.1243666,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 243,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Meteora-curve token that had already graduated, named 'slopcannon' and trading on PumpSwap, met the rule 10 minutes after launch. It is one of at least 10 same-name tokens created within about 15 minutes, apparently all reacting to a boneGPT X post. At detection it had pumped about 67-96% over the hour, then dumped about 55-60% in the last 5 minutes. Volume is heavy ($209k in 10 minutes on an $88-103k market cap). Its website link points to a competing slopcannon contract (55Vr), so this is a derivative clone. There is also a larger rival, FT6s, at a $254k market cap.\",\"narrative\":{\"description\":\"'slopcannon' is a meme phrase tied to a boneGPT X post. Many coins were launched on that name within minutes of each other.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Launch bots and degens copy-launch on a viral post. Attention is split across about 10 clones, and the market usually crowns one winner (probably FT6s or 55Vr, not this one).\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It carries the same name and ticker and links to the same X post. Its own website field points to another slopcannon contract, which marks it as a clone.\",\"competing_tokens\":\"FT6s ($254k market cap, $36k liquidity, created earlier, most volume) and 55Vr ($84k, created earliest among the active ones, and referenced by this token's own website link). There are also several dead clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"About 1,568 unique buyers against 94 unique sellers is broad but shallow retail and bot flow. There are 28 bundler wallets (about 9% of supply), no smart-money or KOL wallets, no paid boosts, and a duplicated image. The token is a copycat of another contract.\",\"uncertainty\":\"I can't see the X post or how widely the meme is spreading. The 80% top holder is unlabelled and could be a pool or vault account.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked; this conflicts with GMGN's lp_burn_ratio of 1.0\",\"One unlabelled holder has 80% (RugCheck), while GMGN shows only 9.4% in the top 10, so the data conflict\",\"28 bundler wallets\",\"The dev has already closed out (creator_close)\",\"Liquidity is only $22k against about $100k of market cap, and the price just fell 55-60% in 5 minutes\",\"A larger same-name rival is soaking up attention\"]},\"counterargument\":\"Buyer breadth is real: 1,500+ unique buyers against fewer than 100 sellers in 10 minutes. Mint and freeze authority are renounced, and GMGN says the LP is burned. If the slopcannon meme keeps going viral, lower-cap clones can catch spillover. Buying after a 60% dip at around $100k market cap means a 2x only needs about $200k, which is below FT6s's current level.\",\"unknowns\":[\"Who holds the 80% (pool vault or whale)\",\"Whether the LP is actually burned or unlocked\",\"How big the boneGPT post's reach is\",\"Which clone the market treats as canonical\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; packet only.\"},\"thesis\":\"This is a non-canonical clone in a crowded same-name launch wave. It is already dumping hard after a spike, bundlers are present, the dev has exited, and the holder and LP data conflict. The best-case upside is spillover, but the most likely path is a fade as attention settles on FT6s or 55Vr.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":42,\"survival_score\":33,\"attention_score\":55,\"manipulation_risk\":66,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A Meteora-curve token that had already graduated, named 'slopcannon' and trading on PumpSwap, met the rule 10 minutes after launch. It is one of at least 10 same-name tokens created within about 15 minutes, apparently all reacting to a boneGPT X post. At detection it had pumped about 67-96% over the hour, then dumped about 55-60% in the last 5 minutes. Volume is heavy ($209k in 10 minutes on an $88-103k market cap). Its website link points to a competing slopcannon contract (55Vr), so this is a derivative clone. There is also a larger rival, FT6s, at a $254k market cap.",
+  "narrative": {
+   "description": "'slopcannon' is a meme phrase tied to a boneGPT X post. Many coins were launched on that name within minutes of each other.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Launch bots and degens copy-launch on a viral post. Attention is split across about 10 clones, and the market usually crowns one winner (probably FT6s or 55Vr, not this one)."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It carries the same name and ticker and links to the same X post. Its own website field points to another slopcannon contract, which marks it as a clone.",
+   "competing_tokens": "FT6s ($254k market cap, $36k liquidity, created earlier, most volume) and 55Vr ($84k, created earliest among the active ones, and referenced by this token's own website link). There are also several dead clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "About 1,568 unique buyers against 94 unique sellers is broad but shallow retail and bot flow. There are 28 bundler wallets (about 9% of supply), no smart-money or KOL wallets, no paid boosts, and a duplicated image. The token is a copycat of another contract.",
+   "uncertainty": "I can't see the X post or how widely the meme is spreading. The 80% top holder is unlabelled and could be a pool or vault account."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked; this conflicts with GMGN's lp_burn_ratio of 1.0",
+    "One unlabelled holder has 80% (RugCheck), while GMGN shows only 9.4% in the top 10, so the data conflict",
+    "28 bundler wallets",
+    "The dev has already closed out (creator_close)",
+    "Liquidity is only $22k against about $100k of market cap, and the price just fell 55-60% in 5 minutes",
+    "A larger same-name rival is soaking up attention"
+   ]
+  },
+  "counterargument": "Buyer breadth is real: 1,500+ unique buyers against fewer than 100 sellers in 10 minutes. Mint and freeze authority are renounced, and GMGN says the LP is burned. If the slopcannon meme keeps going viral, lower-cap clones can catch spillover. Buying after a 60% dip at around $100k market cap means a 2x only needs about $200k, which is below FT6s's current level.",
+  "unknowns": [
+   "Who holds the 80% (pool vault or whale)",
+   "Whether the LP is actually burned or unlocked",
+   "How big the boneGPT post's reach is",
+   "Which clone the market treats as canonical"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; packet only."
+  },
+  "thesis": "This is a non-canonical clone in a crowded same-name launch wave. It is already dumping hard after a spike, bundlers are present, the dev has exited, and the holder and LP data conflict. The best-case upside is spillover, but the most likely path is a fade as attention settles on FT6s or 55Vr.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 42,
+  "survival_score": 33,
+  "attention_score": 55,
+  "manipulation_risk": 66,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3954,
+ "type": "result",
+ "duration_ms": 24262,
+ "uuid": "53221e1b-3999-479b-9e99-0165f4d090a1",
+ "ttft_stream_ms": 1040,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 1040,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

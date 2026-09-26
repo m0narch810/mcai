@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 44958,
+ "stop_reason": "tool_use",
+ "session_id": "863d594e-f4b6-4b6c-bf25-80648b6a608a",
+ "total_cost_usd": 0.23448180000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13344,
+  "cache_read_input_tokens": 29169,
+  "output_tokens": 2473,
+  "output_tokens_details": {
+   "thinking_tokens": 280
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13344,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2022,
+    "cache_read_input_tokens": 14488,
+    "cache_creation_input_tokens": 1620,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1620
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2473,
+   "cacheReadInputTokens": 29169,
+   "cacheCreationInputTokens": 13344,
+   "webSearchRequests": 0,
+   "costUSD": 0.16206979999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 280,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 35677,
+   "outputTokens": 1347,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.072412,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\u5e01\u5b89\u4e2d\u79cb (\\\"Binance Mid-Autumn\\\") is a Chinese-language meme token. It was launched straight onto a PumpSwap pool around 07:09 UTC. GMGN shows migrated_unix=0, meaning it never went through a pump.fun bonding curve. It rode the Mid-Autumn Festival theme (Sept 25, 2026) and Binance's Mid-Autumn giveaway campaign. In its first 15 minutes it showed about 944 unique buyers against 53 sellers and roughly $175k volume on a ~$30k market cap. By T2 it was already fading: DexScreener shows -17% over 5 minutes and market cap down to about $26k from a ~$39k ATH. The creator still holds about 16% of supply and the LP is 100% unlocked. At least 10 earlier tokens with the same name exist, and all show zero liquidity.\",\"narrative\":{\"description\":\"A Binance Mid-Autumn Festival holiday meme. The festival day has now passed, and Binance's only visible tie-in is a small giveaway campaign.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"A seasonal holiday plus the Binance brand, popular with Chinese degen traders. The festival day is over and I found no specific news catalyst.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the latest of many copies that currently has volume. There is nothing that makes it canonical.\",\"competing_tokens\":\"At least 10 same-name tokens, created 1-25 hours earlier. All have zero liquidity and appear dead or rugged.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The buyer/seller asymmetry looks unnatural: about 944 unique buyers vs 53 sellers in 15 minutes, which fits a bot-driven buy flow. GMGN reports no smart or KOL wallets and no paid promotion. It lists 2 bundler wallets and a 16.6% fresh-wallet rate, and flags the creator's 16% holding as a rat-trader position. I found no X or social posts.\",\"uncertainty\":\"No X data. Small buyers on Chinese-language Telegram could be real.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 100% unlocked on a direct PumpSwap pool, so the creator can remove liquidity\",\"The creator holds about 16% of supply\",\"A pattern of repeatedly launching same-name tokens, all of which went to zero liquidity\",\"Momentum was already reversing at T2 (-17% over 5 minutes)\"]},\"counterargument\":\"Chinese Binance-themed memes can get sudden community pushes. Over 1,000 holders in 12 minutes is real breadth, and a $26k market cap needs only modest new buying to double.\",\"unknowns\":[\"Chinese Telegram/X activity\",\"Whether the creator is linked to the deployers of the earlier same-name tokens\",\"Whether the buyer flow is bots\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The contract search returned nothing relevant. News turned up only a generic Binance Mid-Autumn giveaway. The token has no socials or site in the packet. Time was short.\"},\"thesis\":\"A late holiday meme with many dead same-name copies, an unlocked LP, the creator holding 16%, and momentum already rolling over at entry. Low chance of reaching 2x, high rug risk.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":50,\"survival_score\":20,\"attention_score\":40,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/HJCnNUcQ3h1GasaS9wrFJwFvzoi4xgwhdpj7zw7u43V5\",\"what\":\"Live market cap $25.9k, 5-minute change -17%\"},{\"url\":\"https://www.nodeseek.com/post-933094-1\",\"what\":\"Binance Mid-Autumn giveaway campaign\"}]}",
+ "structured_output": {
+  "what_is_happening": "\u5e01\u5b89\u4e2d\u79cb (\"Binance Mid-Autumn\") is a Chinese-language meme token. It was launched straight onto a PumpSwap pool around 07:09 UTC. GMGN shows migrated_unix=0, meaning it never went through a pump.fun bonding curve. It rode the Mid-Autumn Festival theme (Sept 25, 2026) and Binance's Mid-Autumn giveaway campaign. In its first 15 minutes it showed about 944 unique buyers against 53 sellers and roughly $175k volume on a ~$30k market cap. By T2 it was already fading: DexScreener shows -17% over 5 minutes and market cap down to about $26k from a ~$39k ATH. The creator still holds about 16% of supply and the LP is 100% unlocked. At least 10 earlier tokens with the same name exist, and all show zero liquidity.",
+  "narrative": {
+   "description": "A Binance Mid-Autumn Festival holiday meme. The festival day has now passed, and Binance's only visible tie-in is a small giveaway campaign.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "A seasonal holiday plus the Binance brand, popular with Chinese degen traders. The festival day is over and I found no specific news catalyst."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the latest of many copies that currently has volume. There is nothing that makes it canonical.",
+   "competing_tokens": "At least 10 same-name tokens, created 1-25 hours earlier. All have zero liquidity and appear dead or rugged.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The buyer/seller asymmetry looks unnatural: about 944 unique buyers vs 53 sellers in 15 minutes, which fits a bot-driven buy flow. GMGN reports no smart or KOL wallets and no paid promotion. It lists 2 bundler wallets and a 16.6% fresh-wallet rate, and flags the creator's 16% holding as a rat-trader position. I found no X or social posts.",
+   "uncertainty": "No X data. Small buyers on Chinese-language Telegram could be real."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 100% unlocked on a direct PumpSwap pool, so the creator can remove liquidity",
+    "The creator holds about 16% of supply",
+    "A pattern of repeatedly launching same-name tokens, all of which went to zero liquidity",
+    "Momentum was already reversing at T2 (-17% over 5 minutes)"
+   ]
+  },
+  "counterargument": "Chinese Binance-themed memes can get sudden community pushes. Over 1,000 holders in 12 minutes is real breadth, and a $26k market cap needs only modest new buying to double.",
+  "unknowns": [
+   "Chinese Telegram/X activity",
+   "Whether the creator is linked to the deployers of the earlier same-name tokens",
+   "Whether the buyer flow is bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The contract search returned nothing relevant. News turned up only a generic Binance Mid-Autumn giveaway. The token has no socials or site in the packet. Time was short."
+  },
+  "thesis": "A late holiday meme with many dead same-name copies, an unlocked LP, the creator holding 16%, and momentum already rolling over at entry. Low chance of reaching 2x, high rug risk.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 50,
+  "survival_score": 20,
+  "attention_score": 40,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/HJCnNUcQ3h1GasaS9wrFJwFvzoi4xgwhdpj7zw7u43V5",
+    "what": "Live market cap $25.9k, 5-minute change -17%"
+   },
+   {
+    "url": "https://www.nodeseek.com/post-933094-1",
+    "what": "Binance Mid-Autumn giveaway campaign"
+   }
+  ]
+ },
+ "ttft_ms": 2056,
+ "type": "result",
+ "duration_ms": 35547,
+ "uuid": "1ec8648d-6b55-4600-a5dd-e9c96855d4fe",
+ "ttft_stream_ms": 839,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 839,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

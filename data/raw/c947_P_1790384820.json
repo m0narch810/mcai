@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 24873,
+ "stop_reason": "tool_use",
+ "session_id": "9ee46930-ffe5-4699-8d7b-9ff830aa812c",
+ "total_cost_usd": 0.1144204,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8486,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2305,
+  "output_tokens_details": {
+   "thinking_tokens": 435
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8486,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2305,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8486,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8486
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2305,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8486,
+   "webSearchRequests": 0,
+   "costUSD": 0.1144204,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 435,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Nyan Cat pump.fun coin, about 30 minutes old, whose description says \\\"Fees to @prguitarman via UsePaid\\\" (prguitarman is the original Nyan Cat artist). This is the creator-fee-sharing meta. It went up about 12x in its first hour and just finished its bonding curve: GMGN migrated timestamp is roughly 01:05:47Z, right as the rule fired. The ATH price of 1.46e-4 against the current ~5.0e-5 means it already peaked near $146k mcap and has since fallen about 66%. It is trading at about $50k mcap with about $27k of pool depth, and the last 5 minutes show a small bounce.\",\"narrative\":{\"description\":\"Nyan Cat is an iconic internet meme, and the pitch is that fees go to the original artist. Fee-sharing coins that name an IP creator can run hard if the creator acknowledges them. Without that, they tend to be one-hour flips.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"A well-known meme name plus the fee-to-creator hook drew about 655 unique buyers in the first hour. There is no evidence that prguitarman has engaged.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has the earliest pair creation among this cluster of same-day nyancat launches. It is the only one with real liquidity and sustained volume, and its description names the creator-fee link.\",\"competing_tokens\":\"At least 7 same-day nyancat clones. 7GPL2... did $230k of h1 volume but now has about $5 of liquidity (dead or rugged). 5REuT... has $24.7k liquidity at a $62k mcap but little volume. Older NYAN tokens are dormant.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Breadth is real: 655 unique buyers and 554 unique sellers in the first hour, top10 at about 17%, and the creator holds 0%. The manufactured side: GMGN tags 373 wallets as bundlers, the bot/degen rate is 67%, and top bundler traders hold about 42%. The deployer has launched 4,714 tokens, and the linked X account has been renamed several times (TruthCoinOn_Sol \u2192 Tortas_onsol \u2192 Frank_67x). 23 smart and 5 renowned wallets are present, with no paid boosts.\",\"uncertainty\":\"Bundler tags on migration-stage pump.fun coins can be inflated by bot swarms. Whether prguitarman knows about the coin or endorses it is unknown.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Serial deployer (4,714 launches)\",\"Heavy bundler presence and a 42% top bundler trader share\",\"Already 66% below ATH: the post-migration dump phase\",\"Recycled X account\",\"Multiple clones splitting attention\"]},\"counterargument\":\"Nyan Cat is a tier-one meme with an obvious real-world catalyst: prguitarman could claim the fees or tweet about the coin. Buyer breadth is strong, LP is burned after migration, the creator holds nothing, and the coin is at $50k after touching about $146k. A creator acknowledgment could easily send it past $100k, which would be a 2x from entry.\",\"unknowns\":[\"Whether prguitarman has acknowledged or claimed the fees\",\"The real share of bundler wallets that still hold\",\"Whether the post-migration dump is finished\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This is the canonical Nyan Cat creator-fee coin, with better breadth and a stronger narrative than a typical coin in the pool. But it already peaked and fell 66% by migration, and it comes from a serial deployer with a heavy bundler presence. A 2x from about $50k needs a new catalyst, most likely creator acknowledgment. I rank it somewhat above the pool base rate.\",\"continuation_view\":\"neutral\",\"p_runner\":17,\"p_rug\":28,\"survival_score\":48,\"attention_score\":68,\"manipulation_risk\":66,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A Nyan Cat pump.fun coin, about 30 minutes old, whose description says \"Fees to @prguitarman via UsePaid\" (prguitarman is the original Nyan Cat artist). This is the creator-fee-sharing meta. It went up about 12x in its first hour and just finished its bonding curve: GMGN migrated timestamp is roughly 01:05:47Z, right as the rule fired. The ATH price of 1.46e-4 against the current ~5.0e-5 means it already peaked near $146k mcap and has since fallen about 66%. It is trading at about $50k mcap with about $27k of pool depth, and the last 5 minutes show a small bounce.",
+  "narrative": {
+   "description": "Nyan Cat is an iconic internet meme, and the pitch is that fees go to the original artist. Fee-sharing coins that name an IP creator can run hard if the creator acknowledges them. Without that, they tend to be one-hour flips.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "A well-known meme name plus the fee-to-creator hook drew about 655 unique buyers in the first hour. There is no evidence that prguitarman has engaged."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has the earliest pair creation among this cluster of same-day nyancat launches. It is the only one with real liquidity and sustained volume, and its description names the creator-fee link.",
+   "competing_tokens": "At least 7 same-day nyancat clones. 7GPL2... did $230k of h1 volume but now has about $5 of liquidity (dead or rugged). 5REuT... has $24.7k liquidity at a $62k mcap but little volume. Older NYAN tokens are dormant.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Breadth is real: 655 unique buyers and 554 unique sellers in the first hour, top10 at about 17%, and the creator holds 0%. The manufactured side: GMGN tags 373 wallets as bundlers, the bot/degen rate is 67%, and top bundler traders hold about 42%. The deployer has launched 4,714 tokens, and the linked X account has been renamed several times (TruthCoinOn_Sol \u2192 Tortas_onsol \u2192 Frank_67x). 23 smart and 5 renowned wallets are present, with no paid boosts.",
+   "uncertainty": "Bundler tags on migration-stage pump.fun coins can be inflated by bot swarms. Whether prguitarman knows about the coin or endorses it is unknown."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Serial deployer (4,714 launches)",
+    "Heavy bundler presence and a 42% top bundler trader share",
+    "Already 66% below ATH: the post-migration dump phase",
+    "Recycled X account",
+    "Multiple clones splitting attention"
+   ]
+  },
+  "counterargument": "Nyan Cat is a tier-one meme with an obvious real-world catalyst: prguitarman could claim the fees or tweet about the coin. Buyer breadth is strong, LP is burned after migration, the creator holds nothing, and the coin is at $50k after touching about $146k. A creator acknowledgment could easily send it past $100k, which would be a 2x from entry.",
+  "unknowns": [
+   "Whether prguitarman has acknowledged or claimed the fees",
+   "The real share of bundler wallets that still hold",
+   "Whether the post-migration dump is finished"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This is the canonical Nyan Cat creator-fee coin, with better breadth and a stronger narrative than a typical coin in the pool. But it already peaked and fell 66% by migration, and it comes from a serial deployer with a heavy bundler presence. A 2x from about $50k needs a new catalyst, most likely creator acknowledgment. I rank it somewhat above the pool base rate.",
+  "continuation_view": "neutral",
+  "p_runner": 17,
+  "p_rug": 28,
+  "survival_score": 48,
+  "attention_score": 68,
+  "manipulation_risk": 66,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7753,
+ "type": "result",
+ "duration_ms": 24925,
+ "uuid": "6524fcbe-e12b-406d-bc57-d7bb7bad92e0",
+ "ttft_stream_ms": 2036,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 2036,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

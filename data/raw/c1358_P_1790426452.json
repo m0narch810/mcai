@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 23623,
+ "stop_reason": "tool_use",
+ "session_id": "03486c67-ba8c-4819-bcfa-f9bba026276c",
+ "total_cost_usd": 0.1161884,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8372,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2439,
+  "output_tokens_details": {
+   "thinking_tokens": 437
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8372,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2439,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8372,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8372
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2439,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8372,
+   "webSearchRequests": 0,
+   "costUSD": 0.1161884,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 437,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"CLAUDE AI ($Claude) is a 16-minute-old PumpSwap pair. It was not launched on the pump.fun bonding curve: launchpad is empty, migrated_unix is 0, and the token was minted 6 seconds before the pair was created. So the creator seeded the pool directly, 100% of the LP is unlocked, and the creator's wallet also holds 20.5% of supply. The pair shows about $140k volume against a $24k market cap: 1,748 unique buyers but only 53 unique sellers, +85% in the first hour, and -10% over the last 5 minutes. At least 10 other 'CLAUDE AI'/'Claude' tokens from the last ~16 hours sit at $0 liquidity, including one (HgU5\u2026) that did about $787k in hourly volume and is now empty. That looks like a repeating launch-then-pull-liquidity pattern built on the Claude name.\",\"narrative\":{\"description\":\"An AI/Claude brand meme with no website, socials, description or DexScreener profile. It trades on the general Claude/Anthropic buzz, possibly tied to a model-release headline, but nothing project-specific.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The Claude name brings in searchers and sniper bots on each relaunch. The lopsided buyer/seller counts suggest bot or farmed buying rather than people discovering the coin on their own.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing makes this token the canonical Claude coin. It is one more of many identically named launches.\",\"competing_tokens\":\"At least 10 same-name tokens (CLAUDE AI, Claude Opus5.5, Claude Ai) created in the prior ~16h, all at about $0 liquidity. That fits serial rugs or dead clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,748 unique buyers vs 53 unique sellers in 15 minutes. GeckoTerminal counts only 336 holders, with the top 10 at 98% (pool included). Liquidity ($31.8k) is larger than market cap ($24k), which points to a creator-seeded pool. The creator holds 20.5% with unlocked LP. The clone ticker family shows the same rug outcome over and over.\",\"uncertainty\":\"GMGN shows few bundlers and snipers and a 0 bot/degen rate, so the buyer breadth could be partly real retail chasing the AI name. The dev history fields (0 launches) conflict with creator_best_token_ath_mcap of $339k.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP was supplied by the creator and 100% is unlocked, so the creator can pull liquidity at any time\",\"The creator holds 20.5% of supply and can dump it into thin liquidity\",\"Many identically named predecessors all ended at $0 liquidity\",\"Only a few LP providers; RugCheck flags danger\",\"No socials or project identity\"]},\"counterargument\":\"Real buying is heavy: about 2,000 buys in 15 minutes, with no snipers, no bot/degen share, and mint and freeze authority both renounced. Claude/AI tokens can catch strong retail momentum. From a $24k market cap, a 2x only needs about $50k, which a few more minutes of this buy flow could deliver before any pull. The creator may intend to farm LP fees and trading rather than pull right away.\",\"unknowns\":[\"Whether the creator wallet is linked to the earlier CLAUDE AI rugs\",\"Whether the unique-buyer count is real people or farmed wallets\",\"Whether there is any off-chain promotion or call-channel push\",\"What the creator does with the 20.5% holding\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged only from the packet.\"},\"thesis\":\"This is a classic setup for the creator to pull liquidity: the creator seeded the PumpSwap pool, the LP is fully unlocked, the creator holds 20.5%, and the coin is one of a long run of same-name 'CLAUDE AI' tokens that all went to zero liquidity. Short-term momentum exists, but the most likely outcome within 6 hours is the liquidity being pulled, and a rug makes the position worth nothing rather than filling the stop. I rank it well below a typical coin in this pool.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":72,\"survival_score\":12,\"attention_score\":55,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "CLAUDE AI ($Claude) is a 16-minute-old PumpSwap pair. It was not launched on the pump.fun bonding curve: launchpad is empty, migrated_unix is 0, and the token was minted 6 seconds before the pair was created. So the creator seeded the pool directly, 100% of the LP is unlocked, and the creator's wallet also holds 20.5% of supply. The pair shows about $140k volume against a $24k market cap: 1,748 unique buyers but only 53 unique sellers, +85% in the first hour, and -10% over the last 5 minutes. At least 10 other 'CLAUDE AI'/'Claude' tokens from the last ~16 hours sit at $0 liquidity, including one (HgU5\u2026) that did about $787k in hourly volume and is now empty. That looks like a repeating launch-then-pull-liquidity pattern built on the Claude name.",
+  "narrative": {
+   "description": "An AI/Claude brand meme with no website, socials, description or DexScreener profile. It trades on the general Claude/Anthropic buzz, possibly tied to a model-release headline, but nothing project-specific.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The Claude name brings in searchers and sniper bots on each relaunch. The lopsided buyer/seller counts suggest bot or farmed buying rather than people discovering the coin on their own."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing makes this token the canonical Claude coin. It is one more of many identically named launches.",
+   "competing_tokens": "At least 10 same-name tokens (CLAUDE AI, Claude Opus5.5, Claude Ai) created in the prior ~16h, all at about $0 liquidity. That fits serial rugs or dead clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,748 unique buyers vs 53 unique sellers in 15 minutes. GeckoTerminal counts only 336 holders, with the top 10 at 98% (pool included). Liquidity ($31.8k) is larger than market cap ($24k), which points to a creator-seeded pool. The creator holds 20.5% with unlocked LP. The clone ticker family shows the same rug outcome over and over.",
+   "uncertainty": "GMGN shows few bundlers and snipers and a 0 bot/degen rate, so the buyer breadth could be partly real retail chasing the AI name. The dev history fields (0 launches) conflict with creator_best_token_ath_mcap of $339k."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP was supplied by the creator and 100% is unlocked, so the creator can pull liquidity at any time",
+    "The creator holds 20.5% of supply and can dump it into thin liquidity",
+    "Many identically named predecessors all ended at $0 liquidity",
+    "Only a few LP providers; RugCheck flags danger",
+    "No socials or project identity"
+   ]
+  },
+  "counterargument": "Real buying is heavy: about 2,000 buys in 15 minutes, with no snipers, no bot/degen share, and mint and freeze authority both renounced. Claude/AI tokens can catch strong retail momentum. From a $24k market cap, a 2x only needs about $50k, which a few more minutes of this buy flow could deliver before any pull. The creator may intend to farm LP fees and trading rather than pull right away.",
+  "unknowns": [
+   "Whether the creator wallet is linked to the earlier CLAUDE AI rugs",
+   "Whether the unique-buyer count is real people or farmed wallets",
+   "Whether there is any off-chain promotion or call-channel push",
+   "What the creator does with the 20.5% holding"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged only from the packet."
+  },
+  "thesis": "This is a classic setup for the creator to pull liquidity: the creator seeded the PumpSwap pool, the LP is fully unlocked, the creator holds 20.5%, and the coin is one of a long run of same-name 'CLAUDE AI' tokens that all went to zero liquidity. Short-term momentum exists, but the most likely outcome within 6 hours is the liquidity being pulled, and a rug makes the position worth nothing rather than filling the stop. I rank it well below a typical coin in this pool.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 72,
+  "survival_score": 12,
+  "attention_score": 55,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5285,
+ "type": "result",
+ "duration_ms": 23673,
+ "uuid": "1c18e064-e8ae-4aad-9dc8-645f56070a32",
+ "ttft_stream_ms": 649,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 649,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,179 @@
+{
+ "duration_api_ms": 43967,
+ "stop_reason": "tool_use",
+ "session_id": "cae80fe8-0a5b-4adf-b5e3-74b4487b13a2",
+ "total_cost_usd": 0.2127876,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11182,
+  "cache_read_input_tokens": 25898,
+  "output_tokens": 2667,
+  "output_tokens_details": {
+   "thinking_tokens": 254
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11182,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2203,
+    "cache_read_input_tokens": 12668,
+    "cache_creation_input_tokens": 1278,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1278
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2667,
+   "cacheReadInputTokens": 25898,
+   "cacheCreationInputTokens": 11182,
+   "webSearchRequests": 0,
+   "costUSD": 0.1479996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 254,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30093,
+   "outputTokens": 939,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.064788,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"CLAX is a 10-day-old pump.fun coin that has already migrated to PumpSwap (the pool was created 2026-09-16). It was dormant, then woke up hard: +1,600% in 6h and +55\u201365% in the last hour, with about $131k of hourly volume on a ~$250k market cap. The description reads \\\"UsePaid developer. Fees to @claxxerz\\\", so creator fees are routed to an X account through usepaid.app. That points to a fee-sharing play around a creator or influencer, not a cultural narrative. Price sits about 20% under its ATH (~$322k market cap, which is also the creator's best ever). One KuCoin community post from Sep 18 by @Cryptoloudev mentions this contract as a \\\"26x callout\\\", so there was an earlier pump and a caller network.\",\"narrative\":{\"description\":\"A fee-to-creator (UsePaid) token tied to the X handle @claxxerz. I could not identify who claxxerz is or what event, if any, is behind the revival.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Unknown. The most likely driver is the fee-recipient account or callers promoting it, plus momentum traders chasing a +1,600% 6h chart. I found no organic narrative.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the original CLAX, linked to @claxxerz through the fee routing, and the only CLAX with liquidity.\",\"competing_tokens\":\"Two CLAX copies were created about 2 days ago. Both have $0 liquidity and a $3.4k market cap, so they are irrelevant.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"GMGN tags 267 bundler wallets and 461 fresh wallets, with a bot/degen rate of 0.49. The KuCoin 'callout' post shows the coin sits inside a call-channel ecosystem. The dev has launched 15 tokens and the dev's X account 8. No paid DexScreener boosts.\",\"uncertainty\":\"I found no X posts about the ticker or the claxxerz account, so I can't tell whether a real creator audience exists.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Serial deployer: 15 tokens, creator_close status\",\"267 wallets tagged as bundlers\",\"Streamflow vault holds 13.5% (vesting/lock, a possible overhang)\",\"GeckoTerminal puts the top 10 at 46% if pool and locker accounts are included\",\"Already up 16x in 6h, so late buyers are likely to take profit\",\"Liquidity is only $47k against a $250k market cap\"]},\"counterargument\":\"Real demand looks broad: 273 unique buyers in an hour, buys outnumber sells about 1.4 to 1, LP is burned, mint and freeze are renounced, and RugCheck scores it 1. Price is close to its ATH. A breakout above ~$322k could draw a second wave toward $500k+, and fee-routing coins tied to a live streamer or creator can run hard while that person is promoting.\",\"unknowns\":[\"Who @claxxerz is and whether they are actively promoting right now\",\"What triggered the revival\",\"What the Streamflow vault unlock schedule is\",\"Whether the bundler tags reflect coordinated supply\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"Searching the contract turned up only the KuCoin community callout post. Searching the claxxerz handle returned no matching account. The usepaid.app link failed with an SSL error. Reddit, Telegram and Discord were not searched because of time.\"},\"thesis\":\"A 10-day-old revived coin already 16x in 6h, just under its ATH, with heavy bundler tags and a serial deployer. Momentum and buyer breadth are real, but reaching 2x means going from ~$250k to ~$500k market cap after a huge run with no identifiable narrative. A retrace below -50% looks at least as likely as a double.\",\"continuation_view\":\"fade\",\"p_runner\":11,\"p_rug\":12,\"survival_score\":60,\"attention_score\":62,\"manipulation_risk\":62,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.kucoin.com/news/community/SOL/6aad8d7962cf37000742ff4e\",\"what\":\"Sep 18 community post by @Cryptoloudev citing a 26x callout on this contract\"},{\"url\":\"https://usepaid.app/t/pwwwvn64\",\"what\":\"Project website from the packet (fetch failed with an SSL error)\"}]}",
+ "structured_output": {
+  "what_is_happening": "CLAX is a 10-day-old pump.fun coin that has already migrated to PumpSwap (the pool was created 2026-09-16). It was dormant, then woke up hard: +1,600% in 6h and +55\u201365% in the last hour, with about $131k of hourly volume on a ~$250k market cap. The description reads \"UsePaid developer. Fees to @claxxerz\", so creator fees are routed to an X account through usepaid.app. That points to a fee-sharing play around a creator or influencer, not a cultural narrative. Price sits about 20% under its ATH (~$322k market cap, which is also the creator's best ever). One KuCoin community post from Sep 18 by @Cryptoloudev mentions this contract as a \"26x callout\", so there was an earlier pump and a caller network.",
+  "narrative": {
+   "description": "A fee-to-creator (UsePaid) token tied to the X handle @claxxerz. I could not identify who claxxerz is or what event, if any, is behind the revival.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Unknown. The most likely driver is the fee-recipient account or callers promoting it, plus momentum traders chasing a +1,600% 6h chart. I found no organic narrative."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the original CLAX, linked to @claxxerz through the fee routing, and the only CLAX with liquidity.",
+   "competing_tokens": "Two CLAX copies were created about 2 days ago. Both have $0 liquidity and a $3.4k market cap, so they are irrelevant.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "GMGN tags 267 bundler wallets and 461 fresh wallets, with a bot/degen rate of 0.49. The KuCoin 'callout' post shows the coin sits inside a call-channel ecosystem. The dev has launched 15 tokens and the dev's X account 8. No paid DexScreener boosts.",
+   "uncertainty": "I found no X posts about the ticker or the claxxerz account, so I can't tell whether a real creator audience exists."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Serial deployer: 15 tokens, creator_close status",
+    "267 wallets tagged as bundlers",
+    "Streamflow vault holds 13.5% (vesting/lock, a possible overhang)",
+    "GeckoTerminal puts the top 10 at 46% if pool and locker accounts are included",
+    "Already up 16x in 6h, so late buyers are likely to take profit",
+    "Liquidity is only $47k against a $250k market cap"
+   ]
+  },
+  "counterargument": "Real demand looks broad: 273 unique buyers in an hour, buys outnumber sells about 1.4 to 1, LP is burned, mint and freeze are renounced, and RugCheck scores it 1. Price is close to its ATH. A breakout above ~$322k could draw a second wave toward $500k+, and fee-routing coins tied to a live streamer or creator can run hard while that person is promoting.",
+  "unknowns": [
+   "Who @claxxerz is and whether they are actively promoting right now",
+   "What triggered the revival",
+   "What the Streamflow vault unlock schedule is",
+   "Whether the bundler tags reflect coordinated supply"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "Searching the contract turned up only the KuCoin community callout post. Searching the claxxerz handle returned no matching account. The usepaid.app link failed with an SSL error. Reddit, Telegram and Discord were not searched because of time."
+  },
+  "thesis": "A 10-day-old revived coin already 16x in 6h, just under its ATH, with heavy bundler tags and a serial deployer. Momentum and buyer breadth are real, but reaching 2x means going from ~$250k to ~$500k market cap after a huge run with no identifiable narrative. A retrace below -50% looks at least as likely as a double.",
+  "continuation_view": "fade",
+  "p_runner": 11,
+  "p_rug": 12,
+  "survival_score": 60,
+  "attention_score": 62,
+  "manipulation_risk": 62,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.kucoin.com/news/community/SOL/6aad8d7962cf37000742ff4e",
+    "what": "Sep 18 community post by @Cryptoloudev citing a 26x callout on this contract"
+   },
+   {
+    "url": "https://usepaid.app/t/pwwwvn64",
+    "what": "Project website from the packet (fetch failed with an SSL error)"
+   }
+  ]
+ },
+ "ttft_ms": 1264,
+ "type": "result",
+ "duration_ms": 35792,
+ "uuid": "fc1f1409-c69d-4c8b-b658-816aba0fb254",
+ "ttft_stream_ms": 669,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 670,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

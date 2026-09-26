@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 21894,
+ "stop_reason": "tool_use",
+ "session_id": "3f7749b7-fb22-4d5d-b227-b305d975a1cb",
+ "total_cost_usd": 0.10054840000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6812,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2281,
+  "output_tokens_details": {
+   "thinking_tokens": 373
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6812,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2281,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6812,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6812
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2281,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6812,
+   "webSearchRequests": 0,
+   "costUSD": 0.10054840000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 373,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Pinto is a pump.fun coin that finished its bonding curve and moved to PumpSwap only 25 seconds after it was created (created 1790389981, migrated 1790390006). That points to a bundled or coordinated launch. About 14 minutes after migration it is at roughly $115k market cap, up about 120% from the pool's opening price and just under its $130k all-time high. The first 15 minutes drew about 2,270 unique buyers and about 2,100 unique sellers, with about $110k of volume. The latest 5 minutes are much quieter on GeckoTerminal: $13k of volume and 63 buyers, against about 2,244 buyers in the 15-minute window. Price is flat over the last 5 minutes. The project has no website, no socials and no DexScreener profile, and no paid boosts.\",\"narrative\":{\"description\":\"The name 'Pinto' is generic (a bean, a horse or a car) and the packet contains no story, links or description. An older, dead Pinto token exists at about $10k market cap. Any narrative here would come from off-chain posts we cannot see.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks like a launch-driven burst: a 25-second bond, then a crowd of bots and traders buying the migration. Nothing in the packet shows organic spread of a story.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"This is the only Pinto pair with any volume right now, but there is no stated reason the name matters.\",\"competing_tokens\":\"There is an older PINTO token (5mepeg...pump) at $10.8k market cap with no volume in the last hour, so it is effectively dead.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN counts 41 bundler wallets, and bundlers make up 17% of top traders. A pump.fun curve that fills in 25 seconds is almost always bundled or pre-arranged. On the other hand, the tagged bot/degen and fresh-wallet shares are tiny, holdings are spread out (top 10 hold 11.3%, dev 0.23%), about 2.3k unique buyers showed up, and there is no paid promotion.\",\"uncertainty\":\"We cannot see X posts or call channels. Holder counts disagree between sources: GMGN shows 526 holders, RugCheck 2,292, and GeckoTerminal 60 (a stale snapshot).\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The instant bond suggests the bundlers who bought early may exit into later buyers\",\"Activity is fading quickly after the first 15 minutes\",\"Price is sitting just below its all-time high, where early buyers are likely to take profit\",\"No socials, so there is nothing to keep attention going\",\"About $29.5k of liquidity against $115k market cap, so selling will move the price a lot\"]},\"counterargument\":\"Holdings are unusually well spread for a 14-minute-old coin. The LP is 100% burned, mint and freeze authority are renounced, and the dev holds almost nothing, so a classic liquidity pull is impossible. About 2.3k unique buyers is real breadth. A coordinated launch with a hidden community or KOL behind it can keep running from $115k to $250k+ within hours if it gets onto X or trending lists.\",\"unknowns\":[\"Whether a KOL or group is behind the 25-second bond\",\"Any X or Telegram presence\",\"How much bundler supply has already been sold\",\"Why GeckoTerminal and DexScreener disagree on the last 5 minutes of volume\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this report uses only the evidence packet.\"},\"thesis\":\"This looks like a bundled, instantly bonded pump.fun launch with no narrative, 14 minutes old and near its high, with the first-15-minute burst now cooling. The structure is clean (LP burned, holdings well spread, dev holds little), so a liquidity pull is unlikely. The more likely failure is a slow bleed as the bundle and early buyers sell into a fading bid. Doubling from about $115k needs a fresh wave of attention that the packet gives no sign of.\",\"continuation_view\":\"fade\",\"p_runner\":10,\"p_rug\":17,\"survival_score\":58,\"attention_score\":55,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "Pinto is a pump.fun coin that finished its bonding curve and moved to PumpSwap only 25 seconds after it was created (created 1790389981, migrated 1790390006). That points to a bundled or coordinated launch. About 14 minutes after migration it is at roughly $115k market cap, up about 120% from the pool's opening price and just under its $130k all-time high. The first 15 minutes drew about 2,270 unique buyers and about 2,100 unique sellers, with about $110k of volume. The latest 5 minutes are much quieter on GeckoTerminal: $13k of volume and 63 buyers, against about 2,244 buyers in the 15-minute window. Price is flat over the last 5 minutes. The project has no website, no socials and no DexScreener profile, and no paid boosts.",
+  "narrative": {
+   "description": "The name 'Pinto' is generic (a bean, a horse or a car) and the packet contains no story, links or description. An older, dead Pinto token exists at about $10k market cap. Any narrative here would come from off-chain posts we cannot see.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity looks like a launch-driven burst: a 25-second bond, then a crowd of bots and traders buying the migration. Nothing in the packet shows organic spread of a story."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "This is the only Pinto pair with any volume right now, but there is no stated reason the name matters.",
+   "competing_tokens": "There is an older PINTO token (5mepeg...pump) at $10.8k market cap with no volume in the last hour, so it is effectively dead.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN counts 41 bundler wallets, and bundlers make up 17% of top traders. A pump.fun curve that fills in 25 seconds is almost always bundled or pre-arranged. On the other hand, the tagged bot/degen and fresh-wallet shares are tiny, holdings are spread out (top 10 hold 11.3%, dev 0.23%), about 2.3k unique buyers showed up, and there is no paid promotion.",
+   "uncertainty": "We cannot see X posts or call channels. Holder counts disagree between sources: GMGN shows 526 holders, RugCheck 2,292, and GeckoTerminal 60 (a stale snapshot)."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The instant bond suggests the bundlers who bought early may exit into later buyers",
+    "Activity is fading quickly after the first 15 minutes",
+    "Price is sitting just below its all-time high, where early buyers are likely to take profit",
+    "No socials, so there is nothing to keep attention going",
+    "About $29.5k of liquidity against $115k market cap, so selling will move the price a lot"
+   ]
+  },
+  "counterargument": "Holdings are unusually well spread for a 14-minute-old coin. The LP is 100% burned, mint and freeze authority are renounced, and the dev holds almost nothing, so a classic liquidity pull is impossible. About 2.3k unique buyers is real breadth. A coordinated launch with a hidden community or KOL behind it can keep running from $115k to $250k+ within hours if it gets onto X or trending lists.",
+  "unknowns": [
+   "Whether a KOL or group is behind the 25-second bond",
+   "Any X or Telegram presence",
+   "How much bundler supply has already been sold",
+   "Why GeckoTerminal and DexScreener disagree on the last 5 minutes of volume"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this report uses only the evidence packet."
+  },
+  "thesis": "This looks like a bundled, instantly bonded pump.fun launch with no narrative, 14 minutes old and near its high, with the first-15-minute burst now cooling. The structure is clean (LP burned, holdings well spread, dev holds little), so a liquidity pull is unlikely. The more likely failure is a slow bleed as the bundle and early buyers sell into a fading bid. Doubling from about $115k needs a fresh wave of attention that the packet gives no sign of.",
+  "continuation_view": "fade",
+  "p_runner": 10,
+  "p_rug": 17,
+  "survival_score": 58,
+  "attention_score": 55,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4892,
+ "type": "result",
+ "duration_ms": 21935,
+ "uuid": "df335000-a2de-479d-b77c-fe68293e59d6",
+ "ttft_stream_ms": 626,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 626,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

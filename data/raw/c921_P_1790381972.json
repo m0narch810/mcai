@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 20905,
+ "stop_reason": "tool_use",
+ "session_id": "66e3a9c7-6c9c-4527-91a8-96be72411eae",
+ "total_cost_usd": 0.10487640000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7543,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2205,
+  "output_tokens_details": {
+   "thinking_tokens": 348
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7543,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2205,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7543,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7543
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2205,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7543,
+   "webSearchRequests": 0,
+   "costUSD": 0.10487640000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 348,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 12-minute-old \\\"Effective Accelerationism\\\" (e/acc) token sits on a PumpSwap pool that was created directly, not migrated from a pump.fun bonding curve (migrated_unix=0, no \\\"pump\\\" suffix). It shows $2.17M volume against a $95k market cap, and the pool holds $165k liquidity, which is more than the market cap. 87% of supply is in the AMM, the LP is 100% unlocked, the creator's status is \\\"creator_close\\\" with a zero balance, and GMGN tags 46 bundler wallets. At least four other e/acc tokens exist, all apparently reacting to a Beff Jezos X post. The leader, CbcyNo7..., is at $1.65M market cap, and this token's own website link points to that competitor's page.\",\"narrative\":{\"description\":\"e/acc / Beff Jezos meme. A post from beffjezos appears to have set off a wave of copycat e/acc tokens on Solana.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A post from a well-known figure with a large following produced several same-name launches within about 2.5 hours. The attention belongs to the ticker as a whole, not to this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link to the story is its name and the linked Beff Jezos status. It launched late (about 2h after the leaders), and its website field points to the competitor CbcyNo7's page, which suggests copied metadata.\",\"competing_tokens\":\"CbcyNo7... ($1.65M mcap, $372k h1 volume, launched earlier, looks like the leader); 7dVWLA... ($661k, dead volume); AQJ7h...pump ($103k, $451k h1 volume); an older 2024 GqmEd...pump\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Turnover is 13x market cap in 12 minutes. There are 2,240 swaps but only 262 unique buyers and 39 sellers, about 4.7 buys per buyer and 26 sells per seller, which points to bots or wash trading. GMGN tags 46 bundler wallets. The pool was seeded with more liquidity than the market cap and the LP is fully unlocked. The creator has closed out. Page visits are only 2.\",\"uncertainty\":\"Some of the repeated trading could be ordinary MEV or arbitrage bots working the ticker wave. The small top-10 holder share (10.7%) could indicate a genuinely spread-out buyer base.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 100% unlocked on a direct-created PumpSwap pool, so whoever holds the LP can pull about $165k\",\"Liquidity larger than market cap is a pattern typical of LP-seed and wash setups\",\"46 bundler wallets\",\"A higher-cap e/acc token already exists and draws the flow\",\"The creator has closed out; the pool may be controlled by a separate LP wallet\"]},\"counterargument\":\"Deep liquidity relative to market cap means a real buyer can move the price without much slippage. The meme is fresh, and a later e/acc copy can still get rotation flow if the leader's market cap looks too high. The holder distribution outside the pool is flat, and there are no snipers and no fresh wallets. A 2x from $95k to $190k is small next to the leader's $1.65M.\",\"unknowns\":[\"Who holds the LP tokens\",\"Whether the Beff Jezos post endorses any specific contract\",\"How much of the volume is real versus wash trading\",\"Whether the leading e/acc token keeps pulling attention\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This is a late, non-canonical copy of an e/acc ticker. It has an unlocked, oversized LP, bundler activity and volume that looks like wash trading. It is more likely to be an LP-pull or wash-farm than a runner, and the leading e/acc token captures the organic demand.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":45,\"survival_score\":25,\"attention_score\":45,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 12-minute-old \"Effective Accelerationism\" (e/acc) token sits on a PumpSwap pool that was created directly, not migrated from a pump.fun bonding curve (migrated_unix=0, no \"pump\" suffix). It shows $2.17M volume against a $95k market cap, and the pool holds $165k liquidity, which is more than the market cap. 87% of supply is in the AMM, the LP is 100% unlocked, the creator's status is \"creator_close\" with a zero balance, and GMGN tags 46 bundler wallets. At least four other e/acc tokens exist, all apparently reacting to a Beff Jezos X post. The leader, CbcyNo7..., is at $1.65M market cap, and this token's own website link points to that competitor's page.",
+  "narrative": {
+   "description": "e/acc / Beff Jezos meme. A post from beffjezos appears to have set off a wave of copycat e/acc tokens on Solana.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A post from a well-known figure with a large following produced several same-name launches within about 2.5 hours. The attention belongs to the ticker as a whole, not to this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link to the story is its name and the linked Beff Jezos status. It launched late (about 2h after the leaders), and its website field points to the competitor CbcyNo7's page, which suggests copied metadata.",
+   "competing_tokens": "CbcyNo7... ($1.65M mcap, $372k h1 volume, launched earlier, looks like the leader); 7dVWLA... ($661k, dead volume); AQJ7h...pump ($103k, $451k h1 volume); an older 2024 GqmEd...pump",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Turnover is 13x market cap in 12 minutes. There are 2,240 swaps but only 262 unique buyers and 39 sellers, about 4.7 buys per buyer and 26 sells per seller, which points to bots or wash trading. GMGN tags 46 bundler wallets. The pool was seeded with more liquidity than the market cap and the LP is fully unlocked. The creator has closed out. Page visits are only 2.",
+   "uncertainty": "Some of the repeated trading could be ordinary MEV or arbitrage bots working the ticker wave. The small top-10 holder share (10.7%) could indicate a genuinely spread-out buyer base."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 100% unlocked on a direct-created PumpSwap pool, so whoever holds the LP can pull about $165k",
+    "Liquidity larger than market cap is a pattern typical of LP-seed and wash setups",
+    "46 bundler wallets",
+    "A higher-cap e/acc token already exists and draws the flow",
+    "The creator has closed out; the pool may be controlled by a separate LP wallet"
+   ]
+  },
+  "counterargument": "Deep liquidity relative to market cap means a real buyer can move the price without much slippage. The meme is fresh, and a later e/acc copy can still get rotation flow if the leader's market cap looks too high. The holder distribution outside the pool is flat, and there are no snipers and no fresh wallets. A 2x from $95k to $190k is small next to the leader's $1.65M.",
+  "unknowns": [
+   "Who holds the LP tokens",
+   "Whether the Beff Jezos post endorses any specific contract",
+   "How much of the volume is real versus wash trading",
+   "Whether the leading e/acc token keeps pulling attention"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This is a late, non-canonical copy of an e/acc ticker. It has an unlocked, oversized LP, bundler activity and volume that looks like wash trading. It is more likely to be an LP-pull or wash-farm than a runner, and the leading e/acc token captures the organic demand.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 45,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4209,
+ "type": "result",
+ "duration_ms": 20962,
+ "uuid": "2f844c18-7982-4b38-a59c-9ee544109d56",
+ "ttft_stream_ms": 628,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 628,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 42013,
+ "stop_reason": "tool_use",
+ "session_id": "f327b632-4082-4554-a244-66e65398fe4a",
+ "total_cost_usd": 0.19843739999999999,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11022,
+  "cache_read_input_tokens": 25962,
+  "output_tokens": 2882,
+  "output_tokens_details": {
+   "thinking_tokens": 623
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11022,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2316,
+    "cache_read_input_tokens": 12625,
+    "cache_creation_input_tokens": 1161,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1161
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2882,
+   "cacheReadInputTokens": 25962,
+   "cacheCreationInputTokens": 11022,
+   "webSearchRequests": 0,
+   "costUSD": 0.1510324,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 623,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22825,
+   "outputTokens": 916,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.047405,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Binance Accelerationism\\\" (b/acc) was deployed directly as a PumpSwap pool about 11 minutes before detection. It did not migrate from the pump.fun bonding curve (migrated_unix=0). The price is up about 700% and the market cap is about $96k. The token description is only a BSC-style contract address (0xcf57\u20267777), and the GeckoTerminal X handle is @binance. That makes this look like a Solana copy of a BNB-chain \\\"b/acc\\\" meme. Another Solana token with the same name was created about 3 minutes earlier and already has near-zero liquidity. The biggest problem is ownership: one non-AMM wallet holds 80.57% of supply, and 100% of the LP is unlocked. Buyers and sellers are badly unbalanced: 2,047 unique buyers against 36 unique sellers. GMGN tags 83% of traders as bot/degen, which points to buys spread across many bot wallets rather than organic demand.\",\"narrative\":{\"description\":\"A Binance/CZ take on the '/acc' accelerationism meme (like e/acc, mog/acc, f/acc), apparently referencing a BSC token by its contract address.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"No organic discussion found. The flow looks like a bot-driven launch copying a BSC meme, not a real cross-chain story.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the same name and ticker as a BSC-referenced meme and has no socials of its own. The X link just points to @binance.\",\"competing_tokens\":\"3CTtZ9CD\u2026 is another b/acc 'Binance Accelerationism' on Solana. It was created about 3 minutes earlier and shows a $2.6M market cap with $0.01 liquidity, so it is likely already dead or rugged. The BSC original is presumably the canonical token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,047 unique buyers vs 36 sellers within minutes. Bot/degen rate is 0.83 and GMGN tags 10 wallets as bundlers. One wallet holds 80.57% of supply. The pool was deployed directly with no curve phase. No socials.\",\"uncertainty\":\"The 80.57% holder could be a locker or burn account that RugCheck did not label. I could not verify this.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"A single wallet holds 80.57% of supply, a huge overhang against about $30k of liquidity\",\"100% of LP unlocked; the creator can pull liquidity\",\"Launched directly on PumpSwap, not via the pump.fun curve\",\"A same-name token launched minutes earlier already has about $0 liquidity, which suggests a serial rug pattern\"]},\"counterargument\":\"Buy pressure is heavy (about 9:1 buys to sells) and turnover is about 5.7x per hour. If the 80% holder is actually a lock or burn that RugCheck did not label, this bot-driven momentum could push a $96k coin to $200k within minutes, and a 2x is easy at this size.\",\"unknowns\":[\"Identity of the 80.57% holder wallet\",\"Whether the BSC b/acc original is trending\",\"Any X posts; X could not be searched effectively\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-limited. Two web searches found no b/acc Binance references. The DexScreener API shows no socials.\"},\"thesis\":\"A copycat meme launched directly on PumpSwap with an 80% single-holder overhang, fully unlocked LP, bot-farmed buys, and a same-name token that already died minutes earlier. High rug risk and a low chance of a clean 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":65,\"survival_score\":12,\"attention_score\":35,\"manipulation_risk\":88,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/9ToBTuddbp3MsaSfp6QM7WyUP8UWyvqtsgafpdFKRnj5\",\"what\":\"Pair data: about $96.6k market cap, $30.5k liquidity, no socials\"},{\"url\":\"https://www.coindesk.com/markets/2025/05/07/mog-coin-rallies-as-elon-musk-garry-tan-embrace-mog-acc-identity\",\"what\":\"Background on the /acc meme genre\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Binance Accelerationism\" (b/acc) was deployed directly as a PumpSwap pool about 11 minutes before detection. It did not migrate from the pump.fun bonding curve (migrated_unix=0). The price is up about 700% and the market cap is about $96k. The token description is only a BSC-style contract address (0xcf57\u20267777), and the GeckoTerminal X handle is @binance. That makes this look like a Solana copy of a BNB-chain \"b/acc\" meme. Another Solana token with the same name was created about 3 minutes earlier and already has near-zero liquidity. The biggest problem is ownership: one non-AMM wallet holds 80.57% of supply, and 100% of the LP is unlocked. Buyers and sellers are badly unbalanced: 2,047 unique buyers against 36 unique sellers. GMGN tags 83% of traders as bot/degen, which points to buys spread across many bot wallets rather than organic demand.",
+  "narrative": {
+   "description": "A Binance/CZ take on the '/acc' accelerationism meme (like e/acc, mog/acc, f/acc), apparently referencing a BSC token by its contract address.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "No organic discussion found. The flow looks like a bot-driven launch copying a BSC meme, not a real cross-chain story."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the same name and ticker as a BSC-referenced meme and has no socials of its own. The X link just points to @binance.",
+   "competing_tokens": "3CTtZ9CD\u2026 is another b/acc 'Binance Accelerationism' on Solana. It was created about 3 minutes earlier and shows a $2.6M market cap with $0.01 liquidity, so it is likely already dead or rugged. The BSC original is presumably the canonical token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,047 unique buyers vs 36 sellers within minutes. Bot/degen rate is 0.83 and GMGN tags 10 wallets as bundlers. One wallet holds 80.57% of supply. The pool was deployed directly with no curve phase. No socials.",
+   "uncertainty": "The 80.57% holder could be a locker or burn account that RugCheck did not label. I could not verify this."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "A single wallet holds 80.57% of supply, a huge overhang against about $30k of liquidity",
+    "100% of LP unlocked; the creator can pull liquidity",
+    "Launched directly on PumpSwap, not via the pump.fun curve",
+    "A same-name token launched minutes earlier already has about $0 liquidity, which suggests a serial rug pattern"
+   ]
+  },
+  "counterargument": "Buy pressure is heavy (about 9:1 buys to sells) and turnover is about 5.7x per hour. If the 80% holder is actually a lock or burn that RugCheck did not label, this bot-driven momentum could push a $96k coin to $200k within minutes, and a 2x is easy at this size.",
+  "unknowns": [
+   "Identity of the 80.57% holder wallet",
+   "Whether the BSC b/acc original is trending",
+   "Any X posts; X could not be searched effectively"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-limited. Two web searches found no b/acc Binance references. The DexScreener API shows no socials."
+  },
+  "thesis": "A copycat meme launched directly on PumpSwap with an 80% single-holder overhang, fully unlocked LP, bot-farmed buys, and a same-name token that already died minutes earlier. High rug risk and a low chance of a clean 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 65,
+  "survival_score": 12,
+  "attention_score": 35,
+  "manipulation_risk": 88,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/9ToBTuddbp3MsaSfp6QM7WyUP8UWyvqtsgafpdFKRnj5",
+    "what": "Pair data: about $96.6k market cap, $30.5k liquidity, no socials"
+   },
+   {
+    "url": "https://www.coindesk.com/markets/2025/05/07/mog-coin-rallies-as-elon-musk-garry-tan-embrace-mog-acc-identity",
+    "what": "Background on the /acc meme genre"
+   }
+  ]
+ },
+ "ttft_ms": 3335,
+ "type": "result",
+ "duration_ms": 38430,
+ "uuid": "6cae0cb4-b4cc-42f9-9b1c-2f5019f4b4e9",
+ "ttft_stream_ms": 634,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 634,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

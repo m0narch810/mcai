@@ -1,0 +1,179 @@
+{
+ "duration_api_ms": 36093,
+ "stop_reason": "tool_use",
+ "session_id": "44c6ea99-1c20-4c68-bb8f-4188726bb90a",
+ "total_cost_usd": 0.19199879999999997,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11774,
+  "cache_read_input_tokens": 14874,
+  "output_tokens": 2612,
+  "output_tokens_details": {
+   "thinking_tokens": 368
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11774,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2323,
+    "cache_read_input_tokens": 12110,
+    "cache_creation_input_tokens": 2428,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2428
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2612,
+   "cacheReadInputTokens": 14874,
+   "cacheCreationInputTokens": 11774,
+   "webSearchRequests": 0,
+   "costUSD": 0.1494228,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 368,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 19606,
+   "outputTokens": 594,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.042576,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Chinese-language meme, \u8611\u83c7\u5934\u548c\u6211\u768416\u5e74 (\\\"Mushroom Head and My 16 Years\\\"), got at least 11 same-name tokens on Solana within about 50 minutes. The only project link is a Douyin note (douyin.com/note/7689504292541123881). This contract launched at about 09:13\u201309:14 UTC, which is 15 to 45 minutes after several others (9pTw..., G5px..., 7xVj... at 08:44\u201308:49). The same-name leader is GaMEQ... at about $1.36M market cap with $1.19M 1h volume, and 5R6c... also has $51k liquidity. This one is a copy trading at about $106k. It showed 11x h1 turnover and 889 unique buyers, but price was -22% over the last 5 minutes. GMGN says it launched through meteora_virtual_curve and migrated at creation. One unlabeled address holds 80% of supply, 59 bundler wallets were tagged, and the RugCheck LP-unlock warning reads 99.99% while GMGN reports an LP burn ratio of 1.0, which conflict.\",\"narrative\":{\"description\":\"The story appears to come from a Douyin post (per the packet's project link). \u8611\u83c7\u5934 is a well-known Chinese meme sticker character and a kids' haircut. The phrase \\\"and my 16 years\\\" suggests a personal or pet story. It is not indexed on the open web.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A Chinese meme-coin cluster formed: many clones launched within an hour, and one has already reached about $1.36M, which pulls copycat launches and rotation traders into the cheaper clones.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found beyond the matching name. It is a late clone and not the leading pair.\",\"competing_tokens\":\"GaMEQnqV9KwS1Rr9QQcQoL9BVLEX133AewWVMTzfHbWS (~$1.36M mcap, $65k liquidity, $1.19M 1h volume) is the clear leader. 5R6cZQhe... has $51k liquidity. Several earlier clones (9pTw..., G5px..., 7xVj...) are already dead or have 0 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"889 unique buyers and a buy/sell ratio of about 2:1 suggest real retail rotation. But 59 bundler wallets, a single 80% holder, no smart-money or KOL wallets, 2 GMGN page visits and 0 web mentions of the contract point to manufactured or copycat flow.\",\"uncertainty\":\"No X data. I could not check the Douyin source or Chinese Telegram groups.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One unlabeled address holds 80.05% of supply (possibly the curve vault, but unverified)\",\"RugCheck warns 99.99% of LP is unlocked with few LP providers, which conflicts with GMGN's LP burn ratio of 1.0\",\"59 bundler wallets and an insider network of 40\",\"The creator has 4 prior launches and the status creator_close\",\"Clone competition splits the flow, and the leader absorbs most of the attention\",\"m5 price -22%: it is already fading from its ATH of about $182k market cap\"]},\"counterargument\":\"Chinese meme clusters sometimes send several clones up together. With the leader at $1.36M, a $106k clone that has real liquidity (~$30k) and 889 buyers could catch overflow buying and double, since it already reached about $182k at its ATH.\",\"unknowns\":[\"What the Douyin post actually says and how popular it is\",\"Who the 80% holder is\",\"Which LP-lock status is correct\",\"Chinese X/Telegram discussion of this specific contract\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"Time-limited: I ran one name search and one contract search, and both came back empty for the token. I could not fetch the Douyin link or the linked X status (Xtcdev888). Reddit, Telegram and Discord were not searched.\"},\"thesis\":\"This is a late clone in a crowded same-name cluster. The leader already holds the attention, and this one has bad structure (80% single holder, bundlers, disputed LP lock) and is cooling off in the short term. There is some chance it rides the cluster's overflow, but it ranks below a typical coin in the pool.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":45,\"survival_score\":25,\"attention_score\":45,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://m.thepaper.cn/newsDetail_forward_7132875\",\"what\":\"Background on the \u8611\u83c7\u5934 meme sticker character\"},{\"url\":\"https://www.douyin.com/note/7689504292541123881\",\"what\":\"Project website link from the packet (not fetched)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Chinese-language meme, \u8611\u83c7\u5934\u548c\u6211\u768416\u5e74 (\"Mushroom Head and My 16 Years\"), got at least 11 same-name tokens on Solana within about 50 minutes. The only project link is a Douyin note (douyin.com/note/7689504292541123881). This contract launched at about 09:13\u201309:14 UTC, which is 15 to 45 minutes after several others (9pTw..., G5px..., 7xVj... at 08:44\u201308:49). The same-name leader is GaMEQ... at about $1.36M market cap with $1.19M 1h volume, and 5R6c... also has $51k liquidity. This one is a copy trading at about $106k. It showed 11x h1 turnover and 889 unique buyers, but price was -22% over the last 5 minutes. GMGN says it launched through meteora_virtual_curve and migrated at creation. One unlabeled address holds 80% of supply, 59 bundler wallets were tagged, and the RugCheck LP-unlock warning reads 99.99% while GMGN reports an LP burn ratio of 1.0, which conflict.",
+  "narrative": {
+   "description": "The story appears to come from a Douyin post (per the packet's project link). \u8611\u83c7\u5934 is a well-known Chinese meme sticker character and a kids' haircut. The phrase \"and my 16 years\" suggests a personal or pet story. It is not indexed on the open web.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A Chinese meme-coin cluster formed: many clones launched within an hour, and one has already reached about $1.36M, which pulls copycat launches and rotation traders into the cheaper clones."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found beyond the matching name. It is a late clone and not the leading pair.",
+   "competing_tokens": "GaMEQnqV9KwS1Rr9QQcQoL9BVLEX133AewWVMTzfHbWS (~$1.36M mcap, $65k liquidity, $1.19M 1h volume) is the clear leader. 5R6cZQhe... has $51k liquidity. Several earlier clones (9pTw..., G5px..., 7xVj...) are already dead or have 0 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "889 unique buyers and a buy/sell ratio of about 2:1 suggest real retail rotation. But 59 bundler wallets, a single 80% holder, no smart-money or KOL wallets, 2 GMGN page visits and 0 web mentions of the contract point to manufactured or copycat flow.",
+   "uncertainty": "No X data. I could not check the Douyin source or Chinese Telegram groups."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One unlabeled address holds 80.05% of supply (possibly the curve vault, but unverified)",
+    "RugCheck warns 99.99% of LP is unlocked with few LP providers, which conflicts with GMGN's LP burn ratio of 1.0",
+    "59 bundler wallets and an insider network of 40",
+    "The creator has 4 prior launches and the status creator_close",
+    "Clone competition splits the flow, and the leader absorbs most of the attention",
+    "m5 price -22%: it is already fading from its ATH of about $182k market cap"
+   ]
+  },
+  "counterargument": "Chinese meme clusters sometimes send several clones up together. With the leader at $1.36M, a $106k clone that has real liquidity (~$30k) and 889 buyers could catch overflow buying and double, since it already reached about $182k at its ATH.",
+  "unknowns": [
+   "What the Douyin post actually says and how popular it is",
+   "Who the 80% holder is",
+   "Which LP-lock status is correct",
+   "Chinese X/Telegram discussion of this specific contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "Time-limited: I ran one name search and one contract search, and both came back empty for the token. I could not fetch the Douyin link or the linked X status (Xtcdev888). Reddit, Telegram and Discord were not searched."
+  },
+  "thesis": "This is a late clone in a crowded same-name cluster. The leader already holds the attention, and this one has bad structure (80% single holder, bundlers, disputed LP lock) and is cooling off in the short term. There is some chance it rides the cluster's overflow, but it ranks below a typical coin in the pool.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 45,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://m.thepaper.cn/newsDetail_forward_7132875",
+    "what": "Background on the \u8611\u83c7\u5934 meme sticker character"
+   },
+   {
+    "url": "https://www.douyin.com/note/7689504292541123881",
+    "what": "Project website link from the packet (not fetched)"
+   }
+  ]
+ },
+ "ttft_ms": 2377,
+ "type": "result",
+ "duration_ms": 31453,
+ "uuid": "06f8ff26-938e-4ddf-b8a2-02cec131cf3f",
+ "ttft_stream_ms": 690,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 690,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

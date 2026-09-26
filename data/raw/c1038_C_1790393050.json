@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 51091,
+ "stop_reason": "tool_use",
+ "session_id": "46ba9325-c240-4238-9a72-defabf85fb52",
+ "total_cost_usd": 0.2701456,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 14215,
+  "cache_read_input_tokens": 29023,
+  "output_tokens": 3013,
+  "output_tokens_details": {
+   "thinking_tokens": 328
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14215,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2583,
+    "cache_read_input_tokens": 14509,
+    "cache_creation_input_tokens": 2470,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2470
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3013,
+   "cacheReadInputTokens": 29023,
+   "cacheCreationInputTokens": 14215,
+   "webSearchRequests": 0,
+   "costUSD": 0.17980859999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 328,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 43732,
+   "outputTokens": 1321,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.090337,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BALLZ COIN (Anxu4...) is a pump.fun coin created at ~01:37Z and migrated to PumpSwap 53 seconds later, which suggests it was bundled to graduation. It spiked about +264% in the hour before detection, then fell about 67% in the next 5 minutes: market cap went from $16.9k at detection to $11.7k at T2, and the last 5 minutes had more unique sellers (104) than buyers (58). The deployer is a serial launcher (469 tokens per GMGN). GMGN tags 406 wallets as bundlers, and several same-name BALLZ COIN clones were deployed within seconds of this one. The project link is a tweet by 'grok12_john' (it returned 402, so I could not read it), and the description says creator fees go to @zachwarunek via UsePaid. That is a fee-assignment gimmick; I found nothing showing he endorses the coin. An older BALLZ COIN (6F4y...pump, created ~8 days earlier) is currently larger and more active ($40k mcap, $58k h1 volume).\",\"narrative\":{\"description\":\"A generic 'ballz' meme with creator fees routed to X user Zach Warunek (a software engineer at X, per search results) via UsePaid, apparently tied to a tweet by grok12_john. $BALLZ is a much-reused ticker, and one earlier Solana BALLZ team is publicly called out as serial slow-ruggers.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"It is spreading through a bot-farm deployment wave (many same-name clones within seconds) and a fee-to-influencer gimmick, not a real event. I found no organic discussion of this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is one of about 8 BALLZ COIN clones deployed within roughly 5 minutes of each other and happened to get the volume. Nothing makes it the canonical one.\",\"competing_tokens\":\"6F4yNTTt...pump (BALLZ COIN, older, $40k mcap, $58k h1 volume, the most active); C5P3vM4H... (older BALLZ COIN); several dead clones (FTaew, BDZN, 3Ss1, FSEC, Ba4d, 9DuaA); plus the 2024 WolfWifBallz.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Migration came 53s after creation. GMGN counts 406 bundler wallets, a 27% top-bundler trader share, a 52% bot/degen rate and 68 snipers. RugCheck detected a 7-wallet transfer insider network. The deployer has launched 469 tokens. Same-name clones were created seconds apart.\",\"uncertainty\":\"I could not read the grok12_john tweet (402) or any X search results for the contract. The 41 smart and 7 renowned wallets GMGN flags may just be quick flippers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Liquidity is only about $9k and falling\",\"Price is crashing after the spike: -67% over m5, with sellers outnumbering buyers\",\"Heavy bundler and sniper share (top 70 snipers hold 33%)\",\"Serial deployer with 469 launches; creator_close status\",\"Dev/team hold rate 14%\",\"A competing older BALLZ COIN is taking the ticker's attention\"]},\"counterargument\":\"Mint and freeze are renounced and the LP is burned (100%), so the liquidity cannot be pulled outright. At about $11.7k mcap, one more wave of bot-driven volume like the last hour (+264%) would clear +100% easily, and 1,075 unique buyers is a lot for a coin this small. If the Zach Warunek fee angle gets noticed on X, a relaunch pump is possible.\",\"unknowns\":[\"What the grok12_john tweet says, and whether Zach Warunek has acknowledged the coin\",\"Whether the -67% m5 dump is finished\",\"Who controls the bundler wallets\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"The X status link returned 402. Searching the contract address returned nothing. General BALLZ searches returned only older unrelated BALLZ tokens and a rug callout about an earlier BALLZ team. I did not fetch the UsePaid page because of time.\"},\"thesis\":\"This is a bot-farm clone with a serial deployer and a fee-to-influencer gimmick. It is already dumping after its spike, and a larger same-name token competes for the ticker. The chance of a 2x before a -50% is low; it will most likely chop down or bleed out.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":35,\"survival_score\":30,\"attention_score\":30,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/grok12_john/status/2103660239564198227\",\"what\":\"Project's linked tweet (returned 402, unreadable)\"},{\"url\":\"https://x.com/zachwarunek\",\"what\":\"X account of the fee recipient named in the description\"},{\"url\":\"https://x.com/CryptoRugMunch/status/1816131934709260705?lang=en\",\"what\":\"Callout naming an earlier $BALLZ team as serial ruggers\"},{\"url\":\"https://dexscreener.com/solana/abdpvka9ljw7whuw8vssrboypwctwmlptmvu9el1mgsf\",\"what\":\"Older, unrelated WolfWifBallz BALLZ token\"}]}",
+ "structured_output": {
+  "what_is_happening": "BALLZ COIN (Anxu4...) is a pump.fun coin created at ~01:37Z and migrated to PumpSwap 53 seconds later, which suggests it was bundled to graduation. It spiked about +264% in the hour before detection, then fell about 67% in the next 5 minutes: market cap went from $16.9k at detection to $11.7k at T2, and the last 5 minutes had more unique sellers (104) than buyers (58). The deployer is a serial launcher (469 tokens per GMGN). GMGN tags 406 wallets as bundlers, and several same-name BALLZ COIN clones were deployed within seconds of this one. The project link is a tweet by 'grok12_john' (it returned 402, so I could not read it), and the description says creator fees go to @zachwarunek via UsePaid. That is a fee-assignment gimmick; I found nothing showing he endorses the coin. An older BALLZ COIN (6F4y...pump, created ~8 days earlier) is currently larger and more active ($40k mcap, $58k h1 volume).",
+  "narrative": {
+   "description": "A generic 'ballz' meme with creator fees routed to X user Zach Warunek (a software engineer at X, per search results) via UsePaid, apparently tied to a tweet by grok12_john. $BALLZ is a much-reused ticker, and one earlier Solana BALLZ team is publicly called out as serial slow-ruggers.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "It is spreading through a bot-farm deployment wave (many same-name clones within seconds) and a fee-to-influencer gimmick, not a real event. I found no organic discussion of this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is one of about 8 BALLZ COIN clones deployed within roughly 5 minutes of each other and happened to get the volume. Nothing makes it the canonical one.",
+   "competing_tokens": "6F4yNTTt...pump (BALLZ COIN, older, $40k mcap, $58k h1 volume, the most active); C5P3vM4H... (older BALLZ COIN); several dead clones (FTaew, BDZN, 3Ss1, FSEC, Ba4d, 9DuaA); plus the 2024 WolfWifBallz.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Migration came 53s after creation. GMGN counts 406 bundler wallets, a 27% top-bundler trader share, a 52% bot/degen rate and 68 snipers. RugCheck detected a 7-wallet transfer insider network. The deployer has launched 469 tokens. Same-name clones were created seconds apart.",
+   "uncertainty": "I could not read the grok12_john tweet (402) or any X search results for the contract. The 41 smart and 7 renowned wallets GMGN flags may just be quick flippers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Liquidity is only about $9k and falling",
+    "Price is crashing after the spike: -67% over m5, with sellers outnumbering buyers",
+    "Heavy bundler and sniper share (top 70 snipers hold 33%)",
+    "Serial deployer with 469 launches; creator_close status",
+    "Dev/team hold rate 14%",
+    "A competing older BALLZ COIN is taking the ticker's attention"
+   ]
+  },
+  "counterargument": "Mint and freeze are renounced and the LP is burned (100%), so the liquidity cannot be pulled outright. At about $11.7k mcap, one more wave of bot-driven volume like the last hour (+264%) would clear +100% easily, and 1,075 unique buyers is a lot for a coin this small. If the Zach Warunek fee angle gets noticed on X, a relaunch pump is possible.",
+  "unknowns": [
+   "What the grok12_john tweet says, and whether Zach Warunek has acknowledged the coin",
+   "Whether the -67% m5 dump is finished",
+   "Who controls the bundler wallets"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "The X status link returned 402. Searching the contract address returned nothing. General BALLZ searches returned only older unrelated BALLZ tokens and a rug callout about an earlier BALLZ team. I did not fetch the UsePaid page because of time."
+  },
+  "thesis": "This is a bot-farm clone with a serial deployer and a fee-to-influencer gimmick. It is already dumping after its spike, and a larger same-name token competes for the ticker. The chance of a 2x before a -50% is low; it will most likely chop down or bleed out.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 35,
+  "survival_score": 30,
+  "attention_score": 30,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/grok12_john/status/2103660239564198227",
+    "what": "Project's linked tweet (returned 402, unreadable)"
+   },
+   {
+    "url": "https://x.com/zachwarunek",
+    "what": "X account of the fee recipient named in the description"
+   },
+   {
+    "url": "https://x.com/CryptoRugMunch/status/1816131934709260705?lang=en",
+    "what": "Callout naming an earlier $BALLZ team as serial ruggers"
+   },
+   {
+    "url": "https://dexscreener.com/solana/abdpvka9ljw7whuw8vssrboypwctwmlptmvu9el1mgsf",
+    "what": "Older, unrelated WolfWifBallz BALLZ token"
+   }
+  ]
+ },
+ "ttft_ms": 1347,
+ "type": "result",
+ "duration_ms": 41577,
+ "uuid": "3e3ce2b7-b0ed-46ee-bf36-3d3e8a645259",
+ "ttft_stream_ms": 674,
+ "time_to_request_ms": 59,
+ "first_content_frame_ms": 675,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

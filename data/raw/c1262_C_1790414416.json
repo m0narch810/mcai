@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 42770,
+ "stop_reason": "tool_use",
+ "session_id": "7f324d91-13a0-429d-b99d-62cff3444333",
+ "total_cost_usd": 0.2158088,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10704,
+  "cache_read_input_tokens": 25444,
+  "output_tokens": 2695,
+  "output_tokens_details": {
+   "thinking_tokens": 427
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10704,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2240,
+    "cache_read_input_tokens": 12477,
+    "cache_creation_input_tokens": 991,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 991
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2695,
+   "cacheReadInputTokens": 25444,
+   "cacheCreationInputTokens": 10704,
+   "webSearchRequests": 0,
+   "costUSD": 0.1446448,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 427,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 36309,
+   "outputTokens": 971,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.071164,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"PenguinCat / Hybrid cat\\\" was launched on PumpSwap about 4 seconds after the token was created (created_unix 1790413615, pair 1790413619, migrated_unix 0). So it never went through a pump.fun bonding curve. The deployer put up the pool directly, and 100% of the LP is unlocked (RugCheck danger flag, \\\"Low amount of LP Providers\\\"). In about 13 minutes it logged roughly $82k of volume, 1,743 buys and 691 sells. There were 1,116 unique buyers but only 107 unique sellers, with about 1,100 holders. Price is up about 40-56% to a ~$36k market cap. Liquidity ($54k) is larger than market cap. The holder list below the top holder (10.55%) is dominated by near-identical 0.20\u20130.22% wallets, and GMGN tags 32 bundler wallets. I found no project site, socials, X posts or narrative anywhere.\",\"narrative\":{\"description\":\"A generic cat-penguin 'hybrid' AI-animal meme. Cat-penguin mixes exist as a loose TikTok theme, but I found no specific current viral event tied to this token.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"I could not identify any organic driver. The flow looks like a manufactured launch: a direct PumpSwap pool, many same-size wallets and bundlers.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"No socials, no website, no DexScreener profile. Nothing links this contract to any community or event.\",\"competing_tokens\":\"None listed in the packet. Search found no same-name tokens.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"unclear\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"It launched straight onto PumpSwap with a deployer-supplied, 100% unlocked LP. 1,116 unique buyers against 107 sellers in about 13 minutes, with no social footprint, is not organic. There are many near-equal 0.20\u20130.22% holders and GMGN counts 32 bundlers. The GMGN page has only 2 visits. There are no smart or KOL wallets.\",\"uncertainty\":\"The buyers could be a real bot audience, such as copy-trade or sniper networks. Private Telegram call groups are invisible to me.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and owned by the deployer's side, so it can be pulled at any time\",\"Launched directly on PumpSwap, skipping the bonding curve, a common pattern for LP-pull farms\",\"32 bundler wallets and a uniform distribution of small holders\",\"The top holder has 10.55% and is unlabeled\",\"Liquidity is larger than market cap, so the deployer has a large SOL stake to pull\"]},\"counterargument\":\"Mint and freeze authority are renounced. Top-10 concentration is low (~12.5%) and the creator holds 0. GMGN rates bot/degen and fresh wallets as near zero, and the creator's previous token reached about a $208k ATH. Deep liquidity relative to market cap means buyers' money moves price less violently, and a $36k cap needs only about $36k of net inflow to double. With over 1,000 buyers in 13 minutes, a continuation to $70k+ is plausible if the dev keeps the LP in.\",\"unknowns\":[\"Whether the dev will pull the LP\",\"Whether private Telegram call groups are driving the buyers\",\"Who the 10.55% top holder is\",\"What creator_close status means in practice\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched the contract address and the ticker/name, plus general web and news. Nothing relevant came up. The packet shows no project links. Time was limited, so Reddit, Telegram and Discord were not searched specifically.\"},\"thesis\":\"This looks like a no-narrative, manufactured direct-PumpSwap launch with a deployer-controlled, unlocked LP. The buyer count is high but looks coordinated. There is a meaningful chance the LP gets pulled, and without an organic story the chance of doubling is below the pool baseline.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":45,\"survival_score\":25,\"attention_score\":35,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.tiktok.com/discover/cat-penguin-mix\",\"what\":\"A generic cat-penguin hybrid theme on TikTok. No specific event found\"},{\"url\":\"https://dexscreener.com/solana/7QCLtQLWPMDPzzJQVdzreSWZ8roFT2tesDr7GMXoX1io\",\"what\":\"The pair page. Packet data: pumpswap pool, liquidity, transactions\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"PenguinCat / Hybrid cat\" was launched on PumpSwap about 4 seconds after the token was created (created_unix 1790413615, pair 1790413619, migrated_unix 0). So it never went through a pump.fun bonding curve. The deployer put up the pool directly, and 100% of the LP is unlocked (RugCheck danger flag, \"Low amount of LP Providers\"). In about 13 minutes it logged roughly $82k of volume, 1,743 buys and 691 sells. There were 1,116 unique buyers but only 107 unique sellers, with about 1,100 holders. Price is up about 40-56% to a ~$36k market cap. Liquidity ($54k) is larger than market cap. The holder list below the top holder (10.55%) is dominated by near-identical 0.20\u20130.22% wallets, and GMGN tags 32 bundler wallets. I found no project site, socials, X posts or narrative anywhere.",
+  "narrative": {
+   "description": "A generic cat-penguin 'hybrid' AI-animal meme. Cat-penguin mixes exist as a loose TikTok theme, but I found no specific current viral event tied to this token.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "I could not identify any organic driver. The flow looks like a manufactured launch: a direct PumpSwap pool, many same-size wallets and bundlers."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "No socials, no website, no DexScreener profile. Nothing links this contract to any community or event.",
+   "competing_tokens": "None listed in the packet. Search found no same-name tokens.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "unclear"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "It launched straight onto PumpSwap with a deployer-supplied, 100% unlocked LP. 1,116 unique buyers against 107 sellers in about 13 minutes, with no social footprint, is not organic. There are many near-equal 0.20\u20130.22% holders and GMGN counts 32 bundlers. The GMGN page has only 2 visits. There are no smart or KOL wallets.",
+   "uncertainty": "The buyers could be a real bot audience, such as copy-trade or sniper networks. Private Telegram call groups are invisible to me."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and owned by the deployer's side, so it can be pulled at any time",
+    "Launched directly on PumpSwap, skipping the bonding curve, a common pattern for LP-pull farms",
+    "32 bundler wallets and a uniform distribution of small holders",
+    "The top holder has 10.55% and is unlabeled",
+    "Liquidity is larger than market cap, so the deployer has a large SOL stake to pull"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced. Top-10 concentration is low (~12.5%) and the creator holds 0. GMGN rates bot/degen and fresh wallets as near zero, and the creator's previous token reached about a $208k ATH. Deep liquidity relative to market cap means buyers' money moves price less violently, and a $36k cap needs only about $36k of net inflow to double. With over 1,000 buyers in 13 minutes, a continuation to $70k+ is plausible if the dev keeps the LP in.",
+  "unknowns": [
+   "Whether the dev will pull the LP",
+   "Whether private Telegram call groups are driving the buyers",
+   "Who the 10.55% top holder is",
+   "What creator_close status means in practice"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched the contract address and the ticker/name, plus general web and news. Nothing relevant came up. The packet shows no project links. Time was limited, so Reddit, Telegram and Discord were not searched specifically."
+  },
+  "thesis": "This looks like a no-narrative, manufactured direct-PumpSwap launch with a deployer-controlled, unlocked LP. The buyer count is high but looks coordinated. There is a meaningful chance the LP gets pulled, and without an organic story the chance of doubling is below the pool baseline.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 35,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.tiktok.com/discover/cat-penguin-mix",
+    "what": "A generic cat-penguin hybrid theme on TikTok. No specific event found"
+   },
+   {
+    "url": "https://dexscreener.com/solana/7QCLtQLWPMDPzzJQVdzreSWZ8roFT2tesDr7GMXoX1io",
+    "what": "The pair page. Packet data: pumpswap pool, liquidity, transactions"
+   }
+  ]
+ },
+ "ttft_ms": 3310,
+ "type": "result",
+ "duration_ms": 37947,
+ "uuid": "c787af62-4d10-4c82-b77e-9b371714003c",
+ "ttft_stream_ms": 788,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 788,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 52484,
+ "stop_reason": "tool_use",
+ "session_id": "b087c7d4-8d05-4125-80a3-be5879b284bc",
+ "total_cost_usd": 0.2403074,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12414,
+  "cache_read_input_tokens": 27267,
+  "output_tokens": 3285,
+  "output_tokens_details": {
+   "thinking_tokens": 473
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12414,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2615,
+    "cache_read_input_tokens": 13809,
+    "cache_creation_input_tokens": 1369,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1369
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3285,
+   "cacheReadInputTokens": 27267,
+   "cacheCreationInputTokens": 12414,
+   "webSearchRequests": 0,
+   "costUSD": 0.1704894,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 473,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 33123,
+   "outputTokens": 1339,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.069818,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"bluebirds\\\" ($birds) is a pump.fun coin created at about 08:31:53Z. It filled its bonding curve and moved to PumpSwap roughly 2 minutes later (GMGN created/migrated unix times). At detection it was 33 minutes old, at about $100k market cap with $27k liquidity and +100% in 1h. It had already peaked near $150k (GMGN ath_price), so it is about 33% below its high. The trade counts don't agree between sources. DexScreener shows 4,182 buys in the last 5 minutes, but GeckoTerminal shows only 79 buys from 69 unique buyers in the same window. RugCheck counts 4,401 holders, GMGN 693, and GeckoTerminal 107. That points to a flood of tiny bot or volume-bot transactions that inflate the transaction and holder counts. It does not look like broad real demand. GMGN also flags a community takeover (CTO), the creator has closed out and holds 0%, and 53% of top traders are tagged \\\"entrapment\\\" traders. The website thebluebirds.xyz is a generic landing page with a vague \\\"street birds do unexpected things\\\" theme. I found no web or news footprint for the contract or ticker.\",\"narrative\":{\"description\":\"A generic blue-bird mascot meme ('Only blue birds do unexpected things') with no link to any current event, news or viral moment that I could find.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"No organic catalyst found. The activity looks driven by the fast bond and migration plus bot or volume-bot transaction spam, not by a story that is spreading.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only bird coin with real volume right now, and it has its own website and X handle. There is no underlying meme or event for it to be canonical for.\",\"competing_tokens\":\"There are other BIRDS tickers (Angry Birds Memes, Three Birds, Angry Birds), all dead with $0\u2013$5k market cap and no volume. Search also turns up unrelated bird-themed Solana tokens (BLUEBIRD, $SIMON, Project Blue Birds).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"DexScreener's 5-minute buy count (4,182) is about 50 times GeckoTerminal's (79 buys, 69 unique buyers). Holder counts range from 4,401 (RugCheck) to 693 (GMGN) to 107 (GeckoTerminal). Together these look like micro-transaction bot spam inflating the activity numbers. The curve bonded in about 2 minutes, GMGN tags 53% of top traders as 'entrapment' traders, and there are 16 snipers and 10 bundlers. Against that, 305 unique buyers in 1h is real participation, the creator holds nothing, and no paid DexScreener boost is active.\",\"uncertainty\":\"I could not see X, and the Telegram content is private. The gap between sources could partly come from how each one counts transactions.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price is already about 33% below its 30-minute ATH of about $150k, so there is overhead supply from the peak\",\"Bot or volume-bot activity inflates the apparent demand\",\"53% of top traders are tagged 'entrapment' traders\",\"The very fast bond suggests coordinated early buyers who may still be sitting on profits\",\"The CTO flag means the creator left and the community took over\"]},\"counterargument\":\"The LP is 100% burned, mint and freeze authority are renounced, the top 10 hold only 15.6%, and the dev holds 0%. That makes it structurally cleaner than most coins in this pool. There were 305 real unique buyers in the first hour, and the price is up 16% in 5 minutes as it pushes back toward the ATH. A CTO with a website and an X account can sometimes carry a coin to $200k+ from $100k within 6 hours, and I can't see X, where any organic spread would show up.\",\"unknowns\":[\"Activity on the X account @bluebirds_sol (fetch returned 402)\",\"Size and activity of the Telegram group\",\"Whether the bot transactions come from a paid volume bot run by the team\",\"Who is behind the CTO\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"A contract search returned nothing relevant. A search for the name and ticker only found unrelated bird tokens. The site is a generic landing page. The X profile fetch returned 402.\"},\"thesis\":\"A generic bird meme with no catalyst I could find. The apparent activity is inflated by micro-transaction bots, the coin bonded in minutes, and it is already fading off a $150k ATH. The structure is clean (LP burned, low concentration), so a hard rug is less likely, but I see no organic reason for a double from $100k. I rank it below average.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":22,\"survival_score\":55,\"attention_score\":42,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://thebluebirds.xyz/\",\"what\":\"Project site: generic blue-bird branding, links to pump.fun, DexScreener, X and Telegram, no team or story\"},{\"url\":\"https://x.com/bluebirds_sol\",\"what\":\"Project X account; fetch returned 402, inaccessible\"},{\"url\":\"https://www.bluebirdslegacy.com/\",\"what\":\"Unrelated $SIMON Twitter-bird token that showed up in search, a competing bird narrative\"},{\"url\":\"https://dexscreener.com/solana/DH1Dh1aoktbujvwiv6L82fFjSxQKS3YkbpjjQ4dSYZ2B\",\"what\":\"Pair page (the packet's DexScreener figures come from here)\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"bluebirds\" ($birds) is a pump.fun coin created at about 08:31:53Z. It filled its bonding curve and moved to PumpSwap roughly 2 minutes later (GMGN created/migrated unix times). At detection it was 33 minutes old, at about $100k market cap with $27k liquidity and +100% in 1h. It had already peaked near $150k (GMGN ath_price), so it is about 33% below its high. The trade counts don't agree between sources. DexScreener shows 4,182 buys in the last 5 minutes, but GeckoTerminal shows only 79 buys from 69 unique buyers in the same window. RugCheck counts 4,401 holders, GMGN 693, and GeckoTerminal 107. That points to a flood of tiny bot or volume-bot transactions that inflate the transaction and holder counts. It does not look like broad real demand. GMGN also flags a community takeover (CTO), the creator has closed out and holds 0%, and 53% of top traders are tagged \"entrapment\" traders. The website thebluebirds.xyz is a generic landing page with a vague \"street birds do unexpected things\" theme. I found no web or news footprint for the contract or ticker.",
+  "narrative": {
+   "description": "A generic blue-bird mascot meme ('Only blue birds do unexpected things') with no link to any current event, news or viral moment that I could find.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "No organic catalyst found. The activity looks driven by the fast bond and migration plus bot or volume-bot transaction spam, not by a story that is spreading."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only bird coin with real volume right now, and it has its own website and X handle. There is no underlying meme or event for it to be canonical for.",
+   "competing_tokens": "There are other BIRDS tickers (Angry Birds Memes, Three Birds, Angry Birds), all dead with $0\u2013$5k market cap and no volume. Search also turns up unrelated bird-themed Solana tokens (BLUEBIRD, $SIMON, Project Blue Birds).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "DexScreener's 5-minute buy count (4,182) is about 50 times GeckoTerminal's (79 buys, 69 unique buyers). Holder counts range from 4,401 (RugCheck) to 693 (GMGN) to 107 (GeckoTerminal). Together these look like micro-transaction bot spam inflating the activity numbers. The curve bonded in about 2 minutes, GMGN tags 53% of top traders as 'entrapment' traders, and there are 16 snipers and 10 bundlers. Against that, 305 unique buyers in 1h is real participation, the creator holds nothing, and no paid DexScreener boost is active.",
+   "uncertainty": "I could not see X, and the Telegram content is private. The gap between sources could partly come from how each one counts transactions."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price is already about 33% below its 30-minute ATH of about $150k, so there is overhead supply from the peak",
+    "Bot or volume-bot activity inflates the apparent demand",
+    "53% of top traders are tagged 'entrapment' traders",
+    "The very fast bond suggests coordinated early buyers who may still be sitting on profits",
+    "The CTO flag means the creator left and the community took over"
+   ]
+  },
+  "counterargument": "The LP is 100% burned, mint and freeze authority are renounced, the top 10 hold only 15.6%, and the dev holds 0%. That makes it structurally cleaner than most coins in this pool. There were 305 real unique buyers in the first hour, and the price is up 16% in 5 minutes as it pushes back toward the ATH. A CTO with a website and an X account can sometimes carry a coin to $200k+ from $100k within 6 hours, and I can't see X, where any organic spread would show up.",
+  "unknowns": [
+   "Activity on the X account @bluebirds_sol (fetch returned 402)",
+   "Size and activity of the Telegram group",
+   "Whether the bot transactions come from a paid volume bot run by the team",
+   "Who is behind the CTO"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "A contract search returned nothing relevant. A search for the name and ticker only found unrelated bird tokens. The site is a generic landing page. The X profile fetch returned 402."
+  },
+  "thesis": "A generic bird meme with no catalyst I could find. The apparent activity is inflated by micro-transaction bots, the coin bonded in minutes, and it is already fading off a $150k ATH. The structure is clean (LP burned, low concentration), so a hard rug is less likely, but I see no organic reason for a double from $100k. I rank it below average.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 22,
+  "survival_score": 55,
+  "attention_score": 42,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://thebluebirds.xyz/",
+    "what": "Project site: generic blue-bird branding, links to pump.fun, DexScreener, X and Telegram, no team or story"
+   },
+   {
+    "url": "https://x.com/bluebirds_sol",
+    "what": "Project X account; fetch returned 402, inaccessible"
+   },
+   {
+    "url": "https://www.bluebirdslegacy.com/",
+    "what": "Unrelated $SIMON Twitter-bird token that showed up in search, a competing bird narrative"
+   },
+   {
+    "url": "https://dexscreener.com/solana/DH1Dh1aoktbujvwiv6L82fFjSxQKS3YkbpjjQ4dSYZ2B",
+    "what": "Pair page (the packet's DexScreener figures come from here)"
+   }
+  ]
+ },
+ "ttft_ms": 3061,
+ "type": "result",
+ "duration_ms": 43609,
+ "uuid": "930375c0-ca78-4f58-a5e0-afe51219c5ea",
+ "ttft_stream_ms": 751,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 751,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

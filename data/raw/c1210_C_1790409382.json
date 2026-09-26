@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 38886,
+ "stop_reason": "tool_use",
+ "session_id": "5a0d2875-becc-4619-a29f-8ac3fbd44124",
+ "total_cost_usd": 0.20435620000000004,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12209,
+  "cache_read_input_tokens": 28456,
+  "output_tokens": 2819,
+  "output_tokens_details": {
+   "thinking_tokens": 459
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12209,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2262,
+    "cache_read_input_tokens": 13716,
+    "cache_creation_input_tokens": 1257,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1257
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2819,
+   "cacheReadInputTokens": 28456,
+   "cacheCreationInputTokens": 12209,
+   "webSearchRequests": 0,
+   "costUSD": 0.1597672,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 459,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21089,
+   "outputTokens": 700,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.044589000000000004,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A crowd of copycat tokens called \\\"Kardashev Research\\\" launched within about 30 minutes. They all appear to follow an X post by @beffjezos (Guillaume Verdon, the e/acc founder, whose brand is \\\"Kardashev scaling\\\"), status 2103746282699534606. This contract (4vbt...) launched about 20 minutes ago and hit roughly $539k ATH market cap. It is now about $284k and fell about 40% in the last 5 minutes (m5 buys and sells nearly equal: 248/235). The packet lists at least 9 other tokens with the same name. The older 5wW9... token has about 3x the 1-hour volume ($1.08M) and is the one the project's website link (usepaid.app) points to.\",\"narrative\":{\"description\":\"Beff Jezos / e/acc talking about a 'Kardashev Research' idea or entity, which is a core theme of his (\\\"Kardashev scaling is all you need\\\"). He is a large, crypto-adjacent account. I could not read the post itself (X returned HTTP 402), so I don't know whether it announces a real organisation or is only a post.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"A big tech figure's post about a new name triggered a race of token launches. Attention is split across about 10 clones.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the second-largest clone by market cap and liquidity. It is not the earliest and not the one the project's website link points to.\",\"competing_tokens\":\"5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp: earlier, $1.08M h1 volume, $46k liquidity, and the usepaid.app link points to it. 2z8dNF...: $138k mcap, $351k volume. HZ9ue.../JqHK... are already dead with $500-800k volume. Plus several others.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"2,103 unique buyers against 98 sellers suggests a real retail rush. GMGN also flags 20 bundler wallets (about 10% top bundler share) and 11 snipers. There are no paid boosts. The token has no socials of its own; its X link is Beff's post, not a project account.\",\"uncertainty\":\"I could not see the tweet content or any X discussion of this specific contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One unlabeled wallet holds 80% of supply (it may be a pool or vault, but RugCheck doesn't label it)\",\"RugCheck reports 99.99% of LP unlocked and flags few LP providers (GMGN says the LP burn ratio is 1.0, so the sources conflict)\",\"Price is -40% in 5 minutes, about 47% below its ATH\",\"Attention is split across about 10 clones, and a more canonical clone exists\",\"Liquidity of $38k against $284k market cap\"]},\"counterargument\":\"Beff Jezos has a large and crypto-friendly following. If he or his community endorses a token, or if this clone becomes the consensus one (it holds the second-highest liquidity), the dip from $539k could be bought back and it could double from around $250k. Its dex shows no concentrated insiders, and the dev holds nothing.\",\"unknowns\":[\"What the Beff tweet says, and whether it endorses any contract\",\"Whether the 80% holder is a pool/vault or a single wallet\",\"Whether the 5wW9 clone is taking over all the attention\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Fetching the X post returned 402. Web search found only background on Beff and the Kardashev scale, nothing on the token. The website link in the packet points to a competing clone (5wW9). I was short on time.\"},\"thesis\":\"This is a non-canonical clone in a crowded launch race around a Beff Jezos post. It is already off 47% from its ATH and dumping in the last 5 minutes. The website link favours a competing contract. Its structure has conflicting LP data and an unexplained 80% holder. It has a low chance of a fresh 2x from entry.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":35,\"survival_score\":35,\"attention_score\":60,\"manipulation_risk\":55,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/beffjezos/status/2103746282699534606\",\"what\":\"The linked X post; fetching it returned 402, so the content was not seen\"},{\"url\":\"https://x.com/beffjezos\",\"what\":\"Beff Jezos's X account; its bio centres on Kardashev scaling\"},{\"url\":\"https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp\",\"what\":\"The website link in the packet, which points to a competing clone\"},{\"url\":\"https://aichats.substack.com/p/beff-jezos-accelerating-into-a-wall\",\"what\":\"Background on Beff Jezos and e/acc\"}]}",
+ "structured_output": {
+  "what_is_happening": "A crowd of copycat tokens called \"Kardashev Research\" launched within about 30 minutes. They all appear to follow an X post by @beffjezos (Guillaume Verdon, the e/acc founder, whose brand is \"Kardashev scaling\"), status 2103746282699534606. This contract (4vbt...) launched about 20 minutes ago and hit roughly $539k ATH market cap. It is now about $284k and fell about 40% in the last 5 minutes (m5 buys and sells nearly equal: 248/235). The packet lists at least 9 other tokens with the same name. The older 5wW9... token has about 3x the 1-hour volume ($1.08M) and is the one the project's website link (usepaid.app) points to.",
+  "narrative": {
+   "description": "Beff Jezos / e/acc talking about a 'Kardashev Research' idea or entity, which is a core theme of his (\"Kardashev scaling is all you need\"). He is a large, crypto-adjacent account. I could not read the post itself (X returned HTTP 402), so I don't know whether it announces a real organisation or is only a post.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "A big tech figure's post about a new name triggered a race of token launches. Attention is split across about 10 clones."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the second-largest clone by market cap and liquidity. It is not the earliest and not the one the project's website link points to.",
+   "competing_tokens": "5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp: earlier, $1.08M h1 volume, $46k liquidity, and the usepaid.app link points to it. 2z8dNF...: $138k mcap, $351k volume. HZ9ue.../JqHK... are already dead with $500-800k volume. Plus several others.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "2,103 unique buyers against 98 sellers suggests a real retail rush. GMGN also flags 20 bundler wallets (about 10% top bundler share) and 11 snipers. There are no paid boosts. The token has no socials of its own; its X link is Beff's post, not a project account.",
+   "uncertainty": "I could not see the tweet content or any X discussion of this specific contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One unlabeled wallet holds 80% of supply (it may be a pool or vault, but RugCheck doesn't label it)",
+    "RugCheck reports 99.99% of LP unlocked and flags few LP providers (GMGN says the LP burn ratio is 1.0, so the sources conflict)",
+    "Price is -40% in 5 minutes, about 47% below its ATH",
+    "Attention is split across about 10 clones, and a more canonical clone exists",
+    "Liquidity of $38k against $284k market cap"
+   ]
+  },
+  "counterargument": "Beff Jezos has a large and crypto-friendly following. If he or his community endorses a token, or if this clone becomes the consensus one (it holds the second-highest liquidity), the dip from $539k could be bought back and it could double from around $250k. Its dex shows no concentrated insiders, and the dev holds nothing.",
+  "unknowns": [
+   "What the Beff tweet says, and whether it endorses any contract",
+   "Whether the 80% holder is a pool/vault or a single wallet",
+   "Whether the 5wW9 clone is taking over all the attention"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Fetching the X post returned 402. Web search found only background on Beff and the Kardashev scale, nothing on the token. The website link in the packet points to a competing clone (5wW9). I was short on time."
+  },
+  "thesis": "This is a non-canonical clone in a crowded launch race around a Beff Jezos post. It is already off 47% from its ATH and dumping in the last 5 minutes. The website link favours a competing contract. Its structure has conflicting LP data and an unexplained 80% holder. It has a low chance of a fresh 2x from entry.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 35,
+  "survival_score": 35,
+  "attention_score": 60,
+  "manipulation_risk": 55,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/beffjezos/status/2103746282699534606",
+    "what": "The linked X post; fetching it returned 402, so the content was not seen"
+   },
+   {
+    "url": "https://x.com/beffjezos",
+    "what": "Beff Jezos's X account; its bio centres on Kardashev scaling"
+   },
+   {
+    "url": "https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp",
+    "what": "The website link in the packet, which points to a competing clone"
+   },
+   {
+    "url": "https://aichats.substack.com/p/beff-jezos-accelerating-into-a-wall",
+    "what": "Background on Beff Jezos and e/acc"
+   }
+  ]
+ },
+ "ttft_ms": 2549,
+ "type": "result",
+ "duration_ms": 38302,
+ "uuid": "8e211d11-ec63-4990-93bb-9eb9687f8c3d",
+ "ttft_stream_ms": 637,
+ "time_to_request_ms": 53,
+ "first_content_frame_ms": 637,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

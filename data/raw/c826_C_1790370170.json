@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 34513,
+ "stop_reason": "tool_use",
+ "session_id": "82d6d53b-638d-40cd-8780-b00a04e3afaf",
+ "total_cost_usd": 0.18452659999999999,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11120,
+  "cache_read_input_tokens": 27238,
+  "output_tokens": 2201,
+  "output_tokens_details": {
+   "thinking_tokens": 262
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11120,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1835,
+    "cache_read_input_tokens": 12869,
+    "cache_creation_input_tokens": 1015,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1015
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2201,
+   "cacheReadInputTokens": 27238,
+   "cacheCreationInputTokens": 11120,
+   "webSearchRequests": 0,
+   "costUSD": 0.1384516,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 262,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22795,
+   "outputTokens": 656,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.046075,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A trend has formed around \\\"merci\\\": the packet lists at least 10 same-name tokens launched within about 30 minutes. This one (CpG8\u2026) was created directly as a PumpSwap pool, not migrated from the pump.fun curve (migrated_unix=0, address has no \\\"pump\\\" suffix). It is about 12 minutes old at $25k mcap with $33k liquidity. It has made +140% in 1h on $360k of volume, with 1,821 unique buyers against only 59 sellers. The older pump.fun \\\"merci\\\" (9NPm\u2026pump, created about 24 min earlier) is at $246k with $929k h1 volume, so it looks like the leading token.\",\"narrative\":{\"description\":\"'merci' (French for 'thank you') meme, tied to an X account @mercicult. I could not work out what triggered it; the X post was blocked by a paywall.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Unknown. The rapid clone wave suggests some X post or trigger, but I could not verify one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. GeckoTerminal lists a mercicult status link, but clones often copy links. This is a later, non-curve PumpSwap deploy with an unlocked LP, which fits the copycat pattern.\",\"competing_tokens\":\"9NPmnDgL\u2026pump ($246k, earliest pump.fun, highest volume), 9UpKDiG2\u2026 ($241k), HE3sA1xP\u2026 ($185k), CdzTirjn\u2026 ($106k), plus about 6 more.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 38 bundler wallets, and the top bundler trader pct is 31%. Unique buyers outnumber sellers about 1,821 to 59, which fits bot or bundled buying. There are 10+ same-name clones, and no web or social discussion of this contract turned up.\",\"uncertainty\":\"Bots could be spraying buys across all merci clones. I could not see the X source.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and held by the creator's pool (RugCheck flags danger), so the creator can pull it at any time\",\"Direct PumpSwap deploy, not a curve graduation\",\"38 bundler wallets\",\"Crowded by stronger same-name tokens\"]},\"counterargument\":\"Buyer breadth is real in count (1,800+), and at $25k mcap a spillover from the merci meta could easily double it. The linked @mercicult post may even point to this contract, which would make it canonical.\",\"unknowns\":[\"What the @mercicult post says and which contract it names\",\"What triggered the merci trend\",\"Whether the creator will pull the unlocked LP\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-limited. The X status fetch returned 402. Web searches for the contract address and $merci returned nothing relevant.\"},\"thesis\":\"A late copycat launched directly on PumpSwap with an unlocked LP and heavy bundling, in a crowded ticker where another contract leads by 10x in mcap. The chance of doubling is low and the rug risk is high.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":50,\"survival_score\":22,\"attention_score\":45,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/mercicult/status/2103574258798428206\",\"what\":\"Linked X post; fetch blocked with HTTP 402\"},{\"url\":\"https://en.wikipedia.org/wiki/Merci_(candy)\",\"what\":\"Only a generic 'merci' result; nothing about the token\"}]}",
+ "structured_output": {
+  "what_is_happening": "A trend has formed around \"merci\": the packet lists at least 10 same-name tokens launched within about 30 minutes. This one (CpG8\u2026) was created directly as a PumpSwap pool, not migrated from the pump.fun curve (migrated_unix=0, address has no \"pump\" suffix). It is about 12 minutes old at $25k mcap with $33k liquidity. It has made +140% in 1h on $360k of volume, with 1,821 unique buyers against only 59 sellers. The older pump.fun \"merci\" (9NPm\u2026pump, created about 24 min earlier) is at $246k with $929k h1 volume, so it looks like the leading token.",
+  "narrative": {
+   "description": "'merci' (French for 'thank you') meme, tied to an X account @mercicult. I could not work out what triggered it; the X post was blocked by a paywall.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Unknown. The rapid clone wave suggests some X post or trigger, but I could not verify one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. GeckoTerminal lists a mercicult status link, but clones often copy links. This is a later, non-curve PumpSwap deploy with an unlocked LP, which fits the copycat pattern.",
+   "competing_tokens": "9NPmnDgL\u2026pump ($246k, earliest pump.fun, highest volume), 9UpKDiG2\u2026 ($241k), HE3sA1xP\u2026 ($185k), CdzTirjn\u2026 ($106k), plus about 6 more.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 38 bundler wallets, and the top bundler trader pct is 31%. Unique buyers outnumber sellers about 1,821 to 59, which fits bot or bundled buying. There are 10+ same-name clones, and no web or social discussion of this contract turned up.",
+   "uncertainty": "Bots could be spraying buys across all merci clones. I could not see the X source."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and held by the creator's pool (RugCheck flags danger), so the creator can pull it at any time",
+    "Direct PumpSwap deploy, not a curve graduation",
+    "38 bundler wallets",
+    "Crowded by stronger same-name tokens"
+   ]
+  },
+  "counterargument": "Buyer breadth is real in count (1,800+), and at $25k mcap a spillover from the merci meta could easily double it. The linked @mercicult post may even point to this contract, which would make it canonical.",
+  "unknowns": [
+   "What the @mercicult post says and which contract it names",
+   "What triggered the merci trend",
+   "Whether the creator will pull the unlocked LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-limited. The X status fetch returned 402. Web searches for the contract address and $merci returned nothing relevant."
+  },
+  "thesis": "A late copycat launched directly on PumpSwap with an unlocked LP and heavy bundling, in a crowded ticker where another contract leads by 10x in mcap. The chance of doubling is low and the rug risk is high.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 45,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/mercicult/status/2103574258798428206",
+    "what": "Linked X post; fetch blocked with HTTP 402"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Merci_(candy)",
+    "what": "Only a generic 'merci' result; nothing about the token"
+   }
+  ]
+ },
+ "ttft_ms": 4500,
+ "type": "result",
+ "duration_ms": 34032,
+ "uuid": "7a203f7c-c9f8-4764-a90e-0c861109117f",
+ "ttft_stream_ms": 2405,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 2405,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

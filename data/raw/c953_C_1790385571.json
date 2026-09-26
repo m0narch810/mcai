@@ -1,0 +1,189 @@
+{
+ "duration_api_ms": 56017,
+ "stop_reason": "tool_use",
+ "session_id": "a6b7f301-a657-4e6e-a84d-cfd044711687",
+ "total_cost_usd": 0.30185019999999996,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 14911,
+  "cache_read_input_tokens": 60361,
+  "output_tokens": 3608,
+  "output_tokens_details": {
+   "thinking_tokens": 628
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14911,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2740,
+    "cache_read_input_tokens": 16211,
+    "cache_creation_input_tokens": 1464,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1464
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3608,
+   "cacheReadInputTokens": 60361,
+   "cacheCreationInputTokens": 14911,
+   "webSearchRequests": 0,
+   "costUSD": 0.2035602,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 628,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 51330,
+   "outputTokens": 1392,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09828999999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GROKPOD (9NyB\u2026) is an 8-day-old pump.fun coin that is still on its bonding curve. It is a UsePaid \\\"fees to @BrianRoemmele\\\" token: its creator fees go to Brian Roemmele's X account through X Money. It woke up suddenly, with about $26-29k of volume in 5 minutes on a $30k market cap, price up about 290% in an hour, and 127 unique buyers. At the same moment several brand-new copycat tokens named \\\"BRIAN INTERACTED\\\" with ticker GROKPOD were deployed within the last few minutes. That points to a real trigger: Roemmele probably just posted or interacted with a GrokPod token or claimed its fees. A web search summary says he claimed about $7.7K of UsePaid fees for a GROKPOD token, but I could not confirm which contract that was. GeckoTerminal's 5-minute figure already shows -27% from the local high, and the current price is about 35% below ATH.\",\"narrative\":{\"description\":\"GrokPod is Brian Roemmele's DIY Grok device: an old Apple Watch turned into a retro iPod running Grok, which he has posted about several times. The coin trades on a creator-fee story: people buy because fees go to Roemmele through UsePaid, and anything he does in response (claiming fees, replying) acts as the catalyst.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A likely fresh interaction from Roemmele, the influencer, suggested by 'BRIAN INTERACTED' copycat tokens deployed minutes before detection. He has a large AI/tech following. Creator-fee coins pump when the recipient acknowledges them.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"The DexScreener profile links a UsePaid page routing fees to @BrianRoemmele and a status of his, so this coin is directly tied to him as fee recipient. The attention spike and the copycats landing at the same time suggest this is the coin the event is about.\",\"competing_tokens\":\"4G97\u2026pump is an older GrokPod listed on Coinbase's price pages (~$16k mcap). BEkH\u2026 is another fresh one (~$10k). There are several dead clones plus 4 'BRIAN INTERACTED' clones made minutes ago. 8euNes\u20267777 shows $514k mcap but zero liquidity.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The copycat deployments suggest a real external catalyst. On the other side, GMGN tags 388 bundler wallets, top bundler traders hold 44% share, the bot/degen rate is 62%, and 34 smart wallets and 3 KOL (known influencer) wallets are present. Buys and sells are nearly balanced (150/119 in the last 5 minutes), which looks like fast rotation. No paid boosts.\",\"uncertainty\":\"I could not see the actual X post from Roemmele or confirm which contract he referenced.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Heavy bundler and bot participation (44% top-bundler trader share)\",\"Graph analysis finds a 4-wallet transfer insider network\",\"The dev is a generic mass launcher (166k tokens, likely the UsePaid factory), not a team\",\"The curve is at 90 of 115 SOL: migration is close and could bring a pump or a dump\",\"Local top may already be in (-27% over 5 minutes, below ATH)\"]},\"counterargument\":\"This could be a single bot-driven burst after a minor Roemmele interaction that is already fading: the 5-minute price is -27%, and clones are pulling attention away. Or Roemmele may have engaged with a different GROKPOD contract. Against that, a direct response from a big influencer on a $30k coin close to migration can easily run 2x or more.\",\"unknowns\":[\"The exact Roemmele post, and which contract it referenced\",\"Whether the $7.7K fee claim was for this contract\",\"Real X engagement volume\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"Contract search returned nothing. Found Roemmele's GrokPod posts and a Digg article, whose page returned 404 on fetch. UsePaid fetches failed with an SSL error. Time-limited.\"},\"thesis\":\"A real influencer catalyst (Roemmele, as the fee recipient) on a $30k curve coin close to migration gives above-average runner odds. The main offsets are heavy bundler/bot activity, a price already falling from the local high, and ticker clones competing for the same buyers.\",\"continuation_view\":\"neutral\",\"p_runner\":18,\"p_rug\":15,\"survival_score\":60,\"attention_score\":62,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/BrianRoemmele/status/2092108399685328898?lang=en\",\"what\":\"Roemmele's GrokPod device announcement\"},{\"url\":\"https://x.com/BrianRoemmele/status/2092751010234302594\",\"what\":\"GrokPod progress post\"},{\"url\":\"https://digg.com/tech/mm7kd74i\",\"what\":\"Search summary: Roemmele claimed ~$7.7K of UsePaid fees for GROKPOD (page returned 404 on fetch, so unverified)\"},{\"url\":\"https://www.coinbase.com/price/grokpod-solana-4g97tvkmyymyjqzau5at2a7rnucrjyy7qsqtp7gzpump-token\",\"what\":\"Competing older GrokPod token 4G97\"},{\"url\":\"https://usepaid.app/explore\",\"what\":\"UsePaid fee routing platform (fetch failed with SSL error)\"}]}",
+ "structured_output": {
+  "what_is_happening": "GROKPOD (9NyB\u2026) is an 8-day-old pump.fun coin that is still on its bonding curve. It is a UsePaid \"fees to @BrianRoemmele\" token: its creator fees go to Brian Roemmele's X account through X Money. It woke up suddenly, with about $26-29k of volume in 5 minutes on a $30k market cap, price up about 290% in an hour, and 127 unique buyers. At the same moment several brand-new copycat tokens named \"BRIAN INTERACTED\" with ticker GROKPOD were deployed within the last few minutes. That points to a real trigger: Roemmele probably just posted or interacted with a GrokPod token or claimed its fees. A web search summary says he claimed about $7.7K of UsePaid fees for a GROKPOD token, but I could not confirm which contract that was. GeckoTerminal's 5-minute figure already shows -27% from the local high, and the current price is about 35% below ATH.",
+  "narrative": {
+   "description": "GrokPod is Brian Roemmele's DIY Grok device: an old Apple Watch turned into a retro iPod running Grok, which he has posted about several times. The coin trades on a creator-fee story: people buy because fees go to Roemmele through UsePaid, and anything he does in response (claiming fees, replying) acts as the catalyst.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A likely fresh interaction from Roemmele, the influencer, suggested by 'BRIAN INTERACTED' copycat tokens deployed minutes before detection. He has a large AI/tech following. Creator-fee coins pump when the recipient acknowledges them."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "The DexScreener profile links a UsePaid page routing fees to @BrianRoemmele and a status of his, so this coin is directly tied to him as fee recipient. The attention spike and the copycats landing at the same time suggest this is the coin the event is about.",
+   "competing_tokens": "4G97\u2026pump is an older GrokPod listed on Coinbase's price pages (~$16k mcap). BEkH\u2026 is another fresh one (~$10k). There are several dead clones plus 4 'BRIAN INTERACTED' clones made minutes ago. 8euNes\u20267777 shows $514k mcap but zero liquidity.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The copycat deployments suggest a real external catalyst. On the other side, GMGN tags 388 bundler wallets, top bundler traders hold 44% share, the bot/degen rate is 62%, and 34 smart wallets and 3 KOL (known influencer) wallets are present. Buys and sells are nearly balanced (150/119 in the last 5 minutes), which looks like fast rotation. No paid boosts.",
+   "uncertainty": "I could not see the actual X post from Roemmele or confirm which contract he referenced."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Heavy bundler and bot participation (44% top-bundler trader share)",
+    "Graph analysis finds a 4-wallet transfer insider network",
+    "The dev is a generic mass launcher (166k tokens, likely the UsePaid factory), not a team",
+    "The curve is at 90 of 115 SOL: migration is close and could bring a pump or a dump",
+    "Local top may already be in (-27% over 5 minutes, below ATH)"
+   ]
+  },
+  "counterargument": "This could be a single bot-driven burst after a minor Roemmele interaction that is already fading: the 5-minute price is -27%, and clones are pulling attention away. Or Roemmele may have engaged with a different GROKPOD contract. Against that, a direct response from a big influencer on a $30k coin close to migration can easily run 2x or more.",
+  "unknowns": [
+   "The exact Roemmele post, and which contract it referenced",
+   "Whether the $7.7K fee claim was for this contract",
+   "Real X engagement volume"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "Contract search returned nothing. Found Roemmele's GrokPod posts and a Digg article, whose page returned 404 on fetch. UsePaid fetches failed with an SSL error. Time-limited."
+  },
+  "thesis": "A real influencer catalyst (Roemmele, as the fee recipient) on a $30k curve coin close to migration gives above-average runner odds. The main offsets are heavy bundler/bot activity, a price already falling from the local high, and ticker clones competing for the same buyers.",
+  "continuation_view": "neutral",
+  "p_runner": 18,
+  "p_rug": 15,
+  "survival_score": 60,
+  "attention_score": 62,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/BrianRoemmele/status/2092108399685328898?lang=en",
+    "what": "Roemmele's GrokPod device announcement"
+   },
+   {
+    "url": "https://x.com/BrianRoemmele/status/2092751010234302594",
+    "what": "GrokPod progress post"
+   },
+   {
+    "url": "https://digg.com/tech/mm7kd74i",
+    "what": "Search summary: Roemmele claimed ~$7.7K of UsePaid fees for GROKPOD (page returned 404 on fetch, so unverified)"
+   },
+   {
+    "url": "https://www.coinbase.com/price/grokpod-solana-4g97tvkmyymyjqzau5at2a7rnucrjyy7qsqtp7gzpump-token",
+    "what": "Competing older GrokPod token 4G97"
+   },
+   {
+    "url": "https://usepaid.app/explore",
+    "what": "UsePaid fee routing platform (fetch failed with SSL error)"
+   }
+  ]
+ },
+ "ttft_ms": 2070,
+ "type": "result",
+ "duration_ms": 51112,
+ "uuid": "f5c1568a-2910-48ce-9365-9f3c2512c15f",
+ "ttft_stream_ms": 761,
+ "time_to_request_ms": 60,
+ "first_content_frame_ms": 761,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

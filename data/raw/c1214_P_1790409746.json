@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 21587,
+ "stop_reason": "tool_use",
+ "session_id": "cdef7846-cd0d-4970-ae66-a1a4f00c9247",
+ "total_cost_usd": 0.1035884,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7262,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2253,
+  "output_tokens_details": {
+   "thinking_tokens": 313
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7262,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2253,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7262,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7262
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2253,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7262,
+   "webSearchRequests": 0,
+   "costUSD": 0.1035884,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 313,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DINOSAUR is 36 minutes old. It was created and paired straight on PumpSwap within about 3 seconds, not graduated from a pump.fun curve, and it has no pump suffix. The creator seeded the LP himself: liquidity ($51.6k) is larger than market cap ($30.8k), and 82.6% of supply sits in the pool. The LP is 100% unlocked, and the creator wallet has since been closed. Volume is $570k in the first hour, 11x turnover. There were 1,128 unique buyers but only 120 unique sellers, and GMGN tags 1,000 of 1,114 holders as fresh wallets plus 85 bundlers. Buyer arrivals are falling fast: 461 unique buyers in the last 30 minutes, 105 in the last 15, 61 in the last 5. Price is down 3-12% over 5 minutes and about 20% below its all-time high.\",\"narrative\":{\"description\":\"A generic 'Dinosaur' animal meme with no website, socials, description or DexScreener profile. Nothing in the packet points to a story or catalyst.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The activity looks machine-made rather than narrative-driven. Many fresh wallets are making small buys while a few wallets sell, which is the typical pattern of a holder-farming or volume bot on a dev-seeded pool.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name coin with live liquidity and volume. The older 'Dinosaur' tokens are dead, at about $3k market cap with no volume.\",\"competing_tokens\":\"Three dead pump.fun Dinosaur/Dino tokens with $0-4.5k liquidity and no volume.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,000 of 1,114 holders are fresh wallets, and there are 85 bundler wallets. The ratio of about 1,128 unique buyers to 120 unique sellers is abnormal: the many buyers are probably bot-dispersed wallets, and the few sellers take the exits. Turnover is 11x in the first hour with no socials at all. The dev seeded an unlocked LP on PumpSwap and then closed the creator account.\",\"uncertainty\":\"The fresh-wallet count might partly reflect real new retail traders. GMGN's fresh_wallet_rate is only 0.158, which conflicts with the 1,000-wallet tag count.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked, and the dev supplied it directly, so the LP holder can remove it at any time\",\"Liquidity is larger than market cap, the typical setup for a dev LP-pull exit\",\"Only a few LP providers\",\"Creator account closed; deploy platform unknown, not a pump.fun graduation\",\"Possible bot-farmed holder base (1,000 fresh wallets, 85 bundlers)\",\"Buyer momentum is falling and price is slipping from its high\"]},\"counterargument\":\"Holders are very spread out: the top 10 hold 3.6-4.5% excluding the pool, with no insiders or snipers flagged. Mint and freeze authority are renounced, and there are no taxes. A $31k market cap on $51k of deep liquidity with over 1,100 holders could attract real momentum traders. This creator also has a previous token that reached $179k ATH, so a 2x from here would only need a ~$62k market cap. If the LP owner does not pull, 11x turnover could lift it.\",\"unknowns\":[\"Who holds the LP tokens and whether they intend to pull\",\"Whether the 1,000 fresh wallets are real retail or bot-dispersed\",\"Whether any X or Telegram promotion exists\",\"What happened to the creator's earlier tokens\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this judgment uses only the packet.\"},\"thesis\":\"The structure looks like a dev-seeded, unlocked-LP PumpSwap pool with bot-farmed holders and inflated volume. Buyer arrivals are already decaying, and nothing social or narrative supports it. The main risk is that the LP is pulled, not a 2x. Rank near the bottom.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":45,\"survival_score\":25,\"attention_score\":42,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "DINOSAUR is 36 minutes old. It was created and paired straight on PumpSwap within about 3 seconds, not graduated from a pump.fun curve, and it has no pump suffix. The creator seeded the LP himself: liquidity ($51.6k) is larger than market cap ($30.8k), and 82.6% of supply sits in the pool. The LP is 100% unlocked, and the creator wallet has since been closed. Volume is $570k in the first hour, 11x turnover. There were 1,128 unique buyers but only 120 unique sellers, and GMGN tags 1,000 of 1,114 holders as fresh wallets plus 85 bundlers. Buyer arrivals are falling fast: 461 unique buyers in the last 30 minutes, 105 in the last 15, 61 in the last 5. Price is down 3-12% over 5 minutes and about 20% below its all-time high.",
+  "narrative": {
+   "description": "A generic 'Dinosaur' animal meme with no website, socials, description or DexScreener profile. Nothing in the packet points to a story or catalyst.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The activity looks machine-made rather than narrative-driven. Many fresh wallets are making small buys while a few wallets sell, which is the typical pattern of a holder-farming or volume bot on a dev-seeded pool."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name coin with live liquidity and volume. The older 'Dinosaur' tokens are dead, at about $3k market cap with no volume.",
+   "competing_tokens": "Three dead pump.fun Dinosaur/Dino tokens with $0-4.5k liquidity and no volume.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,000 of 1,114 holders are fresh wallets, and there are 85 bundler wallets. The ratio of about 1,128 unique buyers to 120 unique sellers is abnormal: the many buyers are probably bot-dispersed wallets, and the few sellers take the exits. Turnover is 11x in the first hour with no socials at all. The dev seeded an unlocked LP on PumpSwap and then closed the creator account.",
+   "uncertainty": "The fresh-wallet count might partly reflect real new retail traders. GMGN's fresh_wallet_rate is only 0.158, which conflicts with the 1,000-wallet tag count."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked, and the dev supplied it directly, so the LP holder can remove it at any time",
+    "Liquidity is larger than market cap, the typical setup for a dev LP-pull exit",
+    "Only a few LP providers",
+    "Creator account closed; deploy platform unknown, not a pump.fun graduation",
+    "Possible bot-farmed holder base (1,000 fresh wallets, 85 bundlers)",
+    "Buyer momentum is falling and price is slipping from its high"
+   ]
+  },
+  "counterargument": "Holders are very spread out: the top 10 hold 3.6-4.5% excluding the pool, with no insiders or snipers flagged. Mint and freeze authority are renounced, and there are no taxes. A $31k market cap on $51k of deep liquidity with over 1,100 holders could attract real momentum traders. This creator also has a previous token that reached $179k ATH, so a 2x from here would only need a ~$62k market cap. If the LP owner does not pull, 11x turnover could lift it.",
+  "unknowns": [
+   "Who holds the LP tokens and whether they intend to pull",
+   "Whether the 1,000 fresh wallets are real retail or bot-dispersed",
+   "Whether any X or Telegram promotion exists",
+   "What happened to the creator's earlier tokens"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this judgment uses only the packet."
+  },
+  "thesis": "The structure looks like a dev-seeded, unlocked-LP PumpSwap pool with bot-farmed holders and inflated volume. Buyer arrivals are already decaying, and nothing social or narrative supports it. The main risk is that the LP is pulled, not a 2x. Rank near the bottom.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 42,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4535,
+ "type": "result",
+ "duration_ms": 21637,
+ "uuid": "c3cde433-73d7-4672-bed5-382537ad0d7a",
+ "ttft_stream_ms": 868,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 868,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

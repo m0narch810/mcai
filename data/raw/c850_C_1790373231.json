@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 49507,
+ "stop_reason": "tool_use",
+ "session_id": "b48620a2-1b6a-43ff-aeaa-3956fe0f4aca",
+ "total_cost_usd": 0.24222739999999998,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12534,
+  "cache_read_input_tokens": 28067,
+  "output_tokens": 3297,
+  "output_tokens_details": {
+   "thinking_tokens": 535
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12534,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2841,
+    "cache_read_input_tokens": 13719,
+    "cache_creation_input_tokens": 1579,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1579
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3297,
+   "cacheReadInputTokens": 28067,
+   "cacheCreationInputTokens": 12534,
+   "webSearchRequests": 0,
+   "costUSD": 0.17184939999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 535,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 34968,
+   "outputTokens": 1082,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.070378,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Betty\\\" (96hx\u2026) is a PumpSwap pool about 11 minutes old. It did not come off the pump.fun bonding curve: migrated_unix is 0 and the launchpad field is empty, so the pool was seeded directly. Liquidity is about $52.7k against a market cap of about $33.7k, and 100% of the LP is unlocked (RugCheck \\\"danger\\\"). In roughly 10 minutes it logged about 1,640 buys from about 1,126 unique buyers but only 115 unique sellers. That works out to about $45 per buy, which looks like a bot or airdrop-style buy spray, not organic demand. The packet lists at least 8 other tokens named \\\"Betty\\\" created in the last ~5 hours. Every one has liquidity at $0 or $0.01, including two created within the last ~30 minutes (Has9a\u2026, Cu2u\u2026) that each did $50k\u2013$150k of volume in the past hour and then went to zero liquidity. That looks like a repeated launch-and-pull rug farm using the same name and structure. No socials, website, DexScreener profile or narrative were found (live DexScreener check: https://api.dexscreener.com/latest/dex/tokens/96hxZX8VWi8aVSsM8xHKFWCsFmGYiX6ExRJmBt3UNexC).\",\"narrative\":{\"description\":\"No identifiable narrative. The name 'Betty' could loosely refer to Betty Boop (entered the public domain Jan 2026), Lili Reinhart's Riverdale Betty comments today, or a viral cat named Betty from Sept 9. None of these is tied to this token or shows a surge right now.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Activity looks like a serial deployer re-launching the same name with seeded liquidity and bot buys, not a spreading story.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing marks this one as canonical. It is the latest in a series of identical 'Betty' launches from today.\",\"competing_tokens\":\"8 or more same-name 'Betty' tokens created within ~5h (79oo\u2026, 2ptp\u2026, JPXM\u2026, DMEL\u2026, 922A\u2026, AU68\u2026, Has9a\u2026, Cu2u\u2026), all now at ~$0 liquidity. There is also older Betty Boop / BETTY ON BOOP tokens.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 1,126 unique buyers vs 115 sellers in 10 minutes, with small uniform buy sizes. GMGN flags 10 bundler wallets. Liquidity is seeded above market cap with 100% unlocked LP. The same name was repeatedly launched today and every earlier copy went to zero liquidity within minutes to hours. No socials, no web mentions.\",\"uncertainty\":\"I couldn't see X or Telegram directly. The prior Betty tokens may not share this deployer, but the pattern is identical.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked on a directly seeded PumpSwap pool, so the owner can pull it at any moment\",\"Serial rug pattern: every same-name token from today has zero liquidity\",\"A single non-labelled wallet holds 10.55%\",\"10 bundler wallets\",\"The creator's token status is 'creator_close', and its data is inconsistent (0 launched tokens but a 'best token ATH' of $208k)\"]},\"counterargument\":\"Buy pressure is heavy and liquidity is deep relative to market cap, so if the operator lets it run, a pump from about $34k to $68k before the pull is mechanically easy. Some of the earlier Betty copies apparently reached $160k\u2013$290k market cap before dying, which suggests they briefly doubled. However, our entry comes after the first run-up, and a pull turns the position into zero rather than a filled stop.\",\"unknowns\":[\"Whether the same wallet deployed the earlier Betty copies\",\"How long this operator waits before pulling liquidity\",\"Any X or Telegram call-channel activity\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Contract search returned nothing. A general 'Betty' news search found only unrelated items (Riverdale, a cat video, Betty Boop). The packet lists no project links. Time budget was tight.\"},\"thesis\":\"This looks like a serial LP-pull rug farm. The same name was relaunched repeatedly today with unlocked seeded liquidity and bot-sprayed buys, and all prior copies are at zero liquidity. There is no narrative and no canonical claim. The chance of hitting 2x before the pull is low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":82,\"survival_score\":8,\"attention_score\":35,\"manipulation_risk\":92,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/96hxZX8VWi8aVSsM8xHKFWCsFmGYiX6ExRJmBt3UNexC\",\"what\":\"Live pair data: $33.7k market cap, $52.7k liquidity, no socials\"},{\"url\":\"https://www.aol.com/articles/why-lili-reinhart-no-memory-200117000.html\",\"what\":\"Unrelated 'Betty' news item from today (Riverdale)\"},{\"url\":\"https://www.tag24.com/en/article/viral-video-of-the-day-for-september-9-2026-chunky-cat-betty-adorably-turns-paper-bag-into-new-home-3526687\",\"what\":\"Old unrelated viral cat named Betty\"},{\"url\":\"https://www.coincarp.com/currencies/betty-on-boop/\",\"what\":\"Older competing BETTY ON BOOP token\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Betty\" (96hx\u2026) is a PumpSwap pool about 11 minutes old. It did not come off the pump.fun bonding curve: migrated_unix is 0 and the launchpad field is empty, so the pool was seeded directly. Liquidity is about $52.7k against a market cap of about $33.7k, and 100% of the LP is unlocked (RugCheck \"danger\"). In roughly 10 minutes it logged about 1,640 buys from about 1,126 unique buyers but only 115 unique sellers. That works out to about $45 per buy, which looks like a bot or airdrop-style buy spray, not organic demand. The packet lists at least 8 other tokens named \"Betty\" created in the last ~5 hours. Every one has liquidity at $0 or $0.01, including two created within the last ~30 minutes (Has9a\u2026, Cu2u\u2026) that each did $50k\u2013$150k of volume in the past hour and then went to zero liquidity. That looks like a repeated launch-and-pull rug farm using the same name and structure. No socials, website, DexScreener profile or narrative were found (live DexScreener check: https://api.dexscreener.com/latest/dex/tokens/96hxZX8VWi8aVSsM8xHKFWCsFmGYiX6ExRJmBt3UNexC).",
+  "narrative": {
+   "description": "No identifiable narrative. The name 'Betty' could loosely refer to Betty Boop (entered the public domain Jan 2026), Lili Reinhart's Riverdale Betty comments today, or a viral cat named Betty from Sept 9. None of these is tied to this token or shows a surge right now.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Activity looks like a serial deployer re-launching the same name with seeded liquidity and bot buys, not a spreading story."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing marks this one as canonical. It is the latest in a series of identical 'Betty' launches from today.",
+   "competing_tokens": "8 or more same-name 'Betty' tokens created within ~5h (79oo\u2026, 2ptp\u2026, JPXM\u2026, DMEL\u2026, 922A\u2026, AU68\u2026, Has9a\u2026, Cu2u\u2026), all now at ~$0 liquidity. There is also older Betty Boop / BETTY ON BOOP tokens.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 1,126 unique buyers vs 115 sellers in 10 minutes, with small uniform buy sizes. GMGN flags 10 bundler wallets. Liquidity is seeded above market cap with 100% unlocked LP. The same name was repeatedly launched today and every earlier copy went to zero liquidity within minutes to hours. No socials, no web mentions.",
+   "uncertainty": "I couldn't see X or Telegram directly. The prior Betty tokens may not share this deployer, but the pattern is identical."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked on a directly seeded PumpSwap pool, so the owner can pull it at any moment",
+    "Serial rug pattern: every same-name token from today has zero liquidity",
+    "A single non-labelled wallet holds 10.55%",
+    "10 bundler wallets",
+    "The creator's token status is 'creator_close', and its data is inconsistent (0 launched tokens but a 'best token ATH' of $208k)"
+   ]
+  },
+  "counterargument": "Buy pressure is heavy and liquidity is deep relative to market cap, so if the operator lets it run, a pump from about $34k to $68k before the pull is mechanically easy. Some of the earlier Betty copies apparently reached $160k\u2013$290k market cap before dying, which suggests they briefly doubled. However, our entry comes after the first run-up, and a pull turns the position into zero rather than a filled stop.",
+  "unknowns": [
+   "Whether the same wallet deployed the earlier Betty copies",
+   "How long this operator waits before pulling liquidity",
+   "Any X or Telegram call-channel activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Contract search returned nothing. A general 'Betty' news search found only unrelated items (Riverdale, a cat video, Betty Boop). The packet lists no project links. Time budget was tight."
+  },
+  "thesis": "This looks like a serial LP-pull rug farm. The same name was relaunched repeatedly today with unlocked seeded liquidity and bot-sprayed buys, and all prior copies are at zero liquidity. There is no narrative and no canonical claim. The chance of hitting 2x before the pull is low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 82,
+  "survival_score": 8,
+  "attention_score": 35,
+  "manipulation_risk": 92,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/96hxZX8VWi8aVSsM8xHKFWCsFmGYiX6ExRJmBt3UNexC",
+    "what": "Live pair data: $33.7k market cap, $52.7k liquidity, no socials"
+   },
+   {
+    "url": "https://www.aol.com/articles/why-lili-reinhart-no-memory-200117000.html",
+    "what": "Unrelated 'Betty' news item from today (Riverdale)"
+   },
+   {
+    "url": "https://www.tag24.com/en/article/viral-video-of-the-day-for-september-9-2026-chunky-cat-betty-adorably-turns-paper-bag-into-new-home-3526687",
+    "what": "Old unrelated viral cat named Betty"
+   },
+   {
+    "url": "https://www.coincarp.com/currencies/betty-on-boop/",
+    "what": "Older competing BETTY ON BOOP token"
+   }
+  ]
+ },
+ "ttft_ms": 1354,
+ "type": "result",
+ "duration_ms": 41274,
+ "uuid": "a99aa855-cda1-4cf4-b6d4-a33b1b39d986",
+ "ttft_stream_ms": 605,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 605,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

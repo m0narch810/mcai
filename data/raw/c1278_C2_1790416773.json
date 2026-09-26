@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 36037,
+ "stop_reason": "tool_use",
+ "session_id": "52b7e809-0fac-489f-822e-f2a7681e2955",
+ "total_cost_usd": 0.199718,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12197,
+  "cache_read_input_tokens": 28175,
+  "output_tokens": 2559,
+  "output_tokens_details": {
+   "thinking_tokens": 301
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12197,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2179,
+    "cache_read_input_tokens": 13426,
+    "cache_creation_input_tokens": 1535,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1535
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2559,
+   "cacheReadInputTokens": 28175,
+   "cacheCreationInputTokens": 12197,
+   "webSearchRequests": 0,
+   "costUSD": 0.154415,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 301,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21543,
+   "outputTokens": 752,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045303,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Tweet-driven name launch: a Beff Jezos (e/acc) tweet linked from GeckoTerminal/GMGN seems to have set off a swarm of \\\"Kardashev Research\\\" copycat tokens on Solana. This token (6MuH\u2026) is one of 10+ same-name clones. The project link in its own metadata points to a different token, 5wW9\u2026, which is the largest one at about $1.8M mcap. This clone launched on a Meteora virtual curve and migrated to PumpSwap in the same second. It pumped about 175% in 25 minutes, then fell 47-51% in the last 5 minutes.\",\"narrative\":{\"description\":\"Beff Jezos / e/acc and the Kardashev scale. It is a real, well-known figure and meme theme, and the tweet itself could not be read (HTTP 402). Web search shows a live Solana KARDASHEV coin at about $2M.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A tweet by a prominent e/acc personality, and the ticker was sniped many times within about 2 hours\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None. This token's own website field links to the 5wW9\u2026 token page on usepaid.app, and 5wW9\u2026 is the earliest and largest of the clones.\",\"competing_tokens\":\"5wW9\u2026 ($1.82M mcap, earliest large one), 8Rz6\u2026 ($423k, $9.9M h1 vol), Gff9\u2026 ($8M h1 vol), 6SBi\u2026, and several dead clones\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GeckoTerminal shows 2,125 unique buyers against only 95 unique sellers, and 6k buys, which looks like a bot or bundle spray. GMGN tags 51 bundler wallets. One top holder has 80% (not labeled as the pool), and the top 10 hold 85-95%. Launch and migration happened in the same second, and the image is duplicated 6 times.\",\"uncertainty\":\"The 80% holder could be an unlabeled Meteora/Pump pool vault. GMGN's top10 rate of 5.5% conflicts with RugCheck's figure.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"99.99% of the LP is unlocked (RugCheck danger)\",\"One wallet holds 80% of supply (possibly a pool, but unverified)\",\"Clone of the canonical token, competing with bigger same-name pools\",\"Already fell about 50% from the ATH in the last 5 minutes, which looks like a dump in progress\",\"51 bundler wallets\"]},\"counterargument\":\"The narrative is real and hot, and volume is huge ($1.35M in 30 minutes on a $170k mcap). Clone tokens sometimes get second waves when the canonical coin runs. If the 80% holder is just the pool vault, the structure is less bad than it looks, and a bounce from -50% back to the ATH would already be about 2x.\",\"unknowns\":[\"What the Beff Jezos tweet says (X was inaccessible)\",\"Whether the 80% holder is a pool vault\",\"Whether the deployer will pull the unlocked LP\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Time-limited. The X status fetch returned 402. Web search found e/acc background and DexScreener pages for other Kardashev coins, but nothing about this contract.\"},\"thesis\":\"A late clone of a trending ticker, with its own metadata pointing to the canonical token. Bot or bundle buy patterns, unlocked LP, and it is already dumping about 50% in 5 minutes. The chance of a 2x is low and the rug risk is high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":50,\"survival_score\":20,\"attention_score\":45,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/beffjezos?lang=en\",\"what\":\"Beff Jezos X account, the source named in the token's metadata\"},{\"url\":\"https://www.deep-tech-week.com/speakers/beff-jezos\",\"what\":\"Background on Beff Jezos and e/acc\"},{\"url\":\"https://dexscreener.com/solana/4kwunja6uhhxxfeppcyahcnhuksfmpyzwtr2f3tjjapd\",\"what\":\"Other Kardashev tokens on Solana, showing the name is saturated\"},{\"url\":\"https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp\",\"what\":\"Website field pointing to the canonical competitor token (from the packet)\"}]}",
+ "structured_output": {
+  "what_is_happening": "Tweet-driven name launch: a Beff Jezos (e/acc) tweet linked from GeckoTerminal/GMGN seems to have set off a swarm of \"Kardashev Research\" copycat tokens on Solana. This token (6MuH\u2026) is one of 10+ same-name clones. The project link in its own metadata points to a different token, 5wW9\u2026, which is the largest one at about $1.8M mcap. This clone launched on a Meteora virtual curve and migrated to PumpSwap in the same second. It pumped about 175% in 25 minutes, then fell 47-51% in the last 5 minutes.",
+  "narrative": {
+   "description": "Beff Jezos / e/acc and the Kardashev scale. It is a real, well-known figure and meme theme, and the tweet itself could not be read (HTTP 402). Web search shows a live Solana KARDASHEV coin at about $2M.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A tweet by a prominent e/acc personality, and the ticker was sniped many times within about 2 hours"
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None. This token's own website field links to the 5wW9\u2026 token page on usepaid.app, and 5wW9\u2026 is the earliest and largest of the clones.",
+   "competing_tokens": "5wW9\u2026 ($1.82M mcap, earliest large one), 8Rz6\u2026 ($423k, $9.9M h1 vol), Gff9\u2026 ($8M h1 vol), 6SBi\u2026, and several dead clones",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GeckoTerminal shows 2,125 unique buyers against only 95 unique sellers, and 6k buys, which looks like a bot or bundle spray. GMGN tags 51 bundler wallets. One top holder has 80% (not labeled as the pool), and the top 10 hold 85-95%. Launch and migration happened in the same second, and the image is duplicated 6 times.",
+   "uncertainty": "The 80% holder could be an unlabeled Meteora/Pump pool vault. GMGN's top10 rate of 5.5% conflicts with RugCheck's figure."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "99.99% of the LP is unlocked (RugCheck danger)",
+    "One wallet holds 80% of supply (possibly a pool, but unverified)",
+    "Clone of the canonical token, competing with bigger same-name pools",
+    "Already fell about 50% from the ATH in the last 5 minutes, which looks like a dump in progress",
+    "51 bundler wallets"
+   ]
+  },
+  "counterargument": "The narrative is real and hot, and volume is huge ($1.35M in 30 minutes on a $170k mcap). Clone tokens sometimes get second waves when the canonical coin runs. If the 80% holder is just the pool vault, the structure is less bad than it looks, and a bounce from -50% back to the ATH would already be about 2x.",
+  "unknowns": [
+   "What the Beff Jezos tweet says (X was inaccessible)",
+   "Whether the 80% holder is a pool vault",
+   "Whether the deployer will pull the unlocked LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Time-limited. The X status fetch returned 402. Web search found e/acc background and DexScreener pages for other Kardashev coins, but nothing about this contract."
+  },
+  "thesis": "A late clone of a trending ticker, with its own metadata pointing to the canonical token. Bot or bundle buy patterns, unlocked LP, and it is already dumping about 50% in 5 minutes. The chance of a 2x is low and the rug risk is high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 50,
+  "survival_score": 20,
+  "attention_score": 45,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/beffjezos?lang=en",
+    "what": "Beff Jezos X account, the source named in the token's metadata"
+   },
+   {
+    "url": "https://www.deep-tech-week.com/speakers/beff-jezos",
+    "what": "Background on Beff Jezos and e/acc"
+   },
+   {
+    "url": "https://dexscreener.com/solana/4kwunja6uhhxxfeppcyahcnhuksfmpyzwtr2f3tjjapd",
+    "what": "Other Kardashev tokens on Solana, showing the name is saturated"
+   },
+   {
+    "url": "https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp",
+    "what": "Website field pointing to the canonical competitor token (from the packet)"
+   }
+  ]
+ },
+ "ttft_ms": 2742,
+ "type": "result",
+ "duration_ms": 36113,
+ "uuid": "f1e0d66c-7723-4b0b-90a9-384952dec408",
+ "ttft_stream_ms": 712,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 712,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

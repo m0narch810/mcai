@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 24956,
+ "stop_reason": "tool_use",
+ "session_id": "b10d0e8b-6174-4558-b3de-833c57eca4e6",
+ "total_cost_usd": 0.1143084,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8177,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2423,
+  "output_tokens_details": {
+   "thinking_tokens": 496
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8177,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2423,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8177,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8177
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2423,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8177,
+   "webSearchRequests": 0,
+   "costUSD": 0.1143084,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 496,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BREW is a 22-minute-old PumpSwap pool that was created directly rather than migrated from the pump.fun curve (migrated_unix=0, launchpad unknown). The creator's LP is 100% unlocked and 93% of supply sits in the pool. The $13k market cap is below the $24k liquidity, meaning the creator seeded the pool with most of its value. In the first hour there was $272k of volume (about 11x the market cap) from 1,926 unique buyers against only 54 unique sellers, but price is only +3% over the hour and -17% in the last 5 minutes. At least six other \\\"BREW\\\" tokens launched in the past few hours, and one (4w2N..., about 1h old) already shows $0 liquidity despite $305k of volume. That points to a serial clone or rug pattern riding some BREW / brew.family story.\",\"narrative\":{\"description\":\"The name is BREW, linked to an X handle 'brewdotfamily'. Several same-name tokens launched today suggest there is some external BREW narrative, but this token has no website, no DexScreener profile and no description.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most likely ticker-farming. Many deployers are spinning up BREW clones to catch search traffic from a narrative elsewhere, not organic spread of this particular contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the shared ticker and name plus a GeckoTerminal twitter handle, which anyone can set. Nothing marks this contract as official.\",\"competing_tokens\":\"There are many BREW tokens. D7UU... ($121k mcap, $523k h1 volume, launched earlier) is more liquid and active. 4w2N... already has zero liquidity (rugged). Older BREW tokens show large, likely stale or fake liquidity. There are also several 'Brewable' tokens, all dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,926 unique buyers vs 54 sellers, with top10 holding only 5.5%. That is a spray of many tiny buys, typical of bot-generated breadth. Volume is 11x market cap while price is essentially flat. The pool is dev-created with unlocked LP, and a sibling BREW clone from an hour ago already went to zero liquidity. GMGN shows no smart money or KOL wallets.\",\"uncertainty\":\"GMGN reports a 0 bot/degen rate and a low fresh-wallet rate, so the buyers may be real retail chasing the BREW ticker. The bot-like pattern is inferred, not confirmed.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a dev-created PumpSwap pool: the creator can pull $24k at any time\",\"A sibling BREW clone already rugged within about 1h\",\"93% of supply is in the pool: the creator's SOL is effectively the liquidity\",\"Buy/sell skew and flat price suggest the volume is not moving price\",\"Creator status 'creator_close'; funding source unknown\"]},\"counterargument\":\"Mint and freeze authority are renounced, holders are widely spread (top10 about 5%), and GMGN flags no bundlers, snipers or bots. Close to 2,000 buyers at a $13k market cap is extremely cheap attention. If the BREW narrative is real and this pool becomes the one the crowd settles on, a 2x from $13k only takes about $13k of net buying, which is trivial compared with the volume already flowing.\",\"unknowns\":[\"What the underlying BREW / brew.family narrative is and whether it is real\",\"Whether the creator intends to pull LP\",\"Whether the unique buyers are real retail or a bot farm GMGN did not classify\",\"Which BREW contract the crowd treats as canonical\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"Offline condition; packet only.\"},\"thesis\":\"This is a ticker-farm clone on a dev-seeded PumpSwap pool with unlocked LP. The volume is huge relative to market cap but is not lifting price, and a sibling clone has already rugged. There is a real chance of rug or fade, and only a small chance it becomes the canonical BREW and doubles.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":58,\"survival_score\":22,\"attention_score\":55,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "BREW is a 22-minute-old PumpSwap pool that was created directly rather than migrated from the pump.fun curve (migrated_unix=0, launchpad unknown). The creator's LP is 100% unlocked and 93% of supply sits in the pool. The $13k market cap is below the $24k liquidity, meaning the creator seeded the pool with most of its value. In the first hour there was $272k of volume (about 11x the market cap) from 1,926 unique buyers against only 54 unique sellers, but price is only +3% over the hour and -17% in the last 5 minutes. At least six other \"BREW\" tokens launched in the past few hours, and one (4w2N..., about 1h old) already shows $0 liquidity despite $305k of volume. That points to a serial clone or rug pattern riding some BREW / brew.family story.",
+  "narrative": {
+   "description": "The name is BREW, linked to an X handle 'brewdotfamily'. Several same-name tokens launched today suggest there is some external BREW narrative, but this token has no website, no DexScreener profile and no description.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most likely ticker-farming. Many deployers are spinning up BREW clones to catch search traffic from a narrative elsewhere, not organic spread of this particular contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the shared ticker and name plus a GeckoTerminal twitter handle, which anyone can set. Nothing marks this contract as official.",
+   "competing_tokens": "There are many BREW tokens. D7UU... ($121k mcap, $523k h1 volume, launched earlier) is more liquid and active. 4w2N... already has zero liquidity (rugged). Older BREW tokens show large, likely stale or fake liquidity. There are also several 'Brewable' tokens, all dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,926 unique buyers vs 54 sellers, with top10 holding only 5.5%. That is a spray of many tiny buys, typical of bot-generated breadth. Volume is 11x market cap while price is essentially flat. The pool is dev-created with unlocked LP, and a sibling BREW clone from an hour ago already went to zero liquidity. GMGN shows no smart money or KOL wallets.",
+   "uncertainty": "GMGN reports a 0 bot/degen rate and a low fresh-wallet rate, so the buyers may be real retail chasing the BREW ticker. The bot-like pattern is inferred, not confirmed."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a dev-created PumpSwap pool: the creator can pull $24k at any time",
+    "A sibling BREW clone already rugged within about 1h",
+    "93% of supply is in the pool: the creator's SOL is effectively the liquidity",
+    "Buy/sell skew and flat price suggest the volume is not moving price",
+    "Creator status 'creator_close'; funding source unknown"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced, holders are widely spread (top10 about 5%), and GMGN flags no bundlers, snipers or bots. Close to 2,000 buyers at a $13k market cap is extremely cheap attention. If the BREW narrative is real and this pool becomes the one the crowd settles on, a 2x from $13k only takes about $13k of net buying, which is trivial compared with the volume already flowing.",
+  "unknowns": [
+   "What the underlying BREW / brew.family narrative is and whether it is real",
+   "Whether the creator intends to pull LP",
+   "Whether the unique buyers are real retail or a bot farm GMGN did not classify",
+   "Which BREW contract the crowd treats as canonical"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "Offline condition; packet only."
+  },
+  "thesis": "This is a ticker-farm clone on a dev-seeded PumpSwap pool with unlocked LP. The volume is huge relative to market cap but is not lifting price, and a sibling clone has already rugged. There is a real chance of rug or fade, and only a small chance it becomes the canonical BREW and doubles.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 58,
+  "survival_score": 22,
+  "attention_score": 55,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7706,
+ "type": "result",
+ "duration_ms": 25001,
+ "uuid": "7d6c2e5c-38e4-43e3-a331-347382057ab5",
+ "ttft_stream_ms": 2136,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 2136,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

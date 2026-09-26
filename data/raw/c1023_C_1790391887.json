@@ -1,0 +1,183 @@
+{
+ "duration_api_ms": 58666,
+ "stop_reason": "tool_use",
+ "session_id": "528569fd-a909-4f1d-bab1-7378c96267f8",
+ "total_cost_usd": 0.27448940000000005,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 14130,
+  "cache_read_input_tokens": 29112,
+  "output_tokens": 3068,
+  "output_tokens_details": {
+   "thinking_tokens": 563
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14130,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2567,
+    "cache_read_input_tokens": 14560,
+    "cache_creation_input_tokens": 2334,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2334
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3068,
+   "cacheReadInputTokens": 29112,
+   "cacheCreationInputTokens": 14130,
+   "webSearchRequests": 0,
+   "costUSD": 0.1802464,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 563,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 46263,
+   "outputTokens": 1596,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.09424300000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"affective autism\\\" (a/aut) is one of at least 11 tokens with the same name launched within about 15 minutes. This one clearly leads the cluster: $180k market cap against $31k liquidity, while the rest are dead or below $55k. About 30 minutes after launch it has pulled in roughly 1,279 unique buyers against 113 sellers, about $185k of volume, and a +112\u2013243% move. Its links are recycled: an old Elon Musk tweet (status 1680821019152379904, from 2023) and a PubMed paper (38923977) whose page returned a captcha when I fetched it. I found no web-indexed catalyst, X post or discussion about a/aut or the contract.\",\"narrative\":{\"description\":\"An autism meme riffing on an academic 'affective autism' paper, with an Elon link pasted in. The autism meme is an established Solana theme, but I could not find the specific trigger for this name.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Probably a tweet or call-channel post that isn't visible to search. The burst of same-name launches points to a shared trigger that coin launchers were racing to copy. The flow of money suggests the trench crowd picked this contract as the winner.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has by far the highest market cap, liquidity and buyer count of the same-name tokens, so the market has picked it as the de facto canonical coin.\",\"competing_tokens\":\"At least 10 same-name a/aut tokens, most at about $3k market cap or with zero liquidity. 56aJJ... has $8k liquidity and 208k h1 volume. E5Y2... had 183k h1 volume and then went to zero liquidity, which suggests fast rugs among the copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The buyer base is broad: 1,279 unique buyers against 113 sellers, and a 1,721/572 buy/sell count on DexScreener. GMGN flags 44 bundler wallets, 8 snipers, and an 89-wallet trade insider network. No paid boosts and no smart-money or KOL wallets.\",\"uncertainty\":\"I could not see X or Telegram, so I don't know what started this or whether a call channel is driving it.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"One unlabelled holder has 80.05% of supply. It may be a curve or pool vault, since GMGN puts top-10 concentration at 3.3%, but that is unverified.\",\"RugCheck: 99.99% of LP unlocked on one market (danger), plus a 'low LP providers' warning\",\"Launchpad data conflicts: GMGN says meteora_virtual_curve created and migrated in the same second, but the pair is on PumpSwap\",\"Market cap is about 5.7x liquidity\",\"89-wallet insider network and 44 bundlers\",\"Creator status is 'creator_close', meaning the dev has exited\"]},\"counterargument\":\"It clearly won a race among many same-name launches, with a very broad buyer count and strong buy pressure. No boosts are flagged. Winners of these clusters often run from $150k to $500k+ within hours on attention alone. On the other side, the 80% holder and the unlocked LP could end it at any moment.\",\"unknowns\":[\"Who the 80.05% holder is\",\"What triggered 'affective autism' (tweet, post, call channel?)\",\"Whether the LP on the PumpSwap pair can be pulled\",\"What PubMed paper 38923977 says (captcha blocked the fetch)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Time-limited. The contract search found nothing, and name searches returned only academic papers and older AUTISM tokens. The PubMed link hit a captcha.\"},\"thesis\":\"It is the leader of a same-name launch race and has strong organic-looking buyer breadth. But the catalyst is unknown, the structure is unclear (an 80% holder, unlocked LP) and insider/bundler activity is high. A 2x from about $180k needs roughly $360k+, which is plausible for a race winner. Rug risk is above average.\",\"continuation_view\":\"neutral\",\"p_runner\":17,\"p_rug\":27,\"survival_score\":38,\"attention_score\":68,\"manipulation_risk\":55,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://pubmed.ncbi.nlm.nih.gov/38923977/\",\"what\":\"Project website link (captcha, inaccessible)\"},{\"url\":\"https://x.com/elonmusk/status/1680821019152379904\",\"what\":\"Twitter link from the packet: an old 2023 Elon tweet\"},{\"url\":\"https://medium.com/@XT_com/autism-coin-explained-a-look-at-the-solana-meme-market-0fbb1cfac8c5\",\"what\":\"Background on the existing autism meme on Solana\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"affective autism\" (a/aut) is one of at least 11 tokens with the same name launched within about 15 minutes. This one clearly leads the cluster: $180k market cap against $31k liquidity, while the rest are dead or below $55k. About 30 minutes after launch it has pulled in roughly 1,279 unique buyers against 113 sellers, about $185k of volume, and a +112\u2013243% move. Its links are recycled: an old Elon Musk tweet (status 1680821019152379904, from 2023) and a PubMed paper (38923977) whose page returned a captcha when I fetched it. I found no web-indexed catalyst, X post or discussion about a/aut or the contract.",
+  "narrative": {
+   "description": "An autism meme riffing on an academic 'affective autism' paper, with an Elon link pasted in. The autism meme is an established Solana theme, but I could not find the specific trigger for this name.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Probably a tweet or call-channel post that isn't visible to search. The burst of same-name launches points to a shared trigger that coin launchers were racing to copy. The flow of money suggests the trench crowd picked this contract as the winner."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has by far the highest market cap, liquidity and buyer count of the same-name tokens, so the market has picked it as the de facto canonical coin.",
+   "competing_tokens": "At least 10 same-name a/aut tokens, most at about $3k market cap or with zero liquidity. 56aJJ... has $8k liquidity and 208k h1 volume. E5Y2... had 183k h1 volume and then went to zero liquidity, which suggests fast rugs among the copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The buyer base is broad: 1,279 unique buyers against 113 sellers, and a 1,721/572 buy/sell count on DexScreener. GMGN flags 44 bundler wallets, 8 snipers, and an 89-wallet trade insider network. No paid boosts and no smart-money or KOL wallets.",
+   "uncertainty": "I could not see X or Telegram, so I don't know what started this or whether a call channel is driving it."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "One unlabelled holder has 80.05% of supply. It may be a curve or pool vault, since GMGN puts top-10 concentration at 3.3%, but that is unverified.",
+    "RugCheck: 99.99% of LP unlocked on one market (danger), plus a 'low LP providers' warning",
+    "Launchpad data conflicts: GMGN says meteora_virtual_curve created and migrated in the same second, but the pair is on PumpSwap",
+    "Market cap is about 5.7x liquidity",
+    "89-wallet insider network and 44 bundlers",
+    "Creator status is 'creator_close', meaning the dev has exited"
+   ]
+  },
+  "counterargument": "It clearly won a race among many same-name launches, with a very broad buyer count and strong buy pressure. No boosts are flagged. Winners of these clusters often run from $150k to $500k+ within hours on attention alone. On the other side, the 80% holder and the unlocked LP could end it at any moment.",
+  "unknowns": [
+   "Who the 80.05% holder is",
+   "What triggered 'affective autism' (tweet, post, call channel?)",
+   "Whether the LP on the PumpSwap pair can be pulled",
+   "What PubMed paper 38923977 says (captcha blocked the fetch)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Time-limited. The contract search found nothing, and name searches returned only academic papers and older AUTISM tokens. The PubMed link hit a captcha."
+  },
+  "thesis": "It is the leader of a same-name launch race and has strong organic-looking buyer breadth. But the catalyst is unknown, the structure is unclear (an 80% holder, unlocked LP) and insider/bundler activity is high. A 2x from about $180k needs roughly $360k+, which is plausible for a race winner. Rug risk is above average.",
+  "continuation_view": "neutral",
+  "p_runner": 17,
+  "p_rug": 27,
+  "survival_score": 38,
+  "attention_score": 68,
+  "manipulation_risk": 55,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38923977/",
+    "what": "Project website link (captcha, inaccessible)"
+   },
+   {
+    "url": "https://x.com/elonmusk/status/1680821019152379904",
+    "what": "Twitter link from the packet: an old 2023 Elon tweet"
+   },
+   {
+    "url": "https://medium.com/@XT_com/autism-coin-explained-a-look-at-the-solana-meme-market-0fbb1cfac8c5",
+    "what": "Background on the existing autism meme on Solana"
+   }
+  ]
+ },
+ "ttft_ms": 1419,
+ "type": "result",
+ "duration_ms": 42631,
+ "uuid": "d5e5978d-709d-40bc-bb40-027c92c003d6",
+ "ttft_stream_ms": 687,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 688,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

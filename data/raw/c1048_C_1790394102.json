@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 44391,
+ "stop_reason": "tool_use",
+ "session_id": "31b3cb46-5b27-4e20-9ad4-379979e80dae",
+ "total_cost_usd": 0.2985468,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11873,
+  "cache_read_input_tokens": 28399,
+  "output_tokens": 3115,
+  "output_tokens_details": {
+   "thinking_tokens": 548
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11873,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2428,
+    "cache_read_input_tokens": 13970,
+    "cache_creation_input_tokens": 667,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 667
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3115,
+   "cacheReadInputTokens": 28399,
+   "cacheCreationInputTokens": 11873,
+   "webSearchRequests": 0,
+   "costUSD": 0.1629878,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 548,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 111394,
+   "outputTokens": 833,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.135559,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Several tokens are using the name \\\"American Reserved Oil Supply\\\" (AROS). It is an energy/Strategic Petroleum Reserve theme, and at least one version reportedly has a multi-billion market cap ($3.3\u20133.9B on DexScreener/OKX). This token (5kKMM\u2026) is a fresh copy. Its address does not end in \\\"pump\\\", and the creator seeded a PumpSwap pool directly. The pool opened 3 seconds after the token was created, with no bonding-curve migration. In about 35 minutes it went up roughly 4x to a $73k market cap, on $360k volume. Buyers heavily outnumber sellers (1,679 unique buyers vs 55). That looks like spillover from people chasing the AROS ticker, or bot and copy-trader flow, rather than attention aimed at this contract. The creator still holds 13.4% and 100% of the LP is unlocked.\",\"narrative\":{\"description\":\"AROS 'American Reserved Oil Supply': a Solana token pitched as an on-chain claim on the US Strategic Petroleum Reserve. A much larger same-name token is trending, with a reported market cap of about $3.9B.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The main AROS token is posting huge gains (+132% in 24h according to OKX), and a scam-check article exists. People chasing the ticker spill over into copycat contracts.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. It is one of at least 10 AROS contracts. It is not a pump.fun token, has no socials or website, and is not referenced on aros.help or in any search result.\",\"competing_tokens\":\"kFWgz\u2026pump (~$3.3B mcap, $5.3M liquidity), 57LVT\u2026pump ($1B), 3DQb\u2026pump, DsJD\u2026pump ($10.7M, $3.2M h1 volume), DVdVs\u2026 and j7Zos\u2026 (same full name, ~$3.7\u20133.9M), plus several dead copies with zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"1,679 unique buyers vs 55 unique sellers in 35 minutes, with 9 bundler wallets and a 14% fresh-wallet rate. No paid boosts, and no smart-money or KOL wallets. Nobody is discussing this specific contract anywhere I could find. The flow looks like ticker-sniping bots and misdirected buyers.\",\"uncertainty\":\"I did not search X directly. Buyers may actually be real people confused about which AROS is the real one.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked, and the creator appears to be the only LP provider (RugCheck: danger)\",\"The creator holds 13.38% and can dump it into the pool\",\"The creator seeded the PumpSwap pool directly, a common way to set up a pull-the-liquidity rug\",\"It is a copycat of a much larger token, so it has no lasting reason for demand\",\"Rug-flagged ('rat trader') wallets hold 13.4% (the creator)\"]},\"counterargument\":\"The AROS theme is very hot right now: the parent token is worth billions and still climbing. Buyer breadth here is extreme (1,679 buyers) and almost nobody has sold. Copycats of a mega-trending ticker sometimes run 3\u201310x on spillover before they die. Liquidity is deep for the market cap, so a 2x to about $150k is mechanically easy.\",\"unknowns\":[\"Whether the creator will pull the unlocked LP\",\"Whether the 1,679 buyers are real people or bots\",\"What people on X are saying about this contract\",\"Which AROS contract is the real one\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"Time was short. A search for the contract address returned nothing relevant. A name search found the parent AROS token (Phantom, OKX, a legit-or-scam article, and the aros.help site). aros.help lists no contract address. This token has no socials of its own.\"},\"thesis\":\"This is an unaffiliated copycat of a mega-trending AROS token. The creator seeded the LP, it is 100% unlocked, and the creator still holds 13%. The buying breadth is striking, but the setup looks like a classic ticker-hijack where the liquidity gets pulled. The chance of a clean 2x before a -50% drop is low, and the rug risk is high.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":50,\"survival_score\":22,\"attention_score\":55,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://aros.help/\",\"what\":\"AROS site: logo only, no contract address or socials\"},{\"url\":\"https://www.okx.com/en-us/price/american-reserved-oil-supply-aros\",\"what\":\"Parent AROS token priced at a multi-billion market cap\"},{\"url\":\"https://www.top1markets.com/insights/crypto/what-is-american-reserved-oil-supply-aros-crypto-legit-or-scam-f28\",\"what\":\"Legit-or-scam article on the AROS narrative\"},{\"url\":\"https://phantom.com/tokens/solana/DVdVsMUC8RyZcWtd6jn7BnyTd7dHEh7k4C5zsM9PCMtd\",\"what\":\"Competing AROS contract with the same name\"}]}",
+ "structured_output": {
+  "what_is_happening": "Several tokens are using the name \"American Reserved Oil Supply\" (AROS). It is an energy/Strategic Petroleum Reserve theme, and at least one version reportedly has a multi-billion market cap ($3.3\u20133.9B on DexScreener/OKX). This token (5kKMM\u2026) is a fresh copy. Its address does not end in \"pump\", and the creator seeded a PumpSwap pool directly. The pool opened 3 seconds after the token was created, with no bonding-curve migration. In about 35 minutes it went up roughly 4x to a $73k market cap, on $360k volume. Buyers heavily outnumber sellers (1,679 unique buyers vs 55). That looks like spillover from people chasing the AROS ticker, or bot and copy-trader flow, rather than attention aimed at this contract. The creator still holds 13.4% and 100% of the LP is unlocked.",
+  "narrative": {
+   "description": "AROS 'American Reserved Oil Supply': a Solana token pitched as an on-chain claim on the US Strategic Petroleum Reserve. A much larger same-name token is trending, with a reported market cap of about $3.9B.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The main AROS token is posting huge gains (+132% in 24h according to OKX), and a scam-check article exists. People chasing the ticker spill over into copycat contracts."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. It is one of at least 10 AROS contracts. It is not a pump.fun token, has no socials or website, and is not referenced on aros.help or in any search result.",
+   "competing_tokens": "kFWgz\u2026pump (~$3.3B mcap, $5.3M liquidity), 57LVT\u2026pump ($1B), 3DQb\u2026pump, DsJD\u2026pump ($10.7M, $3.2M h1 volume), DVdVs\u2026 and j7Zos\u2026 (same full name, ~$3.7\u20133.9M), plus several dead copies with zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "1,679 unique buyers vs 55 unique sellers in 35 minutes, with 9 bundler wallets and a 14% fresh-wallet rate. No paid boosts, and no smart-money or KOL wallets. Nobody is discussing this specific contract anywhere I could find. The flow looks like ticker-sniping bots and misdirected buyers.",
+   "uncertainty": "I did not search X directly. Buyers may actually be real people confused about which AROS is the real one."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked, and the creator appears to be the only LP provider (RugCheck: danger)",
+    "The creator holds 13.38% and can dump it into the pool",
+    "The creator seeded the PumpSwap pool directly, a common way to set up a pull-the-liquidity rug",
+    "It is a copycat of a much larger token, so it has no lasting reason for demand",
+    "Rug-flagged ('rat trader') wallets hold 13.4% (the creator)"
+   ]
+  },
+  "counterargument": "The AROS theme is very hot right now: the parent token is worth billions and still climbing. Buyer breadth here is extreme (1,679 buyers) and almost nobody has sold. Copycats of a mega-trending ticker sometimes run 3\u201310x on spillover before they die. Liquidity is deep for the market cap, so a 2x to about $150k is mechanically easy.",
+  "unknowns": [
+   "Whether the creator will pull the unlocked LP",
+   "Whether the 1,679 buyers are real people or bots",
+   "What people on X are saying about this contract",
+   "Which AROS contract is the real one"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "Time was short. A search for the contract address returned nothing relevant. A name search found the parent AROS token (Phantom, OKX, a legit-or-scam article, and the aros.help site). aros.help lists no contract address. This token has no socials of its own."
+  },
+  "thesis": "This is an unaffiliated copycat of a mega-trending AROS token. The creator seeded the LP, it is 100% unlocked, and the creator still holds 13%. The buying breadth is striking, but the setup looks like a classic ticker-hijack where the liquidity gets pulled. The chance of a clean 2x before a -50% drop is low, and the rug risk is high.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 55,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://aros.help/",
+    "what": "AROS site: logo only, no contract address or socials"
+   },
+   {
+    "url": "https://www.okx.com/en-us/price/american-reserved-oil-supply-aros",
+    "what": "Parent AROS token priced at a multi-billion market cap"
+   },
+   {
+    "url": "https://www.top1markets.com/insights/crypto/what-is-american-reserved-oil-supply-aros-crypto-legit-or-scam-f28",
+    "what": "Legit-or-scam article on the AROS narrative"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/DVdVsMUC8RyZcWtd6jn7BnyTd7dHEh7k4C5zsM9PCMtd",
+    "what": "Competing AROS contract with the same name"
+   }
+  ]
+ },
+ "ttft_ms": 2209,
+ "type": "result",
+ "duration_ms": 39547,
+ "uuid": "99878fe2-1f95-47a2-9859-2ca43195cb7b",
+ "ttft_stream_ms": 662,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 662,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

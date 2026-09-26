@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 22186,
+ "stop_reason": "tool_use",
+ "session_id": "f9e9466a-4741-46e1-ada4-f54cdaca5ad4",
+ "total_cost_usd": 0.1385036,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 9759,
+  "cache_read_input_tokens": 13668,
+  "output_tokens": 1686,
+  "output_tokens_details": {
+   "thinking_tokens": 76
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9759,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1536,
+    "cache_read_input_tokens": 10904,
+    "cache_creation_input_tokens": 1619,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1619
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 1686,
+   "cacheReadInputTokens": 13668,
+   "cacheCreationInputTokens": 9759,
+   "webSearchRequests": 0,
+   "costUSD": 0.1145416,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 76,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 11512,
+   "outputTokens": 490,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.023961999999999997,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"attention_score\":5,\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"The volume here is normal stablecoin trading and arbitrage on an Orca pool. Nobody is speculating on a meme. The packet shows about 644k to 1.3M holders and no paid promotion.\",\"uncertainty\":\"Low. The token is a USD-pegged stablecoin.\"},\"continuation_view\":\"neutral\",\"counterargument\":\"The only ways it could move are a data or pricing glitch, or a depeg. A depeg would push the price down, not up. The peg is designed so the price cannot reach +100%.\",\"manipulation_risk\":5,\"market_feasibility\":{\"assessment\":\"good\",\"structural_risks\":[\"Stablecoin pegged at $1.00, so a 2x is structurally impossible\",\"The issuer's mint, freeze and permanent-control powers are normal for a regulated stablecoin\",\"The $104k 'market cap' is a data artifact from one small Orca pool; total market liquidity is about $7M\"]},\"narrative\":{\"description\":\"Phantom's USD stablecoin CASH, issued through Bridge/Stripe Open Issuance and launched in late September 2025.\",\"stage\":\"unclear\",\"potential\":\"none\",\"why_spreading\":\"Not a narrative. The 'unusual activity' is ordinary stablecoin flow in one small pool.\"},\"observation_window\":\"6h\",\"p_rug\":1,\"p_runner\":0,\"research_confidence\":\"high\",\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"not_attempted\",\"notes\":\"One news search confirmed this is Phantom's CASH stablecoin (contract listed on Solana Compass). I skipped deeper social research because a pegged stablecoin cannot 2x.\"},\"sources\":[{\"url\":\"https://crypto.news/phantom-launches-new-stablecoin-cash-on-solana/\",\"what\":\"Phantom launches the CASH stablecoin on Solana\"},{\"url\":\"https://solanacompass.com/tokens/CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH\",\"what\":\"Contract matches the CASH stablecoin\"},{\"url\":\"https://thepaypers.com/crypto-web3-and-cbdc/news/phantom-launches-cash-stablecoin-and-new-wallet-system\",\"what\":\"Built with Bridge/Stripe Open Issuance\"}],\"survival_score\":97,\"tail_class\":\"A_dead_or_chop\",\"thesis\":\"This is Phantom's USD-pegged CASH stablecoin, which trades at $1.00. It cannot plausibly reach +100%. The rule caught ordinary stablecoin flow in one small Orca pool. It should rank at the very bottom for p_runner, and rug risk is very low.\",\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"This is the canonical CASH stablecoin from Phantom; the vanity CASHx\u2026CASH contract matches Solana Compass.\",\"competing_tokens\":\"Two dead pump.fun CASH tokens, both irrelevant.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"unknowns\":[\"Why the packet reports a $104k market cap (probably a supply or data quirk)\"],\"what_is_happening\":\"A stablecoin priced at $1.00 triggered the rule because its Orca pool had normal volume. There are no speculative dynamics.\"}",
+ "structured_output": {
+  "attention_score": 5,
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "The volume here is normal stablecoin trading and arbitrage on an Orca pool. Nobody is speculating on a meme. The packet shows about 644k to 1.3M holders and no paid promotion.",
+   "uncertainty": "Low. The token is a USD-pegged stablecoin."
+  },
+  "continuation_view": "neutral",
+  "counterargument": "The only ways it could move are a data or pricing glitch, or a depeg. A depeg would push the price down, not up. The peg is designed so the price cannot reach +100%.",
+  "manipulation_risk": 5,
+  "market_feasibility": {
+   "assessment": "good",
+   "structural_risks": [
+    "Stablecoin pegged at $1.00, so a 2x is structurally impossible",
+    "The issuer's mint, freeze and permanent-control powers are normal for a regulated stablecoin",
+    "The $104k 'market cap' is a data artifact from one small Orca pool; total market liquidity is about $7M"
+   ]
+  },
+  "narrative": {
+   "description": "Phantom's USD stablecoin CASH, issued through Bridge/Stripe Open Issuance and launched in late September 2025.",
+   "stage": "unclear",
+   "potential": "none",
+   "why_spreading": "Not a narrative. The 'unusual activity' is ordinary stablecoin flow in one small pool."
+  },
+  "observation_window": "6h",
+  "p_rug": 1,
+  "p_runner": 0,
+  "research_confidence": "high",
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "not_attempted",
+   "notes": "One news search confirmed this is Phantom's CASH stablecoin (contract listed on Solana Compass). I skipped deeper social research because a pegged stablecoin cannot 2x."
+  },
+  "sources": [
+   {
+    "url": "https://crypto.news/phantom-launches-new-stablecoin-cash-on-solana/",
+    "what": "Phantom launches the CASH stablecoin on Solana"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH",
+    "what": "Contract matches the CASH stablecoin"
+   },
+   {
+    "url": "https://thepaypers.com/crypto-web3-and-cbdc/news/phantom-launches-cash-stablecoin-and-new-wallet-system",
+    "what": "Built with Bridge/Stripe Open Issuance"
+   }
+  ],
+  "survival_score": 97,
+  "tail_class": "A_dead_or_chop",
+  "thesis": "This is Phantom's USD-pegged CASH stablecoin, which trades at $1.00. It cannot plausibly reach +100%. The rule caught ordinary stablecoin flow in one small Orca pool. It should rank at the very bottom for p_runner, and rug risk is very low.",
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "This is the canonical CASH stablecoin from Phantom; the vanity CASHx\u2026CASH contract matches Solana Compass.",
+   "competing_tokens": "Two dead pump.fun CASH tokens, both irrelevant.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "unknowns": [
+   "Why the packet reports a $104k market cap (probably a supply or data quirk)"
+  ],
+  "what_is_happening": "A stablecoin priced at $1.00 triggered the rule because its Orca pool had normal volume. There are no speculative dynamics."
+ },
+ "ttft_ms": 2259,
+ "type": "result",
+ "duration_ms": 22238,
+ "uuid": "25bd3ac5-9fe4-4c50-9ae3-55a86e4d8ca6",
+ "ttft_stream_ms": 651,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 651,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

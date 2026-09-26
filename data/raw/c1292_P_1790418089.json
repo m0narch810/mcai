@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 23335,
+ "stop_reason": "tool_use",
+ "session_id": "4308ce9f-f5b3-4096-b1e3-241ba9103cc5",
+ "total_cost_usd": 0.1072924,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7265,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2437,
+  "output_tokens_details": {
+   "thinking_tokens": 600
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7265,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2437,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7265,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7265
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2437,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7265,
+   "webSearchRequests": 0,
+   "costUSD": 0.1072924,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 600,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 22-minute-old \\\"Super inu\\\" token is trading on a PumpSwap pool. It did not graduate from the pump.fun bonding curve: migrated_unix is 0 and the launchpad and deploy platform are blank or unknown. The creator seems to have set up the pool directly and holds 100% of the unlocked LP, and also owns 15.95% of the supply. The packet lists another \\\"Super Inu\\\" (SI) at about $12M market cap doing about $230k of volume per hour, plus a larger listing with implausible figures. That makes this a late copycat. Volume is about $466k against a $27k market cap, or 12x turnover. Price is +82% over the hour but -22% over 15 minutes, and about 34% below its high. Unique buyers (1,881) far outnumber unique sellers (55). Liquidity ($38k) is larger than market cap, which is unusual.\",\"narrative\":{\"description\":\"This is a copy of the trending Super Inu dog-meme ticker. It has no socials, website, description or DexScreener profile of its own.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"It borrows attention from a larger same-name Super Inu token that is actively trading. Buyers searching the name may end up in this pool by mistake.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is the shared name. Nothing marks this as the canonical Super Inu.\",\"competing_tokens\":\"Super Inu (SI) DEW9... at about $12M market cap with $231k volume per hour. Caa2... shows $3.5B market cap, which is likely bogus or a wrong reading. 8ALH... is dead with $0 liquidity. All of them predate this token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN shows no bundlers, snipers or bot share, and only 16.6% fresh wallets, which looks reasonably clean. But 1,881 unique buyers against 55 unique sellers, 12x turnover, and a creator holding 16% of supply plus all the unlocked LP point to a setup where the creator gains from inflows. GMGN also tags one rat_trader wallet holding 15.95%, which is the creator's own 15.95% stake. There is no paid promotion.\",\"uncertainty\":\"Without chain-level trace data I can't tell whether the buyer breadth comes from real misdirected Super Inu traders or from farmed wallets.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator holds 100% of the LP, unlocked, and can pull liquidity at any time\",\"The creator holds 15.95% of supply, flagged as a rat trader\",\"It is a copycat of an active $12M same-name token\",\"Price is already down 22% over 15 minutes and 34% from its high\",\"No socials or project identity\"]},\"counterargument\":\"Buyer breadth is very strong: nearly 1,900 unique buyers and only 55 sellers in 22 minutes, with no bundlers or snipers. Copycats of a hot ticker sometimes get a second wave as spillover from the main token. A $27k market cap is small enough that one more wave of misdirected buyers could double it. The creator has also shown a best previous token peak of about $237k.\",\"unknowns\":[\"Whether the creator will pull the LP\",\"Why liquidity is larger than market cap\",\"Whether the $12M Super Inu keeps pumping and spills over into this token\",\"Whether the buyer wallets are real\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. This report uses only the evidence packet.\"},\"thesis\":\"This is a copycat of an active Super Inu token. Its pool was created directly, and the creator holds all of the unlocked LP plus 16% of supply. The coin has pumped 82% and is already fading. Rug risk is high and a 2x from here is unlikely. It ranks below the typical coin in the pool.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":55,\"survival_score\":20,\"attention_score\":60,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 22-minute-old \"Super inu\" token is trading on a PumpSwap pool. It did not graduate from the pump.fun bonding curve: migrated_unix is 0 and the launchpad and deploy platform are blank or unknown. The creator seems to have set up the pool directly and holds 100% of the unlocked LP, and also owns 15.95% of the supply. The packet lists another \"Super Inu\" (SI) at about $12M market cap doing about $230k of volume per hour, plus a larger listing with implausible figures. That makes this a late copycat. Volume is about $466k against a $27k market cap, or 12x turnover. Price is +82% over the hour but -22% over 15 minutes, and about 34% below its high. Unique buyers (1,881) far outnumber unique sellers (55). Liquidity ($38k) is larger than market cap, which is unusual.",
+  "narrative": {
+   "description": "This is a copy of the trending Super Inu dog-meme ticker. It has no socials, website, description or DexScreener profile of its own.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "It borrows attention from a larger same-name Super Inu token that is actively trading. Buyers searching the name may end up in this pool by mistake."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is the shared name. Nothing marks this as the canonical Super Inu.",
+   "competing_tokens": "Super Inu (SI) DEW9... at about $12M market cap with $231k volume per hour. Caa2... shows $3.5B market cap, which is likely bogus or a wrong reading. 8ALH... is dead with $0 liquidity. All of them predate this token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN shows no bundlers, snipers or bot share, and only 16.6% fresh wallets, which looks reasonably clean. But 1,881 unique buyers against 55 unique sellers, 12x turnover, and a creator holding 16% of supply plus all the unlocked LP point to a setup where the creator gains from inflows. GMGN also tags one rat_trader wallet holding 15.95%, which is the creator's own 15.95% stake. There is no paid promotion.",
+   "uncertainty": "Without chain-level trace data I can't tell whether the buyer breadth comes from real misdirected Super Inu traders or from farmed wallets."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator holds 100% of the LP, unlocked, and can pull liquidity at any time",
+    "The creator holds 15.95% of supply, flagged as a rat trader",
+    "It is a copycat of an active $12M same-name token",
+    "Price is already down 22% over 15 minutes and 34% from its high",
+    "No socials or project identity"
+   ]
+  },
+  "counterargument": "Buyer breadth is very strong: nearly 1,900 unique buyers and only 55 sellers in 22 minutes, with no bundlers or snipers. Copycats of a hot ticker sometimes get a second wave as spillover from the main token. A $27k market cap is small enough that one more wave of misdirected buyers could double it. The creator has also shown a best previous token peak of about $237k.",
+  "unknowns": [
+   "Whether the creator will pull the LP",
+   "Why liquidity is larger than market cap",
+   "Whether the $12M Super Inu keeps pumping and spills over into this token",
+   "Whether the buyer wallets are real"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. This report uses only the evidence packet."
+  },
+  "thesis": "This is a copycat of an active Super Inu token. Its pool was created directly, and the creator holds all of the unlocked LP plus 16% of supply. The coin has pumped 82% and is already fading. Rug risk is high and a 2x from here is unlikely. It ranks below the typical coin in the pool.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 55,
+  "survival_score": 20,
+  "attention_score": 60,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7130,
+ "type": "result",
+ "duration_ms": 23384,
+ "uuid": "31c45b36-8eb1-4129-a745-eda2ea32b39f",
+ "ttft_stream_ms": 817,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 817,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

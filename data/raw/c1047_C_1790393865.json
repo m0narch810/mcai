@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 50087,
+ "stop_reason": "tool_use",
+ "session_id": "02d3bcc1-d067-44a1-8e9d-5b02b8d8afff",
+ "total_cost_usd": 0.264723,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13923,
+  "cache_read_input_tokens": 29535,
+  "output_tokens": 2937,
+  "output_tokens_details": {
+   "thinking_tokens": 453
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13923,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2359,
+    "cache_read_input_tokens": 15065,
+    "cache_creation_input_tokens": 1622,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1622
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2937,
+   "cacheReadInputTokens": 29535,
+   "cacheCreationInputTokens": 13923,
+   "webSearchRequests": 0,
+   "costUSD": 0.17605500000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 453,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42293,
+   "outputTokens": 1275,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.088668,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"TOGI \\\"Togi Coin\\\" (description: \\\"Se\u00f1or Togi, Fees to @shanestoffer\\\") is a 9-day-old pump.fun coin that has already graduated. Its creator fees are routed to the X account of Shane Stoffer (\\\"TOGI\\\"), a fitness and gambling influencer and Kick streamer with about 98.5k X followers. The coin was dormant, then rose about 2000% in 6 hours, with about $97k of volume in the last hour against an $85k market cap. At detection it was pulling back (-17% over 5 minutes). Since roughly 02:40 UTC, about 8 copycat TOGI tokens have launched. That suggests something Togi-related is happening right now, most likely Togi mentioning or claiming the coin, or a stream. I could not confirm this because X is paywalled to my fetch tool.\",\"narrative\":{\"description\":\"A creator-fee coin tied to a real, well-known streamer and influencer (Togi / Shane Stoffer). He has a history of crypto-pump clips, e.g. 'Togi gets sent $100k in a random coin' and 'togi and tjr pumped a random coin'.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Probably Togi acknowledging the coin or the fees it pays him. The wave of fresh copycat TOGI tickers in the last hour points to a live catalyst, but I found no indexed post to confirm it.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is by far the most liquid and most traded TOGI token ($25.7k liquidity), older than the copycats, and pays its fees to @shanestoffer. GMGN links it to his X account.\",\"competing_tokens\":\"Two older 'The Roaring Bull' TOGI tokens (dead). About 8 fresh copycats launched in the last hour: ShaneStoffer, TOGI COIN, TOGICOIN and others, all under $5k market cap. GMGN also counts 320 tokens launched against the X account, so many fee-to-Togi coins exist.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Real influencer with a real audience. Buyer counts are broad (342 unique buyers in the last hour). GMGN flags 309 bundler wallets and a bot/degen rate of 0.78, plus 35 smart wallets and 4 renowned (KOL) wallets. There are no paid DexScreener boosts.\",\"uncertainty\":\"I could not see X posts, so I cannot confirm whether Togi himself promoted the coin or only rando launchers did.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price is already up 20x in 6 hours and sits near its ATH (about $124k-equivalent). Early buyers are sitting on large gains they may sell.\",\"309 bundler wallets and a high bot share\",\"Two insider transfer networks (9 graph insiders)\",\"The 5-minute trend was turning negative at detection\",\"Copycat tokens are splitting the attention\"]},\"counterargument\":\"If Togi is actively shilling or streaming this coin to 98k+ followers, a creator coin at $85k can easily go to $300k+. The copycat wave shows attention is real and still growing, and LP is burned (lp_burn_ratio 1.0), so a liquidity pull is unlikely.\",\"unknowns\":[\"Whether Togi personally posted about or endorsed this CA\",\"Whether the fees are actually being claimed\",\"How much of the volume is bot volume\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"The X profile returned HTTP 402. A web search on the contract address found nothing. Influencer background came from TikTok, Kick and a bio article. Time-limited.\"},\"thesis\":\"A plausible influencer creator-coin catalyst with a live copycat wave. But the coin has already run 20x, is near its ATH and was fading at the 5-minute mark, and bundler/bot activity is heavy. That is an above-average but not high chance of another 2x.\",\"continuation_view\":\"neutral\",\"p_runner\":16,\"p_rug\":12,\"survival_score\":60,\"attention_score\":68,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/shanestoffer?lang=en\",\"what\":\"Togi's X account (about 98.5k followers, per search snippet)\"},{\"url\":\"https://www.tiktok.com/@chinese.gambler/video/7463811626412657952\",\"what\":\"Clip: Togi and TJR pumped a random coin\"},{\"url\":\"https://www.youtube.com/shorts/ytoz-QB6Pc4\",\"what\":\"Clip: Togi gets sent $100k in a random coin\"},{\"url\":\"https://generationiron.com/togi-shane-stoffer-diet-training-biography/\",\"what\":\"Togi influencer background\"}]}",
+ "structured_output": {
+  "what_is_happening": "TOGI \"Togi Coin\" (description: \"Se\u00f1or Togi, Fees to @shanestoffer\") is a 9-day-old pump.fun coin that has already graduated. Its creator fees are routed to the X account of Shane Stoffer (\"TOGI\"), a fitness and gambling influencer and Kick streamer with about 98.5k X followers. The coin was dormant, then rose about 2000% in 6 hours, with about $97k of volume in the last hour against an $85k market cap. At detection it was pulling back (-17% over 5 minutes). Since roughly 02:40 UTC, about 8 copycat TOGI tokens have launched. That suggests something Togi-related is happening right now, most likely Togi mentioning or claiming the coin, or a stream. I could not confirm this because X is paywalled to my fetch tool.",
+  "narrative": {
+   "description": "A creator-fee coin tied to a real, well-known streamer and influencer (Togi / Shane Stoffer). He has a history of crypto-pump clips, e.g. 'Togi gets sent $100k in a random coin' and 'togi and tjr pumped a random coin'.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Probably Togi acknowledging the coin or the fees it pays him. The wave of fresh copycat TOGI tickers in the last hour points to a live catalyst, but I found no indexed post to confirm it."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is by far the most liquid and most traded TOGI token ($25.7k liquidity), older than the copycats, and pays its fees to @shanestoffer. GMGN links it to his X account.",
+   "competing_tokens": "Two older 'The Roaring Bull' TOGI tokens (dead). About 8 fresh copycats launched in the last hour: ShaneStoffer, TOGI COIN, TOGICOIN and others, all under $5k market cap. GMGN also counts 320 tokens launched against the X account, so many fee-to-Togi coins exist.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Real influencer with a real audience. Buyer counts are broad (342 unique buyers in the last hour). GMGN flags 309 bundler wallets and a bot/degen rate of 0.78, plus 35 smart wallets and 4 renowned (KOL) wallets. There are no paid DexScreener boosts.",
+   "uncertainty": "I could not see X posts, so I cannot confirm whether Togi himself promoted the coin or only rando launchers did."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price is already up 20x in 6 hours and sits near its ATH (about $124k-equivalent). Early buyers are sitting on large gains they may sell.",
+    "309 bundler wallets and a high bot share",
+    "Two insider transfer networks (9 graph insiders)",
+    "The 5-minute trend was turning negative at detection",
+    "Copycat tokens are splitting the attention"
+   ]
+  },
+  "counterargument": "If Togi is actively shilling or streaming this coin to 98k+ followers, a creator coin at $85k can easily go to $300k+. The copycat wave shows attention is real and still growing, and LP is burned (lp_burn_ratio 1.0), so a liquidity pull is unlikely.",
+  "unknowns": [
+   "Whether Togi personally posted about or endorsed this CA",
+   "Whether the fees are actually being claimed",
+   "How much of the volume is bot volume"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "The X profile returned HTTP 402. A web search on the contract address found nothing. Influencer background came from TikTok, Kick and a bio article. Time-limited."
+  },
+  "thesis": "A plausible influencer creator-coin catalyst with a live copycat wave. But the coin has already run 20x, is near its ATH and was fading at the 5-minute mark, and bundler/bot activity is heavy. That is an above-average but not high chance of another 2x.",
+  "continuation_view": "neutral",
+  "p_runner": 16,
+  "p_rug": 12,
+  "survival_score": 60,
+  "attention_score": 68,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/shanestoffer?lang=en",
+    "what": "Togi's X account (about 98.5k followers, per search snippet)"
+   },
+   {
+    "url": "https://www.tiktok.com/@chinese.gambler/video/7463811626412657952",
+    "what": "Clip: Togi and TJR pumped a random coin"
+   },
+   {
+    "url": "https://www.youtube.com/shorts/ytoz-QB6Pc4",
+    "what": "Clip: Togi gets sent $100k in a random coin"
+   },
+   {
+    "url": "https://generationiron.com/togi-shane-stoffer-diet-training-biography/",
+    "what": "Togi influencer background"
+   }
+  ]
+ },
+ "ttft_ms": 1326,
+ "type": "result",
+ "duration_ms": 39633,
+ "uuid": "62660230-0474-4439-bdc4-135d9174b53f",
+ "ttft_stream_ms": 671,
+ "time_to_request_ms": 53,
+ "first_content_frame_ms": 671,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 42971,
+ "stop_reason": "tool_use",
+ "session_id": "e2f32bdf-0b7b-42fd-8d4b-2df5ee85992e",
+ "total_cost_usd": 0.19774579999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11012,
+  "cache_read_input_tokens": 25739,
+  "output_tokens": 2834,
+  "output_tokens_details": {
+   "thinking_tokens": 518
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11012,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2203,
+    "cache_read_input_tokens": 12572,
+    "cache_creation_input_tokens": 1204,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1204
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2834,
+   "cacheReadInputTokens": 25739,
+   "cacheCreationInputTokens": 11012,
+   "webSearchRequests": 0,
+   "costUSD": 0.1499478,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 518,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22208,
+   "outputTokens": 1118,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.047798,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Nasdaq4200 is a pump.fun coin that moved to PumpSwap about 16 minutes before detection. Its creator_unix and migrated_unix timestamps are identical. It recycles an old Ethereum \\\"NASDAQ4200\\\" meme. The linked site nasdaq4200.space is boilerplate and advertises a 1% buy/sell tax and a \\\"$NDQ\\\" ticker. Neither matches a pump.fun token, so the page was probably copied from an ETH-era project. The trading pattern looks like a bot swarm. There were 3,227 unique buyers against 140 sellers in 15 minutes, and the average buy was about $62. The top 10 holders are evenly sized at 0.38\u20130.50% each, with 3,300+ holders already. Despite roughly 10 buys for every sell, GeckoTerminal shows price down 32% over 15 minutes and 13% over the last 5 minutes. A few large sellers are absorbing a flood of tiny buys. That is typical of volume and holder-farming bots, not organic demand.\",\"narrative\":{\"description\":\"Recycled 'Nasdaq 4200' stock-market meme (a Nasdaq index level joke plus 420). It has a prior ETH incarnation. There is no current news catalyst.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"No organic spread found. The activity looks bot-driven: thousands of micro-buys from unique wallets while price falls.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the Solana pump.fun version, linked to the X account @nasdaq4200coin and a recycled website. Older ETH NASDAQ4200 tokens exist and hold the name's history.\",\"competing_tokens\":\"There is a Solana copy (4ayWfh\u2026) with no liquidity, plus multiple older ETH NASDAQ4200 and NDX4200 tokens.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"3,227 unique buyers versus 140 sellers in 15 minutes, an average buy of about $62, and top-10 holders evenly sized at about 0.4\u20130.5% each. Price fell 32% from its high despite the lopsided buy count. GMGN shows only 12 page visits, and there are no smart or renowned wallets. Web searches found no social discussion. The website is recycled from an ETH project (it mentions a 1% tax).\",\"uncertainty\":\"No X data. The Telegram portal was not checked. Unique-buyer counts could partly reflect real retail on a trending feed.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Buy flow looks bot-farmed, and the thin real bid is masked by micro-buys\",\"Price is already down 32% from its high 15 minutes after launch, with persistent large sellers\",\"$27k liquidity against $100k market cap\",\"Recycled narrative and website\"]},\"counterargument\":\"The structure is clean. The LP is burned, the dev holds nothing, holders are widely spread, there are few bundlers and snipers, and a CTO is flagged. If the thousands of buyers are real retail coming from a trending list, this is heavy early demand for a $100k market cap coin. The pullback from its high could be a base before a second leg. Recognisable \\\"Nasdaq\\\" branding could draw stock-meme crossover interest.\",\"unknowns\":[\"What the X account and Telegram show\",\"Whether the micro-buyers are a bot swarm or real users\",\"Who the large sellers are\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Two web searches: one on the contract, ticker and handle, one on $NASDAQ4200 on Solana. They only turned up the old ETH NASDAQ4200 tokens. The project site was fetched and is recycled boilerplate. Time was limited.\"},\"thesis\":\"A recycled meme with bot-farmed-looking buy flow and falling price despite a 10:1 buy-to-sell count. Low odds of a clean 2x before a 50% drop.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":25,\"survival_score\":50,\"attention_score\":40,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://nasdaq4200.space\",\"what\":\"Recycled boilerplate site claiming a 1% tax and the $NDQ ticker, linking to the TG and X accounts\"},{\"url\":\"https://dexscreener.com/ethereum/0x4200c75077123bdd21f5303db16dc8baf7ab5307\",\"what\":\"Older ETH NASDAQ4200 token\"},{\"url\":\"https://ndx4200.com/\",\"what\":\"Older NDX4200 meme project\"}]}",
+ "structured_output": {
+  "what_is_happening": "Nasdaq4200 is a pump.fun coin that moved to PumpSwap about 16 minutes before detection. Its creator_unix and migrated_unix timestamps are identical. It recycles an old Ethereum \"NASDAQ4200\" meme. The linked site nasdaq4200.space is boilerplate and advertises a 1% buy/sell tax and a \"$NDQ\" ticker. Neither matches a pump.fun token, so the page was probably copied from an ETH-era project. The trading pattern looks like a bot swarm. There were 3,227 unique buyers against 140 sellers in 15 minutes, and the average buy was about $62. The top 10 holders are evenly sized at 0.38\u20130.50% each, with 3,300+ holders already. Despite roughly 10 buys for every sell, GeckoTerminal shows price down 32% over 15 minutes and 13% over the last 5 minutes. A few large sellers are absorbing a flood of tiny buys. That is typical of volume and holder-farming bots, not organic demand.",
+  "narrative": {
+   "description": "Recycled 'Nasdaq 4200' stock-market meme (a Nasdaq index level joke plus 420). It has a prior ETH incarnation. There is no current news catalyst.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "No organic spread found. The activity looks bot-driven: thousands of micro-buys from unique wallets while price falls."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the Solana pump.fun version, linked to the X account @nasdaq4200coin and a recycled website. Older ETH NASDAQ4200 tokens exist and hold the name's history.",
+   "competing_tokens": "There is a Solana copy (4ayWfh\u2026) with no liquidity, plus multiple older ETH NASDAQ4200 and NDX4200 tokens.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "3,227 unique buyers versus 140 sellers in 15 minutes, an average buy of about $62, and top-10 holders evenly sized at about 0.4\u20130.5% each. Price fell 32% from its high despite the lopsided buy count. GMGN shows only 12 page visits, and there are no smart or renowned wallets. Web searches found no social discussion. The website is recycled from an ETH project (it mentions a 1% tax).",
+   "uncertainty": "No X data. The Telegram portal was not checked. Unique-buyer counts could partly reflect real retail on a trending feed."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Buy flow looks bot-farmed, and the thin real bid is masked by micro-buys",
+    "Price is already down 32% from its high 15 minutes after launch, with persistent large sellers",
+    "$27k liquidity against $100k market cap",
+    "Recycled narrative and website"
+   ]
+  },
+  "counterargument": "The structure is clean. The LP is burned, the dev holds nothing, holders are widely spread, there are few bundlers and snipers, and a CTO is flagged. If the thousands of buyers are real retail coming from a trending list, this is heavy early demand for a $100k market cap coin. The pullback from its high could be a base before a second leg. Recognisable \"Nasdaq\" branding could draw stock-meme crossover interest.",
+  "unknowns": [
+   "What the X account and Telegram show",
+   "Whether the micro-buyers are a bot swarm or real users",
+   "Who the large sellers are"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Two web searches: one on the contract, ticker and handle, one on $NASDAQ4200 on Solana. They only turned up the old ETH NASDAQ4200 tokens. The project site was fetched and is recycled boilerplate. Time was limited."
+  },
+  "thesis": "A recycled meme with bot-farmed-looking buy flow and falling price despite a 10:1 buy-to-sell count. Low odds of a clean 2x before a 50% drop.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 25,
+  "survival_score": 50,
+  "attention_score": 40,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://nasdaq4200.space",
+    "what": "Recycled boilerplate site claiming a 1% tax and the $NDQ ticker, linking to the TG and X accounts"
+   },
+   {
+    "url": "https://dexscreener.com/ethereum/0x4200c75077123bdd21f5303db16dc8baf7ab5307",
+    "what": "Older ETH NASDAQ4200 token"
+   },
+   {
+    "url": "https://ndx4200.com/",
+    "what": "Older NDX4200 meme project"
+   }
+  ]
+ },
+ "ttft_ms": 3457,
+ "type": "result",
+ "duration_ms": 38460,
+ "uuid": "0e6f4816-e325-4192-b692-6992de71f9d6",
+ "ttft_stream_ms": 685,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 685,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 23461,
+ "stop_reason": "tool_use",
+ "session_id": "076b012c-9619-4136-9993-690927553c0c",
+ "total_cost_usd": 0.1072324,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7365,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2394,
+  "output_tokens_details": {
+   "thinking_tokens": 402
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7365,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2394,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7365,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7365
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2394,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7365,
+   "webSearchRequests": 0,
+   "costUSD": 0.1072324,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 402,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"PAID/\\\"Paid\\\" is a 13-minute-old PumpSwap pool that did not come from a pump.fun bonding curve (launchpad null, migrated_unix 0). The creator seeded it directly with unusually deep liquidity: about $49k LP against a $56k market cap. The LP is 100% unlocked and not burned, and the creator still holds 19% of supply. Price is up about 330% since launch. There are 1,198 unique buyers against only 51 unique sellers, and the last 5 minutes carried about $120-136k of volume. The ticker and name copy two large existing PAID tokens ($93M and $47M market cap). GeckoTerminal links the X handle @UsePaid, which likely belongs to the real project.\",\"narrative\":{\"description\":\"This looks like a ticker/name hijack of an established 'Paid' project, which trades as tokens worth tens of millions. There is no website, no socials of its own and no DexScreener profile. The only story is borrowed from the real project.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Buyers probably confuse it with the real PAID, or scanner bots pick up a fresh pool with deep liquidity and a steep chart. The 1,198 buyers to 51 sellers pattern fits a fast early-buyer wave and sniper/copy bots, not organic discovery.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing links this contract to the real Paid project. It copies the name, the ticker and possibly the X handle metadata.\",\"competing_tokens\":\"PAID 4f3w... at $93M market cap with $3.7M liquidity, and PAID 98kf...pump at $47M market cap with $2.6M liquidity and $563k volume in the last hour. There are also two dead 'Paid' copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"No bundlers, snipers, smart-money or KOL wallets are tagged, the bot/degen rate is 0, and there are no paid boosts. The fresh-wallet rate is about 20%. GMGN puts the top rat-trader share at 19%, which equals the creator's stake. The extreme buyer-to-seller skew (1,198 vs 51) is unusual. It could mean real FOMO plus confused buyers, but it also fits a creator-seeded pool built to draw inflows before the LP is pulled.\",\"uncertainty\":\"There is no X data, so I cannot tell whether the buying comes from people who think this is the real project or from scanner bots.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and not burned, so the creator can remove about $49k of liquidity at any time\",\"The creator holds 19% of supply and can dump it into the pool\",\"The pool was created directly on PumpSwap with no curve, a common setup for LP-pull rugs\",\"Few LP providers\",\"Copycat ticker of large existing tokens\",\"Creator has launched before (2 tokens, best ATH about $330k)\"]},\"counterargument\":\"The liquidity is deep for a $56k coin and volume is strong: turnover is about 7x market cap in 13 minutes, and there are over 1,200 holders with no bundlers or snipers. Traders who mistake it for the real PAID, or who chase the name, could push it to $110k+ quickly; a 2x only needs about $110k market cap. The creator's earlier token reached $330k, so the dev may pump before exiting, and the take-profit could fill before any pull.\",\"unknowns\":[\"Whether @UsePaid endorses this contract or it simply copies the real project's metadata\",\"Whether the creator provided all of the LP\",\"How much of the buying comes from bots or copy-trading\",\"Whether the price holds up by the time we enter at T1+4m after a +60% move in 5 minutes\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. This report uses only the evidence packet.\"},\"thesis\":\"This is a copycat PAID token in a creator-seeded PumpSwap pool. The LP is fully unlocked and the creator holds 19%. That is a textbook LP-pull setup, timed to collect inflows while the ticker gets attention. Demand is real in the short term, but we enter after a +330% move. The most likely outcome is that the creator pulls the LP or dumps, which beats the +100% take-profit. There is a small chance a confusion-driven pump reaches 2x first.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":60,\"survival_score\":18,\"attention_score\":68,\"manipulation_risk\":65,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "PAID/\"Paid\" is a 13-minute-old PumpSwap pool that did not come from a pump.fun bonding curve (launchpad null, migrated_unix 0). The creator seeded it directly with unusually deep liquidity: about $49k LP against a $56k market cap. The LP is 100% unlocked and not burned, and the creator still holds 19% of supply. Price is up about 330% since launch. There are 1,198 unique buyers against only 51 unique sellers, and the last 5 minutes carried about $120-136k of volume. The ticker and name copy two large existing PAID tokens ($93M and $47M market cap). GeckoTerminal links the X handle @UsePaid, which likely belongs to the real project.",
+  "narrative": {
+   "description": "This looks like a ticker/name hijack of an established 'Paid' project, which trades as tokens worth tens of millions. There is no website, no socials of its own and no DexScreener profile. The only story is borrowed from the real project.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Buyers probably confuse it with the real PAID, or scanner bots pick up a fresh pool with deep liquidity and a steep chart. The 1,198 buyers to 51 sellers pattern fits a fast early-buyer wave and sniper/copy bots, not organic discovery."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing links this contract to the real Paid project. It copies the name, the ticker and possibly the X handle metadata.",
+   "competing_tokens": "PAID 4f3w... at $93M market cap with $3.7M liquidity, and PAID 98kf...pump at $47M market cap with $2.6M liquidity and $563k volume in the last hour. There are also two dead 'Paid' copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "No bundlers, snipers, smart-money or KOL wallets are tagged, the bot/degen rate is 0, and there are no paid boosts. The fresh-wallet rate is about 20%. GMGN puts the top rat-trader share at 19%, which equals the creator's stake. The extreme buyer-to-seller skew (1,198 vs 51) is unusual. It could mean real FOMO plus confused buyers, but it also fits a creator-seeded pool built to draw inflows before the LP is pulled.",
+   "uncertainty": "There is no X data, so I cannot tell whether the buying comes from people who think this is the real project or from scanner bots."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and not burned, so the creator can remove about $49k of liquidity at any time",
+    "The creator holds 19% of supply and can dump it into the pool",
+    "The pool was created directly on PumpSwap with no curve, a common setup for LP-pull rugs",
+    "Few LP providers",
+    "Copycat ticker of large existing tokens",
+    "Creator has launched before (2 tokens, best ATH about $330k)"
+   ]
+  },
+  "counterargument": "The liquidity is deep for a $56k coin and volume is strong: turnover is about 7x market cap in 13 minutes, and there are over 1,200 holders with no bundlers or snipers. Traders who mistake it for the real PAID, or who chase the name, could push it to $110k+ quickly; a 2x only needs about $110k market cap. The creator's earlier token reached $330k, so the dev may pump before exiting, and the take-profit could fill before any pull.",
+  "unknowns": [
+   "Whether @UsePaid endorses this contract or it simply copies the real project's metadata",
+   "Whether the creator provided all of the LP",
+   "How much of the buying comes from bots or copy-trading",
+   "Whether the price holds up by the time we enter at T1+4m after a +60% move in 5 minutes"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. This report uses only the evidence packet."
+  },
+  "thesis": "This is a copycat PAID token in a creator-seeded PumpSwap pool. The LP is fully unlocked and the creator holds 19%. That is a textbook LP-pull setup, timed to collect inflows while the ticker gets attention. Demand is real in the short term, but we enter after a +330% move. The most likely outcome is that the creator pulls the LP or dumps, which beats the +100% take-profit. There is a small chance a confusion-driven pump reaches 2x first.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 60,
+  "survival_score": 18,
+  "attention_score": 68,
+  "manipulation_risk": 65,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4905,
+ "type": "result",
+ "duration_ms": 23512,
+ "uuid": "185dfb6a-f8f7-46d5-a5ee-022bf7742d2d",
+ "ttft_stream_ms": 646,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 646,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

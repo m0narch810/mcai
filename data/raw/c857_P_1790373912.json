@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 21605,
+ "stop_reason": "tool_use",
+ "session_id": "9598a193-8c8a-479c-b0f8-54f5eaf794ee",
+ "total_cost_usd": 0.10382040000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7376,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2219,
+  "output_tokens_details": {
+   "thinking_tokens": 267
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7376,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2219,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7376,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7376
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2219,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7376,
+   "webSearchRequests": 0,
+   "costUSD": 0.10382040000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 267,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"GHOSTGUY (\\\"Just a ghost guy\\\") is a copycat pair created directly on PumpSwap about 21 minutes before detection. It did not migrate from pump.fun: migrated_unix is 0, the launchpad is unknown and the address has no pump suffix. The LP is 100% unlocked. About 56 minutes earlier, a pump.fun token with the same name and ticker (EGRv...pump) launched. That one is 4x larger ($88k market cap) and trades about twice the hourly volume. This copy ran +74% in its first hour, reached a high around $33k market cap and is now down about 33% in the last 5 minutes at $20k. Liquidity ($30k) is larger than market cap. The creator wallet has closed, and one non-pool wallet holds 17.4% of supply.\",\"narrative\":{\"description\":\"A 'just a ghost guy' character meme. The attention and the narrative belong to the earlier pump.fun token with the same name. This pair is feeding off that coin's traffic.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The original GHOSTGUY is actively trading (about $487k h1 volume), so buyers searching the ticker land on copies like this one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the same name and ticker, but it launched about 56 minutes after the original, on PumpSwap instead of pump.fun, with unlocked LP. It is a derivative copy, not the canonical token.\",\"competing_tokens\":\"EGRv76STtVdNNwKdyMkQLQquYggcMuToXy92qS9pump is the original: created about 56 minutes earlier, $88k market cap, $487k h1 volume. Several other dead clones exist (FqVB..., 4f3w..., 45JF...).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Breadth looks wide: 1,820 unique buyers against 102 sellers, and GMGN shows no bundlers, snipers or fresh wallets and 0% bot rate. However, the buys-to-sellers skew (about 18:1) together with a -33% move in 5 minutes means a few large wallets are selling into many small buys. That pattern fits a ticker-confusion trap: the creator seeds deep unlocked liquidity and then pulls it. The 17.4% holder is not labeled.\",\"uncertainty\":\"The creator's link to the 17.4% wallet and to the LP-provider wallet is unknown. The many small buyers could be real retail traders confused by the ticker.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked on a directly created PumpSwap pool, so the LP owner can remove it at any time\",\"RugCheck flags few LP providers, which suggests the creator supplied the liquidity\",\"Liquidity is larger than market cap, typical of a seeded rug pool\",\"The creator wallet is closed\",\"A single wallet holds 17.4%\",\"It is a copy of a larger same-ticker token that already dominates\",\"Price is falling hard: -33% in 5 minutes, down from about $33k at its high\"]},\"counterargument\":\"Unique-buyer breadth is real (about 1,800 wallets in 30 minutes), GMGN finds no bundler, sniper or bot activity, and mint and freeze authority are renounced. If the original GHOSTGUY keeps running, spillover buyers could push this copy from $20k back past its $33k high and on to 2x. Deep liquidity relative to market cap also means moves are less violent than on a bonding curve.\",\"unknowns\":[\"Who owns the LP tokens, and whether they are linked to the 17.4% holder\",\"Whether the original GHOSTGUY keeps rising\",\"Whether the X handle GhostguyOnSol belongs to the original token or to this copy\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This condition has no internet access. The report uses only the evidence packet.\"},\"thesis\":\"This is a ticker-hijack copy of a live pump.fun meme. It sits on a creator-seeded PumpSwap pool with 100% unlocked LP and a closed creator wallet, and it is already dumping. The rug risk is high, and a 2x from entry is unlikely while the original coin takes the flow. Rank it low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":55,\"survival_score\":20,\"attention_score\":55,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "GHOSTGUY (\"Just a ghost guy\") is a copycat pair created directly on PumpSwap about 21 minutes before detection. It did not migrate from pump.fun: migrated_unix is 0, the launchpad is unknown and the address has no pump suffix. The LP is 100% unlocked. About 56 minutes earlier, a pump.fun token with the same name and ticker (EGRv...pump) launched. That one is 4x larger ($88k market cap) and trades about twice the hourly volume. This copy ran +74% in its first hour, reached a high around $33k market cap and is now down about 33% in the last 5 minutes at $20k. Liquidity ($30k) is larger than market cap. The creator wallet has closed, and one non-pool wallet holds 17.4% of supply.",
+  "narrative": {
+   "description": "A 'just a ghost guy' character meme. The attention and the narrative belong to the earlier pump.fun token with the same name. This pair is feeding off that coin's traffic.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The original GHOSTGUY is actively trading (about $487k h1 volume), so buyers searching the ticker land on copies like this one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the same name and ticker, but it launched about 56 minutes after the original, on PumpSwap instead of pump.fun, with unlocked LP. It is a derivative copy, not the canonical token.",
+   "competing_tokens": "EGRv76STtVdNNwKdyMkQLQquYggcMuToXy92qS9pump is the original: created about 56 minutes earlier, $88k market cap, $487k h1 volume. Several other dead clones exist (FqVB..., 4f3w..., 45JF...).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Breadth looks wide: 1,820 unique buyers against 102 sellers, and GMGN shows no bundlers, snipers or fresh wallets and 0% bot rate. However, the buys-to-sellers skew (about 18:1) together with a -33% move in 5 minutes means a few large wallets are selling into many small buys. That pattern fits a ticker-confusion trap: the creator seeds deep unlocked liquidity and then pulls it. The 17.4% holder is not labeled.",
+   "uncertainty": "The creator's link to the 17.4% wallet and to the LP-provider wallet is unknown. The many small buyers could be real retail traders confused by the ticker."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked on a directly created PumpSwap pool, so the LP owner can remove it at any time",
+    "RugCheck flags few LP providers, which suggests the creator supplied the liquidity",
+    "Liquidity is larger than market cap, typical of a seeded rug pool",
+    "The creator wallet is closed",
+    "A single wallet holds 17.4%",
+    "It is a copy of a larger same-ticker token that already dominates",
+    "Price is falling hard: -33% in 5 minutes, down from about $33k at its high"
+   ]
+  },
+  "counterargument": "Unique-buyer breadth is real (about 1,800 wallets in 30 minutes), GMGN finds no bundler, sniper or bot activity, and mint and freeze authority are renounced. If the original GHOSTGUY keeps running, spillover buyers could push this copy from $20k back past its $33k high and on to 2x. Deep liquidity relative to market cap also means moves are less violent than on a bonding curve.",
+  "unknowns": [
+   "Who owns the LP tokens, and whether they are linked to the 17.4% holder",
+   "Whether the original GHOSTGUY keeps rising",
+   "Whether the X handle GhostguyOnSol belongs to the original token or to this copy"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This condition has no internet access. The report uses only the evidence packet."
+  },
+  "thesis": "This is a ticker-hijack copy of a live pump.fun meme. It sits on a creator-seeded PumpSwap pool with 100% unlocked LP and a closed creator wallet, and it is already dumping. The rug risk is high, and a 2x from entry is unlikely while the original coin takes the flow. Rank it low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 55,
+  "survival_score": 20,
+  "attention_score": 55,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3831,
+ "type": "result",
+ "duration_ms": 21648,
+ "uuid": "e8618016-f5ff-49c6-807f-da1b56b08a89",
+ "ttft_stream_ms": 772,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 772,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

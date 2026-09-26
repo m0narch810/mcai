@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 33764,
+ "stop_reason": "tool_use",
+ "session_id": "22e3db9c-be91-4a08-8b4f-59738277b3cb",
+ "total_cost_usd": 0.18922640000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11352,
+  "cache_read_input_tokens": 28032,
+  "output_tokens": 2597,
+  "output_tokens_details": {
+   "thinking_tokens": 370
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11352,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2161,
+    "cache_read_input_tokens": 13869,
+    "cache_creation_input_tokens": 247,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 247
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2597,
+   "cacheReadInputTokens": 28032,
+   "cacheCreationInputTokens": 11352,
+   "webSearchRequests": 0,
+   "costUSD": 0.1483864,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 370,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 18445,
+   "outputTokens": 479,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.04084,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Agent.exe\\\" (>_) is an 11-minute-old token created directly as a PumpSwap pool. Its mint address does not end in \\\"pump\\\", and the creator seeded the liquidity, which is 100% unlocked. It sits at $17k market cap with $27.6k liquidity (liquidity is larger than market cap) and did $356k of volume from about 1,539 unique buyers in around 11 minutes. A same-name pump.fun token (92hj...pump) was created about 3 minutes earlier and is already at about $105k market cap. That makes it the likely canonical coin, and this one looks like a copycat or clone that is catching misdirected and bot flow. The only social link is a GeckoTerminal-listed X status from 0xsacramosa, which returned HTTP 402 and could not be read.\",\"narrative\":{\"description\":\"The name fits the AI-agent / terminal ('>_' prompt) meme. The real trigger is probably a tweet (0xsacramosa status) that spawned at least 8 same-name tokens in the last few hours.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"A tweet-driven launch rush. Many same-name clones were deployed within minutes, which is typical of a sniping war over a viral post. I could not verify what the post says.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None beyond the same name and ticker. It is not the earliest or largest version: the pump.fun version 92hj...pump came about 3 minutes earlier and has about 6x the market cap.\",\"competing_tokens\":\"92hjfSi5...pump ($105k mcap, $208k h1 volume, created 3 minutes earlier: the likely canonical), GWFGWq66..., plus about six dead clones including >_cat variants.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"1,539 unique buyers against 108 sellers, 57 GMGN bundler wallets, and no smart-money or KOL wallets. Volume is about 20x market cap in 11 minutes on a coin whose liquidity exceeds its market cap, which suggests bot or wash churn around a creator-seeded pool. No organic discussion was found for the contract.\",\"uncertainty\":\"I could not read the X post. Web search for the contract turned up nothing.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and was seeded by the creator (RugCheck 'danger'), so it can be pulled at any time\",\"The mint was deployed straight to PumpSwap rather than graduating from pump.fun, a classic clone/rug setup\",\"57 bundler wallets\",\"Liquidity is larger than market cap, meaning the pool is heavily seeded and a pull removes most of the value\",\"The canonical same-name token is soaking up the real attention\"]},\"counterargument\":\"1,539 unique buyers in 11 minutes and a buy/sell ratio above 2:1 is real flow. Top-10 holders own only 14%, and mint and freeze authority are renounced. If the canonical token runs, clones sometimes follow it up in sympathy, and from a tiny $17k base a 2x only needs a small amount of spillover.\",\"unknowns\":[\"What the 0xsacramosa X post says and how far it reached\",\"Whether the creator will pull the unlocked LP\",\"Whether the buyer count is inflated by bots\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I was short on time. The contract search returned nothing relevant and the X status link returned HTTP 402. The packet lists no website or socials.\"},\"thesis\":\"A non-canonical clone that launched directly on PumpSwap with creator-controlled, unlocked LP, competing against an earlier same-name pump.fun token that is 6x larger. The volume looks like churn. The rug risk is high and it has little chance of doubling ahead of the canonical coin.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":55,\"survival_score\":20,\"attention_score\":45,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/0xsacramosa/status/2103802039583265267\",\"what\":\"The X post GeckoTerminal lists for this token; returned HTTP 402, content not read\"},{\"url\":\"https://dexscreener.com/solana/HyL9dAsvBzxDGwoKqz5yvgh5ikKM2FpNd5Puw5brtHUc\",\"what\":\"This token's PumpSwap pair (figures taken from the packet)\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"Agent.exe\" (>_) is an 11-minute-old token created directly as a PumpSwap pool. Its mint address does not end in \"pump\", and the creator seeded the liquidity, which is 100% unlocked. It sits at $17k market cap with $27.6k liquidity (liquidity is larger than market cap) and did $356k of volume from about 1,539 unique buyers in around 11 minutes. A same-name pump.fun token (92hj...pump) was created about 3 minutes earlier and is already at about $105k market cap. That makes it the likely canonical coin, and this one looks like a copycat or clone that is catching misdirected and bot flow. The only social link is a GeckoTerminal-listed X status from 0xsacramosa, which returned HTTP 402 and could not be read.",
+  "narrative": {
+   "description": "The name fits the AI-agent / terminal ('>_' prompt) meme. The real trigger is probably a tweet (0xsacramosa status) that spawned at least 8 same-name tokens in the last few hours.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "A tweet-driven launch rush. Many same-name clones were deployed within minutes, which is typical of a sniping war over a viral post. I could not verify what the post says."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None beyond the same name and ticker. It is not the earliest or largest version: the pump.fun version 92hj...pump came about 3 minutes earlier and has about 6x the market cap.",
+   "competing_tokens": "92hjfSi5...pump ($105k mcap, $208k h1 volume, created 3 minutes earlier: the likely canonical), GWFGWq66..., plus about six dead clones including >_cat variants.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "1,539 unique buyers against 108 sellers, 57 GMGN bundler wallets, and no smart-money or KOL wallets. Volume is about 20x market cap in 11 minutes on a coin whose liquidity exceeds its market cap, which suggests bot or wash churn around a creator-seeded pool. No organic discussion was found for the contract.",
+   "uncertainty": "I could not read the X post. Web search for the contract turned up nothing."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and was seeded by the creator (RugCheck 'danger'), so it can be pulled at any time",
+    "The mint was deployed straight to PumpSwap rather than graduating from pump.fun, a classic clone/rug setup",
+    "57 bundler wallets",
+    "Liquidity is larger than market cap, meaning the pool is heavily seeded and a pull removes most of the value",
+    "The canonical same-name token is soaking up the real attention"
+   ]
+  },
+  "counterargument": "1,539 unique buyers in 11 minutes and a buy/sell ratio above 2:1 is real flow. Top-10 holders own only 14%, and mint and freeze authority are renounced. If the canonical token runs, clones sometimes follow it up in sympathy, and from a tiny $17k base a 2x only needs a small amount of spillover.",
+  "unknowns": [
+   "What the 0xsacramosa X post says and how far it reached",
+   "Whether the creator will pull the unlocked LP",
+   "Whether the buyer count is inflated by bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I was short on time. The contract search returned nothing relevant and the X status link returned HTTP 402. The packet lists no website or socials."
+  },
+  "thesis": "A non-canonical clone that launched directly on PumpSwap with creator-controlled, unlocked LP, competing against an earlier same-name pump.fun token that is 6x larger. The volume looks like churn. The rug risk is high and it has little chance of doubling ahead of the canonical coin.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 55,
+  "survival_score": 20,
+  "attention_score": 45,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/0xsacramosa/status/2103802039583265267",
+    "what": "The X post GeckoTerminal lists for this token; returned HTTP 402, content not read"
+   },
+   {
+    "url": "https://dexscreener.com/solana/HyL9dAsvBzxDGwoKqz5yvgh5ikKM2FpNd5Puw5brtHUc",
+    "what": "This token's PumpSwap pair (figures taken from the packet)"
+   }
+  ]
+ },
+ "ttft_ms": 2635,
+ "type": "result",
+ "duration_ms": 29839,
+ "uuid": "3fa5fb09-8ef5-44b3-8a95-5f5b2b4436b8",
+ "ttft_stream_ms": 762,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 762,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

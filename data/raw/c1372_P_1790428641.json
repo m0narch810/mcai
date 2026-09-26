@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 23532,
+ "stop_reason": "tool_use",
+ "session_id": "8c124876-6ac6-44f5-b388-3b8cc892375d",
+ "total_cost_usd": 0.1112324,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7955,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2358,
+  "output_tokens_details": {
+   "thinking_tokens": 435
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7955,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2358,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7955,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7955
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2358,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7955,
+   "webSearchRequests": 0,
+   "costUSD": 0.1112324,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 435,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is 'Agent.exe' (>_), a token whose pool was created directly on PumpSwap. The address has no 'pump' suffix, the launchpad is null and the pool is 11 minutes old. It is trading at a $17k market cap on $27.6k of liquidity. In that time it has done $356k of volume (about 13x its market cap), with 1,539 unique buyers against only 108 unique sellers, and the price is up 64%. A pump.fun token with the same name and ticker (92hj...pump) launched about 3 minutes earlier and is already at $105k market cap. Several other copies are dead at around $3k. This pool's LP is 100% unlocked, few wallets provide liquidity, the creator holds 0% and has closed out ('creator_close'), and GMGN flags 57 bundler wallets.\",\"narrative\":{\"description\":\"An AI-agent / 'agent.exe' terminal meme. The name looks tied to an X post (the GeckoTerminal link points to 0xsacramosa/status/...), so there was probably a tweet-driven launch race with many deployers copying it.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A tweet appears to have set off a sniping race across several same-name deployments. Attention is going to whichever contract traders see as the real one. That looks like the earlier pump.fun version with the higher market cap, not this one.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its only link to the story is the shared name and ticker. It was deployed about 3 minutes after the pump.fun version, straight onto a PumpSwap pool the deployer controls, with no socials or profile.\",\"competing_tokens\":\"92hjfSi5...pump (same name and ticker, $105k market cap, $208k volume in the last hour, launched earlier: likely the canonical one). There are also several dead copies, including GWFG..., 56aF...pump and BuNg...pump.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Volume is about 13x market cap in 11 minutes. Unique buyers outnumber unique sellers about 14:1 (1,539 vs 108), which fits bot or airdrop-style buying spread across many wallets. GMGN counts 57 bundler wallets. The deployer seeded the pool and kept the LP unlocked. There is no smart-money or KOL participation.\",\"uncertainty\":\"Copycat pools sometimes pick up real spillover buyers who confuse them with the original. Some of these buyers may be real people who aped the wrong contract.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and controlled by the deployer, so the liquidity can be pulled at any moment\",\"Few LP providers\",\"The creator has already closed their position\",\"57 bundler wallets\",\"It is a copycat of an earlier contract with more traction\",\"The pool was created off the bonding curve, and the deployer platform is unknown\"]},\"counterargument\":\"Buying is broad (1,500+ unique buyers), holders are spread out (top 10 hold 14%), and there is no dev bag. Momentum is still up +14% over 5 minutes. Spillover from the Agent.exe tweet could push even a copy to 2x from a $17k market cap, which takes only about $17k of net inflow. The creator's earlier token reached a $166k all-time-high market cap.\",\"unknowns\":[\"Whether the deployer will pull the unlocked LP\",\"Which contract, if any, the original tweet author endorses\",\"How much of the buyer count is bot wallets\",\"The content of the linked X post\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses only the evidence packet.\"},\"thesis\":\"This is a later-launched copycat of a tweet-driven Agent.exe token, sitting in a deployer-seeded PumpSwap pool with 100% unlocked LP. The volume looks bot-inflated, and the deployer can pull the liquidity whenever the pool fills. The canonical pump.fun version is already 6x its market cap and will soak up the real attention. It has a high rug probability and a low runner probability.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":58,\"survival_score\":15,\"attention_score\":48,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is 'Agent.exe' (>_), a token whose pool was created directly on PumpSwap. The address has no 'pump' suffix, the launchpad is null and the pool is 11 minutes old. It is trading at a $17k market cap on $27.6k of liquidity. In that time it has done $356k of volume (about 13x its market cap), with 1,539 unique buyers against only 108 unique sellers, and the price is up 64%. A pump.fun token with the same name and ticker (92hj...pump) launched about 3 minutes earlier and is already at $105k market cap. Several other copies are dead at around $3k. This pool's LP is 100% unlocked, few wallets provide liquidity, the creator holds 0% and has closed out ('creator_close'), and GMGN flags 57 bundler wallets.",
+  "narrative": {
+   "description": "An AI-agent / 'agent.exe' terminal meme. The name looks tied to an X post (the GeckoTerminal link points to 0xsacramosa/status/...), so there was probably a tweet-driven launch race with many deployers copying it.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A tweet appears to have set off a sniping race across several same-name deployments. Attention is going to whichever contract traders see as the real one. That looks like the earlier pump.fun version with the higher market cap, not this one."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its only link to the story is the shared name and ticker. It was deployed about 3 minutes after the pump.fun version, straight onto a PumpSwap pool the deployer controls, with no socials or profile.",
+   "competing_tokens": "92hjfSi5...pump (same name and ticker, $105k market cap, $208k volume in the last hour, launched earlier: likely the canonical one). There are also several dead copies, including GWFG..., 56aF...pump and BuNg...pump.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Volume is about 13x market cap in 11 minutes. Unique buyers outnumber unique sellers about 14:1 (1,539 vs 108), which fits bot or airdrop-style buying spread across many wallets. GMGN counts 57 bundler wallets. The deployer seeded the pool and kept the LP unlocked. There is no smart-money or KOL participation.",
+   "uncertainty": "Copycat pools sometimes pick up real spillover buyers who confuse them with the original. Some of these buyers may be real people who aped the wrong contract."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and controlled by the deployer, so the liquidity can be pulled at any moment",
+    "Few LP providers",
+    "The creator has already closed their position",
+    "57 bundler wallets",
+    "It is a copycat of an earlier contract with more traction",
+    "The pool was created off the bonding curve, and the deployer platform is unknown"
+   ]
+  },
+  "counterargument": "Buying is broad (1,500+ unique buyers), holders are spread out (top 10 hold 14%), and there is no dev bag. Momentum is still up +14% over 5 minutes. Spillover from the Agent.exe tweet could push even a copy to 2x from a $17k market cap, which takes only about $17k of net inflow. The creator's earlier token reached a $166k all-time-high market cap.",
+  "unknowns": [
+   "Whether the deployer will pull the unlocked LP",
+   "Which contract, if any, the original tweet author endorses",
+   "How much of the buyer count is bot wallets",
+   "The content of the linked X post"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses only the evidence packet."
+  },
+  "thesis": "This is a later-launched copycat of a tweet-driven Agent.exe token, sitting in a deployer-seeded PumpSwap pool with 100% unlocked LP. The volume looks bot-inflated, and the deployer can pull the liquidity whenever the pool fills. The canonical pump.fun version is already 6x its market cap and will soak up the real attention. It has a high rug probability and a low runner probability.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 58,
+  "survival_score": 15,
+  "attention_score": 48,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": []
+ },
+ "ttft_ms": 5486,
+ "type": "result",
+ "duration_ms": 23581,
+ "uuid": "00564411-fd4b-44e6-a4fa-33a3a2b20485",
+ "ttft_stream_ms": 643,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 643,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

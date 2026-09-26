@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 48462,
+ "stop_reason": "tool_use",
+ "session_id": "3d11c280-60aa-4615-b6da-9b5afd9e01db",
+ "total_cost_usd": 0.2306632,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12519,
+  "cache_read_input_tokens": 28741,
+  "output_tokens": 2847,
+  "output_tokens_details": {
+   "thinking_tokens": 314
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12519,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2354,
+    "cache_read_input_tokens": 13972,
+    "cache_creation_input_tokens": 1311,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1311
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2847,
+   "cacheReadInputTokens": 28741,
+   "cacheCreationInputTokens": 12519,
+   "webSearchRequests": 0,
+   "costUSD": 0.16286420000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 314,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 33639,
+   "outputTokens": 832,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067799,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"AMC \\\"A mini cock\\\" is an 11-minute-old pump.fun coin still on the bonding curve, at about $15.7k market cap. It appears to be one of a burst of \\\"AMC\\\" launches, probably all reacting to the same X post by @RealDesertDoge (the post is linked in the packet but returned 402 when fetched). At least 7 other AMC tokens launched within minutes of each other: pair timestamps 1790394372 to 1790395182, including \\\"A MEME COIN\\\", \\\"A Meme Coin\\\", another \\\"A mini cock\\\" and \\\"cant have pairing + paid\\\". This one is the volume leader, with $85k h1 volume and 580 unique buyers. It already peaked near 2x its launch price (ATH price 3.05e-5) and is now dumping: m5 is -30% on DexScreener and -65% on GeckoTerminal, and in the last 5 minutes unique sellers (227) outnumbered unique buyers (192). The deployer has launched 361 tokens. Fees go to @ceoadam via UsePaid, a fee-routing pattern commonly used in X-bait launches. GMGN tags 151 wallets as bundlers.\",\"narrative\":{\"description\":\"A crude joke name riding a short-lived ticker meta: an X post, probably from @RealDesertDoge, set off many pump.fun deployers racing to launch 'AMC'. The UsePaid fee routing to @ceoadam suggests the aim is to get a named X user to engage.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A copy-launch race on one X post, plus fee-bait aimed at @ceoadam. I could not verify any organic cultural event.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Among the new AMC launches it has the highest market cap and volume, and it carries the socials and link that tie it to the X post. That makes it the de facto leader for now.\",\"competing_tokens\":\"At least 8 other AMC/AMCOCK tokens launched within minutes, 2 of them with the same name ('A mini cock'). There is also an old AMC at $316k with no activity.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"580 unique buyers in about 15 minutes suggests some real degen participation, but GMGN tags 151 wallets as bundlers. The deployer is a serial launcher (361 tokens). A community-takeover flag is set, and the UsePaid fee-bait mechanism is in use.\",\"uncertainty\":\"I could not read the X post, so I could not see its engagement, or whether @ceoadam or DesertDoge endorsed this particular contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"serial deployer with 361 tokens launched\",\"151 wallets tagged as bundlers; a 4-wallet insider transfer network\",\"already down about 50% from ATH, with sellers outnumbering buyers in the latest 5 minutes\",\"many same-ticker clones splitting attention\",\"small bonding-curve depth, so a few dumps move the price a lot\"]},\"counterargument\":\"It leads the ticker race, top-10 holders own only about 13.5%, and dev holdings are zero. If @ceoadam or DesertDoge acknowledges this contract, it could retest the $31k ATH (2x) and head toward migration at around $35k+. That is a short trip for an active meta coin.\",\"unknowns\":[\"Content and engagement of the RealDesertDoge X post\",\"Whether @ceoadam is a real, notable account and has reacted\",\"Real share of the volume coming from bundlers\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The X status returned 402 and usepaid.app failed with an SSL error. Searches for the contract address and the name found nothing relevant. Time was short, so I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"This is a clone-race joke coin from a serial deployer. It already made its 2x and is dumping hard at detection. A narrow chance remains that it retests the ATH if the targeted X accounts engage. It ranks below average.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":35,\"survival_score\":25,\"attention_score\":45,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/RealDesertDoge/status/2103694282041200679\",\"what\":\"Project's linked X post (inaccessible, 402)\"},{\"url\":\"https://x.com/RealDesertDoge/status/2096755079567081953\",\"what\":\"Search showed RealDesertDoge is an active memecoin X account\"},{\"url\":\"https://usepaid.app/token/BVMWcqRKDit6PvmqpaW5LiSJafqZqdyN6E2FCNNh2Ewq\",\"what\":\"Fee-routing site (fetch failed)\"}]}",
+ "structured_output": {
+  "what_is_happening": "AMC \"A mini cock\" is an 11-minute-old pump.fun coin still on the bonding curve, at about $15.7k market cap. It appears to be one of a burst of \"AMC\" launches, probably all reacting to the same X post by @RealDesertDoge (the post is linked in the packet but returned 402 when fetched). At least 7 other AMC tokens launched within minutes of each other: pair timestamps 1790394372 to 1790395182, including \"A MEME COIN\", \"A Meme Coin\", another \"A mini cock\" and \"cant have pairing + paid\". This one is the volume leader, with $85k h1 volume and 580 unique buyers. It already peaked near 2x its launch price (ATH price 3.05e-5) and is now dumping: m5 is -30% on DexScreener and -65% on GeckoTerminal, and in the last 5 minutes unique sellers (227) outnumbered unique buyers (192). The deployer has launched 361 tokens. Fees go to @ceoadam via UsePaid, a fee-routing pattern commonly used in X-bait launches. GMGN tags 151 wallets as bundlers.",
+  "narrative": {
+   "description": "A crude joke name riding a short-lived ticker meta: an X post, probably from @RealDesertDoge, set off many pump.fun deployers racing to launch 'AMC'. The UsePaid fee routing to @ceoadam suggests the aim is to get a named X user to engage.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A copy-launch race on one X post, plus fee-bait aimed at @ceoadam. I could not verify any organic cultural event."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Among the new AMC launches it has the highest market cap and volume, and it carries the socials and link that tie it to the X post. That makes it the de facto leader for now.",
+   "competing_tokens": "At least 8 other AMC/AMCOCK tokens launched within minutes, 2 of them with the same name ('A mini cock'). There is also an old AMC at $316k with no activity.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "580 unique buyers in about 15 minutes suggests some real degen participation, but GMGN tags 151 wallets as bundlers. The deployer is a serial launcher (361 tokens). A community-takeover flag is set, and the UsePaid fee-bait mechanism is in use.",
+   "uncertainty": "I could not read the X post, so I could not see its engagement, or whether @ceoadam or DesertDoge endorsed this particular contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "serial deployer with 361 tokens launched",
+    "151 wallets tagged as bundlers; a 4-wallet insider transfer network",
+    "already down about 50% from ATH, with sellers outnumbering buyers in the latest 5 minutes",
+    "many same-ticker clones splitting attention",
+    "small bonding-curve depth, so a few dumps move the price a lot"
+   ]
+  },
+  "counterargument": "It leads the ticker race, top-10 holders own only about 13.5%, and dev holdings are zero. If @ceoadam or DesertDoge acknowledges this contract, it could retest the $31k ATH (2x) and head toward migration at around $35k+. That is a short trip for an active meta coin.",
+  "unknowns": [
+   "Content and engagement of the RealDesertDoge X post",
+   "Whether @ceoadam is a real, notable account and has reacted",
+   "Real share of the volume coming from bundlers"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The X status returned 402 and usepaid.app failed with an SSL error. Searches for the contract address and the name found nothing relevant. Time was short, so I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "This is a clone-race joke coin from a serial deployer. It already made its 2x and is dumping hard at detection. A narrow chance remains that it retests the ATH if the targeted X accounts engage. It ranks below average.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 35,
+  "survival_score": 25,
+  "attention_score": 45,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/RealDesertDoge/status/2103694282041200679",
+    "what": "Project's linked X post (inaccessible, 402)"
+   },
+   {
+    "url": "https://x.com/RealDesertDoge/status/2096755079567081953",
+    "what": "Search showed RealDesertDoge is an active memecoin X account"
+   },
+   {
+    "url": "https://usepaid.app/token/BVMWcqRKDit6PvmqpaW5LiSJafqZqdyN6E2FCNNh2Ewq",
+    "what": "Fee-routing site (fetch failed)"
+   }
+  ]
+ },
+ "ttft_ms": 1644,
+ "type": "result",
+ "duration_ms": 43747,
+ "uuid": "c6720786-aff1-4b9c-8827-4c245b61578d",
+ "ttft_stream_ms": 1380,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 1380,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

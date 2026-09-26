@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 25303,
+ "stop_reason": "tool_use",
+ "session_id": "4ecc9854-d781-42bd-986c-05093742bcc6",
+ "total_cost_usd": 0.11016039999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7251,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2586,
+  "output_tokens_details": {
+   "thinking_tokens": 482
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7251,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2586,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7251,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7251
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2586,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7251,
+   "webSearchRequests": 0,
+   "costUSD": 0.11016039999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 482,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"bluebirds\\\" (birds) is a pump.fun coin that left the bonding curve about 2 minutes after launch, which is unusually fast and suggests heavy early buying. It is now 33 minutes old on PumpSwap. At detection its market cap was about $100k with $27k of liquidity, about 5.5x h1 turnover and a +100\u2013196% move over the hour. It is about 33% below its $151k all-time high. The dev has sold out ('creator_close'). The data sources disagree sharply. DexScreener reports 4,182 buys against 235 sells in the last 5 minutes. GeckoTerminal reports only 79 buys from 69 unique buyers in the same window, and GeckoTerminal shows more sells than buys over m15 and m30. Holder counts also disagree: 4,401 (RugCheck) vs 693 (GMGN) vs 107 (GeckoTerminal). Together this points to micro-buy bot spam inflating transaction and holder counts. Structure looks clean: mint and freeze authority renounced, LP burned, top10 holders at 15.6%, RugCheck score 1. On the other side, GMGN flags a 53% 'entrapment' trader share, 10 bundlers, 16 snipers and 33 fresh wallets.\",\"narrative\":{\"description\":\"A generic 'blue bird' meme with a vague lore description ('only blue birds do unexpected things'). It could loosely be read as a Twitter/X-bird reference, but the packet does not show that link.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The packet shows no clear external catalyst. The move looks driven by fast bonding-curve buying and bot activity rather than a story. A community-takeover flag and a DexScreener profile update suggest someone is organising it, but there is no sign of organic social spread.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the only 'birds' token with real liquidity or volume. Every same-ticker competitor is dead (market cap under $6k, no volume).\",\"competing_tokens\":\"Angry Birds Memes (old, $5k), Three Birds and Angry Birds (both dead, zero liquidity).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GeckoTerminal shows real participation: 305 unique buyers and 161 sellers in h1. DexScreener's buy count (4,182 in 5 minutes) is about 50x GeckoTerminal's, and RugCheck's 4,401 holders against GeckoTerminal's 107 points to micro-buy or dust bots inflating both metrics. The 53% entrapment-trader share, 10 bundlers, 16 snipers and a 2-minute curve completion all suggest coordinated early buying. No paid boosts or ads are flagged.\",\"uncertainty\":\"I can't see X, so I can't tell whether a real CTO community or a KOL is behind the move. The GMGN entrapment metric is hard to interpret.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Dev has already sold (creator_close)\",\"Micro-buy bots inflating transaction and holder counts\",\"Sells outnumber buys on GeckoTerminal in m15/m30: distribution into the pump\",\"Already 33% below ATH after a 2x hour\",\"High entrapment-trader share and bundlers could dump\",\"A 2x from entry needs about $200k market cap on thin $27k liquidity\"]},\"counterargument\":\"Structure is clean: LP burned, authorities renounced, low top10 concentration, no insider networks. There are 305 real unique buyers in an hour, and a coin that bonds in 2 minutes and holds $100k after a pullback from ATH can make a second leg. A CTO with a website and X account may be organising. At $100k, a 2x to $200k is a common path for coins with this much volume.\",\"unknowns\":[\"Whether X posts or KOL calls are driving the move\",\"Who the entrapment-flagged traders are and when they exit\",\"Whether the bot transaction spam is the team running a volume bot\",\"Where the price will be at entry (+4 minutes) relative to the $151k ATH\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This is a fast-bonded pump.fun meme with clean on-chain structure but weak narrative and signs of manipulation. Transaction and holder counts look bot-inflated, the dev has exited, and sell pressure is rising after a 2x from the ATH. There is real buyer breadth (about 300 unique buyers), so a second leg is possible. The more likely path is chop and a fade from the $100k area. The chance of a 2x before a -50% drop is around the base rate or slightly below.\",\"continuation_view\":\"fade\",\"p_runner\":11,\"p_rug\":18,\"survival_score\":60,\"attention_score\":55,\"manipulation_risk\":68,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"bluebirds\" (birds) is a pump.fun coin that left the bonding curve about 2 minutes after launch, which is unusually fast and suggests heavy early buying. It is now 33 minutes old on PumpSwap. At detection its market cap was about $100k with $27k of liquidity, about 5.5x h1 turnover and a +100\u2013196% move over the hour. It is about 33% below its $151k all-time high. The dev has sold out ('creator_close'). The data sources disagree sharply. DexScreener reports 4,182 buys against 235 sells in the last 5 minutes. GeckoTerminal reports only 79 buys from 69 unique buyers in the same window, and GeckoTerminal shows more sells than buys over m15 and m30. Holder counts also disagree: 4,401 (RugCheck) vs 693 (GMGN) vs 107 (GeckoTerminal). Together this points to micro-buy bot spam inflating transaction and holder counts. Structure looks clean: mint and freeze authority renounced, LP burned, top10 holders at 15.6%, RugCheck score 1. On the other side, GMGN flags a 53% 'entrapment' trader share, 10 bundlers, 16 snipers and 33 fresh wallets.",
+  "narrative": {
+   "description": "A generic 'blue bird' meme with a vague lore description ('only blue birds do unexpected things'). It could loosely be read as a Twitter/X-bird reference, but the packet does not show that link.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The packet shows no clear external catalyst. The move looks driven by fast bonding-curve buying and bot activity rather than a story. A community-takeover flag and a DexScreener profile update suggest someone is organising it, but there is no sign of organic social spread."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the only 'birds' token with real liquidity or volume. Every same-ticker competitor is dead (market cap under $6k, no volume).",
+   "competing_tokens": "Angry Birds Memes (old, $5k), Three Birds and Angry Birds (both dead, zero liquidity).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GeckoTerminal shows real participation: 305 unique buyers and 161 sellers in h1. DexScreener's buy count (4,182 in 5 minutes) is about 50x GeckoTerminal's, and RugCheck's 4,401 holders against GeckoTerminal's 107 points to micro-buy or dust bots inflating both metrics. The 53% entrapment-trader share, 10 bundlers, 16 snipers and a 2-minute curve completion all suggest coordinated early buying. No paid boosts or ads are flagged.",
+   "uncertainty": "I can't see X, so I can't tell whether a real CTO community or a KOL is behind the move. The GMGN entrapment metric is hard to interpret."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Dev has already sold (creator_close)",
+    "Micro-buy bots inflating transaction and holder counts",
+    "Sells outnumber buys on GeckoTerminal in m15/m30: distribution into the pump",
+    "Already 33% below ATH after a 2x hour",
+    "High entrapment-trader share and bundlers could dump",
+    "A 2x from entry needs about $200k market cap on thin $27k liquidity"
+   ]
+  },
+  "counterargument": "Structure is clean: LP burned, authorities renounced, low top10 concentration, no insider networks. There are 305 real unique buyers in an hour, and a coin that bonds in 2 minutes and holds $100k after a pullback from ATH can make a second leg. A CTO with a website and X account may be organising. At $100k, a 2x to $200k is a common path for coins with this much volume.",
+  "unknowns": [
+   "Whether X posts or KOL calls are driving the move",
+   "Who the entrapment-flagged traders are and when they exit",
+   "Whether the bot transaction spam is the team running a volume bot",
+   "Where the price will be at entry (+4 minutes) relative to the $151k ATH"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This is a fast-bonded pump.fun meme with clean on-chain structure but weak narrative and signs of manipulation. Transaction and holder counts look bot-inflated, the dev has exited, and sell pressure is rising after a 2x from the ATH. There is real buyer breadth (about 300 unique buyers), so a second leg is possible. The more likely path is chop and a fade from the $100k area. The chance of a 2x before a -50% drop is around the base rate or slightly below.",
+  "continuation_view": "fade",
+  "p_runner": 11,
+  "p_rug": 18,
+  "survival_score": 60,
+  "attention_score": 55,
+  "manipulation_risk": 68,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5966,
+ "type": "result",
+ "duration_ms": 25346,
+ "uuid": "a0c69ec5-d224-44d2-9fb4-cfdad5e17c9a",
+ "ttft_stream_ms": 985,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 986,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

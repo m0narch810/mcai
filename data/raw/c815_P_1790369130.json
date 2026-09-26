@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 22084,
+ "stop_reason": "tool_use",
+ "session_id": "8b97ab34-93b8-4e98-90e4-a7b635d11901",
+ "total_cost_usd": 0.1105564,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8163,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2241,
+  "output_tokens_details": {
+   "thinking_tokens": 288
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8163,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2241,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8163,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8163
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2241,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8163,
+   "webSearchRequests": 0,
+   "costUSD": 0.1105564,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 288,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Apu\\\" launched 13 minutes before detection on a PumpSwap pool the dev seeded directly. Its address does not end in \\\"pump\\\", no launchpad is listed and the deploy platform is unknown. Its market cap is about $31.7k against about $37k of liquidity, and 100% of the LP is unlocked. It traded about $360k in its first 13 minutes, with 1,952 unique buyers against 71 unique sellers. About 25 minutes earlier, another pump.fun \\\"Apu\\\" (79xB...pump) launched and is now at an $813k market cap with $508k of volume in the last hour. That makes this token a same-name copy riding the leading Apu's run. Several other Apu copies were launched in the same window.\",\"narrative\":{\"description\":\"Apu Apustaja (the Pepe-family meme) is having a fresh run on Solana, led by a pump.fun Apu that is already near $800k. This token is a same-name copy that borrows that story.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The leading Apu token's momentum is spilling over into same-ticker copies. Buyers searching for 'Apu' or bots sniping the name may be sending flow here. There is no evidence of a story unique to this token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It shares only the name and ticker. It has no DexScreener profile and no website. The GeckoTerminal X handle 'TheApuPf' is the only link, and it could just as easily belong to the pump.fun leader.\",\"competing_tokens\":\"79xB7iLg...pump (Apu, $813k market cap, $508k volume in the last hour, launched about 25 minutes earlier) is clearly the leading token. Fresh copies HPQ6...pump and Fqs6...pump plus older APU tokens are also listed.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN counts 38 bundler wallets, and bundlers hold 32% of the top-trader share. Unique buyers outnumber unique sellers 1,952 to 71, which is extreme for a 13-minute-old coin and fits bot or bundle buying, or buyers who are not yet able or willing to sell. No paid boosts or KOL wallets appear. Smart-money wallets are zero, and GMGN shows only 2 page visits. The dev created the pool outside pump.fun and kept the LP fully unlocked.\",\"uncertainty\":\"The flow could partly be real spillover from the leading Apu's buyers. I have no X data.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked, and the dev seeded the PumpSwap pool directly, so the dev can pull liquidity at any time\",\"Liquidity is larger than market cap, which fits a staged pool built to attract buyers\",\"38 bundler wallets, with a 32% bundler share among top traders\",\"Same-name copy of a much larger leading token\",\"Dev's best previous token peaked at only about a $150k market cap\"]},\"counterargument\":\"The leading Apu is running hard. At a $31k market cap this token is 25 times cheaper, and copies sometimes do 2\u20133x on overflow buying. The dev holds about 1.3% and the top-10 holders excluding the pool hold about 21%, which is fairly spread out. Mint and freeze authority are renounced. If the dev doesn't pull the LP, $37k of depth could carry the price to about $60k+ on continued overflow from the leader.\",\"unknowns\":[\"Whether the dev controls the LP tokens and plans to pull them\",\"Whether the X handle TheApuPf belongs to this token or to the leader\",\"Whether the buy count is real users or bundles and bots\",\"How long the leading Apu keeps running\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The analysis uses only the evidence packet.\"},\"thesis\":\"This is a same-name copy of a running pump.fun Apu, on a dev-seeded PumpSwap pool with 100% of the LP unlocked and heavy bundler presence. The volume is large, but the setup matches a copycat liquidity-pull scheme more than a real runner. There is a small chance of a 2x on overflow from the leader, but rug risk dominates. It should rank below a typical coin in the pool.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":52,\"survival_score\":22,\"attention_score\":58,\"manipulation_risk\":74,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Apu\" launched 13 minutes before detection on a PumpSwap pool the dev seeded directly. Its address does not end in \"pump\", no launchpad is listed and the deploy platform is unknown. Its market cap is about $31.7k against about $37k of liquidity, and 100% of the LP is unlocked. It traded about $360k in its first 13 minutes, with 1,952 unique buyers against 71 unique sellers. About 25 minutes earlier, another pump.fun \"Apu\" (79xB...pump) launched and is now at an $813k market cap with $508k of volume in the last hour. That makes this token a same-name copy riding the leading Apu's run. Several other Apu copies were launched in the same window.",
+  "narrative": {
+   "description": "Apu Apustaja (the Pepe-family meme) is having a fresh run on Solana, led by a pump.fun Apu that is already near $800k. This token is a same-name copy that borrows that story.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The leading Apu token's momentum is spilling over into same-ticker copies. Buyers searching for 'Apu' or bots sniping the name may be sending flow here. There is no evidence of a story unique to this token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It shares only the name and ticker. It has no DexScreener profile and no website. The GeckoTerminal X handle 'TheApuPf' is the only link, and it could just as easily belong to the pump.fun leader.",
+   "competing_tokens": "79xB7iLg...pump (Apu, $813k market cap, $508k volume in the last hour, launched about 25 minutes earlier) is clearly the leading token. Fresh copies HPQ6...pump and Fqs6...pump plus older APU tokens are also listed.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN counts 38 bundler wallets, and bundlers hold 32% of the top-trader share. Unique buyers outnumber unique sellers 1,952 to 71, which is extreme for a 13-minute-old coin and fits bot or bundle buying, or buyers who are not yet able or willing to sell. No paid boosts or KOL wallets appear. Smart-money wallets are zero, and GMGN shows only 2 page visits. The dev created the pool outside pump.fun and kept the LP fully unlocked.",
+   "uncertainty": "The flow could partly be real spillover from the leading Apu's buyers. I have no X data."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked, and the dev seeded the PumpSwap pool directly, so the dev can pull liquidity at any time",
+    "Liquidity is larger than market cap, which fits a staged pool built to attract buyers",
+    "38 bundler wallets, with a 32% bundler share among top traders",
+    "Same-name copy of a much larger leading token",
+    "Dev's best previous token peaked at only about a $150k market cap"
+   ]
+  },
+  "counterargument": "The leading Apu is running hard. At a $31k market cap this token is 25 times cheaper, and copies sometimes do 2\u20133x on overflow buying. The dev holds about 1.3% and the top-10 holders excluding the pool hold about 21%, which is fairly spread out. Mint and freeze authority are renounced. If the dev doesn't pull the LP, $37k of depth could carry the price to about $60k+ on continued overflow from the leader.",
+  "unknowns": [
+   "Whether the dev controls the LP tokens and plans to pull them",
+   "Whether the X handle TheApuPf belongs to this token or to the leader",
+   "Whether the buy count is real users or bundles and bots",
+   "How long the leading Apu keeps running"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The analysis uses only the evidence packet."
+  },
+  "thesis": "This is a same-name copy of a running pump.fun Apu, on a dev-seeded PumpSwap pool with 100% of the LP unlocked and heavy bundler presence. The volume is large, but the setup matches a copycat liquidity-pull scheme more than a real runner. There is a small chance of a 2x on overflow from the leader, but rug risk dominates. It should rank below a typical coin in the pool.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 52,
+  "survival_score": 22,
+  "attention_score": 58,
+  "manipulation_risk": 74,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3705,
+ "type": "result",
+ "duration_ms": 22125,
+ "uuid": "df1ee3f2-f3b6-446e-884b-428d0223d32d",
+ "ttft_stream_ms": 796,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 796,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

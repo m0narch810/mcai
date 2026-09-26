@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 31879,
+ "stop_reason": "tool_use",
+ "session_id": "7577fe2f-6316-4629-bbe8-3c9f31e7f220",
+ "total_cost_usd": 0.15977239999999998,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 9949,
+  "cache_read_input_tokens": 25347,
+  "output_tokens": 2410,
+  "output_tokens_details": {
+   "thinking_tokens": 313
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9949,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1812,
+    "cache_read_input_tokens": 12047,
+    "cache_creation_input_tokens": 666,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 666
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2410,
+   "cacheReadInputTokens": 25347,
+   "cacheCreationInputTokens": 9949,
+   "webSearchRequests": 0,
+   "costUSD": 0.1328854,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 313,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 14257,
+   "outputTokens": 526,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.026887,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A same-name copycat of the e/acc memecoin that is already running. The original, CbcyNo..., is at about $20M market cap, was launched about 9.5h earlier and has been covered by news outlets. This clone was created as a direct PumpSwap pool, not through the pump.fun curve. Its liquidity (about $28k) is larger than its market cap (about $17k) and 100% of the LP is unlocked. It traded about $690k in 14 minutes (about 40x its market cap), with 1,691 unique buyers against 102 sellers and 65 wallets GMGN tags as bundlers. That looks like bot or volume-farming activity on a coin that borrows the ticker.\",\"narrative\":{\"description\":\"e/acc (Beff Jezos' effective accelerationism) memecoin: the original went up about 990x in 24h to around $20M+ and was covered by KuCoin, ChainCatcher and Odaily.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The canonical e/acc token's big rally and news coverage are drawing clones. The attention belongs to the original, not to this token.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name and ticker, and it links a beffjezos X post. It was launched about 9.5h after the canonical token, which is already worth $20M.\",\"competing_tokens\":\"CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU ($20.7M mcap, $637k liquidity) is the canonical one. GqmEdRD...pump is a 2024 legacy token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Volume is about 40x market cap within 14 minutes. Unique buyers outnumber unique sellers 1,691 to 102, and GMGN tags 65 wallets as bundlers. The dev has already closed out (creator_close), there is no profile or socials, and 100% of the LP is unlocked with a single LP provider.\",\"uncertainty\":\"The buyer count could partly be real spillover from the original token's fame. Bots that create many small buys can also inflate unique-buyer counts.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked, created directly on PumpSwap, with a single LP provider\",\"Liquidity is larger than market cap, a typical setup for pulling liquidity\",\"It is a ticker-hijack clone of a $20M token\",\"65 bundler wallets\"]},\"counterargument\":\"Clones of a hot ticker sometimes get spillover buying from people who mix up the contracts. At a $17k market cap it only has to reach about $34k to double, and 1,691 buyers in 14 minutes may include real confused buyers.\",\"unknowns\":[\"Whether the LP owner will pull liquidity\",\"How much of the buyer count is bots\",\"The content of the linked X post (fetch returned 402)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"News covers only the canonical e/acc token. The X status fetch returned 402. Time-limited.\"},\"thesis\":\"This is a ticker-hijack clone of a $20M runner. The LP is fully unlocked, the volume looks botted, and there are many bundlers. The most likely outcome is that liquidity gets pulled or the price bleeds out, not a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":60,\"survival_score\":15,\"attention_score\":45,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.kucoin.com/news/flash/solana-meme-coin-e-acc-market-cap-surpasses-1-7m-in-24-hours\",\"what\":\"News on the canonical e/acc token's rally\"},{\"url\":\"https://www.odaily.news/zh-CN/newsflash/520492\",\"what\":\"The canonical e/acc token passed $23M market cap\"},{\"url\":\"https://www.chaincatcher.com/en/article/2292369\",\"what\":\"News on the e/acc memecoin\"}]}",
+ "structured_output": {
+  "what_is_happening": "A same-name copycat of the e/acc memecoin that is already running. The original, CbcyNo..., is at about $20M market cap, was launched about 9.5h earlier and has been covered by news outlets. This clone was created as a direct PumpSwap pool, not through the pump.fun curve. Its liquidity (about $28k) is larger than its market cap (about $17k) and 100% of the LP is unlocked. It traded about $690k in 14 minutes (about 40x its market cap), with 1,691 unique buyers against 102 sellers and 65 wallets GMGN tags as bundlers. That looks like bot or volume-farming activity on a coin that borrows the ticker.",
+  "narrative": {
+   "description": "e/acc (Beff Jezos' effective accelerationism) memecoin: the original went up about 990x in 24h to around $20M+ and was covered by KuCoin, ChainCatcher and Odaily.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The canonical e/acc token's big rally and news coverage are drawing clones. The attention belongs to the original, not to this token."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name and ticker, and it links a beffjezos X post. It was launched about 9.5h after the canonical token, which is already worth $20M.",
+   "competing_tokens": "CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU ($20.7M mcap, $637k liquidity) is the canonical one. GqmEdRD...pump is a 2024 legacy token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Volume is about 40x market cap within 14 minutes. Unique buyers outnumber unique sellers 1,691 to 102, and GMGN tags 65 wallets as bundlers. The dev has already closed out (creator_close), there is no profile or socials, and 100% of the LP is unlocked with a single LP provider.",
+   "uncertainty": "The buyer count could partly be real spillover from the original token's fame. Bots that create many small buys can also inflate unique-buyer counts."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked, created directly on PumpSwap, with a single LP provider",
+    "Liquidity is larger than market cap, a typical setup for pulling liquidity",
+    "It is a ticker-hijack clone of a $20M token",
+    "65 bundler wallets"
+   ]
+  },
+  "counterargument": "Clones of a hot ticker sometimes get spillover buying from people who mix up the contracts. At a $17k market cap it only has to reach about $34k to double, and 1,691 buyers in 14 minutes may include real confused buyers.",
+  "unknowns": [
+   "Whether the LP owner will pull liquidity",
+   "How much of the buyer count is bots",
+   "The content of the linked X post (fetch returned 402)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "News covers only the canonical e/acc token. The X status fetch returned 402. Time-limited."
+  },
+  "thesis": "This is a ticker-hijack clone of a $20M runner. The LP is fully unlocked, the volume looks botted, and there are many bundlers. The most likely outcome is that liquidity gets pulled or the price bleeds out, not a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 45,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.kucoin.com/news/flash/solana-meme-coin-e-acc-market-cap-surpasses-1-7m-in-24-hours",
+    "what": "News on the canonical e/acc token's rally"
+   },
+   {
+    "url": "https://www.odaily.news/zh-CN/newsflash/520492",
+    "what": "The canonical e/acc token passed $23M market cap"
+   },
+   {
+    "url": "https://www.chaincatcher.com/en/article/2292369",
+    "what": "News on the e/acc memecoin"
+   }
+  ]
+ },
+ "ttft_ms": 2093,
+ "type": "result",
+ "duration_ms": 32193,
+ "uuid": "9f95ad38-3bf2-4db0-912d-abf0f75f1bb3",
+ "ttft_stream_ms": 725,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 725,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

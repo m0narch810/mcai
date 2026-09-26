@@ -1,0 +1,183 @@
+{
+ "duration_api_ms": 48993,
+ "stop_reason": "tool_use",
+ "session_id": "0a7d2347-726e-4077-86a4-66fa9a8f7c7f",
+ "total_cost_usd": 0.23735699999999996,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12711,
+  "cache_read_input_tokens": 28405,
+  "output_tokens": 3103,
+  "output_tokens_details": {
+   "thinking_tokens": 650
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12711,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2395,
+    "cache_read_input_tokens": 14292,
+    "cache_creation_input_tokens": 1183,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1183
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3103,
+   "cacheReadInputTokens": 28405,
+   "cacheCreationInputTokens": 12711,
+   "webSearchRequests": 0,
+   "costUSD": 0.169453,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 650,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32304,
+   "outputTokens": 1120,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067904,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"XRENT (3HEj\u2026) is 13 minutes old. It launched on a Meteora virtual curve and migrated instantly to PumpSwap. It is linked to a real, newly live product, xRent (xrent.live, @xRent__). xRent pays X users in tokens for letting it post about tokens launched on its platform. The site shows 134 connected accounts, 92 paid posts and 0 tokens currently paying out. The coin reached about $1M volume in its first ~13 minutes and peaked near $456k mcap (ATH price 0.000456). It then fell to about $175k, down 40% in the last 5 minutes. At least 7 same-name clones exist, including 6jKh\u2026 with $1.6M h1 volume, launched 7 seconds later.\",\"narrative\":{\"description\":\"This is a platform token for xRent, a 'rent your X account for shill posts, get paid in tokens' service. It is a launchpad/utility narrative with a built-in promotion engine: connected accounts post about xRent-launched tokens.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"The product launched with a live site and a counter of connected accounts. The mechanism itself produces paid X posts, so any attention it gets is promotion by design, not organic spread. I found no organic web or Reddit discussion.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"The GMGN metadata for this contract links xrent.live and @xRent__. It has the highest mcap among the same-name tokens. The dev's X account has launched 7 tokens, which fits a team that deploys its own token.\",\"competing_tokens\":\"6jKh\u2026 ($1.6M h1 volume, $49k mcap, launched 7s later), U2Dc\u2026pump ($82k mcap, launched earlier), and several dead pump.fun clones. The site lists no contract address, and X was inaccessible, so I could not confirm which one is canonical.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"1,790 unique buyers but only 104 unique sellers, 72 bundler wallets, and 30 wallets in an insider trade network. There are no smart-money or KOL wallets and no paid DexScreener promos. The product itself is a paid-shill engine.\",\"uncertainty\":\"I could not read X, so I cannot tell whether the official account posted this contract.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Down about 62% from its ATH within minutes, with -40% in the last 5 minutes (a dump is underway)\",\"RugCheck flags 99.99% of LP as unlocked, while GMGN reports lp_burn_ratio 1.0, so the sources conflict\",\"The top holder at 80% is unlabelled, probably the curve/pool vault, but unconfirmed\",\"72 bundler wallets and a 30-wallet insider network\",\"The dev has launched 11 tokens and the creator has closed out ('creator_close')\",\"Heavy clone competition splits the flow\"]},\"counterargument\":\"This is a real product with a working site and an in-built shilling network. If the team confirms this contract and the 134 connected accounts start posting it, a second leg back toward the $456k ATH and beyond (above 2x from $175k) is plausible. Liquidity of about $40k is reasonable for this size.\",\"unknowns\":[\"Whether @xRent__ has posted this contract as the official one\",\"What the 80% top holder is\",\"The actual LP lock status\",\"Whether the dev dumped into the ATH\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"x.com returned HTTP 402. Contract search gave only irrelevant results. The xrent.live site is live but lists no contract address.\"},\"thesis\":\"xRent is a real product with a crypto-native promotion hook, and this contract is plausibly the official token. But it launched into an immediate pump-and-dump: it is down 62% from ATH and falling fast, with heavy bundling, many clones and a serial deployer. Recovering to 2x from entry needs confirmation from the official account, which I could not verify. I rank it slightly above the base rate because the product is real.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":22,\"survival_score\":48,\"attention_score\":62,\"manipulation_risk\":68,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://xrent.live/\",\"what\":\"Project site: X-account rental product, 134 connected accounts, no contract listed\"},{\"url\":\"https://x.com/xRent__\",\"what\":\"Project X account (fetch returned HTTP 402)\"},{\"url\":\"https://x.com/search?q=#xrent&lang=ar\",\"what\":\"Search result only; not relevant crypto evidence\"}]}",
+ "structured_output": {
+  "what_is_happening": "XRENT (3HEj\u2026) is 13 minutes old. It launched on a Meteora virtual curve and migrated instantly to PumpSwap. It is linked to a real, newly live product, xRent (xrent.live, @xRent__). xRent pays X users in tokens for letting it post about tokens launched on its platform. The site shows 134 connected accounts, 92 paid posts and 0 tokens currently paying out. The coin reached about $1M volume in its first ~13 minutes and peaked near $456k mcap (ATH price 0.000456). It then fell to about $175k, down 40% in the last 5 minutes. At least 7 same-name clones exist, including 6jKh\u2026 with $1.6M h1 volume, launched 7 seconds later.",
+  "narrative": {
+   "description": "This is a platform token for xRent, a 'rent your X account for shill posts, get paid in tokens' service. It is a launchpad/utility narrative with a built-in promotion engine: connected accounts post about xRent-launched tokens.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "The product launched with a live site and a counter of connected accounts. The mechanism itself produces paid X posts, so any attention it gets is promotion by design, not organic spread. I found no organic web or Reddit discussion."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "The GMGN metadata for this contract links xrent.live and @xRent__. It has the highest mcap among the same-name tokens. The dev's X account has launched 7 tokens, which fits a team that deploys its own token.",
+   "competing_tokens": "6jKh\u2026 ($1.6M h1 volume, $49k mcap, launched 7s later), U2Dc\u2026pump ($82k mcap, launched earlier), and several dead pump.fun clones. The site lists no contract address, and X was inaccessible, so I could not confirm which one is canonical.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "1,790 unique buyers but only 104 unique sellers, 72 bundler wallets, and 30 wallets in an insider trade network. There are no smart-money or KOL wallets and no paid DexScreener promos. The product itself is a paid-shill engine.",
+   "uncertainty": "I could not read X, so I cannot tell whether the official account posted this contract."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Down about 62% from its ATH within minutes, with -40% in the last 5 minutes (a dump is underway)",
+    "RugCheck flags 99.99% of LP as unlocked, while GMGN reports lp_burn_ratio 1.0, so the sources conflict",
+    "The top holder at 80% is unlabelled, probably the curve/pool vault, but unconfirmed",
+    "72 bundler wallets and a 30-wallet insider network",
+    "The dev has launched 11 tokens and the creator has closed out ('creator_close')",
+    "Heavy clone competition splits the flow"
+   ]
+  },
+  "counterargument": "This is a real product with a working site and an in-built shilling network. If the team confirms this contract and the 134 connected accounts start posting it, a second leg back toward the $456k ATH and beyond (above 2x from $175k) is plausible. Liquidity of about $40k is reasonable for this size.",
+  "unknowns": [
+   "Whether @xRent__ has posted this contract as the official one",
+   "What the 80% top holder is",
+   "The actual LP lock status",
+   "Whether the dev dumped into the ATH"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "x.com returned HTTP 402. Contract search gave only irrelevant results. The xrent.live site is live but lists no contract address."
+  },
+  "thesis": "xRent is a real product with a crypto-native promotion hook, and this contract is plausibly the official token. But it launched into an immediate pump-and-dump: it is down 62% from ATH and falling fast, with heavy bundling, many clones and a serial deployer. Recovering to 2x from entry needs confirmation from the official account, which I could not verify. I rank it slightly above the base rate because the product is real.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 22,
+  "survival_score": 48,
+  "attention_score": 62,
+  "manipulation_risk": 68,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://xrent.live/",
+    "what": "Project site: X-account rental product, 134 connected accounts, no contract listed"
+   },
+   {
+    "url": "https://x.com/xRent__",
+    "what": "Project X account (fetch returned HTTP 402)"
+   },
+   {
+    "url": "https://x.com/search?q=#xrent&lang=ar",
+    "what": "Search result only; not relevant crypto evidence"
+   }
+  ]
+ },
+ "ttft_ms": 3109,
+ "type": "result",
+ "duration_ms": 41840,
+ "uuid": "78f82b28-d2c8-4d39-b1c2-ccc292332879",
+ "ttft_stream_ms": 743,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 743,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

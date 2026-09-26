@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 39630,
+ "stop_reason": "tool_use",
+ "session_id": "e622cf14-8e78-485d-880f-8f2036f55ff3",
+ "total_cost_usd": 0.2187228,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12477,
+  "cache_read_input_tokens": 28894,
+  "output_tokens": 2431,
+  "output_tokens_details": {
+   "thinking_tokens": 304
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12477,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2088,
+    "cache_read_input_tokens": 14178,
+    "cache_creation_input_tokens": 1063,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1063
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2431,
+   "cacheReadInputTokens": 28894,
+   "cacheCreationInputTokens": 12477,
+   "webSearchRequests": 0,
+   "costUSD": 0.1542388,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 304,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30459,
+   "outputTokens": 805,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06448399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 14-minute-old Meteora (non-pump.fun) pool for \\\"Memetically-Engineered product\\\" (m/ep) is getting heavy volume: $637k in the first hour against a ~$24-32k market cap, with price up 131-229%. It is one of at least 10 same-name copies launched within about an hour. The creator wallet holds 49.67% of supply, the LP is 100% unlocked and not burned, and GMGN flags 92 bundler wallets. The only social link is a tweet from CookedSupermann, an X account that posts about memes going viral in order to launch coins on them.\",\"narrative\":{\"description\":\"A self-referential 'memetic engineering' meme coin name, probably sparked by a tweet (CookedSupermann status 2103771937893965880) that I could not read. The name plays on the idea of memetic engineering. I found no real-world event behind it.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"A tweet from a meme-coin narrative account set off a scramble of copycat deploys. Web search shows a pump.fun version at about $78k with +1652%, which is probably the one people actually mean. I found no organic spread beyond that.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is a Meteora pool created later (10:20Z) than the pump.fun versions. It is not a pump address, the creator kept half the supply, and it has no profile or links apart from the tweet link on GeckoTerminal.\",\"competing_tokens\":\"At least 10 same-name tokens. 6mEf...pump (created earliest among the active ones, $347k volume in 1h, $47k mcap) and 9Bro... ($333k volume in 1h) are live competitors. Web search shows a pump.fun m/ep at $78k.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"92 bundler wallets, and the top bundler trader share is 47.6%. The creator holds 49.67% of supply in its own wallet. 1,736 unique buyers but only 99 unique sellers, which fits a pattern of bot or bundle buys. It is a clone deploy with unlocked LP.\",\"uncertainty\":\"The buyer count is large, so some real retail may be getting pulled in by the search for the viral ticker.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator holds 49.67% of supply against ~$36k of liquidity. A dump would crush the price.\",\"LP is 100% unlocked (lp_burn_ratio 0), so the deployer can remove liquidity at any time.\",\"92 bundler wallets\",\"Ticker clone that is not the canonical token; it is competing with several other copies\"]},\"counterargument\":\"Momentum is extreme: +65% in 5 minutes, 486 unique buyers in 5 minutes, and a price near its all-time high. If this pool becomes the most liquid m/ep, a quick 2x from a $32k market cap is mechanically easy before the creator exits.\",\"unknowns\":[\"What the CookedSupermann tweet says, and whether it endorses this contract\",\"Which contract the community treats as the canonical one\",\"The creator's intentions for the 49.67% it holds\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-limited. Searching the contract address found nothing. The name search surfaced only a pump.fun listing for another m/ep. The CookedSupermann search found the account but not the m/ep tweet.\"},\"thesis\":\"A copycat Meteora clone of a ticker that is spreading fast, where the creator kept half the supply, the LP is unlocked and 92 bundlers are present. It is most likely a quick extraction. Momentum is real but short-lived, and rug risk dominates.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":60,\"survival_score\":12,\"attention_score\":55,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://pump.fun/\",\"what\":\"Search snippet showing a pump.fun m/ep at $78.3k market cap, +1652%\"},{\"url\":\"https://x.com/CookedSupermann/status/2044318465616683206\",\"what\":\"CookedSupermann is a viral-meme narrative poster\"},{\"url\":\"https://en.wikipedia.org/wiki/Memetic_engineering\",\"what\":\"Where the name comes from\"}]}",
+ "structured_output": {
+  "what_is_happening": "A 14-minute-old Meteora (non-pump.fun) pool for \"Memetically-Engineered product\" (m/ep) is getting heavy volume: $637k in the first hour against a ~$24-32k market cap, with price up 131-229%. It is one of at least 10 same-name copies launched within about an hour. The creator wallet holds 49.67% of supply, the LP is 100% unlocked and not burned, and GMGN flags 92 bundler wallets. The only social link is a tweet from CookedSupermann, an X account that posts about memes going viral in order to launch coins on them.",
+  "narrative": {
+   "description": "A self-referential 'memetic engineering' meme coin name, probably sparked by a tweet (CookedSupermann status 2103771937893965880) that I could not read. The name plays on the idea of memetic engineering. I found no real-world event behind it.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "A tweet from a meme-coin narrative account set off a scramble of copycat deploys. Web search shows a pump.fun version at about $78k with +1652%, which is probably the one people actually mean. I found no organic spread beyond that."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is a Meteora pool created later (10:20Z) than the pump.fun versions. It is not a pump address, the creator kept half the supply, and it has no profile or links apart from the tweet link on GeckoTerminal.",
+   "competing_tokens": "At least 10 same-name tokens. 6mEf...pump (created earliest among the active ones, $347k volume in 1h, $47k mcap) and 9Bro... ($333k volume in 1h) are live competitors. Web search shows a pump.fun m/ep at $78k.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "92 bundler wallets, and the top bundler trader share is 47.6%. The creator holds 49.67% of supply in its own wallet. 1,736 unique buyers but only 99 unique sellers, which fits a pattern of bot or bundle buys. It is a clone deploy with unlocked LP.",
+   "uncertainty": "The buyer count is large, so some real retail may be getting pulled in by the search for the viral ticker."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator holds 49.67% of supply against ~$36k of liquidity. A dump would crush the price.",
+    "LP is 100% unlocked (lp_burn_ratio 0), so the deployer can remove liquidity at any time.",
+    "92 bundler wallets",
+    "Ticker clone that is not the canonical token; it is competing with several other copies"
+   ]
+  },
+  "counterargument": "Momentum is extreme: +65% in 5 minutes, 486 unique buyers in 5 minutes, and a price near its all-time high. If this pool becomes the most liquid m/ep, a quick 2x from a $32k market cap is mechanically easy before the creator exits.",
+  "unknowns": [
+   "What the CookedSupermann tweet says, and whether it endorses this contract",
+   "Which contract the community treats as the canonical one",
+   "The creator's intentions for the 49.67% it holds"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-limited. Searching the contract address found nothing. The name search surfaced only a pump.fun listing for another m/ep. The CookedSupermann search found the account but not the m/ep tweet."
+  },
+  "thesis": "A copycat Meteora clone of a ticker that is spreading fast, where the creator kept half the supply, the LP is unlocked and 92 bundlers are present. It is most likely a quick extraction. Momentum is real but short-lived, and rug risk dominates.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 60,
+  "survival_score": 12,
+  "attention_score": 55,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://pump.fun/",
+    "what": "Search snippet showing a pump.fun m/ep at $78.3k market cap, +1652%"
+   },
+   {
+    "url": "https://x.com/CookedSupermann/status/2044318465616683206",
+    "what": "CookedSupermann is a viral-meme narrative poster"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Memetic_engineering",
+    "what": "Where the name comes from"
+   }
+  ]
+ },
+ "ttft_ms": 2282,
+ "type": "result",
+ "duration_ms": 34826,
+ "uuid": "c70fdddb-f301-4d8d-b39f-f20244f3f10c",
+ "ttft_stream_ms": 863,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 863,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 27778,
+ "stop_reason": "tool_use",
+ "session_id": "4fdcaa49-3ab6-4e4d-94bb-46e855e38cd7",
+ "total_cost_usd": 0.1238724,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8565,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2746,
+  "output_tokens_details": {
+   "thinking_tokens": 600
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8565,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2746,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8565,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8565
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2746,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8565,
+   "webSearchRequests": 0,
+   "costUSD": 0.1238724,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 600,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named \\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\" (it claims to be the \\\"official first launch\\\" meme of 51\u5403\u74dc\u7f51, a well-known Chinese gossip and leaks site) was created about 32 minutes before detection. It launched straight onto a PumpSwap pool, not through the pump.fun bonding curve (migrated_unix=0, deploy_platform unknown). In that half hour it is up about 490%, to roughly $76k market cap, on $253k volume. Trading is very lopsided: 1,582 unique buyers against only 52 unique sellers, and 1,971 buys against 388 sells. Liquidity is about $57k and 100% of the LP is unlocked. The creator still holds 19% of supply and is flagged as a rat trader (top_rat_trader_pct 0.19). The creator appears to have seeded the pool, since RugCheck warns of few LP providers. At least 10 earlier tokens with the same name and ticker were launched over the past ~22 hours, and every one now has zero liquidity.\",\"narrative\":{\"description\":\"A Chinese-community meme borrowing the name of 51\u5403\u74dc\u7f51 and presenting itself as the site's 'official' token. A GeckoTerminal X handle (gua51x) is listed, but there is no website and no DexScreener profile.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The brand is widely known among Chinese speakers, and the 'official launch' claim draws FOMO buyers. More than 1,500 unique buyers in 30 minutes points to real breadth, probably from Chinese Telegram/WeChat groups. It could also be driven by call channels.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the only same-name token with live liquidity and volume right now. It is the latest of a series of 'official' launches.\",\"competing_tokens\":\"At least 10 tokens with the same name and 51X ticker were created over the past ~22h (e.g. CCwxZZ..., V6rBq..., DUtv1...). All now have about $0 liquidity, so they were probably rugged or LP-pulled.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"On the organic side, 1,582 unique buyers is a lot, bot_degen_rate is 0, fresh wallets are only 0.4%, there are no snipers, and there are no paid DexScreener boosts. On the suspicious side, 11 bundler wallets hold about 9.5% and the creator (19%, rat-trader flag) controls the unlocked LP. Only 52 unique sellers against 1,582 buyers is extreme. That may just mean late FOMO, but it fits a setup where the creator exits by pulling liquidity rather than by selling. The repeated same-name launches that all went to zero point to a serial launch-and-pull operation.\",\"uncertainty\":\"I cannot see the social channels or the funding source. The dead clones could be copycats from other people, and this one could be the one with a real community behind it.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and was likely seeded by the creator, who can remove $57k at any time\",\"The creator holds 19% of supply and carries a rat-trader flag\",\"11 bundler wallets hold about 9.5%\",\"At least 10 same-name predecessors all have zero liquidity, a serial-rug pattern\",\"The token was created directly on PumpSwap without a bonding curve, so no curve protection\",\"Up about 490% in 30 minutes; buyers entering after the 4-minute delay are late\"]},\"counterargument\":\"Buying is broad and appears organic from Chinese-speaking buyers. Sell pressure is almost nil, and momentum is still accelerating (m5 +22%, m5 rate 1.8x the hourly rate). Chinese-brand memes can reach several hundred thousand dollars within hours. Deep liquidity relative to market cap also means smoother moves. If the creator is running a long pump before pulling, or is not planning to rug at all, a 2x to around $150k within 6h is quite possible.\",\"unknowns\":[\"Whether the creator is the LP provider and plans to pull\",\"Whether the dead same-name tokens came from the same deployer\",\"Which Telegram or WeChat communities are driving the buying\",\"Whether the X account gua51x is real or tied to the actual 51\u5403\u74dc\u7f51\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this report uses only the evidence packet.\"},\"thesis\":\"Buying is strong and broad, but the structure has the markings of a serial LP-pull scam: unlocked creator LP, 19% creator holdings, a rat-trader flag, and 10 or more dead same-name clones. There is real upside if the momentum continues, but the chance of a liquidity pull within 6h is high. I rank it slightly above a typical coin in this pool because of its breadth, not high.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":52,\"survival_score\":22,\"attention_score\":74,\"manipulation_risk\":62,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named \"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\" (it claims to be the \"official first launch\" meme of 51\u5403\u74dc\u7f51, a well-known Chinese gossip and leaks site) was created about 32 minutes before detection. It launched straight onto a PumpSwap pool, not through the pump.fun bonding curve (migrated_unix=0, deploy_platform unknown). In that half hour it is up about 490%, to roughly $76k market cap, on $253k volume. Trading is very lopsided: 1,582 unique buyers against only 52 unique sellers, and 1,971 buys against 388 sells. Liquidity is about $57k and 100% of the LP is unlocked. The creator still holds 19% of supply and is flagged as a rat trader (top_rat_trader_pct 0.19). The creator appears to have seeded the pool, since RugCheck warns of few LP providers. At least 10 earlier tokens with the same name and ticker were launched over the past ~22 hours, and every one now has zero liquidity.",
+  "narrative": {
+   "description": "A Chinese-community meme borrowing the name of 51\u5403\u74dc\u7f51 and presenting itself as the site's 'official' token. A GeckoTerminal X handle (gua51x) is listed, but there is no website and no DexScreener profile.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The brand is widely known among Chinese speakers, and the 'official launch' claim draws FOMO buyers. More than 1,500 unique buyers in 30 minutes points to real breadth, probably from Chinese Telegram/WeChat groups. It could also be driven by call channels."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the only same-name token with live liquidity and volume right now. It is the latest of a series of 'official' launches.",
+   "competing_tokens": "At least 10 tokens with the same name and 51X ticker were created over the past ~22h (e.g. CCwxZZ..., V6rBq..., DUtv1...). All now have about $0 liquidity, so they were probably rugged or LP-pulled.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "On the organic side, 1,582 unique buyers is a lot, bot_degen_rate is 0, fresh wallets are only 0.4%, there are no snipers, and there are no paid DexScreener boosts. On the suspicious side, 11 bundler wallets hold about 9.5% and the creator (19%, rat-trader flag) controls the unlocked LP. Only 52 unique sellers against 1,582 buyers is extreme. That may just mean late FOMO, but it fits a setup where the creator exits by pulling liquidity rather than by selling. The repeated same-name launches that all went to zero point to a serial launch-and-pull operation.",
+   "uncertainty": "I cannot see the social channels or the funding source. The dead clones could be copycats from other people, and this one could be the one with a real community behind it."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and was likely seeded by the creator, who can remove $57k at any time",
+    "The creator holds 19% of supply and carries a rat-trader flag",
+    "11 bundler wallets hold about 9.5%",
+    "At least 10 same-name predecessors all have zero liquidity, a serial-rug pattern",
+    "The token was created directly on PumpSwap without a bonding curve, so no curve protection",
+    "Up about 490% in 30 minutes; buyers entering after the 4-minute delay are late"
+   ]
+  },
+  "counterargument": "Buying is broad and appears organic from Chinese-speaking buyers. Sell pressure is almost nil, and momentum is still accelerating (m5 +22%, m5 rate 1.8x the hourly rate). Chinese-brand memes can reach several hundred thousand dollars within hours. Deep liquidity relative to market cap also means smoother moves. If the creator is running a long pump before pulling, or is not planning to rug at all, a 2x to around $150k within 6h is quite possible.",
+  "unknowns": [
+   "Whether the creator is the LP provider and plans to pull",
+   "Whether the dead same-name tokens came from the same deployer",
+   "Which Telegram or WeChat communities are driving the buying",
+   "Whether the X account gua51x is real or tied to the actual 51\u5403\u74dc\u7f51"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this report uses only the evidence packet."
+  },
+  "thesis": "Buying is strong and broad, but the structure has the markings of a serial LP-pull scam: unlocked creator LP, 19% creator holdings, a rat-trader flag, and 10 or more dead same-name clones. There is real upside if the momentum continues, but the chance of a liquidity pull within 6h is high. I rank it slightly above a typical coin in this pool because of its breadth, not high.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 52,
+  "survival_score": 22,
+  "attention_score": 74,
+  "manipulation_risk": 62,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8341,
+ "type": "result",
+ "duration_ms": 27830,
+ "uuid": "cc1a8566-86e7-434f-96a9-3d08ea7fb8b1",
+ "ttft_stream_ms": 1191,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 1192,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

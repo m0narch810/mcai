@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 38200,
+ "stop_reason": "tool_use",
+ "session_id": "99ee180d-8570-49e4-8c2e-d792cb845824",
+ "total_cost_usd": 0.20818,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12205,
+  "cache_read_input_tokens": 28685,
+  "output_tokens": 3060,
+  "output_tokens_details": {
+   "thinking_tokens": 542
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12205,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2419,
+    "cache_read_input_tokens": 13809,
+    "cache_creation_input_tokens": 1160,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1160
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3060,
+   "cacheReadInputTokens": 28685,
+   "cacheCreationInputTokens": 12205,
+   "webSearchRequests": 0,
+   "costUSD": 0.164601,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 542,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20629,
+   "outputTokens": 590,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043579,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"STEVE (SteveWillDoIt) is a 16-minute-old PumpSwap pool that did not come from a bonding curve (migrated_unix=0). The creator seems to have seeded it directly with large liquidity: $197k liquidity against a $129k market cap, 73.7% of supply sits in the pool, and the LP is 100% unlocked. It is one of about 10 copycat tokens riding a SteveWillDoIt moment. That moment looks tied to UsePaid, a new service that pairs a pump.fun token with an X handle and sends fees to that person. The token's own description links to a different token's UsePaid page (3pVv..., STEVEWILLDOIT, about $459k mcap, launched roughly an hour earlier). That makes 3pVv the more likely canonical token and this one a derivative. Flow is dominated by bots: 565 unique buyers but only 53 unique sellers making about 1,060 sells, 50 GMGN bundler wallets (22.5% of top-trader share), and the linked X account has been renamed 4 times.\",\"narrative\":{\"description\":\"SteveWillDoIt, a well-known YouTuber and influencer (he previously had the $HERO token), combined with the new UsePaid 'pair a pump.fun token to an X handle' mechanic launched mid-September 2026. Multiple SteveWillDoIt tokens appeared within the last hour.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A famous name plus a fresh UsePaid meta in which tokens tied to X handles pay fees to the influencer. Several same-name tokens are drawing volume ($800k to $1.3M per hour on rivals).\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its description copies and links the UsePaid page of 3pVv (STEVEWILLDOIT), so it has no UsePaid pairing of its own. It is a derivative that captured volume through its short $STEVE ticker and deep seeded pool.\",\"competing_tokens\":\"3pVv9iav...(STEVEWILLDOIT, $459k mcap, $1.3M 1h volume, earlier, the actual UsePaid token); 53FYaL... (Chinese-named, $506k); 4d6zZ... STEVE; several dead STEVEWILLD clones\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The creator seeded a PumpSwap pool without a bonding curve, and the LP is 100% unlocked. 50 bundler wallets hold 22.5% of top-trader share. 53 unique sellers made about 1,060 sells, which points to wash/bot selling. The X link goes to a 4-times-renamed account (intelligentdog9) and the Telegram link is UsePaid's own channel.\",\"uncertainty\":\"X content could not be fetched (HTTP 402). No organic posts about this specific contract were found.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% unlocked LP from a creator-seeded pool, so the liquidity can be pulled at any time\",\"liquidity larger than market cap suggests an engineered pool\",\"50 bundler wallets\",\"not the canonical token; the real UsePaid Steve token is 3pVv\",\"recycled X account\"]},\"counterargument\":\"SteveWillDoIt is a big name and the UsePaid meta is fresh. The $STEVE ticker is the cleanest one and the pool is deep, so it could become the 'liquid' Steve token, and deep liquidity makes it harder to dump. If Steve himself tweets, every same-name token could pump.\",\"unknowns\":[\"whether SteveWillDoIt has acknowledged any token\",\"the identity of the creator wallet and whether it holds the LP tokens\",\"the content of the X post linked in the metadata\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"searched_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"Time-limited. The x.com fetch returned 402 and usepaid.app failed with an SSL error. Web search found background on UsePaid and on Steve's previous $HERO token only.\"},\"thesis\":\"This is a derivative SteveWillDoIt clone in a creator-seeded PumpSwap pool with 100% unlocked LP and heavy bundler/bot activity. It is not the canonical UsePaid token. The risk of an LP pull is high and the upside is limited by competition from the 3pVv token.\",\"continuation_view\":\"fade\",\"p_runner\":5,\"p_rug\":50,\"survival_score\":22,\"attention_score\":55,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://99bitcoins.com/news/enough-of-cryptos-villains-steve-will-do-it-launches-hero-on-solana-and-last-chance-to-invest-in-this-other-presale/\",\"what\":\"Steve previously launched the $HERO token\"},{\"url\":\"https://x.com/UsePaid\",\"what\":\"The UsePaid service pairs pump.fun tokens with X handles\"},{\"url\":\"https://x.com/intelligentdog9/status/2103670451742351717\",\"what\":\"Linked X post; fetch failed with 402\"}]}",
+ "structured_output": {
+  "what_is_happening": "STEVE (SteveWillDoIt) is a 16-minute-old PumpSwap pool that did not come from a bonding curve (migrated_unix=0). The creator seems to have seeded it directly with large liquidity: $197k liquidity against a $129k market cap, 73.7% of supply sits in the pool, and the LP is 100% unlocked. It is one of about 10 copycat tokens riding a SteveWillDoIt moment. That moment looks tied to UsePaid, a new service that pairs a pump.fun token with an X handle and sends fees to that person. The token's own description links to a different token's UsePaid page (3pVv..., STEVEWILLDOIT, about $459k mcap, launched roughly an hour earlier). That makes 3pVv the more likely canonical token and this one a derivative. Flow is dominated by bots: 565 unique buyers but only 53 unique sellers making about 1,060 sells, 50 GMGN bundler wallets (22.5% of top-trader share), and the linked X account has been renamed 4 times.",
+  "narrative": {
+   "description": "SteveWillDoIt, a well-known YouTuber and influencer (he previously had the $HERO token), combined with the new UsePaid 'pair a pump.fun token to an X handle' mechanic launched mid-September 2026. Multiple SteveWillDoIt tokens appeared within the last hour.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A famous name plus a fresh UsePaid meta in which tokens tied to X handles pay fees to the influencer. Several same-name tokens are drawing volume ($800k to $1.3M per hour on rivals)."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its description copies and links the UsePaid page of 3pVv (STEVEWILLDOIT), so it has no UsePaid pairing of its own. It is a derivative that captured volume through its short $STEVE ticker and deep seeded pool.",
+   "competing_tokens": "3pVv9iav...(STEVEWILLDOIT, $459k mcap, $1.3M 1h volume, earlier, the actual UsePaid token); 53FYaL... (Chinese-named, $506k); 4d6zZ... STEVE; several dead STEVEWILLD clones",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The creator seeded a PumpSwap pool without a bonding curve, and the LP is 100% unlocked. 50 bundler wallets hold 22.5% of top-trader share. 53 unique sellers made about 1,060 sells, which points to wash/bot selling. The X link goes to a 4-times-renamed account (intelligentdog9) and the Telegram link is UsePaid's own channel.",
+   "uncertainty": "X content could not be fetched (HTTP 402). No organic posts about this specific contract were found."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% unlocked LP from a creator-seeded pool, so the liquidity can be pulled at any time",
+    "liquidity larger than market cap suggests an engineered pool",
+    "50 bundler wallets",
+    "not the canonical token; the real UsePaid Steve token is 3pVv",
+    "recycled X account"
+   ]
+  },
+  "counterargument": "SteveWillDoIt is a big name and the UsePaid meta is fresh. The $STEVE ticker is the cleanest one and the pool is deep, so it could become the 'liquid' Steve token, and deep liquidity makes it harder to dump. If Steve himself tweets, every same-name token could pump.",
+  "unknowns": [
+   "whether SteveWillDoIt has acknowledged any token",
+   "the identity of the creator wallet and whether it holds the LP tokens",
+   "the content of the X post linked in the metadata"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "searched_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "Time-limited. The x.com fetch returned 402 and usepaid.app failed with an SSL error. Web search found background on UsePaid and on Steve's previous $HERO token only."
+  },
+  "thesis": "This is a derivative SteveWillDoIt clone in a creator-seeded PumpSwap pool with 100% unlocked LP and heavy bundler/bot activity. It is not the canonical UsePaid token. The risk of an LP pull is high and the upside is limited by competition from the 3pVv token.",
+  "continuation_view": "fade",
+  "p_runner": 5,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 55,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://99bitcoins.com/news/enough-of-cryptos-villains-steve-will-do-it-launches-hero-on-solana-and-last-chance-to-invest-in-this-other-presale/",
+    "what": "Steve previously launched the $HERO token"
+   },
+   {
+    "url": "https://x.com/UsePaid",
+    "what": "The UsePaid service pairs pump.fun tokens with X handles"
+   },
+   {
+    "url": "https://x.com/intelligentdog9/status/2103670451742351717",
+    "what": "Linked X post; fetch failed with 402"
+   }
+  ]
+ },
+ "ttft_ms": 3752,
+ "type": "result",
+ "duration_ms": 37402,
+ "uuid": "703a1231-eff3-45b6-9bcd-ca130400ca7a",
+ "ttft_stream_ms": 741,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 742,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 50487,
+ "stop_reason": "tool_use",
+ "session_id": "f96f3004-048f-4ac1-b3e3-c8418ab6a356",
+ "total_cost_usd": 0.2673024,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13826,
+  "cache_read_input_tokens": 43827,
+  "output_tokens": 2909,
+  "output_tokens_details": {
+   "thinking_tokens": 682
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13826,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2130,
+    "cache_read_input_tokens": 15404,
+    "cache_creation_input_tokens": 1186,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1186
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 2909,
+   "cacheReadInputTokens": 43827,
+   "cacheCreationInputTokens": 13826,
+   "webSearchRequests": 0,
+   "costUSD": 0.1775854,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 682,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 42662,
+   "outputTokens": 1411,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.089717,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Solana copy of 'BREW' was created directly as a PumpSwap pool, not through a pump.fun curve, about 26 minutes before detection. Its metadata borrows the X handle @brewdotfamily. That handle belongs to Brew (brew.family), a BNB Chain launchpad whose real BREW token is on BSC and fell about 51% in the last 24h. In its first 30 minutes the Solana copy logged about 2,061 unique buyers against only 55 sellers, with about $85k of volume, or roughly $36 per buy. By T2 the 5-minute flow had collapsed to 20 buyers. The LP is 100% unlocked, one wallet holds 27.7%, and the creator has already closed its position. At least 9 other same-name BREW copies were deployed on Solana in the past few hours.\",\"narrative\":{\"description\":\"This is a spin-off of brew.family, a BSC launchpad token. The real project lives on BNB Chain, not Solana.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Copycat deployers are farming the BREW name after brew.family's September run. Nothing shows the real project endorsing a Solana token, and the BSC token itself is down about 51% in 24h.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The only link is metadata pointing to @brewdotfamily. brew.family is a BNB Chain product, so this looks like handle hijacking.\",\"competing_tokens\":\"At least 9 other Solana BREW/BREW copies launched in the last hours, including ghost pools showing $22M and $13M mcap with zero volume. There is also Homebrew Robotics Club BREW, and the canonical BREW on BSC.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,061 unique buyers against 55 unique sellers in 30 minutes, at about $36 per buy, points to scripted buying spread across many wallets to fake a holder count. Buying collapsed from 896 buyers in m15 to 20 in m5. GeckoTerminal shows the top 10 holding 99.65%, pool included. There are no smart or renowned wallets and no calls.\",\"uncertainty\":\"GMGN shows a 0% bot/degen rate and few bundlers, so the buyers could be a real bot swarm rather than one operator. I could not see X posts.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The PumpSwap LP is 100% unlocked on a directly created pool, so it can be pulled\",\"One wallet holds 27.7% of supply\",\"The creator closed its position\",\"Many same-name copies split attention\",\"Buyer momentum is already collapsing\"]},\"counterargument\":\"More than 2,000 buyers is a large base for a $31k-mcap coin, and the price is near its ATH. If those buyers are real and the brew.family community treats this as its Solana version, a second leg to $60k+ is cheap to reach.\",\"unknowns\":[\"Whether @brewdotfamily has acknowledged this contract\",\"Who controls the 27.7% wallet and the LP\",\"Whether the buyer swarm is organic\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"A search for the contract returned nothing. The X profile returned a 402 error. brew.family's site and CMC coverage confirm the project is on BSC. Time was limited.\"},\"thesis\":\"This is a ticker and handle hijack of a BSC launchpad token. The pool was created directly with fully unlocked LP, and the buyer swarm looks manufactured and is already fading. The rug risk is high and the runner odds are low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":50,\"survival_score\":22,\"attention_score\":35,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://brew.family/\",\"what\":\"Brew is a BNB Chain launchpad\"},{\"url\":\"https://coinmarketcap.com/currencies/brew/\",\"what\":\"The canonical BREW is on BSC, down about 51% in 24h\"},{\"url\":\"https://x.com/brewdotfamily\",\"what\":\"The project X handle the token's metadata points to (402 error, could not view)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Solana copy of 'BREW' was created directly as a PumpSwap pool, not through a pump.fun curve, about 26 minutes before detection. Its metadata borrows the X handle @brewdotfamily. That handle belongs to Brew (brew.family), a BNB Chain launchpad whose real BREW token is on BSC and fell about 51% in the last 24h. In its first 30 minutes the Solana copy logged about 2,061 unique buyers against only 55 sellers, with about $85k of volume, or roughly $36 per buy. By T2 the 5-minute flow had collapsed to 20 buyers. The LP is 100% unlocked, one wallet holds 27.7%, and the creator has already closed its position. At least 9 other same-name BREW copies were deployed on Solana in the past few hours.",
+  "narrative": {
+   "description": "This is a spin-off of brew.family, a BSC launchpad token. The real project lives on BNB Chain, not Solana.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Copycat deployers are farming the BREW name after brew.family's September run. Nothing shows the real project endorsing a Solana token, and the BSC token itself is down about 51% in 24h."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The only link is metadata pointing to @brewdotfamily. brew.family is a BNB Chain product, so this looks like handle hijacking.",
+   "competing_tokens": "At least 9 other Solana BREW/BREW copies launched in the last hours, including ghost pools showing $22M and $13M mcap with zero volume. There is also Homebrew Robotics Club BREW, and the canonical BREW on BSC.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,061 unique buyers against 55 unique sellers in 30 minutes, at about $36 per buy, points to scripted buying spread across many wallets to fake a holder count. Buying collapsed from 896 buyers in m15 to 20 in m5. GeckoTerminal shows the top 10 holding 99.65%, pool included. There are no smart or renowned wallets and no calls.",
+   "uncertainty": "GMGN shows a 0% bot/degen rate and few bundlers, so the buyers could be a real bot swarm rather than one operator. I could not see X posts."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The PumpSwap LP is 100% unlocked on a directly created pool, so it can be pulled",
+    "One wallet holds 27.7% of supply",
+    "The creator closed its position",
+    "Many same-name copies split attention",
+    "Buyer momentum is already collapsing"
+   ]
+  },
+  "counterargument": "More than 2,000 buyers is a large base for a $31k-mcap coin, and the price is near its ATH. If those buyers are real and the brew.family community treats this as its Solana version, a second leg to $60k+ is cheap to reach.",
+  "unknowns": [
+   "Whether @brewdotfamily has acknowledged this contract",
+   "Who controls the 27.7% wallet and the LP",
+   "Whether the buyer swarm is organic"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "A search for the contract returned nothing. The X profile returned a 402 error. brew.family's site and CMC coverage confirm the project is on BSC. Time was limited."
+  },
+  "thesis": "This is a ticker and handle hijack of a BSC launchpad token. The pool was created directly with fully unlocked LP, and the buyer swarm looks manufactured and is already fading. The rug risk is high and the runner odds are low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 35,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://brew.family/",
+    "what": "Brew is a BNB Chain launchpad"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/brew/",
+    "what": "The canonical BREW is on BSC, down about 51% in 24h"
+   },
+   {
+    "url": "https://x.com/brewdotfamily",
+    "what": "The project X handle the token's metadata points to (402 error, could not view)"
+   }
+  ]
+ },
+ "ttft_ms": 2954,
+ "type": "result",
+ "duration_ms": 45820,
+ "uuid": "e818cf8b-6d73-4935-9527-6f2a1ad516c1",
+ "ttft_stream_ms": 741,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 741,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

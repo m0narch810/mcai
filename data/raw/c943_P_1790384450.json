@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 23086,
+ "stop_reason": "tool_use",
+ "session_id": "26b799c3-a02f-4f30-9685-d148550bfe9a",
+ "total_cost_usd": 0.0991524,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6755,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2234,
+  "output_tokens_details": {
+   "thinking_tokens": 333
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6755,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2234,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6755,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6755
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2234,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6755,
+   "webSearchRequests": 0,
+   "costUSD": 0.0991524,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 333,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"O\\\" (ticker O) launched on a Meteora virtual-curve launchpad and moved to a PumpSwap pair at once (created_unix and migrated_unix are the same). About 11 minutes after launch it went through a very fast opening: $357k of volume against a ~$161k market cap (h1 turnover 9.4x), price +210\u2013240%, 933 unique buyers against 176 unique sellers, and 945 holders. The last 5 minutes are still heavy ($68k\u2013128k volume, buys about 2:1 over sells). Price is chopping just under its all-time high (ATH 2.13e-6 vs 1.66e-6 now, about 22% below). The packet shows no website, no socials, no DexScreener profile and no paid boosts.\",\"narrative\":{\"description\":\"A bare single-letter ticker \\\"O\\\" with no links or description. Single-character tickers sometimes ride a larger meme or brand reference, but nothing in the packet says what this one refers to.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The spread looks driven by trading, not by a story: a burst of launchpad and terminal-bot flow in the first 10 minutes. No narrative catalyst is visible in the packet.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"The packet lists no same-ticker or same-name tokens and no duplicate images, so this looks like the only 'O' getting flow right now.\",\"competing_tokens\":\"None in the packet.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The buyer side is broad: 933 unique buyers against 176 sellers, and GMGN puts the top-10 holder rate at 1.5%, bot/degen share at 2.7% and fresh wallets at 0%. But GMGN also tags 151 bundler wallets (8.75% of top trader share) and 9 snipers. There are no smart-money or KOL wallets and no paid promotion. The 80% RugCheck holder is most likely a curve or pool account, since GMGN's own top-10 figure is tiny.\",\"uncertainty\":\"I can't confirm what the 80.05% holder is. If it is a real wallet and not a pool or curve account, the picture is catastrophic. The 151 bundler tags suggest a coordinated launch that could unwind quickly.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked on one market (lp_locked 0% on one of the top markets), although GMGN reports lp_burn_ratio 1.0\",\"The unidentified 80.05% top holder is probably a pool or curve account, but that is not confirmed\",\"151 bundler wallets could dump together\",\"The creator has already closed out; the dev launched 2 tokens before, the best peaking at a $455k ATH\",\"No socials, so there is little to hold holders after the first flow\"]},\"counterargument\":\"Very early coins with close to 1,000 unique buyers in 15 minutes, a buyer/seller ratio above 5:1, $38k of liquidity, and price holding near its ATH are exactly the profile that goes on to $500k\u20131M+. A 2x from $166k only needs about $330k, below where many active launches peak. On the other side, the 151 bundlers and the absence of any narrative or socials make the more likely path a round-trip after the opening burst.\",\"unknowns\":[\"What the 80.05% top holder account is\",\"Which launchpad or app launched it (bags/believe-style X-linked launches carry some narrative)\",\"What 'O' refers to, if anything\",\"Whether the bundler wallets still hold their supply\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the report uses only the evidence packet.\"},\"thesis\":\"The opening flow is strong and broad (933 buyers, 9x turnover, price near ATH, 2:1 buys in the last 5 minutes), which puts this coin above a typical coin in the pool. Against that: bundlers, no narrative or socials, and a dev who has already exited, which caps the runner odds. It is a moderately above-average candidate for a 2x from about $166k within 6 hours.\",\"continuation_view\":\"neutral\",\"p_runner\":19,\"p_rug\":22,\"survival_score\":45,\"attention_score\":78,\"manipulation_risk\":55,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"O\" (ticker O) launched on a Meteora virtual-curve launchpad and moved to a PumpSwap pair at once (created_unix and migrated_unix are the same). About 11 minutes after launch it went through a very fast opening: $357k of volume against a ~$161k market cap (h1 turnover 9.4x), price +210\u2013240%, 933 unique buyers against 176 unique sellers, and 945 holders. The last 5 minutes are still heavy ($68k\u2013128k volume, buys about 2:1 over sells). Price is chopping just under its all-time high (ATH 2.13e-6 vs 1.66e-6 now, about 22% below). The packet shows no website, no socials, no DexScreener profile and no paid boosts.",
+  "narrative": {
+   "description": "A bare single-letter ticker \"O\" with no links or description. Single-character tickers sometimes ride a larger meme or brand reference, but nothing in the packet says what this one refers to.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The spread looks driven by trading, not by a story: a burst of launchpad and terminal-bot flow in the first 10 minutes. No narrative catalyst is visible in the packet."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "The packet lists no same-ticker or same-name tokens and no duplicate images, so this looks like the only 'O' getting flow right now.",
+   "competing_tokens": "None in the packet.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The buyer side is broad: 933 unique buyers against 176 sellers, and GMGN puts the top-10 holder rate at 1.5%, bot/degen share at 2.7% and fresh wallets at 0%. But GMGN also tags 151 bundler wallets (8.75% of top trader share) and 9 snipers. There are no smart-money or KOL wallets and no paid promotion. The 80% RugCheck holder is most likely a curve or pool account, since GMGN's own top-10 figure is tiny.",
+   "uncertainty": "I can't confirm what the 80.05% holder is. If it is a real wallet and not a pool or curve account, the picture is catastrophic. The 151 bundler tags suggest a coordinated launch that could unwind quickly."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked on one market (lp_locked 0% on one of the top markets), although GMGN reports lp_burn_ratio 1.0",
+    "The unidentified 80.05% top holder is probably a pool or curve account, but that is not confirmed",
+    "151 bundler wallets could dump together",
+    "The creator has already closed out; the dev launched 2 tokens before, the best peaking at a $455k ATH",
+    "No socials, so there is little to hold holders after the first flow"
+   ]
+  },
+  "counterargument": "Very early coins with close to 1,000 unique buyers in 15 minutes, a buyer/seller ratio above 5:1, $38k of liquidity, and price holding near its ATH are exactly the profile that goes on to $500k\u20131M+. A 2x from $166k only needs about $330k, below where many active launches peak. On the other side, the 151 bundlers and the absence of any narrative or socials make the more likely path a round-trip after the opening burst.",
+  "unknowns": [
+   "What the 80.05% top holder account is",
+   "Which launchpad or app launched it (bags/believe-style X-linked launches carry some narrative)",
+   "What 'O' refers to, if anything",
+   "Whether the bundler wallets still hold their supply"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the report uses only the evidence packet."
+  },
+  "thesis": "The opening flow is strong and broad (933 buyers, 9x turnover, price near ATH, 2:1 buys in the last 5 minutes), which puts this coin above a typical coin in the pool. Against that: bundlers, no narrative or socials, and a dev who has already exited, which caps the runner odds. It is a moderately above-average candidate for a 2x from about $166k within 6 hours.",
+  "continuation_view": "neutral",
+  "p_runner": 19,
+  "p_rug": 22,
+  "survival_score": 45,
+  "attention_score": 78,
+  "manipulation_risk": 55,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4673,
+ "type": "result",
+ "duration_ms": 23133,
+ "uuid": "7598324a-5f94-4fec-abfd-51c1187f0067",
+ "ttft_stream_ms": 792,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 792,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

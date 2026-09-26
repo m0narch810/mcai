@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 60402,
+ "stop_reason": "tool_use",
+ "session_id": "f6afdc7a-b358-4c68-81f2-2412222fb4f0",
+ "total_cost_usd": 0.2837764,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14381,
+  "cache_read_input_tokens": 44382,
+  "output_tokens": 4794,
+  "output_tokens_details": {
+   "thinking_tokens": 451
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14381,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1746,
+    "cache_read_input_tokens": 15833,
+    "cache_creation_input_tokens": 1312,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1312
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4794,
+   "cacheReadInputTokens": 44382,
+   "cacheCreationInputTokens": 14381,
+   "webSearchRequests": 0,
+   "costUSD": 0.2198364,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 451,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 28815,
+   "outputTokens": 1025,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06394,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a Meteora pool, about 11 minutes old, for a new copy of the recycled \\\"Mysterious Source of Income\\\" ($INCOME) meme. It was launched at almost the same time as several other INCOME copies, and it won the volume race: about $900k traded, price up roughly 5x, about 1800 holders. The pool's LP is 100% unlocked, and bundler activity is heavy.\",\"narrative\":{\"description\":\"\\\"Unemployed with a mysterious source of income\\\" is an old meme that has been launched as a token many times. A new wave of copies appeared within minutes of each other.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Probably a fresh post on X set off the wave. GeckoTerminal links a deltasociety X post, but I could not read it (the page returned 402). Traders are racing between the same-minute copies.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It won the volume race among the copies launched in the same minutes. It has no socials or website of its own.\",\"competing_tokens\":\"The older 9PSx INCOME has $67k liquidity and a $150k market cap. At least 4 other INCOME copies were launched within minutes of this one, and many older versions exist.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Several copies were launched within about 12 minutes of each other, which points to an outside trigger. The wallet data looks manufactured: GMGN counts 58 bundler wallets, bundlers hold 55% of top-trader volume, and bots/degens make up 52% of traders. The unique-buyer vs unique-seller split is extreme: 1777 buyers against 72 sellers.\",\"uncertainty\":\"I could not confirm the trigger post, and some of the buying is probably from real people.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The Meteora pool's LP is 100% unlocked, and the token did not launch on a launchpad\",\"The creator has closed out and holds 0%; the LP can be pulled at any time\",\"GMGN flags 58 bundler wallets, and bundlers hold 55% of top-trader volume\",\"The price is already up about 5x in 11 minutes\",\"An older canonical INCOME token has more liquidity\"]},\"counterargument\":\"This coin clearly won the race among the same-minute clones: about $900k of volume on a $55k market cap, roughly 1800 holders, and a top-10 share near 28%. If a large account posted the trigger, the winning copy can reach $150k-300k, which is 2x or more from entry.\",\"unknowns\":[\"What the trigger post said and who posted it\",\"Who owns the LP\",\"Whether the buyers are real people or bot-driven\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The linked X post returned 402. A search for the contract address found nothing. Searches for the meme found only older versions of the token.\"},\"thesis\":\"A recycled meme, in a clone race, on a pool whose LP is fully unlocked and whose wallets are heavily bundled. The attention is real but short-lived, and the chance of a rug is high. It has a small chance to run if the trigger was a big account.\",\"continuation_view\":\"fade\",\"p_runner\":12,\"p_rug\":45,\"survival_score\":28,\"attention_score\":62,\"manipulation_risk\":70,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/deltasociety/status/2103654081579360761\",\"what\":\"X post linked by GeckoTerminal; returned 402, not readable\"},{\"url\":\"https://www.bittime.com/en/blog/apa-itu-mysterious-source-of-income-income\",\"what\":\"Background on the recycled meme and its earlier tokens\"},{\"url\":\"https://x.com/MystIncome/status/2076151754190664146\",\"what\":\"Older X account for an earlier INCOME token\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is a Meteora pool, about 11 minutes old, for a new copy of the recycled \"Mysterious Source of Income\" ($INCOME) meme. It was launched at almost the same time as several other INCOME copies, and it won the volume race: about $900k traded, price up roughly 5x, about 1800 holders. The pool's LP is 100% unlocked, and bundler activity is heavy.",
+  "narrative": {
+   "description": "\"Unemployed with a mysterious source of income\" is an old meme that has been launched as a token many times. A new wave of copies appeared within minutes of each other.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Probably a fresh post on X set off the wave. GeckoTerminal links a deltasociety X post, but I could not read it (the page returned 402). Traders are racing between the same-minute copies."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It won the volume race among the copies launched in the same minutes. It has no socials or website of its own.",
+   "competing_tokens": "The older 9PSx INCOME has $67k liquidity and a $150k market cap. At least 4 other INCOME copies were launched within minutes of this one, and many older versions exist.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Several copies were launched within about 12 minutes of each other, which points to an outside trigger. The wallet data looks manufactured: GMGN counts 58 bundler wallets, bundlers hold 55% of top-trader volume, and bots/degens make up 52% of traders. The unique-buyer vs unique-seller split is extreme: 1777 buyers against 72 sellers.",
+   "uncertainty": "I could not confirm the trigger post, and some of the buying is probably from real people."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The Meteora pool's LP is 100% unlocked, and the token did not launch on a launchpad",
+    "The creator has closed out and holds 0%; the LP can be pulled at any time",
+    "GMGN flags 58 bundler wallets, and bundlers hold 55% of top-trader volume",
+    "The price is already up about 5x in 11 minutes",
+    "An older canonical INCOME token has more liquidity"
+   ]
+  },
+  "counterargument": "This coin clearly won the race among the same-minute clones: about $900k of volume on a $55k market cap, roughly 1800 holders, and a top-10 share near 28%. If a large account posted the trigger, the winning copy can reach $150k-300k, which is 2x or more from entry.",
+  "unknowns": [
+   "What the trigger post said and who posted it",
+   "Who owns the LP",
+   "Whether the buyers are real people or bot-driven"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The linked X post returned 402. A search for the contract address found nothing. Searches for the meme found only older versions of the token."
+  },
+  "thesis": "A recycled meme, in a clone race, on a pool whose LP is fully unlocked and whose wallets are heavily bundled. The attention is real but short-lived, and the chance of a rug is high. It has a small chance to run if the trigger was a big account.",
+  "continuation_view": "fade",
+  "p_runner": 12,
+  "p_rug": 45,
+  "survival_score": 28,
+  "attention_score": 62,
+  "manipulation_risk": 70,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/deltasociety/status/2103654081579360761",
+    "what": "X post linked by GeckoTerminal; returned 402, not readable"
+   },
+   {
+    "url": "https://www.bittime.com/en/blog/apa-itu-mysterious-source-of-income-income",
+    "what": "Background on the recycled meme and its earlier tokens"
+   },
+   {
+    "url": "https://x.com/MystIncome/status/2076151754190664146",
+    "what": "Older X account for an earlier INCOME token"
+   }
+  ]
+ },
+ "ttft_ms": 1529,
+ "type": "result",
+ "duration_ms": 54529,
+ "uuid": "13f29b99-7826-4bbc-9b23-69011aa38014",
+ "ttft_stream_ms": 855,
+ "time_to_request_ms": 54,
+ "first_content_frame_ms": 855,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

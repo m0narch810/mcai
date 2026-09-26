@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 43863,
+ "stop_reason": "tool_use",
+ "session_id": "c01d9d17-2eb0-42cc-b2a1-112d614fafb9",
+ "total_cost_usd": 0.22630799999999998,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12690,
+  "cache_read_input_tokens": 28700,
+  "output_tokens": 2704,
+  "output_tokens_details": {
+   "thinking_tokens": 566
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12690,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2106,
+    "cache_read_input_tokens": 14312,
+    "cache_creation_input_tokens": 1142,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1142
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2704,
+   "cacheReadInputTokens": 28700,
+   "cacheCreationInputTokens": 12690,
+   "webSearchRequests": 0,
+   "costUSD": 0.16136399999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 566,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 29734,
+   "outputTokens": 1042,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.064944,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BREW (7Hrk\u2026m9j) looks like a Solana copy riding on Brew (brew.family), a real BNB Chain launchpad with its own BREW token. The real token's price was reported down 44% over the past 24h. This pair was created about 22 minutes ago as a direct PumpSwap pool, not a pump.fun migration (migrated_unix=0, platform unknown). Its liquidity (~$24k) is larger than its market cap (~$13k), 100% of the LP is unlocked, and the creator has already closed its position. The pair shows $272k of volume, with 1,926 unique buyers against only 54 unique sellers. That lopsided ratio suggests bot or dust-buy volume rather than organic demand. Price is down 7\u201317% over the last 5 minutes. At least 9 other Solana 'BREW' tokens appeared in the last few hours. One of them (4w2N\u2026) already has $0 liquidity, and another (D7UU\u2026) has taken most of the flow at about $121k market cap.\",\"narrative\":{\"description\":\"Borrowed story: Brew/brew.family is a BNB Chain launchpad whose X account (@brewdotfamily, 11.7K followers, joined Sep 2026) is embedded in this token's GeckoTerminal metadata. I found nothing tying the real project to Solana.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Brew being talked about on BSC drives ticker-copy launches on Solana, and many clones are competing for the same name.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"No reason stands out. It has the ticker and a borrowed X handle, but the real project lives on BNB Chain.\",\"competing_tokens\":\"There are 9+ Solana BREW clones from today. D7UU\u2026 is at ~$121k market cap with $523k h1 volume. 4w2N\u2026 has already dropped to $0 liquidity. There are also fake-liquidity pools listed at $13M\u2013$22M. The canonical BREW is the BNB Chain token of brew.family.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,926 unique buyers against 54 unique sellers inside 30 minutes, at a $13k market cap, looks like bot or dust-buy spraying. The pool was created directly by the creator with 100% of the LP unlocked, and the creator's position is already closed (creator_close). A sibling clone has already gone to zero liquidity.\",\"uncertainty\":\"GMGN shows no bundlers or snipers and a bot/degen rate of 0. The wallet data may simply fail to classify this kind of bot pattern.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and the pool was seeded directly by the deployer, so the liquidity can be pulled at any time\",\"Liquidity is larger than market cap, which points to an engineered pool\",\"Heavy competition from other BREW clones on the same ticker\",\"A sibling clone has already rugged\"]},\"counterargument\":\"The holder spread is wide (top10 at 5%), mint and freeze authority are renounced, and there are 2,000+ holders. If flow rotates from the leading clone D7UU into this cheaper one, a $13k market cap could double quickly.\",\"unknowns\":[\"Who owns the LP tokens\",\"Whether the buyer count is dust-bot activity\",\"Any X posts about this specific contract\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"A search on the contract address returned nothing. brew.family was confirmed as a BNB Chain launchpad. There was no time to search Reddit, Telegram or Discord.\"},\"thesis\":\"A ticker-hijack clone of a BSC project with an unlocked LP seeded by the deployer and signs of bot buying. It has a low chance of running and a high chance of a rug.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":60,\"survival_score\":15,\"attention_score\":35,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://brew.family/\",\"what\":\"Brew is a BNB Chain launchpad\"},{\"url\":\"https://x.com/brewdotfamily\",\"what\":\"The real project's X account, whose handle is borrowed in this token's metadata\"},{\"url\":\"https://coinmarketcap.com/currencies/brew/\",\"what\":\"The canonical BREW token, reported down 44% over 24h\"}]}",
+ "structured_output": {
+  "what_is_happening": "BREW (7Hrk\u2026m9j) looks like a Solana copy riding on Brew (brew.family), a real BNB Chain launchpad with its own BREW token. The real token's price was reported down 44% over the past 24h. This pair was created about 22 minutes ago as a direct PumpSwap pool, not a pump.fun migration (migrated_unix=0, platform unknown). Its liquidity (~$24k) is larger than its market cap (~$13k), 100% of the LP is unlocked, and the creator has already closed its position. The pair shows $272k of volume, with 1,926 unique buyers against only 54 unique sellers. That lopsided ratio suggests bot or dust-buy volume rather than organic demand. Price is down 7\u201317% over the last 5 minutes. At least 9 other Solana 'BREW' tokens appeared in the last few hours. One of them (4w2N\u2026) already has $0 liquidity, and another (D7UU\u2026) has taken most of the flow at about $121k market cap.",
+  "narrative": {
+   "description": "Borrowed story: Brew/brew.family is a BNB Chain launchpad whose X account (@brewdotfamily, 11.7K followers, joined Sep 2026) is embedded in this token's GeckoTerminal metadata. I found nothing tying the real project to Solana.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Brew being talked about on BSC drives ticker-copy launches on Solana, and many clones are competing for the same name."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "No reason stands out. It has the ticker and a borrowed X handle, but the real project lives on BNB Chain.",
+   "competing_tokens": "There are 9+ Solana BREW clones from today. D7UU\u2026 is at ~$121k market cap with $523k h1 volume. 4w2N\u2026 has already dropped to $0 liquidity. There are also fake-liquidity pools listed at $13M\u2013$22M. The canonical BREW is the BNB Chain token of brew.family.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,926 unique buyers against 54 unique sellers inside 30 minutes, at a $13k market cap, looks like bot or dust-buy spraying. The pool was created directly by the creator with 100% of the LP unlocked, and the creator's position is already closed (creator_close). A sibling clone has already gone to zero liquidity.",
+   "uncertainty": "GMGN shows no bundlers or snipers and a bot/degen rate of 0. The wallet data may simply fail to classify this kind of bot pattern."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and the pool was seeded directly by the deployer, so the liquidity can be pulled at any time",
+    "Liquidity is larger than market cap, which points to an engineered pool",
+    "Heavy competition from other BREW clones on the same ticker",
+    "A sibling clone has already rugged"
+   ]
+  },
+  "counterargument": "The holder spread is wide (top10 at 5%), mint and freeze authority are renounced, and there are 2,000+ holders. If flow rotates from the leading clone D7UU into this cheaper one, a $13k market cap could double quickly.",
+  "unknowns": [
+   "Who owns the LP tokens",
+   "Whether the buyer count is dust-bot activity",
+   "Any X posts about this specific contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "A search on the contract address returned nothing. brew.family was confirmed as a BNB Chain launchpad. There was no time to search Reddit, Telegram or Discord."
+  },
+  "thesis": "A ticker-hijack clone of a BSC project with an unlocked LP seeded by the deployer and signs of bot buying. It has a low chance of running and a high chance of a rug.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 35,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://brew.family/",
+    "what": "Brew is a BNB Chain launchpad"
+   },
+   {
+    "url": "https://x.com/brewdotfamily",
+    "what": "The real project's X account, whose handle is borrowed in this token's metadata"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/brew/",
+    "what": "The canonical BREW token, reported down 44% over 24h"
+   }
+  ]
+ },
+ "ttft_ms": 3886,
+ "type": "result",
+ "duration_ms": 38695,
+ "uuid": "aba6b9e9-2f2a-4548-8c36-f94d5f0a56df",
+ "ttft_stream_ms": 571,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 571,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

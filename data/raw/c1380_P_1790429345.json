@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 25558,
+ "stop_reason": "tool_use",
+ "session_id": "22220218-0d9c-448a-942d-01befc317076",
+ "total_cost_usd": 0.10923240000000001,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8330,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2108,
+  "output_tokens_details": {
+   "thinking_tokens": 311
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8330,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2108,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8330,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8330
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2108,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8330,
+   "webSearchRequests": 0,
+   "costUSD": 0.10923240000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 311,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is one of about 10 or more \\\"DEBT COIN\\\" clones launched within roughly an hour. The GeckoTerminal handle points at an Eric Bolling X post, which suggests a national-debt news theme. This one is a Meteora pair about 11 minutes old. It ran about +456\u2013562% to an all-time high near $151k market cap, then fell 32\u201358% in the last 5 minutes to about $68k. The dev supplied the LP and none of it is locked (100% unlocked, 0% burned). GMGN flags 120 bundler wallets holding about 62% of top-trader share. The creator has already closed out.\",\"narrative\":{\"description\":\"A 'DEBT COIN' meme apparently tied to an Eric Bolling tweet about debt. It may be a topical political or news hook, but the story belongs to the whole ticker, not to this contract.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"A topical tweet has set off a swarm of copycat launches. Attention is split across many contracts, and older ones lead (BLPK ~$625k, FYM6 ~$363k).\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing marks it as special. It has the same name and ticker as the others, no website or socials, and no DexScreener profile.\",\"competing_tokens\":\"BLPKe93... ($625k mcap, created about 56 min earlier), FYM6Ph... ($363k, earliest), JLM2EG... ($209k liquidity, $4.35M h1 volume), and several $130\u2013210k clones. More are being launched every minute.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"120 bundler wallets and a 61.9% top-bundler trader share. There are 1642 unique buyers but only 119 unique sellers, which fits bot or bundled distribution. Volume of $1.27M in the first hour on a ~$57k cap (26x turnover) looks inflated. The creator closed the position, and a Meteora LP deployed by the dev is fully unlocked. This is the classic pattern of a clone pump followed by an LP pull.\",\"uncertainty\":\"There are no X data. Some of the buyers may be real traders spilling over from the leading DEBT contracts.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked on a dev-created Meteora pool, so it can be pulled at any time\",\"Very heavy bundler presence (62%)\",\"Creator already out ('creator_close')\",\"Price already down about 55% from the all-time high and dumping in the last 5 minutes\",\"It is a late clone behind larger same-ticker contracts\",\"GeckoTerminal puts the top 10 holders at 74%, though this may include the pool\"]},\"counterargument\":\"Liquidity is large relative to market cap ($52k liquidity on $68k), so the pool absorbs trades well. Holders are fairly spread out in the RugCheck view (top 10 at 14%), and mint and freeze authority are renounced. If the DEBT meme keeps spreading, overflow buyers could push a cheap clone back to its $151k high, which is above 2x from here. Heavy two-way volume shows people are actively trading it.\",\"unknowns\":[\"Whether the Eric Bolling tweet refers to any specific contract\",\"Who holds the LP position and whether it gets withdrawn\",\"How big the underlying debt narrative is\",\"Whether the bundlers have finished distributing\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. The judgment uses only the packet.\"},\"thesis\":\"This is a non-canonical clone in a crowded ticker swarm. It has an unlocked dev LP, heavy bundling and an exited creator, and it is already dumping from its high. The most likely outcomes are a stop-out or an LP pull, not a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":55,\"survival_score\":22,\"attention_score\":55,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is one of about 10 or more \"DEBT COIN\" clones launched within roughly an hour. The GeckoTerminal handle points at an Eric Bolling X post, which suggests a national-debt news theme. This one is a Meteora pair about 11 minutes old. It ran about +456\u2013562% to an all-time high near $151k market cap, then fell 32\u201358% in the last 5 minutes to about $68k. The dev supplied the LP and none of it is locked (100% unlocked, 0% burned). GMGN flags 120 bundler wallets holding about 62% of top-trader share. The creator has already closed out.",
+  "narrative": {
+   "description": "A 'DEBT COIN' meme apparently tied to an Eric Bolling tweet about debt. It may be a topical political or news hook, but the story belongs to the whole ticker, not to this contract.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "A topical tweet has set off a swarm of copycat launches. Attention is split across many contracts, and older ones lead (BLPK ~$625k, FYM6 ~$363k)."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing marks it as special. It has the same name and ticker as the others, no website or socials, and no DexScreener profile.",
+   "competing_tokens": "BLPKe93... ($625k mcap, created about 56 min earlier), FYM6Ph... ($363k, earliest), JLM2EG... ($209k liquidity, $4.35M h1 volume), and several $130\u2013210k clones. More are being launched every minute.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "120 bundler wallets and a 61.9% top-bundler trader share. There are 1642 unique buyers but only 119 unique sellers, which fits bot or bundled distribution. Volume of $1.27M in the first hour on a ~$57k cap (26x turnover) looks inflated. The creator closed the position, and a Meteora LP deployed by the dev is fully unlocked. This is the classic pattern of a clone pump followed by an LP pull.",
+   "uncertainty": "There are no X data. Some of the buyers may be real traders spilling over from the leading DEBT contracts."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked on a dev-created Meteora pool, so it can be pulled at any time",
+    "Very heavy bundler presence (62%)",
+    "Creator already out ('creator_close')",
+    "Price already down about 55% from the all-time high and dumping in the last 5 minutes",
+    "It is a late clone behind larger same-ticker contracts",
+    "GeckoTerminal puts the top 10 holders at 74%, though this may include the pool"
+   ]
+  },
+  "counterargument": "Liquidity is large relative to market cap ($52k liquidity on $68k), so the pool absorbs trades well. Holders are fairly spread out in the RugCheck view (top 10 at 14%), and mint and freeze authority are renounced. If the DEBT meme keeps spreading, overflow buyers could push a cheap clone back to its $151k high, which is above 2x from here. Heavy two-way volume shows people are actively trading it.",
+  "unknowns": [
+   "Whether the Eric Bolling tweet refers to any specific contract",
+   "Who holds the LP position and whether it gets withdrawn",
+   "How big the underlying debt narrative is",
+   "Whether the bundlers have finished distributing"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. The judgment uses only the packet."
+  },
+  "thesis": "This is a non-canonical clone in a crowded ticker swarm. It has an unlocked dev LP, heavy bundling and an exited creator, and it is already dumping from its high. The most likely outcomes are a stop-out or an LP pull, not a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 55,
+  "survival_score": 22,
+  "attention_score": 55,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7370,
+ "type": "result",
+ "duration_ms": 25604,
+ "uuid": "751056dd-a919-4d18-833d-296f9da0c9ab",
+ "ttft_stream_ms": 3090,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 3091,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

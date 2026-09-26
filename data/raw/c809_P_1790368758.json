@@ -1,0 +1,157 @@
+{
+ "duration_api_ms": 24815,
+ "stop_reason": "tool_use",
+ "session_id": "688cf93c-f7b5-44ab-8b31-76a4350d04c6",
+ "total_cost_usd": 0.1053164,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6788,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2529,
+  "output_tokens_details": {
+   "thinking_tokens": 521
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6788,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2529,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6788,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6788
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2529,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6788,
+   "webSearchRequests": 0,
+   "costUSD": 0.1053164,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 521,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 20-minute-old token called 'Apu', launched directly on PumpSwap (not from the pump.fun curve), has done $448k of volume on a $21k market cap. That is about 14.7x turnover in 20 minutes. Its price is up 108%. Another 'Apu' pump.fun coin (79xB\u2026pump) was created about 12 minutes earlier and is already at a $905k market cap with $490k of hourly volume. This token is almost certainly a copycat riding that coin's attention. The flow data looks manufactured. There were 1,939 unique buyers but only 52 unique sellers. 1,200 of those buyers came in a single 15-minute window, but only 42 in the last 5 minutes. That pattern fits bot 'holder-farming' micro-buys plus a few wallets doing large sells. GMGN also flags 42 bundler wallets holding 16.6% of top-trader share. The creator has already closed their position ('creator_close'). The LP burn ratio is 0, and liquidity ($30.5k) is larger than market cap, so most of the supply sits in a pool the creator can pull.\",\"narrative\":{\"description\":\"Apu (Apu Apustaja / Pepe-adjacent meme) name spillover from a same-name pump.fun coin that is running hard right now at ~$905k mcap.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The attention belongs to the canonical Apu pump.fun coin. This copy gets spillover from people searching the ticker and from bots, not its own story.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name and ticker, launched about 12 minutes after the leading Apu coin, directly on PumpSwap with an unburned LP. That is a classic clone pattern.\",\"competing_tokens\":\"79xB7iLghccAWuoab7qXkaDpQggmu6D2zrpKtfXipump (Apu, $905k mcap, $490k h1 vol) is the clear leader. There are also several dead APU clones and older Apu Apustaja tokens, plus another fresh clone, Fqs6\u2026pump.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,939 unique buyers against 52 unique sellers. Buyers spiked to 1,200 in 15 minutes and fell to 42 in the last 5 minutes. 42 bundler wallets (16.6% of top-trader share). Turnover of 14.7x on a $21k market cap. No socials on DexScreener and only 41 GMGN page visits despite '1,940 holders'. That mismatch strongly suggests bot-inflated holder counts and volume.\",\"uncertainty\":\"No X data. The Twitter handle TheApuPf exists but its content and reach are unknown. Some real spillover buyers from the leading Apu coin are likely.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP burn ratio 0: the creator-created PumpSwap pool can be pulled\",\"Creator position already closed (creator_close)\",\"Liquidity larger than market cap: most of the supply sits in the pullable pool\",\"42 bundler wallets\",\"Clone of a same-name runner, so attention can collapse when the leader fades\",\"Buyer/seller asymmetry suggests fake holder counts\"]},\"counterargument\":\"Mint and freeze authority are renounced, there are no taxes, and the top-10 holders own only 16%. Spillover from a leading Apu coin at about $1M could keep pushing buyers into cheap clones. At a $21k market cap, a 2x only needs $42k. If the creator's goal is volume farming rather than pulling liquidity, the price could keep grinding up for a while.\",\"unknowns\":[\"Who controls the LP tokens\",\"Whether the creator's other launch (ATH $452k) was a legitimate coin\",\"Real holder count once bot micro-buys are excluded\",\"Activity on the TheApuPf X account\",\"How long the leading Apu coin keeps running\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; judged from the packet only.\"},\"thesis\":\"This is a copycat Apu clone launched directly on PumpSwap with an unburned LP and a creator who has exited. Its activity looks bot-farmed (1,939 buyers against 52 sellers, 42 bundlers). The attention belongs to the leading Apu coin. The likely outcome is a liquidity pull or a slow bleed, not a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":55,\"survival_score\":18,\"attention_score\":35,\"manipulation_risk\":88,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 20-minute-old token called 'Apu', launched directly on PumpSwap (not from the pump.fun curve), has done $448k of volume on a $21k market cap. That is about 14.7x turnover in 20 minutes. Its price is up 108%. Another 'Apu' pump.fun coin (79xB\u2026pump) was created about 12 minutes earlier and is already at a $905k market cap with $490k of hourly volume. This token is almost certainly a copycat riding that coin's attention. The flow data looks manufactured. There were 1,939 unique buyers but only 52 unique sellers. 1,200 of those buyers came in a single 15-minute window, but only 42 in the last 5 minutes. That pattern fits bot 'holder-farming' micro-buys plus a few wallets doing large sells. GMGN also flags 42 bundler wallets holding 16.6% of top-trader share. The creator has already closed their position ('creator_close'). The LP burn ratio is 0, and liquidity ($30.5k) is larger than market cap, so most of the supply sits in a pool the creator can pull.",
+  "narrative": {
+   "description": "Apu (Apu Apustaja / Pepe-adjacent meme) name spillover from a same-name pump.fun coin that is running hard right now at ~$905k mcap.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The attention belongs to the canonical Apu pump.fun coin. This copy gets spillover from people searching the ticker and from bots, not its own story."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name and ticker, launched about 12 minutes after the leading Apu coin, directly on PumpSwap with an unburned LP. That is a classic clone pattern.",
+   "competing_tokens": "79xB7iLghccAWuoab7qXkaDpQggmu6D2zrpKtfXipump (Apu, $905k mcap, $490k h1 vol) is the clear leader. There are also several dead APU clones and older Apu Apustaja tokens, plus another fresh clone, Fqs6\u2026pump.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,939 unique buyers against 52 unique sellers. Buyers spiked to 1,200 in 15 minutes and fell to 42 in the last 5 minutes. 42 bundler wallets (16.6% of top-trader share). Turnover of 14.7x on a $21k market cap. No socials on DexScreener and only 41 GMGN page visits despite '1,940 holders'. That mismatch strongly suggests bot-inflated holder counts and volume.",
+   "uncertainty": "No X data. The Twitter handle TheApuPf exists but its content and reach are unknown. Some real spillover buyers from the leading Apu coin are likely."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP burn ratio 0: the creator-created PumpSwap pool can be pulled",
+    "Creator position already closed (creator_close)",
+    "Liquidity larger than market cap: most of the supply sits in the pullable pool",
+    "42 bundler wallets",
+    "Clone of a same-name runner, so attention can collapse when the leader fades",
+    "Buyer/seller asymmetry suggests fake holder counts"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced, there are no taxes, and the top-10 holders own only 16%. Spillover from a leading Apu coin at about $1M could keep pushing buyers into cheap clones. At a $21k market cap, a 2x only needs $42k. If the creator's goal is volume farming rather than pulling liquidity, the price could keep grinding up for a while.",
+  "unknowns": [
+   "Who controls the LP tokens",
+   "Whether the creator's other launch (ATH $452k) was a legitimate coin",
+   "Real holder count once bot micro-buys are excluded",
+   "Activity on the TheApuPf X account",
+   "How long the leading Apu coin keeps running"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; judged from the packet only."
+  },
+  "thesis": "This is a copycat Apu clone launched directly on PumpSwap with an unburned LP and a creator who has exited. Its activity looks bot-farmed (1,939 buyers against 52 sellers, 42 bundlers). The attention belongs to the leading Apu coin. The likely outcome is a liquidity pull or a slow bleed, not a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 55,
+  "survival_score": 18,
+  "attention_score": 35,
+  "manipulation_risk": 88,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6404,
+ "type": "result",
+ "duration_ms": 24858,
+ "uuid": "c917bf52-fc24-4c67-8ef7-bc9edf63b30d",
+ "ttft_stream_ms": 693,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 693,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

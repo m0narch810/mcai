@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 42500,
+ "stop_reason": "tool_use",
+ "session_id": "242f75c3-02f5-4903-972d-74de3a664d95",
+ "total_cost_usd": 0.23546759999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13153,
+  "cache_read_input_tokens": 29083,
+  "output_tokens": 2815,
+  "output_tokens_details": {
+   "thinking_tokens": 439
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13153,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2283,
+    "cache_read_input_tokens": 14447,
+    "cache_creation_input_tokens": 1470,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1470
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2815,
+   "cacheReadInputTokens": 29083,
+   "cacheCreationInputTokens": 13153,
+   "webSearchRequests": 0,
+   "costUSD": 0.1673646,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 439,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 33553,
+   "outputTokens": 910,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.068103,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Chinese-language meme coin, \\\"\u8611\u83c7\u5934\u548c\u6211\u768416\u5e74\\\" (\\\"Mushroom Head and my 16 years\\\"), launched about 15 minutes ago. GMGN says it came from a Meteora virtual (bonding) curve and now trades on PumpSwap. It links to a Douyin note (https://www.douyin.com/note/7689504292541123881) and an X post by @Oringold_, likely the story it references. At least 9 copies with the same name were launched within minutes. This one leads by a wide margin: $116k market cap, $26k liquidity, $565k volume, about 2,001 unique buyers against 137 unique sellers, and price up about 114% in its first hour, still rising in the latest 5 minutes. The all-time high is about $156k, so it is roughly 25% below its peak.\",\"narrative\":{\"description\":\"\u8611\u83c7\u5934 (mushroom head) is a very well-known Chinese reaction meme. People's Daily and The Paper have covered its creator. The '\u548c\u6211\u768416\u5e74' ('and my 16 years') framing suggests an emotional Douyin story, probably someone's 16 years with a pet or friend, which is typical of Chinese-community meme runs on Solana.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"The Chinese community is rotating into the name, apparently set off by a Douyin note and an X post. Nine or more copycat launches within minutes show fast crowd attention. I could not verify what the source content is or how far it has spread.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has by far the most liquidity, holders and buyers of the name cluster, and the packet lists the Douyin and X links for it. The crowd has clearly converged on this contract.\",\"competing_tokens\":\"9 same-name tokens, most dead or with almost no liquidity. BRhHT has $22k liquidity at $53k market cap. 2DjJ and BZZ2 have high volume but have lost their liquidity.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"2,001 unique buyers against 137 unique sellers, with a GMGN bot/degen rate of about 0 and a fresh-wallet rate of 0, suggests broad retail demand. No paid DexScreener promotion. On the other side, GMGN tags 91 bundler wallets (only 4.3% of top-trader share), and the creator has already closed out ('creator_close').\",\"uncertainty\":\"I could not see X posts (HTTP 402) or the Douyin content, so I don't know if KOLs or call channels are pushing it.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked, but GMGN reports an LP burn ratio of 1.0, so the two sources conflict\",\"The 80% top holder is probably the Meteora pool or vault, but this is unverified\",\"91 bundler wallets\",\"Attention split across same-name copies\",\"Liquidity is thin, about $26k against $116k market cap\"]},\"counterargument\":\"Chinese-name copycat clusters often peak within the first 20\u201330 minutes. This one is already about 2x off its launch and 25% below its ATH. Going from about $120k to $240k+ needs sustained new money that a Douyin-only story may not deliver. With the creator out and bundlers present, early buyers could dump into the thin liquidity.\",\"unknowns\":[\"What the Douyin note and X post actually say, and how much reach they have\",\"Whether the LP is actually locked or burned\",\"Whether KOLs or call channels are involved\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The contract search returned nothing. The name search found only general \u8611\u83c7\u5934 meme coverage. The X status link returned HTTP 402. I skipped Reddit, Telegram and Discord because of the time limit.\"},\"thesis\":\"It is the leading coin of a fresh Chinese meme cluster, with strong organic-looking buyer breadth (about 15 buyers per seller) and still in its first hour. That puts it above the pool average for a 2x, but it is late relative to its launch spike and faces copycat and bundler risk.\",\"continuation_view\":\"neutral\",\"p_runner\":23,\"p_rug\":17,\"survival_score\":55,\"attention_score\":72,\"manipulation_risk\":40,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"http://media.people.com.cn/n1/2020/0327/c40606-31650199.html\",\"what\":\"Background on the \u8611\u83c7\u5934 meme's popularity\"},{\"url\":\"https://x.com/Oringold_/status/2103763646426026013\",\"what\":\"Project's X link (HTTP 402, inaccessible)\"},{\"url\":\"https://www.douyin.com/note/7689504292541123881\",\"what\":\"Project's Douyin link (not fetched)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A Chinese-language meme coin, \"\u8611\u83c7\u5934\u548c\u6211\u768416\u5e74\" (\"Mushroom Head and my 16 years\"), launched about 15 minutes ago. GMGN says it came from a Meteora virtual (bonding) curve and now trades on PumpSwap. It links to a Douyin note (https://www.douyin.com/note/7689504292541123881) and an X post by @Oringold_, likely the story it references. At least 9 copies with the same name were launched within minutes. This one leads by a wide margin: $116k market cap, $26k liquidity, $565k volume, about 2,001 unique buyers against 137 unique sellers, and price up about 114% in its first hour, still rising in the latest 5 minutes. The all-time high is about $156k, so it is roughly 25% below its peak.",
+  "narrative": {
+   "description": "\u8611\u83c7\u5934 (mushroom head) is a very well-known Chinese reaction meme. People's Daily and The Paper have covered its creator. The '\u548c\u6211\u768416\u5e74' ('and my 16 years') framing suggests an emotional Douyin story, probably someone's 16 years with a pet or friend, which is typical of Chinese-community meme runs on Solana.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "The Chinese community is rotating into the name, apparently set off by a Douyin note and an X post. Nine or more copycat launches within minutes show fast crowd attention. I could not verify what the source content is or how far it has spread."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has by far the most liquidity, holders and buyers of the name cluster, and the packet lists the Douyin and X links for it. The crowd has clearly converged on this contract.",
+   "competing_tokens": "9 same-name tokens, most dead or with almost no liquidity. BRhHT has $22k liquidity at $53k market cap. 2DjJ and BZZ2 have high volume but have lost their liquidity.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "2,001 unique buyers against 137 unique sellers, with a GMGN bot/degen rate of about 0 and a fresh-wallet rate of 0, suggests broad retail demand. No paid DexScreener promotion. On the other side, GMGN tags 91 bundler wallets (only 4.3% of top-trader share), and the creator has already closed out ('creator_close').",
+   "uncertainty": "I could not see X posts (HTTP 402) or the Douyin content, so I don't know if KOLs or call channels are pushing it."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked, but GMGN reports an LP burn ratio of 1.0, so the two sources conflict",
+    "The 80% top holder is probably the Meteora pool or vault, but this is unverified",
+    "91 bundler wallets",
+    "Attention split across same-name copies",
+    "Liquidity is thin, about $26k against $116k market cap"
+   ]
+  },
+  "counterargument": "Chinese-name copycat clusters often peak within the first 20\u201330 minutes. This one is already about 2x off its launch and 25% below its ATH. Going from about $120k to $240k+ needs sustained new money that a Douyin-only story may not deliver. With the creator out and bundlers present, early buyers could dump into the thin liquidity.",
+  "unknowns": [
+   "What the Douyin note and X post actually say, and how much reach they have",
+   "Whether the LP is actually locked or burned",
+   "Whether KOLs or call channels are involved"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The contract search returned nothing. The name search found only general \u8611\u83c7\u5934 meme coverage. The X status link returned HTTP 402. I skipped Reddit, Telegram and Discord because of the time limit."
+  },
+  "thesis": "It is the leading coin of a fresh Chinese meme cluster, with strong organic-looking buyer breadth (about 15 buyers per seller) and still in its first hour. That puts it above the pool average for a 2x, but it is late relative to its launch spike and faces copycat and bundler risk.",
+  "continuation_view": "neutral",
+  "p_runner": 23,
+  "p_rug": 17,
+  "survival_score": 55,
+  "attention_score": 72,
+  "manipulation_risk": 40,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "http://media.people.com.cn/n1/2020/0327/c40606-31650199.html",
+    "what": "Background on the \u8611\u83c7\u5934 meme's popularity"
+   },
+   {
+    "url": "https://x.com/Oringold_/status/2103763646426026013",
+    "what": "Project's X link (HTTP 402, inaccessible)"
+   },
+   {
+    "url": "https://www.douyin.com/note/7689504292541123881",
+    "what": "Project's Douyin link (not fetched)"
+   }
+  ]
+ },
+ "ttft_ms": 2479,
+ "type": "result",
+ "duration_ms": 37183,
+ "uuid": "42cf8495-81e5-495f-93be-05653235a06a",
+ "ttft_stream_ms": 666,
+ "time_to_request_ms": 100,
+ "first_content_frame_ms": 666,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

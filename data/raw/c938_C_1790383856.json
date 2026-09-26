@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 38895,
+ "stop_reason": "tool_use",
+ "session_id": "fc06d21d-0bf0-4dae-8209-1b07c38d49e3",
+ "total_cost_usd": 0.1994606,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11999,
+  "cache_read_input_tokens": 28053,
+  "output_tokens": 2633,
+  "output_tokens_details": {
+   "thinking_tokens": 342
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11999,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2177,
+    "cache_read_input_tokens": 13538,
+    "cache_creation_input_tokens": 1225,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1225
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2633,
+   "cacheReadInputTokens": 28053,
+   "cacheCreationInputTokens": 11999,
+   "webSearchRequests": 0,
+   "costUSD": 0.1542866,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 342,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20989,
+   "outputTokens": 837,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045174,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A generic token called \\\"cat\\\" launched about 13 minutes ago on a Meteora pool, not on the pump.fun curve. It has already traded about $1.15M, roughly 30 times its market cap, and rose about 290\u2013390% before pulling back. Market cap is now about $39k, down from the trigger's $50.8k and roughly 41% below its ATH price. GMGN says the creator wallet Hc9R\u2026 holds 51.4% of supply. It also flags 70 bundler wallets, puts the top bundler trader share at 98.6% and the fresh-wallet rate at 51%. RugCheck shows the LP 100% unlocked. GeckoTerminal counts 2,062 unique buyers but only 87 unique sellers. That lopsided ratio points to bot spray-buying or wash trading, not organic demand. The only linked social is an X status on the account \\\"pumping_fun\\\", which returned HTTP 402 and could not be read. A search for the contract address found nothing.\",\"narrative\":{\"description\":\"There is no specific story. It is a generic 'cat' ticker, one of many same-ticker cat tokens. Cat memes remain a live theme on Solana (for example CATE in 2026), but nothing ties this token to any event.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Nothing found spreading organically. The volume looks bot- or bundle-driven, and the only link is a status on an account named like a promo or alert account (pumping_fun).\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing makes this the canonical cat token. It is a generic name on a fresh Meteora pool, and the linked X status belongs to a pumping_fun account that looks like promotion.\",\"competing_tokens\":\"Simon's Cat (CAT, $17M mcap), Catcoin, Catching Absolute Tops, Cat Terminal and several dead pump.fun CAT tokens.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"70 bundler wallets and a 98.6% top bundler trader share. The creator holds 51.4% of supply and also supplies the LP (unlocked). 2,062 unique buyers against only 87 unique sellers in 13 minutes is consistent with bot-sprayed buys. Fresh-wallet rate is 51%. There are no smart or renowned wallets, and the website, profile and socials are empty apart from one promo-account link.\",\"uncertainty\":\"The X post could not be read (HTTP 402), and GMGN's classifications can be noisy on very young pairs.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator holds 51.4% of supply and can dump it into a thin pool\",\"LP is 100% unlocked on Meteora, so the owner can pull liquidity at any time\",\"Top 10 wallets hold 74% of supply\",\"Heavy bundling\",\"Price is already about 41% below ATH and the pool is being distributed into\"]},\"counterargument\":\"Very high turnover and more than 2,000 buyers inside 13 minutes show that real flow is reaching this token. A dev who keeps holding and keeps adding liquidity can run a second leg, and a pullback from ATH to $39k leaves room for a 2x to about $78k, which is only slightly above the previous high.\",\"unknowns\":[\"What the pumping_fun X post says\",\"Whether the creator's 51% sits in the LP position or in a wallet it can sell from\",\"Whether the Meteora pool is a DLMM or a DAMM pool, and who controls the LP\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-limited. A contract-address search returned nothing, the X status returned HTTP 402, and a general cat/Meteora search found only unrelated cat tokens.\"},\"thesis\":\"A bundled, creator-controlled Meteora launch: the creator holds 51% with unlocked LP, and the buyer/seller asymmetry looks bot-like. The price is already well off its ATH, and there is no narrative and no canonical claim to the ticker. The chance of a 2x before a -50% move or a rug is low, and the rug risk is high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":55,\"survival_score\":15,\"attention_score\":45,\"manipulation_risk\":88,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/pumping_fun/status/2103645007257465124\",\"what\":\"The only linked social; fetch returned HTTP 402\"},{\"url\":\"https://www.kucoin.com/news/flash/cate-drives-cat-themed-memecoin-hype-on-solana\",\"what\":\"Background on the Solana cat meme theme in 2026 (CATE); not related to this token\"}]}",
+ "structured_output": {
+  "what_is_happening": "A generic token called \"cat\" launched about 13 minutes ago on a Meteora pool, not on the pump.fun curve. It has already traded about $1.15M, roughly 30 times its market cap, and rose about 290\u2013390% before pulling back. Market cap is now about $39k, down from the trigger's $50.8k and roughly 41% below its ATH price. GMGN says the creator wallet Hc9R\u2026 holds 51.4% of supply. It also flags 70 bundler wallets, puts the top bundler trader share at 98.6% and the fresh-wallet rate at 51%. RugCheck shows the LP 100% unlocked. GeckoTerminal counts 2,062 unique buyers but only 87 unique sellers. That lopsided ratio points to bot spray-buying or wash trading, not organic demand. The only linked social is an X status on the account \"pumping_fun\", which returned HTTP 402 and could not be read. A search for the contract address found nothing.",
+  "narrative": {
+   "description": "There is no specific story. It is a generic 'cat' ticker, one of many same-ticker cat tokens. Cat memes remain a live theme on Solana (for example CATE in 2026), but nothing ties this token to any event.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Nothing found spreading organically. The volume looks bot- or bundle-driven, and the only link is a status on an account named like a promo or alert account (pumping_fun)."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing makes this the canonical cat token. It is a generic name on a fresh Meteora pool, and the linked X status belongs to a pumping_fun account that looks like promotion.",
+   "competing_tokens": "Simon's Cat (CAT, $17M mcap), Catcoin, Catching Absolute Tops, Cat Terminal and several dead pump.fun CAT tokens.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "70 bundler wallets and a 98.6% top bundler trader share. The creator holds 51.4% of supply and also supplies the LP (unlocked). 2,062 unique buyers against only 87 unique sellers in 13 minutes is consistent with bot-sprayed buys. Fresh-wallet rate is 51%. There are no smart or renowned wallets, and the website, profile and socials are empty apart from one promo-account link.",
+   "uncertainty": "The X post could not be read (HTTP 402), and GMGN's classifications can be noisy on very young pairs."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator holds 51.4% of supply and can dump it into a thin pool",
+    "LP is 100% unlocked on Meteora, so the owner can pull liquidity at any time",
+    "Top 10 wallets hold 74% of supply",
+    "Heavy bundling",
+    "Price is already about 41% below ATH and the pool is being distributed into"
+   ]
+  },
+  "counterargument": "Very high turnover and more than 2,000 buyers inside 13 minutes show that real flow is reaching this token. A dev who keeps holding and keeps adding liquidity can run a second leg, and a pullback from ATH to $39k leaves room for a 2x to about $78k, which is only slightly above the previous high.",
+  "unknowns": [
+   "What the pumping_fun X post says",
+   "Whether the creator's 51% sits in the LP position or in a wallet it can sell from",
+   "Whether the Meteora pool is a DLMM or a DAMM pool, and who controls the LP"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-limited. A contract-address search returned nothing, the X status returned HTTP 402, and a general cat/Meteora search found only unrelated cat tokens."
+  },
+  "thesis": "A bundled, creator-controlled Meteora launch: the creator holds 51% with unlocked LP, and the buyer/seller asymmetry looks bot-like. The price is already well off its ATH, and there is no narrative and no canonical claim to the ticker. The chance of a 2x before a -50% move or a rug is low, and the rug risk is high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 55,
+  "survival_score": 15,
+  "attention_score": 45,
+  "manipulation_risk": 88,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/pumping_fun/status/2103645007257465124",
+    "what": "The only linked social; fetch returned HTTP 402"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/cate-drives-cat-themed-memecoin-hype-on-solana",
+    "what": "Background on the Solana cat meme theme in 2026 (CATE); not related to this token"
+   }
+  ]
+ },
+ "ttft_ms": 2462,
+ "type": "result",
+ "duration_ms": 38253,
+ "uuid": "2d07eba1-fe00-4f82-b091-8c4789bc22a0",
+ "ttft_stream_ms": 704,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 704,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

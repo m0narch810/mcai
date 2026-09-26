@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 32111,
+ "stop_reason": "tool_use",
+ "session_id": "f5d6d8a7-0eb8-4384-9986-15c6a0eb6371",
+ "total_cost_usd": 0.179668,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10830,
+  "cache_read_input_tokens": 26835,
+  "output_tokens": 2224,
+  "output_tokens_details": {
+   "thinking_tokens": 198
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10830,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1834,
+    "cache_read_input_tokens": 13319,
+    "cache_creation_input_tokens": 275,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 275
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2224,
+   "cacheReadInputTokens": 26835,
+   "cacheCreationInputTokens": 10830,
+   "webSearchRequests": 0,
+   "costUSD": 0.136511,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 198,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20177,
+   "outputTokens": 596,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043157,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is one of at least four \\\"Gloop\\\" (GLOOP) pump.fun launches from the last ~6 minutes. They all appear to ride a post by @eltoronchain about \\\"greg's pet Gloop\\\", with fees routed to @greg16676935420 through UsePaid. This contract (FKBd\u2026) was launched first. A copy launched about 4 minutes later (A4UR\u2026) has already taken the flow: $121k market cap and $210k of volume in the last hour, against this token's $12k market cap and $74k volume. This token has fallen from its $17k market cap at detection, lost about 30% in the last 5 minutes, and trades well below its all-time high of about $33k. The deployer has launched 650 tokens, has already closed out its position, and GMGN flags 129 bundler wallets.\",\"narrative\":{\"description\":\"'Gloop, greg's pet': a micro-meme tied to a single X post by @eltoronchain and the account @greg16676935420. I couldn't read the post itself.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"A fast copy-launch race after one X post. Deployers launch many copies at once, and traders pile into whichever copy is leading.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It was launched first and links to the source post. But the market has already picked a different contract as the main one.\",\"competing_tokens\":\"A4URoqQkLt9h2QjT6AKcQrT1vKSfK3N7kdAEhmocpzkz: $121k market cap, $210k volume in the last hour, the clear leader. Two other copies (HV5h\u2026, EdZm\u2026) are dead at about $3k market cap.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"Serial deployer (650 launches, position already closed). GMGN tags 129 bundler wallets, 125 fresh wallets and a 35% bot/degen share. Several copies were launched within minutes of each other.\",\"uncertainty\":\"The X post couldn't be viewed (HTTP 402), so I can't judge how much organic interest greg's account has.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"A 10x-larger same-name copy is soaking up the demand\",\"A serial deployer (650 tokens) has already exited\",\"Heavy bundler/fresh-wallet activity\",\"Price is falling fast, about 64% below its all-time high\"]},\"counterargument\":\"Being the first launch with a direct link to the source post could draw a \\\"real OG\\\" rotation if the leading copy gets called out as a copy. At a $12k market cap, a doubling only needs a small inflow, and it is still on the pump.fun curve, so liquidity cannot be pulled.\",\"unknowns\":[\"What the X post says and how much engagement it has\",\"Which contract greg's account endorses, if any\",\"Whether the fee-to-greg setup through UsePaid is real\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"Under the 2-minute limit I ran two web searches. The contract search found nothing. The name search turned up only older, unrelated GLOOP tokens. The X post returned HTTP 402.\"},\"thesis\":\"This is the losing copy in a same-name launch race. Attention has moved to A4UR\u2026, which is 10x larger. It comes from a serial deployer who has already closed out, and the price is falling. Low chance of a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":45,\"survival_score\":30,\"attention_score\":25,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/eltoronchain/status/2103763869227200837\",\"what\":\"Linked X post; could not be read (HTTP 402)\"},{\"url\":\"https://dexscreener.com/solana/gt3pm6kip6arac85juhvfo3cu1cuowuast28zryz1xhx\",\"what\":\"An older, unrelated GLOOP token from the name search\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is one of at least four \"Gloop\" (GLOOP) pump.fun launches from the last ~6 minutes. They all appear to ride a post by @eltoronchain about \"greg's pet Gloop\", with fees routed to @greg16676935420 through UsePaid. This contract (FKBd\u2026) was launched first. A copy launched about 4 minutes later (A4UR\u2026) has already taken the flow: $121k market cap and $210k of volume in the last hour, against this token's $12k market cap and $74k volume. This token has fallen from its $17k market cap at detection, lost about 30% in the last 5 minutes, and trades well below its all-time high of about $33k. The deployer has launched 650 tokens, has already closed out its position, and GMGN flags 129 bundler wallets.",
+  "narrative": {
+   "description": "'Gloop, greg's pet': a micro-meme tied to a single X post by @eltoronchain and the account @greg16676935420. I couldn't read the post itself.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "A fast copy-launch race after one X post. Deployers launch many copies at once, and traders pile into whichever copy is leading."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It was launched first and links to the source post. But the market has already picked a different contract as the main one.",
+   "competing_tokens": "A4URoqQkLt9h2QjT6AKcQrT1vKSfK3N7kdAEhmocpzkz: $121k market cap, $210k volume in the last hour, the clear leader. Two other copies (HV5h\u2026, EdZm\u2026) are dead at about $3k market cap.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "Serial deployer (650 launches, position already closed). GMGN tags 129 bundler wallets, 125 fresh wallets and a 35% bot/degen share. Several copies were launched within minutes of each other.",
+   "uncertainty": "The X post couldn't be viewed (HTTP 402), so I can't judge how much organic interest greg's account has."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "A 10x-larger same-name copy is soaking up the demand",
+    "A serial deployer (650 tokens) has already exited",
+    "Heavy bundler/fresh-wallet activity",
+    "Price is falling fast, about 64% below its all-time high"
+   ]
+  },
+  "counterargument": "Being the first launch with a direct link to the source post could draw a \"real OG\" rotation if the leading copy gets called out as a copy. At a $12k market cap, a doubling only needs a small inflow, and it is still on the pump.fun curve, so liquidity cannot be pulled.",
+  "unknowns": [
+   "What the X post says and how much engagement it has",
+   "Which contract greg's account endorses, if any",
+   "Whether the fee-to-greg setup through UsePaid is real"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "Under the 2-minute limit I ran two web searches. The contract search found nothing. The name search turned up only older, unrelated GLOOP tokens. The X post returned HTTP 402."
+  },
+  "thesis": "This is the losing copy in a same-name launch race. Attention has moved to A4UR\u2026, which is 10x larger. It comes from a serial deployer who has already closed out, and the price is falling. Low chance of a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 45,
+  "survival_score": 30,
+  "attention_score": 25,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/eltoronchain/status/2103763869227200837",
+    "what": "Linked X post; could not be read (HTTP 402)"
+   },
+   {
+    "url": "https://dexscreener.com/solana/gt3pm6kip6arac85juhvfo3cu1cuowuast28zryz1xhx",
+    "what": "An older, unrelated GLOOP token from the name search"
+   }
+  ]
+ },
+ "ttft_ms": 2058,
+ "type": "result",
+ "duration_ms": 27050,
+ "uuid": "8eef2d66-7560-4221-be1a-6ac23519aeba",
+ "ttft_stream_ms": 720,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 720,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

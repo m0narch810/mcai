@@ -1,0 +1,178 @@
+{
+ "duration_api_ms": 43192,
+ "stop_reason": "tool_use",
+ "session_id": "55aae0e1-3f57-4e79-afd4-5069fa1ac354",
+ "total_cost_usd": 0.19502959999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10759,
+  "cache_read_input_tokens": 24983,
+  "output_tokens": 2895,
+  "output_tokens_details": {
+   "thinking_tokens": 567
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10759,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2227,
+    "cache_read_input_tokens": 12017,
+    "cache_creation_input_tokens": 1506,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1506
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2895,
+   "cacheReadInputTokens": 24983,
+   "cacheCreationInputTokens": 10759,
+   "webSearchRequests": 0,
+   "costUSD": 0.14899259999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 567,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21492,
+   "outputTokens": 909,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.046036999999999995,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"O\\\" is an 11-minute-old token. It was launched on a Meteora virtual curve and moved to PumpSwap in the same second (created_unix equals migrated_unix), and a pool was created at 00:49:50Z. In its first hour it did about $357k of volume against a ~$165k market cap and rose about 220%. GeckoTerminal counts 933 unique buyers against 176 unique sellers. It has no website, no socials, no DexScreener profile and no description. GMGN tags 151 bundler wallets. RugCheck shows one unlabeled wallet holding 80.05% of supply and 99.99% of LP unlocked. The creator has already closed out (creator_close) and has 2 earlier launches, the best of which peaked at about $455k market cap. I found no narrative anywhere on the web.\",\"narrative\":{\"description\":\"No identifiable narrative. A single-letter ticker and name 'O', with no socials or description. It may be a vague meme or an insider launch.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The flow looks like a bundled launch followed by bot and degen momentum on a newly migrated pair, not a story people are sharing.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"The packet lists no same-name tokens. The other two pairs (Meteora DYN2 and DBC) belong to the same mint and hold dust liquidity.\",\"competing_tokens\":\"None listed in the packet. A single-letter ticker 'O' is generic and easy to collide with.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN tags 151 bundler wallets (top bundler share 8.75%) and 9 snipers. The launch was created and migrated in the same second, which suggests a pre-arranged launch. There are no socials or promotion. One unlabeled wallet holds 80% of supply per RugCheck.\",\"uncertainty\":\"GMGN's top10 holder rate is 1.5% and its lp_burn_ratio is 1.0, which suggests GMGN treats the 80% wallet as a pool or locker account, possibly Meteora-related. Buyer breadth (933 vs 176) does look fairly wide.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"An unlabeled wallet holds 80.05% of supply per RugCheck. If it is not a pool, that is a huge overhang\",\"99.99% of LP is unlocked on the PumpSwap pool; only a few LP providers\",\"151 bundler wallets\",\"The creator has already exited\",\"No socials, so there is no community anchor\"]},\"counterargument\":\"Demand is broad and still speeding up: 464 unique buyers in the last 5 minutes, a 2:1 buy/sell count, GeckoTerminal m5 +78%, and turnover of 9x market cap. Mint and freeze authority are renounced and there are no taxes. GMGN's holder data suggests the 80% wallet is a program account, not a whale. Going from $165k to $330k with this much momentum is quite achievable for a young coin.\",\"unknowns\":[\"Who or what the 80% wallet FhVo... is\",\"Whether anything about it is being posted on X or in Telegram\",\"Who controls the unlocked PumpSwap LP\",\"What happened to the creator's 2 earlier tokens\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-boxed. I searched the contract address and '$O' on the general web (no hits) and fetched the DexScreener API (no socials). The project lists no links. I did not search Reddit, Telegram or Discord separately.\"},\"thesis\":\"A bundled, faceless launch with strong but likely manufactured early momentum. The creator is out, the LP is unlocked, and supply looks concentrated. Buyer breadth gives it an average-or-better chance at 2x, but rug and dump risk is high and there is no narrative to keep it going.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":35,\"survival_score\":32,\"attention_score\":62,\"manipulation_risk\":72,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/2vivVDbxPuqJJbWWVy6Z3Qaa3CP81EYaeqi51QKShRGZ\",\"what\":\"Pairs (PumpSwap $38k liquidity, two dust Meteora pairs), no socials\"},{\"url\":\"https://dexscreener.com/solana/FmVR1WdKqkxJjsW6iSHumszHjsjogNaKjokkUrq4dDvX\",\"what\":\"Main pair page\"}]}",
+ "structured_output": {
+  "what_is_happening": "\"O\" is an 11-minute-old token. It was launched on a Meteora virtual curve and moved to PumpSwap in the same second (created_unix equals migrated_unix), and a pool was created at 00:49:50Z. In its first hour it did about $357k of volume against a ~$165k market cap and rose about 220%. GeckoTerminal counts 933 unique buyers against 176 unique sellers. It has no website, no socials, no DexScreener profile and no description. GMGN tags 151 bundler wallets. RugCheck shows one unlabeled wallet holding 80.05% of supply and 99.99% of LP unlocked. The creator has already closed out (creator_close) and has 2 earlier launches, the best of which peaked at about $455k market cap. I found no narrative anywhere on the web.",
+  "narrative": {
+   "description": "No identifiable narrative. A single-letter ticker and name 'O', with no socials or description. It may be a vague meme or an insider launch.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The flow looks like a bundled launch followed by bot and degen momentum on a newly migrated pair, not a story people are sharing."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "The packet lists no same-name tokens. The other two pairs (Meteora DYN2 and DBC) belong to the same mint and hold dust liquidity.",
+   "competing_tokens": "None listed in the packet. A single-letter ticker 'O' is generic and easy to collide with.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN tags 151 bundler wallets (top bundler share 8.75%) and 9 snipers. The launch was created and migrated in the same second, which suggests a pre-arranged launch. There are no socials or promotion. One unlabeled wallet holds 80% of supply per RugCheck.",
+   "uncertainty": "GMGN's top10 holder rate is 1.5% and its lp_burn_ratio is 1.0, which suggests GMGN treats the 80% wallet as a pool or locker account, possibly Meteora-related. Buyer breadth (933 vs 176) does look fairly wide."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "An unlabeled wallet holds 80.05% of supply per RugCheck. If it is not a pool, that is a huge overhang",
+    "99.99% of LP is unlocked on the PumpSwap pool; only a few LP providers",
+    "151 bundler wallets",
+    "The creator has already exited",
+    "No socials, so there is no community anchor"
+   ]
+  },
+  "counterargument": "Demand is broad and still speeding up: 464 unique buyers in the last 5 minutes, a 2:1 buy/sell count, GeckoTerminal m5 +78%, and turnover of 9x market cap. Mint and freeze authority are renounced and there are no taxes. GMGN's holder data suggests the 80% wallet is a program account, not a whale. Going from $165k to $330k with this much momentum is quite achievable for a young coin.",
+  "unknowns": [
+   "Who or what the 80% wallet FhVo... is",
+   "Whether anything about it is being posted on X or in Telegram",
+   "Who controls the unlocked PumpSwap LP",
+   "What happened to the creator's 2 earlier tokens"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-boxed. I searched the contract address and '$O' on the general web (no hits) and fetched the DexScreener API (no socials). The project lists no links. I did not search Reddit, Telegram or Discord separately."
+  },
+  "thesis": "A bundled, faceless launch with strong but likely manufactured early momentum. The creator is out, the LP is unlocked, and supply looks concentrated. Buyer breadth gives it an average-or-better chance at 2x, but rug and dump risk is high and there is no narrative to keep it going.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 35,
+  "survival_score": 32,
+  "attention_score": 62,
+  "manipulation_risk": 72,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/2vivVDbxPuqJJbWWVy6Z3Qaa3CP81EYaeqi51QKShRGZ",
+    "what": "Pairs (PumpSwap $38k liquidity, two dust Meteora pairs), no socials"
+   },
+   {
+    "url": "https://dexscreener.com/solana/FmVR1WdKqkxJjsW6iSHumszHjsjogNaKjokkUrq4dDvX",
+    "what": "Main pair page"
+   }
+  ]
+ },
+ "ttft_ms": 1952,
+ "type": "result",
+ "duration_ms": 38932,
+ "uuid": "a797300a-eba1-42e2-a504-348765870eb8",
+ "ttft_stream_ms": 1553,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1553,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

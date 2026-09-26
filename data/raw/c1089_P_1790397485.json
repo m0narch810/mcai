@@ -1,0 +1,153 @@
+{
+ "duration_api_ms": 37035,
+ "stop_reason": "tool_use",
+ "session_id": "7016aee2-e62b-4bc4-90c0-d6a57a068bee",
+ "total_cost_usd": 0.1541006,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 8693,
+  "cache_read_input_tokens": 11703,
+  "output_tokens": 4110,
+  "output_tokens_details": {
+   "thinking_tokens": 103
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8693,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1751,
+    "cache_read_input_tokens": 9581,
+    "cache_creation_input_tokens": 1234,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1234
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 4110,
+   "cacheReadInputTokens": 11703,
+   "cacheCreationInputTokens": 8693,
+   "webSearchRequests": 0,
+   "costUSD": 0.1541006,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 103,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This token is almost certainly Phantom's CASH USD stablecoin, issued through Bridge/Stripe Open Issuance. It is not a memecoin. The price sits at $1.00 and has barely moved in weeks (all-time high $1.0079). The $104k 'market cap' only covers this one Orca pool; across all markets it has about $7M liquidity and 644k to 1.3M holders. The 'unusual activity' trigger fired on ordinary stablecoin swap volume in one pool.\",\"narrative\":{\"description\":\"A payment and utility stablecoin backed by Phantom, Bridge and Stripe. It has a real product story, but a pegged asset gives no price upside.\",\"stage\":\"unclear\",\"potential\":\"none\",\"why_spreading\":\"It isn't spreading in a speculative sense. The volume is routine peg-level swapping and routing.\"},\"token_connection\":{\"assessment\":\"strong\",\"why_this_token\":\"The mint has a vanity address (CASH...CASH), the metadata describes Phantom's stablecoin, the GeckoTerminal X handle is 'usecash', and it has a huge holder base. It looks like the real asset.\",\"competing_tokens\":\"Two dead pump.fun tokens also use the CASH ticker: 'CASH ADVANCE' with $871 liquidity and 'fund.cash' with $0. Neither matters here.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"independent_spread\",\"evidence\":\"The flow looks like normal stablecoin trading: about 4k unique buyers and 3.8k unique sellers over 24h, balanced buy and sell counts, and price moves of \u00b10.5% around $1.00. There are no paid boosts, no DexScreener profile, no call-channel signals, and the bot/degen rate is 0.0002. The high holder concentration and the insider network come from issuer and exchange or treasury wallets, which is normal for a stablecoin.\",\"uncertainty\":\"Without internet access I can't confirm this mint is the official one. But the holder count, the vanity mint address, the multi-million-dollar liquidity and the tight peg all strongly suggest it is.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"It is a USD stablecoin pegged at $1.00, so a +100% move is essentially impossible. As a runner it is not viable.\",\"The $104k 'market cap' is a data artifact that only reflects this Orca pool.\",\"The issuer keeps mint, freeze and permanent-delegate control. That is normal for a regulated stablecoin, but it is centralized control.\",\"This pool's LP is unlocked and could be withdrawn, though liquidity exists elsewhere.\"]},\"counterargument\":\"If this were an impersonation token rather than the real stablecoin, it could depeg or be drained. That would be a downside event, not a run. There is still no realistic path to +100%: the price has been pinned at $1.00 for weeks and has never gone above $1.008.\",\"unknowns\":[\"Whether this mint is really the official Phantom CASH (it can't be checked offline)\",\"Whether this particular Orca pool's LP might be moved or withdrawn\",\"Why the market-cap field reports only the pool-level value\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This condition has no internet access, so the judgment rests only on the evidence packet.\"},\"thesis\":\"This is a pegged stablecoin, not a microcap, so the +100% take-profit can't realistically be hit. The trade will almost certainly close flat at the 6-hour exit. The rug risk is very low, and the risky-looking structure (mint and freeze authority, concentrated holders) is normal for a stablecoin issuer. It should rank at the very bottom for p_runner.\",\"continuation_view\":\"neutral\",\"p_runner\":0,\"p_rug\":1,\"survival_score\":92,\"attention_score\":8,\"manipulation_risk\":5,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This token is almost certainly Phantom's CASH USD stablecoin, issued through Bridge/Stripe Open Issuance. It is not a memecoin. The price sits at $1.00 and has barely moved in weeks (all-time high $1.0079). The $104k 'market cap' only covers this one Orca pool; across all markets it has about $7M liquidity and 644k to 1.3M holders. The 'unusual activity' trigger fired on ordinary stablecoin swap volume in one pool.",
+  "narrative": {
+   "description": "A payment and utility stablecoin backed by Phantom, Bridge and Stripe. It has a real product story, but a pegged asset gives no price upside.",
+   "stage": "unclear",
+   "potential": "none",
+   "why_spreading": "It isn't spreading in a speculative sense. The volume is routine peg-level swapping and routing."
+  },
+  "token_connection": {
+   "assessment": "strong",
+   "why_this_token": "The mint has a vanity address (CASH...CASH), the metadata describes Phantom's stablecoin, the GeckoTerminal X handle is 'usecash', and it has a huge holder base. It looks like the real asset.",
+   "competing_tokens": "Two dead pump.fun tokens also use the CASH ticker: 'CASH ADVANCE' with $871 liquidity and 'fund.cash' with $0. Neither matters here.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "independent_spread",
+   "evidence": "The flow looks like normal stablecoin trading: about 4k unique buyers and 3.8k unique sellers over 24h, balanced buy and sell counts, and price moves of \u00b10.5% around $1.00. There are no paid boosts, no DexScreener profile, no call-channel signals, and the bot/degen rate is 0.0002. The high holder concentration and the insider network come from issuer and exchange or treasury wallets, which is normal for a stablecoin.",
+   "uncertainty": "Without internet access I can't confirm this mint is the official one. But the holder count, the vanity mint address, the multi-million-dollar liquidity and the tight peg all strongly suggest it is."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "It is a USD stablecoin pegged at $1.00, so a +100% move is essentially impossible. As a runner it is not viable.",
+    "The $104k 'market cap' is a data artifact that only reflects this Orca pool.",
+    "The issuer keeps mint, freeze and permanent-delegate control. That is normal for a regulated stablecoin, but it is centralized control.",
+    "This pool's LP is unlocked and could be withdrawn, though liquidity exists elsewhere."
+   ]
+  },
+  "counterargument": "If this were an impersonation token rather than the real stablecoin, it could depeg or be drained. That would be a downside event, not a run. There is still no realistic path to +100%: the price has been pinned at $1.00 for weeks and has never gone above $1.008.",
+  "unknowns": [
+   "Whether this mint is really the official Phantom CASH (it can't be checked offline)",
+   "Whether this particular Orca pool's LP might be moved or withdrawn",
+   "Why the market-cap field reports only the pool-level value"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This condition has no internet access, so the judgment rests only on the evidence packet."
+  },
+  "thesis": "This is a pegged stablecoin, not a microcap, so the +100% take-profit can't realistically be hit. The trade will almost certainly close flat at the 6-hour exit. The rug risk is very low, and the risky-looking structure (mint and freeze authority, concentrated holders) is normal for a stablecoin issuer. It should rank at the very bottom for p_runner.",
+  "continuation_view": "neutral",
+  "p_runner": 0,
+  "p_rug": 1,
+  "survival_score": 92,
+  "attention_score": 8,
+  "manipulation_risk": 5,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 2376,
+ "type": "result",
+ "duration_ms": 37100,
+ "uuid": "cce44b53-7aa0-4b2c-8c2d-bd28624faa0a",
+ "ttft_stream_ms": 1160,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 1160,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

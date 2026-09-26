@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 35372,
+ "stop_reason": "tool_use",
+ "session_id": "57233c82-138c-43f2-8bb7-24074ca74431",
+ "total_cost_usd": 0.19472599999999998,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11849,
+  "cache_read_input_tokens": 29245,
+  "output_tokens": 2606,
+  "output_tokens_details": {
+   "thinking_tokens": 413
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11849,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2129,
+    "cache_read_input_tokens": 14352,
+    "cache_creation_input_tokens": 261,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 261
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2606,
+   "cacheReadInputTokens": 29245,
+   "cacheCreationInputTokens": 11849,
+   "webSearchRequests": 0,
+   "costUSD": 0.152785,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 413,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 19151,
+   "outputTokens": 558,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.041941,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"51X (\\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\", meaning \\\"51 Chigua official first-launch meme\\\") is a PumpSwap pool about 16 minutes old. It was created directly on PumpSwap, not migrated from pump.fun (GMGN migrated=0, launchpad empty). It is up about 300-350%, with 1,353 unique buyers against 51 unique sellers. It is at least the 11th token today with the identical name and ticker. All 10 earlier copies are dead, with $0 liquidity and no volume. Its LP is 100% unlocked. One unlabeled wallet holds 62.36% of supply. GeckoTerminal puts the top 10 at 97%.\",\"narrative\":{\"description\":\"The token borrows the brand of 51\u5403\u74dc\u7f51, a large Chinese gossip and scandal-leak site with many mirror domains and an X presence, and claims to be its 'official' meme launch. Nothing I found shows the site endorses any token.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most likely because Chinese-speaking degens recognise the brand name and chase buys under 'official first launch' framing. The same name has been relaunched repeatedly all day, which points to a serial clone or rug operation, not organic attention.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the latest of many identical launches and is the only one with live liquidity. There is no verified link to the 51\u5403\u74dc\u7f51 site. The GeckoTerminal X handle, gua51x, could not be fetched (HTTP 402).\",\"competing_tokens\":\"At least 10 identical-name 51X tokens were created over the previous ~17 hours, all now at ~$0 liquidity (for example CCwxZZ7..., DUtv1vG..., Cms8FHd...).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There are 11 same-name launches in one day, the first 10 dead. Buyers and sellers are extremely lopsided (1,353 vs 51 unique), and one wallet holds 62%. The pool was deployed straight to PumpSwap with its LP unlocked. The creator wallet shows 'creator_close' and holds 0, yet GMGN reports an odd creator best-ATH of $231M.\",\"uncertainty\":\"The 62% holder could be a pool or vault that RugCheck did not label. I could not see X or Telegram content.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a directly created PumpSwap pool, so it can be pulled at any time\",\"One unlabeled wallet holds 62.36% of supply; top 10 hold 97% per GeckoTerminal\",\"10 identical-name predecessors today all ended at $0 liquidity\",\"Very few sellers so far, consistent with a controlled pump before an exit\"]},\"counterargument\":\"The 1,353 unique buyers in 30 minutes is real retail breadth, and the brand has a large Chinese audience. If this copy is the one the community has settled on, it could squeeze from a $74k market cap to over $150k before any exit. The 62% holder might be an unlabeled pool account, not a whale.\",\"unknowns\":[\"Identity of the 62% holder\",\"Whether the gua51x X account has any real following or ties to the site\",\"Whether the LP owner is the creator\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-constrained. A web search on the contract address returned nothing relevant. The name search found only the gossip site itself and its X/community pages. Fetching x.com/gua51x returned HTTP 402.\"},\"thesis\":\"This looks like a serial clone of a borrowed Chinese brand, with unlocked LP and a single 62% holder, after 10 same-name rugs today. Buying momentum is strong, but the structure favours an exit over a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":7,\"p_rug\":60,\"survival_score\":15,\"attention_score\":55,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.51chiguatv.com/\",\"what\":\"The real 51\u5403\u74dc\u7f51 gossip site; no token mentioned\"},{\"url\":\"https://x.com/51chiguawang\",\"what\":\"The brand's X account, found by search\"},{\"url\":\"https://x.com/gua51x\",\"what\":\"Project X handle from GeckoTerminal; fetch returned HTTP 402\"}]}",
+ "structured_output": {
+  "what_is_happening": "51X (\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\", meaning \"51 Chigua official first-launch meme\") is a PumpSwap pool about 16 minutes old. It was created directly on PumpSwap, not migrated from pump.fun (GMGN migrated=0, launchpad empty). It is up about 300-350%, with 1,353 unique buyers against 51 unique sellers. It is at least the 11th token today with the identical name and ticker. All 10 earlier copies are dead, with $0 liquidity and no volume. Its LP is 100% unlocked. One unlabeled wallet holds 62.36% of supply. GeckoTerminal puts the top 10 at 97%.",
+  "narrative": {
+   "description": "The token borrows the brand of 51\u5403\u74dc\u7f51, a large Chinese gossip and scandal-leak site with many mirror domains and an X presence, and claims to be its 'official' meme launch. Nothing I found shows the site endorses any token.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most likely because Chinese-speaking degens recognise the brand name and chase buys under 'official first launch' framing. The same name has been relaunched repeatedly all day, which points to a serial clone or rug operation, not organic attention."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the latest of many identical launches and is the only one with live liquidity. There is no verified link to the 51\u5403\u74dc\u7f51 site. The GeckoTerminal X handle, gua51x, could not be fetched (HTTP 402).",
+   "competing_tokens": "At least 10 identical-name 51X tokens were created over the previous ~17 hours, all now at ~$0 liquidity (for example CCwxZZ7..., DUtv1vG..., Cms8FHd...).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There are 11 same-name launches in one day, the first 10 dead. Buyers and sellers are extremely lopsided (1,353 vs 51 unique), and one wallet holds 62%. The pool was deployed straight to PumpSwap with its LP unlocked. The creator wallet shows 'creator_close' and holds 0, yet GMGN reports an odd creator best-ATH of $231M.",
+   "uncertainty": "The 62% holder could be a pool or vault that RugCheck did not label. I could not see X or Telegram content."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a directly created PumpSwap pool, so it can be pulled at any time",
+    "One unlabeled wallet holds 62.36% of supply; top 10 hold 97% per GeckoTerminal",
+    "10 identical-name predecessors today all ended at $0 liquidity",
+    "Very few sellers so far, consistent with a controlled pump before an exit"
+   ]
+  },
+  "counterargument": "The 1,353 unique buyers in 30 minutes is real retail breadth, and the brand has a large Chinese audience. If this copy is the one the community has settled on, it could squeeze from a $74k market cap to over $150k before any exit. The 62% holder might be an unlabeled pool account, not a whale.",
+  "unknowns": [
+   "Identity of the 62% holder",
+   "Whether the gua51x X account has any real following or ties to the site",
+   "Whether the LP owner is the creator"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-constrained. A web search on the contract address returned nothing relevant. The name search found only the gossip site itself and its X/community pages. Fetching x.com/gua51x returned HTTP 402."
+  },
+  "thesis": "This looks like a serial clone of a borrowed Chinese brand, with unlocked LP and a single 62% holder, after 10 same-name rugs today. Buying momentum is strong, but the structure favours an exit over a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 7,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 55,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.51chiguatv.com/",
+    "what": "The real 51\u5403\u74dc\u7f51 gossip site; no token mentioned"
+   },
+   {
+    "url": "https://x.com/51chiguawang",
+    "what": "The brand's X account, found by search"
+   },
+   {
+    "url": "https://x.com/gua51x",
+    "what": "Project X handle from GeckoTerminal; fetch returned HTTP 402"
+   }
+  ]
+ },
+ "ttft_ms": 3225,
+ "type": "result",
+ "duration_ms": 31015,
+ "uuid": "a61d9c3f-669c-40e3-81e4-16278448ef60",
+ "ttft_stream_ms": 772,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 773,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

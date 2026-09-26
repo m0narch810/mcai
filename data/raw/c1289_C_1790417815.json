@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 41944,
+ "stop_reason": "tool_use",
+ "session_id": "84037310-b919-4d19-9e7d-dc40b83f0ab2",
+ "total_cost_usd": 0.2266762,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12963,
+  "cache_read_input_tokens": 29421,
+  "output_tokens": 2619,
+  "output_tokens_details": {
+   "thinking_tokens": 444
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12963,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2149,
+    "cache_read_input_tokens": 14592,
+    "cache_creation_input_tokens": 1135,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1135
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2619,
+   "cacheReadInputTokens": 29421,
+   "cacheCreationInputTokens": 12963,
+   "webSearchRequests": 0,
+   "costUSD": 0.1619922,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 444,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30019,
+   "outputTokens": 933,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.064684,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"The token is called \\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\", which means \\\"51 Chigua (gossip site) official first-launch meme\\\". It was deployed straight onto PumpSwap. The pool appeared 4 seconds after the mint, migrated_unix is 0, and it never used the pump.fun curve, so the creator supplied the LP. That LP is 100% unlocked (RugCheck marks it 'danger'), and the creator still holds 18.99% of supply. In about 14 minutes it ran up ~130-156% to a ~$30k market cap on $260k of volume. Buying is very lopsided: 1,177 unique buyers against 52 unique sellers. The packet lists at least 10 earlier tokens with the same ticker and name, all created in the last ~19 hours, and every one now has $0-0.48 of liquidity. The most recent, 4PRYX, was created ~1.9h before this pool and did $392k of volume in the last hour, yet shows $0 liquidity. That looks like a serial rug farm reusing the name of a well-known Chinese gossip site.\",\"narrative\":{\"description\":\"It borrows the brand of 51\u5403\u74dc\u7f51, a popular Chinese gossip/leaks site with X communities and many mirror domains. There is no sign the site itself launched or endorsed any token.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The brand is known to Chinese-speaking users. The flow of money looks driven by a repeated launch pattern, possibly with a coordinated or bot buyer base, rather than by any real news.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is simply the newest of at least 11 identical 'official first launch' deployments. Nothing ties it to the real 51\u5403\u74dc operators. The GeckoTerminal handle gua51x was not verified.\",\"competing_tokens\":\"At least 10 same-name 51X tokens from the past ~19h, all with liquidity at about zero (for example 4PRYX, EDQi, CCwx).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The same name was redeployed 10+ times, and each earlier copy went to ~0 liquidity. The creator self-seeded unlocked LP and holds 19%. Buyers outnumber sellers about 23 to 1 (1,177 vs 52), which is unusual for organic trading. GMGN flags the creator as a rat trader at 19%.\",\"uncertainty\":\"I could not see who the buyers are. It may be a real Chinese community that keeps getting rugged.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% unlocked, creator-provided LP on PumpSwap\",\"Creator holds 18.99% of supply\",\"The earlier 10+ same-name clones all ended with zero liquidity\",\"Liquidity is only ~$37k\"]},\"counterargument\":\"Buying is strong and broad (1,177 unique buyers in 15 minutes, 4:1 buy/sell), and the creator has not sold yet. If this deployer is a different person from the earlier ones, a Chinese community could push a $30k coin past 2x within minutes before any pull.\",\"unknowns\":[\"Whether one deployer made all the clones (this creator shows 0 other tokens, so wallets are probably rotated)\",\"Whether the gua51x X account is real\",\"Who the 1,177 buyers are\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Searching the contract address returned nothing. A name search found the real 51\u5403\u74dc site and its X communities, but nothing about a token. Time was limited, so I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"This looks like the latest round of a name-farm rug: at least 11 identical 'official launch' tokens in 19 hours, every earlier one drained. The creator controls unlocked LP and 19% of supply. A pull or dump inside 6 hours is likely, and the chance of a clean 2x from entry is small.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":80,\"survival_score\":10,\"attention_score\":45,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/51chiguawang\",\"what\":\"The real 51\u5403\u74dc X account; no token tie found\"},{\"url\":\"https://cg51.com/\",\"what\":\"The 51\u5403\u74dc gossip site\"},{\"url\":\"https://x.com/i/communities/1932656163642101858\",\"what\":\"51\u5403\u74dc\u7f51 official X community\"}]}",
+ "structured_output": {
+  "what_is_happening": "The token is called \"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\", which means \"51 Chigua (gossip site) official first-launch meme\". It was deployed straight onto PumpSwap. The pool appeared 4 seconds after the mint, migrated_unix is 0, and it never used the pump.fun curve, so the creator supplied the LP. That LP is 100% unlocked (RugCheck marks it 'danger'), and the creator still holds 18.99% of supply. In about 14 minutes it ran up ~130-156% to a ~$30k market cap on $260k of volume. Buying is very lopsided: 1,177 unique buyers against 52 unique sellers. The packet lists at least 10 earlier tokens with the same ticker and name, all created in the last ~19 hours, and every one now has $0-0.48 of liquidity. The most recent, 4PRYX, was created ~1.9h before this pool and did $392k of volume in the last hour, yet shows $0 liquidity. That looks like a serial rug farm reusing the name of a well-known Chinese gossip site.",
+  "narrative": {
+   "description": "It borrows the brand of 51\u5403\u74dc\u7f51, a popular Chinese gossip/leaks site with X communities and many mirror domains. There is no sign the site itself launched or endorsed any token.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The brand is known to Chinese-speaking users. The flow of money looks driven by a repeated launch pattern, possibly with a coordinated or bot buyer base, rather than by any real news."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is simply the newest of at least 11 identical 'official first launch' deployments. Nothing ties it to the real 51\u5403\u74dc operators. The GeckoTerminal handle gua51x was not verified.",
+   "competing_tokens": "At least 10 same-name 51X tokens from the past ~19h, all with liquidity at about zero (for example 4PRYX, EDQi, CCwx).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The same name was redeployed 10+ times, and each earlier copy went to ~0 liquidity. The creator self-seeded unlocked LP and holds 19%. Buyers outnumber sellers about 23 to 1 (1,177 vs 52), which is unusual for organic trading. GMGN flags the creator as a rat trader at 19%.",
+   "uncertainty": "I could not see who the buyers are. It may be a real Chinese community that keeps getting rugged."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% unlocked, creator-provided LP on PumpSwap",
+    "Creator holds 18.99% of supply",
+    "The earlier 10+ same-name clones all ended with zero liquidity",
+    "Liquidity is only ~$37k"
+   ]
+  },
+  "counterargument": "Buying is strong and broad (1,177 unique buyers in 15 minutes, 4:1 buy/sell), and the creator has not sold yet. If this deployer is a different person from the earlier ones, a Chinese community could push a $30k coin past 2x within minutes before any pull.",
+  "unknowns": [
+   "Whether one deployer made all the clones (this creator shows 0 other tokens, so wallets are probably rotated)",
+   "Whether the gua51x X account is real",
+   "Who the 1,177 buyers are"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Searching the contract address returned nothing. A name search found the real 51\u5403\u74dc site and its X communities, but nothing about a token. Time was limited, so I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "This looks like the latest round of a name-farm rug: at least 11 identical 'official launch' tokens in 19 hours, every earlier one drained. The creator controls unlocked LP and 19% of supply. A pull or dump inside 6 hours is likely, and the chance of a clean 2x from entry is small.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 80,
+  "survival_score": 10,
+  "attention_score": 45,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/51chiguawang",
+    "what": "The real 51\u5403\u74dc X account; no token tie found"
+   },
+   {
+    "url": "https://cg51.com/",
+    "what": "The 51\u5403\u74dc gossip site"
+   },
+   {
+    "url": "https://x.com/i/communities/1932656163642101858",
+    "what": "51\u5403\u74dc\u7f51 official X community"
+   }
+  ]
+ },
+ "ttft_ms": 3441,
+ "type": "result",
+ "duration_ms": 36226,
+ "uuid": "a10357a1-f555-47b0-856c-bf6a1adde478",
+ "ttft_stream_ms": 678,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 678,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 34845,
+ "stop_reason": "tool_use",
+ "session_id": "5e68480e-3bd9-4e24-8b08-c2dbc9a9ffd6",
+ "total_cost_usd": 0.1834226,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 10722,
+  "cache_read_input_tokens": 13648,
+  "output_tokens": 2568,
+  "output_tokens_details": {
+   "thinking_tokens": 499
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10722,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2143,
+    "cache_read_input_tokens": 10884,
+    "cache_creation_input_tokens": 2602,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2602
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2568,
+   "cacheReadInputTokens": 13648,
+   "cacheCreationInputTokens": 10722,
+   "webSearchRequests": 0,
+   "costUSD": 0.1398816,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 499,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20531,
+   "outputTokens": 602,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043540999999999996,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A '\ud83d\udcb2SATAN' token launched directly on a PumpSwap pool about 2 hours ago (not on the pump.fun curve, and the contract address has no 'pump' suffix). It rose +433% in 6h and +100% in 1h, to about $122k market cap with about $103k in the pool. The creator wallet holds 41.89% of supply outside the pool. GMGN tags 100 wallets as bundlers, who control about 45% of the top-trader share. The packet lists three earlier tokens with the identical name and ticker '\ud83d\udcb2SATAN', launched about 22h, 21h and 13h ago. All three now show zero liquidity and zero volume. The creator's best-token ATH of about $212k closely matches the first clone's roughly $214k market cap. This looks like a serial launch-and-pull template. I found no socials, website or web discussion of this token.\",\"narrative\":{\"description\":\"Generic 'SATAN' meme with no event, community or socials attached.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"The flow looks driven by bundlers and bots (100 bundler wallets, only about 100 unique buyers per hour against 3.4k buys), not by any narrative.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only live pair among several identical '\ud83d\udcb2SATAN' deployments. The earlier ones are dead with zero liquidity.\",\"competing_tokens\":\"7WCR6Vw\u2026, F6jP4c\u2026, 9Hjrn\u2026 (same ticker, all rugged or at zero liquidity) and 3nV8x\u2026pump 'Satan' (dead).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 100 bundler wallets holding about 45% of the top-trader share. The creator holds 41.89%. Only about 100 unique buyers and sellers per hour against more than 3,000 buys, a pattern typical of bot volume. Three identical-name predecessors all ended at zero liquidity.\",\"uncertainty\":\"The creator wallet differs from the earlier ones (launched count = 1), so the link rests on the matching template and ATH figure, not on confirmed on-chain funding links.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The creator holds 41.89% outside the pool, so it can dump into $103k of liquidity at any time.\",\"LP burn ratio is 0, and RugCheck reports $0 total market liquidity, which contradicts the '100% locked' flag.\",\"100 bundler wallets.\",\"The same-name clones were all rugged within hours.\",\"The earlier clone peaked near $214k. A 2x from $122k would need about $245k, above that prior ceiling.\"]},\"counterargument\":\"Momentum is extreme (+100% in 1h, 5-minute rate holding steady versus the hourly rate). The buy/sell ratio stays positive, and holders reached about 1,100 in 2h. Operators sometimes pump a clone past the previous ATH before pulling, so a quick 2x wick is possible.\",\"unknowns\":[\"Whether the creator wallet is funded by the same deployer as the earlier clones.\",\"Actual LP ownership and lock status.\",\"Any private Telegram promotion.\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time-limited. Searches for the contract address and the name returned nothing relevant. The packet lists no socials or website.\"},\"thesis\":\"A serial same-name clone, dominated by bundlers, with the creator holding 42% and unburned LP. The predecessors died at zero liquidity after peaking around $214k. A rug is more likely than a 2x from $122k.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":65,\"survival_score\":12,\"attention_score\":35,\"manipulation_risk\":90,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://dexscreener.com/solana/4sC7c8AYpTjfmb1v4ZppNmZkpVBbt3YkRYJXTcsd6o1a\",\"what\":\"Pair data (from the packet)\"},{\"url\":\"https://rugcheck.xyz/tokens/8Ub4exi6NJVu45stvSj1Z5jPMSrr1pzGmVWRSiZdvhX3\",\"what\":\"RugCheck risks: creator holds 41.89%, liquidity reported as $0\"}]}",
+ "structured_output": {
+  "what_is_happening": "A '\ud83d\udcb2SATAN' token launched directly on a PumpSwap pool about 2 hours ago (not on the pump.fun curve, and the contract address has no 'pump' suffix). It rose +433% in 6h and +100% in 1h, to about $122k market cap with about $103k in the pool. The creator wallet holds 41.89% of supply outside the pool. GMGN tags 100 wallets as bundlers, who control about 45% of the top-trader share. The packet lists three earlier tokens with the identical name and ticker '\ud83d\udcb2SATAN', launched about 22h, 21h and 13h ago. All three now show zero liquidity and zero volume. The creator's best-token ATH of about $212k closely matches the first clone's roughly $214k market cap. This looks like a serial launch-and-pull template. I found no socials, website or web discussion of this token.",
+  "narrative": {
+   "description": "Generic 'SATAN' meme with no event, community or socials attached.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "The flow looks driven by bundlers and bots (100 bundler wallets, only about 100 unique buyers per hour against 3.4k buys), not by any narrative."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only live pair among several identical '\ud83d\udcb2SATAN' deployments. The earlier ones are dead with zero liquidity.",
+   "competing_tokens": "7WCR6Vw\u2026, F6jP4c\u2026, 9Hjrn\u2026 (same ticker, all rugged or at zero liquidity) and 3nV8x\u2026pump 'Satan' (dead).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 100 bundler wallets holding about 45% of the top-trader share. The creator holds 41.89%. Only about 100 unique buyers and sellers per hour against more than 3,000 buys, a pattern typical of bot volume. Three identical-name predecessors all ended at zero liquidity.",
+   "uncertainty": "The creator wallet differs from the earlier ones (launched count = 1), so the link rests on the matching template and ATH figure, not on confirmed on-chain funding links."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The creator holds 41.89% outside the pool, so it can dump into $103k of liquidity at any time.",
+    "LP burn ratio is 0, and RugCheck reports $0 total market liquidity, which contradicts the '100% locked' flag.",
+    "100 bundler wallets.",
+    "The same-name clones were all rugged within hours.",
+    "The earlier clone peaked near $214k. A 2x from $122k would need about $245k, above that prior ceiling."
+   ]
+  },
+  "counterargument": "Momentum is extreme (+100% in 1h, 5-minute rate holding steady versus the hourly rate). The buy/sell ratio stays positive, and holders reached about 1,100 in 2h. Operators sometimes pump a clone past the previous ATH before pulling, so a quick 2x wick is possible.",
+  "unknowns": [
+   "Whether the creator wallet is funded by the same deployer as the earlier clones.",
+   "Actual LP ownership and lock status.",
+   "Any private Telegram promotion."
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time-limited. Searches for the contract address and the name returned nothing relevant. The packet lists no socials or website."
+  },
+  "thesis": "A serial same-name clone, dominated by bundlers, with the creator holding 42% and unburned LP. The predecessors died at zero liquidity after peaking around $214k. A rug is more likely than a 2x from $122k.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 65,
+  "survival_score": 12,
+  "attention_score": 35,
+  "manipulation_risk": 90,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://dexscreener.com/solana/4sC7c8AYpTjfmb1v4ZppNmZkpVBbt3YkRYJXTcsd6o1a",
+    "what": "Pair data (from the packet)"
+   },
+   {
+    "url": "https://rugcheck.xyz/tokens/8Ub4exi6NJVu45stvSj1Z5jPMSrr1pzGmVWRSiZdvhX3",
+    "what": "RugCheck risks: creator holds 41.89%, liquidity reported as $0"
+   }
+  ]
+ },
+ "ttft_ms": 3682,
+ "type": "result",
+ "duration_ms": 30415,
+ "uuid": "f596b8fa-635f-48b6-99e6-61870526520d",
+ "ttft_stream_ms": 599,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 599,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

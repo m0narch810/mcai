@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 44224,
+ "stop_reason": "tool_use",
+ "session_id": "bd406663-711a-4434-8c36-7d16624b135c",
+ "total_cost_usd": 0.2213778,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11720,
+  "cache_read_input_tokens": 26174,
+  "output_tokens": 2897,
+  "output_tokens_details": {
+   "thinking_tokens": 269
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11720,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2384,
+    "cache_read_input_tokens": 12896,
+    "cache_creation_input_tokens": 1588,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1588
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2897,
+   "cacheReadInputTokens": 26174,
+   "cacheCreationInputTokens": 11720,
+   "webSearchRequests": 0,
+   "costUSD": 0.1569588,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 269,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 29189,
+   "outputTokens": 1046,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.064419,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"FTK (\\\"For The Kids\\\") is a 14-minute-old pump.fun bonding-curve coin. Its description says the creator fees go to @stjude through UsePaid. It was posted by the X account THETRENCHERYA, which was previously named DR_TISM. It spiked fast: about $98k volume in the first hour, and GMGN shows an all-time-high price of 4.17e-05, which works out to about $42k market cap. By T2 it had crashed back to about $11.5k (GeckoTerminal m5 -54%, DexScreener m5 -27.6%). That is roughly -72% from the ATH and below the $24.7k market cap at detection. Heavy bundler activity: GMGN counts 215 bundler wallets and puts the top bundler trader share at 32%. The deployer has 441 prior launches and used uxento, a fast-launch tool. I found no web or X coverage of the contract.\",\"narrative\":{\"description\":\"A charity coin: creator fees go to St. Jude through UsePaid, which pays fees out via X Money. Charity memecoins are a real, recognised category. Pump.fun has an official Charity Coins feature, and an earlier STJUDE coin reached about $3M in market cap after St. Jude engaged with it. But this is a generic re-use of that theme, with no new event behind it.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"A short burst at launch, probably driven by bundlers and trench traders plus a post from the deployer's X account. I found no organic spread and no sign that St. Jude has engaged.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The link to St. Jude exists only through the UsePaid fee routing. St. Jude has not endorsed it, as far as I could find.\",\"competing_tokens\":\"Earlier St. Jude coins exist, e.g. STJUDE (maPhRPvd...pump) and a Raydium STJUDE pool. The packet lists no same-ticker FTK tokens.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"GMGN: 215 bundler wallets, top bundler trader share 32%, 177 fresh wallets, bot/degen rate 37%. The dev wallet has 441 launches and deployed with uxento. The project's X account has been renamed (DR_TISM to THETRENCHERYA) and has launched 13 tokens. The price dumped 72% from the ATH within minutes.\",\"uncertainty\":\"I could not see any X posts (x.com returned 402). The 13 smart wallets and 3 renowned wallets may be real traders rather than promotion.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Heavy bundler share (32%)\",\"Serial deployer with 441 launches\",\"Already down 72% from the ATH, so early buyers are trapped above and will sell into any bounce\",\"Curve at only 55 of 115 virtual SOL\",\"GMGN counts 167 holders while RugCheck counts 606; the numbers disagree\"]},\"counterargument\":\"It already printed about $42k, so a bounce from $11k back to $23k (a 2x) only needs a partial retrace. Charity coins can catch a second wave if St. Jude or UsePaid amplify them. Smart and KOL wallets are present, and volume is still large relative to market cap. The dev holds 0%, and mint and freeze authority are renounced.\",\"unknowns\":[\"The content and engagement of the X post (fetch blocked)\",\"Whether St. Jude or UsePaid will amplify the coin\",\"Whether the smart wallets have already exited\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"The contract search returned nothing relevant. The name/charity search found only general charity-coin news. The UsePaid page failed with an SSL error and x.com returned 402. I had no time to search Reddit, Telegram or Discord.\"},\"thesis\":\"A generic charity-theme launch from a serial deployer. It was bundler-heavy, spiked to about $42k and crashed to about $11k before entry. A dead-cat bounce to 2x is possible but less likely than further bleeding. Below-average candidate.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":35,\"survival_score\":30,\"attention_score\":35,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://coinmarketcap.com/academy/article/meme-news-pumpfun-burns-dollar370m-in-pump-launches-charity-coins-as-memes-rebound\",\"what\":\"Pump.fun's Charity Coins feature and the charity-coin trend\"},{\"url\":\"https://usepaid.app/explore\",\"what\":\"UsePaid routes creator fees to X accounts via X Money\"},{\"url\":\"https://phantom.com/tokens/solana/maPhRPvdTAohyX5YAU4mGg2NNETJtqU1miaHCahpump\",\"what\":\"An earlier ST JUDE token (competing theme)\"},{\"url\":\"https://x.com/THETRENCHERYA/status/2103678791289582012\",\"what\":\"The project's X post (returned 402, inaccessible)\"}]}",
+ "structured_output": {
+  "what_is_happening": "FTK (\"For The Kids\") is a 14-minute-old pump.fun bonding-curve coin. Its description says the creator fees go to @stjude through UsePaid. It was posted by the X account THETRENCHERYA, which was previously named DR_TISM. It spiked fast: about $98k volume in the first hour, and GMGN shows an all-time-high price of 4.17e-05, which works out to about $42k market cap. By T2 it had crashed back to about $11.5k (GeckoTerminal m5 -54%, DexScreener m5 -27.6%). That is roughly -72% from the ATH and below the $24.7k market cap at detection. Heavy bundler activity: GMGN counts 215 bundler wallets and puts the top bundler trader share at 32%. The deployer has 441 prior launches and used uxento, a fast-launch tool. I found no web or X coverage of the contract.",
+  "narrative": {
+   "description": "A charity coin: creator fees go to St. Jude through UsePaid, which pays fees out via X Money. Charity memecoins are a real, recognised category. Pump.fun has an official Charity Coins feature, and an earlier STJUDE coin reached about $3M in market cap after St. Jude engaged with it. But this is a generic re-use of that theme, with no new event behind it.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "A short burst at launch, probably driven by bundlers and trench traders plus a post from the deployer's X account. I found no organic spread and no sign that St. Jude has engaged."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The link to St. Jude exists only through the UsePaid fee routing. St. Jude has not endorsed it, as far as I could find.",
+   "competing_tokens": "Earlier St. Jude coins exist, e.g. STJUDE (maPhRPvd...pump) and a Raydium STJUDE pool. The packet lists no same-ticker FTK tokens.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "GMGN: 215 bundler wallets, top bundler trader share 32%, 177 fresh wallets, bot/degen rate 37%. The dev wallet has 441 launches and deployed with uxento. The project's X account has been renamed (DR_TISM to THETRENCHERYA) and has launched 13 tokens. The price dumped 72% from the ATH within minutes.",
+   "uncertainty": "I could not see any X posts (x.com returned 402). The 13 smart wallets and 3 renowned wallets may be real traders rather than promotion."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Heavy bundler share (32%)",
+    "Serial deployer with 441 launches",
+    "Already down 72% from the ATH, so early buyers are trapped above and will sell into any bounce",
+    "Curve at only 55 of 115 virtual SOL",
+    "GMGN counts 167 holders while RugCheck counts 606; the numbers disagree"
+   ]
+  },
+  "counterargument": "It already printed about $42k, so a bounce from $11k back to $23k (a 2x) only needs a partial retrace. Charity coins can catch a second wave if St. Jude or UsePaid amplify them. Smart and KOL wallets are present, and volume is still large relative to market cap. The dev holds 0%, and mint and freeze authority are renounced.",
+  "unknowns": [
+   "The content and engagement of the X post (fetch blocked)",
+   "Whether St. Jude or UsePaid will amplify the coin",
+   "Whether the smart wallets have already exited"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "The contract search returned nothing relevant. The name/charity search found only general charity-coin news. The UsePaid page failed with an SSL error and x.com returned 402. I had no time to search Reddit, Telegram or Discord."
+  },
+  "thesis": "A generic charity-theme launch from a serial deployer. It was bundler-heavy, spiked to about $42k and crashed to about $11k before entry. A dead-cat bounce to 2x is possible but less likely than further bleeding. Below-average candidate.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 35,
+  "survival_score": 30,
+  "attention_score": 35,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://coinmarketcap.com/academy/article/meme-news-pumpfun-burns-dollar370m-in-pump-launches-charity-coins-as-memes-rebound",
+    "what": "Pump.fun's Charity Coins feature and the charity-coin trend"
+   },
+   {
+    "url": "https://usepaid.app/explore",
+    "what": "UsePaid routes creator fees to X accounts via X Money"
+   },
+   {
+    "url": "https://phantom.com/tokens/solana/maPhRPvdTAohyX5YAU4mGg2NNETJtqU1miaHCahpump",
+    "what": "An earlier ST JUDE token (competing theme)"
+   },
+   {
+    "url": "https://x.com/THETRENCHERYA/status/2103678791289582012",
+    "what": "The project's X post (returned 402, inaccessible)"
+   }
+  ]
+ },
+ "ttft_ms": 1344,
+ "type": "result",
+ "duration_ms": 38540,
+ "uuid": "f89216e1-8493-4896-b078-f3b827678dda",
+ "ttft_stream_ms": 661,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 661,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

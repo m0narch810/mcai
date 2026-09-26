@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 31024,
+ "stop_reason": "tool_use",
+ "session_id": "d48d9bbf-e0f6-498a-9f03-70284c7321cf",
+ "total_cost_usd": 0.1648426,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11058,
+  "cache_read_input_tokens": 14933,
+  "output_tokens": 2499,
+  "output_tokens_details": {
+   "thinking_tokens": 263
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11058,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2179,
+    "cache_read_input_tokens": 12169,
+    "cache_creation_input_tokens": 1653,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1653
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2499,
+   "cacheReadInputTokens": 14933,
+   "cacheCreationInputTokens": 11058,
+   "webSearchRequests": 0,
+   "costUSD": 0.1414466,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 263,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 11161,
+   "outputTokens": 447,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.023396,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"About 12 minutes ago a copycat \\\"Effective Accelerationism\\\" (e/acc) token launched on PumpSwap. It is one of at least 9 same-name copies created in the last ~30 minutes around a UsePaid token that sends its fees to @beffjezos (Guillaume Verdon, founder of the e/acc movement). The token's own description says it was \\\"Created on https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU\\\", which names a different mint, CbcyNo7..., as the original. That original is at about $800k market cap with $2.8M hourly volume. Our token's mint is not a pump.fun address, it was not created on the bonding curve, and its liquidity ($207k) is larger than its market cap ($145k), all of it in LP that is 100% unlocked. GMGN flags 50 bundler wallets holding about 26% of top-trader share. Only 55 unique sellers against 534 buyers, and $2M volume in 12 minutes, suggest scripted or bundled activity.\",\"narrative\":{\"description\":\"e/acc / Beff Jezos creator-fee token via UsePaid (fees paid to @beffjezos through X Money). Beff Jezos is a real, large account, and UsePaid creator-fee coins are a current meta.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A UsePaid token pointing fees to a famous X account (Beff Jezos) pulled attention. The canonical CbcyNo7 token ran to about $800k and set off a wave of clones.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. This is a clone whose own description links to the canonical CbcyNo7 mint on UsePaid. It has no pump suffix and is not the fee-routed token.\",\"competing_tokens\":\"Canonical: CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU (~$797k mcap). Other clones: 3m7Bhp7 ($990k), 7dVWLAd ($274k), DseCuJ ($204k), 6TrwU9 ($127k) and more.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"50 bundler wallets; 534 unique buyers but only 55 sellers; $2M volume on a $145k cap within 12 minutes; the pool was seeded with liquidity larger than the market cap, with 100% of LP unlocked and few LP providers; the description was copied from the canonical token.\",\"uncertainty\":\"I could not see the X post or which token Beff or other accounts actually shared. The pattern could partly be copy-trading bots rather than one operator.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked in a custom PumpSwap pool, so the creator can pull liquidity at any time\",\"Liquidity larger than market cap is typical of rug-pull setups\",\"50 bundler wallets\",\"Clone competing with 9+ same-name tokens and a clear canonical one\",\"Price already doubled from launch and m5 is negative\"]},\"counterargument\":\"Clone waves sometimes lift every copy, and deep liquidity makes a quick dump less damaging. If Beff Jezos boosts e/acc, confused buyers could push this copy up 2x as well. The packet also shows mint and freeze authority renounced and no dev-history flags.\",\"unknowns\":[\"Contents of the beffjezos X post\",\"Whether the LP owner is the creator and how much of the LP they control\",\"Whether any call channels are pushing this specific clone\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"not_attempted\",\"notes\":\"Time-limited: one web search found background on Beff Jezos and UsePaid, and fetching the X status returned HTTP 402. The main finding comes from the packet: the token's description names a different mint as the original.\"},\"thesis\":\"A non-canonical clone in a same-name swarm, with unlocked LP larger than its market cap and heavy bundling. This is a likely LP-pull or bleed with low odds of a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":55,\"survival_score\":20,\"attention_score\":45,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/UsePaid\",\"what\":\"UsePaid pays token creator fees out to X handles\"},{\"url\":\"https://www.eaccwiki.com/wiki/Beff_Jezos\",\"what\":\"Beff Jezos / e/acc background\"},{\"url\":\"https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU\",\"what\":\"Canonical UsePaid token named in this clone's description\"}]}",
+ "structured_output": {
+  "what_is_happening": "About 12 minutes ago a copycat \"Effective Accelerationism\" (e/acc) token launched on PumpSwap. It is one of at least 9 same-name copies created in the last ~30 minutes around a UsePaid token that sends its fees to @beffjezos (Guillaume Verdon, founder of the e/acc movement). The token's own description says it was \"Created on https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU\", which names a different mint, CbcyNo7..., as the original. That original is at about $800k market cap with $2.8M hourly volume. Our token's mint is not a pump.fun address, it was not created on the bonding curve, and its liquidity ($207k) is larger than its market cap ($145k), all of it in LP that is 100% unlocked. GMGN flags 50 bundler wallets holding about 26% of top-trader share. Only 55 unique sellers against 534 buyers, and $2M volume in 12 minutes, suggest scripted or bundled activity.",
+  "narrative": {
+   "description": "e/acc / Beff Jezos creator-fee token via UsePaid (fees paid to @beffjezos through X Money). Beff Jezos is a real, large account, and UsePaid creator-fee coins are a current meta.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A UsePaid token pointing fees to a famous X account (Beff Jezos) pulled attention. The canonical CbcyNo7 token ran to about $800k and set off a wave of clones."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. This is a clone whose own description links to the canonical CbcyNo7 mint on UsePaid. It has no pump suffix and is not the fee-routed token.",
+   "competing_tokens": "Canonical: CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU (~$797k mcap). Other clones: 3m7Bhp7 ($990k), 7dVWLAd ($274k), DseCuJ ($204k), 6TrwU9 ($127k) and more.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "50 bundler wallets; 534 unique buyers but only 55 sellers; $2M volume on a $145k cap within 12 minutes; the pool was seeded with liquidity larger than the market cap, with 100% of LP unlocked and few LP providers; the description was copied from the canonical token.",
+   "uncertainty": "I could not see the X post or which token Beff or other accounts actually shared. The pattern could partly be copy-trading bots rather than one operator."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked in a custom PumpSwap pool, so the creator can pull liquidity at any time",
+    "Liquidity larger than market cap is typical of rug-pull setups",
+    "50 bundler wallets",
+    "Clone competing with 9+ same-name tokens and a clear canonical one",
+    "Price already doubled from launch and m5 is negative"
+   ]
+  },
+  "counterargument": "Clone waves sometimes lift every copy, and deep liquidity makes a quick dump less damaging. If Beff Jezos boosts e/acc, confused buyers could push this copy up 2x as well. The packet also shows mint and freeze authority renounced and no dev-history flags.",
+  "unknowns": [
+   "Contents of the beffjezos X post",
+   "Whether the LP owner is the creator and how much of the LP they control",
+   "Whether any call channels are pushing this specific clone"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "not_attempted",
+   "notes": "Time-limited: one web search found background on Beff Jezos and UsePaid, and fetching the X status returned HTTP 402. The main finding comes from the packet: the token's description names a different mint as the original."
+  },
+  "thesis": "A non-canonical clone in a same-name swarm, with unlocked LP larger than its market cap and heavy bundling. This is a likely LP-pull or bleed with low odds of a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 55,
+  "survival_score": 20,
+  "attention_score": 45,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/UsePaid",
+    "what": "UsePaid pays token creator fees out to X handles"
+   },
+   {
+    "url": "https://www.eaccwiki.com/wiki/Beff_Jezos",
+    "what": "Beff Jezos / e/acc background"
+   },
+   {
+    "url": "https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU",
+    "what": "Canonical UsePaid token named in this clone's description"
+   }
+  ]
+ },
+ "ttft_ms": 2361,
+ "type": "result",
+ "duration_ms": 30074,
+ "uuid": "856aac31-a42b-4216-927d-6b65f37770b9",
+ "ttft_stream_ms": 663,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 663,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

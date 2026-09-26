@@ -1,0 +1,187 @@
+{
+ "duration_api_ms": 55241,
+ "stop_reason": "tool_use",
+ "session_id": "2db80f41-381a-4038-a033-88e185340f1a",
+ "total_cost_usd": 0.2699564,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13919,
+  "cache_read_input_tokens": 42802,
+  "output_tokens": 3163,
+  "output_tokens_details": {
+   "thinking_tokens": 327
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13919,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2088,
+    "cache_read_input_tokens": 15796,
+    "cache_creation_input_tokens": 887,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 887
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3163,
+   "cacheReadInputTokens": 42802,
+   "cacheCreationInputTokens": 13919,
+   "webSearchRequests": 0,
+   "costUSD": 0.1832044,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 327,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 38697,
+   "outputTokens": 1611,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.086752,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun bonding-curve coin called \\\"x/acc\\\", launched about 17 minutes before detection through the uxento deploy platform. Its description reads \\\"Fees to @adriandittmann via UsePaid\\\", a fee-sharing launch that uses the name of Adrian Dittmann, a Musk-adjacent X personality. It links to a tweet by the recycled account devvaintnohobby, which I could not read. Two other x/acc tokens were launched within the same 4 minutes, so this was a race to snipe a tweet or meme. The coin went up about 400% to an ATH of about $40k market cap and has since fallen to about $19k. At detection it was down 24% over the last 5 minutes.\",\"narrative\":{\"description\":\"x/acc is an X-flavoured variant of e/acc (accelerationism). Adrian Dittmann is reportedly part of an x/acc group on X and is widely rumoured to be a Musk alt, a rumour that has been debunked. The token routes its creator fees to Dittmann.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most likely a single tweet (from Dittmann or about x/acc) set off several copycat launches at once. I found no news or broad discussion showing the idea is growing.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the pump.fun launch with the most unique buyers (646) and the one that tags Dittmann for fees. It was launched second of the three, after BY6A and before 4LBP.\",\"competing_tokens\":\"BY6A...pump (launched earlier, $9.9k market cap) and 4LBP... (launched later, $33k market cap and higher than this one, not a pump.fun address).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"The creator wallet has launched 7,905 tokens and has already closed its position (serial deployer)\",\"172 bundler wallets, with a top bundler share of 30%\",\"7-wallet transfer insider network found by RugCheck\",\"47% bot/degen share\",\"Already down about 50% from its ATH, a sign of post-spike distribution\",\"A competing x/acc token has a higher market cap\",\"Recycled project X account with 4 prior usernames\"]},\"counterargument\":\"Breadth is real: about 650 unique buyers, a spread-out top-10, and a very low $19k market cap. If Dittmann himself engages with the coin or claims the fees (UsePaid), it could quickly retest and pass its $40k ATH, which would be a 2x from entry. Celebrity fee-share coins sometimes get a public acknowledgement.\",\"unknowns\":[\"What the linked tweet says\",\"Whether Dittmann has engaged with the coin or claimed the fees\",\"Which x/acc token the X crowd is actually backing\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"The contract address search found nothing. The X status fetch returned 402. News coverage only gives background on Dittmann and the Musk-alt rumour; nothing about the token itself.\"},\"thesis\":\"This is a snipe-race coin tied to one tweet and a borrowed celebrity name, not the only x/acc token, and launched by a serial deployer with heavy bundling. It has already halved from its peak. Breadth gives a small chance of a rebound to the ATH, but this looks below average for the pool.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":35,\"survival_score\":35,\"attention_score\":45,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.rollingstone.com/culture/culture-features/adrian-dittmann-elon-musk-1235224131/\",\"what\":\"Background on Adrian Dittmann and the Musk-alt rumour\"},{\"url\":\"https://spectator.com/article/the-real-adrian-dittmann/\",\"what\":\"Spectator piece arguing Dittmann is a real person, debunking the rumour\"},{\"url\":\"https://triple-c.at/index.php/tripleC/article/download/1670/1673/6771?inline=1\",\"what\":\"Paper saying Dittmann is a member of the x/acc group on X\"},{\"url\":\"https://x.com/devvaintnohobby/status/2103683451492962476\",\"what\":\"The project's linked tweet; the fetch returned 402, so its content is unknown\"}],\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"646 unique buyers and a dispersed top-10 (22%) show real breadth. Against that: 172 bundler wallets, a 47% bot/degen share, a 7-wallet insider network, a creator wallet with 7,905 launches that has already closed its position, a recycled X account with 4 prior usernames, and three x/acc tokens launched within 4 minutes.\",\"uncertainty\":\"I could not read the source tweet and could not see any discussion on X.\"}}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun bonding-curve coin called \"x/acc\", launched about 17 minutes before detection through the uxento deploy platform. Its description reads \"Fees to @adriandittmann via UsePaid\", a fee-sharing launch that uses the name of Adrian Dittmann, a Musk-adjacent X personality. It links to a tweet by the recycled account devvaintnohobby, which I could not read. Two other x/acc tokens were launched within the same 4 minutes, so this was a race to snipe a tweet or meme. The coin went up about 400% to an ATH of about $40k market cap and has since fallen to about $19k. At detection it was down 24% over the last 5 minutes.",
+  "narrative": {
+   "description": "x/acc is an X-flavoured variant of e/acc (accelerationism). Adrian Dittmann is reportedly part of an x/acc group on X and is widely rumoured to be a Musk alt, a rumour that has been debunked. The token routes its creator fees to Dittmann.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most likely a single tweet (from Dittmann or about x/acc) set off several copycat launches at once. I found no news or broad discussion showing the idea is growing."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the pump.fun launch with the most unique buyers (646) and the one that tags Dittmann for fees. It was launched second of the three, after BY6A and before 4LBP.",
+   "competing_tokens": "BY6A...pump (launched earlier, $9.9k market cap) and 4LBP... (launched later, $33k market cap and higher than this one, not a pump.fun address).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "The creator wallet has launched 7,905 tokens and has already closed its position (serial deployer)",
+    "172 bundler wallets, with a top bundler share of 30%",
+    "7-wallet transfer insider network found by RugCheck",
+    "47% bot/degen share",
+    "Already down about 50% from its ATH, a sign of post-spike distribution",
+    "A competing x/acc token has a higher market cap",
+    "Recycled project X account with 4 prior usernames"
+   ]
+  },
+  "counterargument": "Breadth is real: about 650 unique buyers, a spread-out top-10, and a very low $19k market cap. If Dittmann himself engages with the coin or claims the fees (UsePaid), it could quickly retest and pass its $40k ATH, which would be a 2x from entry. Celebrity fee-share coins sometimes get a public acknowledgement.",
+  "unknowns": [
+   "What the linked tweet says",
+   "Whether Dittmann has engaged with the coin or claimed the fees",
+   "Which x/acc token the X crowd is actually backing"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "The contract address search found nothing. The X status fetch returned 402. News coverage only gives background on Dittmann and the Musk-alt rumour; nothing about the token itself."
+  },
+  "thesis": "This is a snipe-race coin tied to one tweet and a borrowed celebrity name, not the only x/acc token, and launched by a serial deployer with heavy bundling. It has already halved from its peak. Breadth gives a small chance of a rebound to the ATH, but this looks below average for the pool.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 35,
+  "survival_score": 35,
+  "attention_score": 45,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.rollingstone.com/culture/culture-features/adrian-dittmann-elon-musk-1235224131/",
+    "what": "Background on Adrian Dittmann and the Musk-alt rumour"
+   },
+   {
+    "url": "https://spectator.com/article/the-real-adrian-dittmann/",
+    "what": "Spectator piece arguing Dittmann is a real person, debunking the rumour"
+   },
+   {
+    "url": "https://triple-c.at/index.php/tripleC/article/download/1670/1673/6771?inline=1",
+    "what": "Paper saying Dittmann is a member of the x/acc group on X"
+   },
+   {
+    "url": "https://x.com/devvaintnohobby/status/2103683451492962476",
+    "what": "The project's linked tweet; the fetch returned 402, so its content is unknown"
+   }
+  ],
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "646 unique buyers and a dispersed top-10 (22%) show real breadth. Against that: 172 bundler wallets, a 47% bot/degen share, a 7-wallet insider network, a creator wallet with 7,905 launches that has already closed its position, a recycled X account with 4 prior usernames, and three x/acc tokens launched within 4 minutes.",
+   "uncertainty": "I could not read the source tweet and could not see any discussion on X."
+  }
+ },
+ "ttft_ms": 1378,
+ "type": "result",
+ "duration_ms": 41979,
+ "uuid": "0822836d-b2fd-4700-9149-bc138288cfad",
+ "ttft_stream_ms": 694,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 695,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

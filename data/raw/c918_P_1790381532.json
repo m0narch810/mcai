@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 24664,
+ "stop_reason": "tool_use",
+ "session_id": "1d9b3574-87a2-4ace-8ca5-2a470dc88a11",
+ "total_cost_usd": 0.1142284,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8197,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2411,
+  "output_tokens_details": {
+   "thinking_tokens": 443
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8197,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2411,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8197,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8197
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2411,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8197,
+   "webSearchRequests": 0,
+   "costUSD": 0.1142284,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 443,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"gascoin\\\" ($gas) was launched on pump.fun through the UsePaid fee-sharing launcher. The description says \\\"Fees to @deobfuscations via UsePaid\\\", and the linked X item is a single status post, not an account. It left the bonding curve for PumpSwap about 2.5 minutes after creation. About 10 minutes after migration it had run +487% to roughly $289k market cap, on $436k volume, 1,697 unique buyers and 1,152 unique sellers. The last 5 minutes carried nearly half of all volume (+148%). The current price is about 29% below the all-time high of 0.000409, so it is volatile near the top. At least 6 other copycat \\\"gascoin\\\" contracts launched within minutes, and one is close behind at $255k market cap with $291k of hourly volume.\",\"narrative\":{\"description\":\"Probably a coin built around a tweet or a person: a fee-share launch pointing at the X user @deobfuscations and one specific X status. The \\\"gas\\\" meme may be crypto gas fees or slang. The story is a fast-moving tweet-meme rather than a project.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Many launches of the same name within minutes of each other suggest a viral tweet or event that snipers raced to tokenize. Breadth is unusually high for a 10-minute-old coin (about 1,700 unique buyers, 44 smart-money wallets, 2 KOL wallets).\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"By market cap, volume and buyer count it is the current leader among the same-name gascoin launches. It was the first gascoin pair created (a different \\\"gas money\\\" token was earlier but is dead), and it is linked to the fee recipient's post via UsePaid.\",\"competing_tokens\":\"4vBDG9... gascoin sits at $255k market cap with $291k hourly volume and is a real rival for the canonical spot. Several other gascoin clones are below $60k or already drained (BPCx..., 3LVn...).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Pointing to real demand: 1,697 unique buyers, 44 smart and 2 renowned wallets, top-10 holders at only 22.7%, and the creator holding nothing. Pointing to manufactured demand: GMGN counts 425 bundler wallets, a bot/degen rate of 0.77, bundlers holding 35.5% among top traders, and 540 fresh wallets. The creator address has launched 166k tokens, which is almost certainly the UsePaid platform deployer rather than a personal dev history. No paid DexScreener promotion was found.\",\"uncertainty\":\"The packet has no tweet content, so I can't tell whether the linked post is actually viral or whether @deobfuscations endorses the coin.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"High bundler share could mean a coordinated dump\",\"Close same-name rival may split flow or take the canonical spot\",\"Already about 5x in 10 minutes; entry after a vertical 5-minute candle\",\"Liquidity of about $49k against a $289k market cap means sharp slippage on exits\",\"A 4-wallet insider transfer network was detected\"]},\"counterargument\":\"The coin is already about 29% off its high after a 5x in ten minutes. Bundled and bot wallets make up much of the flow, and a same-name rival with nearly equal volume can split attention. A typical outcome is a blow-off top that bleeds past -50% within an hour as the early bundles take profit and the copycats dilute the ticker.\",\"unknowns\":[\"What the linked tweet says and how far it reached\",\"Whether @deobfuscations acknowledges or promotes this contract\",\"Which gascoin contract CT treats as the canonical one\",\"Whether bundlers are still holding or have already exited\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses the packet only.\"},\"thesis\":\"This is a tweet-driven fee-share coin, currently leading a cluster of same-name launches. It has very strong early breadth and smart-money participation, the LP is burned and authorities are renounced, but bundling is heavy and a close rival exists. It is one of the stronger candidates in this pool, but a 2x from about $290k to $580k in 6 hours is still well below even odds.\",\"continuation_view\":\"neutral\",\"p_runner\":22,\"p_rug\":18,\"survival_score\":58,\"attention_score\":82,\"manipulation_risk\":62,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"gascoin\" ($gas) was launched on pump.fun through the UsePaid fee-sharing launcher. The description says \"Fees to @deobfuscations via UsePaid\", and the linked X item is a single status post, not an account. It left the bonding curve for PumpSwap about 2.5 minutes after creation. About 10 minutes after migration it had run +487% to roughly $289k market cap, on $436k volume, 1,697 unique buyers and 1,152 unique sellers. The last 5 minutes carried nearly half of all volume (+148%). The current price is about 29% below the all-time high of 0.000409, so it is volatile near the top. At least 6 other copycat \"gascoin\" contracts launched within minutes, and one is close behind at $255k market cap with $291k of hourly volume.",
+  "narrative": {
+   "description": "Probably a coin built around a tweet or a person: a fee-share launch pointing at the X user @deobfuscations and one specific X status. The \"gas\" meme may be crypto gas fees or slang. The story is a fast-moving tweet-meme rather than a project.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Many launches of the same name within minutes of each other suggest a viral tweet or event that snipers raced to tokenize. Breadth is unusually high for a 10-minute-old coin (about 1,700 unique buyers, 44 smart-money wallets, 2 KOL wallets)."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "By market cap, volume and buyer count it is the current leader among the same-name gascoin launches. It was the first gascoin pair created (a different \"gas money\" token was earlier but is dead), and it is linked to the fee recipient's post via UsePaid.",
+   "competing_tokens": "4vBDG9... gascoin sits at $255k market cap with $291k hourly volume and is a real rival for the canonical spot. Several other gascoin clones are below $60k or already drained (BPCx..., 3LVn...).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Pointing to real demand: 1,697 unique buyers, 44 smart and 2 renowned wallets, top-10 holders at only 22.7%, and the creator holding nothing. Pointing to manufactured demand: GMGN counts 425 bundler wallets, a bot/degen rate of 0.77, bundlers holding 35.5% among top traders, and 540 fresh wallets. The creator address has launched 166k tokens, which is almost certainly the UsePaid platform deployer rather than a personal dev history. No paid DexScreener promotion was found.",
+   "uncertainty": "The packet has no tweet content, so I can't tell whether the linked post is actually viral or whether @deobfuscations endorses the coin."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "High bundler share could mean a coordinated dump",
+    "Close same-name rival may split flow or take the canonical spot",
+    "Already about 5x in 10 minutes; entry after a vertical 5-minute candle",
+    "Liquidity of about $49k against a $289k market cap means sharp slippage on exits",
+    "A 4-wallet insider transfer network was detected"
+   ]
+  },
+  "counterargument": "The coin is already about 29% off its high after a 5x in ten minutes. Bundled and bot wallets make up much of the flow, and a same-name rival with nearly equal volume can split attention. A typical outcome is a blow-off top that bleeds past -50% within an hour as the early bundles take profit and the copycats dilute the ticker.",
+  "unknowns": [
+   "What the linked tweet says and how far it reached",
+   "Whether @deobfuscations acknowledges or promotes this contract",
+   "Which gascoin contract CT treats as the canonical one",
+   "Whether bundlers are still holding or have already exited"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses the packet only."
+  },
+  "thesis": "This is a tweet-driven fee-share coin, currently leading a cluster of same-name launches. It has very strong early breadth and smart-money participation, the LP is burned and authorities are renounced, but bundling is heavy and a close rival exists. It is one of the stronger candidates in this pool, but a 2x from about $290k to $580k in 6 hours is still well below even odds.",
+  "continuation_view": "neutral",
+  "p_runner": 22,
+  "p_rug": 18,
+  "survival_score": 58,
+  "attention_score": 82,
+  "manipulation_risk": 62,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6236,
+ "type": "result",
+ "duration_ms": 24718,
+ "uuid": "3e23ec2f-165f-4579-ac35-1cba2a54e902",
+ "ttft_stream_ms": 674,
+ "time_to_request_ms": 53,
+ "first_content_frame_ms": 674,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

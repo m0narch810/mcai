@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 33878,
+ "stop_reason": "tool_use",
+ "session_id": "8d29452b-247f-43bd-b45c-a8fe110135da",
+ "total_cost_usd": 0.1764718,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 10477,
+  "cache_read_input_tokens": 13684,
+  "output_tokens": 2273,
+  "output_tokens_details": {
+   "thinking_tokens": 299
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10477,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2050,
+    "cache_read_input_tokens": 10920,
+    "cache_creation_input_tokens": 2321,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2321
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2273,
+   "cacheReadInputTokens": 13684,
+   "cacheCreationInputTokens": 10477,
+   "webSearchRequests": 0,
+   "costUSD": 0.1320288,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 299,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20798,
+   "outputTokens": 729,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.044443,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A \\\"getbags.fun\\\"/BAGS token was deployed directly onto a PumpSwap pool (not migrated from the bonding curve, migrated_unix=0) with LP added by the deployer and 100% unlocked. It is 12 minutes old and has 1,713 unique buyers but only 62 unique sellers, and its price has roughly doubled. The packet lists at least five other \\\"getbags.fun\\\"/BAGS tokens launched in the last ~20 minutes. Four of them now have close to $0 liquidity (already pulled) despite showing large volume. This looks like a serial copycat rug farm borrowing the name of the real Bags launchpad (bags.fm/@BagsApp), not a real project launch.\",\"narrative\":{\"description\":\"This borrows the brand of Bags (bags.fm), a real Solana launchpad and trading app that already has its own token. No announcement ties this contract to Bags, and the 'getbags.fun' name does not match the official domain.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Buyer numbers look manufactured (1,713 buyers vs 62 sellers within minutes, 45 bundler wallets). The same deployer pattern is repeated across several clones, most of which have already had their liquidity pulled.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"No link to the official Bags project was found. This is one of at least six same-name clones launched within minutes of each other.\",\"competing_tokens\":\"Four same-name BAGS tokens (44nD..., DQxJ..., 3Fbv..., 5wf5...) now show ~$0 liquidity after heavy volume. FSTe... is a newer clone. The real Bags token exists separately (cryptorank).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Buyers-to-sellers ratio of 1713:62, 45 bundler wallets, a 13% bundler share among top traders, zero smart or KOL wallets, and only 34 GMGN page visits despite $290k volume. Sibling clones show the same profile and have had their liquidity pulled.\",\"uncertainty\":\"I cannot see on-chain funding links between these clones and this token directly.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked and deployer-provided on PumpSwap, so it can be pulled at any time\",\"4 sibling same-name clones have already had their liquidity pulled within minutes\",\"45 bundler wallets / bot-generated buyer count\",\"Creator shows 'creator_close' status\"]},\"counterargument\":\"The holders are spread out (top 10 hold 12.5%), the deployer holds nothing, and liquidity ($29k) is larger than market cap. If the deployer leaves the pool in place, the heavy bot buying could push price up another 2x before exit, as happened with the creator's previous token (ATH $452k).\",\"unknowns\":[\"Whether this deployer is the same one behind the rugged sibling clones\",\"Any X posts promoting this contract (none are indexed)\",\"When the LP will be pulled\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"A contract search returned nothing. A name search found only the official Bags/bags.fm and unrelated clone sites; nothing connects them to this contract. The 2-minute limit meant I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"This is a serial copycat LP-rug using a real launchpad's brand. Its siblings were drained within minutes. The chance of a 2x before a pull is low, and the chance of a rug is very high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":3,\"p_rug\":85,\"survival_score\":8,\"attention_score\":30,\"manipulation_risk\":93,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://bags.fm/\",\"what\":\"Official Bags launchpad (the real brand being cloned)\"},{\"url\":\"https://x.com/BagsApp?lang=en\",\"what\":\"Official Bags X account\"},{\"url\":\"https://cryptorank.io/price/bags\",\"what\":\"The real BAGS token exists separately\"}]}",
+ "structured_output": {
+  "what_is_happening": "A \"getbags.fun\"/BAGS token was deployed directly onto a PumpSwap pool (not migrated from the bonding curve, migrated_unix=0) with LP added by the deployer and 100% unlocked. It is 12 minutes old and has 1,713 unique buyers but only 62 unique sellers, and its price has roughly doubled. The packet lists at least five other \"getbags.fun\"/BAGS tokens launched in the last ~20 minutes. Four of them now have close to $0 liquidity (already pulled) despite showing large volume. This looks like a serial copycat rug farm borrowing the name of the real Bags launchpad (bags.fm/@BagsApp), not a real project launch.",
+  "narrative": {
+   "description": "This borrows the brand of Bags (bags.fm), a real Solana launchpad and trading app that already has its own token. No announcement ties this contract to Bags, and the 'getbags.fun' name does not match the official domain.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Buyer numbers look manufactured (1,713 buyers vs 62 sellers within minutes, 45 bundler wallets). The same deployer pattern is repeated across several clones, most of which have already had their liquidity pulled."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "No link to the official Bags project was found. This is one of at least six same-name clones launched within minutes of each other.",
+   "competing_tokens": "Four same-name BAGS tokens (44nD..., DQxJ..., 3Fbv..., 5wf5...) now show ~$0 liquidity after heavy volume. FSTe... is a newer clone. The real Bags token exists separately (cryptorank).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Buyers-to-sellers ratio of 1713:62, 45 bundler wallets, a 13% bundler share among top traders, zero smart or KOL wallets, and only 34 GMGN page visits despite $290k volume. Sibling clones show the same profile and have had their liquidity pulled.",
+   "uncertainty": "I cannot see on-chain funding links between these clones and this token directly."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked and deployer-provided on PumpSwap, so it can be pulled at any time",
+    "4 sibling same-name clones have already had their liquidity pulled within minutes",
+    "45 bundler wallets / bot-generated buyer count",
+    "Creator shows 'creator_close' status"
+   ]
+  },
+  "counterargument": "The holders are spread out (top 10 hold 12.5%), the deployer holds nothing, and liquidity ($29k) is larger than market cap. If the deployer leaves the pool in place, the heavy bot buying could push price up another 2x before exit, as happened with the creator's previous token (ATH $452k).",
+  "unknowns": [
+   "Whether this deployer is the same one behind the rugged sibling clones",
+   "Any X posts promoting this contract (none are indexed)",
+   "When the LP will be pulled"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "A contract search returned nothing. A name search found only the official Bags/bags.fm and unrelated clone sites; nothing connects them to this contract. The 2-minute limit meant I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "This is a serial copycat LP-rug using a real launchpad's brand. Its siblings were drained within minutes. The chance of a 2x before a pull is low, and the chance of a rug is very high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 3,
+  "p_rug": 85,
+  "survival_score": 8,
+  "attention_score": 30,
+  "manipulation_risk": 93,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://bags.fm/",
+    "what": "Official Bags launchpad (the real brand being cloned)"
+   },
+   {
+    "url": "https://x.com/BagsApp?lang=en",
+    "what": "Official Bags X account"
+   },
+   {
+    "url": "https://cryptorank.io/price/bags",
+    "what": "The real BAGS token exists separately"
+   }
+  ]
+ },
+ "ttft_ms": 1759,
+ "type": "result",
+ "duration_ms": 28778,
+ "uuid": "d048559a-256b-4dd5-b2af-d03977be252a",
+ "ttft_stream_ms": 840,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 840,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

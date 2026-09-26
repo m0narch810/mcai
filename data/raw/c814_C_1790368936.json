@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 39233,
+ "stop_reason": "tool_use",
+ "session_id": "3d1b41fc-ed87-47e1-97ea-38d1b9d42b4f",
+ "total_cost_usd": 0.2012232,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12243,
+  "cache_read_input_tokens": 28136,
+  "output_tokens": 2546,
+  "output_tokens_details": {
+   "thinking_tokens": 269
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12243,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2050,
+    "cache_read_input_tokens": 13466,
+    "cache_creation_input_tokens": 1541,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1541
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2546,
+   "cacheReadInputTokens": 28136,
+   "cacheCreationInputTokens": 12243,
+   "webSearchRequests": 0,
+   "costUSD": 0.15451520000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 269,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21823,
+   "outputTokens": 977,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.046708,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Several Solana tokens named \\\"musestream\\\" launched within minutes of each other, around 20:25\u201320:30 UTC. They reference musestream.tv, a real platform where AI agents livestream and each agent gets its own coin. The platform's GitHub says those coins trade on Robinhood Chain, not Solana. This token (EuMQ...) came from a Meteora virtual-curve launch, is 11 minutes old, is worth about $199k, and is up about 240\u2013370%. A sibling token (43S1...) leads the cluster at about $915k with more than 4x this token's volume. The creator has launched 15 tokens and has already closed their position. No official link from the project to any Solana contract was found.\",\"narrative\":{\"description\":\"The story is 'AI agents livestream and trade their own coins' (musestream.tv, @musestreamdotv), a fresh AI-agent/streaming theme.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The real product site and its X handle likely got noticed, and snipers launched many same-name clones at once. The attention is going to the cluster as a whole, not to this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name. GeckoTerminal lists the project's X handle, but that metadata is set by whoever deployed the token. The project says its agent coins live on Robinhood Chain.\",\"competing_tokens\":\"43S1zmub... at $915k mcap and $864k h1 volume (the clear leader); yvgo9nvi... at $110k and $470k volume; several others already dead with about $4 of liquidity. All launched within about 5 minutes of each other.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"52 wallets flagged as bundlers, a serial deployer (15 launches) who has already closed out, 5 duplicate images, and a burst of copycat launches. Unique buyers (1,183) far outnumber sellers (78), which fits early bot and degen flow.\",\"uncertainty\":\"No X data. We could not fetch the X profile (HTTP 402), so we cannot see whether the project endorsed any Solana contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck says 99.99% of LP is unlocked; GMGN says LP is burned (lp_burn_ratio 1.0). The two sources conflict.\",\"One address, the System Program 1111..., holds 80%. This is probably burned or unallocated supply, but RugCheck flags it.\",\"52 bundler wallets\",\"Liquidity is about $32k against a $199k market cap\",\"A larger clone with the same name is soaking up most of the flow\"]},\"counterargument\":\"The theme (AI agents streaming and trading) is fresh and real. Clusters of same-name clones sometimes lift the number-two and number-three tokens when the leader runs. At $199k, this token is 4.6x cheaper than the leader, so rotation money could double it inside 6 hours. It also has a real 1,200-holder base.\",\"unknowns\":[\"Whether @musestreamdotv has endorsed any Solana contract\",\"Whether the LP is actually burned or unlocked\",\"Who the bundler wallets are\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Time-limited. The project site and GitHub show a Robinhood Chain AI-agent streaming product. The X profile fetch returned HTTP 402. A search for the contract found nothing. Reddit, Telegram and Discord were not searched.\"},\"thesis\":\"This is a secondary clone in a crowded group of same-name tokens. The leader (43S1) is 4.6x larger and has most of the volume. The real project is on Robinhood Chain, the deployer is a serial launcher who has exited, and bundlers are heavy. The chance of doubling before halving is below average for this pool.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":38,\"survival_score\":35,\"attention_score\":55,\"manipulation_risk\":70,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://musestream.tv/\",\"what\":\"Project site: AI agents livestream and trade agent coins\"},{\"url\":\"https://github.com/CyberVerse2/musestream\",\"what\":\"GitHub: agent coins trade on Robinhood Chain\"},{\"url\":\"https://x.com/musestreamdotv\",\"what\":\"Project X account (fetch returned HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "Several Solana tokens named \"musestream\" launched within minutes of each other, around 20:25\u201320:30 UTC. They reference musestream.tv, a real platform where AI agents livestream and each agent gets its own coin. The platform's GitHub says those coins trade on Robinhood Chain, not Solana. This token (EuMQ...) came from a Meteora virtual-curve launch, is 11 minutes old, is worth about $199k, and is up about 240\u2013370%. A sibling token (43S1...) leads the cluster at about $915k with more than 4x this token's volume. The creator has launched 15 tokens and has already closed their position. No official link from the project to any Solana contract was found.",
+  "narrative": {
+   "description": "The story is 'AI agents livestream and trade their own coins' (musestream.tv, @musestreamdotv), a fresh AI-agent/streaming theme.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The real product site and its X handle likely got noticed, and snipers launched many same-name clones at once. The attention is going to the cluster as a whole, not to this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name. GeckoTerminal lists the project's X handle, but that metadata is set by whoever deployed the token. The project says its agent coins live on Robinhood Chain.",
+   "competing_tokens": "43S1zmub... at $915k mcap and $864k h1 volume (the clear leader); yvgo9nvi... at $110k and $470k volume; several others already dead with about $4 of liquidity. All launched within about 5 minutes of each other.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "52 wallets flagged as bundlers, a serial deployer (15 launches) who has already closed out, 5 duplicate images, and a burst of copycat launches. Unique buyers (1,183) far outnumber sellers (78), which fits early bot and degen flow.",
+   "uncertainty": "No X data. We could not fetch the X profile (HTTP 402), so we cannot see whether the project endorsed any Solana contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck says 99.99% of LP is unlocked; GMGN says LP is burned (lp_burn_ratio 1.0). The two sources conflict.",
+    "One address, the System Program 1111..., holds 80%. This is probably burned or unallocated supply, but RugCheck flags it.",
+    "52 bundler wallets",
+    "Liquidity is about $32k against a $199k market cap",
+    "A larger clone with the same name is soaking up most of the flow"
+   ]
+  },
+  "counterargument": "The theme (AI agents streaming and trading) is fresh and real. Clusters of same-name clones sometimes lift the number-two and number-three tokens when the leader runs. At $199k, this token is 4.6x cheaper than the leader, so rotation money could double it inside 6 hours. It also has a real 1,200-holder base.",
+  "unknowns": [
+   "Whether @musestreamdotv has endorsed any Solana contract",
+   "Whether the LP is actually burned or unlocked",
+   "Who the bundler wallets are"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Time-limited. The project site and GitHub show a Robinhood Chain AI-agent streaming product. The X profile fetch returned HTTP 402. A search for the contract found nothing. Reddit, Telegram and Discord were not searched."
+  },
+  "thesis": "This is a secondary clone in a crowded group of same-name tokens. The leader (43S1) is 4.6x larger and has most of the volume. The real project is on Robinhood Chain, the deployer is a serial launcher who has exited, and bundlers are heavy. The chance of doubling before halving is below average for this pool.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 38,
+  "survival_score": 35,
+  "attention_score": 55,
+  "manipulation_risk": 70,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://musestream.tv/",
+    "what": "Project site: AI agents livestream and trade agent coins"
+   },
+   {
+    "url": "https://github.com/CyberVerse2/musestream",
+    "what": "GitHub: agent coins trade on Robinhood Chain"
+   },
+   {
+    "url": "https://x.com/musestreamdotv",
+    "what": "Project X account (fetch returned HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 1766,
+ "type": "result",
+ "duration_ms": 34546,
+ "uuid": "09513f27-e354-48ef-bdc9-016719ea575e",
+ "ttft_stream_ms": 749,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 749,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

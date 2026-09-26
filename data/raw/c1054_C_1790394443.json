@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 48819,
+ "stop_reason": "tool_use",
+ "session_id": "5b00d39f-edcc-40aa-a02c-9f25db209b7f",
+ "total_cost_usd": 0.2527266,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13062,
+  "cache_read_input_tokens": 40143,
+  "output_tokens": 2593,
+  "output_tokens_details": {
+   "thinking_tokens": 277
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13062,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2083,
+    "cache_read_input_tokens": 14248,
+    "cache_creation_input_tokens": 1578,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1578
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 2593,
+   "cacheReadInputTokens": 40143,
+   "cacheCreationInputTokens": 13062,
+   "webSearchRequests": 0,
+   "costUSD": 0.1644166,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 277,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 41295,
+   "outputTokens": 1403,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08831,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun coin named \\\"x/acc\\\", about 16 minutes old, graduated to PumpSwap about 15 minutes after launch. It has roughly doubled to about $110k market cap (ATH about $135k). Its only social link is a December 2023 tweet by @AdrianDittmann, the X account widely rumoured to be an Elon Musk alt. The description says \\\"Fees to @adriandittmann via UsePaid\\\", meaning creator fees are routed to that account. I found no sign he endorses it. The launch volume burst is already fading: GeckoTerminal shows about $11k of volume in the last 5 minutes against about $139k over 15 minutes, and 5-minute price change is -6%.\",\"narrative\":{\"description\":\"x/acc is a spin on e/acc, tied to an old tweet by Adrian Dittmann, the supposed Musk alt, with creator fees routed to him through UsePaid. It is a 'fees to a famous account' meta play hoping the account notices or claims.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"The Dittmann/Musk-alt mythology plus the fee-to-influencer hook give traders a lottery ticket that he reacts. The referenced tweet is from 2023, and I found no current news or event behind it.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Of the two x/acc tokens, this one graduated and holds liquidity, and it links a Dittmann tweet with fees routed to him. It has no endorsement from Dittmann.\",\"competing_tokens\":\"FL4Um...pump x/acc was created about 18 minutes earlier and is already dead (about $4.9k mcap, $0 liquidity).\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN counts 218 bundler wallets and a 58% bot/degen rate. The creator has launched 21 tokens, the best of which peaked at about $135k. The coin is flagged as a community takeover. On the other side, about 969 unique buyers is a fair number, and top-10 holders own only 18.7%.\",\"uncertainty\":\"I found no X posts about the contract, and X is only reachable through search engines.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Serial deployer: 21 launches, none ever above about $135k\",\"218 bundler wallets and a high bot share\",\"Volume burst decaying fast right after migration\",\"Entry near ATH after +120%\"]},\"counterargument\":\"Adrian Dittmann has a large, crypto-adjacent audience. If he quote-tweets or claims the fees, a $110k coin could easily 3-5x within hours. Liquidity is $29k with LP burned, and holders are spread out.\",\"unknowns\":[\"Whether Dittmann has seen, claimed or mentioned the token\",\"Any live X call-channel promotion\",\"The contents of the UsePaid page (the fetch failed)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Time-limited. Searches for the contract address and for x/acc found nothing about this token. The UsePaid page failed with an SSL error. Only background on Dittmann was found.\"},\"thesis\":\"This is a generic \\\"fees to a celebrity account\\\" launch by a serial deployer with heavy bundling. The post-migration pump is already losing momentum near ATH, and without a Dittmann reaction the odds of another 2x are below the base rate.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":22,\"survival_score\":50,\"attention_score\":48,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.rollingstone.com/culture/culture-features/adrian-dittmann-elon-musk-1235224131/\",\"what\":\"Background on the rumour that Dittmann is a Musk alt\"},{\"url\":\"https://x.com/AdrianDittmann/status/1731861119373840770\",\"what\":\"The 2023 tweet linked as the project's social\"},{\"url\":\"https://usepaid.app/token/4LBPTZUaJdBNHEEBbzFeMXaaZzD5cggtsorwYaPtzbiZ\",\"what\":\"Fee-routing page (fetch failed)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun coin named \"x/acc\", about 16 minutes old, graduated to PumpSwap about 15 minutes after launch. It has roughly doubled to about $110k market cap (ATH about $135k). Its only social link is a December 2023 tweet by @AdrianDittmann, the X account widely rumoured to be an Elon Musk alt. The description says \"Fees to @adriandittmann via UsePaid\", meaning creator fees are routed to that account. I found no sign he endorses it. The launch volume burst is already fading: GeckoTerminal shows about $11k of volume in the last 5 minutes against about $139k over 15 minutes, and 5-minute price change is -6%.",
+  "narrative": {
+   "description": "x/acc is a spin on e/acc, tied to an old tweet by Adrian Dittmann, the supposed Musk alt, with creator fees routed to him through UsePaid. It is a 'fees to a famous account' meta play hoping the account notices or claims.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "The Dittmann/Musk-alt mythology plus the fee-to-influencer hook give traders a lottery ticket that he reacts. The referenced tweet is from 2023, and I found no current news or event behind it."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Of the two x/acc tokens, this one graduated and holds liquidity, and it links a Dittmann tweet with fees routed to him. It has no endorsement from Dittmann.",
+   "competing_tokens": "FL4Um...pump x/acc was created about 18 minutes earlier and is already dead (about $4.9k mcap, $0 liquidity).",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN counts 218 bundler wallets and a 58% bot/degen rate. The creator has launched 21 tokens, the best of which peaked at about $135k. The coin is flagged as a community takeover. On the other side, about 969 unique buyers is a fair number, and top-10 holders own only 18.7%.",
+   "uncertainty": "I found no X posts about the contract, and X is only reachable through search engines."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Serial deployer: 21 launches, none ever above about $135k",
+    "218 bundler wallets and a high bot share",
+    "Volume burst decaying fast right after migration",
+    "Entry near ATH after +120%"
+   ]
+  },
+  "counterargument": "Adrian Dittmann has a large, crypto-adjacent audience. If he quote-tweets or claims the fees, a $110k coin could easily 3-5x within hours. Liquidity is $29k with LP burned, and holders are spread out.",
+  "unknowns": [
+   "Whether Dittmann has seen, claimed or mentioned the token",
+   "Any live X call-channel promotion",
+   "The contents of the UsePaid page (the fetch failed)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Time-limited. Searches for the contract address and for x/acc found nothing about this token. The UsePaid page failed with an SSL error. Only background on Dittmann was found."
+  },
+  "thesis": "This is a generic \"fees to a celebrity account\" launch by a serial deployer with heavy bundling. The post-migration pump is already losing momentum near ATH, and without a Dittmann reaction the odds of another 2x are below the base rate.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 22,
+  "survival_score": 50,
+  "attention_score": 48,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.rollingstone.com/culture/culture-features/adrian-dittmann-elon-musk-1235224131/",
+    "what": "Background on the rumour that Dittmann is a Musk alt"
+   },
+   {
+    "url": "https://x.com/AdrianDittmann/status/1731861119373840770",
+    "what": "The 2023 tweet linked as the project's social"
+   },
+   {
+    "url": "https://usepaid.app/token/4LBPTZUaJdBNHEEBbzFeMXaaZzD5cggtsorwYaPtzbiZ",
+    "what": "Fee-routing page (fetch failed)"
+   }
+  ]
+ },
+ "ttft_ms": 1413,
+ "type": "result",
+ "duration_ms": 43506,
+ "uuid": "20bb7253-efbe-420a-92cd-ec84f863f5af",
+ "ttft_stream_ms": 733,
+ "time_to_request_ms": 61,
+ "first_content_frame_ms": 734,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

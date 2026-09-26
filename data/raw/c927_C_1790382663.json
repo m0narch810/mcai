@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 34762,
+ "stop_reason": "tool_use",
+ "session_id": "54ea1f91-c32d-40f6-81fe-2b7b9b14e46e",
+ "total_cost_usd": 0.1932932,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11277,
+  "cache_read_input_tokens": 27316,
+  "output_tokens": 2640,
+  "output_tokens_details": {
+   "thinking_tokens": 329
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11277,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2179,
+    "cache_read_input_tokens": 12881,
+    "cache_creation_input_tokens": 1160,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1160
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2640,
+   "cacheReadInputTokens": 27316,
+   "cacheCreationInputTokens": 11277,
+   "webSearchRequests": 0,
+   "costUSD": 0.1485032,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 329,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22335,
+   "outputTokens": 491,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.044789999999999996,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Cream is a tweet-meta pump.fun coin. It was created about 12 minutes before detection and migrated to PumpSwap within 12 seconds of creation. Its X link points to a specific post by @cremieuxrecueil (Cr\u00e9mieux, pen name of the writer Jordan Lasker, per the search results). Its description says \\\"Fees to @cremieuxrecueil via UsePaid.\\\" It traded about $1.15M in volume in its first ~12 minutes, with about 2,900 unique buyers. It hit an all-time high near $317k market cap, then fell about 55% in 5 minutes to about $107k at detection, and has since bounced to about $143k. At least 9 other \\\"Cream\\\" tokens were launched within minutes of it; this one has the earliest pair.\",\"narrative\":{\"description\":\"A token built around a single post by the X personality Cr\u00e9mieux. I couldn't read the post (X returned 402). Fees are routed to the account via UsePaid, which is a common tweet-coin format.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Most likely a bot-driven tweet-to-token launch that fast traders piled into. Cr\u00e9mieux has a large X following, but I found no sign he acknowledged the coin. The 55% drop from the high points to a first wave of profit-taking.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"Its pair was created before all 9 same-name clones, and by far it has the most volume ($1.15M against the next best, $640k, on Do4VN\u2026). It is the one linked to the tweet.\",\"competing_tokens\":\"9+ same-name 'Cream' clones launched within ~10 minutes. One of them (66Rv\u2026) is at a higher $232k market cap, and Do4VN\u2026 has $640k volume in the last hour. That splits attention.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN rates 58% of traders as bots or degens and tags the maximum 1,000 bundler wallets, with top bundlers holding 27%. The deployer has launched 166k tokens, so it is an automated tweet-coin deployer. On the other side: about 2,900 unique buyers, 81 smart wallets and 10 KOL wallets, and a low top-10 concentration of about 16%.\",\"uncertainty\":\"I couldn't see the tweet's contents or whether Cr\u00e9mieux has engaged with the coin. X is not indexed.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Heavy bundler and bot share\",\"Already down ~55% from the ATH, so a later peak has to fight holders sitting on losses (bag overhang)\",\"Many clones splitting the flow\",\"Mass-deployer creator, though the creator holds 0%\"]},\"counterargument\":\"This is the canonical first token, with very high real turnover and thousands of buyers. A 2x from the ~$143k entry is only ~$285k, still below the $317k high that was hit minutes ago. If Cr\u00e9mieux quote-tweets or claims the fees, it could quickly reclaim and pass that high.\",\"unknowns\":[\"What the tweet says\",\"Whether Cr\u00e9mieux has acknowledged or claimed the fees\",\"Telegram/X call-channel activity\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The tweet fetch returned 402, the UsePaid page failed with an SSL error, and the contract-address search returned nothing relevant. Time-constrained.\"},\"thesis\":\"The first and highest-volume token in a tweet-coin cluster tied to a large X account. The first peak has already been dumped, and the structure is bot and bundler heavy. The chance of reaching 2x is a bit above the base rate, because entry is below the ATH and it is the canonical token. But tweet coins without the author's engagement usually fade within hours.\",\"continuation_view\":\"fade\",\"p_runner\":14,\"p_rug\":20,\"survival_score\":55,\"attention_score\":62,\"manipulation_risk\":65,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/cremieuxrecueil\",\"what\":\"Cr\u00e9mieux X account (tweet fetch returned 402)\"},{\"url\":\"https://en.wikipedia.org/wiki/Cr%C3%A9mieux\",\"what\":\"Search result on the Cr\u00e9mieux identity\"},{\"url\":\"https://usepaid.app/t/xeb7puan\",\"what\":\"UsePaid project link (fetch failed)\"}]}",
+ "structured_output": {
+  "what_is_happening": "Cream is a tweet-meta pump.fun coin. It was created about 12 minutes before detection and migrated to PumpSwap within 12 seconds of creation. Its X link points to a specific post by @cremieuxrecueil (Cr\u00e9mieux, pen name of the writer Jordan Lasker, per the search results). Its description says \"Fees to @cremieuxrecueil via UsePaid.\" It traded about $1.15M in volume in its first ~12 minutes, with about 2,900 unique buyers. It hit an all-time high near $317k market cap, then fell about 55% in 5 minutes to about $107k at detection, and has since bounced to about $143k. At least 9 other \"Cream\" tokens were launched within minutes of it; this one has the earliest pair.",
+  "narrative": {
+   "description": "A token built around a single post by the X personality Cr\u00e9mieux. I couldn't read the post (X returned 402). Fees are routed to the account via UsePaid, which is a common tweet-coin format.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Most likely a bot-driven tweet-to-token launch that fast traders piled into. Cr\u00e9mieux has a large X following, but I found no sign he acknowledged the coin. The 55% drop from the high points to a first wave of profit-taking."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "Its pair was created before all 9 same-name clones, and by far it has the most volume ($1.15M against the next best, $640k, on Do4VN\u2026). It is the one linked to the tweet.",
+   "competing_tokens": "9+ same-name 'Cream' clones launched within ~10 minutes. One of them (66Rv\u2026) is at a higher $232k market cap, and Do4VN\u2026 has $640k volume in the last hour. That splits attention.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN rates 58% of traders as bots or degens and tags the maximum 1,000 bundler wallets, with top bundlers holding 27%. The deployer has launched 166k tokens, so it is an automated tweet-coin deployer. On the other side: about 2,900 unique buyers, 81 smart wallets and 10 KOL wallets, and a low top-10 concentration of about 16%.",
+   "uncertainty": "I couldn't see the tweet's contents or whether Cr\u00e9mieux has engaged with the coin. X is not indexed."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Heavy bundler and bot share",
+    "Already down ~55% from the ATH, so a later peak has to fight holders sitting on losses (bag overhang)",
+    "Many clones splitting the flow",
+    "Mass-deployer creator, though the creator holds 0%"
+   ]
+  },
+  "counterargument": "This is the canonical first token, with very high real turnover and thousands of buyers. A 2x from the ~$143k entry is only ~$285k, still below the $317k high that was hit minutes ago. If Cr\u00e9mieux quote-tweets or claims the fees, it could quickly reclaim and pass that high.",
+  "unknowns": [
+   "What the tweet says",
+   "Whether Cr\u00e9mieux has acknowledged or claimed the fees",
+   "Telegram/X call-channel activity"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The tweet fetch returned 402, the UsePaid page failed with an SSL error, and the contract-address search returned nothing relevant. Time-constrained."
+  },
+  "thesis": "The first and highest-volume token in a tweet-coin cluster tied to a large X account. The first peak has already been dumped, and the structure is bot and bundler heavy. The chance of reaching 2x is a bit above the base rate, because entry is below the ATH and it is the canonical token. But tweet coins without the author's engagement usually fade within hours.",
+  "continuation_view": "fade",
+  "p_runner": 14,
+  "p_rug": 20,
+  "survival_score": 55,
+  "attention_score": 62,
+  "manipulation_risk": 65,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/cremieuxrecueil",
+    "what": "Cr\u00e9mieux X account (tweet fetch returned 402)"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Cr%C3%A9mieux",
+    "what": "Search result on the Cr\u00e9mieux identity"
+   },
+   {
+    "url": "https://usepaid.app/t/xeb7puan",
+    "what": "UsePaid project link (fetch failed)"
+   }
+  ]
+ },
+ "ttft_ms": 1826,
+ "type": "result",
+ "duration_ms": 33173,
+ "uuid": "3808b2b1-d143-4996-b90c-e3f2df6b5bbf",
+ "ttft_stream_ms": 682,
+ "time_to_request_ms": 57,
+ "first_content_frame_ms": 682,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

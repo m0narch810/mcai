@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 19123,
+ "stop_reason": "tool_use",
+ "session_id": "571f8aa7-de16-47d2-89d9-4e05b231ac29",
+ "total_cost_usd": 0.1071084,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8342,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 1997,
+  "output_tokens_details": {
+   "thinking_tokens": 282
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8342,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1997,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8342,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8342
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 1997,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8342,
+   "webSearchRequests": 0,
+   "costUSD": 0.1071084,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 282,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 25-minute-old pump.fun coin named \\\"Effective Altruism\\\" (E/A) is still on its bonding curve at about $16k market cap. It is up about 300% in the hour and about 50% in the last 5 minutes, sitting near its all-time high of about $17.1k. The description says \\\"Fees to @sbf_ftx via UsePaid\\\", and the links point to an SBF tweet and a random X status. At least 10 other \\\"Effective Altruism\\\" tokens (EA, e/alt, E/A) were launched in the last few hours. That suggests some SBF or effective-altruism talking point is circulating, and it is being farmed by many deployers.\",\"narrative\":{\"description\":\"SBF / effective altruism meme. The \\\"fees to SBF\\\" framing is a known low-effort deployer gimmick, and the many clones show it is being farmed.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Probably a fresh SBF-related post or news item. It has prompted many copycat launches within hours, but none of the clones in the packet has held above about $70k.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most volume among the live E/A clones, but nothing in the packet makes it the canonical one.\",\"competing_tokens\":\"At least 10 same-name tokens. The EA token 7MB5 was created earlier and shows a $68k market cap. FQ4X (EA) has about $9.9k in 1-hour volume. Several e/alt variants were launched in the last hour.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN tags 50 bundler wallets among about 52 holders, and top bundler traders hold 34%. The dev has launched 7 tokens, and the linked X account has 395 launched tokens, which marks a serial deployer. The creator has closed its position. On the other side, 147 unique buyers and 107 unique sellers suggest some real churn.\",\"uncertainty\":\"GMGN's bundler tags may overcount on curve coins. There is no X data showing whether the SBF angle has real organic pull.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Heavy bundler share (about 34% held by top bundlers)\",\"Serial deployer linked to 395 tokens\",\"Many same-name clones splitting attention\",\"Entry comes after a 4x move in 25 minutes, near the ATH\",\"The curve is only about 56% filled, so thin depth makes -50% easy to hit\"]},\"counterargument\":\"If the SBF/EA catalyst is real and still growing, the clone that leads on volume often absorbs the rotation. That can push it past curve completion at about $35k, then to $60-100k within hours, which would be an easy 2x from $16k. The dev already holds nothing, mint and freeze authority are renounced, and the holder spread (top 10 at about 30%) is not extreme.\",\"unknowns\":[\"What the SBF/EA catalyst is and how big it is\",\"Whether the 7MB5 EA token at $68k is the leading clone\",\"Whether the bundler wallets are coordinated sellers\",\"The KOL identity behind the one renowned wallet\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. Judged only from the packet.\"},\"thesis\":\"This is a farmed SBF/EA clone from a serial deployer, with a bundled holder base and many competing same-name tokens. Entry comes after a 4x spike near the ATH. The most likely outcome is a fade as the bundlers sell and attention moves to other clones. Its only upside is being the leading clone of a possibly live catalyst.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":32,\"survival_score\":30,\"attention_score\":42,\"manipulation_risk\":72,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 25-minute-old pump.fun coin named \"Effective Altruism\" (E/A) is still on its bonding curve at about $16k market cap. It is up about 300% in the hour and about 50% in the last 5 minutes, sitting near its all-time high of about $17.1k. The description says \"Fees to @sbf_ftx via UsePaid\", and the links point to an SBF tweet and a random X status. At least 10 other \"Effective Altruism\" tokens (EA, e/alt, E/A) were launched in the last few hours. That suggests some SBF or effective-altruism talking point is circulating, and it is being farmed by many deployers.",
+  "narrative": {
+   "description": "SBF / effective altruism meme. The \"fees to SBF\" framing is a known low-effort deployer gimmick, and the many clones show it is being farmed.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Probably a fresh SBF-related post or news item. It has prompted many copycat launches within hours, but none of the clones in the packet has held above about $70k."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most volume among the live E/A clones, but nothing in the packet makes it the canonical one.",
+   "competing_tokens": "At least 10 same-name tokens. The EA token 7MB5 was created earlier and shows a $68k market cap. FQ4X (EA) has about $9.9k in 1-hour volume. Several e/alt variants were launched in the last hour.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN tags 50 bundler wallets among about 52 holders, and top bundler traders hold 34%. The dev has launched 7 tokens, and the linked X account has 395 launched tokens, which marks a serial deployer. The creator has closed its position. On the other side, 147 unique buyers and 107 unique sellers suggest some real churn.",
+   "uncertainty": "GMGN's bundler tags may overcount on curve coins. There is no X data showing whether the SBF angle has real organic pull."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Heavy bundler share (about 34% held by top bundlers)",
+    "Serial deployer linked to 395 tokens",
+    "Many same-name clones splitting attention",
+    "Entry comes after a 4x move in 25 minutes, near the ATH",
+    "The curve is only about 56% filled, so thin depth makes -50% easy to hit"
+   ]
+  },
+  "counterargument": "If the SBF/EA catalyst is real and still growing, the clone that leads on volume often absorbs the rotation. That can push it past curve completion at about $35k, then to $60-100k within hours, which would be an easy 2x from $16k. The dev already holds nothing, mint and freeze authority are renounced, and the holder spread (top 10 at about 30%) is not extreme.",
+  "unknowns": [
+   "What the SBF/EA catalyst is and how big it is",
+   "Whether the 7MB5 EA token at $68k is the leading clone",
+   "Whether the bundler wallets are coordinated sellers",
+   "The KOL identity behind the one renowned wallet"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. Judged only from the packet."
+  },
+  "thesis": "This is a farmed SBF/EA clone from a serial deployer, with a bundled holder base and many competing same-name tokens. Entry comes after a 4x spike near the ATH. The most likely outcome is a fade as the bundlers sell and attention moves to other clones. Its only upside is being the leading clone of a possibly live catalyst.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 32,
+  "survival_score": 30,
+  "attention_score": 42,
+  "manipulation_risk": 72,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4044,
+ "type": "result",
+ "duration_ms": 19169,
+ "uuid": "2d6a4ba9-30ec-4eac-85fc-4b8d41cf3ef1",
+ "ttft_stream_ms": 751,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 751,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

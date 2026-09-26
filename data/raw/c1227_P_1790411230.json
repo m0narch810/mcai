@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 26464,
+ "stop_reason": "tool_use",
+ "session_id": "98658733-4a10-461e-92b0-4e7b5afa14e0",
+ "total_cost_usd": 0.1186484,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8272,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2602,
+  "output_tokens_details": {
+   "thinking_tokens": 521
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8272,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2602,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8272,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8272
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2602,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8272,
+   "webSearchRequests": 0,
+   "costUSD": 0.1186484,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 521,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 10-day-old dormant 'Mario Nawfal' celebrity-name coin, auto-deployed through j7tracker by a serial deployer (2,230 launches), suddenly spiked. In roughly 15 minutes it drew about 312 unique buyers and about $59k of volume, and its price rose about 680% in an hour to a ~$41k market cap. It is close to completing the pump.fun curve (104.65 of 115 virtual SOL), and GMGN's migrated timestamp implies it migrated at about detection time. Other Mario Nawfal tokens were launched today: one from about 08:14 UTC has $63k of 1-hour volume but $0 liquidity, and another from 08:22 is small. That points to some Mario Nawfal-related trigger, likely a post, set off at the same time. In the last 5 minutes the flow has collapsed: GeckoTerminal shows 11 buyers and $1.4k of volume, and DexScreener shows the price down 13.8% over 5 minutes.\",\"narrative\":{\"description\":\"A celebrity/influencer name coin (Mario Nawfal, a large X news account). There is no official link. The twitter handle is simply his real account, attached by the deploy bot. These coins get a burst of attention when he posts something that gets meme-ified, and then usually fade.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"It looks like a burst triggered by a Mario Nawfal post or event, with several same-name coins being bought at once. This older one may have been chosen because it was closest to curve completion or was the 'first' deployed CA.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is one of several bot-deployed Mario Nawfal coins from about 10 days ago, which were deployed within seconds of each other. This one is the only one that gathered curve depth and is close to migration, which makes it the de facto leader for now.\",\"competing_tokens\":\"Several same-name MARIO coins exist. CvZPv4 was launched today and did $63k of 1-hour volume. 2m4zGD, 56VaeP and CQCUAh were deployed in the same minute as this one. FprQay is an older one from 2025 with $53k of liquidity. Attention is split, and a new CA can take the flow at any moment.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"About 312 unique buyers in 15 minutes is real breadth, but GMGN tags 261 bundler wallets, puts the top bundler traders at 27%, and gives a bot/degen rate of 58%. 18 snipers and 164 fresh wallets are also tagged. 9 smart wallets and 1 renowned wallet are present. Of the 636 holders, the top 10 hold 32% (excluding the AMM), and there is a 4-wallet transfer insider network. The dev is a mass-deployer with zero balance. No paid boosts.\",\"uncertainty\":\"There is no X data, so I can't confirm whether a real Mario Nawfal post drove this or whether the bundles pumped a dormant coin to catch the migration.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Heavy bundler presence (261 wallets tagged; top bundler traders hold 27%) ready to dump at migration\",\"The dev is a serial mass-deployer (2,230 tokens) using a tweet-sniping deploy bot\",\"Momentum is collapsing within minutes of detection (m5 buyers dropped from ~300 to 11)\",\"Several same-name competitors are splitting attention\",\"Migration is just starting, and dumps often follow as the move to PumpSwap completes\"]},\"counterargument\":\"If Mario Nawfal's post is going viral and this is the most-liquid Mario coin to have migrated, it could become the canonical play. Migrated coins at around $40k with 300+ organic buyers and some smart wallets sometimes run to $100k\u2013$200k as the narrative spreads over the next hours.\",\"unknowns\":[\"Whether a triggering Mario Nawfal post exists, and how viral it is\",\"Whether migration completed and how deep the PumpSwap pool is\",\"Bundler exit timing\",\"Whether the flow moves to a newer CA\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The judgment is based on the packet only.\"},\"thesis\":\"A short-lived burst in a bot-deployed celebrity-name coin, dominated by bundlers, with the flow already fading in the last 5 minutes and several same-name competitors. Entry at T+4 minutes is likely near the local top, and a dump at migration is the base case. It has a small chance of running if a viral post makes it the canonical Mario coin.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":30,\"survival_score\":40,\"attention_score\":55,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 10-day-old dormant 'Mario Nawfal' celebrity-name coin, auto-deployed through j7tracker by a serial deployer (2,230 launches), suddenly spiked. In roughly 15 minutes it drew about 312 unique buyers and about $59k of volume, and its price rose about 680% in an hour to a ~$41k market cap. It is close to completing the pump.fun curve (104.65 of 115 virtual SOL), and GMGN's migrated timestamp implies it migrated at about detection time. Other Mario Nawfal tokens were launched today: one from about 08:14 UTC has $63k of 1-hour volume but $0 liquidity, and another from 08:22 is small. That points to some Mario Nawfal-related trigger, likely a post, set off at the same time. In the last 5 minutes the flow has collapsed: GeckoTerminal shows 11 buyers and $1.4k of volume, and DexScreener shows the price down 13.8% over 5 minutes.",
+  "narrative": {
+   "description": "A celebrity/influencer name coin (Mario Nawfal, a large X news account). There is no official link. The twitter handle is simply his real account, attached by the deploy bot. These coins get a burst of attention when he posts something that gets meme-ified, and then usually fade.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "It looks like a burst triggered by a Mario Nawfal post or event, with several same-name coins being bought at once. This older one may have been chosen because it was closest to curve completion or was the 'first' deployed CA."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is one of several bot-deployed Mario Nawfal coins from about 10 days ago, which were deployed within seconds of each other. This one is the only one that gathered curve depth and is close to migration, which makes it the de facto leader for now.",
+   "competing_tokens": "Several same-name MARIO coins exist. CvZPv4 was launched today and did $63k of 1-hour volume. 2m4zGD, 56VaeP and CQCUAh were deployed in the same minute as this one. FprQay is an older one from 2025 with $53k of liquidity. Attention is split, and a new CA can take the flow at any moment.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "About 312 unique buyers in 15 minutes is real breadth, but GMGN tags 261 bundler wallets, puts the top bundler traders at 27%, and gives a bot/degen rate of 58%. 18 snipers and 164 fresh wallets are also tagged. 9 smart wallets and 1 renowned wallet are present. Of the 636 holders, the top 10 hold 32% (excluding the AMM), and there is a 4-wallet transfer insider network. The dev is a mass-deployer with zero balance. No paid boosts.",
+   "uncertainty": "There is no X data, so I can't confirm whether a real Mario Nawfal post drove this or whether the bundles pumped a dormant coin to catch the migration."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Heavy bundler presence (261 wallets tagged; top bundler traders hold 27%) ready to dump at migration",
+    "The dev is a serial mass-deployer (2,230 tokens) using a tweet-sniping deploy bot",
+    "Momentum is collapsing within minutes of detection (m5 buyers dropped from ~300 to 11)",
+    "Several same-name competitors are splitting attention",
+    "Migration is just starting, and dumps often follow as the move to PumpSwap completes"
+   ]
+  },
+  "counterargument": "If Mario Nawfal's post is going viral and this is the most-liquid Mario coin to have migrated, it could become the canonical play. Migrated coins at around $40k with 300+ organic buyers and some smart wallets sometimes run to $100k\u2013$200k as the narrative spreads over the next hours.",
+  "unknowns": [
+   "Whether a triggering Mario Nawfal post exists, and how viral it is",
+   "Whether migration completed and how deep the PumpSwap pool is",
+   "Bundler exit timing",
+   "Whether the flow moves to a newer CA"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The judgment is based on the packet only."
+  },
+  "thesis": "A short-lived burst in a bot-deployed celebrity-name coin, dominated by bundlers, with the flow already fading in the last 5 minutes and several same-name competitors. Entry at T+4 minutes is likely near the local top, and a dump at migration is the base case. It has a small chance of running if a viral post makes it the canonical Mario coin.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 30,
+  "survival_score": 40,
+  "attention_score": 55,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6391,
+ "type": "result",
+ "duration_ms": 26510,
+ "uuid": "d5faf321-53d7-4c5d-b6d2-844a878d2d7b",
+ "ttft_stream_ms": 776,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 776,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 55254,
+ "stop_reason": "tool_use",
+ "session_id": "b0fba279-07d4-4bb4-9c4a-90790e5b4fa2",
+ "total_cost_usd": 0.2749834,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13773,
+  "cache_read_input_tokens": 44022,
+  "output_tokens": 3393,
+  "output_tokens_details": {
+   "thinking_tokens": 610
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13773,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2576,
+    "cache_read_input_tokens": 15542,
+    "cache_creation_input_tokens": 995,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 995
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3393,
+   "cacheReadInputTokens": 44022,
+   "cacheCreationInputTokens": 13773,
+   "webSearchRequests": 0,
+   "costUSD": 0.1868804,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 610,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 41213,
+   "outputTokens": 1378,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.08810300000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"MemeCard (AbWw\u2026TQ7M) launched about 19 minutes ago via Meteora's virtual curve and migrated immediately. It now trades on PumpSwap at about $218k market cap with $35k liquidity. In 30 minutes it rose about 300% on about $255k of volume, with 1,626 unique buyers against 140 unique sellers (GeckoTerminal). The project links to xmemecards.fun, whose page title calls it a \\\"Virtual Visa Card for SOL\\\", and to a CapyQuant_ X post. That X account was formerly named PumpLiquidonSOL, so it is recycled. At least 7 other tokens with the same name appeared in the same few minutes; most have no liquidity. That usually means a ticker is getting attention on-chain, or bots are copying it.\",\"narrative\":{\"description\":\"A crypto-utility pitch: a virtual Visa card funded with SOL, called 'xMemeCard'. Crypto cards are a real, established product category (Jupiter, RedotPay, KAST), but I could not verify that this project has any real product, team or news.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The spread seems to come from the launch mechanics and on-chain momentum, plus possibly the linked X post, which I could not open (HTTP 402). The copycat tokens suggest bots or traders are following the ticker. I found no organic discussion on the web.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the only same-name token with meaningful liquidity and volume, and it carries the project's website and X links in its GMGN metadata.\",\"competing_tokens\":\"At least 7 same-name tokens were created in the same minutes, most with $0 liquidity. HwB2\u2026pump had $210k of volume in the past hour but only $4k liquidity and a $5k market cap, so it has already collapsed. GjE8\u2026pump shows a $2.2M market cap with no liquidity.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Buyer breadth is very high (1,626 unique buyers vs 140 sellers), and GMGN's bot/degen rate is low (1.2%). But GMGN tags 65 bundler wallets and 87 top wallets, and RugCheck finds an 89-wallet insider trade network. The X account is recycled (previously PumpLiquidonSOL). A search for 'memecard' also surfaced a separate 'MEMECARD Airdrop' registration site (register-memecard.fun), a pattern typical of scams.\",\"uncertainty\":\"I could not read X content. I did not confirm who holds the 80% top-holder address; it is probably an unlabeled Meteora pool or vault.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"RugCheck says 99.99% of LP is unlocked, while GMGN says the LP burn ratio is 1.0. The two sources conflict.\",\"One address holds 80% of supply, probably an unlabeled pool or vault. If it is not, this is fatal.\",\"65 bundler wallets and an 89-wallet insider network could dump.\",\"The X account is recycled, and a separate airdrop-registration site looks like a scam pattern.\",\"The token rose 300% in 18 minutes, so entry comes after a parabolic move.\"]},\"counterargument\":\"Buyer breadth is exceptional for an 18-minute-old coin: about 1,600 unique buyers and a buy-to-sell ratio of about 11:1 by unique wallet. It is the clear liquid token among its copycats, and a crypto-card utility pitch can pull in fresh money, so going from $218k to $440k is plausible within hours. On the other side, the recycled account, the bundlers and the insider network point to a coordinated launch that often dumps once the rise stalls.\",\"unknowns\":[\"What the CapyQuant_ X post says and how much engagement it has\",\"Who holds the 80% top-holder address\",\"Whether the LP is actually burned (GMGN) or unlocked (RugCheck)\",\"Whether a real product exists behind xmemecards.fun\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract address has no indexed web presence. The site title is 'xMemeCard \u2013 Virtual Visa Card for SOL', with no other content visible. Fetching the X post returned HTTP 402.\"},\"thesis\":\"Strong early on-chain demand from a broad set of buyers, and this is the liquid token among its copycats. But the X account is recycled, bundler and insider structure is heavy, the LP status is unclear, and the narrative is unverified. Chances of doubling are somewhat above the pool average, and rug risk is meaningful.\",\"continuation_view\":\"neutral\",\"p_runner\":18,\"p_rug\":33,\"survival_score\":40,\"attention_score\":72,\"manipulation_risk\":62,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://xmemecards.fun/\",\"what\":\"Project site, titled 'xMemeCard \u2013 Virtual Visa Card for SOL'\"},{\"url\":\"https://x.com/CapyQuant_/status/2103694695365058802\",\"what\":\"Linked X post; fetch returned HTTP 402\"},{\"url\":\"https://register-memecard.fun/\",\"what\":\"Separate 'MEMECARD Airdrop' page found in search\"},{\"url\":\"https://solanafloor.com/learn/best-crypto-cards-for-solana-users-in-2026\",\"what\":\"Background: crypto cards on Solana are a real product category\"}]}",
+ "structured_output": {
+  "what_is_happening": "MemeCard (AbWw\u2026TQ7M) launched about 19 minutes ago via Meteora's virtual curve and migrated immediately. It now trades on PumpSwap at about $218k market cap with $35k liquidity. In 30 minutes it rose about 300% on about $255k of volume, with 1,626 unique buyers against 140 unique sellers (GeckoTerminal). The project links to xmemecards.fun, whose page title calls it a \"Virtual Visa Card for SOL\", and to a CapyQuant_ X post. That X account was formerly named PumpLiquidonSOL, so it is recycled. At least 7 other tokens with the same name appeared in the same few minutes; most have no liquidity. That usually means a ticker is getting attention on-chain, or bots are copying it.",
+  "narrative": {
+   "description": "A crypto-utility pitch: a virtual Visa card funded with SOL, called 'xMemeCard'. Crypto cards are a real, established product category (Jupiter, RedotPay, KAST), but I could not verify that this project has any real product, team or news.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The spread seems to come from the launch mechanics and on-chain momentum, plus possibly the linked X post, which I could not open (HTTP 402). The copycat tokens suggest bots or traders are following the ticker. I found no organic discussion on the web."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the only same-name token with meaningful liquidity and volume, and it carries the project's website and X links in its GMGN metadata.",
+   "competing_tokens": "At least 7 same-name tokens were created in the same minutes, most with $0 liquidity. HwB2\u2026pump had $210k of volume in the past hour but only $4k liquidity and a $5k market cap, so it has already collapsed. GjE8\u2026pump shows a $2.2M market cap with no liquidity.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Buyer breadth is very high (1,626 unique buyers vs 140 sellers), and GMGN's bot/degen rate is low (1.2%). But GMGN tags 65 bundler wallets and 87 top wallets, and RugCheck finds an 89-wallet insider trade network. The X account is recycled (previously PumpLiquidonSOL). A search for 'memecard' also surfaced a separate 'MEMECARD Airdrop' registration site (register-memecard.fun), a pattern typical of scams.",
+   "uncertainty": "I could not read X content. I did not confirm who holds the 80% top-holder address; it is probably an unlabeled Meteora pool or vault."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "RugCheck says 99.99% of LP is unlocked, while GMGN says the LP burn ratio is 1.0. The two sources conflict.",
+    "One address holds 80% of supply, probably an unlabeled pool or vault. If it is not, this is fatal.",
+    "65 bundler wallets and an 89-wallet insider network could dump.",
+    "The X account is recycled, and a separate airdrop-registration site looks like a scam pattern.",
+    "The token rose 300% in 18 minutes, so entry comes after a parabolic move."
+   ]
+  },
+  "counterargument": "Buyer breadth is exceptional for an 18-minute-old coin: about 1,600 unique buyers and a buy-to-sell ratio of about 11:1 by unique wallet. It is the clear liquid token among its copycats, and a crypto-card utility pitch can pull in fresh money, so going from $218k to $440k is plausible within hours. On the other side, the recycled account, the bundlers and the insider network point to a coordinated launch that often dumps once the rise stalls.",
+  "unknowns": [
+   "What the CapyQuant_ X post says and how much engagement it has",
+   "Who holds the 80% top-holder address",
+   "Whether the LP is actually burned (GMGN) or unlocked (RugCheck)",
+   "Whether a real product exists behind xmemecards.fun"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The contract address has no indexed web presence. The site title is 'xMemeCard \u2013 Virtual Visa Card for SOL', with no other content visible. Fetching the X post returned HTTP 402."
+  },
+  "thesis": "Strong early on-chain demand from a broad set of buyers, and this is the liquid token among its copycats. But the X account is recycled, bundler and insider structure is heavy, the LP status is unclear, and the narrative is unverified. Chances of doubling are somewhat above the pool average, and rug risk is meaningful.",
+  "continuation_view": "neutral",
+  "p_runner": 18,
+  "p_rug": 33,
+  "survival_score": 40,
+  "attention_score": 72,
+  "manipulation_risk": 62,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://xmemecards.fun/",
+    "what": "Project site, titled 'xMemeCard \u2013 Virtual Visa Card for SOL'"
+   },
+   {
+    "url": "https://x.com/CapyQuant_/status/2103694695365058802",
+    "what": "Linked X post; fetch returned HTTP 402"
+   },
+   {
+    "url": "https://register-memecard.fun/",
+    "what": "Separate 'MEMECARD Airdrop' page found in search"
+   },
+   {
+    "url": "https://solanafloor.com/learn/best-crypto-cards-for-solana-users-in-2026",
+    "what": "Background: crypto cards on Solana are a real product category"
+   }
+  ]
+ },
+ "ttft_ms": 2895,
+ "type": "result",
+ "duration_ms": 47171,
+ "uuid": "8a7646cd-cf1c-4c6e-a9e1-6827bba32253",
+ "ttft_stream_ms": 585,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 585,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

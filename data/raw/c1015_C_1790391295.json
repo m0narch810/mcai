@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 45302,
+ "stop_reason": "tool_use",
+ "session_id": "98c8963e-5314-41ea-9067-b3effd8a26f5",
+ "total_cost_usd": 0.23401120000000003,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12695,
+  "cache_read_input_tokens": 28821,
+  "output_tokens": 2816,
+  "output_tokens_details": {
+   "thinking_tokens": 521
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12695,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2391,
+    "cache_read_input_tokens": 14448,
+    "cache_creation_input_tokens": 1011,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1011
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2816,
+   "cacheReadInputTokens": 28821,
+   "cacheCreationInputTokens": 12695,
+   "webSearchRequests": 0,
+   "costUSD": 0.16366819999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 521,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 34788,
+   "outputTokens": 1111,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.07034299999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a 10-day-old token called \\\"toly\\\" on PumpSwap. Its description is \\\"Fees to @toly\\\", meaning the pump.fun creator fees are pointed at the X handle of Solana co-founder Anatoly Yakovenko. It sat dormant, then took about $507k of volume in the last hour against a roughly $73k market cap. It was up about 10x over 6 hours (+1057% h6, +379% h1), but at trigger it was already falling 17-26% over 5 minutes, and the price is about 88% below its all-time high (ATH price 0.000636 vs 0.000079 now). I could not find the catalyst. It may be Toly claiming or acknowledging the fees, or a post of his, but I could not confirm either. A brand-new competing \\\"toly\\\" coin (XL4Mg\u2026) is on the curve with $110k of volume in the past hour, which suggests a wave of launches using Toly's name.\",\"narrative\":{\"description\":\"Coins that send creator fees to a famous person's X account, here Solana co-founder Toly. The recurring trigger is the person claiming the fees or replying to the coin.\",\"stage\":\"unclear\",\"potential\":\"moderate\",\"why_spreading\":\"Unverified. The sudden revival of a dormant 10-day-old coin, plus a fresh same-name launch at the same moment, points to some Toly-related event on X, possibly a fee claim, but no indexed post was found.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"It is the only same-name coin with real current volume and liquidity, and its description sends fees to @toly. It is the one being traded right now.\",\"competing_tokens\":\"At least 10 TOLY/toly coins exist. XL4Mg\u2026 'toly' was just created, is on the curve and did $110k of volume in the past hour. Several 'The Solana Bull' TOLY coins are dormant. tolyonsol.vercel.app belongs to a different TOLY that routes fees to toly.sol.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"There were 753 unique buyers against 592 unique sellers in 1 hour, which is broad participation. But GMGN flags 439 bundler wallets, a 0.69 bot/degen rate and 329 fresh wallets, and the creator is a serial launcher (42 tokens). No paid boosts are active.\",\"uncertainty\":\"No X data, and the catalyst is unknown.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"Price is already up 10x in 6 hours and pulling back from the local top\",\"Heavy bundler and bot share\",\"Serial creator (42 launches) who has closed out their position\",\"Attention could split to the new same-name coin\",\"Thin $25k liquidity against large swings\"]},\"counterargument\":\"If Toly really did claim the fees or engage with the coin, a celebrity-backed fee coin can re-rate hard, and the old ATH of about $600k is 8x above here. LP is burned, mint is renounced and top-10 holders own about 24%, so a clean second leg is possible.\",\"unknowns\":[\"The actual catalyst (Toly post or fee claim?)\",\"Whether Toly acknowledged this contract\",\"Size of the X discussion\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Time-limited. The contract search returned nothing. The usepaid.app link failed with an SSL error. General news turned up Toly items unrelated to this coin.\"},\"thesis\":\"A dormant Toly fee-coin woke up with a 10x on some unverified event and is already retracing, with heavy bot and bundler activity and a new same-name competitor. A second leg needs a confirmed Toly catalyst. The more likely path is a fade.\",\"continuation_view\":\"fade\",\"p_runner\":11,\"p_rug\":12,\"survival_score\":62,\"attention_score\":66,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://tolyonsol.vercel.app/\",\"what\":\"A different $TOLY site (fees to toly.sol)\"},{\"url\":\"https://www.cryptotimes.io/2026/09/05/solanas-yakovenko-calls-robinhood-chain-fee-model-brain-dead-as-gas-hits-0-40/\",\"what\":\"Recent Toly news, unrelated to the coin\"},{\"url\":\"https://decrypt.co/332035/solana-co-founder-calls-meme-coins-digital-slop-despite-token-fueled-surge\",\"what\":\"Toly's stance on memecoins\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is a 10-day-old token called \"toly\" on PumpSwap. Its description is \"Fees to @toly\", meaning the pump.fun creator fees are pointed at the X handle of Solana co-founder Anatoly Yakovenko. It sat dormant, then took about $507k of volume in the last hour against a roughly $73k market cap. It was up about 10x over 6 hours (+1057% h6, +379% h1), but at trigger it was already falling 17-26% over 5 minutes, and the price is about 88% below its all-time high (ATH price 0.000636 vs 0.000079 now). I could not find the catalyst. It may be Toly claiming or acknowledging the fees, or a post of his, but I could not confirm either. A brand-new competing \"toly\" coin (XL4Mg\u2026) is on the curve with $110k of volume in the past hour, which suggests a wave of launches using Toly's name.",
+  "narrative": {
+   "description": "Coins that send creator fees to a famous person's X account, here Solana co-founder Toly. The recurring trigger is the person claiming the fees or replying to the coin.",
+   "stage": "unclear",
+   "potential": "moderate",
+   "why_spreading": "Unverified. The sudden revival of a dormant 10-day-old coin, plus a fresh same-name launch at the same moment, points to some Toly-related event on X, possibly a fee claim, but no indexed post was found."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "It is the only same-name coin with real current volume and liquidity, and its description sends fees to @toly. It is the one being traded right now.",
+   "competing_tokens": "At least 10 TOLY/toly coins exist. XL4Mg\u2026 'toly' was just created, is on the curve and did $110k of volume in the past hour. Several 'The Solana Bull' TOLY coins are dormant. tolyonsol.vercel.app belongs to a different TOLY that routes fees to toly.sol.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "There were 753 unique buyers against 592 unique sellers in 1 hour, which is broad participation. But GMGN flags 439 bundler wallets, a 0.69 bot/degen rate and 329 fresh wallets, and the creator is a serial launcher (42 tokens). No paid boosts are active.",
+   "uncertainty": "No X data, and the catalyst is unknown."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "Price is already up 10x in 6 hours and pulling back from the local top",
+    "Heavy bundler and bot share",
+    "Serial creator (42 launches) who has closed out their position",
+    "Attention could split to the new same-name coin",
+    "Thin $25k liquidity against large swings"
+   ]
+  },
+  "counterargument": "If Toly really did claim the fees or engage with the coin, a celebrity-backed fee coin can re-rate hard, and the old ATH of about $600k is 8x above here. LP is burned, mint is renounced and top-10 holders own about 24%, so a clean second leg is possible.",
+  "unknowns": [
+   "The actual catalyst (Toly post or fee claim?)",
+   "Whether Toly acknowledged this contract",
+   "Size of the X discussion"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Time-limited. The contract search returned nothing. The usepaid.app link failed with an SSL error. General news turned up Toly items unrelated to this coin."
+  },
+  "thesis": "A dormant Toly fee-coin woke up with a 10x on some unverified event and is already retracing, with heavy bot and bundler activity and a new same-name competitor. A second leg needs a confirmed Toly catalyst. The more likely path is a fade.",
+  "continuation_view": "fade",
+  "p_runner": 11,
+  "p_rug": 12,
+  "survival_score": 62,
+  "attention_score": 66,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://tolyonsol.vercel.app/",
+    "what": "A different $TOLY site (fees to toly.sol)"
+   },
+   {
+    "url": "https://www.cryptotimes.io/2026/09/05/solanas-yakovenko-calls-robinhood-chain-fee-model-brain-dead-as-gas-hits-0-40/",
+    "what": "Recent Toly news, unrelated to the coin"
+   },
+   {
+    "url": "https://decrypt.co/332035/solana-co-founder-calls-meme-coins-digital-slop-despite-token-fueled-surge",
+    "what": "Toly's stance on memecoins"
+   }
+  ]
+ },
+ "ttft_ms": 1884,
+ "type": "result",
+ "duration_ms": 39598,
+ "uuid": "18a711ec-cf9e-4377-8daa-1db1730f52a7",
+ "ttft_stream_ms": 824,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 824,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

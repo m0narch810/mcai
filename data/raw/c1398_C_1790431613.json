@@ -1,0 +1,197 @@
+{
+ "duration_api_ms": 154636,
+ "stop_reason": "tool_use",
+ "session_id": "6eaf5acc-fad1-46f3-9f29-d05818306b5a",
+ "total_cost_usd": 0.33438,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 21685,
+  "cache_read_input_tokens": 56540,
+  "output_tokens": 9892,
+  "output_tokens_details": {
+   "thinking_tokens": 2624
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 21685,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3536,
+    "cache_read_input_tokens": 21769,
+    "cache_creation_input_tokens": 3405,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3405
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-sonnet-5": {
+   "inputTokens": 8,
+   "outputTokens": 9892,
+   "cacheReadInputTokens": 56540,
+   "cacheCreationInputTokens": 21685,
+   "webSearchRequests": 0,
+   "costUSD": 0.196984,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "thinkingTokens": 2624,
+   "canonicalModel": "claude-sonnet-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 66181,
+   "outputTokens": 2243,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 6,
+   "costUSD": 0.137396,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun-graduated PumpSwap pool for a token named/ticker \\\"UNIPCS\\\" (pair created ~13:54 UTC, ~12 min old at detection) spiked +125-146% in its first ~15 minutes on ~$350k volume and ~1,800 unique buyers, then reversed hard (-28% in the 5 min immediately before detection). \\\"Unipcs\\\" (aka \\\"Bonk Guy,\\\" @theunipcs) is a real, well-followed (325k+ followers) crypto trading influencer known for large public BONK/WIF/USELESS/PONS calls and currently trending on X via Lookonchain PnL threads. This appears to be one of several competing fan/clone coins using his name/ticker: the packet itself lists 7 different same-name-or-same-ticker tokens already in circulation. Web search also surfaced an apparently older/larger \\\"BONK GUY WAS RIGHT\\\" / UNIPCS instance tracked on CoinGecko/Coinbase/MEXC with a reported ~$342k cap in mid-September, which is not the same contract as this one. No search result (X, news, Reddit, Telegram) mentions this specific contract or pair address. On-chain structure shows extreme concentration: the creator/single top holder controls 65.56% of supply, and that same wallet is flagged by GMGN under both \\\"rat trader\\\" and \\\"entrapment trader\\\" risk tags; top10 holders control 79%.\",\"narrative\":{\"description\":\"Fan/parody coin riding the real, currently-trending crypto-trader personality \\\"Unipcs / Bonk Guy,\\\" whose public trading calls are being actively discussed on X right now (Lookonchain PnL updates, third-party threads on the \\\"long a trader\\\" thesis).\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The underlying persona has genuine, verifiable current attention on X (325k+ followers, active Lookonchain coverage, viral trade calls). That supplies real borrowed narrative energy. But the attention is directed at the person and, per search, at least one other older/larger UNIPCS-branded instance \u2014 not verifiably at this specific 12-minute-old contract, and the coin's own price action already reversed sharply (-28% in 5 min) right before the entry window, consistent with a fast pump-and-fade rather than a durable narrative.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"No web result (X, news, aggregator, Reddit) mentions this exact contract or pair address. It is one of at least 7 tokens sharing the UNIPCS name/ticker per the packet's own same_ticker_or_name_tokens list, several with comparable or larger liquidity/mcap. Search also found an apparently distinct, larger 'official-looking' BONK GUY WAS RIGHT / UNIPCS instance tracked by CoinGecko/Coinbase/MEXC (~$342k cap mid-Sept), suggesting this specific pool is a copycat/relaunch rather than the community's canonical vehicle.\",\"competing_tokens\":\"At least 6 other same-symbol or same-name tokens exist in the packet (mcaps from ~$3.6k to ~$170k), plus an apparently separate CEX-tracked 'BONK GUY WAS RIGHT' instance found via web search; supply/attention is fragmented across many near-identical tickers.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Unique-buyer growth is large and fast (249 in 5 min, ~1,800 within 15-30 min) with a low buys-per-unique-buyer ratio (1.25), which the packet notes is consistent with organic-looking spread rather than a few wallets churning. Buy/sell counts are heavily buy-skewed (2189 buys vs 525 sells at h1). However, no independent organic discussion (X posts, Reddit, Telegram) of this specific contract was found in search, and GMGN flags the top holder/creator wallet itself as a 'rat trader' / 'entrapment trader' with 32 bundler wallets present \u2014 consistent with an insider-assisted launch riding the real influencer's name rather than grassroots discovery.\",\"uncertainty\":\"X search is index-limited (per task instructions) so real-time posts about this exact contract may exist but weren't surfaced; could not access Telegram/Discord directly.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Single wallet (also the creator) holds 65.56% of total supply \u2014 an overwhelming dump/supply overhang risk that a locked LP does not protect against\",\"Top10 holders control 79% of supply\",\"GMGN flags the top holder as both 'rat trader' and 'entrapment trader' (insider/sneak wallet categories)\",\"32 bundler wallets present alongside near-zero smart-money/renowned wallets (0 each)\",\"Price already reversed -28% in the 5 minutes immediately preceding detection, suggesting the pump largely already happened before this entry window\",\"No project socials, website, or DexScreener profile present \u2014 zero organic promotion infrastructure\",\"RugCheck normalised risk score 58/100 (danger-level flags for top10 concentration, single-holder concentration, and low liquidity)\"]},\"counterargument\":\"The influencer-name narrative is genuinely live (not fabricated): Unipcs/Bonk Guy has real, current, high-follower engagement on X, and coins that attach to a hot personality can re-pump repeatedly as new posts/calls surface, even if concentrated. The buys-per-unique-buyer ratio of 1.25 and the fast unique-buyer count (1,797 within ~15-30 min) argue for real distributed demand rather than pure wash trading, and LP is 100% locked so a classic rug-pull exit is structurally blocked \u2014 the worst-case here is a slow insider dump, not an instant LP pull, which leaves more time for genuine buyers to also profit if momentum resumes.\",\"unknowns\":[\"Whether the creator wallet (65.56% holder) has begun or plans to sell into the pool\",\"Whether any of this volume/buyer count reflects bundled/insider wallets rather than distinct real buyers\",\"Which of the 7 competing UNIPCS tokens (if any) the broader community will settle on as 'the' coin\",\"Whether @theunipcs or any other notable account has posted about or endorsed this specific contract\",\"Real-time Telegram/Discord discussion volume, which was not accessible\"],\"source_coverage\":{\"x_twitter\":\"searched_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"X/web search found extensive discussion of the real Unipcs/Bonk Guy persona and of at least one other UNIPCS-branded token instance, but zero results specifically naming this contract address or this exact pair. Reddit/Telegram/Discord were not directly queried given the 2-minute time budget; DexScreener page fetch was blocked (403).\"},\"thesis\":\"This is a fast pump-fade clone coin: it borrows real, currently-trending attention around the influencer 'Unipcs/Bonk Guy,' but is not identifiably the canonical vehicle for that attention (7+ competing same-name/ticker tokens exist, and an apparently separate, older, CEX-tracked UNIPCS instance was found in search). The creator/top holder controls 65.56% of supply and is independently flagged by GMGN as a rat-trader/entrapment-trader wallet, and price had already reversed -28% in the 5 minutes before detection \u2014 suggesting the entry window catches this coin on the way down from its initial spike rather than at the start of a durable run.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":32,\"survival_score\":33,\"attention_score\":52,\"manipulation_risk\":72,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://x.com/theunipcs\",\"what\":\"Real Unipcs/Bonk Guy X account, 325k+ followers, active current posting\"},{\"url\":\"https://x.com/lookonchain/status/2095499589487051113\",\"what\":\"Lookonchain tracking Unipcs' current trading calls/PnL, showing the persona is presently trending\"},{\"url\":\"https://x.com/SrPeters/status/2096389945921273901\",\"what\":\"Third-party X thread explaining the 'long a trader' UNIPCS token thesis\"},{\"url\":\"https://solanacompass.com/tokens/HeVbc2LRN5Ec8rGnTK6qBXLoofJbJqcoR4QLQiMj1LF\",\"what\":\"A different UNIPCS/'Bonk Guy' token listing on Solana Compass, evidencing multiple competing instances\"},{\"url\":\"https://www.coingecko.com/en/coins/bonk-guy-was-right\",\"what\":\"CoinGecko listing for a 'BONK GUY WAS RIGHT' / UNIPCS token distinct from this contract, showing fragmentation across tickers\"},{\"url\":\"https://www.kucoin.com/news/flash/unipcs-portfolio-hits-20m-peak-on-fomo-platform-cumulative-profits-reach-16-5m\",\"what\":\"News coverage confirming Unipcs' current trading notoriety/portfolio size\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun-graduated PumpSwap pool for a token named/ticker \"UNIPCS\" (pair created ~13:54 UTC, ~12 min old at detection) spiked +125-146% in its first ~15 minutes on ~$350k volume and ~1,800 unique buyers, then reversed hard (-28% in the 5 min immediately before detection). \"Unipcs\" (aka \"Bonk Guy,\" @theunipcs) is a real, well-followed (325k+ followers) crypto trading influencer known for large public BONK/WIF/USELESS/PONS calls and currently trending on X via Lookonchain PnL threads. This appears to be one of several competing fan/clone coins using his name/ticker: the packet itself lists 7 different same-name-or-same-ticker tokens already in circulation. Web search also surfaced an apparently older/larger \"BONK GUY WAS RIGHT\" / UNIPCS instance tracked on CoinGecko/Coinbase/MEXC with a reported ~$342k cap in mid-September, which is not the same contract as this one. No search result (X, news, Reddit, Telegram) mentions this specific contract or pair address. On-chain structure shows extreme concentration: the creator/single top holder controls 65.56% of supply, and that same wallet is flagged by GMGN under both \"rat trader\" and \"entrapment trader\" risk tags; top10 holders control 79%.",
+  "narrative": {
+   "description": "Fan/parody coin riding the real, currently-trending crypto-trader personality \"Unipcs / Bonk Guy,\" whose public trading calls are being actively discussed on X right now (Lookonchain PnL updates, third-party threads on the \"long a trader\" thesis).",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The underlying persona has genuine, verifiable current attention on X (325k+ followers, active Lookonchain coverage, viral trade calls). That supplies real borrowed narrative energy. But the attention is directed at the person and, per search, at least one other older/larger UNIPCS-branded instance \u2014 not verifiably at this specific 12-minute-old contract, and the coin's own price action already reversed sharply (-28% in 5 min) right before the entry window, consistent with a fast pump-and-fade rather than a durable narrative."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "No web result (X, news, aggregator, Reddit) mentions this exact contract or pair address. It is one of at least 7 tokens sharing the UNIPCS name/ticker per the packet's own same_ticker_or_name_tokens list, several with comparable or larger liquidity/mcap. Search also found an apparently distinct, larger 'official-looking' BONK GUY WAS RIGHT / UNIPCS instance tracked by CoinGecko/Coinbase/MEXC (~$342k cap mid-Sept), suggesting this specific pool is a copycat/relaunch rather than the community's canonical vehicle.",
+   "competing_tokens": "At least 6 other same-symbol or same-name tokens exist in the packet (mcaps from ~$3.6k to ~$170k), plus an apparently separate CEX-tracked 'BONK GUY WAS RIGHT' instance found via web search; supply/attention is fragmented across many near-identical tickers.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Unique-buyer growth is large and fast (249 in 5 min, ~1,800 within 15-30 min) with a low buys-per-unique-buyer ratio (1.25), which the packet notes is consistent with organic-looking spread rather than a few wallets churning. Buy/sell counts are heavily buy-skewed (2189 buys vs 525 sells at h1). However, no independent organic discussion (X posts, Reddit, Telegram) of this specific contract was found in search, and GMGN flags the top holder/creator wallet itself as a 'rat trader' / 'entrapment trader' with 32 bundler wallets present \u2014 consistent with an insider-assisted launch riding the real influencer's name rather than grassroots discovery.",
+   "uncertainty": "X search is index-limited (per task instructions) so real-time posts about this exact contract may exist but weren't surfaced; could not access Telegram/Discord directly."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Single wallet (also the creator) holds 65.56% of total supply \u2014 an overwhelming dump/supply overhang risk that a locked LP does not protect against",
+    "Top10 holders control 79% of supply",
+    "GMGN flags the top holder as both 'rat trader' and 'entrapment trader' (insider/sneak wallet categories)",
+    "32 bundler wallets present alongside near-zero smart-money/renowned wallets (0 each)",
+    "Price already reversed -28% in the 5 minutes immediately preceding detection, suggesting the pump largely already happened before this entry window",
+    "No project socials, website, or DexScreener profile present \u2014 zero organic promotion infrastructure",
+    "RugCheck normalised risk score 58/100 (danger-level flags for top10 concentration, single-holder concentration, and low liquidity)"
+   ]
+  },
+  "counterargument": "The influencer-name narrative is genuinely live (not fabricated): Unipcs/Bonk Guy has real, current, high-follower engagement on X, and coins that attach to a hot personality can re-pump repeatedly as new posts/calls surface, even if concentrated. The buys-per-unique-buyer ratio of 1.25 and the fast unique-buyer count (1,797 within ~15-30 min) argue for real distributed demand rather than pure wash trading, and LP is 100% locked so a classic rug-pull exit is structurally blocked \u2014 the worst-case here is a slow insider dump, not an instant LP pull, which leaves more time for genuine buyers to also profit if momentum resumes.",
+  "unknowns": [
+   "Whether the creator wallet (65.56% holder) has begun or plans to sell into the pool",
+   "Whether any of this volume/buyer count reflects bundled/insider wallets rather than distinct real buyers",
+   "Which of the 7 competing UNIPCS tokens (if any) the broader community will settle on as 'the' coin",
+   "Whether @theunipcs or any other notable account has posted about or endorsed this specific contract",
+   "Real-time Telegram/Discord discussion volume, which was not accessible"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "X/web search found extensive discussion of the real Unipcs/Bonk Guy persona and of at least one other UNIPCS-branded token instance, but zero results specifically naming this contract address or this exact pair. Reddit/Telegram/Discord were not directly queried given the 2-minute time budget; DexScreener page fetch was blocked (403)."
+  },
+  "thesis": "This is a fast pump-fade clone coin: it borrows real, currently-trending attention around the influencer 'Unipcs/Bonk Guy,' but is not identifiably the canonical vehicle for that attention (7+ competing same-name/ticker tokens exist, and an apparently separate, older, CEX-tracked UNIPCS instance was found in search). The creator/top holder controls 65.56% of supply and is independently flagged by GMGN as a rat-trader/entrapment-trader wallet, and price had already reversed -28% in the 5 minutes before detection \u2014 suggesting the entry window catches this coin on the way down from its initial spike rather than at the start of a durable run.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 32,
+  "survival_score": 33,
+  "attention_score": 52,
+  "manipulation_risk": 72,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://x.com/theunipcs",
+    "what": "Real Unipcs/Bonk Guy X account, 325k+ followers, active current posting"
+   },
+   {
+    "url": "https://x.com/lookonchain/status/2095499589487051113",
+    "what": "Lookonchain tracking Unipcs' current trading calls/PnL, showing the persona is presently trending"
+   },
+   {
+    "url": "https://x.com/SrPeters/status/2096389945921273901",
+    "what": "Third-party X thread explaining the 'long a trader' UNIPCS token thesis"
+   },
+   {
+    "url": "https://solanacompass.com/tokens/HeVbc2LRN5Ec8rGnTK6qBXLoofJbJqcoR4QLQiMj1LF",
+    "what": "A different UNIPCS/'Bonk Guy' token listing on Solana Compass, evidencing multiple competing instances"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/bonk-guy-was-right",
+    "what": "CoinGecko listing for a 'BONK GUY WAS RIGHT' / UNIPCS token distinct from this contract, showing fragmentation across tickers"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/unipcs-portfolio-hits-20m-peak-on-fomo-platform-cumulative-profits-reach-16-5m",
+    "what": "News coverage confirming Unipcs' current trading notoriety/portfolio size"
+   }
+  ]
+ },
+ "ttft_ms": 1466,
+ "type": "result",
+ "duration_ms": 131805,
+ "uuid": "b18cb3ad-e585-4307-89cf-fe6c7e7aac71",
+ "ttft_stream_ms": 787,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 787,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

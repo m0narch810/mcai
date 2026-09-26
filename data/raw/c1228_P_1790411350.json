@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 22553,
+ "stop_reason": "tool_use",
+ "session_id": "bd816e68-274e-421a-9bfd-fd6031accc0b",
+ "total_cost_usd": 0.1022244,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6954,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2308,
+  "output_tokens_details": {
+   "thinking_tokens": 461
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6954,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2308,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6954,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6954
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2308,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6954,
+   "webSearchRequests": 0,
+   "costUSD": 0.1022244,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 461,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Agrippa launched straight onto a PumpSwap pool about 13 minutes before detection. It never went through a pump.fun curve (migrated_unix=0, token and pair created 3 seconds apart). Market cap is about $17k and pool liquidity about $27k, so liquidity is larger than market cap. In 13 minutes it traded about $278k, roughly 16x its market cap. There were 2,481 buys from 1,934 unique buyers but only 538 sells from 58 unique sellers. Price is up only about 66%, and the last 5 minutes are flat to slightly down. The LP is 100% unlocked, the creator holds 0% and has closed out, GMGN flags 44 bundler wallets holding about 19%, and there are no socials, website, DexScreener profile or smart/KOL wallets.\",\"narrative\":{\"description\":\"The name refers to Agrippa, the Roman general. There are no links, description or socials, so no story comes with it. It looks like a generic historical-name launch.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Nothing shows organic spread. The activity looks like thousands of tiny buys matched against a few large sellers, which fits holder or volume bots, not a community finding the coin.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the only live Agrippa pair with volume. The other Agrippa token is dead (no liquidity).\",\"competing_tokens\":\"BQxAdc... AGRIPPA: dead, $0 liquidity, about $7k market cap.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 1,934 unique buyers against only 58 unique sellers, and $278k of volume that moved price only about 66% on $27k liquidity. That means buys were very small and sells were large: bots manufacturing holders while a few wallets sell into the flow. GMGN counts 44 bundler wallets holding about 19%. There are no socials or profile, and the creator has already exited. Liquidity above market cap on a direct PumpSwap pool with 100% of the LP unlocked is a typical setup for a creator-controlled pool that can be pulled.\",\"uncertainty\":\"Without trade-size data, the wallet makeup behind the unique buyers can't be confirmed. Some of the flow could be real retail following trackers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a directly created PumpSwap pool, so the LP owner can remove liquidity at any time\",\"Creator status is 'creator_close' and creator balance is 0; the creator is out\",\"44 bundler wallets hold about 19%\",\"No socials or profile, so nothing supports demand once the bots stop\",\"Few LP providers; RugCheck normalised score is 52\"]},\"counterargument\":\"Mint and freeze authority are renounced, top-10 concentration outside the pool is low (about 12%), and there are no snipers or fresh-wallet clusters. About 1,900 buyers in 13 minutes could include real retail pulled in by trending scanners. At a $17k market cap, a 2x only needs about $35k, which is easy if the heavy flow keeps going for another hour.\",\"unknowns\":[\"Who holds the LP tokens, and whether the creator can pull them\",\"Distribution of buy sizes (micro bot buys or real retail)\",\"Whether the 58 sellers are the bundler cluster\",\"Any off-chain promotion in Telegram or X\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. This report uses only the evidence packet.\"},\"thesis\":\"Almost all of the demand looks manufactured: thousands of tiny buyers against a few large sellers, heavy bundling, no socials, an exited creator, and a fully unlocked LP on a direct PumpSwap pool. The most likely outcome is that the bot activity fades and the price bleeds, or the liquidity gets pulled. Runner odds are well below the typical coin in this pool.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":45,\"survival_score\":25,\"attention_score\":45,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "Agrippa launched straight onto a PumpSwap pool about 13 minutes before detection. It never went through a pump.fun curve (migrated_unix=0, token and pair created 3 seconds apart). Market cap is about $17k and pool liquidity about $27k, so liquidity is larger than market cap. In 13 minutes it traded about $278k, roughly 16x its market cap. There were 2,481 buys from 1,934 unique buyers but only 538 sells from 58 unique sellers. Price is up only about 66%, and the last 5 minutes are flat to slightly down. The LP is 100% unlocked, the creator holds 0% and has closed out, GMGN flags 44 bundler wallets holding about 19%, and there are no socials, website, DexScreener profile or smart/KOL wallets.",
+  "narrative": {
+   "description": "The name refers to Agrippa, the Roman general. There are no links, description or socials, so no story comes with it. It looks like a generic historical-name launch.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Nothing shows organic spread. The activity looks like thousands of tiny buys matched against a few large sellers, which fits holder or volume bots, not a community finding the coin."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the only live Agrippa pair with volume. The other Agrippa token is dead (no liquidity).",
+   "competing_tokens": "BQxAdc... AGRIPPA: dead, $0 liquidity, about $7k market cap.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 1,934 unique buyers against only 58 unique sellers, and $278k of volume that moved price only about 66% on $27k liquidity. That means buys were very small and sells were large: bots manufacturing holders while a few wallets sell into the flow. GMGN counts 44 bundler wallets holding about 19%. There are no socials or profile, and the creator has already exited. Liquidity above market cap on a direct PumpSwap pool with 100% of the LP unlocked is a typical setup for a creator-controlled pool that can be pulled.",
+   "uncertainty": "Without trade-size data, the wallet makeup behind the unique buyers can't be confirmed. Some of the flow could be real retail following trackers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a directly created PumpSwap pool, so the LP owner can remove liquidity at any time",
+    "Creator status is 'creator_close' and creator balance is 0; the creator is out",
+    "44 bundler wallets hold about 19%",
+    "No socials or profile, so nothing supports demand once the bots stop",
+    "Few LP providers; RugCheck normalised score is 52"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced, top-10 concentration outside the pool is low (about 12%), and there are no snipers or fresh-wallet clusters. About 1,900 buyers in 13 minutes could include real retail pulled in by trending scanners. At a $17k market cap, a 2x only needs about $35k, which is easy if the heavy flow keeps going for another hour.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether the creator can pull them",
+   "Distribution of buy sizes (micro bot buys or real retail)",
+   "Whether the 58 sellers are the bundler cluster",
+   "Any off-chain promotion in Telegram or X"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. This report uses only the evidence packet."
+  },
+  "thesis": "Almost all of the demand looks manufactured: thousands of tiny buyers against a few large sellers, heavy bundling, no socials, an exited creator, and a fully unlocked LP on a direct PumpSwap pool. The most likely outcome is that the bot activity fades and the price bleeds, or the liquidity gets pulled. Runner odds are well below the typical coin in this pool.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 45,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5756,
+ "type": "result",
+ "duration_ms": 22598,
+ "uuid": "f48c1ec9-70ed-4c76-9162-7eed1162527a",
+ "ttft_stream_ms": 591,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 592,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

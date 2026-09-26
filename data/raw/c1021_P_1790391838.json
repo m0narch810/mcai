@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 23978,
+ "stop_reason": "tool_use",
+ "session_id": "cd5d512f-4fd5-48e0-8228-d5b619bd6706",
+ "total_cost_usd": 0.1079844,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7124,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2528,
+  "output_tokens_details": {
+   "thinking_tokens": 508
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7124,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2528,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7124,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7124
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2528,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7124,
+   "webSearchRequests": 0,
+   "costUSD": 0.1079844,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 508,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Binance Accelerationism\\\" (b/acc) was created directly as a PumpSwap pool about 11 minutes before detection. It did not migrate from the pump.fun bonding curve (migrated_unix=0, launchpad null). It went up about 700% to roughly $96k market cap, with $175k volume and 2,300+ buys against about 260 sells. The project description is a BSC contract address ending in 7777, and the X handle is simply \\\"binance\\\". That suggests a Solana copy of a BSC/Binance-themed b/acc token. An identically named token created about 3 minutes earlier now shows $0.01 liquidity, so it is effectively dead or rugged. One unlabeled wallet holds 80.57% of supply, separate from the AMM pool's 15.93%. The LP is 100% unlocked and the creator account is closed.\",\"narrative\":{\"description\":\"b/acc ('Binance accelerationism') is a Binance/CZ-adjacent meme with a real audience in BSC circles. Here it is a cross-chain copy that points to a BSC contract address and uses the generic 'binance' handle. It has no website, no socials and no DexScreener profile.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"The buying pattern (2,047 unique buyers vs 36 sellers in about 15 minutes, 83% bot/degen share) looks like bot or sniper-swarm flow reacting to a trending BSC ticker, not organic Solana community spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the second same-name Solana deployment within minutes. It carries only a pasted BSC contract address and has no official link to the BSC original or to Binance.\",\"competing_tokens\":\"3CTtZ9CD\u2026 (same name and ticker, created about 3 minutes earlier, liquidity already $0.01, so apparently rugged). The BSC original (0xcf57\u20267777) is the canonical token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"The buy/sell ratio is about 9:1, with 2,047 unique buyers but only 36 sellers. That is extreme and consistent with many small bot buys. The bot/degen rate is 0.83 and there are 10 bundler wallets. One wallet holds 80.57% of supply outside the pool. The earlier same-name copy has already been drained.\",\"uncertainty\":\"The 80.57% wallet could be an unlabeled locker or burn address, but nothing in the packet says so. No X data is available.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"One unlabeled wallet holds 80.57% of supply. The pool holds only about 16%, so that wallet can drain the roughly $15k SOL side by selling.\",\"LP 100% unlocked (lp_burn_ratio 0), so it can be pulled at any moment\",\"Direct PumpSwap pool rather than a pump.fun curve graduate. The deployer controls both the LP and the supply.\",\"Creator account closed, which hides who owns the supply\",\"An identical copy already rugged minutes earlier, suggesting a serial-deploy pattern\",\"The RugCheck normalised score is 65 (riskier)\"]},\"counterargument\":\"Binance/CZ memes can draw heavy Solana attention very fast, and 2,000+ unique buyers in 15 minutes is real breadth even if much of it is bots. If the 80% wallet is actually a locker or unlabeled burn address, the pool could keep absorbing momentum buyers. A move from $96k to $200k in 6 hours would then be plausible, and the dead earlier copy leaves this one as the only live Solana b/acc token.\",\"unknowns\":[\"Who owns the 80.57% wallet (deployer, locker or burn address)\",\"Whether the BSC b/acc token is trending right now\",\"Who holds the LP tokens\",\"Whether the buyer count is inflated by bot micro-buys\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The report relies only on the evidence packet.\"},\"thesis\":\"This is a serial-copy Binance-meme deployment. The supply is 80% concentrated in one non-pool wallet, the LP is unlocked and the creator account is closed. An identical token from minutes earlier is already drained. The buying looks like a bot swarm. The most likely outcome is a liquidity pull or a dump of the 80% bag into a thin pool well before any 2x from entry.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":68,\"survival_score\":12,\"attention_score\":58,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Binance Accelerationism\" (b/acc) was created directly as a PumpSwap pool about 11 minutes before detection. It did not migrate from the pump.fun bonding curve (migrated_unix=0, launchpad null). It went up about 700% to roughly $96k market cap, with $175k volume and 2,300+ buys against about 260 sells. The project description is a BSC contract address ending in 7777, and the X handle is simply \"binance\". That suggests a Solana copy of a BSC/Binance-themed b/acc token. An identically named token created about 3 minutes earlier now shows $0.01 liquidity, so it is effectively dead or rugged. One unlabeled wallet holds 80.57% of supply, separate from the AMM pool's 15.93%. The LP is 100% unlocked and the creator account is closed.",
+  "narrative": {
+   "description": "b/acc ('Binance accelerationism') is a Binance/CZ-adjacent meme with a real audience in BSC circles. Here it is a cross-chain copy that points to a BSC contract address and uses the generic 'binance' handle. It has no website, no socials and no DexScreener profile.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "The buying pattern (2,047 unique buyers vs 36 sellers in about 15 minutes, 83% bot/degen share) looks like bot or sniper-swarm flow reacting to a trending BSC ticker, not organic Solana community spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the second same-name Solana deployment within minutes. It carries only a pasted BSC contract address and has no official link to the BSC original or to Binance.",
+   "competing_tokens": "3CTtZ9CD\u2026 (same name and ticker, created about 3 minutes earlier, liquidity already $0.01, so apparently rugged). The BSC original (0xcf57\u20267777) is the canonical token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "The buy/sell ratio is about 9:1, with 2,047 unique buyers but only 36 sellers. That is extreme and consistent with many small bot buys. The bot/degen rate is 0.83 and there are 10 bundler wallets. One wallet holds 80.57% of supply outside the pool. The earlier same-name copy has already been drained.",
+   "uncertainty": "The 80.57% wallet could be an unlabeled locker or burn address, but nothing in the packet says so. No X data is available."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "One unlabeled wallet holds 80.57% of supply. The pool holds only about 16%, so that wallet can drain the roughly $15k SOL side by selling.",
+    "LP 100% unlocked (lp_burn_ratio 0), so it can be pulled at any moment",
+    "Direct PumpSwap pool rather than a pump.fun curve graduate. The deployer controls both the LP and the supply.",
+    "Creator account closed, which hides who owns the supply",
+    "An identical copy already rugged minutes earlier, suggesting a serial-deploy pattern",
+    "The RugCheck normalised score is 65 (riskier)"
+   ]
+  },
+  "counterargument": "Binance/CZ memes can draw heavy Solana attention very fast, and 2,000+ unique buyers in 15 minutes is real breadth even if much of it is bots. If the 80% wallet is actually a locker or unlabeled burn address, the pool could keep absorbing momentum buyers. A move from $96k to $200k in 6 hours would then be plausible, and the dead earlier copy leaves this one as the only live Solana b/acc token.",
+  "unknowns": [
+   "Who owns the 80.57% wallet (deployer, locker or burn address)",
+   "Whether the BSC b/acc token is trending right now",
+   "Who holds the LP tokens",
+   "Whether the buyer count is inflated by bot micro-buys"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The report relies only on the evidence packet."
+  },
+  "thesis": "This is a serial-copy Binance-meme deployment. The supply is 80% concentrated in one non-pool wallet, the LP is unlocked and the creator account is closed. An identical token from minutes earlier is already drained. The buying looks like a bot swarm. The most likely outcome is a liquidity pull or a dump of the 80% bag into a thin pool well before any 2x from entry.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 68,
+  "survival_score": 12,
+  "attention_score": 58,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 6452,
+ "type": "result",
+ "duration_ms": 24016,
+ "uuid": "19153f2f-701f-43fb-a253-49f191b60171",
+ "ttft_stream_ms": 1087,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1087,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

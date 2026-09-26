@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 36986,
+ "stop_reason": "tool_use",
+ "session_id": "6a5ab9c1-7961-4cd6-bbe1-7b31916406c3",
+ "total_cost_usd": 0.2077836,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10582,
+  "cache_read_input_tokens": 25758,
+  "output_tokens": 2602,
+  "output_tokens_details": {
+   "thinking_tokens": 383
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10582,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2153,
+    "cache_read_input_tokens": 12597,
+    "cache_creation_input_tokens": 749,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 749
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2602,
+   "cacheReadInputTokens": 25758,
+   "cacheCreationInputTokens": 10582,
+   "webSearchRequests": 0,
+   "costUSD": 0.1418716,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 383,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32272,
+   "outputTokens": 728,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.065912,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DPOTS was launched straight onto a PumpSwap pool at about 04:02 UTC. It never went through the pump.fun bonding curve (migrated_unix=0, launchpad empty). The creator supplied the liquidity, and 100% of that LP is unlocked. Liquidity is $25.5k, which is more than the $15k market cap. In about 17 minutes it drew 2,101 unique buyers but only 96 unique sellers, and 1,600 of those buyers arrived in a single 15-minute window. That pattern fits micro-buy bot spam or volume farming meant to get on trending lists, not organic demand. GMGN flags 73 bundler wallets and a 48-wallet insider trade network. There are no socials, website, DexScreener profile or narrative. Another DPOTS token was created about 5 minutes earlier and already shows $0 liquidity, which suggests a serial launch-and-pull pattern. Price is -26% over the last 5 minutes.\",\"narrative\":{\"description\":\"None identifiable. The ticker, name, description and links are all empty, and web searches for the contract and ticker found nothing.\",\"stage\":\"none_found\",\"potential\":\"none\",\"why_spreading\":\"Nothing is spreading organically as far as I can see. The activity looks like bot-generated buyer counts.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"There is no story to connect to. It is one of at least two identically named DPOTS pools launched minutes apart.\",\"competing_tokens\":\"71nUzWjvcyG6ANfNSt2kgesVhijWxFGRGU9e9GKQu3C9 (DPOTS). It was created about 5 minutes earlier and now shows $0 liquidity, so it has likely already been pulled.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,101 unique buyers against 96 unique sellers, 1,600 buyers in one 15-minute window, 73 bundler wallets, a 48-wallet insider trade network, and zero smart or renowned wallets. Buys have stayed at roughly 4 to 1 over sells while price fell 26% in 5 minutes, which means the buys are tiny spam trades and the sells are real exits.\",\"uncertainty\":\"I have no X data and no wallet-level trade sizes. Some of the buyers could be real small degen buyers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and was supplied by the creator on a direct PumpSwap pool, so it can be pulled at any time (RugCheck rates this 'danger')\",\"A same-name token from minutes earlier already shows zero liquidity\",\"Bundlers hold 15.7% of top traders; there is a 48-wallet insider network\",\"Liquidity is larger than market cap, which is typical of a dev-seeded pool set up for a pull\",\"Price is already down 26% over 5 minutes\"]},\"counterargument\":\"Mint and freeze authority are renounced, and the top-10 holders excluding the pool own only about 10%. With deep liquidity relative to market cap at $15k, a real bot-driven trending push could double it from a low base. Bot-farmed launches sometimes do pull in real buyers from trending lists.\",\"unknowns\":[\"Who holds the LP tokens and whether the creator intends to pull\",\"Whether the earlier DPOTS token was pulled by the same deployer\",\"Any X or Telegram activity (none found)\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"searched_nothing_found\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"I searched the contract address, $DPOTS, and a combined site:x.com/reddit/t.me query. All three returned nothing relevant. The packet lists no project links.\"},\"thesis\":\"This looks like a bot-farmed, dev-seeded PumpSwap pool with unlocked LP and no narrative. A copy with the same name appears to have already been pulled. Rug risk is high and the chance of a runner is very low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":60,\"survival_score\":18,\"attention_score\":22,\"manipulation_risk\":88,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://dexscreener.com/solana/FTJhmYrWah629qSVr9K8nBAqFfQsrwP4Tm1U49Tzu16A\",\"what\":\"Pair page (the packet's market data came from here)\"},{\"url\":\"https://www.google.com/search?q=%226HNnL9NvzbqgjjULi45bPLm9FV4u5PRU2rQcx5Srtm3L%22\",\"what\":\"Contract search: no relevant results\"}]}",
+ "structured_output": {
+  "what_is_happening": "DPOTS was launched straight onto a PumpSwap pool at about 04:02 UTC. It never went through the pump.fun bonding curve (migrated_unix=0, launchpad empty). The creator supplied the liquidity, and 100% of that LP is unlocked. Liquidity is $25.5k, which is more than the $15k market cap. In about 17 minutes it drew 2,101 unique buyers but only 96 unique sellers, and 1,600 of those buyers arrived in a single 15-minute window. That pattern fits micro-buy bot spam or volume farming meant to get on trending lists, not organic demand. GMGN flags 73 bundler wallets and a 48-wallet insider trade network. There are no socials, website, DexScreener profile or narrative. Another DPOTS token was created about 5 minutes earlier and already shows $0 liquidity, which suggests a serial launch-and-pull pattern. Price is -26% over the last 5 minutes.",
+  "narrative": {
+   "description": "None identifiable. The ticker, name, description and links are all empty, and web searches for the contract and ticker found nothing.",
+   "stage": "none_found",
+   "potential": "none",
+   "why_spreading": "Nothing is spreading organically as far as I can see. The activity looks like bot-generated buyer counts."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "There is no story to connect to. It is one of at least two identically named DPOTS pools launched minutes apart.",
+   "competing_tokens": "71nUzWjvcyG6ANfNSt2kgesVhijWxFGRGU9e9GKQu3C9 (DPOTS). It was created about 5 minutes earlier and now shows $0 liquidity, so it has likely already been pulled.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,101 unique buyers against 96 unique sellers, 1,600 buyers in one 15-minute window, 73 bundler wallets, a 48-wallet insider trade network, and zero smart or renowned wallets. Buys have stayed at roughly 4 to 1 over sells while price fell 26% in 5 minutes, which means the buys are tiny spam trades and the sells are real exits.",
+   "uncertainty": "I have no X data and no wallet-level trade sizes. Some of the buyers could be real small degen buyers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and was supplied by the creator on a direct PumpSwap pool, so it can be pulled at any time (RugCheck rates this 'danger')",
+    "A same-name token from minutes earlier already shows zero liquidity",
+    "Bundlers hold 15.7% of top traders; there is a 48-wallet insider network",
+    "Liquidity is larger than market cap, which is typical of a dev-seeded pool set up for a pull",
+    "Price is already down 26% over 5 minutes"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced, and the top-10 holders excluding the pool own only about 10%. With deep liquidity relative to market cap at $15k, a real bot-driven trending push could double it from a low base. Bot-farmed launches sometimes do pull in real buyers from trending lists.",
+  "unknowns": [
+   "Who holds the LP tokens and whether the creator intends to pull",
+   "Whether the earlier DPOTS token was pulled by the same deployer",
+   "Any X or Telegram activity (none found)"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "searched_nothing_found",
+   "telegram": "searched_nothing_found",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "I searched the contract address, $DPOTS, and a combined site:x.com/reddit/t.me query. All three returned nothing relevant. The packet lists no project links."
+  },
+  "thesis": "This looks like a bot-farmed, dev-seeded PumpSwap pool with unlocked LP and no narrative. A copy with the same name appears to have already been pulled. Rug risk is high and the chance of a runner is very low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 60,
+  "survival_score": 18,
+  "attention_score": 22,
+  "manipulation_risk": 88,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://dexscreener.com/solana/FTJhmYrWah629qSVr9K8nBAqFfQsrwP4Tm1U49Tzu16A",
+    "what": "Pair page (the packet's market data came from here)"
+   },
+   {
+    "url": "https://www.google.com/search?q=%226HNnL9NvzbqgjjULi45bPLm9FV4u5PRU2rQcx5Srtm3L%22",
+    "what": "Contract search: no relevant results"
+   }
+  ]
+ },
+ "ttft_ms": 3126,
+ "type": "result",
+ "duration_ms": 33452,
+ "uuid": "d00dbfaf-e4d6-4dad-837f-974e8f01a293",
+ "ttft_stream_ms": 698,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 698,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

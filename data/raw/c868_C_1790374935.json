@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 36421,
+ "stop_reason": "tool_use",
+ "session_id": "f8e6a562-3c2e-48c0-bf72-77ff4a99acc3",
+ "total_cost_usd": 0.1977334,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11815,
+  "cache_read_input_tokens": 27747,
+  "output_tokens": 2624,
+  "output_tokens_details": {
+   "thinking_tokens": 264
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11815,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2007,
+    "cache_read_input_tokens": 13210,
+    "cache_creation_input_tokens": 1369,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1369
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2624,
+   "cacheReadInputTokens": 27747,
+   "cacheCreationInputTokens": 11815,
+   "webSearchRequests": 0,
+   "costUSD": 0.1525734,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 264,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21425,
+   "outputTokens": 747,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045160000000000006,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A swarm of at least 10 \\\"Effective Accelerationism / e/acc\\\" tokens appeared on Solana over about the last hour. Each links to a Beff Jezos (@beffjezos) X post (status 2103593870189858971), which I could not read (HTTP 402). This token is one of the later clones. It opened as a direct PumpSwap pool, not via the pump.fun curve. Its LP is 100% unlocked, liquidity ($30k) is larger than market cap ($20k), and it has traded about $540k of volume in 11 minutes while price stays flat around $20k mcap. That looks like bot or wash churn, not accumulation. Older same-name clones are sitting at $300k\u2013$740k mcap.\",\"narrative\":{\"description\":\"A Beff Jezos / e/acc post seems to have set off a burst of copycat e/acc launches on Solana. The e/acc brand is well known in crypto and AI circles.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"Most likely a Beff Jezos X post. The GeckoTerminal social field points to his status, but I could not read the post, and I found no sign he endorsed any contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Nothing sets it apart. It launched at 22:11Z, after at least 7 others with the same name. It has no socials beyond a link to the tweet and no DexScreener profile.\",\"competing_tokens\":\"3m7Bhp\u2026 ($738k), CbcyNo\u2026 ($698k), 7dVWL\u2026 ($410k, $11.7M h1 volume), 13vVSQ\u2026 ($385k), FHxE\u2026, DseC\u2026, J2b37\u2026, plus a $850M-mcap outlier that is likely fake.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About $540k of volume on a $20k mcap coin in 11 minutes (turnover above 17x) with price barely moving. Liquidity is bigger than mcap, which suggests the pool was seeded by the deployer. GMGN tags 39 bundler wallets, and 88 unique sellers against 570 buyers suggests bots cycling trades. There are no smart-money or KOL wallets, and the token has only 69 GMGN page visits.\",\"uncertainty\":\"I could not read the X post or see any Telegram groups.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked on a PumpSwap pool the deployer created directly, so the liquidity can be pulled at any time\",\"Liquidity is bigger than market cap, which fits the pattern of a deployer-seeded pool built to be pulled\",\"39 bundler wallets\",\"Wash-like volume\",\"Many competing same-name clones already have far more traction\"]},\"counterargument\":\"It has 570 unique buyers in 11 minutes, and its $20k mcap is the lowest in a hot swarm. If the narrative keeps spreading, sniper money moving between clones could push it 2x, as happened to the siblings that reached $300k\u2013$700k.\",\"unknowns\":[\"What the Beff Jezos post says, and whether it names any contract\",\"Who controls the LP\",\"Whether the buyers are real people or bots\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Only brief checks were possible in the time available. The contract search returned no relevant results. The X post returned HTTP 402. I checked live data on the DexScreener API.\"},\"thesis\":\"This is a late clone in a swarm of same-name e/acc tokens. It has unlocked LP that the deployer seeded and volume that looks like wash trading at a flat price. The rug risk is high and it is not the canonical token, so its chance of running is low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":60,\"survival_score\":15,\"attention_score\":35,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://api.dexscreener.com/latest/dex/tokens/6x1op3TpFm29AYBwk3HVXZSuXST3EZ3H8ogCyLpwWNah\",\"what\":\"Live mcap $20k, liquidity $30k, 1h volume $558k, flat price\"},{\"url\":\"https://x.com/beffjezos/status/2103593870189858971\",\"what\":\"Linked Beff Jezos post (HTTP 402, could not read)\"},{\"url\":\"https://x.com/beffjezos\",\"what\":\"Beff Jezos X account\"}]}",
+ "structured_output": {
+  "what_is_happening": "A swarm of at least 10 \"Effective Accelerationism / e/acc\" tokens appeared on Solana over about the last hour. Each links to a Beff Jezos (@beffjezos) X post (status 2103593870189858971), which I could not read (HTTP 402). This token is one of the later clones. It opened as a direct PumpSwap pool, not via the pump.fun curve. Its LP is 100% unlocked, liquidity ($30k) is larger than market cap ($20k), and it has traded about $540k of volume in 11 minutes while price stays flat around $20k mcap. That looks like bot or wash churn, not accumulation. Older same-name clones are sitting at $300k\u2013$740k mcap.",
+  "narrative": {
+   "description": "A Beff Jezos / e/acc post seems to have set off a burst of copycat e/acc launches on Solana. The e/acc brand is well known in crypto and AI circles.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "Most likely a Beff Jezos X post. The GeckoTerminal social field points to his status, but I could not read the post, and I found no sign he endorsed any contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Nothing sets it apart. It launched at 22:11Z, after at least 7 others with the same name. It has no socials beyond a link to the tweet and no DexScreener profile.",
+   "competing_tokens": "3m7Bhp\u2026 ($738k), CbcyNo\u2026 ($698k), 7dVWL\u2026 ($410k, $11.7M h1 volume), 13vVSQ\u2026 ($385k), FHxE\u2026, DseC\u2026, J2b37\u2026, plus a $850M-mcap outlier that is likely fake.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About $540k of volume on a $20k mcap coin in 11 minutes (turnover above 17x) with price barely moving. Liquidity is bigger than mcap, which suggests the pool was seeded by the deployer. GMGN tags 39 bundler wallets, and 88 unique sellers against 570 buyers suggests bots cycling trades. There are no smart-money or KOL wallets, and the token has only 69 GMGN page visits.",
+   "uncertainty": "I could not read the X post or see any Telegram groups."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked on a PumpSwap pool the deployer created directly, so the liquidity can be pulled at any time",
+    "Liquidity is bigger than market cap, which fits the pattern of a deployer-seeded pool built to be pulled",
+    "39 bundler wallets",
+    "Wash-like volume",
+    "Many competing same-name clones already have far more traction"
+   ]
+  },
+  "counterargument": "It has 570 unique buyers in 11 minutes, and its $20k mcap is the lowest in a hot swarm. If the narrative keeps spreading, sniper money moving between clones could push it 2x, as happened to the siblings that reached $300k\u2013$700k.",
+  "unknowns": [
+   "What the Beff Jezos post says, and whether it names any contract",
+   "Who controls the LP",
+   "Whether the buyers are real people or bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Only brief checks were possible in the time available. The contract search returned no relevant results. The X post returned HTTP 402. I checked live data on the DexScreener API."
+  },
+  "thesis": "This is a late clone in a swarm of same-name e/acc tokens. It has unlocked LP that the deployer seeded and volume that looks like wash trading at a flat price. The rug risk is high and it is not the canonical token, so its chance of running is low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 35,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://api.dexscreener.com/latest/dex/tokens/6x1op3TpFm29AYBwk3HVXZSuXST3EZ3H8ogCyLpwWNah",
+    "what": "Live mcap $20k, liquidity $30k, 1h volume $558k, flat price"
+   },
+   {
+    "url": "https://x.com/beffjezos/status/2103593870189858971",
+    "what": "Linked Beff Jezos post (HTTP 402, could not read)"
+   },
+   {
+    "url": "https://x.com/beffjezos",
+    "what": "Beff Jezos X account"
+   }
+  ]
+ },
+ "ttft_ms": 2969,
+ "type": "result",
+ "duration_ms": 33357,
+ "uuid": "6138d28b-b9bb-4039-8dee-aed646024670",
+ "ttft_stream_ms": 677,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 678,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

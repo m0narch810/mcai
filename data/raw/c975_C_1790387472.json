@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 56125,
+ "stop_reason": "tool_use",
+ "session_id": "7c002cc1-5b97-4e46-8e28-8eb033db3192",
+ "total_cost_usd": 0.28514059999999997,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 14499,
+  "cache_read_input_tokens": 45473,
+  "output_tokens": 4682,
+  "output_tokens_details": {
+   "thinking_tokens": 394
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14499,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1928,
+    "cache_read_input_tokens": 15923,
+    "cache_creation_input_tokens": 1340,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1340
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4682,
+   "cacheReadInputTokens": 45473,
+   "cacheCreationInputTokens": 14499,
+   "webSearchRequests": 0,
+   "costUSD": 0.2187586,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 394,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 31962,
+   "outputTokens": 884,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.066382,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Elizabeth Holmes is back in the news: her move to a halfway house was approved, and she has been posting pro-Trump content on X. A post from her @ElizabethHolmes account (status 2103657789423792441) apparently set off a race of Theranos coin launches. This token is a Meteora virtual-curve launch that migrated to PumpSwap about 16 minutes before detection. It spiked to about $269k market cap and fell 55% in the last 5 minutes, to about $104\u2013115k. An earlier pump.fun Theranos token (AEUbt...pump) has higher market cap, liquidity and volume.\",\"narrative\":{\"description\":\"Elizabeth Holmes (Theranos) posted on X. This came right after news that she will move to a halfway house and after her pro-Trump posts, and it set off a race of Theranos meme-coin launches.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"Holmes is a well-known figure now back in the news. A post from her X account apparently prompted the launches.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None of the same-name tokens is tied to Holmes. This one is just one clone among many; it was created after the pump.fun leader and has about half its volume.\",\"competing_tokens\":\"AEUbt2MMUQZvrwnn4kSPfGXRZC4BBY1Az2hqPj7Fpump: launched earlier, $171k market cap, $936k volume in the last hour. There are also 2WQb..., ELHQ... and Ac1e..., plus several dead clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The news hook is real: Holmes posts actively on X, and news of her halfway-house move came out 2026-09-23 (CNN, Forbes). The token's links point to a specific Holmes status, but nothing links this contract to her. At least 7 same-name tokens launched within about 5 minutes of each other, which looks like a launch race by bots and snipers. GMGN tags 83 wallets on this token as bundlers, and buyers heavily outnumber sellers (1606 vs 120 unique), which fits bot activity.\",\"uncertainty\":\"I could not see the X post itself or any discussion of this contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck says 99.99% of LP is unlocked, while GMGN says the LP is burned; the two sources conflict\",\"83 bundler wallets\",\"Price down 55% in the last 5 minutes, after peaking near $269k market cap\",\"An unlabeled holder with 80% of supply, probably the pool or vault but not confirmed\",\"Competing clone tokens split the liquidity\"]},\"counterargument\":\"If Holmes's post keeps spreading, the whole Theranos cluster could get a second wave, and a Meteora/usepaid launch could draw buyers from a particular community. The ATH was only about 2.6x the current market cap, so a rebound to 2x is mechanically possible.\",\"unknowns\":[\"What the Holmes post actually says, and whether she endorsed any token\",\"Whether the 80% holder is the Meteora pool or vault\",\"Whether the LP is actually locked\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"not_attempted\",\"notes\":\"Time-limited: three searches. News confirms Holmes is in the news cycle. Searching the contract returned nothing. The 'website' field in the packet is a garbled string of concatenated links.\"},\"thesis\":\"A non-canonical clone in a Holmes-tweet launch race. It is already dumping hard from its ATH and trails the pump.fun leader. Low odds of a 2x.\",\"continuation_view\":\"fade\",\"p_runner\":5,\"p_rug\":35,\"survival_score\":35,\"attention_score\":45,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.cnn.com/2026/09/23/us/elizabeth-holmes-halfway-house-approved\",\"what\":\"Holmes halfway-house news, 2026-09-23\"},{\"url\":\"https://www.forbes.com/sites/alisondurkee/2026/09/08/elizabeth-holmes-a24-movie-comes-as-she-seeks-clemency-from-trump-and-praises-him-in-posts/\",\"what\":\"Holmes's pro-Trump X posts\"},{\"url\":\"https://x.com/ElizabethHolmes?lang=en\",\"what\":\"Holmes's X account\"}]}",
+ "structured_output": {
+  "what_is_happening": "Elizabeth Holmes is back in the news: her move to a halfway house was approved, and she has been posting pro-Trump content on X. A post from her @ElizabethHolmes account (status 2103657789423792441) apparently set off a race of Theranos coin launches. This token is a Meteora virtual-curve launch that migrated to PumpSwap about 16 minutes before detection. It spiked to about $269k market cap and fell 55% in the last 5 minutes, to about $104\u2013115k. An earlier pump.fun Theranos token (AEUbt...pump) has higher market cap, liquidity and volume.",
+  "narrative": {
+   "description": "Elizabeth Holmes (Theranos) posted on X. This came right after news that she will move to a halfway house and after her pro-Trump posts, and it set off a race of Theranos meme-coin launches.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "Holmes is a well-known figure now back in the news. A post from her X account apparently prompted the launches."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None of the same-name tokens is tied to Holmes. This one is just one clone among many; it was created after the pump.fun leader and has about half its volume.",
+   "competing_tokens": "AEUbt2MMUQZvrwnn4kSPfGXRZC4BBY1Az2hqPj7Fpump: launched earlier, $171k market cap, $936k volume in the last hour. There are also 2WQb..., ELHQ... and Ac1e..., plus several dead clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The news hook is real: Holmes posts actively on X, and news of her halfway-house move came out 2026-09-23 (CNN, Forbes). The token's links point to a specific Holmes status, but nothing links this contract to her. At least 7 same-name tokens launched within about 5 minutes of each other, which looks like a launch race by bots and snipers. GMGN tags 83 wallets on this token as bundlers, and buyers heavily outnumber sellers (1606 vs 120 unique), which fits bot activity.",
+   "uncertainty": "I could not see the X post itself or any discussion of this contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck says 99.99% of LP is unlocked, while GMGN says the LP is burned; the two sources conflict",
+    "83 bundler wallets",
+    "Price down 55% in the last 5 minutes, after peaking near $269k market cap",
+    "An unlabeled holder with 80% of supply, probably the pool or vault but not confirmed",
+    "Competing clone tokens split the liquidity"
+   ]
+  },
+  "counterargument": "If Holmes's post keeps spreading, the whole Theranos cluster could get a second wave, and a Meteora/usepaid launch could draw buyers from a particular community. The ATH was only about 2.6x the current market cap, so a rebound to 2x is mechanically possible.",
+  "unknowns": [
+   "What the Holmes post actually says, and whether she endorsed any token",
+   "Whether the 80% holder is the Meteora pool or vault",
+   "Whether the LP is actually locked"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "not_attempted",
+   "notes": "Time-limited: three searches. News confirms Holmes is in the news cycle. Searching the contract returned nothing. The 'website' field in the packet is a garbled string of concatenated links."
+  },
+  "thesis": "A non-canonical clone in a Holmes-tweet launch race. It is already dumping hard from its ATH and trails the pump.fun leader. Low odds of a 2x.",
+  "continuation_view": "fade",
+  "p_runner": 5,
+  "p_rug": 35,
+  "survival_score": 35,
+  "attention_score": 45,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.cnn.com/2026/09/23/us/elizabeth-holmes-halfway-house-approved",
+    "what": "Holmes halfway-house news, 2026-09-23"
+   },
+   {
+    "url": "https://www.forbes.com/sites/alisondurkee/2026/09/08/elizabeth-holmes-a24-movie-comes-as-she-seeks-clemency-from-trump-and-praises-him-in-posts/",
+    "what": "Holmes's pro-Trump X posts"
+   },
+   {
+    "url": "https://x.com/ElizabethHolmes?lang=en",
+    "what": "Holmes's X account"
+   }
+  ]
+ },
+ "ttft_ms": 2205,
+ "type": "result",
+ "duration_ms": 50381,
+ "uuid": "36bd9903-785c-498e-bc91-861124dccf94",
+ "ttft_stream_ms": 771,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 772,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

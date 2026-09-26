@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 37665,
+ "stop_reason": "tool_use",
+ "session_id": "2cca3e4a-940b-4374-b39c-d6fe53de0d9c",
+ "total_cost_usd": 0.20346079999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12511,
+  "cache_read_input_tokens": 28934,
+  "output_tokens": 2581,
+  "output_tokens_details": {
+   "thinking_tokens": 423
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12511,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2247,
+    "cache_read_input_tokens": 13871,
+    "cache_creation_input_tokens": 1404,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1404
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2581,
+   "cacheReadInputTokens": 28934,
+   "cacheCreationInputTokens": 12511,
+   "webSearchRequests": 0,
+   "costUSD": 0.1575188,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 423,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22142,
+   "outputTokens": 760,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045942000000000004,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A catalyst coming from a real person looks likely here, but I never found it. At least 10 tokens all named \\\"DEBT COIN\\\" launched between about 12:02 and 12:35 UTC. The metadata links point to a tweet from Eric Bolling, a tweet from Elizabeth Holmes's X account, and a link to america.gov. That suggests a tweet about debt, possibly from Holmes or Bolling, set off a wave of copycat launches. This token (9kWW) was created around 12:20 on a Meteora virtual curve and was the 5th or 6th copy. The leader is FYM6 at about $841k market cap, created about 18 minutes before this one. This token has 2,324 buys but only $57k of volume. That works out to about $25 per buy from about 2,117 unique buyers in 13 minutes, which looks like bot or micro-buy spam rather than organic traders. In the last 5 minutes buys and sells were roughly equal (71/71).\",\"narrative\":{\"description\":\"A 'DEBT' meme, probably tied to Elizabeth Holmes's X posts: she is in the news this week over her restitution debt and a halfway-house release. It may also be tied to a Bolling tweet about the national debt. I could not confirm the exact tweet.\",\"stage\":\"peaking\",\"potential\":\"moderate\",\"why_spreading\":\"The current news cycle about Holmes (TMZ 9/25, Forbes 9/8) plus fast copycat launches. The attention is going mostly to the earliest DEBT token, FYM6.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None stands out. It copies the leader's name and image (image_duplicate_count 7), and its metadata even links to the leader's usepaid.app page for FYM6.\",\"competing_tokens\":\"FYM6 ($841k market cap, $2.7M volume in 1h, first to launch), 4Ptj ($362k), BKgib ($250k), BLPK ($327k), FP1X ($255k), plus several others. There is also the older 2025 DebtCoin (vLie/bonk), which is unrelated.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"About 2,300 buys averaging about $25 each in 13 minutes. GMGN flags 10 bundler wallets. The metadata is a mash of scraped links to other people's tokens. The deployer is a fresh, single-use wallet with status 'creator_close'.\",\"uncertainty\":\"I could not check the X data. The buyer count might partly reflect real retail spillover from the leader's momentum.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"A clone competing with 9 or more same-name tokens, where the leader takes most of the flow\",\"RugCheck says 99.99% of LP is unlocked, but GMGN reports lp_burn 1.0, so the sources conflict\",\"One wallet holds 80%, probably the Meteora curve or pool vault, but I did not verify this\",\"Liquidity is thin at $25k\"]},\"counterargument\":\"Copycat waves sometimes lift the second-tier clones when the leader goes vertical. At $100k market cap this token has room to double if the Holmes/debt story blows up on X and bots rotate into cheaper copies.\",\"unknowns\":[\"The exact tweet that triggered the wave\",\"Whether the 80% wallet is the curve vault\",\"Whether the leader FYM6 is still climbing\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Very limited time. I ran two web searches. The news covers Holmes, but I found no tweet about a DEBT token.\"},\"thesis\":\"A late, non-canonical clone in a crowded ticker-copy wave. Its volume looks like micro-buy bots, and buys and sells are now balanced. It has a low chance of doubling before halving, and a high chance of slowly bleeding out.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":40,\"survival_score\":35,\"attention_score\":45,\"manipulation_risk\":75,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.tmz.com/2026/09/25/elizabeth-holmes-cannot-contact-victims-after-getting-out-of-prison/\",\"what\":\"Holmes restitution/debt news, 9/25\"},{\"url\":\"https://www.forbes.com/sites/alisondurkee/2026/09/08/elizabeth-holmes-a24-movie-comes-as-she-seeks-clemency-from-trump-and-praises-him-in-posts/\",\"what\":\"Holmes X activity context\"},{\"url\":\"https://debtcoin.us/\",\"what\":\"Older, unrelated DebtCoin project\"}]}",
+ "structured_output": {
+  "what_is_happening": "A catalyst coming from a real person looks likely here, but I never found it. At least 10 tokens all named \"DEBT COIN\" launched between about 12:02 and 12:35 UTC. The metadata links point to a tweet from Eric Bolling, a tweet from Elizabeth Holmes's X account, and a link to america.gov. That suggests a tweet about debt, possibly from Holmes or Bolling, set off a wave of copycat launches. This token (9kWW) was created around 12:20 on a Meteora virtual curve and was the 5th or 6th copy. The leader is FYM6 at about $841k market cap, created about 18 minutes before this one. This token has 2,324 buys but only $57k of volume. That works out to about $25 per buy from about 2,117 unique buyers in 13 minutes, which looks like bot or micro-buy spam rather than organic traders. In the last 5 minutes buys and sells were roughly equal (71/71).",
+  "narrative": {
+   "description": "A 'DEBT' meme, probably tied to Elizabeth Holmes's X posts: she is in the news this week over her restitution debt and a halfway-house release. It may also be tied to a Bolling tweet about the national debt. I could not confirm the exact tweet.",
+   "stage": "peaking",
+   "potential": "moderate",
+   "why_spreading": "The current news cycle about Holmes (TMZ 9/25, Forbes 9/8) plus fast copycat launches. The attention is going mostly to the earliest DEBT token, FYM6."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None stands out. It copies the leader's name and image (image_duplicate_count 7), and its metadata even links to the leader's usepaid.app page for FYM6.",
+   "competing_tokens": "FYM6 ($841k market cap, $2.7M volume in 1h, first to launch), 4Ptj ($362k), BKgib ($250k), BLPK ($327k), FP1X ($255k), plus several others. There is also the older 2025 DebtCoin (vLie/bonk), which is unrelated.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "About 2,300 buys averaging about $25 each in 13 minutes. GMGN flags 10 bundler wallets. The metadata is a mash of scraped links to other people's tokens. The deployer is a fresh, single-use wallet with status 'creator_close'.",
+   "uncertainty": "I could not check the X data. The buyer count might partly reflect real retail spillover from the leader's momentum."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "A clone competing with 9 or more same-name tokens, where the leader takes most of the flow",
+    "RugCheck says 99.99% of LP is unlocked, but GMGN reports lp_burn 1.0, so the sources conflict",
+    "One wallet holds 80%, probably the Meteora curve or pool vault, but I did not verify this",
+    "Liquidity is thin at $25k"
+   ]
+  },
+  "counterargument": "Copycat waves sometimes lift the second-tier clones when the leader goes vertical. At $100k market cap this token has room to double if the Holmes/debt story blows up on X and bots rotate into cheaper copies.",
+  "unknowns": [
+   "The exact tweet that triggered the wave",
+   "Whether the 80% wallet is the curve vault",
+   "Whether the leader FYM6 is still climbing"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Very limited time. I ran two web searches. The news covers Holmes, but I found no tweet about a DEBT token."
+  },
+  "thesis": "A late, non-canonical clone in a crowded ticker-copy wave. Its volume looks like micro-buy bots, and buys and sells are now balanced. It has a low chance of doubling before halving, and a high chance of slowly bleeding out.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 40,
+  "survival_score": 35,
+  "attention_score": 45,
+  "manipulation_risk": 75,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.tmz.com/2026/09/25/elizabeth-holmes-cannot-contact-victims-after-getting-out-of-prison/",
+    "what": "Holmes restitution/debt news, 9/25"
+   },
+   {
+    "url": "https://www.forbes.com/sites/alisondurkee/2026/09/08/elizabeth-holmes-a24-movie-comes-as-she-seeks-clemency-from-trump-and-praises-him-in-posts/",
+    "what": "Holmes X activity context"
+   },
+   {
+    "url": "https://debtcoin.us/",
+    "what": "Older, unrelated DebtCoin project"
+   }
+  ]
+ },
+ "ttft_ms": 3304,
+ "type": "result",
+ "duration_ms": 37723,
+ "uuid": "027cd486-ee70-41ce-8106-956349e6cc79",
+ "ttft_stream_ms": 898,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 898,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

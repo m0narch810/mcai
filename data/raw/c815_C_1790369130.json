@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 34850,
+ "stop_reason": "tool_use",
+ "session_id": "08bac84a-9e0b-4f9b-aaf7-be711ca6eebe",
+ "total_cost_usd": 0.1858626,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11323,
+  "cache_read_input_tokens": 14378,
+  "output_tokens": 2421,
+  "output_tokens_details": {
+   "thinking_tokens": 382
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11323,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2086,
+    "cache_read_input_tokens": 11614,
+    "cache_creation_input_tokens": 2473,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2473
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2421,
+   "cacheReadInputTokens": 14378,
+   "cacheCreationInputTokens": 11323,
+   "webSearchRequests": 0,
+   "costUSD": 0.1418956,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 382,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 20717,
+   "outputTokens": 650,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043967,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This \\\"Apu\\\" token (9G3o\u2026) is a copy of the Apu Apustaja meme. It was minted outside pump.fun and the creator set up its own PumpSwap pool 3 seconds after minting (GMGN shows migrated_unix=0 and no launchpad). It is 13 minutes old at about $28-32k market cap, with $360k of volume from about 1,950 unique buyers against only 71 sellers. A different \\\"Apu\\\" (79xB\u2026pump) was launched on pump.fun about 25 minutes earlier and is already at $813k market cap with $508k of volume in the past hour. That one is almost certainly the coin people actually mean. This token looks like a copycat pool catching buyers who search the ticker, or like bot-driven volume. GMGN flags 38 bundler wallets holding a 32% share among top traders. RugCheck reports the LP as 100% unlocked, with few LP providers.\",\"narrative\":{\"description\":\"Apu Apustaja (Help Helper), a Pepe-style meme with a long history. Several Solana APU coins already exist, and a fresh pump.fun Apu (79xB) is running right now.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The attention is on the other Apu coin (79xB, $813k market cap). This contract gets only spillover. I found no posts that mention this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. The only link is the ticker/name and an X handle (TheApuPf) listed on GeckoTerminal. I found no search results for the contract.\",\"competing_tokens\":\"79xB7iLghccAWuoab7qXkaDpQggmu6D2zrpKtfXipump (Apu, $813k market cap, $508k volume in the past hour, launched about 25 minutes earlier on pump.fun) is the leader. Older APU coins and several fresh Apu clones also exist.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"38 bundler wallets with a 32% share of top traders. About 1,950 unique buyers against 71 sellers in 13 minutes is an extremely lopsided ratio, which suggests bot or bundled buying. The creator made its own pool, left the LP unlocked, and listed no socials on DexScreener.\",\"uncertainty\":\"Some buyers may be real people who mistook this for the leading Apu. X posts could not be checked.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and the pool was created by the dev, not a pump.fun migration, so the liquidity can be pulled at any time\",\"38 bundler wallets holding a 32% share among top traders\",\"A clone competing with a much larger Apu coin that has the same name\",\"GeckoTerminal puts the top 10 holders at 74.6%, which includes the pool\"]},\"counterargument\":\"Heavy spillover from the Apu that is already running could keep lifting this cheap clone ($30k versus $813k). There are real-looking numbers of buyers, and a 2x to $60k is a small absolute move that could happen quickly if the 'cheap Apu' trade catches on.\",\"unknowns\":[\"Whether the TheApuPf X account exists and has any activity\",\"Whether the dev plans to pull the LP\",\"What share of the buyers are real\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"With about 2 minutes available, I ran two searches. The contract string returned nothing relevant. The ticker search returned only older APU projects.\"},\"thesis\":\"A non-canonical Apu clone sitting in a PumpSwap pool the dev created, with the LP unlocked and heavy bundling. It is feeding off a separate Apu that is already running. Rug risk is high and the chance of a runner is low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":55,\"survival_score\":18,\"attention_score\":45,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/ApuSolanaCTO\",\"what\":\"An older Apu Solana CTO account, not linked to this contract\"},{\"url\":\"https://www.coingecko.com/en/coins/apu-apustaja-sol\",\"what\":\"The established Apu Apustaja token on Solana\"}]}",
+ "structured_output": {
+  "what_is_happening": "This \"Apu\" token (9G3o\u2026) is a copy of the Apu Apustaja meme. It was minted outside pump.fun and the creator set up its own PumpSwap pool 3 seconds after minting (GMGN shows migrated_unix=0 and no launchpad). It is 13 minutes old at about $28-32k market cap, with $360k of volume from about 1,950 unique buyers against only 71 sellers. A different \"Apu\" (79xB\u2026pump) was launched on pump.fun about 25 minutes earlier and is already at $813k market cap with $508k of volume in the past hour. That one is almost certainly the coin people actually mean. This token looks like a copycat pool catching buyers who search the ticker, or like bot-driven volume. GMGN flags 38 bundler wallets holding a 32% share among top traders. RugCheck reports the LP as 100% unlocked, with few LP providers.",
+  "narrative": {
+   "description": "Apu Apustaja (Help Helper), a Pepe-style meme with a long history. Several Solana APU coins already exist, and a fresh pump.fun Apu (79xB) is running right now.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The attention is on the other Apu coin (79xB, $813k market cap). This contract gets only spillover. I found no posts that mention this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. The only link is the ticker/name and an X handle (TheApuPf) listed on GeckoTerminal. I found no search results for the contract.",
+   "competing_tokens": "79xB7iLghccAWuoab7qXkaDpQggmu6D2zrpKtfXipump (Apu, $813k market cap, $508k volume in the past hour, launched about 25 minutes earlier on pump.fun) is the leader. Older APU coins and several fresh Apu clones also exist.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "38 bundler wallets with a 32% share of top traders. About 1,950 unique buyers against 71 sellers in 13 minutes is an extremely lopsided ratio, which suggests bot or bundled buying. The creator made its own pool, left the LP unlocked, and listed no socials on DexScreener.",
+   "uncertainty": "Some buyers may be real people who mistook this for the leading Apu. X posts could not be checked."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and the pool was created by the dev, not a pump.fun migration, so the liquidity can be pulled at any time",
+    "38 bundler wallets holding a 32% share among top traders",
+    "A clone competing with a much larger Apu coin that has the same name",
+    "GeckoTerminal puts the top 10 holders at 74.6%, which includes the pool"
+   ]
+  },
+  "counterargument": "Heavy spillover from the Apu that is already running could keep lifting this cheap clone ($30k versus $813k). There are real-looking numbers of buyers, and a 2x to $60k is a small absolute move that could happen quickly if the 'cheap Apu' trade catches on.",
+  "unknowns": [
+   "Whether the TheApuPf X account exists and has any activity",
+   "Whether the dev plans to pull the LP",
+   "What share of the buyers are real"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "With about 2 minutes available, I ran two searches. The contract string returned nothing relevant. The ticker search returned only older APU projects."
+  },
+  "thesis": "A non-canonical Apu clone sitting in a PumpSwap pool the dev created, with the LP unlocked and heavy bundling. It is feeding off a separate Apu that is already running. Rug risk is high and the chance of a runner is low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 55,
+  "survival_score": 18,
+  "attention_score": 45,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/ApuSolanaCTO",
+    "what": "An older Apu Solana CTO account, not linked to this contract"
+   },
+   {
+    "url": "https://www.coingecko.com/en/coins/apu-apustaja-sol",
+    "what": "The established Apu Apustaja token on Solana"
+   }
+  ]
+ },
+ "ttft_ms": 2486,
+ "type": "result",
+ "duration_ms": 30550,
+ "uuid": "73797060-4f0d-4e85-93a0-fc0a8113d23e",
+ "ttft_stream_ms": 655,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 655,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

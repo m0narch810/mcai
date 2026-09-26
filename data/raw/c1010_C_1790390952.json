@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 34969,
+ "stop_reason": "tool_use",
+ "session_id": "7d47b8a1-11e7-4612-bac1-bbcce4620ebb",
+ "total_cost_usd": 0.1882086,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11395,
+  "cache_read_input_tokens": 28228,
+  "output_tokens": 2516,
+  "output_tokens_details": {
+   "thinking_tokens": 267
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11395,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2064,
+    "cache_read_input_tokens": 13880,
+    "cache_creation_input_tokens": 279,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 279
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2516,
+   "cacheReadInputTokens": 28228,
+   "cacheCreationInputTokens": 11395,
+   "webSearchRequests": 0,
+   "costUSD": 0.1471496,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 267,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 18239,
+   "outputTokens": 564,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.041059000000000005,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun coin (migrated to PumpSwap instantly at creation, 02:29 UTC) named after roon (@tszzl), a well-known AI poster with about 490k followers. Its description says \\\"Fees to @tszzl via UsePaid\\\". UsePaid is a service that routes pump.fun creator fees to an X account. The token hit an ATH price of about 0.000636 (roughly $636k mcap) and then collapsed about 80% in the last 5 minutes to about $127k. Sellers outnumber buyers (641 vs 474 unique in m5). The packet's own website link points to a different UsePaid token page, DmB3oUjB\u2026, an older roon token with $242k mcap and $284k h1 volume. At least 10 same-name roon tokens were launched in the past ~1.5 hours.\",\"narrative\":{\"description\":\"Tokens that tribute a celebrity X account (roon, OpenAI-adjacent AI poster), with creator fees routed to him through UsePaid. It's a recurring 'fees to a famous poster' meme format, and there's no fresh news event.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"roon has a big following among AI/tech people, and the UsePaid fee-routing hook makes launching a token for him look legitimate. Many deployers are spamming the same name at the same time.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found beyond the name. The project's own website link in the GMGN data points to the UsePaid page of DmB3oUjB\u2026, not this contract. So this token looks like a later copy of the roon tribute rather than the canonical one.\",\"competing_tokens\":\"DmB3oUjB\u2026 (earliest, created ~1.5h before this one, $242k mcap, $47k liquidity, $284k h1 volume, and the one the UsePaid link points to). About 8 other roon clones are dead, and HTQn\u2026 was rugged.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Trading looks broad: about 1.7k unique buyers and top-10 holders own only 2.9%. But the 'top_entrapment_trader_pct' is 0.77, the dev's X account has launched 38 tokens, the image is duplicated 6 times, and there are many clones. The -80% dump in 5 minutes suggests early wallets have exited.\",\"uncertainty\":\"There's no X post data. I couldn't confirm whether roon acknowledged any token.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Price crashed 80% in the last 5 minutes and sell pressure dominates\",\"It isn't the canonical roon token, and the canonical one soaks up the attention\",\"Many dead clones show the pattern: roon tokens get launched, pumped and dumped\",\"The dev's X account has launched 38 tokens\"]},\"counterargument\":\"The structure is clean: LP is burned, mint and freeze authority are renounced, holders are spread out and the RugCheck score is 1. Volume is still high at about $27k per 5 minutes on a $127k mcap. If roon notices or quote-tweets something, any roon token could bounce hard, and 2x from a post-crash low is only back toward $250k, well below the $636k ATH.\",\"unknowns\":[\"Whether roon has acknowledged any token or UsePaid payout\",\"Which roon token UsePaid actually treats as registered (their site wouldn't load)\",\"X sentiment and posts about roon tokens\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Time-limited. The contract search returned nothing and the roon/UsePaid search found only general info. The usepaid.app fetch failed with an SSL error.\"},\"thesis\":\"This is a non-canonical roon tribute clone that has already peaked (~$636k ATH) and is crashing 80% in 5 minutes. Attention sits with the earlier DmB3 token that UsePaid links to. A clean structure keeps outright rug risk moderate, but a 2x before -50% needs a new catalyst.\",\"continuation_view\":\"fade\",\"p_runner\":6,\"p_rug\":30,\"survival_score\":50,\"attention_score\":45,\"manipulation_risk\":60,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://usepaid.app/explore\",\"what\":\"UsePaid routes creator fees to X accounts; lists a roon token (search snippet)\"},{\"url\":\"https://goldsguide.com/roon-tszzl-2023/\",\"what\":\"Background on roon as a popular AI poster\"},{\"url\":\"https://x.com/tszzl\",\"what\":\"roon's X account\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun coin (migrated to PumpSwap instantly at creation, 02:29 UTC) named after roon (@tszzl), a well-known AI poster with about 490k followers. Its description says \"Fees to @tszzl via UsePaid\". UsePaid is a service that routes pump.fun creator fees to an X account. The token hit an ATH price of about 0.000636 (roughly $636k mcap) and then collapsed about 80% in the last 5 minutes to about $127k. Sellers outnumber buyers (641 vs 474 unique in m5). The packet's own website link points to a different UsePaid token page, DmB3oUjB\u2026, an older roon token with $242k mcap and $284k h1 volume. At least 10 same-name roon tokens were launched in the past ~1.5 hours.",
+  "narrative": {
+   "description": "Tokens that tribute a celebrity X account (roon, OpenAI-adjacent AI poster), with creator fees routed to him through UsePaid. It's a recurring 'fees to a famous poster' meme format, and there's no fresh news event.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "roon has a big following among AI/tech people, and the UsePaid fee-routing hook makes launching a token for him look legitimate. Many deployers are spamming the same name at the same time."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found beyond the name. The project's own website link in the GMGN data points to the UsePaid page of DmB3oUjB\u2026, not this contract. So this token looks like a later copy of the roon tribute rather than the canonical one.",
+   "competing_tokens": "DmB3oUjB\u2026 (earliest, created ~1.5h before this one, $242k mcap, $47k liquidity, $284k h1 volume, and the one the UsePaid link points to). About 8 other roon clones are dead, and HTQn\u2026 was rugged.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Trading looks broad: about 1.7k unique buyers and top-10 holders own only 2.9%. But the 'top_entrapment_trader_pct' is 0.77, the dev's X account has launched 38 tokens, the image is duplicated 6 times, and there are many clones. The -80% dump in 5 minutes suggests early wallets have exited.",
+   "uncertainty": "There's no X post data. I couldn't confirm whether roon acknowledged any token."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Price crashed 80% in the last 5 minutes and sell pressure dominates",
+    "It isn't the canonical roon token, and the canonical one soaks up the attention",
+    "Many dead clones show the pattern: roon tokens get launched, pumped and dumped",
+    "The dev's X account has launched 38 tokens"
+   ]
+  },
+  "counterargument": "The structure is clean: LP is burned, mint and freeze authority are renounced, holders are spread out and the RugCheck score is 1. Volume is still high at about $27k per 5 minutes on a $127k mcap. If roon notices or quote-tweets something, any roon token could bounce hard, and 2x from a post-crash low is only back toward $250k, well below the $636k ATH.",
+  "unknowns": [
+   "Whether roon has acknowledged any token or UsePaid payout",
+   "Which roon token UsePaid actually treats as registered (their site wouldn't load)",
+   "X sentiment and posts about roon tokens"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Time-limited. The contract search returned nothing and the roon/UsePaid search found only general info. The usepaid.app fetch failed with an SSL error."
+  },
+  "thesis": "This is a non-canonical roon tribute clone that has already peaked (~$636k ATH) and is crashing 80% in 5 minutes. Attention sits with the earlier DmB3 token that UsePaid links to. A clean structure keeps outright rug risk moderate, but a 2x before -50% needs a new catalyst.",
+  "continuation_view": "fade",
+  "p_runner": 6,
+  "p_rug": 30,
+  "survival_score": 50,
+  "attention_score": 45,
+  "manipulation_risk": 60,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://usepaid.app/explore",
+    "what": "UsePaid routes creator fees to X accounts; lists a roon token (search snippet)"
+   },
+   {
+    "url": "https://goldsguide.com/roon-tszzl-2023/",
+    "what": "Background on roon as a popular AI poster"
+   },
+   {
+    "url": "https://x.com/tszzl",
+    "what": "roon's X account"
+   }
+  ]
+ },
+ "ttft_ms": 2498,
+ "type": "result",
+ "duration_ms": 30557,
+ "uuid": "595314b2-9caf-4e36-8990-3e4b4bcfb7da",
+ "ttft_stream_ms": 736,
+ "time_to_request_ms": 54,
+ "first_content_frame_ms": 736,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

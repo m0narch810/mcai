@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 22838,
+ "stop_reason": "tool_use",
+ "session_id": "554047d0-16a6-4024-828f-c01aa7210400",
+ "total_cost_usd": 0.1050124,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7035,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2415,
+  "output_tokens_details": {
+   "thinking_tokens": 410
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7035,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2415,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7035,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7035
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2415,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7035,
+   "webSearchRequests": 0,
+   "costUSD": 0.1050124,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 410,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A Chinese-named token, \u5218\u6b222026 (\\\"Liu Huan 2026\\\", apparently a reference to the Chinese singer), launched straight into a PumpSwap pool about 53 minutes ago. It did not go through a pump.fun bonding curve: migrated_unix is 0 and the pool was created 3 seconds after the token. It rose about 150% in the first hour to a market cap of about $57k on $545k volume, a turnover of 7.8x. There were 1,130 unique buyers over the hour, but only about 100 unique buyers and 100 unique sellers in the last 30 minutes, trading about 1,700 buys against 1,700 sells. The flow has moved from broad early buying to a small group of wallets trading back and forth. Liquidity ($69k) is larger than market cap. The LP is 100% unlocked (lp_burn_ratio 0) and there are few LP providers. GMGN tags 44 bundler wallets. The creator has closed out, and the top holder, a wallet not labelled as an insider, holds 10.6%. An earlier token with the same name now has $0 liquidity.\",\"narrative\":{\"description\":\"A Chinese celebrity or year-number meme (Liu Huan + 2026). It fits the recurring wave of Chinese-character tickers on Solana. There are no socials, website or description.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Probably interest from Chinese-speaking degen traders in Chinese-character tickers, plus early bundled buying. The number of unique buyers stalled after the first 30 minutes, which fits early buying followed by bot churn rather than growing spread.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only same-name token with live liquidity. The earlier copy (created about 7 minutes before) has $0 liquidity and looks rugged or dead.\",\"competing_tokens\":\"8dQ47...WEUj, same name, $0 liquidity, $21.6k market cap, $50k volume over 1h.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The first half hour looks broad (about 1,030 unique buyers). Since then, about 100 unique wallets have produced about 1,700 buys and 1,700 sells in 30 minutes, and the last 5 minutes are exactly 229 buys vs 229 sells. That looks like wash or bot churn. GMGN tags 44 bundler wallets, which trade about 11% of the top volume. There are no paid boosts and no KOL wallets.\",\"uncertainty\":\"No X data. The unique-buyer counts from GeckoTerminal may be windowed in odd ways.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"LP is 100% unlocked and there are few LP providers, so the pool creator can pull liquidity at any time\",\"The pool was created directly on PumpSwap with no curve graduation, so the pool was seeded by the deployer\",\"The creator position is closed and the deploy platform is unknown\",\"44 bundler wallets\",\"Recent volume looks wash-traded: buys equal sells from about 100 wallets\",\"A same-name predecessor has died\"]},\"counterargument\":\"It had 1,130 real unique buyers in under an hour, and top10 concentration outside the pool is low (about 14%). The mint and freeze authorities are renounced and there is no tax. Liquidity above market cap means the price can absorb selling. Chinese-ticker memes sometimes attract a second wave from Chinese-speaking communities. A move from $57k to $114k is small in absolute terms. The creator's best previous token reached a $247k ATH, so a 2x is within the range this deployer has reached before.\",\"unknowns\":[\"Who holds the LP tokens, and whether they intend to pull\",\"Whether there is Chinese-community promotion on Telegram or WeChat\",\"Who the 10.56% top holder is\",\"Whether the creator's other launches were rugged\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. Judged only from the packet.\"},\"thesis\":\"A fast 150% first-hour pump has stalled. Price is slightly down over the last 5 minutes, and trading has shrunk to a small group of churning wallets. The deployer-seeded PumpSwap LP is fully unlocked, so the rug risk is well above the pool average. It needs a new wave of buyers to double from here, and nothing in the packet suggests one is coming. Below-average runner odds.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":38,\"survival_score\":30,\"attention_score\":52,\"manipulation_risk\":68,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A Chinese-named token, \u5218\u6b222026 (\"Liu Huan 2026\", apparently a reference to the Chinese singer), launched straight into a PumpSwap pool about 53 minutes ago. It did not go through a pump.fun bonding curve: migrated_unix is 0 and the pool was created 3 seconds after the token. It rose about 150% in the first hour to a market cap of about $57k on $545k volume, a turnover of 7.8x. There were 1,130 unique buyers over the hour, but only about 100 unique buyers and 100 unique sellers in the last 30 minutes, trading about 1,700 buys against 1,700 sells. The flow has moved from broad early buying to a small group of wallets trading back and forth. Liquidity ($69k) is larger than market cap. The LP is 100% unlocked (lp_burn_ratio 0) and there are few LP providers. GMGN tags 44 bundler wallets. The creator has closed out, and the top holder, a wallet not labelled as an insider, holds 10.6%. An earlier token with the same name now has $0 liquidity.",
+  "narrative": {
+   "description": "A Chinese celebrity or year-number meme (Liu Huan + 2026). It fits the recurring wave of Chinese-character tickers on Solana. There are no socials, website or description.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Probably interest from Chinese-speaking degen traders in Chinese-character tickers, plus early bundled buying. The number of unique buyers stalled after the first 30 minutes, which fits early buying followed by bot churn rather than growing spread."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only same-name token with live liquidity. The earlier copy (created about 7 minutes before) has $0 liquidity and looks rugged or dead.",
+   "competing_tokens": "8dQ47...WEUj, same name, $0 liquidity, $21.6k market cap, $50k volume over 1h.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The first half hour looks broad (about 1,030 unique buyers). Since then, about 100 unique wallets have produced about 1,700 buys and 1,700 sells in 30 minutes, and the last 5 minutes are exactly 229 buys vs 229 sells. That looks like wash or bot churn. GMGN tags 44 bundler wallets, which trade about 11% of the top volume. There are no paid boosts and no KOL wallets.",
+   "uncertainty": "No X data. The unique-buyer counts from GeckoTerminal may be windowed in odd ways."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "LP is 100% unlocked and there are few LP providers, so the pool creator can pull liquidity at any time",
+    "The pool was created directly on PumpSwap with no curve graduation, so the pool was seeded by the deployer",
+    "The creator position is closed and the deploy platform is unknown",
+    "44 bundler wallets",
+    "Recent volume looks wash-traded: buys equal sells from about 100 wallets",
+    "A same-name predecessor has died"
+   ]
+  },
+  "counterargument": "It had 1,130 real unique buyers in under an hour, and top10 concentration outside the pool is low (about 14%). The mint and freeze authorities are renounced and there is no tax. Liquidity above market cap means the price can absorb selling. Chinese-ticker memes sometimes attract a second wave from Chinese-speaking communities. A move from $57k to $114k is small in absolute terms. The creator's best previous token reached a $247k ATH, so a 2x is within the range this deployer has reached before.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether they intend to pull",
+   "Whether there is Chinese-community promotion on Telegram or WeChat",
+   "Who the 10.56% top holder is",
+   "Whether the creator's other launches were rugged"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. Judged only from the packet."
+  },
+  "thesis": "A fast 150% first-hour pump has stalled. Price is slightly down over the last 5 minutes, and trading has shrunk to a small group of churning wallets. The deployer-seeded PumpSwap LP is fully unlocked, so the rug risk is well above the pool average. It needs a new wave of buyers to double from here, and nothing in the packet suggests one is coming. Below-average runner odds.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 38,
+  "survival_score": 30,
+  "attention_score": 52,
+  "manipulation_risk": 68,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4747,
+ "type": "result",
+ "duration_ms": 22884,
+ "uuid": "39b85215-f5ea-47c2-b15d-bd13cb973f35",
+ "ttft_stream_ms": 652,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 652,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

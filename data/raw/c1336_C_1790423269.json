@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 33762,
+ "stop_reason": "tool_use",
+ "session_id": "512c8415-fea1-47f5-8aa3-a2aeb1c5ae80",
+ "total_cost_usd": 0.19282280000000002,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11465,
+  "cache_read_input_tokens": 14839,
+  "output_tokens": 2635,
+  "output_tokens_details": {
+   "thinking_tokens": 452
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11465,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2204,
+    "cache_read_input_tokens": 12075,
+    "cache_creation_input_tokens": 2154,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2154
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2635,
+   "cacheReadInputTokens": 14839,
+   "cacheCreationInputTokens": 11465,
+   "webSearchRequests": 0,
+   "costUSD": 0.1474038,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 452,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 23144,
+   "outputTokens": 455,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.045419,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Beff Jezos (@beffjezos) posted that something \\\"is going to be called Kardashev Research\\\". The canonical coin was launched on UsePaid with creator fees going to @beffjezos: mint 5wW9...7hUnp, about $1.67M market cap. This token (R1oF...) copies the canonical coin's description word for word, including the UsePaid link to the OTHER mint. Its pool was created directly on PumpSwap about 12 minutes ago and was never on a bonding curve. The deploy platform is unknown, LP is 100% unlocked, and the pool holds about $165k of liquidity against a market cap of about $108k. At least 9 other same-name clones exist, several already dead. One of them (Gff9) did $3.1M of hourly volume.\",\"narrative\":{\"description\":\"A tweet from Beff Jezos, a well-known e/acc figure, naming 'Kardashev Research', with a creator-fee coin on UsePaid. It is a real, current story with a celebrity-style hook.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The Beff Jezos tweet and the UsePaid fee-to-creator coin reaching about $1.7M have spawned a wave of clone tokens chasing the ticker.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None. Its own metadata points to the canonical mint 5wW9 on UsePaid. This is a copycat carrying the same name and ticker.\",\"competing_tokens\":\"5wW9...7hUnp (canonical UsePaid, $1.68M mcap), Gff9 (clone with $3.1M h1 volume), and about 8 other dead or tiny clones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 34 bundler wallets holding about 13.8% of the trader share. There are 539 unique buyers but only 58 unique sellers. The pool was seeded with liquidity larger than the market cap and its LP is fully unlocked. The metadata was copied from the canonical coin, and the pattern matches a clone farm (several same-name clones already have $0 liquidity).\",\"uncertainty\":\"The buyers could be real people confusing this coin with the canonical one. No X data was available.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a non-pump.fun pool, so the creator can pull liquidity at any time\",\"This is a clone of a canonical token that trades at 15x its market cap\",\"34 bundler wallets\",\"Liquidity is larger than the market cap, which looks like a deliberately seeded honeypot for volume\",\"Low number of LP providers\"]},\"counterargument\":\"Buyer count is high (539 unique buyers in 12 minutes) and price is up 70%. Confused buyers searching for the ticker could push it further, especially if the canonical coin keeps rising. The deep liquidity also makes a 2x from $108k feasible if the creator leaves the pool alone for a while.\",\"unknowns\":[\"Whether the creator will remove LP and when\",\"X discussion of this specific mint\",\"Whether Beff Jezos endorsed any mint other than the UsePaid one\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"Time-limited. Searched for the contract address and for 'beffjezos Kardashev Research' and found nothing relevant. The conclusion that this is a clone rests on the packet metadata pointing to a different mint and on the list of same-name tokens.\"},\"thesis\":\"This is a clone of Beff Jezos's Kardashev Research coin: LP fully unlocked, bundled wallets, and liquidity seeded above the market cap. It is not the canonical token (5wW9 on UsePaid). The chance of a rug before a 2x is high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":60,\"survival_score\":15,\"attention_score\":45,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp\",\"what\":\"Canonical UsePaid token, linked from this clone's own description (taken from the packet, not fetched)\"},{\"url\":\"https://x.com/beffjezos/status/2103649840991473873\",\"what\":\"Beff Jezos tweet naming Kardashev Research (taken from the packet, not fetched)\"},{\"url\":\"https://www.kucoin.com/news/insight/DASH/6ab7963874fd460007c57fff\",\"what\":\"Search hit titled 'Kardashev research'; not fetched, so its content is unverified\"}]}",
+ "structured_output": {
+  "what_is_happening": "Beff Jezos (@beffjezos) posted that something \"is going to be called Kardashev Research\". The canonical coin was launched on UsePaid with creator fees going to @beffjezos: mint 5wW9...7hUnp, about $1.67M market cap. This token (R1oF...) copies the canonical coin's description word for word, including the UsePaid link to the OTHER mint. Its pool was created directly on PumpSwap about 12 minutes ago and was never on a bonding curve. The deploy platform is unknown, LP is 100% unlocked, and the pool holds about $165k of liquidity against a market cap of about $108k. At least 9 other same-name clones exist, several already dead. One of them (Gff9) did $3.1M of hourly volume.",
+  "narrative": {
+   "description": "A tweet from Beff Jezos, a well-known e/acc figure, naming 'Kardashev Research', with a creator-fee coin on UsePaid. It is a real, current story with a celebrity-style hook.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The Beff Jezos tweet and the UsePaid fee-to-creator coin reaching about $1.7M have spawned a wave of clone tokens chasing the ticker."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None. Its own metadata points to the canonical mint 5wW9 on UsePaid. This is a copycat carrying the same name and ticker.",
+   "competing_tokens": "5wW9...7hUnp (canonical UsePaid, $1.68M mcap), Gff9 (clone with $3.1M h1 volume), and about 8 other dead or tiny clones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 34 bundler wallets holding about 13.8% of the trader share. There are 539 unique buyers but only 58 unique sellers. The pool was seeded with liquidity larger than the market cap and its LP is fully unlocked. The metadata was copied from the canonical coin, and the pattern matches a clone farm (several same-name clones already have $0 liquidity).",
+   "uncertainty": "The buyers could be real people confusing this coin with the canonical one. No X data was available."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a non-pump.fun pool, so the creator can pull liquidity at any time",
+    "This is a clone of a canonical token that trades at 15x its market cap",
+    "34 bundler wallets",
+    "Liquidity is larger than the market cap, which looks like a deliberately seeded honeypot for volume",
+    "Low number of LP providers"
+   ]
+  },
+  "counterargument": "Buyer count is high (539 unique buyers in 12 minutes) and price is up 70%. Confused buyers searching for the ticker could push it further, especially if the canonical coin keeps rising. The deep liquidity also makes a 2x from $108k feasible if the creator leaves the pool alone for a while.",
+  "unknowns": [
+   "Whether the creator will remove LP and when",
+   "X discussion of this specific mint",
+   "Whether Beff Jezos endorsed any mint other than the UsePaid one"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "Time-limited. Searched for the contract address and for 'beffjezos Kardashev Research' and found nothing relevant. The conclusion that this is a clone rests on the packet metadata pointing to a different mint and on the list of same-name tokens."
+  },
+  "thesis": "This is a clone of Beff Jezos's Kardashev Research coin: LP fully unlocked, bundled wallets, and liquidity seeded above the market cap. It is not the canonical token (5wW9 on UsePaid). The chance of a rug before a 2x is high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 45,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://usepaid.app/token/5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp",
+    "what": "Canonical UsePaid token, linked from this clone's own description (taken from the packet, not fetched)"
+   },
+   {
+    "url": "https://x.com/beffjezos/status/2103649840991473873",
+    "what": "Beff Jezos tweet naming Kardashev Research (taken from the packet, not fetched)"
+   },
+   {
+    "url": "https://www.kucoin.com/news/insight/DASH/6ab7963874fd460007c57fff",
+    "what": "Search hit titled 'Kardashev research'; not fetched, so its content is unverified"
+   }
+  ]
+ },
+ "ttft_ms": 3706,
+ "type": "result",
+ "duration_ms": 30283,
+ "uuid": "e66edc41-7f3e-4ad3-8f09-4a19273f48a3",
+ "ttft_stream_ms": 623,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 623,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

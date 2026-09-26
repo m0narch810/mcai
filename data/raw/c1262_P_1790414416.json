@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 21184,
+ "stop_reason": "tool_use",
+ "session_id": "ca42d8a7-1720-43f2-9fd3-79e048c8d2c5",
+ "total_cost_usd": 0.0988684,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6752,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2221,
+  "output_tokens_details": {
+   "thinking_tokens": 371
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6752,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2221,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6752,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6752
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2221,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6752,
+   "webSearchRequests": 0,
+   "costUSD": 0.0988684,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 371,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"Hybrid cat\\\" (PenguinCat) was not launched on the pump.fun bonding curve. It was deployed and seeded straight into a PumpSwap pool: the pair was created 4 seconds after the mint, and the packet shows no migration and no launchpad. The pool holds about $54k of liquidity against a $36k market cap, with 76.7% of supply in the AMM. 100% of the LP tokens are unlocked and very few wallets provide liquidity, so whoever seeded the pool, most likely the dev, can pull it at any time. In 13 minutes the coin drew 1,116 unique buyers but only 107 unique sellers, about 1,740 buys, and a +39\u201358% price move on $82k volume. Top holders apart from one wallet sit at a uniform 0.20\u20130.28% each, and GMGN tags 32 bundler wallets. There are no socials, no website, no DexScreener profile and effectively no GMGN page visits (2).\",\"narrative\":{\"description\":\"A generic 'hybrid cat / penguin cat' animal meme with no links, no description and no socials. Nothing in the packet points to an outside story.\",\"stage\":\"none_found\",\"potential\":\"weak\",\"why_spreading\":\"Nothing suggests organic spread. The activity looks like on-chain buying, possibly bot- or bundle-driven, to fill a freshly seeded pool.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only pair found and no same-ticker tokens appear in the packet, but there is no narrative for it to be canonical to.\",\"competing_tokens\":\"None in the packet.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,116 unique buyers against 107 sellers within minutes of launch, with no socials and only 2 GMGN page visits, is not organic discovery. Top holders are spread evenly at about 0.2% each, GMGN flags 32 bundler wallets, and one unlabeled wallet holds 10.55%. The unlocked, dev-seeded direct-AMM pool fits the usual liquidity-pull setup.\",\"uncertainty\":\"Bot and degen rate and fresh-wallet rate read near zero, and there are no snipers. The breadth could partly be real volume-bot or trending-scanner followers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a dev-seeded PumpSwap pool, so it can be pulled at any time\",\"Liquidity is larger than market cap, which points to an artificially seeded pool\",\"Only a few LP providers\",\"One wallet holds 10.55% and is unexplained\",\"32 bundler wallets\",\"No socials or project presence\"]},\"counterargument\":\"Mint and freeze authority are renounced, the creator holds no tokens, and there are no snipers and no fresh-wallet cluster. Top-10 concentration is low at 12.5%, and buyers are genuinely broad (1,116). Deep liquidity relative to market cap means price moves take real money, so real buy pressure is needed, and pushing a $36k coin to $72k needs only modest inflows. If the LP seeder is patient and the coin catches trending lists, it could double.\",\"unknowns\":[\"Who holds the LP tokens, and whether they will be pulled\",\"Who owns the 10.55% wallet\",\"Whether the buyer count comes from volume bots\",\"What happened to the creator's earlier token (ATH market cap about $208k), even though the launched-token count shows 0\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; this is a packet-only judgment.\"},\"thesis\":\"This is a direct-to-PumpSwap launch with a fully unlocked, dev-seeded LP, no socials, and buyer breadth that looks manufactured. That combination carries high liquidity-pull risk inside 6 hours. The upside needs a 2x from about $36k, which is not impossible, but the structure favours an extraction exit over a run. It should rank below the typical coin.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":50,\"survival_score\":22,\"attention_score\":52,\"manipulation_risk\":75,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"Hybrid cat\" (PenguinCat) was not launched on the pump.fun bonding curve. It was deployed and seeded straight into a PumpSwap pool: the pair was created 4 seconds after the mint, and the packet shows no migration and no launchpad. The pool holds about $54k of liquidity against a $36k market cap, with 76.7% of supply in the AMM. 100% of the LP tokens are unlocked and very few wallets provide liquidity, so whoever seeded the pool, most likely the dev, can pull it at any time. In 13 minutes the coin drew 1,116 unique buyers but only 107 unique sellers, about 1,740 buys, and a +39\u201358% price move on $82k volume. Top holders apart from one wallet sit at a uniform 0.20\u20130.28% each, and GMGN tags 32 bundler wallets. There are no socials, no website, no DexScreener profile and effectively no GMGN page visits (2).",
+  "narrative": {
+   "description": "A generic 'hybrid cat / penguin cat' animal meme with no links, no description and no socials. Nothing in the packet points to an outside story.",
+   "stage": "none_found",
+   "potential": "weak",
+   "why_spreading": "Nothing suggests organic spread. The activity looks like on-chain buying, possibly bot- or bundle-driven, to fill a freshly seeded pool."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only pair found and no same-ticker tokens appear in the packet, but there is no narrative for it to be canonical to.",
+   "competing_tokens": "None in the packet.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,116 unique buyers against 107 sellers within minutes of launch, with no socials and only 2 GMGN page visits, is not organic discovery. Top holders are spread evenly at about 0.2% each, GMGN flags 32 bundler wallets, and one unlabeled wallet holds 10.55%. The unlocked, dev-seeded direct-AMM pool fits the usual liquidity-pull setup.",
+   "uncertainty": "Bot and degen rate and fresh-wallet rate read near zero, and there are no snipers. The breadth could partly be real volume-bot or trending-scanner followers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a dev-seeded PumpSwap pool, so it can be pulled at any time",
+    "Liquidity is larger than market cap, which points to an artificially seeded pool",
+    "Only a few LP providers",
+    "One wallet holds 10.55% and is unexplained",
+    "32 bundler wallets",
+    "No socials or project presence"
+   ]
+  },
+  "counterargument": "Mint and freeze authority are renounced, the creator holds no tokens, and there are no snipers and no fresh-wallet cluster. Top-10 concentration is low at 12.5%, and buyers are genuinely broad (1,116). Deep liquidity relative to market cap means price moves take real money, so real buy pressure is needed, and pushing a $36k coin to $72k needs only modest inflows. If the LP seeder is patient and the coin catches trending lists, it could double.",
+  "unknowns": [
+   "Who holds the LP tokens, and whether they will be pulled",
+   "Who owns the 10.55% wallet",
+   "Whether the buyer count comes from volume bots",
+   "What happened to the creator's earlier token (ATH market cap about $208k), even though the launched-token count shows 0"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; this is a packet-only judgment."
+  },
+  "thesis": "This is a direct-to-PumpSwap launch with a fully unlocked, dev-seeded LP, no socials, and buyer breadth that looks manufactured. That combination carries high liquidity-pull risk inside 6 hours. The upside needs a 2x from about $36k, which is not impossible, but the structure favours an extraction exit over a run. It should rank below the typical coin.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 52,
+  "manipulation_risk": 75,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4442,
+ "type": "result",
+ "duration_ms": 21231,
+ "uuid": "daa15a3a-7bd5-436e-a38a-ed6f505eb826",
+ "ttft_stream_ms": 674,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 675,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

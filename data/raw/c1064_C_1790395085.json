@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 46165,
+ "stop_reason": "tool_use",
+ "session_id": "6699fa8a-3797-4926-a744-79d2ef7b2e50",
+ "total_cost_usd": 0.24113820000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13651,
+  "cache_read_input_tokens": 28106,
+  "output_tokens": 2920,
+  "output_tokens_details": {
+   "thinking_tokens": 560
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13651,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2228,
+    "cache_read_input_tokens": 13564,
+    "cache_creation_input_tokens": 2851,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2851
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2920,
+   "cacheReadInputTokens": 28106,
+   "cacheCreationInputTokens": 13651,
+   "webSearchRequests": 0,
+   "costUSD": 0.1732532,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 560,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32970,
+   "outputTokens": 983,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067885,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This looks like a clone race over a Peter Schiff tweet about \\\"digital oil\\\". The packet's project link is a Schiff X status (2103686967158526117), which looks recent from its ID. I couldn't read it (HTTP 402). At least 5 \\\"Digital Oil\\\" or \\\"Oil\\\" tokens launched within about 8 minutes of each other (the 8bjA, 8cn4, 67cW and 8rnj addresses, then this one). This token, launched on the Meteora virtual curve and trading on PumpSwap, took the most flow: about $150k volume in 23 minutes, peaking at about $168k market cap. It then dropped about 55% in 5 minutes to about $69k. The earlier clone 8cn4 did $200k of volume and fell to a $7k market cap. There is also an older, established \\\"Digital Oil Memecoin\\\" (5LS3, Jan 2025, $115k liquidity), tied to an earlier Schiff \\\"digital oil\\\" tweet (status 1882466490433323350).\",\"narrative\":{\"description\":\"Peter Schiff's recurring jab that Bitcoin is 'digital oil' rather than 'digital gold'. A new tweet appears to have set off a burst of copycat launches.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A famous crypto skeptic tweeted a meme-able phrase, and pump.fun sniper and clone culture reacts within minutes. The theme is a recycled Schiff line (a 2025 coin already exists), not a new, growing event.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the most volume and liquidity among the fresh clones, and it links the Schiff tweet. It is not an official project.\",\"competing_tokens\":\"There are at least 4 same-name clones launched minutes apart, some already dumped (8cn4 is at a $7k market cap after $200k volume). The legacy Digital Oil Memecoin (5LS3) has $115k liquidity and a stronger claim to being the canonical token.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"GMGN flags 57 bundler wallets. There are 1697 unique buyers against 105 sellers, and the buyer count is suspiciously lopsided. No KOL or smart-money wallets are tagged and no paid boosts are active. The flow looks like a sniper and clone-race churn.\",\"uncertainty\":\"I could not see X, so I don't know how much organic reply or quote-tweet traffic points to this contract specifically.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of the LP as unlocked (danger), while GMGN reports the LP burn ratio as 1.0. The sources conflict.\",\"One unlabeled holder has 80%, probably the curve or pool vault, but that is unconfirmed.\",\"Price is already down about 55% from its all-time high within minutes, so the move looks like it has peaked.\",\"Liquidity is about $20k with several clones splitting the flow.\"]},\"counterargument\":\"It is the clear volume leader of the clone race with more than 1,700 buyers, and Schiff tweets drive big CT engagement. A pullback to around $60\u201370k could be the dip before a second leg back to the $168k all-time high or beyond, which would be about 2x from entry.\",\"unknowns\":[\"The content of the Schiff tweet and how much reach it has\",\"Whether the 80% holder is the pool vault\",\"The real LP lock status\",\"Whether an influencer picks one of the clones\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The X status returned HTTP 402. A search for the contract address found nothing. News searches found only older Schiff and 'digital oil' items and the 2025 digitaloilmeme account. Given the time limit, I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"This is a tweet-driven clone race that already peaked and dumped about 55% in 5 minutes. The token is not canonical, there are several same-name competitors, flow is bundler-heavy, and the LP lock status is disputed. A second leg is possible, but the odds are below a typical coin in this pool.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":35,\"survival_score\":35,\"attention_score\":55,\"manipulation_risk\":65,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/PeterSchiff/status/1882466490433323350\",\"what\":\"Older Schiff 'digital oil' tweet\"},{\"url\":\"https://twitter.com/digitaloilmeme\",\"what\":\"Legacy Digital Oil memecoin account\"},{\"url\":\"https://x.com/PeterSchiff/status/2103686967158526117\",\"what\":\"Linked Schiff status (inaccessible)\"}]}",
+ "structured_output": {
+  "what_is_happening": "This looks like a clone race over a Peter Schiff tweet about \"digital oil\". The packet's project link is a Schiff X status (2103686967158526117), which looks recent from its ID. I couldn't read it (HTTP 402). At least 5 \"Digital Oil\" or \"Oil\" tokens launched within about 8 minutes of each other (the 8bjA, 8cn4, 67cW and 8rnj addresses, then this one). This token, launched on the Meteora virtual curve and trading on PumpSwap, took the most flow: about $150k volume in 23 minutes, peaking at about $168k market cap. It then dropped about 55% in 5 minutes to about $69k. The earlier clone 8cn4 did $200k of volume and fell to a $7k market cap. There is also an older, established \"Digital Oil Memecoin\" (5LS3, Jan 2025, $115k liquidity), tied to an earlier Schiff \"digital oil\" tweet (status 1882466490433323350).",
+  "narrative": {
+   "description": "Peter Schiff's recurring jab that Bitcoin is 'digital oil' rather than 'digital gold'. A new tweet appears to have set off a burst of copycat launches.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A famous crypto skeptic tweeted a meme-able phrase, and pump.fun sniper and clone culture reacts within minutes. The theme is a recycled Schiff line (a 2025 coin already exists), not a new, growing event."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the most volume and liquidity among the fresh clones, and it links the Schiff tweet. It is not an official project.",
+   "competing_tokens": "There are at least 4 same-name clones launched minutes apart, some already dumped (8cn4 is at a $7k market cap after $200k volume). The legacy Digital Oil Memecoin (5LS3) has $115k liquidity and a stronger claim to being the canonical token.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "GMGN flags 57 bundler wallets. There are 1697 unique buyers against 105 sellers, and the buyer count is suspiciously lopsided. No KOL or smart-money wallets are tagged and no paid boosts are active. The flow looks like a sniper and clone-race churn.",
+   "uncertainty": "I could not see X, so I don't know how much organic reply or quote-tweet traffic points to this contract specifically."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of the LP as unlocked (danger), while GMGN reports the LP burn ratio as 1.0. The sources conflict.",
+    "One unlabeled holder has 80%, probably the curve or pool vault, but that is unconfirmed.",
+    "Price is already down about 55% from its all-time high within minutes, so the move looks like it has peaked.",
+    "Liquidity is about $20k with several clones splitting the flow."
+   ]
+  },
+  "counterargument": "It is the clear volume leader of the clone race with more than 1,700 buyers, and Schiff tweets drive big CT engagement. A pullback to around $60\u201370k could be the dip before a second leg back to the $168k all-time high or beyond, which would be about 2x from entry.",
+  "unknowns": [
+   "The content of the Schiff tweet and how much reach it has",
+   "Whether the 80% holder is the pool vault",
+   "The real LP lock status",
+   "Whether an influencer picks one of the clones"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The X status returned HTTP 402. A search for the contract address found nothing. News searches found only older Schiff and 'digital oil' items and the 2025 digitaloilmeme account. Given the time limit, I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "This is a tweet-driven clone race that already peaked and dumped about 55% in 5 minutes. The token is not canonical, there are several same-name competitors, flow is bundler-heavy, and the LP lock status is disputed. A second leg is possible, but the odds are below a typical coin in this pool.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 35,
+  "survival_score": 35,
+  "attention_score": 55,
+  "manipulation_risk": 65,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/PeterSchiff/status/1882466490433323350",
+    "what": "Older Schiff 'digital oil' tweet"
+   },
+   {
+    "url": "https://twitter.com/digitaloilmeme",
+    "what": "Legacy Digital Oil memecoin account"
+   },
+   {
+    "url": "https://x.com/PeterSchiff/status/2103686967158526117",
+    "what": "Linked Schiff status (inaccessible)"
+   }
+  ]
+ },
+ "ttft_ms": 2872,
+ "type": "result",
+ "duration_ms": 40040,
+ "uuid": "45af5e9a-c639-4e60-8528-1e550bf8234a",
+ "ttft_stream_ms": 876,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 876,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

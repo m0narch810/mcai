@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 53593,
+ "stop_reason": "tool_use",
+ "session_id": "c988d4eb-3c2a-4742-801d-673d851089a3",
+ "total_cost_usd": 0.3140042,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 15196,
+  "cache_read_input_tokens": 60516,
+  "output_tokens": 3305,
+  "output_tokens_details": {
+   "thinking_tokens": 576
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15196,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1958,
+    "cache_read_input_tokens": 17025,
+    "cache_creation_input_tokens": 935,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 935
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3305,
+   "cacheReadInputTokens": 60516,
+   "cacheCreationInputTokens": 15196,
+   "webSearchRequests": 0,
+   "costUSD": 0.19981120000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 576,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 57578,
+   "outputTokens": 1323,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.114193,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Jason Coin is a 10-day-old pump.fun token that has already migrated to PumpSwap. Its description says 'fees to @jason', which points to Jason Calacanis's X handle, and it links a post by terrythedevv. In roughly the last 15 minutes it went up about 10x (~$18k to ~$185k market cap) on ~$220k of volume and 544 unique buyers. At least 8 copycat 'Jason Coin' tokens were launched in the last ~40 minutes, one of them named 'prove jason wrong'. That suggests a live trigger involving @jason, perhaps Jason posting about or reacting to the coin or its creator fees. I could not confirm what the trigger was. The 5-minute data shows the burst cooling: GeckoTerminal m5 volume is $28k against $222k over m15, and price is +10% over m5.\",\"narrative\":{\"description\":\"A fee-sharing 'thesis' coin for @jason (Jason Calacanis, an All-In podcast host who has talked up Solana and has criticized memecoins). Something @jason did in the last hour appears to have set off the move.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A large-follower figure is apparently involved or reacting. The copycat launches show deployers chasing the story, and the 'prove jason wrong' name hints at a controversy angle. Not confirmed.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the oldest, most liquid Jason Coin, and its description names @jason as the fee recipient. The dozen copycats launched in the last ~40 minutes all have under $70k market cap and zero liquidity.\",\"competing_tokens\":\"About 10 same-name tokens, nearly all launched in the last hour with about $3k market cap. There is also the unrelated Jason Derulo JASON coin.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The 15-minute burst of 544 unique buyers and the copycat launches point to a real outside trigger. Against that, GMGN has the bundler wallet count at its cap and a 67% bot/degen rate, and 169 smart wallets and 12 KOL wallets are trading it. No paid boosts.\",\"uncertainty\":\"I could not see the X post behind the move; the source post returned HTTP 402.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"The token already went up 10x in 15 minutes and the m5 burst is cooling, so buyers entering now may be the exit liquidity\",\"Bot/degen rate is 67%\",\"A transfer-linked insider network of 4 wallets\",\"The dev X account has launched 139 tokens\"]},\"counterargument\":\"If @jason actually engaged, for example by claiming the fees or posting, a Calacanis-scale audience could push this well past $400k quickly, and the copycats show that the attention is real. Against that: the 10x has already happened and the burst appears to be cooling, which is the typical point where a spike like this fades.\",\"unknowns\":[\"What the terrythedevv post or @jason actually said\",\"Whether Jason endorsed the coin, claimed the fees, or mocked it\",\"Whether demand continues after the first spike\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"not_attempted\",\"notes\":\"The contract address search returned nothing. The X post returned HTTP 402. News searches found only older Calacanis-and-Solana stories. Reddit, Telegram, Discord and the project site were not searched because of the time limit.\"},\"thesis\":\"A live, @jason-linked trigger with real buyer breadth, and this is the canonical token. But the entry comes right after a 10x spike whose short-term momentum is cooling. A 2x from here needs about $370k, which is plausible if Jason himself engages further. That puts it above a typical pool coin, but not by much.\",\"continuation_view\":\"neutral\",\"p_runner\":20,\"p_rug\":12,\"survival_score\":60,\"attention_score\":70,\"manipulation_risk\":55,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/terrythedevv/status/2099958990268743765\",\"what\":\"Post linked in the project description; returned HTTP 402, not viewable\"},{\"url\":\"https://en.wikipedia.org/wiki/Jason_Calacanis\",\"what\":\"Who @jason is\"},{\"url\":\"https://finance.yahoo.com/markets/crypto/articles/angel-investor-says-bitcoin-bottomed-162308696.html\",\"what\":\"Calacanis's recent pro-Solana remarks\"}]}",
+ "structured_output": {
+  "what_is_happening": "Jason Coin is a 10-day-old pump.fun token that has already migrated to PumpSwap. Its description says 'fees to @jason', which points to Jason Calacanis's X handle, and it links a post by terrythedevv. In roughly the last 15 minutes it went up about 10x (~$18k to ~$185k market cap) on ~$220k of volume and 544 unique buyers. At least 8 copycat 'Jason Coin' tokens were launched in the last ~40 minutes, one of them named 'prove jason wrong'. That suggests a live trigger involving @jason, perhaps Jason posting about or reacting to the coin or its creator fees. I could not confirm what the trigger was. The 5-minute data shows the burst cooling: GeckoTerminal m5 volume is $28k against $222k over m15, and price is +10% over m5.",
+  "narrative": {
+   "description": "A fee-sharing 'thesis' coin for @jason (Jason Calacanis, an All-In podcast host who has talked up Solana and has criticized memecoins). Something @jason did in the last hour appears to have set off the move.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A large-follower figure is apparently involved or reacting. The copycat launches show deployers chasing the story, and the 'prove jason wrong' name hints at a controversy angle. Not confirmed."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the oldest, most liquid Jason Coin, and its description names @jason as the fee recipient. The dozen copycats launched in the last ~40 minutes all have under $70k market cap and zero liquidity.",
+   "competing_tokens": "About 10 same-name tokens, nearly all launched in the last hour with about $3k market cap. There is also the unrelated Jason Derulo JASON coin.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The 15-minute burst of 544 unique buyers and the copycat launches point to a real outside trigger. Against that, GMGN has the bundler wallet count at its cap and a 67% bot/degen rate, and 169 smart wallets and 12 KOL wallets are trading it. No paid boosts.",
+   "uncertainty": "I could not see the X post behind the move; the source post returned HTTP 402."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "The token already went up 10x in 15 minutes and the m5 burst is cooling, so buyers entering now may be the exit liquidity",
+    "Bot/degen rate is 67%",
+    "A transfer-linked insider network of 4 wallets",
+    "The dev X account has launched 139 tokens"
+   ]
+  },
+  "counterargument": "If @jason actually engaged, for example by claiming the fees or posting, a Calacanis-scale audience could push this well past $400k quickly, and the copycats show that the attention is real. Against that: the 10x has already happened and the burst appears to be cooling, which is the typical point where a spike like this fades.",
+  "unknowns": [
+   "What the terrythedevv post or @jason actually said",
+   "Whether Jason endorsed the coin, claimed the fees, or mocked it",
+   "Whether demand continues after the first spike"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "not_attempted",
+   "notes": "The contract address search returned nothing. The X post returned HTTP 402. News searches found only older Calacanis-and-Solana stories. Reddit, Telegram, Discord and the project site were not searched because of the time limit."
+  },
+  "thesis": "A live, @jason-linked trigger with real buyer breadth, and this is the canonical token. But the entry comes right after a 10x spike whose short-term momentum is cooling. A 2x from here needs about $370k, which is plausible if Jason himself engages further. That puts it above a typical pool coin, but not by much.",
+  "continuation_view": "neutral",
+  "p_runner": 20,
+  "p_rug": 12,
+  "survival_score": 60,
+  "attention_score": 70,
+  "manipulation_risk": 55,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/terrythedevv/status/2099958990268743765",
+    "what": "Post linked in the project description; returned HTTP 402, not viewable"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Jason_Calacanis",
+    "what": "Who @jason is"
+   },
+   {
+    "url": "https://finance.yahoo.com/markets/crypto/articles/angel-investor-says-bitcoin-bottomed-162308696.html",
+    "what": "Calacanis's recent pro-Solana remarks"
+   }
+  ]
+ },
+ "ttft_ms": 2622,
+ "type": "result",
+ "duration_ms": 48906,
+ "uuid": "91ba82b4-ab0f-4183-85c7-3bfb1dd1fbb4",
+ "ttft_stream_ms": 896,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 896,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

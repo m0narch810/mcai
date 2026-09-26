@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 26035,
+ "stop_reason": "tool_use",
+ "session_id": "eb3f5433-cc2d-4059-8826-e3090db8f3a9",
+ "total_cost_usd": 0.11265239999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8485,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2217,
+  "output_tokens_details": {
+   "thinking_tokens": 396
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8485,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2217,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8485,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8485
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2217,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8485,
+   "webSearchRequests": 0,
+   "costUSD": 0.11265239999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 396,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token named after 51\u5403\u74dc\u7f51 (a Chinese gossip/\\\"melon-eating\\\" site), billed as its \\\"official first-launch meme\\\", was created directly on PumpSwap about 12 minutes before detection. It did not go through the pump.fun curve (migrated_unix=0, no launchpad). Liquidity ($42k) is about equal to the $41.5k market cap, so the pool was seeded by one party. That LP is 100% unlocked and the creator still holds 19%. It is up 227% with $340k of volume. There are 921 unique buyers but only 30 unique sellers. The packet lists at least 10 earlier tokens with the exact same name and ticker from the last ~24h. All now show near-zero liquidity, including one launched ~74 minutes earlier that did $977k of volume in an hour. That pattern points to repeated LP-pull rugs on this name.\",\"narrative\":{\"description\":\"The story is Chinese-community interest in a well-known gossip/leak site. The 'official' label is a claim, not something the packet verifies. The only link is an X handle (gua51x) with no rename history. There is no website or Telegram.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Chinese-language 'official launch' memes attract fast CN retail and bot flow. But the name keeps being relaunched by different deployers, so the attention is spread across clones and repeatedly harvested.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the newest live clone with real liquidity. Nothing in the packet shows it is the official or canonical one.\",\"competing_tokens\":\"10+ tokens with the same name and ticker, all with ~$0 liquidity now. The 3yyb... clone did $977k of h1 volume about 74 minutes earlier and is now drained.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"There are 921 unique buyers against 30 sellers, and one-sided flow like that is typical of an engineered pump or a sell restriction. The pool was created and seeded by the dev with unlocked LP, the creator holds 19%, and serial same-name clones all ended at zero liquidity. GMGN shows 0 smart or KOL wallets, 2 bundlers and a 19.6% fresh-wallet rate.\",\"uncertainty\":\"Some of the buyers may be real Chinese retail. Bot share reads 0, and there are no honeypot or tax flags.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a pool the dev created, so the creator can pull it at will\",\"Creator holds 18.99% of supply\",\"Serial same-name clones on this name have all been drained\",\"Extreme buyer/seller asymmetry (921 vs 30)\",\"No website, Telegram or DexScreener profile\"]},\"counterargument\":\"Demand is broad and fast: 921 unique buyers in 12 minutes and 7.7x h1 turnover at a $41k cap. Chinese-meme waves can take a token from $40k to $200k+ within hours. If this deployer lets it run longer than the earlier clones did (the $977k-volume clone shows how much flow the name draws), a 2x from entry is quite possible before any pull.\",\"unknowns\":[\"Whether the creator is the same party behind the earlier drained clones\",\"Whether the few sellers reflect a sell restriction or just early holding\",\"Whether gua51x is a real account linked to the site\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This looks like a serial LP-pull farm on a Chinese 'official launch' name. The pool was dev-seeded with unlocked LP, the creator holds 19%, and every earlier clone is drained. Momentum is strong, but the most likely outcome within 6h is a liquidity pull, which the trade treats as a total loss rather than a filled stop.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":68,\"survival_score\":14,\"attention_score\":68,\"manipulation_risk\":82,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A token named after 51\u5403\u74dc\u7f51 (a Chinese gossip/\"melon-eating\" site), billed as its \"official first-launch meme\", was created directly on PumpSwap about 12 minutes before detection. It did not go through the pump.fun curve (migrated_unix=0, no launchpad). Liquidity ($42k) is about equal to the $41.5k market cap, so the pool was seeded by one party. That LP is 100% unlocked and the creator still holds 19%. It is up 227% with $340k of volume. There are 921 unique buyers but only 30 unique sellers. The packet lists at least 10 earlier tokens with the exact same name and ticker from the last ~24h. All now show near-zero liquidity, including one launched ~74 minutes earlier that did $977k of volume in an hour. That pattern points to repeated LP-pull rugs on this name.",
+  "narrative": {
+   "description": "The story is Chinese-community interest in a well-known gossip/leak site. The 'official' label is a claim, not something the packet verifies. The only link is an X handle (gua51x) with no rename history. There is no website or Telegram.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Chinese-language 'official launch' memes attract fast CN retail and bot flow. But the name keeps being relaunched by different deployers, so the attention is spread across clones and repeatedly harvested."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the newest live clone with real liquidity. Nothing in the packet shows it is the official or canonical one.",
+   "competing_tokens": "10+ tokens with the same name and ticker, all with ~$0 liquidity now. The 3yyb... clone did $977k of h1 volume about 74 minutes earlier and is now drained.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "There are 921 unique buyers against 30 sellers, and one-sided flow like that is typical of an engineered pump or a sell restriction. The pool was created and seeded by the dev with unlocked LP, the creator holds 19%, and serial same-name clones all ended at zero liquidity. GMGN shows 0 smart or KOL wallets, 2 bundlers and a 19.6% fresh-wallet rate.",
+   "uncertainty": "Some of the buyers may be real Chinese retail. Bot share reads 0, and there are no honeypot or tax flags."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a pool the dev created, so the creator can pull it at will",
+    "Creator holds 18.99% of supply",
+    "Serial same-name clones on this name have all been drained",
+    "Extreme buyer/seller asymmetry (921 vs 30)",
+    "No website, Telegram or DexScreener profile"
+   ]
+  },
+  "counterargument": "Demand is broad and fast: 921 unique buyers in 12 minutes and 7.7x h1 turnover at a $41k cap. Chinese-meme waves can take a token from $40k to $200k+ within hours. If this deployer lets it run longer than the earlier clones did (the $977k-volume clone shows how much flow the name draws), a 2x from entry is quite possible before any pull.",
+  "unknowns": [
+   "Whether the creator is the same party behind the earlier drained clones",
+   "Whether the few sellers reflect a sell restriction or just early holding",
+   "Whether gua51x is a real account linked to the site"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This looks like a serial LP-pull farm on a Chinese 'official launch' name. The pool was dev-seeded with unlocked LP, the creator holds 19%, and every earlier clone is drained. Momentum is strong, but the most likely outcome within 6h is a liquidity pull, which the trade treats as a total loss rather than a filled stop.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 68,
+  "survival_score": 14,
+  "attention_score": 68,
+  "manipulation_risk": 82,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 7505,
+ "type": "result",
+ "duration_ms": 26083,
+ "uuid": "5469206a-0c74-4692-9f65-494323d76e4d",
+ "ttft_stream_ms": 2385,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 2386,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

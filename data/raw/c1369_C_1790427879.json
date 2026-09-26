@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 73944,
+ "stop_reason": "tool_use",
+ "session_id": "66b5b292-b127-42ef-921b-6688140ae190",
+ "total_cost_usd": 0.337111,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 15736,
+  "cache_read_input_tokens": 64605,
+  "output_tokens": 4033,
+  "output_tokens_details": {
+   "thinking_tokens": 1080
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15736,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2553,
+    "cache_read_input_tokens": 18141,
+    "cache_creation_input_tokens": 359,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 359
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4033,
+   "cacheReadInputTokens": 64605,
+   "cacheCreationInputTokens": 15736,
+   "webSearchRequests": 0,
+   "costUSD": 0.219509,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1080,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 57612,
+   "outputTokens": 1998,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.11760200000000001,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A new CALI (Cali the Terrier, Maye Musk's dog) token was launched about 13 minutes ago through UsePaid, a service that sends creator fees to @mayemusk via X Money. It trades in a PumpSwap pool. Reported liquidity (~$282k) is higher than the market cap (~$162k), so someone seeded a deep pool, and 100% of that LP is unlocked. In 13 minutes the pool did about $900k of volume from 771 unique buyers and 59 unique sellers, and the price is up about 30%. A canonical CALI already exists (8k4s\u2026, about $6M mcap, launched around Sept 17 and covered by KuCoin on Sept 20), but its hourly volume is only about $8k. This token uses the same X and Telegram handle (CaliTheTerrier) as that CALI narrative. GMGN counts 17 duplicate uses of the token image. It could be a team relaunch or migration, or a copycat that borrowed the socials; I could not confirm which.\",\"narrative\":{\"description\":\"Musk-family pet meme (Maye Musk's rescue terrier Cali), combined with the UsePaid 'fees to an X account via X Money' trend that pushed PAID to new highs.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"Musk-adjacent pet memes and the new UsePaid fee-routing launchpad are both current. The older CALI already reached ~$6M, which shows the story can draw money. This new pool seems to be picking up that CALI audience right now.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"It uses the same socials (@CaliTheTerrier on X and Telegram) and the same fee recipient (@mayemusk). That could be an official relaunch, or the socials may just have been copied. The heavy flow (771 buyers in 13 minutes) points to some coordinated community migration or a large call.\",\"competing_tokens\":\"8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA (CALI, ~$6M mcap, $692k liquidity, the one KuCoin covered, now low volume). Many dead $3k clones launched in the same minutes (Calicoin, Cali the Terrier, etc.).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"771 unique buyers against 59 unique sellers is broad buying. There is no smart-money or KOL wallet flag, no paid DexScreener promotion, and only 12 bundler wallets holding about 1.35%. Against that, 572 sells coming from only 59 sellers suggests bot or market-maker trading. The token's socials are shared with an older token, and the image has 17 duplicates.\",\"uncertainty\":\"I could not see any X posts about this contract. It is unknown whether the CALI community announced a move to this contract.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"100% of the LP is unlocked, and liquidity (~$282k) is larger than the mcap: whoever seeded it can pull a large amount of SOL at any time\",\"The creator still holds tokens (creator_hold); dev history is unknown\",\"It competes with an established $6M CALI that has the same name and socials\",\"The deep pool means a 2x needs large net buying (on the order of $60k+ net inflow)\"]},\"counterargument\":\"If the CALI team moved to this contract to use UsePaid fee routing, it inherits a community and a narrative that already reached a $6M cap. From $160k with nearly $1M of volume in 13 minutes and a strongly buy-skewed wallet count, a 2x to $320k is quite reachable within 6 hours.\",\"unknowns\":[\"Whether the CaliTheTerrier accounts endorse this contract or the older 8k4s one\",\"Who owns the unlocked LP\",\"Whether UsePaid launches seed a pool with the creator's own SOL\",\"Anything on X about this contract\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"searched_found\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"inaccessible\",\"notes\":\"Searching the contract address returned nothing. KuCoin covered the older CALI (8k4s). The Telegram portal has 696 subscribers and shows no contract. The usepaid.app token page failed with an SSL error. I skipped Reddit and Discord because of the time limit.\"},\"thesis\":\"A Musk-dog meme on the hot UsePaid launchpad with very strong early buy flow, but it is not the canonical CALI, and the unlocked, oversized LP creates real rug risk. It is a better than average candidate on attention, held back by structure and by being a second token under the same name.\",\"continuation_view\":\"neutral\",\"p_runner\":15,\"p_rug\":33,\"survival_score\":40,\"attention_score\":68,\"manipulation_risk\":50,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.kucoin.com/news/insight/SOL/6ab04e7b62cf370007438844\",\"what\":\"Covers the canonical CALI (8k4s\u2026) with UsePaid fees to @mayemusk; no verified Maye Musk endorsement\"},{\"url\":\"https://www.bitrue.com/blog/what-is-usepaid\",\"what\":\"How UsePaid routes fees through X Money\"},{\"url\":\"https://t.me/CaliTheTerrier\",\"what\":\"Telegram portal, 696 subscribers, no contract shown\"},{\"url\":\"https://califanpage.com/\",\"what\":\"Fan page for Cali, Maye Musk's terrier\"}]}",
+ "structured_output": {
+  "what_is_happening": "A new CALI (Cali the Terrier, Maye Musk's dog) token was launched about 13 minutes ago through UsePaid, a service that sends creator fees to @mayemusk via X Money. It trades in a PumpSwap pool. Reported liquidity (~$282k) is higher than the market cap (~$162k), so someone seeded a deep pool, and 100% of that LP is unlocked. In 13 minutes the pool did about $900k of volume from 771 unique buyers and 59 unique sellers, and the price is up about 30%. A canonical CALI already exists (8k4s\u2026, about $6M mcap, launched around Sept 17 and covered by KuCoin on Sept 20), but its hourly volume is only about $8k. This token uses the same X and Telegram handle (CaliTheTerrier) as that CALI narrative. GMGN counts 17 duplicate uses of the token image. It could be a team relaunch or migration, or a copycat that borrowed the socials; I could not confirm which.",
+  "narrative": {
+   "description": "Musk-family pet meme (Maye Musk's rescue terrier Cali), combined with the UsePaid 'fees to an X account via X Money' trend that pushed PAID to new highs.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "Musk-adjacent pet memes and the new UsePaid fee-routing launchpad are both current. The older CALI already reached ~$6M, which shows the story can draw money. This new pool seems to be picking up that CALI audience right now."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "It uses the same socials (@CaliTheTerrier on X and Telegram) and the same fee recipient (@mayemusk). That could be an official relaunch, or the socials may just have been copied. The heavy flow (771 buyers in 13 minutes) points to some coordinated community migration or a large call.",
+   "competing_tokens": "8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA (CALI, ~$6M mcap, $692k liquidity, the one KuCoin covered, now low volume). Many dead $3k clones launched in the same minutes (Calicoin, Cali the Terrier, etc.).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "771 unique buyers against 59 unique sellers is broad buying. There is no smart-money or KOL wallet flag, no paid DexScreener promotion, and only 12 bundler wallets holding about 1.35%. Against that, 572 sells coming from only 59 sellers suggests bot or market-maker trading. The token's socials are shared with an older token, and the image has 17 duplicates.",
+   "uncertainty": "I could not see any X posts about this contract. It is unknown whether the CALI community announced a move to this contract."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "100% of the LP is unlocked, and liquidity (~$282k) is larger than the mcap: whoever seeded it can pull a large amount of SOL at any time",
+    "The creator still holds tokens (creator_hold); dev history is unknown",
+    "It competes with an established $6M CALI that has the same name and socials",
+    "The deep pool means a 2x needs large net buying (on the order of $60k+ net inflow)"
+   ]
+  },
+  "counterargument": "If the CALI team moved to this contract to use UsePaid fee routing, it inherits a community and a narrative that already reached a $6M cap. From $160k with nearly $1M of volume in 13 minutes and a strongly buy-skewed wallet count, a 2x to $320k is quite reachable within 6 hours.",
+  "unknowns": [
+   "Whether the CaliTheTerrier accounts endorse this contract or the older 8k4s one",
+   "Who owns the unlocked LP",
+   "Whether UsePaid launches seed a pool with the creator's own SOL",
+   "Anything on X about this contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "searched_found",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "inaccessible",
+   "notes": "Searching the contract address returned nothing. KuCoin covered the older CALI (8k4s). The Telegram portal has 696 subscribers and shows no contract. The usepaid.app token page failed with an SSL error. I skipped Reddit and Discord because of the time limit."
+  },
+  "thesis": "A Musk-dog meme on the hot UsePaid launchpad with very strong early buy flow, but it is not the canonical CALI, and the unlocked, oversized LP creates real rug risk. It is a better than average candidate on attention, held back by structure and by being a second token under the same name.",
+  "continuation_view": "neutral",
+  "p_runner": 15,
+  "p_rug": 33,
+  "survival_score": 40,
+  "attention_score": 68,
+  "manipulation_risk": 50,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.kucoin.com/news/insight/SOL/6ab04e7b62cf370007438844",
+    "what": "Covers the canonical CALI (8k4s\u2026) with UsePaid fees to @mayemusk; no verified Maye Musk endorsement"
+   },
+   {
+    "url": "https://www.bitrue.com/blog/what-is-usepaid",
+    "what": "How UsePaid routes fees through X Money"
+   },
+   {
+    "url": "https://t.me/CaliTheTerrier",
+    "what": "Telegram portal, 696 subscribers, no contract shown"
+   },
+   {
+    "url": "https://califanpage.com/",
+    "what": "Fan page for Cali, Maye Musk's terrier"
+   }
+  ]
+ },
+ "ttft_ms": 3598,
+ "type": "result",
+ "duration_ms": 59552,
+ "uuid": "2b61a969-8ad0-4ec1-b1f3-7f8ce93ce938",
+ "ttft_stream_ms": 729,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 729,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

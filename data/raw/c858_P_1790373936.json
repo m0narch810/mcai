@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 21998,
+ "stop_reason": "tool_use",
+ "session_id": "8262a9b7-5aa7-45bd-b931-07167f82580e",
+ "total_cost_usd": 0.1105404,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8251,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2205,
+  "output_tokens_details": {
+   "thinking_tokens": 398
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8251,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2205,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8251,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8251
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2205,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8251,
+   "webSearchRequests": 0,
+   "costUSD": 0.1105404,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 398,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A copycat \\\"American Reserved Oil Supply\\\" (AROS) token, 19 minutes old at detection. It rides a very large AROS narrative: several same-ticker coins sit at $360M-$900M market cap. This one is not a pump.fun mint (no 'pump' suffix, platform unknown). Its PumpSwap pool was created 3 seconds after the token itself, seeded with more liquidity (~$42k) than the token's market cap (~$27k), and 100% of the LP is unlocked. It shows 1,620 unique buyers against 99 unique sellers and $315k of volume in about 20 minutes. Two other non-pump AROS clones launched within the last ~1.7 hours already show $0 liquidity, and one of them did $245k of 1h volume before dying. That matches a serial pattern: seed the LP, draw buyers, pull the LP.\",\"narrative\":{\"description\":\"AROS / American Reserved Oil Supply is an already mega-successful narrative, with multiple tokens at hundreds of millions in market cap. This token is a late derivative clone of it.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"Spillover from the huge AROS names, as traders scan for cheap same-name tickers. It is not a new story, and the canonical tokens have already captured it.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Same name and ticker only. It has no socials, website or DexScreener profile, and nothing ties it to the canonical AROS.\",\"competing_tokens\":\"At least 8 live AROS tokens, from $3.6M to $900M market cap, plus 2 recent same-name non-pump clones that already show zero liquidity (rugged).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The buyer count is broad (1,620 unique buyers, top10 ~8-11%, 8 bundler wallets holding only ~2%), which is consistent with real clone-hunting retail. But the 16:1 buyer-to-seller ratio, a dev-seeded pool with liquidity above market cap, and an identical pattern on clones that already rugged suggest the setup is engineered to attract buyers before the LP is pulled.\",\"uncertainty\":\"Without X data I can't tell whether callers pushed this clone. Some buyers may be bots that hunt copycats.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked, and the creator can remove liquidity at any time\",\"Pool was created manually outside the pump.fun curve (non-pump mint, unknown platform)\",\"Liquidity is above market cap, i.e. the dev seeded the pool, which is a classic LP-pull setup\",\"Two sibling same-name clones already at $0 liquidity within the last ~2 hours\",\"Only a few LP providers\",\"No socials or profile\"]},\"counterargument\":\"Demand is genuinely broad: 1,620 unique buyers, low holder concentration, no snipers and very few bundlers. The AROS narrative is so hot that a $27k clone could go 2-3x quickly on overflow flow before any pull. If the dev keeps the LP in to farm fees, or waits for a larger pool, the price could double well within the entry window.\",\"unknowns\":[\"Whether the creator (status 'creator_close') still controls the LP tokens\",\"Whether the rugged sibling clones share this deployer\",\"Whether the buyers are copy-bots or retail\",\"Whether X or call channels are promoting this contract\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; judged from the packet only.\"},\"thesis\":\"This is a non-canonical AROS clone in a manually seeded pool with fully unlocked LP, liquidity above market cap, and sibling clones that already rugged. Strong short-term buying doesn't make up for a high chance the LP gets pulled within hours. Rank it low.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":62,\"survival_score\":15,\"attention_score\":68,\"manipulation_risk\":70,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A copycat \"American Reserved Oil Supply\" (AROS) token, 19 minutes old at detection. It rides a very large AROS narrative: several same-ticker coins sit at $360M-$900M market cap. This one is not a pump.fun mint (no 'pump' suffix, platform unknown). Its PumpSwap pool was created 3 seconds after the token itself, seeded with more liquidity (~$42k) than the token's market cap (~$27k), and 100% of the LP is unlocked. It shows 1,620 unique buyers against 99 unique sellers and $315k of volume in about 20 minutes. Two other non-pump AROS clones launched within the last ~1.7 hours already show $0 liquidity, and one of them did $245k of 1h volume before dying. That matches a serial pattern: seed the LP, draw buyers, pull the LP.",
+  "narrative": {
+   "description": "AROS / American Reserved Oil Supply is an already mega-successful narrative, with multiple tokens at hundreds of millions in market cap. This token is a late derivative clone of it.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "Spillover from the huge AROS names, as traders scan for cheap same-name tickers. It is not a new story, and the canonical tokens have already captured it."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Same name and ticker only. It has no socials, website or DexScreener profile, and nothing ties it to the canonical AROS.",
+   "competing_tokens": "At least 8 live AROS tokens, from $3.6M to $900M market cap, plus 2 recent same-name non-pump clones that already show zero liquidity (rugged).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The buyer count is broad (1,620 unique buyers, top10 ~8-11%, 8 bundler wallets holding only ~2%), which is consistent with real clone-hunting retail. But the 16:1 buyer-to-seller ratio, a dev-seeded pool with liquidity above market cap, and an identical pattern on clones that already rugged suggest the setup is engineered to attract buyers before the LP is pulled.",
+   "uncertainty": "Without X data I can't tell whether callers pushed this clone. Some buyers may be bots that hunt copycats."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked, and the creator can remove liquidity at any time",
+    "Pool was created manually outside the pump.fun curve (non-pump mint, unknown platform)",
+    "Liquidity is above market cap, i.e. the dev seeded the pool, which is a classic LP-pull setup",
+    "Two sibling same-name clones already at $0 liquidity within the last ~2 hours",
+    "Only a few LP providers",
+    "No socials or profile"
+   ]
+  },
+  "counterargument": "Demand is genuinely broad: 1,620 unique buyers, low holder concentration, no snipers and very few bundlers. The AROS narrative is so hot that a $27k clone could go 2-3x quickly on overflow flow before any pull. If the dev keeps the LP in to farm fees, or waits for a larger pool, the price could double well within the entry window.",
+  "unknowns": [
+   "Whether the creator (status 'creator_close') still controls the LP tokens",
+   "Whether the rugged sibling clones share this deployer",
+   "Whether the buyers are copy-bots or retail",
+   "Whether X or call channels are promoting this contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; judged from the packet only."
+  },
+  "thesis": "This is a non-canonical AROS clone in a manually seeded pool with fully unlocked LP, liquidity above market cap, and sibling clones that already rugged. Strong short-term buying doesn't make up for a high chance the LP gets pulled within hours. Rank it low.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 62,
+  "survival_score": 15,
+  "attention_score": 68,
+  "manipulation_risk": 70,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5117,
+ "type": "result",
+ "duration_ms": 22042,
+ "uuid": "3fef405c-5d10-45bc-96d3-ac045ff73516",
+ "ttft_stream_ms": 642,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 642,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

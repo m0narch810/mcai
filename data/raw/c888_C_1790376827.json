@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 41181,
+ "stop_reason": "tool_use",
+ "session_id": "3f23090d-e8d5-4250-8ed7-66a6ab1efd60",
+ "total_cost_usd": 0.20864419999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12478,
+  "cache_read_input_tokens": 28256,
+  "output_tokens": 2807,
+  "output_tokens_details": {
+   "thinking_tokens": 432
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12478,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2134,
+    "cache_read_input_tokens": 13742,
+    "cache_creation_input_tokens": 1500,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1500
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2807,
+   "cacheReadInputTokens": 28256,
+   "cacheCreationInputTokens": 12478,
+   "webSearchRequests": 0,
+   "costUSD": 0.16163919999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 432,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 22355,
+   "outputTokens": 930,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.047005,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Several tokens named \\\"Nomad Arena\\\" ($Arena) launched within about 20 minutes of each other: arpmq\u2026, 2oBC\u2026, ET8f\u2026, 9qwK\u2026, this one (GS5z\u2026) and DGj9\u2026. The trigger appears to be a post from the X account @Nomad_Arena_, which promotes an \\\"AI agents trading arena\\\" project. The project's own website, nomadarena.live, gives its Solana contract address as arpmqKuWcVQ4Q9M4LPLaMPmvP55NdnLxdjecSPfRgv6, not GS5z\u2026. This token launched through Meteora's virtual curve and migrated immediately. It has about 2,078 unique buyers against only 78 unique sellers, and 12 bundler wallets. That shape looks like bot-sprayed buying rather than organic accumulation. GeckoTerminal's 5-minute price change is already -27% from the peak.\",\"narrative\":{\"description\":\"Nomad Arena bills itself as a cross-chain platform where six AI models (Claude, Grok, Gemini and others) each get $10k to trade on DEXs. It rides the AI-agent trading-competition meme.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"A project tweet and a new website appeared, and launch bots and copycat deployers rushed out same-name tokens within minutes. I found no independent discussion.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It shares the name and ticker. The GMGN and GeckoTerminal metadata point at the project's X account and website, but the website names a different contract (arpmq\u2026) as the official token.\",\"competing_tokens\":\"arpmqKuWcVQ4Q9M4LPLaMPmvP55NdnLxdjecSPfRgv6 is the canonical one per nomadarena.live, with about $526k volume in 1h. ET8f\u2026, 2oBC\u2026 (already drained), DGj9\u2026 and 9qwK\u2026 are also copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Buyer and seller counts are extremely lopsided (about 2,078 unique buyers vs 78 unique sellers), which fits bot-sprayed buys. There are 12 bundler wallets, 49 graph-linked insiders, and an image duplicated 5 times. Several same-name clones appeared at the same moment, and one (2oBC\u2026) already has $14 of liquidity left.\",\"uncertainty\":\"I could not read X, so I can't see whether the project or KOLs mentioned this particular contract.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"It is a clone of the canonical contract arpmq\u2026\",\"RugCheck says 99.99% of LP is unlocked, but GMGN reports lp_burn_ratio 1.0, so the two sources conflict\",\"One unlabeled holder has 80% of supply, most likely the Meteora pool, but I could not confirm that\",\"49 insiders in the network and 12 bundlers\",\"Price is already -27% in 5 minutes after a roughly 4x run\"]},\"counterargument\":\"This clone has a higher market cap (about $239k) than the canonical arpmq\u2026 (about $135k), and its metadata links the real project X account and website. The market may be treating it as the main pair. If the project team actually deployed it, or X posts point to it, strong AI-agent hype could carry it well past 2x.\",\"unknowns\":[\"Which contract the @Nomad_Arena_ X post names\",\"Whether the 80% holder is the pool\",\"Whether the creator is tied to the project team\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"X returned HTTP 402 (payment required). Searching the contract address found nothing. The website names arpmq\u2026 as the contract. I ran out of time for Reddit and Telegram.\"},\"thesis\":\"This looks like a copycat of the canonical Nomad Arena token, launched in a burst of clones, with bot-style buying that is already fading. The chance of a 2x from entry is low, and the risk of it dying is high.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":45,\"survival_score\":25,\"attention_score\":45,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://nomadarena.live/\",\"what\":\"Project site naming arpmqKuWcVQ4Q9M4LPLaMPmvP55NdnLxdjecSPfRgv6 as the token contract\"},{\"url\":\"https://x.com/Nomad_Arena_/status/2103606609490399501\",\"what\":\"Project X post (inaccessible, HTTP 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "Several tokens named \"Nomad Arena\" ($Arena) launched within about 20 minutes of each other: arpmq\u2026, 2oBC\u2026, ET8f\u2026, 9qwK\u2026, this one (GS5z\u2026) and DGj9\u2026. The trigger appears to be a post from the X account @Nomad_Arena_, which promotes an \"AI agents trading arena\" project. The project's own website, nomadarena.live, gives its Solana contract address as arpmqKuWcVQ4Q9M4LPLaMPmvP55NdnLxdjecSPfRgv6, not GS5z\u2026. This token launched through Meteora's virtual curve and migrated immediately. It has about 2,078 unique buyers against only 78 unique sellers, and 12 bundler wallets. That shape looks like bot-sprayed buying rather than organic accumulation. GeckoTerminal's 5-minute price change is already -27% from the peak.",
+  "narrative": {
+   "description": "Nomad Arena bills itself as a cross-chain platform where six AI models (Claude, Grok, Gemini and others) each get $10k to trade on DEXs. It rides the AI-agent trading-competition meme.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "A project tweet and a new website appeared, and launch bots and copycat deployers rushed out same-name tokens within minutes. I found no independent discussion."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It shares the name and ticker. The GMGN and GeckoTerminal metadata point at the project's X account and website, but the website names a different contract (arpmq\u2026) as the official token.",
+   "competing_tokens": "arpmqKuWcVQ4Q9M4LPLaMPmvP55NdnLxdjecSPfRgv6 is the canonical one per nomadarena.live, with about $526k volume in 1h. ET8f\u2026, 2oBC\u2026 (already drained), DGj9\u2026 and 9qwK\u2026 are also copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Buyer and seller counts are extremely lopsided (about 2,078 unique buyers vs 78 unique sellers), which fits bot-sprayed buys. There are 12 bundler wallets, 49 graph-linked insiders, and an image duplicated 5 times. Several same-name clones appeared at the same moment, and one (2oBC\u2026) already has $14 of liquidity left.",
+   "uncertainty": "I could not read X, so I can't see whether the project or KOLs mentioned this particular contract."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "It is a clone of the canonical contract arpmq\u2026",
+    "RugCheck says 99.99% of LP is unlocked, but GMGN reports lp_burn_ratio 1.0, so the two sources conflict",
+    "One unlabeled holder has 80% of supply, most likely the Meteora pool, but I could not confirm that",
+    "49 insiders in the network and 12 bundlers",
+    "Price is already -27% in 5 minutes after a roughly 4x run"
+   ]
+  },
+  "counterargument": "This clone has a higher market cap (about $239k) than the canonical arpmq\u2026 (about $135k), and its metadata links the real project X account and website. The market may be treating it as the main pair. If the project team actually deployed it, or X posts point to it, strong AI-agent hype could carry it well past 2x.",
+  "unknowns": [
+   "Which contract the @Nomad_Arena_ X post names",
+   "Whether the 80% holder is the pool",
+   "Whether the creator is tied to the project team"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "X returned HTTP 402 (payment required). Searching the contract address found nothing. The website names arpmq\u2026 as the contract. I ran out of time for Reddit and Telegram."
+  },
+  "thesis": "This looks like a copycat of the canonical Nomad Arena token, launched in a burst of clones, with bot-style buying that is already fading. The chance of a 2x from entry is low, and the risk of it dying is high.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 45,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://nomadarena.live/",
+    "what": "Project site naming arpmqKuWcVQ4Q9M4LPLaMPmvP55NdnLxdjecSPfRgv6 as the token contract"
+   },
+   {
+    "url": "https://x.com/Nomad_Arena_/status/2103606609490399501",
+    "what": "Project X post (inaccessible, HTTP 402)"
+   }
+  ]
+ },
+ "ttft_ms": 2724,
+ "type": "result",
+ "duration_ms": 36033,
+ "uuid": "d17fe4ed-2cc8-447b-ae1e-12bea0b37322",
+ "ttft_stream_ms": 853,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 853,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

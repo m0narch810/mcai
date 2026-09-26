@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 47536,
+ "stop_reason": "tool_use",
+ "session_id": "7af28e18-d1dd-4918-b2d0-2e216616ce4a",
+ "total_cost_usd": 0.248031,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 13816,
+  "cache_read_input_tokens": 43560,
+  "output_tokens": 3066,
+  "output_tokens_details": {
+   "thinking_tokens": 547
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13816,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2076,
+    "cache_read_input_tokens": 15228,
+    "cache_creation_input_tokens": 1352,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1352
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 3066,
+   "cacheReadInputTokens": 43560,
+   "cacheCreationInputTokens": 13816,
+   "webSearchRequests": 0,
+   "costUSD": 0.180592,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 547,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 32754,
+   "outputTokens": 937,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067439,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"About 10 \\\"Stan Cancer Fund\\\" (STAN) tokens came out between 13:05 and 13:14 UTC, all tied to the same X post (vegadevv/status/2103832844980142503). I couldn't read that post (HTTP 402). This one is on PumpSwap. It launched via the Meteora virtual curve and moved to a pool right away. It's up about 160% in 12 minutes, with about 1,165 unique buyers, and it's at about $150k market cap. The project website link GMGN has for this token (usepaid.app) points to a different contract, BiGSt\u2026. BiGSt is 2 minutes older and has about $416k of 1-hour volume, against about $168k here. So BiGSt looks like the canonical token, and this one looks like one of several copycats.\",\"narrative\":{\"description\":\"A charity-style memecoin, 'Stan Cancer Fund', apparently tied to an X post by 'vegadevv'. I couldn't verify what the underlying story is.\",\"stage\":\"nascent\",\"potential\":\"moderate\",\"why_spreading\":\"Many copies launched within minutes of each other, which suggests an X post set off a sniper and deployer race. Charity and cancer coins have run before (for example the father's cancer-research coin that reached $80M), but I found no web coverage of this particular story.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the same name and tweet link. It's the second-highest-volume copy, and its unique-buyer count is high.\",\"competing_tokens\":\"BiGStZtw\u2026 is earlier, has about 2.5x the 1-hour volume, and is the contract linked on the project website (usepaid.app). There are also 8 or more other STAN 'Stan Cancer Fund' clones, plus the old Stanley Cup Coin (CQSz\u2026).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"There are 1,165 unique buyers against 88 sellers, and the buy/sell ratio is high. GMGN flags 16 bundler wallets and 9 snipers, and the bot/degen rate is 9%. There are no paid boosts, no smart wallets and no KOL wallets. The copycat race points to sniper-driven flow.\",\"uncertainty\":\"I couldn't see the X post or who is sharing it.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of the LP as unlocked ('danger'), although GMGN says the LP burn ratio is 1.0\",\"One unlabeled account holds 80% of supply. It's probably the pool or vault, since GMGN's top-10 holder rate is 8%, but I haven't confirmed that.\",\"The creator has launched 6 tokens and has already closed out ('creator_close')\",\"Liquidity of $27k against a $150k market cap\",\"Buyer attention is split across about 10 clones, and the canonical-looking contract is a different one\"]},\"counterargument\":\"Buyer breadth here is unusually high for a 12-minute-old coin (1,165 unique buyers). In clone races, the copy that gets flow sometimes becomes the one people treat as canonical. If the story is a real, sympathetic charity story, the whole cluster can run, and this copy would be carried along with it.\",\"unknowns\":[\"What the vegadevv post says and whether vegadevv is the real dev\",\"Whether the 80% holder is the pool\",\"Whether BiGSt ends up as the accepted canonical token\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"The X post returned HTTP 402 and the usepaid.app site gave an SSL error. General web searches found nothing on this specific Stan Cancer Fund. I ran out of time before Reddit and Telegram.\"},\"thesis\":\"This looks like a non-canonical clone in a multi-copy launch race, with a heavy bundle and sniper presence and a serial creator who has already exited. Buyer breadth is real but split across clones. There's a below-average chance of doubling from $150k before halving.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":35,\"survival_score\":35,\"attention_score\":60,\"manipulation_risk\":60,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/vegadevv/status/2103832844980142503\",\"what\":\"The linked X post; returned HTTP 402, so I couldn't read it\"},{\"url\":\"https://usepaid.app/token/BiGStZtwjJEh3tFCLh8gTcSAVr7uSKBHKAEYHufqs3jP\",\"what\":\"Project website link, which points to a different contract (BiGSt\u2026); SSL error on fetch\"},{\"url\":\"https://cryptopotato.com/father-pledges-1m-to-cancer-research-after-charity-meme-coin-skyrockets-to-80m-market-cap/\",\"what\":\"Earlier example of a cancer charity memecoin that ran\"}]}",
+ "structured_output": {
+  "what_is_happening": "About 10 \"Stan Cancer Fund\" (STAN) tokens came out between 13:05 and 13:14 UTC, all tied to the same X post (vegadevv/status/2103832844980142503). I couldn't read that post (HTTP 402). This one is on PumpSwap. It launched via the Meteora virtual curve and moved to a pool right away. It's up about 160% in 12 minutes, with about 1,165 unique buyers, and it's at about $150k market cap. The project website link GMGN has for this token (usepaid.app) points to a different contract, BiGSt\u2026. BiGSt is 2 minutes older and has about $416k of 1-hour volume, against about $168k here. So BiGSt looks like the canonical token, and this one looks like one of several copycats.",
+  "narrative": {
+   "description": "A charity-style memecoin, 'Stan Cancer Fund', apparently tied to an X post by 'vegadevv'. I couldn't verify what the underlying story is.",
+   "stage": "nascent",
+   "potential": "moderate",
+   "why_spreading": "Many copies launched within minutes of each other, which suggests an X post set off a sniper and deployer race. Charity and cancer coins have run before (for example the father's cancer-research coin that reached $80M), but I found no web coverage of this particular story."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the same name and tweet link. It's the second-highest-volume copy, and its unique-buyer count is high.",
+   "competing_tokens": "BiGStZtw\u2026 is earlier, has about 2.5x the 1-hour volume, and is the contract linked on the project website (usepaid.app). There are also 8 or more other STAN 'Stan Cancer Fund' clones, plus the old Stanley Cup Coin (CQSz\u2026).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "There are 1,165 unique buyers against 88 sellers, and the buy/sell ratio is high. GMGN flags 16 bundler wallets and 9 snipers, and the bot/degen rate is 9%. There are no paid boosts, no smart wallets and no KOL wallets. The copycat race points to sniper-driven flow.",
+   "uncertainty": "I couldn't see the X post or who is sharing it."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of the LP as unlocked ('danger'), although GMGN says the LP burn ratio is 1.0",
+    "One unlabeled account holds 80% of supply. It's probably the pool or vault, since GMGN's top-10 holder rate is 8%, but I haven't confirmed that.",
+    "The creator has launched 6 tokens and has already closed out ('creator_close')",
+    "Liquidity of $27k against a $150k market cap",
+    "Buyer attention is split across about 10 clones, and the canonical-looking contract is a different one"
+   ]
+  },
+  "counterargument": "Buyer breadth here is unusually high for a 12-minute-old coin (1,165 unique buyers). In clone races, the copy that gets flow sometimes becomes the one people treat as canonical. If the story is a real, sympathetic charity story, the whole cluster can run, and this copy would be carried along with it.",
+  "unknowns": [
+   "What the vegadevv post says and whether vegadevv is the real dev",
+   "Whether the 80% holder is the pool",
+   "Whether BiGSt ends up as the accepted canonical token"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "The X post returned HTTP 402 and the usepaid.app site gave an SSL error. General web searches found nothing on this specific Stan Cancer Fund. I ran out of time before Reddit and Telegram."
+  },
+  "thesis": "This looks like a non-canonical clone in a multi-copy launch race, with a heavy bundle and sniper presence and a serial creator who has already exited. Buyer breadth is real but split across clones. There's a below-average chance of doubling from $150k before halving.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 35,
+  "survival_score": 35,
+  "attention_score": 60,
+  "manipulation_risk": 60,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/vegadevv/status/2103832844980142503",
+    "what": "The linked X post; returned HTTP 402, so I couldn't read it"
+   },
+   {
+    "url": "https://usepaid.app/token/BiGStZtwjJEh3tFCLh8gTcSAVr7uSKBHKAEYHufqs3jP",
+    "what": "Project website link, which points to a different contract (BiGSt\u2026); SSL error on fetch"
+   },
+   {
+    "url": "https://cryptopotato.com/father-pledges-1m-to-cancer-research-after-charity-meme-coin-skyrockets-to-80m-market-cap/",
+    "what": "Earlier example of a cancer charity memecoin that ran"
+   }
+  ]
+ },
+ "ttft_ms": 3191,
+ "type": "result",
+ "duration_ms": 46606,
+ "uuid": "3076421d-83a3-4df5-8a20-bdb6a4acf277",
+ "ttft_stream_ms": 932,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 932,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

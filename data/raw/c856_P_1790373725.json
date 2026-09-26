@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 23106,
+ "stop_reason": "tool_use",
+ "session_id": "8b1a3d56-c2ed-4df1-a6cd-5a384e05e945",
+ "total_cost_usd": 0.11081239999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8025,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2309,
+  "output_tokens_details": {
+   "thinking_tokens": 397
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8025,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2309,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8025,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8025
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2309,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8025,
+   "webSearchRequests": 0,
+   "costUSD": 0.11081239999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 397,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"COLONY (\\\"The Colony\\\", an ant-colony AI-agent theme) is a non-pump.fun mint. Its PumpSwap pool was created directly, about 13 minutes before detection, and did not migrate from the curve (migrated_unix=0, deploy platform unknown). Its liquidity ($52k) is larger than its market cap ($33k). The LP is 100% unlocked and only a few wallets provide liquidity. Trading is heavy: $78k volume in the hour, 1,111 unique buyers against only 105 unique sellers, and price is up about 60%. At least 7 other same-name COLONY tokens were launched in the last few hours. One of them reached a $937k market cap and now has $0.01 of liquidity, the typical sign of an LP pull.\",\"narrative\":{\"description\":\"'The Colony': one queen and thousands of autonomous agent ants that forage, trade and build. It is an AI-agent swarm meme with an X post and a website (thecolony.lol) attached.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The flood of same-name clones in the last few hours shows a live theme that deployers are chasing, probably tied to a real X post or project. The AI-agent angle keeps appearing in Solana memes.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It links the same X status and website that other copies probably use. It is not a pump.fun mint and was seeded directly on PumpSwap with unlocked LP, a common pattern for copycat deployers who pull LP.\",\"competing_tokens\":\"At least 7 same-name tokens. 7Wo9... (mcap $937k, liquidity $0.01, apparently rugged); Gh6k...pump ($15k liquidity, $107k h1 volume); JCkF... ($195k h1 volume, now $0 liquidity); several dead ones.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The spread of buyers is broad (1,111 unique buyers, top 10 hold 4%). But 30 wallets are GMGN-tagged bundlers, only 105 wallets have sold, and the image is duplicated 6 times. The same-name clones are being launched and rugged one after another, including one pulled at $937k. The buyer surge probably comes from bots and traders rotating between clones, not real conviction in this one.\",\"uncertainty\":\"Without X data I can't tell which contract the real project endorses. This one could be the official deploy.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 100% unlocked, with few LP providers; the owner can pull it at any time\",\"Pool was created directly on PumpSwap without a bonding curve; this matches the pattern of the rugged sibling 7Wo9... (non-pump mint, $0.01 liquidity)\",\"Several same-name clones have already been rugged within hours\",\"Creator wallet closed and has no visible history (funded_from null)\",\"Liquidity above market cap means the deployer supplied most of the SOL and can take it back\"]},\"counterargument\":\"If this is the contract the project actually posted from @thecolonylol, the broad buyer base (over 1,100 buyers, top-10 wallets holding only 4%, no snipers or fresh wallets) and the deep $52k liquidity could carry it from $33k to $66k+ quickly. That is only one more doubling in a strong clone cycle, and it is already up 60% in 13 minutes.\",\"unknowns\":[\"Whether the X post/website endorses this contract address\",\"Who holds the LP tokens and whether they plan to pull\",\"Whether the 7Wo9... clone was rugged by the same deployer network\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this report uses only the packet.\"},\"thesis\":\"Demand is strong, but this looks like one of several copycat deploys with unlocked LP on a hot AI-colony meme. Its sibling with the same setup has already been drained. The chance of an LP pull within 6 hours is high, and pulled liquidity counts as a total loss rather than a stop. The upside is real but ranks below average once rug risk is included.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":55,\"survival_score\":22,\"attention_score\":68,\"manipulation_risk\":62,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "COLONY (\"The Colony\", an ant-colony AI-agent theme) is a non-pump.fun mint. Its PumpSwap pool was created directly, about 13 minutes before detection, and did not migrate from the curve (migrated_unix=0, deploy platform unknown). Its liquidity ($52k) is larger than its market cap ($33k). The LP is 100% unlocked and only a few wallets provide liquidity. Trading is heavy: $78k volume in the hour, 1,111 unique buyers against only 105 unique sellers, and price is up about 60%. At least 7 other same-name COLONY tokens were launched in the last few hours. One of them reached a $937k market cap and now has $0.01 of liquidity, the typical sign of an LP pull.",
+  "narrative": {
+   "description": "'The Colony': one queen and thousands of autonomous agent ants that forage, trade and build. It is an AI-agent swarm meme with an X post and a website (thecolony.lol) attached.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The flood of same-name clones in the last few hours shows a live theme that deployers are chasing, probably tied to a real X post or project. The AI-agent angle keeps appearing in Solana memes."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It links the same X status and website that other copies probably use. It is not a pump.fun mint and was seeded directly on PumpSwap with unlocked LP, a common pattern for copycat deployers who pull LP.",
+   "competing_tokens": "At least 7 same-name tokens. 7Wo9... (mcap $937k, liquidity $0.01, apparently rugged); Gh6k...pump ($15k liquidity, $107k h1 volume); JCkF... ($195k h1 volume, now $0 liquidity); several dead ones.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The spread of buyers is broad (1,111 unique buyers, top 10 hold 4%). But 30 wallets are GMGN-tagged bundlers, only 105 wallets have sold, and the image is duplicated 6 times. The same-name clones are being launched and rugged one after another, including one pulled at $937k. The buyer surge probably comes from bots and traders rotating between clones, not real conviction in this one.",
+   "uncertainty": "Without X data I can't tell which contract the real project endorses. This one could be the official deploy."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 100% unlocked, with few LP providers; the owner can pull it at any time",
+    "Pool was created directly on PumpSwap without a bonding curve; this matches the pattern of the rugged sibling 7Wo9... (non-pump mint, $0.01 liquidity)",
+    "Several same-name clones have already been rugged within hours",
+    "Creator wallet closed and has no visible history (funded_from null)",
+    "Liquidity above market cap means the deployer supplied most of the SOL and can take it back"
+   ]
+  },
+  "counterargument": "If this is the contract the project actually posted from @thecolonylol, the broad buyer base (over 1,100 buyers, top-10 wallets holding only 4%, no snipers or fresh wallets) and the deep $52k liquidity could carry it from $33k to $66k+ quickly. That is only one more doubling in a strong clone cycle, and it is already up 60% in 13 minutes.",
+  "unknowns": [
+   "Whether the X post/website endorses this contract address",
+   "Who holds the LP tokens and whether they plan to pull",
+   "Whether the 7Wo9... clone was rugged by the same deployer network"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this report uses only the packet."
+  },
+  "thesis": "Demand is strong, but this looks like one of several copycat deploys with unlocked LP on a hot AI-colony meme. Its sibling with the same setup has already been drained. The chance of an LP pull within 6 hours is high, and pulled liquidity counts as a total loss rather than a stop. The upside is real but ranks below average once rug risk is included.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 55,
+  "survival_score": 22,
+  "attention_score": 68,
+  "manipulation_risk": 62,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5260,
+ "type": "result",
+ "duration_ms": 23150,
+ "uuid": "4f9770ba-b0ab-44ce-92fd-4d75dd5e5aed",
+ "ttft_stream_ms": 743,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 744,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

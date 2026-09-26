@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 45419,
+ "stop_reason": "tool_use",
+ "session_id": "3cd7c113-6528-40aa-8478-72faef1dce97",
+ "total_cost_usd": 0.2298712,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12779,
+  "cache_read_input_tokens": 27641,
+  "output_tokens": 2737,
+  "output_tokens_details": {
+   "thinking_tokens": 325
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12779,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2277,
+    "cache_read_input_tokens": 13289,
+    "cache_creation_input_tokens": 2254,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2254
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2737,
+   "cacheReadInputTokens": 27641,
+   "cacheCreationInputTokens": 12779,
+   "webSearchRequests": 0,
+   "costUSD": 0.1625242,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 325,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 31907,
+   "outputTokens": 1088,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067347,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is one of at least 10 \\\"BEEPLE\\\" tokens launched within about 15 minutes of each other. They appear to follow a recent post by the artist Beeple (GeckoTerminal links x.com/beeple/status/2103695634804945012, but the post itself returned 403 and I couldn't read it). This one is a Meteora pool created at 04:14 UTC. The creator seeded it, and 100% of the LP is unlocked. It rose about 150-177% in 15 minutes, with $475-530k volume on a $28k market cap. GeckoTerminal counts 1,975 unique buyers against only 88 unique sellers, and GMGN flags 69 bundler wallets holding 37% of top-trader share. It is not the leading BEEPLE: DMZts..., created 8 minutes earlier, is at $238k market cap with $816k h1 volume.\",\"narrative\":{\"description\":\"A Beeple (Mike Winkelmann) post set off a rush of copycat tickers. Beeple has a history of mentioning memecoins (the LAPTOP token burns in Sept 2026, 'memecoin armies assemble'). I could not see what the latest post actually says.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A famous crypto-art figure posted something token-related, so launch bots and snipers deployed many same-name coins at once.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. There is no website or socials, no DexScreener profile, and nothing links this contract to Beeple. The only link is GeckoTerminal metadata pointing at Beeple's post.\",\"competing_tokens\":\"DMZtsWeDaPRGU4ziXxcEMuPbXh1BmDm5iR9LirT8ZoHG was earlier and is about 8x bigger ($238k market cap, $816k h1 volume). 2sRFHWB9... is another Meteora clone of similar size ($20k market cap, $294k volume). At least 8 more clones exist.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 69 bundler wallets and 37% bundler share among top traders. The 1,975 unique buyers vs 88 unique sellers in 15 minutes looks like bot or distribution buying. The creator has closed out, and the dev-seeded LP is fully unlocked. Several near-identical Meteora clones launched at the same time with similar volume patterns.\",\"uncertainty\":\"I could not see X posts at all. Some real retail spillover from the main BEEPLE coin may be buying this clone.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a dev-created Meteora pool, so the owner can pull liquidity at any time\",\"69 bundler wallets / 37% bundler trader share\",\"Not canonical; a much larger same-name token is taking the attention\",\"Creator closed out (creator_close), so no one has a stake in keeping it alive\",\"Liquidity is larger than market cap: a seeded pool typical of clone farms\"]},\"counterargument\":\"The Beeple narrative is live and real, and there are nearly 2,000 unique buyers. If the leading BEEPLE keeps running, spillover into cheaper clones can double a $28k coin quickly. Top-10 holders are only about 21%, and the creator holds nothing. The creator's previous token reached a $1.1M ATH.\",\"unknowns\":[\"What the Beeple post says and whether it endorses any contract\",\"Who controls the LP position\",\"Whether the buyer count is organic or bot-generated\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The Beeple X post returned 403. A search for the contract returned nothing. News found Beeple's September 2026 memecoin mentions (LAPTOP) but nothing about this token. Reddit, Telegram and Discord were skipped because of the time limit.\"},\"thesis\":\"This looks like a bundled, non-canonical Meteora clone riding a Beeple post, with fully unlocked LP. The main BEEPLE coin holds most of the attention. A short spillover pump is possible, but the most likely outcome is an LP pull or a fade.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":50,\"survival_score\":22,\"attention_score\":55,\"manipulation_risk\":80,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/beeple/status/2103695634804945012\",\"what\":\"Beeple post linked in GeckoTerminal metadata (returned 403, not read)\"},{\"url\":\"https://news.bitcoin.com/crypto-news/hunter-biden-laptop-burn-eric-trump-beeple/\",\"what\":\"Beeple's recent memecoin mentions (Sept 2026)\"},{\"url\":\"https://twitter.com/beeple/status/1763765833996632494?lang=en\",\"what\":\"Beeple's past memecoin posting\"}]}",
+ "structured_output": {
+  "what_is_happening": "This is one of at least 10 \"BEEPLE\" tokens launched within about 15 minutes of each other. They appear to follow a recent post by the artist Beeple (GeckoTerminal links x.com/beeple/status/2103695634804945012, but the post itself returned 403 and I couldn't read it). This one is a Meteora pool created at 04:14 UTC. The creator seeded it, and 100% of the LP is unlocked. It rose about 150-177% in 15 minutes, with $475-530k volume on a $28k market cap. GeckoTerminal counts 1,975 unique buyers against only 88 unique sellers, and GMGN flags 69 bundler wallets holding 37% of top-trader share. It is not the leading BEEPLE: DMZts..., created 8 minutes earlier, is at $238k market cap with $816k h1 volume.",
+  "narrative": {
+   "description": "A Beeple (Mike Winkelmann) post set off a rush of copycat tickers. Beeple has a history of mentioning memecoins (the LAPTOP token burns in Sept 2026, 'memecoin armies assemble'). I could not see what the latest post actually says.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A famous crypto-art figure posted something token-related, so launch bots and snipers deployed many same-name coins at once."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. There is no website or socials, no DexScreener profile, and nothing links this contract to Beeple. The only link is GeckoTerminal metadata pointing at Beeple's post.",
+   "competing_tokens": "DMZtsWeDaPRGU4ziXxcEMuPbXh1BmDm5iR9LirT8ZoHG was earlier and is about 8x bigger ($238k market cap, $816k h1 volume). 2sRFHWB9... is another Meteora clone of similar size ($20k market cap, $294k volume). At least 8 more clones exist.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 69 bundler wallets and 37% bundler share among top traders. The 1,975 unique buyers vs 88 unique sellers in 15 minutes looks like bot or distribution buying. The creator has closed out, and the dev-seeded LP is fully unlocked. Several near-identical Meteora clones launched at the same time with similar volume patterns.",
+   "uncertainty": "I could not see X posts at all. Some real retail spillover from the main BEEPLE coin may be buying this clone."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a dev-created Meteora pool, so the owner can pull liquidity at any time",
+    "69 bundler wallets / 37% bundler trader share",
+    "Not canonical; a much larger same-name token is taking the attention",
+    "Creator closed out (creator_close), so no one has a stake in keeping it alive",
+    "Liquidity is larger than market cap: a seeded pool typical of clone farms"
+   ]
+  },
+  "counterargument": "The Beeple narrative is live and real, and there are nearly 2,000 unique buyers. If the leading BEEPLE keeps running, spillover into cheaper clones can double a $28k coin quickly. Top-10 holders are only about 21%, and the creator holds nothing. The creator's previous token reached a $1.1M ATH.",
+  "unknowns": [
+   "What the Beeple post says and whether it endorses any contract",
+   "Who controls the LP position",
+   "Whether the buyer count is organic or bot-generated"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The Beeple X post returned 403. A search for the contract returned nothing. News found Beeple's September 2026 memecoin mentions (LAPTOP) but nothing about this token. Reddit, Telegram and Discord were skipped because of the time limit."
+  },
+  "thesis": "This looks like a bundled, non-canonical Meteora clone riding a Beeple post, with fully unlocked LP. The main BEEPLE coin holds most of the attention. A short spillover pump is possible, but the most likely outcome is an LP pull or a fade.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 50,
+  "survival_score": 22,
+  "attention_score": 55,
+  "manipulation_risk": 80,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/beeple/status/2103695634804945012",
+    "what": "Beeple post linked in GeckoTerminal metadata (returned 403, not read)"
+   },
+   {
+    "url": "https://news.bitcoin.com/crypto-news/hunter-biden-laptop-burn-eric-trump-beeple/",
+    "what": "Beeple's recent memecoin mentions (Sept 2026)"
+   },
+   {
+    "url": "https://twitter.com/beeple/status/1763765833996632494?lang=en",
+    "what": "Beeple's past memecoin posting"
+   }
+  ]
+ },
+ "ttft_ms": 1317,
+ "type": "result",
+ "duration_ms": 40722,
+ "uuid": "1aa9fa99-2e43-4894-9815-563e8f80fad2",
+ "ttft_stream_ms": 641,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 642,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

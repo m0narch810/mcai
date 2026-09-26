@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 58475,
+ "stop_reason": "tool_use",
+ "session_id": "4b2d44b8-d7be-4ea7-a63c-470afef0a480",
+ "total_cost_usd": 0.28368140000000003,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 13937,
+  "cache_read_input_tokens": 58057,
+  "output_tokens": 3050,
+  "output_tokens_details": {
+   "thinking_tokens": 410
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13937,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2418,
+    "cache_read_input_tokens": 15346,
+    "cache_creation_input_tokens": 1355,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1355
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 3050,
+   "cacheReadInputTokens": 58057,
+   "cacheCreationInputTokens": 13937,
+   "webSearchRequests": 0,
+   "costUSD": 0.18414740000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 410,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 62554,
+   "outputTokens": 1396,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.099534,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DEBT COIN (9BUc\u2026) is one of at least 8 \\\"DEBT COIN\\\" tokens launched on Solana in the last ~75 minutes. It launched at 13:18 UTC, in a dev-seeded Meteora pool with 100% of the LP unlocked. Its GeckoTerminal X link points to an Eric Bolling post (ericbolling/status/2103816977047531911), which suggests the whole cluster is trading on one Bolling tweet mentioning a \\\"debt coin\\\". I couldn't open that post (HTTP 402), so I don't know what it says. The token went up about 5.6x in 10 minutes and was already down 32-58% over the last 5 minutes at collection. Older same-name clones launched 40-70 minutes earlier and are much bigger ($624k and $363k market cap).\",\"narrative\":{\"description\":\"A 'debt coin' theme apparently set off by an Eric Bolling X post, alongside a wider US national debt / Trump stablecoin-for-Treasuries news cycle. An established DebtCoin (vLie\u2026bonk, launched July 2025) already owns this story.\",\"stage\":\"peaking\",\"potential\":\"weak\",\"why_spreading\":\"A newsy tweet from a known TV host made the name easy to copy, and deployers flooded the market with clones. I couldn't verify the tweet's content or confirm organic spread beyond the clone rush.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None beyond sharing the name and pointing to the same tweet. It is a late clone (13:18 UTC) in a cluster where earlier copies already lead.\",\"competing_tokens\":\"BLPKe\u2026 ($624k market cap, created ~56 min earlier), FYM6\u2026 ($363k, ~75 min earlier), GENE1\u2026, tZNE\u2026, JLM2\u2026 ($4.3M h1 volume), D2gM\u2026, plus fresh copies launched after this one. There is also the legacy DebtCoin vLie\u2026bonk.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN flags 120 bundler wallets, and top bundler traders hold 62% share. GeckoTerminal shows 1,642 unique buyers against only 119 unique sellers, a very lopsided ratio that suggests scripted buying. There are many clones from different deployers. The creator wallet shows a 'creator_close' status and holds 0%. There is no website, no socials and no DexScreener profile.\",\"uncertainty\":\"Holders are spread out (top 10 hold 14% by RugCheck's count). Some of the buying may be real retail chasing the tweet.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the Meteora LP is unlocked and seeded by a few providers, so it can be pulled at any time\",\"Liquidity (~$52k) is close to market cap (~$68k), consistent with a dev-provided pool that can be withdrawn\",\"120 bundler wallets, with top bundler traders at 62%\",\"Already dumping (-32% to -58% over 5 minutes) right after a 5x\",\"Clone flooding splits the buyers\"]},\"counterargument\":\"Volume is huge relative to market cap ($1.29M in under 15 minutes on a $68k cap), and more than 1,900 holders arrived within minutes. If the Bolling tweet keeps circulating, a cheap clone could get a second leg: going from $68k back to its $151k high is only about 2.2x. JLM2 shows this cluster can attract a lot of money.\",\"unknowns\":[\"What the Eric Bolling post actually says, and whether it endorses any specific contract\",\"Who holds the Meteora LP position\",\"Whether the bundler wallets are the deployer's own\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The Bolling post returned HTTP 402. Web searches turned up only the legacy DebtCoin project and unrelated Trump debt/stablecoin news. Time budget was short, so Reddit, Telegram and Discord were not searched.\"},\"thesis\":\"A late same-name clone in a pool with unlocked LP, heavy bundler activity, and price already reversing hard. It is not the canonical token, and the rug risk is high. Low runner probability.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":55,\"survival_score\":18,\"attention_score\":55,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/ericbolling/status/2103816977047531911\",\"what\":\"X link from GeckoTerminal; fetch failed with HTTP 402\"},{\"url\":\"https://coinmarketcap.com/currencies/debtcoin/\",\"what\":\"The legacy DebtCoin (July 2025), which owns the DEBT name\"},{\"url\":\"https://x.com/DebtCoinBonk/status/1950556610582970393\",\"what\":\"The legacy DebtCoin project's X account\"},{\"url\":\"https://www.mitrade.com/au/insights/Economics/news-of-the-day/beincrypto-TRUMPUSD-202609240926\",\"what\":\"Background national-debt news (Trump stablecoin plan); no token mentioned\"}]}",
+ "structured_output": {
+  "what_is_happening": "DEBT COIN (9BUc\u2026) is one of at least 8 \"DEBT COIN\" tokens launched on Solana in the last ~75 minutes. It launched at 13:18 UTC, in a dev-seeded Meteora pool with 100% of the LP unlocked. Its GeckoTerminal X link points to an Eric Bolling post (ericbolling/status/2103816977047531911), which suggests the whole cluster is trading on one Bolling tweet mentioning a \"debt coin\". I couldn't open that post (HTTP 402), so I don't know what it says. The token went up about 5.6x in 10 minutes and was already down 32-58% over the last 5 minutes at collection. Older same-name clones launched 40-70 minutes earlier and are much bigger ($624k and $363k market cap).",
+  "narrative": {
+   "description": "A 'debt coin' theme apparently set off by an Eric Bolling X post, alongside a wider US national debt / Trump stablecoin-for-Treasuries news cycle. An established DebtCoin (vLie\u2026bonk, launched July 2025) already owns this story.",
+   "stage": "peaking",
+   "potential": "weak",
+   "why_spreading": "A newsy tweet from a known TV host made the name easy to copy, and deployers flooded the market with clones. I couldn't verify the tweet's content or confirm organic spread beyond the clone rush."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None beyond sharing the name and pointing to the same tweet. It is a late clone (13:18 UTC) in a cluster where earlier copies already lead.",
+   "competing_tokens": "BLPKe\u2026 ($624k market cap, created ~56 min earlier), FYM6\u2026 ($363k, ~75 min earlier), GENE1\u2026, tZNE\u2026, JLM2\u2026 ($4.3M h1 volume), D2gM\u2026, plus fresh copies launched after this one. There is also the legacy DebtCoin vLie\u2026bonk.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN flags 120 bundler wallets, and top bundler traders hold 62% share. GeckoTerminal shows 1,642 unique buyers against only 119 unique sellers, a very lopsided ratio that suggests scripted buying. There are many clones from different deployers. The creator wallet shows a 'creator_close' status and holds 0%. There is no website, no socials and no DexScreener profile.",
+   "uncertainty": "Holders are spread out (top 10 hold 14% by RugCheck's count). Some of the buying may be real retail chasing the tweet."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the Meteora LP is unlocked and seeded by a few providers, so it can be pulled at any time",
+    "Liquidity (~$52k) is close to market cap (~$68k), consistent with a dev-provided pool that can be withdrawn",
+    "120 bundler wallets, with top bundler traders at 62%",
+    "Already dumping (-32% to -58% over 5 minutes) right after a 5x",
+    "Clone flooding splits the buyers"
+   ]
+  },
+  "counterargument": "Volume is huge relative to market cap ($1.29M in under 15 minutes on a $68k cap), and more than 1,900 holders arrived within minutes. If the Bolling tweet keeps circulating, a cheap clone could get a second leg: going from $68k back to its $151k high is only about 2.2x. JLM2 shows this cluster can attract a lot of money.",
+  "unknowns": [
+   "What the Eric Bolling post actually says, and whether it endorses any specific contract",
+   "Who holds the Meteora LP position",
+   "Whether the bundler wallets are the deployer's own"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The Bolling post returned HTTP 402. Web searches turned up only the legacy DebtCoin project and unrelated Trump debt/stablecoin news. Time budget was short, so Reddit, Telegram and Discord were not searched."
+  },
+  "thesis": "A late same-name clone in a pool with unlocked LP, heavy bundler activity, and price already reversing hard. It is not the canonical token, and the rug risk is high. Low runner probability.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 55,
+  "survival_score": 18,
+  "attention_score": 55,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/ericbolling/status/2103816977047531911",
+    "what": "X link from GeckoTerminal; fetch failed with HTTP 402"
+   },
+   {
+    "url": "https://coinmarketcap.com/currencies/debtcoin/",
+    "what": "The legacy DebtCoin (July 2025), which owns the DEBT name"
+   },
+   {
+    "url": "https://x.com/DebtCoinBonk/status/1950556610582970393",
+    "what": "The legacy DebtCoin project's X account"
+   },
+   {
+    "url": "https://www.mitrade.com/au/insights/Economics/news-of-the-day/beincrypto-TRUMPUSD-202609240926",
+    "what": "Background national-debt news (Trump stablecoin plan); no token mentioned"
+   }
+  ]
+ },
+ "ttft_ms": 2482,
+ "type": "result",
+ "duration_ms": 56960,
+ "uuid": "4918810c-7aa1-43e3-b5a3-1a8b5cf031eb",
+ "ttft_stream_ms": 1545,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 1545,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

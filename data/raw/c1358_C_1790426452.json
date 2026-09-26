@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 42999,
+ "stop_reason": "tool_use",
+ "session_id": "964e90a9-ea82-4bc6-8111-71a55471f941",
+ "total_cost_usd": 0.2355952,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13595,
+  "cache_read_input_tokens": 29291,
+  "output_tokens": 2684,
+  "output_tokens_details": {
+   "thinking_tokens": 360
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13595,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2127,
+    "cache_read_input_tokens": 14709,
+    "cache_creation_input_tokens": 1650,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1650
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2684,
+   "cacheReadInputTokens": 29291,
+   "cacheCreationInputTokens": 13595,
+   "webSearchRequests": 0,
+   "costUSD": 0.16832219999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 360,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 31563,
+   "outputTokens": 1142,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.067273,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A generic \\\"CLAUDE AI\\\" clone launched directly on PumpSwap (created 12:24 UTC; the pool appeared 6 seconds after the mint; not a pump.fun curve graduate). It is ~16 minutes old at a $24k market cap, with $137k volume and +85% in the first hour. The flow looks manufactured: 1,748 unique buyers against only 53 unique sellers, and about 2,000 buys at roughly $60 each on a $24k coin. GeckoTerminal counts 336 holders with 98% in the top 10. The creator holds 20.5% of supply and 100% of the LP is unlocked, so the creator can pull it. The packet shows at least 10 other \\\"CLAUDE AI\\\"/\\\"Claude Opus5.5\\\" tokens from the past ~17 hours, all now at ~$0 liquidity, which fits a serial clone-and-rug pattern around the Opus 5.5 release. There are no socials, no website and no DexScreener profile, and web searches for the contract address returned nothing.\",\"narrative\":{\"description\":\"Anthropic released Claude Opus 5.5 on 2026-09-22. It is a real event, but it is 4 days old, and Claude-themed tickers have been cloned over and over on Solana.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Launchers are recycling the Claude name. The packet lists many same-name tokens from today that have all died, and I found no fresh catalyst.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"Nothing makes this token special. It is one of at least 10 identical 'CLAUDE AI' launches from the last 17 hours, with no socials or community.\",\"competing_tokens\":\"qtf4Jx..., 4BbJWE..., ATZiQ4..., 8JHaAq..., HgU5h8... (the last had $787k h1 volume and is now at $0 liquidity), plus several others. All are at ~$0 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Buyers outnumber sellers ~33:1 by unique wallet (1,748 vs 53) on a $24k market cap. GeckoTerminal shows 336 holders with 98% in the top 10, while RugCheck/GMGN report ~1,800 holders, which points to dust or micro-buy bots. There are no socials. The launch was a direct PumpSwap pool where the creator holds unlocked LP plus 20.5% of supply. Earlier same-name clones have all gone to zero liquidity.\",\"uncertainty\":\"I could not see X or Telegram. GMGN reports a bot/degen rate of 0, and the creator wallet shows no prior launches (it may be a fresh wallet).\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked and controlled by the creator\",\"Creator holds 20.5% of supply\",\"Direct PumpSwap launch, not a pump.fun curve\",\"Unique-buyer count looks inflated by bots\",\"Serial same-name clones have all rugged to $0 liquidity\"]},\"counterargument\":\"Liquidity is large for the market cap ($32k LP against a $24k cap), buy pressure is heavy, mint and freeze authority are renounced, and GMGN flags no snipers or bundlers. If the flow is real retail rotation into the Claude theme, a move from $24k to $48k is small in absolute terms and could happen fast.\",\"unknowns\":[\"Whether the creator wallet is linked to the earlier CLAUDE AI clones\",\"Any X or Telegram activity\",\"Whether the buyer count is bot-generated\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"The contract search returned nothing relevant. The only news found was the Opus 5.5 release (Sept 22). The packet lists no project links. Time was limited, so I did not search Reddit, Telegram or Discord.\"},\"thesis\":\"This looks like a serial-clone Claude token: the creator controls unlocked LP and holds 20.5% of supply, the buyer counts look bot-inflated, and it trades on a stale narrative. Every earlier same-name token is at zero liquidity. A rug is more likely than a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":60,\"survival_score\":15,\"attention_score\":35,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.anthropic.com/claude-opus-5-5\",\"what\":\"Opus 5.5 release (the narrative source)\"},{\"url\":\"https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/\",\"what\":\"Release date Sept 22, 2026\"},{\"url\":\"https://x.com/giottus/status/2011342769982488794\",\"what\":\"Earlier Claude-themed memecoin wave on Solana\"}]}",
+ "structured_output": {
+  "what_is_happening": "A generic \"CLAUDE AI\" clone launched directly on PumpSwap (created 12:24 UTC; the pool appeared 6 seconds after the mint; not a pump.fun curve graduate). It is ~16 minutes old at a $24k market cap, with $137k volume and +85% in the first hour. The flow looks manufactured: 1,748 unique buyers against only 53 unique sellers, and about 2,000 buys at roughly $60 each on a $24k coin. GeckoTerminal counts 336 holders with 98% in the top 10. The creator holds 20.5% of supply and 100% of the LP is unlocked, so the creator can pull it. The packet shows at least 10 other \"CLAUDE AI\"/\"Claude Opus5.5\" tokens from the past ~17 hours, all now at ~$0 liquidity, which fits a serial clone-and-rug pattern around the Opus 5.5 release. There are no socials, no website and no DexScreener profile, and web searches for the contract address returned nothing.",
+  "narrative": {
+   "description": "Anthropic released Claude Opus 5.5 on 2026-09-22. It is a real event, but it is 4 days old, and Claude-themed tickers have been cloned over and over on Solana.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Launchers are recycling the Claude name. The packet lists many same-name tokens from today that have all died, and I found no fresh catalyst."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "Nothing makes this token special. It is one of at least 10 identical 'CLAUDE AI' launches from the last 17 hours, with no socials or community.",
+   "competing_tokens": "qtf4Jx..., 4BbJWE..., ATZiQ4..., 8JHaAq..., HgU5h8... (the last had $787k h1 volume and is now at $0 liquidity), plus several others. All are at ~$0 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Buyers outnumber sellers ~33:1 by unique wallet (1,748 vs 53) on a $24k market cap. GeckoTerminal shows 336 holders with 98% in the top 10, while RugCheck/GMGN report ~1,800 holders, which points to dust or micro-buy bots. There are no socials. The launch was a direct PumpSwap pool where the creator holds unlocked LP plus 20.5% of supply. Earlier same-name clones have all gone to zero liquidity.",
+   "uncertainty": "I could not see X or Telegram. GMGN reports a bot/degen rate of 0, and the creator wallet shows no prior launches (it may be a fresh wallet)."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked and controlled by the creator",
+    "Creator holds 20.5% of supply",
+    "Direct PumpSwap launch, not a pump.fun curve",
+    "Unique-buyer count looks inflated by bots",
+    "Serial same-name clones have all rugged to $0 liquidity"
+   ]
+  },
+  "counterargument": "Liquidity is large for the market cap ($32k LP against a $24k cap), buy pressure is heavy, mint and freeze authority are renounced, and GMGN flags no snipers or bundlers. If the flow is real retail rotation into the Claude theme, a move from $24k to $48k is small in absolute terms and could happen fast.",
+  "unknowns": [
+   "Whether the creator wallet is linked to the earlier CLAUDE AI clones",
+   "Any X or Telegram activity",
+   "Whether the buyer count is bot-generated"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "The contract search returned nothing relevant. The only news found was the Opus 5.5 release (Sept 22). The packet lists no project links. Time was limited, so I did not search Reddit, Telegram or Discord."
+  },
+  "thesis": "This looks like a serial-clone Claude token: the creator controls unlocked LP and holds 20.5% of supply, the buyer counts look bot-inflated, and it trades on a stale narrative. Every earlier same-name token is at zero liquidity. A rug is more likely than a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 35,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "what": "Opus 5.5 release (the narrative source)"
+   },
+   {
+    "url": "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/",
+    "what": "Release date Sept 22, 2026"
+   },
+   {
+    "url": "https://x.com/giottus/status/2011342769982488794",
+    "what": "Earlier Claude-themed memecoin wave on Solana"
+   }
+  ]
+ },
+ "ttft_ms": 3813,
+ "type": "result",
+ "duration_ms": 37828,
+ "uuid": "befe9240-5c21-4505-a5b7-ae05fda26280",
+ "ttft_stream_ms": 710,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 710,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

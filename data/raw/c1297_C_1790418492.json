@@ -1,0 +1,179 @@
+{
+ "duration_api_ms": 31776,
+ "stop_reason": "tool_use",
+ "session_id": "10461307-f844-44d2-bc80-c1b5a4c7a709",
+ "total_cost_usd": 0.18317360000000002,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11396,
+  "cache_read_input_tokens": 14623,
+  "output_tokens": 2342,
+  "output_tokens_details": {
+   "thinking_tokens": 347
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11396,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1968,
+    "cache_read_input_tokens": 11859,
+    "cache_creation_input_tokens": 2301,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2301
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2342,
+   "cacheReadInputTokens": 14623,
+   "cacheCreationInputTokens": 11396,
+   "webSearchRequests": 0,
+   "costUSD": 0.1409486,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 347,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 19735,
+   "outputTokens": 498,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.042225,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token called \\\"Memetically-Engineered Product\\\" ($m/ep) is one of at least 11 tokens with the same name launched within about an hour of each other. This one (9Broy\u2026, not a pump.fun \\\"\u2026pump\\\" address) was created directly on PumpSwap about 13 minutes before detection. Its liquidity pool is not locked, so the creator can withdraw it (RugCheck: 100% of LP unlocked, few LP providers). It shows $216k volume against a $31k market cap and +200% in the first hour. GeckoTerminal counts 2,036 unique buyers but only 58 unique sellers, and GMGN tags 40 wallets as bundlers holding about 32% of top trader supply, with 37 linked insider wallets. That looks more like manufactured buying than organic demand. The older pump.fun copy of the same name (6mEf\u2026pump) has a higher market cap and more volume, and it is probably the one the search result means (roughly $78k market cap, +1652%). GeckoTerminal links it to an X post by @CookedSupermann. I could not verify that post.\",\"narrative\":{\"description\":\"The name riffs on 'memetic engineering', the idea of deliberately designing memes. The story seems to come from one X post (CookedSupermann status). I did not find a wider cultural event behind it.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Something (probably one tweet) set off a burst of copycat deploys. Attention is split across more than 10 tokens with the same name.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. It is a non-pump.fun copy launched after the pump.fun version (6mEf\u2026pump), which came first and has more volume and a higher market cap.\",\"competing_tokens\":\"6mEf\u2026pump ($84k market cap, $319k h1 volume, earlier). 7mDU\u2026 ($317k volume). Plus about 8 dead copies with near-zero liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,036 unique buyers against 58 unique sellers in the first 15 minutes. 40 bundler wallets and a 37-wallet insider trade network. Creator balance is 0 (creator_close). The LP is unlocked and was seeded by the deployer on PumpSwap.\",\"uncertainty\":\"I did not see X posts directly. The buyer count may include real copy-traders who were routed to the wrong contract.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked and the creator can remove it\",\"Bundlers hold about 32%, plus a 37-wallet insider network\",\"Same-name copies, with the pump.fun version as the likely canonical one\",\"The deployer holds 0 and has already closed their position\"]},\"counterargument\":\"Heavy volume and 2,000+ buyers show real flow at a $31k market cap. If this copy picks up momentum from mixed-up buyers, it could double from a small base before anyone pulls the LP.\",\"unknowns\":[\"Content of the CookedSupermann tweet and whether it points to this contract\",\"Whether the LP owner will pull liquidity\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time was limited. A contract search returned nothing. A name search returned only a pump.fun listing for the competing copy. The packet lists no website or socials.\"},\"thesis\":\"A copycat with an unlocked LP and a bundled, likely fake buyer base. It is not the canonical token. High rug risk and a low chance of running.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":60,\"survival_score\":15,\"attention_score\":45,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://pump.fun/\",\"what\":\"Search snippet shows the pump.fun $m/ep listing at about $78k market cap (the competing copy)\"},{\"url\":\"https://en.wikipedia.org/wiki/Memetic_engineering\",\"what\":\"Background on the name\"},{\"url\":\"https://x.com/CookedSupermann/status/2103771937893965880\",\"what\":\"X post linked by GeckoTerminal (not verified)\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token called \"Memetically-Engineered Product\" ($m/ep) is one of at least 11 tokens with the same name launched within about an hour of each other. This one (9Broy\u2026, not a pump.fun \"\u2026pump\" address) was created directly on PumpSwap about 13 minutes before detection. Its liquidity pool is not locked, so the creator can withdraw it (RugCheck: 100% of LP unlocked, few LP providers). It shows $216k volume against a $31k market cap and +200% in the first hour. GeckoTerminal counts 2,036 unique buyers but only 58 unique sellers, and GMGN tags 40 wallets as bundlers holding about 32% of top trader supply, with 37 linked insider wallets. That looks more like manufactured buying than organic demand. The older pump.fun copy of the same name (6mEf\u2026pump) has a higher market cap and more volume, and it is probably the one the search result means (roughly $78k market cap, +1652%). GeckoTerminal links it to an X post by @CookedSupermann. I could not verify that post.",
+  "narrative": {
+   "description": "The name riffs on 'memetic engineering', the idea of deliberately designing memes. The story seems to come from one X post (CookedSupermann status). I did not find a wider cultural event behind it.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Something (probably one tweet) set off a burst of copycat deploys. Attention is split across more than 10 tokens with the same name."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. It is a non-pump.fun copy launched after the pump.fun version (6mEf\u2026pump), which came first and has more volume and a higher market cap.",
+   "competing_tokens": "6mEf\u2026pump ($84k market cap, $319k h1 volume, earlier). 7mDU\u2026 ($317k volume). Plus about 8 dead copies with near-zero liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,036 unique buyers against 58 unique sellers in the first 15 minutes. 40 bundler wallets and a 37-wallet insider trade network. Creator balance is 0 (creator_close). The LP is unlocked and was seeded by the deployer on PumpSwap.",
+   "uncertainty": "I did not see X posts directly. The buyer count may include real copy-traders who were routed to the wrong contract."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked and the creator can remove it",
+    "Bundlers hold about 32%, plus a 37-wallet insider network",
+    "Same-name copies, with the pump.fun version as the likely canonical one",
+    "The deployer holds 0 and has already closed their position"
+   ]
+  },
+  "counterargument": "Heavy volume and 2,000+ buyers show real flow at a $31k market cap. If this copy picks up momentum from mixed-up buyers, it could double from a small base before anyone pulls the LP.",
+  "unknowns": [
+   "Content of the CookedSupermann tweet and whether it points to this contract",
+   "Whether the LP owner will pull liquidity"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time was limited. A contract search returned nothing. A name search returned only a pump.fun listing for the competing copy. The packet lists no website or socials."
+  },
+  "thesis": "A copycat with an unlocked LP and a bundled, likely fake buyer base. It is not the canonical token. High rug risk and a low chance of running.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 45,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://pump.fun/",
+    "what": "Search snippet shows the pump.fun $m/ep listing at about $78k market cap (the competing copy)"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Memetic_engineering",
+    "what": "Background on the name"
+   },
+   {
+    "url": "https://x.com/CookedSupermann/status/2103771937893965880",
+    "what": "X post linked by GeckoTerminal (not verified)"
+   }
+  ]
+ },
+ "ttft_ms": 3261,
+ "type": "result",
+ "duration_ms": 27381,
+ "uuid": "1776c13c-1688-4cf1-b801-e7f86fa676ee",
+ "ttft_stream_ms": 747,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 748,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

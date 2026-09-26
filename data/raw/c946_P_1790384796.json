@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 20515,
+ "stop_reason": "tool_use",
+ "session_id": "90a7c0d6-ab08-4dd5-b75e-5b7c16a73dd2",
+ "total_cost_usd": 0.0968964,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6773,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2114,
+  "output_tokens_details": {
+   "thinking_tokens": 296
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6773,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2114,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 6773,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6773
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2114,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 6773,
+   "webSearchRequests": 0,
+   "costUSD": 0.0968964,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 296,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"\\\"O\\\" is a 15-minute-old Meteora pair, not a pump.fun coin, and there is no known creator. It went up about 290% to roughly $40k market cap on about $1.2M of volume, which is about 29 times its market cap in one hour. The trades look manufactured. GeckoTerminal counts about 1,524 unique buyers but only 63 unique sellers, and those 63 made more sell transactions than all the buys. GMGN flags 53 bundler wallets, puts the top bundler trader share at 99.7% and the \\\"entrapment\\\" share at 79.7%, and GeckoTerminal puts the top 10 holders at 88%. The LP is 100% unlocked. GeckoTerminal's last-5-minute numbers (about $31k volume, price -8%) suggest the burst is already fading. That GeckoTerminal m5 figure is about $31k against DexScreener's $462k; the gap may be a lag between the two sources.\",\"narrative\":{\"description\":\"The name is one letter, 'O'. The only link is a tweet status from the handle thsottiaux, which appears to belong to an OpenAI/Codex engineer, so this is probably a one-tweet AI-lab meme. There is no website, no Telegram and no DexScreener profile.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Most of the activity looks like bundled or bot flow, not people spreading a story. Tokens based on a single tweet from a tech figure seldom last unless the person engages with them.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It links to the tweet, and no other token with the same ticker appears in the packet.\",\"competing_tokens\":\"None in the packet. A single-letter ticker is easy for other launches to copy.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Only 63 unique sellers against about 1,524 buyers, yet sell transactions (3,716) outnumber buys (3,428). That points to a small group of wallets farming the flow. There are 53 bundlers, top bundler trader share is 99.7%, entrapment share is 79.7%, and the fresh-wallet rate is 49%. Volume of 29 times market cap does not fit the $40k valuation. The LP is unlocked and there is no creator on record.\",\"uncertainty\":\"The 1,500+ unique buyers could include some real retail from the tweet. GMGN's labels can misclassify wallets.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 100% unlocked on Meteora, so whoever holds it can remove the liquidity.\",\"Few LP providers.\",\"GeckoTerminal puts the top 10 holders at 88%. RugCheck's 25% excludes some accounts.\",\"Bundler and entrapment wallets dominate the traders.\",\"Momentum is fading: GeckoTerminal shows price -8% over the last 5 minutes with much lower volume.\"]},\"counterargument\":\"A tweet from an OpenAI engineer is real attention. About 1,500 unique buyers in 30 minutes is broad, and mint and freeze authority are both renounced. If the tweet spreads or its author engages, a single-letter AI meme at $40k could re-rate quickly, and a 2x only needs about $80k market cap.\",\"unknowns\":[\"The content of the tweet and whether it is actually about this token\",\"Who holds the Meteora LP position\",\"Whether the unique-buyer count is inflated by bots\",\"Whether the author of the tweet will engage\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. Judged from the packet only.\"},\"thesis\":\"This is a coordinated, bundled pump on an unlocked Meteora LP, loosely tied to a tech figure's tweet. The spike has already peaked and momentum is fading. A liquidity pull or a slow bleed is much more likely than another 2x from the entry price.\",\"continuation_view\":\"fade\",\"p_runner\":5,\"p_rug\":45,\"survival_score\":22,\"attention_score\":45,\"manipulation_risk\":88,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "\"O\" is a 15-minute-old Meteora pair, not a pump.fun coin, and there is no known creator. It went up about 290% to roughly $40k market cap on about $1.2M of volume, which is about 29 times its market cap in one hour. The trades look manufactured. GeckoTerminal counts about 1,524 unique buyers but only 63 unique sellers, and those 63 made more sell transactions than all the buys. GMGN flags 53 bundler wallets, puts the top bundler trader share at 99.7% and the \"entrapment\" share at 79.7%, and GeckoTerminal puts the top 10 holders at 88%. The LP is 100% unlocked. GeckoTerminal's last-5-minute numbers (about $31k volume, price -8%) suggest the burst is already fading. That GeckoTerminal m5 figure is about $31k against DexScreener's $462k; the gap may be a lag between the two sources.",
+  "narrative": {
+   "description": "The name is one letter, 'O'. The only link is a tweet status from the handle thsottiaux, which appears to belong to an OpenAI/Codex engineer, so this is probably a one-tweet AI-lab meme. There is no website, no Telegram and no DexScreener profile.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Most of the activity looks like bundled or bot flow, not people spreading a story. Tokens based on a single tweet from a tech figure seldom last unless the person engages with them."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It links to the tweet, and no other token with the same ticker appears in the packet.",
+   "competing_tokens": "None in the packet. A single-letter ticker is easy for other launches to copy.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Only 63 unique sellers against about 1,524 buyers, yet sell transactions (3,716) outnumber buys (3,428). That points to a small group of wallets farming the flow. There are 53 bundlers, top bundler trader share is 99.7%, entrapment share is 79.7%, and the fresh-wallet rate is 49%. Volume of 29 times market cap does not fit the $40k valuation. The LP is unlocked and there is no creator on record.",
+   "uncertainty": "The 1,500+ unique buyers could include some real retail from the tweet. GMGN's labels can misclassify wallets."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 100% unlocked on Meteora, so whoever holds it can remove the liquidity.",
+    "Few LP providers.",
+    "GeckoTerminal puts the top 10 holders at 88%. RugCheck's 25% excludes some accounts.",
+    "Bundler and entrapment wallets dominate the traders.",
+    "Momentum is fading: GeckoTerminal shows price -8% over the last 5 minutes with much lower volume."
+   ]
+  },
+  "counterargument": "A tweet from an OpenAI engineer is real attention. About 1,500 unique buyers in 30 minutes is broad, and mint and freeze authority are both renounced. If the tweet spreads or its author engages, a single-letter AI meme at $40k could re-rate quickly, and a 2x only needs about $80k market cap.",
+  "unknowns": [
+   "The content of the tweet and whether it is actually about this token",
+   "Who holds the Meteora LP position",
+   "Whether the unique-buyer count is inflated by bots",
+   "Whether the author of the tweet will engage"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. Judged from the packet only."
+  },
+  "thesis": "This is a coordinated, bundled pump on an unlocked Meteora LP, loosely tied to a tech figure's tweet. The spike has already peaked and momentum is fading. A liquidity pull or a slow bleed is much more likely than another 2x from the entry price.",
+  "continuation_view": "fade",
+  "p_runner": 5,
+  "p_rug": 45,
+  "survival_score": 22,
+  "attention_score": 45,
+  "manipulation_risk": 88,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3925,
+ "type": "result",
+ "duration_ms": 20562,
+ "uuid": "2d6ee9cb-57e6-4e6d-a542-aeee4f213c25",
+ "ttft_stream_ms": 853,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 854,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

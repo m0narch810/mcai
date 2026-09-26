@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 21527,
+ "stop_reason": "tool_use",
+ "session_id": "fdcb662e-68d8-40f9-9f2c-cd3fcc2796d9",
+ "total_cost_usd": 0.11146439999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8329,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2220,
+  "output_tokens_details": {
+   "thinking_tokens": 358
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8329,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2220,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8329,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8329
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2220,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8329,
+   "webSearchRequests": 0,
+   "costUSD": 0.11146439999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 358,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A direct PumpSwap pool (not launched through the pump.fun curve, and the mint has no \\\"pump\\\" suffix) for \\\"Tesla Owners Silicon Valley\\\" (TOSV). It is 15 minutes old, has a $15.5k market cap and $25.7k of liquidity, and has done about $208k\u2013248k of volume. That volume came from about 738 unique buyers against 113 sellers, and price is up 33\u201345%. The name matches the well-known Tesla fan account (@teslaownerssv), which suggests a news or post-driven snipe meme. At least 10 same-name clones launched in the same hour, and most of them already have zero or near-zero liquidity after large volume. That looks like a rug farm working the headline.\",\"narrative\":{\"description\":\"A meme named after the Tesla Owners Silicon Valley fan account, probably set off by an X post from that account or from Musk. This kind of name-borrowing meme usually has a short attention life unless the account itself endorses the token.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Many clones appeared in a short window, which points to some trigger event, possibly a post about a token or crypto. Buyer breadth is high (738 unique buyers in 15 minutes), consistent with sniper and trend bots chasing the headline.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It currently has the highest liquidity and the most sustained volume of the TOSV clones. The GeckoTerminal twitter handle field is set to teslaownerssv, but the project could have set that itself, so it does not show any endorsement.\",\"competing_tokens\":\"At least 9 same-name tokens. 5MYP (TOSV) has $16.9k liquidity, a $42k market cap and $74k of volume. 8mbL has $4 liquidity after $166k of volume, so it has effectively rugged. Several others have $0 liquidity after $67k\u2013107k of volume, which also looks like rugs.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Holders look spread out: top 10 hold 8% excluding the pool, the dev holds 0%, and GMGN shows no snipers, low fresh-wallet and bot rates, and no paid boosts. Against that, GMGN tags 65 bundler wallets, and the pool was seeded directly with liquidity above the market cap and 100% of LP unlocked. Nearby clones rugged after similar volume bursts, which fits a serial liquidity-pull operator.\",\"uncertainty\":\"I can't see who holds the LP tokens or whether the source post actually mentions a token.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked and pullable on a direct PumpSwap pool\",\"Liquidity is above market cap, a typical self-seeded rug-farm setup\",\"Same-name clones in the same hour have already had their liquidity pulled\",\"GMGN tags 65 bundler wallets\",\"Heavy ticker competition splits the attention\"]},\"counterargument\":\"Buyer breadth is real: 738 unique buyers against 113 sellers, with a 2:1 buy/sell count and low top-holder concentration. This clone leads its cohort on liquidity. If the headline keeps spreading, a $15k market cap can easily double, and deep liquidity relative to market cap means slippage stays low on the way up.\",\"unknowns\":[\"Who holds the LP tokens and whether it is the creator\",\"What the trigger post was and whether @teslaownerssv acknowledged any token\",\"Whether the creator wallet is tied to the rugged clones\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition. The report uses only the evidence packet.\"},\"thesis\":\"This looks like a headline clone in a cohort of rugging same-name tokens. Its LP is fully unlocked on a self-seeded PumpSwap pool, and liquidity above market cap is a classic pull setup. Demand breadth is decent, but the chance that liquidity is removed before a 2x is high. I rank it low.\",\"continuation_view\":\"fade\",\"p_runner\":7,\"p_rug\":58,\"survival_score\":22,\"attention_score\":60,\"manipulation_risk\":68,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A direct PumpSwap pool (not launched through the pump.fun curve, and the mint has no \"pump\" suffix) for \"Tesla Owners Silicon Valley\" (TOSV). It is 15 minutes old, has a $15.5k market cap and $25.7k of liquidity, and has done about $208k\u2013248k of volume. That volume came from about 738 unique buyers against 113 sellers, and price is up 33\u201345%. The name matches the well-known Tesla fan account (@teslaownerssv), which suggests a news or post-driven snipe meme. At least 10 same-name clones launched in the same hour, and most of them already have zero or near-zero liquidity after large volume. That looks like a rug farm working the headline.",
+  "narrative": {
+   "description": "A meme named after the Tesla Owners Silicon Valley fan account, probably set off by an X post from that account or from Musk. This kind of name-borrowing meme usually has a short attention life unless the account itself endorses the token.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Many clones appeared in a short window, which points to some trigger event, possibly a post about a token or crypto. Buyer breadth is high (738 unique buyers in 15 minutes), consistent with sniper and trend bots chasing the headline."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It currently has the highest liquidity and the most sustained volume of the TOSV clones. The GeckoTerminal twitter handle field is set to teslaownerssv, but the project could have set that itself, so it does not show any endorsement.",
+   "competing_tokens": "At least 9 same-name tokens. 5MYP (TOSV) has $16.9k liquidity, a $42k market cap and $74k of volume. 8mbL has $4 liquidity after $166k of volume, so it has effectively rugged. Several others have $0 liquidity after $67k\u2013107k of volume, which also looks like rugs.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Holders look spread out: top 10 hold 8% excluding the pool, the dev holds 0%, and GMGN shows no snipers, low fresh-wallet and bot rates, and no paid boosts. Against that, GMGN tags 65 bundler wallets, and the pool was seeded directly with liquidity above the market cap and 100% of LP unlocked. Nearby clones rugged after similar volume bursts, which fits a serial liquidity-pull operator.",
+   "uncertainty": "I can't see who holds the LP tokens or whether the source post actually mentions a token."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked and pullable on a direct PumpSwap pool",
+    "Liquidity is above market cap, a typical self-seeded rug-farm setup",
+    "Same-name clones in the same hour have already had their liquidity pulled",
+    "GMGN tags 65 bundler wallets",
+    "Heavy ticker competition splits the attention"
+   ]
+  },
+  "counterargument": "Buyer breadth is real: 738 unique buyers against 113 sellers, with a 2:1 buy/sell count and low top-holder concentration. This clone leads its cohort on liquidity. If the headline keeps spreading, a $15k market cap can easily double, and deep liquidity relative to market cap means slippage stays low on the way up.",
+  "unknowns": [
+   "Who holds the LP tokens and whether it is the creator",
+   "What the trigger post was and whether @teslaownerssv acknowledged any token",
+   "Whether the creator wallet is tied to the rugged clones"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition. The report uses only the evidence packet."
+  },
+  "thesis": "This looks like a headline clone in a cohort of rugging same-name tokens. Its LP is fully unlocked on a self-seeded PumpSwap pool, and liquidity above market cap is a classic pull setup. Demand breadth is decent, but the chance that liquidity is removed before a 2x is high. I rank it low.",
+  "continuation_view": "fade",
+  "p_runner": 7,
+  "p_rug": 58,
+  "survival_score": 22,
+  "attention_score": 60,
+  "manipulation_risk": 68,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4533,
+ "type": "result",
+ "duration_ms": 21573,
+ "uuid": "620ea2cb-619e-4007-b223-be30e89a94fa",
+ "ttft_stream_ms": 634,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 634,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

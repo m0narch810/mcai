@@ -1,0 +1,184 @@
+{
+ "duration_api_ms": 43425,
+ "stop_reason": "tool_use",
+ "session_id": "a2a1f6f3-d191-4818-9307-6289624c2b69",
+ "total_cost_usd": 0.21909159999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11714,
+  "cache_read_input_tokens": 26858,
+  "output_tokens": 2731,
+  "output_tokens_details": {
+   "thinking_tokens": 494
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11714,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2192,
+    "cache_read_input_tokens": 13282,
+    "cache_creation_input_tokens": 1196,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1196
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2731,
+   "cacheReadInputTokens": 26858,
+   "cacheCreationInputTokens": 11714,
+   "webSearchRequests": 0,
+   "costUSD": 0.1537276,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 494,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 30344,
+   "outputTokens": 1004,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06536399999999999,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A token copying the ticker and name of PAID (UsePaid) was created about 13 minutes before detection. It trades in a pool set up directly on PumpSwap: the mint has no \\\"pump\\\" suffix and migrated_unix is 0. The real UsePaid token is 98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump (about $47M market cap, with KuCoin and Bitrue coverage). The copy borrowed the @UsePaid X handle for its GeckoTerminal metadata. Buying has been one-sided, with 1,198 unique buyers against 51 sellers, most likely confused or bot buyers chasing the PAID name. The creator still holds 19% and 100% of the LP is unlocked.\",\"narrative\":{\"description\":\"UsePaid is a real, growing product that routes pump.fun creator fees to X accounts via X Money. Its token 98kf...pump ran to a $30-50M market cap in September 2026.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The real PAID token has momentum and media coverage (KuCoin flash news). Copycat launches try to catch spillover buyers who search for the ticker.\"},\"token_connection\":{\"assessment\":\"none\",\"why_this_token\":\"No link to UsePaid found. Search results and exchange articles name 98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump as the PAID contract. This token only lists the @UsePaid handle in its GeckoTerminal metadata, which anyone can set.\",\"competing_tokens\":\"98kf...pump (canonical, about $47M). 4f3w... (about $93M, zero volume in the last hour). Several dead copies.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"1,198 unique buyers vs 51 unique sellers in 13 minutes is unnaturally lopsided. The creator holds 19% and the LP is unlocked. The mint is not a pump.fun mint and the pool was set up directly on PumpSwap, so the dev controls the liquidity. Searching the contract address turned up no organic posts.\",\"uncertainty\":\"No X data. The buyers could be copy-trade or sniper bots rather than coordinated wallets, and GMGN shows 0 bundlers and 0 snipers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and controlled by the creator (RugCheck flags it as danger)\",\"The creator holds 19% of supply and can dump it into about $49k of liquidity\",\"Ticker hijack of a $47M token\",\"Few LP providers\"]},\"counterargument\":\"Spillover demand from the real PAID token is strong: over 1,100 buyers in 13 minutes and $340k of volume on a $55k market cap. Copycat PAID tokens can briefly 2-3x while confused buyers keep arriving. GMGN shows no bundlers, snipers or bot share, and mint and freeze authority are both renounced. The creator's previous token reached a $330k ATH.\",\"unknowns\":[\"Whether UsePaid ever endorsed this contract (nothing found)\",\"Where the buyers come from\",\"Why the creator set up the pool directly on PumpSwap\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract address search returned nothing. News and the usepaid.app site identify the canonical PAID as 98kf...pump. A lookalike domain, usspaid.app, also appeared in results. Reddit, Telegram and Discord were not attempted because of the time limit.\"},\"thesis\":\"This is a ticker-hijack copy of the hot UsePaid PAID token. The pool is dev-controlled with unlocked LP, and the creator holds 19%. Confusion buying can bring brief pumps, but a rug or dump is more likely than a clean 2x from the entry after the move has already gone up 300%.\",\"continuation_view\":\"strong_fade\",\"p_runner\":8,\"p_rug\":60,\"survival_score\":18,\"attention_score\":55,\"manipulation_risk\":72,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://www.bitrue.com/blog/what-is-usepaid\",\"what\":\"UsePaid explainer; names canonical PAID contract 98kf...pump\"},{\"url\":\"https://www.kucoin.com/news/flash/solana-ecosystem-token-paid-market-cap-surpasses-36m-briefly\",\"what\":\"Real PAID token market-cap run\"},{\"url\":\"https://usepaid.app/\",\"what\":\"Project site\"},{\"url\":\"https://x.com/usepaid\",\"what\":\"UsePaid X account\"}]}",
+ "structured_output": {
+  "what_is_happening": "A token copying the ticker and name of PAID (UsePaid) was created about 13 minutes before detection. It trades in a pool set up directly on PumpSwap: the mint has no \"pump\" suffix and migrated_unix is 0. The real UsePaid token is 98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump (about $47M market cap, with KuCoin and Bitrue coverage). The copy borrowed the @UsePaid X handle for its GeckoTerminal metadata. Buying has been one-sided, with 1,198 unique buyers against 51 sellers, most likely confused or bot buyers chasing the PAID name. The creator still holds 19% and 100% of the LP is unlocked.",
+  "narrative": {
+   "description": "UsePaid is a real, growing product that routes pump.fun creator fees to X accounts via X Money. Its token 98kf...pump ran to a $30-50M market cap in September 2026.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The real PAID token has momentum and media coverage (KuCoin flash news). Copycat launches try to catch spillover buyers who search for the ticker."
+  },
+  "token_connection": {
+   "assessment": "none",
+   "why_this_token": "No link to UsePaid found. Search results and exchange articles name 98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump as the PAID contract. This token only lists the @UsePaid handle in its GeckoTerminal metadata, which anyone can set.",
+   "competing_tokens": "98kf...pump (canonical, about $47M). 4f3w... (about $93M, zero volume in the last hour). Several dead copies.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "1,198 unique buyers vs 51 unique sellers in 13 minutes is unnaturally lopsided. The creator holds 19% and the LP is unlocked. The mint is not a pump.fun mint and the pool was set up directly on PumpSwap, so the dev controls the liquidity. Searching the contract address turned up no organic posts.",
+   "uncertainty": "No X data. The buyers could be copy-trade or sniper bots rather than coordinated wallets, and GMGN shows 0 bundlers and 0 snipers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and controlled by the creator (RugCheck flags it as danger)",
+    "The creator holds 19% of supply and can dump it into about $49k of liquidity",
+    "Ticker hijack of a $47M token",
+    "Few LP providers"
+   ]
+  },
+  "counterargument": "Spillover demand from the real PAID token is strong: over 1,100 buyers in 13 minutes and $340k of volume on a $55k market cap. Copycat PAID tokens can briefly 2-3x while confused buyers keep arriving. GMGN shows no bundlers, snipers or bot share, and mint and freeze authority are both renounced. The creator's previous token reached a $330k ATH.",
+  "unknowns": [
+   "Whether UsePaid ever endorsed this contract (nothing found)",
+   "Where the buyers come from",
+   "Why the creator set up the pool directly on PumpSwap"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_found",
+   "notes": "The contract address search returned nothing. News and the usepaid.app site identify the canonical PAID as 98kf...pump. A lookalike domain, usspaid.app, also appeared in results. Reddit, Telegram and Discord were not attempted because of the time limit."
+  },
+  "thesis": "This is a ticker-hijack copy of the hot UsePaid PAID token. The pool is dev-controlled with unlocked LP, and the creator holds 19%. Confusion buying can bring brief pumps, but a rug or dump is more likely than a clean 2x from the entry after the move has already gone up 300%.",
+  "continuation_view": "strong_fade",
+  "p_runner": 8,
+  "p_rug": 60,
+  "survival_score": 18,
+  "attention_score": 55,
+  "manipulation_risk": 72,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://www.bitrue.com/blog/what-is-usepaid",
+    "what": "UsePaid explainer; names canonical PAID contract 98kf...pump"
+   },
+   {
+    "url": "https://www.kucoin.com/news/flash/solana-ecosystem-token-paid-market-cap-surpasses-36m-briefly",
+    "what": "Real PAID token market-cap run"
+   },
+   {
+    "url": "https://usepaid.app/",
+    "what": "Project site"
+   },
+   {
+    "url": "https://x.com/usepaid",
+    "what": "UsePaid X account"
+   }
+  ]
+ },
+ "ttft_ms": 2773,
+ "type": "result",
+ "duration_ms": 39169,
+ "uuid": "bf60b406-7082-43bf-b030-b56ccce17f63",
+ "ttft_stream_ms": 919,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 919,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

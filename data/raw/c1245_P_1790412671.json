@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 21566,
+ "stop_reason": "tool_use",
+ "session_id": "b80a86eb-bdce-468b-b12e-9b6ab7a03d1b",
+ "total_cost_usd": 0.1132164,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8423,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2270,
+  "output_tokens_details": {
+   "thinking_tokens": 320
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8423,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2270,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8423,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8423
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2270,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8423,
+   "webSearchRequests": 0,
+   "costUSD": 0.1132164,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 320,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A roughly 15-minute-old Solana coin named \\\"\u8611\u83c7\u5934\u548c\u6211\u768416\u5e74\\\" (\\\"Mushroom Head and me, 16 years\\\"). It links to a Douyin note, which suggests it rides a viral Chinese pet or life story. It is at about $117k market cap with $26k liquidity and $565k volume in its first hour. The price is up about 114%, and 30\u201347% of that came in the last 5 minutes. About 2,001 unique buyers against 137 sellers, and 811 buyers in the last 5 minutes alone. At least 9 copycat tokens with the same name or ticker were launched within minutes. This one is clearly the volume and market-cap leader among those with live liquidity.\",\"narrative\":{\"description\":\"This looks like a Chinese-community meme built on a viral Douyin post about someone's 16 years with a pet or companion nicknamed \\\"Mushroom Head\\\" (\u8611\u83c7\u5934). Emotional pet and life stories from Douyin or Weibo regularly produce fast CN-meme runs on Solana.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A rush of launches with the same name within minutes means the source content is trending right now. The buyer count jumping in the last 5 minutes points to CN traders finding the leading contract.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It has by far the most volume and buyers among the same-name tokens that still have real liquidity, so it is the de facto leader. The GeckoTerminal-linked X handle points at a specific post.\",\"competing_tokens\":\"At least 9 same-name or MGT-ticker clones. Most have near-zero liquidity (dead or rugged). BRhHT... has $22k liquidity but only $53k market cap and low volume. 9pTwP... is older but dead.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Buyer breadth looks organic: 2,001 unique buyers vs 137 sellers, bot/degen rate about 0, fresh-wallet rate 0, no paid boosts or ads, no snipers. GMGN says the top 10 hold 3.96%, and the creator's balance is closed out. Against that, 91 wallets are tagged as bundlers (holding 4.3%), and a clone swarm is typical of launch-farming groups.\",\"uncertainty\":\"RugCheck shows one non-pool holder at 80%, which is probably an unlabeled curve or pool vault since GMGN's top-10 figure is 3.96%. If it is not a vault, it is a catastrophic concentration. The LP data also conflicts: RugCheck says 99.99% unlocked, GMGN says burn ratio 1.0.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked, which conflicts with GMGN's LP burn ratio of 1.0\",\"A top holder at 80.05% that may be an unlabeled pool or vault\",\"91 bundler wallets\",\"Liquidity of about $26k against about 20x hourly turnover means sharp swings\",\"Clone competition splitting attention\"]},\"counterargument\":\"CN story coins often go vertical in the first 15\u201330 minutes and then bleed out once the Douyin trend cools. Entry comes after a +114% move, near a local peak just under the $156k ATH, so a -50% retrace before any 2x is quite plausible. The unlocked LP and the 80% holder, if either is real, could end in a rug.\",\"unknowns\":[\"Whether the 80% holder is a pool or vault account\",\"The real LP lock or burn status\",\"How big and how durable the Douyin source trend is\",\"Whether any KOL or CN call channels are pushing it\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition. The judgment rests only on the evidence packet.\"},\"thesis\":\"This is the leading contract in a fresh CN viral-story clone swarm. It has very broad, fast-growing buyer participation, no paid promotion, low bot and fresh-wallet shares, and the dev has exited. It has a better-than-typical shot at reaching $230k+ within 6 hours, but entering after a +114% move and the conflicting LP and holder data cap the probability.\",\"continuation_view\":\"continue\",\"p_runner\":24,\"p_rug\":20,\"survival_score\":48,\"attention_score\":80,\"manipulation_risk\":40,\"tail_class\":\"C_2x_to_5x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A roughly 15-minute-old Solana coin named \"\u8611\u83c7\u5934\u548c\u6211\u768416\u5e74\" (\"Mushroom Head and me, 16 years\"). It links to a Douyin note, which suggests it rides a viral Chinese pet or life story. It is at about $117k market cap with $26k liquidity and $565k volume in its first hour. The price is up about 114%, and 30\u201347% of that came in the last 5 minutes. About 2,001 unique buyers against 137 sellers, and 811 buyers in the last 5 minutes alone. At least 9 copycat tokens with the same name or ticker were launched within minutes. This one is clearly the volume and market-cap leader among those with live liquidity.",
+  "narrative": {
+   "description": "This looks like a Chinese-community meme built on a viral Douyin post about someone's 16 years with a pet or companion nicknamed \"Mushroom Head\" (\u8611\u83c7\u5934). Emotional pet and life stories from Douyin or Weibo regularly produce fast CN-meme runs on Solana.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A rush of launches with the same name within minutes means the source content is trending right now. The buyer count jumping in the last 5 minutes points to CN traders finding the leading contract."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It has by far the most volume and buyers among the same-name tokens that still have real liquidity, so it is the de facto leader. The GeckoTerminal-linked X handle points at a specific post.",
+   "competing_tokens": "At least 9 same-name or MGT-ticker clones. Most have near-zero liquidity (dead or rugged). BRhHT... has $22k liquidity but only $53k market cap and low volume. 9pTwP... is older but dead.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Buyer breadth looks organic: 2,001 unique buyers vs 137 sellers, bot/degen rate about 0, fresh-wallet rate 0, no paid boosts or ads, no snipers. GMGN says the top 10 hold 3.96%, and the creator's balance is closed out. Against that, 91 wallets are tagged as bundlers (holding 4.3%), and a clone swarm is typical of launch-farming groups.",
+   "uncertainty": "RugCheck shows one non-pool holder at 80%, which is probably an unlabeled curve or pool vault since GMGN's top-10 figure is 3.96%. If it is not a vault, it is a catastrophic concentration. The LP data also conflicts: RugCheck says 99.99% unlocked, GMGN says burn ratio 1.0."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked, which conflicts with GMGN's LP burn ratio of 1.0",
+    "A top holder at 80.05% that may be an unlabeled pool or vault",
+    "91 bundler wallets",
+    "Liquidity of about $26k against about 20x hourly turnover means sharp swings",
+    "Clone competition splitting attention"
+   ]
+  },
+  "counterargument": "CN story coins often go vertical in the first 15\u201330 minutes and then bleed out once the Douyin trend cools. Entry comes after a +114% move, near a local peak just under the $156k ATH, so a -50% retrace before any 2x is quite plausible. The unlocked LP and the 80% holder, if either is real, could end in a rug.",
+  "unknowns": [
+   "Whether the 80% holder is a pool or vault account",
+   "The real LP lock or burn status",
+   "How big and how durable the Douyin source trend is",
+   "Whether any KOL or CN call channels are pushing it"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition. The judgment rests only on the evidence packet."
+  },
+  "thesis": "This is the leading contract in a fresh CN viral-story clone swarm. It has very broad, fast-growing buyer participation, no paid promotion, low bot and fresh-wallet shares, and the dev has exited. It has a better-than-typical shot at reaching $230k+ within 6 hours, but entering after a +114% move and the conflicting LP and holder data cap the probability.",
+  "continuation_view": "continue",
+  "p_runner": 24,
+  "p_rug": 20,
+  "survival_score": 48,
+  "attention_score": 80,
+  "manipulation_risk": 40,
+  "tail_class": "C_2x_to_5x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 3910,
+ "type": "result",
+ "duration_ms": 21617,
+ "uuid": "98e254ee-ae4a-497d-9d83-a9ac330b609e",
+ "ttft_stream_ms": 670,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 670,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

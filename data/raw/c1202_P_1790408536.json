@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 20036,
+ "stop_reason": "tool_use",
+ "session_id": "fe052001-c01d-48f5-94ce-b3d6b774446e",
+ "total_cost_usd": 0.1081604,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8236,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2092,
+  "output_tokens_details": {
+   "thinking_tokens": 335
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8236,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2092,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8236,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8236
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2092,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8236,
+   "webSearchRequests": 0,
+   "costUSD": 0.1081604,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 335,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 10-minute-old \\\"Kardashev Research\\\" token on Meteora (not pump.fun) at about $20k market cap. It has about $29k of liquidity, which is more than its market cap, and 100% of the LP is unlocked. About $460k of volume went through in roughly 15 minutes: 2,540 buys from 1,094 unique buyers, but only about 110 unique sellers. GMGN flags 100 bundler wallets, and bundlers make up 32% of top traders. At least 10 same-name tokens launched within about 45 minutes. The leader, 5wW9\u2026, is older, at about $297k market cap with $831k of volume in the last hour. Another clone, JqHK\u2026, has almost the same numbers as this one ($28.9k liquidity, $18.7k market cap, $448k volume), which suggests one operator deploying templated clones with farmed volume.\",\"narrative\":{\"description\":\"'Kardashev Research' (a Kardashev-scale / AI-research style name) looks like a trending name that many deployers are sniping at the same time. There are no website, socials or description for this contract.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The name is clearly getting attention: 10+ clones and a leader near $300k. But that attention goes to the canonical or leading contract, not to this late, unlinked clone.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Only the matching name. It has no links or profile, and it was created after the leading contract 5wW9\u2026 and several others.\",\"competing_tokens\":\"5wW9\u2026 (about $297k market cap, $831k volume in the last hour, the leader), 4vbt\u2026 (about $300k), 2z8d\u2026 ($144k), JqHK\u2026 (a near-identical twin of this token), plus several dead clones\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"100 bundler wallets, and bundlers are 32% of top traders. Buyers outnumber sellers about 10 to 1, with 2.3 buys per buyer in a 15-minute burst. Volume is 14x market cap. Liquidity is larger than market cap on a self-seeded Meteora pool with the LP fully unlocked. A twin clone has the same numbers. The creator has closed out.\",\"uncertainty\":\"No X data is available. Some buyers may be real degens routed in by name searches for the trending narrative.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked on a dev-seeded Meteora pool, so it can be pulled at any time\",\"Heavy bundling\",\"Clone of a trending name, with the leader far ahead\",\"Volume in the last 5 minutes is already decaying and price is flat to down\",\"Creator has already closed out\"]},\"counterargument\":\"The narrative is hot: the leader reached about $300k within minutes. Rotation money sometimes spills into cheap clones, and this token has 1,100 holders at a $20k market cap with low top-10 concentration per RugCheck, so a 2x to $40k is a short move. Mint and freeze authorities are renounced.\",\"unknowns\":[\"Who controls the LP position\",\"Whether the leader keeps running and pulls clones up with it\",\"Whether any X account or call is behind this contract\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This looks like a templated clone with farmed volume, on a trending name the leading contract already owns. The LP is unlocked, liquidity is larger than market cap, bundling is heavy and there is a twin clone, so the liquidity is likely to be pulled or the pair left to die. The odds of a runner are well below the base rate.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":60,\"survival_score\":15,\"attention_score\":35,\"manipulation_risk\":88,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 10-minute-old \"Kardashev Research\" token on Meteora (not pump.fun) at about $20k market cap. It has about $29k of liquidity, which is more than its market cap, and 100% of the LP is unlocked. About $460k of volume went through in roughly 15 minutes: 2,540 buys from 1,094 unique buyers, but only about 110 unique sellers. GMGN flags 100 bundler wallets, and bundlers make up 32% of top traders. At least 10 same-name tokens launched within about 45 minutes. The leader, 5wW9\u2026, is older, at about $297k market cap with $831k of volume in the last hour. Another clone, JqHK\u2026, has almost the same numbers as this one ($28.9k liquidity, $18.7k market cap, $448k volume), which suggests one operator deploying templated clones with farmed volume.",
+  "narrative": {
+   "description": "'Kardashev Research' (a Kardashev-scale / AI-research style name) looks like a trending name that many deployers are sniping at the same time. There are no website, socials or description for this contract.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The name is clearly getting attention: 10+ clones and a leader near $300k. But that attention goes to the canonical or leading contract, not to this late, unlinked clone."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Only the matching name. It has no links or profile, and it was created after the leading contract 5wW9\u2026 and several others.",
+   "competing_tokens": "5wW9\u2026 (about $297k market cap, $831k volume in the last hour, the leader), 4vbt\u2026 (about $300k), 2z8d\u2026 ($144k), JqHK\u2026 (a near-identical twin of this token), plus several dead clones",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "100 bundler wallets, and bundlers are 32% of top traders. Buyers outnumber sellers about 10 to 1, with 2.3 buys per buyer in a 15-minute burst. Volume is 14x market cap. Liquidity is larger than market cap on a self-seeded Meteora pool with the LP fully unlocked. A twin clone has the same numbers. The creator has closed out.",
+   "uncertainty": "No X data is available. Some buyers may be real degens routed in by name searches for the trending narrative."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked on a dev-seeded Meteora pool, so it can be pulled at any time",
+    "Heavy bundling",
+    "Clone of a trending name, with the leader far ahead",
+    "Volume in the last 5 minutes is already decaying and price is flat to down",
+    "Creator has already closed out"
+   ]
+  },
+  "counterargument": "The narrative is hot: the leader reached about $300k within minutes. Rotation money sometimes spills into cheap clones, and this token has 1,100 holders at a $20k market cap with low top-10 concentration per RugCheck, so a 2x to $40k is a short move. Mint and freeze authorities are renounced.",
+  "unknowns": [
+   "Who controls the LP position",
+   "Whether the leader keeps running and pulls clones up with it",
+   "Whether any X account or call is behind this contract"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This looks like a templated clone with farmed volume, on a trending name the leading contract already owns. The LP is unlocked, liquidity is larger than market cap, bundling is heavy and there is a twin clone, so the liquidity is likely to be pulled or the pair left to die. The odds of a runner are well below the base rate.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 60,
+  "survival_score": 15,
+  "attention_score": 35,
+  "manipulation_risk": 88,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4390,
+ "type": "result",
+ "duration_ms": 20082,
+ "uuid": "31bf81c0-c431-4f07-be51-908291cff6f7",
+ "ttft_stream_ms": 823,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 823,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

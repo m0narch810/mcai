@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 19761,
+ "stop_reason": "tool_use",
+ "session_id": "fef69764-5233-492d-821d-5200f9345b9e",
+ "total_cost_usd": 0.1089684,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8162,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2162,
+  "output_tokens_details": {
+   "thinking_tokens": 319
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8162,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2162,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8162,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8162
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2162,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8162,
+   "webSearchRequests": 0,
+   "costUSD": 0.1089684,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 319,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A 12-minute-old pump.fun coin, \\\"FearOfMovingOn\\\" ($fomo), has already graduated to PumpSwap. It spiked to about $205k market cap (ATH price 2.06e-4) and is now crashing. At trigger it was $70k, and by collection it was $46k: -55% on DexScreener over 5 minutes and -72% on GeckoTerminal over 5 minutes. That puts it about 77% below its ATH. In the last 5 minutes sellers outnumber buyers (485 vs 394 unique). The dev status is \\\"creator_close\\\", meaning the creator has sold out. GMGN flags 69 bundler wallets and 404 fresh wallets. A copycat token with the same name has already been deployed.\",\"narrative\":{\"description\":\"The name is an emotional pun on the generic FOMO meme (\\\"Fear Of Moving On\\\"). The project lists an X handle and a .top website but has no DexScreener profile and no description. No distinct story or catalyst is visible in the packet.\",\"stage\":\"fading\",\"potential\":\"weak\",\"why_spreading\":\"Early pump.fun momentum and a fast graduation drew about 860 unique buyers in 15 minutes. The spike looks like launch-mechanics trading, not a story that is spreading. The price is now collapsing from its peak.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"This is the original pump.fun mint and the one with the actual trading activity. The copycat with the same name (AFHDV...) was created about 7 minutes later and has no liquidity.\",\"competing_tokens\":\"At least 10 other FOMO-ticker tokens exist, including an exact-name copycat launched minutes after this one. The ticker is extremely generic.\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Breadth is real: 861 unique buyers and 734 unique sellers, with top-10 holders at only 13.7% excluding the AMM. Against that, there are 69 bundler wallets, 404 fresh wallets, 19 snipers and 6 rat traders, and the dev has sold. Volume of $630k against a $46k market cap is extreme turnover, consistent with bot and snipe churn. There is no paid promotion.\",\"uncertainty\":\"I cannot see X posts. GMGN rate fields are low, so the bundlers may already have exited, which fits the dump.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Dev has sold (creator_close)\",\"69 bundlers and 404 fresh wallets; a coordinated early exit is visible in the price\",\"Liquidity is only about $18.6k and falling\",\"The price is in an active crash from ATH, and 5-minute sells outnumber buys\",\"The generic ticker is exposed to copycats\"]},\"counterargument\":\"The LP is 100% burned, mint and freeze authority are renounced, and holders are spread out, so a liquidity pull is impossible. Nearly 900 real buyers came in within 15 minutes. After a violent 75% flush, graduated coins sometimes bounce back toward their prior high. Returning to $93k would still be less than half of the $205k ATH, and the website plus X handle give a community some chance to rebuild.\",\"unknowns\":[\"Whether the X account has real engagement\",\"Whether the bundlers and snipers have fully exited\",\"Where the price is at the 4-minute entry\",\"Whether the website is real or a template\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; this report uses only the packet.\"},\"thesis\":\"This is a typical graduate-then-dump pattern: a fast pump to about $205k, then the dev and bundlers exit, and the price crashes about 77% within minutes. The burned LP makes a hard rug unlikely, but most volume is churn and the momentum is sharply negative. A 2x from about $46k needs a strong reversal and fresh demand, and the packet shows no catalyst for either. My most likely outcome is a slow bleed or chop.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":22,\"survival_score\":48,\"attention_score\":52,\"manipulation_risk\":62,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "A 12-minute-old pump.fun coin, \"FearOfMovingOn\" ($fomo), has already graduated to PumpSwap. It spiked to about $205k market cap (ATH price 2.06e-4) and is now crashing. At trigger it was $70k, and by collection it was $46k: -55% on DexScreener over 5 minutes and -72% on GeckoTerminal over 5 minutes. That puts it about 77% below its ATH. In the last 5 minutes sellers outnumber buyers (485 vs 394 unique). The dev status is \"creator_close\", meaning the creator has sold out. GMGN flags 69 bundler wallets and 404 fresh wallets. A copycat token with the same name has already been deployed.",
+  "narrative": {
+   "description": "The name is an emotional pun on the generic FOMO meme (\"Fear Of Moving On\"). The project lists an X handle and a .top website but has no DexScreener profile and no description. No distinct story or catalyst is visible in the packet.",
+   "stage": "fading",
+   "potential": "weak",
+   "why_spreading": "Early pump.fun momentum and a fast graduation drew about 860 unique buyers in 15 minutes. The spike looks like launch-mechanics trading, not a story that is spreading. The price is now collapsing from its peak."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "This is the original pump.fun mint and the one with the actual trading activity. The copycat with the same name (AFHDV...) was created about 7 minutes later and has no liquidity.",
+   "competing_tokens": "At least 10 other FOMO-ticker tokens exist, including an exact-name copycat launched minutes after this one. The ticker is extremely generic.",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Breadth is real: 861 unique buyers and 734 unique sellers, with top-10 holders at only 13.7% excluding the AMM. Against that, there are 69 bundler wallets, 404 fresh wallets, 19 snipers and 6 rat traders, and the dev has sold. Volume of $630k against a $46k market cap is extreme turnover, consistent with bot and snipe churn. There is no paid promotion.",
+   "uncertainty": "I cannot see X posts. GMGN rate fields are low, so the bundlers may already have exited, which fits the dump."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Dev has sold (creator_close)",
+    "69 bundlers and 404 fresh wallets; a coordinated early exit is visible in the price",
+    "Liquidity is only about $18.6k and falling",
+    "The price is in an active crash from ATH, and 5-minute sells outnumber buys",
+    "The generic ticker is exposed to copycats"
+   ]
+  },
+  "counterargument": "The LP is 100% burned, mint and freeze authority are renounced, and holders are spread out, so a liquidity pull is impossible. Nearly 900 real buyers came in within 15 minutes. After a violent 75% flush, graduated coins sometimes bounce back toward their prior high. Returning to $93k would still be less than half of the $205k ATH, and the website plus X handle give a community some chance to rebuild.",
+  "unknowns": [
+   "Whether the X account has real engagement",
+   "Whether the bundlers and snipers have fully exited",
+   "Where the price is at the 4-minute entry",
+   "Whether the website is real or a template"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; this report uses only the packet."
+  },
+  "thesis": "This is a typical graduate-then-dump pattern: a fast pump to about $205k, then the dev and bundlers exit, and the price crashes about 77% within minutes. The burned LP makes a hard rug unlikely, but most volume is churn and the momentum is sharply negative. A 2x from about $46k needs a strong reversal and fresh demand, and the packet shows no catalyst for either. My most likely outcome is a slow bleed or chop.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 22,
+  "survival_score": 48,
+  "attention_score": 52,
+  "manipulation_risk": 62,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4129,
+ "type": "result",
+ "duration_ms": 19806,
+ "uuid": "9666b1b6-5181-4fe7-9391-98a843114cbc",
+ "ttft_stream_ms": 563,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 563,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

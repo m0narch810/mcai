@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 43233,
+ "stop_reason": "tool_use",
+ "session_id": "19cd9d21-2efc-45d0-b4cb-d209d1414739",
+ "total_cost_usd": 0.19424920000000004,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 11032,
+  "cache_read_input_tokens": 25706,
+  "output_tokens": 2535,
+  "output_tokens_details": {
+   "thinking_tokens": 219
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11032,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2063,
+    "cache_read_input_tokens": 12613,
+    "cache_creation_input_tokens": 1183,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1183
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2535,
+   "cacheReadInputTokens": 25706,
+   "cacheCreationInputTokens": 11032,
+   "webSearchRequests": 0,
+   "costUSD": 0.1441212,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 219,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 26048,
+   "outputTokens": 816,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.050128,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"Babl (\\\"Brontes Mnemos\\\") is a pump.fun coin still on its bonding curve, about 27 minutes old at detection, with a market cap of about $14.6k. It is up about 304% over the hour and 91% over the last 5 minutes, with 164 unique buyers. It is tied to a small art/fiction project, itsbabl.com (@BrontesMnemos). The project is a \\\"dream notebook\\\" about imagined parallel selves making decisions and says it is \\\"built on Claude\\\". This fits the AI-agent/AI-persona meme niche. The creator has already exited (GMGN: creator_close, creator holds 0%) and the coin is flagged as a community takeover.\",\"narrative\":{\"description\":\"AI-persona / Claude-built 'dream notebook' project (Brontes Mnemos / babl) that imagines parallel lives to help make decisions. It is a niche AI-art story, not a news event.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Web search found no discussion anywhere. The current flow looks like normal pump.fun curve trading, possibly helped by an AI-agent angle from a real-looking website and X account. Nothing external is driving it.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"The DexScreener profile links to itsbabl.com and @BrontesMnemos, but the site does not mention any token or contract. The project may not endorse the coin; it may just be a third party launching a coin on someone's AI project.\",\"competing_tokens\":\"None in the packet's same-ticker/same-name list.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"medium\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"There were no paid DexScreener boosts or ads. GMGN tags 56 wallets as bundlers, and the top bundler share is 27%. The fresh-wallet rate is 17%, the bot/degen rate is 33%, there is 1 smart wallet and zero KOL wallets. Buyer counts are broad (164 unique buyers vs 116 sellers). The last 5 minutes show 30 buyers vs 8 sellers.\",\"uncertainty\":\"X was not accessible (HTTP 402) and search indexes nothing about this coin. I can't tell whether the project owner endorses it.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"High bundler tagging (27% top bundler share)\",\"Creator already sold out (creator_close), so no one is running the project\",\"Very small market cap: selling from early-hour buyers can easily cut it in half\",\"GeckoTerminal holder snapshot shows top-10 at 84% (likely includes the curve)\"]},\"counterargument\":\"A 2x only takes it to about $29k on the curve, which happens often for coins with a fresh AI-agent angle, a real website and live buying momentum (30 buyers vs 8 sellers in the last 5 minutes). If the X account owner takes up the coin, it could run toward migration at about $60k+. The case against: the price is already up 4x in 30 minutes, the dev has left, bundlers are heavy and there is no proof anyone is paying attention off-chain. That points to buying near a local top.\",\"unknowns\":[\"Size of the X account and whether it has acknowledged the token\",\"Whether the bundler wallets are the dev's group and are about to dump\",\"Whether the builder of itsbabl.com is involved\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"The contract search returned only irrelevant results. X profile fetch returned 402. The site loaded but has no token mention. Time was tight.\"},\"thesis\":\"A very early, tiny AI-persona coin with real buying momentum, a real-looking project site and no paid promotion. But the dev has left, bundlers are heavy, the coin has no confirmed link to the project and nobody is talking about it off-chain. A 2x from about $15k is feasible, so I rate it slightly above the pool's base rate.\",\"continuation_view\":\"neutral\",\"p_runner\":15,\"p_rug\":22,\"survival_score\":45,\"attention_score\":42,\"manipulation_risk\":55,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://itsbabl.com/\",\"what\":\"Project site: a Claude-built dream notebook with no token mention\"},{\"url\":\"https://x.com/BrontesMnemos\",\"what\":\"Project X account (fetch blocked, 402)\"}]}",
+ "structured_output": {
+  "what_is_happening": "Babl (\"Brontes Mnemos\") is a pump.fun coin still on its bonding curve, about 27 minutes old at detection, with a market cap of about $14.6k. It is up about 304% over the hour and 91% over the last 5 minutes, with 164 unique buyers. It is tied to a small art/fiction project, itsbabl.com (@BrontesMnemos). The project is a \"dream notebook\" about imagined parallel selves making decisions and says it is \"built on Claude\". This fits the AI-agent/AI-persona meme niche. The creator has already exited (GMGN: creator_close, creator holds 0%) and the coin is flagged as a community takeover.",
+  "narrative": {
+   "description": "AI-persona / Claude-built 'dream notebook' project (Brontes Mnemos / babl) that imagines parallel lives to help make decisions. It is a niche AI-art story, not a news event.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Web search found no discussion anywhere. The current flow looks like normal pump.fun curve trading, possibly helped by an AI-agent angle from a real-looking website and X account. Nothing external is driving it."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "The DexScreener profile links to itsbabl.com and @BrontesMnemos, but the site does not mention any token or contract. The project may not endorse the coin; it may just be a third party launching a coin on someone's AI project.",
+   "competing_tokens": "None in the packet's same-ticker/same-name list.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "medium"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "There were no paid DexScreener boosts or ads. GMGN tags 56 wallets as bundlers, and the top bundler share is 27%. The fresh-wallet rate is 17%, the bot/degen rate is 33%, there is 1 smart wallet and zero KOL wallets. Buyer counts are broad (164 unique buyers vs 116 sellers). The last 5 minutes show 30 buyers vs 8 sellers.",
+   "uncertainty": "X was not accessible (HTTP 402) and search indexes nothing about this coin. I can't tell whether the project owner endorses it."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "High bundler tagging (27% top bundler share)",
+    "Creator already sold out (creator_close), so no one is running the project",
+    "Very small market cap: selling from early-hour buyers can easily cut it in half",
+    "GeckoTerminal holder snapshot shows top-10 at 84% (likely includes the curve)"
+   ]
+  },
+  "counterargument": "A 2x only takes it to about $29k on the curve, which happens often for coins with a fresh AI-agent angle, a real website and live buying momentum (30 buyers vs 8 sellers in the last 5 minutes). If the X account owner takes up the coin, it could run toward migration at about $60k+. The case against: the price is already up 4x in 30 minutes, the dev has left, bundlers are heavy and there is no proof anyone is paying attention off-chain. That points to buying near a local top.",
+  "unknowns": [
+   "Size of the X account and whether it has acknowledged the token",
+   "Whether the bundler wallets are the dev's group and are about to dump",
+   "Whether the builder of itsbabl.com is involved"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "The contract search returned only irrelevant results. X profile fetch returned 402. The site loaded but has no token mention. Time was tight."
+  },
+  "thesis": "A very early, tiny AI-persona coin with real buying momentum, a real-looking project site and no paid promotion. But the dev has left, bundlers are heavy, the coin has no confirmed link to the project and nobody is talking about it off-chain. A 2x from about $15k is feasible, so I rate it slightly above the pool's base rate.",
+  "continuation_view": "neutral",
+  "p_runner": 15,
+  "p_rug": 22,
+  "survival_score": 45,
+  "attention_score": 42,
+  "manipulation_risk": 55,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://itsbabl.com/",
+    "what": "Project site: a Claude-built dream notebook with no token mention"
+   },
+   {
+    "url": "https://x.com/BrontesMnemos",
+    "what": "Project X account (fetch blocked, 402)"
+   }
+  ]
+ },
+ "ttft_ms": 1452,
+ "type": "result",
+ "duration_ms": 51591,
+ "uuid": "b2956c44-7366-43ad-9f0f-5c96fb0b6e66",
+ "ttft_stream_ms": 1258,
+ "time_to_request_ms": 47,
+ "first_content_frame_ms": 1258,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

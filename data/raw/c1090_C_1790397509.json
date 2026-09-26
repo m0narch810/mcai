@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 56161,
+ "stop_reason": "tool_use",
+ "session_id": "1ac4ee35-a51f-4807-9301-7f7a5f48a95d",
+ "total_cost_usd": 0.29150200000000004,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 15069,
+  "cache_read_input_tokens": 43415,
+  "output_tokens": 4993,
+  "output_tokens_details": {
+   "thinking_tokens": 512
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15069,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1972,
+    "cache_read_input_tokens": 15134,
+    "cache_creation_input_tokens": 2699,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2699
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4993,
+   "cacheReadInputTokens": 43415,
+   "cacheCreationInputTokens": 15069,
+   "webSearchRequests": 0,
+   "costUSD": 0.229127,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 512,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 28360,
+   "outputTokens": 803,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.062375,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"LaunchCat (DNV6...) is 15 minutes old at about a $22k market cap. It went up 109% in its first hour on 1,500+ buys from more than 1,000 unique buyers, and its pool is a dev-created PumpSwap pool whose LP is fully unlocked. It is one of several LaunchCat clones launched off the same tweet.\",\"narrative\":{\"description\":\"A 'LaunchCat' tweet-derived meme tied to an X post by @briann1312. The content is unknown. Several same-name tokens were launched within seconds of each other, the typical pattern when bots race to tokenize a tweet.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Tweet-sniping bots and degens racing to be first on a fresh tweet. I found no broader cultural event.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most liquidity and volume among the LaunchCat clones and links to the source tweet on GeckoTerminal. Beyond that, nothing marks it as canonical.\",\"competing_tokens\":\"9E1W...pump: a pump.fun curve coin created 156s earlier with $25k h1 volume. nycs...: created 4s later, $35k volume, now $1.44 liquidity (drained). There are several older dead LaunchCat tokens.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"insufficient_visibility\",\"evidence\":\"No indexed posts for the contract or $LaunchCat. The only social link is one X status by @briann1312, and fetching it returned HTTP 402. GMGN counts 1,000 fresh wallets and 33 bundlers. 1,038 unique buyers against 105 sellers, with an average buy of about $50, looks like retail and bot tweet-sniping, not organic community spread.\",\"uncertainty\":\"I couldn't see what the tweet says or who the account is. If it's a large account or a real product launch, the attention could be real.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP 100% unlocked on a dev-created PumpSwap pool (not a pump.fun curve migration); creator can pull ~$30k liquidity\",\"Liquidity exceeds market cap, suggesting a heavily dev-seeded pool, a common rug-farm setup\",\"A sibling contract created 4 seconds later (nycs...) already has $1.44 liquidity, i.e. it has been drained\",\"33 bundler wallets; 30% fresh-wallet rate\",\"Launchpad/deploy platform unknown\"]},\"counterargument\":\"Over 1,000 unique buyers in 15 minutes is strong for a $22k coin. This contract has the only meaningful liquidity in the name cluster, so it may already be the de facto canonical coin. If the tweet source is notable, doubling from a $22k market cap is cheap and could happen within minutes.\",\"unknowns\":[\"Content and reach of the @briann1312 tweet\",\"Whether the dev will pull the unlocked LP\",\"Which LaunchCat contract the tweet author endorses, if any\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"searched_nothing_found\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Web search found nothing for the contract or ticker. The X status fetch returned 402. There is no project site or socials. Time budget was about 2 minutes.\"},\"thesis\":\"A tweet-snipe token deployed straight to a PumpSwap pool the dev controls, with 100% of the LP unlocked. It sits in a cluster of same-name clones, and one clone launched seconds later has already been drained. Buyer count is high, but the structure favours a liquidity pull over a sustained 2x. I rank it below the typical coin.\",\"continuation_view\":\"fade\",\"p_runner\":8,\"p_rug\":55,\"survival_score\":25,\"attention_score\":48,\"manipulation_risk\":68,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/briann1312/status/2103700947876626765\",\"what\":\"Tweet linked by GeckoTerminal; fetch returned 402\"},{\"url\":\"https://dexscreener.com/solana/13YM7MHDjks1Huvhoyk12STChDEEMAidb7ZXZZjYkCmL\",\"what\":\"Pair data (from packet)\"},{\"url\":\"https://rugcheck.xyz/tokens/DNV628HgAGu5go7q8tFeRBadxfyhGLpyyUEyD3LuB7Sg\",\"what\":\"LP 100% unlocked risk (from packet)\"}]}",
+ "structured_output": {
+  "what_is_happening": "LaunchCat (DNV6...) is 15 minutes old at about a $22k market cap. It went up 109% in its first hour on 1,500+ buys from more than 1,000 unique buyers, and its pool is a dev-created PumpSwap pool whose LP is fully unlocked. It is one of several LaunchCat clones launched off the same tweet.",
+  "narrative": {
+   "description": "A 'LaunchCat' tweet-derived meme tied to an X post by @briann1312. The content is unknown. Several same-name tokens were launched within seconds of each other, the typical pattern when bots race to tokenize a tweet.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Tweet-sniping bots and degens racing to be first on a fresh tweet. I found no broader cultural event."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most liquidity and volume among the LaunchCat clones and links to the source tweet on GeckoTerminal. Beyond that, nothing marks it as canonical.",
+   "competing_tokens": "9E1W...pump: a pump.fun curve coin created 156s earlier with $25k h1 volume. nycs...: created 4s later, $35k volume, now $1.44 liquidity (drained). There are several older dead LaunchCat tokens.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "insufficient_visibility",
+   "evidence": "No indexed posts for the contract or $LaunchCat. The only social link is one X status by @briann1312, and fetching it returned HTTP 402. GMGN counts 1,000 fresh wallets and 33 bundlers. 1,038 unique buyers against 105 sellers, with an average buy of about $50, looks like retail and bot tweet-sniping, not organic community spread.",
+   "uncertainty": "I couldn't see what the tweet says or who the account is. If it's a large account or a real product launch, the attention could be real."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP 100% unlocked on a dev-created PumpSwap pool (not a pump.fun curve migration); creator can pull ~$30k liquidity",
+    "Liquidity exceeds market cap, suggesting a heavily dev-seeded pool, a common rug-farm setup",
+    "A sibling contract created 4 seconds later (nycs...) already has $1.44 liquidity, i.e. it has been drained",
+    "33 bundler wallets; 30% fresh-wallet rate",
+    "Launchpad/deploy platform unknown"
+   ]
+  },
+  "counterargument": "Over 1,000 unique buyers in 15 minutes is strong for a $22k coin. This contract has the only meaningful liquidity in the name cluster, so it may already be the de facto canonical coin. If the tweet source is notable, doubling from a $22k market cap is cheap and could happen within minutes.",
+  "unknowns": [
+   "Content and reach of the @briann1312 tweet",
+   "Whether the dev will pull the unlocked LP",
+   "Which LaunchCat contract the tweet author endorses, if any"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "searched_nothing_found",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Web search found nothing for the contract or ticker. The X status fetch returned 402. There is no project site or socials. Time budget was about 2 minutes."
+  },
+  "thesis": "A tweet-snipe token deployed straight to a PumpSwap pool the dev controls, with 100% of the LP unlocked. It sits in a cluster of same-name clones, and one clone launched seconds later has already been drained. Buyer count is high, but the structure favours a liquidity pull over a sustained 2x. I rank it below the typical coin.",
+  "continuation_view": "fade",
+  "p_runner": 8,
+  "p_rug": 55,
+  "survival_score": 25,
+  "attention_score": 48,
+  "manipulation_risk": 68,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/briann1312/status/2103700947876626765",
+    "what": "Tweet linked by GeckoTerminal; fetch returned 402"
+   },
+   {
+    "url": "https://dexscreener.com/solana/13YM7MHDjks1Huvhoyk12STChDEEMAidb7ZXZZjYkCmL",
+    "what": "Pair data (from packet)"
+   },
+   {
+    "url": "https://rugcheck.xyz/tokens/DNV628HgAGu5go7q8tFeRBadxfyhGLpyyUEyD3LuB7Sg",
+    "what": "LP 100% unlocked risk (from packet)"
+   }
+  ]
+ },
+ "ttft_ms": 3567,
+ "type": "result",
+ "duration_ms": 51551,
+ "uuid": "47fe16e2-8d28-4056-9710-8d4ff5e35e4a",
+ "ttft_stream_ms": 818,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 819,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

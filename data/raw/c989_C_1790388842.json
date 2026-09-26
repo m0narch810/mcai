@@ -1,0 +1,186 @@
+{
+ "duration_api_ms": 43762,
+ "stop_reason": "tool_use",
+ "session_id": "be3143f9-02f4-4127-8bd5-3062a7cc8489",
+ "total_cost_usd": 0.23606760000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13507,
+  "cache_read_input_tokens": 29248,
+  "output_tokens": 3098,
+  "output_tokens_details": {
+   "thinking_tokens": 645
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13507,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2283,
+    "cache_read_input_tokens": 14472,
+    "cache_creation_input_tokens": 1799,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1799
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3098,
+   "cacheReadInputTokens": 29248,
+   "cacheCreationInputTokens": 13507,
+   "webSearchRequests": 0,
+   "costUSD": 0.17588959999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 645,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 26208,
+   "outputTokens": 794,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.060178,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"51X (\\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\", meaning \\\"the official first-launch meme of 51\u5403\u74dc\u7f51\\\") is borrowing the name of 51\u5403\u74dc\u7f51, a large Chinese gossip and scandal site. The token was minted and its PumpSwap pool was created about 4 seconds later by the creator, not through a pump.fun migration. The creator added the liquidity himself and 100% of the LP is unlocked. The price is up about 490% in 32 minutes. 1,582 unique buyers came in against only 52 unique sellers. The packet lists at least 10 earlier tokens with the same name and ticker from the past day, and all of them now have about $0 liquidity, so they appear to have been pulled. I found no official link between the 51\u5403\u74dc brand and this contract.\",\"narrative\":{\"description\":\"Borrows the name of 51\u5403\u74dc\u7f51, a large Chinese-language gossip site, and claims to be its 'official first launch' meme.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"The brand is well known among Chinese internet users, and an 'official' claim draws CN degens in. The buy count is spiking, but I could not verify any real endorsement from the brand.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only 51X with live liquidity and volume right now. GeckoTerminal lists the X handle gua51x, but I could not access it or verify it.\",\"competing_tokens\":\"At least 10 tokens with the same name and ticker were created over roughly the past 22 hours, all now at about $0 liquidity. That looks like a serial 'official launch' rug pattern.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"1,582 unique buyers vs 52 sellers, 11 bundler wallets, and the creator holds 19% and is tagged as a rat trader (per the packet's GMGN tags). The pool was created by the creator with LP that is not locked. The repeated dead clones suggest the same playbook being run again.\",\"uncertainty\":\"The X account and the official 51\u5403\u74dc channels were inaccessible, so the buyer surge could still be real Chinese retail flow.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP is unlocked and was added by the creator, so he can pull it at any time\",\"Creator holds 19% and is tagged as a rat trader\",\"11 bundler wallets\",\"At least 10 earlier clones with the same name all have their liquidity drained\",\"The seller count is abnormally low, which could mean selling is somehow restricted, or simply that it is early\"]},\"counterargument\":\"The 51\u5403\u74dc brand has a huge Chinese audience, and more than 1,500 unique buyers in 30 minutes, at $250k volume on a $75k market cap, is very strong demand. If this really is the official launch, or the version the community settles on, it could go 2x+ from $75k fast. Mint and freeze authority are renounced, and the packet shows 0 buy or sell tax and no honeypot flag.\",\"unknowns\":[\"Whether the 51\u5403\u74dc brand really endorses this token\",\"What the gua51x X account contains\",\"Whether the creator is behind the earlier clones\",\"Why so few wallets are selling\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Web search found only the gossip site's own mirrors and its X accounts (@51chiguawang and an X community), with nothing about the token. x.com returned 402 and DexScreener returned 403. I did not attempt Reddit, Telegram or Discord because of the 2-minute limit.\"},\"thesis\":\"The demand is strong, but this is almost certainly an unofficial cash-in on a brand. It follows a series of about 10 dead clones with the same name, and the creator controls the unlocked LP and 19% of supply. It could pump further briefly, but a liquidity pull is the dominant risk.\",\"continuation_view\":\"fade\",\"p_runner\":11,\"p_rug\":58,\"survival_score\":18,\"attention_score\":68,\"manipulation_risk\":72,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/51chiguawang\",\"what\":\"X account of the real 51\u5403\u74dc brand (found in search, not accessed)\"},{\"url\":\"https://www.51chiguatv.com/\",\"what\":\"Gossip site the token name refers to\"},{\"url\":\"https://x.com/i/communities/1932656163642101858\",\"what\":\"51\u5403\u74dc X community (found in search, not accessed)\"},{\"url\":\"https://x.com/gua51x\",\"what\":\"Token X handle listed on GeckoTerminal; fetch returned 402\"}]}",
+ "structured_output": {
+  "what_is_happening": "51X (\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\", meaning \"the official first-launch meme of 51\u5403\u74dc\u7f51\") is borrowing the name of 51\u5403\u74dc\u7f51, a large Chinese gossip and scandal site. The token was minted and its PumpSwap pool was created about 4 seconds later by the creator, not through a pump.fun migration. The creator added the liquidity himself and 100% of the LP is unlocked. The price is up about 490% in 32 minutes. 1,582 unique buyers came in against only 52 unique sellers. The packet lists at least 10 earlier tokens with the same name and ticker from the past day, and all of them now have about $0 liquidity, so they appear to have been pulled. I found no official link between the 51\u5403\u74dc brand and this contract.",
+  "narrative": {
+   "description": "Borrows the name of 51\u5403\u74dc\u7f51, a large Chinese-language gossip site, and claims to be its 'official first launch' meme.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "The brand is well known among Chinese internet users, and an 'official' claim draws CN degens in. The buy count is spiking, but I could not verify any real endorsement from the brand."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only 51X with live liquidity and volume right now. GeckoTerminal lists the X handle gua51x, but I could not access it or verify it.",
+   "competing_tokens": "At least 10 tokens with the same name and ticker were created over roughly the past 22 hours, all now at about $0 liquidity. That looks like a serial 'official launch' rug pattern.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "1,582 unique buyers vs 52 sellers, 11 bundler wallets, and the creator holds 19% and is tagged as a rat trader (per the packet's GMGN tags). The pool was created by the creator with LP that is not locked. The repeated dead clones suggest the same playbook being run again.",
+   "uncertainty": "The X account and the official 51\u5403\u74dc channels were inaccessible, so the buyer surge could still be real Chinese retail flow."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP is unlocked and was added by the creator, so he can pull it at any time",
+    "Creator holds 19% and is tagged as a rat trader",
+    "11 bundler wallets",
+    "At least 10 earlier clones with the same name all have their liquidity drained",
+    "The seller count is abnormally low, which could mean selling is somehow restricted, or simply that it is early"
+   ]
+  },
+  "counterargument": "The 51\u5403\u74dc brand has a huge Chinese audience, and more than 1,500 unique buyers in 30 minutes, at $250k volume on a $75k market cap, is very strong demand. If this really is the official launch, or the version the community settles on, it could go 2x+ from $75k fast. Mint and freeze authority are renounced, and the packet shows 0 buy or sell tax and no honeypot flag.",
+  "unknowns": [
+   "Whether the 51\u5403\u74dc brand really endorses this token",
+   "What the gua51x X account contains",
+   "Whether the creator is behind the earlier clones",
+   "Why so few wallets are selling"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Web search found only the gossip site's own mirrors and its X accounts (@51chiguawang and an X community), with nothing about the token. x.com returned 402 and DexScreener returned 403. I did not attempt Reddit, Telegram or Discord because of the 2-minute limit."
+  },
+  "thesis": "The demand is strong, but this is almost certainly an unofficial cash-in on a brand. It follows a series of about 10 dead clones with the same name, and the creator controls the unlocked LP and 19% of supply. It could pump further briefly, but a liquidity pull is the dominant risk.",
+  "continuation_view": "fade",
+  "p_runner": 11,
+  "p_rug": 58,
+  "survival_score": 18,
+  "attention_score": 68,
+  "manipulation_risk": 72,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/51chiguawang",
+    "what": "X account of the real 51\u5403\u74dc brand (found in search, not accessed)"
+   },
+   {
+    "url": "https://www.51chiguatv.com/",
+    "what": "Gossip site the token name refers to"
+   },
+   {
+    "url": "https://x.com/i/communities/1932656163642101858",
+    "what": "51\u5403\u74dc X community (found in search, not accessed)"
+   },
+   {
+    "url": "https://x.com/gua51x",
+    "what": "Token X handle listed on GeckoTerminal; fetch returned 402"
+   }
+  ]
+ },
+ "ttft_ms": 1448,
+ "type": "result",
+ "duration_ms": 37730,
+ "uuid": "d82c801a-f063-4946-827f-e9d1da9fe0f3",
+ "ttft_stream_ms": 691,
+ "time_to_request_ms": 53,
+ "first_content_frame_ms": 691,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

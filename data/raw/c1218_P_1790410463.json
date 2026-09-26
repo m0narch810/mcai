@@ -1,0 +1,154 @@
+{
+ "duration_api_ms": 19987,
+ "stop_reason": "tool_use",
+ "session_id": "e5936ee8-4bea-4a38-bf77-ee9ea6ad9fc4",
+ "total_cost_usd": 0.1068884,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7982,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2130,
+  "output_tokens_details": {
+   "thinking_tokens": 332
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7982,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2130,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 7982,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7982
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2130,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 7982,
+   "webSearchRequests": 0,
+   "costUSD": 0.1068884,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 332,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BUTTPHIL here is a copycat of a live BUTTPHIL coin. The canonical token (HBDC...pump) is about 27 minutes older, has a $207k market cap and $3.5M of volume in the last hour. This contract was not launched through pump.fun. It was deployed straight onto a PumpSwap pool, with the LP seeded by the dev and 100% unlocked. That is why liquidity ($30.6k) is higher than market cap ($21.9k). It is 10 minutes old. It shows 2,051 unique buyers but only 57 unique sellers, which fits bots and confused buyers hitting the wrong ticker. Market cap has already fallen from about $30k at detection to $21.9k. Five other same-ticker PumpSwap copies in the packet already have about $1 of liquidity, meaning they were drained. This is the same template.\",\"narrative\":{\"description\":\"The BUTTPHIL meme is spreading right now, but it belongs to the pump.fun token HBDC...pump. This contract is borrowing that attention.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"The main BUTTPHIL token is doing millions in hourly volume, which sets off a wave of same-ticker copies that catch buyers searching by ticker and sniper bots.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Its only link to the meme is the matching ticker. It is not the first or canonical token and has no website or social links, except an unverified 'buttphildev' X handle listed on GeckoTerminal.\",\"competing_tokens\":\"HBDC...pump is the canonical token ($207k market cap, $46k liquidity, $3.5M volume in the last hour). There are several dead copies: 2zhr, 6dMx, DXNZ and 2RYn, all with about $1 of liquidity, plus E9LQ and 7S5U, which have no liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Buying is heavily one-sided (2,051 unique buyers against 57 unique sellers). GMGN flags 25 bundler wallets holding 19% of the top traders' share, and there is a 30-wallet trade-linked insider network. Creator status is 'creator_close'. The LP is 100% unlocked and was seeded outside pump.fun. Same-ticker copies built the same way have already been drained to about $1 of liquidity.\",\"uncertainty\":\"The buyer count could partly come from real retail confusion. The dev could leave the LP in place for a while to farm more volume.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"The LP is 100% unlocked and was seeded by the dev, so it can be pulled at any time\",\"It is a copy of a live canonical token\",\"5 of its sibling copies already have their liquidity drained\",\"25 bundler wallets and a 30-wallet insider network\",\"Price has already fallen about 28% since detection\"]},\"counterargument\":\"If the canonical BUTTPHIL keeps running toward $1M+, overflow buyers could keep pushing this copy upward. It has thousands of buyers, a small $22k market cap and a dev who has not yet pulled the LP, so a short 2x before any rug is possible.\",\"unknowns\":[\"When the dev will remove the LP\",\"Whether the 'buttphildev' X handle belongs to this contract or to the canonical one\",\"Where the dev's funding came from (funded_from is null)\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This is a ticker-hijack copy with an unlocked LP seeded by the dev, sitting beside a live canonical token and several already-drained copies of the same kind. The most likely outcome is that the LP is pulled or the coin bleeds out. The chance of a runner is very low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":3,\"p_rug\":68,\"survival_score\":12,\"attention_score\":45,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"high\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "BUTTPHIL here is a copycat of a live BUTTPHIL coin. The canonical token (HBDC...pump) is about 27 minutes older, has a $207k market cap and $3.5M of volume in the last hour. This contract was not launched through pump.fun. It was deployed straight onto a PumpSwap pool, with the LP seeded by the dev and 100% unlocked. That is why liquidity ($30.6k) is higher than market cap ($21.9k). It is 10 minutes old. It shows 2,051 unique buyers but only 57 unique sellers, which fits bots and confused buyers hitting the wrong ticker. Market cap has already fallen from about $30k at detection to $21.9k. Five other same-ticker PumpSwap copies in the packet already have about $1 of liquidity, meaning they were drained. This is the same template.",
+  "narrative": {
+   "description": "The BUTTPHIL meme is spreading right now, but it belongs to the pump.fun token HBDC...pump. This contract is borrowing that attention.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "The main BUTTPHIL token is doing millions in hourly volume, which sets off a wave of same-ticker copies that catch buyers searching by ticker and sniper bots."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Its only link to the meme is the matching ticker. It is not the first or canonical token and has no website or social links, except an unverified 'buttphildev' X handle listed on GeckoTerminal.",
+   "competing_tokens": "HBDC...pump is the canonical token ($207k market cap, $46k liquidity, $3.5M volume in the last hour). There are several dead copies: 2zhr, 6dMx, DXNZ and 2RYn, all with about $1 of liquidity, plus E9LQ and 7S5U, which have no liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Buying is heavily one-sided (2,051 unique buyers against 57 unique sellers). GMGN flags 25 bundler wallets holding 19% of the top traders' share, and there is a 30-wallet trade-linked insider network. Creator status is 'creator_close'. The LP is 100% unlocked and was seeded outside pump.fun. Same-ticker copies built the same way have already been drained to about $1 of liquidity.",
+   "uncertainty": "The buyer count could partly come from real retail confusion. The dev could leave the LP in place for a while to farm more volume."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "The LP is 100% unlocked and was seeded by the dev, so it can be pulled at any time",
+    "It is a copy of a live canonical token",
+    "5 of its sibling copies already have their liquidity drained",
+    "25 bundler wallets and a 30-wallet insider network",
+    "Price has already fallen about 28% since detection"
+   ]
+  },
+  "counterargument": "If the canonical BUTTPHIL keeps running toward $1M+, overflow buyers could keep pushing this copy upward. It has thousands of buyers, a small $22k market cap and a dev who has not yet pulled the LP, so a short 2x before any rug is possible.",
+  "unknowns": [
+   "When the dev will remove the LP",
+   "Whether the 'buttphildev' X handle belongs to this contract or to the canonical one",
+   "Where the dev's funding came from (funded_from is null)"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This is a ticker-hijack copy with an unlocked LP seeded by the dev, sitting beside a live canonical token and several already-drained copies of the same kind. The most likely outcome is that the LP is pulled or the coin bleeds out. The chance of a runner is very low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 3,
+  "p_rug": 68,
+  "survival_score": 12,
+  "attention_score": 45,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "high",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4751,
+ "type": "result",
+ "duration_ms": 20036,
+ "uuid": "a1171ee9-3d79-4ff6-9093-6e63917f465b",
+ "ttft_stream_ms": 995,
+ "time_to_request_ms": 45,
+ "first_content_frame_ms": 995,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

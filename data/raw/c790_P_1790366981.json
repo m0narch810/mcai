@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 36983,
+ "stop_reason": "tool_use",
+ "session_id": "29a5b3ca-f622-4f83-9c0a-f1a3c2378158",
+ "total_cost_usd": 0.1590796,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 9000,
+  "cache_read_input_tokens": 11718,
+  "output_tokens": 4236,
+  "output_tokens_details": {
+   "thinking_tokens": 358
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9000,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1792,
+    "cache_read_input_tokens": 9596,
+    "cache_creation_input_tokens": 1526,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1526
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 4236,
+   "cacheReadInputTokens": 11718,
+   "cacheCreationInputTokens": 9000,
+   "webSearchRequests": 0,
+   "costUSD": 0.1590796,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 358,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BAGS 'getbags.fun' is a clone that uses the name of the real Bags launchpad. The pumpswap pool was created about 13 minutes ago and is not a pump.fun curve migration. Price is up ~95%, from launch to a $20k market cap, on $293k volume. The packet lists five other BAGS/getbags.fun tokens launched in the last ~18 minutes, and at least four of them have almost no liquidity left. The LP is 100% unlocked, and 45 bundler wallets are tagged.\",\"narrative\":{\"description\":\"Impersonation of the Bags launchpad brand. There is no website, no DexScreener profile and no description. The only link is an X handle (getbags_fun) listed on GeckoTerminal.\",\"stage\":\"spreading\",\"potential\":\"weak\",\"why_spreading\":\"Buyers seem to be drawn by the ticker and name of a known brand, probably amplified by bots. Several copycat tokens are competing at the same time.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It has the most liquidity of the clones that are still alive, but nothing links it to the real Bags project.\",\"competing_tokens\":\"Five other BAGS/getbags.fun tokens in the packet (44nDz, DQxJr, 3FbvT, 5wf561, FSTeuk). Most have $0-$4 liquidity after heavy volume, which looks like a serial rug pattern. FSTeuk launched after this one and has $22k liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"1,713 unique buyers against 62 unique sellers in about 13 minutes. GMGN tags 45 bundler wallets, and the top bundler holds 13.2%. No smart-money or KOL wallets, and only 34 GMGN page visits. Clones with the same name, and $84k-$128k of hourly volume, now have near-zero liquidity. Liquidity ($29k) is larger than market cap ($20k), which suggests a pool seeded by one party with the LP unlocked.\",\"uncertainty\":\"It is not confirmed that one deployer runs all the clones. Some buyers may be real people confused by the brand.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% LP unlocked on a directly created pumpswap pool, so it can be pulled at any time\",\"Liquidity is larger than market cap, meaning the seeded pool can be drained\",\"Same-name clones already rugged within minutes\",\"45 bundler wallets; top bundler holds 13.2%\",\"Creator status is creator_close; deploy platform unknown\",\"Few LP providers\"]},\"counterargument\":\"Bags is a real, well-known Solana brand, so a clone that survives can attract real buyers. This one has 1,700+ holders, low top-10 concentration (12.5%), renounced mint and freeze authority, and zero creator balance. If the LP stays in place, high turnover from a $20k market cap could reach 2x quickly.\",\"unknowns\":[\"Whether one deployer launched all the clones and rugs them in sequence\",\"Who holds the LP tokens\",\"Whether the real Bags team has posted anything (a launch or a denial)\",\"How much of the buyer count comes from bots\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the packet only.\"},\"thesis\":\"This looks like a serial clone rug of a brand ticker. Sibling tokens with the same name already went to zero liquidity after similar volume bursts. The LP here is 100% unlocked and larger than market cap, so the deployer is very likely to pull it. Buyers vastly outnumber sellers, which looks like bot or bundled flow rather than real demand. The chance of a 2x before a rug is low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":75,\"survival_score\":12,\"attention_score\":52,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "BAGS 'getbags.fun' is a clone that uses the name of the real Bags launchpad. The pumpswap pool was created about 13 minutes ago and is not a pump.fun curve migration. Price is up ~95%, from launch to a $20k market cap, on $293k volume. The packet lists five other BAGS/getbags.fun tokens launched in the last ~18 minutes, and at least four of them have almost no liquidity left. The LP is 100% unlocked, and 45 bundler wallets are tagged.",
+  "narrative": {
+   "description": "Impersonation of the Bags launchpad brand. There is no website, no DexScreener profile and no description. The only link is an X handle (getbags_fun) listed on GeckoTerminal.",
+   "stage": "spreading",
+   "potential": "weak",
+   "why_spreading": "Buyers seem to be drawn by the ticker and name of a known brand, probably amplified by bots. Several copycat tokens are competing at the same time."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It has the most liquidity of the clones that are still alive, but nothing links it to the real Bags project.",
+   "competing_tokens": "Five other BAGS/getbags.fun tokens in the packet (44nDz, DQxJr, 3FbvT, 5wf561, FSTeuk). Most have $0-$4 liquidity after heavy volume, which looks like a serial rug pattern. FSTeuk launched after this one and has $22k liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "1,713 unique buyers against 62 unique sellers in about 13 minutes. GMGN tags 45 bundler wallets, and the top bundler holds 13.2%. No smart-money or KOL wallets, and only 34 GMGN page visits. Clones with the same name, and $84k-$128k of hourly volume, now have near-zero liquidity. Liquidity ($29k) is larger than market cap ($20k), which suggests a pool seeded by one party with the LP unlocked.",
+   "uncertainty": "It is not confirmed that one deployer runs all the clones. Some buyers may be real people confused by the brand."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% LP unlocked on a directly created pumpswap pool, so it can be pulled at any time",
+    "Liquidity is larger than market cap, meaning the seeded pool can be drained",
+    "Same-name clones already rugged within minutes",
+    "45 bundler wallets; top bundler holds 13.2%",
+    "Creator status is creator_close; deploy platform unknown",
+    "Few LP providers"
+   ]
+  },
+  "counterargument": "Bags is a real, well-known Solana brand, so a clone that survives can attract real buyers. This one has 1,700+ holders, low top-10 concentration (12.5%), renounced mint and freeze authority, and zero creator balance. If the LP stays in place, high turnover from a $20k market cap could reach 2x quickly.",
+  "unknowns": [
+   "Whether one deployer launched all the clones and rugs them in sequence",
+   "Who holds the LP tokens",
+   "Whether the real Bags team has posted anything (a launch or a denial)",
+   "How much of the buyer count comes from bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the packet only."
+  },
+  "thesis": "This looks like a serial clone rug of a brand ticker. Sibling tokens with the same name already went to zero liquidity after similar volume bursts. The LP here is 100% unlocked and larger than market cap, so the deployer is very likely to pull it. Buyers vastly outnumber sellers, which looks like bot or bundled flow rather than real demand. The chance of a 2x before a rug is low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 75,
+  "survival_score": 12,
+  "attention_score": 52,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4368,
+ "type": "result",
+ "duration_ms": 37043,
+ "uuid": "36091df4-104c-4c1e-8f74-d877f97e5107",
+ "ttft_stream_ms": 741,
+ "time_to_request_ms": 48,
+ "first_content_frame_ms": 741,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

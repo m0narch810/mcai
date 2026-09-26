@@ -1,0 +1,180 @@
+{
+ "duration_api_ms": 32189,
+ "stop_reason": "tool_use",
+ "session_id": "d4750869-8971-43ba-9f45-c4017f830ca3",
+ "total_cost_usd": 0.1575796,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 9731,
+  "cache_read_input_tokens": 25998,
+  "output_tokens": 2597,
+  "output_tokens_details": {
+   "thinking_tokens": 393
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9731,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2167,
+    "cache_read_input_tokens": 12244,
+    "cache_creation_input_tokens": 251,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 251
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2597,
+   "cacheReadInputTokens": 25998,
+   "cacheCreationInputTokens": 9731,
+   "webSearchRequests": 0,
+   "costUSD": 0.1350116,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 393,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 11068,
+   "outputTokens": 300,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.022567999999999998,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A copycat \\\"Effective Accelerationism (e/acc)\\\" token was deployed straight onto a PumpSwap pool 12 minutes ago. It borrows the metadata of the leading e/acc coin: the packet's \\\"website\\\" link is usepaid.app/token/CbcyNo\u2026 (a different contract), and its X link is a Beff Jezos status. That leading coin, CbcyNo7m\u2026, is already at about $1.6M market cap and was created about 2 hours earlier. This clone has more liquidity ($165k) than market cap ($95k), 100% of its LP unlocked, a closed creator account and 46 bundler wallets. It traded $2.1M in 12 minutes, which is about 22x its market cap, yet GeckoTerminal shows only 39 unique sellers against 1,008 sells. That pattern fits wash or bot trading around a clone pool set up for a liquidity pull.\",\"narrative\":{\"description\":\"Beff Jezos (Guillaume Verdon, founder of the e/acc movement) posted on X, and several e/acc tokens followed. The story itself is real and has attention in crypto and tech circles.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A post by a well-known figure set off a race of ticker clones. Attention has mostly settled on CbcyNo\u2026 at $1.6M.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. Its own website link points to a different e/acc contract's page, so it looks like a metadata clone of the leader.\",\"competing_tokens\":\"CbcyNo7m\u2026 ($1.6M mcap, $372k h1 volume, created about 2h earlier, and the token its website link points to); 7dVWLA\u2026 ($660k, dead volume); AQJ7hZ\u2026 ($102k, $450k h1); GqmEdR\u2026 (a 2024 e/acc token)\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN counts 46 bundler wallets. GeckoTerminal shows 1,008 sells from only 39 unique sellers. Volume is $2.1M in 12 minutes on a $95k market cap. GeckoTerminal counts 67 holders, while RugCheck says 280. Liquidity above market cap suggests a pool the deployer seeded directly, with LP 100% unlocked and the creator account closed.\",\"uncertainty\":\"I could not read the Beff Jezos post itself (X returned 402), so I cannot confirm what it endorsed. The 262 unique buyers could include some real retail buyers.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of LP unlocked on a pool the deployer seeded; liquidity above market cap\",\"Creator account closed; not a pump.fun graduation (no launchpad)\",\"46 bundler wallets; very few unique sellers relative to sell count\",\"A clone of a leader already at $1.6M, so attention will flow to the leader\"]},\"counterargument\":\"Clone coins sometimes catch spillover demand from traders who missed the leader. The $165k of liquidity is deep for this market cap, and price is up 41% with 262 unique buyers. If the deployer never pulls, a 2x to around $190k is quite possible in a hot e/acc wave.\",\"unknowns\":[\"Content of the Beff Jezos post\",\"Whether the deployer controls the LP tokens (likely)\",\"Real share of unique buyers versus bots\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_found\",\"notes\":\"Time-limited: I ran one web search and one attempt to fetch the X post (HTTP 402). The project's website link points to the competing CbcyNo\u2026 token's page.\"},\"thesis\":\"A metadata clone of the leading e/acc token, on a PumpSwap pool the deployer seeded, with LP fully unlocked, a closed creator and bot-like volume. Liquidity-pull risk is high and the chance of a runner is low.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":55,\"survival_score\":18,\"attention_score\":35,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/beffjezos/status/2103593870189858971\",\"what\":\"Beff Jezos post referenced by the token (could not be fetched, HTTP 402)\"},{\"url\":\"https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU\",\"what\":\"The token's website link, which points to the competing leader token\"},{\"url\":\"https://www.bankless.com/debrief-e-acc-beff-jezos\",\"what\":\"Background on Beff Jezos and the e/acc movement\"}]}",
+ "structured_output": {
+  "what_is_happening": "A copycat \"Effective Accelerationism (e/acc)\" token was deployed straight onto a PumpSwap pool 12 minutes ago. It borrows the metadata of the leading e/acc coin: the packet's \"website\" link is usepaid.app/token/CbcyNo\u2026 (a different contract), and its X link is a Beff Jezos status. That leading coin, CbcyNo7m\u2026, is already at about $1.6M market cap and was created about 2 hours earlier. This clone has more liquidity ($165k) than market cap ($95k), 100% of its LP unlocked, a closed creator account and 46 bundler wallets. It traded $2.1M in 12 minutes, which is about 22x its market cap, yet GeckoTerminal shows only 39 unique sellers against 1,008 sells. That pattern fits wash or bot trading around a clone pool set up for a liquidity pull.",
+  "narrative": {
+   "description": "Beff Jezos (Guillaume Verdon, founder of the e/acc movement) posted on X, and several e/acc tokens followed. The story itself is real and has attention in crypto and tech circles.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A post by a well-known figure set off a race of ticker clones. Attention has mostly settled on CbcyNo\u2026 at $1.6M."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. Its own website link points to a different e/acc contract's page, so it looks like a metadata clone of the leader.",
+   "competing_tokens": "CbcyNo7m\u2026 ($1.6M mcap, $372k h1 volume, created about 2h earlier, and the token its website link points to); 7dVWLA\u2026 ($660k, dead volume); AQJ7hZ\u2026 ($102k, $450k h1); GqmEdR\u2026 (a 2024 e/acc token)",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN counts 46 bundler wallets. GeckoTerminal shows 1,008 sells from only 39 unique sellers. Volume is $2.1M in 12 minutes on a $95k market cap. GeckoTerminal counts 67 holders, while RugCheck says 280. Liquidity above market cap suggests a pool the deployer seeded directly, with LP 100% unlocked and the creator account closed.",
+   "uncertainty": "I could not read the Beff Jezos post itself (X returned 402), so I cannot confirm what it endorsed. The 262 unique buyers could include some real retail buyers."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of LP unlocked on a pool the deployer seeded; liquidity above market cap",
+    "Creator account closed; not a pump.fun graduation (no launchpad)",
+    "46 bundler wallets; very few unique sellers relative to sell count",
+    "A clone of a leader already at $1.6M, so attention will flow to the leader"
+   ]
+  },
+  "counterargument": "Clone coins sometimes catch spillover demand from traders who missed the leader. The $165k of liquidity is deep for this market cap, and price is up 41% with 262 unique buyers. If the deployer never pulls, a 2x to around $190k is quite possible in a hot e/acc wave.",
+  "unknowns": [
+   "Content of the Beff Jezos post",
+   "Whether the deployer controls the LP tokens (likely)",
+   "Real share of unique buyers versus bots"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_found",
+   "notes": "Time-limited: I ran one web search and one attempt to fetch the X post (HTTP 402). The project's website link points to the competing CbcyNo\u2026 token's page."
+  },
+  "thesis": "A metadata clone of the leading e/acc token, on a PumpSwap pool the deployer seeded, with LP fully unlocked, a closed creator and bot-like volume. Liquidity-pull risk is high and the chance of a runner is low.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 55,
+  "survival_score": 18,
+  "attention_score": 35,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/beffjezos/status/2103593870189858971",
+    "what": "Beff Jezos post referenced by the token (could not be fetched, HTTP 402)"
+   },
+   {
+    "url": "https://usepaid.app/token/CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU",
+    "what": "The token's website link, which points to the competing leader token"
+   },
+   {
+    "url": "https://www.bankless.com/debrief-e-acc-beff-jezos",
+    "what": "Background on Beff Jezos and the e/acc movement"
+   }
+  ]
+ },
+ "ttft_ms": 5107,
+ "type": "result",
+ "duration_ms": 32393,
+ "uuid": "51659f8f-6e28-44e2-9ea2-e3f7e212803c",
+ "ttft_stream_ms": 1392,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 1393,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

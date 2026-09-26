@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 42716,
+ "stop_reason": "tool_use",
+ "session_id": "45f958d2-8f09-492d-b213-25352211c8d6",
+ "total_cost_usd": 0.1699232,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 9079,
+  "cache_read_input_tokens": 11676,
+  "output_tokens": 4747,
+  "output_tokens_details": {
+   "thinking_tokens": 424
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9079,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1804,
+    "cache_read_input_tokens": 9554,
+    "cache_creation_input_tokens": 1647,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1647
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 4747,
+   "cacheReadInputTokens": 11676,
+   "cacheCreationInputTokens": 9079,
+   "webSearchRequests": 0,
+   "costUSD": 0.1699232,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 424,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is a 2h-old SATAN token on a PumpSwap pool, not launched through pump.fun (launchpad is null). It is up about 437% in 6h to roughly $122k market cap, with about $103k of liquidity and $400k of volume in the last hour. The creator holds 41.89% of supply and another wallet holds 10.55%. GMGN tags 100 bundler wallets. Four earlier '\ud83d\udcb2SATAN' tokens from the prior ~22h now have zero liquidity.\",\"narrative\":{\"description\":\"A generic 'SATAN' meme with no website, socials, description or DexScreener profile. It has no identifiable story or catalyst.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The attention seems to come from price action and trading bots, not from any narrative. Heavy trade counts and the chart are the only attractants.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the only '\ud83d\udcb2SATAN' pair with live liquidity and volume right now.\",\"competing_tokens\":\"Three earlier '\ud83d\udcb2SATAN' tokens (listed at $65k-$214k market cap) and one 'Satan' pump.fun token all show zero liquidity. This looks like serial relaunches of the same ticker.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"GMGN tags 100 bundler wallets, with a top bundler-trader share of 45%. The creator holds 41.89% of supply and a second wallet holds 10.55%. There were about 6,800 sells from only 129 unique sellers in 6h, and about 3,300 buys per hour, which points to heavy repeat or bot trading. Liquidity is almost equal to market cap, consistent with a dev-seeded custom pool. Earlier same-ticker tokens are all at zero liquidity, a pattern of repeated relaunch-and-pull. There are no socials.\",\"uncertainty\":\"GMGN's bundler tag may over-count. GeckoTerminal's hourly unique counts look capped at 100. I can't confirm the earlier same-ticker tokens share an operator. RugCheck says the LP is 100% locked, but GMGN reports lp_burn_ratio 0.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"Creator holds 41.89% of supply and a second wallet holds 10.55%, so a large dump into the pool is possible\",\"Liquidity is about 84% of market cap on a custom PumpSwap pool, which fits dev-seeded liquidity that can be pulled; GMGN lp_burn_ratio is 0\",\"100 bundler wallets are tagged\",\"Several earlier '\ud83d\udcb2SATAN' tokens are at zero liquidity, which suggests serial rugs\",\"No socials or community\"]},\"counterargument\":\"Price is up 437% in 2h with steady volume, buys slightly ahead of sells, about 1,100 holders, and 100% LP lock according to RugCheck. If the creator's stake stays put, momentum traders could double it to about $250k within 6h, and deep liquidity lets larger buyers get in.\",\"unknowns\":[\"Whether the LP is really locked or can be withdrawn\",\"Whether the earlier SATAN tokens came from the same operator\",\"What the creator wallet intends to do with its 42%\",\"The true count of unique buyers, since GeckoTerminal figures look capped\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet in this condition; I used only the evidence packet.\"},\"thesis\":\"This looks like a serial-relaunch SATAN token with a dominant creator holding (42%), heavy bundling, dev-seeded liquidity and dead same-ticker predecessors. The pump appears manufactured and the setup favors a creator dump or liquidity pull over a further 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":6,\"p_rug\":55,\"survival_score\":22,\"attention_score\":40,\"manipulation_risk\":86,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is a 2h-old SATAN token on a PumpSwap pool, not launched through pump.fun (launchpad is null). It is up about 437% in 6h to roughly $122k market cap, with about $103k of liquidity and $400k of volume in the last hour. The creator holds 41.89% of supply and another wallet holds 10.55%. GMGN tags 100 bundler wallets. Four earlier '\ud83d\udcb2SATAN' tokens from the prior ~22h now have zero liquidity.",
+  "narrative": {
+   "description": "A generic 'SATAN' meme with no website, socials, description or DexScreener profile. It has no identifiable story or catalyst.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The attention seems to come from price action and trading bots, not from any narrative. Heavy trade counts and the chart are the only attractants."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the only '\ud83d\udcb2SATAN' pair with live liquidity and volume right now.",
+   "competing_tokens": "Three earlier '\ud83d\udcb2SATAN' tokens (listed at $65k-$214k market cap) and one 'Satan' pump.fun token all show zero liquidity. This looks like serial relaunches of the same ticker.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "GMGN tags 100 bundler wallets, with a top bundler-trader share of 45%. The creator holds 41.89% of supply and a second wallet holds 10.55%. There were about 6,800 sells from only 129 unique sellers in 6h, and about 3,300 buys per hour, which points to heavy repeat or bot trading. Liquidity is almost equal to market cap, consistent with a dev-seeded custom pool. Earlier same-ticker tokens are all at zero liquidity, a pattern of repeated relaunch-and-pull. There are no socials.",
+   "uncertainty": "GMGN's bundler tag may over-count. GeckoTerminal's hourly unique counts look capped at 100. I can't confirm the earlier same-ticker tokens share an operator. RugCheck says the LP is 100% locked, but GMGN reports lp_burn_ratio 0."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "Creator holds 41.89% of supply and a second wallet holds 10.55%, so a large dump into the pool is possible",
+    "Liquidity is about 84% of market cap on a custom PumpSwap pool, which fits dev-seeded liquidity that can be pulled; GMGN lp_burn_ratio is 0",
+    "100 bundler wallets are tagged",
+    "Several earlier '\ud83d\udcb2SATAN' tokens are at zero liquidity, which suggests serial rugs",
+    "No socials or community"
+   ]
+  },
+  "counterargument": "Price is up 437% in 2h with steady volume, buys slightly ahead of sells, about 1,100 holders, and 100% LP lock according to RugCheck. If the creator's stake stays put, momentum traders could double it to about $250k within 6h, and deep liquidity lets larger buyers get in.",
+  "unknowns": [
+   "Whether the LP is really locked or can be withdrawn",
+   "Whether the earlier SATAN tokens came from the same operator",
+   "What the creator wallet intends to do with its 42%",
+   "The true count of unique buyers, since GeckoTerminal figures look capped"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet in this condition; I used only the evidence packet."
+  },
+  "thesis": "This looks like a serial-relaunch SATAN token with a dominant creator holding (42%), heavy bundling, dev-seeded liquidity and dead same-ticker predecessors. The pump appears manufactured and the setup favors a creator dump or liquidity pull over a further 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 6,
+  "p_rug": 55,
+  "survival_score": 22,
+  "attention_score": 40,
+  "manipulation_risk": 86,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5052,
+ "type": "result",
+ "duration_ms": 42776,
+ "uuid": "632a33ed-bbe3-4925-b9db-8526bba4f864",
+ "ttft_stream_ms": 674,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 675,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

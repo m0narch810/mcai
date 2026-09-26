@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 23686,
+ "stop_reason": "tool_use",
+ "session_id": "4cad5078-d6e8-4591-aca2-4168360b5bc1",
+ "total_cost_usd": 0.11601639999999999,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8388,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2424,
+  "output_tokens_details": {
+   "thinking_tokens": 373
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8388,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2424,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8388,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8388
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2424,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8388,
+   "webSearchRequests": 0,
+   "costUSD": 0.11601639999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 373,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"This is one of at least 10 \\\"Effective Accelerationism / e/acc\\\" tokens launched within about 25 minutes. They appear to be copying a fee-sharing launch whose description says fees go to @beffjezos via UsePaid. This token is 10\u201312 minutes old and sits at about $22k market cap on a PumpSwap pool. The deploy platform is unknown and it is not a pump.fun curve coin. Liquidity ($33k) is larger than market cap, 100% of the LP is unlocked, and the creator account is closed. It has done $186k\u2013195k of volume, with about 893 unique buyers against 118 sellers. GMGN tags 904 of 912 holders as fresh wallets and 42 as bundlers. The apparent leader of the ticker (CbcyNo\u2026) was created about 18 minutes earlier and is at $313k market cap with $2.1M hourly volume. Several other clones have $0.5M\u20130.9M volume but market caps of only $28k\u201370k, which looks like a clone-farm churn pattern.\",\"narrative\":{\"description\":\"e/acc (Effective Accelerationism) is a well-known X movement tied to Beff Jezos. A token that routes fees to his account is a real attention hook if he engages with it. The narrative belongs to the ticker, though, not to this contract.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A famous online movement and handle, a fee-to-creator mechanism that implies endorsement, and a rush of clones all racing for the same ticker.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"The name and description are the same as the others, but it launched about 18 minutes after the leader (CbcyNo\u2026, $313k market cap, $2.1M hourly volume). Nothing in the packet shows the @beffjezos fee routing is actually attached to this contract rather than copied text.\",\"competing_tokens\":\"At least 9 same-name tokens in the packet. CbcyNo\u2026 ($313k) is clearly the canonical-looking leader. DseCu\u2026 ($180k) and 6Trw\u2026 ($137k) are also ahead of this one. There is also an old e/acc token from 2024 (GqmEd\u2026pump).\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"904 of 912 holders are fresh wallets, 42 are bundlers, and there are 0 smart or renowned wallets. The unusual buyer-to-seller ratio (893 vs 118) and roughly 1.6 buy transactions per buyer look like wallet spraying. Liquidity above market cap with 100% unlocked LP and a closed creator account is a typical clone-rug setup. Sibling clones show huge volume and collapsing market caps.\",\"uncertainty\":\"There is no X data, so I can't check whether any real e/acc community attention is flowing to this particular contract. Also, GMGN's fresh-wallet rate (0.25) conflicts with its fresh-wallet count (904).\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked and the creator can pull it at any time (RugCheck danger)\",\"Liquidity is above market cap in a custom PumpSwap pool, a common rug-farm pattern\",\"Creator account is closed and the deploy platform is unknown\",\"Almost all holders are fresh wallets and there are 42 bundlers\",\"Crowded field of same-ticker clones, with the leader capturing most of the flow\"]},\"counterargument\":\"The e/acc attention wave is real and the leader is already above $300k. Latecomer clones sometimes catch overflow buyers when the leader gets expensive. At $22k, only about $44k market cap is needed for a 2x, and the token has already touched an all-time high about 20% above the current price. With 893 unique buyers and heavy flow, a short spike to 2x within 6 hours is plausible before any rug.\",\"unknowns\":[\"Whether the @beffjezos fee routing is actually wired to this contract\",\"Whether Beff Jezos endorsed any specific contract\",\"The LP owner's identity and intent\",\"Whether the fresh-wallet buyers are bots controlled by the deployer\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; judged from the evidence packet only.\"},\"thesis\":\"This is a late, non-canonical e/acc clone with unlocked LP, liquidity above market cap, a closed creator account and almost all fresh-wallet holders. It looks like a clone-farm pool riding a real narrative that another contract already owns. Rug risk is high and the runner chance is below the pool's baseline.\",\"continuation_view\":\"strong_fade\",\"p_runner\":5,\"p_rug\":55,\"survival_score\":15,\"attention_score\":48,\"manipulation_risk\":82,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "This is one of at least 10 \"Effective Accelerationism / e/acc\" tokens launched within about 25 minutes. They appear to be copying a fee-sharing launch whose description says fees go to @beffjezos via UsePaid. This token is 10\u201312 minutes old and sits at about $22k market cap on a PumpSwap pool. The deploy platform is unknown and it is not a pump.fun curve coin. Liquidity ($33k) is larger than market cap, 100% of the LP is unlocked, and the creator account is closed. It has done $186k\u2013195k of volume, with about 893 unique buyers against 118 sellers. GMGN tags 904 of 912 holders as fresh wallets and 42 as bundlers. The apparent leader of the ticker (CbcyNo\u2026) was created about 18 minutes earlier and is at $313k market cap with $2.1M hourly volume. Several other clones have $0.5M\u20130.9M volume but market caps of only $28k\u201370k, which looks like a clone-farm churn pattern.",
+  "narrative": {
+   "description": "e/acc (Effective Accelerationism) is a well-known X movement tied to Beff Jezos. A token that routes fees to his account is a real attention hook if he engages with it. The narrative belongs to the ticker, though, not to this contract.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A famous online movement and handle, a fee-to-creator mechanism that implies endorsement, and a rush of clones all racing for the same ticker."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "The name and description are the same as the others, but it launched about 18 minutes after the leader (CbcyNo\u2026, $313k market cap, $2.1M hourly volume). Nothing in the packet shows the @beffjezos fee routing is actually attached to this contract rather than copied text.",
+   "competing_tokens": "At least 9 same-name tokens in the packet. CbcyNo\u2026 ($313k) is clearly the canonical-looking leader. DseCu\u2026 ($180k) and 6Trw\u2026 ($137k) are also ahead of this one. There is also an old e/acc token from 2024 (GqmEd\u2026pump).",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "904 of 912 holders are fresh wallets, 42 are bundlers, and there are 0 smart or renowned wallets. The unusual buyer-to-seller ratio (893 vs 118) and roughly 1.6 buy transactions per buyer look like wallet spraying. Liquidity above market cap with 100% unlocked LP and a closed creator account is a typical clone-rug setup. Sibling clones show huge volume and collapsing market caps.",
+   "uncertainty": "There is no X data, so I can't check whether any real e/acc community attention is flowing to this particular contract. Also, GMGN's fresh-wallet rate (0.25) conflicts with its fresh-wallet count (904)."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked and the creator can pull it at any time (RugCheck danger)",
+    "Liquidity is above market cap in a custom PumpSwap pool, a common rug-farm pattern",
+    "Creator account is closed and the deploy platform is unknown",
+    "Almost all holders are fresh wallets and there are 42 bundlers",
+    "Crowded field of same-ticker clones, with the leader capturing most of the flow"
+   ]
+  },
+  "counterargument": "The e/acc attention wave is real and the leader is already above $300k. Latecomer clones sometimes catch overflow buyers when the leader gets expensive. At $22k, only about $44k market cap is needed for a 2x, and the token has already touched an all-time high about 20% above the current price. With 893 unique buyers and heavy flow, a short spike to 2x within 6 hours is plausible before any rug.",
+  "unknowns": [
+   "Whether the @beffjezos fee routing is actually wired to this contract",
+   "Whether Beff Jezos endorsed any specific contract",
+   "The LP owner's identity and intent",
+   "Whether the fresh-wallet buyers are bots controlled by the deployer"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; judged from the evidence packet only."
+  },
+  "thesis": "This is a late, non-canonical e/acc clone with unlocked LP, liquidity above market cap, a closed creator account and almost all fresh-wallet holders. It looks like a clone-farm pool riding a real narrative that another contract already owns. Rug risk is high and the runner chance is below the pool's baseline.",
+  "continuation_view": "strong_fade",
+  "p_runner": 5,
+  "p_rug": 55,
+  "survival_score": 15,
+  "attention_score": 48,
+  "manipulation_risk": 82,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 4787,
+ "type": "result",
+ "duration_ms": 23737,
+ "uuid": "f6f3d076-6461-4e76-af28-f67bf1ef7e60",
+ "ttft_stream_ms": 681,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 681,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,185 @@
+{
+ "duration_api_ms": 41816,
+ "stop_reason": "tool_use",
+ "session_id": "64487399-d320-4e83-9c79-b96364d0d72e",
+ "total_cost_usd": 0.2287606,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12243,
+  "cache_read_input_tokens": 27768,
+  "output_tokens": 2720,
+  "output_tokens_details": {
+   "thinking_tokens": 296
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12243,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2084,
+    "cache_read_input_tokens": 13649,
+    "cache_creation_input_tokens": 1358,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1358
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2720,
+   "cacheReadInputTokens": 27768,
+   "cacheCreationInputTokens": 12243,
+   "webSearchRequests": 0,
+   "costUSD": 0.1579216,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 296,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 35504,
+   "outputTokens": 1067,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.070839,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"A pump.fun coin called \\\"Ape\\\", about 11 minutes old and still on the bonding curve. Its description says creator fees go to @TheDefiApe (an X account with about 84K followers) through UsePaid, a service that sends pump.fun creator fees to an X handle. The coin rose about 144% in 5 minutes to roughly $19-23k market cap, on about $59k of 5-minute volume. The deployer has launched about 1,800 tokens and has already closed its position. GMGN tags 194 of 254 holders as bundlers, and 16.8% of supply sits with the dev team or snipers. A \\\"TheDefiApe\\\" token was launched 40 seconds earlier, and several \\\"Ape\\\" copies appeared minutes later. I found nothing showing that @TheDefiApe knows about or endorses this coin.\",\"narrative\":{\"description\":\"Fees routed to an influencer: a serial deployer points UsePaid creator fees at @TheDefiApe, hoping he notices and posts about it.\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"Fast bot and degen flow on a fresh coin tied to a known X handle. I found no organic posts. Any real spread would depend on @TheDefiApe posting about it.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"It is the 'Ape' coin that names @TheDefiApe as the fee recipient, and it got the most volume in its launch cluster.\",\"competing_tokens\":\"'TheDefiApe' (C1zo..., launched 40s earlier, mcap about $4.6k), and several later 'Ape' pump.fun copies at about $3.4k each. Unrelated older ApeCoin and Evil Ape tokens also exist.\",\"is_first_or_canonical\":\"unclear\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"strong_promotional\",\"evidence\":\"The deployer has launched 1,800 tokens and already closed its position. GMGN tags 194 of 254 holders as bundlers, and the bot/degen rate is 47%. The linked X account was renamed twice today (tsxxxxxx0, then tsssssssss0). I found no organic discussion. On the other side, there are 626 unique buyers.\",\"uncertainty\":\"I could not read X. It is unknown whether @TheDefiApe has seen or engaged with the coin.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"Serial deployer with 1,800 tokens, already exited\",\"Heavy bundler share (194 tagged wallets, top bundler trader pct 27.5%)\",\"Dev team/sniper hold rate 16.8%, which can be dumped into the curve\",\"20 graph-detected insiders\",\"Clone tokens splitting attention\"]},\"counterargument\":\"Fee-routing coins sometimes run hard when the influencer acknowledges them, and @TheDefiApe has 84K followers in a degen audience. With 626 unique buyers in 10 minutes and a market cap of only about $20k, one quote-tweet could send it 5x or more.\",\"unknowns\":[\"Whether @TheDefiApe has seen, claimed or posted about the coin\",\"Actual X activity around the coin\",\"Whether the bundlers exit together\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Contract search found nothing relevant. The linked X post returned HTTP 402, and the UsePaid token page failed with an SSL error. The time limit meant I did not search Reddit or Telegram.\"},\"thesis\":\"A serial deployer's fee-to-influencer launch with heavy bundling and a dev who has already exited. Attention looks manufactured unless @TheDefiApe engages. The coin is small enough to double on an influencer post, but the base case is a fade or dump.\",\"continuation_view\":\"fade\",\"p_runner\":9,\"p_rug\":35,\"survival_score\":30,\"attention_score\":48,\"manipulation_risk\":78,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/thedefiape?lang=en\",\"what\":\"@TheDefiApe X account (fee recipient)\"},{\"url\":\"https://nitter.tedomum.net/TheDefiApe\",\"what\":\"TheDefiApe profile info (~84K followers)\"},{\"url\":\"https://usepaid.app/docs\",\"what\":\"UsePaid routes pump.fun creator fees to X handles\"},{\"url\":\"https://coinfomania.com/usepaid-launchpad-aims-to-integrate-token-fee-sharing-for-x/\",\"what\":\"UsePaid fee-sharing launchpad context\"}]}",
+ "structured_output": {
+  "what_is_happening": "A pump.fun coin called \"Ape\", about 11 minutes old and still on the bonding curve. Its description says creator fees go to @TheDefiApe (an X account with about 84K followers) through UsePaid, a service that sends pump.fun creator fees to an X handle. The coin rose about 144% in 5 minutes to roughly $19-23k market cap, on about $59k of 5-minute volume. The deployer has launched about 1,800 tokens and has already closed its position. GMGN tags 194 of 254 holders as bundlers, and 16.8% of supply sits with the dev team or snipers. A \"TheDefiApe\" token was launched 40 seconds earlier, and several \"Ape\" copies appeared minutes later. I found nothing showing that @TheDefiApe knows about or endorses this coin.",
+  "narrative": {
+   "description": "Fees routed to an influencer: a serial deployer points UsePaid creator fees at @TheDefiApe, hoping he notices and posts about it.",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "Fast bot and degen flow on a fresh coin tied to a known X handle. I found no organic posts. Any real spread would depend on @TheDefiApe posting about it."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "It is the 'Ape' coin that names @TheDefiApe as the fee recipient, and it got the most volume in its launch cluster.",
+   "competing_tokens": "'TheDefiApe' (C1zo..., launched 40s earlier, mcap about $4.6k), and several later 'Ape' pump.fun copies at about $3.4k each. Unrelated older ApeCoin and Evil Ape tokens also exist.",
+   "is_first_or_canonical": "unclear",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "strong_promotional",
+   "evidence": "The deployer has launched 1,800 tokens and already closed its position. GMGN tags 194 of 254 holders as bundlers, and the bot/degen rate is 47%. The linked X account was renamed twice today (tsxxxxxx0, then tsssssssss0). I found no organic discussion. On the other side, there are 626 unique buyers.",
+   "uncertainty": "I could not read X. It is unknown whether @TheDefiApe has seen or engaged with the coin."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "Serial deployer with 1,800 tokens, already exited",
+    "Heavy bundler share (194 tagged wallets, top bundler trader pct 27.5%)",
+    "Dev team/sniper hold rate 16.8%, which can be dumped into the curve",
+    "20 graph-detected insiders",
+    "Clone tokens splitting attention"
+   ]
+  },
+  "counterargument": "Fee-routing coins sometimes run hard when the influencer acknowledges them, and @TheDefiApe has 84K followers in a degen audience. With 626 unique buyers in 10 minutes and a market cap of only about $20k, one quote-tweet could send it 5x or more.",
+  "unknowns": [
+   "Whether @TheDefiApe has seen, claimed or posted about the coin",
+   "Actual X activity around the coin",
+   "Whether the bundlers exit together"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Contract search found nothing relevant. The linked X post returned HTTP 402, and the UsePaid token page failed with an SSL error. The time limit meant I did not search Reddit or Telegram."
+  },
+  "thesis": "A serial deployer's fee-to-influencer launch with heavy bundling and a dev who has already exited. Attention looks manufactured unless @TheDefiApe engages. The coin is small enough to double on an influencer post, but the base case is a fade or dump.",
+  "continuation_view": "fade",
+  "p_runner": 9,
+  "p_rug": 35,
+  "survival_score": 30,
+  "attention_score": 48,
+  "manipulation_risk": 78,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/thedefiape?lang=en",
+    "what": "@TheDefiApe X account (fee recipient)"
+   },
+   {
+    "url": "https://nitter.tedomum.net/TheDefiApe",
+    "what": "TheDefiApe profile info (~84K followers)"
+   },
+   {
+    "url": "https://usepaid.app/docs",
+    "what": "UsePaid routes pump.fun creator fees to X handles"
+   },
+   {
+    "url": "https://coinfomania.com/usepaid-launchpad-aims-to-integrate-token-fee-sharing-for-x/",
+    "what": "UsePaid fee-sharing launchpad context"
+   }
+  ]
+ },
+ "ttft_ms": 1236,
+ "type": "result",
+ "duration_ms": 35040,
+ "uuid": "ed3d148a-c691-40d2-be05-acaed30d31c9",
+ "ttft_stream_ms": 707,
+ "time_to_request_ms": 52,
+ "first_content_frame_ms": 708,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

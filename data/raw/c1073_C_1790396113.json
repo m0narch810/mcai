@@ -1,0 +1,176 @@
+{
+ "duration_api_ms": 33938,
+ "stop_reason": "tool_use",
+ "session_id": "31618f2b-4754-4f3a-b0ab-b7da87952790",
+ "total_cost_usd": 0.1853392,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11279,
+  "cache_read_input_tokens": 14696,
+  "output_tokens": 2442,
+  "output_tokens_details": {
+   "thinking_tokens": 389
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11279,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2055,
+    "cache_read_input_tokens": 11932,
+    "cache_creation_input_tokens": 2111,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2111
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 2442,
+   "cacheReadInputTokens": 14696,
+   "cacheCreationInputTokens": 11279,
+   "webSearchRequests": 0,
+   "costUSD": 0.14202720000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 389,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 21042,
+   "outputTokens": 454,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.043312,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"51X (\\\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\\\", meaning \\\"the official first-launch meme of 51 Chigua\\\") is a 12-minute-old pool that the creator set up directly on PumpSwap. The mint was created about 5 seconds before the pool, and there was no pump.fun bonding-curve migration. The creator added the liquidity, none of it is locked, and the creator's wallet still holds 18.99% of supply. The packet lists at least 10 other tokens with the same name and ticker launched over roughly the past 24 hours, and every one of them now has almost no liquidity ($0 to $0.05). One of them (3yyb\u2026) did about $977k of volume in its first hour, about 75 minutes before this one, and then its liquidity went to near zero. Buying on this token looks lopsided: 921 unique buyers against only 30 unique sellers. That fits a known pattern of recycled rug pools that ride the name of the 51\u5403\u74dc (51 Chigua) Chinese gossip site.\",\"narrative\":{\"description\":\"51\u5403\u74dc\u7f51 (51 Chigua) is a well-known Chinese gossip and leak website with many mirror domains and an X account. I found no sign that the site itself launched or endorses a token. The \\\"\u5b98\u65b9\u9996\u53d1\\\" (\\\"official first launch\\\") claim in the token name is only a claim.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"The flow looks like it comes from bots or copy-traders who buy each new clone as it appears. I found no organic discussion of this contract.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Right now it is the only same-name clone with live liquidity, because the earlier ones have been drained.\",\"competing_tokens\":\"At least 10 tokens with the same name and ticker (CCwx\u2026, 3yyb\u2026, V6rB\u2026, DUtv\u2026, CyTb\u2026 and others) all launched in the past day, all now at roughly $0 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"Serial same-name launches that each end at near-zero liquidity. The pool was created directly by the creator, with LP 100% unlocked and the creator holding 19%. The buyer/seller ratio of 921 to 30 is very lopsided. There is no DexScreener profile and no project links.\",\"uncertainty\":\"I could not see X posts, and I could not confirm whether the same deployer is behind the other clones (the packet says this creator has no other tokens, but a fresh wallet per clone is common).\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"LP is 100% unlocked and controlled by the creator, so the liquidity can be pulled at any time\",\"The creator holds 18.99% of supply\",\"Every earlier same-name clone has been drained to near zero\",\"Only 30 unique sellers against 921 buyers, which could mean selling is restricted or the volume is manufactured\"]},\"counterargument\":\"The token is up 227% with heavy volume, and one earlier clone reached about $977k of hourly volume, so the 51 Chigua name clearly pulls in flow. If this creator lets it run for a while before pulling liquidity, the price could double from a $41k market cap within minutes.\",\"unknowns\":[\"Whether the other clones share a deployer or funder\",\"Whether selling is actually possible\",\"X activity from the gua51x account\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Time was limited. Web searches on the name, contract and handle found only the gossip website itself and nothing about the token. Reddit, Telegram and Discord were not searched.\"},\"thesis\":\"This looks like one pool in a serial rug-farm: same-name clones launched in sequence, each with creator-controlled unlocked LP, each drained after its surge. The previous clones all went to zero, so the most likely outcome is that liquidity is pulled before a 2x.\",\"continuation_view\":\"strong_fade\",\"p_runner\":4,\"p_rug\":78,\"survival_score\":8,\"attention_score\":45,\"manipulation_risk\":88,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"1h\",\"sources\":[{\"url\":\"https://x.com/51chiguawang\",\"what\":\"X account of the real 51\u5403\u74dc (51 Chigua) gossip site\"},{\"url\":\"https://www.51chiguatv.com/\",\"what\":\"The 51\u5403\u74dc\u7f51 gossip site; no link to a token\"}]}",
+ "structured_output": {
+  "what_is_happening": "51X (\"51\u5403\u74dc\u7f51\u5b98\u65b9\u9996\u53d1Meme\", meaning \"the official first-launch meme of 51 Chigua\") is a 12-minute-old pool that the creator set up directly on PumpSwap. The mint was created about 5 seconds before the pool, and there was no pump.fun bonding-curve migration. The creator added the liquidity, none of it is locked, and the creator's wallet still holds 18.99% of supply. The packet lists at least 10 other tokens with the same name and ticker launched over roughly the past 24 hours, and every one of them now has almost no liquidity ($0 to $0.05). One of them (3yyb\u2026) did about $977k of volume in its first hour, about 75 minutes before this one, and then its liquidity went to near zero. Buying on this token looks lopsided: 921 unique buyers against only 30 unique sellers. That fits a known pattern of recycled rug pools that ride the name of the 51\u5403\u74dc (51 Chigua) Chinese gossip site.",
+  "narrative": {
+   "description": "51\u5403\u74dc\u7f51 (51 Chigua) is a well-known Chinese gossip and leak website with many mirror domains and an X account. I found no sign that the site itself launched or endorses a token. The \"\u5b98\u65b9\u9996\u53d1\" (\"official first launch\") claim in the token name is only a claim.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "The flow looks like it comes from bots or copy-traders who buy each new clone as it appears. I found no organic discussion of this contract."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Right now it is the only same-name clone with live liquidity, because the earlier ones have been drained.",
+   "competing_tokens": "At least 10 tokens with the same name and ticker (CCwx\u2026, 3yyb\u2026, V6rB\u2026, DUtv\u2026, CyTb\u2026 and others) all launched in the past day, all now at roughly $0 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "Serial same-name launches that each end at near-zero liquidity. The pool was created directly by the creator, with LP 100% unlocked and the creator holding 19%. The buyer/seller ratio of 921 to 30 is very lopsided. There is no DexScreener profile and no project links.",
+   "uncertainty": "I could not see X posts, and I could not confirm whether the same deployer is behind the other clones (the packet says this creator has no other tokens, but a fresh wallet per clone is common)."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "LP is 100% unlocked and controlled by the creator, so the liquidity can be pulled at any time",
+    "The creator holds 18.99% of supply",
+    "Every earlier same-name clone has been drained to near zero",
+    "Only 30 unique sellers against 921 buyers, which could mean selling is restricted or the volume is manufactured"
+   ]
+  },
+  "counterargument": "The token is up 227% with heavy volume, and one earlier clone reached about $977k of hourly volume, so the 51 Chigua name clearly pulls in flow. If this creator lets it run for a while before pulling liquidity, the price could double from a $41k market cap within minutes.",
+  "unknowns": [
+   "Whether the other clones share a deployer or funder",
+   "Whether selling is actually possible",
+   "X activity from the gua51x account"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Time was limited. Web searches on the name, contract and handle found only the gossip website itself and nothing about the token. Reddit, Telegram and Discord were not searched."
+  },
+  "thesis": "This looks like one pool in a serial rug-farm: same-name clones launched in sequence, each with creator-controlled unlocked LP, each drained after its surge. The previous clones all went to zero, so the most likely outcome is that liquidity is pulled before a 2x.",
+  "continuation_view": "strong_fade",
+  "p_runner": 4,
+  "p_rug": 78,
+  "survival_score": 8,
+  "attention_score": 45,
+  "manipulation_risk": 88,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "1h",
+  "sources": [
+   {
+    "url": "https://x.com/51chiguawang",
+    "what": "X account of the real 51\u5403\u74dc (51 Chigua) gossip site"
+   },
+   {
+    "url": "https://www.51chiguatv.com/",
+    "what": "The 51\u5403\u74dc\u7f51 gossip site; no link to a token"
+   }
+  ]
+ },
+ "ttft_ms": 3614,
+ "type": "result",
+ "duration_ms": 30383,
+ "uuid": "88b13528-7897-4d18-ae5f-1f657596455f",
+ "ttft_stream_ms": 671,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 671,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

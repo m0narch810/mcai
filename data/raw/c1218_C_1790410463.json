@@ -1,0 +1,177 @@
+{
+ "duration_api_ms": 38949,
+ "stop_reason": "tool_use",
+ "session_id": "8400ea48-ba9c-4e0a-9743-ca7f5f26d584",
+ "total_cost_usd": 0.21866760000000002,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 12094,
+  "cache_read_input_tokens": 27938,
+  "output_tokens": 2615,
+  "output_tokens_details": {
+   "thinking_tokens": 370
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12094,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2195,
+    "cache_read_input_tokens": 13739,
+    "cache_creation_input_tokens": 1119,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1119
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 2615,
+   "cacheReadInputTokens": 27938,
+   "cacheCreationInputTokens": 12094,
+   "webSearchRequests": 0,
+   "costUSD": 0.1546636,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 370,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 29919,
+   "outputTokens": 817,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.064004,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BUTTPHIL (BdBYu\u2026) is a copycat of an existing BUTTPHIL token. Its pool was created at 08:03 UTC directly on PumpSwap, without a pump.fun curve and without a pump-suffix address. That is about 27 minutes after the apparent canonical BUTTPHIL (HBDC\u2026pump), which the packet shows at about $207k market cap with $3.5M of volume in the past hour. This clone had about $250k of volume in 10 minutes and 2,051 unique buyers against only 57 unique sellers. Its liquidity (about $31\u201336k) is larger than its market cap, and 100% of the LP is unlocked. Between detection and data collection, 43 seconds later, the market cap fell from $30.3k to $21.9k (-28%). The pattern looks like a dev-seeded pool that uses many small bot buys to show up on scanners, a common setup for pulling liquidity.\",\"narrative\":{\"description\":\"'BUTTPHIL' seems to be a meme running right now on the Solana memecoin scene. The canonical token has millions in hourly volume. I could not find what the meme refers to on the web.\",\"stage\":\"unclear\",\"potential\":\"weak\",\"why_spreading\":\"Its attention comes from the canonical HBDC\u2026pump token. Clones like this one catch traders who search the ticker by mistake, plus scanner traffic.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"None found. It launched about 27 minutes after the main BUTTPHIL on pump.fun and has no socials, website or DexScreener profile. The GeckoTerminal X handle 'buttphildev' is not verified.\",\"competing_tokens\":\"HBDCdfDAYAi124A5ssqi4KN17Bgs15SBUrCoa1e2pump: about $207k market cap, $3.5M hourly volume, created first, so it is clearly the canonical one. Several other clones are already dead at $0 liquidity.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"coordinated\",\"evidence\":\"2,051 unique buyers against 57 unique sellers in 10 minutes, and 25 bundler wallets. GMGN shows 0 smart-money or KOL wallets and just 2 page visits. A graph insider network of 30 wallets. The creator has closed out, and the 100% unlocked LP is larger than the market cap.\",\"uncertainty\":\"I could not see the on-chain funding sources. Some of the buyers could be real users searching the ticker by mistake.\"},\"market_feasibility\":{\"assessment\":\"poor\",\"structural_risks\":[\"100% of the LP is unlocked, with few LP providers, so it can be pulled at any time\",\"A ticker clone competing with a much larger canonical token\",\"Buyers vastly outnumber sellers, which suggests bot-generated buys\",\"Price is already falling fast after the peak (-28% in 43 seconds)\",\"25 bundler wallets and a 30-wallet insider network\"]},\"counterargument\":\"Clones of a hot ticker sometimes get a second wave of buyers who mix them up with the original. $30k of liquidity at a $22k market cap means a modest flow could move the price a lot. The creator's earlier token reached a $337k all-time high, so this dev is not necessarily a pure rugger.\",\"unknowns\":[\"What the BUTTPHIL meme refers to\",\"Who owns the LP and whether it gets pulled\",\"Whether the buyers are bots or users who confused it with the main token\"],\"source_coverage\":{\"x_twitter\":\"searched_nothing_found\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"searched_nothing_found\",\"notes\":\"Web searches for the contract address, the ticker and x.com returned nothing relevant. The project lists no website or socials. I did not run separate Reddit, Telegram or Discord searches because of the time limit; the general web searches did not surface any.\"},\"thesis\":\"A non-canonical ticker clone with unlocked LP, lopsided bot-like buying and a price that is already falling. It has a very low chance of doubling before halving and a high chance of a liquidity pull.\",\"continuation_view\":\"strong_fade\",\"p_runner\":3,\"p_rug\":62,\"survival_score\":15,\"attention_score\":30,\"manipulation_risk\":85,\"tail_class\":\"A_dead_or_chop\",\"research_confidence\":\"medium\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://dexscreener.com/solana/HA354nqh69Z9FvNvhsoMaUUHvnhQwhoCLf3SH4DBm88S\",\"what\":\"Pair for this token; the packet's market data comes from DexScreener\"},{\"url\":\"https://dexscreener.com/solana/t5mzpkou42yf3ssrqyrxfjzdl4zvbkg8u1hxqbfdyoo\",\"what\":\"Unrelated 'butt' token, the only kind of result the ticker search returned\"}]}",
+ "structured_output": {
+  "what_is_happening": "BUTTPHIL (BdBYu\u2026) is a copycat of an existing BUTTPHIL token. Its pool was created at 08:03 UTC directly on PumpSwap, without a pump.fun curve and without a pump-suffix address. That is about 27 minutes after the apparent canonical BUTTPHIL (HBDC\u2026pump), which the packet shows at about $207k market cap with $3.5M of volume in the past hour. This clone had about $250k of volume in 10 minutes and 2,051 unique buyers against only 57 unique sellers. Its liquidity (about $31\u201336k) is larger than its market cap, and 100% of the LP is unlocked. Between detection and data collection, 43 seconds later, the market cap fell from $30.3k to $21.9k (-28%). The pattern looks like a dev-seeded pool that uses many small bot buys to show up on scanners, a common setup for pulling liquidity.",
+  "narrative": {
+   "description": "'BUTTPHIL' seems to be a meme running right now on the Solana memecoin scene. The canonical token has millions in hourly volume. I could not find what the meme refers to on the web.",
+   "stage": "unclear",
+   "potential": "weak",
+   "why_spreading": "Its attention comes from the canonical HBDC\u2026pump token. Clones like this one catch traders who search the ticker by mistake, plus scanner traffic."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "None found. It launched about 27 minutes after the main BUTTPHIL on pump.fun and has no socials, website or DexScreener profile. The GeckoTerminal X handle 'buttphildev' is not verified.",
+   "competing_tokens": "HBDCdfDAYAi124A5ssqi4KN17Bgs15SBUrCoa1e2pump: about $207k market cap, $3.5M hourly volume, created first, so it is clearly the canonical one. Several other clones are already dead at $0 liquidity.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "coordinated",
+   "evidence": "2,051 unique buyers against 57 unique sellers in 10 minutes, and 25 bundler wallets. GMGN shows 0 smart-money or KOL wallets and just 2 page visits. A graph insider network of 30 wallets. The creator has closed out, and the 100% unlocked LP is larger than the market cap.",
+   "uncertainty": "I could not see the on-chain funding sources. Some of the buyers could be real users searching the ticker by mistake."
+  },
+  "market_feasibility": {
+   "assessment": "poor",
+   "structural_risks": [
+    "100% of the LP is unlocked, with few LP providers, so it can be pulled at any time",
+    "A ticker clone competing with a much larger canonical token",
+    "Buyers vastly outnumber sellers, which suggests bot-generated buys",
+    "Price is already falling fast after the peak (-28% in 43 seconds)",
+    "25 bundler wallets and a 30-wallet insider network"
+   ]
+  },
+  "counterargument": "Clones of a hot ticker sometimes get a second wave of buyers who mix them up with the original. $30k of liquidity at a $22k market cap means a modest flow could move the price a lot. The creator's earlier token reached a $337k all-time high, so this dev is not necessarily a pure rugger.",
+  "unknowns": [
+   "What the BUTTPHIL meme refers to",
+   "Who owns the LP and whether it gets pulled",
+   "Whether the buyers are bots or users who confused it with the main token"
+  ],
+  "source_coverage": {
+   "x_twitter": "searched_nothing_found",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "searched_nothing_found",
+   "notes": "Web searches for the contract address, the ticker and x.com returned nothing relevant. The project lists no website or socials. I did not run separate Reddit, Telegram or Discord searches because of the time limit; the general web searches did not surface any."
+  },
+  "thesis": "A non-canonical ticker clone with unlocked LP, lopsided bot-like buying and a price that is already falling. It has a very low chance of doubling before halving and a high chance of a liquidity pull.",
+  "continuation_view": "strong_fade",
+  "p_runner": 3,
+  "p_rug": 62,
+  "survival_score": 15,
+  "attention_score": 30,
+  "manipulation_risk": 85,
+  "tail_class": "A_dead_or_chop",
+  "research_confidence": "medium",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://dexscreener.com/solana/HA354nqh69Z9FvNvhsoMaUUHvnhQwhoCLf3SH4DBm88S",
+    "what": "Pair for this token; the packet's market data comes from DexScreener"
+   },
+   {
+    "url": "https://dexscreener.com/solana/t5mzpkou42yf3ssrqyrxfjzdl4zvbkg8u1hxqbfdyoo",
+    "what": "Unrelated 'butt' token, the only kind of result the ticker search returned"
+   }
+  ]
+ },
+ "ttft_ms": 2628,
+ "type": "result",
+ "duration_ms": 34215,
+ "uuid": "53da3827-f86d-4209-b37d-395c8679abc5",
+ "ttft_stream_ms": 748,
+ "time_to_request_ms": 49,
+ "first_content_frame_ms": 749,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

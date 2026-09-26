@@ -1,0 +1,155 @@
+{
+ "duration_api_ms": 24815,
+ "stop_reason": "tool_use",
+ "session_id": "9316ae14-9487-4372-bdd2-d8533e47f4c9",
+ "total_cost_usd": 0.1170804,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8466,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2446,
+  "output_tokens_details": {
+   "thinking_tokens": 562
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8466,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2446,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8466,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8466
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2446,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8466,
+   "webSearchRequests": 0,
+   "costUSD": 0.1170804,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 562,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"STAN \\\"Stan Cancer Fund\\\" is a 12-minute-old PumpSwap pair. GMGN reports a Meteora virtual-curve launch that migrated instantly. The coin has risen about 170% to roughly $150k market cap on $155-168k of volume. Buying is very lopsided: 1,165 unique buyers against 88 unique sellers. At least 8 other \\\"Stan Cancer Fund\\\" tokens were launched within the same ~15 minutes, so this is a copycat war around one story, probably a charity or cancer-fund tweet from an X account (the packet links to vegadevv/status/...). The token's own website link points to a different contract, BiGSt..., which was launched earlier and has more volume in the last hour ($416k).\",\"narrative\":{\"description\":\"A charity or cancer-fund story about someone called 'Stan', apparently tied to a single tweet. Sympathy and charity stories can draw real buyers, but they are also easy to farm with many copycat deploys.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A fresh tweet-driven story, with many deployers racing to capture it. The heavy one-sided buying from about 1.1k unique buyers suggests real retail interest right now.\"},\"token_connection\":{\"assessment\":\"unclear\",\"why_this_token\":\"It has the highest market cap of the Stan Cancer Fund clones in the packet ($150k, versus $87k for BiGSt and under $70k for the rest) and has broad buyer participation.\",\"competing_tokens\":\"BiGSt... (created earlier, $416k volume in the last hour, and the target of this token's own website link) plus about 7 other same-name clones, several with liquidity already at zero.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"The breadth looks real: 1,165 unique buyers, a 9.4% bot/degen rate, zero fresh-wallet rate and no paid DexScreener promotion. Against that, GMGN tags 16 bundler wallets and 9 snipers. The swarm of clones, several already dead with zero liquidity, shows extractive deployers farming the story. The creator has launched 6 tokens and has closed their position.\",\"uncertainty\":\"I can't see the source tweet or tell whether any fund is legitimate. It's also unclear which contract the community treats as the official one.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"RugCheck flags 99.99% of LP as unlocked (danger), but GMGN reports an LP burn ratio of 1.0, so the two sources conflict\",\"An unlabelled wallet holds 80% of supply per RugCheck. GMGN's top-10 rate of 8% suggests this is a pool or curve account, but that is unconfirmed\",\"Liquidity of about $27k is thin against a $150k market cap\",\"The creator runs several launches and has already closed out\",\"Buyers may rotate to the canonical BiGSt contract or to other clones\"]},\"counterargument\":\"This is the market-cap leader among the clones, and demand is heavily one-sided with more than 1,100 unique buyers and almost no sellers. If the story goes viral and this contract becomes the one everyone treats as official, it could easily 2x from $150k to $300k+ within hours.\",\"unknowns\":[\"Which contract the original tweet author or the fund endorses\",\"What the 80% holder wallet actually is\",\"Whether the LP is really unlocked or burned\",\"How strong the source tweet's reach is\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"No internet access in this condition; the judgment uses the evidence packet only.\"},\"thesis\":\"Buying is strong and broad on a live charity-story narrative, and this coin currently leads the clones on market cap. But it is not the canonical contract: its own website link points to BiGSt, which has more volume. On top of that, the LP-lock data conflicts, the creator is a serial launcher, and bundlers are present. Clone wars usually sort themselves out within the hour and the losers bleed out. I rate it somewhat above the typical pool coin because the demand is real, but the risk of losing the clone war is high.\",\"continuation_view\":\"neutral\",\"p_runner\":14,\"p_rug\":35,\"survival_score\":38,\"attention_score\":72,\"manipulation_risk\":55,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "STAN \"Stan Cancer Fund\" is a 12-minute-old PumpSwap pair. GMGN reports a Meteora virtual-curve launch that migrated instantly. The coin has risen about 170% to roughly $150k market cap on $155-168k of volume. Buying is very lopsided: 1,165 unique buyers against 88 unique sellers. At least 8 other \"Stan Cancer Fund\" tokens were launched within the same ~15 minutes, so this is a copycat war around one story, probably a charity or cancer-fund tweet from an X account (the packet links to vegadevv/status/...). The token's own website link points to a different contract, BiGSt..., which was launched earlier and has more volume in the last hour ($416k).",
+  "narrative": {
+   "description": "A charity or cancer-fund story about someone called 'Stan', apparently tied to a single tweet. Sympathy and charity stories can draw real buyers, but they are also easy to farm with many copycat deploys.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A fresh tweet-driven story, with many deployers racing to capture it. The heavy one-sided buying from about 1.1k unique buyers suggests real retail interest right now."
+  },
+  "token_connection": {
+   "assessment": "unclear",
+   "why_this_token": "It has the highest market cap of the Stan Cancer Fund clones in the packet ($150k, versus $87k for BiGSt and under $70k for the rest) and has broad buyer participation.",
+   "competing_tokens": "BiGSt... (created earlier, $416k volume in the last hour, and the target of this token's own website link) plus about 7 other same-name clones, several with liquidity already at zero.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "The breadth looks real: 1,165 unique buyers, a 9.4% bot/degen rate, zero fresh-wallet rate and no paid DexScreener promotion. Against that, GMGN tags 16 bundler wallets and 9 snipers. The swarm of clones, several already dead with zero liquidity, shows extractive deployers farming the story. The creator has launched 6 tokens and has closed their position.",
+   "uncertainty": "I can't see the source tweet or tell whether any fund is legitimate. It's also unclear which contract the community treats as the official one."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "RugCheck flags 99.99% of LP as unlocked (danger), but GMGN reports an LP burn ratio of 1.0, so the two sources conflict",
+    "An unlabelled wallet holds 80% of supply per RugCheck. GMGN's top-10 rate of 8% suggests this is a pool or curve account, but that is unconfirmed",
+    "Liquidity of about $27k is thin against a $150k market cap",
+    "The creator runs several launches and has already closed out",
+    "Buyers may rotate to the canonical BiGSt contract or to other clones"
+   ]
+  },
+  "counterargument": "This is the market-cap leader among the clones, and demand is heavily one-sided with more than 1,100 unique buyers and almost no sellers. If the story goes viral and this contract becomes the one everyone treats as official, it could easily 2x from $150k to $300k+ within hours.",
+  "unknowns": [
+   "Which contract the original tweet author or the fund endorses",
+   "What the 80% holder wallet actually is",
+   "Whether the LP is really unlocked or burned",
+   "How strong the source tweet's reach is"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "No internet access in this condition; the judgment uses the evidence packet only."
+  },
+  "thesis": "Buying is strong and broad on a live charity-story narrative, and this coin currently leads the clones on market cap. But it is not the canonical contract: its own website link points to BiGSt, which has more volume. On top of that, the LP-lock data conflicts, the creator is a serial launcher, and bundlers are present. Clone wars usually sort themselves out within the hour and the losers bleed out. I rate it somewhat above the typical pool coin because the demand is real, but the risk of losing the clone war is high.",
+  "continuation_view": "neutral",
+  "p_runner": 14,
+  "p_rug": 35,
+  "survival_score": 38,
+  "attention_score": 72,
+  "manipulation_risk": 55,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 8292,
+ "type": "result",
+ "duration_ms": 24861,
+ "uuid": "04d2fc45-d487-4851-ab78-f25d04637c90",
+ "ttft_stream_ms": 1228,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1228,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,181 @@
+{
+ "duration_api_ms": 56314,
+ "stop_reason": "tool_use",
+ "session_id": "6a91ec57-55a5-45bf-b1b7-13fa49c5afc5",
+ "total_cost_usd": 0.257276,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 13488,
+  "cache_read_input_tokens": 29115,
+  "output_tokens": 3072,
+  "output_tokens_details": {
+   "thinking_tokens": 334
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13488,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2367,
+    "cache_read_input_tokens": 14777,
+    "cache_creation_input_tokens": 1475,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1475
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3072,
+   "cacheReadInputTokens": 29115,
+   "cacheCreationInputTokens": 13488,
+   "webSearchRequests": 0,
+   "costUSD": 0.175191,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 334,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-4-5-20251001": {
+   "inputTokens": 35700,
+   "outputTokens": 1277,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.082085,
+   "contextWindow": 200000,
+   "maxOutputTokens": 32000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-haiku-4-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"DEBTCAT is an 11-minute-old pump.fun coin launched through UsePaid (description: \\\"Fees to @natdebtfund via UsePaid\\\"). That makes it a \\\"creator fees go to an X account\\\" coin, tied to an X post by @Elons55thbday. In its first ~10 minutes it went up about 4x to a $35k ATH, with $158k volume and 896 unique buyers. It has since fallen about 37-43% in the last 5 minutes to about $20k market cap. At least 8 copycat DEBTCAT tokens came out within minutes, and this one was the first.\",\"narrative\":{\"description\":\"A 'debt cat' meme with creator fees routed to an X account (@natdebtfund, seemingly a national-debt 'fund' joke; there is a related-looking debtcats.com, 'Funding America, One Cat at a Time'). The source is an X post by @Elons55thbday that I could not fetch (HTTP 402).\",\"stage\":\"nascent\",\"potential\":\"weak\",\"why_spreading\":\"It looks like a fast pump.fun meta: fee-sharing to X accounts through UsePaid, plus a cat/national-debt joke. The quick copycat launches show traders reacting to a specific post, but I found no indexed discussion outside pump.fun trading.\"},\"token_connection\":{\"assessment\":\"moderate\",\"why_this_token\":\"It is the earliest of the 2026-09-25 DEBTCAT launches (created 23:49:21Z; the copies came 44s to 7 min later). It carries the UsePaid fee link and the source-post link, and it holds almost all the volume.\",\"competing_tokens\":\"8+ same-ticker clones from the last few minutes, all with small volume (the largest is iBYL at $6.9k h1 volume). There is also an older, dead 'Debt Cat' (AP8Q).\",\"is_first_or_canonical\":\"yes\",\"ticker_hijack_risk\":\"low\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"896 unique buyers and 835 holders in 11 minutes point to broad trench participation. GMGN, however, tags 299 bundler wallets with a 34% top-bundler trader share and a 39.5% bot/degen rate. GMGN's creator address has launched 16,577 tokens, which is probably a platform/launcher deployer, and it is marked creator_close. There are 10 smart wallets and 2 renowned (KOL) wallets, and no paid boosts.\",\"uncertainty\":\"I could not read the X source post or see any engagement numbers. I also can't tell whether the bundler tags are real insider bundles or just activity from bot trading clients.\"},\"market_feasibility\":{\"assessment\":\"adequate\",\"structural_risks\":[\"High bundler share (34%) could dump into the curve\",\"Price already down about 40% from the ATH within 5 minutes: a fading first pump\",\"Serial launcher deployer (16,577 tokens)\",\"Low absolute market cap, so it is very volatile either way; top10 at 24% is acceptable\"]},\"counterargument\":\"It is the canonical first coin of an active meta, with 896 unique buyers, smart and KOL wallets present, and no dev holdings. At $20k a 2x only needs $40k, just above the earlier ATH of $35k, and a single retweet from a bigger account could do it. A -37% m5 dip on a curve coin is often a shakeout before the second leg.\",\"unknowns\":[\"Content and reach of the @Elons55thbday post\",\"Who @natdebtfund is and whether they will engage\",\"Whether the bundler wallets are coordinated insiders\",\"UsePaid page content (fetch failed)\"],\"source_coverage\":{\"x_twitter\":\"inaccessible\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"searched_nothing_found\",\"project_site\":\"inaccessible\",\"notes\":\"Contract search found nothing. site:x.com searches did not surface $DEBTCAT posts. The X post returned HTTP 402, the UsePaid page failed with an SSL error, and debtcats.com returned HTTP 451. The time limit kept coverage thin.\"},\"thesis\":\"It is the canonical coin of a small, fast fee-to-X-account meta and draws real trench participation, but momentum is already reversing (-37% m5) and bundler share is high. Double-then-die is possible, but most coins like this fade after the first spike. My probability of a runner is a bit above the pool's base rate because it is canonical and has many unique buyers.\",\"continuation_view\":\"fade\",\"p_runner\":13,\"p_rug\":30,\"survival_score\":45,\"attention_score\":55,\"manipulation_risk\":60,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[{\"url\":\"https://x.com/Elons55thbday/status/2103632982514770375\",\"what\":\"Source X post linked in the packet (fetch returned HTTP 402)\"},{\"url\":\"https://usepaid.app/token/6JtdVAKukv1ML1gbtk4caULqbFT8xfxp9wkhSFeVpump\",\"what\":\"UsePaid fee page (fetch failed)\"},{\"url\":\"https://www.debtcats.com/\",\"what\":\"Related-looking 'DebtCats: Funding America, One Cat at a Time' site (search snippet only)\"}]}",
+ "structured_output": {
+  "what_is_happening": "DEBTCAT is an 11-minute-old pump.fun coin launched through UsePaid (description: \"Fees to @natdebtfund via UsePaid\"). That makes it a \"creator fees go to an X account\" coin, tied to an X post by @Elons55thbday. In its first ~10 minutes it went up about 4x to a $35k ATH, with $158k volume and 896 unique buyers. It has since fallen about 37-43% in the last 5 minutes to about $20k market cap. At least 8 copycat DEBTCAT tokens came out within minutes, and this one was the first.",
+  "narrative": {
+   "description": "A 'debt cat' meme with creator fees routed to an X account (@natdebtfund, seemingly a national-debt 'fund' joke; there is a related-looking debtcats.com, 'Funding America, One Cat at a Time'). The source is an X post by @Elons55thbday that I could not fetch (HTTP 402).",
+   "stage": "nascent",
+   "potential": "weak",
+   "why_spreading": "It looks like a fast pump.fun meta: fee-sharing to X accounts through UsePaid, plus a cat/national-debt joke. The quick copycat launches show traders reacting to a specific post, but I found no indexed discussion outside pump.fun trading."
+  },
+  "token_connection": {
+   "assessment": "moderate",
+   "why_this_token": "It is the earliest of the 2026-09-25 DEBTCAT launches (created 23:49:21Z; the copies came 44s to 7 min later). It carries the UsePaid fee link and the source-post link, and it holds almost all the volume.",
+   "competing_tokens": "8+ same-ticker clones from the last few minutes, all with small volume (the largest is iBYL at $6.9k h1 volume). There is also an older, dead 'Debt Cat' (AP8Q).",
+   "is_first_or_canonical": "yes",
+   "ticker_hijack_risk": "low"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "896 unique buyers and 835 holders in 11 minutes point to broad trench participation. GMGN, however, tags 299 bundler wallets with a 34% top-bundler trader share and a 39.5% bot/degen rate. GMGN's creator address has launched 16,577 tokens, which is probably a platform/launcher deployer, and it is marked creator_close. There are 10 smart wallets and 2 renowned (KOL) wallets, and no paid boosts.",
+   "uncertainty": "I could not read the X source post or see any engagement numbers. I also can't tell whether the bundler tags are real insider bundles or just activity from bot trading clients."
+  },
+  "market_feasibility": {
+   "assessment": "adequate",
+   "structural_risks": [
+    "High bundler share (34%) could dump into the curve",
+    "Price already down about 40% from the ATH within 5 minutes: a fading first pump",
+    "Serial launcher deployer (16,577 tokens)",
+    "Low absolute market cap, so it is very volatile either way; top10 at 24% is acceptable"
+   ]
+  },
+  "counterargument": "It is the canonical first coin of an active meta, with 896 unique buyers, smart and KOL wallets present, and no dev holdings. At $20k a 2x only needs $40k, just above the earlier ATH of $35k, and a single retweet from a bigger account could do it. A -37% m5 dip on a curve coin is often a shakeout before the second leg.",
+  "unknowns": [
+   "Content and reach of the @Elons55thbday post",
+   "Who @natdebtfund is and whether they will engage",
+   "Whether the bundler wallets are coordinated insiders",
+   "UsePaid page content (fetch failed)"
+  ],
+  "source_coverage": {
+   "x_twitter": "inaccessible",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "searched_nothing_found",
+   "project_site": "inaccessible",
+   "notes": "Contract search found nothing. site:x.com searches did not surface $DEBTCAT posts. The X post returned HTTP 402, the UsePaid page failed with an SSL error, and debtcats.com returned HTTP 451. The time limit kept coverage thin."
+  },
+  "thesis": "It is the canonical coin of a small, fast fee-to-X-account meta and draws real trench participation, but momentum is already reversing (-37% m5) and bundler share is high. Double-then-die is possible, but most coins like this fade after the first spike. My probability of a runner is a bit above the pool's base rate because it is canonical and has many unique buyers.",
+  "continuation_view": "fade",
+  "p_runner": 13,
+  "p_rug": 30,
+  "survival_score": 45,
+  "attention_score": 55,
+  "manipulation_risk": 60,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": [
+   {
+    "url": "https://x.com/Elons55thbday/status/2103632982514770375",
+    "what": "Source X post linked in the packet (fetch returned HTTP 402)"
+   },
+   {
+    "url": "https://usepaid.app/token/6JtdVAKukv1ML1gbtk4caULqbFT8xfxp9wkhSFeVpump",
+    "what": "UsePaid fee page (fetch failed)"
+   },
+   {
+    "url": "https://www.debtcats.com/",
+    "what": "Related-looking 'DebtCats: Funding America, One Cat at a Time' site (search snippet only)"
+   }
+  ]
+ },
+ "ttft_ms": 1237,
+ "type": "result",
+ "duration_ms": 41921,
+ "uuid": "9c4371e7-b9be-4dca-ba88-56ec7ced8558",
+ "ttft_stream_ms": 645,
+ "time_to_request_ms": 55,
+ "first_content_frame_ms": 646,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,156 @@
+{
+ "duration_api_ms": 23709,
+ "stop_reason": "tool_use",
+ "session_id": "50f616ee-2e01-4780-aede-be56029afbf5",
+ "total_cost_usd": 0.11370840000000002,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8217,
+  "cache_read_input_tokens": 2122,
+  "output_tokens": 2377,
+  "output_tokens_details": {
+   "thinking_tokens": 414
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8217,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2377,
+    "cache_read_input_tokens": 2122,
+    "cache_creation_input_tokens": 8217,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 8217
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2377,
+   "cacheReadInputTokens": 2122,
+   "cacheCreationInputTokens": 8217,
+   "webSearchRequests": 0,
+   "costUSD": 0.11370840000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 414,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"what_is_happening\":\"BEEPLE is one of at least 10 same-name tokens launched within about 12 minutes. They appear to be riding a Beeple X post: GeckoTerminal links to beeple/status/2103695634804945012. This contract is 10 minutes old and sits at about $22.5k market cap. It is up 114% since launch, with 1,139 buys against 613 sells, 687 unique buyers against 108 unique sellers, and $261k of volume. The pool was created directly on PumpSwap with no bonding curve (migrated_unix 0). Liquidity ($31k) is larger than market cap, which points to a dev-seeded pool. All of the LP is unlocked, and the creator has already closed out their position. The leading same-ticker coin (DMZt\u2026) is at $290k market cap with $801k hourly volume and launched about 9 minutes before this one.\",\"narrative\":{\"description\":\"The coins are riding a live post or event from Beeple, the famous digital artist, and many are being deployed at once. The story itself has real reach, but it belongs to the ticker as a whole, not to this contract.\",\"stage\":\"spreading\",\"potential\":\"moderate\",\"why_spreading\":\"A known artist posting on X brings a rush of fast, broad buying across every copy of the ticker, and this contract's unique-buyer count shows it is catching some of that spill-over.\"},\"token_connection\":{\"assessment\":\"weak\",\"why_this_token\":\"Only the name matches, plus the tweet link on GeckoTerminal, which the deployer can set. There is no website, no socials and no DexScreener profile.\",\"competing_tokens\":\"DMZtsWe\u2026 is at $290k market cap with $49k liquidity and $801k hourly volume, and launched earlier, so it is the leading coin. 4So8HQ\u2026 is at $26.5k with $452k hourly volume. At least 8 other copies exist, several already dead.\",\"is_first_or_canonical\":\"no\",\"ticker_hijack_risk\":\"high\"},\"authenticity\":{\"assessment\":\"mixed\",\"evidence\":\"Buyer breadth looks real: 687 unique buyers against 108 sellers, a low bot/degen rate (0.029), no snipers and almost no fresh wallets. Against that, GMGN tags 74 bundler wallets, although the top bundler holds only 8.7%. There are no paid boosts and no call-channel signals.\",\"uncertainty\":\"The breadth could be copy-trading bots spreading buys across every BEEPLE contract, and the bundler clusters could sell into late buyers.\"},\"market_feasibility\":{\"assessment\":\"weak\",\"structural_risks\":[\"All of the LP is unlocked, and the pool was seeded directly by the dev on PumpSwap rather than migrated from a curve, so the dev can pull liquidity at any moment\",\"Liquidity is larger than market cap, which fits a dev-seeded pool set up to be pulled\",\"The creator's position is closed (creator_close, balance 0)\",\"74 bundler wallets\",\"This is not the canonical coin: the leading copy is more than 10x its market cap and is soaking up the attention\",\"RugCheck normalised score is 52, with 'danger' on unlocked LP\"]},\"counterargument\":\"The leading copy is at $290k, so a $22k copy with strong buyer breadth (6:1 unique buyers to sellers) and fast momentum could re-price toward $45k+ as a cheap 'beta' play on the ticker. Holders are spread out (top 10 hold 14%), and the creator's closed position may just mean they took profit, not that they plan to pull the pool.\",\"unknowns\":[\"Whether the dev still holds the LP tokens and intends to pull\",\"What Beeple's post actually says, and whether he has endorsed any contract\",\"Whether the unique buyers are real people or copy-trading bots\",\"How long attention on the ticker lasts\"],\"source_coverage\":{\"x_twitter\":\"not_attempted\",\"reddit\":\"not_attempted\",\"telegram\":\"not_attempted\",\"discord\":\"not_attempted\",\"news\":\"not_attempted\",\"project_site\":\"not_attempted\",\"notes\":\"This is an offline condition, so only the evidence packet was used.\"},\"thesis\":\"This is a low-market-cap copy of a hot celebrity ticker, and it is not the leading contract. Its short-term momentum and breadth are real. But its structure is poor: a dev-seeded PumpSwap pool, all LP unlocked, the creator's position closed and many bundler wallets. With the leading copy at $290k, attention will concentrate there, and this contract faces a high chance of an LP pull or a fade. The chance of a 2x before -50% is somewhat below a typical coin in this pool.\",\"continuation_view\":\"fade\",\"p_runner\":10,\"p_rug\":45,\"survival_score\":25,\"attention_score\":62,\"manipulation_risk\":55,\"tail_class\":\"B_up_to_2x\",\"research_confidence\":\"low\",\"observation_window\":\"6h\",\"sources\":[]}",
+ "structured_output": {
+  "what_is_happening": "BEEPLE is one of at least 10 same-name tokens launched within about 12 minutes. They appear to be riding a Beeple X post: GeckoTerminal links to beeple/status/2103695634804945012. This contract is 10 minutes old and sits at about $22.5k market cap. It is up 114% since launch, with 1,139 buys against 613 sells, 687 unique buyers against 108 unique sellers, and $261k of volume. The pool was created directly on PumpSwap with no bonding curve (migrated_unix 0). Liquidity ($31k) is larger than market cap, which points to a dev-seeded pool. All of the LP is unlocked, and the creator has already closed out their position. The leading same-ticker coin (DMZt\u2026) is at $290k market cap with $801k hourly volume and launched about 9 minutes before this one.",
+  "narrative": {
+   "description": "The coins are riding a live post or event from Beeple, the famous digital artist, and many are being deployed at once. The story itself has real reach, but it belongs to the ticker as a whole, not to this contract.",
+   "stage": "spreading",
+   "potential": "moderate",
+   "why_spreading": "A known artist posting on X brings a rush of fast, broad buying across every copy of the ticker, and this contract's unique-buyer count shows it is catching some of that spill-over."
+  },
+  "token_connection": {
+   "assessment": "weak",
+   "why_this_token": "Only the name matches, plus the tweet link on GeckoTerminal, which the deployer can set. There is no website, no socials and no DexScreener profile.",
+   "competing_tokens": "DMZtsWe\u2026 is at $290k market cap with $49k liquidity and $801k hourly volume, and launched earlier, so it is the leading coin. 4So8HQ\u2026 is at $26.5k with $452k hourly volume. At least 8 other copies exist, several already dead.",
+   "is_first_or_canonical": "no",
+   "ticker_hijack_risk": "high"
+  },
+  "authenticity": {
+   "assessment": "mixed",
+   "evidence": "Buyer breadth looks real: 687 unique buyers against 108 sellers, a low bot/degen rate (0.029), no snipers and almost no fresh wallets. Against that, GMGN tags 74 bundler wallets, although the top bundler holds only 8.7%. There are no paid boosts and no call-channel signals.",
+   "uncertainty": "The breadth could be copy-trading bots spreading buys across every BEEPLE contract, and the bundler clusters could sell into late buyers."
+  },
+  "market_feasibility": {
+   "assessment": "weak",
+   "structural_risks": [
+    "All of the LP is unlocked, and the pool was seeded directly by the dev on PumpSwap rather than migrated from a curve, so the dev can pull liquidity at any moment",
+    "Liquidity is larger than market cap, which fits a dev-seeded pool set up to be pulled",
+    "The creator's position is closed (creator_close, balance 0)",
+    "74 bundler wallets",
+    "This is not the canonical coin: the leading copy is more than 10x its market cap and is soaking up the attention",
+    "RugCheck normalised score is 52, with 'danger' on unlocked LP"
+   ]
+  },
+  "counterargument": "The leading copy is at $290k, so a $22k copy with strong buyer breadth (6:1 unique buyers to sellers) and fast momentum could re-price toward $45k+ as a cheap 'beta' play on the ticker. Holders are spread out (top 10 hold 14%), and the creator's closed position may just mean they took profit, not that they plan to pull the pool.",
+  "unknowns": [
+   "Whether the dev still holds the LP tokens and intends to pull",
+   "What Beeple's post actually says, and whether he has endorsed any contract",
+   "Whether the unique buyers are real people or copy-trading bots",
+   "How long attention on the ticker lasts"
+  ],
+  "source_coverage": {
+   "x_twitter": "not_attempted",
+   "reddit": "not_attempted",
+   "telegram": "not_attempted",
+   "discord": "not_attempted",
+   "news": "not_attempted",
+   "project_site": "not_attempted",
+   "notes": "This is an offline condition, so only the evidence packet was used."
+  },
+  "thesis": "This is a low-market-cap copy of a hot celebrity ticker, and it is not the leading contract. Its short-term momentum and breadth are real. But its structure is poor: a dev-seeded PumpSwap pool, all LP unlocked, the creator's position closed and many bundler wallets. With the leading copy at $290k, attention will concentrate there, and this contract faces a high chance of an LP pull or a fade. The chance of a 2x before -50% is somewhat below a typical coin in this pool.",
+  "continuation_view": "fade",
+  "p_runner": 10,
+  "p_rug": 45,
+  "survival_score": 25,
+  "attention_score": 62,
+  "manipulation_risk": 55,
+  "tail_class": "B_up_to_2x",
+  "research_confidence": "low",
+  "observation_window": "6h",
+  "sources": []
+ },
+ "ttft_ms": 5492,
+ "type": "result",
+ "duration_ms": 23770,
+ "uuid": "088ae4a4-1289-453e-8413-ec8a32411285",
+ "ttft_stream_ms": 1116,
+ "time_to_request_ms": 58,
+ "first_content_frame_ms": 1116,
+ "queued_turn_count": 0,
+ "result_index": 0
+}
